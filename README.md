@@ -1,8 +1,6 @@
-# 🏥 ChemoProtocol Engine
+# SOPHIA — System for Orchestrating Protocol-guided Healthcare Inference & Analysis
 
-## NHS Chemotherapy Protocol Management System with AI-Powered PDF Ingestion
-
-A production-grade, scalable chemotherapy protocol management system that can dynamically generate personalized treatment protocols. Features Gemini AI integration for automatic PDF parsing, enabling expansion to any cancer type.
+**Chemotherapy Protocol Management System by Jivana AI**
 
 ![Architecture](https://img.shields.io/badge/Architecture-FastAPI%20%2B%20React-blue)
 ![AI](https://img.shields.io/badge/AI-Google%20Gemini-orange)
@@ -10,367 +8,301 @@ A production-grade, scalable chemotherapy protocol management system that can dy
 
 ---
 
-## 🌟 Features
+## CRITICAL SAFETY NOTICE
 
-### Core Functionality
-- **Protocol Generation**: Generate personalized chemotherapy protocols based on patient data
-- **BSA-Based Dosing**: Automatic dose calculation using Mosteller/Du Bois formulas
-- **Dose Modifications**: Automatic adjustments for renal/hepatic impairment
-- **Flexible Drug Selection**: Include/exclude specific drugs (e.g., AZA+VEN → AZA only)
-- **Cycle-Specific Protocols**: Handle variations between treatment cycles
-- **Print-Ready Output**: Generate professional protocol documents
+**THIS SYSTEM IS FOR CLINICAL DECISION SUPPORT ONLY.**
 
-### AI-Powered Expansion
-- **Gemini PDF Parsing**: Upload any NHS protocol PDF and AI extracts structured data
-- **Multi-Disease Support**: Expandable from lymphoma to breast, lung, colorectal, etc.
-- **Automatic Indexing**: Protocols automatically categorized and searchable
-- **Intelligent Extraction**: Extracts drugs, doses, schedules, modifications, warnings
+- This software is NOT a licensed medical device.
+- It has NOT undergone regulatory approval (FDA / MHRA / CE).
+- It MUST NOT be used for direct patient care without independent verification.
+- All protocols require sign-off by a licensed prescriber AND a pharmacist.
+- AI-extracted protocols carry an additional pharmacist review gate before use.
 
-### Technical Features
-- **RESTful API**: Full-featured FastAPI backend with OpenAPI docs
-- **React Frontend**: Modern, responsive UI with real-time calculations
-- **Scalable Storage**: JSON-based storage (easily upgradeable to PostgreSQL)
-- **Admin Panel**: Upload protocols, view statistics, manage categories
+**Use of this system for patient care without proper clinical validation may result in patient harm or death.**
 
 ---
 
-## 🏗️ Architecture
+## What is SOPHIA?
+
+SOPHIA is a full-stack clinical decision support tool for oncology teams. It takes structured patient data, applies chemotherapy protocol rules, and returns a fully calculated, safety-checked drug schedule — including BSA-adjusted doses, dose modification flags, treatment delay alerts, and pre-medication lists.
+
+It ships with 31 built-in protocols (lymphoma, leukaemia, myeloma, CML) and can ingest any additional NHS/institutional PDF protocol via a Gemini-powered admin panel.
+
+---
+
+## Feature Overview
+
+### Protocol Engine
+- BSA calculation (Mosteller) capped at 2.0 m² per ASCO guidelines
+- Automatic dose modifications for renal and hepatic impairment
+- "Most conservative rule" — when multiple modification rules apply, the lowest resulting dose wins
+- Vincristine hard cap at 2 mg (CRITICAL alert; overdose = death / permanent paralysis)
+- Treatment delay flags when neutrophils < 1.0 × 10⁹/L or platelets < 100 × 10⁹/L
+- Hard stops when neutrophils < 0.5, platelets < 50, or CrCl < 10
+- Drug omission logging — when a drug is omitted by a dose rule, it is recorded in `dose_modifications_applied` and surfaced as a CRITICAL warning (not silently dropped)
+
+### Patient Safety
+- Mandatory lab enforcement — neutrophils, platelets, haemoglobin, CrCl, and bilirubin are required; no labs, no protocol
+- Allergy checking with cross-reactivity awareness (e.g. penicillin → carbapenem caution)
+- ECOG performance status warnings for PS 3–4
+- Age-based dose reduction prompts for patients > 70 years
+- Cumulative anthracycline and bleomycin toxicity tracking against lifetime limits
+- Irradiated blood product alerts for eligible drugs (e.g. bendamustine)
+
+### Extended Patient Data Model
+Patient records carry a full clinical picture:
+
+| Category | Fields |
+|---|---|
+| Demographics | weight, height, age, ECOG PS |
+| Core labs | neutrophils, platelets, Hb, CrCl, bilirubin |
+| Metabolic | LDH, urate, calcium, β2-microglobulin, magnesium, vitamin D |
+| Virology | HBsAg, HBcAb, HCV Ab, HIV, EBV, CMV, VZV |
+| Disease | histology, stage, CT result, immunoglobulins |
+| Cardiac / prior Rx | LVEF, heart disease flag, prior anthracycline (mg/m²), prior mediastinal radiation, prior bleomycin |
+| Metabolic baseline | HbA1c, fasting glucose |
+| G6PD / lung | G6PD status, FEV1 %, smoker flag |
+| Post-cycle tracking | post-cycle neutrophils, platelets, bilirubin, GFR, HbA1c, glucose, motor weakness, gross haematuria |
+
+### Protocol-Specific Required Fields
+Each protocol exposes a `required_patient_fields` map derived from its drugs. For example, RCHOP surfaces requirements for full virology panel (anti-CD20 → HBV reactivation risk), LVEF (anthracycline cardiotoxicity), and G6PD (rasburicase contraindication). The frontend displays these as a colour-coded checklist before the clinician submits.
+
+### Custom Regimen Builder
+Clinicians can:
+- Take any built-in protocol and exclude individual drugs (e.g. AZA+VEN → AZA monotherapy)
+- Build entirely free-form combinations (e.g. Azacitidine + 7+3) by selecting drugs, doses, dose units, routes, and days
+- Custom regimens are submitted to `POST /api/v1/protocol/generate-custom`, receive the same BSA/weight calculations, vincristine cap, allergy checks, and delay detection as standard protocols, and are flagged `is_ai_generated: true` to trigger the pharmacist review gate
+
+### AI-Powered Protocol Ingestion
+- Upload any NHS/institutional chemotherapy PDF via the Admin Panel
+- Google Gemini (gemini-2.0-flash) extracts: drugs, doses, dose units, routes, schedules, dose modification rules, pre-medications, take-home medicines, monitoring requirements, warnings, and `required_patient_fields`
+- Extracted protocols are cached, versioned, and immediately searchable alongside built-in protocols
+- Prompt version is tracked (`_PROMPT_VERSION`); incrementing it busts all cached extractions
+
+### Patient JSON Adapter
+A `PatientStateAdapter` converts external patient JSON payloads (from mobile apps or WhatsApp-based intake forms) into strict `PatientData` objects:
+- Parses range strings like `"0.8-<1"` → lower bound `0.8` (conservative safety approach)
+- Cycle-state logic: infers which cycle to generate based on `cycle{n}_complete` flags
+- Selects post-cycle lab prefix (`post{n}neutrophils`, etc.) automatically
+- Maps all virology, disease characterisation, and post-cycle tracking fields
+
+---
+
+## Architecture
 
 ```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                           CHEMOTHERAPY PROTOCOL ENGINE                       │
-├─────────────────────────────────────────────────────────────────────────────┤
-│                                                                              │
-│   ┌─────────────────┐         ┌─────────────────┐         ┌──────────────┐ │
-│   │   React UI      │◄───────►│   FastAPI       │◄───────►│   Gemini AI  │ │
-│   │                 │         │   Backend       │         │   Parser     │ │
-│   │ • Protocol      │         │                 │         │              │ │
-│   │   Browser       │  HTTP   │ • /protocols    │  API    │ • PDF Parse  │ │
-│   │ • Patient Form  │◄───────►│ • /generate     │◄───────►│ • Extract    │ │
-│   │ • Drug Selector │         │ • /admin        │         │ • Structure  │ │
-│   │ • Admin Panel   │         │ • /calculate    │         │              │ │
-│   └─────────────────┘         └────────┬────────┘         └──────────────┘ │
-│                                        │                                    │
-│                                        ▼                                    │
-│                          ┌─────────────────────────┐                       │
-│                          │     Protocol Store      │                       │
-│                          │                         │                       │
-│                          │ • Hardcoded Protocols   │                       │
-│                          │ • Ingested Protocols    │                       │
-│                          │ • Protocol Index        │                       │
-│                          └─────────────────────────┘                       │
-│                                                                              │
-└─────────────────────────────────────────────────────────────────────────────┘
+React Frontend (Vite)
+    │
+    │  HTTP / JSON
+    ▼
+FastAPI Backend (main_enhanced.py)
+    ├── GET  /api/v1/protocols              — list & search protocols
+    ├── GET  /api/v1/protocols/{code}       — protocol detail + required_patient_fields
+    ├── POST /api/v1/protocol/generate      — standard protocol generation
+    ├── POST /api/v1/protocol/generate-custom          — custom regimen builder
+    ├── POST /api/v1/protocol/generate-from-patient-json  — mobile/WhatsApp adapter
+    ├── POST /api/v1/admin/upload           — PDF ingestion (Gemini)
+    ├── GET  /api/v1/admin/stats
+    └── GET  /api/v1/admin/categories
+         │
+         ├── engine.py          — dose calc, modification rules, delay logic
+         ├── models.py          — Pydantic v2 models (PatientData, Protocol, ProtocolResponse, CustomRegimenRequest)
+         ├── protocol_data.py   — 31 hardcoded protocols + DRUGS dict (51 entries) + infer_required_patient_fields()
+         ├── gemini_parser.py   — Gemini extraction prompt (v4) + caching + convert_to_protocol_model()
+         ├── adapters.py        — PatientStateAdapter (external JSON → PatientData)
+         └── ingested_protocols.json  — persisted AI-extracted protocols
 ```
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.10+
 - Node.js 18+
-- Google Gemini API Key (for PDF parsing)
+- Google Gemini API key (for PDF ingestion)
 
-### Backend Setup
+### Backend
 
 ```bash
 cd backend
-
-# Create virtual environment
 python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-
-# Install dependencies
+source venv/bin/activate        # Windows: venv\Scripts\activate
 pip install -r requirements.txt
-
-# Set environment variables
-export GEMINI_API_KEY="your-gemini-api-key"
-
-# Run the server
+echo "GEMINI_API_KEY=your-key-here" > .env
 uvicorn main_enhanced:app --reload --port 8000
 ```
 
-### Frontend Setup
+### Frontend
 
 ```bash
 cd frontend
-
-# Install dependencies
 npm install
-
-# Run development server
 npm run dev
 ```
 
-Visit `http://localhost:3000` to access the application.
+Open `http://localhost:5173`.
+
+Interactive API docs at `http://localhost:8000/docs`.
 
 ---
 
-## 📚 API Documentation
+## API Reference
 
-### Protocol Endpoints
+### Generate a Standard Protocol
 
-#### List Protocols
-```http
-GET /api/v1/protocols?search=RCHOP&category=lymphoma
-```
-
-#### Get Protocol Details
-```http
-GET /api/v1/protocols/RCHOP21
-```
-
-#### Generate Personalized Protocol
 ```http
 POST /api/v1/protocol/generate
 Content-Type: application/json
 
 {
   "protocol_code": "RCHOP21",
-  "patient": {
-    "weight_kg": 70,
-    "height_cm": 175,
-    "neutrophils": 2.5,
-    "platelets": 150,
-    "bilirubin": 15,
-    "creatinine_clearance": 90
-  },
   "cycle_number": 1,
-  "excluded_drugs": ["rituximab"],
+  "patient": {
+    "weight_kg": 75,
+    "height_cm": 175,
+    "age_years": 58,
+    "performance_status": 0,
+    "neutrophils": 2.1,
+    "platelets": 160,
+    "hemoglobin": 12.0,
+    "creatinine_clearance": 75,
+    "bilirubin": 12
+  },
   "include_premeds": true,
   "include_take_home": true
 }
 ```
 
-**Response:**
-```json
+### Generate a Custom Regimen
+
+```http
+POST /api/v1/protocol/generate-custom
+Content-Type: application/json
+
 {
-  "protocol_code": "CHOP21",
-  "patient_bsa": 1.85,
-  "chemotherapy_drugs": [
+  "regimen_name": "Aza-Ven",
+  "cycle_number": 1,
+  "cycle_length_days": 28,
+  "patient": { ... },
+  "drugs": [
     {
-      "drug_name": "Doxorubicin",
-      "calculated_dose": 92.5,
-      "calculated_dose_unit": "mg",
-      "route": "IV bolus",
-      "days": [1],
-      "dose_modified": false
+      "drug_name": "Azacitidine",
+      "dose": 75,
+      "dose_unit": "mg/m2",
+      "route": "SC injection",
+      "days": [1,2,3,4,5,6,7]
+    },
+    {
+      "drug_name": "Venetoclax",
+      "dose": 400,
+      "dose_unit": "mg",
+      "route": "Oral",
+      "days": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28]
     }
-  ],
-  "warnings": [],
-  "dose_modifications_applied": []
+  ]
 }
 ```
 
-### Admin Endpoints
+### Submit from External Patient JSON (Mobile / WhatsApp)
 
-#### Upload Protocol PDF
+```http
+POST /api/v1/protocol/generate-from-patient-json?protocol_code=RCHOP21
+Content-Type: application/json
+
+{
+  "age": 58, "height": 172, "weight": 80,
+  "bilirubin": 12, "gfr": 75,
+  "neutrophils": 2.1, "platelets": 145, "hemoglobin": 11.5,
+  "hepbsurface": "negative", "hepbcore": "positive", "hiv": "negative",
+  "histology": "DLBCL", "dstage": "Ann Arbor IV", "g6pd": "normal",
+  "cycle1_complete": true,
+  "post1neutrophils": "0.8-<1",
+  "post1platelets": 110, "post1bilirubin": 14, "post1crcl": 70
+}
+```
+
+The adapter infers cycle 2, parses `"0.8-<1"` → `0.8`, and triggers a treatment delay flag (neutrophils < 1.0).
+
+### Upload a Protocol PDF
+
 ```http
 POST /api/v1/admin/upload
 Content-Type: multipart/form-data
 
-file: <PDF file>
-disease_category: "breast_cancer"
-```
-
-#### Get System Statistics
-```http
-GET /api/v1/admin/stats
-```
-
-#### Get Categories
-```http
-GET /api/v1/admin/categories
+file: <PDF>
+disease_category: lymphoma
 ```
 
 ---
 
-## 🎯 Usage Examples
+## Built-in Protocols (31 total)
 
-### Example 1: Generate R-CHOP without Rituximab
-
-```python
-import requests
-
-response = requests.post("http://localhost:8000/api/v1/protocol/generate", json={
-    "protocol_code": "RCHOP21",
-    "patient": {
-        "weight_kg": 75,
-        "height_cm": 180
-    },
-    "cycle_number": 1,
-    "excluded_drugs": ["Rituximab"]  # Exclude Rituximab → becomes CHOP
-})
-
-protocol = response.json()
-print(f"Generated: {protocol['protocol_code']}")
-for drug in protocol['chemotherapy_drugs']:
-    print(f"  {drug['drug_name']}: {drug['calculated_dose']} {drug['calculated_dose_unit']}")
-```
-
-### Example 2: Dose Modification for Hepatic Impairment
-
-```python
-response = requests.post("http://localhost:8000/api/v1/protocol/generate", json={
-    "protocol_code": "RCHOP21",
-    "patient": {
-        "weight_kg": 70,
-        "height_cm": 175,
-        "bilirubin": 60  # Elevated bilirubin
-    },
-    "cycle_number": 2
-})
-
-# Doxorubicin will be reduced to 50% due to bilirubin 30-50 µmol/L
-```
-
-### Example 3: Upload New Protocol (Expanding to Breast Cancer)
-
-```python
-with open("breast_cancer_AC_protocol.pdf", "rb") as f:
-    response = requests.post(
-        "http://localhost:8000/api/v1/admin/upload",
-        files={"file": f},
-        data={"disease_category": "breast_cancer"}
-    )
-
-result = response.json()
-print(f"Ingested: {result['protocol_code']} - {result['protocol_name']}")
-print(f"Extracted {result['drugs_count']} drugs")
-```
+| Category | Protocols |
+|---|---|
+| B-cell lymphoma | RCHOP21, CHOP21, RCVP, BR, GDP, BENDA, R-BENDA |
+| Hodgkin lymphoma | ABVD, BEACOPP-ESC |
+| T-cell lymphoma | CHOEP21, CHOP21 |
+| CLL | FCR, FC |
+| Myeloma | VRd (Bortezomib-Lenalidomide-Dex), Daratumumab-VRd, MPT |
+| AML | 7+3 (Dauno/Ara-C), FLAG-IDA, MACE, Clofarabine-Ara-C |
+| MDS / AML low-intensity | AZA+VEN, Azacitidine SC, Gilteritinib |
+| ALL | HyperCVAD-A, HyperCVAD-B |
+| CML | Imatinib |
+| Supportive | G-CSF, Mesna, Leucovorin rescue |
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
-chemo-protocol-engine/
+SOPHIA/
 ├── backend/
-│   ├── main_enhanced.py      # FastAPI application
-│   ├── models.py             # Pydantic data models
-│   ├── engine.py             # Protocol engine (dose calc, modifications)
-│   ├── protocol_data.py      # Hardcoded protocol definitions
-│   ├── gemini_parser.py      # AI-powered PDF parser
+│   ├── main_enhanced.py          # FastAPI app + all endpoints
+│   ├── engine.py                 # Dose calculation, modification rules, delay logic, custom regimen
+│   ├── models.py                 # Pydantic v2: PatientData, Protocol, ProtocolResponse, CustomRegimenRequest
+│   ├── protocol_data.py          # 31 protocols, DRUGS dict (51 entries), infer_required_patient_fields()
+│   ├── gemini_parser.py          # Gemini prompt v4, caching, model conversion
+│   ├── adapters.py               # PatientStateAdapter (external JSON → PatientData)
+│   ├── ingest_protocols.py       # CLI tool to batch-ingest PDFs
+│   ├── ingested_protocols.json   # Persisted AI-extracted protocols
 │   └── requirements.txt
 │
 ├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── Header.jsx
-│   │   │   ├── ProtocolBrowser.jsx
-│   │   │   ├── PatientForm.jsx
-│   │   │   ├── DrugSelector.jsx
-│   │   │   ├── ProtocolDisplay.jsx
-│   │   │   └── AdminPanel.jsx
-│   │   ├── utils/
-│   │   │   └── api.js
-│   │   ├── App-enhanced.jsx
-│   │   ├── App-enhanced.css
-│   │   └── main.jsx
-│   ├── index.html
-│   ├── vite.config.js
-│   └── package.json
-│
-├── data/
-│   ├── protocols/            # Ingested protocol JSON files
-│   ├── parsed_protocols/     # Gemini parsing cache
-│   └── uploads/              # Uploaded PDF files
+│   └── src/
+│       ├── App.jsx               # Main app state, routing, generate logic
+│       ├── components/
+│       │   ├── Header.jsx
+│       │   ├── PatientForm.jsx               # Full patient form incl. virology, disease, prior Rx
+│       │   ├── ProtocolDisplay.jsx
+│       │   ├── FlexibleProtocolBuilder.jsx   # Custom drug selector
+│       │   └── AdminPanel.jsx
+│       └── utils/api.js          # All API calls incl. generateCustomRegimen()
 │
 └── README.md
 ```
 
 ---
 
-## 🔧 Configuration
+## Environment Variables
 
-### Environment Variables
-
-| Variable | Description | Required |
-|----------|-------------|----------|
-| `GEMINI_API_KEY` | Google Gemini API key for PDF parsing | For AI features |
-| `VITE_API_URL` | Backend API URL (frontend) | No (defaults to localhost) |
-
-### Gemini API Setup
-
-1. Go to [Google AI Studio](https://makersuite.google.com/app/apikey)
-2. Create an API key
-3. Set environment variable:
-   ```bash
-   export GEMINI_API_KEY="AIza..."
-   ```
+| Variable | Required | Description |
+|---|---|---|
+| `GEMINI_API_KEY` | For PDF ingestion | Google AI Studio key |
+| `VITE_API_URL` | No | Override backend URL (default: `http://localhost:8000`) |
 
 ---
 
-## 📊 Included Protocols
+## License
 
-### Lymphoma Protocols (Built-in)
-| Code | Name | Indication |
-|------|------|------------|
-| RCHOP21 | R-CHOP 21 | CD20+ Non-Hodgkin's Lymphoma |
-| CHOP21 | CHOP 21 | Non-Hodgkin's Lymphoma |
-| BR | Bendamustine-Rituximab | Relapsed/Refractory NHL |
-| RCVP | R-CVP | Follicular Lymphoma |
-| ABVD | ABVD | Hodgkin Lymphoma |
-| GDP | GDP | Relapsed DLBCL |
-| BENDA | Bendamustine | Indolent NHL |
-
-### Expandable to Any Disease
-Upload PDFs for:
-- Breast Cancer (AC, TC, FEC, etc.)
-- Lung Cancer (Cisplatin-Pemetrexed, Carboplatin-Paclitaxel)
-- Colorectal (FOLFOX, FOLFIRI, CAPOX)
-- Leukemia (AZA+VEN, FLAG-IDA)
-- Multiple Myeloma (VRd, KRd)
-- And more...
+MIT License.
 
 ---
 
-## 🔒 Safety Features
+## Disclaimer
 
-- **Max Dose Caps**: Vincristine capped at 2mg, etc.
-- **Dose Modification Rules**: Automatic adjustments for organ impairment
-- **Warning System**: Critical alerts for low counts, hepatic/renal issues
-- **Irradiated Blood Warnings**: For bendamustine patients
-- **Monitoring Requirements**: Lab requirements before each cycle
+This software is for research and clinical decision support only. All chemotherapy protocols must be independently verified by a qualified clinical pharmacist and oncologist before administration to any patient. The developers and Jivana AI accept no liability for clinical decisions made using this software.
 
 ---
 
-## 🚧 Future Roadmap
-
-- [ ] PostgreSQL database integration
-- [ ] User authentication & audit trails
-- [ ] Protocol versioning & approval workflow
-- [ ] Integration with hospital EMR systems
-- [ ] Mobile app for bedside dosing
-- [ ] Drug interaction checker
-- [ ] Treatment calendar generation
-- [ ] Patient outcome tracking
-
----
-
-## 📜 License
-
-MIT License - see LICENSE file for details.
-
----
-
-## 🤝 Contributing
-
-Contributions welcome! Please read CONTRIBUTING.md for guidelines.
-
----
-
-## ⚠️ Disclaimer
-
-This software is for educational and research purposes only. All chemotherapy protocols must be verified by qualified clinical pharmacists and oncologists before administration. The developers assume no liability for clinical decisions made using this software.
-
----
-
-## 📞 Support
-
-For questions or support, please open an issue on GitHub or contact the development team.
-
----
-
-Built with ❤️ for healthcare by the Jivana AI team
+Built by the Jivana AI team.

@@ -1,0 +1,1894 @@
+[
+  {
+    "protocol_id": "aml_mace_inp",
+    "protocol_code": "MACE",
+    "protocol_name": "Amsacrine-Cytarabine-Etoposide",
+    "full_name": "In-Patient Amsacrine-Cytarabine-Etoposide (MACE) for Acute Myeloid Leukaemia",
+    "indication": "Consolidation therapy for AML in remission or salvage",
+    "cycle_length_days": null,
+    "total_cycles": 1,
+    "version": "1.0",
+    "treatment_intent": "curative",
+    "drugs": [
+      {
+        "drug_id": "amsacrine",
+        "drug_name": "Amsacrine",
+        "dose": 100,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "duration_minutes": 60,
+        "diluent": "glucose 5%",
+        "diluent_volume_ml": 500,
+        "administration_order": 1,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "max_dose_reason": null,
+        "frequency": null,
+        "special_instructions": "Amsacrine is a vesicant. Must not be infused in sodium chloride 0.9% as precipitation or flocculation occurs. The line should be flushed with glucose 5% before and after administration of amsacrine. Dose will be dose banded according to the national dose bands (5mg/ml).",
+        "age_based_cap": null,
+        "cumulative_limit": null,
+        "infusion_rate_modifications": []
+      },
+      {
+        "drug_id": "cytarabine",
+        "drug_name": "Cytarabine",
+        "dose": 200,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "duration_minutes": 1320,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "administration_order": 2,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "max_dose_reason": null,
+        "frequency": null,
+        "special_instructions": "Cytarabine is neutral but an irritant in large volumes. Dose will be dose banded according to the national dose bands (20mg/ml).",
+        "age_based_cap": null,
+        "cumulative_limit": null,
+        "infusion_rate_modifications": []
+      },
+      {
+        "drug_id": "etoposide",
+        "drug_name": "Etoposide",
+        "dose": 100,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500,
+        "administration_order": 3,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "max_dose_reason": null,
+        "frequency": null,
+        "special_instructions": "Etoposide is an irritant. Dose will be dose banded according to the agreed bands.",
+        "age_based_cap": null,
+        "cumulative_limit": null,
+        "infusion_rate_modifications": []
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_id": "ondansetron",
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "timing": "15-30 minutes prior to chemotherapy",
+        "timing_minutes": 30,
+        "special_instructions": "Route can be oral or intravenous. Given twice a day for 7 days."
+      },
+      {
+        "drug_id": "metoclopramide",
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [],
+        "timing": "When required",
+        "timing_minutes": null,
+        "special_instructions": "Route can be oral or intravenous. Given three times a day when required for nausea."
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_id": "aciclovir",
+        "drug_name": "Aciclovir",
+        "dose": 400,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [],
+        "frequency": "Twice a day",
+        "duration_days": null,
+        "special_instructions": "Continue until neutrophils are greater than 1x10\u2079/L.",
+        "prn": false,
+        "cycle_specific": null
+      },
+      {
+        "drug_id": "antifungal_prophylaxis",
+        "drug_name": "Antifungal prophylaxis",
+        "dose": null,
+        "dose_unit": null,
+        "route": "Oral",
+        "days": [],
+        "frequency": null,
+        "duration_days": null,
+        "special_instructions": "According to consultant choice. Continue until neutrophils are greater than 1x10\u2079/L.",
+        "prn": false,
+        "cycle_specific": null
+      },
+      {
+        "drug_id": "gastric_protection",
+        "drug_name": "Proton pump inhibitor or H2 antagonist",
+        "dose": null,
+        "dose_unit": null,
+        "route": "Oral",
+        "days": [],
+        "frequency": null,
+        "duration_days": null,
+        "special_instructions": "May be considered in patients at high risk of GI ulceration or bleed.",
+        "prn": false,
+        "cycle_specific": null
+      },
+      {
+        "drug_id": "mouthwash",
+        "drug_name": "Mouthwash",
+        "dose": null,
+        "dose_unit": null,
+        "route": "Topical",
+        "days": [],
+        "frequency": null,
+        "duration_days": null,
+        "special_instructions": "According to local or national policy on the treatment of mucositis.",
+        "prn": false,
+        "cycle_specific": null
+      }
+    ],
+    "rescue_medications": [],
+    "dose_modifications": [
+      {
+        "rule_id": "amsacrine_bili_gt_34",
+        "parameter": "bilirubin",
+        "parameter_unit": "\u00b5mol/L",
+        "condition": "> 34",
+        "condition_type": "greater_than",
+        "threshold_value": 34,
+        "threshold_low": null,
+        "threshold_high": null,
+        "affected_drugs": [
+          "amsacrine"
+        ],
+        "modification_type": "reduce",
+        "modification_percent": 60,
+        "description": "Reduce amsacrine to 60% of original dose if bilirubin > 34 \u00b5mol/L",
+        "action_text": "Amsacrine reduced to 60% due to bilirubin > 34 \u00b5mol/L",
+        "priority": 1
+      },
+      {
+        "rule_id": "cytarabine_bili_gt_34",
+        "parameter": "bilirubin",
+        "parameter_unit": "\u00b5mol/L",
+        "condition": "> 34",
+        "condition_type": "greater_than",
+        "threshold_value": 34,
+        "threshold_low": null,
+        "threshold_high": null,
+        "affected_drugs": [
+          "cytarabine"
+        ],
+        "modification_type": "reduce",
+        "modification_percent": 50,
+        "description": "Reduce cytarabine to 50% of original dose if bilirubin > 34 \u00b5mol/L. Escalate doses in subsequent cycles in the absence of toxicity.",
+        "action_text": "Cytarabine reduced to 50% due to bilirubin > 34 \u00b5mol/L",
+        "priority": 1
+      },
+      {
+        "rule_id": "etoposide_hepatic_tier1",
+        "parameter": "bilirubin",
+        "parameter_unit": "\u00b5mol/L",
+        "condition": "26-51",
+        "condition_type": "range",
+        "threshold_value": null,
+        "threshold_low": 26,
+        "threshold_high": 51,
+        "affected_drugs": [
+          "etoposide"
+        ],
+        "modification_type": "reduce",
+        "modification_percent": 50,
+        "description": "Reduce etoposide to 50% of original dose if bilirubin is 26-51 \u00b5mol/L and AST/ALT is 60-180 units/L.",
+        "action_text": "Etoposide reduced to 50% due to hepatic impairment.",
+        "priority": 2
+      },
+      {
+        "rule_id": "etoposide_hepatic_tier2",
+        "parameter": "bilirubin",
+        "parameter_unit": "\u00b5mol/L",
+        "condition": "> 51",
+        "condition_type": "greater_than",
+        "threshold_value": 51,
+        "threshold_low": null,
+        "threshold_high": null,
+        "affected_drugs": [
+          "etoposide"
+        ],
+        "modification_type": "consider_modification",
+        "modification_percent": null,
+        "description": "Clinical decision for etoposide dose if bilirubin > 51 \u00b5mol/L and AST/ALT > 180 units/L.",
+        "action_text": "Clinical decision required for etoposide dose due to severe hepatic impairment.",
+        "priority": 1
+      },
+      {
+        "rule_id": "amsacrine_crcl_lt_60",
+        "parameter": "creatinine_clearance",
+        "parameter_unit": "ml/min",
+        "condition": "< 60",
+        "condition_type": "less_than",
+        "threshold_value": 60,
+        "threshold_low": null,
+        "threshold_high": null,
+        "affected_drugs": [
+          "amsacrine"
+        ],
+        "modification_type": "reduce",
+        "modification_percent": 75,
+        "description": "Reduce amsacrine to 75% of original dose if Creatinine Clearance < 60 ml/min",
+        "action_text": "Amsacrine reduced to 75% due to Creatinine Clearance < 60 ml/min",
+        "priority": 2
+      },
+      {
+        "rule_id": "cytarabine_crcl_range_45_59",
+        "parameter": "creatinine_clearance",
+        "parameter_unit": "ml/min",
+        "condition": "45-59",
+        "condition_type": "range",
+        "threshold_value": null,
+        "threshold_low": 45,
+        "threshold_high": 59,
+        "affected_drugs": [
+          "cytarabine"
+        ],
+        "modification_type": "reduce",
+        "modification_percent": 60,
+        "description": "Reduce cytarabine to 60% of original dose if Creatinine Clearance < 60 ml/min",
+        "action_text": "Cytarabine reduced to 60% due to Creatinine Clearance < 60 ml/min",
+        "priority": 3
+      },
+      {
+        "rule_id": "cytarabine_crcl_range_30_44",
+        "parameter": "creatinine_clearance",
+        "parameter_unit": "ml/min",
+        "condition": "30-44",
+        "condition_type": "range",
+        "threshold_value": null,
+        "threshold_low": 30,
+        "threshold_high": 44,
+        "affected_drugs": [
+          "cytarabine"
+        ],
+        "modification_type": "reduce",
+        "modification_percent": 50,
+        "description": "Reduce cytarabine to 50% of original dose if Creatinine Clearance < 45 ml/min",
+        "action_text": "Cytarabine reduced to 50% due to Creatinine Clearance < 45 ml/min",
+        "priority": 2
+      },
+      {
+        "rule_id": "cytarabine_crcl_lt_30",
+        "parameter": "creatinine_clearance",
+        "parameter_unit": "ml/min",
+        "condition": "< 30",
+        "condition_type": "less_than",
+        "threshold_value": 30,
+        "threshold_low": null,
+        "threshold_high": null,
+        "affected_drugs": [
+          "cytarabine"
+        ],
+        "modification_type": "consider_modification",
+        "modification_percent": null,
+        "description": "Discuss dose with consultant if Creatinine Clearance < 30 ml/min",
+        "action_text": "Consultant discussion required for Cytarabine dose due to Creatinine Clearance < 30 ml/min",
+        "priority": 1
+      },
+      {
+        "rule_id": "etoposide_crcl_15_50",
+        "parameter": "creatinine_clearance",
+        "parameter_unit": "ml/min",
+        "condition": "15-50",
+        "condition_type": "range",
+        "threshold_value": null,
+        "threshold_low": 15,
+        "threshold_high": 50,
+        "affected_drugs": [
+          "etoposide"
+        ],
+        "modification_type": "reduce",
+        "modification_percent": 75,
+        "description": "Reduce etoposide to 75% of original dose if Creatinine Clearance is 15-50 ml/min",
+        "action_text": "Etoposide reduced to 75% due to Creatinine Clearance 15-50 ml/min",
+        "priority": 2
+      },
+      {
+        "rule_id": "etoposide_crcl_lt_15",
+        "parameter": "creatinine_clearance",
+        "parameter_unit": "ml/min",
+        "condition": "< 15",
+        "condition_type": "less_than",
+        "threshold_value": 15,
+        "threshold_low": null,
+        "threshold_high": null,
+        "affected_drugs": [
+          "etoposide"
+        ],
+        "modification_type": "reduce",
+        "modification_percent": 50,
+        "description": "Reduce etoposide to 50% of original dose if Creatinine Clearance < 15 ml/min",
+        "action_text": "Etoposide reduced to 50% due to Creatinine Clearance < 15 ml/min",
+        "priority": 1
+      }
+    ],
+    "hematological_toxicity_rules": [],
+    "non_hematological_toxicity_rules": [],
+    "metabolic_monitoring": [],
+    "age_based_modifications": [],
+    "cumulative_toxicity_tracking": [
+      {
+        "drug_class": "anthracycline-like",
+        "drugs": [
+          "amsacrine"
+        ],
+        "standard_limit_mg_m2": null,
+        "monitoring": "Prior to starting treatment consider an ECG, ECHO or MUGA scan if there is a cardiac history, the patient is elderly or has a previous history suggestive of potential cardiac disease.",
+        "reduced_limits": [],
+        "warning_at_percent": null,
+        "alert_text": "Amsacrine has cardiac toxicity similar to anthracyclines. Monitor cardiac function as indicated."
+      }
+    ],
+    "treatment_delay_criteria": [
+      {
+        "parameter": "neutrophils",
+        "threshold": "< 1.0",
+        "threshold_value": 1.0,
+        "delay_until": "\u2265 1.0 x10\u2079/L",
+        "max_delay_weeks": null,
+        "action_if_not_recovered": "Delay treatment until recovery. Always check with the relevant consultant."
+      },
+      {
+        "parameter": "platelets",
+        "threshold": "< 100",
+        "threshold_value": 100,
+        "delay_until": "\u2265 100 x10\u2079/L",
+        "max_delay_weeks": null
+      }
+    ],
+    "baseline_requirements": [
+      {
+        "test": "FBC",
+        "includes": null,
+        "timing": "Prior to starting a cycle of treatment",
+        "required": true
+      },
+      {
+        "test": "renal_function",
+        "includes": [
+          "U&Es"
+        ],
+        "timing": "Prior to starting a cycle of treatment",
+        "required": true
+      },
+      {
+        "test": "liver_function",
+        "includes": [
+          "LFTs"
+        ],
+        "timing": "Prior to starting a cycle of treatment",
+        "required": true
+      },
+      {
+        "test": "cardiac_function",
+        "includes": [
+          "ECG",
+          "ECHO",
+          "MUGA"
+        ],
+        "timing": "Prior to starting treatment",
+        "required": "conditional",
+        "condition": "Patient has a cardiac history, is elderly, or has a previous history suggestive of potential cardiac disease."
+      }
+    ],
+    "pre_cycle_labs": [
+      {
+        "test": "FBC",
+        "timing": "Prior to starting a cycle of treatment",
+        "required": true
+      },
+      {
+        "test": "U&Es",
+        "timing": "Prior to starting a cycle of treatment",
+        "required": true
+      },
+      {
+        "test": "LFTs",
+        "timing": "Prior to starting a cycle of treatment",
+        "required": true
+      }
+    ],
+    "post_cycle_monitoring": [],
+    "toxicities": [
+      {
+        "drug_id": "amsacrine",
+        "adverse_effects": [
+          "Nausea",
+          "mucositis",
+          "alopecia",
+          "hepatotoxicity",
+          "cardiac toxicity",
+          "arrhythmias"
+        ],
+        "severity_grades": {
+          "arrhythmias": "Risk increased by hypokalaemia"
+        }
+      },
+      {
+        "drug_id": "cytarabine",
+        "adverse_effects": [
+          "Nausea",
+          "vomiting",
+          "diarrhoea",
+          "fever",
+          "rash",
+          "itching",
+          "anorexia",
+          "oral and anal inflammation or ulceration",
+          "hepatic dysfunction",
+          "ocular pain",
+          "foreign body sensation",
+          "photophobia and blurred vision",
+          "dizziness",
+          "headache",
+          "confusion",
+          "cerebellar toxicity",
+          "myalgia",
+          "bone pain"
+        ],
+        "severity_grades": null
+      },
+      {
+        "drug_id": "etoposide",
+        "adverse_effects": [
+          "Nausea",
+          "mucositis",
+          "alopecia",
+          "anaphylactic reactions"
+        ],
+        "severity_grades": null
+      }
+    ],
+    "monitoring": [
+      "U&Es, LFTs and FBC prior to starting a cycle of treatment",
+      "Prior to starting treatment consider an ECG, ECHO or MUGA scan if there is a cardiac history, the patient is elderly or has a previous history suggestive of potential cardiac disease.",
+      "Consider blood transfusion if the patient symptomatic of anaemia or has a haemoglobin of less than 8g/dL (80g/L)."
+    ],
+    "warnings": [
+      "\u26a0\ufe0f AI-EXTRACTED: This protocol was parsed by AI from PDF and requires pharmacist verification before clinical use. Doses, routes, and schedules must be independently verified against the original source document.",
+      "Amsacrine is a vesicant.",
+      "Etoposide is an irritant.",
+      "Cytarabine is an irritant in large volumes.",
+      "In principle all dose reductions due to adverse drug reactions should not be re-escalated in subsequent cycles without consultant approval.",
+      "It is a general rule for chemotherapy that if a third dose reduction is necessary treatment should be stopped.",
+      "Discuss all dose reductions with the relevant consultant."
+    ],
+    "cycle_variations": [],
+    "_metadata": {
+      "source_file": "AmsacrineCytarabineEtoposide-MACE.pdf",
+      "file_hash": "e49f9a8190a37c83c4a7d1ced4d6f176",
+      "disease_category": "lymphoma",
+      "parsed_at": "2026-02-06T07:51:19.508708",
+      "parser_version": "2.0",
+      "ai_generated": true,
+      "pharmacist_verified": false,
+      "verification_required": true,
+      "verification_warning": "\u26a0\ufe0f AI-EXTRACTED PROTOCOL: This protocol was automatically extracted by AI and has NOT been verified by a pharmacist. DO NOT use for patient care until verified."
+    },
+    "source_filename": "AmsacrineCytarabineEtoposide-MACE.pdf"
+  },
+  {
+    "protocol_id": "aml_cytarabine_3000mg_m2_ambulatory",
+    "protocol_code": "AMB-CYTARABINE",
+    "protocol_name": "ACUTE MYELOID LEUKAEMIA",
+    "full_name": "Acute Myeloid Leukaemia - Amb-Cytarabine (3000mg/m\u00b2)",
+    "indication": "Consolidation for good risk acute myeloid leukaemia following induction chemotherapy. Relapsed disease post transplant.",
+    "cycle_length_days": 28,
+    "total_cycles": 1,
+    "version": "1.0",
+    "drugs": [
+      {
+        "drug_id": "cytarabine",
+        "drug_name": "Cytarabine",
+        "dose": 3000,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          3,
+          5
+        ],
+        "duration_minutes": 240,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "administration_order": 2,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Administered twice daily (12 hours apart, e.g., 10:00 and 22:00) via CADD pump for intermittent infusion. Each daily dose consists of two 3000mg/m\u00b2 infusions. Although typically prepared as 6000mg/m\u00b2 in a single 500ml bag, each individual 3000mg/m\u00b2 dose is infused in 250ml over 240 minutes. Total of 6 doses per cycle."
+      },
+      {
+        "drug_id": "sodium_chloride_0_9_percent",
+        "drug_name": "Sodium Chloride 0.9%",
+        "dose": 0.5,
+        "dose_unit": "ml/hour",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": 100,
+        "administration_order": 1,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Continuous infusion administered via folfusor pump. Connected via Y-site with CADD pump to maintain line patency. Disconnect folfusor at the same time as disconnecting CADD cassette."
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_id": "ondansetron",
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "timing": "15-30 minutes prior to chemotherapy",
+        "special_instructions": "May be given orally. Refer to patient schedule."
+      },
+      {
+        "drug_id": "metoclopramide",
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "timing": "15-30 minutes prior to chemotherapy",
+        "special_instructions": "May be given orally. Refer to patient schedule."
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_id": "ondansetron",
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "frequency": "Once daily (evening) on Day 1, then twice daily on days 2-7",
+        "special_instructions": null,
+        "prn": false
+      },
+      {
+        "drug_id": "metoclopramide",
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "frequency": "Up to twice daily on Day 1, then three times daily when required",
+        "special_instructions": "Take in the afternoon and evening on Day 1. Subsequently, take three times a day when required.",
+        "prn": true
+      },
+      {
+        "drug_id": "aciclovir",
+        "drug_name": "Aciclovir",
+        "dose": 400,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": null,
+        "frequency": "Three times a day",
+        "special_instructions": "Continue until neutrophils are greater than 1x10\u2079/L. Supply for 28 days.",
+        "prn": false
+      },
+      {
+        "drug_id": "prednisolone_eye_drops_0_5_percent",
+        "drug_name": "Prednisolone eye drops 0.5%",
+        "dose": 1,
+        "dose_unit": "drop",
+        "route": "Topical",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "frequency": "Four times a day",
+        "special_instructions": "Instil 1 drop into both eyes for 10 days.",
+        "prn": false
+      },
+      {
+        "drug_id": "allopurinol",
+        "drug_name": "Allopurinol",
+        "dose": 300,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "frequency": "Once daily",
+        "special_instructions": "To be given for 7 days. Not generally required where cytarabine is prescribed in the consolidation setting. Review for cycle 2 or if consolidation treatment.",
+        "prn": false
+      },
+      {
+        "drug_id": "nystatin",
+        "drug_name": "Nystatin",
+        "dose": 1,
+        "dose_unit": "ml",
+        "route": "Oral",
+        "days": null,
+        "frequency": "Four times a day",
+        "special_instructions": "Pharmacy to supply 1 x original pack.",
+        "prn": false
+      },
+      {
+        "drug_id": "sodium_chloride_0_9_percent_oral_rinse",
+        "drug_name": "Sodium Chloride 0.9% oral rinse",
+        "dose": 10,
+        "dose_unit": "ml",
+        "route": "Oral",
+        "days": null,
+        "frequency": "Four times a day",
+        "special_instructions": "Consider use. Pharmacy to supply 50 x 10mL pods.",
+        "prn": false
+      },
+      {
+        "drug_id": "chlorhexidine_gluconate_mouthwash",
+        "drug_name": "Chlorhexidine Gluconate 10ml mouthwash",
+        "dose": 10,
+        "dose_unit": "ml",
+        "route": "Oromucosal",
+        "days": null,
+        "frequency": "Four times a day",
+        "special_instructions": "When required.",
+        "prn": true
+      },
+      {
+        "drug_id": "esomeprazole",
+        "drug_name": "Esomeprazole",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": null,
+        "frequency": "Once daily",
+        "special_instructions": "Consider for patients at high risk of GI ulceration or bleed. Choice of gastric protection is dependent on local formulary choice. (Example PPI)",
+        "prn": true
+      },
+      {
+        "drug_id": "ranitidine",
+        "drug_name": "Ranitidine",
+        "dose": 150,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": null,
+        "frequency": "Twice daily",
+        "special_instructions": "Consider for patients at high risk of GI ulceration or bleed. Choice of gastric protection is dependent on local formulary choice. (Example H2 antagonist)",
+        "prn": true
+      },
+      {
+        "drug_id": "ciprofloxacin",
+        "drug_name": "Ciprofloxacin",
+        "dose": 250,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": null,
+        "frequency": "Twice daily",
+        "special_instructions": "Supportive antimicrobial. To be commenced only if and when directed by the haematology team when neutrophils are below 0.5 x10\u2079/L. Supply for 28 days.",
+        "prn": true
+      },
+      {
+        "drug_id": "posaconazole",
+        "drug_name": "Posaconazole",
+        "dose": 300,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": null,
+        "frequency": "Once daily",
+        "special_instructions": "Supportive antifungal. To be commenced only if and when directed by the haematology team when neutrophils are below 0.5 x10\u2079/L. Discuss choice of antifungal with consultant. Supply for 28 days.",
+        "prn": true
+      }
+    ],
+    "rescue_medications": [],
+    "dose_modifications": [
+      {
+        "parameter": "neutrophils",
+        "condition": "< 1.0",
+        "affected_drugs": [
+          "cytarabine"
+        ],
+        "modification": "delay",
+        "modification_percent": null,
+        "description": "Delay treatment until neutrophils \u2265 1.0 x10\u2079/L. Always check with the relevant consultant."
+      },
+      {
+        "parameter": "platelets",
+        "condition": "< 100",
+        "affected_drugs": [
+          "cytarabine"
+        ],
+        "modification": "delay",
+        "modification_percent": null,
+        "description": "Delay treatment until platelets \u2265 100 x10\u2079/L. Always check with the relevant consultant."
+      },
+      {
+        "parameter": "hemoglobin",
+        "condition": "< 8",
+        "affected_drugs": [],
+        "modification": "transfusion_consideration",
+        "modification_percent": null,
+        "description": "Consider blood transfusion if the patient is symptomatic of anaemia or has a haemoglobin of less than 8g/dL (80g/L)."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "> 34",
+        "affected_drugs": [
+          "cytarabine"
+        ],
+        "modification": "reduce_50",
+        "modification_percent": 50,
+        "description": "Bilirubin > 34 \u00b5mol/L: reduce Cytarabine dose to 50% of the original dose. Escalate doses in subsequent cycles in the absence of toxicity."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "< 60",
+        "affected_drugs": [
+          "cytarabine"
+        ],
+        "modification": "reduce_60",
+        "modification_percent": 60,
+        "description": "Creatinine clearance < 60 ml/min: reduce Cytarabine dose to 60% of the original dose."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "< 45",
+        "affected_drugs": [
+          "cytarabine"
+        ],
+        "modification": "reduce_50",
+        "modification_percent": 50,
+        "description": "Creatinine clearance < 45 ml/min: reduce Cytarabine dose to 50% of the original dose."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "< 30",
+        "affected_drugs": [
+          "cytarabine"
+        ],
+        "modification": "consult_physician",
+        "modification_percent": null,
+        "description": "Creatinine clearance < 30 ml/min: Discuss with consultant."
+      }
+    ],
+    "toxicities": [
+      {
+        "drug_id": "cytarabine",
+        "adverse_effects": [
+          "Nausea",
+          "Vomiting",
+          "Diarrhoea",
+          "Fever",
+          "Rash",
+          "Itching",
+          "Anorexia",
+          "Oral inflammation or ulceration",
+          "Anal inflammation or ulceration",
+          "Hepatic dysfunction",
+          "Ocular pain",
+          "Foreign body sensation",
+          "Photophobia",
+          "Blurred vision",
+          "Dizziness",
+          "Headache",
+          "Confusion",
+          "Cerebellar toxicity",
+          "Myalgia",
+          "Bone pain"
+        ]
+      }
+    ],
+    "monitoring": [
+      "U&Es, LFTs and FBC prior to starting a cycle of treatment"
+    ],
+    "warnings": [
+      "This regimen is for AMBULATORY CARE pathway use only.",
+      "The standard Cytarabine dose is 3000mg/m\u00b2. This may be decreased to 1500mg/m\u00b2 for patients over 60 years or those with relapsed post-transplant disease if the 3000mg/m\u00b2 dose is not tolerated.",
+      "All dose reductions due to adverse drug reactions should not be re-escalated in subsequent cycles without consultant approval.",
+      "If a third dose reduction is necessary, treatment should be stopped.",
+      "Cytarabine is classified as a neutral irritant (in large volumes) regarding extravasation risk.",
+      "Always refer to the patient schedule for supportive treatments and fluids.",
+      "The regimen consists of 1-2 cycles. A second cycle, if required, should proceed when there is neutrophil and platelet recovery and response to cycle one has been assessed."
+    ],
+    "cycle_variations": [
+      {
+        "cycles": [
+          2
+        ],
+        "description": "Cycle two, if required, should proceed when there is neutrophil and platelet recovery and the response to cycle one has been assessed.",
+        "drugs_modified": []
+      }
+    ],
+    "_metadata": {
+      "source_file": "20260123_075959_AmB-Cytarabine-3000.pdf",
+      "file_hash": "3c45fb46537e1d8bb4aebd2d836421d1",
+      "disease_category": "leukemia",
+      "parsed_at": "2026-01-23T08:00:55.740650",
+      "parser_version": "1.0"
+    },
+    "source_filename": "AmB-Cytarabine-3000 (1).pdf"
+  },
+  {
+    "protocol_id": "nhs_haematology_azacitidine_sc_5plus2",
+    "protocol_code": "AZACITIDINE SC 5+2",
+    "protocol_name": "Azacitidine SC (5+2 days)",
+    "full_name": "Azacitidine Subcutaneous (5+2 days)",
+    "indication": "Treatment option for adults who are not eligible for haematopoietic stem cell transplantation and have: intermediate-2 and high-risk myelodysplastic syndrome (MDS) according to the International Prognostic Scoring System (IPSS); or chronic myelomonocytic leukaemia (CMML) with 10-29% marrow blasts without proliferative features; or acute myeloid leukaemia (AML) with 20% and above blasts and multi-lineage dysplasia, according to World Health Organisation (WHO) classification. Also for post transplant use.",
+    "cycle_length_days": 28,
+    "total_cycles": 6,
+    "version": "1",
+    "treatment_intent": "palliative",
+    "drugs": [
+      {
+        "drug_id": "azacitidine",
+        "drug_name": "Azacitidine",
+        "dose": 75,
+        "dose_unit": "mg/m\u00b2",
+        "route": "Subcutaneous",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          8,
+          9
+        ],
+        "duration_minutes": 1,
+        "diluent": "Water for Injections",
+        "diluent_volume_ml": null,
+        "administration_order": 1,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "max_dose_reason": null,
+        "frequency": null,
+        "special_instructions": "Re-suspend before administration by inverting syringe 2-3 times and vigorously rolling between palms for 30 seconds. Administer into upper arm, thigh or abdomen, rotating sites. Give new injections at least 2.5 cm from previous site and never into tender, bruised, red, or hardened areas. Doses > 100mg (4mL) should be injected into two separate sites. Day one of the cycle should be a Monday. Dose will be dose banded according to national dose bands (25mg/ml).",
+        "age_based_cap": null,
+        "cumulative_limit": null,
+        "infusion_rate_modifications": null
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_id": "ondansetron",
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral or intravenous",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          8,
+          9
+        ],
+        "timing": "15-30 minutes prior to chemotherapy",
+        "timing_minutes": 30,
+        "special_instructions": null
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_id": "metoclopramide",
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": null,
+        "frequency": "Three times a day when required",
+        "duration_days": null,
+        "special_instructions": "For nausea. Supply 28 tablets.",
+        "prn": true,
+        "cycle_specific": null
+      },
+      {
+        "drug_id": "allopurinol",
+        "drug_name": "Allopurinol",
+        "dose": 300,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "frequency": "Once a day",
+        "duration_days": 7,
+        "special_instructions": null,
+        "prn": false,
+        "cycle_specific": "Cycle 1 only"
+      },
+      {
+        "drug_id": "hydrocortisone_cream_1_percent",
+        "drug_name": "Hydrocortisone 1% cream",
+        "dose": null,
+        "dose_unit": null,
+        "route": "Topical",
+        "days": null,
+        "frequency": "Up to four times a day when required",
+        "duration_days": null,
+        "special_instructions": "Apply sparingly to the injection site for relief of inflammation. Supply 30g.",
+        "prn": true,
+        "cycle_specific": "Cycle 1 only"
+      },
+      {
+        "drug_id": "senna",
+        "drug_name": "Senna",
+        "dose": 15,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": null,
+        "frequency": "At night when required",
+        "duration_days": null,
+        "special_instructions": "For relief of constipation. Supply 28 tablets.",
+        "prn": true,
+        "cycle_specific": null
+      }
+    ],
+    "rescue_medications": [],
+    "dose_modifications": [
+      {
+        "rule_id": "renal_creat_bun_high",
+        "parameter": "creatinine",
+        "parameter_unit": null,
+        "condition": "> 2xULN",
+        "condition_type": "greater_than",
+        "threshold_value": null,
+        "threshold_low": null,
+        "threshold_high": null,
+        "affected_drugs": [
+          "azacitidine"
+        ],
+        "modification_type": "delay",
+        "modification_percent": 50,
+        "description": "If Creatinine or Blood Urea Nitrogen (BUN) is greater than 2xULN, delay treatment until normal or baseline, then resume at 50% dose.",
+        "action_text": "Azacitidine delayed due to elevated renal function markers. Resume at 50% once values return to normal or baseline.",
+        "priority": 1
+      },
+      {
+        "rule_id": "renal_bicarb_low",
+        "parameter": "bicarbonate",
+        "parameter_unit": "mmol/L",
+        "condition": "< 19",
+        "condition_type": "less_than",
+        "threshold_value": 19,
+        "threshold_low": null,
+        "threshold_high": null,
+        "affected_drugs": [
+          "azacitidine"
+        ],
+        "modification_type": "reduce",
+        "modification_percent": 50,
+        "description": "If serum bicarbonate is less than 19 mmol/L, replace with oral sodium bicarbonate and reduce the dose of azacitidine by 50% at the next cycle.",
+        "action_text": "Reduce Azacitidine by 50% at the next cycle due to serum bicarbonate < 19 mmol/L.",
+        "priority": 2
+      },
+      {
+        "rule_id": "haem_normal_baseline_slow_recovery",
+        "parameter": "neutrophils",
+        "parameter_unit": "x10\u2079/L",
+        "condition": "Nadir neutrophils <= 1.0 or platelets <= 50, with slow recovery",
+        "condition_type": "less_equal",
+        "threshold_value": 1,
+        "threshold_low": null,
+        "threshold_high": null,
+        "affected_drugs": [
+          "azacitidine"
+        ],
+        "modification_type": "delay",
+        "modification_percent": 50,
+        "description": "Applies if baseline counts are normal (neutrophils > 1.5, platelets > 75). If nadir neutrophils <= 1.0x10\u2079/L or platelets <= 50x10\u2079/L, and recovery is not achieved within 14 days of the last dose, delay treatment until recovery and resume at 50% dose.",
+        "action_text": "Delay until recovery. If recovery > 14 days, reduce next dose to 50%.",
+        "priority": 1
+      },
+      {
+        "rule_id": "haem_low_baseline_delay",
+        "parameter": "neutrophils",
+        "parameter_unit": "x10\u2079/L",
+        "condition": "Nadir reduction >50% from low baseline, no cell differentiation",
+        "condition_type": "equals",
+        "threshold_value": null,
+        "threshold_low": null,
+        "threshold_high": null,
+        "affected_drugs": [
+          "azacitidine"
+        ],
+        "modification_type": "delay",
+        "delay_days": null,
+        "description": "For patients with low baseline counts, if nadir reduction is >50% and there is no improvement in cell line differentiation, delay treatment until recovery.",
+        "action_text": "Delay treatment until haematological recovery.",
+        "priority": 2
+      },
+      {
+        "rule_id": "haem_low_baseline_recovery_gt21_bm_15_50",
+        "parameter": "other",
+        "parameter_unit": null,
+        "condition": "Slow recovery (>21d) with BM cellularity 15-50%",
+        "condition_type": "range",
+        "threshold_value": null,
+        "threshold_low": null,
+        "threshold_high": null,
+        "affected_drugs": [
+          "azacitidine"
+        ],
+        "modification_type": "reduce",
+        "modification_percent": 50,
+        "description": "For patients with low baseline counts, if nadir reduction >50% with no cell differentiation and recovery takes >21 days, reduce dose to 50% if bone marrow cellularity is 15-50%.",
+        "action_text": "Reduce dose to 50% due to slow recovery and bone marrow cellularity of 15-50%.",
+        "priority": 3
+      },
+      {
+        "rule_id": "haem_low_baseline_recovery_gt21_bm_lt15",
+        "parameter": "other",
+        "parameter_unit": null,
+        "condition": "Slow recovery (>21d) with BM cellularity <15%",
+        "condition_type": "less_than",
+        "threshold_value": null,
+        "threshold_low": null,
+        "threshold_high": null,
+        "affected_drugs": [
+          "azacitidine"
+        ],
+        "modification_type": "reduce",
+        "modification_percent": 33,
+        "description": "For patients with low baseline counts, if nadir reduction >50% with no cell differentiation and recovery takes >21 days, reduce dose to 33% if bone marrow cellularity is <15%.",
+        "action_text": "Reduce dose to 33% due to slow recovery and bone marrow cellularity of <15%.",
+        "priority": 3
+      }
+    ],
+    "hematological_toxicity_rules": [
+      {
+        "toxicity_type": "neutropenia",
+        "grade": null,
+        "threshold": "<= 1.0",
+        "threshold_value": 1.0,
+        "action": "delay",
+        "delay_days": null,
+        "additional_notes": "For patients with normal baseline counts. If recovery from nadir takes > 14 days, reduce subsequent dose to 50%."
+      },
+      {
+        "toxicity_type": "thrombocytopenia",
+        "grade": null,
+        "threshold": "<= 50",
+        "threshold_low": null,
+        "threshold_high": 50,
+        "action": "delay",
+        "additional_notes": "For patients with normal baseline counts. If recovery from nadir takes > 14 days, reduce subsequent dose to 50%."
+      }
+    ],
+    "non_hematological_toxicity_rules": [
+      {
+        "toxicity_type": "renal_tubular_dysfunction",
+        "affected_drugs": [
+          "azacitidine"
+        ],
+        "action": "reduce",
+        "action_text": "If serum bicarbonate is < 19mmol/L, reduce Azacitidine dose by 50% at the next cycle.",
+        "parameter": "bicarbonate",
+        "threshold": "< 19 mmol/L"
+      },
+      {
+        "toxicity_type": "hypersensitivity",
+        "affected_drugs": [
+          "azacitidine"
+        ],
+        "action": "discontinue",
+        "action_text": "In case of an anaphylactic-like reaction, treatment with azacitidine should be immediately discontinued and appropriate symptomatic treatment initiated.",
+        "grade": null
+      }
+    ],
+    "metabolic_monitoring": [],
+    "age_based_modifications": [],
+    "cumulative_toxicity_tracking": [],
+    "treatment_delay_criteria": [
+      {
+        "parameter": "neutrophils",
+        "threshold": "<= 1.0",
+        "threshold_value": 1.0,
+        "delay_until": "haematological recovery",
+        "max_delay_weeks": null,
+        "action_if_not_recovered": "If recovery >14 days (with normal baseline) reduce dose to 50%. If baseline was low, follow specific BM cellularity-based dose modification rules."
+      },
+      {
+        "parameter": "platelets",
+        "threshold": "<= 50",
+        "threshold_value": 50,
+        "delay_until": "haematological recovery",
+        "max_delay_weeks": null,
+        "action_if_not_recovered": "If recovery >14 days (with normal baseline) reduce dose to 50%. If baseline was low, follow specific BM cellularity-based dose modification rules."
+      },
+      {
+        "parameter": "renal_function",
+        "condition": "Creatinine or BUN > 2xULN",
+        "delay_until": "Normal or baseline"
+      }
+    ],
+    "baseline_requirements": [
+      {
+        "test": "FBC",
+        "includes": [
+          "neutrophils",
+          "platelets",
+          "hemoglobin"
+        ],
+        "timing": "Before cycle 1",
+        "required": true
+      },
+      {
+        "test": "renal_function",
+        "includes": [
+          "creatinine",
+          "urea"
+        ],
+        "timing": "Before cycle 1",
+        "required": true
+      },
+      {
+        "test": "liver_function",
+        "includes": [
+          "ALT",
+          "bilirubin"
+        ],
+        "timing": "Before cycle 1",
+        "required": true
+      },
+      {
+        "test": "serum_bicarbonate",
+        "includes": [
+          "bicarbonate"
+        ],
+        "timing": "Before cycle 1",
+        "required": true
+      },
+      {
+        "test": "cardiopulmonary_assessment",
+        "includes": [],
+        "timing": "Before and during treatment",
+        "required": "conditional",
+        "condition": "Known history of cardiovascular or pulmonary disease"
+      },
+      {
+        "test": "tls_risk_assessment",
+        "includes": [],
+        "timing": "Before starting treatment",
+        "required": true
+      }
+    ],
+    "pre_cycle_labs": [
+      {
+        "test": "FBC",
+        "timing": "Weekly for the first cycle, then prior to each subsequent cycle",
+        "required": true
+      },
+      {
+        "test": "U&Es",
+        "timing": "Prior to each cycle",
+        "required": true
+      },
+      {
+        "test": "LFT",
+        "timing": "Prior to each cycle",
+        "required": true
+      },
+      {
+        "test": "Serum Bicarbonate",
+        "timing": "Prior to each cycle",
+        "required": true
+      }
+    ],
+    "post_cycle_monitoring": [],
+    "toxicities": [
+      {
+        "drug_id": "azacitidine",
+        "adverse_effects": [
+          "Gastrointestinal disturbance",
+          "Injection site reactions",
+          "Haemorrhagic events",
+          "Febrile neutropenia",
+          "Sepsis",
+          "Pneumonia",
+          "Necrotising fasciitis",
+          "Hypokalaemia",
+          "Tumour lysis syndrome",
+          "Bone marrow suppression",
+          "Leg ulcers"
+        ],
+        "severity_grades": {}
+      }
+    ],
+    "monitoring": [
+      "FBC weekly for the first cycle",
+      "LFTs, U&Es and serum bicarbonate at baseline and then prior to each subsequent cycle or more frequently as clinically indicated.",
+      "Assess for risk of tumour lysis syndrome (TLS) before starting treatment. Start appropriate TLS prophylaxis depending on risk.",
+      "Patients with a known history of cardiovascular or pulmonary disease should undergo a full cardiopulmonary assessment before and during treatment.",
+      "Monitor serum bicarbonate, urea and creatinine for renal tubular dysfunction."
+    ],
+    "warnings": [
+      "\u26a0\ufe0f AI-EXTRACTED: This protocol was parsed by AI from PDF and requires pharmacist verification before clinical use. Doses, routes, and schedules must be independently verified against the original source document.",
+      "This is not a licensed dosage schedule.",
+      "Azacitidine is contraindicated in patients with advanced malignant hepatic tumours.",
+      "Azacitidine is contraindicated in those allergic to mannitol.",
+      "Serious hypersensitivity reactions have been reported. Discontinue immediately if an anaphylactic-like reaction occurs.",
+      "Soft tissue infections, including cellulitis and necrotising fasciitis in rare cases leading to death, have been reported."
+    ],
+    "cycle_variations": [
+      {
+        "cycles": [
+          1
+        ],
+        "description": "Cycle 1 has specific supportive care and monitoring.",
+        "drugs_modified": [
+          {
+            "drug_id": "allopurinol",
+            "modification": "Administered for 7 days in cycle 1 only for TLS prophylaxis."
+          },
+          {
+            "drug_id": "hydrocortisone_cream_1_percent",
+            "modification": "Prescribed for cycle 1 only for injection site reactions."
+          }
+        ],
+        "monitoring_modified": [
+          {
+            "test": "FBC",
+            "modification": "Monitor weekly during the first cycle."
+          }
+        ]
+      }
+    ],
+    "_metadata": {
+      "source_file": "Azacitidine5-2Ver1.pdf",
+      "file_hash": "a55e3f6dfa484c087ff86b5aae46e66e",
+      "disease_category": "lymphoma",
+      "parsed_at": "2026-02-06T07:52:41.351368",
+      "parser_version": "2.0",
+      "ai_generated": true,
+      "pharmacist_verified": false,
+      "verification_required": true,
+      "verification_warning": "\u26a0\ufe0f AI-EXTRACTED PROTOCOL: This protocol was automatically extracted by AI and has NOT been verified by a pharmacist. DO NOT use for patient care until verified."
+    },
+    "source_filename": "Azacitidine5-2Ver1.pdf"
+  },
+  {
+    "protocol_id": "aml_all_clofarabine_cytarabine_inp",
+    "protocol_code": "CLOFARABINE-CYTARABINE",
+    "protocol_name": "Clofarabine-Cytarabine",
+    "full_name": "Clofarabine and Cytarabine In-Patient Regimen for Acute Myeloid Leukaemia / ALL",
+    "indication": "Relapsed/refractory acute myeloid leukaemia and acute lymphocytic leukemia",
+    "cycle_length_days": null,
+    "total_cycles": "1-2",
+    "version": "1.0",
+    "treatment_intent": "curative",
+    "drugs": [
+      {
+        "drug_id": "clofarabine",
+        "drug_name": "Clofarabine",
+        "dose": 40,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": null,
+        "administration_order": 1,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "max_dose_reason": null,
+        "frequency": "Once daily",
+        "special_instructions": "Diluent volume varies based on dose: doses \u2264 74.9mg in 100ml; doses 75mg-124.9mg in 150ml; doses 125mg-130mg in 200ml. Administer using a 0.2micron or 0.22 micron in-line filter if not filtered during manufacturing. Extravasation: neutral.",
+        "age_based_cap": null,
+        "cumulative_limit": null,
+        "infusion_rate_modifications": [
+          {
+            "condition": "Neurotoxicity (agitation, anxiety, somnolence, dystonia)",
+            "initial_rate": null,
+            "escalation": null,
+            "special_instruction": "Increase infusion time to 120 minutes."
+          }
+        ]
+      },
+      {
+        "drug_id": "cytarabine",
+        "drug_name": "Cytarabine",
+        "dose": 1000,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "duration_minutes": 120,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "administration_order": 2,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "max_dose_reason": null,
+        "frequency": "Once daily",
+        "special_instructions": "Administration should be started four hours after completion of the clofarabine infusion. Extravasation: neutral (irritant in large volumes).",
+        "age_based_cap": null,
+        "cumulative_limit": null,
+        "infusion_rate_modifications": []
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_id": "hydrocortisone_infusion_reaction",
+        "drug_name": "Hydrocortisone",
+        "dose": "50-100",
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "timing": "Immediately prior to clofarabine infusion",
+        "timing_minutes": 0,
+        "special_instructions": "To prevent infusion related reactions."
+      },
+      {
+        "drug_id": "ondansetron",
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "timing": "15-30 minutes before chemotherapy",
+        "timing_minutes": 30,
+        "frequency": "Twice a day",
+        "special_instructions": "May be administered intravenously."
+      },
+      {
+        "drug_id": "metoclopramide",
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "prn": true,
+        "indication": "Nausea",
+        "timing": "As required",
+        "timing_minutes": null,
+        "frequency": "Three times a day when required",
+        "special_instructions": "May be administered intravenously."
+      },
+      {
+        "drug_id": "hydrocortisone_prophylaxis",
+        "drug_name": "Hydrocortisone",
+        "dose": 100,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3
+        ],
+        "timing": null,
+        "timing_minutes": null,
+        "special_instructions": "Prophylactic use to prevent Tumour Lysis Syndrome and Systemic Inflammatory Response Syndrome. This is a recommendation, not mandatory."
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_id": "aciclovir",
+        "drug_name": "Aciclovir",
+        "dose": 400,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [],
+        "frequency": "Twice a day",
+        "duration_days": null,
+        "special_instructions": "Continue until neutrophils are greater than 1.0 x10\u2079/L.",
+        "prn": false,
+        "cycle_specific": null
+      },
+      {
+        "drug_id": "prednisolone_eye_drops",
+        "drug_name": "Prednisolone eye drops",
+        "dose": 0.5,
+        "dose_unit": "mcg",
+        "route": "Topical",
+        "days": [],
+        "frequency": "Four times a day",
+        "duration_days": null,
+        "special_instructions": "1 drop (0.5%) into each eye four times a day. Continue for 5 days after cytarabine administration is complete.",
+        "prn": false,
+        "cycle_specific": null
+      },
+      {
+        "drug_id": "allopurinol",
+        "drug_name": "Allopurinol",
+        "dose": 300,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "frequency": "Once a day",
+        "duration_days": 7,
+        "special_instructions": "For first 7 days of initial induction chemotherapy. Consider intravenous rasburicase in high risk individuals as an alternative.",
+        "prn": false,
+        "cycle_specific": "First course only"
+      },
+      {
+        "drug_id": "gastric_protection",
+        "drug_name": "Proton Pump Inhibitor or H2 Antagonist",
+        "dose": null,
+        "dose_unit": null,
+        "route": "Oral",
+        "days": [],
+        "frequency": null,
+        "duration_days": null,
+        "special_instructions": "May be considered in patients at high risk of GI ulceration or bleed.",
+        "prn": true,
+        "cycle_specific": null
+      },
+      {
+        "drug_id": "antifungal_prophylaxis",
+        "drug_name": "Antifungal Prophylaxis",
+        "dose": null,
+        "dose_unit": null,
+        "route": "Oral",
+        "days": [],
+        "frequency": null,
+        "duration_days": null,
+        "special_instructions": "Discuss the need and choice of antifungal with a consultant. Azole antifungal agents are contra-indicated during clofarabine administration.",
+        "prn": false,
+        "cycle_specific": null
+      }
+    ],
+    "rescue_medications": [],
+    "dose_modifications": [
+      {
+        "rule_id": "clofarabine_crcl_lt_30",
+        "parameter": "creatinine_clearance",
+        "parameter_unit": "ml/min",
+        "condition": "< 30",
+        "condition_type": "less_than",
+        "threshold_value": 30,
+        "threshold_low": null,
+        "threshold_high": null,
+        "affected_drugs": [
+          "clofarabine"
+        ],
+        "modification_type": "consider_modification",
+        "modification_percent": null,
+        "description": "Discuss with consultant if Creatinine Clearance is less than 30 ml/min",
+        "action_text": "Clofarabine dose requires consultant discussion due to CrCl < 30 ml/min",
+        "priority": 1
+      },
+      {
+        "rule_id": "clofarabine_crcl_30_60",
+        "parameter": "creatinine_clearance",
+        "parameter_unit": "ml/min",
+        "condition": "30-60",
+        "condition_type": "range",
+        "threshold_value": null,
+        "threshold_low": 30,
+        "threshold_high": 60,
+        "affected_drugs": [
+          "clofarabine"
+        ],
+        "modification_type": "reduce",
+        "modification_percent": 50,
+        "description": "Reduce clofarabine to 50% if Creatinine Clearance is 30-60 ml/min",
+        "action_text": "Clofarabine reduced to 50% because CrCl is between 30-60 ml/min",
+        "priority": 2
+      },
+      {
+        "rule_id": "cytarabine_crcl_lt_30",
+        "parameter": "creatinine_clearance",
+        "parameter_unit": "ml/min",
+        "condition": "< 30",
+        "condition_type": "less_than",
+        "threshold_value": 30,
+        "threshold_low": null,
+        "threshold_high": null,
+        "affected_drugs": [
+          "cytarabine"
+        ],
+        "modification_type": "omit",
+        "modification_percent": 0,
+        "description": "Omit cytarabine if Creatinine Clearance < 30 ml/min",
+        "action_text": "Cytarabine omitted because CrCl < 30 ml/min",
+        "priority": 1
+      },
+      {
+        "rule_id": "cytarabine_crcl_lt_45",
+        "parameter": "creatinine_clearance",
+        "parameter_unit": "ml/min",
+        "condition": "< 45",
+        "condition_type": "less_than",
+        "threshold_value": 45,
+        "threshold_low": null,
+        "threshold_high": null,
+        "affected_drugs": [
+          "cytarabine"
+        ],
+        "modification_type": "reduce",
+        "modification_percent": 50,
+        "description": "Reduce cytarabine to 50% if Creatinine Clearance < 45 ml/min",
+        "action_text": "Cytarabine reduced to 50% because CrCl < 45 ml/min",
+        "priority": 2
+      },
+      {
+        "rule_id": "cytarabine_crcl_lt_60",
+        "parameter": "creatinine_clearance",
+        "parameter_unit": "ml/min",
+        "condition": "< 60",
+        "condition_type": "less_than",
+        "threshold_value": 60,
+        "threshold_low": null,
+        "threshold_high": null,
+        "affected_drugs": [
+          "cytarabine"
+        ],
+        "modification_type": "reduce",
+        "modification_percent": 60,
+        "description": "Reduce cytarabine to 60% if Creatinine Clearance < 60 ml/min",
+        "action_text": "Cytarabine reduced to 60% because CrCl < 60 ml/min",
+        "priority": 3
+      },
+      {
+        "rule_id": "cytarabine_bili_gt_34",
+        "parameter": "bilirubin",
+        "parameter_unit": "\u00b5mol/L",
+        "condition": "> 34",
+        "condition_type": "greater_than",
+        "threshold_value": 34,
+        "threshold_low": null,
+        "threshold_high": null,
+        "affected_drugs": [
+          "cytarabine"
+        ],
+        "modification_type": "reduce",
+        "modification_percent": 50,
+        "description": "Reduce cytarabine to 50% if bilirubin > 34 \u00b5mol/L. Escalate doses in subsequent cycles in the absence of toxicity.",
+        "action_text": "Cytarabine reduced to 50% because bilirubin > 34 \u00b5mol/L",
+        "priority": 1
+      },
+      {
+        "rule_id": "clofarabine_hepatic_caution",
+        "parameter": "liver_function",
+        "parameter_unit": null,
+        "condition": "mild to moderate impairment",
+        "condition_type": "qualitative",
+        "affected_drugs": [
+          "clofarabine"
+        ],
+        "modification_type": "consider_modification",
+        "description": "Use with caution in mild to moderate hepatic impairment.",
+        "action_text": "Caution: Clofarabine in mild-moderate hepatic impairment. Review dose.",
+        "priority": 2
+      },
+      {
+        "rule_id": "clofarabine_hepatic_avoid",
+        "parameter": "liver_function",
+        "parameter_unit": null,
+        "condition": "severe impairment",
+        "condition_type": "qualitative",
+        "affected_drugs": [
+          "clofarabine"
+        ],
+        "modification_type": "omit",
+        "description": "Avoid in severe hepatic impairment.",
+        "action_text": "Avoid Clofarabine due to severe hepatic impairment.",
+        "priority": 1
+      },
+      {
+        "rule_id": "non_haem_toxicity_grade_3_plus",
+        "parameter": "non_haematological_toxicity",
+        "parameter_unit": "NCI-CTC grade",
+        "condition": ">= 3",
+        "condition_type": "greater_equal",
+        "threshold_value": 3,
+        "affected_drugs": [
+          "all"
+        ],
+        "modification_type": "delay",
+        "description": "For non-haematological NCI-CTC grade 3 and above toxicities delay treatment until resolution to grade 1 or below. Dose of causative agent may then be reduced or discontinued at consultant discretion.",
+        "action_text": "Delay treatment due to Grade 3+ non-haematological toxicity until resolves to <= Grade 1. Consider dose reduction on restart.",
+        "priority": 1
+      }
+    ],
+    "hematological_toxicity_rules": [
+      {
+        "toxicity_type": "anaemia",
+        "parameter": "hemoglobin",
+        "grade": null,
+        "threshold": "< 80",
+        "threshold_value": 80,
+        "threshold_unit": "g/L",
+        "action": "consider_transfusion",
+        "additional_notes": "Consider blood transfusion if patient is symptomatic of anaemia or haemoglobin is less than 80 g/L."
+      }
+    ],
+    "non_hematological_toxicity_rules": [
+      {
+        "toxicity_type": "neurotoxicity",
+        "symptoms": [
+          "agitation",
+          "anxiety",
+          "somnolence",
+          "dystonia"
+        ],
+        "affected_drugs": [
+          "clofarabine"
+        ],
+        "action": "modify_infusion",
+        "action_text": "For clofarabine-related neurotoxicity, the infusion time should be increased to 120 minutes."
+      },
+      {
+        "toxicity_type": "sirs_capillary_leak",
+        "symptoms": [
+          "tachypnoea",
+          "tachycardia",
+          "hypotension",
+          "pulmonary oedema",
+          "capillary leak syndrome",
+          "organ dysfunction"
+        ],
+        "affected_drugs": [
+          "clofarabine"
+        ],
+        "action": "omit",
+        "action_text": "Discontinue clofarabine immediately if early signs of SIRS, capillary leak syndrome or substantial organ dysfunction develop."
+      }
+    ],
+    "metabolic_monitoring": [],
+    "age_based_modifications": [],
+    "cumulative_toxicity_tracking": [],
+    "treatment_delay_criteria": [],
+    "baseline_requirements": [
+      {
+        "test": "FBC",
+        "includes": [
+          "neutrophils",
+          "platelets",
+          "hemoglobin"
+        ],
+        "timing": "Prior to start of treatment",
+        "required": true
+      },
+      {
+        "test": "renal_function",
+        "includes": [
+          "creatinine",
+          "creatinine_clearance",
+          "urea",
+          "electrolytes"
+        ],
+        "timing": "Prior to start of treatment",
+        "required": true
+      },
+      {
+        "test": "liver_function",
+        "includes": [
+          "bilirubin",
+          "ALT",
+          "AST",
+          "ALP"
+        ],
+        "timing": "Prior to start of treatment",
+        "required": true
+      }
+    ],
+    "pre_cycle_labs": [
+      {
+        "test": "FBC",
+        "timing": "Each day prior to administration of clofarabine",
+        "required": true
+      },
+      {
+        "test": "U&Es",
+        "timing": "Each day prior to administration of clofarabine",
+        "required": true
+      },
+      {
+        "test": "LFTs",
+        "timing": "Each day prior to administration of clofarabine",
+        "required": true
+      }
+    ],
+    "post_cycle_monitoring": [
+      {
+        "test": "Bone marrow aspirate and trephine",
+        "timing": "Between days 18-21",
+        "purpose": "Assess response to treatment",
+        "action_on_abnormal": null
+      }
+    ],
+    "toxicities": [
+      {
+        "drug_id": "clofarabine",
+        "adverse_effects": [
+          "Nausea",
+          "vomiting",
+          "febrile neutropenia",
+          "headache",
+          "rash",
+          "diarrhoea",
+          "pruritus",
+          "pyrexia",
+          "palma-plantar erythrodysaesthesia syndrome",
+          "cytokine release syndrome",
+          "SIRS",
+          "capillary leak syndrome",
+          "tachypnoea",
+          "hypotension",
+          "pulmonary oedema"
+        ],
+        "severity_grades": {}
+      },
+      {
+        "drug_id": "cytarabine",
+        "adverse_effects": [
+          "Nausea",
+          "vomiting",
+          "diarrhoea",
+          "fever",
+          "rash",
+          "anorexia",
+          "oral and anal inflammation or ulceration",
+          "hepatic dysfunction"
+        ],
+        "severity_grades": {}
+      }
+    ],
+    "monitoring": [
+      "FBC, LFTs and U&Es each day prior to the administration of clofarabine.",
+      "Blood pressure, fluid balance and weight throughout the administration period.",
+      "Monitor for signs and symptoms of tumour lysis syndrome and cytokine release (e.g. tachypnoea, tachycardia, hypotension, pulmonary oedema).",
+      "Notify local blood transfusion department to ensure irradiated blood products are available and issue patient with an alert card."
+    ],
+    "warnings": [
+      "\u26a0\ufe0f AI-EXTRACTED: This protocol was parsed by AI from PDF and requires pharmacist verification before clinical use. Doses, routes, and schedules must be independently verified against the original source document.",
+      "Clofarabine not licensed in adult patients. This may require funding.",
+      "Patients treated with clofarabine carry a lifelong risk of transfusion associated graft versus host disease (TA-GVHD). These patients must receive only irradiated blood products for life.",
+      "Discontinue Clofarabine immediately for signs of Systemic Inflammatory Response Syndrome (SIRS), capillary leak syndrome or substantial organ dysfunction.",
+      "Azole antifungal agents are contra-indicated during clofarabine administration.",
+      "Take care with aminoglycosides during clofarabine administration.",
+      "Co-trimoxazole is not recommended as it delays the recovery of the blood count.",
+      "Dose reductions should not be re-escalated in subsequent cycles without consultant approval.",
+      "If a third dose reduction is necessary, treatment should be stopped."
+    ],
+    "cycle_variations": [],
+    "_metadata": {
+      "source_file": "ClofarabineCytarabine.pdf",
+      "file_hash": "58a8d41d88423769950b29dbaf963ebd",
+      "disease_category": "lymphoma",
+      "parsed_at": "2026-02-06T07:54:04.102534",
+      "parser_version": "2.0",
+      "ai_generated": true,
+      "pharmacist_verified": false,
+      "verification_required": true,
+      "verification_warning": "\u26a0\ufe0f AI-EXTRACTED PROTOCOL: This protocol was automatically extracted by AI and has NOT been verified by a pharmacist. DO NOT use for patient care until verified."
+    },
+    "source_filename": "ClofarabineCytarabine.pdf"
+  }
+]

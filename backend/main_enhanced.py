@@ -18,11 +18,12 @@ import uvicorn
 
 from models import (
     ProtocolRequest, ProtocolResponse, ProtocolSummary, DrugSummary,
-    PatientData, Protocol
+    PatientData, Protocol, CustomRegimenRequest
 )
 from engine import ProtocolEngine, calculate_bsa_mosteller, calculate_creatinine_clearance
 from protocol_data import get_all_protocols, get_all_drugs, PROTOCOLS, DRUGS
 from gemini_parser import GeminiProtocolParser, ProtocolIngestionService
+from adapters import PatientStateAdapter
 
 # Load environment variables
 load_dotenv()
@@ -253,6 +254,62 @@ async def generate_protocol(request: ProtocolRequest):
         raise HTTPException(status_code=404, detail=str(e))
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error generating protocol: {str(e)}")
+
+
+@app.post("/api/v1/protocol/generate-from-patient-json", response_model=ProtocolResponse)
+async def generate_from_patient_json(
+    protocol_code: str,
+    patient_json: dict,
+    target_cycle: Optional[int] = None,
+):
+    """
+    Generate a protocol from a raw patient JSON (e.g. from mobile app or WhatsApp form).
+    The adapter handles unit conversion, post-cycle lab selection, and virology fields.
+
+    Pass the raw patient record as the request body and the protocol code as a query param.
+    """
+    refresh_engine()
+    try:
+        patient = PatientStateAdapter.adapt(patient_json, target_cycle=target_cycle)
+    except ValueError as e:
+        raise HTTPException(status_code=422, detail=f"Patient data error: {e}")
+
+    request = ProtocolRequest(
+        protocol_code=protocol_code,
+        patient=patient,
+        cycle_number=target_cycle or 1,
+    )
+    try:
+        return engine.generate_protocol(request)
+    except ValueError as e:
+        raise HTTPException(status_code=404, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/api/v1/protocol/generate-custom", response_model=ProtocolResponse)
+async def generate_custom_regimen(request: CustomRegimenRequest):
+    """
+    Generate a protocol from a custom drug list built in the Flexible Protocol Builder.
+
+    This endpoint accepts any combination of drugs the clinician has assembled — e.g.:
+    - Azacitidine alone
+    - Venetoclax alone
+    - Aza + Ven
+    - Aza + 7+3 (custom combination)
+
+    The same BSA calculations, vincristine cap, allergy checks and delay logic apply,
+    but no protocol-level dose modification rules are enforced.
+
+    A pharmacist verification gate is always required for the output.
+    """
+    try:
+        response = engine.generate_custom_regimen(request)
+        return response
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error generating custom regimen: {str(e)}")
 
 
 @app.get("/api/v1/protocol/{protocol_code}/drugs")

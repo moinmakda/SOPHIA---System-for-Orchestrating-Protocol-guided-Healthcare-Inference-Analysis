@@ -26,6 +26,21 @@ class ApiClient {
       
       if (!response.ok) {
         const errorData = await response.json().catch(() => ({}));
+        
+        // Handle Pydantic validation errors (422)
+        if (response.status === 422 && errorData.detail) {
+          if (Array.isArray(errorData.detail)) {
+            // Format validation errors nicely
+            const errorMessages = errorData.detail.map(err => {
+              const field = err.loc ? err.loc.slice(1).join('.') : 'unknown';
+              const msg = err.msg || 'Validation error';
+              return `${field}: ${msg}`;
+            });
+            throw new Error(`Validation Error:\n${errorMessages.join('\n')}`);
+          }
+          throw new Error(errorData.detail);
+        }
+        
         throw new Error(errorData.detail || `HTTP error ${response.status}`);
       }
       
@@ -58,6 +73,13 @@ class ApiClient {
 
   async generateProtocol(request) {
     return this.request('/api/v1/protocol/generate', {
+      method: 'POST',
+      body: JSON.stringify(request),
+    });
+  }
+
+  async generateCustomRegimen(request) {
+    return this.request('/api/v1/protocol/generate-custom', {
       method: 'POST',
       body: JSON.stringify(request),
     });

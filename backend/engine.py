@@ -1,14 +1,214 @@
 """
 Chemotherapy Protocol Engine - Core Logic
 Handles dose calculations, modifications, and drug selection
+
+SAFETY CRITICAL: This module contains life-critical dose calculation logic.
+All changes must be reviewed by a clinical pharmacist and oncologist.
+
+Key Safety Features:
+- BSA capping at 2.0 m² for obese patients (ASCO guidelines)
+- Hard stops for contraindicated lab values
+- CRITICAL alerts for max dose caps (especially vincristine)
+- Allergy cross-checking
+- Performance status and age-based modifications
 """
 
 from typing import Optional
 import re
+from datetime import datetime
 from models import (
     Protocol, ProtocolDrug, PatientData, ProtocolRequest, ProtocolResponse,
-    CalculatedDose, Warning, DoseModificationRule, DoseUnit, CycleVariation
+    CalculatedDose, Warning, DoseModificationRule, DoseUnit, CycleVariation,
+    BSA_CAP_OBESE, NEUTROPHIL_DELAY_THRESHOLD, PLATELET_DELAY_THRESHOLD,
+    ECOGPerformanceStatus, HematologicalToxicityRule, NonHematologicalToxicityRule,
+    AgeBasedModification, CumulativeToxicityTracking, MetabolicMonitoringRule,
+    CustomRegimenRequest, CustomRegimenDrug
 )
+
+
+# Drugs with CRITICAL max dose requirements (overdose = death/permanent injury)
+CRITICAL_MAX_DOSE_DRUGS = {
+    'vincristine': {'max_mg': 2.0, 'reason': 'Overdose causes permanent paralysis and death'},
+    'vinblastine': {'max_mg': None, 'reason': 'Vesicant with severe toxicity'},
+}
+
+# Drugs requiring irradiated blood products permanently
+IRRADIATED_BLOOD_DRUGS = ['bendamustine', 'fludarabine', 'cladribine', 'clofarabine']
+
+# Common drug allergy cross-reactivity groups
+ALLERGY_CROSS_REACTIVITY = {
+    'platinum': ['cisplatin', 'carboplatin', 'oxaliplatin'],
+    'taxane': ['paclitaxel', 'docetaxel'],
+    'anthracycline': ['doxorubicin', 'daunorubicin', 'epirubicin', 'idarubicin'],
+}
+
+# Anthracycline equivalent conversion factors (to doxorubicin equivalent)
+ANTHRACYCLINE_EQUIVALENCE = {
+    'doxorubicin': 1.0,
+    'daunorubicin': 0.83,  # 60mg daunorubicin ≈ 50mg doxorubicin
+    'epirubicin': 0.5,     # More cardiotoxic at same dose
+    'idarubicin': 5.0,     # Much more potent
+}
+
+
+# ============= HELPER FUNCTIONS FOR DOSE CALCULATIONS =============
+
+def evaluate_condition(value: float, rule: DoseModificationRule) -> bool:
+    """
+    Evaluate if a lab value meets a dose modification condition.
+    Supports: less_than, greater_than, range, less_equal, greater_equal, equals
+    """
+    if value is None:
+        return False
+    
+    cond_type = rule.condition_type.lower().replace("_", "")
+    
+    # Range condition (e.g., 10-29)
+    if cond_type == "range":
+        if rule.threshold_low is not None and rule.threshold_high is not None:
+            return rule.threshold_low <= value <= rule.threshold_high
+        # Fallback: parse from condition string like "10-29"
+        if "-" in rule.condition:
+            parts = rule.condition.split("-")
+            try:
+                low, high = float(parts[0].strip()), float(parts[1].strip())
+                return low <= value <= high
+            except (ValueError, IndexError):
+                pass
+        return False
+    
+    # Single threshold conditions
+    threshold = rule.threshold_value
+    if threshold is None:
+        # Try to parse from condition string
+        condition = rule.condition.strip()
+        try:
+            if condition.startswith("<="):
+                threshold = float(condition[2:].strip())
+                cond_type = "lessequal"
+            elif condition.startswith(">="):
+                threshold = float(condition[2:].strip())
+                cond_type = "greaterequal"
+            elif condition.startswith("<"):
+                threshold = float(condition[1:].strip())
+                cond_type = "lessthan"
+            elif condition.startswith(">"):
+                threshold = float(condition[1:].strip())
+                cond_type = "greaterthan"
+            elif condition.startswith("="):
+                threshold = float(condition[1:].strip())
+                cond_type = "equals"
+        except ValueError:
+            return False
+    
+    if threshold is None:
+        return False
+    
+    if cond_type in ("lessthan", "lt", "<"):
+        return value < threshold
+    elif cond_type in ("lessequal", "lte", "le", "<="):
+        return value <= threshold
+    elif cond_type in ("greaterthan", "gt", ">"):
+        return value > threshold
+    elif cond_type in ("greaterequal", "gte", "ge", ">="):
+        return value >= threshold
+    elif cond_type in ("equals", "eq", "="):
+        return abs(value - threshold) < 0.001
+    
+    return False
+
+
+def get_modification_factor(rule: DoseModificationRule) -> float:
+    """Get the dose modification factor (0 = omit, 0.5 = 50%, 0.75 = 75%, 1.0 = no change)"""
+    mod_type = rule.modification_type.lower() if rule.modification_type else ""
+    
+    if mod_type == "omit" or rule.modification_percent == 0:
+        return 0.0
+    
+    if rule.modification_percent is not None:
+        return rule.modification_percent / 100.0
+    
+    # Parse from modification string like "reduce_50"
+    mod_str = (rule.modification or "").lower()
+    if "omit" in mod_str:
+        return 0.0
+    
+    # Look for percentage in modification string
+    import re
+    match = re.search(r'(\d+)', mod_str)
+    if match:
+        percent = int(match.group(1))
+        # "reduce_50" means give 50% of dose
+        # "reduce by 25%" means give 75% of dose
+        if "by" in mod_str:
+            return (100 - percent) / 100.0
+        return percent / 100.0
+    
+    return 1.0
+
+
+def calculate_cumulative_anthracycline_dose(
+    prior_dose_mg_m2: float,
+    current_protocol_doses: list[tuple[str, float]],  # List of (drug_name, dose_mg_m2)
+    num_cycles: int,
+    bsa: float
+) -> tuple[float, float]:
+    """
+    Calculate cumulative anthracycline dose in doxorubicin equivalents.
+    Returns (projected_total_dose, projected_dose_after_protocol)
+    """
+    # Convert prior dose (assume already in doxorubicin equivalent)
+    total_dose = prior_dose_mg_m2
+    
+    # Add current protocol doses
+    protocol_anthracycline_per_cycle = 0.0
+    for drug_name, dose_mg_m2 in current_protocol_doses:
+        drug_lower = drug_name.lower()
+        if drug_lower in ANTHRACYCLINE_EQUIVALENCE:
+            protocol_anthracycline_per_cycle += dose_mg_m2 * ANTHRACYCLINE_EQUIVALENCE[drug_lower]
+    
+    projected_protocol_total = protocol_anthracycline_per_cycle * num_cycles
+    projected_total = total_dose + projected_protocol_total
+    
+    return (total_dose, projected_total)
+
+
+def check_anthracycline_limit(
+    patient_age: int,
+    prior_anthracycline_mg_m2: float,
+    projected_total_mg_m2: float,
+    has_cardiac_history: bool = False,
+    has_mediastinal_radiation: bool = False
+) -> tuple[bool, str, float]:
+    """
+    Check if anthracycline lifetime limit would be exceeded.
+    Returns (limit_exceeded, warning_message, applicable_limit)
+    """
+    # Determine applicable limit
+    if has_cardiac_history:
+        limit = 400
+        reason = "cardiac history"
+    elif patient_age >= 70:
+        limit = 400
+        reason = "age ≥70"
+    elif has_mediastinal_radiation:
+        limit = 350
+        reason = "prior mediastinal radiation"
+    else:
+        limit = 450
+        reason = "standard limit"
+    
+    if projected_total_mg_m2 > limit:
+        return (True, f"Lifetime anthracycline limit ({limit} mg/m² due to {reason}) will be exceeded. "
+                      f"Projected total: {projected_total_mg_m2:.1f} mg/m²", limit)
+    
+    # Warning at 80% of limit
+    if projected_total_mg_m2 > limit * 0.8:
+        return (False, f"Approaching anthracycline lifetime limit. "
+                       f"Prior: {prior_anthracycline_mg_m2:.1f} mg/m², "
+                       f"Projected: {projected_total_mg_m2:.1f} mg/m² (limit: {limit} mg/m²)", limit)
+    
+    return (False, "", limit)
 
 
 class ProtocolEngine:
@@ -26,16 +226,68 @@ class ProtocolEngine:
         return None
     
     def generate_protocol(self, request: ProtocolRequest) -> ProtocolResponse:
-        """Generate a personalized protocol based on request"""
+        """
+        Generate a personalized protocol based on request.
+        
+        SAFETY CRITICAL: This method includes multiple safety checks:
+        1. Treatment delay validation
+        2. Allergy cross-checking
+        3. BSA capping for obese patients
+        4. Age and performance status modifications
+        5. Cumulative toxicity warnings
+        """
         
         protocol = self.get_protocol(request.protocol_code)
         if not protocol:
             raise ValueError(f"Protocol not found: {request.protocol_code}")
         
         patient = request.patient
-        bsa = patient.calculated_bsa
+        # SAFETY: Use capped BSA (2.0 m² max) to prevent overdosing in obese patients
+        bsa = patient.capped_bsa
         warnings: list[Warning] = []
         modifications_applied: list[str] = []
+        
+        # SAFETY CHECK 1: Treatment delay required?
+        if patient.requires_delay:
+            for reason in patient.delay_reasons:
+                warnings.append(Warning(
+                    level="critical",
+                    message=f"⚠️ TREATMENT DELAY RECOMMENDED: {reason}. Consider postponing until values recover."
+                ))
+        
+        # SAFETY CHECK 2: BSA capping notification
+        if patient.bsa_was_capped:
+            warnings.append(Warning(
+                level="warning",
+                message=f"BSA capped at {BSA_CAP_OBESE} m² (actual: {patient.calculated_bsa:.2f} m²) per ASCO guidelines for obese patients."
+            ))
+            modifications_applied.append(f"BSA capped: {patient.calculated_bsa:.2f} → {BSA_CAP_OBESE} m²")
+        
+        # SAFETY CHECK 3: Elderly patient warning
+        if patient.elderly_patient:
+            warnings.append(Warning(
+                level="warning",
+                message=f"Patient age {patient.age_years} years - consider 20-25% dose reduction per institutional guidelines."
+            ))
+        
+        # SAFETY CHECK 4: Poor performance status
+        if patient.poor_performance_status:
+            warnings.append(Warning(
+                level="critical",
+                message=f"ECOG Performance Status {patient.performance_status.value} - Full-dose chemotherapy may not be appropriate. Consider dose reduction or alternative treatment."
+            ))
+        
+        # SAFETY CHECK 5: Check for allergies to protocol drugs
+        allergy_warnings = self._check_allergies(protocol, patient)
+        warnings.extend(allergy_warnings)
+        
+        # SAFETY CHECK 6: Cumulative toxicity warnings
+        cumulative_warnings = self._check_cumulative_toxicity(protocol, patient)
+        warnings.extend(cumulative_warnings)
+        
+        # SAFETY CHECK 7: Irradiated blood products
+        irradiated_warnings = self._check_irradiated_blood(protocol)
+        warnings.extend(irradiated_warnings)
         
         # Get cycle-specific drugs
         cycle_drugs, cycle_take_home, cycle_instructions = self._get_cycle_specific_content(
@@ -45,20 +297,20 @@ class ProtocolEngine:
         # Calculate doses for core drugs
         chemo_doses = []
         for drug in cycle_drugs:
-            if self._should_include_drug(drug, request):
+            if self._should_include_drug(drug, request, patient):
                 calc_dose, drug_warnings, mods = self._calculate_dose(
                     drug, patient, bsa, request, protocol.dose_modifications
                 )
+                warnings.extend(drug_warnings)
+                modifications_applied.extend(mods)
                 if calc_dose:
                     chemo_doses.append(calc_dose)
-                    warnings.extend(drug_warnings)
-                    modifications_applied.extend(mods)
         
         # Calculate pre-medication doses
         premed_doses = []
         if request.include_premeds:
             for drug in protocol.pre_medications:
-                if self._should_include_drug(drug, request):
+                if self._should_include_drug(drug, request, patient):
                     calc_dose, drug_warnings, mods = self._calculate_dose(
                         drug, patient, bsa, request, []
                     )
@@ -70,7 +322,7 @@ class ProtocolEngine:
         take_home_doses = []
         if request.include_take_home:
             for drug in cycle_take_home:
-                if self._should_include_drug(drug, request):
+                if self._should_include_drug(drug, request, patient):
                     calc_dose, drug_warnings, mods = self._calculate_dose(
                         drug, patient, bsa, request, []
                     )
@@ -82,7 +334,7 @@ class ProtocolEngine:
         rescue_doses = []
         if request.include_rescue:
             for drug in protocol.rescue_medications:
-                if self._should_include_drug(drug, request):
+                if self._should_include_drug(drug, request, patient):
                     calc_dose, drug_warnings, mods = self._calculate_dose(
                         drug, patient, bsa, request, []
                     )
@@ -96,6 +348,12 @@ class ProtocolEngine:
         # Combine special instructions
         all_instructions = protocol.warnings + cycle_instructions
         
+        # Add safety disclaimer as first instruction
+        all_instructions = [
+            "⚠️ SAFETY NOTICE: This protocol is generated by SOPHIA for clinical decision support only. "
+            "Independent verification by prescriber and pharmacist is REQUIRED before administration."
+        ] + all_instructions
+        
         return ProtocolResponse(
             protocol_id=protocol.id,
             protocol_name=protocol.name,
@@ -105,7 +363,11 @@ class ProtocolEngine:
             cycle_length_days=protocol.cycle_length_days,
             total_cycles=protocol.total_cycles,
             patient_bsa=round(bsa, 2),
+            patient_bsa_actual=round(patient.calculated_bsa, 2),
+            patient_bsa_capped=patient.bsa_was_capped,
             patient_weight=patient.weight_kg,
+            patient_age=patient.age_years,
+            patient_performance_status=patient.performance_status.value,
             pre_medications=premed_doses,
             chemotherapy_drugs=chemo_doses,
             take_home_medicines=take_home_doses,
@@ -113,8 +375,249 @@ class ProtocolEngine:
             monitoring_requirements=protocol.monitoring,
             special_instructions=all_instructions,
             warnings=warnings,
-            dose_modifications_applied=modifications_applied
+            dose_modifications_applied=modifications_applied,
+            # Audit trail
+            generated_at=datetime.now().isoformat(),
+            protocol_version=protocol.version,
+            treatment_delay_recommended=patient.requires_delay,
+            delay_reasons=patient.delay_reasons if patient.requires_delay else [],
+            is_ai_generated=getattr(protocol, 'is_ai_generated', False),
         )
+
+    def generate_custom_regimen(self, request: CustomRegimenRequest) -> ProtocolResponse:
+        """
+        Generate a protocol from a fully custom drug list built by the clinician.
+        Applies the same safety checks (BSA capping, delay detection, allergy alerts)
+        but does NOT apply protocol-level dose modification rules — the clinician has
+        already made those decisions when they built the regimen.
+        """
+        patient = request.patient
+        bsa = patient.capped_bsa
+        warnings: list[Warning] = []
+        modifications_applied: list[str] = []
+
+        # Standard safety checks
+        if patient.requires_delay:
+            for reason in patient.delay_reasons:
+                warnings.append(Warning(
+                    level="critical",
+                    message=f"⚠️ TREATMENT DELAY RECOMMENDED: {reason}."
+                ))
+
+        if patient.bsa_was_capped:
+            warnings.append(Warning(
+                level="warning",
+                message=f"BSA capped at {BSA_CAP_OBESE} m² (actual: {patient.calculated_bsa:.2f} m²) per ASCO guidelines."
+            ))
+            modifications_applied.append(f"BSA capped: {patient.calculated_bsa:.2f} → {BSA_CAP_OBESE} m²")
+
+        if patient.elderly_patient:
+            warnings.append(Warning(
+                level="warning",
+                message=f"Patient age {patient.age_years} years — consider dose reduction."
+            ))
+
+        if patient.poor_performance_status:
+            warnings.append(Warning(
+                level="critical",
+                message=f"ECOG {patient.performance_status.value} — full-dose chemotherapy may not be appropriate."
+            ))
+
+        # Allergy checks against custom drugs
+        for drug in request.drugs:
+            if patient.has_allergy_to(drug.drug_name):
+                warnings.append(Warning(
+                    level="critical",
+                    message=f"⚠️ ALLERGY ALERT: Patient has documented allergy to {drug.drug_name}."
+                ))
+            # Cross-reactivity
+            drug_lower = drug.drug_name.lower()
+            for group, members in ALLERGY_CROSS_REACTIVITY.items():
+                if drug_lower in [m.lower() for m in members]:
+                    for allergy in patient.known_allergies:
+                        if allergy.lower() in [m.lower() for m in members] and allergy.lower() != drug_lower:
+                            warnings.append(Warning(
+                                level="critical",
+                                message=f"⚠️ CROSS-REACTIVITY: Patient allergic to {allergy}, {drug.drug_name} is in same class ({group})."
+                            ))
+
+        # Vincristine hard cap
+        for drug in request.drugs:
+            if 'vincristine' in drug.drug_name.lower():
+                unit = drug.dose_unit.lower().replace(" ", "")
+                is_bsa_unit = 'mg/m' in unit or 'mgm' in unit
+                calc = drug.dose * bsa if is_bsa_unit else drug.dose
+                if calc > 2.0:
+                    warnings.append(Warning(
+                        level="critical",
+                        message=f"⚠️ VINCRISTINE HARD CAP: Calculated dose {calc:.2f}mg exceeds 2mg cap. Will be limited to 2mg."
+                    ))
+                    modifications_applied.append("Vincristine capped at 2mg (absolute max)")
+
+        # Calculate doses
+        chemo_doses: list[CalculatedDose] = []
+        for drug in request.drugs:
+            unit = drug.dose_unit.lower().replace(" ", "")
+            is_bsa_unit = 'mg/m' in unit or 'mgm' in unit
+            is_weight_unit = 'mg/kg' in unit or 'mgkg' in unit
+
+            if is_bsa_unit:
+                calc = round(drug.dose * bsa, 1)
+            elif is_weight_unit:
+                calc = round(drug.dose * patient.weight_kg, 1)
+            else:
+                calc = drug.dose
+
+            # Vincristine 2mg absolute cap
+            if 'vincristine' in drug.drug_name.lower():
+                calc = min(calc, 2.0)
+
+            # Apply max_dose cap if specified
+            if drug.max_dose and calc > drug.max_dose:
+                calc = drug.max_dose
+                modifications_applied.append(f"{drug.drug_name}: capped at max dose {drug.max_dose} {drug.dose_unit}")
+
+            calc_unit = "mg" if drug.dose_unit != "units/m²" else "units"
+            if drug.dose_unit in ("units", "mcg", "g", "mg"):
+                calc_unit = drug.dose_unit
+
+            chemo_doses.append(CalculatedDose(
+                drug_id=drug.drug_name.lower().replace(" ", "_"),
+                drug_name=drug.drug_name,
+                original_dose=drug.dose,
+                original_dose_unit=drug.dose_unit,
+                calculated_dose=calc,
+                calculated_dose_unit=calc_unit,
+                route=drug.route,
+                days=drug.days,
+                duration_minutes=drug.duration_minutes,
+                diluent=drug.diluent,
+                diluent_volume_ml=drug.diluent_volume_ml,
+                frequency=drug.frequency,
+                special_instructions=drug.special_instructions,
+                prn=drug.prn,
+                dose_modified=False,
+            ))
+
+        all_instructions = [
+            "⚠️ CUSTOM REGIMEN — This is a clinician-built combination, not a validated standard protocol. "
+            "Independent verification by prescriber and pharmacist is MANDATORY before administration.",
+            "⚠️ SOPHIA applies BSA/weight calculations and hard caps only. All other dose decisions are the clinician's responsibility."
+        ]
+
+        return ProtocolResponse(
+            protocol_id="custom",
+            protocol_name=request.regimen_name,
+            protocol_code="CUSTOM",
+            indication="Custom clinician-built regimen",
+            cycle_number=request.cycle_number,
+            cycle_length_days=request.cycle_length_days,
+            total_cycles=request.total_cycles,
+            patient_bsa=round(bsa, 2),
+            patient_bsa_actual=round(patient.calculated_bsa, 2),
+            patient_bsa_capped=patient.bsa_was_capped,
+            patient_weight=patient.weight_kg,
+            patient_age=patient.age_years,
+            patient_performance_status=patient.performance_status.value,
+            pre_medications=[],
+            chemotherapy_drugs=chemo_doses,
+            take_home_medicines=[],
+            rescue_medications=[],
+            monitoring_requirements=["Regular FBC, LFTs, renal function as clinically indicated"],
+            special_instructions=all_instructions,
+            warnings=warnings,
+            dose_modifications_applied=modifications_applied,
+            generated_at=datetime.now().isoformat(),
+            protocol_version="custom",
+            treatment_delay_recommended=patient.requires_delay,
+            delay_reasons=patient.delay_reasons if patient.requires_delay else [],
+            is_ai_generated=True,  # Treat as requiring pharmacist verification
+        )
+
+    def _check_allergies(self, protocol: Protocol, patient: PatientData) -> list[Warning]:
+        """Check for allergies to protocol drugs"""
+        warnings = []
+        all_drugs = protocol.drugs + protocol.pre_medications
+        
+        for drug in all_drugs:
+            drug_name_lower = drug.drug_name.lower()
+            
+            # Check direct allergy
+            if patient.has_allergy_to(drug.drug_name):
+                warnings.append(Warning(
+                    level="critical",
+                    message=f"⚠️ ALLERGY ALERT: Patient has documented allergy to {drug.drug_name}. "
+                            f"Drug MUST be omitted or desensitization considered.",
+                    drug_id=drug.drug_id
+                ))
+            
+            # Check cross-reactivity groups
+            for group, drugs in ALLERGY_CROSS_REACTIVITY.items():
+                if drug_name_lower in [d.lower() for d in drugs]:
+                    for allergy in patient.known_allergies:
+                        if allergy.lower() in [d.lower() for d in drugs] or allergy.lower() == group:
+                            if allergy.lower() != drug_name_lower:  # Don't duplicate direct allergy
+                                warnings.append(Warning(
+                                    level="critical",
+                                    message=f"⚠️ CROSS-REACTIVITY ALERT: Patient allergic to {allergy}, "
+                                            f"{drug.drug_name} is in same class ({group}). Consider alternative.",
+                                    drug_id=drug.drug_id
+                                ))
+        
+        return warnings
+    
+    def _check_cumulative_toxicity(self, protocol: Protocol, patient: PatientData) -> list[Warning]:
+        """Check for cumulative toxicity risk"""
+        warnings = []
+        
+        # Anthracycline cumulative dose
+        if patient.prior_anthracycline_dose_mg_m2:
+            for drug in protocol.drugs:
+                if drug.drug_name.lower() in ['doxorubicin', 'daunorubicin', 'epirubicin', 'idarubicin']:
+                    remaining = 450 - patient.prior_anthracycline_dose_mg_m2
+                    if remaining <= 0:
+                        warnings.append(Warning(
+                            level="critical",
+                            message=f"⚠️ CUMULATIVE TOXICITY: Patient has received {patient.prior_anthracycline_dose_mg_m2} mg/m² "
+                                    f"prior anthracycline. Lifetime limit (450 mg/m²) EXCEEDED. Cardiac toxicity risk is very high.",
+                            drug_id=drug.drug_id
+                        ))
+                    elif remaining < 100:
+                        warnings.append(Warning(
+                            level="warning",
+                            message=f"Approaching anthracycline lifetime limit. Prior: {patient.prior_anthracycline_dose_mg_m2} mg/m², "
+                                    f"Remaining: {remaining:.0f} mg/m². Monitor cardiac function closely.",
+                            drug_id=drug.drug_id
+                        ))
+        
+        # Bleomycin cumulative dose
+        if patient.prior_bleomycin_units:
+            for drug in protocol.drugs:
+                if drug.drug_name.lower() == 'bleomycin':
+                    remaining = 400000 - patient.prior_bleomycin_units
+                    if remaining <= 0:
+                        warnings.append(Warning(
+                            level="critical",
+                            message=f"⚠️ CUMULATIVE TOXICITY: Patient has received {patient.prior_bleomycin_units} units "
+                                    f"prior bleomycin. Lifetime limit (400,000 units) EXCEEDED. Pulmonary fibrosis risk is very high.",
+                            drug_id=drug.drug_id
+                        ))
+        
+        return warnings
+    
+    def _check_irradiated_blood(self, protocol: Protocol) -> list[Warning]:
+        """Check if protocol requires irradiated blood products"""
+        warnings = []
+        
+        for drug in protocol.drugs:
+            if drug.drug_name.lower() in IRRADIATED_BLOOD_DRUGS:
+                warnings.append(Warning(
+                    level="critical",
+                    message=f"⚠️ IRRADIATED BLOOD REQUIRED: {drug.drug_name} causes permanent T-cell immunosuppression. "
+                            f"Patient requires IRRADIATED BLOOD PRODUCTS FOR LIFE. Alert transfusion department and issue patient card."
+                ))
+        
+        return warnings
     
     def _get_cycle_specific_content(
         self, protocol: Protocol, cycle_number: int
@@ -150,8 +653,15 @@ class ProtocolEngine:
             return int(parts[0]) <= cycle <= int(parts[1])
         return cycle == int(range_str)
     
-    def _should_include_drug(self, drug: ProtocolDrug, request: ProtocolRequest) -> bool:
-        """Check if a drug should be included based on request filters"""
+    def _should_include_drug(
+        self, drug: ProtocolDrug, request: ProtocolRequest, patient: PatientData = None
+    ) -> bool:
+        """
+        Check if a drug should be included based on request filters and safety.
+        
+        Note: Allergy checking is done separately to provide proper warnings.
+        This method handles administrative exclusions.
+        """
         
         # Check excluded drugs
         if drug.drug_id in request.excluded_drugs:
@@ -183,7 +693,12 @@ class ProtocolEngine:
         request: ProtocolRequest,
         modification_rules: list[DoseModificationRule]
     ) -> tuple[Optional[CalculatedDose], list[Warning], list[str]]:
-        """Calculate the actual dose for a drug"""
+        """
+        Calculate the actual dose for a drug.
+        
+        SAFETY CRITICAL: Max dose caps for certain drugs (e.g., vincristine)
+        are life-critical and must trigger CRITICAL alerts, not info.
+        """
         
         warnings: list[Warning] = []
         modifications: list[str] = []
@@ -219,47 +734,138 @@ class ProtocolEngine:
             calculated_dose = base_dose
             final_unit = dose_unit.value if hasattr(dose_unit, 'value') else str(dose_unit)
         
-        # Apply max dose cap if specified
+        # SAFETY: Apply max dose cap if specified
+        # CRITICAL for drugs like vincristine where overdose = death/permanent injury
         if drug.max_dose:
             if calculated_dose > drug.max_dose:
-                warnings.append(Warning(
-                    level="info",
-                    message=f"{drug.drug_name}: dose capped at {drug.max_dose}{drug.max_dose_unit or final_unit} (calculated: {calculated_dose:.1f})",
-                    drug_id=drug.drug_id
-                ))
-                calculated_dose = drug.max_dose
+                drug_name_lower = drug.drug_name.lower()
+                
+                # Determine if this is a CRITICAL max dose drug
+                is_critical = drug_name_lower in CRITICAL_MAX_DOSE_DRUGS
+                
+                if is_critical:
+                    critical_info = CRITICAL_MAX_DOSE_DRUGS[drug_name_lower]
+                    warnings.append(Warning(
+                        level="critical",
+                        message=f"⚠️ CRITICAL MAX DOSE CAP: {drug.drug_name} capped at {drug.max_dose}{drug.max_dose_unit or final_unit} "
+                                f"(calculated: {calculated_dose:.1f}). {critical_info['reason']}. "
+                                f"VERIFY this cap is appropriate for this patient.",
+                        drug_id=drug.drug_id
+                    ))
+                    # HARD CAP: Do not allow this to be exceeded, even by override below
+                    calculated_dose = drug.max_dose
+                    # Store max dose to check overrides against it
+                    effective_max_dose = drug.max_dose
+                else:
+                    warnings.append(Warning(
+                        level="warning",
+                        message=f"{drug.drug_name}: dose capped at {drug.max_dose}{drug.max_dose_unit or final_unit} (calculated: {calculated_dose:.1f})",
+                        drug_id=drug.drug_id
+                    ))
+                    calculated_dose = drug.max_dose
+                    effective_max_dose = drug.max_dose
+        else:
+            effective_max_dose = None
         
         dose_modified = False
         modification_reason = None
         modification_percent = None
         
         # Apply dose modifications based on lab values
+        # SAFETY: Use "most conservative" approach for multiple modifications
+        best_mod_factor = 1.0
+        best_mod_desc = None
+        all_mod_reasons = []
+        
+        def _drug_matches_rule(drug_id: str, drug_name: str, affected: list) -> bool:
+            """Normalised match: handles 'all', case differences, AI-extraction variants."""
+            if not affected:
+                return False
+            id_norm = drug_id.lower().replace(" ", "_").replace("-", "_")
+            name_norm = drug_name.lower().replace(" ", "_").replace("-", "_")
+            for d in affected:
+                d_norm = str(d).lower().replace(" ", "_").replace("-", "_")
+                if d_norm == "all":
+                    return True
+                if d_norm in (id_norm, name_norm):
+                    return True
+                if d_norm in id_norm or d_norm in name_norm:
+                    return True
+            return False
+
         for rule in modification_rules:
-            if drug.drug_id in rule.affected_drugs or drug.drug_name in rule.affected_drugs:
+            if _drug_matches_rule(drug.drug_id, drug.drug_name, rule.affected_drugs):
                 mod_applied, mod_factor, mod_desc = self._apply_modification_rule(
                     rule, patient
                 )
                 if mod_applied:
                     if mod_factor == 0:
-                        # Omit drug
+                        # Omit drug - this takes precedence over everything
                         return None, [Warning(
-                            level="warning",
-                            message=f"{drug.drug_name} omitted: {mod_desc}",
+                            level="critical",
+                            message=f"⚠️ {drug.drug_name} OMITTED: {mod_desc}",
                             drug_id=drug.drug_id
-                        )], [f"{drug.drug_name}: {mod_desc}"]
+                        )], [f"{drug.drug_name}: OMITTED - {mod_desc}"]
                     
-                    calculated_dose *= mod_factor
-                    dose_modified = True
-                    modification_reason = mod_desc
-                    modification_percent = int(mod_factor * 100)
-                    modifications.append(f"{drug.drug_name}: {mod_desc}")
+                    # SAFETY: Use "most conservative" approach
+                    # Take the lowest (most aggressive reduction) factor
+                    all_mod_reasons.append(mod_desc)
+                    if mod_factor < best_mod_factor:
+                        best_mod_factor = mod_factor
+                        best_mod_desc = mod_desc
+        
+        # Apply the single most conservative dose modification
+        if best_mod_factor < 1.0:
+            calculated_dose *= best_mod_factor
+            dose_modified = True
+            modification_reason = best_mod_desc
+            modification_percent = int(best_mod_factor * 100)
+            modifications.append(f"{drug.drug_name}: {best_mod_desc}")
+            
+            # If multiple modifications applied, warn about using most conservative
+            if len(all_mod_reasons) > 1:
+                warnings.append(Warning(
+                    level="info",
+                    message=f"{drug.drug_name}: Multiple dose modifications applicable ({', '.join(all_mod_reasons)}). "
+                            f"Using most conservative: {best_mod_desc} ({modification_percent}% of dose).",
+                    drug_id=drug.drug_id
+                ))
         
         # Apply manual override
         if override:
             if override.custom_dose is not None:
-                calculated_dose = override.custom_dose
-                dose_modified = True
-                modification_reason = "Manual override"
+                # SAFETY: Prevent override from exceeding max dose
+                if effective_max_dose and override.custom_dose > effective_max_dose:
+                     drug_name_lower = drug.drug_name.lower()
+                     if drug_name_lower in CRITICAL_MAX_DOSE_DRUGS:
+                         # CRITICAL: Reject override
+                         warnings.append(Warning(
+                             level="critical",
+                             message=f"FAILED OVERRIDE: Cannot override {drug.drug_name} to {override.custom_dose}. "
+                                     f"Strict safety cap is {effective_max_dose}. Keeping capped dose.",
+                             drug_id=drug.drug_id
+                         ))
+                         # Do NOT apply the override
+                         dose_modified = True # It IS modified from original calc, but it stands at max
+                     else:
+                         # Soft cap - warn but maybe allow? Plan says "HARD CAP with no override".
+                         # We will enforce hard cap for consistency in this safety pass.
+                         warnings.append(Warning(
+                             level="critical",
+                             message=f"SAFETY OVERRIDE BLOCKED: {drug.drug_name} cannot exceed max dose of {effective_max_dose}. "
+                                     f"Override to {override.custom_dose} ignored.",
+                             drug_id=drug.drug_id
+                         ))
+                         # Keep calculated_dose as effective_max_dose
+                else:
+                    calculated_dose = override.custom_dose
+                    dose_modified = True
+                    modification_reason = "Manual override"
+                    warnings.append(Warning(
+                        level="warning",
+                        message=f"{drug.drug_name}: Manual override applied. Dose set to {override.custom_dose}. Verify appropriateness.",
+                        drug_id=drug.drug_id
+                    ))
             elif override.dose_percent is not None:
                 calculated_dose *= (override.dose_percent / 100)
                 dose_modified = True
@@ -297,7 +903,10 @@ class ProtocolEngine:
     def _apply_modification_rule(
         self, rule: DoseModificationRule, patient: PatientData
     ) -> tuple[bool, float, str]:
-        """Apply a dose modification rule, returns (applied, factor, description)"""
+        """
+        Apply a dose modification rule, returns (applied, factor, description).
+        Enhanced to support new comprehensive rule format from Gemini extraction.
+        """
         
         # Get the patient value for the parameter
         param_map = {
@@ -305,70 +914,49 @@ class ProtocolEngine:
             "platelets": patient.platelets,
             "bilirubin": patient.bilirubin,
             "creatinine_clearance": patient.creatinine_clearance,
+            "gfr": patient.creatinine_clearance,  # GFR alias
+            "creatinine": getattr(patient, 'creatinine', None),
             "ast": patient.ast,
             "alt": patient.alt,
-            "hemoglobin": patient.hemoglobin
+            "hemoglobin": patient.hemoglobin,
+            "wbc": getattr(patient, 'wbc', None),
+            "lymphocytes": getattr(patient, 'lymphocytes', None),
         }
         
-        value = param_map.get(rule.parameter.lower())
+        param_key = rule.parameter.lower().replace(" ", "_")
+        value = param_map.get(param_key)
         if value is None:
             return False, 1.0, ""
         
-        # Parse the condition
-        condition = rule.condition.strip()
-        condition_met = False
-        
-        # Handle different condition formats
-        if condition.startswith("<"):
-            threshold = float(condition[1:].strip())
-            condition_met = value < threshold
-        elif condition.startswith(">"):
-            threshold = float(condition[1:].strip())
-            condition_met = value > threshold
-        elif condition.startswith("<="):
-            threshold = float(condition[2:].strip())
-            condition_met = value <= threshold
-        elif condition.startswith(">="):
-            threshold = float(condition[2:].strip())
-            condition_met = value >= threshold
-        elif "-" in condition:
-            # Range like "20-50"
-            parts = condition.split("-")
-            low, high = float(parts[0]), float(parts[1])
-            condition_met = low <= value <= high
+        # Use enhanced condition evaluation
+        condition_met = evaluate_condition(value, rule)
         
         if not condition_met:
             return False, 1.0, ""
         
-        # Determine modification factor
-        mod = rule.modification.lower()
-        if "omit" in mod:
-            return True, 0, rule.description
-        elif rule.modification_percent:
-            return True, rule.modification_percent / 100, rule.description
-        elif "50" in mod:
-            return True, 0.5, rule.description
-        elif "75" in mod:
-            return True, 0.75, rule.description
-        elif "70" in mod:
-            return True, 0.7, rule.description
-        elif "25" in mod:
-            return True, 0.25, rule.description
+        # Get modification factor using enhanced function
+        factor = get_modification_factor(rule)
         
-        return True, 1.0, rule.description
+        # Use action_text if available (more nurse-friendly), fallback to description
+        description = rule.action_text if rule.action_text else rule.description
+        if not description:
+            # Generate description from modification type
+            if factor == 0:
+                description = f"{rule.parameter} {rule.condition}: drug omitted"
+            elif factor < 1.0:
+                description = f"{rule.parameter} {rule.condition}: dose reduced to {int(factor * 100)}%"
+            else:
+                description = f"{rule.parameter} condition met"
+        
+        return True, factor, description
     
     def _round_dose(self, dose: float, unit: str) -> float:
-        """Round dose to appropriate precision"""
-        if unit in ["g", "G"]:
-            return round(dose, 2)
-        elif unit in ["mcg", "MCG"]:
-            return round(dose, 0)
-        elif dose >= 100:
-            return round(dose, 0)
-        elif dose >= 10:
-            return round(dose, 1)
-        else:
-            return round(dose, 2)
+        """
+        Round dose to appropriate precision.
+        SAFETY FIX: Always use 2 decimal places for mg/units to avoid rounding errors.
+        Pharmacy can round further if needed for specific products.
+        """
+        return round(dose, 2)
     
     def _apply_dose_banding(
         self, dose: float, drug_name: str, unit: str
@@ -390,6 +978,202 @@ class ProtocolEngine:
         
         # Other drugs can be added here
         return None
+    
+    def _apply_age_based_modifications(
+        self, drug: ProtocolDrug, patient: PatientData, calculated_dose: float, 
+        protocol: Protocol, bsa: float
+    ) -> tuple[float, list[Warning], list[str]]:
+        """
+        Apply age-based modifications from protocol's age_based_modifications.
+        Returns (modified_dose, warnings, modifications_applied)
+        """
+        warnings = []
+        modifications = []
+        
+        for rule in protocol.age_based_modifications:
+            # Check if this drug is affected
+            if rule.affected_drugs and drug.drug_id not in rule.affected_drugs and drug.drug_name not in rule.affected_drugs:
+                continue
+            
+            # Check age condition
+            age = patient.age_years
+            age_threshold = rule.age_threshold
+            op = rule.operator
+            
+            age_matches = False
+            if op == ">" and age > age_threshold:
+                age_matches = True
+            elif op == ">=" and age >= age_threshold:
+                age_matches = True
+            elif op == "<" and age < age_threshold:
+                age_matches = True
+            elif op == "<=" and age <= age_threshold:
+                age_matches = True
+            
+            if not age_matches:
+                continue
+            
+            # Apply modification
+            if rule.modification_type == "cap" and rule.cap_dose is not None:
+                if calculated_dose > rule.cap_dose:
+                    old_dose = calculated_dose
+                    calculated_dose = rule.cap_dose
+                    cap_unit = rule.cap_unit or "mg"
+                    modifications.append(f"{drug.drug_name}: capped at {rule.cap_dose}{cap_unit} due to age >{age_threshold}")
+                    warnings.append(Warning(
+                        level="warning",
+                        message=f"{drug.drug_name}: dose capped at {rule.cap_dose}{cap_unit} "
+                               f"(calculated: {old_dose:.1f}) for patient age {age}. {rule.description}",
+                        drug_id=drug.drug_id
+                    ))
+            
+            elif rule.modification_type == "reduce" and rule.reduction_percent is not None:
+                factor = (100 - rule.reduction_percent) / 100.0
+                old_dose = calculated_dose
+                calculated_dose *= factor
+                modifications.append(f"{drug.drug_name}: reduced by {rule.reduction_percent}% due to age")
+                warnings.append(Warning(
+                    level="warning",
+                    message=f"{drug.drug_name}: dose reduced by {rule.reduction_percent}% "
+                           f"(from {old_dose:.1f} to {calculated_dose:.1f}) for patient age {age}. {rule.description}",
+                    drug_id=drug.drug_id
+                ))
+            
+            # Check for cardioprotectant recommendation
+            if rule.recommendation == "cardioprotectant" and rule.cardioprotectant_drug:
+                # Check if cumulative anthracycline trigger condition is met
+                if rule.trigger_condition:
+                    # Simple check for anthracycline drugs
+                    drug_lower = drug.drug_name.lower()
+                    if drug_lower in ANTHRACYCLINE_EQUIVALENCE:
+                        warnings.append(Warning(
+                            level="warning",
+                            message=f"Patient age {age} < 26: Consider {rule.cardioprotectant_drug} as cardioprotectant "
+                                   f"if cumulative anthracycline exceeds 300 mg/m². {rule.description}",
+                            drug_id=drug.drug_id
+                        ))
+        
+        return calculated_dose, warnings, modifications
+    
+    def _check_non_hematological_toxicities(
+        self, protocol: Protocol, patient_toxicities: dict
+    ) -> list[Warning]:
+        """
+        Check for non-hematological toxicities that affect dosing.
+        patient_toxicities is a dict like {"motor_weakness": True, "gross_hematuria": False}
+        """
+        warnings = []
+        
+        for rule in protocol.non_hematological_toxicity_rules:
+            toxicity_key = rule.toxicity_type.lower().replace(" ", "_")
+            has_toxicity = patient_toxicities.get(toxicity_key, False)
+            
+            if has_toxicity:
+                affected_str = ", ".join(rule.affected_drugs) if rule.affected_drugs else "affected drugs"
+                action_text = rule.action_text if rule.action_text else f"Consider {rule.action} for {affected_str}"
+                
+                level = "warning"
+                if rule.action in ("omit", "hold"):
+                    level = "critical"
+                
+                warnings.append(Warning(
+                    level=level,
+                    message=f"⚠️ {rule.toxicity_type.upper()}: {action_text}"
+                ))
+        
+        return warnings
+    
+    def _check_metabolic_monitoring(
+        self, protocol: Protocol, baseline_values: dict, current_values: dict
+    ) -> list[Warning]:
+        """
+        Check for metabolic changes (HbA1c, glucose) that exceed thresholds.
+        """
+        warnings = []
+        
+        for rule in protocol.metabolic_monitoring:
+            param = rule.parameter.lower()
+            baseline = baseline_values.get(param)
+            current = current_values.get(param)
+            
+            if baseline is None or current is None or baseline == 0:
+                continue
+            
+            change_percent = abs(current - baseline) / baseline * 100
+            
+            if rule.change_threshold_percent and change_percent >= rule.change_threshold_percent:
+                action_text = rule.action_text if rule.action_text else f"{param} has changed by ≥{rule.change_threshold_percent}% from baseline"
+                warnings.append(Warning(
+                    level="warning",
+                    message=action_text
+                ))
+        
+        return warnings
+    
+    def _check_cumulative_toxicity_limits(
+        self, protocol: Protocol, patient: PatientData, bsa: float
+    ) -> list[Warning]:
+        """
+        Check cumulative toxicity limits (anthracyclines, bleomycin) and generate warnings.
+        """
+        warnings = []
+        
+        for tracking in protocol.cumulative_toxicity_tracking:
+            # Identify which drugs in protocol are affected
+            affected_drugs_in_protocol = []
+            for drug in protocol.drugs:
+                drug_lower = drug.drug_name.lower()
+                if tracking.drug and drug_lower == tracking.drug.lower():
+                    affected_drugs_in_protocol.append(drug)
+                elif tracking.drugs and drug_lower in [d.lower() for d in tracking.drugs]:
+                    affected_drugs_in_protocol.append(drug)
+            
+            if not affected_drugs_in_protocol:
+                continue
+            
+            # Calculate projected cumulative dose
+            prior_dose = getattr(patient, 'prior_anthracycline_dose_mg_m2', 0) or 0
+            
+            # Calculate dose per cycle for this protocol
+            dose_per_cycle = 0
+            for drug in affected_drugs_in_protocol:
+                if drug.dose_unit == DoseUnit.MG_M2:
+                    dose_per_cycle += drug.dose * len(drug.days)  # Sum all days in a cycle
+                elif drug.dose_unit == DoseUnit.MG:
+                    dose_per_cycle += drug.dose / bsa * len(drug.days)  # Convert flat to mg/m2
+            
+            projected_total = prior_dose + (dose_per_cycle * protocol.total_cycles)
+            
+            # Check against limits
+            limit = tracking.standard_limit_mg_m2 or tracking.lifetime_limit or 450
+            
+            # Check reduced limits
+            for reduced in tracking.reduced_limits:
+                if "cardiac" in reduced.condition.lower() and getattr(patient, 'prior_cardiac_history', False):
+                    limit = min(limit, reduced.limit)
+                elif "age" in reduced.condition.lower() and ">70" in reduced.condition and patient.age_years > 70:
+                    limit = min(limit, reduced.limit)
+                elif "age" in reduced.condition.lower() and "> 70" in reduced.condition and patient.age_years > 70:
+                    limit = min(limit, reduced.limit)
+            
+            if projected_total > limit:
+                warnings.append(Warning(
+                    level="critical",
+                    message=f"⚠️ CUMULATIVE TOXICITY EXCEEDED: {tracking.drug_class or tracking.drug} "
+                           f"limit ({limit} {tracking.limit_unit}) will be exceeded. "
+                           f"Prior: {prior_dose:.1f}, Projected total: {projected_total:.1f} {tracking.limit_unit}. "
+                           f"{tracking.alert_text}"
+                ))
+            elif projected_total > limit * (tracking.warning_at_percent / 100):
+                warnings.append(Warning(
+                    level="warning",
+                    message=f"Approaching {tracking.drug_class or tracking.drug} lifetime limit. "
+                           f"Prior: {prior_dose:.1f} {tracking.limit_unit}, "
+                           f"Projected: {projected_total:.1f} {tracking.limit_unit} (limit: {limit}). "
+                           f"{tracking.alert_text}"
+                ))
+        
+        return warnings
     
     def _generate_standard_warnings(
         self, patient: PatientData, protocol: Protocol

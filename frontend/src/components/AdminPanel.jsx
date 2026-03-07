@@ -147,11 +147,15 @@ export function AdminPanel({ onClose, onProtocolIngested }) {
                   value={selectedCategory}
                   onChange={(e) => setSelectedCategory(e.target.value)}
                 >
-                  {categories.map(cat => (
-                    <option key={cat} value={cat}>
-                      {cat.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}
-                    </option>
-                  ))}
+                  {categories.map((cat, index) => {
+                    const catName = typeof cat === 'string' ? cat : (cat.name || `Category ${index}`);
+                    const catValue = typeof cat === 'string' ? cat : (cat.name || `category_${index}`);
+                    return (
+                      <option key={catValue} value={catValue}>
+                        {catName}
+                      </option>
+                    );
+                  })}
                   <option value="breast_cancer">Breast Cancer</option>
                   <option value="lung_cancer">Lung Cancer</option>
                   <option value="colorectal">Colorectal Cancer</option>
