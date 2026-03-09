@@ -242,8 +242,9 @@ class ProtocolEngine:
             raise ValueError(f"Protocol not found: {request.protocol_code}")
         
         patient = request.patient
-        # SAFETY: Use capped BSA (2.0 m² max) to prevent overdosing in obese patients
-        bsa = patient.capped_bsa
+        # SAFETY: Use capped BSA (2.0 m² max) to prevent overdosing in obese patients.
+        # Round to 2dp so the dose calculation always matches the BSA shown in the header.
+        bsa = round(patient.capped_bsa, 2)
         warnings: list[Warning] = []
         modifications_applied: list[str] = []
         
@@ -405,7 +406,7 @@ class ProtocolEngine:
         already made those decisions when they built the regimen.
         """
         patient = request.patient
-        bsa = patient.capped_bsa
+        bsa = round(patient.capped_bsa, 2)
         warnings: list[Warning] = []
         modifications_applied: list[str] = []
 
@@ -1039,10 +1040,17 @@ class ProtocolEngine:
         
         # Round dose appropriately
         calculated_dose = self._round_dose(calculated_dose, final_unit)
-        
+
         # Apply dose banding if applicable
         banded_dose = self._apply_dose_banding(calculated_dose, drug.drug_name, final_unit)
-        
+
+        # Strip cycle-prior instruction blocks from drug notes for later cycles.
+        # e.g. Venetoclax notes contain "CYCLE 1 RAMP-UP (days 1-28): ... CYCLE 2 ONWARDS: ..."
+        # For cycle ≥ 2 the ramp-up block is irrelevant and creates cognitive load on the printed sheet.
+        drug_instructions = self._filter_cycle_instructions(
+            drug.special_instructions, request.cycle_number
+        )
+
         return CalculatedDose(
             drug_id=drug.drug_id,
             drug_name=drug.drug_name,
@@ -1057,7 +1065,7 @@ class ProtocolEngine:
             diluent_volume_ml=drug.diluent_volume_ml,
             timing=drug.timing,
             frequency=drug.frequency,
-            special_instructions=drug.special_instructions,
+            special_instructions=drug_instructions,
             prn=drug.prn,
             dose_modified=dose_modified,
             modification_reason=modification_reason,
@@ -1280,7 +1288,80 @@ class ProtocolEngine:
                 return band_to(dose, 2)
 
         return None
-    
+
+    def _filter_cycle_instructions(
+        self, instructions: Optional[str], cycle_number: int
+    ) -> Optional[str]:
+        """
+        Strip past-cycle instruction blocks from drug special_instructions.
+
+        Handles the pattern:
+          "CYCLE 1 RAMP-UP (days 1-28): ... CYCLE 2 ONWARDS (days 1-28): ..."
+
+        For cycle >= 2, remove the CYCLE 1 block entirely and keep only the
+        CYCLE 2 ONWARDS portion (and any trailing general instructions).
+        For cycle == 1, return instructions unchanged.
+        """
+        if not instructions or cycle_number <= 1:
+            return instructions
+
+        import re
+
+        # Pattern: "CYCLE 1 <label> (<...>): <text up to next CYCLE N block>"
+        # We look for any "CYCLE <n> ..." header where n < current cycle and strip it.
+        # Strategy: split on CYCLE N headers, keep only blocks whose cycle >= current cycle
+        # or blocks that have no cycle header (general instructions appended after).
+
+        # Split text on "CYCLE <n>" headers (case-insensitive)
+        parts = re.split(r'(CYCLE\s+\d+[^:]*:)', instructions, flags=re.IGNORECASE)
+        # parts alternates: [pre_text, header1, body1, header2, body2, ...]
+
+        if len(parts) <= 1:
+            # No CYCLE headers found — nothing to filter
+            return instructions
+
+        result_parts = []
+
+        # First element is any text before the first CYCLE header
+        pre_text = parts[0].strip()
+
+        i = 1
+        while i < len(parts):
+            header = parts[i]
+            body = parts[i + 1] if i + 1 < len(parts) else ""
+            i += 2
+
+            # Extract cycle number from this header
+            m = re.search(r'CYCLE\s+(\d+)', header, re.IGNORECASE)
+            if not m:
+                result_parts.append(header + body)
+                continue
+
+            block_cycle = int(m.group(1))
+
+            # Check for "ONWARDS" — this block applies to cycle block_cycle and beyond
+            is_onwards = bool(re.search(r'onwards?', header, re.IGNORECASE))
+
+            if is_onwards:
+                # Include if current cycle >= block_cycle
+                if cycle_number >= block_cycle:
+                    result_parts.append(header + body)
+            else:
+                # Exact cycle block — include only if current cycle == block_cycle
+                if cycle_number == block_cycle:
+                    result_parts.append(header + body)
+                # else: skip this past-cycle block
+
+        # Reassemble
+        kept = "".join(result_parts).strip()
+
+        # Always include any general instructions that follow the last CYCLE block
+        # (already captured in the body of the last matched part)
+
+        if pre_text and kept:
+            return pre_text + " " + kept
+        return kept or pre_text or instructions
+
     def _apply_age_based_modifications(
         self, drug: ProtocolDrug, patient: PatientData, calculated_dose: float, 
         protocol: Protocol, bsa: float

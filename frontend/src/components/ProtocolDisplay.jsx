@@ -1,5 +1,31 @@
 import React, { useRef, useState, useEffect } from 'react';
 
+// Map Unicode superscript digits to their ASCII equivalents for reliable rendering
+const SUPERSCRIPT_MAP = {
+  '⁰':'0','¹':'1','²':'2','³':'3','⁴':'4',
+  '⁵':'5','⁶':'6','⁷':'7','⁸':'8','⁹':'9',
+};
+
+/**
+ * Replace Unicode superscript digits (e.g. ⁹ in 10⁹/L) with <sup> HTML elements
+ * so they render correctly regardless of font support.
+ * Returns an array of React nodes (safe — no dangerouslySetInnerHTML).
+ */
+function renderWithSuperscripts(text) {
+  if (!text) return text;
+  // Split on runs of superscript digits
+  const parts = text.split(/([\u2070-\u2079\u00B2\u00B3\u00B9]+)/);
+  if (parts.length === 1) return text;
+  return parts.map((part, i) => {
+    const isSuper = /^[\u2070-\u2079\u00B2\u00B3\u00B9]+$/.test(part);
+    if (isSuper) {
+      const digits = part.split('').map(c => SUPERSCRIPT_MAP[c] || c).join('');
+      return <sup key={i}>{digits}</sup>;
+    }
+    return part;
+  });
+}
+
 export function ProtocolDisplay({ protocol, onBack, onReset }) {
   const printRef = useRef();
   const [hasAcknowledged, setHasAcknowledged] = useState(false);
@@ -196,7 +222,7 @@ export function ProtocolDisplay({ protocol, onBack, onReset }) {
                     <div>{drug.timing}</div>
                   )}
                   {drug.special_instructions && (
-                    <div className="special">{drug.special_instructions}</div>
+                    <div className="special">{renderWithSuperscripts(drug.special_instructions)}</div>
                   )}
                 </td>
               </tr>
@@ -319,7 +345,7 @@ export function ProtocolDisplay({ protocol, onBack, onReset }) {
             <h2>⚠️ Warnings & Alerts</h2>
             {protocol.warnings.map((warning, i) => (
               <div key={i} className={`warning ${warning.level}`}>
-                <strong>{warning.level.toUpperCase()}:</strong> {warning.message}
+                <strong>{warning.level.toUpperCase()}:</strong> {renderWithSuperscripts(warning.message)}
               </div>
             ))}
           </div>
@@ -355,7 +381,7 @@ export function ProtocolDisplay({ protocol, onBack, onReset }) {
             <h2>Monitoring Requirements</h2>
             <ul className="monitoring-list">
               {protocol.monitoring_requirements.map((req, i) => (
-                <li key={i}>{req}</li>
+                <li key={i}>{renderWithSuperscripts(req)}</li>
               ))}
             </ul>
           </div>
@@ -367,7 +393,7 @@ export function ProtocolDisplay({ protocol, onBack, onReset }) {
             <h2>Special Instructions</h2>
             <ul className="instructions-list">
               {protocol.special_instructions.map((inst, i) => (
-                <li key={i}>{inst}</li>
+                <li key={i}>{renderWithSuperscripts(inst)}</li>
               ))}
             </ul>
           </div>
