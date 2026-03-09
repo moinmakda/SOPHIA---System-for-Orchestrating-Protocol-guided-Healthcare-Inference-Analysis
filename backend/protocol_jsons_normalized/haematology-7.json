@@ -1035,7 +1035,7 @@
     "protocol_name": "Cyclophosphamide-Total Body Irradiation (TBI)-Methotrexate GvHD (Related Donor Conditioning)",
     "disease_site": "HSCT conditioning",
     "category": "haematology",
-    "cycle_length_days": 1,
+    "cycle_length_days": 14,
     "number_of_cycles": 1,
     "drugs": [
       {

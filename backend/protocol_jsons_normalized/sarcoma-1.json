@@ -13,7 +13,7 @@
       {
         "drug_name": "Cyclophosphamide",
         "dose": 1500,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -24,13 +24,13 @@
         "diluent_volume_ml": 1000,
         "max_dose": null,
         "max_dose_unit": null,
-        "special_instructions": "Co-administered with mesna 1500mg/m\u00b2 in same bag. Mesna uroprotection required. Dose banded according to agreed bands.",
+        "special_instructions": "Co-administered with mesna 1500mg/m² in same bag. Mesna uroprotection required. Dose banded according to agreed bands.",
         "is_core_drug": true
       },
       {
         "drug_name": "Dactinomycin",
         "dose": 750,
-        "dose_unit": "mcg/m\u00b2",
+        "dose_unit": "mcg/m²",
         "route": "IV bolus",
         "days": [
           1,
@@ -48,7 +48,7 @@
       {
         "drug_name": "Vincristine",
         "dose": 1.5,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -67,7 +67,7 @@
       {
         "drug_name": "Mesna",
         "dose": 500,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "timing": "Before cyclophosphamide on day 1",
         "duration_minutes": 15,
@@ -81,7 +81,7 @@
       {
         "drug_name": "Mesna",
         "dose": 1500,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "timing": "Co-infused with cyclophosphamide on day 1",
         "duration_minutes": 180,
@@ -104,7 +104,8 @@
         "days": [
           1
         ],
-        "special_instructions": "Oral or intravenous antiemetic"
+        "special_instructions": "Oral or intravenous antiemetic",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Metoclopramide",
@@ -118,7 +119,8 @@
         "days": [
           1
         ],
-        "special_instructions": "Oral or intravenous antiemetic"
+        "special_instructions": "Oral or intravenous antiemetic",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Ondansetron",
@@ -132,14 +134,15 @@
         "days": [
           1
         ],
-        "special_instructions": "Oral or intravenous antiemetic"
+        "special_instructions": "Oral or intravenous antiemetic",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [
       {
         "drug_name": "Mesna",
         "dose": 600,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "Oral",
         "frequency": "At 0, 2 and 6 hours post cyclophosphamide infusion",
         "days": [
@@ -208,23 +211,23 @@
     "dose_modifications": [
       {
         "parameter": "neutrophils",
-        "condition": "< 1.0 x10\u2079/L",
+        "condition": "< 1.0 x10⁹/L",
         "affected_drugs": [
           "all"
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "Neutrophil must be equal to or more than 1x10\u2079/L to be eligible for treatment"
+        "notes": "Neutrophil must be equal to or more than 1x10⁹/L to be eligible for treatment"
       },
       {
         "parameter": "platelets",
-        "condition": "< 80 x10\u2079/L",
+        "condition": "< 80 x10⁹/L",
         "affected_drugs": [
           "all"
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "Platelets must be equal to or more than 80x10\u2079/L to be eligible for treatment"
+        "notes": "Platelets must be equal to or more than 80x10⁹/L to be eligible for treatment"
       },
       {
         "parameter": "haemoglobin",
@@ -238,7 +241,7 @@
       },
       {
         "parameter": "bilirubin",
-        "condition": "30-51 \u00b5mol/L or AST/ALT 60-180 units",
+        "condition": "30-51 µmol/L or AST/ALT 60-180 units",
         "affected_drugs": [
           "Vincristine"
         ],
@@ -248,7 +251,7 @@
       },
       {
         "parameter": "bilirubin",
-        "condition": "> 51 \u00b5mol/L and normal AST/ALT",
+        "condition": "> 51 µmol/L and normal AST/ALT",
         "affected_drugs": [
           "Vincristine"
         ],
@@ -258,7 +261,7 @@
       },
       {
         "parameter": "bilirubin",
-        "condition": "> 51 \u00b5mol/L and AST/ALT > 180 units",
+        "condition": "> 51 µmol/L and AST/ALT > 180 units",
         "affected_drugs": [
           "Vincristine"
         ],
@@ -268,7 +271,7 @@
       },
       {
         "parameter": "bilirubin",
-        "condition": "> 30 \u00b5mol/L or AST/ALT > 2-3xULN",
+        "condition": "> 30 µmol/L or AST/ALT > 2-3xULN",
         "affected_drugs": [
           "Cyclophosphamide"
         ],
@@ -365,7 +368,7 @@
       {
         "drug_name": "Cyclophosphamide",
         "dose": 1500,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -376,15 +379,15 @@
         "diluent_volume_ml": 1000,
         "max_dose": null,
         "max_dose_unit": null,
-        "special_instructions": "Co-administered with mesna 1500mg/m\u00b2 in same bag. Mesna uroprotection required. Dose banded according to agreed bands.",
+        "special_instructions": "Co-administered with mesna 1500mg/m² in same bag. Mesna uroprotection required. Dose banded according to agreed bands.",
         "is_core_drug": true,
         "infusion_duration_hours": 3.0,
-        "notes": "Co-administered with mesna 1500mg/m\u00b2 in same bag. Mesna uroprotection required. Dose banded according to agreed bands."
+        "notes": "Co-administered with mesna 1500mg/m² in same bag. Mesna uroprotection required. Dose banded according to agreed bands."
       },
       {
         "drug_name": "Dactinomycin",
         "dose": 750,
-        "dose_unit": "mcg/m\u00b2",
+        "dose_unit": "mcg/m²",
         "route": "IV bolus",
         "days": [
           1,
@@ -404,7 +407,7 @@
       {
         "drug_name": "Vincristine",
         "dose": 1.5,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -436,7 +439,7 @@
       {
         "drug_name": "Cyclophosphamide",
         "dose": 250,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV bolus",
         "days": [
           1,
@@ -457,7 +460,7 @@
       {
         "drug_name": "Topotecan",
         "dose": 0.75,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1,
@@ -493,7 +496,8 @@
           4,
           5
         ],
-        "special_instructions": "Oral or intravenous"
+        "special_instructions": "Oral or intravenous",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Metoclopramide",
@@ -511,7 +515,8 @@
           4,
           5
         ],
-        "special_instructions": "Oral or intravenous"
+        "special_instructions": "Oral or intravenous",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [
@@ -557,77 +562,77 @@
     "dose_modifications": [
       {
         "parameter": "neutrophils",
-        "condition": ">= 1.5 x10\u2079/L required prior to cycle 1",
+        "condition": ">= 1.5 x10⁹/L required prior to cycle 1",
         "affected_drugs": [
           "all"
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "Prior to cycle 1: neutrophil equal to or more than 1.5x10\u2079/L required"
+        "notes": "Prior to cycle 1: neutrophil equal to or more than 1.5x10⁹/L required"
       },
       {
         "parameter": "platelets",
-        "condition": ">= 100 x10\u2079/L required prior to cycle 1",
+        "condition": ">= 100 x10⁹/L required prior to cycle 1",
         "affected_drugs": [
           "all"
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "Prior to cycle 1: platelets equal to or more than 100x10\u2079/L required"
+        "notes": "Prior to cycle 1: platelets equal to or more than 100x10⁹/L required"
       },
       {
         "parameter": "neutrophils",
-        "condition": "0.5 - 1.0 x10\u2079/L on day 1",
+        "condition": "0.5 - 1.0 x10⁹/L on day 1",
         "affected_drugs": [
           "all"
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "Delay until recovery to 1x10\u2079/L or greater then continue at full dose"
+        "notes": "Delay until recovery to 1x10⁹/L or greater then continue at full dose"
       },
       {
         "parameter": "neutrophils",
-        "condition": "< 0.5 x10\u2079/L on day 1",
+        "condition": "< 0.5 x10⁹/L on day 1",
         "affected_drugs": [
           "all"
         ],
         "action": "reduce_25",
         "factor": 0.75,
-        "notes": "Delay until recovery to 1x10\u2079/L or greater then continue at 75% of the original dose"
+        "notes": "Delay until recovery to 1x10⁹/L or greater then continue at 75% of the original dose"
       },
       {
         "parameter": "platelets",
-        "condition": "50-99 x10\u2079/L on day 1",
+        "condition": "50-99 x10⁹/L on day 1",
         "affected_drugs": [
           "all"
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "Delay until recovery to 100x10\u2079/L or greater then continue at full dose"
+        "notes": "Delay until recovery to 100x10⁹/L or greater then continue at full dose"
       },
       {
         "parameter": "platelets",
-        "condition": "< 50 x10\u2079/L on day 1",
+        "condition": "< 50 x10⁹/L on day 1",
         "affected_drugs": [
           "all"
         ],
         "action": "reduce_25",
         "factor": 0.75,
-        "notes": "Delay until recovery to 100x10\u2079/L or greater then continue at 75% of the original dose"
+        "notes": "Delay until recovery to 100x10⁹/L or greater then continue at 75% of the original dose"
       },
       {
         "parameter": "bilirubin",
-        "condition": "< 170 \u00b5mol/L",
+        "condition": "< 170 µmol/L",
         "affected_drugs": [
           "Topotecan"
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "Topotecan: bilirubin less than 170 \u00b5mol/L: 100% dose"
+        "notes": "Topotecan: bilirubin less than 170 µmol/L: 100% dose"
       },
       {
         "parameter": "bilirubin",
-        "condition": ">= 170 \u00b5mol/L",
+        "condition": ">= 170 µmol/L",
         "affected_drugs": [
           "Topotecan"
         ],
@@ -709,7 +714,7 @@
     "treatment_delay_criteria": {
       "neutrophils_min": 1.5,
       "platelets_min": 100,
-      "notes": "Prior to cycle 1: neutrophil >= 1.5x10\u2079/L and platelets >= 100x10\u2079/L. Consider blood transfusion or erythropoietin if Hb < 8g/dL. If third dose reduction necessary, stop treatment."
+      "notes": "Prior to cycle 1: neutrophil >= 1.5x10⁹/L and platelets >= 100x10⁹/L. Consider blood transfusion or erythropoietin if Hb < 8g/dL. If third dose reduction necessary, stop treatment."
     },
     "monitoring_requirements": [
       "FBC, LFTs and U&Es (including uric acid, albumin, calcium, magnesium, bicarbonate and phosphate) prior to day 1 of treatment"
@@ -728,7 +733,7 @@
       {
         "drug_name": "Cyclophosphamide",
         "dose": 250,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV bolus",
         "days": [
           1,
@@ -751,7 +756,7 @@
       {
         "drug_name": "Topotecan",
         "dose": 0.75,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1,
@@ -787,7 +792,7 @@
       {
         "drug_name": "Gemcitabine",
         "dose": 675,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1,
@@ -799,13 +804,13 @@
         "diluent_volume_ml": 250,
         "max_dose": null,
         "max_dose_unit": null,
-        "special_instructions": "Dose banded according to agreed bands. Starting dose 675mg/m\u00b2; may increase to 900mg/m\u00b2 in patients who tolerate or who have had no previous treatment and/or PS 0. In this regimen gemcitabine is administered over 90 minutes.",
+        "special_instructions": "Dose banded according to agreed bands. Starting dose 675mg/m²; may increase to 900mg/m² in patients who tolerate or who have had no previous treatment and/or PS 0. In this regimen gemcitabine is administered over 90 minutes.",
         "is_core_drug": true
       },
       {
         "drug_name": "Docetaxel",
         "dose": 75,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           8
@@ -816,7 +821,7 @@
         "diluent_volume_ml": 250,
         "max_dose": null,
         "max_dose_unit": null,
-        "special_instructions": "Dose banded according to agreed bands. Starting dose 75mg/m\u00b2; may increase to 100mg/m\u00b2 in tolerant patients or PS 0 with no prior treatment. Exfoliant. Dexamethasone pre-medication mandatory to prevent fluid retention and hypersensitivity.",
+        "special_instructions": "Dose banded according to agreed bands. Starting dose 75mg/m²; may increase to 100mg/m² in tolerant patients or PS 0 with no prior treatment. Exfoliant. Dexamethasone pre-medication mandatory to prevent fluid retention and hypersensitivity.",
         "is_core_drug": true
       }
     ],
@@ -834,7 +839,8 @@
           1,
           8
         ],
-        "special_instructions": "Oral or intravenous"
+        "special_instructions": "Oral or intravenous",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Dexamethasone",
@@ -848,7 +854,8 @@
         "days": [
           8
         ],
-        "special_instructions": "Rescue dose only if oral dexamethasone pre-medication forgotten. Standard regimen: dexamethasone 8mg oral twice daily for 3 days starting 24 hours before docetaxel (days 7, 8, 9 of cycle) - dispensed as take-home on day 1."
+        "special_instructions": "Rescue dose only if oral dexamethasone pre-medication forgotten. Standard regimen: dexamethasone 8mg oral twice daily for 3 days starting 24 hours before docetaxel (days 7, 8, 9 of cycle) - dispensed as take-home on day 1.",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [
@@ -878,7 +885,7 @@
     "dose_modifications": [
       {
         "parameter": "neutrophils",
-        "condition": "< 1.0 x10\u2079/L on day 1",
+        "condition": "< 1.0 x10⁹/L on day 1",
         "affected_drugs": [
           "Gemcitabine"
         ],
@@ -888,7 +895,7 @@
       },
       {
         "parameter": "platelets",
-        "condition": "< 100 x10\u2079/L on day 1",
+        "condition": "< 100 x10⁹/L on day 1",
         "affected_drugs": [
           "Gemcitabine"
         ],
@@ -898,7 +905,7 @@
       },
       {
         "parameter": "neutrophils",
-        "condition": "0.5-0.9 x10\u2079/L on day 8",
+        "condition": "0.5-0.9 x10⁹/L on day 8",
         "affected_drugs": [
           "Docetaxel",
           "Gemcitabine"
@@ -909,7 +916,7 @@
       },
       {
         "parameter": "neutrophils",
-        "condition": "< 0.5 x10\u2079/L on day 8",
+        "condition": "< 0.5 x10⁹/L on day 8",
         "affected_drugs": [
           "Docetaxel",
           "Gemcitabine"
@@ -920,7 +927,7 @@
       },
       {
         "parameter": "platelets",
-        "condition": "50-99 x10\u2079/L with no evidence of bleeding on day 8",
+        "condition": "50-99 x10⁹/L with no evidence of bleeding on day 8",
         "affected_drugs": [
           "Docetaxel",
           "Gemcitabine"
@@ -931,7 +938,7 @@
       },
       {
         "parameter": "platelets",
-        "condition": "< 50 x10\u2079/L or bleeding on day 8",
+        "condition": "< 50 x10⁹/L or bleeding on day 8",
         "affected_drugs": [
           "Docetaxel",
           "Gemcitabine"
@@ -942,7 +949,7 @@
       },
       {
         "parameter": "neutrophils",
-        "condition": "Febrile neutropenia or platelets < 25x10\u2079/L for more than 5 days",
+        "condition": "Febrile neutropenia or platelets < 25x10⁹/L for more than 5 days",
         "affected_drugs": [
           "Docetaxel",
           "Gemcitabine"
@@ -953,7 +960,7 @@
       },
       {
         "parameter": "bilirubin",
-        "condition": ">= 22 \u00b5mol/L and/or AST/ALT >= 3.5xULN and Alk Phos >= 6.0xULN",
+        "condition": ">= 22 µmol/L and/or AST/ALT >= 3.5xULN and Alk Phos >= 6.0xULN",
         "affected_drugs": [
           "Docetaxel"
         ],
@@ -973,13 +980,13 @@
       },
       {
         "parameter": "bilirubin",
-        "condition": "> 27 \u00b5mol/L",
+        "condition": "> 27 µmol/L",
         "affected_drugs": [
           "Gemcitabine"
         ],
         "action": "reduce_25",
         "factor": 0.75,
-        "notes": "Gemcitabine: initiate treatment with a dose of 800mg/m\u00b2"
+        "notes": "Gemcitabine: initiate treatment with a dose of 800mg/m²"
       },
       {
         "parameter": "creatinine_clearance",
@@ -999,7 +1006,7 @@
         ],
         "action": "reduce_25",
         "factor": 0.75,
-        "notes": "Reduce docetaxel from 75mg/m\u00b2 to 60mg/m\u00b2 once neuropathy resolved to grade 2 or below. If grade 3 occurred at < 75mg/m\u00b2 or grade 4 develops, consider stopping."
+        "notes": "Reduce docetaxel from 75mg/m² to 60mg/m² once neuropathy resolved to grade 2 or below. If grade 3 occurred at < 75mg/m² or grade 4 develops, consider stopping."
       },
       {
         "parameter": "other",
@@ -1009,7 +1016,7 @@
         ],
         "action": "delay",
         "factor": 0.75,
-        "notes": "Delay until resolves to grade 1 or below then reduce from 75mg/m\u00b2 to 60mg/m\u00b2. If occurs at 60mg/m\u00b2 or no recovery after 2 weeks, stop docetaxel. Grade 4: stop docetaxel."
+        "notes": "Delay until resolves to grade 1 or below then reduce from 75mg/m² to 60mg/m². If occurs at 60mg/m² or no recovery after 2 weeks, stop docetaxel. Grade 4: stop docetaxel."
       },
       {
         "parameter": "other",
@@ -1019,17 +1026,17 @@
         ],
         "action": "delay",
         "factor": 0.75,
-        "notes": "Delay until grade 1 or below then reduce to 60mg/m\u00b2. Grade 4 stomatitis: stop treatment."
+        "notes": "Delay until grade 1 or below then reduce to 60mg/m². Grade 4 stomatitis: stop treatment."
       },
       {
         "parameter": "other",
-        "condition": "Excessive lacrimation (related to cumulative docetaxel doses, after median 400mg/m\u00b2)",
+        "condition": "Excessive lacrimation (related to cumulative docetaxel doses, after median 400mg/m²)",
         "affected_drugs": [
           "Docetaxel"
         ],
         "action": "reduce_25",
         "factor": 0.75,
-        "notes": "Try hypromellose 0.3% eye drops four times a day. If ocular irritation continues reduce docetaxel to 60mg/m\u00b2."
+        "notes": "Try hypromellose 0.3% eye drops four times a day. If ocular irritation continues reduce docetaxel to 60mg/m²."
       },
       {
         "parameter": "other",
@@ -1067,7 +1074,7 @@
       {
         "drug_name": "Gemcitabine",
         "dose": 675,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1,
@@ -1079,15 +1086,15 @@
         "diluent_volume_ml": 250,
         "max_dose": null,
         "max_dose_unit": null,
-        "special_instructions": "Dose banded according to agreed bands. Starting dose 675mg/m\u00b2; may increase to 900mg/m\u00b2 in patients who tolerate or who have had no previous treatment and/or PS 0. In this regimen gemcitabine is administered over 90 minutes.",
+        "special_instructions": "Dose banded according to agreed bands. Starting dose 675mg/m²; may increase to 900mg/m² in patients who tolerate or who have had no previous treatment and/or PS 0. In this regimen gemcitabine is administered over 90 minutes.",
         "is_core_drug": true,
         "infusion_duration_hours": 1.5,
-        "notes": "Dose banded according to agreed bands. Starting dose 675mg/m\u00b2; may increase to 900mg/m\u00b2 in patients who tolerate or who have had no previous treatment and/or PS 0. In this regimen gemcitabine is administered over 90 minutes."
+        "notes": "Dose banded according to agreed bands. Starting dose 675mg/m²; may increase to 900mg/m² in patients who tolerate or who have had no previous treatment and/or PS 0. In this regimen gemcitabine is administered over 90 minutes."
       },
       {
         "drug_name": "Docetaxel",
         "dose": 75,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           8
@@ -1098,10 +1105,10 @@
         "diluent_volume_ml": 250,
         "max_dose": null,
         "max_dose_unit": null,
-        "special_instructions": "Dose banded according to agreed bands. Starting dose 75mg/m\u00b2; may increase to 100mg/m\u00b2 in tolerant patients or PS 0 with no prior treatment. Exfoliant. Dexamethasone pre-medication mandatory to prevent fluid retention and hypersensitivity.",
+        "special_instructions": "Dose banded according to agreed bands. Starting dose 75mg/m²; may increase to 100mg/m² in tolerant patients or PS 0 with no prior treatment. Exfoliant. Dexamethasone pre-medication mandatory to prevent fluid retention and hypersensitivity.",
         "is_core_drug": true,
         "infusion_duration_hours": 1.0,
-        "notes": "Dose banded according to agreed bands. Starting dose 75mg/m\u00b2; may increase to 100mg/m\u00b2 in tolerant patients or PS 0 with no prior treatment. Exfoliant. Dexamethasone pre-medication mandatory to prevent fluid retention and hypersensitivity."
+        "notes": "Dose banded according to agreed bands. Starting dose 75mg/m²; may increase to 100mg/m² in tolerant patients or PS 0 with no prior treatment. Exfoliant. Dexamethasone pre-medication mandatory to prevent fluid retention and hypersensitivity."
       }
     ]
   },
@@ -1119,7 +1126,7 @@
       {
         "drug_name": "Doxorubicin",
         "dose": 75,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV bolus",
         "days": [
           1
@@ -1130,7 +1137,7 @@
         "diluent_volume_ml": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "special_instructions": "Vesicant. Dose banded according to national dose bands (2mg/ml). Maximum lifetime cumulative dose 450mg/m\u00b2 (400mg/m\u00b2 if prior mediastinal/pericardial radiotherapy).",
+        "special_instructions": "Vesicant. Dose banded according to national dose bands (2mg/ml). Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy).",
         "is_core_drug": true
       },
       {
@@ -1166,7 +1173,8 @@
           1,
           8
         ],
-        "special_instructions": "Olaratumab pre-medication to reduce infusion-related reactions"
+        "special_instructions": "Olaratumab pre-medication to reduce infusion-related reactions",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Dexamethasone",
@@ -1180,7 +1188,8 @@
         "days": [
           1
         ],
-        "special_instructions": "Oral or intravenous. Olaratumab pre-medication and antiemetic."
+        "special_instructions": "Oral or intravenous. Olaratumab pre-medication and antiemetic.",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Ondansetron",
@@ -1194,7 +1203,8 @@
         "days": [
           1
         ],
-        "special_instructions": "Oral or intravenous antiemetic"
+        "special_instructions": "Oral or intravenous antiemetic",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [
@@ -1247,23 +1257,23 @@
     "dose_modifications": [
       {
         "parameter": "neutrophils",
-        "condition": "< 1.0 x10\u2079/L",
+        "condition": "< 1.0 x10⁹/L",
         "affected_drugs": [
           "all"
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "Delay treatment until neutrophils equal to or more than 1x10\u2079/L"
+        "notes": "Delay treatment until neutrophils equal to or more than 1x10⁹/L"
       },
       {
         "parameter": "platelets",
-        "condition": "< 100 x10\u2079/L",
+        "condition": "< 100 x10⁹/L",
         "affected_drugs": [
           "all"
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "Delay treatment until platelets equal to or more than 100x10\u2079/L"
+        "notes": "Delay treatment until platelets equal to or more than 100x10⁹/L"
       },
       {
         "parameter": "neutrophils",
@@ -1274,7 +1284,7 @@
         ],
         "action": "reduce_25",
         "factor": 0.75,
-        "notes": "Reduce olaratumab to 12mg/kg and doxorubicin dose reduced by 25% once neutrophils recovered to 1x10\u2079/L"
+        "notes": "Reduce olaratumab to 12mg/kg and doxorubicin dose reduced by 25% once neutrophils recovered to 1x10⁹/L"
       },
       {
         "parameter": "neutrophils",
@@ -1288,7 +1298,7 @@
       },
       {
         "parameter": "bilirubin",
-        "condition": "< 30 \u00b5mol/L and AST/ALT 2-3xULN",
+        "condition": "< 30 µmol/L and AST/ALT 2-3xULN",
         "affected_drugs": [
           "Doxorubicin"
         ],
@@ -1298,7 +1308,7 @@
       },
       {
         "parameter": "bilirubin",
-        "condition": "30-50 \u00b5mol/L and/or AST/ALT > 3xULN",
+        "condition": "30-50 µmol/L and/or AST/ALT > 3xULN",
         "affected_drugs": [
           "Doxorubicin"
         ],
@@ -1308,7 +1318,7 @@
       },
       {
         "parameter": "bilirubin",
-        "condition": "51-85 \u00b5mol/L",
+        "condition": "51-85 µmol/L",
         "affected_drugs": [
           "Doxorubicin"
         ],
@@ -1318,7 +1328,7 @@
       },
       {
         "parameter": "bilirubin",
-        "condition": "> 85 \u00b5mol/L",
+        "condition": "> 85 µmol/L",
         "affected_drugs": [
           "Doxorubicin"
         ],
@@ -1350,7 +1360,7 @@
     ],
     "special_warnings": [
       "Doxorubicin is a vesicant - extravasation precautions required",
-      "Maximum lifetime cumulative doxorubicin dose: 450mg/m\u00b2 (400mg/m\u00b2 with prior mediastinal/pericardial radiotherapy)",
+      "Maximum lifetime cumulative doxorubicin dose: 450mg/m² (400mg/m² with prior mediastinal/pericardial radiotherapy)",
       "Olaratumab infusion-related reactions: for NCI-CTC grade 1 or 2 stop infusion, administer paracetamol 1000mg oral, chlorphenamine 10mg IV, hydrocortisone 100mg IV; restart at 50% infusion rate. Subsequent infusions: use lower rate; infusion duration must not exceed 2 hours.",
       "After cycle 8 (doxorubicin + olaratumab), continue maintenance olaratumab 15mg/kg days 1 and 8 every 21 days until disease progression or intolerance",
       "Olaratumab: limited hepatic/severe renal impairment data - use with caution",
@@ -1359,7 +1369,7 @@
     "auc_dosing": null,
     "required_patient_fields": {
       "lvef_percent": "LVEF assessment (ECHO or MUGA) required before starting anthracycline. Contraindicated if LVEF <50%.",
-      "prior_anthracycline_dose_mg_m2": "Cumulative prior anthracycline dose (mg/m\u00b2) required. Doxorubicin lifetime limit 450-550mg/m\u00b2 (lower with cardiac risk factors or prior mediastinal radiation). Epirubicin limit 900mg/m\u00b2."
+      "prior_anthracycline_dose_mg_m2": "Cumulative prior anthracycline dose (mg/m²) required. Doxorubicin lifetime limit 450-550mg/m² (lower with cardiac risk factors or prior mediastinal radiation). Epirubicin limit 900mg/m²."
     },
     "disease_site": "Sarcoma",
     "number_of_cycles": 8,
@@ -1367,7 +1377,7 @@
       {
         "drug_name": "Doxorubicin",
         "dose": 75,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV bolus",
         "days": [
           1
@@ -1378,10 +1388,10 @@
         "diluent_volume_ml": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "special_instructions": "Vesicant. Dose banded according to national dose bands (2mg/ml). Maximum lifetime cumulative dose 450mg/m\u00b2 (400mg/m\u00b2 if prior mediastinal/pericardial radiotherapy).",
+        "special_instructions": "Vesicant. Dose banded according to national dose bands (2mg/ml). Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy).",
         "is_core_drug": true,
         "infusion_duration_hours": 0.1667,
-        "notes": "Vesicant. Dose banded according to national dose bands (2mg/ml). Maximum lifetime cumulative dose 450mg/m\u00b2 (400mg/m\u00b2 if prior mediastinal/pericardial radiotherapy)."
+        "notes": "Vesicant. Dose banded according to national dose bands (2mg/ml). Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy)."
       },
       {
         "drug_name": "Olaratumab",
@@ -1466,23 +1476,23 @@
     "dose_modifications": [
       {
         "parameter": "neutrophils",
-        "condition": "<= 1.0 x10\u2079/L (1st occurrence)",
+        "condition": "<= 1.0 x10⁹/L (1st occurrence)",
         "affected_drugs": [
           "Imatinib"
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "1st occurrence: stop treatment until neutrophils >= 1.5x10\u2079/L then resume at 400mg. 2nd occurrence: stop until neutrophils >= 1.5x10\u2079/L then resume at reduced 300mg dose."
+        "notes": "1st occurrence: stop treatment until neutrophils >= 1.5x10⁹/L then resume at 400mg. 2nd occurrence: stop until neutrophils >= 1.5x10⁹/L then resume at reduced 300mg dose."
       },
       {
         "parameter": "platelets",
-        "condition": "<= 50 x10\u2079/L (1st occurrence)",
+        "condition": "<= 50 x10⁹/L (1st occurrence)",
         "affected_drugs": [
           "Imatinib"
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "1st occurrence: stop treatment until platelets >= 75x10\u2079/L then resume at 400mg. 2nd occurrence: stop until platelets >= 75x10\u2079/L then resume at reduced 300mg dose."
+        "notes": "1st occurrence: stop treatment until platelets >= 75x10⁹/L then resume at 400mg. 2nd occurrence: stop until platelets >= 75x10⁹/L then resume at reduced 300mg dose."
       },
       {
         "parameter": "bilirubin",
@@ -1580,7 +1590,7 @@
       {
         "drug_name": "Cisplatin",
         "dose": 60,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1,
@@ -1598,7 +1608,7 @@
       {
         "drug_name": "Doxorubicin",
         "dose": 37.5,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1,
@@ -1610,13 +1620,13 @@
         "diluent_volume_ml": 48,
         "max_dose": null,
         "max_dose_unit": null,
-        "special_instructions": "Vesicant. 24-hour infusion via central line. Dose banded per agreed bands. Maximum lifetime cumulative dose 450mg/m\u00b2 (400mg/m\u00b2 with prior mediastinal/pericardial radiotherapy).",
+        "special_instructions": "Vesicant. 24-hour infusion via central line. Dose banded per agreed bands. Maximum lifetime cumulative dose 450mg/m² (400mg/m² with prior mediastinal/pericardial radiotherapy).",
         "is_core_drug": true
       },
       {
         "drug_name": "Methotrexate",
         "dose": 12000,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           22,
@@ -1669,7 +1679,8 @@
           30,
           31
         ],
-        "special_instructions": "Oral or intravenous. Once daily days 1-3 for cisplatin-doxorubicin. Twice daily for 3 days for methotrexate days."
+        "special_instructions": "Oral or intravenous. Once daily days 1-3 for cisplatin-doxorubicin. Twice daily for 3 days for methotrexate days.",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Ondansetron",
@@ -1691,7 +1702,8 @@
           30,
           31
         ],
-        "special_instructions": "Oral or intravenous. Twice daily for 3 days each chemotherapy block."
+        "special_instructions": "Oral or intravenous. Twice daily for 3 days each chemotherapy block.",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Metoclopramide",
@@ -1713,7 +1725,8 @@
           30,
           31
         ],
-        "special_instructions": "Oral or intravenous. Three times daily for 3 days then as required each block."
+        "special_instructions": "Oral or intravenous. Three times daily for 3 days then as required each block.",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Folinic acid (Leucovorin)",
@@ -1752,7 +1765,7 @@
     "dose_modifications": [
       {
         "parameter": "neutrophils",
-        "condition": "< 0.75 x10\u2079/L on cisplatin-doxorubicin day",
+        "condition": "< 0.75 x10⁹/L on cisplatin-doxorubicin day",
         "affected_drugs": [
           "Cisplatin",
           "Doxorubicin"
@@ -1763,38 +1776,38 @@
       },
       {
         "parameter": "platelets",
-        "condition": "< 75 x10\u2079/L on cisplatin-doxorubicin day",
+        "condition": "< 75 x10⁹/L on cisplatin-doxorubicin day",
         "affected_drugs": [
           "Cisplatin",
           "Doxorubicin"
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "Delay 3-4 days until criteria met (Plts >= 75x10\u2079/L)"
+        "notes": "Delay 3-4 days until criteria met (Plts >= 75x10⁹/L)"
       },
       {
         "parameter": "neutrophils",
-        "condition": "< 0.25 x10\u2079/L for methotrexate",
+        "condition": "< 0.25 x10⁹/L for methotrexate",
         "affected_drugs": [
           "Methotrexate"
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "Methotrexate: delay only (no dose reductions) until neutrophil >= 0.25x10\u2079/L. For NCI-CTC grade 4 febrile neutropenia: prescribe growth factors with next cycle; if 2nd episode despite growth factors reduce cisplatin by 25%."
+        "notes": "Methotrexate: delay only (no dose reductions) until neutrophil >= 0.25x10⁹/L. For NCI-CTC grade 4 febrile neutropenia: prescribe growth factors with next cycle; if 2nd episode despite growth factors reduce cisplatin by 25%."
       },
       {
         "parameter": "platelets",
-        "condition": "< 50 x10\u2079/L for methotrexate",
+        "condition": "< 50 x10⁹/L for methotrexate",
         "affected_drugs": [
           "Methotrexate"
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "Methotrexate: delay only (no dose reductions) until platelets >= 50x10\u2079/L"
+        "notes": "Methotrexate: delay only (no dose reductions) until platelets >= 50x10⁹/L"
       },
       {
         "parameter": "bilirubin",
-        "condition": "< 30 \u00b5mol/L and AST/ALT 2-3xULN",
+        "condition": "< 30 µmol/L and AST/ALT 2-3xULN",
         "affected_drugs": [
           "Doxorubicin"
         ],
@@ -1804,7 +1817,7 @@
       },
       {
         "parameter": "bilirubin",
-        "condition": "30-50 \u00b5mol/L and/or AST/ALT > 3xULN",
+        "condition": "30-50 µmol/L and/or AST/ALT > 3xULN",
         "affected_drugs": [
           "Doxorubicin"
         ],
@@ -1814,7 +1827,7 @@
       },
       {
         "parameter": "bilirubin",
-        "condition": "51-85 \u00b5mol/L",
+        "condition": "51-85 µmol/L",
         "affected_drugs": [
           "Doxorubicin"
         ],
@@ -1824,7 +1837,7 @@
       },
       {
         "parameter": "bilirubin",
-        "condition": "> 85 \u00b5mol/L",
+        "condition": "> 85 µmol/L",
         "affected_drugs": [
           "Doxorubicin"
         ],
@@ -1834,7 +1847,7 @@
       },
       {
         "parameter": "bilirubin",
-        "condition": "< 50 \u00b5mol/L and AST/ALT < 180 units",
+        "condition": "< 50 µmol/L and AST/ALT < 180 units",
         "affected_drugs": [
           "Methotrexate"
         ],
@@ -1844,7 +1857,7 @@
       },
       {
         "parameter": "bilirubin",
-        "condition": "51-85 \u00b5mol/L or AST/ALT > 180 units",
+        "condition": "51-85 µmol/L or AST/ALT > 180 units",
         "affected_drugs": [
           "Methotrexate"
         ],
@@ -1854,7 +1867,7 @@
       },
       {
         "parameter": "bilirubin",
-        "condition": "> 85 \u00b5mol/L",
+        "condition": "> 85 µmol/L",
         "affected_drugs": [
           "Methotrexate"
         ],
@@ -1962,7 +1975,7 @@
       "creatinine_clearance": "Required >= 50ml/min for methotrexate administration (GFR by EDTA or 24-hour urine prior to each methotrexate)",
       "urinary_ph": "Must be > 7 before starting methotrexate infusion",
       "lvef_percent": "LVEF assessment (ECHO or MUGA) required before starting anthracycline. Contraindicated if LVEF <50%.",
-      "prior_anthracycline_dose_mg_m2": "Cumulative prior anthracycline dose (mg/m\u00b2) required. Doxorubicin lifetime limit 450-550mg/m\u00b2 (lower with cardiac risk factors or prior mediastinal radiation). Epirubicin limit 900mg/m\u00b2."
+      "prior_anthracycline_dose_mg_m2": "Cumulative prior anthracycline dose (mg/m²) required. Doxorubicin lifetime limit 450-550mg/m² (lower with cardiac risk factors or prior mediastinal radiation). Epirubicin limit 900mg/m²."
     },
     "disease_site": "Sarcoma",
     "number_of_cycles": 4,
@@ -1970,7 +1983,7 @@
       {
         "drug_name": "Cisplatin",
         "dose": 60,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1,
@@ -1990,7 +2003,7 @@
       {
         "drug_name": "Doxorubicin",
         "dose": 37.5,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1,
@@ -2002,15 +2015,15 @@
         "diluent_volume_ml": 48,
         "max_dose": null,
         "max_dose_unit": null,
-        "special_instructions": "Vesicant. 24-hour infusion via central line. Dose banded per agreed bands. Maximum lifetime cumulative dose 450mg/m\u00b2 (400mg/m\u00b2 with prior mediastinal/pericardial radiotherapy).",
+        "special_instructions": "Vesicant. 24-hour infusion via central line. Dose banded per agreed bands. Maximum lifetime cumulative dose 450mg/m² (400mg/m² with prior mediastinal/pericardial radiotherapy).",
         "is_core_drug": true,
         "infusion_duration_hours": 24.0,
-        "notes": "Vesicant. 24-hour infusion via central line. Dose banded per agreed bands. Maximum lifetime cumulative dose 450mg/m\u00b2 (400mg/m\u00b2 with prior mediastinal/pericardial radiotherapy)."
+        "notes": "Vesicant. 24-hour infusion via central line. Dose banded per agreed bands. Maximum lifetime cumulative dose 450mg/m² (400mg/m² with prior mediastinal/pericardial radiotherapy)."
       },
       {
         "drug_name": "Methotrexate",
         "dose": 12000,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           22,
@@ -2025,7 +2038,7 @@
         "special_instructions": "High-dose methotrexate. Inflammitant. Urinary pH must be > 7 before starting and maintained throughout. Leucovorin rescue mandatory. Methotrexate levels every 24h from 24h post-infusion until < 0.1 micromol/L. CrCl >= 50ml/min required. Dose banded per CSCCN agreed bands.",
         "is_core_drug": true,
         "infusion_duration_hours": 4.0,
-        "notes": "High-dose methotrexate. Inflammitant. Urinary pH must be > 7 before starting and maintained throughout. Leucovorin rescue mandatory. Methotrexate levels every 24h from 24h post-infusion until < 0.1 micromol/L. CrCl >= 50ml/min required. Dose banded per CSCCN agreed bands. [VERIFIED: Methotrexate 12g/m\u00b2 is standard high-dose protocol for osteosarcoma \u2014 refer to local HD-MTX protocol with mandatory leucovorin rescue]"
+        "notes": "High-dose methotrexate. Inflammitant. Urinary pH must be > 7 before starting and maintained throughout. Leucovorin rescue mandatory. Methotrexate levels every 24h from 24h post-infusion until < 0.1 micromol/L. CrCl >= 50ml/min required. Dose banded per CSCCN agreed bands. [VERIFIED: Methotrexate 12g/m² is standard high-dose protocol for osteosarcoma — refer to local HD-MTX protocol with mandatory leucovorin rescue]"
       }
     ]
   },
@@ -2043,7 +2056,7 @@
       {
         "drug_name": "Etoposide",
         "dose": 150,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1,
@@ -2062,7 +2075,7 @@
       {
         "drug_name": "Ifosfamide",
         "dose": 3000,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1,
@@ -2075,7 +2088,7 @@
         "diluent_volume_ml": 1000,
         "max_dose": null,
         "max_dose_unit": null,
-        "special_instructions": "Neutral. Mesna uroprotection required. Co-infused with mesna 3000mg/m\u00b2 in same bag. Dose banded according to agreed bands.",
+        "special_instructions": "Neutral. Mesna uroprotection required. Co-infused with mesna 3000mg/m² in same bag. Dose banded according to agreed bands.",
         "is_core_drug": true
       }
     ],
@@ -2083,7 +2096,7 @@
       {
         "drug_name": "Mesna",
         "dose": 600,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV bolus",
         "timing": "Before ifosfamide on days 1, 2, 3",
         "duration_minutes": 15,
@@ -2099,7 +2112,7 @@
       {
         "drug_name": "Mesna",
         "dose": 3000,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "timing": "Co-infused with ifosfamide on days 1, 2, 3",
         "duration_minutes": 240,
@@ -2115,7 +2128,7 @@
       {
         "drug_name": "Mesna",
         "dose": 1800,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "timing": "After ifosfamide on days 1, 2, 3",
         "duration_minutes": 720,
@@ -2126,7 +2139,7 @@
           2,
           3
         ],
-        "special_instructions": "On day 3 may be substituted by oral mesna 1200mg/m\u00b2 (rounded upwards to nearest 400mg capsule) given at 0, 2 and 6 hours after end of ifosfamide infusion."
+        "special_instructions": "On day 3 may be substituted by oral mesna 1200mg/m² (rounded upwards to nearest 400mg capsule) given at 0, 2 and 6 hours after end of ifosfamide infusion."
       },
       {
         "drug_name": "Dexamethasone",
@@ -2144,7 +2157,8 @@
           4,
           5
         ],
-        "special_instructions": "Oral or intravenous. Prescribed on inpatient chart."
+        "special_instructions": "Oral or intravenous. Prescribed on inpatient chart.",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Metoclopramide",
@@ -2162,7 +2176,8 @@
           4,
           5
         ],
-        "special_instructions": "Oral or intravenous. Prescribed on inpatient chart."
+        "special_instructions": "Oral or intravenous. Prescribed on inpatient chart.",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Ondansetron",
@@ -2180,7 +2195,8 @@
           4,
           5
         ],
-        "special_instructions": "Oral or intravenous. Prescribed on inpatient chart."
+        "special_instructions": "Oral or intravenous. Prescribed on inpatient chart.",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [
@@ -2205,7 +2221,7 @@
     "dose_modifications": [
       {
         "parameter": "neutrophils",
-        "condition": "0.5-0.74 x10\u2079/L",
+        "condition": "0.5-0.74 x10⁹/L",
         "affected_drugs": [
           "all"
         ],
@@ -2215,7 +2231,7 @@
       },
       {
         "parameter": "neutrophils",
-        "condition": "< 0.5 x10\u2079/L",
+        "condition": "< 0.5 x10⁹/L",
         "affected_drugs": [
           "all"
         ],
@@ -2225,7 +2241,7 @@
       },
       {
         "parameter": "platelets",
-        "condition": "25-74 x10\u2079/L",
+        "condition": "25-74 x10⁹/L",
         "affected_drugs": [
           "all"
         ],
@@ -2235,7 +2251,7 @@
       },
       {
         "parameter": "platelets",
-        "condition": "< 25 x10\u2079/L",
+        "condition": "< 25 x10⁹/L",
         "affected_drugs": [
           "all"
         ],
@@ -2245,7 +2261,7 @@
       },
       {
         "parameter": "bilirubin",
-        "condition": "30-51 \u00b5mol/L or AST/ALT 60-180 units",
+        "condition": "30-51 µmol/L or AST/ALT 60-180 units",
         "affected_drugs": [
           "Etoposide"
         ],
@@ -2255,7 +2271,7 @@
       },
       {
         "parameter": "bilirubin",
-        "condition": "> 51 \u00b5mol/L or AST/ALT > 180 units",
+        "condition": "> 51 µmol/L or AST/ALT > 180 units",
         "affected_drugs": [
           "Etoposide"
         ],
@@ -2265,7 +2281,7 @@
       },
       {
         "parameter": "bilirubin",
-        "condition": "> 20 \u00b5mol/L or AST/ALT > 2.5xULN or ALP > 2.5xULN",
+        "condition": "> 20 µmol/L or AST/ALT > 2.5xULN or ALP > 2.5xULN",
         "affected_drugs": [
           "Ifosfamide"
         ],
@@ -2301,7 +2317,7 @@
         ],
         "action": "reduce_25",
         "factor": 0.7,
-        "notes": "Ifosfamide: CrCl 40-59: 70% or consider using ifosfamide at dose of 1500mg/m\u00b2"
+        "notes": "Ifosfamide: CrCl 40-59: 70% or consider using ifosfamide at dose of 1500mg/m²"
       },
       {
         "parameter": "creatinine_clearance",
@@ -2311,7 +2327,7 @@
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "Ifosfamide: CrCl < 40: clinical decision, consider using ifosfamide at a dose of 1500mg/m\u00b2"
+        "notes": "Ifosfamide: CrCl < 40: clinical decision, consider using ifosfamide at a dose of 1500mg/m²"
       },
       {
         "parameter": "other",
@@ -2367,7 +2383,7 @@
     ],
     "special_warnings": [
       "INPATIENT REGIMEN - all supportive medicines must be prescribed on inpatient chart",
-      "Mesna uroprotection required: pre-bolus 600mg/m\u00b2 + co-infusion 3000mg/m\u00b2 with ifosfamide + post-infusion 1800mg/m\u00b2 over 12 hours",
+      "Mesna uroprotection required: pre-bolus 600mg/m² + co-infusion 3000mg/m² with ifosfamide + post-infusion 1800mg/m² over 12 hours",
       "Ifosfamide encephalopathy risk factors: low albumin, renal impairment, prior cisplatin, poor performance status, CNS tumour, bulky pelvic disease, concomitant psychotropic drugs, younger age",
       "Methylene blue 50mg four times a day IV in 100ml NaCl 0.9% over 30 minutes may prevent or treat ifosfamide-induced encephalopathy",
       "Growth factors per local formulary: filgrastim 30MU SC daily from day 6, OR lenograstim 33.6MU SC daily from day 6, OR pegfilgrastim 6mg SC once on day 4",
@@ -2383,7 +2399,7 @@
       {
         "drug_name": "Etoposide",
         "dose": 150,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1,
@@ -2404,7 +2420,7 @@
       {
         "drug_name": "Ifosfamide",
         "dose": 3000,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1,
@@ -2417,10 +2433,10 @@
         "diluent_volume_ml": 1000,
         "max_dose": null,
         "max_dose_unit": null,
-        "special_instructions": "Neutral. Mesna uroprotection required. Co-infused with mesna 3000mg/m\u00b2 in same bag. Dose banded according to agreed bands.",
+        "special_instructions": "Neutral. Mesna uroprotection required. Co-infused with mesna 3000mg/m² in same bag. Dose banded according to agreed bands.",
         "is_core_drug": true,
         "infusion_duration_hours": 4.0,
-        "notes": "Neutral. Mesna uroprotection required. Co-infused with mesna 3000mg/m\u00b2 in same bag. Dose banded according to agreed bands."
+        "notes": "Neutral. Mesna uroprotection required. Co-infused with mesna 3000mg/m² in same bag. Dose banded according to agreed bands."
       }
     ]
   },
@@ -2438,7 +2454,7 @@
       {
         "drug_name": "Liposomal Doxorubicin (Caelyx)",
         "dose": 40,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -2449,13 +2465,13 @@
         "diluent_volume_ml": 250,
         "max_dose": null,
         "max_dose_unit": null,
-        "special_instructions": "Exfoliant. INCOMPATIBLE with sodium chloride 0.9% - use glucose 5% ONLY; always use glucose 5% flush. First infusion: maximum rate 1mg/minute. Subsequent infusions may be given over 60 minutes (default Aria time 120 minutes). Do NOT use in-line filters. Doses >= 90mg: dilute in 500ml glucose 5%. Maximum lifetime cumulative doxorubicin dose 450mg/m\u00b2 (400mg/m\u00b2 with prior mediastinal/pericardial radiotherapy). Dose banded according to agreed bands. Not a licensed indication for Caelyx.",
+        "special_instructions": "Exfoliant. INCOMPATIBLE with sodium chloride 0.9% - use glucose 5% ONLY; always use glucose 5% flush. First infusion: maximum rate 1mg/minute. Subsequent infusions may be given over 60 minutes (default Aria time 120 minutes). Do NOT use in-line filters. Doses >= 90mg: dilute in 500ml glucose 5%. Maximum lifetime cumulative doxorubicin dose 450mg/m² (400mg/m² with prior mediastinal/pericardial radiotherapy). Dose banded according to agreed bands. Not a licensed indication for Caelyx.",
         "is_core_drug": true
       },
       {
         "drug_name": "Ifosfamide",
         "dose": 3000,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1,
@@ -2468,7 +2484,7 @@
         "diluent_volume_ml": 1000,
         "max_dose": null,
         "max_dose_unit": null,
-        "special_instructions": "Neutral. Mesna uroprotection required. Co-infused with mesna 3000mg/m\u00b2 in same bag. Dose banded according to agreed bands.",
+        "special_instructions": "Neutral. Mesna uroprotection required. Co-infused with mesna 3000mg/m² in same bag. Dose banded according to agreed bands.",
         "is_core_drug": true
       }
     ],
@@ -2476,7 +2492,7 @@
       {
         "drug_name": "Mesna",
         "dose": 600,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV bolus",
         "timing": "Before ifosfamide on days 1, 2, 3",
         "duration_minutes": 15,
@@ -2492,7 +2508,7 @@
       {
         "drug_name": "Mesna",
         "dose": 3000,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "timing": "Co-infused with ifosfamide on days 1, 2, 3",
         "duration_minutes": 240,
@@ -2508,7 +2524,7 @@
       {
         "drug_name": "Mesna",
         "dose": 1800,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "timing": "After ifosfamide on days 1, 2, 3",
         "duration_minutes": 720,
@@ -2519,7 +2535,7 @@
           2,
           3
         ],
-        "special_instructions": "On day 3 may be substituted by oral mesna 1200mg/m\u00b2 (rounded upwards to nearest 400mg capsule) at 0, 2 and 6 hours after end of ifosfamide infusion."
+        "special_instructions": "On day 3 may be substituted by oral mesna 1200mg/m² (rounded upwards to nearest 400mg capsule) at 0, 2 and 6 hours after end of ifosfamide infusion."
       },
       {
         "drug_name": "Dexamethasone",
@@ -2537,7 +2553,8 @@
           4,
           5
         ],
-        "special_instructions": "Oral or intravenous. Prescribed on inpatient chart."
+        "special_instructions": "Oral or intravenous. Prescribed on inpatient chart.",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Metoclopramide",
@@ -2555,7 +2572,8 @@
           4,
           5
         ],
-        "special_instructions": "Oral or intravenous. Prescribed on inpatient chart."
+        "special_instructions": "Oral or intravenous. Prescribed on inpatient chart.",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Ondansetron",
@@ -2573,7 +2591,8 @@
           4,
           5
         ],
-        "special_instructions": "Oral or intravenous. Prescribed on inpatient chart."
+        "special_instructions": "Oral or intravenous. Prescribed on inpatient chart.",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [
@@ -2598,67 +2617,67 @@
     "dose_modifications": [
       {
         "parameter": "neutrophils",
-        "condition": ">= 1.0 x10\u2079/L required prior to cycle 1",
+        "condition": ">= 1.0 x10⁹/L required prior to cycle 1",
         "affected_drugs": [
           "all"
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "Prior to cycle 1: neutrophil equal to or more than 1x10\u2079/L required"
+        "notes": "Prior to cycle 1: neutrophil equal to or more than 1x10⁹/L required"
       },
       {
         "parameter": "platelets",
-        "condition": ">= 100 x10\u2079/L required prior to cycle 1",
+        "condition": ">= 100 x10⁹/L required prior to cycle 1",
         "affected_drugs": [
           "all"
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "Prior to cycle 1: platelets equal to or more than 100x10\u2079/L required"
+        "notes": "Prior to cycle 1: platelets equal to or more than 100x10⁹/L required"
       },
       {
         "parameter": "neutrophils",
-        "condition": "0.5-1.0 x10\u2079/L on day 1",
+        "condition": "0.5-1.0 x10⁹/L on day 1",
         "affected_drugs": [
           "all"
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "Delay until recovery to 1x10\u2079/L or greater then continue at full dose"
+        "notes": "Delay until recovery to 1x10⁹/L or greater then continue at full dose"
       },
       {
         "parameter": "neutrophils",
-        "condition": "< 0.5 x10\u2079/L on day 1",
+        "condition": "< 0.5 x10⁹/L on day 1",
         "affected_drugs": [
           "all"
         ],
         "action": "reduce_25",
         "factor": 0.75,
-        "notes": "Delay until recovery to 1x10\u2079/L or greater then continue at 75% of the original dose"
+        "notes": "Delay until recovery to 1x10⁹/L or greater then continue at 75% of the original dose"
       },
       {
         "parameter": "platelets",
-        "condition": "50-99 x10\u2079/L on day 1",
+        "condition": "50-99 x10⁹/L on day 1",
         "affected_drugs": [
           "all"
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "Delay until recovery to 100x10\u2079/L or greater then continue at full dose"
+        "notes": "Delay until recovery to 100x10⁹/L or greater then continue at full dose"
       },
       {
         "parameter": "platelets",
-        "condition": "< 50 x10\u2079/L on day 1",
+        "condition": "< 50 x10⁹/L on day 1",
         "affected_drugs": [
           "all"
         ],
         "action": "reduce_25",
         "factor": 0.75,
-        "notes": "Delay until recovery to 100x10\u2079/L or greater then continue at 75% of the original dose"
+        "notes": "Delay until recovery to 100x10⁹/L or greater then continue at 75% of the original dose"
       },
       {
         "parameter": "bilirubin",
-        "condition": "> 20 \u00b5mol/L or AST/ALT > 2.5xULN or ALP > 2.5xULN",
+        "condition": "> 20 µmol/L or AST/ALT > 2.5xULN or ALP > 2.5xULN",
         "affected_drugs": [
           "Ifosfamide"
         ],
@@ -2668,7 +2687,7 @@
       },
       {
         "parameter": "bilirubin",
-        "condition": "< 20 \u00b5mol/L",
+        "condition": "< 20 µmol/L",
         "affected_drugs": [
           "Liposomal Doxorubicin"
         ],
@@ -2678,7 +2697,7 @@
       },
       {
         "parameter": "bilirubin",
-        "condition": "21-51 \u00b5mol/L",
+        "condition": "21-51 µmol/L",
         "affected_drugs": [
           "Liposomal Doxorubicin"
         ],
@@ -2688,7 +2707,7 @@
       },
       {
         "parameter": "bilirubin",
-        "condition": ">= 51 \u00b5mol/L",
+        "condition": ">= 51 µmol/L",
         "affected_drugs": [
           "Liposomal Doxorubicin"
         ],
@@ -2704,7 +2723,7 @@
         ],
         "action": "reduce_25",
         "factor": 0.7,
-        "notes": "Ifosfamide: 70% or consider using cyclophosphamide at a dose of 1500mg/m\u00b2"
+        "notes": "Ifosfamide: 70% or consider using cyclophosphamide at a dose of 1500mg/m²"
       },
       {
         "parameter": "creatinine_clearance",
@@ -2714,7 +2733,7 @@
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "Ifosfamide: clinical decision, consider using cyclophosphamide at a dose of 1500mg/m\u00b2"
+        "notes": "Ifosfamide: clinical decision, consider using cyclophosphamide at a dose of 1500mg/m²"
       },
       {
         "parameter": "creatinine_clearance",
@@ -2825,7 +2844,7 @@
       "Do NOT use in-line filters with liposomal doxorubicin",
       "NOT a licensed indication for Caelyx at the time of writing - this protocol may require funding approval",
       "Brands of liposomal doxorubicin may not be interchangeable",
-      "Mesna uroprotection required: pre-bolus 600mg/m\u00b2 + co-infusion 3000mg/m\u00b2 + post-infusion 1800mg/m\u00b2 over 12 hours",
+      "Mesna uroprotection required: pre-bolus 600mg/m² + co-infusion 3000mg/m² + post-infusion 1800mg/m² over 12 hours",
       "Ifosfamide encephalopathy risk factors: low albumin, renal impairment, prior cisplatin, poor PS, CNS tumour, bulky pelvic disease, psychotropic drugs, younger age. Methylene blue 50mg four times daily IV in 100ml NaCl 0.9% over 30 minutes may prevent or treat.",
       "Liposomal doxorubicin infusion reaction: immediately stop infusion, administer chlorpheniramine and hydrocortisone; restart at 5% total dose over 15 minutes; double rate every 15 minutes if tolerated; total infusion time 90 minutes",
       "Growth factors per local formulary: filgrastim 30MU SC daily from day 6, OR lenograstim 33.6MU SC daily from day 6, OR pegfilgrastim 6mg SC once on day 4",
@@ -2835,7 +2854,7 @@
     "required_patient_fields": {
       "creatinine_clearance": "EDTA or calculated CrCl required prior to each cycle",
       "cardiac_function": "Baseline ECG and LVEF required before starting therapy",
-      "prior_anthracycline_dose_mg_m2": "Cumulative prior anthracycline dose (mg/m\u00b2) required. Doxorubicin lifetime limit 450-550mg/m\u00b2 (lower with cardiac risk factors or prior mediastinal radiation). Epirubicin limit 900mg/m\u00b2."
+      "prior_anthracycline_dose_mg_m2": "Cumulative prior anthracycline dose (mg/m²) required. Doxorubicin lifetime limit 450-550mg/m² (lower with cardiac risk factors or prior mediastinal radiation). Epirubicin limit 900mg/m²."
     },
     "disease_site": "Sarcoma",
     "number_of_cycles": 6,
@@ -2843,7 +2862,7 @@
       {
         "drug_name": "Liposomal Doxorubicin (Caelyx)",
         "dose": 40,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -2854,15 +2873,15 @@
         "diluent_volume_ml": 250,
         "max_dose": null,
         "max_dose_unit": null,
-        "special_instructions": "Exfoliant. INCOMPATIBLE with sodium chloride 0.9% - use glucose 5% ONLY; always use glucose 5% flush. First infusion: maximum rate 1mg/minute. Subsequent infusions may be given over 60 minutes (default Aria time 120 minutes). Do NOT use in-line filters. Doses >= 90mg: dilute in 500ml glucose 5%. Maximum lifetime cumulative doxorubicin dose 450mg/m\u00b2 (400mg/m\u00b2 with prior mediastinal/pericardial radiotherapy). Dose banded according to agreed bands. Not a licensed indication for Caelyx.",
+        "special_instructions": "Exfoliant. INCOMPATIBLE with sodium chloride 0.9% - use glucose 5% ONLY; always use glucose 5% flush. First infusion: maximum rate 1mg/minute. Subsequent infusions may be given over 60 minutes (default Aria time 120 minutes). Do NOT use in-line filters. Doses >= 90mg: dilute in 500ml glucose 5%. Maximum lifetime cumulative doxorubicin dose 450mg/m² (400mg/m² with prior mediastinal/pericardial radiotherapy). Dose banded according to agreed bands. Not a licensed indication for Caelyx.",
         "is_core_drug": true,
         "infusion_duration_hours": 2.0,
-        "notes": "Exfoliant. INCOMPATIBLE with sodium chloride 0.9% - use glucose 5% ONLY; always use glucose 5% flush. First infusion: maximum rate 1mg/minute. Subsequent infusions may be given over 60 minutes (default Aria time 120 minutes). Do NOT use in-line filters. Doses >= 90mg: dilute in 500ml glucose 5%. Maximum lifetime cumulative doxorubicin dose 450mg/m\u00b2 (400mg/m\u00b2 with prior mediastinal/pericardial radiotherapy). Dose banded according to agreed bands. Not a licensed indication for Caelyx."
+        "notes": "Exfoliant. INCOMPATIBLE with sodium chloride 0.9% - use glucose 5% ONLY; always use glucose 5% flush. First infusion: maximum rate 1mg/minute. Subsequent infusions may be given over 60 minutes (default Aria time 120 minutes). Do NOT use in-line filters. Doses >= 90mg: dilute in 500ml glucose 5%. Maximum lifetime cumulative doxorubicin dose 450mg/m² (400mg/m² with prior mediastinal/pericardial radiotherapy). Dose banded according to agreed bands. Not a licensed indication for Caelyx."
       },
       {
         "drug_name": "Ifosfamide",
         "dose": 3000,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1,
@@ -2875,10 +2894,10 @@
         "diluent_volume_ml": 1000,
         "max_dose": null,
         "max_dose_unit": null,
-        "special_instructions": "Neutral. Mesna uroprotection required. Co-infused with mesna 3000mg/m\u00b2 in same bag. Dose banded according to agreed bands.",
+        "special_instructions": "Neutral. Mesna uroprotection required. Co-infused with mesna 3000mg/m² in same bag. Dose banded according to agreed bands.",
         "is_core_drug": true,
         "infusion_duration_hours": 4.0,
-        "notes": "Neutral. Mesna uroprotection required. Co-infused with mesna 3000mg/m\u00b2 in same bag. Dose banded according to agreed bands."
+        "notes": "Neutral. Mesna uroprotection required. Co-infused with mesna 3000mg/m² in same bag. Dose banded according to agreed bands."
       }
     ]
   }

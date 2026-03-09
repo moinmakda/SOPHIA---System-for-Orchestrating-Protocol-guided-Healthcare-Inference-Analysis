@@ -171,11 +171,13 @@ class ProtocolDrug(BaseModel):
     def set_route_default(cls, v):
         if v is None:
             return RouteOfAdministration.ORAL  # Safest default
-        # Handle fuzzy matching
+        # Handle fuzzy matching — bolus must be checked before generic "iv"
         if isinstance(v, str):
             v_lower = v.lower()
             if "oral" in v_lower:
                 return RouteOfAdministration.ORAL
+            if "bolus" in v_lower:
+                return RouteOfAdministration.IV_BOLUS
             if "iv" in v_lower or "intravenous" in v_lower:
                 return RouteOfAdministration.IV_INFUSION
             if "subcutaneous" in v_lower or "sc" in v_lower:

@@ -42,7 +42,8 @@
           8,
           15
         ],
-        "indication": "Premedication to reduce risk of hypersensitivity reaction"
+        "indication": "Premedication to reduce risk of hypersensitivity reaction",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Dexamethasone",
@@ -55,7 +56,8 @@
           8,
           15
         ],
-        "indication": "Premedication to reduce risk of hypersensitivity reaction"
+        "indication": "Premedication to reduce risk of hypersensitivity reaction",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "H2 antagonist (e.g. ranitidine 50mg IV / famotidine 20mg oral / nizatidine 150mg oral / ranitidine 150mg oral)",
@@ -81,7 +83,8 @@
           8,
           15
         ],
-        "indication": "Antiemetic"
+        "indication": "Antiemetic",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [

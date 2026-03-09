@@ -35,7 +35,8 @@
         "dose_unit": "mg",
         "route": "IV infusion",
         "timing": "As required for infusion-related reactions",
-        "indication": "Infusion-related reaction management"
+        "indication": "Infusion-related reaction management",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Hydrocortisone sodium succinate",
@@ -43,7 +44,8 @@
         "dose_unit": "mg",
         "route": "IV infusion",
         "timing": "As required for infusion-related reactions",
-        "indication": "Infusion-related reaction management"
+        "indication": "Infusion-related reaction management",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Paracetamol",
@@ -508,7 +510,8 @@
         "dose_unit": "mg",
         "route": "IV infusion",
         "timing": "30 minutes prior to treatment",
-        "indication": "Pre-medication to reduce hypersensitivity reactions"
+        "indication": "Pre-medication to reduce hypersensitivity reactions",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Metoclopramide",

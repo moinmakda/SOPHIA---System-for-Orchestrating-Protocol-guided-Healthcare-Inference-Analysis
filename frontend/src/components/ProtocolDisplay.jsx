@@ -140,6 +140,9 @@ export function ProtocolDisplay({ protocol, onBack, onReset }) {
   };
 
   const formatDose = (drug) => {
+    if (drug.calculated_dose_unit === 'per label') {
+      return 'Per prescriber / product label';
+    }
     if (drug.banded_dose) {
       return `${drug.banded_dose} ${drug.calculated_dose_unit} (banded; calculated: ${drug.calculated_dose} ${drug.calculated_dose_unit})`;
     }

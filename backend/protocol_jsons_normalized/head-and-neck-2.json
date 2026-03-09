@@ -106,7 +106,8 @@
           29
         ],
         "frequency": "once",
-        "notes": "Pre-hydration over 60 minutes"
+        "notes": "Pre-hydration over 60 minutes",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Sodium chloride 0.9% with 20mmol potassium chloride and 16mmol magnesium sulphate",
@@ -119,7 +120,8 @@
           29
         ],
         "frequency": "once",
-        "notes": "Post-hydration over 60 minutes"
+        "notes": "Post-hydration over 60 minutes",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [
@@ -332,7 +334,8 @@
           1
         ],
         "frequency": "once",
-        "notes": "Pre-hydration over 30 minutes"
+        "notes": "Pre-hydration over 30 minutes",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Sodium chloride 0.9%",
@@ -344,7 +347,8 @@
           1
         ],
         "frequency": "once",
-        "notes": "Post-hydration over 30 minutes"
+        "notes": "Post-hydration over 30 minutes",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [
@@ -633,7 +637,8 @@
           1
         ],
         "frequency": "once",
-        "notes": "Pre-hydration over 60 minutes"
+        "notes": "Pre-hydration over 60 minutes",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Sodium chloride 0.9% with 20mmol potassium chloride and 16mmol magnesium sulphate",
@@ -645,7 +650,8 @@
           1
         ],
         "frequency": "once",
-        "notes": "Post-hydration over 60 minutes"
+        "notes": "Post-hydration over 60 minutes",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [],
@@ -974,7 +980,8 @@
           1
         ],
         "frequency": "once",
-        "notes": "Pre-hydration over 60 minutes"
+        "notes": "Pre-hydration over 60 minutes",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Sodium chloride 0.9% with 20mmol potassium chloride and 16mmol magnesium sulphate",
@@ -986,7 +993,8 @@
           1
         ],
         "frequency": "once",
-        "notes": "Post-hydration over 60 minutes"
+        "notes": "Post-hydration over 60 minutes",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Ciprofloxacin",
@@ -1402,7 +1410,8 @@
           4
         ],
         "frequency": "once daily before cisplatin",
-        "notes": "Pre-cisplatin hydration over 30 minutes before each cisplatin dose"
+        "notes": "Pre-cisplatin hydration over 30 minutes before each cisplatin dose",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [

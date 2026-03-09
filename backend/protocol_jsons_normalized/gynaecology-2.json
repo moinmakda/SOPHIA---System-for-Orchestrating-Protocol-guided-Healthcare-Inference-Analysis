@@ -53,7 +53,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "30 minutes prior to carboplatin",
-        "indication": "Prevention of allergic reactions to carboplatin"
+        "indication": "Prevention of allergic reactions to carboplatin",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Dexamethasone",
@@ -61,7 +62,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "30 minutes prior to carboplatin",
-        "indication": "Prevention of allergic reactions to carboplatin"
+        "indication": "Prevention of allergic reactions to carboplatin",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "H2 antagonist (e.g. ranitidine 50mg IV or famotidine 20mg oral or nizatidine 150mg oral or ranitidine 150mg oral)",
@@ -77,7 +79,8 @@
         "dose_unit": "mg",
         "route": "IV infusion",
         "timing": "15-30 minutes prior to chemotherapy",
-        "indication": "Antiemetic"
+        "indication": "Antiemetic",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Metoclopramide (day 8)",
@@ -85,7 +88,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "Prior to day 8 gemcitabine if required",
-        "indication": "Antiemetic on day 8"
+        "indication": "Antiemetic on day 8",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [
@@ -389,7 +393,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "30 minutes prior to carboplatin",
-        "indication": "Prevention of allergic reactions to carboplatin"
+        "indication": "Prevention of allergic reactions to carboplatin",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Dexamethasone",
@@ -397,7 +402,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "30 minutes prior to carboplatin",
-        "indication": "Prevention of allergic reactions to carboplatin"
+        "indication": "Prevention of allergic reactions to carboplatin",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "H2 antagonist (e.g. ranitidine 50mg IV or famotidine 20mg oral or nizatidine 150mg oral or ranitidine 150mg oral)",
@@ -413,7 +419,8 @@
         "dose_unit": "mg",
         "route": "IV infusion",
         "timing": "15-30 minutes prior to chemotherapy",
-        "indication": "Antiemetic"
+        "indication": "Antiemetic",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [
@@ -674,7 +681,8 @@
         "dose_unit": "mg",
         "route": "IV infusion",
         "timing": "15-30 minutes prior to chemotherapy",
-        "indication": "Antiemetic"
+        "indication": "Antiemetic",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Ondansetron",
@@ -682,7 +690,8 @@
         "dose_unit": "mg",
         "route": "IV infusion",
         "timing": "15-30 minutes prior to chemotherapy",
-        "indication": "Antiemetic"
+        "indication": "Antiemetic",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [
@@ -968,7 +977,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "30 minutes before chemotherapy",
-        "indication": "Premedication to reduce risk of hypersensitivity reaction to paclitaxel"
+        "indication": "Premedication to reduce risk of hypersensitivity reaction to paclitaxel",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Dexamethasone",
@@ -976,7 +986,8 @@
         "dose_unit": "mg",
         "route": "IV infusion",
         "timing": "30 minutes before chemotherapy",
-        "indication": "Premedication to reduce risk of hypersensitivity reaction to paclitaxel"
+        "indication": "Premedication to reduce risk of hypersensitivity reaction to paclitaxel",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "H2 antagonist (e.g. famotidine 20mg oral or nizatidine 150mg oral or ranitidine 150mg oral or ranitidine 50mg IV)",
@@ -992,7 +1003,8 @@
         "dose_unit": "mg",
         "route": "IV infusion",
         "timing": "15-30 minutes prior to chemotherapy",
-        "indication": "Antiemetic"
+        "indication": "Antiemetic",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [
@@ -1264,7 +1276,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "30 minutes before chemotherapy",
-        "indication": "Premedication to reduce risk of hypersensitivity reaction to paclitaxel"
+        "indication": "Premedication to reduce risk of hypersensitivity reaction to paclitaxel",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Dexamethasone",
@@ -1272,7 +1285,8 @@
         "dose_unit": "mg",
         "route": "IV infusion",
         "timing": "30 minutes before chemotherapy",
-        "indication": "Premedication to reduce risk of hypersensitivity reaction to paclitaxel"
+        "indication": "Premedication to reduce risk of hypersensitivity reaction to paclitaxel",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "H2 antagonist (e.g. famotidine 20mg oral or nizatidine 150mg oral or ranitidine 150mg oral or ranitidine 50mg IV)",
@@ -1288,7 +1302,8 @@
         "dose_unit": "mg",
         "route": "IV infusion",
         "timing": "15-30 minutes prior to chemotherapy",
-        "indication": "Antiemetic"
+        "indication": "Antiemetic",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [
@@ -1561,7 +1576,8 @@
         "dose_unit": "mg",
         "route": "IV infusion",
         "timing": "15-30 minutes prior to chemotherapy",
-        "indication": "Antiemetic"
+        "indication": "Antiemetic",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Ondansetron",
@@ -1569,7 +1585,8 @@
         "dose_unit": "mg",
         "route": "IV infusion",
         "timing": "15-30 minutes prior to chemotherapy",
-        "indication": "Antiemetic"
+        "indication": "Antiemetic",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [
@@ -1912,7 +1929,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "30 minutes prior to carboplatin",
-        "indication": "Prevention of allergic reactions to carboplatin"
+        "indication": "Prevention of allergic reactions to carboplatin",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Dexamethasone",
@@ -1920,7 +1938,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "30 minutes prior to carboplatin",
-        "indication": "Prevention of allergic reactions to carboplatin"
+        "indication": "Prevention of allergic reactions to carboplatin",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "H2 antagonist (e.g. ranitidine 50mg IV or famotidine 20mg oral or nizatidine 150mg oral or ranitidine 150mg oral)",
@@ -1936,7 +1955,8 @@
         "dose_unit": "mg",
         "route": "IV infusion",
         "timing": "15-30 minutes prior to chemotherapy",
-        "indication": "Antiemetic"
+        "indication": "Antiemetic",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [
@@ -2117,7 +2137,8 @@
         "dose_unit": "mg",
         "route": "IV infusion",
         "timing": "15-30 minutes prior to chemotherapy",
-        "indication": "Antiemetic"
+        "indication": "Antiemetic",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Ondansetron",
@@ -2125,7 +2146,8 @@
         "dose_unit": "mg",
         "route": "IV infusion",
         "timing": "15-30 minutes prior to chemotherapy",
-        "indication": "Antiemetic"
+        "indication": "Antiemetic",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [

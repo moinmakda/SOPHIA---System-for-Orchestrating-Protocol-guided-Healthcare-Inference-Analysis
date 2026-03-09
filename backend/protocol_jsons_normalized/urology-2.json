@@ -221,7 +221,8 @@
         ],
         "timing": "On days of bleomycin administration",
         "frequency": "when required",
-        "notes": "For bleomycin reactions"
+        "notes": "For bleomycin reactions",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Chlorphenamine",
@@ -235,7 +236,8 @@
         ],
         "timing": "On days of bleomycin administration",
         "frequency": "when required",
-        "notes": "For bleomycin reactions"
+        "notes": "For bleomycin reactions",
+        "infusion_duration_hours": 0.17
       }
     ],
     "take_home_medicines": [
@@ -701,7 +703,8 @@
         ],
         "timing": "On day of bleomycin administration",
         "frequency": "when required",
-        "notes": "For bleomycin reactions"
+        "notes": "For bleomycin reactions",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Chlorphenamine",
@@ -713,7 +716,8 @@
         ],
         "timing": "On day of bleomycin administration",
         "frequency": "when required",
-        "notes": "For bleomycin reactions"
+        "notes": "For bleomycin reactions",
+        "infusion_duration_hours": 0.17
       }
     ],
     "take_home_medicines": [
@@ -1147,7 +1151,8 @@
         ],
         "timing": "On days of bleomycin administration",
         "frequency": "when required",
-        "notes": "For bleomycin reactions"
+        "notes": "For bleomycin reactions",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Chlorphenamine",
@@ -1161,7 +1166,8 @@
         ],
         "timing": "On days of bleomycin administration",
         "frequency": "when required",
-        "notes": "For bleomycin reactions"
+        "notes": "For bleomycin reactions",
+        "infusion_duration_hours": 0.17
       }
     ],
     "take_home_medicines": [
@@ -1566,7 +1572,8 @@
         ],
         "timing": "On day of bleomycin administration",
         "frequency": "when required",
-        "notes": "For bleomycin reactions"
+        "notes": "For bleomycin reactions",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Chlorphenamine",
@@ -1578,7 +1585,8 @@
         ],
         "timing": "On day of bleomycin administration",
         "frequency": "when required",
-        "notes": "For bleomycin reactions"
+        "notes": "For bleomycin reactions",
+        "infusion_duration_hours": 0.17
       }
     ],
     "take_home_medicines": [
@@ -1999,7 +2007,8 @@
         ],
         "timing": "On days of bleomycin administration",
         "frequency": "when required",
-        "notes": "For bleomycin reactions"
+        "notes": "For bleomycin reactions",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Chlorphenamine",
@@ -2013,7 +2022,8 @@
         ],
         "timing": "On days of bleomycin administration",
         "frequency": "when required",
-        "notes": "For bleomycin reactions"
+        "notes": "For bleomycin reactions",
+        "infusion_duration_hours": 0.17
       }
     ],
     "take_home_medicines": [
@@ -2321,7 +2331,8 @@
         ],
         "timing": "At least 30 minutes prior to chemotherapy",
         "frequency": "once",
-        "notes": "Premedication"
+        "notes": "Premedication",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Dexamethasone",

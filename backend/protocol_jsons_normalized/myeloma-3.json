@@ -72,7 +72,8 @@
         "dose_unit": "mg",
         "route": "IV infusion",
         "timing": "1-3 hours before daratumumab",
-        "indication": "Pre-medication for daratumumab infusion related reaction prevention"
+        "indication": "Pre-medication for daratumumab infusion related reaction prevention",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Paracetamol",
@@ -351,7 +352,7 @@
         "max_dose_unit": null,
         "special_instructions": "Cycles 9 and 10: day 1 only. Cycle 11 onwards: day 1 only (daratumumab monotherapy). Prescribed per national dose bands (20 NS). Continue until disease progression. Use PES filter (0.22 or 0.2 micrometre). Rapid infusion protocol available from 3rd infusion onwards if criteria met (90 min total). Inform blood transfusion before first administration. Daratumumab binds CD38 on RBCs - patient requires red cell phenotyping.",
         "is_core_drug": true,
-        "infusion_duration_hours": null,
+        "infusion_duration_hours": 3.5,
         "notes": "every 28 days | Cycles 9 and 10: day 1 only. Cycle 11 onwards: day 1 only (daratumumab monotherapy). Prescribed per national dose bands (20 NS). Continue until disease progression. Use PES filter (0.22 or 0.2 micrometre). Rapid infusion protocol available from 3rd infusion onwards if criteria met (90 min total). Inform blood transfusion before first administration. Daratumumab binds CD38 on RBCs - patient requires red cell phenotyping."
       },
       {
@@ -1113,7 +1114,8 @@
         "dose_unit": "mg",
         "route": "IV infusion",
         "timing": "1-3 hours before daratumumab",
-        "indication": "Pre-medication for daratumumab infusion related reaction prevention"
+        "indication": "Pre-medication for daratumumab infusion related reaction prevention",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Paracetamol",
@@ -1277,7 +1279,7 @@
         "max_dose_unit": null,
         "special_instructions": "Cycle 9 onwards (bortezomib given cycles 1-8 only; both regimens include 32 doses of bortezomib). Daratumumab monotherapy maintenance from cycle 9 onwards. Continue until disease progression. Prescribed per national dose bands (20 NS). Use PES filter. Rapid infusion (90 min) protocol available from 3rd infusion if criteria met. Inform blood transfusion before first administration.",
         "is_core_drug": true,
-        "infusion_duration_hours": null,
+        "infusion_duration_hours": 3.5,
         "notes": "every 28 days | Cycle 9 onwards (bortezomib given cycles 1-8 only; both regimens include 32 doses of bortezomib). Daratumumab monotherapy maintenance from cycle 9 onwards. Continue until disease progression. Prescribed per national dose bands (20 NS). Use PES filter. Rapid infusion (90 min) protocol available from 3rd infusion if criteria met. Inform blood transfusion before first administration."
       },
       {
@@ -1373,7 +1375,8 @@
         "dose_unit": "mg",
         "route": "IV infusion",
         "timing": "60 minutes before elranatamab injection (first 3 doses mandatory)",
-        "indication": "Pre-medication for step-up doses and first full treatment dose"
+        "indication": "Pre-medication for step-up doses and first full treatment dose",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Dexamethasone",
@@ -1397,7 +1400,8 @@
         "dose_unit": "mg/kg",
         "route": "IV infusion",
         "timing": "As required - must be available on ward before each elranatamab injection",
-        "indication": "CRS management. Max dose 800mg. 8-hourly if required (max 3 doses per 6 weeks). One dose must be on ward prior to each injection during cycles 1 and 2."
+        "indication": "CRS management. Max dose 800mg. 8-hourly if required (max 3 doses per 6 weeks). One dose must be on ward prior to each injection during cycles 1 and 2.",
+        "infusion_duration_hours": 1.0
       },
       {
         "drug_name": "Hydrocortisone",
@@ -1405,7 +1409,8 @@
         "dose_unit": "mg",
         "route": "IV infusion",
         "timing": "When required for injection related reactions",
-        "indication": "Treatment of elranatamab injection related reactions"
+        "indication": "Treatment of elranatamab injection related reactions",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Salbutamol",

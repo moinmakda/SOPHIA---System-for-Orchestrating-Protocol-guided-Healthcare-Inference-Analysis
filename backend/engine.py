@@ -803,7 +803,33 @@ class ProtocolEngine:
         # Calculate base dose
         base_dose = drug.dose
         dose_unit = drug.dose_unit
-        
+
+        # Zero/null dose — drug is dosed "per label" (e.g. CAR-T products, "H2 antagonist per local formulary")
+        # Return as-is with unit "per label"; no arithmetic possible
+        if not base_dose:
+            note = drug.special_instructions or "Dose per prescriber / product label"
+            return CalculatedDose(
+                drug_id=drug.drug_id,
+                drug_name=drug.drug_name,
+                original_dose=0,
+                original_dose_unit=str(dose_unit.value) if hasattr(dose_unit, 'value') else str(dose_unit),
+                calculated_dose=0,
+                calculated_dose_unit="per label",
+                route=str(drug.route.value) if hasattr(drug.route, 'value') else str(drug.route),
+                days=drug.days,
+                duration_minutes=drug.duration_minutes,
+                diluent=drug.diluent,
+                diluent_volume_ml=drug.diluent_volume_ml,
+                timing=drug.timing,
+                frequency=drug.frequency,
+                special_instructions=note,
+                prn=drug.prn,
+                dose_modified=False,
+                modification_reason=None,
+                modification_percent=None,
+                banded_dose=None,
+            ), warnings, modifications
+
         # Apply BSA/weight-based calculation
         if dose_unit == DoseUnit.MG_M2:
             calculated_dose = base_dose * bsa
@@ -1106,8 +1132,9 @@ class ProtocolEngine:
         drug_lower = drug_name.lower()
 
         def band_to(dose: float, increment: float) -> float:
-            """Round to nearest increment."""
-            return round(round(dose / increment) * increment, 2)
+            """Round to nearest increment; never round down to zero."""
+            banded = round(round(dose / increment) * increment, 2)
+            return banded if banded > 0 else increment
 
         if "rituximab" in drug_lower:
             # Rituximab: nearest 100mg
@@ -1208,9 +1235,12 @@ class ProtocolEngine:
                 return band_to(dose, 10)
 
         if "ifosfamide" in drug_lower or "mesna" in drug_lower:
-            # Ifosfamide/Mesna: nearest 500mg
+            # Ifosfamide/Mesna: nearest 500mg for high doses, 100mg for small doses
+            # (Mesna can be given as small fractionated doses e.g. 120 mg/m² priming)
             if unit == "mg":
-                return band_to(dose, 500)
+                if dose >= 250:
+                    return band_to(dose, 500)
+                return band_to(dose, 100)
             if unit == "g":
                 return band_to(dose, 0.5)
 

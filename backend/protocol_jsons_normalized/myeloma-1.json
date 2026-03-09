@@ -79,7 +79,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "60 minutes prior to belantamab mafodotin infusion on C1D1",
-        "indication": "Infusion-related reaction prophylaxis"
+        "indication": "Infusion-related reaction prophylaxis",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Dexamethasone",
@@ -573,7 +574,8 @@
         "dose_unit": "ml",
         "route": "IV infusion",
         "timing": "Pre-hydration before carfilzomib infusion over 30 minutes",
-        "indication": "Hydration / renal protection"
+        "indication": "Hydration / renal protection",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Sodium chloride 0.9%",
@@ -581,7 +583,8 @@
         "dose_unit": "ml",
         "route": "IV infusion",
         "timing": "Post-hydration after carfilzomib infusion over 30 minutes",
-        "indication": "Hydration / renal protection"
+        "indication": "Hydration / renal protection",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [
@@ -966,7 +969,8 @@
         "dose_unit": "ml",
         "route": "IV infusion",
         "timing": "Pre-hydration before carfilzomib — from cycle 2 onwards if necessary",
-        "indication": "Hydration / renal protection"
+        "indication": "Hydration / renal protection",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [
@@ -1406,7 +1410,8 @@
         "dose_unit": "ml",
         "route": "IV infusion",
         "timing": "Pre-hydration before carfilzomib over 30 minutes",
-        "indication": "Hydration / renal protection"
+        "indication": "Hydration / renal protection",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Sodium chloride 0.9%",
@@ -1414,7 +1419,8 @@
         "dose_unit": "ml",
         "route": "IV infusion",
         "timing": "Post-hydration after carfilzomib over 30 minutes",
-        "indication": "Hydration / renal protection"
+        "indication": "Hydration / renal protection",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [

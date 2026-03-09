@@ -237,7 +237,8 @@
         "route": "IV infusion",
         "timing": "30 minutes prior to chemotherapy",
         "frequency": "Once",
-        "notes": "For prevention of allergic reactions to carboplatin"
+        "notes": "For prevention of allergic reactions to carboplatin",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Dexamethasone",
@@ -246,7 +247,8 @@
         "route": "IV infusion",
         "timing": "30 minutes prior to chemotherapy",
         "frequency": "Once",
-        "notes": "For prevention of allergic reactions to carboplatin"
+        "notes": "For prevention of allergic reactions to carboplatin",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "H2 antagonist",
@@ -486,7 +488,8 @@
         "route": "IV infusion",
         "timing": "Pre-hydration before cisplatin",
         "frequency": "Once",
-        "notes": "Over 30 minutes. Cisplatin pre-hydration"
+        "notes": "Over 30 minutes. Cisplatin pre-hydration",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Sodium chloride 0.9%",
@@ -495,7 +498,8 @@
         "route": "IV infusion",
         "timing": "Post-hydration after cisplatin",
         "frequency": "Once",
-        "notes": "Over 30 minutes. Cisplatin post-hydration"
+        "notes": "Over 30 minutes. Cisplatin post-hydration",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [
@@ -762,7 +766,8 @@
         "route": "IV infusion",
         "timing": "Pre-hydration before cisplatin",
         "frequency": "Once per cisplatin day",
-        "notes": "Over 60 minutes. Cisplatin pre-hydration"
+        "notes": "Over 60 minutes. Cisplatin pre-hydration",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Sodium chloride 0.9% with potassium chloride 20mmol and magnesium sulphate 16mmol",
@@ -771,7 +776,8 @@
         "route": "IV infusion",
         "timing": "Post-hydration after cisplatin",
         "frequency": "Once per cisplatin day",
-        "notes": "Over 60 minutes. Cisplatin post-hydration"
+        "notes": "Over 60 minutes. Cisplatin post-hydration",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [
@@ -1162,7 +1168,8 @@
         "route": "IV infusion",
         "timing": "Pre-hydration before cisplatin on Day 1",
         "frequency": "Once",
-        "notes": "Over 60 minutes"
+        "notes": "Over 60 minutes",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Sodium chloride 0.9% with magnesium sulphate 16mmol and potassium chloride 20mmol",
@@ -1171,7 +1178,8 @@
         "route": "IV infusion",
         "timing": "Post-hydration after cisplatin on Day 1",
         "frequency": "Once",
-        "notes": "Over 60 minutes"
+        "notes": "Over 60 minutes",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [
@@ -1531,7 +1539,8 @@
         "route": "IV infusion",
         "timing": "Pre-hydration before cisplatin",
         "frequency": "Once",
-        "notes": "Over 60 minutes"
+        "notes": "Over 60 minutes",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Sodium chloride 0.9% with magnesium sulphate 16mmol and potassium chloride 20mmol",
@@ -1540,7 +1549,8 @@
         "route": "IV infusion",
         "timing": "Post-hydration after cisplatin",
         "frequency": "Once",
-        "notes": "Over 60 minutes"
+        "notes": "Over 60 minutes",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [
@@ -1891,7 +1901,8 @@
         "route": "IV infusion",
         "timing": "Pre-hydration before cisplatin",
         "frequency": "Once per cisplatin day",
-        "notes": "Over 60 minutes. Cisplatin pre-hydration"
+        "notes": "Over 60 minutes. Cisplatin pre-hydration",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Sodium chloride 0.9% with potassium chloride 20mmol and magnesium sulphate 16mmol",
@@ -1900,7 +1911,8 @@
         "route": "IV infusion",
         "timing": "Post-hydration after cisplatin",
         "frequency": "Once per cisplatin day",
-        "notes": "Over 60 minutes. Cisplatin post-hydration"
+        "notes": "Over 60 minutes. Cisplatin post-hydration",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [

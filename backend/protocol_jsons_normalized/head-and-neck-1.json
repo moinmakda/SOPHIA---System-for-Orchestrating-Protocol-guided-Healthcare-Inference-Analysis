@@ -13,7 +13,7 @@
       {
         "drug_name": "Capecitabine",
         "dose": 1000,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "Oral",
         "days": [
           1,
@@ -56,7 +56,7 @@
       {
         "drug_name": "Cetuximab",
         "dose": 400,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -73,7 +73,7 @@
       {
         "drug_name": "Cetuximab",
         "dose": 250,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           8,
@@ -96,7 +96,8 @@
         "dose_unit": "mg",
         "route": "IV infusion",
         "timing": "30 minutes prior to cetuximab infusion",
-        "indication": "Pre-medication for cetuximab hypersensitivity prophylaxis"
+        "indication": "Pre-medication for cetuximab hypersensitivity prophylaxis",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Dexamethasone",
@@ -135,7 +136,7 @@
       {
         "drug_name": "Capecitabine",
         "dose": 1000,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "Oral",
         "frequency": "twice daily for 10 days starting on evening of day 1 of cycle",
         "indication": "Core oral SACT"
@@ -160,36 +161,36 @@
     "dose_modifications": [
       {
         "parameter": "neutrophils",
-        "condition": "< 1.5 x10\u2079/L on day 1",
+        "condition": "< 1.5 x10⁹/L on day 1",
         "affected_drugs": [
           "Capecitabine",
           "Carboplatin"
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "On day one if the neutrophils are less than 1.5x10\u2079/L in the first instance delay treatment for 7 days. If counts recover at this point continue at the initial dose. If counts remain low continue with treatment using a 20% dose reduction. If the myelosuppression recurs despite this dose reduction stop treatment."
+        "notes": "On day one if the neutrophils are less than 1.5x10⁹/L in the first instance delay treatment for 7 days. If counts recover at this point continue at the initial dose. If counts remain low continue with treatment using a 20% dose reduction. If the myelosuppression recurs despite this dose reduction stop treatment."
       },
       {
         "parameter": "platelets",
-        "condition": "< 100 x10\u2079/L on day 1",
+        "condition": "< 100 x10⁹/L on day 1",
         "affected_drugs": [
           "Capecitabine",
           "Carboplatin"
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "On day one if the platelets are less than 100x10\u2079/L in the first instance delay treatment for 7 days. If the counts recover at this point continue at the initial dose. If the counts still fall within this range continue using a 20% dose reduction."
+        "notes": "On day one if the platelets are less than 100x10⁹/L in the first instance delay treatment for 7 days. If the counts recover at this point continue at the initial dose. If the counts still fall within this range continue using a 20% dose reduction."
       },
       {
         "parameter": "platelets",
-        "condition": "< 50 x10\u2079/L",
+        "condition": "< 50 x10⁹/L",
         "affected_drugs": [
           "Capecitabine",
           "Carboplatin"
         ],
         "action": "reduce_50",
         "factor": 0.5,
-        "notes": "If the platelet level falls below 50x10\u2079/L reduce the dose by 50%."
+        "notes": "If the platelet level falls below 50x10⁹/L reduce the dose by 50%."
       },
       {
         "parameter": "creatinine_clearance",
@@ -229,7 +230,7 @@
         ],
         "action": "omit",
         "factor": 0,
-        "notes": "Cetuximab: If the creatinine is more than 180 (1.5xULN), do not use. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC \u2014 this is not a standard chemotherapy dose reduction]"
+        "notes": "Cetuximab: If the creatinine is more than 180 (1.5xULN), do not use. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC — this is not a standard chemotherapy dose reduction]"
       },
       {
         "parameter": "bilirubin",
@@ -239,7 +240,7 @@
         ],
         "action": "omit",
         "factor": 0,
-        "notes": "Cetuximab: Administer only when the transaminases are 5xULN or below and the bilirubin is 1.5xULN or below. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC \u2014 this is not a standard chemotherapy dose reduction]"
+        "notes": "Cetuximab: Administer only when the transaminases are 5xULN or below and the bilirubin is 1.5xULN or below. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC — this is not a standard chemotherapy dose reduction]"
       },
       {
         "parameter": "other",
@@ -329,7 +330,7 @@
         ],
         "action": "delay",
         "factor": 0.5,
-        "notes": "Reduce infusion rate by 50%. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC \u2014 this is not a standard chemotherapy dose reduction]"
+        "notes": "Reduce infusion rate by 50%. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC — this is not a standard chemotherapy dose reduction]"
       },
       {
         "parameter": "other",
@@ -339,7 +340,7 @@
         ],
         "action": "delay",
         "factor": 0.5,
-        "notes": "Stop infusion; administer supportive therapies. Once resolved to grade 1 or below resume at 50% of previous rate. If second reaction on slower rate stop infusion and give no further treatment. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC \u2014 this is not a standard chemotherapy dose reduction]"
+        "notes": "Stop infusion; administer supportive therapies. Once resolved to grade 1 or below resume at 50% of previous rate. If second reaction on slower rate stop infusion and give no further treatment. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC — this is not a standard chemotherapy dose reduction]"
       },
       {
         "parameter": "other",
@@ -349,7 +350,7 @@
         ],
         "action": "omit",
         "factor": 0,
-        "notes": "Stop infusion immediately and disconnect tubing. Administer appropriate supportive therapies. Once recovered patients should not receive cetuximab again. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC \u2014 this is not a standard chemotherapy dose reduction]"
+        "notes": "Stop infusion immediately and disconnect tubing. Administer appropriate supportive therapies. Once recovered patients should not receive cetuximab again. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC — this is not a standard chemotherapy dose reduction]"
       },
       {
         "parameter": "other",
@@ -369,7 +370,7 @@
         ],
         "action": "reduce_50",
         "factor": 0.5,
-        "notes": "Delay up to 14 days with concomitant dose reduction to 200mg/m\u00b2. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC \u2014 this is not a standard chemotherapy dose reduction]"
+        "notes": "Delay up to 14 days with concomitant dose reduction to 200mg/m². [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC — this is not a standard chemotherapy dose reduction]"
       },
       {
         "parameter": "other",
@@ -379,7 +380,7 @@
         ],
         "action": "reduce_50",
         "factor": 0.375,
-        "notes": "Delay up to 14 days with concomitant dose reduction to 150mg/m\u00b2. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC \u2014 this is not a standard chemotherapy dose reduction]"
+        "notes": "Delay up to 14 days with concomitant dose reduction to 150mg/m². [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC — this is not a standard chemotherapy dose reduction]"
       },
       {
         "parameter": "other",
@@ -389,13 +390,13 @@
         ],
         "action": "omit",
         "factor": 0,
-        "notes": "Cetuximab must be discontinued if more than two consecutive infusions are withheld or a fourth episode of NCI-CTC grade 3 skin toxicity or a NCI-CTC grade 4 toxicity at any time. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC \u2014 this is not a standard chemotherapy dose reduction]"
+        "notes": "Cetuximab must be discontinued if more than two consecutive infusions are withheld or a fourth episode of NCI-CTC grade 3 skin toxicity or a NCI-CTC grade 4 toxicity at any time. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC — this is not a standard chemotherapy dose reduction]"
       }
     ],
     "treatment_delay_criteria": {
       "neutrophils_min": 1.5,
       "platelets_min": 100,
-      "notes": "FBC, LFT's and U&E's prior to day one of treatment. Neutrophil equal to or more than 1.5x10\u2079/L and platelets equal to or more than 100x10\u2079/L required. Consider blood transfusion if patient symptomatic of anaemia or haemoglobin less than 8g/dL. All patients should be tested for DPD deficiency before initiation (cycle 1)."
+      "notes": "FBC, LFT's and U&E's prior to day one of treatment. Neutrophil equal to or more than 1.5x10⁹/L and platelets equal to or more than 100x10⁹/L required. Consider blood transfusion if patient symptomatic of anaemia or haemoglobin less than 8g/dL. All patients should be tested for DPD deficiency before initiation (cycle 1)."
     },
     "monitoring_requirements": [
       "FBC, LFT's and U&E's prior to day one of treatment",
@@ -410,7 +411,7 @@
       "The NPSA/2008/RRR001 must be followed when prescribing, dispensing or administering oral chemotherapy.",
       "Ensure the total daily dose of capecitabine is divided into two doses given twelve hours apart (first administered on evening of day 1). Serious toxicity has occurred where the total daily dose has been given twice a day.",
       "It must be made clear to all staff including those in the community that this is a short course of oral chemotherapy that must not be continued beyond day 10.",
-      "Cetuximab loading dose (400mg/m\u00b2) cycle 1 day 1 minimum 120 minutes; maintenance (250mg/m\u00b2) weekly minimum 60 minutes. Rate must not exceed 5mg/min for first infusion; subsequent well-tolerated infusions may be given at 10mg/min.",
+      "Cetuximab loading dose (400mg/m²) cycle 1 day 1 minimum 120 minutes; maintenance (250mg/m²) weekly minimum 60 minutes. Rate must not exceed 5mg/min for first infusion; subsequent well-tolerated infusions may be given at 10mg/min.",
       "Cetuximab dose reductions are permanent.",
       "An interval of 60 minutes should be left between administration of cetuximab and carboplatin."
     ],
@@ -432,7 +433,7 @@
       {
         "drug_name": "Capecitabine",
         "dose": 1000,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "Oral",
         "days": [
           1,
@@ -479,7 +480,7 @@
       {
         "drug_name": "Cetuximab",
         "dose": 400,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -498,7 +499,7 @@
       {
         "drug_name": "Cetuximab",
         "dose": 250,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           8,
@@ -585,23 +586,23 @@
     "dose_modifications": [
       {
         "parameter": "neutrophils",
-        "condition": "< 1.5 x10\u2079/L",
+        "condition": "< 1.5 x10⁹/L",
         "affected_drugs": [
           "Carboplatin"
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "Delay carboplatin until neutrophils are greater than or equal to 1.5x10\u2079/L. Continue radiotherapy during this time."
+        "notes": "Delay carboplatin until neutrophils are greater than or equal to 1.5x10⁹/L. Continue radiotherapy during this time."
       },
       {
         "parameter": "platelets",
-        "condition": "< 100 x10\u2079/L",
+        "condition": "< 100 x10⁹/L",
         "affected_drugs": [
           "Carboplatin"
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "Delay chemotherapy until platelets are greater than or equal to 100x10\u2079/L. Continue radiotherapy during this time."
+        "notes": "Delay chemotherapy until platelets are greater than or equal to 100x10⁹/L. Continue radiotherapy during this time."
       },
       {
         "parameter": "creatinine_clearance",
@@ -813,23 +814,23 @@
     "dose_modifications": [
       {
         "parameter": "neutrophils",
-        "condition": "< 1.5 x10\u2079/L",
+        "condition": "< 1.5 x10⁹/L",
         "affected_drugs": [
           "Carboplatin"
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "Delay carboplatin until neutrophils are greater than or equal to 1.5x10\u2079/L. Continue radiotherapy during this time."
+        "notes": "Delay carboplatin until neutrophils are greater than or equal to 1.5x10⁹/L. Continue radiotherapy during this time."
       },
       {
         "parameter": "platelets",
-        "condition": "< 100 x10\u2079/L",
+        "condition": "< 100 x10⁹/L",
         "affected_drugs": [
           "Carboplatin"
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "Delay chemotherapy until platelets are greater than or equal to 100x10\u2079/L. Continue radiotherapy during this time."
+        "notes": "Delay chemotherapy until platelets are greater than or equal to 100x10⁹/L. Continue radiotherapy during this time."
       },
       {
         "parameter": "creatinine_clearance",
@@ -1041,27 +1042,27 @@
     "dose_modifications": [
       {
         "parameter": "neutrophils",
-        "condition": "< 1 x10\u2079/L",
+        "condition": "< 1 x10⁹/L",
         "affected_drugs": [
           "Carboplatin"
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "Delay for 7 days. If counts recover to 1x10\u2079/L or greater within this time continue with full dose. If counts do not recover within 7 days or repeated delays are required then delay until recovery then reduce dose by 20%."
+        "notes": "Delay for 7 days. If counts recover to 1x10⁹/L or greater within this time continue with full dose. If counts do not recover within 7 days or repeated delays are required then delay until recovery then reduce dose by 20%."
       },
       {
         "parameter": "platelets",
-        "condition": "50-99 x10\u2079/L",
+        "condition": "50-99 x10⁹/L",
         "affected_drugs": [
           "Carboplatin"
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "Delay for 7 days. If counts recover to 100x10\u2079/L or greater within this time continue with full dose. If counts do not recover within 7 days or repeated delays are required then delay until recovery then reduce dose by 20%."
+        "notes": "Delay for 7 days. If counts recover to 100x10⁹/L or greater within this time continue with full dose. If counts do not recover within 7 days or repeated delays are required then delay until recovery then reduce dose by 20%."
       },
       {
         "parameter": "platelets",
-        "condition": "< 50 x10\u2079/L",
+        "condition": "< 50 x10⁹/L",
         "affected_drugs": [
           "Carboplatin"
         ],
@@ -1093,7 +1094,7 @@
     "treatment_delay_criteria": {
       "neutrophils_min": 1.0,
       "platelets_min": 100,
-      "notes": "FBC, LFTs and U&Es prior to each cycle. Neutrophil equal to or more than 1x10\u2079/L and platelets equal to or more than 100x10\u2079/L required. Consider blood transfusion if patient symptomatic of anaemia or haemoglobin less than 8g/dL."
+      "notes": "FBC, LFTs and U&Es prior to each cycle. Neutrophil equal to or more than 1x10⁹/L and platelets equal to or more than 100x10⁹/L required. Consider blood transfusion if patient symptomatic of anaemia or haemoglobin less than 8g/dL."
     },
     "monitoring_requirements": [
       "FBC, LFTs and U&Es prior to each cycle"
@@ -1151,7 +1152,7 @@
       {
         "drug_name": "Cetuximab",
         "dose": 400,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -1168,7 +1169,7 @@
       {
         "drug_name": "Cetuximab",
         "dose": 250,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -1190,7 +1191,8 @@
         "dose_unit": "mg",
         "route": "IV infusion",
         "timing": "30 minutes prior to cetuximab infusion",
-        "indication": "Cetuximab hypersensitivity prophylaxis"
+        "indication": "Cetuximab hypersensitivity prophylaxis",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Dexamethasone",
@@ -1230,23 +1232,23 @@
     "dose_modifications": [
       {
         "parameter": "neutrophils",
-        "condition": "< 1.5 x10\u2079/L on day 1 cycle 1",
+        "condition": "< 1.5 x10⁹/L on day 1 cycle 1",
         "affected_drugs": [
           "Cetuximab"
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "Prior to prescribing on day one of cycle one the following criteria must be met: neutrophil equal to or more than 1.5x10\u2079/L."
+        "notes": "Prior to prescribing on day one of cycle one the following criteria must be met: neutrophil equal to or more than 1.5x10⁹/L."
       },
       {
         "parameter": "platelets",
-        "condition": "< 100 x10\u2079/L on day 1 cycle 1",
+        "condition": "< 100 x10⁹/L on day 1 cycle 1",
         "affected_drugs": [
           "Cetuximab"
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "Prior to prescribing on day one of cycle one the following criteria must be met: platelets equal to or more than 100x10\u2079/L."
+        "notes": "Prior to prescribing on day one of cycle one the following criteria must be met: platelets equal to or more than 100x10⁹/L."
       },
       {
         "parameter": "bilirubin",
@@ -1256,7 +1258,7 @@
         ],
         "action": "omit",
         "factor": 0,
-        "notes": "Administer only when the transaminases are 5xULN or below and the bilirubin is 1.5xULN or below. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC \u2014 this is not a standard chemotherapy dose reduction]"
+        "notes": "Administer only when the transaminases are 5xULN or below and the bilirubin is 1.5xULN or below. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC — this is not a standard chemotherapy dose reduction]"
       },
       {
         "parameter": "creatinine_clearance",
@@ -1266,7 +1268,7 @@
         ],
         "action": "omit",
         "factor": 0,
-        "notes": "Administer only where the serum creatinine is 1.5xULN or below. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC \u2014 this is not a standard chemotherapy dose reduction]"
+        "notes": "Administer only where the serum creatinine is 1.5xULN or below. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC — this is not a standard chemotherapy dose reduction]"
       },
       {
         "parameter": "other",
@@ -1276,7 +1278,7 @@
         ],
         "action": "delay",
         "factor": 0.5,
-        "notes": "Reduce infusion rate by 50% (total infusion time should not exceed 240 minutes). [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC \u2014 this is not a standard chemotherapy dose reduction]"
+        "notes": "Reduce infusion rate by 50% (total infusion time should not exceed 240 minutes). [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC — this is not a standard chemotherapy dose reduction]"
       },
       {
         "parameter": "other",
@@ -1286,7 +1288,7 @@
         ],
         "action": "delay",
         "factor": 0.5,
-        "notes": "Stop infusion; administer supportive therapies as indicated. Once reaction resolved to grade 1 or below resume infusion at 50% of the previous rate. If a second reaction occurs on the slower rate the infusion should be stopped and no further treatment given. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC \u2014 this is not a standard chemotherapy dose reduction]"
+        "notes": "Stop infusion; administer supportive therapies as indicated. Once reaction resolved to grade 1 or below resume infusion at 50% of the previous rate. If a second reaction occurs on the slower rate the infusion should be stopped and no further treatment given. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC — this is not a standard chemotherapy dose reduction]"
       },
       {
         "parameter": "other",
@@ -1296,7 +1298,7 @@
         ],
         "action": "omit",
         "factor": 0,
-        "notes": "Stop infusion immediately and disconnect tubing from the patient. Administer appropriate supportive therapies. Once recovered, patients should not receive cetuximab again. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC \u2014 this is not a standard chemotherapy dose reduction]"
+        "notes": "Stop infusion immediately and disconnect tubing from the patient. Administer appropriate supportive therapies. Once recovered, patients should not receive cetuximab again. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC — this is not a standard chemotherapy dose reduction]"
       },
       {
         "parameter": "other",
@@ -1326,7 +1328,7 @@
         ],
         "action": "reduce_50",
         "factor": 0.5,
-        "notes": "Delay up to 14 days with concomitant dose reduction to 200mg/m\u00b2. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC \u2014 this is not a standard chemotherapy dose reduction]"
+        "notes": "Delay up to 14 days with concomitant dose reduction to 200mg/m². [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC — this is not a standard chemotherapy dose reduction]"
       },
       {
         "parameter": "other",
@@ -1336,7 +1338,7 @@
         ],
         "action": "reduce_50",
         "factor": 0.375,
-        "notes": "Delay up to 14 days with concomitant dose reduction to 150mg/m\u00b2. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC \u2014 this is not a standard chemotherapy dose reduction]"
+        "notes": "Delay up to 14 days with concomitant dose reduction to 150mg/m². [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC — this is not a standard chemotherapy dose reduction]"
       },
       {
         "parameter": "other",
@@ -1346,7 +1348,7 @@
         ],
         "action": "omit",
         "factor": 0,
-        "notes": "Cetuximab must be discontinued if more than two consecutive infusions are withheld or a fourth episode of NCI-CTC grade 3 skin toxicity develops or a NCI-CTC grade 4 toxicity at any time. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC \u2014 this is not a standard chemotherapy dose reduction]"
+        "notes": "Cetuximab must be discontinued if more than two consecutive infusions are withheld or a fourth episode of NCI-CTC grade 3 skin toxicity develops or a NCI-CTC grade 4 toxicity at any time. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC — this is not a standard chemotherapy dose reduction]"
       }
     ],
     "treatment_delay_criteria": {
@@ -1366,7 +1368,7 @@
       "UV radiation may worsen skin reactions. Sun safety practices should be followed during and for up to two months after end of treatment.",
       "Stop treatment if there is a confirmed pneumonitis.",
       "Cetuximab dose reductions are permanent.",
-      "Loading dose 400mg/m\u00b2 cycle 1 over minimum 120 minutes (rate not to exceed 5mg/min); maintenance 250mg/m\u00b2 weekly over minimum 60 minutes (rate not to exceed 10mg/min).",
+      "Loading dose 400mg/m² cycle 1 over minimum 120 minutes (rate not to exceed 5mg/min); maintenance 250mg/m² weekly over minimum 60 minutes (rate not to exceed 10mg/min).",
       "Once the rate has been reduced it should not be increased on subsequent infusions.",
       "Gastric protection with a proton pump inhibitor or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed."
     ],
@@ -1383,7 +1385,7 @@
       {
         "drug_name": "Cetuximab",
         "dose": 400,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -1402,7 +1404,7 @@
       {
         "drug_name": "Cetuximab",
         "dose": 250,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -1434,7 +1436,7 @@
       {
         "drug_name": "Cisplatin",
         "dose": 100,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -1488,7 +1490,8 @@
         "dose_unit": "ml",
         "route": "IV infusion",
         "timing": "Pre-hydration over 60 minutes",
-        "indication": "Cisplatin pre-hydration"
+        "indication": "Cisplatin pre-hydration",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [
@@ -1528,23 +1531,23 @@
     "dose_modifications": [
       {
         "parameter": "neutrophils",
-        "condition": "< 1.5 x10\u2079/L",
+        "condition": "< 1.5 x10⁹/L",
         "affected_drugs": [
           "Cisplatin"
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "Eligible level: neutrophils 1.5x10\u2079/L or greater required prior to treatment. Consider blood transfusion if haemoglobin less than 12g/dL."
+        "notes": "Eligible level: neutrophils 1.5x10⁹/L or greater required prior to treatment. Consider blood transfusion if haemoglobin less than 12g/dL."
       },
       {
         "parameter": "platelets",
-        "condition": "< 100 x10\u2079/L",
+        "condition": "< 100 x10⁹/L",
         "affected_drugs": [
           "Cisplatin"
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "Eligible level: platelets 100x10\u2079/L or greater required prior to treatment."
+        "notes": "Eligible level: platelets 100x10⁹/L or greater required prior to treatment."
       },
       {
         "parameter": "creatinine_clearance",
@@ -1595,7 +1598,7 @@
       {
         "drug_name": "Cisplatin",
         "dose": 100,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -1627,7 +1630,7 @@
       {
         "drug_name": "Docetaxel",
         "dose": 75,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -1644,7 +1647,7 @@
       {
         "drug_name": "Cisplatin",
         "dose": 75,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -1661,7 +1664,7 @@
       {
         "drug_name": "Fluorouracil",
         "dose": 1000,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1,
@@ -1675,7 +1678,7 @@
         "diluent_volume_ml": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "special_instructions": "Total dose 4000mg/m\u00b2 given as continuous intravenous infusion over 96 hours (days 1-4). Dose banded (50mg/ml). A central or PICC line is recommended. Given as continuous infusion of 1000mg/m\u00b2/day.",
+        "special_instructions": "Total dose 4000mg/m² given as continuous intravenous infusion over 96 hours (days 1-4). Dose banded (50mg/ml). A central or PICC line is recommended. Given as continuous infusion of 1000mg/m²/day.",
         "is_core_drug": true
       }
     ],
@@ -1726,7 +1729,8 @@
         "dose_unit": "ml",
         "route": "IV infusion",
         "timing": "Day 1 pre-hydration over 60 minutes",
-        "indication": "Cisplatin pre-hydration"
+        "indication": "Cisplatin pre-hydration",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [
@@ -1774,7 +1778,7 @@
     "dose_modifications": [
       {
         "parameter": "neutrophils",
-        "condition": "< 1.5 x10\u2079/L",
+        "condition": "< 1.5 x10⁹/L",
         "affected_drugs": [
           "Cisplatin",
           "Docetaxel",
@@ -1782,11 +1786,11 @@
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "Defer treatment for 7 days. If counts have recovered to 1.5x10\u2079/L or greater at 7 days resume treatment. Consider using a 75% dose reduction. If counts do not recover delay a further seven days. If satisfactory at 14 days treatment can be re-started using a 50% dose reduction."
+        "notes": "Defer treatment for 7 days. If counts have recovered to 1.5x10⁹/L or greater at 7 days resume treatment. Consider using a 75% dose reduction. If counts do not recover delay a further seven days. If satisfactory at 14 days treatment can be re-started using a 50% dose reduction."
       },
       {
         "parameter": "platelets",
-        "condition": "< 100 x10\u2079/L",
+        "condition": "< 100 x10⁹/L",
         "affected_drugs": [
           "Cisplatin",
           "Docetaxel",
@@ -1794,7 +1798,7 @@
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "Defer treatment for 7 days. If counts have recovered to 100x10\u2079/L or greater at 7 days resume treatment. Consider using a 75% dose reduction. If counts do not recover delay a further seven days. If satisfactory at 14 days treatment can be re-started using a 50% dose reduction."
+        "notes": "Defer treatment for 7 days. If counts have recovered to 100x10⁹/L or greater at 7 days resume treatment. Consider using a 75% dose reduction. If counts do not recover delay a further seven days. If satisfactory at 14 days treatment can be re-started using a 50% dose reduction."
       },
       {
         "parameter": "bilirubin",
@@ -1886,17 +1890,17 @@
         ],
         "action": "delay",
         "factor": 0.8,
-        "notes": "Delay docetaxel until resolves to grade 1 or below. Reduce subsequent doses from 75mg/m\u00b2 to 60mg/m\u00b2. If occurs with 60mg/m\u00b2 or no recovery after two weeks stop docetaxel. Grade 4 cutaneous toxicity: stop docetaxel."
+        "notes": "Delay docetaxel until resolves to grade 1 or below. Reduce subsequent doses from 75mg/m² to 60mg/m². If occurs with 60mg/m² or no recovery after two weeks stop docetaxel. Grade 4 cutaneous toxicity: stop docetaxel."
       },
       {
         "parameter": "other",
-        "condition": "Excessive lacrimation (docetaxel cumulative dose >400mg/m\u00b2)",
+        "condition": "Excessive lacrimation (docetaxel cumulative dose >400mg/m²)",
         "affected_drugs": [
           "Docetaxel"
         ],
         "action": "reduce_25",
         "factor": 0.8,
-        "notes": "If ocular irritation continues reduce docetaxel dose to 60mg/m\u00b2. Hypromellose 0.3% eye drops four times a day may help symptomatically."
+        "notes": "If ocular irritation continues reduce docetaxel dose to 60mg/m². Hypromellose 0.3% eye drops four times a day may help symptomatically."
       },
       {
         "parameter": "other",
@@ -1946,7 +1950,7 @@
       {
         "drug_name": "Docetaxel",
         "dose": 75,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -1965,7 +1969,7 @@
       {
         "drug_name": "Cisplatin",
         "dose": 75,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -1984,7 +1988,7 @@
       {
         "drug_name": "Fluorouracil",
         "dose": 1000,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1,
@@ -1998,10 +2002,10 @@
         "diluent_volume_ml": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "special_instructions": "Total dose 4000mg/m\u00b2 given as continuous intravenous infusion over 96 hours (days 1-4). Dose banded (50mg/ml). A central or PICC line is recommended. Given as continuous infusion of 1000mg/m\u00b2/day.",
+        "special_instructions": "Total dose 4000mg/m² given as continuous intravenous infusion over 96 hours (days 1-4). Dose banded (50mg/ml). A central or PICC line is recommended. Given as continuous infusion of 1000mg/m²/day.",
         "is_core_drug": true,
         "infusion_duration_hours": 96.0,
-        "notes": "Total dose 4000mg/m\u00b2 given as continuous intravenous infusion over 96 hours (days 1-4). Dose banded (50mg/ml). A central or PICC line is recommended. Given as continuous infusion of 1000mg/m\u00b2/day."
+        "notes": "Total dose 4000mg/m² given as continuous intravenous infusion over 96 hours (days 1-4). Dose banded (50mg/ml). A central or PICC line is recommended. Given as continuous infusion of 1000mg/m²/day."
       }
     ]
   },
@@ -2019,7 +2023,7 @@
       {
         "drug_name": "Cisplatin",
         "dose": 100,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -2036,7 +2040,7 @@
       {
         "drug_name": "Fluorouracil",
         "dose": 4000,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -2047,7 +2051,7 @@
         "diluent_volume_ml": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "special_instructions": "Total dose 4000mg/m\u00b2 as intravenous infusion over 96 hours starting day 1. Dose banded (50mg/ml). A central or PICC line is recommended.",
+        "special_instructions": "Total dose 4000mg/m² as intravenous infusion over 96 hours starting day 1. Dose banded (50mg/ml). A central or PICC line is recommended.",
         "is_core_drug": true
       }
     ],
@@ -2106,7 +2110,8 @@
         "dose_unit": "ml",
         "route": "IV infusion",
         "timing": "Pre-hydration over 60 minutes on day 1",
-        "indication": "Cisplatin pre-hydration"
+        "indication": "Cisplatin pre-hydration",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [
@@ -2146,25 +2151,25 @@
     "dose_modifications": [
       {
         "parameter": "neutrophils",
-        "condition": "< 1.5 x10\u2079/L",
+        "condition": "< 1.5 x10⁹/L",
         "affected_drugs": [
           "Cisplatin",
           "Fluorouracil"
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "Defer treatment for 7 days. If counts have recovered to 1.5x10\u2079/L or greater at 7 days resume treatment. Consider using a 75% dose reduction. If counts do not recover delay a further seven days. If satisfactory at 14 days treatment can be re-started using a 50% dose reduction."
+        "notes": "Defer treatment for 7 days. If counts have recovered to 1.5x10⁹/L or greater at 7 days resume treatment. Consider using a 75% dose reduction. If counts do not recover delay a further seven days. If satisfactory at 14 days treatment can be re-started using a 50% dose reduction."
       },
       {
         "parameter": "platelets",
-        "condition": "< 100 x10\u2079/L",
+        "condition": "< 100 x10⁹/L",
         "affected_drugs": [
           "Cisplatin",
           "Fluorouracil"
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "Defer treatment for 7 days. If counts have recovered to 100x10\u2079/L or greater at 7 days resume treatment. Consider using a 75% dose reduction. If counts do not recover delay a further seven days. If satisfactory at 14 days treatment can be re-started using a 50% dose reduction."
+        "notes": "Defer treatment for 7 days. If counts have recovered to 100x10⁹/L or greater at 7 days resume treatment. Consider using a 75% dose reduction. If counts do not recover delay a further seven days. If satisfactory at 14 days treatment can be re-started using a 50% dose reduction."
       },
       {
         "parameter": "bilirubin",
@@ -2272,7 +2277,7 @@
       {
         "drug_name": "Cisplatin",
         "dose": 100,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -2291,7 +2296,7 @@
       {
         "drug_name": "Fluorouracil",
         "dose": 4000,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -2302,10 +2307,10 @@
         "diluent_volume_ml": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "special_instructions": "Total dose 4000mg/m\u00b2 as intravenous infusion over 96 hours starting day 1. Dose banded (50mg/ml). A central or PICC line is recommended.",
+        "special_instructions": "Total dose 4000mg/m² as intravenous infusion over 96 hours starting day 1. Dose banded (50mg/ml). A central or PICC line is recommended.",
         "is_core_drug": true,
         "infusion_duration_hours": 96.0,
-        "notes": "Total dose 4000mg/m\u00b2 as intravenous infusion over 96 hours starting day 1. Dose banded (50mg/ml). A central or PICC line is recommended. [VERIFIED: 5-FU 4000mg/m\u00b2 in cisplatin-5FU head and neck is a recognised regimen (96-120h infusion) \u2014 verify 4-day vs 5-day infusion against source PDF]"
+        "notes": "Total dose 4000mg/m² as intravenous infusion over 96 hours starting day 1. Dose banded (50mg/ml). A central or PICC line is recommended. [VERIFIED: 5-FU 4000mg/m² in cisplatin-5FU head and neck is a recognised regimen (96-120h infusion) — verify 4-day vs 5-day infusion against source PDF]"
       }
     ]
   }

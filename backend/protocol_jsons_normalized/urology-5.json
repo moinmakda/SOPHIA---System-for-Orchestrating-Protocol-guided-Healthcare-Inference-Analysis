@@ -105,7 +105,8 @@
         "duration_minutes": null,
         "diluent": null,
         "diluent_volume_ml": null,
-        "special_instructions": "Paclitaxel premedication"
+        "special_instructions": "Paclitaxel premedication",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Dexamethasone",
@@ -117,7 +118,8 @@
         "duration_minutes": null,
         "diluent": null,
         "diluent_volume_ml": null,
-        "special_instructions": "Paclitaxel premedication"
+        "special_instructions": "Paclitaxel premedication",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Ranitidine",
@@ -537,7 +539,8 @@
         "duration_minutes": null,
         "diluent": null,
         "diluent_volume_ml": null,
-        "special_instructions": "For treatment of infusion related reactions only"
+        "special_instructions": "For treatment of infusion related reactions only",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Hydrocortisone sodium succinate",
@@ -549,7 +552,8 @@
         "duration_minutes": null,
         "diluent": null,
         "diluent_volume_ml": null,
-        "special_instructions": "For treatment of infusion related reactions only"
+        "special_instructions": "For treatment of infusion related reactions only",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Paracetamol",
@@ -1051,7 +1055,8 @@
         "duration_minutes": null,
         "diluent": null,
         "diluent_volume_ml": null,
-        "special_instructions": "For treatment of infusion related reactions only"
+        "special_instructions": "For treatment of infusion related reactions only",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Hydrocortisone sodium succinate",
@@ -1063,7 +1068,8 @@
         "duration_minutes": null,
         "diluent": null,
         "diluent_volume_ml": null,
-        "special_instructions": "For treatment of infusion related reactions only"
+        "special_instructions": "For treatment of infusion related reactions only",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Paracetamol",
@@ -1287,7 +1293,8 @@
         "duration_minutes": null,
         "diluent": null,
         "diluent_volume_ml": null,
-        "special_instructions": "For treatment of infusion related reactions only"
+        "special_instructions": "For treatment of infusion related reactions only",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Hydrocortisone sodium succinate",
@@ -1299,7 +1306,8 @@
         "duration_minutes": null,
         "diluent": null,
         "diluent_volume_ml": null,
-        "special_instructions": "For treatment of infusion related reactions only"
+        "special_instructions": "For treatment of infusion related reactions only",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Paracetamol",
@@ -1525,7 +1533,8 @@
         "duration_minutes": null,
         "diluent": null,
         "diluent_volume_ml": null,
-        "special_instructions": "Premedication to reduce risk of hypersensitivity"
+        "special_instructions": "Premedication to reduce risk of hypersensitivity",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Dexamethasone",
@@ -1537,7 +1546,8 @@
         "duration_minutes": null,
         "diluent": null,
         "diluent_volume_ml": null,
-        "special_instructions": "Premedication to reduce risk of hypersensitivity"
+        "special_instructions": "Premedication to reduce risk of hypersensitivity",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "H2 antagonist (ranitidine/famotidine/nizatidine)",
@@ -2043,7 +2053,8 @@
         "duration_minutes": null,
         "diluent": null,
         "diluent_volume_ml": null,
-        "special_instructions": "For treatment of infusion related reactions only"
+        "special_instructions": "For treatment of infusion related reactions only",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Hydrocortisone sodium succinate",
@@ -2055,7 +2066,8 @@
         "duration_minutes": null,
         "diluent": null,
         "diluent_volume_ml": null,
-        "special_instructions": "For treatment of infusion related reactions only"
+        "special_instructions": "For treatment of infusion related reactions only",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Paracetamol",

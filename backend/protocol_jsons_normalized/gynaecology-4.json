@@ -53,7 +53,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "Once only when required for infusion related reactions",
-        "indication": "Infusion related reaction management"
+        "indication": "Infusion related reaction management",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Hydrocortisone",
@@ -61,7 +62,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "Once only when required for infusion related reactions",
-        "indication": "Infusion related reaction management"
+        "indication": "Infusion related reaction management",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Salbutamol",
@@ -69,7 +71,8 @@
         "dose_unit": "mg",
         "route": "IV infusion",
         "timing": "Once only when required for infusion related bronchospasm",
-        "indication": "Infusion related bronchospasm"
+        "indication": "Infusion related bronchospasm",
+        "infusion_duration_hours": 0.33
       }
     ],
     "take_home_medicines": [
@@ -403,7 +406,8 @@
         "dose_unit": "ml",
         "route": "IV infusion",
         "timing": "Pre-cisplatin hydration over 60 minutes",
-        "indication": "Cisplatin pre-hydration"
+        "indication": "Cisplatin pre-hydration",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Sodium chloride 0.9% with 20mmol potassium chloride and 16mmol magnesium sulphate",
@@ -411,7 +415,8 @@
         "dose_unit": "ml",
         "route": "IV infusion",
         "timing": "Post-cisplatin hydration over 60 minutes",
-        "indication": "Cisplatin post-hydration"
+        "indication": "Cisplatin post-hydration",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Chlorphenamine",
@@ -419,7 +424,8 @@
         "dose_unit": "mg",
         "route": "IV infusion",
         "timing": "30 minutes before carboplatin-paclitaxel chemotherapy",
-        "indication": "Hypersensitivity prophylaxis (carboplatin-paclitaxel day)"
+        "indication": "Hypersensitivity prophylaxis (carboplatin-paclitaxel day)",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Dexamethasone",

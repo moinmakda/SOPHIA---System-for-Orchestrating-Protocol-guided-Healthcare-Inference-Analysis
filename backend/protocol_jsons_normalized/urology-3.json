@@ -94,7 +94,8 @@
           1,
           8
         ],
-        "notes": "Pre-hydration"
+        "notes": "Pre-hydration",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Sodium chloride 0.9%",
@@ -106,7 +107,8 @@
           1,
           8
         ],
-        "notes": "Post-hydration. Patients should drink at least 3 litres of fluid in 24 hours after cisplatin."
+        "notes": "Post-hydration. Patients should drink at least 3 litres of fluid in 24 hours after cisplatin.",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [
@@ -524,7 +526,8 @@
         "days": [
           1
         ],
-        "notes": "Pre-hydration"
+        "notes": "Pre-hydration",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Sodium chloride 0.9% with magnesium sulphate 16mmol and potassium chloride 20mmol",
@@ -535,7 +538,8 @@
         "days": [
           1
         ],
-        "notes": "Post-hydration. Patients should drink at least 3 litres of fluid in 24 hours after cisplatin."
+        "notes": "Post-hydration. Patients should drink at least 3 litres of fluid in 24 hours after cisplatin.",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [
@@ -988,7 +992,8 @@
         "days": [
           1
         ],
-        "notes": "Pre-hydration"
+        "notes": "Pre-hydration",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Sodium chloride 0.9% with magnesium sulphate 16mmol and potassium chloride 20mmol",
@@ -999,7 +1004,8 @@
         "days": [
           1
         ],
-        "notes": "Post-hydration"
+        "notes": "Post-hydration",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [

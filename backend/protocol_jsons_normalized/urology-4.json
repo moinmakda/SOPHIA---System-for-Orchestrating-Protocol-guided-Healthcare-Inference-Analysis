@@ -1889,7 +1889,8 @@
         "dose_unit": "mg",
         "route": "IV infusion",
         "timing": "on days of bleomycin administration when required",
-        "indication": "Bleomycin reaction prophylaxis"
+        "indication": "Bleomycin reaction prophylaxis",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Chlorphenamine",
@@ -1897,7 +1898,8 @@
         "dose_unit": "mg",
         "route": "IV infusion",
         "timing": "on days of bleomycin administration when required",
-        "indication": "Bleomycin reaction prophylaxis"
+        "indication": "Bleomycin reaction prophylaxis",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Sodium chloride 0.9% with magnesium sulphate 8mmol",
@@ -1905,7 +1907,8 @@
         "dose_unit": "ml",
         "route": "IV infusion",
         "timing": "cisplatin pre-hydration, each day before cisplatin",
-        "indication": "Cisplatin pre-hydration"
+        "indication": "Cisplatin pre-hydration",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Furosemide",
@@ -1921,7 +1924,8 @@
         "dose_unit": "ml",
         "route": "IV infusion",
         "timing": "cisplatin post-hydration, each day after cisplatin",
-        "indication": "Cisplatin post-hydration"
+        "indication": "Cisplatin post-hydration",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Ciprofloxacin",
@@ -2287,7 +2291,8 @@
         "dose_unit": "mg",
         "route": "IV infusion",
         "timing": "on days of bleomycin administration when required",
-        "indication": "Bleomycin reaction prophylaxis"
+        "indication": "Bleomycin reaction prophylaxis",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Chlorphenamine",
@@ -2295,7 +2300,8 @@
         "dose_unit": "mg",
         "route": "IV infusion",
         "timing": "on days of bleomycin administration when required",
-        "indication": "Bleomycin reaction prophylaxis"
+        "indication": "Bleomycin reaction prophylaxis",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Sodium chloride 0.9% with magnesium sulphate 8mmol",
@@ -2303,7 +2309,8 @@
         "dose_unit": "ml",
         "route": "IV infusion",
         "timing": "cisplatin pre-hydration, each day before cisplatin",
-        "indication": "Cisplatin pre-hydration"
+        "indication": "Cisplatin pre-hydration",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Furosemide",
@@ -2319,7 +2326,8 @@
         "dose_unit": "ml",
         "route": "IV infusion",
         "timing": "cisplatin post-hydration",
-        "indication": "Cisplatin post-hydration"
+        "indication": "Cisplatin post-hydration",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Ciprofloxacin",
@@ -2710,7 +2718,8 @@
         "dose_unit": "ml",
         "route": "IV infusion",
         "timing": "cisplatin pre-hydration over 30 minutes each day",
-        "indication": "Cisplatin pre-hydration"
+        "indication": "Cisplatin pre-hydration",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Ciprofloxacin",

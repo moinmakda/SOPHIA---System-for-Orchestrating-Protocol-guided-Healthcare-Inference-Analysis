@@ -209,7 +209,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "15-30 minutes prior to chemotherapy on day 1",
-        "notes": "Oral or intravenous bolus."
+        "notes": "Oral or intravenous bolus.",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [
@@ -524,7 +525,8 @@
         "dose_unit": "ml",
         "route": "IV infusion",
         "timing": "Pre-cisplatin: over 60 minutes on day 1",
-        "notes": "Pre-hydration before cisplatin."
+        "notes": "Pre-hydration before cisplatin.",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Sodium chloride 0.9% with 20mmol potassium chloride and 16mmol magnesium sulphate",
@@ -532,7 +534,8 @@
         "dose_unit": "ml",
         "route": "IV infusion",
         "timing": "Post-cisplatin: over 60 minutes on day 1",
-        "notes": "Post-hydration after cisplatin. Patients should drink at least 3 litres of fluid in 24 hours after cisplatin."
+        "notes": "Post-hydration after cisplatin. Patients should drink at least 3 litres of fluid in 24 hours after cisplatin.",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Metoclopramide",

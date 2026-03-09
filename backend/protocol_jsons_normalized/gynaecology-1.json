@@ -69,7 +69,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "30 minutes before paclitaxel",
-        "indication": "Hypersensitivity prophylaxis"
+        "indication": "Hypersensitivity prophylaxis",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Dexamethasone",
@@ -77,7 +78,8 @@
         "dose_unit": "mg",
         "route": "IV infusion",
         "timing": "30 minutes before paclitaxel",
-        "indication": "Hypersensitivity prophylaxis"
+        "indication": "Hypersensitivity prophylaxis",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "H2 antagonist",
@@ -93,7 +95,8 @@
         "dose_unit": "mg",
         "route": "IV infusion",
         "timing": "15-30 minutes prior to chemotherapy",
-        "indication": "Antiemetic"
+        "indication": "Antiemetic",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [
@@ -1001,7 +1004,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "30 minutes before paclitaxel (cycles 1-6)",
-        "indication": "Hypersensitivity prophylaxis"
+        "indication": "Hypersensitivity prophylaxis",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Dexamethasone",
@@ -1009,7 +1013,8 @@
         "dose_unit": "mg",
         "route": "IV infusion",
         "timing": "30 minutes before paclitaxel (cycles 1-6)",
-        "indication": "Hypersensitivity prophylaxis"
+        "indication": "Hypersensitivity prophylaxis",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "H2 antagonist",
@@ -1310,7 +1315,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "30 minutes before chemotherapy",
-        "indication": "Carboplatin hypersensitivity prophylaxis"
+        "indication": "Carboplatin hypersensitivity prophylaxis",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Dexamethasone",
@@ -1318,7 +1324,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "30 minutes before chemotherapy",
-        "indication": "Carboplatin hypersensitivity prophylaxis"
+        "indication": "Carboplatin hypersensitivity prophylaxis",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "H2 antagonist",
@@ -1665,7 +1672,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "30 minutes before chemotherapy (days 1, 8, 15)",
-        "indication": "Hypersensitivity prophylaxis"
+        "indication": "Hypersensitivity prophylaxis",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Dexamethasone",
@@ -1673,7 +1681,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "30 minutes before chemotherapy (days 1, 8, 15)",
-        "indication": "Hypersensitivity prophylaxis"
+        "indication": "Hypersensitivity prophylaxis",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "H2 antagonist",

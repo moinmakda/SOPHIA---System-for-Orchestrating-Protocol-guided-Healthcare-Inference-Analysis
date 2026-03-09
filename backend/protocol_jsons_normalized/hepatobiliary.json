@@ -52,7 +52,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "frequency": "when required for infusion related reactions",
-        "notes": "As required for the treatment of infusion related reactions"
+        "notes": "As required for the treatment of infusion related reactions",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Hydrocortisone",
@@ -60,7 +61,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "frequency": "when required for infusion related reactions",
-        "notes": "As required for the treatment of infusion related reactions"
+        "notes": "As required for the treatment of infusion related reactions",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Paracetamol",
@@ -477,7 +479,8 @@
         "dose_unit": "ml",
         "route": "IV infusion",
         "frequency": "over 60 minutes pre-cisplatin on days 1 and 8",
-        "notes": "Pre-cisplatin hydration"
+        "notes": "Pre-cisplatin hydration",
+        "infusion_duration_hours": 0.25
       },
       {
         "drug_name": "Sodium chloride 0.9% with 20mmol potassium chloride and 16mmol magnesium sulphate (post-hydration)",
@@ -485,7 +488,8 @@
         "dose_unit": "ml",
         "route": "IV infusion",
         "frequency": "over 60 minutes post-cisplatin on days 1 and 8",
-        "notes": "Post-cisplatin hydration. Patients should drink at least 3 litres of fluid in the 24 hours after administration of cisplatin."
+        "notes": "Post-cisplatin hydration. Patients should drink at least 3 litres of fluid in the 24 hours after administration of cisplatin.",
+        "infusion_duration_hours": 0.25
       }
     ],
     "take_home_medicines": [

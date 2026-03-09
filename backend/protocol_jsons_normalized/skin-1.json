@@ -2,9 +2,9 @@
   {
     "protocol_id": "talimogene_10e6_pfu_melanoma",
     "protocol_code": "SKIN-TALI-1E6",
-    "protocol_name": "Talimogene 10\u2076 PFU/ml for Melanoma",
+    "protocol_name": "Talimogene 10⁶ PFU/ml for Melanoma",
     "category": "skin",
-    "indication": "Melanoma \u2014 intralesional injection into cutaneous, subcutaneous and/or nodal lesions that are visible, palpable or detectable by ultrasound guidance. Initial (first) administration only.",
+    "indication": "Melanoma — intralesional injection into cutaneous, subcutaneous and/or nodal lesions that are visible, palpable or detectable by ultrasound guidance. Initial (first) administration only.",
     "version": "1",
     "cycle_length_days": 14,
     "total_cycles": null,
@@ -18,13 +18,13 @@
         "days": [
           1
         ],
-        "frequency": "Single administration \u2014 first dose only at 10\u2076 PFU/ml",
+        "frequency": "Single administration — first dose only at 10⁶ PFU/ml",
         "duration_minutes": null,
         "diluent": null,
         "diluent_volume_ml": null,
         "max_dose": 4,
         "max_dose_unit": "ml",
-        "special_instructions": "Intratumoral injection. First administration only at 10\u2076 PFU/ml concentration. Total injection volume must not exceed 4ml per treatment session. Inject the largest lesion first; prioritise remaining lesions by size. Volume per lesion: >5cm up to 4ml; 2.5-5cm up to 2ml; 1.5-2.5cm up to 1ml; 0.5-1.5cm up to 0.5ml; \u22640.5cm up to 0.1ml. Light-sensitive genetically modified product \u2014 do not remove from manufacturer's packaging. Store frozen; record time removed from freezer and time dispensed.",
+        "special_instructions": "Intratumoral injection. First administration only at 10⁶ PFU/ml concentration. Total injection volume must not exceed 4ml per treatment session. Inject the largest lesion first; prioritise remaining lesions by size. Volume per lesion: >5cm up to 4ml; 2.5-5cm up to 2ml; 1.5-2.5cm up to 1ml; 0.5-1.5cm up to 0.5ml; ≤0.5cm up to 0.1ml. Light-sensitive genetically modified product — do not remove from manufacturer's packaging. Store frozen; record time removed from freezer and time dispensed.",
         "is_core_drug": true
       }
     ],
@@ -34,18 +34,18 @@
     "treatment_delay_criteria": {
       "neutrophils_min": null,
       "platelets_min": null,
-      "notes": "No specific haematological delay criteria stated for first administration. Second dose given 21 days after first; subsequent doses every 14 days at 10\u2078 PFU/ml (see separate protocol)."
+      "notes": "No specific haematological delay criteria stated for first administration. Second dose given 21 days after first; subsequent doses every 14 days at 10⁸ PFU/ml (see separate protocol)."
     },
     "monitoring_requirements": [
       "Patient Information Card to be confirmed (yes/no) prior to administration",
       "Record time removed from freezer, time dispensed, time put in pharmacy fridge"
     ],
     "special_warnings": [
-      "Genetically modified product \u2014 handle with appropriate biosafety precautions",
-      "Light-sensitive product \u2014 do not remove from manufacturer's packaging until required",
-      "This prescription is for the FIRST administration only at 10\u2076 PFU/ml; second and subsequent doses use 10\u2078 PFU/ml (separate protocol)",
-      "No dose reductions specified \u2014 volume adjusted by lesion size",
-      "Talimogene laherparepvec: initial dose day 1, second dose day 22, then every 14 days. Biohazard precautions required for handling \u2014 live attenuated HSV-1."
+      "Genetically modified product — handle with appropriate biosafety precautions",
+      "Light-sensitive product — do not remove from manufacturer's packaging until required",
+      "This prescription is for the FIRST administration only at 10⁶ PFU/ml; second and subsequent doses use 10⁸ PFU/ml (separate protocol)",
+      "No dose reductions specified — volume adjusted by lesion size",
+      "Talimogene laherparepvec: initial dose day 1, second dose day 22, then every 14 days. Biohazard precautions required for handling — live attenuated HSV-1."
     ],
     "auc_dosing": null,
     "required_patient_fields": {
@@ -57,31 +57,31 @@
     "drugs": [
       {
         "drug_name": "Talimogene laherparepvec",
-        "dose": 1000000,
-        "dose_unit": "units",
+        "dose": null,
+        "dose_unit": null,
         "route": "Subcutaneous",
         "days": [
           1
         ],
-        "frequency": "Single administration \u2014 first dose only at 10\u2076 PFU/ml",
+        "frequency": "Single administration — first dose only at 10⁶ PFU/ml",
         "duration_minutes": null,
         "diluent": null,
         "diluent_volume_ml": null,
-        "max_dose": 4,
-        "max_dose_unit": "ml",
-        "special_instructions": "Intratumoral injection. First administration only at 10\u2076 PFU/ml concentration. Total injection volume must not exceed 4ml per treatment session. Inject the largest lesion first; prioritise remaining lesions by size. Volume per lesion: >5cm up to 4ml; 2.5-5cm up to 2ml; 1.5-2.5cm up to 1ml; 0.5-1.5cm up to 0.5ml; \u22640.5cm up to 0.1ml. Light-sensitive genetically modified product \u2014 do not remove from manufacturer's packaging. Store frozen; record time removed from freezer and time dispensed.",
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Intratumoral injection. First administration only at 10⁶ PFU/ml concentration. Total injection volume must not exceed 4ml per treatment session. Inject the largest lesion first; prioritise remaining lesions by size. Volume per lesion: >5cm up to 4ml; 2.5-5cm up to 2ml; 1.5-2.5cm up to 1ml; 0.5-1.5cm up to 0.5ml; ≤0.5cm up to 0.1ml. Light-sensitive genetically modified product — do not remove from manufacturer's packaging. Store frozen; record time removed from freezer and time dispensed.",
         "is_core_drug": true,
         "infusion_duration_hours": null,
-        "notes": "Single administration \u2014 first dose only at 10\u2076 PFU/ml | Intratumoral injection. First administration only at 10\u2076 PFU/ml concentration. Total injection volume must not exceed 4ml per treatment session. Inject the largest lesion first; prioritise remaining lesions by size. Volume per lesion: >5cm up to 4ml; 2.5-5cm up to 2ml; 1.5-2.5cm up to 1ml; 0.5-1.5cm up to 0.5ml; \u22640.5cm up to 0.1ml. Light-sensitive genetically modified product \u2014 do not remove from manufacturer's packaging. Store frozen; record time removed from freezer and time dispensed."
+        "notes": "Single administration — first dose only at 10⁶ PFU/ml | Intratumoral injection. First administration only at 10⁶ PFU/ml concentration. Total injection volume must not exceed 4ml per treatment session. Inject the largest lesion first; prioritise remaining lesions by size. Volume per lesion: >5cm up to 4ml; 2.5-5cm up to 2ml; 1.5-2.5cm up to 1ml; 0.5-1.5cm up to 0.5ml; ≤0.5cm up to 0.1ml. Light-sensitive genetically modified product — do not remove from manufacturer's packaging. Store frozen; record time removed from freezer and time dispensed."
       }
     ]
   },
   {
     "protocol_id": "talimogene_10e8_pfu_melanoma",
     "protocol_code": "SKIN-TALI-1E8",
-    "protocol_name": "Talimogene 10\u2078 PFU/ml for Melanoma",
+    "protocol_name": "Talimogene 10⁸ PFU/ml for Melanoma",
     "category": "skin",
-    "indication": "Melanoma \u2014 intralesional injection into cutaneous, subcutaneous and/or nodal lesions that are visible, palpable or detectable by ultrasound guidance. Second and subsequent administrations only.",
+    "indication": "Melanoma — intralesional injection into cutaneous, subcutaneous and/or nodal lesions that are visible, palpable or detectable by ultrasound guidance. Second and subsequent administrations only.",
     "version": "1",
     "cycle_length_days": 14,
     "total_cycles": null,
@@ -101,7 +101,7 @@
         "diluent_volume_ml": null,
         "max_dose": 4,
         "max_dose_unit": "ml",
-        "special_instructions": "Intratumoral injection. Second and subsequent administrations at 10\u2078 PFU/ml concentration. Total injection volume must not exceed 4ml per treatment session. Inject any new lesions first; then prioritise remaining lesions by size. Volume per lesion: >5cm up to 4ml; 2.5-5cm up to 2ml; 1.5-2.5cm up to 1ml; 0.5-1.5cm up to 0.5ml; \u22640.5cm up to 0.1ml. Light-sensitive genetically modified product \u2014 do not remove from manufacturer's packaging. Store frozen; record time removed from freezer and time dispensed.",
+        "special_instructions": "Intratumoral injection. Second and subsequent administrations at 10⁸ PFU/ml concentration. Total injection volume must not exceed 4ml per treatment session. Inject any new lesions first; then prioritise remaining lesions by size. Volume per lesion: >5cm up to 4ml; 2.5-5cm up to 2ml; 1.5-2.5cm up to 1ml; 0.5-1.5cm up to 0.5ml; ≤0.5cm up to 0.1ml. Light-sensitive genetically modified product — do not remove from manufacturer's packaging. Store frozen; record time removed from freezer and time dispensed.",
         "is_core_drug": true
       }
     ],
@@ -118,10 +118,10 @@
       "Record time removed from freezer, time dispensed, time put in pharmacy fridge"
     ],
     "special_warnings": [
-      "Genetically modified product \u2014 handle with appropriate biosafety precautions",
-      "Light-sensitive product \u2014 do not remove from manufacturer's packaging until required",
-      "This prescription is for the SECOND AND SUBSEQUENT administrations only at 10\u2078 PFU/ml; first dose uses 10\u2076 PFU/ml (separate protocol)",
-      "No dose reductions specified \u2014 volume adjusted by lesion size"
+      "Genetically modified product — handle with appropriate biosafety precautions",
+      "Light-sensitive product — do not remove from manufacturer's packaging until required",
+      "This prescription is for the SECOND AND SUBSEQUENT administrations only at 10⁸ PFU/ml; first dose uses 10⁶ PFU/ml (separate protocol)",
+      "No dose reductions specified — volume adjusted by lesion size"
     ],
     "auc_dosing": null,
     "required_patient_fields": {
@@ -133,8 +133,8 @@
     "drugs": [
       {
         "drug_name": "Talimogene laherparepvec",
-        "dose": 100000000,
-        "dose_unit": "units",
+        "dose": null,
+        "dose_unit": null,
         "route": "Subcutaneous",
         "days": [
           1
@@ -143,12 +143,12 @@
         "duration_minutes": null,
         "diluent": null,
         "diluent_volume_ml": null,
-        "max_dose": 4,
-        "max_dose_unit": "ml",
-        "special_instructions": "Intratumoral injection. Second and subsequent administrations at 10\u2078 PFU/ml concentration. Total injection volume must not exceed 4ml per treatment session. Inject any new lesions first; then prioritise remaining lesions by size. Volume per lesion: >5cm up to 4ml; 2.5-5cm up to 2ml; 1.5-2.5cm up to 1ml; 0.5-1.5cm up to 0.5ml; \u22640.5cm up to 0.1ml. Light-sensitive genetically modified product \u2014 do not remove from manufacturer's packaging. Store frozen; record time removed from freezer and time dispensed.",
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Intratumoral injection. Second and subsequent administrations at 10⁸ PFU/ml concentration. Total injection volume must not exceed 4ml per treatment session. Inject any new lesions first; then prioritise remaining lesions by size. Volume per lesion: >5cm up to 4ml; 2.5-5cm up to 2ml; 1.5-2.5cm up to 1ml; 0.5-1.5cm up to 0.5ml; ≤0.5cm up to 0.1ml. Light-sensitive genetically modified product — do not remove from manufacturer's packaging. Store frozen; record time removed from freezer and time dispensed.",
         "is_core_drug": true,
         "infusion_duration_hours": null,
-        "notes": "Second dose 21 days after first dose; thereafter every 14 days | Intratumoral injection. Second and subsequent administrations at 10\u2078 PFU/ml concentration. Total injection volume must not exceed 4ml per treatment session. Inject any new lesions first; then prioritise remaining lesions by size. Volume per lesion: >5cm up to 4ml; 2.5-5cm up to 2ml; 1.5-2.5cm up to 1ml; 0.5-1.5cm up to 0.5ml; \u22640.5cm up to 0.1ml. Light-sensitive genetically modified product \u2014 do not remove from manufacturer's packaging. Store frozen; record time removed from freezer and time dispensed."
+        "notes": "Second dose 21 days after first dose; thereafter every 14 days | Intratumoral injection. Second and subsequent administrations at 10⁸ PFU/ml concentration. Total injection volume must not exceed 4ml per treatment session. Inject any new lesions first; then prioritise remaining lesions by size. Volume per lesion: >5cm up to 4ml; 2.5-5cm up to 2ml; 1.5-2.5cm up to 1ml; 0.5-1.5cm up to 0.5ml; ≤0.5cm up to 0.1ml. Light-sensitive genetically modified product — do not remove from manufacturer's packaging. Store frozen; record time removed from freezer and time dispensed."
       }
     ]
   },
@@ -204,7 +204,7 @@
         "diluent_volume_ml": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "special_instructions": "Available as 15mg tablets. Swallow whole with water with or without food. If a dose is missed, do not take if less than 6 hours until next dose. In case of vomiting, do not re-take dose \u2014 take next scheduled dose. Dose reduction ladder: Level 0 (starting) 45mg BD; Level -1: 30mg BD; Level -2: Not recommended (permanently discontinue).",
+        "special_instructions": "Available as 15mg tablets. Swallow whole with water with or without food. If a dose is missed, do not take if less than 6 hours until next dose. In case of vomiting, do not re-take dose — take next scheduled dose. Dose reduction ladder: Level 0 (starting) 45mg BD; Level -1: 30mg BD; Level -2: Not recommended (permanently discontinue).",
         "is_core_drug": true
       },
       {
@@ -339,7 +339,7 @@
         "notes": "Both agents permanently discontinued."
       },
       {
-        "parameter": "Cardiac \u2014 LVEF (Binimetinib specific)",
+        "parameter": "Cardiac — LVEF (Binimetinib specific)",
         "condition": "Asymptomatic NCI-CTC Grade 2 LVEF decrease (absolute >10% from baseline AND below LLN)",
         "affected_drugs": [
           "binimetinib"
@@ -349,7 +349,7 @@
         "notes": "Withhold binimetinib for up to 4 weeks; temporarily reduce encorafenib dose. Resume binimetinib at reduced dose if within 4 weeks: LVEF at or above LLN AND absolute decrease from baseline is 10% or less. If LVEF does not recover within 4 weeks, permanently discontinue binimetinib (and encorafenib)."
       },
       {
-        "parameter": "Cardiac \u2014 LVEF (Binimetinib specific)",
+        "parameter": "Cardiac — LVEF (Binimetinib specific)",
         "condition": "NCI-CTC Grade 3 or 4 LVEF decrease OR symptomatic LVD",
         "affected_drugs": [
           "binimetinib",
@@ -361,13 +361,13 @@
       },
       {
         "parameter": "QTc prolongation (Encorafenib specific)",
-        "condition": "QTc >500ms AND increased \u226460ms from baseline",
+        "condition": "QTc >500ms AND increased ≤60ms from baseline",
         "affected_drugs": [
           "encorafenib"
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "Withhold encorafenib (binimetinib may be continued). Once QTc \u2264500ms, restart encorafenib at reduced dose."
+        "notes": "Withhold encorafenib (binimetinib may be continued). Once QTc ≤500ms, restart encorafenib at reduced dose."
       },
       {
         "parameter": "QTc prolongation (Encorafenib specific)",
@@ -464,7 +464,7 @@
         "notes": "Withhold binimetinib (temporarily reduce encorafenib) until NCI-CTC grade 0-1. If resolved within 4 weeks, resume binimetinib at reduced dose. If not resolved, permanently discontinue binimetinib (and encorafenib)."
       },
       {
-        "parameter": "Skin \u2014 Binimetinib rash",
+        "parameter": "Skin — Binimetinib rash",
         "condition": "NCI-CTC Grade 2 rash (worsening or not improving within 2 weeks)",
         "affected_drugs": [
           "binimetinib"
@@ -474,7 +474,7 @@
         "notes": "Withhold binimetinib until improved to grade 0-1; resume at same dose (first occurrence) or reduced dose (recurrent grade 2)."
       },
       {
-        "parameter": "Skin \u2014 rash",
+        "parameter": "Skin — rash",
         "condition": "NCI-CTC Grade 3 rash",
         "affected_drugs": [
           "binimetinib",
@@ -485,7 +485,7 @@
         "notes": "Withhold both until improved to grade 0-1; resume at same dose (first occurrence) or reduced dose (recurrent grade 3)."
       },
       {
-        "parameter": "Skin \u2014 rash",
+        "parameter": "Skin — rash",
         "condition": "NCI-CTC Grade 4 rash",
         "affected_drugs": [
           "binimetinib",
@@ -496,7 +496,7 @@
         "notes": "Both permanently discontinued."
       },
       {
-        "parameter": "Skin \u2014 PPE (Encorafenib specific)",
+        "parameter": "Skin — PPE (Encorafenib specific)",
         "condition": "NCI-CTC Grade 2 PPES",
         "affected_drugs": [
           "encorafenib"
@@ -506,7 +506,7 @@
         "notes": "Maintain encorafenib and institute supportive measures (topical therapy). If not improved despite supportive therapy within 2 weeks, withhold encorafenib (binimetinib may continue) until grade 0-1; resume at same or reduced dose."
       },
       {
-        "parameter": "Skin \u2014 PPE (Encorafenib specific)",
+        "parameter": "Skin — PPE (Encorafenib specific)",
         "condition": "NCI-CTC Grade 3 PPES",
         "affected_drugs": [
           "encorafenib"
@@ -517,7 +517,7 @@
       },
       {
         "parameter": "VTE (Binimetinib specific)",
-        "condition": "Uncomplicated DVT or PE \u2264NCI-CTC Grade 3",
+        "condition": "Uncomplicated DVT or PE ≤NCI-CTC Grade 3",
         "affected_drugs": [
           "binimetinib"
         ],
@@ -526,7 +526,7 @@
         "notes": "Withhold binimetinib (encorafenib may continue). If improved to grade 0-1, resume binimetinib at reduced dose. If not improved, permanently discontinue binimetinib (and encorafenib)."
       },
       {
-        "parameter": "Other toxicities \u2014 general",
+        "parameter": "Other toxicities — general",
         "condition": "Recurrent/intolerable grade 2 OR first occurrence grade 3 adverse reactions",
         "affected_drugs": [
           "binimetinib",
@@ -537,7 +537,7 @@
         "notes": "Withhold both for up to 4 weeks. If improved to grade 0-1 or baseline, resume at reduced dose. If not improved, permanently discontinue both."
       },
       {
-        "parameter": "Other toxicities \u2014 general",
+        "parameter": "Other toxicities — general",
         "condition": "First occurrence grade 4 adverse reactions",
         "affected_drugs": [
           "binimetinib",
@@ -548,7 +548,7 @@
         "notes": "Withhold both for up to 4 weeks. If improved to grade 0-1 or baseline, resume at reduced dose. If not improved, permanently discontinue both."
       },
       {
-        "parameter": "Other toxicities \u2014 general",
+        "parameter": "Other toxicities — general",
         "condition": "Recurrent grade 3 adverse reactions",
         "affected_drugs": [
           "binimetinib",
@@ -559,7 +559,7 @@
         "notes": "Consider permanently discontinuing both agents."
       },
       {
-        "parameter": "Other toxicities \u2014 general",
+        "parameter": "Other toxicities — general",
         "condition": "Recurrent grade 4 adverse reactions",
         "affected_drugs": [
           "binimetinib",
@@ -608,7 +608,7 @@
     },
     "monitoring_requirements": [
       "FBC, LFTs and U&Es every 4 weeks for 24 weeks, then every 12 weeks",
-      "Serum electrolytes (magnesium and potassium) \u2014 correct abnormalities before and during treatment",
+      "Serum electrolytes (magnesium and potassium) — correct abnormalities before and during treatment",
       "LDH every 4 weeks for 24 weeks, then as clinically indicated",
       "Creatine phosphokinase every 4 weeks for 24 weeks, then as indicated",
       "Blood pressure at baseline then every 4 weeks initially, then as indicated",
@@ -620,22 +620,22 @@
     ],
     "special_warnings": [
       "Both binimetinib and encorafenib should be simultaneously interrupted, reduced, or discontinued for most toxicities",
-      "Encorafenib 450mg as single agent (without binimetinib) is not well tolerated \u2014 reduce to 300mg if binimetinib temporarily interrupted",
+      "Encorafenib 450mg as single agent (without binimetinib) is not well tolerated — reduce to 300mg if binimetinib temporarily interrupted",
       "Avoid concomitant potent CYP3A4 inducers (rifampicin, phenytoin, carbamazepine, St John's wort) or inhibitors with encorafenib",
-      "Encorafenib is both a CYP3A4 inhibitor and inducer \u2014 caution with CYP3A4 substrates (e.g. hormonal contraceptives)",
-      "Encorafenib inhibits UGT1A1 \u2014 caution with UGT1A1 substrates (raltegravir, atorvastatin, dolutegravir)",
-      "Binimetinib is a potential CYP1A2 inducer \u2014 caution with sensitive CYP1A2 substrates (duloxetine, theophylline)",
-      "Binimetinib is a weak OAT3 inhibitor \u2014 caution with OAT3 substrates (pravastatin, ciprofloxacin)",
-      "Binimetinib metabolised through UGT1A1 \u2014 caution with UGT1A1 inducers (rifampicin, phenobarbital) and inhibitors (indinavir, atazanavir, sorafenib)",
+      "Encorafenib is both a CYP3A4 inhibitor and inducer — caution with CYP3A4 substrates (e.g. hormonal contraceptives)",
+      "Encorafenib inhibits UGT1A1 — caution with UGT1A1 substrates (raltegravir, atorvastatin, dolutegravir)",
+      "Binimetinib is a potential CYP1A2 inducer — caution with sensitive CYP1A2 substrates (duloxetine, theophylline)",
+      "Binimetinib is a weak OAT3 inhibitor — caution with OAT3 substrates (pravastatin, ciprofloxacin)",
+      "Binimetinib metabolised through UGT1A1 — caution with UGT1A1 inducers (rifampicin, phenobarbital) and inhibitors (indinavir, atazanavir, sorafenib)",
       "Formal medical review required at least by end of first 8 weeks of treatment",
-      "Proton pump inhibitors may reduce efficacy \u2014 use H2 antagonist instead where gastric protection needed"
+      "Proton pump inhibitors may reduce efficacy — use H2 antagonist instead where gastric protection needed"
     ],
     "auc_dosing": null,
     "required_patient_fields": {
       "braf_v600_mutation_status": "Must be confirmed positive prior to treatment",
       "weight_kg": "Not required for dosing (flat dose) but useful for clinical assessment",
-      "lvef_baseline": "Required \u2014 Echo/MUGA at baseline",
-      "qtc_baseline_ms": "Required \u2014 ECG at baseline",
+      "lvef_baseline": "Required — Echo/MUGA at baseline",
+      "qtc_baseline_ms": "Required — ECG at baseline",
       "hepatic_function": "Child-Pugh class required if hepatic impairment suspected"
     },
     "disease_site": "Skin",
@@ -682,10 +682,10 @@
         "diluent_volume_ml": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "special_instructions": "Available as 15mg tablets. Swallow whole with water with or without food. If a dose is missed, do not take if less than 6 hours until next dose. In case of vomiting, do not re-take dose \u2014 take next scheduled dose. Dose reduction ladder: Level 0 (starting) 45mg BD; Level -1: 30mg BD; Level -2: Not recommended (permanently discontinue).",
+        "special_instructions": "Available as 15mg tablets. Swallow whole with water with or without food. If a dose is missed, do not take if less than 6 hours until next dose. In case of vomiting, do not re-take dose — take next scheduled dose. Dose reduction ladder: Level 0 (starting) 45mg BD; Level -1: 30mg BD; Level -2: Not recommended (permanently discontinue).",
         "is_core_drug": true,
         "infusion_duration_hours": null,
-        "notes": "Twice daily (days 1-28 of 28-day cycle) | Available as 15mg tablets. Swallow whole with water with or without food. If a dose is missed, do not take if less than 6 hours until next dose. In case of vomiting, do not re-take dose \u2014 take next scheduled dose. Dose reduction ladder: Level 0 (starting) 45mg BD; Level -1: 30mg BD; Level -2: Not recommended (permanently discontinue)."
+        "notes": "Twice daily (days 1-28 of 28-day cycle) | Available as 15mg tablets. Swallow whole with water with or without food. If a dose is missed, do not take if less than 6 hours until next dose. In case of vomiting, do not re-take dose — take next scheduled dose. Dose reduction ladder: Level 0 (starting) 45mg BD; Level -1: 30mg BD; Level -2: Not recommended (permanently discontinue)."
       },
       {
         "drug_name": "Encorafenib",
@@ -760,7 +760,7 @@
         "diluent_volume_ml": 100,
         "max_dose": null,
         "max_dose_unit": null,
-        "special_instructions": "Administer via 0.2-5 micron in-line or add-on filter. Final concentration should be between 1 and 20mg/ml. Patients must be issued with a Patient Alert Card. Do not use systemic corticosteroids or immunosuppressants before starting cemiplimab (except physiological doses \u226410mg/day prednisolone or equivalent). 35 cycles will be set in ARIA.",
+        "special_instructions": "Administer via 0.2-5 micron in-line or add-on filter. Final concentration should be between 1 and 20mg/ml. Patients must be issued with a Patient Alert Card. Do not use systemic corticosteroids or immunosuppressants before starting cemiplimab (except physiological doses ≤10mg/day prednisolone or equivalent). 35 cycles will be set in ARIA.",
         "is_core_drug": true
       }
     ],
@@ -771,7 +771,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "When required for infusion-related reactions",
-        "notes": "PRN \u2014 not routine premedication"
+        "notes": "PRN — not routine premedication",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Hydrocortisone",
@@ -779,7 +780,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "When required for infusion-related reactions",
-        "notes": "PRN \u2014 not routine premedication"
+        "notes": "PRN — not routine premedication",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Paracetamol",
@@ -787,13 +789,13 @@
         "dose_unit": "mg",
         "route": "Oral",
         "timing": "When required for infusion-related reactions",
-        "notes": "PRN \u2014 not routine premedication"
+        "notes": "PRN — not routine premedication"
       }
     ],
     "take_home_medicines": [],
     "dose_modifications": [
       {
-        "parameter": "General \u2014 immunotherapy",
+        "parameter": "General — immunotherapy",
         "condition": "Dose reductions not permitted for immunotherapy",
         "affected_drugs": [
           "cemiplimab"
@@ -966,11 +968,11 @@
       "Monitor for immune-related adverse reactions: gastrointestinal, hepatic, pulmonary, endocrine, renal, skin, neurological"
     ],
     "special_warnings": [
-      "Cemiplimab is an immunotherapy \u2014 dose reductions are NOT permitted; doses are withheld or permanently discontinued based on toxicity",
-      "Autoimmune toxicities can be severe and life-threatening \u2014 early diagnosis and appropriate management essential",
+      "Cemiplimab is an immunotherapy — dose reductions are NOT permitted; doses are withheld or permanently discontinued based on toxicity",
+      "Autoimmune toxicities can be severe and life-threatening — early diagnosis and appropriate management essential",
       "Do not resume cemiplimab if patient still receiving immunosuppressive doses of corticosteroids or other immunosuppressive therapy",
       "Funding approval precludes further treatment after an interruption of 12 weeks or longer",
-      "Systemic corticosteroids or immunosuppressants before starting cemiplimab should be avoided (except physiological doses \u226410mg/day prednisolone or equivalent)",
+      "Systemic corticosteroids or immunosuppressants before starting cemiplimab should be avoided (except physiological doses ≤10mg/day prednisolone or equivalent)",
       "Immune-related reactions may occur months after the last dose",
       "No pharmacokinetic drug-drug interaction studies have been conducted with cemiplimab",
       "Treatment up to 24 months (35 cycles in ARIA)"
@@ -998,10 +1000,10 @@
         "diluent_volume_ml": 100,
         "max_dose": null,
         "max_dose_unit": null,
-        "special_instructions": "Administer via 0.2-5 micron in-line or add-on filter. Final concentration should be between 1 and 20mg/ml. Patients must be issued with a Patient Alert Card. Do not use systemic corticosteroids or immunosuppressants before starting cemiplimab (except physiological doses \u226410mg/day prednisolone or equivalent). 35 cycles will be set in ARIA.",
+        "special_instructions": "Administer via 0.2-5 micron in-line or add-on filter. Final concentration should be between 1 and 20mg/ml. Patients must be issued with a Patient Alert Card. Do not use systemic corticosteroids or immunosuppressants before starting cemiplimab (except physiological doses ≤10mg/day prednisolone or equivalent). 35 cycles will be set in ARIA.",
         "is_core_drug": true,
         "infusion_duration_hours": 0.5,
-        "notes": "Every 21 days (continued until disease progression or unacceptable toxicity or up to 24 months, whichever is sooner) | Administer via 0.2-5 micron in-line or add-on filter. Final concentration should be between 1 and 20mg/ml. Patients must be issued with a Patient Alert Card. Do not use systemic corticosteroids or immunosuppressants before starting cemiplimab (except physiological doses \u226410mg/day prednisolone or equivalent). 35 cycles will be set in ARIA."
+        "notes": "Every 21 days (continued until disease progression or unacceptable toxicity or up to 24 months, whichever is sooner) | Administer via 0.2-5 micron in-line or add-on filter. Final concentration should be between 1 and 20mg/ml. Patients must be issued with a Patient Alert Card. Do not use systemic corticosteroids or immunosuppressants before starting cemiplimab (except physiological doses ≤10mg/day prednisolone or equivalent). 35 cycles will be set in ARIA."
       }
     ]
   },
@@ -1047,7 +1049,7 @@
         "diluent_volume_ml": 100,
         "max_dose": null,
         "max_dose_unit": null,
-        "special_instructions": "Administer SECOND during combination phase (30 minutes after nivolumab). Administer using a low protein binding filter. Final concentration should be between 1-4mg/ml. Ipilimumab is neutral on extravasation. Dose banded according to agreed bands. At cycle 4, consider switching to single agent nivolumab. Avoid systemic corticosteroids before starting ipilimumab. Proton pump inhibitors may reduce efficacy \u2014 use H2 antagonist instead.",
+        "special_instructions": "Administer SECOND during combination phase (30 minutes after nivolumab). Administer using a low protein binding filter. Final concentration should be between 1-4mg/ml. Ipilimumab is neutral on extravasation. Dose banded according to agreed bands. At cycle 4, consider switching to single agent nivolumab. Avoid systemic corticosteroids before starting ipilimumab. Proton pump inhibitors may reduce efficacy — use H2 antagonist instead.",
         "is_core_drug": true
       }
     ],
@@ -1058,7 +1060,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "When required for infusion-related reactions",
-        "notes": "PRN \u2014 not routine premedication. No routine antiemetics required."
+        "notes": "PRN — not routine premedication. No routine antiemetics required.",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Hydrocortisone sodium succinate",
@@ -1066,7 +1069,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "When required for infusion-related reactions",
-        "notes": "PRN \u2014 not routine premedication"
+        "notes": "PRN — not routine premedication",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Paracetamol",
@@ -1074,13 +1078,13 @@
         "dose_unit": "mg",
         "route": "Oral",
         "timing": "When required for infusion-related reactions",
-        "notes": "PRN \u2014 check patient has not already taken paracetamol; maximum 4g per 24 hours; 4 hours between doses"
+        "notes": "PRN — check patient has not already taken paracetamol; maximum 4g per 24 hours; 4 hours between doses"
       }
     ],
     "take_home_medicines": [],
     "dose_modifications": [
       {
-        "parameter": "General \u2014 immunotherapy",
+        "parameter": "General — immunotherapy",
         "condition": "Dose reductions not permitted for immunotherapy combination",
         "affected_drugs": [
           "ipilimumab",
@@ -1088,7 +1092,7 @@
         ],
         "action": "omit",
         "factor": 0,
-        "notes": "Dose reductions of ipilimumab or nivolumab are NOT permitted. Treatment is either delayed (both drugs) or permanently discontinued. There is little need to adjust dose for haematological toxicity \u2014 dose delay criteria apply regardless of which drug caused the event."
+        "notes": "Dose reductions of ipilimumab or nivolumab are NOT permitted. Treatment is either delayed (both drugs) or permanently discontinued. There is little need to adjust dose for haematological toxicity — dose delay criteria apply regardless of which drug caused the event."
       },
       {
         "parameter": "Haematological",
@@ -1113,7 +1117,7 @@
       },
       {
         "parameter": "Hepatotoxicity",
-        "condition": "AST/ALT \u22655x ULN or bilirubin >3x ULN; OR hepatic injury not improving to grade 1 within 12 weeks; OR corticosteroid not reducible to \u226410mg prednisolone equivalent within 12 weeks; OR any NCI-CTC grade 3 or above",
+        "condition": "AST/ALT ≥5x ULN or bilirubin >3x ULN; OR hepatic injury not improving to grade 1 within 12 weeks; OR corticosteroid not reducible to ≤10mg prednisolone equivalent within 12 weeks; OR any NCI-CTC grade 3 or above",
         "affected_drugs": [
           "ipilimumab",
           "nivolumab"
@@ -1123,7 +1127,7 @@
         "notes": "Permanently discontinue both ipilimumab and nivolumab."
       },
       {
-        "parameter": "Renal impairment \u2014 NCI-CTC grade 2 or 3 creatinine elevation",
+        "parameter": "Renal impairment — NCI-CTC grade 2 or 3 creatinine elevation",
         "condition": "Grade 2 or 3 serum creatinine elevation",
         "affected_drugs": [
           "ipilimumab",
@@ -1134,7 +1138,7 @@
         "notes": "Withhold both; initiate corticosteroids. Upon improvement to grade 1, initiate taper over at least 1 month. May resume when reaction remains at grade 1 or below following taper."
       },
       {
-        "parameter": "Renal impairment \u2014 NCI-CTC grade 4 creatinine elevation; or not improving to grade 1 within 12 weeks",
+        "parameter": "Renal impairment — NCI-CTC grade 4 creatinine elevation; or not improving to grade 1 within 12 weeks",
         "condition": "Grade 4 creatinine elevation OR failure to improve to grade 1 within 12 weeks",
         "affected_drugs": [
           "ipilimumab",
@@ -1145,7 +1149,7 @@
         "notes": "Permanently discontinue both. Initiate corticosteroids at 1-2 mg/kg/day methylprednisolone equivalents for grade 4."
       },
       {
-        "parameter": "Immune-related GI toxicity \u2014 NCI-CTC grade 1-2 diarrhoea/mild-moderate colitis",
+        "parameter": "Immune-related GI toxicity — NCI-CTC grade 1-2 diarrhoea/mild-moderate colitis",
         "condition": "Grade 1 or 2 diarrhoea / mild to moderate colitis",
         "affected_drugs": [
           "ipilimumab",
@@ -1156,7 +1160,7 @@
         "notes": "May continue on combination with symptomatic treatment and close monitoring. If mild-moderate symptoms recur or persist 5-7 days, omit scheduled doses and consider prednisolone 1mg/kg orally OD. If resolution to grade 0-1 or return to baseline, resume at next scheduled dose. Doses omitted due to adverse reaction must not be replaced."
       },
       {
-        "parameter": "Immune-related GI toxicity \u2014 NCI-CTC grade 3 or 4 diarrhoea/colitis",
+        "parameter": "Immune-related GI toxicity — NCI-CTC grade 3 or 4 diarrhoea/colitis",
         "condition": "Grade 3 or 4 diarrhoea, colitis, peritoneal signs, bowel perforation, ileus, fever",
         "affected_drugs": [
           "ipilimumab",
@@ -1167,7 +1171,7 @@
         "notes": "Permanently discontinue both. Initiate high-dose IV corticosteroids immediately (unless bowel perforation). Consider infliximab 5mg/kg if symptoms do not respond to steroids in 5-7 days."
       },
       {
-        "parameter": "Neurological \u2014 grade 2 neuropathy",
+        "parameter": "Neurological — grade 2 neuropathy",
         "condition": "NCI-CTC grade 2 neuropathy likely related to ipilimumab or nivolumab",
         "affected_drugs": [
           "ipilimumab",
@@ -1178,7 +1182,7 @@
         "notes": "Omit scheduled dose. If neurologic symptoms resolve to baseline, patient may resume at next scheduled dose."
       },
       {
-        "parameter": "Neurological \u2014 grade 3 or 4 neuropathy",
+        "parameter": "Neurological — grade 3 or 4 neuropathy",
         "condition": "NCI-CTC grade 3 or 4 sensory neuropathy",
         "affected_drugs": [
           "ipilimumab",
@@ -1189,7 +1193,7 @@
         "notes": "Permanently discontinue both ipilimumab and nivolumab."
       },
       {
-        "parameter": "Skin \u2014 grade 1 or 2",
+        "parameter": "Skin — grade 1 or 2",
         "condition": "NCI-CTC grade 1 or 2 skin reactions",
         "affected_drugs": [
           "ipilimumab",
@@ -1200,7 +1204,7 @@
         "notes": "May remain on therapy with symptomatic treatment (topical corticosteroids, antihistamines). For persistent grade 1-2 rash/pruritus consider oral corticosteroids (prednisolone 1mg/kg OD)."
       },
       {
-        "parameter": "Skin \u2014 grade 3 symptomatic",
+        "parameter": "Skin — grade 3 symptomatic",
         "condition": "NCI-CTC grade 3 symptomatic skin reactions",
         "affected_drugs": [
           "ipilimumab",
@@ -1211,7 +1215,7 @@
         "notes": "Omit scheduled dose. If initial symptoms improve to grade 1 or resolve, therapy may resume at next scheduled dose."
       },
       {
-        "parameter": "Skin \u2014 grade 4 or grade 3 pruritus",
+        "parameter": "Skin — grade 4 or grade 3 pruritus",
         "condition": "NCI-CTC grade 4 rash or grade 3 pruritus",
         "affected_drugs": [
           "ipilimumab",
@@ -1222,7 +1226,7 @@
         "notes": "Permanently discontinue both. Consider systemic corticosteroid therapy."
       },
       {
-        "parameter": "Other immune-related \u2014 grade 3 or above",
+        "parameter": "Other immune-related — grade 3 or above",
         "condition": "Any other immune-related reaction at NCI-CTC grade 3 or above (uveitis, eosinophilia, lipase elevation, glomerulonephritis, iritis, haemolytic anaemia, amylase elevations, multi-organ failure, pneumonitis)",
         "affected_drugs": [
           "ipilimumab",
@@ -1247,11 +1251,11 @@
       "Patient must be given nivolumab Patient Alert Card"
     ],
     "special_warnings": [
-      "Ipilimumab and nivolumab are immunotherapies \u2014 dose reductions are NOT permitted; only delay or permanent discontinuation",
+      "Ipilimumab and nivolumab are immunotherapies — dose reductions are NOT permitted; only delay or permanent discontinuation",
       "Autoimmune toxicities can be severe and life-threatening",
       "Nivolumab must be administered FIRST; 30 minutes must elapse between both agents",
       "Avoid systemic corticosteroids before starting ipilimumab (may interfere with pharmacodynamic activity); safe to use after starting to treat immune-related adverse reactions",
-      "Proton pump inhibitors may reduce efficacy of the combination \u2014 consider H2 antagonist for gastric protection instead",
+      "Proton pump inhibitors may reduce efficacy of the combination — consider H2 antagonist for gastric protection instead",
       "Funding approval precludes further treatment after an interruption of 12 weeks or longer",
       "After 4 cycles of combination, transition to single-agent nivolumab 240mg q14 days or 480mg q28 days",
       "At cycle 4, consider switching to single agent nivolumab (ARIA warning included)",
@@ -1301,10 +1305,10 @@
         "diluent_volume_ml": 100,
         "max_dose": null,
         "max_dose_unit": null,
-        "special_instructions": "Administer SECOND during combination phase (30 minutes after nivolumab). Administer using a low protein binding filter. Final concentration should be between 1-4mg/ml. Ipilimumab is neutral on extravasation. Dose banded according to agreed bands. At cycle 4, consider switching to single agent nivolumab. Avoid systemic corticosteroids before starting ipilimumab. Proton pump inhibitors may reduce efficacy \u2014 use H2 antagonist instead.",
+        "special_instructions": "Administer SECOND during combination phase (30 minutes after nivolumab). Administer using a low protein binding filter. Final concentration should be between 1-4mg/ml. Ipilimumab is neutral on extravasation. Dose banded according to agreed bands. At cycle 4, consider switching to single agent nivolumab. Avoid systemic corticosteroids before starting ipilimumab. Proton pump inhibitors may reduce efficacy — use H2 antagonist instead.",
         "is_core_drug": true,
         "infusion_duration_hours": 1.5,
-        "notes": "Every 21 days for 4 cycles (combination phase only) | Administer SECOND during combination phase (30 minutes after nivolumab). Administer using a low protein binding filter. Final concentration should be between 1-4mg/ml. Ipilimumab is neutral on extravasation. Dose banded according to agreed bands. At cycle 4, consider switching to single agent nivolumab. Avoid systemic corticosteroids before starting ipilimumab. Proton pump inhibitors may reduce efficacy \u2014 use H2 antagonist instead."
+        "notes": "Every 21 days for 4 cycles (combination phase only) | Administer SECOND during combination phase (30 minutes after nivolumab). Administer using a low protein binding filter. Final concentration should be between 1-4mg/ml. Ipilimumab is neutral on extravasation. Dose banded according to agreed bands. At cycle 4, consider switching to single agent nivolumab. Avoid systemic corticosteroids before starting ipilimumab. Proton pump inhibitors may reduce efficacy — use H2 antagonist instead."
       }
     ]
   },
@@ -1333,7 +1337,7 @@
         "diluent_volume_ml": null,
         "max_dose": 400000,
         "max_dose_unit": "units",
-        "special_instructions": "Electrochemotherapy context \u2014 this protocol covers only the administration of bleomycin in the setting of electrochemotherapy; it does not cover the electrochemotherapy procedure itself. Administer as intravenous bolus over 30-60 seconds (no less than 30 seconds, no more than 60 seconds). After 8 minutes (to allow drug to diffuse into tissues), proceed with administration of required local anaesthetic. Electrochemotherapy then applied. Patient under general anaesthetic \u2014 administer hydrocortisone 100mg IV and chlorphenamine 10mg IV immediately before bleomycin to prevent adverse reactions. Bleomycin dose will be rounded to nearest 1,000 international units (up if halfway). Maximum cumulative dose 400,000 international units in patients <60 years; refer to SPC for older patients. Dose is per m\u00b2 body surface area. 15,000 IU/m\u00b2.",
+        "special_instructions": "Electrochemotherapy context — this protocol covers only the administration of bleomycin in the setting of electrochemotherapy; it does not cover the electrochemotherapy procedure itself. Administer as intravenous bolus over 30-60 seconds (no less than 30 seconds, no more than 60 seconds). After 8 minutes (to allow drug to diffuse into tissues), proceed with administration of required local anaesthetic. Electrochemotherapy then applied. Patient under general anaesthetic — administer hydrocortisone 100mg IV and chlorphenamine 10mg IV immediately before bleomycin to prevent adverse reactions. Bleomycin dose will be rounded to nearest 1,000 international units (up if halfway). Maximum cumulative dose 400,000 international units in patients <60 years; refer to SPC for older patients. Dose is per m² body surface area. 15,000 IU/m².",
         "is_core_drug": true
       }
     ],
@@ -1344,7 +1348,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "Immediately before bleomycin administration",
-        "notes": "Patient is under general anaesthetic and cannot report adverse reactions \u2014 administer these agents immediately before bleomycin"
+        "notes": "Patient is under general anaesthetic and cannot report adverse reactions — administer these agents immediately before bleomycin",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Chlorphenamine",
@@ -1352,30 +1357,31 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "Immediately before bleomycin administration",
-        "notes": "Patient is under general anaesthetic and cannot report adverse reactions \u2014 administer immediately before bleomycin"
+        "notes": "Patient is under general anaesthetic and cannot report adverse reactions — administer immediately before bleomycin",
+        "infusion_duration_hours": 0.17
       }
     ],
     "take_home_medicines": [],
     "dose_modifications": [
       {
-        "parameter": "Haematological \u2014 INR",
-        "condition": "INR \u22651.5",
+        "parameter": "Haematological — INR",
+        "condition": "INR ≥1.5",
         "affected_drugs": [
           "bleomycin"
         ],
         "action": "omit",
         "factor": 0,
-        "notes": "INR must be less than 1.5 prior to prescribing. Platelets must be more than 70x10\u2079/L prior to prescribing."
+        "notes": "INR must be less than 1.5 prior to prescribing. Platelets must be more than 70x10⁹/L prior to prescribing."
       },
       {
-        "parameter": "Haematological \u2014 platelets",
-        "condition": "Platelets \u226470x10\u2079/L",
+        "parameter": "Haematological — platelets",
+        "condition": "Platelets ≤70x10⁹/L",
         "affected_drugs": [
           "bleomycin"
         ],
         "action": "omit",
         "factor": 0,
-        "notes": "Platelets must be more than 70x10\u2079/L prior to prescribing."
+        "notes": "Platelets must be more than 70x10⁹/L prior to prescribing."
       },
       {
         "parameter": "Renal impairment",
@@ -1405,7 +1411,7 @@
         ],
         "action": "delay",
         "factor": 1.0,
-        "notes": "Hepatic impairment increases the risk of lung dysfunction \u2014 exercise caution and monitor closely."
+        "notes": "Hepatic impairment increases the risk of lung dysfunction — exercise caution and monitor closely."
       },
       {
         "parameter": "Pulmonary toxicity",
@@ -1431,7 +1437,7 @@
     "treatment_delay_criteria": {
       "neutrophils_min": null,
       "platelets_min": 70,
-      "notes": "INR must be <1.5. Platelets must be >70x10\u2079/L. FBC, LFTs, U&Es and INR must be checked prior to treatment. Respiratory examination required pre-treatment. ECG before treatment depends on location of nodules (less important for limbs, more important for trunk) and patient's pre-morbid condition \u2014 highly recommended for manifest cardiac arrhythmia or previous cardiac event. Presence of pacemaker precludes treatment on the anterior chest wall. This is generally a single treatment (one cycle)."
+      "notes": "INR must be <1.5. Platelets must be >70x10⁹/L. FBC, LFTs, U&Es and INR must be checked prior to treatment. Respiratory examination required pre-treatment. ECG before treatment depends on location of nodules (less important for limbs, more important for trunk) and patient's pre-morbid condition — highly recommended for manifest cardiac arrhythmia or previous cardiac event. Presence of pacemaker precludes treatment on the anterior chest wall. This is generally a single treatment (one cycle)."
     },
     "monitoring_requirements": [
       "FBC, LFTs, U&Es and INR prior to treatment",
@@ -1441,9 +1447,9 @@
       "Monitor for pulmonary toxicity (bleomycin-induced pneumonitis)"
     ],
     "special_warnings": [
-      "This protocol covers ONLY the administration of bleomycin in the setting of electrochemotherapy \u2014 it does NOT cover the electrochemotherapy procedure itself",
+      "This protocol covers ONLY the administration of bleomycin in the setting of electrochemotherapy — it does NOT cover the electrochemotherapy procedure itself",
       "Electrochemotherapy combines chemotherapy with application of electric pulses to facilitate drug delivery into tumour cells",
-      "Patient is under general anaesthetic \u2014 cannot self-report adverse reactions; premedicate with hydrocortisone and chlorphenamine immediately before bleomycin",
+      "Patient is under general anaesthetic — cannot self-report adverse reactions; premedicate with hydrocortisone and chlorphenamine immediately before bleomycin",
       "Presence of pacemaker precludes treatment on the anterior chest wall",
       "Risk of bleomycin-induced pneumonitis is greater in patients >40 years, smokers, underlying lung disease, previous mediastinal radiotherapy, poor renal function, or requiring growth factors",
       "Maximum cumulative bleomycin dose 400,000 IU in patients <60 years (refer to SPC for older patients)",
@@ -1451,14 +1457,14 @@
       "If a third dose reduction is necessary, treatment should be stopped",
       "Bleomycin extravasation risk is neutral",
       "No antiemetics required",
-      "Bleomycin electrochemotherapy: single-session procedure under general or local anaesthesia. Repeat sessions may be given at \u22658 week intervals."
+      "Bleomycin electrochemotherapy: single-session procedure under general or local anaesthesia. Repeat sessions may be given at ≥8 week intervals."
     ],
     "auc_dosing": null,
     "required_patient_fields": {
-      "body_surface_area_m2": "Required for dose calculation (15,000 IU/m\u00b2)",
+      "body_surface_area_m2": "Required for dose calculation (15,000 IU/m²)",
       "creatinine_clearance_ml_min": "Required for renal dose adjustment",
       "inr": "Must be <1.5",
-      "platelets": "Must be >70x10\u2079/L",
+      "platelets": "Must be >70x10⁹/L",
       "cumulative_bleomycin_dose_iu": "Must track lifetime exposure against 400,000 IU limit",
       "age_years": "Relevant to cumulative dose limit and pneumonitis risk"
     },
@@ -1479,10 +1485,10 @@
         "diluent_volume_ml": null,
         "max_dose": 400000,
         "max_dose_unit": "units",
-        "special_instructions": "Electrochemotherapy context \u2014 this protocol covers only the administration of bleomycin in the setting of electrochemotherapy; it does not cover the electrochemotherapy procedure itself. Administer as intravenous bolus over 30-60 seconds (no less than 30 seconds, no more than 60 seconds). After 8 minutes (to allow drug to diffuse into tissues), proceed with administration of required local anaesthetic. Electrochemotherapy then applied. Patient under general anaesthetic \u2014 administer hydrocortisone 100mg IV and chlorphenamine 10mg IV immediately before bleomycin to prevent adverse reactions. Bleomycin dose will be rounded to nearest 1,000 international units (up if halfway). Maximum cumulative dose 400,000 international units in patients <60 years; refer to SPC for older patients. Dose is per m\u00b2 body surface area. 15,000 IU/m\u00b2.",
+        "special_instructions": "Electrochemotherapy context — this protocol covers only the administration of bleomycin in the setting of electrochemotherapy; it does not cover the electrochemotherapy procedure itself. Administer as intravenous bolus over 30-60 seconds (no less than 30 seconds, no more than 60 seconds). After 8 minutes (to allow drug to diffuse into tissues), proceed with administration of required local anaesthetic. Electrochemotherapy then applied. Patient under general anaesthetic — administer hydrocortisone 100mg IV and chlorphenamine 10mg IV immediately before bleomycin to prevent adverse reactions. Bleomycin dose will be rounded to nearest 1,000 international units (up if halfway). Maximum cumulative dose 400,000 international units in patients <60 years; refer to SPC for older patients. Dose is per m² body surface area. 15,000 IU/m².",
         "is_core_drug": true,
         "infusion_duration_hours": 0.0167,
-        "notes": "Single treatment (one cycle). 1 cycle set in ARIA. | Electrochemotherapy context \u2014 this protocol covers only the administration of bleomycin in the setting of electrochemotherapy; it does not cover the electrochemotherapy procedure itself. Administer as intravenous bolus over 30-60 seconds (no less than 30 seconds, no more than 60 seconds). After 8 minutes (to allow drug to diffuse into tissues), proceed with administration of required local anaesthetic. Electrochemotherapy then applied. Patient under general anaesthetic \u2014 administer hydrocortisone 100mg IV and chlorphenamine 10mg IV immediately before bleomycin to prevent adverse reactions. Bleomycin dose will be rounded to nearest 1,000 international units (up if halfway). Maximum cumulative dose 400,000 international units in patients <60 years; refer to SPC for older patients. Dose is per m\u00b2 body surface area. 15,000 IU/m\u00b2."
+        "notes": "Single treatment (one cycle). 1 cycle set in ARIA. | Electrochemotherapy context — this protocol covers only the administration of bleomycin in the setting of electrochemotherapy; it does not cover the electrochemotherapy procedure itself. Administer as intravenous bolus over 30-60 seconds (no less than 30 seconds, no more than 60 seconds). After 8 minutes (to allow drug to diffuse into tissues), proceed with administration of required local anaesthetic. Electrochemotherapy then applied. Patient under general anaesthetic — administer hydrocortisone 100mg IV and chlorphenamine 10mg IV immediately before bleomycin to prevent adverse reactions. Bleomycin dose will be rounded to nearest 1,000 international units (up if halfway). Maximum cumulative dose 400,000 international units in patients <60 years; refer to SPC for older patients. Dose is per m² body surface area. 15,000 IU/m²."
       }
     ]
   },
@@ -1511,7 +1517,7 @@
         "diluent_volume_ml": 100,
         "max_dose": null,
         "max_dose_unit": null,
-        "special_instructions": "Flat dose \u2014 doses are delayed, not reduced, for toxicity. Administer via 0.2-1.2 micron low protein binding filter (polyethylene lined giving sets used for paclitaxel with 0.22 micron filter are appropriate). Nivolumab is neutral on extravasation. Patient must be given a nivolumab Patient Alert Card. Avoid systemic corticosteroids before starting nivolumab. If switching from 240mg q14 days to 480mg q28 days, first 480mg dose should be administered 2 weeks after last 240mg dose. If used following ipilimumab-nivolumab combination (4 cycles), first 240mg monotherapy dose administered 3 weeks after last combination dose.",
+        "special_instructions": "Flat dose — doses are delayed, not reduced, for toxicity. Administer via 0.2-1.2 micron low protein binding filter (polyethylene lined giving sets used for paclitaxel with 0.22 micron filter are appropriate). Nivolumab is neutral on extravasation. Patient must be given a nivolumab Patient Alert Card. Avoid systemic corticosteroids before starting nivolumab. If switching from 240mg q14 days to 480mg q28 days, first 480mg dose should be administered 2 weeks after last 240mg dose. If used following ipilimumab-nivolumab combination (4 cycles), first 240mg monotherapy dose administered 3 weeks after last combination dose.",
         "is_core_drug": true
       }
     ],
@@ -1522,7 +1528,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "When required for infusion-related reactions",
-        "notes": "PRN \u2014 not routine premedication. No routine antiemetics required."
+        "notes": "PRN — not routine premedication. No routine antiemetics required.",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Hydrocortisone sodium succinate",
@@ -1530,7 +1537,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "When required for infusion-related reactions",
-        "notes": "PRN \u2014 not routine premedication"
+        "notes": "PRN — not routine premedication",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Paracetamol",
@@ -1538,7 +1546,7 @@
         "dose_unit": "mg",
         "route": "Oral",
         "timing": "When required for infusion-related reactions",
-        "notes": "PRN \u2014 not routine premedication"
+        "notes": "PRN — not routine premedication"
       }
     ],
     "take_home_medicines": [
@@ -1553,7 +1561,7 @@
     ],
     "dose_modifications": [
       {
-        "parameter": "General \u2014 immunotherapy",
+        "parameter": "General — immunotherapy",
         "condition": "Dose escalation or reduction not recommended",
         "affected_drugs": [
           "nivolumab"
@@ -1593,7 +1601,7 @@
         "notes": "Permanently discontinue nivolumab."
       },
       {
-        "parameter": "Immune-related pneumonitis \u2014 second episode",
+        "parameter": "Immune-related pneumonitis — second episode",
         "condition": "Second episode of pneumonitis",
         "affected_drugs": [
           "nivolumab"
@@ -1643,8 +1651,8 @@
         "notes": "Permanently discontinue nivolumab."
       },
       {
-        "parameter": "Hepatotoxicity \u2014 severe",
-        "condition": "AST/ALT \u22655x ULN or bilirubin >3x ULN",
+        "parameter": "Hepatotoxicity — severe",
+        "condition": "AST/ALT ≥5x ULN or bilirubin >3x ULN",
         "affected_drugs": [
           "nivolumab"
         ],
@@ -1653,8 +1661,8 @@
         "notes": "Permanently discontinue nivolumab in first instance."
       },
       {
-        "parameter": "Hepatotoxicity \u2014 failure to improve",
-        "condition": "Hepatic injury not improving to NCI-CTC grade 1 within 12 weeks OR corticosteroid not reducible to \u226410mg prednisolone equivalent within 12 weeks OR any NCI-CTC grade 3 or above reaction",
+        "parameter": "Hepatotoxicity — failure to improve",
+        "condition": "Hepatic injury not improving to NCI-CTC grade 1 within 12 weeks OR corticosteroid not reducible to ≤10mg prednisolone equivalent within 12 weeks OR any NCI-CTC grade 3 or above reaction",
         "affected_drugs": [
           "nivolumab"
         ],
@@ -1683,8 +1691,8 @@
         "notes": "Permanently discontinue nivolumab. Initiate corticosteroids at 1-2mg/kg/day methylprednisolone equivalents."
       },
       {
-        "parameter": "Renal \u2014 failure to improve",
-        "condition": "Creatinine not improving to grade 1 within 12 weeks OR corticosteroid not reducible to \u226410mg prednisolone equivalent within 12 weeks OR recurrent NCI-CTC grade 3 reaction",
+        "parameter": "Renal — failure to improve",
+        "condition": "Creatinine not improving to grade 1 within 12 weeks OR corticosteroid not reducible to ≤10mg prednisolone equivalent within 12 weeks OR recurrent NCI-CTC grade 3 reaction",
         "affected_drugs": [
           "nivolumab"
         ],
@@ -1766,8 +1774,8 @@
       "Repeat chest imaging monthly as clinically indicated for lung toxicity monitoring"
     ],
     "special_warnings": [
-      "Nivolumab is an immunotherapy \u2014 dose reductions are NOT permitted; flat dose only; doses are delayed or permanently discontinued for toxicity",
-      "Autoimmune toxicities can be severe and life-threatening \u2014 early diagnosis and appropriate management essential",
+      "Nivolumab is an immunotherapy — dose reductions are NOT permitted; flat dose only; doses are delayed or permanently discontinued for toxicity",
+      "Autoimmune toxicities can be severe and life-threatening — early diagnosis and appropriate management essential",
       "Do not resume nivolumab if patient still receiving immunosuppressive doses of corticosteroids or other immunosuppressive therapy",
       "Avoid systemic corticosteroids before starting nivolumab (potential interference with pharmacodynamic activity and efficacy); safe to use after starting to treat immune-related reactions",
       "Funding approval precludes further treatment after an interruption of 12 weeks or longer",
@@ -1801,10 +1809,10 @@
         "diluent_volume_ml": 100,
         "max_dose": null,
         "max_dose_unit": null,
-        "special_instructions": "Flat dose \u2014 doses are delayed, not reduced, for toxicity. Administer via 0.2-1.2 micron low protein binding filter (polyethylene lined giving sets used for paclitaxel with 0.22 micron filter are appropriate). Nivolumab is neutral on extravasation. Patient must be given a nivolumab Patient Alert Card. Avoid systemic corticosteroids before starting nivolumab. If switching from 240mg q14 days to 480mg q28 days, first 480mg dose should be administered 2 weeks after last 240mg dose. If used following ipilimumab-nivolumab combination (4 cycles), first 240mg monotherapy dose administered 3 weeks after last combination dose.",
+        "special_instructions": "Flat dose — doses are delayed, not reduced, for toxicity. Administer via 0.2-1.2 micron low protein binding filter (polyethylene lined giving sets used for paclitaxel with 0.22 micron filter are appropriate). Nivolumab is neutral on extravasation. Patient must be given a nivolumab Patient Alert Card. Avoid systemic corticosteroids before starting nivolumab. If switching from 240mg q14 days to 480mg q28 days, first 480mg dose should be administered 2 weeks after last 240mg dose. If used following ipilimumab-nivolumab combination (4 cycles), first 240mg monotherapy dose administered 3 weeks after last combination dose.",
         "is_core_drug": true,
         "infusion_duration_hours": 0.5,
-        "notes": "Every 14 days (12 cycles will be set in ARIA) | Flat dose \u2014 doses are delayed, not reduced, for toxicity. Administer via 0.2-1.2 micron low protein binding filter (polyethylene lined giving sets used for paclitaxel with 0.22 micron filter are appropriate). Nivolumab is neutral on extravasation. Patient must be given a nivolumab Patient Alert Card. Avoid systemic corticosteroids before starting nivolumab. If switching from 240mg q14 days to 480mg q28 days, first 480mg dose should be administered 2 weeks after last 240mg dose. If used following ipilimumab-nivolumab combination (4 cycles), first 240mg monotherapy dose administered 3 weeks after last combination dose."
+        "notes": "Every 14 days (12 cycles will be set in ARIA) | Flat dose — doses are delayed, not reduced, for toxicity. Administer via 0.2-1.2 micron low protein binding filter (polyethylene lined giving sets used for paclitaxel with 0.22 micron filter are appropriate). Nivolumab is neutral on extravasation. Patient must be given a nivolumab Patient Alert Card. Avoid systemic corticosteroids before starting nivolumab. If switching from 240mg q14 days to 480mg q28 days, first 480mg dose should be administered 2 weeks after last 240mg dose. If used following ipilimumab-nivolumab combination (4 cycles), first 240mg monotherapy dose administered 3 weeks after last combination dose."
       }
     ]
   },
@@ -1833,7 +1841,7 @@
         "diluent_volume_ml": 100,
         "max_dose": null,
         "max_dose_unit": null,
-        "special_instructions": "Flat dose \u2014 doses are delayed, not reduced, for toxicity. Administer via 0.2-1.2 micron low protein binding filter (polyethylene lined giving sets used for paclitaxel with 0.22 micron filter are appropriate). Nivolumab is neutral on extravasation. Patient must be given a nivolumab Patient Alert Card. Avoid systemic corticosteroids before starting nivolumab. If switching from 480mg q28 days to 240mg q14 days, first 240mg dose should be administered 4 weeks after last 480mg dose. If used following ipilimumab-nivolumab combination (4 cycles), first 480mg monotherapy dose administered 6 weeks after last combination dose.",
+        "special_instructions": "Flat dose — doses are delayed, not reduced, for toxicity. Administer via 0.2-1.2 micron low protein binding filter (polyethylene lined giving sets used for paclitaxel with 0.22 micron filter are appropriate). Nivolumab is neutral on extravasation. Patient must be given a nivolumab Patient Alert Card. Avoid systemic corticosteroids before starting nivolumab. If switching from 480mg q28 days to 240mg q14 days, first 240mg dose should be administered 4 weeks after last 480mg dose. If used following ipilimumab-nivolumab combination (4 cycles), first 480mg monotherapy dose administered 6 weeks after last combination dose.",
         "is_core_drug": true
       }
     ],
@@ -1844,7 +1852,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "When required for infusion-related reactions",
-        "notes": "PRN \u2014 not routine premedication. No routine antiemetics required."
+        "notes": "PRN — not routine premedication. No routine antiemetics required.",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Hydrocortisone sodium succinate",
@@ -1852,7 +1861,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "When required for infusion-related reactions",
-        "notes": "PRN \u2014 not routine premedication"
+        "notes": "PRN — not routine premedication",
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Paracetamol",
@@ -1860,7 +1870,7 @@
         "dose_unit": "mg",
         "route": "Oral",
         "timing": "When required for infusion-related reactions",
-        "notes": "PRN \u2014 not routine premedication"
+        "notes": "PRN — not routine premedication"
       }
     ],
     "take_home_medicines": [
@@ -1875,7 +1885,7 @@
     ],
     "dose_modifications": [
       {
-        "parameter": "General \u2014 immunotherapy",
+        "parameter": "General — immunotherapy",
         "condition": "Dose escalation or reduction not recommended",
         "affected_drugs": [
           "nivolumab"
@@ -1915,7 +1925,7 @@
         "notes": "Permanently discontinue nivolumab."
       },
       {
-        "parameter": "Immune-related pneumonitis \u2014 second episode",
+        "parameter": "Immune-related pneumonitis — second episode",
         "condition": "Second episode of pneumonitis",
         "affected_drugs": [
           "nivolumab"
@@ -1965,8 +1975,8 @@
         "notes": "Permanently discontinue nivolumab."
       },
       {
-        "parameter": "Hepatotoxicity \u2014 severe",
-        "condition": "AST/ALT \u22655x ULN or bilirubin >3x ULN",
+        "parameter": "Hepatotoxicity — severe",
+        "condition": "AST/ALT ≥5x ULN or bilirubin >3x ULN",
         "affected_drugs": [
           "nivolumab"
         ],
@@ -1975,8 +1985,8 @@
         "notes": "Permanently discontinue nivolumab in first instance."
       },
       {
-        "parameter": "Hepatotoxicity \u2014 failure to improve",
-        "condition": "Hepatic injury not improving to NCI-CTC grade 1 within 12 weeks OR corticosteroid not reducible to \u226410mg prednisolone equivalent within 12 weeks OR any NCI-CTC grade 3 or above reaction",
+        "parameter": "Hepatotoxicity — failure to improve",
+        "condition": "Hepatic injury not improving to NCI-CTC grade 1 within 12 weeks OR corticosteroid not reducible to ≤10mg prednisolone equivalent within 12 weeks OR any NCI-CTC grade 3 or above reaction",
         "affected_drugs": [
           "nivolumab"
         ],
@@ -2005,8 +2015,8 @@
         "notes": "Permanently discontinue nivolumab. Initiate corticosteroids at 1-2mg/kg/day methylprednisolone equivalents."
       },
       {
-        "parameter": "Renal \u2014 failure to improve",
-        "condition": "Creatinine not improving to grade 1 within 12 weeks OR corticosteroid not reducible to \u226410mg prednisolone equivalent within 12 weeks OR recurrent NCI-CTC grade 3 reaction",
+        "parameter": "Renal — failure to improve",
+        "condition": "Creatinine not improving to grade 1 within 12 weeks OR corticosteroid not reducible to ≤10mg prednisolone equivalent within 12 weeks OR recurrent NCI-CTC grade 3 reaction",
         "affected_drugs": [
           "nivolumab"
         ],
@@ -2088,8 +2098,8 @@
       "Repeat chest imaging monthly as clinically indicated for lung toxicity monitoring"
     ],
     "special_warnings": [
-      "Nivolumab is an immunotherapy \u2014 dose reductions are NOT permitted; flat dose only; doses are delayed or permanently discontinued for toxicity",
-      "Autoimmune toxicities can be severe and life-threatening \u2014 early diagnosis and appropriate management essential",
+      "Nivolumab is an immunotherapy — dose reductions are NOT permitted; flat dose only; doses are delayed or permanently discontinued for toxicity",
+      "Autoimmune toxicities can be severe and life-threatening — early diagnosis and appropriate management essential",
       "Do not resume nivolumab if patient still receiving immunosuppressive doses of corticosteroids or other immunosuppressive therapy",
       "Avoid systemic corticosteroids before starting nivolumab (potential interference with pharmacodynamic activity and efficacy); safe to use after starting to treat immune-related reactions",
       "Funding approval precludes further treatment after an interruption of 12 weeks or longer",
@@ -2123,10 +2133,10 @@
         "diluent_volume_ml": 100,
         "max_dose": null,
         "max_dose_unit": null,
-        "special_instructions": "Flat dose \u2014 doses are delayed, not reduced, for toxicity. Administer via 0.2-1.2 micron low protein binding filter (polyethylene lined giving sets used for paclitaxel with 0.22 micron filter are appropriate). Nivolumab is neutral on extravasation. Patient must be given a nivolumab Patient Alert Card. Avoid systemic corticosteroids before starting nivolumab. If switching from 480mg q28 days to 240mg q14 days, first 240mg dose should be administered 4 weeks after last 480mg dose. If used following ipilimumab-nivolumab combination (4 cycles), first 480mg monotherapy dose administered 6 weeks after last combination dose.",
+        "special_instructions": "Flat dose — doses are delayed, not reduced, for toxicity. Administer via 0.2-1.2 micron low protein binding filter (polyethylene lined giving sets used for paclitaxel with 0.22 micron filter are appropriate). Nivolumab is neutral on extravasation. Patient must be given a nivolumab Patient Alert Card. Avoid systemic corticosteroids before starting nivolumab. If switching from 480mg q28 days to 240mg q14 days, first 240mg dose should be administered 4 weeks after last 480mg dose. If used following ipilimumab-nivolumab combination (4 cycles), first 480mg monotherapy dose administered 6 weeks after last combination dose.",
         "is_core_drug": true,
         "infusion_duration_hours": 1.0,
-        "notes": "Every 28 days (12 cycles will be set in ARIA) | Flat dose \u2014 doses are delayed, not reduced, for toxicity. Administer via 0.2-1.2 micron low protein binding filter (polyethylene lined giving sets used for paclitaxel with 0.22 micron filter are appropriate). Nivolumab is neutral on extravasation. Patient must be given a nivolumab Patient Alert Card. Avoid systemic corticosteroids before starting nivolumab. If switching from 480mg q28 days to 240mg q14 days, first 240mg dose should be administered 4 weeks after last 480mg dose. If used following ipilimumab-nivolumab combination (4 cycles), first 480mg monotherapy dose administered 6 weeks after last combination dose."
+        "notes": "Every 28 days (12 cycles will be set in ARIA) | Flat dose — doses are delayed, not reduced, for toxicity. Administer via 0.2-1.2 micron low protein binding filter (polyethylene lined giving sets used for paclitaxel with 0.22 micron filter are appropriate). Nivolumab is neutral on extravasation. Patient must be given a nivolumab Patient Alert Card. Avoid systemic corticosteroids before starting nivolumab. If switching from 480mg q28 days to 240mg q14 days, first 240mg dose should be administered 4 weeks after last 480mg dose. If used following ipilimumab-nivolumab combination (4 cycles), first 480mg monotherapy dose administered 6 weeks after last combination dose."
       }
     ]
   }

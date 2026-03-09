@@ -548,7 +548,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "when required for treatment of injection-related reactions",
-        "mandatory": false
+        "mandatory": false,
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Hydrocortisone sodium succinate",
@@ -556,7 +557,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "when required for treatment of injection-related reactions",
-        "mandatory": false
+        "mandatory": false,
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Paracetamol",
@@ -883,7 +885,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "when required for treatment of infusion-related reactions",
-        "mandatory": false
+        "mandatory": false,
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Hydrocortisone sodium succinate",
@@ -891,7 +894,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "when required for treatment of infusion-related reactions",
-        "mandatory": false
+        "mandatory": false,
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Paracetamol",
@@ -1136,7 +1140,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "when required for treatment of infusion-related reactions",
-        "mandatory": false
+        "mandatory": false,
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Hydrocortisone sodium succinate",
@@ -1144,7 +1149,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "when required for treatment of infusion-related reactions",
-        "mandatory": false
+        "mandatory": false,
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Paracetamol",
@@ -1392,7 +1398,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "30 minutes prior to avelumab (cycles 1-4; may omit from cycle 5 onwards if no infusion-related reactions)",
-        "mandatory": true
+        "mandatory": true,
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Paracetamol",
@@ -1747,7 +1754,8 @@
         "dose_unit": "mg",
         "route": "IV bolus",
         "timing": "30 minutes prior to avelumab (cycles 1-4; may omit from cycle 5 onwards if no infusion-related reactions)",
-        "mandatory": true
+        "mandatory": true,
+        "infusion_duration_hours": 0.17
       },
       {
         "drug_name": "Paracetamol",
