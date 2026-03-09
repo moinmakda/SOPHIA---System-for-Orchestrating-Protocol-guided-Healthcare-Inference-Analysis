@@ -1,44 +1,27 @@
 import React, { useState } from 'react';
 
+// Protocols that have been fully validated and are live
+const LIVE_PROTOCOLS = new Set(['LYMPHOMA-RCHOP21', 'HAEM-BLINA-34DAY']);
+
 export function ProtocolBrowser({ protocols, onSelect, selectedProtocol }) {
   const [searchTerm, setSearchTerm] = useState('');
-  const [filter, setFilter] = useState('all');
 
-  const filteredProtocols = protocols.filter(p => {
-    const matchesSearch = 
-      p.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      p.code.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      p.indication.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      p.drugs.some(d => d.toLowerCase().includes(searchTerm.toLowerCase()));
-    
-    return matchesSearch;
-  });
+  const liveProtocols = protocols.filter(p => LIVE_PROTOCOLS.has(p.code));
+  const totalProtocols = protocols.length;
+  const underDevelopmentCount = totalProtocols - liveProtocols.length;
 
-  // Group protocols by indication type
-  const groupedProtocols = {
-    'Non-Hodgkin Lymphoma': filteredProtocols.filter(p => 
-      p.indication.toLowerCase().includes('non-hodgkin') || 
-      p.indication.toLowerCase().includes('nhl')
-    ),
-    'Hodgkin Lymphoma': filteredProtocols.filter(p => 
-      p.indication.toLowerCase().includes('hodgkin') && 
-      !p.indication.toLowerCase().includes('non-hodgkin')
-    ),
-    'Relapsed/Refractory': filteredProtocols.filter(p => 
-      p.indication.toLowerCase().includes('relapsed') || 
-      p.indication.toLowerCase().includes('refractory')
-    ),
-    'Other': filteredProtocols.filter(p => {
-      const ind = p.indication.toLowerCase();
-      return !ind.includes('hodgkin') && !ind.includes('relapsed') && !ind.includes('refractory');
-    })
-  };
+  const filteredLive = liveProtocols.filter(p =>
+    p.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    p.code.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    p.indication.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    p.drugs.some(d => d.toLowerCase().includes(searchTerm.toLowerCase()))
+  );
 
   return (
     <div className="protocol-browser">
       <div className="browser-header">
         <h2>Select Treatment Protocol</h2>
-        <p>Choose from {protocols.length} available protocols</p>
+        <p>Choose a protocol to generate a dosing plan</p>
       </div>
 
       <div className="search-bar">
@@ -52,19 +35,17 @@ export function ProtocolBrowser({ protocols, onSelect, selectedProtocol }) {
           onChange={(e) => setSearchTerm(e.target.value)}
         />
         {searchTerm && (
-          <button className="clear-search" onClick={() => setSearchTerm('')}>
-            ×
-          </button>
+          <button className="clear-search" onClick={() => setSearchTerm('')}>×</button>
         )}
       </div>
 
       <div className="protocol-list">
-        {filteredProtocols.length === 0 ? (
+        {filteredLive.length === 0 ? (
           <div className="no-results">
-            <p>No protocols found matching "{searchTerm}"</p>
+            <p>No live protocols match "{searchTerm}"</p>
           </div>
         ) : (
-          filteredProtocols.map(protocol => (
+          filteredLive.map(protocol => (
             <div
               key={protocol.id}
               className={`protocol-card ${selectedProtocol?.id === protocol.id ? 'selected' : ''}`}
@@ -74,11 +55,8 @@ export function ProtocolBrowser({ protocols, onSelect, selectedProtocol }) {
                 <span className="protocol-code">{protocol.code}</span>
                 <span className="protocol-cycles">{protocol.total_cycles} cycles × {protocol.cycle_length_days} days</span>
               </div>
-              
               <h3 className="protocol-name">{protocol.name}</h3>
-              
               <p className="protocol-indication">{protocol.indication}</p>
-              
               <div className="protocol-drugs">
                 {protocol.drugs.map((drug, i) => (
                   <span key={i} className="drug-tag">{drug}</span>
@@ -87,6 +65,23 @@ export function ProtocolBrowser({ protocols, onSelect, selectedProtocol }) {
             </div>
           ))
         )}
+      </div>
+
+      {/* Under development notice */}
+      <div style={{
+        marginTop: 24,
+        padding: '14px 18px',
+        background: '#f5f5f5',
+        border: '1px solid #e0e0e0',
+        borderRadius: 6,
+        color: '#757575',
+        fontSize: 13,
+        lineHeight: 1.5
+      }}>
+        <strong style={{ color: '#424242' }}>~{underDevelopmentCount} further protocols under development</strong>
+        <br />
+        Full haematology and oncology library is being validated against NHS PDFs before release.
+        Contact the SOPHIA team to request prioritisation of a specific protocol.
       </div>
     </div>
   );

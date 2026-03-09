@@ -16,13 +16,14 @@ Key Safety Features:
 from typing import Optional
 import re
 from datetime import datetime
+from datetime import timedelta
 from models import (
     Protocol, ProtocolDrug, PatientData, ProtocolRequest, ProtocolResponse,
     CalculatedDose, Warning, DoseModificationRule, DoseUnit, CycleVariation,
     BSA_CAP_OBESE, NEUTROPHIL_DELAY_THRESHOLD, PLATELET_DELAY_THRESHOLD,
     ECOGPerformanceStatus, HematologicalToxicityRule, NonHematologicalToxicityRule,
     AgeBasedModification, CumulativeToxicityTracking, MetabolicMonitoringRule,
-    CustomRegimenRequest, CustomRegimenDrug
+    CustomRegimenRequest, CustomRegimenDrug, BlinatumomabBagEntry
 )
 
 
@@ -256,22 +257,29 @@ class ProtocolEngine:
                     message=f"⚠️ TREATMENT DELAY RECOMMENDED: {reason}. Consider postponing until values recover."
                 ))
         
-        # SAFETY CHECK 2: BSA capping notification
-        if patient.bsa_was_capped:
+        # Determine if this protocol has any BSA-based drugs
+        all_drugs = protocol.drugs + protocol.pre_medications + protocol.take_home_medicines
+        has_bsa_drug = any(
+            d.dose_unit in ("mg/m²", "mcg/m²", "g/m²", "units/m²", "IU/m²", "mg/m2", "IU/m2")
+            for d in all_drugs
+        )
+
+        # SAFETY CHECK 2: BSA capping notification — only relevant for BSA-dosed protocols
+        if patient.bsa_was_capped and has_bsa_drug:
             warnings.append(Warning(
                 level="warning",
                 message=f"BSA capped at {BSA_CAP_OBESE} m² (actual: {patient.calculated_bsa:.2f} m²) per ASCO guidelines for obese patients."
             ))
             modifications_applied.append(f"BSA capped: {patient.calculated_bsa:.2f} → {BSA_CAP_OBESE} m²")
-        
-        # SAFETY CHECK 3: Elderly patient note (per-drug reductions applied in _calculate_dose)
-        if patient.elderly_patient:
+
+        # SAFETY CHECK 3: Elderly patient note — only relevant for BSA-dosed protocols
+        # Flat-dose drugs (e.g. blinatumomab) have no dose adjustment in elderly per their SPC
+        if patient.elderly_patient and has_bsa_drug:
             warnings.append(Warning(
                 level="info",
                 message=(
-                    f"Patient age {patient.age_years} years — dose reductions applied to BSA-based "
-                    f"chemotherapy drugs per institutional guidelines (20% reduction). "
-                    f"Flat-dose and pre-medication doses unchanged. Prescriber must confirm."
+                    f"Patient age {patient.age_years} years — protocol may recommend dose reduction. "
+                    f"Review per-drug warnings below. Prescriber must confirm all doses."
                 )
             ))
         
@@ -281,16 +289,156 @@ class ProtocolEngine:
                 level="critical",
                 message=f"ECOG Performance Status {patient.performance_status.value} - Full-dose chemotherapy may not be appropriate. Consider dose reduction or alternative treatment."
             ))
-        
-        # SAFETY CHECK 5: Check for allergies to protocol drugs
+
+        # SAFETY CHECK 5: Haematological hard stops (moved from Pydantic to engine so response is a
+        # clinical warning, not an HTTP 422 error — clinicians still need to be able to model doses)
+        if patient.neutrophils is not None and patient.neutrophils < 0.5:
+            warnings.insert(0, Warning(
+                level="critical",
+                message=f"TREATMENT CONTRAINDICATED: Neutrophils {patient.neutrophils} ×10⁹/L — below absolute contraindication threshold (<0.5). Severe sepsis risk. Do not administer chemotherapy."
+            ))
+        elif patient.neutrophils is not None and patient.neutrophils < 1.0:
+            warnings.append(Warning(
+                level="critical",
+                message=f"TREATMENT DELAY: Neutrophils {patient.neutrophils} ×10⁹/L (<1.0). Delay until ≥1.0×10⁹/L. Consider G-CSF prophylaxis."
+            ))
+
+        if patient.platelets is not None and patient.platelets < 50:
+            warnings.insert(0, Warning(
+                level="critical",
+                message=f"TREATMENT CONTRAINDICATED: Platelets {patient.platelets} ×10⁹/L — below absolute contraindication threshold (<50). Severe haemorrhage risk. Do not administer chemotherapy."
+            ))
+        elif patient.platelets is not None and patient.platelets < 100:
+            warnings.append(Warning(
+                level="critical",
+                message=f"TREATMENT DELAY: Platelets {patient.platelets} ×10⁹/L (<100). Delay until ≥100×10⁹/L."
+            ))
+
+        if patient.creatinine_clearance is not None and patient.creatinine_clearance < 10:
+            warnings.insert(0, Warning(
+                level="critical",
+                message=f"SEVERE RENAL FAILURE: CrCl {patient.creatinine_clearance} ml/min. Nephrotoxic drugs must be dose-reduced or omitted. Nephrology review required before proceeding."
+            ))
+
+        # SAFETY CHECK 6: Active infection — treatment must be delayed
+        if patient.active_infection:
+            warnings.append(Warning(
+                level="critical",
+                message="TREATMENT DELAY REQUIRED: Active infection or fever present. Chemotherapy must not proceed until infection is treated and patient is afebrile."
+            ))
+
+        # SAFETY CHECK 6: Pregnancy — teratogenic drugs
+        if patient.pregnancy_status == "pregnant":
+            warnings.append(Warning(
+                level="critical",
+                message="PREGNANCY: Patient is pregnant. All cytotoxic chemotherapy is potentially teratogenic. Specialist oncology and obstetric review mandatory before proceeding."
+            ))
+
+        # SAFETY CHECK 7: HBV reactivation risk with rituximab
+        protocol_drug_names = [d.drug_name.lower() for d in protocol.drugs]
+        # HBV reactivation risk applies to rituximab AND blinatumomab (any immunosuppressive agent)
+        HBV_RISK_DRUGS = ("rituximab", "blinatumomab", "obinutuzumab", "ofatumumab",
+                          "ocrelizumab", "alemtuzumab")
+        uses_immunosuppressive = any(
+            any(d in n for d in HBV_RISK_DRUGS) for n in protocol_drug_names
+        )
+        if uses_immunosuppressive:
+            if patient.hep_b_surface_antigen == "positive":
+                if not patient.hbv_prophylaxis_started:
+                    warnings.append(Warning(
+                        level="critical",
+                        message="HBsAg POSITIVE: Fatal HBV reactivation risk with rituximab. Antiviral prophylaxis (entecavir) MUST be started before rituximab and continued for 12 months after last dose. Confirm prophylaxis is prescribed."
+                    ))
+                else:
+                    warnings.append(Warning(
+                        level="warning",
+                        message="HBsAg positive — HBV prophylaxis confirmed started. Monitor HBV DNA every 3 months during and for 12 months after rituximab."
+                    ))
+            elif patient.hep_b_core_antibody == "positive":
+                if not patient.hbv_prophylaxis_started:
+                    warnings.append(Warning(
+                        level="warning",
+                        message="Anti-HBc POSITIVE (HBsAg negative): Prior HBV exposure — reactivation risk with rituximab. Antiviral prophylaxis or close HBV DNA monitoring required. Confirm management plan."
+                    ))
+                else:
+                    warnings.append(Warning(
+                        level="info",
+                        message="Anti-HBc positive — HBV prophylaxis confirmed started. Monitor HBV DNA during rituximab therapy."
+                    ))
+            elif patient.hep_b_surface_antigen is None or patient.hep_b_core_antibody is None:
+                warnings.append(Warning(
+                    level="warning",
+                    message="HBV serology (HBsAg, Anti-HBc) not recorded — required before rituximab due to fatal reactivation risk. Ensure screening is completed."
+                ))
+
+        # SAFETY CHECK 8: Baseline LVEF before anthracyclines
+        uses_anthracycline = any(
+            n in protocol_drug_names
+            for n in ("doxorubicin", "epirubicin", "daunorubicin", "idarubicin", "mitoxantrone")
+        )
+        if uses_anthracycline:
+            needs_echo = (
+                patient.prior_cardiac_history
+                or patient.age_years >= 70
+                or (patient.prior_anthracycline_dose_mg_m2 and patient.prior_anthracycline_dose_mg_m2 > 0)
+            )
+            if needs_echo:
+                if patient.lvef_percent is None:
+                    warnings.append(Warning(
+                        level="warning",
+                        message="BASELINE ECHO REQUIRED: Patient has cardiac risk factors (age ≥70, cardiac history, or prior anthracyclines). Baseline LVEF must be documented before doxorubicin."
+                    ))
+                elif patient.lvef_percent < 50:
+                    warnings.append(Warning(
+                        level="critical",
+                        message=f"REDUCED LVEF {patient.lvef_percent:.0f}%: Doxorubicin use requires cardiology review. Contraindicated if LVEF <40%. Do not proceed without specialist input."
+                    ))
+                elif patient.lvef_percent < 55:
+                    warnings.append(Warning(
+                        level="warning",
+                        message=f"BORDERLINE LVEF {patient.lvef_percent:.0f}%: Monitor cardiac function closely during anthracycline therapy."
+                    ))
+
+        # SAFETY CHECK 9: Peripheral neuropathy grading before vincristine
+        uses_vincristine = any("vincristine" in n for n in protocol_drug_names)
+        if uses_vincristine and patient.peripheral_neuropathy_grade is not None:
+            if patient.peripheral_neuropathy_grade >= 3:
+                warnings.append(Warning(
+                    level="critical",
+                    message=f"PERIPHERAL NEUROPATHY GRADE {patient.peripheral_neuropathy_grade}: Vincristine MUST be omitted (Grade ≥3). Discuss with consultant."
+                ))
+            elif patient.peripheral_neuropathy_grade == 2:
+                warnings.append(Warning(
+                    level="warning",
+                    message="PERIPHERAL NEUROPATHY GRADE 2: Vincristine dose reduction required (reduce to 1mg or consider omission). Review with consultant."
+                ))
+            elif patient.peripheral_neuropathy_grade == 1:
+                warnings.append(Warning(
+                    level="info",
+                    message="PERIPHERAL NEUROPATHY GRADE 1: Monitor closely. Reduce vincristine dose at grade 2."
+                ))
+
+        # SAFETY CHECK 10: Tumor lysis risk
+        if patient.tls_risk == "high":
+            warnings.append(Warning(
+                level="critical",
+                message="HIGH TLS RISK: Rasburicase and aggressive IV hydration required. Ensure urate, creatinine, phosphate, potassium and calcium monitoring in place. Allopurinol is NOT sufficient."
+            ))
+        elif patient.tls_risk == "intermediate":
+            warnings.append(Warning(
+                level="warning",
+                message="INTERMEDIATE TLS RISK: Allopurinol prophylaxis and IV hydration required. Monitor electrolytes and urate closely."
+            ))
+
+        # SAFETY CHECK 11: Check for allergies to protocol drugs
         allergy_warnings = self._check_allergies(protocol, patient)
         warnings.extend(allergy_warnings)
-        
-        # SAFETY CHECK 6: Cumulative toxicity warnings
+
+        # SAFETY CHECK 12: Cumulative toxicity warnings
         cumulative_warnings = self._check_cumulative_toxicity(protocol, patient)
         warnings.extend(cumulative_warnings)
-        
-        # SAFETY CHECK 7: Irradiated blood products
+
+        # SAFETY CHECK 13: Irradiated blood products
         irradiated_warnings = self._check_irradiated_blood(protocol)
         warnings.extend(irradiated_warnings)
         
@@ -311,10 +459,11 @@ class ProtocolEngine:
                 if calc_dose:
                     chemo_doses.append(calc_dose)
 
-        # Calculate pre-medication doses
+        # Calculate pre-medication doses (apply cycle-1-only filtering same as chemo drugs)
+        cycle_premeds = self._adjust_days_for_cycle(protocol.pre_medications, request.cycle_number)
         premed_doses = []
         if request.include_premeds:
-            for drug in protocol.pre_medications:
+            for drug in cycle_premeds:
                 if self._should_include_drug(drug, request, patient):
                     calc_dose, drug_warnings, mods = self._calculate_dose(
                         drug, patient, bsa, request, [], protocol
@@ -367,7 +516,46 @@ class ProtocolEngine:
             "⚠️ SAFETY NOTICE: This protocol is generated by SOPHIA for clinical decision support only. "
             "Independent verification by prescriber and pharmacist is REQUIRED before administration."
         ] + all_instructions
-        
+
+        # Blinatumomab-specific checks and bag schedule
+        blina_schedule = None
+        if "blinatumomab" in protocol.code.lower() or "blina" in protocol.code.lower():
+            # Blast count pre-phase assessment (cycle 1 only)
+            if request.cycle_number == 1:
+                pb = patient.peripheral_blast_percent
+                bm = patient.bone_marrow_blast_percent
+                if pb is not None and pb > 15:
+                    warnings.insert(0, Warning(
+                        level="critical",
+                        message=(
+                            f"PRE-PHASE REQUIRED: Peripheral blast count {pb:.0f}% (>15%). "
+                            f"Dexamethasone pre-phase (up to 5 days) must be completed before starting "
+                            f"blinatumomab to reduce tumour load and CRS/neurotoxicity risk."
+                        )
+                    ))
+                elif bm is not None and bm > 50:
+                    warnings.insert(0, Warning(
+                        level="critical",
+                        message=(
+                            f"PRE-PHASE REQUIRED: Bone marrow blasts {bm:.0f}% (>50%). "
+                            f"Dexamethasone pre-phase (up to 5 days) must be completed before starting "
+                            f"blinatumomab to reduce tumour load and CRS/neurotoxicity risk."
+                        )
+                    ))
+                elif pb is None and bm is None:
+                    warnings.append(Warning(
+                        level="warning",
+                        message=(
+                            "BLAST COUNT NOT RECORDED: Peripheral blast % and bone marrow blast % "
+                            "must be assessed before cycle 1 blinatumomab. Pre-phase dexamethasone "
+                            "is required if peripheral blasts >15% or bone marrow blasts >50%."
+                        )
+                    ))
+
+            blina_schedule, blina_date_warning = self._generate_blinatumomab_bag_schedule(request, request.cycle_number)
+            if blina_date_warning:
+                warnings.insert(0, Warning(level="critical", message=blina_date_warning))
+
         return ProtocolResponse(
             protocol_id=protocol.id,
             protocol_name=protocol.name,
@@ -396,6 +584,7 @@ class ProtocolEngine:
             treatment_delay_recommended=patient.requires_delay,
             delay_reasons=patient.delay_reasons if patient.requires_delay else [],
             is_ai_generated=getattr(protocol, 'is_ai_generated', False),
+            blinatumomab_bag_schedule=blina_schedule,
         )
 
     def generate_custom_regimen(self, request: CustomRegimenRequest) -> ProtocolResponse:
@@ -611,12 +800,25 @@ class ProtocolEngine:
                 if equiv_factor is None:
                     continue
 
-                # prior dose is in doxo-equivalents; convert to remaining in current drug's units
+                # prior dose is in doxo-equivalents; apply patient-specific limit
                 prior_doxo_equiv = patient.prior_anthracycline_dose_mg_m2
-                doxo_limit = 450
+                # Determine applicable doxorubicin-equivalent lifetime limit
+                if patient.prior_mediastinal_radiation:
+                    doxo_limit = 350
+                    limit_reason = "prior mediastinal radiation"
+                elif patient.prior_cardiac_history:
+                    doxo_limit = 400
+                    limit_reason = "cardiac history"
+                elif patient.age_years and patient.age_years >= 70:
+                    doxo_limit = 400
+                    limit_reason = "age ≥70"
+                else:
+                    doxo_limit = 450
+                    limit_reason = "standard limit"
                 remaining_doxo = doxo_limit - prior_doxo_equiv
                 # Express remaining in the current drug's own units
                 own_limit = ANTHRACYCLINE_OWN_LIMITS.get(drug_lower, doxo_limit / equiv_factor)
+                own_limit_adjusted = doxo_limit / equiv_factor
                 remaining_own = remaining_doxo / equiv_factor
 
                 if remaining_doxo <= 0:
@@ -625,19 +827,19 @@ class ProtocolEngine:
                         message=(
                             f"⚠️ CUMULATIVE ANTHRACYCLINE TOXICITY: Prior dose {prior_doxo_equiv:.0f} mg/m² "
                             f"(doxorubicin-equivalent) meets or exceeds lifetime limit of {doxo_limit} mg/m²-eq "
-                            f"(= {own_limit:.0f} mg/m² {drug.drug_name}). "
+                            f"({limit_reason}) = {own_limit_adjusted:.0f} mg/m² {drug.drug_name}. "
                             f"Cardiac toxicity risk is very high. Do NOT administer without MDT review."
                         ),
                         drug_id=drug.drug_id
                     ))
-                elif remaining_own < (own_limit * 0.15):
-                    # Warn when <15% of own-drug limit remains
+                elif remaining_own < (own_limit_adjusted * 0.15):
+                    # Warn when <15% of adjusted limit remains
                     warnings.append(Warning(
                         level="warning",
                         message=(
-                            f"Approaching {drug.drug_name} lifetime limit. "
+                            f"Approaching {drug.drug_name} lifetime limit ({limit_reason}). "
                             f"Prior anthracycline: {prior_doxo_equiv:.0f} mg/m² doxorubicin-equivalent. "
-                            f"{drug.drug_name} lifetime limit: {own_limit:.0f} mg/m²; "
+                            f"Adjusted {drug.drug_name} lifetime limit: {own_limit_adjusted:.0f} mg/m²; "
                             f"estimated remaining: {remaining_own:.0f} mg/m². "
                             f"Monitor cardiac function (LVEF) closely."
                         ),
@@ -896,7 +1098,7 @@ class ProtocolEngine:
         # SAFETY: Apply max dose cap if specified
         # CRITICAL for drugs like vincristine where overdose = death/permanent injury
         if drug.max_dose:
-            if calculated_dose > drug.max_dose:
+            if calculated_dose > drug.max_dose + 1e-9:  # epsilon for floating point
                 drug_name_lower = drug.drug_name.lower()
                 pre_cap_dose = calculated_dose
 
@@ -911,7 +1113,7 @@ class ProtocolEngine:
                     warnings.append(Warning(
                         level="critical",
                         message=f"⚠️ CRITICAL MAX DOSE CAP: {drug.drug_name} capped at {drug.max_dose} {cap_unit} "
-                                f"(calculated: {pre_cap_dose:.1f} {cap_unit} from {drug.dose}{drug.dose_unit.value if hasattr(drug.dose_unit,'value') else drug.dose_unit} × BSA). "
+                                f"(calculated: {pre_cap_dose:.3f} {cap_unit} from {drug.dose}{drug.dose_unit.value if hasattr(drug.dose_unit,'value') else drug.dose_unit} × BSA). "
                                 f"{critical_info['reason']}. VERIFY this cap is appropriate for this patient.",
                         drug_id=drug.drug_id
                     ))
@@ -1006,8 +1208,8 @@ class ProtocolEngine:
                 modifications.extend(age_mods)
                 warnings.extend(age_warnings)
 
-        # Elderly fallback: if patient is elderly AND no structured age rule already applied
-        # AND drug is BSA-based (so a generic 20% reduction is appropriate), apply reduction
+        # Elderly fallback: protocol says "consider dose reduction" but specifies no percentage.
+        # SOPHIA must NOT invent a specific reduction factor — emit a warning and leave dose unchanged.
         elif (
             protocol is not None
             and patient.elderly_patient
@@ -1015,21 +1217,12 @@ class ProtocolEngine:
             and dose_unit in (DoseUnit.MG_M2, DoseUnit.G_M2, DoseUnit.MCG_M2, DoseUnit.UNITS_M2)
             and drug.is_core_drug
         ):
-            elderly_factor = 0.80  # 20% reduction
-            old_dose = calculated_dose
-            calculated_dose = round(calculated_dose * elderly_factor, 2)
-            dose_modified = True
-            modification_reason = f"Age ≥70 years: 20% dose reduction applied per institutional guidelines"
-            modification_percent = 80
-            modifications.append(
-                f"{drug.drug_name}: reduced to 80% ({old_dose:.2f}→{calculated_dose:.2f}) — age {patient.age_years}y"
-            )
             warnings.append(Warning(
                 level="warning",
                 message=(
-                    f"{drug.drug_name}: dose reduced by 20% ({old_dose:.2f} → {calculated_dose:.2f}) "
-                    f"for patient age {patient.age_years} years per institutional guidelines. "
-                    f"Prescriber should confirm reduction is appropriate for this patient."
+                    f"{drug.drug_name}: patient age {patient.age_years} years — protocol recommends "
+                    f"considering dose reduction in patients >70 but specifies no percentage. "
+                    f"Full dose calculated. Prescriber must decide whether to reduce."
                 ),
                 drug_id=drug.drug_id
             ))
@@ -1674,6 +1867,128 @@ class ProtocolEngine:
                     break  # Only add once even if mentioned multiple times
 
         return warnings
+
+    def _generate_blinatumomab_bag_schedule(
+        self, request: ProtocolRequest, cycle_number: int
+    ) -> list[BlinatumomabBagEntry]:
+        """
+        Generate the alternating 72/96-hour bag-change schedule for blinatumomab.
+
+        Per NHS UHS protocol (Blinatumomab 3,4 day schedule):
+          - Volume: 275 ml sodium chloride 0.9%
+          - Rate: 2.5 ml/hr
+          - Bag content: 9mcg/day = 41.25mcg in 275ml; 28mcg/day = 133.75mcg in 275ml
+          - Bags alternate: ODD bags (1st, 3rd, 5th, 7th) run 72 hours then DISCARD
+                            EVEN bags (2nd, 4th, 6th, 8th) run 96 hours
+          - Treatment must start Monday, Tuesday or Friday
+
+        Schedule:
+          Cycle 1 : Days 1–7  at 9mcg  (bags 1–4: 72h, 96h, 72h, 96h = 3+4+3+4=14 days?
+                                         actually 7 days = bag1 72h + bag2 partial...)
+                    Days 8–28 at 28mcg
+          Cycles 2+: Days 1–28 at 28mcg
+
+        Alternating pattern over 28 days:
+          Bag 1: days 1–3   (72h)   ODD  → discard at 72h
+          Bag 2: days 4–7   (96h)   EVEN → run full 96h
+          Bag 3: days 8–10  (72h)   ODD  → discard at 72h
+          Bag 4: days 11–14 (96h)   EVEN → run full 96h
+          Bag 5: days 15–17 (72h)   ODD  → discard at 72h
+          Bag 6: days 18–21 (96h)   EVEN → run full 96h
+          Bag 7: days 22–24 (72h)   ODD  → discard at 72h
+          Bag 8: days 25–28 (96h)   EVEN → run full 96h
+          Total: 8 bags covering 28 days exactly
+
+        Returns a list of BlinatumomabBagEntry objects.
+        """
+        # NHS standard: 275ml bag, 2.5ml/hr
+        TOTAL_VOL_ML = 275.0
+        RATE = 2.5
+
+        # Drug content per bag per NHS PDF
+        BAG_CONFIGS = {
+            9.0:  {"total_mcg": 41.25},
+            28.0: {"total_mcg": 133.75},
+        }
+
+        # Alternating bag durations: odd=72h (3 days), even=96h (4 days)
+        # Pattern repeats: [3, 4, 3, 4, 3, 4, 3, 4] = 28 days, 8 bags
+        BAG_PATTERN = [3, 4, 3, 4, 3, 4, 3, 4]
+
+        # Cycle 1 dose per day: days 1-7 at 9mcg, days 8-28 at 28mcg
+        # Cycle 2+: all 28 days at 28mcg
+        def dose_for_day(day_1indexed: int) -> float:
+            if cycle_number == 1:
+                return 9.0 if day_1indexed <= 7 else 28.0
+            return 28.0
+
+        # Parse start date and enforce Mon/Tue/Fri rule
+        start_date = None
+        start_date_warning = None
+        VALID_WEEKDAYS = {0: "Monday", 1: "Tuesday", 4: "Friday"}  # Mon=0, Tue=1, Fri=4
+        NEXT_VALID = {
+            # Wed → Fri (+2), Thu → Fri (+1), Sat → Mon (+2), Sun → Mon (+1)
+            2: 2, 3: 1, 5: 2, 6: 1
+        }
+        if request.treatment_start_date:
+            try:
+                from datetime import date as date_cls
+                start_date = date_cls.fromisoformat(request.treatment_start_date)
+                wd = start_date.weekday()
+                if wd not in VALID_WEEKDAYS:
+                    advance = NEXT_VALID[wd]
+                    corrected = start_date + timedelta(days=advance)
+                    start_date_warning = (
+                        f"START DATE ERROR: {start_date.strftime('%d.%m.%Y')} is a "
+                        f"{start_date.strftime('%A')}. Blinatumomab must start on a "
+                        f"Monday, Tuesday or Friday (bag-change logistics). "
+                        f"Nearest valid date is {corrected.strftime('%A %d.%m.%Y')}. "
+                        f"Bag schedule below uses the corrected date."
+                    )
+                    start_date = corrected
+            except ValueError:
+                pass
+
+        bags = []
+        current_day_offset = 0  # 0-indexed day offset from treatment start
+
+        for bag_idx, bag_days in enumerate(BAG_PATTERN):
+            bag_number = bag_idx + 1
+            is_odd = (bag_number % 2 == 1)
+            duration_h = 72 if is_odd else 96
+
+            # Dominant dose = dose at first day of this bag
+            day_1indexed = current_day_offset + 1
+            dose_mcg = dose_for_day(day_1indexed)
+            cfg = BAG_CONFIGS[dose_mcg]
+
+            if start_date:
+                bag_start = start_date + timedelta(days=current_day_offset)
+                bag_end = bag_start + timedelta(days=bag_days)
+                date_start_str = bag_start.strftime("%d.%m.%y")
+                date_end_str = bag_end.strftime("%d.%m.%y")
+            else:
+                d1 = current_day_offset + 1
+                d2 = current_day_offset + bag_days
+                date_start_str = f"Day {d1}"
+                date_end_str = f"Day {d2}"
+
+            bags.append(BlinatumomabBagEntry(
+                bag_number=bag_number,
+                date_start=date_start_str,
+                date_end=date_end_str,
+                dose_mcg_per_day=dose_mcg,
+                total_dose_mcg=cfg["total_mcg"],
+                vials=0,  # not applicable — prepared by pharmacy to exact mcg
+                ns_volume_ml=TOTAL_VOL_ML,
+                stabilizer_volume_ml=0.0,
+                total_volume_ml=TOTAL_VOL_ML,
+                rate_ml_per_hr=RATE,
+                duration_hours=duration_h,
+            ))
+            current_day_offset += bag_days
+
+        return bags, start_date_warning
 
     def _generate_standard_warnings(
         self, patient: PatientData, protocol: Protocol

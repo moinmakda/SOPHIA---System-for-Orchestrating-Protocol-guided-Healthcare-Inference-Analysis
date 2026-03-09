@@ -331,7 +331,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": 2.0,
         "max_dose_unit": "mg",
-        "notes": "Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Dose rounded to nearest 0.1mg (up if halfway). Maximum dose 2mg. Vincristine is a vesicant. NPSA/2008/RRR04 must be followed."
+        "notes": "Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Dose rounded to nearest 0.1mg (up if halfway). Maximum dose 2mg. Vincristine is a vesicant. NPSA/2008/RRR04 must be followed.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50
       },
       {
         "drug_name": "Prednisolone",
@@ -449,7 +451,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycle 1: Day 2. Cycles 2-6: Day 1. Intravenous bolus over 10 minutes. Dose banded per national dose bands (20PM). Consider mesna in patients with pre-existing bladder disorders."
+        "notes": "Cycle 1: Day 2. Cycles 2-6: Day 1. Intravenous bolus over 10 minutes. Dose banded per national dose bands (20PM). Consider mesna in patients with pre-existing bladder disorders.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Doxorubicin",
@@ -462,7 +466,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycle 1: Day 2. Cycles 2-6: Day 1. Intravenous bolus over 10 minutes. Dose banded per national dose bands (2pm). Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). Vesicant - discontinue if cardiac failure develops."
+        "notes": "Cycle 1: Day 2. Cycles 2-6: Day 1. Intravenous bolus over 10 minutes. Dose banded per national dose bands (2pm). Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). Vesicant - discontinue if cardiac failure develops.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Prednisolone",
@@ -666,7 +672,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": 2.0,
         "max_dose_unit": "mg",
-        "notes": "Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Maximum dose 2mg. Rounded to nearest 0.1mg (up if halfway). Vesicant. NPSA/2008/RRR04 must be followed."
+        "notes": "Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Maximum dose 2mg. Rounded to nearest 0.1mg (up if halfway). Vesicant. NPSA/2008/RRR04 must be followed.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50
       },
       {
         "drug_name": "Etoposide",
@@ -679,7 +687,9 @@
         "infusion_duration_hours": 1.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Day 1: IV infusion in 1000ml sodium chloride 0.9% over 60 minutes. Days 2 and 3: 100mg/m² oral (capsules available as 50mg and 100mg; rounded to nearest 50mg up if halfway). Etoposide oral should be taken 1 hour before food or on an empty stomach."
+        "notes": "Day 1: IV infusion in 1000ml sodium chloride 0.9% over 60 minutes. Days 2 and 3: 100mg/m² oral (capsules available as 50mg and 100mg; rounded to nearest 50mg up if halfway). Etoposide oral should be taken 1 hour before food or on an empty stomach.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500
       },
       {
         "drug_name": "Etoposide",
@@ -706,7 +716,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Dose banded per CSCCN agreed bands. Consider mesna in patients with pre-existing bladder disorders."
+        "notes": "Intravenous bolus over 10 minutes. Dose banded per CSCCN agreed bands. Consider mesna in patients with pre-existing bladder disorders.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Prednisolone",
@@ -905,7 +917,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Dose banded per CSCCN agreed bands. Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). Vesicant - discontinue if cardiac failure develops."
+        "notes": "Intravenous bolus over 10 minutes. Dose banded per CSCCN agreed bands. Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). Vesicant - discontinue if cardiac failure develops.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Vincristine",
@@ -918,7 +932,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": 2.0,
         "max_dose_unit": "mg",
-        "notes": "Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Maximum dose 2mg. Rounded to nearest 0.1mg (up if halfway). Vesicant. NPSA/2008/RRR04 must be followed."
+        "notes": "Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Maximum dose 2mg. Rounded to nearest 0.1mg (up if halfway). Vesicant. NPSA/2008/RRR04 must be followed.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50
       },
       {
         "drug_name": "Cyclophosphamide",
@@ -931,7 +947,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Dose banded per CSCCN agreed bands. Consider mesna in patients with pre-existing bladder disorders."
+        "notes": "Intravenous bolus over 10 minutes. Dose banded per CSCCN agreed bands. Consider mesna in patients with pre-existing bladder disorders.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Prednisolone",
@@ -1108,7 +1126,9 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous infusion in 500ml sodium chloride 0.9%. Rate of administration varies - refer to rituximab administration guidelines. Rounded to nearest 100mg (up if halfway)."
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500,
+        "notes": "Intravenous infusion in 500ml sodium chloride 0.9%. Rate of administration varies — refer to rituximab administration guidelines. Rounded to nearest 100mg (up if halfway). FIRST in administration order. Check patient has taken prednisolone 100mg oral on morning of treatment before starting rituximab."
       },
       {
         "drug_name": "Doxorubicin",
@@ -1121,7 +1141,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Dose banded per CSCCN agreed bands. Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). Vesicant - discontinue if cardiac failure develops."
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "notes": "Intravenous bolus over 10 minutes. Dose banded per CSCCN agreed bands. Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). VESICANT — avoid extravasation. Discontinue if cardiac failure develops. Administer AFTER rituximab and ondansetron."
       },
       {
         "drug_name": "Vincristine",
@@ -1134,7 +1156,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": 2.0,
         "max_dose_unit": "mg",
-        "notes": "Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Maximum dose 2mg. Rounded to nearest 0.1mg (up if halfway). Vesicant. NPSA/2008/RRR04 must be followed."
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50,
+        "notes": "Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Maximum dose 2mg. Round to nearest 0.1mg (up if halfway). VESICANT — NPSA/2008/RRR04 must be followed. Administer AFTER doxorubicin."
       },
       {
         "drug_name": "Cyclophosphamide",
@@ -1147,7 +1171,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Dose banded per CSCCN agreed bands. Consider mesna in patients with pre-existing bladder disorders."
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "notes": "Intravenous bolus over 10 minutes. Dose banded per CSCCN agreed bands. Consider mesna in patients with pre-existing bladder disorders (oral mesna 40% of cyclophosphamide dose rounded up to nearest 400mg, at 0, 2 and 6 hours after cyclophosphamide). Administer LAST among IV chemotherapy drugs."
       },
       {
         "drug_name": "Prednisolone",
@@ -1164,111 +1190,152 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "100mg once daily oral on days 1-5. Take in the morning with or after food. Administration begins on morning of chemotherapy."
+        "notes": "100mg once daily oral on days 1-5. Patient self-administers on morning of chemotherapy (day 1) and for 4 days after. Take with or after food. Day 1 dose also counts as rituximab pre-medication. Check patient has taken day 1 dose before rituximab is started."
       }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg intravenous 30 minutes prior to rituximab",
+      "Paracetamol 1000mg oral 30 minutes prior to rituximab",
+      "Ondansetron 8mg oral or intravenous 15-30 minutes prior to chemotherapy"
+    ],
+    "take_home_medicines": [
+      "Prednisolone 100mg oral once a day on morning of next treatment day (day 1 of next cycle)",
+      "Prednisolone 100mg oral once a day for 4 days starting day 2 (take with or after food)",
+      "Metoclopramide 10mg oral three times a day when required",
+      "Ondansetron 8mg oral twice a day for 3 days starting evening of day 1",
+      "Allopurinol 300mg oral once a day for 21 days (cycle 1 only)"
+    ],
+    "rescue_medications": [
+      "Hydrocortisone 100mg intravenous when required for rituximab infusion related reactions",
+      "Salbutamol 2.5mg nebulised when required for rituximab related bronchospasm",
+      "Pethidine 25mg intravenous when required for rituximab related rigors that fail to respond to steroids"
     ],
     "dose_modifications": [
       {
-        "condition": "Neutrophils <1x10^9/L on proposed day 1 of cycle",
+        "condition": "Neutrophils <1×10⁹/L on proposed day 1 of cycle",
         "drug_name": "Cyclophosphamide",
         "factor": 1.0,
-        "notes": "Delay until neutrophils ≥1x10^9/L; consider G-CSF as secondary prophylaxis; reconsider treatment options if not recovered after 14 days"
+        "notes": "Delay until neutrophils ≥1×10⁹/L. Consider G-CSF as secondary prophylaxis. Reconsider treatment options if not recovered after 14 days."
+      },
+      {
+        "condition": "Neutrophils <1×10⁹/L on proposed day 1 of cycle",
+        "drug_name": "Doxorubicin",
+        "factor": 1.0,
+        "notes": "Delay until neutrophils ≥1×10⁹/L. Consider G-CSF as secondary prophylaxis. Reconsider treatment options if not recovered after 14 days."
       },
       {
         "condition": "Grade 4 neutropenia or febrile neutropenia following any cycle",
         "drug_name": "Cyclophosphamide",
         "factor": 1.0,
-        "notes": "Give G-CSF with all subsequent cycles"
+        "notes": "Give G-CSF with all subsequent cycles."
       },
       {
         "condition": "Grade 4 neutropenia leading to infection despite G-CSF support",
         "drug_name": "Cyclophosphamide",
         "factor": 0.5,
-        "notes": "Reduce cyclophosphamide and doxorubicin by 50% for all subsequent cycles"
+        "notes": "Reduce cyclophosphamide and doxorubicin by 50% for all subsequent cycles."
       },
       {
         "condition": "Grade 4 neutropenia leading to infection despite G-CSF support",
         "drug_name": "Doxorubicin",
         "factor": 0.5,
-        "notes": "Reduce cyclophosphamide and doxorubicin by 50% for all subsequent cycles"
+        "notes": "Reduce cyclophosphamide and doxorubicin by 50% for all subsequent cycles."
       },
       {
-        "condition": "Platelets <100x10^9/L on proposed day 1",
+        "condition": "Grade 4 neutropenia recurs despite 50% dose reduction",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.0,
+        "notes": "Stop treatment."
+      },
+      {
+        "condition": "Platelets <100×10⁹/L on proposed day 1",
         "drug_name": "Cyclophosphamide",
         "factor": 1.0,
-        "notes": "Delay until platelets ≥100x10^9/L; reconsider treatment options if not recovered after 14 days"
+        "notes": "Delay until platelets ≥100×10⁹/L. Reconsider treatment options if not recovered after 14 days."
+      },
+      {
+        "condition": "Platelets <100×10⁹/L on proposed day 1",
+        "drug_name": "Doxorubicin",
+        "factor": 1.0,
+        "notes": "Delay until platelets ≥100×10⁹/L."
       },
       {
         "condition": "Grade 4 thrombocytopenia following any cycle",
         "drug_name": "Cyclophosphamide",
         "factor": 0.5,
-        "notes": "Reduce cyclophosphamide and doxorubicin by 50% for all subsequent cycles"
+        "notes": "Reduce cyclophosphamide and doxorubicin by 50% for all subsequent cycles."
       },
       {
         "condition": "Grade 4 thrombocytopenia following any cycle",
         "drug_name": "Doxorubicin",
         "factor": 0.5,
-        "notes": "Reduce cyclophosphamide and doxorubicin by 50% for all subsequent cycles"
+        "notes": "Reduce cyclophosphamide and doxorubicin by 50% for all subsequent cycles."
       },
       {
-        "condition": "Hepatic impairment - Doxorubicin: Bilirubin <30 µmol/L and AST/ALT 2-3xULN",
+        "condition": "Hepatic impairment — Doxorubicin: Bilirubin 21–30 µmol/L",
         "drug_name": "Doxorubicin",
         "factor": 0.75,
-        "notes": "Reduce to 75%"
+        "notes": "Reduce doxorubicin to 75% (NHS RCHOP21 guideline)."
       },
       {
-        "condition": "Hepatic impairment - Doxorubicin: Bilirubin 30-50 µmol/L and/or AST/ALT >3xULN",
+        "condition": "Hepatic impairment — Doxorubicin: Bilirubin 31–85 µmol/L",
         "drug_name": "Doxorubicin",
         "factor": 0.5,
-        "notes": "Reduce to 50%"
+        "notes": "Reduce doxorubicin to 50% (NHS RCHOP21 guideline)."
       },
       {
-        "condition": "Hepatic impairment - Doxorubicin: Bilirubin 51-85 µmol/L",
-        "drug_name": "Doxorubicin",
-        "factor": 0.25,
-        "notes": "Reduce to 25%"
-      },
-      {
-        "condition": "Hepatic impairment - Doxorubicin: Bilirubin >85 µmol/L",
+        "condition": "Hepatic impairment — Doxorubicin: Bilirubin >85 µmol/L",
         "drug_name": "Doxorubicin",
         "factor": 0.0,
-        "notes": "Omit dose"
+        "notes": "Omit doxorubicin (NHS RCHOP21 guideline — severe hepatic impairment)."
       },
       {
-        "condition": "Hepatic impairment - Vincristine: Bilirubin 30-51 µmol/L or AST/ALT 60-180 units/L",
-        "drug_name": "Vincristine",
-        "factor": 0.5,
-        "notes": "Reduce to 50%"
-      },
-      {
-        "condition": "Hepatic impairment - Vincristine: Bilirubin >51 µmol/L and AST/ALT normal",
-        "drug_name": "Vincristine",
-        "factor": 0.5,
-        "notes": "Reduce to 50%"
-      },
-      {
-        "condition": "Hepatic impairment - Vincristine: Bilirubin >51 µmol/L and AST/ALT >180 units/L",
-        "drug_name": "Vincristine",
-        "factor": 0.0,
-        "notes": "Omit dose"
-      },
-      {
-        "condition": "Renal impairment - Cyclophosphamide: CrCl 10-20 ml/min",
+        "condition": "Hepatic impairment — Cyclophosphamide: Bilirubin 21–30 µmol/L",
         "drug_name": "Cyclophosphamide",
         "factor": 0.75,
-        "notes": "Reduce to 75%"
+        "notes": "Reduce cyclophosphamide to 75% (NHS RCHOP21 guideline)."
       },
       {
-        "condition": "Renal impairment - Cyclophosphamide: CrCl <10 ml/min",
+        "condition": "Hepatic impairment — Cyclophosphamide: Bilirubin 31–85 µmol/L",
         "drug_name": "Cyclophosphamide",
         "factor": 0.5,
-        "notes": "Reduce to 50%"
+        "notes": "Reduce cyclophosphamide to 50% (NHS RCHOP21 guideline)."
       },
       {
-        "condition": "Renal impairment - Doxorubicin: CrCl <10 ml/min",
+        "condition": "Hepatic impairment — Vincristine: Bilirubin 30–51 µmol/L or AST/ALT 60–180 units/L",
+        "drug_name": "Vincristine",
+        "factor": 0.5,
+        "notes": "Reduce to 50%."
+      },
+      {
+        "condition": "Hepatic impairment — Vincristine: Bilirubin >51 µmol/L and AST/ALT normal",
+        "drug_name": "Vincristine",
+        "factor": 0.5,
+        "notes": "Reduce to 50%."
+      },
+      {
+        "condition": "Hepatic impairment — Vincristine: Bilirubin >51 µmol/L and AST/ALT >180 units/L",
+        "drug_name": "Vincristine",
+        "factor": 0.0,
+        "notes": "Omit dose."
+      },
+      {
+        "condition": "Renal impairment — Cyclophosphamide: CrCl 10–20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75%."
+      },
+      {
+        "condition": "Renal impairment — Cyclophosphamide: CrCl <10 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Reduce to 50%."
+      },
+      {
+        "condition": "Renal impairment — Doxorubicin: CrCl <10 ml/min",
         "drug_name": "Doxorubicin",
         "factor": 1.0,
-        "notes": "Consider dose reduction in severe renal failure (clinical decision)"
+        "notes": "Consider dose reduction in severe renal failure — clinical decision."
       },
       {
         "condition": "Vincristine: NCI-CTC grade 2 motor or grade 3 sensory neurological toxicity",
@@ -1277,25 +1344,24 @@
         "notes": "Reduce dose to 1mg. For higher toxicity grades or if toxicity increases despite dose reduction, stop vincristine."
       }
     ],
-    "pre_medications": [
-      "Ondansetron 8mg oral or IV 15-30 minutes prior to chemotherapy",
-      "Chlorphenamine 10mg IV 30 minutes prior to rituximab",
-      "Paracetamol 1000mg oral 30 minutes prior to rituximab",
-      "Prednisolone 100mg oral on morning of treatment (also counts as chemotherapy dose)",
-      "Hydrocortisone 100mg IV when required for rituximab infusion related reactions",
-      "Salbutamol 2.5mg nebule when required for rituximab related bronchospasm",
-      "Allopurinol 300mg once daily oral for first cycle only",
-      "Anti-infective prophylaxis (high risk patients): aciclovir 400mg twice daily oral, co-trimoxazole 960mg oral Monday, Wednesday, Friday"
-    ],
     "special_warnings": [
-      "Baseline LVEF required before starting doxorubicin; discontinue doxorubicin if cardiac failure develops",
-      "Maximum lifetime cumulative doxorubicin dose is 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy)",
-      "Check hepatitis B status before starting rituximab (anti-CD20 agent)",
-      "Vincristine is a vesicant - maximum dose 2mg; NPSA/2008/RRR04 must be followed",
-      "Consider initial dose reduction in patients over 70 years of age",
-      "Rituximab associated with cytokine release syndrome and PML risk",
-      "Grade 4 neutropenia recurrence despite 50% dose reduction mandates stopping treatment",
-      "G-CSF as secondary prophylaxis recommended if grade 4 neutropenia occurs"
+      "VESICANT DRUGS: Doxorubicin and Vincristine are both vesicants. Extravasation causes severe tissue necrosis. Follow NPSA/2008/RRR04 for vincristine. Discontinue immediately if extravasation suspected.",
+      "CARDIAC: Baseline LVEF required before starting doxorubicin in patients with history of cardiac problems, cardiac risk factors, or age ≥70. Maximum lifetime cumulative doxorubicin dose: 450 mg/m² (standard); reduced to 400 mg/m² if prior cardiac history or age ≥70; reduced to 350 mg/m² if prior mediastinal/pericardial radiotherapy. Discontinue doxorubicin if cardiac failure develops.",
+      "HEPATITIS B REACTIVATION: Check hepatitis B status (HBsAg and anti-HBc) before starting rituximab. Rituximab can cause fatal hepatitis B reactivation. Anti-CD20 antibody causes profound B-cell depletion.",
+      "RITUXIMAB — CYTOKINE RELEASE SYNDROME (CRS): Severe CRS characterised by dyspnoea, bronchospasm, hypoxia, fever, chills, rigors, urticaria, angioedema, hypotension, elevated LDH. Can cause acute respiratory failure and death. Occurs within 1–2 hours of first infusion. Medicinal products for allergic reactions must be available immediately.",
+      "RITUXIMAB — PROGRESSIVE MULTIFOCAL LEUKOENCEPHALOPATHY (PML): Monitor for new or worsening neurological/cognitive/psychiatric symptoms at regular intervals. If PML suspected, suspend rituximab until excluded. If PML confirmed, permanently discontinue.",
+      "ELDERLY (≥70 years): Consider initial dose reduction in patients over 70 years of age. Doses may be escalated to full dose on subsequent cycles according to tolerability.",
+      "PREDNISOLONE: Must be taken on morning of treatment (day 1) BEFORE rituximab is started. Nurse must verify this. If patient forgot, administer 100mg oral 30 minutes prior to rituximab.",
+      "ANTI-INFECTIVE PROPHYLAXIS: Consider aciclovir 400mg twice daily oral and co-trimoxazole 960mg oral Mon/Wed/Fri in high-risk patients. Mouthwashes per local policy for mucositis. Gastric protection (PPI or H2 antagonist) in patients at high risk of GI ulceration."
+    ],
+    "monitoring": [
+      "FBC, LFTs and U&Es prior to day 1 of each cycle",
+      "Check hepatitis B status (HBsAg and anti-HBc) before cycle 1",
+      "LVEF (echocardiogram) before starting doxorubicin in patients with cardiac history, cardiac risk factors, or age ≥70",
+      "Monitor for signs of rituximab infusion-related reactions during each infusion",
+      "Monitor for signs and symptoms of cytokine release syndrome",
+      "Monitor for neurological/cognitive symptoms at each cycle (PML surveillance)",
+      "Vincristine neurotoxicity assessment each cycle (peripheral neuropathy, constipation)"
     ],
     "required_patient_fields": [
       "neutrophil_count",
@@ -1304,7 +1370,10 @@
       "bilirubin",
       "ast_alt",
       "lvef",
-      "hepatitis_b_status"
+      "hepatitis_b_surface_antigen",
+      "hepatitis_b_core_antibody",
+      "prior_anthracycline_dose_mg_m2",
+      "prior_mediastinal_radiation"
     ],
     "auc_dosing": null
   }

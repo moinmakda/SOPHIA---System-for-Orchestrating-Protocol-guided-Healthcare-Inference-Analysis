@@ -788,49 +788,45 @@ class PatientData(BaseModel):
     # ---- Cycle completion tracking ----
     cycles_completed: Optional[int] = Field(None, ge=0, description="Number of cycles completed so far")
 
+    # ---- Active infection / fitness for treatment ----
+    active_infection: Optional[bool] = Field(None, description="Active infection or fever present — treatment must be delayed")
+
+    # ---- Blast count (blinatumomab pre-phase assessment) ----
+    peripheral_blast_percent: Optional[float] = Field(None, ge=0, le=100, description="Peripheral blood blast % — if >15% pre-phase corticosteroid required before blinatumomab")
+    bone_marrow_blast_percent: Optional[float] = Field(None, ge=0, le=100, description="Bone marrow blast % — if >50% pre-phase corticosteroid required before blinatumomab")
+
+    # ---- Tumor lysis risk ----
+    tls_risk: Optional[Literal["low", "intermediate", "high"]] = Field(None, description="Tumor lysis syndrome risk assessment")
+    hbv_prophylaxis_started: Optional[bool] = Field(None, description="HBV antiviral prophylaxis started (required if HBsAg+ or HBcAb+ with rituximab)")
+
     @field_validator('neutrophils')
     @classmethod
     def validate_neutrophils(cls, v: float) -> float:
-        """Validate neutrophil count is safe for treatment"""
+        """Accept any non-negative value — engine generates clinical warnings for low counts."""
         if v < 0:
             raise ValueError("Neutrophils cannot be negative")
         if v > 100:
             raise ValueError("Neutrophils > 100 x10⁹/L is physiologically unlikely. Please verify input.")
-        if v < NEUTROPHIL_HARD_STOP:
-            raise ValueError(
-                f"TREATMENT CONTRAINDICATED: Neutrophils {v} x10⁹/L is below hard stop of {NEUTROPHIL_HARD_STOP}. "
-                f"Patient at severe risk of sepsis. Treatment cannot proceed."
-            )
         return v
-    
+
     @field_validator('platelets')
     @classmethod
     def validate_platelets(cls, v: float) -> float:
-        """Validate platelet count is safe for treatment"""
+        """Accept any non-negative value — engine generates clinical warnings for low counts."""
         if v < 0:
             raise ValueError("Platelets cannot be negative")
         if v > 2000:
             raise ValueError("Platelets > 2000 x10⁹/L is physiologically unlikely. Please verify input.")
-        if v < PLATELET_HARD_STOP:
-            raise ValueError(
-                f"TREATMENT CONTRAINDICATED: Platelets {v} x10⁹/L is below hard stop of {PLATELET_HARD_STOP}. "
-                f"Patient at severe risk of hemorrhage. Treatment cannot proceed."
-            )
         return v
-    
+
     @field_validator('creatinine_clearance')
     @classmethod
     def validate_renal_function(cls, v: float) -> float:
-        """Validate renal function is safe for treatment"""
+        """Accept any non-negative value — engine applies dose reductions and warnings for low CrCl."""
         if v < 0:
             raise ValueError("Creatinine clearance cannot be negative")
         if v > 250:
-             raise ValueError("CrCl > 250 ml/min is physiologically unlikely. Please verify input.")
-        if v < CREATININE_CLEARANCE_HARD_STOP:
-            raise ValueError(
-                f"TREATMENT CONTRAINDICATED: CrCl {v} ml/min indicates severe renal failure. "
-                f"Nephrotoxic chemotherapy cannot proceed safely."
-            )
+            raise ValueError("CrCl > 250 ml/min is physiologically unlikely. Please verify input.")
         return v
 
     @field_validator('bilirubin')
@@ -980,19 +976,22 @@ class ProtocolRequest(BaseModel):
     protocol_code: str
     patient: PatientData
     cycle_number: int = Field(1, ge=1, description="Current cycle number")
-    
+
     # Drug selection
     excluded_drugs: list[str] = []  # Drug IDs to exclude
     included_drugs: Optional[list[str]] = None  # If specified, only include these
-    
+
     # Include/exclude categories
     include_premeds: bool = True
     include_antiemetics: bool = True
     include_take_home: bool = True
     include_rescue: bool = True
-    
+
     # Manual overrides
     drug_overrides: dict[str, DrugOverride] = {}
+
+    # Treatment start date (ISO format YYYY-MM-DD) — used for bag-change schedules
+    treatment_start_date: Optional[str] = None
 
 
 class CalculatedDose(BaseModel):
@@ -1053,10 +1052,25 @@ class Warning(BaseModel):
     drug_id: Optional[str] = None
 
 
+class BlinatumomabBagEntry(BaseModel):
+    """One bag in a blinatumomab continuous infusion schedule."""
+    bag_number: int
+    date_start: str          # e.g. "21.08.25"
+    date_end: str            # e.g. "25.08.25"
+    dose_mcg_per_day: float  # 9 or 28
+    total_dose_mcg: float    # e.g. 38.5 (1 vial) or 115.5 (3 vials)
+    vials: int               # number of 38.5mcg vials
+    ns_volume_ml: float      # NS added to bag (e.g. 275 or 269)
+    stabilizer_volume_ml: float  # stabilizer added (5.5ml)
+    total_volume_ml: float   # total dilution volume (283.5ml)
+    rate_ml_per_hr: float    # infusion rate (3ml/hr)
+    duration_hours: int      # 96
+
+
 class ProtocolResponse(BaseModel):
     """
     Generated protocol response with full audit trail.
-    
+
     SAFETY: This response includes treatment delay recommendations,
     BSA capping information, and audit trail for regulatory compliance.
     """
@@ -1102,6 +1116,9 @@ class ProtocolResponse(BaseModel):
     
     # AI-generation flag — frontend uses this to gate verification checkbox
     is_ai_generated: bool = False
+
+    # Blinatumomab bag-change schedule (populated only for blinatumomab protocols)
+    blinatumomab_bag_schedule: Optional[list[BlinatumomabBagEntry]] = None
 
     # Disclaimer
     disclaimer: str = (

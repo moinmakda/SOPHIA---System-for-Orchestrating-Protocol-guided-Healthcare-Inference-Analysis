@@ -366,8 +366,79 @@ export function ProtocolDisplay({ protocol, onBack, onReset }) {
         {/* Pre-medications */}
         <DrugTable drugs={protocol.pre_medications} title="Pre-medications" />
 
-        {/* Chemotherapy Drugs */}
-        <DrugTable drugs={protocol.chemotherapy_drugs} title="Chemotherapy" />
+        {/* Chemotherapy Drugs — hidden for blinatumomab (bag schedule shown instead) */}
+        {!(protocol.blinatumomab_bag_schedule && protocol.blinatumomab_bag_schedule.length > 0) && (
+          <DrugTable drugs={protocol.chemotherapy_drugs} title="Chemotherapy" />
+        )}
+
+        {/* Blinatumomab Bag-Change Schedule */}
+        {protocol.blinatumomab_bag_schedule && protocol.blinatumomab_bag_schedule.length > 0 && (
+          <div className="section">
+            <h2>Blinatumomab — Alternating 72/96-Hour Bag Schedule</h2>
+
+            {/* Critical safety box */}
+            <div style={{ background: '#f8d7da', border: '2px solid #dc3545', borderRadius: 4, padding: '10px 14px', marginBottom: 8 }}>
+              <strong style={{ color: '#721c24', fontSize: 13 }}>⛔ CRITICAL — DO NOT FLUSH LINE WHEN CHANGING BAGS</strong>
+              <div style={{ color: '#721c24', fontSize: 12, marginTop: 4 }}>
+                Flushing causes an inadvertent blinatumomab bolus — potentially fatal. Replace the entire IV line with every pump change. CADD pump only. Central venous access via a <strong>dedicated lumen</strong>.
+              </div>
+            </div>
+
+            {/* Alternating schedule explanation */}
+            <div style={{ background: '#fff8e1', border: '1px solid #f0ad4e', borderRadius: 4, padding: '8px 14px', marginBottom: 8, fontSize: 12 }}>
+              <strong>Alternating bag schedule (per NHS protocol):</strong><br />
+              ODD bags (1st, 3rd, 5th, 7th): pump programmed to <strong>stop after 72 hours</strong> — bag must then be <strong>DISCARDED</strong> (drug remains in bag).<br />
+              EVEN bags (2nd, 4th, 6th, 8th): run for the full <strong>96 hours</strong>.<br />
+              All bags prepared for 96h but only odd bags stop early. Ensure pump is set to correct stop time.
+            </div>
+
+            {/* Hospitalisation + line requirements */}
+            <div style={{ background: '#d1ecf1', border: '1px solid #17a2b8', borderRadius: 4, padding: '8px 14px', marginBottom: 8, fontSize: 12 }}>
+              <strong>Hospitalisation:</strong> Cycle 1 days 1–9 in-patient. Cycle 2 days 1–2 minimum in-patient. &nbsp;|&nbsp;
+              <strong>Start day:</strong> Monday, Tuesday or Friday only. &nbsp;|&nbsp;
+              <strong>Line:</strong> Polyolefin / PVC non-DEHP / EVA + 0.2 µm in-line filter.
+            </div>
+
+            <table>
+              <thead>
+                <tr>
+                  <th style={{ width: '7%' }}>Bag</th>
+                  <th style={{ width: '20%' }}>Date (Start → End)</th>
+                  <th style={{ width: '13%' }}>Dose</th>
+                  <th style={{ width: '14%' }}>Content</th>
+                  <th style={{ width: '13%' }}>Volume / Rate</th>
+                  <th style={{ width: '33%' }}>Run time</th>
+                </tr>
+              </thead>
+              <tbody>
+                {protocol.blinatumomab_bag_schedule.map((bag, i) => {
+                  const isOdd = bag.bag_number % 2 === 1;
+                  const rowBg = bag.dose_mcg_per_day === 9 ? '#fff8e1' : (isOdd ? '#fafafa' : 'white');
+                  return (
+                    <tr key={i} style={{ background: rowBg }}>
+                      <td><strong>Bag {bag.bag_number}</strong><br /><span style={{ fontSize: 10, color: isOdd ? '#c0392b' : '#27ae60' }}>{isOdd ? '72h — DISCARD' : '96h — full run'}</span></td>
+                      <td><strong>{bag.date_start}</strong> → <strong>{bag.date_end}</strong></td>
+                      <td><strong>{bag.dose_mcg_per_day} mcg/day</strong></td>
+                      <td style={{ fontSize: 11 }}>{bag.total_dose_mcg} mcg in {bag.total_volume_ml} ml NS 0.9%</td>
+                      <td style={{ fontSize: 11 }}>{bag.total_volume_ml} ml @ <strong>{bag.rate_ml_per_hr} ml/hr</strong></td>
+                      <td style={{ fontSize: 11, fontWeight: isOdd ? 'bold' : 'normal', color: isOdd ? '#c0392b' : 'inherit' }}>
+                        {isOdd
+                          ? `Set pump to STOP at 72 hours. Discard remaining volume. Replace IV line.`
+                          : `Run full 96 hours. Replace IV line at change.`}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+
+            {/* Monitoring reminder */}
+            <div style={{ background: '#e8f4fd', border: '1px solid #3498db', borderRadius: 4, padding: '8px 14px', marginTop: 8, fontSize: 12 }}>
+              <strong>Before each cycle:</strong> FBC, U&amp;Es, LFTs on day 1 of each cycle. Hepatitis B, C and HIV serology prior to cycle 1.
+              Neurological examination before starting therapy. Weekly writing test for neurotoxicity monitoring throughout.
+            </div>
+          </div>
+        )}
 
         {/* Take-home Medicines */}
         <DrugTable drugs={protocol.take_home_medicines} title="Take-home Medications" />

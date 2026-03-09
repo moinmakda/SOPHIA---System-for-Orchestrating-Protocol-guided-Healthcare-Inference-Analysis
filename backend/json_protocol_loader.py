@@ -31,6 +31,11 @@ DOSE_UNIT_MAP = {
     "g/m2": DoseUnit.G_M2,
     "AUC": "AUC",  # handled specially
     "units": DoseUnit.UNITS,
+    "units/m²": DoseUnit.UNITS_M2,
+    "units/m2": DoseUnit.UNITS_M2,
+    "IU/m²": DoseUnit.UNITS_M2,
+    "IU/m2": DoseUnit.UNITS_M2,
+    "IU": DoseUnit.UNITS,
     "mcg": DoseUnit.MCG,
     "mcg/m²": DoseUnit.MCG_M2,
     "mcg/m2": DoseUnit.MCG_M2,
@@ -44,6 +49,7 @@ ROUTE_MAP = {
     "Oral": RouteOfAdministration.ORAL,
     "Subcutaneous": RouteOfAdministration.SC,
     "Intramuscular": RouteOfAdministration.IM,
+    "Nebulised": RouteOfAdministration.NEBULISED,
 }
 
 
@@ -82,6 +88,155 @@ def _map_route(raw: Optional[str]) -> str:
     return RouteOfAdministration.IV_INFUSION.value
 
 
+_DILUENT_NAME_MAP = {
+    # sodium chloride variants
+    r"sodium\s+chloride\s+0\.9%":   "Sodium chloride 0.9%",
+    r"nacl\s+0\.9%":                "Sodium chloride 0.9%",
+    r"normal\s+saline":             "Sodium chloride 0.9%",
+    r"\bns\b":                      "Sodium chloride 0.9%",
+    r"sodium\s+chloride\s+0\.45%":  "Sodium chloride 0.45%",
+    # glucose / dextrose
+    r"glucose\s+5%":                "Glucose 5%",
+    r"dextrose\s+5%":               "Glucose 5%",
+    r"5%\s+dextrose":               "Glucose 5%",
+    r"glucose\s+10%":               "Glucose 10%",
+    # water for injection
+    r"water\s+for\s+injection":     "Water for injection",
+    r"\bwfi\b":                     "Water for injection",
+    # hartmann's / ringer's
+    r"hartmann":                    "Hartmann's solution",
+    r"ringer":                      "Ringer's lactate",
+}
+
+_DILUENT_VOL_PATTERN = re.compile(
+    r'\bin\s+(\d+)\s*ml\s+(' +
+    r'sodium\s+chloride\s*0\.9%|sodium\s+chloride\s*0\.45%|'
+    r'nacl\s*0\.9%|normal\s+saline|glucose\s*5%|glucose\s*10%|'
+    r'dextrose\s*5%|5%\s+dextrose|water\s+for\s+injection|'
+    r'hartmann|ringer|ns\b)',
+    re.IGNORECASE,
+)
+
+
+def _parse_diluent_from_notes(notes: str):
+    """
+    Extract (diluent_name, volume_ml) from a notes string like
+    'IV infusion in 250ml sodium chloride 0.9% over 30 minutes'.
+    Returns (None, None) if not found.
+    """
+    if not notes:
+        return None, None
+    m = _DILUENT_VOL_PATTERN.search(notes)
+    if not m:
+        return None, None
+    vol = int(m.group(1))
+    raw_name = m.group(2).strip()
+    # Normalise name
+    for pattern, canonical in _DILUENT_NAME_MAP.items():
+        if re.search(pattern, raw_name, re.IGNORECASE):
+            return canonical, vol
+    return raw_name.capitalize(), vol
+
+
+# Maps common antiemetic/premedication names to structured data
+_PREMED_STRING_PATTERNS = [
+    # (regex, drug_name, dose, dose_unit, route)
+    (re.compile(r'aprepitant\s+125\s*mg', re.I),       'Aprepitant',       125,  'mg',  'Oral'),
+    (re.compile(r'fosaprepitant\s+150\s*mg', re.I),    'Fosaprepitant',    150,  'mg',  'IV infusion'),
+    (re.compile(r'ondansetron\s+8\s*mg', re.I),        'Ondansetron',      8,    'mg',  'IV bolus'),
+    (re.compile(r'ondansetron\s+4\s*mg', re.I),        'Ondansetron',      4,    'mg',  'IV bolus'),
+    (re.compile(r'granisetron\s+1\s*mg', re.I),        'Granisetron',      1,    'mg',  'IV bolus'),
+    (re.compile(r'granisetron\s+2\s*mg', re.I),        'Granisetron',      2,    'mg',  'IV bolus'),
+    (re.compile(r'dexamethasone\s+20\s*mg', re.I),     'Dexamethasone',    20,   'mg',  'IV bolus'),
+    (re.compile(r'dexamethasone\s+12\s*mg', re.I),     'Dexamethasone',    12,   'mg',  'IV bolus'),
+    (re.compile(r'dexamethasone\s+8\s*mg', re.I),      'Dexamethasone',    8,    'mg',  'IV bolus'),
+    (re.compile(r'dexamethasone\s+4\s*mg', re.I),      'Dexamethasone',    4,    'mg',  'Oral'),
+    (re.compile(r'prednisolone\s+100\s*mg', re.I),     'Prednisolone',     100,  'mg',  'Oral'),
+    (re.compile(r'prednisolone\s+50\s*mg', re.I),      'Prednisolone',     50,   'mg',  'Oral'),
+    (re.compile(r'prednisolone\s+40\s*mg', re.I),      'Prednisolone',     40,   'mg',  'Oral'),
+    (re.compile(r'chlorphenamine\s+10\s*mg', re.I),    'Chlorphenamine',   10,   'mg',  'IV bolus'),
+    (re.compile(r'chlorphenamine\s+4\s*mg', re.I),     'Chlorphenamine',   4,    'mg',  'Oral'),
+    (re.compile(r'paracetamol\s+1000\s*mg', re.I),     'Paracetamol',      1000, 'mg',  'Oral'),
+    (re.compile(r'paracetamol\s+500\s*mg', re.I),      'Paracetamol',      500,  'mg',  'Oral'),
+    (re.compile(r'hydrocortisone\s+100\s*mg', re.I),   'Hydrocortisone',   100,  'mg',  'IV bolus'),
+    (re.compile(r'ranitidine\s+50\s*mg', re.I),        'Ranitidine',       50,   'mg',  'IV bolus'),
+    (re.compile(r'famotidine\s+20\s*mg', re.I),        'Famotidine',       20,   'mg',  'Oral'),
+    (re.compile(r'loratadine\s+10\s*mg', re.I),        'Loratadine',       10,   'mg',  'Oral'),
+    (re.compile(r'promethazine\s+25\s*mg', re.I),      'Promethazine',     25,   'mg',  'IV bolus'),
+    (re.compile(r'metoclopramide\s+10\s*mg', re.I),    'Metoclopramide',   10,   'mg',  'Oral'),
+    (re.compile(r'allopurinol\s+300\s*mg', re.I),      'Allopurinol',      300,  'mg',  'Oral'),
+    (re.compile(r'allopurinol\s+100\s*mg', re.I),      'Allopurinol',      100,  'mg',  'Oral'),
+    (re.compile(r'aciclovir\s+400\s*mg', re.I),        'Aciclovir',        400,  'mg',  'Oral'),
+    (re.compile(r'co.trimoxazole\s+960\s*mg', re.I),   'Co-trimoxazole',   960,  'mg',  'Oral'),
+    (re.compile(r'co.trimoxazole\s+480\s*mg', re.I),   'Co-trimoxazole',   480,  'mg',  'Oral'),
+    (re.compile(r'fluconazole\s+50\s*mg', re.I),       'Fluconazole',      50,   'mg',  'Oral'),
+    (re.compile(r'loperamide\s+4\s*mg', re.I),         'Loperamide',       4,    'mg',  'Oral'),
+    (re.compile(r'atropine\s+250\s*mcg', re.I),        'Atropine',         250,  'mcg', 'Subcutaneous'),
+    (re.compile(r'pethidine\s+25\s*mg', re.I),         'Pethidine',        25,   'mg',  'IV bolus'),
+    (re.compile(r'pethidine\s+12\.5\s*mg', re.I),      'Pethidine',        12.5, 'mg',  'IV bolus'),
+    (re.compile(r'salbutamol\s+2\.5\s*mg', re.I),      'Salbutamol',       2.5,  'mg',  'Nebulised'),
+    (re.compile(r'salbutamol\s+5\s*mg', re.I),         'Salbutamol',       5,    'mg',  'Nebulised'),
+]
+
+# Timing/frequency patterns for string premeds
+_PREMED_TIMING_RE = re.compile(
+    r'(\d+[-–]\d+\s*minutes?\s+prior|prior\s+to\s+chemo\w*|before\s+chemo\w*|'
+    r'stat|once\s+only|once\s+daily|bd|tds|qds|\d+\s*hrly)',
+    re.I,
+)
+
+def _parse_premed_string(text: str) -> Optional[ProtocolDrug]:
+    """
+    Convert a free-text pre-medication string into a ProtocolDrug.
+    e.g. "Ondansetron 8mg oral or IV 15-30 minutes prior to chemotherapy"
+    Returns None if the string can't be parsed into a known drug.
+    """
+    if not text or not isinstance(text, str):
+        return None
+    text = text.strip()
+
+    for pattern, drug_name, dose, dose_unit, default_route in _PREMED_STRING_PATTERNS:
+        if pattern.search(text):
+            # Detect route override from text
+            route = default_route
+            tl = text.lower()
+            if 'oral' in tl:
+                route = 'Oral'
+            elif 'nebulised' in tl or 'nebulized' in tl:
+                route = 'Nebulised'
+            elif 'subcutaneous' in tl or ' sc ' in tl:
+                route = 'Subcutaneous'
+            elif 'intravenous' in tl or ' iv ' in tl or tl.startswith('iv'):
+                route = 'IV bolus'
+
+            # Only override to IV infusion if the drug itself is described as an infusion
+            # (avoid matching "prior to ... infusion" where infusion = the chemo, not this drug)
+            if re.search(r'over\s+\d+\s*min', tl):
+                route = 'IV infusion'
+
+            # Extract timing as special_instructions
+            timing_m = _PREMED_TIMING_RE.search(text)
+            instructions = text  # preserve full text as instruction
+
+            return ProtocolDrug(
+                drug_id=_slugify(drug_name),
+                drug_name=drug_name,
+                dose=float(dose),
+                dose_unit=_map_dose_unit(dose_unit),
+                route=_map_route(route),
+                days=[1],
+                duration_minutes=30 if route == 'IV infusion' else None,
+                diluent='Sodium chloride 0.9%' if route == 'IV infusion' else None,
+                diluent_volume_ml=100 if route == 'IV infusion' else None,
+                is_core_drug=False,
+                special_instructions=instructions,
+                frequency=None,
+            )
+
+    # Couldn't match — return None (will be skipped)
+    return None
+
+
 def _convert_drug(d: dict, is_premed: bool = False) -> ProtocolDrug:
     """Convert a drug dict from JSON to a ProtocolDrug model."""
     drug_name = d.get("drug_name", "Unknown")
@@ -108,6 +263,16 @@ def _convert_drug(d: dict, is_premed: bool = False) -> ProtocolDrug:
             parts.append(si)
         notes = " | ".join(parts) if parts else None
 
+    # Diluent: use explicit JSON fields if present; otherwise parse from notes
+    diluent = d.get("diluent")
+    diluent_volume_ml = d.get("diluent_volume_ml")
+    if (diluent is None or diluent_volume_ml is None) and notes:
+        parsed_name, parsed_vol = _parse_diluent_from_notes(notes)
+        if parsed_name and diluent is None:
+            diluent = parsed_name
+        if parsed_vol and diluent_volume_ml is None:
+            diluent_volume_ml = parsed_vol
+
     return ProtocolDrug(
         drug_id=_slugify(drug_name),
         drug_name=drug_name,
@@ -116,14 +281,97 @@ def _convert_drug(d: dict, is_premed: bool = False) -> ProtocolDrug:
         route=_map_route(d.get("route")),
         days=d.get("days") or [1],
         duration_minutes=duration_minutes,
-        diluent=d.get("diluent"),
-        diluent_volume_ml=d.get("diluent_volume_ml"),
+        diluent=diluent,
+        diluent_volume_ml=diluent_volume_ml,
         is_core_drug=not is_premed,
         max_dose=d.get("max_dose"),
         max_dose_unit=d.get("max_dose_unit"),
         special_instructions=notes,
         frequency=d.get("frequency"),
     )
+
+
+def _parse_dm_condition(condition_str: str) -> dict:
+    """
+    Parse a free-text dose modification condition string to extract structured fields.
+    Examples handled:
+      "Hepatic impairment — Doxorubicin: Bilirubin >85 µmol/L"
+      "Renal impairment — Cyclophosphamide: CrCl 10–20 ml/min"
+      "Neutrophils <1×10⁹/L on proposed day 1"
+      "Platelets <100×10⁹/L on proposed day 1"
+    Returns dict with keys: parameter, condition_type, threshold_value,
+                             threshold_low, threshold_high
+    """
+    # Normalise unicode dashes and spaces
+    s = condition_str.replace('–', '-').replace('—', ' ').lower()
+
+    # Parameter keyword → canonical name
+    PARAM_KEYWORDS = [
+        ('bilirubin', 'bilirubin'),
+        ('crcl', 'creatinine_clearance'),
+        ('creatinine clearance', 'creatinine_clearance'),
+        ('gfr', 'creatinine_clearance'),
+        ('neutrophil', 'neutrophils'),
+        ('platelet', 'platelets'),
+        ('haemoglobin', 'hemoglobin'),
+        ('hemoglobin', 'hemoglobin'),
+        ('ast', 'ast'),
+        ('alt', 'alt'),
+        ('ast/alt', 'ast'),
+    ]
+    parameter = ""
+    for kw, canonical in PARAM_KEYWORDS:
+        if kw in s:
+            parameter = canonical
+            break
+
+    if not parameter:
+        return {}
+
+    result = {"parameter": parameter}
+
+    # Find the substring starting from the parameter keyword occurrence,
+    # and truncate at " and" to ignore compound clauses (e.g. "Bili 30-50 and AST >3×ULN")
+    param_kw_variants = [
+        parameter.replace("_", " "),        # "creatinine clearance"
+        parameter.replace("creatinine_clearance", "crcl"),  # "crcl"
+        parameter,                           # "bilirubin" etc.
+    ]
+    param_pos = -1
+    for kw in param_kw_variants:
+        p = s.find(kw)
+        if p >= 0:
+            param_pos = p
+            break
+    substr = s[param_pos:] if param_pos >= 0 else s
+    # Cut at " and" to avoid picking up compound qualifier ranges (e.g. "2-3×ULN")
+    and_pos = re.search(r'\s+and\b', substr)
+    if and_pos:
+        substr = substr[:and_pos.start()]
+
+    # greater-than: >N
+    gt_m = re.search(r'>(\d+(?:\.\d+)?)', substr)
+    # less-than: <N
+    lt_m = re.search(r'<(\d+(?:\.\d+)?)', substr)
+    # Range: N-M with two-digit minimum to exclude multipliers like "2-3×"
+    range_m = re.search(r'(\d{2,}(?:\.\d+)?)\s*[-]\s*(\d{2,}(?:\.\d+)?)', substr)
+
+    if range_m and not lt_m and not gt_m:
+        lo, hi = float(range_m.group(1)), float(range_m.group(2))
+        result.update(condition_type="range", threshold_low=lo, threshold_high=hi,
+                      threshold_value=None)
+    elif lt_m:
+        result.update(condition_type="less_than", threshold_value=float(lt_m.group(1)),
+                      threshold_low=None, threshold_high=None)
+    elif gt_m:
+        result.update(condition_type="greater_than", threshold_value=float(gt_m.group(1)),
+                      threshold_low=None, threshold_high=None)
+    elif range_m:
+        lo, hi = float(range_m.group(1)), float(range_m.group(2))
+        result.update(condition_type="range", threshold_low=lo, threshold_high=hi,
+                      threshold_value=None)
+
+    return result
 
 
 def _convert_dose_modification(dm: dict) -> DoseModificationRule:
@@ -140,7 +388,6 @@ def _convert_dose_modification(dm: dict) -> DoseModificationRule:
     if factor is None:
         factor = 1.0
 
-    action = dm.get("action", "delay")
     if factor == 0:
         mod_type = "omit"
     elif factor < 1.0:
@@ -149,13 +396,23 @@ def _convert_dose_modification(dm: dict) -> DoseModificationRule:
         mod_type = "delay"
 
     description = dm.get("notes", "") or dm.get("condition", "") or ""
-    condition = dm.get("condition", "") or ""
+    condition_raw = dm.get("condition", "") or ""
     parameter = dm.get("parameter", "") or ""
+
+    # If no explicit parameter field, parse from the condition string
+    parsed = {}
+    if not parameter and condition_raw:
+        parsed = _parse_dm_condition(condition_raw)
+        parameter = parsed.get("parameter", "")
 
     return DoseModificationRule(
         rule_id="",
         parameter=parameter,
-        condition=condition,
+        condition=condition_raw,
+        condition_type=parsed.get("condition_type", "less_than"),
+        threshold_value=parsed.get("threshold_value"),
+        threshold_low=parsed.get("threshold_low"),
+        threshold_high=parsed.get("threshold_high"),
         affected_drugs=affected,
         modification_type=mod_type,
         modification_percent=int(round(factor * 100)) if factor < 1.0 else None,
@@ -180,21 +437,45 @@ def _convert_protocol(p: dict, source_file: str) -> Optional[Protocol]:
             except Exception:
                 pass  # Skip malformed drug entries
 
-        # Pre-medications
+        # Pre-medications — entries may be dicts (structured) or strings (free-text)
         raw_premeds = p.get("pre_medications") or []
         premeds = []
         for d in raw_premeds:
             try:
-                premeds.append(_convert_drug(d, is_premed=True))
+                if isinstance(d, dict):
+                    premeds.append(_convert_drug(d, is_premed=True))
+                elif isinstance(d, str):
+                    parsed = _parse_premed_string(d)
+                    if parsed:
+                        premeds.append(parsed)
             except Exception:
                 pass
 
-        # Take-home medicines
+        # Take-home medicines — same dual-format handling
         raw_takehome = p.get("take_home_medicines") or []
         take_home = []
         for d in raw_takehome:
             try:
-                take_home.append(_convert_drug(d, is_premed=True))
+                if isinstance(d, dict):
+                    take_home.append(_convert_drug(d, is_premed=True))
+                elif isinstance(d, str):
+                    parsed = _parse_premed_string(d)
+                    if parsed:
+                        take_home.append(parsed)
+            except Exception:
+                pass
+
+        # Rescue medications — same dual-format handling
+        raw_rescue = p.get("rescue_medications") or []
+        rescue = []
+        for d in raw_rescue:
+            try:
+                if isinstance(d, dict):
+                    rescue.append(_convert_drug(d, is_premed=True))
+                elif isinstance(d, str):
+                    parsed = _parse_premed_string(d)
+                    if parsed:
+                        rescue.append(parsed)
             except Exception:
                 pass
 
@@ -237,6 +518,7 @@ def _convert_protocol(p: dict, source_file: str) -> Optional[Protocol]:
             drugs=drugs,
             pre_medications=premeds,
             take_home_medicines=take_home,
+            rescue_medications=rescue,
             dose_modifications=dose_mods,
             warnings=warnings,
             required_patient_fields=rpf,

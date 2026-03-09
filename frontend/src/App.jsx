@@ -47,6 +47,7 @@ function App() {
     prior_cardiac_history: false,
     prior_mediastinal_radiation: false,
     known_allergies: [],
+    treatment_start_date: '',
   });
   const [cycleNumber, setCycleNumber] = useState(1);
   const [excludedDrugs, setExcludedDrugs] = useState([]);
@@ -218,7 +219,8 @@ function App() {
         include_premeds: includePremeds,
         include_antiemetics: true,
         include_take_home: includeTakeHome,
-        include_rescue: includeRescue
+        include_rescue: includeRescue,
+        ...(patientData.treatment_start_date ? { treatment_start_date: patientData.treatment_start_date } : {}),
       };
 
       const result = await api.generateProtocol(request);
@@ -389,7 +391,7 @@ function App() {
               cycleNumber={cycleNumber}
               onCycleChange={setCycleNumber}
               totalCycles={protocolDetails?.total_cycles || 6}
-              requiredFields={protocolDetails?.required_patient_fields || {}}
+              protocolCode={selectedProtocol?.code || ''}
             />
             
             <div className="step-actions">
