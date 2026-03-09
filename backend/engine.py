@@ -703,21 +703,59 @@ class ProtocolEngine:
         self, drugs: list[ProtocolDrug], cycle_number: int
     ) -> list[ProtocolDrug]:
         """
-        Trim drug.days arrays based on cycle-specific notes.
-        e.g. Fulvestrant 'Cycle 1 only: Days 1 and 15. Cycle 2 onwards: Day 1 only'
-        → for cycle >= 2, days=[1] instead of days=[1, 15]
+        Filter and adjust drug list for the current cycle number.
+
+        Two operations:
+        1. Omit drug entries that are explicitly "Cycle 1 only" when cycle > 1
+           (e.g. loading doses of Pertuzumab, Trastuzumab, Rituximab 375mg CLL,
+            Cetuximab 400mg loading, Blinatumomab 9mcg step-up, Calcium Carbonate
+            phosphate binder during ramp-up).
+        2. Trim drug.days arrays when notes specify a cycle-specific day pattern
+           (e.g. Fulvestrant Day 1+15 cycle 1 → Day 1 only cycle 2+).
         """
         import re, copy
+
+        # Patterns that definitively mark a drug entry as cycle-1-only.
+        # U+2013 en-dash, U+2014 em-dash included alongside ASCII hyphen.
+        CYCLE1_ONLY_PATTERNS = [
+            # Notes/name START with "CYCLE 1 ONLY:" / "Cycle 1 only." / "Cycle 1 only —"
+            re.compile(r'^\s*cycle\s+1\s+only\s*[:\.\-\u2013\u2014]', re.IGNORECASE),
+            # Notes start with "LOADING DOSE - Cycle 1"
+            re.compile(r'^\s*loading\s+dose\s*[\-\u2013\u2014]\s*cycle\s+1', re.IGNORECASE),
+            # Notes start with "Cycle 1 (week 1) loading dose"
+            re.compile(r'^\s*cycle\s+1\s*\([^)]*\)\s*loading\s+dose', re.IGNORECASE),
+            # Drug name contains "loading dose - Cycle 1"
+            re.compile(r'loading\s+dose\s*[\-\u2013\u2014]\s*cycle\s+1', re.IGNORECASE),
+            # "cycle 1 only" ends/closes the first sentence
+            # e.g. "Calcium carbonate ... starting on day 1 of cycle 1 only."
+            # Split on '. [Capital]' to get first sentence, then check end of it.
+            # (Cannot use [^.;] because doses like "1.5g" contain periods.)
+            re.compile(r'cycle\s+1\s+only\W*$', re.IGNORECASE),
+        ]
 
         adjusted = []
         for drug in drugs:
             notes = (drug.special_instructions or "") + " " + (getattr(drug, "notes", "") or "")
-            notes_lower = notes.lower()
+            drug_name_lower = drug.drug_name.lower()
 
-            # Pattern: "cycle 1 only: days X and Y. cycle 2 onwards: day Z"
-            # If we're on cycle >= 2 and notes say "cycle 2 onwards: day 1 only"
+            # --- Step 1: Omit cycle-1-only drug entries for cycle > 1 ---
             if cycle_number >= 2:
-                # Check for explicit "cycle 2 onwards: day 1" type language
+                is_cycle1_only = False
+                # Extract first sentence from notes for sentence-end pattern (#4)
+                first_sentence = re.split(r'\.\s+[A-Z]', notes)[0] if notes.strip() else ""
+                for pattern in CYCLE1_ONLY_PATTERNS[:-1]:
+                    if pattern.search(notes) or pattern.search(drug.drug_name):
+                        is_cycle1_only = True
+                        break
+                # Last pattern: "cycle 1 only" at end of first sentence only
+                if not is_cycle1_only and CYCLE1_ONLY_PATTERNS[-1].search(first_sentence):
+                    is_cycle1_only = True
+                if is_cycle1_only:
+                    continue  # Drop this drug entry entirely for cycles > 1
+
+            # --- Step 2: Trim days for "Cycle 1 only: D1+D15; Cycle 2 onwards: D1" ---
+            if cycle_number >= 2:
+                notes_lower = notes.lower()
                 onwards_match = re.search(
                     r'cycle\s+2\s+onwards?\s*:?\s*(?:given\s+on\s+)?day\s+1\b',
                     notes_lower
@@ -727,7 +765,6 @@ class ProtocolEngine:
                     notes_lower
                 )
                 if onwards_match and cycle1_days_match and drug.days and len(drug.days) > 1:
-                    # Restrict to day 1 only for cycle 2+
                     drug = copy.copy(drug)
                     drug.days = [1]
 
