@@ -1,0 +1,1299 @@
+[
+  {
+    "protocol_code": "myeloma-IPD-isatuximab-pomalidomide-dexamethasone40",
+    "protocol_name": "Isatuximab-Pomalidomide-Dexamethasone (IPd) - Dexamethasone 40mg",
+    "disease_site": "Myeloma",
+    "category": "myeloma",
+    "cycle_length_days": 28,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Isatuximab",
+        "dose": 10,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8,
+          15,
+          22
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1: days 1, 8, 15, 22 (weekly). Cycles 2 onwards: days 1 and 15 only (biweekly). No dose reductions permitted for isatuximab. Pre-medications required before each isatuximab infusion. First infusion rate: 25mg/hr, escalate to 50mg/hr, then 75mg/hr, then 200mg/hr. Subsequent infusions: start at 50mg/hr, escalate to 200mg/hr."
+      },
+      {
+        "drug_name": "Pomalidomide",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Days 1-21 of each 28-day cycle. Take on an empty stomach. Dose levels: 4mg (starting) → 3mg → 2mg → 1mg → discontinue."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 40,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          8,
+          15,
+          22
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "On isatuximab days this dose also serves as pre-medication. Dose levels: 40mg (starting) → 20mg → 10mg. Reduce starting dose to 20mg in patients over 75 years."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils < 0.5 x 10^9/L (first occurrence) or neutrophil nadir < 0.5 x 10^9/L",
+        "drug_name": "Pomalidomide",
+        "factor": 0,
+        "notes": "Interrupt pomalidomide. Check FBC weekly. When neutrophils recover to ≥ 1.0 x 10^9/L, restart pomalidomide at 3mg."
+      },
+      {
+        "condition": "Neutrophils < 0.5 x 10^9/L (second occurrence)",
+        "drug_name": "Pomalidomide",
+        "factor": 0,
+        "notes": "Interrupt pomalidomide. When recovered, restart at 1mg less than previous dose (e.g. 2mg if previously on 3mg)."
+      },
+      {
+        "condition": "Platelets < 25 x 10^9/L (first occurrence)",
+        "drug_name": "Pomalidomide",
+        "factor": 0,
+        "notes": "Interrupt pomalidomide. Check FBC weekly. When platelets recover to ≥ 50 x 10^9/L, restart at 3mg."
+      },
+      {
+        "condition": "Platelets < 25 x 10^9/L (second occurrence)",
+        "drug_name": "Pomalidomide",
+        "factor": 0,
+        "notes": "Interrupt pomalidomide. When platelets recover to ≥ 50 x 10^9/L, restart at 1mg less than previous dose."
+      },
+      {
+        "condition": "Grade 1 or 2 rash",
+        "drug_name": "Pomalidomide",
+        "factor": 1.0,
+        "notes": "Manage with antihistamines and/or corticosteroids. If Grade 2 persists or worsens, interrupt pomalidomide until resolved to ≤ Grade 1."
+      },
+      {
+        "condition": "Grade 3 rash",
+        "drug_name": "Pomalidomide",
+        "factor": 0,
+        "notes": "Interrupt pomalidomide until resolved to ≤ Grade 1, then restart at 1mg lower dose."
+      },
+      {
+        "condition": "Grade 4 rash / SJS / TEN",
+        "drug_name": "Pomalidomide",
+        "factor": 0,
+        "notes": "Permanently discontinue pomalidomide."
+      },
+      {
+        "condition": "Dexamethasone toxicity / intolerance (steroid-related side effects)",
+        "drug_name": "Dexamethasone",
+        "factor": 0.5,
+        "notes": "Reduce dexamethasone from 40mg to 20mg per dose."
+      },
+      {
+        "condition": "Persistent or severe dexamethasone toxicity",
+        "drug_name": "Dexamethasone",
+        "factor": 0.25,
+        "notes": "Reduce dexamethasone from 20mg to 10mg per dose."
+      },
+      {
+        "condition": "Patient aged > 75 years",
+        "drug_name": "Dexamethasone",
+        "factor": 0.5,
+        "notes": "Start dexamethasone at 20mg (50% reduction from standard 40mg starting dose) in all patients over 75 years."
+      },
+      {
+        "condition": "Infusion-related reaction (Grade 1-2)",
+        "drug_name": "Isatuximab",
+        "factor": 1.0,
+        "notes": "Interrupt infusion. Manage with symptomatic treatment. When resolved, resume at reduced infusion rate (50% of rate at time of reaction). No dose reduction."
+      },
+      {
+        "condition": "Infusion-related reaction (Grade 3)",
+        "drug_name": "Isatuximab",
+        "factor": 1.0,
+        "notes": "Interrupt infusion. Do not resume until resolved to Grade ≤ 1. Resume at 50% of rate at time of reaction. Consider permanent discontinuation after 3rd occurrence. No dose reduction."
+      },
+      {
+        "condition": "Infusion-related reaction (Grade 4)",
+        "drug_name": "Isatuximab",
+        "factor": 0,
+        "notes": "Permanently discontinue isatuximab."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone (from regimen dose) - give 1 hour before isatuximab infusion",
+      "Chlorphenamine 10mg IV - give 1 hour before isatuximab infusion",
+      "Omeprazole 20mg oral - give 1 hour before isatuximab infusion",
+      "Paracetamol 1000mg oral - give 1 hour before isatuximab infusion"
+    ],
+    "special_warnings": [
+      "ISATUXIMAB DOSE REDUCTIONS ARE NOT PERMITTED. Isatuximab is an anti-CD38 monoclonal antibody (immunotherapy); dose reductions are not allowed. If toxicity attributable to isatuximab occurs, the infusion should be interrupted or permanently discontinued as per IRR guidelines.",
+      "Isatuximab interferes with serum protein electrophoresis (SPE) and immunofixation electrophoresis (IFE) assays used to monitor myeloma response. This must be considered when interpreting results.",
+      "Pomalidomide is teratogenic. Pregnancy must be excluded before starting and effective contraception must be used throughout treatment and for at least 4 weeks after stopping (females) or 4 weeks after stopping (males). This is a Pregnancy Prevention Programme (PPP) drug.",
+      "Thromboprophylaxis is required for all patients on pomalidomide. All patients should receive aspirin 75mg daily or LMWH if at higher thrombotic risk.",
+      "Pomalidomide is dispensed under strict conditions: only 28-day supply at a time, no dose alterations without prescriber authorisation.",
+      "Monitor FBC at least every 2 weeks for the first 12 weeks, then monthly thereafter.",
+      "Withhold isatuximab if patient has an active infection requiring IV antibiotics. Resume when infection resolves.",
+      "Hepatitis B reactivation risk: screen all patients before starting isatuximab. Monitor HBsAg-positive patients throughout and for 6 months after treatment.",
+      "ORAL CHEMOTHERAPY — NPSA/2008/RRR001: Patient must be counselled and provided written information before starting. Prescriptions must be written on an approved oral chemotherapy prescription form. Dispensing must only be by a trained pharmacist. Patient must be provided with a chemotherapy alert card. Do not supply more than one cycle at a time without clinical review."
+    ],
+    "required_patient_fields": [
+      "weight_kg",
+      "height_cm",
+      "age_years",
+      "creatinine_clearance_ml_min",
+      "neutrophil_count",
+      "platelet_count",
+      "bilirubin",
+      "hepatitis_b_status",
+      "pregnancy_status_or_contraception_confirmed"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "myeloma-IRD20-ixazomib-lenalidomide-dexamethasone20",
+    "protocol_name": "Ixazomib-Lenalidomide-Dexamethasone (IRd) - Dexamethasone 20mg",
+    "disease_site": "Myeloma",
+    "category": "myeloma",
+    "cycle_length_days": 28,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Ixazomib",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Days 1, 8, 15. Take at least 1 hour before or 2 hours after food. Take at approximately the same time each week. Dose levels: 4mg (starting) → 3mg → 2.3mg → discontinue."
+      },
+      {
+        "drug_name": "Lenalidomide",
+        "dose": 25,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Days 1-21. Dose levels: 25mg (starting) → 15mg → 10mg → 5mg. Pregnancy Prevention Programme drug - see special warnings."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          8,
+          15,
+          22
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Days 1, 8, 15, 22. Dose levels: 20mg (starting) → 10mg → 8mg."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils < 0.5 x 10^9/L",
+        "drug_name": "Lenalidomide",
+        "factor": 0,
+        "notes": "Interrupt lenalidomide. Add G-CSF if clinically indicated. When neutrophils recover to ≥ 1.0 x 10^9/L, restart lenalidomide at next lower dose level."
+      },
+      {
+        "condition": "Platelets < 30 x 10^9/L",
+        "drug_name": "Lenalidomide",
+        "factor": 0,
+        "notes": "Interrupt lenalidomide. When platelets recover to ≥ 30 x 10^9/L, restart at next lower dose level."
+      },
+      {
+        "condition": "Neutrophils < 0.5 x 10^9/L",
+        "drug_name": "Ixazomib",
+        "factor": 0,
+        "notes": "Interrupt ixazomib. When neutrophils recover to ≥ 0.5 x 10^9/L, restart ixazomib at same dose. If neutropenia persists at restart, reduce ixazomib by one dose level."
+      },
+      {
+        "condition": "Platelets < 30 x 10^9/L",
+        "drug_name": "Ixazomib",
+        "factor": 0,
+        "notes": "Interrupt ixazomib. When platelets recover to ≥ 30 x 10^9/L, restart ixazomib at same dose. If thrombocytopenia persists at restart, reduce ixazomib by one dose level."
+      },
+      {
+        "condition": "Grade 2 peripheral neuropathy",
+        "drug_name": "Ixazomib",
+        "factor": 0.75,
+        "notes": "Reduce ixazomib by one dose level (4mg → 3mg)."
+      },
+      {
+        "condition": "Grade 3 peripheral neuropathy",
+        "drug_name": "Ixazomib",
+        "factor": 0,
+        "notes": "Interrupt ixazomib. When resolved to ≤ Grade 1, restart at next lower dose level."
+      },
+      {
+        "condition": "Grade 4 peripheral neuropathy",
+        "drug_name": "Ixazomib",
+        "factor": 0,
+        "notes": "Permanently discontinue ixazomib."
+      },
+      {
+        "condition": "Renal impairment: CrCl 30-59 mL/min",
+        "drug_name": "Lenalidomide",
+        "factor": 0.4,
+        "notes": "Reduce lenalidomide to 10mg on days 1-21. No adjustment needed for ixazomib."
+      },
+      {
+        "condition": "Renal impairment: CrCl < 30 mL/min (not on dialysis)",
+        "drug_name": "Lenalidomide",
+        "factor": 0,
+        "notes": "Give lenalidomide 15mg every other day (days 1,3,5,7,9,11,13,15,17,19,21). Also reduce ixazomib to 3mg starting dose."
+      },
+      {
+        "condition": "Renal impairment: CrCl < 30 mL/min (not on dialysis)",
+        "drug_name": "Ixazomib",
+        "factor": 0.75,
+        "notes": "Reduce starting dose to 3mg. If on dialysis, also reduce lenalidomide to 5mg post-dialysis."
+      },
+      {
+        "condition": "Renal impairment: CrCl < 30 mL/min (on dialysis)",
+        "drug_name": "Lenalidomide",
+        "factor": 0.2,
+        "notes": "Give lenalidomide 5mg on days 1-21 (post-dialysis on dialysis days). Reduce ixazomib to 3mg."
+      },
+      {
+        "condition": "Hepatic impairment: moderate or severe (bilirubin > 1.5 x ULN)",
+        "drug_name": "Ixazomib",
+        "factor": 0.75,
+        "notes": "Reduce starting dose to 3mg. Lenalidomide: no specific dose adjustments available for hepatic impairment (use clinical judgement)."
+      },
+      {
+        "condition": "Grade 3 non-haematological toxicity",
+        "drug_name": "Ixazomib",
+        "factor": 0,
+        "notes": "Interrupt ixazomib until resolved to ≤ Grade 1 or baseline, then restart at next lower dose level."
+      },
+      {
+        "condition": "Grade 3 non-haematological toxicity",
+        "drug_name": "Lenalidomide",
+        "factor": 0,
+        "notes": "Interrupt lenalidomide until resolved to ≤ Grade 1 or baseline, then restart at next lower dose level."
+      },
+      {
+        "condition": "Dexamethasone toxicity / intolerance",
+        "drug_name": "Dexamethasone",
+        "factor": 0.5,
+        "notes": "Reduce dexamethasone from 20mg to 10mg."
+      },
+      {
+        "condition": "Persistent or severe dexamethasone toxicity",
+        "drug_name": "Dexamethasone",
+        "factor": 0,
+        "notes": "Reduce dexamethasone from 10mg to 8mg, or consider omission."
+      }
+    ],
+    "pre_medications": [
+      "No routine antiemetics required for this regimen",
+      "Aciclovir 400mg twice daily throughout treatment (antiviral prophylaxis)",
+      "Co-trimoxazole 960mg on Monday, Wednesday, Friday (PCP prophylaxis)",
+      "Thromboprophylaxis: aspirin 75mg daily or LMWH based on thrombotic risk assessment"
+    ],
+    "special_warnings": [
+      "Lenalidomide is teratogenic. This is a Pregnancy Prevention Programme (PPP) drug. Pregnancy must be excluded before starting. Effective contraception must be used throughout and for at least 4 weeks after stopping in females, and for at least 4 weeks after stopping in males.",
+      "Thromboprophylaxis is mandatory for all patients receiving lenalidomide. Aspirin 75mg daily for low-risk patients; LMWH for higher-risk patients (prior VTE, immobility, etc.).",
+      "Ixazomib capsules must be swallowed whole and not opened or crushed. Take at least 1 hour before or at least 2 hours after food.",
+      "Monitor FBC weekly for first 3 cycles, then at least every cycle thereafter.",
+      "Hepatitis B reactivation risk: screen before starting lenalidomide. Monitor HBsAg-positive patients.",
+      "Risk of second primary malignancy with lenalidomide use; discuss with patient.",
+      "Peripheral neuropathy monitoring required throughout ixazomib treatment.",
+      "ORAL CHEMOTHERAPY — NPSA/2008/RRR001: Patient must be counselled and provided written information before starting. Prescriptions must be written on an approved oral chemotherapy prescription form. Dispensing must only be by a trained pharmacist. Patient must be provided with a chemotherapy alert card. Do not supply more than one cycle at a time without clinical review."
+    ],
+    "required_patient_fields": [
+      "weight_kg",
+      "height_cm",
+      "age_years",
+      "creatinine_clearance_ml_min",
+      "neutrophil_count",
+      "platelet_count",
+      "bilirubin",
+      "pregnancy_status_or_contraception_confirmed"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "myeloma-IRD40-ixazomib-lenalidomide-dexamethasone40",
+    "protocol_name": "Ixazomib-Lenalidomide-Dexamethasone (IRd) - Dexamethasone 40mg",
+    "disease_site": "Myeloma",
+    "category": "myeloma",
+    "cycle_length_days": 28,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Ixazomib",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Days 1, 8, 15. Take at least 1 hour before or 2 hours after food. Take at approximately the same time each week. Dose levels: 4mg (starting) → 3mg → 2.3mg → discontinue."
+      },
+      {
+        "drug_name": "Lenalidomide",
+        "dose": 25,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Days 1-21. Dose levels: 25mg (starting) → 15mg → 10mg → 5mg. Pregnancy Prevention Programme drug."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 40,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          8,
+          15,
+          22
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Days 1, 8, 15, 22. Dose levels: 40mg (starting) → 20mg → 10mg. Consider starting at 20mg in elderly or frail patients."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils < 0.5 x 10^9/L",
+        "drug_name": "Lenalidomide",
+        "factor": 0,
+        "notes": "Interrupt lenalidomide. Add G-CSF if clinically indicated. When neutrophils recover to ≥ 1.0 x 10^9/L, restart lenalidomide at next lower dose level."
+      },
+      {
+        "condition": "Platelets < 30 x 10^9/L",
+        "drug_name": "Lenalidomide",
+        "factor": 0,
+        "notes": "Interrupt lenalidomide. When platelets recover to ≥ 30 x 10^9/L, restart at next lower dose level."
+      },
+      {
+        "condition": "Neutrophils < 0.5 x 10^9/L",
+        "drug_name": "Ixazomib",
+        "factor": 0,
+        "notes": "Interrupt ixazomib. When neutrophils recover to ≥ 0.5 x 10^9/L, restart ixazomib at same dose. If neutropenia persists at restart, reduce by one dose level."
+      },
+      {
+        "condition": "Platelets < 30 x 10^9/L",
+        "drug_name": "Ixazomib",
+        "factor": 0,
+        "notes": "Interrupt ixazomib. When platelets recover to ≥ 30 x 10^9/L, restart ixazomib at same dose. If thrombocytopenia persists at restart, reduce by one dose level."
+      },
+      {
+        "condition": "Grade 2 peripheral neuropathy",
+        "drug_name": "Ixazomib",
+        "factor": 0.75,
+        "notes": "Reduce ixazomib by one dose level (4mg → 3mg)."
+      },
+      {
+        "condition": "Grade 3 peripheral neuropathy",
+        "drug_name": "Ixazomib",
+        "factor": 0,
+        "notes": "Interrupt ixazomib. When resolved to ≤ Grade 1, restart at next lower dose level."
+      },
+      {
+        "condition": "Grade 4 peripheral neuropathy",
+        "drug_name": "Ixazomib",
+        "factor": 0,
+        "notes": "Permanently discontinue ixazomib."
+      },
+      {
+        "condition": "Renal impairment: CrCl 30-59 mL/min",
+        "drug_name": "Lenalidomide",
+        "factor": 0.4,
+        "notes": "Reduce lenalidomide to 10mg on days 1-21. No adjustment needed for ixazomib."
+      },
+      {
+        "condition": "Renal impairment: CrCl < 30 mL/min (not on dialysis)",
+        "drug_name": "Lenalidomide",
+        "factor": 0,
+        "notes": "Give lenalidomide 15mg every other day. Also reduce ixazomib to 3mg starting dose."
+      },
+      {
+        "condition": "Renal impairment: CrCl < 30 mL/min (not on dialysis)",
+        "drug_name": "Ixazomib",
+        "factor": 0.75,
+        "notes": "Reduce starting dose to 3mg."
+      },
+      {
+        "condition": "Renal impairment: CrCl < 30 mL/min (on dialysis)",
+        "drug_name": "Lenalidomide",
+        "factor": 0.2,
+        "notes": "Give lenalidomide 5mg on days 1-21 (post-dialysis on dialysis days). Reduce ixazomib to 3mg."
+      },
+      {
+        "condition": "Hepatic impairment: moderate or severe (bilirubin > 1.5 x ULN)",
+        "drug_name": "Ixazomib",
+        "factor": 0.75,
+        "notes": "Reduce starting dose to 3mg. Lenalidomide: no specific dose adjustments available for hepatic impairment (use clinical judgement)."
+      },
+      {
+        "condition": "Grade 3 non-haematological toxicity",
+        "drug_name": "Ixazomib",
+        "factor": 0,
+        "notes": "Interrupt ixazomib until resolved to ≤ Grade 1 or baseline, then restart at next lower dose level."
+      },
+      {
+        "condition": "Grade 3 non-haematological toxicity",
+        "drug_name": "Lenalidomide",
+        "factor": 0,
+        "notes": "Interrupt lenalidomide until resolved to ≤ Grade 1 or baseline, then restart at next lower dose level."
+      },
+      {
+        "condition": "Dexamethasone toxicity / intolerance (steroid-related side effects)",
+        "drug_name": "Dexamethasone",
+        "factor": 0.5,
+        "notes": "Reduce dexamethasone from 40mg to 20mg per dose."
+      },
+      {
+        "condition": "Persistent or severe dexamethasone toxicity",
+        "drug_name": "Dexamethasone",
+        "factor": 0.25,
+        "notes": "Reduce dexamethasone from 20mg to 10mg per dose."
+      }
+    ],
+    "pre_medications": [
+      "No routine antiemetics required for this regimen",
+      "Aciclovir 400mg twice daily throughout treatment (antiviral prophylaxis)",
+      "Co-trimoxazole 960mg on Monday, Wednesday, Friday (PCP prophylaxis)",
+      "Thromboprophylaxis: aspirin 75mg daily or LMWH based on thrombotic risk assessment"
+    ],
+    "special_warnings": [
+      "Lenalidomide is teratogenic. This is a Pregnancy Prevention Programme (PPP) drug. Pregnancy must be excluded before starting. Effective contraception must be used throughout and for at least 4 weeks after stopping in females, and for at least 4 weeks after stopping in males.",
+      "Thromboprophylaxis is mandatory for all patients receiving lenalidomide. Aspirin 75mg daily for low-risk patients; LMWH for higher-risk patients (prior VTE, immobility, etc.).",
+      "Ixazomib capsules must be swallowed whole and not opened or crushed. Take at least 1 hour before or at least 2 hours after food.",
+      "Monitor FBC weekly for first 3 cycles, then at least every cycle thereafter.",
+      "Hepatitis B reactivation risk: screen before starting lenalidomide. Monitor HBsAg-positive patients.",
+      "Risk of second primary malignancy with lenalidomide use; discuss with patient.",
+      "Peripheral neuropathy monitoring required throughout ixazomib treatment.",
+      "Higher dexamethasone dose (40mg) compared to IRD20 variant. Consider reducing to 20mg in elderly or frail patients from the outset.",
+      "ORAL CHEMOTHERAPY — NPSA/2008/RRR001: Patient must be counselled and provided written information before starting. Prescriptions must be written on an approved oral chemotherapy prescription form. Dispensing must only be by a trained pharmacist. Patient must be provided with a chemotherapy alert card. Do not supply more than one cycle at a time without clinical review."
+    ],
+    "required_patient_fields": [
+      "weight_kg",
+      "height_cm",
+      "age_years",
+      "creatinine_clearance_ml_min",
+      "neutrophil_count",
+      "platelet_count",
+      "bilirubin",
+      "pregnancy_status_or_contraception_confirmed"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "myeloma-isa-VRD-weekly-isatuximab-bortezomib-lenalidomide-dexamethasone",
+    "protocol_name": "Isatuximab-Bortezomib-Lenalidomide-Dexamethasone (Isa-VRd) Weekly",
+    "disease_site": "Myeloma",
+    "category": "myeloma",
+    "cycle_length_days": 28,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Isatuximab",
+        "dose": 10,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8,
+          15,
+          22
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 (Initiation): days 1, 8, 15, 22 (weekly). Cycles 2-8: days 1 and 15 only (biweekly). Cycles 9-19 (Maintenance): days 1 and 15 (biweekly, no bortezomib). Cycles 20+ (Maintenance): day 1 only (monthly). No dose reductions permitted. Pre-medications required for all doses in cycles 1 and 2; from cycle 3 onwards, only required on cycle days when receiving isatuximab on new cycle schedule."
+      },
+      {
+        "drug_name": "Bortezomib",
+        "dose": 1.3,
+        "dose_unit": "mg/m²",
+        "route": "Subcutaneous",
+        "days": [
+          1,
+          8,
+          15,
+          22
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1-8 only (not given in maintenance cycles 9+). Days 1, 8, 15, 22. Rotate injection sites. Dose levels: 1.3mg/m2 (starting) → 1.0mg/m2 → 0.7mg/m2 → discontinue."
+      },
+      {
+        "drug_name": "Lenalidomide",
+        "dose": 15,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Days 1-21 (all cycle phases). Note: starting dose is 15mg (lower than standard lenalidomide monotherapy). Dose levels: 15mg (starting) → 10mg → 5mg → 2.5mg. Pregnancy Prevention Programme drug."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          8,
+          9,
+          15,
+          16,
+          22,
+          23
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1-8: days 1, 2, 8, 9, 15, 16, 22, 23 (day before and day of each bortezomib dose). Cycles 9-19 (maintenance): days 1 and 15 (isatuximab days only). Cycles 20+: day 1 only. Also serves as pre-medication before isatuximab. Reduce to 10mg in patients over 75 years."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Peripheral neuropathy Grade 1 with pain or Grade 2",
+        "drug_name": "Bortezomib",
+        "factor": 0.75,
+        "notes": "Reduce bortezomib from 1.3mg/m2 to 1.0mg/m2."
+      },
+      {
+        "condition": "Peripheral neuropathy Grade 2 with pain or Grade 3",
+        "drug_name": "Bortezomib",
+        "factor": 0,
+        "notes": "Interrupt bortezomib until resolved to ≤ Grade 1, then restart at 0.7mg/m2."
+      },
+      {
+        "condition": "Peripheral neuropathy Grade 4",
+        "drug_name": "Bortezomib",
+        "factor": 0,
+        "notes": "Permanently discontinue bortezomib."
+      },
+      {
+        "condition": "Neutrophils < 1.0 x 10^9/L on day of treatment",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Consider delaying bortezomib dose. Discuss with consultant. G-CSF may be given."
+      },
+      {
+        "condition": "Platelets < 50 x 10^9/L on day of treatment",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Consider delaying bortezomib dose. Discuss with consultant."
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin > 1.5 x ULN",
+        "drug_name": "Bortezomib",
+        "factor": 0,
+        "notes": "Start bortezomib at reduced dose 0.7mg/m2. Escalate to 1.0mg/m2 in subsequent cycles if tolerated, or reduce to 0.5mg/m2 if not tolerated at 0.7mg/m2."
+      },
+      {
+        "condition": "Renal impairment: CrCl 30-50 mL/min",
+        "drug_name": "Lenalidomide",
+        "factor": 0,
+        "notes": "Reduce lenalidomide to 10mg days 1-21."
+      },
+      {
+        "condition": "Renal impairment: CrCl < 30 mL/min (not on dialysis)",
+        "drug_name": "Lenalidomide",
+        "factor": 0,
+        "notes": "Give lenalidomide 7.5mg days 1-21, or 15mg every other day."
+      },
+      {
+        "condition": "Renal impairment: CrCl < 30 mL/min (on dialysis)",
+        "drug_name": "Lenalidomide",
+        "factor": 0,
+        "notes": "Give lenalidomide 5mg on days 1-21 (post-dialysis on dialysis days)."
+      },
+      {
+        "condition": "Haematological toxicity (neutrophils < 0.5 x 10^9/L or platelets < 25 x 10^9/L)",
+        "drug_name": "Lenalidomide",
+        "factor": 0,
+        "notes": "Interrupt lenalidomide. When recovered (neutrophils ≥ 1.0 or platelets ≥ 50), restart at next lower dose level."
+      },
+      {
+        "condition": "Patient aged > 75 years",
+        "drug_name": "Dexamethasone",
+        "factor": 0.5,
+        "notes": "Reduce dexamethasone to 10mg per dose (from 20mg) in all patients over 75 years."
+      },
+      {
+        "condition": "Dexamethasone toxicity / intolerance",
+        "drug_name": "Dexamethasone",
+        "factor": 0.5,
+        "notes": "Reduce dexamethasone by 50% of current dose. Minimum dose is 10mg."
+      },
+      {
+        "condition": "Infusion-related reaction (Grade 1-2) to Isatuximab",
+        "drug_name": "Isatuximab",
+        "factor": 1.0,
+        "notes": "Interrupt infusion. Manage symptomatically. When resolved, resume at 50% of rate at time of reaction. No dose reduction."
+      },
+      {
+        "condition": "Infusion-related reaction (Grade 3) to Isatuximab",
+        "drug_name": "Isatuximab",
+        "factor": 1.0,
+        "notes": "Interrupt infusion. Do not resume until resolved to ≤ Grade 1. Resume at 50% of rate at time of reaction. Consider permanent discontinuation after 3rd occurrence."
+      },
+      {
+        "condition": "Infusion-related reaction (Grade 4) to Isatuximab",
+        "drug_name": "Isatuximab",
+        "factor": 0,
+        "notes": "Permanently discontinue isatuximab."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone (from regimen dose) - give before isatuximab infusion on isatuximab days",
+      "Chlorphenamine 10mg IV - give approximately 1 hour before isatuximab infusion (cycles 1 and 2 and all subsequent isatuximab infusions)",
+      "Omeprazole 20mg oral - give approximately 1 hour before isatuximab infusion",
+      "Paracetamol 1000mg oral - give approximately 1 hour before isatuximab infusion",
+      "Aciclovir 400mg twice daily throughout treatment (antiviral prophylaxis, especially for bortezomib)",
+      "Co-trimoxazole 960mg on Monday, Wednesday, Friday (PCP prophylaxis)",
+      "Thromboprophylaxis: aspirin 75mg daily or LMWH based on thrombotic risk"
+    ],
+    "special_warnings": [
+      "ISATUXIMAB DOSE REDUCTIONS ARE NOT PERMITTED. Isatuximab is an anti-CD38 monoclonal antibody (immunotherapy); dose reductions are not allowed. If toxicity attributable to isatuximab occurs, the infusion should be interrupted or permanently discontinued as appropriate.",
+      "This is a complex multi-phase protocol: Cycle 1 uses weekly isatuximab (days 1,8,15,22) with bortezomib; Cycles 2-8 use biweekly isatuximab (days 1,15) with bortezomib; Cycles 9-19 are maintenance with biweekly isatuximab and lenalidomide but no bortezomib; Cycles 20+ use monthly isatuximab (day 1) with lenalidomide.",
+      "Isatuximab interferes with serum protein electrophoresis (SPE) and immunofixation electrophoresis (IFE) assays. This must be considered when monitoring myeloma response.",
+      "Lenalidomide is teratogenic. Pregnancy Prevention Programme (PPP) drug. Effective contraception required throughout and for 4 weeks after stopping.",
+      "Thromboprophylaxis mandatory for lenalidomide component. Aspirin 75mg daily or LMWH based on individual risk assessment.",
+      "Bortezomib by subcutaneous injection only in this protocol. Monitor for peripheral neuropathy at each visit.",
+      "Lenalidomide starting dose in this regimen is 15mg (lower than standard 25mg). This is intentional given the combination regimen.",
+      "Hepatitis B reactivation risk: screen all patients before starting. Monitor HBsAg-positive patients throughout and for 6 months after treatment.",
+      "Withhold isatuximab if patient has active infection requiring IV antibiotics.",
+      "ORAL CHEMOTHERAPY — NPSA/2008/RRR001: Patient must be counselled and provided written information before starting. Prescriptions must be written on an approved oral chemotherapy prescription form. Dispensing must only be by a trained pharmacist. Patient must be provided with a chemotherapy alert card. Do not supply more than one cycle at a time without clinical review."
+    ],
+    "required_patient_fields": [
+      "weight_kg",
+      "height_cm",
+      "bsa_m2",
+      "age_years",
+      "creatinine_clearance_ml_min",
+      "neutrophil_count",
+      "platelet_count",
+      "bilirubin",
+      "hepatitis_b_status",
+      "pregnancy_status_or_contraception_confirmed",
+      "peripheral_neuropathy_grade"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "myeloma-lenalidomide-monotherapy",
+    "protocol_name": "Lenalidomide Monotherapy",
+    "disease_site": "Myeloma",
+    "category": "myeloma",
+    "cycle_length_days": 28,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Lenalidomide",
+        "dose": 25,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Days 1-21 followed by 7-day rest. Dose levels: 25mg (starting) → 15mg → 10mg → 5mg → discontinue. Pregnancy Prevention Programme drug."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils < 1.0 x 10^9/L (first occurrence)",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "Delay next dose. Resume at 25mg when neutrophils recover to ≥ 1.0 x 10^9/L. Add G-CSF if clinically indicated."
+      },
+      {
+        "condition": "Neutrophils < 1.0 x 10^9/L (second occurrence)",
+        "drug_name": "Lenalidomide",
+        "factor": 0,
+        "notes": "Interrupt lenalidomide. When neutrophils recover to ≥ 1.0 x 10^9/L, restart at 15mg."
+      },
+      {
+        "condition": "Neutrophils < 1.0 x 10^9/L (third occurrence)",
+        "drug_name": "Lenalidomide",
+        "factor": 0,
+        "notes": "Interrupt lenalidomide. When neutrophils recover to ≥ 1.0 x 10^9/L, restart at 10mg."
+      },
+      {
+        "condition": "Neutrophils < 1.0 x 10^9/L (fourth occurrence)",
+        "drug_name": "Lenalidomide",
+        "factor": 0,
+        "notes": "Interrupt lenalidomide. When neutrophils recover to ≥ 1.0 x 10^9/L, restart at 5mg."
+      },
+      {
+        "condition": "Platelets < 50 x 10^9/L (first occurrence)",
+        "drug_name": "Lenalidomide",
+        "factor": 0,
+        "notes": "Interrupt lenalidomide. When platelets recover to ≥ 50 x 10^9/L, restart at 15mg."
+      },
+      {
+        "condition": "Platelets < 50 x 10^9/L (second occurrence)",
+        "drug_name": "Lenalidomide",
+        "factor": 0,
+        "notes": "Interrupt lenalidomide. When platelets recover to ≥ 50 x 10^9/L, restart at 10mg."
+      },
+      {
+        "condition": "Platelets < 50 x 10^9/L (third occurrence)",
+        "drug_name": "Lenalidomide",
+        "factor": 0,
+        "notes": "Interrupt lenalidomide. When platelets recover to ≥ 50 x 10^9/L, restart at 5mg."
+      },
+      {
+        "condition": "Renal impairment: CrCl > 50 mL/min",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "No dose adjustment required. Full dose 25mg days 1-21."
+      },
+      {
+        "condition": "Renal impairment: CrCl 30-50 mL/min",
+        "drug_name": "Lenalidomide",
+        "factor": 0.4,
+        "notes": "Reduce to 10mg on days 1-21."
+      },
+      {
+        "condition": "Renal impairment: CrCl < 30 mL/min (not on dialysis)",
+        "drug_name": "Lenalidomide",
+        "factor": 0,
+        "notes": "Give 15mg on alternate days (e.g. days 1,3,5,7,9,11,13,15,17,19,21)."
+      },
+      {
+        "condition": "Renal impairment: CrCl < 30 mL/min (on dialysis)",
+        "drug_name": "Lenalidomide",
+        "factor": 0.2,
+        "notes": "Give 5mg on days 1-21. On dialysis days, give dose after dialysis session."
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "No specific dose adjustments established for hepatic impairment. Use clinical judgement."
+      },
+      {
+        "condition": "Grade 3 or 4 non-haematological toxicity",
+        "drug_name": "Lenalidomide",
+        "factor": 0,
+        "notes": "Interrupt lenalidomide until resolved to ≤ Grade 1 or baseline, then restart at next lower dose level."
+      }
+    ],
+    "pre_medications": [
+      "Metoclopramide 10mg three times daily when required (anti-emetic, on demand)",
+      "Allopurinol 300mg daily for first 7 days of cycle 1 (tumour lysis prophylaxis)",
+      "Thromboprophylaxis: aspirin 75mg daily or LMWH based on thrombotic risk assessment"
+    ],
+    "special_warnings": [
+      "Lenalidomide is teratogenic. This is a Pregnancy Prevention Programme (PPP) drug. Pregnancy must be excluded before starting. Effective contraception must be used throughout and for at least 4 weeks after stopping in females, and for at least 4 weeks after stopping in males.",
+      "Thromboprophylaxis is mandatory. All patients should receive aspirin 75mg daily unless at higher thrombotic risk (prior DVT/PE, immobility, concurrent erythropoietin), in which case LMWH should be prescribed.",
+      "Monitor FBC at least every 2 weeks for the first 12 weeks, then monthly thereafter.",
+      "Risk of second primary malignancy with long-term lenalidomide use; inform patient.",
+      "Hepatitis B reactivation risk: screen before starting. Monitor HBsAg-positive patients.",
+      "Lenalidomide is dispensed in 28-day supplies only, with mandatory negative pregnancy test (if applicable) before each supply.",
+      "Tumour lysis syndrome risk in first cycle: ensure adequate hydration and allopurinol prophylaxis.",
+      "ORAL CHEMOTHERAPY — NPSA/2008/RRR001: Patient must be counselled and provided written information before starting. Prescriptions must be written on an approved oral chemotherapy prescription form. Dispensing must only be by a trained pharmacist. Patient must be provided with a chemotherapy alert card. Do not supply more than one cycle at a time without clinical review."
+    ],
+    "required_patient_fields": [
+      "weight_kg",
+      "height_cm",
+      "age_years",
+      "creatinine_clearance_ml_min",
+      "neutrophil_count",
+      "platelet_count",
+      "hepatitis_b_status",
+      "pregnancy_status_or_contraception_confirmed"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "myeloma-VCD-IV35-bortezomib-IV-cyclophosphamide-dexamethasone",
+    "protocol_name": "Bortezomib(IV)-Cyclophosphamide-Dexamethasone (VCd) - 35 day IV",
+    "disease_site": "Myeloma",
+    "category": "myeloma",
+    "cycle_length_days": 35,
+    "number_of_cycles": 8,
+    "drugs": [
+      {
+        "drug_name": "Bortezomib",
+        "dose": 1.3,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1,
+          8,
+          15,
+          22
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV bolus injection over 3-5 seconds. Days 1, 8, 15, 22 of 35-day cycle. Dose levels: 1.3mg/m2 (starting) → 1.0mg/m2 → 0.7mg/m2 → discontinue. For hepatic impairment (bilirubin > 1.5xULN) start at 0.7mg/m2."
+      },
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 350,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          8,
+          15,
+          22
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": 500,
+        "max_dose_unit": "mg",
+        "notes": "Oral cyclophosphamide. Maximum dose 500mg regardless of BSA. Days 1, 8, 15, 22 of 35-day cycle."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          8,
+          9,
+          15,
+          16,
+          22,
+          23
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Days 1, 2, 8, 9, 15, 16, 22, 23 (day of and day after each bortezomib dose). Dose levels: 20mg (starting) → 10mg → omit."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Peripheral neuropathy Grade 1 with pain or Grade 2",
+        "drug_name": "Bortezomib",
+        "factor": 0.75,
+        "notes": "Reduce bortezomib from 1.3mg/m2 to 1.0mg/m2."
+      },
+      {
+        "condition": "Peripheral neuropathy Grade 2 with pain or Grade 3",
+        "drug_name": "Bortezomib",
+        "factor": 0,
+        "notes": "Interrupt bortezomib. When resolved to ≤ Grade 1 or baseline, reinitiate at 0.7mg/m2."
+      },
+      {
+        "condition": "Peripheral neuropathy Grade 4",
+        "drug_name": "Bortezomib",
+        "factor": 0,
+        "notes": "Permanently discontinue bortezomib."
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin > 1.5 x ULN",
+        "drug_name": "Bortezomib",
+        "factor": 0,
+        "notes": "Start bortezomib at 0.7mg/m2. In subsequent cycles, can escalate to 1.0mg/m2 if tolerated, or reduce to 0.5mg/m2 if 0.7mg/m2 not tolerated."
+      },
+      {
+        "condition": "Renal impairment: CrCl 10-20 mL/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce cyclophosphamide dose by 25% (give 75% of calculated dose)."
+      },
+      {
+        "condition": "Renal impairment: CrCl < 10 mL/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0,
+        "notes": "Omit cyclophosphamide."
+      },
+      {
+        "condition": "Renal impairment: CrCl > 20 mL/min",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "No dose adjustment required for bortezomib."
+      },
+      {
+        "condition": "Renal impairment: CrCl ≤ 20 mL/min",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Bortezomib dose: clinical decision required. Seek specialist advice."
+      },
+      {
+        "condition": "Neutrophils < 1.0 x 10^9/L or platelets < 50 x 10^9/L on treatment day",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Consider delaying bortezomib. Discuss with consultant. Resume when blood counts recover."
+      },
+      {
+        "condition": "Neutrophils < 1.0 x 10^9/L or platelets < 50 x 10^9/L on treatment day",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Consider delaying cyclophosphamide. Discuss with consultant. Resume when blood counts recover."
+      },
+      {
+        "condition": "Dexamethasone toxicity / intolerance",
+        "drug_name": "Dexamethasone",
+        "factor": 0.5,
+        "notes": "Reduce dexamethasone from 20mg to 10mg."
+      },
+      {
+        "condition": "Severe or persistent dexamethasone toxicity",
+        "drug_name": "Dexamethasone",
+        "factor": 0,
+        "notes": "Omit dexamethasone."
+      }
+    ],
+    "pre_medications": [
+      "Ondansetron 8mg oral on days 1, 8, 15, 22 (anti-emetic - before bortezomib/cyclophosphamide)",
+      "Metoclopramide 10mg three times daily when required (on demand anti-emetic)",
+      "Aciclovir 400mg twice daily throughout treatment (antiviral prophylaxis - bortezomib)",
+      "Co-trimoxazole 960mg on Monday, Wednesday, Friday (PCP prophylaxis)",
+      "Allopurinol 300mg daily for first 7 days of cycle 1 (tumour lysis prophylaxis)"
+    ],
+    "special_warnings": [
+      "Maximum of 8 cycles for this protocol.",
+      "Cyclophosphamide is capped at a maximum of 500mg regardless of calculated BSA-based dose.",
+      "Bortezomib administered by IV bolus injection in this protocol variant. Alternative subcutaneous route is available in the VCD-SC35 protocol.",
+      "Monitor FBC weekly during treatment (days 1, 8, 15, 22 are also blood count assessment days).",
+      "Peripheral neuropathy monitoring required throughout treatment; bortezomib-induced peripheral neuropathy can be dose-limiting.",
+      "Renal monitoring required, particularly for cyclophosphamide dosing.",
+      "Haemorrhagic cystitis risk with cyclophosphamide: encourage adequate hydration on cyclophosphamide days.",
+      "Hepatitis B reactivation risk: screen before starting. Monitor HBsAg-positive patients.",
+      "Tumour lysis syndrome risk in cycle 1: ensure adequate hydration and allopurinol prophylaxis.",
+      "ORAL CHEMOTHERAPY — NPSA/2008/RRR001: Patient must be counselled and provided written information before starting. Prescriptions must be written on an approved oral chemotherapy prescription form. Dispensing must only be by a trained pharmacist. Patient must be provided with a chemotherapy alert card. Do not supply more than one cycle at a time without clinical review."
+    ],
+    "required_patient_fields": [
+      "weight_kg",
+      "height_cm",
+      "bsa_m2",
+      "age_years",
+      "creatinine_clearance_ml_min",
+      "neutrophil_count",
+      "platelet_count",
+      "bilirubin",
+      "hepatitis_b_status",
+      "peripheral_neuropathy_grade"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "myeloma-VCD-SC35-bortezomib-SC-cyclophosphamide-dexamethasone",
+    "protocol_name": "Bortezomib(SC)-Cyclophosphamide-Dexamethasone (VCd) - 35 day SC",
+    "disease_site": "Myeloma",
+    "category": "myeloma",
+    "cycle_length_days": 35,
+    "number_of_cycles": 8,
+    "drugs": [
+      {
+        "drug_name": "Bortezomib",
+        "dose": 1.3,
+        "dose_unit": "mg/m²",
+        "route": "Subcutaneous",
+        "days": [
+          1,
+          8,
+          15,
+          22
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Subcutaneous injection. Rotate injection sites (thigh or abdomen). Days 1, 8, 15, 22 of 35-day cycle. Dose levels: 1.3mg/m2 (starting) → 1.0mg/m2 → 0.7mg/m2 → discontinue. For hepatic impairment (bilirubin > 1.5xULN) start at 0.7mg/m2. SC route associated with lower rate of peripheral neuropathy compared to IV route."
+      },
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 350,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          8,
+          15,
+          22
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": 500,
+        "max_dose_unit": "mg",
+        "notes": "Oral cyclophosphamide. Maximum dose 500mg regardless of BSA. Days 1, 8, 15, 22 of 35-day cycle."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          8,
+          9,
+          15,
+          16,
+          22,
+          23
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Days 1, 2, 8, 9, 15, 16, 22, 23 (day of and day after each bortezomib dose). Dose levels: 20mg (starting) → 10mg → omit."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Peripheral neuropathy Grade 1 with pain or Grade 2",
+        "drug_name": "Bortezomib",
+        "factor": 0.75,
+        "notes": "Reduce bortezomib from 1.3mg/m2 to 1.0mg/m2."
+      },
+      {
+        "condition": "Peripheral neuropathy Grade 2 with pain or Grade 3",
+        "drug_name": "Bortezomib",
+        "factor": 0,
+        "notes": "Interrupt bortezomib. When resolved to ≤ Grade 1 or baseline, reinitiate at 0.7mg/m2."
+      },
+      {
+        "condition": "Peripheral neuropathy Grade 4",
+        "drug_name": "Bortezomib",
+        "factor": 0,
+        "notes": "Permanently discontinue bortezomib."
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin > 1.5 x ULN",
+        "drug_name": "Bortezomib",
+        "factor": 0,
+        "notes": "Start bortezomib at 0.7mg/m2. In subsequent cycles, can escalate to 1.0mg/m2 if tolerated, or reduce to 0.5mg/m2 if 0.7mg/m2 not tolerated."
+      },
+      {
+        "condition": "Renal impairment: CrCl 10-20 mL/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce cyclophosphamide dose by 25% (give 75% of calculated dose)."
+      },
+      {
+        "condition": "Renal impairment: CrCl < 10 mL/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0,
+        "notes": "Omit cyclophosphamide."
+      },
+      {
+        "condition": "Renal impairment: CrCl > 20 mL/min",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "No dose adjustment required for bortezomib."
+      },
+      {
+        "condition": "Renal impairment: CrCl ≤ 20 mL/min",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Bortezomib dose: clinical decision required. Seek specialist advice."
+      },
+      {
+        "condition": "Neutrophils < 1.0 x 10^9/L or platelets < 50 x 10^9/L on treatment day",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Consider delaying bortezomib. Discuss with consultant. Resume when blood counts recover."
+      },
+      {
+        "condition": "Neutrophils < 1.0 x 10^9/L or platelets < 50 x 10^9/L on treatment day",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Consider delaying cyclophosphamide. Discuss with consultant. Resume when blood counts recover."
+      },
+      {
+        "condition": "Dexamethasone toxicity / intolerance",
+        "drug_name": "Dexamethasone",
+        "factor": 0.5,
+        "notes": "Reduce dexamethasone from 20mg to 10mg."
+      },
+      {
+        "condition": "Severe or persistent dexamethasone toxicity",
+        "drug_name": "Dexamethasone",
+        "factor": 0,
+        "notes": "Omit dexamethasone."
+      },
+      {
+        "condition": "Injection site reaction (SC bortezomib)",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Rotate injection sites. If severe local reaction persists, consider switching to IV route. Apply warm compress if needed."
+      }
+    ],
+    "pre_medications": [
+      "Ondansetron 8mg oral on days 1, 8, 15, 22 (anti-emetic - before bortezomib/cyclophosphamide)",
+      "Metoclopramide 10mg three times daily when required (on demand anti-emetic)",
+      "Aciclovir 400mg twice daily throughout treatment (antiviral prophylaxis - bortezomib)",
+      "Co-trimoxazole 960mg on Monday, Wednesday, Friday (PCP prophylaxis)",
+      "Allopurinol 300mg daily for first 7 days of cycle 1 (tumour lysis prophylaxis)"
+    ],
+    "special_warnings": [
+      "Maximum of 8 cycles for this protocol.",
+      "Cyclophosphamide is capped at a maximum of 500mg regardless of calculated BSA-based dose.",
+      "Bortezomib administered by subcutaneous injection in this protocol variant. This route is associated with a lower rate of peripheral neuropathy compared to IV administration. For IV route, see the VCD-IV35 protocol.",
+      "Monitor FBC weekly during treatment (days 1, 8, 15, 22 are also blood count assessment days).",
+      "Peripheral neuropathy monitoring required throughout treatment; bortezomib-induced peripheral neuropathy can be dose-limiting.",
+      "Renal monitoring required, particularly for cyclophosphamide dosing.",
+      "Haemorrhagic cystitis risk with cyclophosphamide: encourage adequate hydration on cyclophosphamide days.",
+      "Hepatitis B reactivation risk: screen before starting. Monitor HBsAg-positive patients.",
+      "Tumour lysis syndrome risk in cycle 1: ensure adequate hydration and allopurinol prophylaxis.",
+      "Rotate subcutaneous injection sites to reduce injection site reactions.",
+      "ORAL CHEMOTHERAPY — NPSA/2008/RRR001: Patient must be counselled and provided written information before starting. Prescriptions must be written on an approved oral chemotherapy prescription form. Dispensing must only be by a trained pharmacist. Patient must be provided with a chemotherapy alert card. Do not supply more than one cycle at a time without clinical review."
+    ],
+    "required_patient_fields": [
+      "weight_kg",
+      "height_cm",
+      "bsa_m2",
+      "age_years",
+      "creatinine_clearance_ml_min",
+      "neutrophil_count",
+      "platelet_count",
+      "bilirubin",
+      "hepatitis_b_status",
+      "peripheral_neuropathy_grade"
+    ],
+    "auc_dosing": null
+  }
+]

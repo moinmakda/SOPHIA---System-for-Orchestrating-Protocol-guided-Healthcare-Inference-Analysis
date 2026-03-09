@@ -1,0 +1,603 @@
+[
+  {
+    "protocol_code": "LONCASTUXIMAB-TESIRINE-21",
+    "protocol_name": "Loncastuximab Tesirine Monotherapy",
+    "disease_site": "DLBCL / High Grade B-Cell Lymphoma",
+    "category": "lymphoma",
+    "cycle_length_days": 21,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Loncastuximab Tesirine",
+        "dose": 0.15,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1 and 2: 0.15mg/kg. From cycle 3 onwards: 0.075mg/kg. Infusion in 50mL glucose 5%. Patients with BMI >35 kg/m² should be dosed using Adjusted Body Weight. Dose banded according to national dose bands (5mg/mL). Give via dedicated infusion line with sterile, non-pyrogenic, low-protein binding inline or add-on filter (0.2 or 0.22 micrometre pore size) and catheter."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils less than 1 x10⁹/L",
+        "drug_name": "Loncastuximab Tesirine",
+        "factor": 1.0,
+        "notes": "Withhold until neutrophil count returns to 1 x10⁹/L or higher. Dose delays rather than dose reductions are recommended."
+      },
+      {
+        "condition": "Platelet count less than 50,000/mcL",
+        "drug_name": "Loncastuximab Tesirine",
+        "factor": 1.0,
+        "notes": "Withhold until platelet count returns to 50,000/mcL or higher."
+      },
+      {
+        "condition": "Oedema or effusion NCI-CTC Grade 2 or higher",
+        "drug_name": "Loncastuximab Tesirine",
+        "factor": 1.0,
+        "notes": "Withhold until the toxicity resolves to Grade 1 or less."
+      },
+      {
+        "condition": "Photosensitivity or other toxicity NCI-CTC Grade 3 or higher",
+        "drug_name": "Loncastuximab Tesirine",
+        "factor": 1.0,
+        "notes": "Withhold until the toxicity resolves to Grade 1 or less."
+      },
+      {
+        "condition": "Treatment delayed more than 3 weeks due to toxicity",
+        "drug_name": "Loncastuximab Tesirine",
+        "factor": 0.5,
+        "notes": "Subsequent doses should be reduced by 50%. If toxicity requires dose reduction following cycle 2 (second dose of 0.15mg/kg), patient should receive 0.075mg/kg for cycle 3."
+      },
+      {
+        "condition": "Toxicity recurs after two dose reductions",
+        "drug_name": "Loncastuximab Tesirine",
+        "factor": 0.0,
+        "notes": "Permanent discontinuation of Loncastuximab Tesirine should be considered."
+      },
+      {
+        "condition": "Mild to moderate renal impairment",
+        "drug_name": "Loncastuximab Tesirine",
+        "factor": 1.0,
+        "notes": "No dose adjustment required. Not studied in severe renal impairment (CrCl 15-29 mL/min); effect of severe renal impairment and end-stage renal disease is unknown."
+      },
+      {
+        "condition": "Mild hepatic impairment",
+        "drug_name": "Loncastuximab Tesirine",
+        "factor": 1.0,
+        "notes": "No dose adjustment recommended. Not studied in moderate or severe hepatic impairment. Monitor for adverse reactions in hepatic impairment."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 4mg oral or IV twice daily for 3 days, beginning the day before Loncastuximab Tesirine (if not started day before, give at least 2 hours prior to infusion)",
+      "Aciclovir 400mg oral twice a day (anti-infective prophylaxis)",
+      "Co-trimoxazole 960mg oral once a day on Monday, Wednesday and Friday (anti-infective prophylaxis)"
+    ],
+    "special_warnings": [
+      "PHOTOSENSITIVITY: Patients should avoid prolonged exposure of skin to sunlight. Advise patients to minimise or avoid exposure to direct natural or artificial sunlight including exposure through glass windows. Patients should wear sun-protective clothing and/or use sunscreen products. If a skin reaction or rash develops, dermatologic consultation should be considered.",
+      "Peripheral oedema: Withhold treatment for Grade 2 or higher oedema or effusion until resolved to Grade 1 or less.",
+      "CD19-targeted ADC (antibody-drug conjugate): Confirm CD19-positive disease before use.",
+      "Irritant with vesicant-like properties: Monitor infusion site closely.",
+      "Missed dose: Administer as soon as possible and adjust schedule to maintain 21-day interval between doses.",
+      "TLS prophylaxis should be prescribed according to individual patient TLS risk and at consultant discretion.",
+      "In principle, dose reductions due to adverse drug reactions should not be re-escalated without consultant approval. If a third dose reduction is necessary, treatment should be stopped."
+    ],
+    "required_patient_fields": [
+      "weight",
+      "bmi",
+      "cd19_status",
+      "neutrophil_count",
+      "platelet_count",
+      "liver_function_tests",
+      "creatinine_clearance"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "MINI-RCHOP-21",
+    "protocol_name": "mini-RCHOP 21 (Cyclophosphamide-Doxorubicin-Prednisolone-Rituximab-Vincristine)",
+    "disease_site": "CD20 positive Non-Hodgkin Lymphoma",
+    "category": "lymphoma",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Rituximab",
+        "dose": 375.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 500mL sodium chloride 0.9%. Rate of administration varies; refer to rituximab administration guidelines. Dose rounded to the nearest 100mg (up if half way). Cycle 6 doxorubicin dose is 50mg/m²."
+      },
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 400.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus over 10 minutes. Dose banded in accordance with national dose bands (20mg/mL). Consider mesna in patients with pre-existing bladder disorders: oral mesna 40% of cyclophosphamide dose (rounded up to nearest 400mg) at 0, 2 and 6 hours after cyclophosphamide."
+      },
+      {
+        "drug_name": "Doxorubicin",
+        "dose": 25.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus over 10 minutes. Dose banded in accordance with national dose bands (2PM). Cycles 1-5: 25mg/m². Cycle 6: 50mg/m². Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). Discontinue if cardiac failure develops. Vesicant."
+      },
+      {
+        "drug_name": "Vincristine",
+        "dose": 1.0,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": 2.0,
+        "max_dose_unit": "mg",
+        "notes": "Intravenous bolus in 50mL sodium chloride 0.9% over 10 minutes. Flat dose of 1mg (not mg/m²). Dose banded in accordance with national dose bands (1mg/mL). Maximum dose 2mg. Vesicant. NPSA/2008/RRR04 must be followed for intravenous vinca alkaloid administration."
+      },
+      {
+        "drug_name": "Prednisolone",
+        "dose": 40.0,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Oral, days 1-5. Tablets rounded to nearest 5mg (up if half way). Should be taken in the morning with or after food. Administration begins on morning of chemotherapy day. Prednisolone 40mg/m² on morning of treatment also serves as rituximab pre-medication."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils less than 1 x10⁹/L on proposed day 1 of cycle",
+        "drug_name": "Cyclophosphamide and Doxorubicin",
+        "factor": 1.0,
+        "notes": "Delay therapy until neutrophils are greater than or equal to 1 x10⁹/L. Consider G-CSF as secondary prophylaxis. Reconsider treatment options if not recovered after 14 days."
+      },
+      {
+        "condition": "Grade 4 neutropenia leading to infection despite G-CSF support",
+        "drug_name": "Cyclophosphamide and Doxorubicin",
+        "factor": 0.5,
+        "notes": "Reduce dose of cyclophosphamide and doxorubicin by 50% for all subsequent cycles."
+      },
+      {
+        "condition": "Grade 4 neutropenia recurs despite 50% dose reduction in cyclophosphamide and doxorubicin",
+        "drug_name": "Cyclophosphamide and Doxorubicin",
+        "factor": 0.0,
+        "notes": "Stop treatment."
+      },
+      {
+        "condition": "Platelets less than 100 x10⁹/L on proposed day 1 of cycle",
+        "drug_name": "Cyclophosphamide and Doxorubicin",
+        "factor": 1.0,
+        "notes": "Delay therapy until platelets are greater than or equal to 100 x10⁹/L. Reconsider treatment options if not recovered after 14 days."
+      },
+      {
+        "condition": "Grade 4 thrombocytopenia following any cycle",
+        "drug_name": "Cyclophosphamide and Doxorubicin",
+        "factor": 0.5,
+        "notes": "Reduce dose of cyclophosphamide and doxorubicin by 50% for all subsequent cycles."
+      },
+      {
+        "condition": "Grade 4 thrombocytopenia recurs despite 50% dose reduction",
+        "drug_name": "Cyclophosphamide and Doxorubicin",
+        "factor": 0.0,
+        "notes": "Stop treatment."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >30 µmol/L and AST 2-3xULN",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Clinical decision. Evidence that exposure to active metabolites may not be increased, suggesting dose reduction may not be necessary. There may be decreased efficacy in severe hepatic impairment."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin ≤20 µmol/L and AST 2-3xULN",
+        "drug_name": "Doxorubicin",
+        "factor": 0.75,
+        "notes": "Give 75% of original dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin 20-50 µmol/L and/or AST >3xULN",
+        "drug_name": "Doxorubicin",
+        "factor": 0.5,
+        "notes": "Give 50% of original dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin 51-85 µmol/L",
+        "drug_name": "Doxorubicin",
+        "factor": 0.25,
+        "notes": "Give 25% of original dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >85 µmol/L",
+        "drug_name": "Doxorubicin",
+        "factor": 0.0,
+        "notes": "Omit doxorubicin."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >51 µmol/L and normal AST/ALT",
+        "drug_name": "Vincristine",
+        "factor": 0.5,
+        "notes": "Give 50% of original dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >51 µmol/L and AST/ALT >180 units",
+        "drug_name": "Vincristine",
+        "factor": 0.0,
+        "notes": "Omit vincristine."
+      },
+      {
+        "condition": "Renal impairment: CrCl >20 mL/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "No dose adjustment required."
+      },
+      {
+        "condition": "Renal impairment: CrCl 10-20 mL/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Give 75% of original dose."
+      },
+      {
+        "condition": "Renal impairment: CrCl less than 10 mL/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Give 50% of original dose."
+      },
+      {
+        "condition": "Renal impairment: CrCl less than 10 mL/min",
+        "drug_name": "Doxorubicin",
+        "factor": 0.75,
+        "notes": "Give 75% of original dose."
+      },
+      {
+        "condition": "NCI-CTC grade 2 motor or grade 3 sensory neurological toxicity",
+        "drug_name": "Vincristine",
+        "factor": 0.5,
+        "notes": "Reduce vincristine dose. For higher toxicity grades or if toxicity increases despite dose reduction, stop vincristine."
+      },
+      {
+        "condition": "Cardiac failure develops",
+        "drug_name": "Doxorubicin",
+        "factor": 0.0,
+        "notes": "Discontinue doxorubicin if cardiac failure develops."
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV bolus 30 minutes prior to rituximab",
+      "Paracetamol 1000mg oral 30 minutes prior to rituximab",
+      "Prednisolone 40mg/m² oral on morning of treatment (also serves as rituximab pre-medication)",
+      "Ondansetron 8mg oral or IV bolus 15-30 minutes prior to chemotherapy",
+      "Hydrocortisone 100mg IV bolus when required for rituximab infusion-related reactions",
+      "Salbutamol 2.5mg nebule when required for rituximab-related bronchospasm",
+      "Allopurinol 300mg oral once a day for 7 days (first cycle only, TLS prophylaxis)",
+      "Aciclovir 400mg oral twice a day (anti-infective prophylaxis)",
+      "Co-trimoxazole 960mg oral once a day on Monday, Wednesday and Friday (anti-infective prophylaxis)",
+      "G-CSF growth factor according to local formulary choice (e.g. filgrastim 30MU SC daily for 7 days from day 6, or pegfilgrastim 6mg SC once on day 2)"
+    ],
+    "special_warnings": [
+      "For patients over 80 years old or with significant co-morbidities unlikely to tolerate full-dose RCHOP.",
+      "Baseline LVEF should be measured in patients with a history of cardiac problems, cardiac risk factors or in the elderly. Discontinue doxorubicin if cardiac failure develops.",
+      "Maximum lifetime cumulative doxorubicin dose is 450mg/m² (400mg/m² if prior radiotherapy to mediastinal/pericardial area).",
+      "Vincristine maximum dose 2mg. NPSA/2008/RRR04 must be followed for IV vinca alkaloid administration.",
+      "Rituximab administration is associated with cytokine release syndrome. Medicinal products for treatment of allergic reactions should be available. Monitor for PML.",
+      "Dose modifications for haematological toxicity (cyclophosphamide and doxorubicin only). Vincristine, rituximab and prednisolone are not dose-modified for haematological toxicity.",
+      "Hepatitis B status must be checked before starting rituximab.",
+      "Cycle 6 doxorubicin dose is 50mg/m² (double the dose used in cycles 1-5).",
+      "In principle, dose reductions due to adverse drug reactions should not be re-escalated without consultant approval. If a third dose reduction is necessary, treatment should be stopped."
+    ],
+    "required_patient_fields": [
+      "weight",
+      "height",
+      "bsa",
+      "lvef",
+      "creatinine_clearance",
+      "liver_function_tests",
+      "neutrophil_count",
+      "platelet_count",
+      "hepatitis_b_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "NIVOLUMAB-240MG-14",
+    "protocol_name": "Nivolumab 240mg (Flat Dose) - 14-day Cycle",
+    "disease_site": "Classical Hodgkin Lymphoma",
+    "category": "lymphoma",
+    "cycle_length_days": 14,
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Nivolumab",
+        "dose": 240.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Flat dose of 240mg. Intravenous infusion in 100mL sodium chloride 0.9% over 30 minutes. Administer via a 0.2-1.2 micron low protein binding filter. Treatment until intolerance or disease progression, to a maximum of 24 months (12 cycles set in Aria). Dose escalation or reduction is NOT recommended; doses are delayed, not reduced, for toxicity."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Immune-related pneumonitis Grade 2",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve, radiographic abnormalities improve, and management with corticosteroids is complete."
+      },
+      {
+        "condition": "Immune-related pneumonitis Grade 3 or 4",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "condition": "Immune-related colitis Grade 2 or 3 diarrhoea or colitis",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve and management with corticosteroids (if needed) is complete."
+      },
+      {
+        "condition": "Immune-related colitis Grade 4 diarrhoea or colitis",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "condition": "Immune-related hepatitis Grade 2 elevation in AST, ALT or total bilirubin",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Withhold until laboratory values return to baseline and management with corticosteroids (if needed) is complete."
+      },
+      {
+        "condition": "Immune-related hepatitis Grade 3 or 4 elevation in AST, ALT or total bilirubin",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "condition": "Immune-related nephritis Grade 2 or 3 creatinine elevation",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Withhold until creatinine returns to baseline and management with corticosteroids is complete."
+      },
+      {
+        "condition": "Immune-related nephritis Grade 4 creatinine elevation",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue. Initiate corticosteroids at 1-2 mg/kg/day methylprednisolone equivalents."
+      },
+      {
+        "condition": "Immune-related endocrinopathies - symptomatic (hypothyroidism, hyperthyroidism, hypophysitis, adrenal insufficiency, diabetes)",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve and management with corticosteroids (if needed) is complete. Continue nivolumab in presence of hormone replacement therapy if asymptomatic."
+      },
+      {
+        "condition": "Immune-related rash Grade 3",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Withhold dose until symptoms resolve and management with corticosteroids is complete."
+      },
+      {
+        "condition": "Immune-related rash Grade 4",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "condition": "Grade 2 or 3 immune-related adverse reactions persisting despite treatment modifications or corticosteroid dose cannot be reduced to 10mg prednisolone equivalent",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue. Do not resume if patient is still receiving immunosuppressive doses of corticosteroids."
+      },
+      {
+        "condition": "Hepatitis with AST/ALT ≥5xULN or bilirubin >3xULN",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue in first instance."
+      },
+      {
+        "condition": "Treatment interruption of 12 weeks or longer",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Current funding approval precludes further treatment after interruption of 12 weeks or longer."
+      }
+    ],
+    "pre_medications": [
+      "No routine antiemetics required",
+      "Chlorphenamine 10mg IV when required for infusion-related reactions",
+      "Hydrocortisone sodium succinate 100mg IV when required for infusion-related reactions",
+      "Paracetamol 1000mg oral when required for infusion-related reactions",
+      "Loperamide 4mg oral initially then 2mg after each loose stool when required (max 16mg/24 hours)"
+    ],
+    "special_warnings": [
+      "Dose escalation or reduction is NOT recommended. Doses are delayed, not reduced, for toxicity.",
+      "Flat dose of 240mg regardless of weight or BSA.",
+      "Treatment for relapsed or refractory classical Hodgkin lymphoma after autologous stem cell transplant and treatment with brentuximab vedotin. WHO performance status 0 or 1 required.",
+      "Nivolumab is associated with immune-related adverse reactions that can be severe or life-threatening involving GI, liver, skin, nervous, endocrine or other organ systems.",
+      "Avoid systemic corticosteroids before starting nivolumab due to potential interference with pharmacodynamic activity. Corticosteroids may be used after starting nivolumab to treat immune-related adverse reactions.",
+      "Irradiated blood components required if transfusion needed.",
+      "Thyroid function tests required prior to starting treatment and then every 6 weeks or when clinically indicated.",
+      "Patients must be given a nivolumab Patient Alert Card.",
+      "Gastric protection with PPI or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed.",
+      "Treatment limited to maximum 24 months (12 cycles set in Aria)."
+    ],
+    "required_patient_fields": [
+      "who_performance_status",
+      "thyroid_function",
+      "liver_function_tests",
+      "creatinine",
+      "prior_autologous_sct",
+      "prior_brentuximab_vedotin"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "NIVOLUMAB-3MGKG-14",
+    "protocol_name": "Nivolumab 3mg/kg (Weight-Based) - 14-day Cycle",
+    "disease_site": "Classical Hodgkin Lymphoma",
+    "category": "lymphoma",
+    "cycle_length_days": 14,
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Nivolumab",
+        "dose": 3.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Weight-based dose of 3mg/kg. Intravenous infusion in 100mL sodium chloride 0.9% over 60 minutes. Dose banded according to nationally agreed bands. Administer via a 0.2-1.2 micron low protein binding filter. Treatment until intolerance or disease progression, to a maximum of 24 months (12 cycles set in Aria). Dose escalation or reduction is NOT recommended."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Immune-related pneumonitis Grade 2",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve, radiographic abnormalities improve, and management with corticosteroids is complete."
+      },
+      {
+        "condition": "Immune-related pneumonitis Grade 3 or 4",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "condition": "Immune-related colitis Grade 2 or 3 diarrhoea or colitis",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve and management with corticosteroids (if needed) is complete."
+      },
+      {
+        "condition": "Immune-related colitis Grade 4 diarrhoea or colitis",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "condition": "Immune-related hepatitis Grade 2 elevation in AST, ALT or total bilirubin",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Withhold until laboratory values return to baseline and management with corticosteroids (if needed) is complete."
+      },
+      {
+        "condition": "Immune-related hepatitis Grade 3 or 4 elevation in AST, ALT or total bilirubin",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "condition": "Immune-related nephritis Grade 2 or 3 creatinine elevation",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Withhold until creatinine returns to baseline and management with corticosteroids is complete."
+      },
+      {
+        "condition": "Immune-related nephritis Grade 4 creatinine elevation",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue. Initiate corticosteroids at 1-2 mg/kg/day methylprednisolone equivalents."
+      },
+      {
+        "condition": "Immune-related endocrinopathies - symptomatic (hypothyroidism, hyperthyroidism, hypophysitis, adrenal insufficiency, diabetes)",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve and management with corticosteroids (if needed) is complete. Continue nivolumab in presence of hormone replacement therapy if asymptomatic."
+      },
+      {
+        "condition": "Immune-related rash Grade 3",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Withhold dose until symptoms resolve and management with corticosteroids is complete."
+      },
+      {
+        "condition": "Immune-related rash Grade 4",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "condition": "Grade 2 or 3 immune-related adverse reactions persisting despite treatment modifications or corticosteroid dose cannot be reduced to 10mg prednisolone equivalent",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue. Do not resume if patient is still receiving immunosuppressive doses of corticosteroids."
+      },
+      {
+        "condition": "Hepatitis with AST/ALT ≥5xULN or bilirubin >3xULN",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue in first instance."
+      },
+      {
+        "condition": "Treatment interruption of 12 weeks or longer",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Current funding approval precludes further treatment after interruption of 12 weeks or longer."
+      }
+    ],
+    "pre_medications": [
+      "No routine antiemetics required",
+      "Chlorphenamine 10mg IV when required for infusion-related reactions",
+      "Hydrocortisone 100mg IV when required for infusion-related reactions",
+      "Paracetamol 1000mg oral when required for infusion-related reactions",
+      "Loperamide 4mg oral initially then 2mg after each loose stool when required (max 16mg/24 hours)"
+    ],
+    "special_warnings": [
+      "Dose escalation or reduction is NOT recommended for this weight-based regimen.",
+      "Treatment for relapsed or refractory classical Hodgkin lymphoma after autologous stem cell transplant and treatment with brentuximab vedotin. WHO performance status 0, 1 or 2 required.",
+      "Nivolumab is associated with immune-related adverse reactions that can be severe or life-threatening involving GI, liver, skin, nervous, endocrine or other organ systems.",
+      "Avoid systemic corticosteroids before starting nivolumab due to potential interference with pharmacodynamic activity. Corticosteroids may be used after starting nivolumab to treat immune-related adverse reactions.",
+      "Thyroid function tests required prior to starting treatment and then every 6 weeks or when clinically indicated.",
+      "Patients must be given a nivolumab Patient Alert Card.",
+      "Gastric protection with PPI or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed.",
+      "Treatment limited to maximum 24 months (12 cycles set in Aria).",
+      "There is little need to adjust dose for haematological toxicity; dose escalation or reduction is not recommended."
+    ],
+    "required_patient_fields": [
+      "weight",
+      "who_performance_status",
+      "thyroid_function",
+      "liver_function_tests",
+      "creatinine",
+      "prior_autologous_sct",
+      "prior_brentuximab_vedotin"
+    ],
+    "auc_dosing": null
+  }
+]

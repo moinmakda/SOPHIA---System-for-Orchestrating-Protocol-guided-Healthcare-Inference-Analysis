@@ -1,0 +1,2133 @@
+[
+  {
+    "protocol_id": "talimogene_10e6_pfu_melanoma",
+    "protocol_code": "SKIN-TALI-1E6",
+    "protocol_name": "Talimogene 10\u2076 PFU/ml for Melanoma",
+    "category": "skin",
+    "indication": "Melanoma \u2014 intralesional injection into cutaneous, subcutaneous and/or nodal lesions that are visible, palpable or detectable by ultrasound guidance. Initial (first) administration only.",
+    "version": "1",
+    "cycle_length_days": 14,
+    "total_cycles": null,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Talimogene laherparepvec",
+        "dose": 1000000,
+        "dose_unit": "units",
+        "route": "Subcutaneous",
+        "days": [
+          1
+        ],
+        "frequency": "Single administration \u2014 first dose only at 10\u2076 PFU/ml",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 4,
+        "max_dose_unit": "ml",
+        "special_instructions": "Intratumoral injection. First administration only at 10\u2076 PFU/ml concentration. Total injection volume must not exceed 4ml per treatment session. Inject the largest lesion first; prioritise remaining lesions by size. Volume per lesion: >5cm up to 4ml; 2.5-5cm up to 2ml; 1.5-2.5cm up to 1ml; 0.5-1.5cm up to 0.5ml; \u22640.5cm up to 0.1ml. Light-sensitive genetically modified product \u2014 do not remove from manufacturer's packaging. Store frozen; record time removed from freezer and time dispensed.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [],
+    "dose_modifications": [],
+    "treatment_delay_criteria": {
+      "neutrophils_min": null,
+      "platelets_min": null,
+      "notes": "No specific haematological delay criteria stated for first administration. Second dose given 21 days after first; subsequent doses every 14 days at 10\u2078 PFU/ml (see separate protocol)."
+    },
+    "monitoring_requirements": [
+      "Patient Information Card to be confirmed (yes/no) prior to administration",
+      "Record time removed from freezer, time dispensed, time put in pharmacy fridge"
+    ],
+    "special_warnings": [
+      "Genetically modified product \u2014 handle with appropriate biosafety precautions",
+      "Light-sensitive product \u2014 do not remove from manufacturer's packaging until required",
+      "This prescription is for the FIRST administration only at 10\u2076 PFU/ml; second and subsequent doses use 10\u2078 PFU/ml (separate protocol)",
+      "No dose reductions specified \u2014 volume adjusted by lesion size",
+      "Talimogene laherparepvec: initial dose day 1, second dose day 22, then every 14 days. Biohazard precautions required for handling \u2014 live attenuated HSV-1."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "lesion_sizes_cm": "Required to calculate volume per lesion",
+      "patient_information_card_issued": "Yes/No"
+    },
+    "disease_site": "Skin",
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Talimogene laherparepvec",
+        "dose": 1000000,
+        "dose_unit": "units",
+        "route": "Subcutaneous",
+        "days": [
+          1
+        ],
+        "frequency": "Single administration \u2014 first dose only at 10\u2076 PFU/ml",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 4,
+        "max_dose_unit": "ml",
+        "special_instructions": "Intratumoral injection. First administration only at 10\u2076 PFU/ml concentration. Total injection volume must not exceed 4ml per treatment session. Inject the largest lesion first; prioritise remaining lesions by size. Volume per lesion: >5cm up to 4ml; 2.5-5cm up to 2ml; 1.5-2.5cm up to 1ml; 0.5-1.5cm up to 0.5ml; \u22640.5cm up to 0.1ml. Light-sensitive genetically modified product \u2014 do not remove from manufacturer's packaging. Store frozen; record time removed from freezer and time dispensed.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "Single administration \u2014 first dose only at 10\u2076 PFU/ml | Intratumoral injection. First administration only at 10\u2076 PFU/ml concentration. Total injection volume must not exceed 4ml per treatment session. Inject the largest lesion first; prioritise remaining lesions by size. Volume per lesion: >5cm up to 4ml; 2.5-5cm up to 2ml; 1.5-2.5cm up to 1ml; 0.5-1.5cm up to 0.5ml; \u22640.5cm up to 0.1ml. Light-sensitive genetically modified product \u2014 do not remove from manufacturer's packaging. Store frozen; record time removed from freezer and time dispensed."
+      }
+    ]
+  },
+  {
+    "protocol_id": "talimogene_10e8_pfu_melanoma",
+    "protocol_code": "SKIN-TALI-1E8",
+    "protocol_name": "Talimogene 10\u2078 PFU/ml for Melanoma",
+    "category": "skin",
+    "indication": "Melanoma \u2014 intralesional injection into cutaneous, subcutaneous and/or nodal lesions that are visible, palpable or detectable by ultrasound guidance. Second and subsequent administrations only.",
+    "version": "1",
+    "cycle_length_days": 14,
+    "total_cycles": null,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Talimogene laherparepvec",
+        "dose": 100000000,
+        "dose_unit": "units",
+        "route": "Subcutaneous",
+        "days": [
+          1
+        ],
+        "frequency": "Second dose 21 days after first dose; thereafter every 14 days",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 4,
+        "max_dose_unit": "ml",
+        "special_instructions": "Intratumoral injection. Second and subsequent administrations at 10\u2078 PFU/ml concentration. Total injection volume must not exceed 4ml per treatment session. Inject any new lesions first; then prioritise remaining lesions by size. Volume per lesion: >5cm up to 4ml; 2.5-5cm up to 2ml; 1.5-2.5cm up to 1ml; 0.5-1.5cm up to 0.5ml; \u22640.5cm up to 0.1ml. Light-sensitive genetically modified product \u2014 do not remove from manufacturer's packaging. Store frozen; record time removed from freezer and time dispensed.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [],
+    "dose_modifications": [],
+    "treatment_delay_criteria": {
+      "neutrophils_min": null,
+      "platelets_min": null,
+      "notes": "Second dose given 21 days after the first treatment. Thereafter treatments may be scheduled every 14 days."
+    },
+    "monitoring_requirements": [
+      "Patient Information Card to be confirmed (yes/no) prior to each administration",
+      "Record time removed from freezer, time dispensed, time put in pharmacy fridge"
+    ],
+    "special_warnings": [
+      "Genetically modified product \u2014 handle with appropriate biosafety precautions",
+      "Light-sensitive product \u2014 do not remove from manufacturer's packaging until required",
+      "This prescription is for the SECOND AND SUBSEQUENT administrations only at 10\u2078 PFU/ml; first dose uses 10\u2076 PFU/ml (separate protocol)",
+      "No dose reductions specified \u2014 volume adjusted by lesion size"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "lesion_sizes_cm": "Required to calculate volume per lesion",
+      "patient_information_card_issued": "Yes/No"
+    },
+    "disease_site": "Skin",
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Talimogene laherparepvec",
+        "dose": 100000000,
+        "dose_unit": "units",
+        "route": "Subcutaneous",
+        "days": [
+          1
+        ],
+        "frequency": "Second dose 21 days after first dose; thereafter every 14 days",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 4,
+        "max_dose_unit": "ml",
+        "special_instructions": "Intratumoral injection. Second and subsequent administrations at 10\u2078 PFU/ml concentration. Total injection volume must not exceed 4ml per treatment session. Inject any new lesions first; then prioritise remaining lesions by size. Volume per lesion: >5cm up to 4ml; 2.5-5cm up to 2ml; 1.5-2.5cm up to 1ml; 0.5-1.5cm up to 0.5ml; \u22640.5cm up to 0.1ml. Light-sensitive genetically modified product \u2014 do not remove from manufacturer's packaging. Store frozen; record time removed from freezer and time dispensed.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "Second dose 21 days after first dose; thereafter every 14 days | Intratumoral injection. Second and subsequent administrations at 10\u2078 PFU/ml concentration. Total injection volume must not exceed 4ml per treatment session. Inject any new lesions first; then prioritise remaining lesions by size. Volume per lesion: >5cm up to 4ml; 2.5-5cm up to 2ml; 1.5-2.5cm up to 1ml; 0.5-1.5cm up to 0.5ml; \u22640.5cm up to 0.1ml. Light-sensitive genetically modified product \u2014 do not remove from manufacturer's packaging. Store frozen; record time removed from freezer and time dispensed."
+      }
+    ]
+  },
+  {
+    "protocol_id": "binimetinib_encorafenib_melanoma",
+    "protocol_code": "SKIN-BINI-ENCOR",
+    "protocol_name": "Binimetinib-Encorafenib",
+    "category": "skin",
+    "indication": "Unresectable or metastatic BRAF V600 mutation-positive melanoma where the following conditions apply: confirmed histological diagnosis of malignant melanoma which is BRAF V600 mutation positive; unresectable stage III or stage IV disease staged according to the AJCC 8th edition; treatment naive to BRAF V600 and MEK inhibitors for malignant melanoma unless previously received adjuvant dabrafenib and trametinib without progression, or dabrafenib plus trametinib for advanced disease stopped within 3 months solely due to dose-limiting toxicity in clear absence of progression; sufficient WHO performance status; treatment continued until loss of clinical benefit, unacceptable toxicity, or withdrawal of consent; formal medical review at least by end of first 8 weeks; no treatment breaks >6 weeks beyond expected 4-weekly cycle length.",
+    "version": "1",
+    "cycle_length_days": 28,
+    "total_cycles": 12,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Binimetinib",
+        "dose": 45,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "Twice daily (days 1-28 of 28-day cycle)",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Available as 15mg tablets. Swallow whole with water with or without food. If a dose is missed, do not take if less than 6 hours until next dose. In case of vomiting, do not re-take dose \u2014 take next scheduled dose. Dose reduction ladder: Level 0 (starting) 45mg BD; Level -1: 30mg BD; Level -2: Not recommended (permanently discontinue).",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Encorafenib",
+        "dose": 450,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "Once daily (days 1-28 of 28-day cycle)",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Available as 75mg and 50mg capsules. Swallow whole with water with or without food. If a dose is missed, take only if more than 12 hours until next scheduled dose. In case of vomiting, do not re-take dose. Dose reduction ladder: Level 0 (starting) 450mg OD; Level -1: 300mg OD; Level -2: 200mg OD; Level -3: 100mg OD (limited data; permanently discontinue if unable to tolerate 100mg OD). If binimetinib is temporarily interrupted, reduce encorafenib to 300mg OD during interruption (450mg as monotherapy not well tolerated). Mild hepatic impairment (Child-Pugh A): reduce to 300mg OD. Not recommended in severe hepatic impairment (Child-Pugh C). Use with caution in severe renal impairment.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [
+      {
+        "drug_name": "Binimetinib",
+        "dose": 45,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice daily for 28 days",
+        "special_instructions": "Oral SACT"
+      },
+      {
+        "drug_name": "Encorafenib",
+        "dose": 450,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once daily for 28 days",
+        "special_instructions": "Oral SACT"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "General principle",
+        "condition": "Treatment-related toxicities (both drugs simultaneously unless specific exception applies)",
+        "affected_drugs": [
+          "binimetinib",
+          "encorafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "If treatment-related toxicities occur, both binimetinib AND encorafenib should be simultaneously interrupted, dose reduced, or discontinued. Exceptions where only binimetinib modified: LVEF reduction, RPED/RVO, ILD/pneumonitis, CK elevation/rhabdomyolysis, VTE. Exceptions where only encorafenib modified: PPE, uveitis, QTc prolongation."
+      },
+      {
+        "parameter": "Hepatotoxicity",
+        "condition": "AST/ALT Grade 2 (any bilirubin)",
+        "affected_drugs": [
+          "binimetinib",
+          "encorafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Maintain both agents. If no improvement within 2 weeks, withhold binimetinib until grade 0-1 or baseline, then resume same dose. If no improvement within further 2 weeks (4 weeks total), withhold encorafenib until grade 0-1 or baseline, then resume same dose."
+      },
+      {
+        "parameter": "Hepatotoxicity",
+        "condition": "AST/ALT First occurrence Grade 3 AND bilirubin >2x ULN",
+        "affected_drugs": [
+          "binimetinib",
+          "encorafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold both agents for up to 4 weeks. If improved to grade 0-1 or baseline, resume both at reduced dose. If no improvement, permanently discontinue both."
+      },
+      {
+        "parameter": "Hepatotoxicity",
+        "condition": "AST/ALT First occurrence Grade 4 (any bilirubin)",
+        "affected_drugs": [
+          "binimetinib",
+          "encorafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold both for up to 4 weeks. If improved to grade 0-1 or baseline, resume at reduced dose. If no improvement, permanently discontinue both."
+      },
+      {
+        "parameter": "Hepatotoxicity",
+        "condition": "Recurrent Grade 3 AND bilirubin >2x ULN",
+        "affected_drugs": [
+          "binimetinib",
+          "encorafenib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Consider permanent discontinuation of both agents."
+      },
+      {
+        "parameter": "Hepatotoxicity",
+        "condition": "Recurrent Grade 4 (any bilirubin)",
+        "affected_drugs": [
+          "binimetinib",
+          "encorafenib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Both agents permanently discontinued."
+      },
+      {
+        "parameter": "Cardiac \u2014 LVEF (Binimetinib specific)",
+        "condition": "Asymptomatic NCI-CTC Grade 2 LVEF decrease (absolute >10% from baseline AND below LLN)",
+        "affected_drugs": [
+          "binimetinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold binimetinib for up to 4 weeks; temporarily reduce encorafenib dose. Resume binimetinib at reduced dose if within 4 weeks: LVEF at or above LLN AND absolute decrease from baseline is 10% or less. If LVEF does not recover within 4 weeks, permanently discontinue binimetinib (and encorafenib)."
+      },
+      {
+        "parameter": "Cardiac \u2014 LVEF (Binimetinib specific)",
+        "condition": "NCI-CTC Grade 3 or 4 LVEF decrease OR symptomatic LVD",
+        "affected_drugs": [
+          "binimetinib",
+          "encorafenib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Binimetinib (and encorafenib) permanently discontinued."
+      },
+      {
+        "parameter": "QTc prolongation (Encorafenib specific)",
+        "condition": "QTc >500ms AND increased \u226460ms from baseline",
+        "affected_drugs": [
+          "encorafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold encorafenib (binimetinib may be continued). Once QTc \u2264500ms, restart encorafenib at reduced dose."
+      },
+      {
+        "parameter": "QTc prolongation (Encorafenib specific)",
+        "condition": "QTc >500ms AND increased >60ms from baseline",
+        "affected_drugs": [
+          "encorafenib",
+          "binimetinib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently stop encorafenib (and binimetinib)."
+      },
+      {
+        "parameter": "Pneumonitis/ILD (Binimetinib specific)",
+        "condition": "NCI-CTC Grade 2 pneumonitis/ILD",
+        "affected_drugs": [
+          "binimetinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold binimetinib for up to 4 weeks (temporarily reduce encorafenib). If improved to grade 0-1, resume binimetinib at reduced dose. If not resolved within 4 weeks, permanently discontinue binimetinib (and encorafenib)."
+      },
+      {
+        "parameter": "Pneumonitis/ILD",
+        "condition": "NCI-CTC Grade 3 or 4 pneumonitis/ILD",
+        "affected_drugs": [
+          "binimetinib",
+          "encorafenib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue binimetinib (and encorafenib)."
+      },
+      {
+        "parameter": "Uveitis (Encorafenib specific)",
+        "condition": "Grade 1-2 uveitis not responding to specific ocular therapy, or Grade 3 uveitis",
+        "affected_drugs": [
+          "encorafenib",
+          "binimetinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Interrupt encorafenib and binimetinib; repeat ophthalmic monitoring within 2 weeks. If grade 1 and improves to grade 0, resume at same dose. If grade 2-3 and improves to grade 0-1, resume at reduced encorafenib dose. If not improved within 6 weeks, permanently discontinue encorafenib and binimetinib."
+      },
+      {
+        "parameter": "RPED/RVO (Binimetinib specific)",
+        "condition": "Grade 2-3 RPED",
+        "affected_drugs": [
+          "binimetinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Interrupt binimetinib (dose reduce encorafenib for period of interruption only) for up to 2 weeks; repeat ophthalmic monitoring. If improved to grade 0-1, resume binimetinib at same dose. If improved to grade 2, resume at lower dose. If not improved to grade 2, permanently discontinue treatment."
+      },
+      {
+        "parameter": "RPED/RVO (Binimetinib specific)",
+        "condition": "Grade 4 RPED or RVO",
+        "affected_drugs": [
+          "binimetinib",
+          "encorafenib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue binimetinib (and also encorafenib)."
+      },
+      {
+        "parameter": "CK elevation/Rhabdomyolysis (Binimetinib specific)",
+        "condition": "NCI-CTC Grade 3 (CK >5-10x ULN) asymptomatic",
+        "affected_drugs": [
+          "binimetinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Maintain binimetinib dose; ensure adequate hydration."
+      },
+      {
+        "parameter": "CK elevation/Rhabdomyolysis (Binimetinib specific)",
+        "condition": "NCI-CTC Grade 4 (CK >10x ULN) asymptomatic",
+        "affected_drugs": [
+          "binimetinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold binimetinib (temporarily reduce encorafenib) until improved to grade 0-1; ensure adequate hydration."
+      },
+      {
+        "parameter": "CK elevation/Rhabdomyolysis (Binimetinib specific)",
+        "condition": "NCI-CTC Grade 3 or 4 (CK >5x ULN) with muscle symptoms or renal impairment",
+        "affected_drugs": [
+          "binimetinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold binimetinib (temporarily reduce encorafenib) until NCI-CTC grade 0-1. If resolved within 4 weeks, resume binimetinib at reduced dose. If not resolved, permanently discontinue binimetinib (and encorafenib)."
+      },
+      {
+        "parameter": "Skin \u2014 Binimetinib rash",
+        "condition": "NCI-CTC Grade 2 rash (worsening or not improving within 2 weeks)",
+        "affected_drugs": [
+          "binimetinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold binimetinib until improved to grade 0-1; resume at same dose (first occurrence) or reduced dose (recurrent grade 2)."
+      },
+      {
+        "parameter": "Skin \u2014 rash",
+        "condition": "NCI-CTC Grade 3 rash",
+        "affected_drugs": [
+          "binimetinib",
+          "encorafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold both until improved to grade 0-1; resume at same dose (first occurrence) or reduced dose (recurrent grade 3)."
+      },
+      {
+        "parameter": "Skin \u2014 rash",
+        "condition": "NCI-CTC Grade 4 rash",
+        "affected_drugs": [
+          "binimetinib",
+          "encorafenib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Both permanently discontinued."
+      },
+      {
+        "parameter": "Skin \u2014 PPE (Encorafenib specific)",
+        "condition": "NCI-CTC Grade 2 PPES",
+        "affected_drugs": [
+          "encorafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Maintain encorafenib and institute supportive measures (topical therapy). If not improved despite supportive therapy within 2 weeks, withhold encorafenib (binimetinib may continue) until grade 0-1; resume at same or reduced dose."
+      },
+      {
+        "parameter": "Skin \u2014 PPE (Encorafenib specific)",
+        "condition": "NCI-CTC Grade 3 PPES",
+        "affected_drugs": [
+          "encorafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold encorafenib (binimetinib may continue); institute supportive measures. Resume encorafenib at same or reduced dose when improved to grade 0-1."
+      },
+      {
+        "parameter": "VTE (Binimetinib specific)",
+        "condition": "Uncomplicated DVT or PE \u2264NCI-CTC Grade 3",
+        "affected_drugs": [
+          "binimetinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold binimetinib (encorafenib may continue). If improved to grade 0-1, resume binimetinib at reduced dose. If not improved, permanently discontinue binimetinib (and encorafenib)."
+      },
+      {
+        "parameter": "Other toxicities \u2014 general",
+        "condition": "Recurrent/intolerable grade 2 OR first occurrence grade 3 adverse reactions",
+        "affected_drugs": [
+          "binimetinib",
+          "encorafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold both for up to 4 weeks. If improved to grade 0-1 or baseline, resume at reduced dose. If not improved, permanently discontinue both."
+      },
+      {
+        "parameter": "Other toxicities \u2014 general",
+        "condition": "First occurrence grade 4 adverse reactions",
+        "affected_drugs": [
+          "binimetinib",
+          "encorafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold both for up to 4 weeks. If improved to grade 0-1 or baseline, resume at reduced dose. If not improved, permanently discontinue both."
+      },
+      {
+        "parameter": "Other toxicities \u2014 general",
+        "condition": "Recurrent grade 3 adverse reactions",
+        "affected_drugs": [
+          "binimetinib",
+          "encorafenib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Consider permanently discontinuing both agents."
+      },
+      {
+        "parameter": "Other toxicities \u2014 general",
+        "condition": "Recurrent grade 4 adverse reactions",
+        "affected_drugs": [
+          "binimetinib",
+          "encorafenib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Both permanently discontinued."
+      },
+      {
+        "parameter": "Haematological anaemia",
+        "condition": "Symptomatic anaemia or haemoglobin <8g/dL (80g/L)",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Consider blood transfusion or erythropoietin."
+      },
+      {
+        "parameter": "Hepatic impairment (baseline)",
+        "condition": "Mild hepatic impairment (Child-Pugh A)",
+        "affected_drugs": [
+          "encorafenib"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Reduce encorafenib dose to 300mg OD. Encorafenib not recommended in severe hepatic impairment (Child-Pugh C). No dose adjustment for binimetinib in renal impairment. Encorafenib use with caution in severe renal impairment."
+      },
+      {
+        "parameter": "New primary non-cutaneous malignancy",
+        "condition": "RAS mutation-positive new primary non-cutaneous malignancy",
+        "affected_drugs": [
+          "encorafenib",
+          "binimetinib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Consider permanently discontinuing encorafenib (and binimetinib). No dose modification required for new primary cutaneous malignancies."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": null,
+      "platelets_min": null,
+      "notes": "No specific neutrophil or platelet thresholds stated. Dose modifications based on toxicity grades (NCI-CTC). Serum electrolyte abnormalities (magnesium, potassium) should be corrected before treatment initiation and during treatment. Treatment breaks >6 weeks beyond expected 4-weekly cycle length not permitted without approval."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es every 4 weeks for 24 weeks, then every 12 weeks",
+      "Serum electrolytes (magnesium and potassium) \u2014 correct abnormalities before and during treatment",
+      "LDH every 4 weeks for 24 weeks, then as clinically indicated",
+      "Creatine phosphokinase every 4 weeks for 24 weeks, then as indicated",
+      "Blood pressure at baseline then every 4 weeks initially, then as indicated",
+      "Echo/MUGA at baseline then at 24 weeks unless clinically indicated",
+      "QTc interval at baseline, after 4 weeks, then every 12 weeks as indicated",
+      "Dermatologic evaluations at baseline then every 8 weeks while on therapy and for up to 24 weeks following discontinuation",
+      "Visual assessment at baseline and at each clinic visit",
+      "BRAF V600 status confirmed prior to starting treatment"
+    ],
+    "special_warnings": [
+      "Both binimetinib and encorafenib should be simultaneously interrupted, reduced, or discontinued for most toxicities",
+      "Encorafenib 450mg as single agent (without binimetinib) is not well tolerated \u2014 reduce to 300mg if binimetinib temporarily interrupted",
+      "Avoid concomitant potent CYP3A4 inducers (rifampicin, phenytoin, carbamazepine, St John's wort) or inhibitors with encorafenib",
+      "Encorafenib is both a CYP3A4 inhibitor and inducer \u2014 caution with CYP3A4 substrates (e.g. hormonal contraceptives)",
+      "Encorafenib inhibits UGT1A1 \u2014 caution with UGT1A1 substrates (raltegravir, atorvastatin, dolutegravir)",
+      "Binimetinib is a potential CYP1A2 inducer \u2014 caution with sensitive CYP1A2 substrates (duloxetine, theophylline)",
+      "Binimetinib is a weak OAT3 inhibitor \u2014 caution with OAT3 substrates (pravastatin, ciprofloxacin)",
+      "Binimetinib metabolised through UGT1A1 \u2014 caution with UGT1A1 inducers (rifampicin, phenobarbital) and inhibitors (indinavir, atazanavir, sorafenib)",
+      "Formal medical review required at least by end of first 8 weeks of treatment",
+      "Proton pump inhibitors may reduce efficacy \u2014 use H2 antagonist instead where gastric protection needed"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "braf_v600_mutation_status": "Must be confirmed positive prior to treatment",
+      "weight_kg": "Not required for dosing (flat dose) but useful for clinical assessment",
+      "lvef_baseline": "Required \u2014 Echo/MUGA at baseline",
+      "qtc_baseline_ms": "Required \u2014 ECG at baseline",
+      "hepatic_function": "Child-Pugh class required if hepatic impairment suspected"
+    },
+    "disease_site": "Skin",
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Binimetinib",
+        "dose": 45,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "Twice daily (days 1-28 of 28-day cycle)",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Available as 15mg tablets. Swallow whole with water with or without food. If a dose is missed, do not take if less than 6 hours until next dose. In case of vomiting, do not re-take dose \u2014 take next scheduled dose. Dose reduction ladder: Level 0 (starting) 45mg BD; Level -1: 30mg BD; Level -2: Not recommended (permanently discontinue).",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "Twice daily (days 1-28 of 28-day cycle) | Available as 15mg tablets. Swallow whole with water with or without food. If a dose is missed, do not take if less than 6 hours until next dose. In case of vomiting, do not re-take dose \u2014 take next scheduled dose. Dose reduction ladder: Level 0 (starting) 45mg BD; Level -1: 30mg BD; Level -2: Not recommended (permanently discontinue)."
+      },
+      {
+        "drug_name": "Encorafenib",
+        "dose": 450,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "Once daily (days 1-28 of 28-day cycle)",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Available as 75mg and 50mg capsules. Swallow whole with water with or without food. If a dose is missed, take only if more than 12 hours until next scheduled dose. In case of vomiting, do not re-take dose. Dose reduction ladder: Level 0 (starting) 450mg OD; Level -1: 300mg OD; Level -2: 200mg OD; Level -3: 100mg OD (limited data; permanently discontinue if unable to tolerate 100mg OD). If binimetinib is temporarily interrupted, reduce encorafenib to 300mg OD during interruption (450mg as monotherapy not well tolerated). Mild hepatic impairment (Child-Pugh A): reduce to 300mg OD. Not recommended in severe hepatic impairment (Child-Pugh C). Use with caution in severe renal impairment.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "Once daily (days 1-28 of 28-day cycle) | Available as 75mg and 50mg capsules. Swallow whole with water with or without food. If a dose is missed, take only if more than 12 hours until next scheduled dose. In case of vomiting, do not re-take dose. Dose reduction ladder: Level 0 (starting) 450mg OD; Level -1: 300mg OD; Level -2: 200mg OD; Level -3: 100mg OD (limited data; permanently discontinue if unable to tolerate 100mg OD). If binimetinib is temporarily interrupted, reduce encorafenib to 300mg OD during interruption (450mg as monotherapy not well tolerated). Mild hepatic impairment (Child-Pugh A): reduce to 300mg OD. Not recommended in severe hepatic impairment (Child-Pugh C). Use with caution in severe renal impairment."
+      }
+    ]
+  },
+  {
+    "protocol_id": "cemiplimab_350mg_skin",
+    "protocol_code": "SKIN-CEMI-350",
+    "protocol_name": "Cemiplimab (350mg)",
+    "category": "skin",
+    "indication": "Metastatic or locally advanced cutaneous squamous cell carcinoma in patients who are not candidates for curative surgery or curative radiation.",
+    "version": "1",
+    "cycle_length_days": 21,
+    "total_cycles": 35,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Cemiplimab",
+        "dose": 350,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Every 21 days (continued until disease progression or unacceptable toxicity or up to 24 months, whichever is sooner)",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Administer via 0.2-5 micron in-line or add-on filter. Final concentration should be between 1 and 20mg/ml. Patients must be issued with a Patient Alert Card. Do not use systemic corticosteroids or immunosuppressants before starting cemiplimab (except physiological doses \u226410mg/day prednisolone or equivalent). 35 cycles will be set in ARIA.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "timing": "When required for infusion-related reactions",
+        "notes": "PRN \u2014 not routine premedication"
+      },
+      {
+        "drug_name": "Hydrocortisone",
+        "dose": 100,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "timing": "When required for infusion-related reactions",
+        "notes": "PRN \u2014 not routine premedication"
+      },
+      {
+        "drug_name": "Paracetamol",
+        "dose": 1000,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "When required for infusion-related reactions",
+        "notes": "PRN \u2014 not routine premedication"
+      }
+    ],
+    "take_home_medicines": [],
+    "dose_modifications": [
+      {
+        "parameter": "General \u2014 immunotherapy",
+        "condition": "Dose reductions not permitted for immunotherapy",
+        "affected_drugs": [
+          "cemiplimab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Dose reductions of cemiplimab are NOT permitted. Treatment is either continued, withheld, or permanently discontinued based on toxicity. Funding approval precludes further treatment after interruption of 12 weeks or longer."
+      },
+      {
+        "parameter": "Haematological",
+        "condition": "No dose modification required for haematological toxicity",
+        "affected_drugs": [
+          "cemiplimab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "No requirement for dose modification or treatment interruption due to haematological toxicity. Consider blood transfusion or erythropoietin if symptomatic anaemia or Hb <8g/dL (80g/L)."
+      },
+      {
+        "parameter": "Immune-related pneumonitis",
+        "condition": "Grade 2 pneumonitis",
+        "affected_drugs": [
+          "cemiplimab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve, radiographic abnormalities improve, and management with corticosteroids is complete."
+      },
+      {
+        "parameter": "Immune-related pneumonitis",
+        "condition": "Grade 3 or 4 pneumonitis",
+        "affected_drugs": [
+          "cemiplimab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue cemiplimab."
+      },
+      {
+        "parameter": "Immune-related colitis",
+        "condition": "Grade 2 or 3 diarrhoea or colitis",
+        "affected_drugs": [
+          "cemiplimab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve and management with corticosteroids (if needed) is complete."
+      },
+      {
+        "parameter": "Immune-related colitis",
+        "condition": "Grade 4 diarrhoea or colitis",
+        "affected_drugs": [
+          "cemiplimab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue cemiplimab."
+      },
+      {
+        "parameter": "Immune-related hepatitis",
+        "condition": "Grade 2 elevation in AST, ALT, or total bilirubin",
+        "affected_drugs": [
+          "cemiplimab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until laboratory values return to baseline and management with corticosteroids (if needed) is complete."
+      },
+      {
+        "parameter": "Immune-related hepatitis",
+        "condition": "Grade 3 or 4 elevation in AST, ALT, or total bilirubin",
+        "affected_drugs": [
+          "cemiplimab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue cemiplimab."
+      },
+      {
+        "parameter": "Immune-related nephritis and renal dysfunction",
+        "condition": "Grade 2 or 3 creatinine elevation",
+        "affected_drugs": [
+          "cemiplimab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until creatinine returns to baseline and management with corticosteroids is complete."
+      },
+      {
+        "parameter": "Immune-related nephritis and renal dysfunction",
+        "condition": "Grade 4 creatinine elevation",
+        "affected_drugs": [
+          "cemiplimab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue cemiplimab."
+      },
+      {
+        "parameter": "Immune-related endocrinopathies",
+        "condition": "Symptomatic endocrinopathies (hypothyroidism, hyperthyroidism, hypophysitis, adrenal insufficiency, diabetes)",
+        "affected_drugs": [
+          "cemiplimab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve and management with corticosteroids (if needed for acute inflammation) is complete. Cemiplimab may be continued with hormone replacement therapy as long as no symptoms present. Isolated hypothyroidism can be managed with replacement therapy without interruption."
+      },
+      {
+        "parameter": "Immune-related rash",
+        "condition": "Grade 3 rash",
+        "affected_drugs": [
+          "cemiplimab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold dose until symptoms resolve and management with corticosteroids is complete."
+      },
+      {
+        "parameter": "Immune-related rash",
+        "condition": "Grade 4 rash",
+        "affected_drugs": [
+          "cemiplimab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue cemiplimab."
+      },
+      {
+        "parameter": "Persistent grade 2-3 immune-related reactions",
+        "condition": "Grade 2 or 3 immune-related adverse reactions persisting despite treatment modifications or corticosteroid reduction to 10mg prednisolone equivalent cannot be achieved",
+        "affected_drugs": [
+          "cemiplimab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue cemiplimab."
+      },
+      {
+        "parameter": "Recurrent severe reactions",
+        "condition": "Any recurrence of a severe or NCI-CTC grade 3 reaction; any persistent NCI-CTC grade 2 or 3 treatment-related adverse reaction not recovering to grade 1 within 12 weeks",
+        "affected_drugs": [
+          "cemiplimab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue cemiplimab."
+      },
+      {
+        "parameter": "Immunosuppressive therapy",
+        "condition": "Patient still receiving immunosuppressive doses of corticosteroids or other immunosuppressive therapy",
+        "affected_drugs": [
+          "cemiplimab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Do not resume cemiplimab while still on immunosuppressive doses."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": null,
+      "platelets_min": null,
+      "notes": "No haematological delay thresholds. FBC, LFTs and U&Es prior to each cycle for 8 cycles then every 12 weeks or as clinically indicated. Cemiplimab should be withheld for: NCI-CTC grade 2 pneumonitis or hepatitis; grade 2-3 colitis or renal impairment; any other severe or grade 3 treatment-related adverse reaction. Funding precludes further treatment after interruption of 12 weeks or longer."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to each cycle for 8 cycles then every 12 weeks or as clinically indicated",
+      "Thyroid function tests at baseline then every 6 weeks or as clinically indicated",
+      "Blood glucose monitoring every 6 weeks or as clinically indicated",
+      "Patient Alert Card must be issued",
+      "Monitor for immune-related adverse reactions: gastrointestinal, hepatic, pulmonary, endocrine, renal, skin, neurological"
+    ],
+    "special_warnings": [
+      "Cemiplimab is an immunotherapy \u2014 dose reductions are NOT permitted; doses are withheld or permanently discontinued based on toxicity",
+      "Autoimmune toxicities can be severe and life-threatening \u2014 early diagnosis and appropriate management essential",
+      "Do not resume cemiplimab if patient still receiving immunosuppressive doses of corticosteroids or other immunosuppressive therapy",
+      "Funding approval precludes further treatment after an interruption of 12 weeks or longer",
+      "Systemic corticosteroids or immunosuppressants before starting cemiplimab should be avoided (except physiological doses \u226410mg/day prednisolone or equivalent)",
+      "Immune-related reactions may occur months after the last dose",
+      "No pharmacokinetic drug-drug interaction studies have been conducted with cemiplimab",
+      "Treatment up to 24 months (35 cycles in ARIA)"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "patient_alert_card_issued": "Must be confirmed",
+      "weight_kg": "Not required for dosing (flat 350mg dose)",
+      "thyroid_function_baseline": "Required before starting treatment"
+    },
+    "disease_site": "Skin",
+    "number_of_cycles": 35,
+    "drugs": [
+      {
+        "drug_name": "Cemiplimab",
+        "dose": 350,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Every 21 days (continued until disease progression or unacceptable toxicity or up to 24 months, whichever is sooner)",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Administer via 0.2-5 micron in-line or add-on filter. Final concentration should be between 1 and 20mg/ml. Patients must be issued with a Patient Alert Card. Do not use systemic corticosteroids or immunosuppressants before starting cemiplimab (except physiological doses \u226410mg/day prednisolone or equivalent). 35 cycles will be set in ARIA.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.5,
+        "notes": "Every 21 days (continued until disease progression or unacceptable toxicity or up to 24 months, whichever is sooner) | Administer via 0.2-5 micron in-line or add-on filter. Final concentration should be between 1 and 20mg/ml. Patients must be issued with a Patient Alert Card. Do not use systemic corticosteroids or immunosuppressants before starting cemiplimab (except physiological doses \u226410mg/day prednisolone or equivalent). 35 cycles will be set in ARIA."
+      }
+    ]
+  },
+  {
+    "protocol_id": "ipilimumab_nivolumab_melanoma",
+    "protocol_code": "SKIN-IPI-NIVO",
+    "protocol_name": "IPILIMUMAB (3mg/kg)-NIVOLUMAB (1mg/kg)",
+    "category": "skin",
+    "indication": "Ipilimumab in combination with nivolumab is recommended for the treatment of advanced, unresectable metastatic melanoma. WHO performance status 0, 1.",
+    "version": "1.3",
+    "cycle_length_days": 21,
+    "total_cycles": 4,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Nivolumab",
+        "dose": 1,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Every 21 days for 4 cycles (combination phase), then monotherapy maintenance",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Administer FIRST during combination phase. Allow 30 minutes between administration of nivolumab and ipilimumab. Administer via 0.2-1.2 micron low protein binding filter. Nivolumab is neutral on extravasation. Dose banded according to agreed bands. Patient must be given nivolumab Patient Alert Card. After 4 cycles, transition to single-agent nivolumab: 240mg every 14 days (3 weeks after last combination dose) OR 480mg every 28 days (6 weeks after last combination dose).",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Ipilimumab",
+        "dose": 3,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Every 21 days for 4 cycles (combination phase only)",
+        "duration_minutes": 90,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Administer SECOND during combination phase (30 minutes after nivolumab). Administer using a low protein binding filter. Final concentration should be between 1-4mg/ml. Ipilimumab is neutral on extravasation. Dose banded according to agreed bands. At cycle 4, consider switching to single agent nivolumab. Avoid systemic corticosteroids before starting ipilimumab. Proton pump inhibitors may reduce efficacy \u2014 use H2 antagonist instead.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "timing": "When required for infusion-related reactions",
+        "notes": "PRN \u2014 not routine premedication. No routine antiemetics required."
+      },
+      {
+        "drug_name": "Hydrocortisone sodium succinate",
+        "dose": 100,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "timing": "When required for infusion-related reactions",
+        "notes": "PRN \u2014 not routine premedication"
+      },
+      {
+        "drug_name": "Paracetamol",
+        "dose": 1000,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "When required for infusion-related reactions",
+        "notes": "PRN \u2014 check patient has not already taken paracetamol; maximum 4g per 24 hours; 4 hours between doses"
+      }
+    ],
+    "take_home_medicines": [],
+    "dose_modifications": [
+      {
+        "parameter": "General \u2014 immunotherapy",
+        "condition": "Dose reductions not permitted for immunotherapy combination",
+        "affected_drugs": [
+          "ipilimumab",
+          "nivolumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Dose reductions of ipilimumab or nivolumab are NOT permitted. Treatment is either delayed (both drugs) or permanently discontinued. There is little need to adjust dose for haematological toxicity \u2014 dose delay criteria apply regardless of which drug caused the event."
+      },
+      {
+        "parameter": "Haematological",
+        "condition": "Symptomatic anaemia or Hb <8g/dL",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Consider blood transfusion or erythropoietin."
+      },
+      {
+        "parameter": "Hepatotoxicity",
+        "condition": "AST/ALT 3-5x ULN and/or total bilirubin 1.5-3x ULN",
+        "affected_drugs": [
+          "ipilimumab",
+          "nivolumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold both and administer corticosteroids. Upon improvement to NCI-CTC grade 1, taper corticosteroid over 1 month. Combination may be re-started when liver function remains at grade 1 following taper."
+      },
+      {
+        "parameter": "Hepatotoxicity",
+        "condition": "AST/ALT \u22655x ULN or bilirubin >3x ULN; OR hepatic injury not improving to grade 1 within 12 weeks; OR corticosteroid not reducible to \u226410mg prednisolone equivalent within 12 weeks; OR any NCI-CTC grade 3 or above",
+        "affected_drugs": [
+          "ipilimumab",
+          "nivolumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue both ipilimumab and nivolumab."
+      },
+      {
+        "parameter": "Renal impairment \u2014 NCI-CTC grade 2 or 3 creatinine elevation",
+        "condition": "Grade 2 or 3 serum creatinine elevation",
+        "affected_drugs": [
+          "ipilimumab",
+          "nivolumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold both; initiate corticosteroids. Upon improvement to grade 1, initiate taper over at least 1 month. May resume when reaction remains at grade 1 or below following taper."
+      },
+      {
+        "parameter": "Renal impairment \u2014 NCI-CTC grade 4 creatinine elevation; or not improving to grade 1 within 12 weeks",
+        "condition": "Grade 4 creatinine elevation OR failure to improve to grade 1 within 12 weeks",
+        "affected_drugs": [
+          "ipilimumab",
+          "nivolumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue both. Initiate corticosteroids at 1-2 mg/kg/day methylprednisolone equivalents for grade 4."
+      },
+      {
+        "parameter": "Immune-related GI toxicity \u2014 NCI-CTC grade 1-2 diarrhoea/mild-moderate colitis",
+        "condition": "Grade 1 or 2 diarrhoea / mild to moderate colitis",
+        "affected_drugs": [
+          "ipilimumab",
+          "nivolumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "May continue on combination with symptomatic treatment and close monitoring. If mild-moderate symptoms recur or persist 5-7 days, omit scheduled doses and consider prednisolone 1mg/kg orally OD. If resolution to grade 0-1 or return to baseline, resume at next scheduled dose. Doses omitted due to adverse reaction must not be replaced."
+      },
+      {
+        "parameter": "Immune-related GI toxicity \u2014 NCI-CTC grade 3 or 4 diarrhoea/colitis",
+        "condition": "Grade 3 or 4 diarrhoea, colitis, peritoneal signs, bowel perforation, ileus, fever",
+        "affected_drugs": [
+          "ipilimumab",
+          "nivolumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue both. Initiate high-dose IV corticosteroids immediately (unless bowel perforation). Consider infliximab 5mg/kg if symptoms do not respond to steroids in 5-7 days."
+      },
+      {
+        "parameter": "Neurological \u2014 grade 2 neuropathy",
+        "condition": "NCI-CTC grade 2 neuropathy likely related to ipilimumab or nivolumab",
+        "affected_drugs": [
+          "ipilimumab",
+          "nivolumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Omit scheduled dose. If neurologic symptoms resolve to baseline, patient may resume at next scheduled dose."
+      },
+      {
+        "parameter": "Neurological \u2014 grade 3 or 4 neuropathy",
+        "condition": "NCI-CTC grade 3 or 4 sensory neuropathy",
+        "affected_drugs": [
+          "ipilimumab",
+          "nivolumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue both ipilimumab and nivolumab."
+      },
+      {
+        "parameter": "Skin \u2014 grade 1 or 2",
+        "condition": "NCI-CTC grade 1 or 2 skin reactions",
+        "affected_drugs": [
+          "ipilimumab",
+          "nivolumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "May remain on therapy with symptomatic treatment (topical corticosteroids, antihistamines). For persistent grade 1-2 rash/pruritus consider oral corticosteroids (prednisolone 1mg/kg OD)."
+      },
+      {
+        "parameter": "Skin \u2014 grade 3 symptomatic",
+        "condition": "NCI-CTC grade 3 symptomatic skin reactions",
+        "affected_drugs": [
+          "ipilimumab",
+          "nivolumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Omit scheduled dose. If initial symptoms improve to grade 1 or resolve, therapy may resume at next scheduled dose."
+      },
+      {
+        "parameter": "Skin \u2014 grade 4 or grade 3 pruritus",
+        "condition": "NCI-CTC grade 4 rash or grade 3 pruritus",
+        "affected_drugs": [
+          "ipilimumab",
+          "nivolumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue both. Consider systemic corticosteroid therapy."
+      },
+      {
+        "parameter": "Other immune-related \u2014 grade 3 or above",
+        "condition": "Any other immune-related reaction at NCI-CTC grade 3 or above (uveitis, eosinophilia, lipase elevation, glomerulonephritis, iritis, haemolytic anaemia, amylase elevations, multi-organ failure, pneumonitis)",
+        "affected_drugs": [
+          "ipilimumab",
+          "nivolumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Consider immediate high-dose corticosteroid therapy and discontinuation of both ipilimumab and nivolumab. For uveitis/iritis/episcleritis: consider topical corticosteroid eyedrops."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": null,
+      "platelets_min": null,
+      "notes": "No specific neutrophil or platelet thresholds. FBC, LFTs and U&Es prior to day one of each cycle. Blood pressure prior to treatment. Thyroid function tests prior to starting and before each administration (cycle) or when clinically indicated. Funding precludes further treatment after interruption of 12 weeks or longer. Both drugs must be delayed until treatment can resume for any drug-related adverse event."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to day one of each cycle",
+      "Blood pressure prior to each treatment",
+      "Thyroid function tests prior to starting treatment and before each administration (cycle) or when clinically indicated",
+      "Monitor for immune-related adverse reactions: GI, hepatic, pulmonary, endocrine, renal, neurological, skin, ocular",
+      "Endoscopy if persistent NCI-CTC grade 2 diarrhoea or grade 1-2 diarrhoea with bleeding",
+      "Patient must be given nivolumab Patient Alert Card"
+    ],
+    "special_warnings": [
+      "Ipilimumab and nivolumab are immunotherapies \u2014 dose reductions are NOT permitted; only delay or permanent discontinuation",
+      "Autoimmune toxicities can be severe and life-threatening",
+      "Nivolumab must be administered FIRST; 30 minutes must elapse between both agents",
+      "Avoid systemic corticosteroids before starting ipilimumab (may interfere with pharmacodynamic activity); safe to use after starting to treat immune-related adverse reactions",
+      "Proton pump inhibitors may reduce efficacy of the combination \u2014 consider H2 antagonist for gastric protection instead",
+      "Funding approval precludes further treatment after an interruption of 12 weeks or longer",
+      "After 4 cycles of combination, transition to single-agent nivolumab 240mg q14 days or 480mg q28 days",
+      "At cycle 4, consider switching to single agent nivolumab (ARIA warning included)",
+      "Doses omitted due to adverse reaction must not be replaced",
+      "Immune-related reactions may occur months after the last dose"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "weight_kg": "Required for mg/kg dosing of both ipilimumab and nivolumab (dose banded per agreed bands)",
+      "who_performance_status": "Must be 0 or 1",
+      "thyroid_function_baseline": "Required before starting treatment",
+      "patient_alert_card_issued": "Must be confirmed"
+    },
+    "disease_site": "Skin",
+    "number_of_cycles": 4,
+    "drugs": [
+      {
+        "drug_name": "Nivolumab",
+        "dose": 1,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Every 21 days for 4 cycles (combination phase), then monotherapy maintenance",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Administer FIRST during combination phase. Allow 30 minutes between administration of nivolumab and ipilimumab. Administer via 0.2-1.2 micron low protein binding filter. Nivolumab is neutral on extravasation. Dose banded according to agreed bands. Patient must be given nivolumab Patient Alert Card. After 4 cycles, transition to single-agent nivolumab: 240mg every 14 days (3 weeks after last combination dose) OR 480mg every 28 days (6 weeks after last combination dose).",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.5,
+        "notes": "Every 21 days for 4 cycles (combination phase), then monotherapy maintenance | Administer FIRST during combination phase. Allow 30 minutes between administration of nivolumab and ipilimumab. Administer via 0.2-1.2 micron low protein binding filter. Nivolumab is neutral on extravasation. Dose banded according to agreed bands. Patient must be given nivolumab Patient Alert Card. After 4 cycles, transition to single-agent nivolumab: 240mg every 14 days (3 weeks after last combination dose) OR 480mg every 28 days (6 weeks after last combination dose)."
+      },
+      {
+        "drug_name": "Ipilimumab",
+        "dose": 3,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Every 21 days for 4 cycles (combination phase only)",
+        "duration_minutes": 90,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Administer SECOND during combination phase (30 minutes after nivolumab). Administer using a low protein binding filter. Final concentration should be between 1-4mg/ml. Ipilimumab is neutral on extravasation. Dose banded according to agreed bands. At cycle 4, consider switching to single agent nivolumab. Avoid systemic corticosteroids before starting ipilimumab. Proton pump inhibitors may reduce efficacy \u2014 use H2 antagonist instead.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.5,
+        "notes": "Every 21 days for 4 cycles (combination phase only) | Administer SECOND during combination phase (30 minutes after nivolumab). Administer using a low protein binding filter. Final concentration should be between 1-4mg/ml. Ipilimumab is neutral on extravasation. Dose banded according to agreed bands. At cycle 4, consider switching to single agent nivolumab. Avoid systemic corticosteroids before starting ipilimumab. Proton pump inhibitors may reduce efficacy \u2014 use H2 antagonist instead."
+      }
+    ]
+  },
+  {
+    "protocol_id": "bleomycin_ect_melanoma",
+    "protocol_code": "SKIN-BLEO-ECT",
+    "protocol_name": "Bleomycin (Electrochemotherapy)",
+    "category": "skin",
+    "indication": "Bleomycin, by electrochemotherapy, is recommended as an option for patients with melanoma with cutaneous and subcutaneous nodules. It may also be used for cutaneous metastases from other primary tumour after MDT discussion. Performance status 0, 1, 2.",
+    "version": "1",
+    "cycle_length_days": 28,
+    "total_cycles": 1,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Bleomycin",
+        "dose": 15000,
+        "dose_unit": "units",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "frequency": "Single treatment (one cycle). 1 cycle set in ARIA.",
+        "duration_minutes": 1,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 400000,
+        "max_dose_unit": "units",
+        "special_instructions": "Electrochemotherapy context \u2014 this protocol covers only the administration of bleomycin in the setting of electrochemotherapy; it does not cover the electrochemotherapy procedure itself. Administer as intravenous bolus over 30-60 seconds (no less than 30 seconds, no more than 60 seconds). After 8 minutes (to allow drug to diffuse into tissues), proceed with administration of required local anaesthetic. Electrochemotherapy then applied. Patient under general anaesthetic \u2014 administer hydrocortisone 100mg IV and chlorphenamine 10mg IV immediately before bleomycin to prevent adverse reactions. Bleomycin dose will be rounded to nearest 1,000 international units (up if halfway). Maximum cumulative dose 400,000 international units in patients <60 years; refer to SPC for older patients. Dose is per m\u00b2 body surface area. 15,000 IU/m\u00b2.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Hydrocortisone",
+        "dose": 100,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "timing": "Immediately before bleomycin administration",
+        "notes": "Patient is under general anaesthetic and cannot report adverse reactions \u2014 administer these agents immediately before bleomycin"
+      },
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "timing": "Immediately before bleomycin administration",
+        "notes": "Patient is under general anaesthetic and cannot report adverse reactions \u2014 administer immediately before bleomycin"
+      }
+    ],
+    "take_home_medicines": [],
+    "dose_modifications": [
+      {
+        "parameter": "Haematological \u2014 INR",
+        "condition": "INR \u22651.5",
+        "affected_drugs": [
+          "bleomycin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "INR must be less than 1.5 prior to prescribing. Platelets must be more than 70x10\u2079/L prior to prescribing."
+      },
+      {
+        "parameter": "Haematological \u2014 platelets",
+        "condition": "Platelets \u226470x10\u2079/L",
+        "affected_drugs": [
+          "bleomycin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Platelets must be more than 70x10\u2079/L prior to prescribing."
+      },
+      {
+        "parameter": "Renal impairment",
+        "condition": "Creatinine clearance 10-50 ml/min",
+        "affected_drugs": [
+          "bleomycin"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Reduce dose to 75% of original dose."
+      },
+      {
+        "parameter": "Renal impairment",
+        "condition": "Creatinine clearance <10 ml/min",
+        "affected_drugs": [
+          "bleomycin"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Reduce dose to 50% of original dose."
+      },
+      {
+        "parameter": "Hepatic impairment",
+        "condition": "Any hepatic impairment",
+        "affected_drugs": [
+          "bleomycin"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Hepatic impairment increases the risk of lung dysfunction \u2014 exercise caution and monitor closely."
+      },
+      {
+        "parameter": "Pulmonary toxicity",
+        "condition": "Pulmonary symptoms develop",
+        "affected_drugs": [
+          "bleomycin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Stop bleomycin until pulmonary symptoms can be fully investigated and a diagnosis made. Risk is greater in those >40 years, history of smoking, underlying lung disease, previous mediastinal radiotherapy, poor renal function, or requiring growth factors."
+      },
+      {
+        "parameter": "Cumulative dose limit",
+        "condition": "Cumulative dose approaching 400,000 IU",
+        "affected_drugs": [
+          "bleomycin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Maximum cumulative dose 400,000 international units in patients <60 years. Refer to SPC for older patients."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": null,
+      "platelets_min": 70,
+      "notes": "INR must be <1.5. Platelets must be >70x10\u2079/L. FBC, LFTs, U&Es and INR must be checked prior to treatment. Respiratory examination required pre-treatment. ECG before treatment depends on location of nodules (less important for limbs, more important for trunk) and patient's pre-morbid condition \u2014 highly recommended for manifest cardiac arrhythmia or previous cardiac event. Presence of pacemaker precludes treatment on the anterior chest wall. This is generally a single treatment (one cycle)."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs, U&Es and INR prior to treatment",
+      "Respiratory examination pre-treatment",
+      "ECG before treatment (especially if nodules on trunk, cardiac history, arrhythmia, or previous cardiac event)",
+      "Creatinine clearance assessment for renal dose adjustment",
+      "Monitor for pulmonary toxicity (bleomycin-induced pneumonitis)"
+    ],
+    "special_warnings": [
+      "This protocol covers ONLY the administration of bleomycin in the setting of electrochemotherapy \u2014 it does NOT cover the electrochemotherapy procedure itself",
+      "Electrochemotherapy combines chemotherapy with application of electric pulses to facilitate drug delivery into tumour cells",
+      "Patient is under general anaesthetic \u2014 cannot self-report adverse reactions; premedicate with hydrocortisone and chlorphenamine immediately before bleomycin",
+      "Presence of pacemaker precludes treatment on the anterior chest wall",
+      "Risk of bleomycin-induced pneumonitis is greater in patients >40 years, smokers, underlying lung disease, previous mediastinal radiotherapy, poor renal function, or requiring growth factors",
+      "Maximum cumulative bleomycin dose 400,000 IU in patients <60 years (refer to SPC for older patients)",
+      "All dose reductions due to adverse reactions should not be re-escalated in subsequent cycles without consultant approval",
+      "If a third dose reduction is necessary, treatment should be stopped",
+      "Bleomycin extravasation risk is neutral",
+      "No antiemetics required",
+      "Bleomycin electrochemotherapy: single-session procedure under general or local anaesthesia. Repeat sessions may be given at \u22658 week intervals."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "body_surface_area_m2": "Required for dose calculation (15,000 IU/m\u00b2)",
+      "creatinine_clearance_ml_min": "Required for renal dose adjustment",
+      "inr": "Must be <1.5",
+      "platelets": "Must be >70x10\u2079/L",
+      "cumulative_bleomycin_dose_iu": "Must track lifetime exposure against 400,000 IU limit",
+      "age_years": "Relevant to cumulative dose limit and pneumonitis risk"
+    },
+    "disease_site": "Skin",
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Bleomycin",
+        "dose": 15000,
+        "dose_unit": "units",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "frequency": "Single treatment (one cycle). 1 cycle set in ARIA.",
+        "duration_minutes": 1,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 400000,
+        "max_dose_unit": "units",
+        "special_instructions": "Electrochemotherapy context \u2014 this protocol covers only the administration of bleomycin in the setting of electrochemotherapy; it does not cover the electrochemotherapy procedure itself. Administer as intravenous bolus over 30-60 seconds (no less than 30 seconds, no more than 60 seconds). After 8 minutes (to allow drug to diffuse into tissues), proceed with administration of required local anaesthetic. Electrochemotherapy then applied. Patient under general anaesthetic \u2014 administer hydrocortisone 100mg IV and chlorphenamine 10mg IV immediately before bleomycin to prevent adverse reactions. Bleomycin dose will be rounded to nearest 1,000 international units (up if halfway). Maximum cumulative dose 400,000 international units in patients <60 years; refer to SPC for older patients. Dose is per m\u00b2 body surface area. 15,000 IU/m\u00b2.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.0167,
+        "notes": "Single treatment (one cycle). 1 cycle set in ARIA. | Electrochemotherapy context \u2014 this protocol covers only the administration of bleomycin in the setting of electrochemotherapy; it does not cover the electrochemotherapy procedure itself. Administer as intravenous bolus over 30-60 seconds (no less than 30 seconds, no more than 60 seconds). After 8 minutes (to allow drug to diffuse into tissues), proceed with administration of required local anaesthetic. Electrochemotherapy then applied. Patient under general anaesthetic \u2014 administer hydrocortisone 100mg IV and chlorphenamine 10mg IV immediately before bleomycin to prevent adverse reactions. Bleomycin dose will be rounded to nearest 1,000 international units (up if halfway). Maximum cumulative dose 400,000 international units in patients <60 years; refer to SPC for older patients. Dose is per m\u00b2 body surface area. 15,000 IU/m\u00b2."
+      }
+    ]
+  },
+  {
+    "protocol_id": "nivolumab_240mg_14day_melanoma",
+    "protocol_code": "SKIN-NIVO-240",
+    "protocol_name": "Nivolumab (240mg-14 days)",
+    "category": "skin",
+    "indication": "Nivolumab is recommended, within its marketing authorisation, as an option for previously treated advanced (unresectable or metastatic) melanoma in adults. WHO performance status 0, 1.",
+    "version": "1",
+    "cycle_length_days": 14,
+    "total_cycles": 12,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Nivolumab",
+        "dose": 240,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Every 14 days (12 cycles will be set in ARIA)",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Flat dose \u2014 doses are delayed, not reduced, for toxicity. Administer via 0.2-1.2 micron low protein binding filter (polyethylene lined giving sets used for paclitaxel with 0.22 micron filter are appropriate). Nivolumab is neutral on extravasation. Patient must be given a nivolumab Patient Alert Card. Avoid systemic corticosteroids before starting nivolumab. If switching from 240mg q14 days to 480mg q28 days, first 480mg dose should be administered 2 weeks after last 240mg dose. If used following ipilimumab-nivolumab combination (4 cycles), first 240mg monotherapy dose administered 3 weeks after last combination dose.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "timing": "When required for infusion-related reactions",
+        "notes": "PRN \u2014 not routine premedication. No routine antiemetics required."
+      },
+      {
+        "drug_name": "Hydrocortisone sodium succinate",
+        "dose": 100,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "timing": "When required for infusion-related reactions",
+        "notes": "PRN \u2014 not routine premedication"
+      },
+      {
+        "drug_name": "Paracetamol",
+        "dose": 1000,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "When required for infusion-related reactions",
+        "notes": "PRN \u2014 not routine premedication"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Loperamide",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "4mg initially then 2mg after each loose stool when required (max 16mg/24 hours)",
+        "special_instructions": "PRN for diarrhoea"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "General \u2014 immunotherapy",
+        "condition": "Dose escalation or reduction not recommended",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Nivolumab is a flat dose. Doses are delayed, NOT reduced, for toxicity. Dose escalation or reduction not recommended. Dosing delay or discontinuation may be required based on individual safety and tolerability."
+      },
+      {
+        "parameter": "Haematological",
+        "condition": "Haematological toxicity",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Little need to adjust dose for haematological toxicity. Consider blood transfusion or erythropoietin if symptomatic anaemia or Hb <8g/dL (80g/L)."
+      },
+      {
+        "parameter": "Immune-related pneumonitis",
+        "condition": "Grade 2 pneumonitis",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve, radiographic abnormalities improve, and management with corticosteroids is complete."
+      },
+      {
+        "parameter": "Immune-related pneumonitis",
+        "condition": "Grade 3 or 4 pneumonitis",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue nivolumab."
+      },
+      {
+        "parameter": "Immune-related pneumonitis \u2014 second episode",
+        "condition": "Second episode of pneumonitis",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discontinue nivolumab."
+      },
+      {
+        "parameter": "Immune-related colitis",
+        "condition": "Grade 2 or 3 diarrhoea or colitis",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve and management with corticosteroids (if needed) is complete."
+      },
+      {
+        "parameter": "Immune-related colitis",
+        "condition": "Grade 4 diarrhoea or colitis",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue nivolumab."
+      },
+      {
+        "parameter": "Immune-related hepatitis",
+        "condition": "Grade 2 elevation in AST, ALT, or total bilirubin",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until laboratory values return to baseline and management with corticosteroids (if needed) is complete."
+      },
+      {
+        "parameter": "Immune-related hepatitis",
+        "condition": "Grade 3 or 4 elevation in AST, ALT, or total bilirubin",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue nivolumab."
+      },
+      {
+        "parameter": "Hepatotoxicity \u2014 severe",
+        "condition": "AST/ALT \u22655x ULN or bilirubin >3x ULN",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue nivolumab in first instance."
+      },
+      {
+        "parameter": "Hepatotoxicity \u2014 failure to improve",
+        "condition": "Hepatic injury not improving to NCI-CTC grade 1 within 12 weeks OR corticosteroid not reducible to \u226410mg prednisolone equivalent within 12 weeks OR any NCI-CTC grade 3 or above reaction",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue nivolumab."
+      },
+      {
+        "parameter": "Immune-related nephritis and renal dysfunction",
+        "condition": "Grade 2 or 3 creatinine elevation",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until creatinine returns to baseline and management with corticosteroids is complete."
+      },
+      {
+        "parameter": "Immune-related nephritis and renal dysfunction",
+        "condition": "Grade 4 creatinine elevation",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue nivolumab. Initiate corticosteroids at 1-2mg/kg/day methylprednisolone equivalents."
+      },
+      {
+        "parameter": "Renal \u2014 failure to improve",
+        "condition": "Creatinine not improving to grade 1 within 12 weeks OR corticosteroid not reducible to \u226410mg prednisolone equivalent within 12 weeks OR recurrent NCI-CTC grade 3 reaction",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue nivolumab."
+      },
+      {
+        "parameter": "Immune-related endocrinopathies",
+        "condition": "Symptomatic endocrinopathies (hypothyroidism, hyperthyroidism, hypophysitis, adrenal insufficiency, diabetes)",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve and corticosteroid management (if needed for acute inflammation) is complete. Nivolumab may be continued with hormone replacement therapy as long as no symptoms present. Isolated hypothyroidism can be managed with replacement therapy without interruption."
+      },
+      {
+        "parameter": "Immune-related rash",
+        "condition": "Grade 3 rash",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold dose until symptoms resolve and management with corticosteroids is complete."
+      },
+      {
+        "parameter": "Immune-related rash",
+        "condition": "Grade 4 rash",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue nivolumab."
+      },
+      {
+        "parameter": "Persistent grade 2-3 immune-related reactions",
+        "condition": "Grade 2 or 3 immune-related adverse reactions persisting despite treatment modifications, or corticosteroid reduction to 10mg prednisolone equivalent cannot be achieved",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue nivolumab."
+      },
+      {
+        "parameter": "Recurrent/severe immune-related reactions",
+        "condition": "NCI-CTC grade 3 or 4 pneumonitis or hepatitis; any life-threatening NCI-CTC grade 4 reaction; recurrence of severe or NCI-CTC grade 3 reaction; persistent NCI-CTC grade 2 or 3 reaction not recovering to grade 1 within 12 weeks",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue nivolumab."
+      },
+      {
+        "parameter": "Immunosuppressive therapy",
+        "condition": "Patient still receiving immunosuppressive doses of corticosteroids or other immunosuppressive therapy",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Do not resume nivolumab while still on immunosuppressive doses."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": null,
+      "platelets_min": null,
+      "notes": "No specific haematological thresholds for delay. FBC, LFTs and U&Es prior to day one of each cycle. Thyroid function tests prior to starting treatment and then every 6 weeks or when clinically indicated. Nivolumab should be withheld for: NCI-CTC grade 2 pneumonitis or hepatitis; any grade 2 or 3 colitis or renal impairment; any other severe or grade 3 treatment-related adverse reaction. Funding precludes further treatment after interruption of 12 weeks or longer."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to day one of each cycle",
+      "Thyroid function tests prior to starting treatment and then every 6 weeks or when clinically indicated",
+      "Monitor for immune-related adverse reactions: GI, hepatic, pulmonary, endocrine, renal, skin, neurological",
+      "Patient Alert Card must be issued and confirmed",
+      "Repeat chest imaging monthly as clinically indicated for lung toxicity monitoring"
+    ],
+    "special_warnings": [
+      "Nivolumab is an immunotherapy \u2014 dose reductions are NOT permitted; flat dose only; doses are delayed or permanently discontinued for toxicity",
+      "Autoimmune toxicities can be severe and life-threatening \u2014 early diagnosis and appropriate management essential",
+      "Do not resume nivolumab if patient still receiving immunosuppressive doses of corticosteroids or other immunosuppressive therapy",
+      "Avoid systemic corticosteroids before starting nivolumab (potential interference with pharmacodynamic activity and efficacy); safe to use after starting to treat immune-related reactions",
+      "Funding approval precludes further treatment after an interruption of 12 weeks or longer",
+      "Patient must be given a nivolumab Patient Alert Card",
+      "Immune-related reactions may occur months after the last dose",
+      "Gastric protection: proton pump inhibitor or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed",
+      "When switching from 240mg q14 days to 480mg q28 days: first 480mg dose 2 weeks after last 240mg dose",
+      "When following ipilimumab-nivolumab combination: first monotherapy dose 3 weeks after last combination dose (if 240mg q14 days selected)"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "who_performance_status": "Must be 0 or 1",
+      "patient_alert_card_issued": "Must be confirmed",
+      "thyroid_function_baseline": "Required before starting treatment",
+      "weight_kg": "Not required for dosing (flat 240mg dose)"
+    },
+    "disease_site": "Skin",
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Nivolumab",
+        "dose": 240,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Every 14 days (12 cycles will be set in ARIA)",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Flat dose \u2014 doses are delayed, not reduced, for toxicity. Administer via 0.2-1.2 micron low protein binding filter (polyethylene lined giving sets used for paclitaxel with 0.22 micron filter are appropriate). Nivolumab is neutral on extravasation. Patient must be given a nivolumab Patient Alert Card. Avoid systemic corticosteroids before starting nivolumab. If switching from 240mg q14 days to 480mg q28 days, first 480mg dose should be administered 2 weeks after last 240mg dose. If used following ipilimumab-nivolumab combination (4 cycles), first 240mg monotherapy dose administered 3 weeks after last combination dose.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.5,
+        "notes": "Every 14 days (12 cycles will be set in ARIA) | Flat dose \u2014 doses are delayed, not reduced, for toxicity. Administer via 0.2-1.2 micron low protein binding filter (polyethylene lined giving sets used for paclitaxel with 0.22 micron filter are appropriate). Nivolumab is neutral on extravasation. Patient must be given a nivolumab Patient Alert Card. Avoid systemic corticosteroids before starting nivolumab. If switching from 240mg q14 days to 480mg q28 days, first 480mg dose should be administered 2 weeks after last 240mg dose. If used following ipilimumab-nivolumab combination (4 cycles), first 240mg monotherapy dose administered 3 weeks after last combination dose."
+      }
+    ]
+  },
+  {
+    "protocol_id": "nivolumab_480mg_28day_melanoma",
+    "protocol_code": "SKIN-NIVO-480",
+    "protocol_name": "Nivolumab (480mg-28 days)",
+    "category": "skin",
+    "indication": "Nivolumab is recommended, within its marketing authorisation, as an option for previously treated advanced (unresectable or metastatic) melanoma in adults. WHO performance status 0, 1, 2.",
+    "version": "1",
+    "cycle_length_days": 28,
+    "total_cycles": 12,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Nivolumab",
+        "dose": 480,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Every 28 days (12 cycles will be set in ARIA)",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Flat dose \u2014 doses are delayed, not reduced, for toxicity. Administer via 0.2-1.2 micron low protein binding filter (polyethylene lined giving sets used for paclitaxel with 0.22 micron filter are appropriate). Nivolumab is neutral on extravasation. Patient must be given a nivolumab Patient Alert Card. Avoid systemic corticosteroids before starting nivolumab. If switching from 480mg q28 days to 240mg q14 days, first 240mg dose should be administered 4 weeks after last 480mg dose. If used following ipilimumab-nivolumab combination (4 cycles), first 480mg monotherapy dose administered 6 weeks after last combination dose.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "timing": "When required for infusion-related reactions",
+        "notes": "PRN \u2014 not routine premedication. No routine antiemetics required."
+      },
+      {
+        "drug_name": "Hydrocortisone sodium succinate",
+        "dose": 100,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "timing": "When required for infusion-related reactions",
+        "notes": "PRN \u2014 not routine premedication"
+      },
+      {
+        "drug_name": "Paracetamol",
+        "dose": 1000,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "When required for infusion-related reactions",
+        "notes": "PRN \u2014 not routine premedication"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Loperamide",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "4mg initially then 2mg after each loose stool when required (max 16mg/24 hours)",
+        "special_instructions": "PRN for diarrhoea"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "General \u2014 immunotherapy",
+        "condition": "Dose escalation or reduction not recommended",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Nivolumab is a flat dose. Doses are delayed, NOT reduced, for toxicity. Dose escalation or reduction not recommended. Dosing delay or discontinuation may be required based on individual safety and tolerability."
+      },
+      {
+        "parameter": "Haematological",
+        "condition": "Haematological toxicity",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Little need to adjust dose for haematological toxicity. Consider blood transfusion or erythropoietin if symptomatic anaemia or Hb <8g/dL (80g/L)."
+      },
+      {
+        "parameter": "Immune-related pneumonitis",
+        "condition": "Grade 2 pneumonitis",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve, radiographic abnormalities improve, and management with corticosteroids is complete."
+      },
+      {
+        "parameter": "Immune-related pneumonitis",
+        "condition": "Grade 3 or 4 pneumonitis",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue nivolumab."
+      },
+      {
+        "parameter": "Immune-related pneumonitis \u2014 second episode",
+        "condition": "Second episode of pneumonitis",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discontinue nivolumab."
+      },
+      {
+        "parameter": "Immune-related colitis",
+        "condition": "Grade 2 or 3 diarrhoea or colitis",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve and management with corticosteroids (if needed) is complete."
+      },
+      {
+        "parameter": "Immune-related colitis",
+        "condition": "Grade 4 diarrhoea or colitis",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue nivolumab."
+      },
+      {
+        "parameter": "Immune-related hepatitis",
+        "condition": "Grade 2 elevation in AST, ALT, or total bilirubin",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until laboratory values return to baseline and management with corticosteroids (if needed) is complete."
+      },
+      {
+        "parameter": "Immune-related hepatitis",
+        "condition": "Grade 3 or 4 elevation in AST, ALT, or total bilirubin",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue nivolumab."
+      },
+      {
+        "parameter": "Hepatotoxicity \u2014 severe",
+        "condition": "AST/ALT \u22655x ULN or bilirubin >3x ULN",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue nivolumab in first instance."
+      },
+      {
+        "parameter": "Hepatotoxicity \u2014 failure to improve",
+        "condition": "Hepatic injury not improving to NCI-CTC grade 1 within 12 weeks OR corticosteroid not reducible to \u226410mg prednisolone equivalent within 12 weeks OR any NCI-CTC grade 3 or above reaction",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue nivolumab."
+      },
+      {
+        "parameter": "Immune-related nephritis and renal dysfunction",
+        "condition": "Grade 2 or 3 creatinine elevation",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until creatinine returns to baseline and management with corticosteroids is complete."
+      },
+      {
+        "parameter": "Immune-related nephritis and renal dysfunction",
+        "condition": "Grade 4 creatinine elevation",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue nivolumab. Initiate corticosteroids at 1-2mg/kg/day methylprednisolone equivalents."
+      },
+      {
+        "parameter": "Renal \u2014 failure to improve",
+        "condition": "Creatinine not improving to grade 1 within 12 weeks OR corticosteroid not reducible to \u226410mg prednisolone equivalent within 12 weeks OR recurrent NCI-CTC grade 3 reaction",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue nivolumab."
+      },
+      {
+        "parameter": "Immune-related endocrinopathies",
+        "condition": "Symptomatic endocrinopathies (hypothyroidism, hyperthyroidism, hypophysitis, adrenal insufficiency, diabetes)",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve and corticosteroid management (if needed for acute inflammation) is complete. Nivolumab may be continued with hormone replacement therapy as long as no symptoms present. Isolated hypothyroidism can be managed with replacement therapy without interruption."
+      },
+      {
+        "parameter": "Immune-related rash",
+        "condition": "Grade 3 rash",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold dose until symptoms resolve and management with corticosteroids is complete."
+      },
+      {
+        "parameter": "Immune-related rash",
+        "condition": "Grade 4 rash",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue nivolumab."
+      },
+      {
+        "parameter": "Persistent grade 2-3 immune-related reactions",
+        "condition": "Grade 2 or 3 immune-related adverse reactions persisting despite treatment modifications, or corticosteroid reduction to 10mg prednisolone equivalent cannot be achieved",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue nivolumab."
+      },
+      {
+        "parameter": "Recurrent/severe immune-related reactions",
+        "condition": "NCI-CTC grade 3 or 4 pneumonitis or hepatitis; any life-threatening NCI-CTC grade 4 reaction; recurrence of severe or NCI-CTC grade 3 reaction; persistent NCI-CTC grade 2 or 3 reaction not recovering to grade 1 within 12 weeks",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue nivolumab."
+      },
+      {
+        "parameter": "Immunosuppressive therapy",
+        "condition": "Patient still receiving immunosuppressive doses of corticosteroids or other immunosuppressive therapy",
+        "affected_drugs": [
+          "nivolumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Do not resume nivolumab while still on immunosuppressive doses."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": null,
+      "platelets_min": null,
+      "notes": "No specific haematological thresholds for delay. FBC, LFTs and U&Es prior to day one of each cycle. Thyroid function tests prior to starting treatment and then every 6 weeks or when clinically indicated. Nivolumab should be withheld for: NCI-CTC grade 2 pneumonitis or hepatitis; any grade 2 or 3 colitis or renal impairment; any other severe or grade 3 treatment-related adverse reaction. Funding precludes further treatment after interruption of 12 weeks or longer."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to day one of each cycle",
+      "Thyroid function tests prior to starting treatment and then every 6 weeks or when clinically indicated",
+      "Monitor for immune-related adverse reactions: GI, hepatic, pulmonary, endocrine, renal, skin, neurological",
+      "Patient Alert Card must be issued and confirmed",
+      "Repeat chest imaging monthly as clinically indicated for lung toxicity monitoring"
+    ],
+    "special_warnings": [
+      "Nivolumab is an immunotherapy \u2014 dose reductions are NOT permitted; flat dose only; doses are delayed or permanently discontinued for toxicity",
+      "Autoimmune toxicities can be severe and life-threatening \u2014 early diagnosis and appropriate management essential",
+      "Do not resume nivolumab if patient still receiving immunosuppressive doses of corticosteroids or other immunosuppressive therapy",
+      "Avoid systemic corticosteroids before starting nivolumab (potential interference with pharmacodynamic activity and efficacy); safe to use after starting to treat immune-related reactions",
+      "Funding approval precludes further treatment after an interruption of 12 weeks or longer",
+      "Patient must be given a nivolumab Patient Alert Card",
+      "Immune-related reactions may occur months after the last dose",
+      "Gastric protection: proton pump inhibitor or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed",
+      "When switching from 480mg q28 days to 240mg q14 days: first 240mg dose 4 weeks after last 480mg dose",
+      "When following ipilimumab-nivolumab combination: first monotherapy dose 6 weeks after last combination dose (if 480mg q28 days selected)"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "who_performance_status": "Must be 0, 1, or 2",
+      "patient_alert_card_issued": "Must be confirmed",
+      "thyroid_function_baseline": "Required before starting treatment",
+      "weight_kg": "Not required for dosing (flat 480mg dose)"
+    },
+    "disease_site": "Skin",
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Nivolumab",
+        "dose": 480,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Every 28 days (12 cycles will be set in ARIA)",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Flat dose \u2014 doses are delayed, not reduced, for toxicity. Administer via 0.2-1.2 micron low protein binding filter (polyethylene lined giving sets used for paclitaxel with 0.22 micron filter are appropriate). Nivolumab is neutral on extravasation. Patient must be given a nivolumab Patient Alert Card. Avoid systemic corticosteroids before starting nivolumab. If switching from 480mg q28 days to 240mg q14 days, first 240mg dose should be administered 4 weeks after last 480mg dose. If used following ipilimumab-nivolumab combination (4 cycles), first 480mg monotherapy dose administered 6 weeks after last combination dose.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "Every 28 days (12 cycles will be set in ARIA) | Flat dose \u2014 doses are delayed, not reduced, for toxicity. Administer via 0.2-1.2 micron low protein binding filter (polyethylene lined giving sets used for paclitaxel with 0.22 micron filter are appropriate). Nivolumab is neutral on extravasation. Patient must be given a nivolumab Patient Alert Card. Avoid systemic corticosteroids before starting nivolumab. If switching from 480mg q28 days to 240mg q14 days, first 240mg dose should be administered 4 weeks after last 480mg dose. If used following ipilimumab-nivolumab combination (4 cycles), first 480mg monotherapy dose administered 6 weeks after last combination dose."
+      }
+    ]
+  }
+]

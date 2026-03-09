@@ -467,14 +467,22 @@ export function FlexibleProtocolBuilder({
     );
   };
 
-  // Quick add drug templates - use combination library
+  // Quick add drug templates - derived from protocol's own drugs (never hardcoded)
   const commonCombinations = protocol
-    ? [
-        { name: 'Aza Only', drugs: ['azacitidine'] },
-        { name: 'Ven Only', drugs: ['venetoclax'] },
-        { name: 'Aza + Ven', drugs: ['azacitidine', 'venetoclax'] },
-        { name: 'Aza + Ven + Gilteritinib', drugs: ['azacitidine', 'venetoclax', 'gilteritinib'] },
-      ]
+    ? (() => {
+        const mainDrugs = availableDrugs.filter(d => d.category === 'main');
+        const combos = mainDrugs.map(d => ({
+          name: d.drug_name,
+          drugs: [d.drug_id || d.drug_name.toLowerCase()],
+        }));
+        if (mainDrugs.length > 1) {
+          combos.push({
+            name: 'All drugs',
+            drugs: mainDrugs.map(d => d.drug_id || d.drug_name.toLowerCase()),
+          });
+        }
+        return combos;
+      })()
     : getAllCombinations();
 
   const applyQuickCombination = (combo) => {

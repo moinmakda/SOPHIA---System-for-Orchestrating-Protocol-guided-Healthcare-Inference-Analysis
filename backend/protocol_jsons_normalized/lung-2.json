@@ -1,0 +1,1286 @@
+[
+  {
+    "protocol_code": "NSCLC-BRIGATINIB",
+    "protocol_name": "NSCLC - Brigatinib",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 28,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Brigatinib",
+        "dose": 90.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 only: 90mg once daily days 1-7, then escalate to 180mg once daily days 8-28. From cycle 2 onwards: 180mg once daily days 1-28. Available as 30mg, 90mg and 180mg tablets. Swallow whole with water, with or without food. Avoid grapefruit/grapefruit juice. If interrupted 14+ days (non-toxicity reason), resume at 90mg once daily for 7 days before increasing to previously tolerated dose. If strong CYP3A inhibitors unavoidable, reduce from 180mg to 90mg or 90mg to 60mg."
+      },
+      {
+        "drug_name": "Brigatinib",
+        "dose": 180.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 only: dose escalation from 90mg (days 1-7) to 180mg (days 8-28). From cycle 2 onwards: 180mg once daily days 1-28."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Dose level -1 (days 1-7 of cycle 1)",
+        "drug_name": "Brigatinib",
+        "factor": null,
+        "notes": "Reduce to 60mg once daily for days 1-7"
+      },
+      {
+        "condition": "Dose level -1 (day 8+)",
+        "drug_name": "Brigatinib",
+        "factor": null,
+        "notes": "Reduce to 120mg once daily"
+      },
+      {
+        "condition": "Dose level -2 (days 1-7)",
+        "drug_name": "Brigatinib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue for days 1-7 component"
+      },
+      {
+        "condition": "Dose level -2 (day 8+)",
+        "drug_name": "Brigatinib",
+        "factor": null,
+        "notes": "Reduce to 90mg once daily"
+      },
+      {
+        "condition": "Dose level -3 (day 8+)",
+        "drug_name": "Brigatinib",
+        "factor": null,
+        "notes": "Reduce to 60mg once daily. Permanently discontinue if unable to tolerate 60mg once daily."
+      },
+      {
+        "condition": "Grade 3 haematological toxicity (neutrophils <1x10^9/L, lymphocytes <0.5x10^9/L, or platelets <50x10^9/L) - first occurrence",
+        "drug_name": "Brigatinib",
+        "factor": 1.0,
+        "notes": "Withhold until recovery to baseline, then resume at same dose"
+      },
+      {
+        "condition": "Grade 3 haematological toxicity - recurrence",
+        "drug_name": "Brigatinib",
+        "factor": null,
+        "notes": "Withhold until recovery to baseline then resume at next lower dose level or permanently discontinue"
+      },
+      {
+        "condition": "Grade 4 haematological toxicity - first occurrence",
+        "drug_name": "Brigatinib",
+        "factor": null,
+        "notes": "Withhold until recovery to baseline, then resume at next lower dose level"
+      },
+      {
+        "condition": "Severe hepatic impairment (Child-Pugh class C)",
+        "drug_name": "Brigatinib",
+        "factor": null,
+        "notes": "Reduce starting dose to 60mg once daily for first 7 days, then 120mg once daily"
+      },
+      {
+        "condition": "Grade 3 AST/ALT with bilirubin 2xULN or less",
+        "drug_name": "Brigatinib",
+        "factor": null,
+        "notes": "Withhold until recovery to baseline or ≤3xULN AST/ALT then resume at next lower dose"
+      },
+      {
+        "condition": "Grade 2+ AST/ALT with bilirubin >2xULN (no cholestasis or haemolysis)",
+        "drug_name": "Brigatinib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue brigatinib"
+      },
+      {
+        "condition": "Renal impairment GFR/eGFR ≥30ml/min",
+        "drug_name": "Brigatinib",
+        "factor": 1.0,
+        "notes": "No dose adjustment required"
+      },
+      {
+        "condition": "Renal impairment GFR/eGFR <30ml/min",
+        "drug_name": "Brigatinib",
+        "factor": null,
+        "notes": "Reduce starting dose to 60mg once daily for first 7 days then increase to 90mg once daily. Monitor closely for ILD/pneumonitis, especially in first week."
+      },
+      {
+        "condition": "ILD/pneumonitis Grade 1 during first 7 days",
+        "drug_name": "Brigatinib",
+        "factor": 1.0,
+        "notes": "Withhold until recovery to baseline, then resume at same dose level. Do NOT escalate to 180mg."
+      },
+      {
+        "condition": "ILD/pneumonitis Grade 2 during first 7 days",
+        "drug_name": "Brigatinib",
+        "factor": null,
+        "notes": "Withhold until recovery to baseline, then resume at next lower dose level. Do NOT escalate to 180mg."
+      },
+      {
+        "condition": "ILD/pneumonitis Grade 3 or 4 (any occurrence)",
+        "drug_name": "Brigatinib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue brigatinib"
+      },
+      {
+        "condition": "NCI-CTC Grade 3 hypertension",
+        "drug_name": "Brigatinib",
+        "factor": 1.0,
+        "notes": "Withhold until recovery to grade 1 or below (SBP <140mmHg, DBP <90mmHg), then resume at same dose. If recurs, resume at next lower dose or permanently discontinue."
+      },
+      {
+        "condition": "NCI-CTC Grade 4 hypertension",
+        "drug_name": "Brigatinib",
+        "factor": null,
+        "notes": "Withhold until recovery to grade 1 or below then resume at next lower dose or permanently discontinue. If recurs, permanently discontinue."
+      },
+      {
+        "condition": "Symptomatic bradycardia",
+        "drug_name": "Brigatinib",
+        "factor": null,
+        "notes": "Withhold until asymptomatic or heart rate ≥60bpm. If causative concomitant medication identified and stopped, resume at same dose. If no causative concomitant medication or not discontinued, resume at next lower dose."
+      },
+      {
+        "condition": "Grade 3 CPK elevation - first occurrence",
+        "drug_name": "Brigatinib",
+        "factor": 1.0,
+        "notes": "Withhold until recovery to grade 1 or baseline, then resume at same dose"
+      },
+      {
+        "condition": "Grade 3 CPK elevation - recurrence or Grade 4",
+        "drug_name": "Brigatinib",
+        "factor": null,
+        "notes": "Withhold until recovery to grade 1 or baseline, then resume at next lower dose level"
+      },
+      {
+        "condition": "Grade 3 lipase/amylase elevation - first occurrence",
+        "drug_name": "Brigatinib",
+        "factor": 1.0,
+        "notes": "Withhold until recovery to grade 1 or baseline, then resume at same dose"
+      },
+      {
+        "condition": "Grade 3 lipase/amylase elevation - recurrence or Grade 4",
+        "drug_name": "Brigatinib",
+        "factor": null,
+        "notes": "Withhold until recovery to grade 1 or baseline, then resume at next lower dose level"
+      },
+      {
+        "condition": "NCI-CTC Grade 3+ hyperglycaemia not controlled with optimal medical management",
+        "drug_name": "Brigatinib",
+        "factor": null,
+        "notes": "Withhold until adequate hyperglycaemic control achieved, then resume at next lower dose or permanently discontinue"
+      },
+      {
+        "condition": "NCI-CTC Grade 2 or 3 visual disturbance",
+        "drug_name": "Brigatinib",
+        "factor": null,
+        "notes": "Withhold until recovery to grade 1 or baseline, then resume at next lower dose level"
+      },
+      {
+        "condition": "NCI-CTC Grade 4 visual disturbance",
+        "drug_name": "Brigatinib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue brigatinib"
+      }
+    ],
+    "pre_medications": [
+      "Metoclopramide 10mg oral up to three times a day when required (cycle 1 take-home only)",
+      "Loperamide 4mg after first loose stool then 2mg after each subsequent loose stool, maximum 16mg in 24 hours (cycle 1 take-home only)"
+    ],
+    "special_warnings": [
+      "ALK-positive NSCLC previously treated with crizotinib only; ECOG PS 0-2",
+      "ILD/pneumonitis risk: monitor closely for new or worsening respiratory symptoms (dyspnoea, cough) especially in the first 7 days - do NOT escalate to 180mg if Grade 1-2 ILD occurs in first 7 days",
+      "Dose escalation scheme: 90mg once daily days 1-7 of cycle 1, then 180mg once daily from day 8 onwards",
+      "Permanently discontinue if patient unable to tolerate 60mg once daily",
+      "Grapefruit/grapefruit juice must be avoided (increases plasma concentrations)",
+      "Avoid concomitant strong and moderate CYP3A inducers; reduce dose with strong CYP3A inhibitors",
+      "If dose missed or vomiting occurs, do not take additional dose - take next dose at scheduled time",
+      "Allow at least 7-day interval between discontinuation of crizotinib and start of brigatinib",
+      "NPSA/2008/RRR001 oral chemotherapy safety alert must be followed",
+      "Must only be prescribed under supervision of a consultant oncologist",
+      "Bradycardia risk: monitor heart rate; increase monitoring frequency if concomitant bradycardia-causing drugs cannot be avoided",
+      "Treatment breaks of up to 6 weeks allowed to allow toxicities to settle"
+    ],
+    "required_patient_fields": [
+      "alk_fusion_status",
+      "ecog_performance_status",
+      "renal_function_egfr",
+      "liver_function_tests",
+      "fasting_glucose",
+      "lipase_amylase",
+      "heart_rate",
+      "blood_pressure",
+      "cpk_level",
+      "prior_crizotinib_treatment"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "NSCLC-CARBOPLATIN-AUC6-4CYC",
+    "protocol_name": "NSCLC - Carboplatin (AUC6) 4 Cycles",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 21,
+    "number_of_cycles": 4,
+    "drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 6.0,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": 890.0,
+        "max_dose_unit": "mg",
+        "notes": "Intravenous infusion in 500ml glucose 5% over 60 minutes. Dose banded per national dose band (10mg/ml). Maximum dose set at 890mg in ARIA (internationally recommended max 900mg at CrCl 125ml/min). AUC5 may be considered with EDTA clearance - seek consultant advice. Dose may need adjustment if GFR changes >10% from previous cycle."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1.5x10^9/L at start of cycle",
+        "drug_name": "Carboplatin",
+        "factor": 1.0,
+        "notes": "Delay treatment for 7 days. If counts recover, continue at initial dose. If counts remain low, use 20% dose reduction. If myelosuppression recurs despite reduction, stop treatment."
+      },
+      {
+        "condition": "Platelets <100x10^9/L at start of cycle",
+        "drug_name": "Carboplatin",
+        "factor": 1.0,
+        "notes": "Delay treatment for 7 days. If counts recover, continue at initial dose. If still low, use 20% dose reduction. If platelets fall below 50x10^9/L, reduce dose by 50%."
+      },
+      {
+        "condition": "Platelets <50x10^9/L",
+        "drug_name": "Carboplatin",
+        "factor": 0.5,
+        "notes": "Reduce dose by 50%"
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Carboplatin",
+        "factor": 1.0,
+        "notes": "No dose reduction necessary"
+      },
+      {
+        "condition": "Renal impairment: CrCl <20ml/min",
+        "drug_name": "Carboplatin",
+        "factor": 0.0,
+        "notes": "Do not administer if CrCl is less than 20ml/min"
+      },
+      {
+        "condition": "Significant GFR change >10% from previous cycle",
+        "drug_name": "Carboplatin",
+        "factor": 1.0,
+        "notes": "Dose adjustment may be required; recalculate AUC-based dose"
+      }
+    ],
+    "pre_medications": [
+      "Ondansetron 8mg oral or intravenous (15-30 minutes prior to chemotherapy)",
+      "Dexamethasone 8mg oral or intravenous (15-30 minutes prior to chemotherapy)",
+      "Dexamethasone 4mg twice a day oral for 3 days (take-home, starting day 2)",
+      "Metoclopramide 10mg three times a day when required oral (take-home)"
+    ],
+    "special_warnings": [
+      "Second line therapy of stage III or IV NSCLC; WHO PS 0-1; palliative intent",
+      "EDTA or calculated creatinine clearance required before first cycle",
+      "AUC5 may be considered with EDTA clearance instead of calculated GFR - seek consultant advice",
+      "Carboplatin is an irritant - extravasation precautions required",
+      "Dose of carboplatin may need alteration if renal function changes >10% from previous cycle",
+      "Gastric protection (PPI or H2 antagonist) may be considered in patients at high risk of GI ulceration",
+      "Prophylactic antibiotics can be considered if required",
+      "FBC, LFTs and U&Es required prior to each cycle; chest x-ray before each cycle"
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "neutrophil_count",
+      "platelet_count",
+      "renal_function"
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 6,
+      "max_dose_mg": 890
+    }
+  },
+  {
+    "protocol_code": "NSCLC-CARBOPLATIN-AUC6-GEMCITABINE",
+    "protocol_name": "NSCLC - Carboplatin (AUC6)-Gemcitabine",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 21,
+    "number_of_cycles": 4,
+    "drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 6.0,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": 890.0,
+        "max_dose_unit": "mg",
+        "notes": "Intravenous infusion in 500ml glucose 5% over 60 minutes. Dose banded per national dose band (10mg/ml). Maximum dose 890mg in ARIA (internationally recommended max 900mg at CrCl 125ml/min). AUC5 may be considered with EDTA clearance. Dose may need adjustment if GFR changes >10%."
+      },
+      {
+        "drug_name": "Gemcitabine",
+        "dose": 1200.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 250ml sodium chloride 0.9% over 30 minutes. Dose banded per national dose bands. If bilirubin >27micromol/L, initiate at 800mg/m2. Consider dose adjustment if CrCl <30ml/min. Gemcitabine is neutral (extravasation)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1.5x10^9/L on day 1",
+        "drug_name": "Carboplatin",
+        "factor": 1.0,
+        "notes": "Delay 7 days. If recovery, continue at initial dose. If still low, 20% dose reduction. If myelosuppression recurs, stop treatment."
+      },
+      {
+        "condition": "Neutrophils <1.5x10^9/L on day 1",
+        "drug_name": "Gemcitabine",
+        "factor": 1.0,
+        "notes": "Delay 7 days. If recovery, continue at initial dose. If still low, 20% dose reduction. If myelosuppression recurs, stop treatment. Day 8 dose adjustments per local practice."
+      },
+      {
+        "condition": "Platelets <100x10^9/L on day 1",
+        "drug_name": "Carboplatin",
+        "factor": 1.0,
+        "notes": "Delay 7 days. If recovery, continue at initial dose. If still low, 20% dose reduction. If platelets <50x10^9/L, reduce by 50%."
+      },
+      {
+        "condition": "Platelets <50x10^9/L",
+        "drug_name": "Carboplatin",
+        "factor": 0.5,
+        "notes": "Reduce dose by 50%"
+      },
+      {
+        "condition": "Platelets <50x10^9/L",
+        "drug_name": "Gemcitabine",
+        "factor": 0.5,
+        "notes": "Reduce dose by 50%"
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Carboplatin",
+        "factor": 1.0,
+        "notes": "No dose adjustment necessary"
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin >27micromol/L",
+        "drug_name": "Gemcitabine",
+        "factor": null,
+        "notes": "Initiate treatment with dose of 800mg/m2. AST elevations do not appear to cause dose-limiting toxicities."
+      },
+      {
+        "condition": "Renal impairment: CrCl <20ml/min",
+        "drug_name": "Carboplatin",
+        "factor": 0.0,
+        "notes": "Do not use"
+      },
+      {
+        "condition": "Renal impairment: CrCl <30ml/min",
+        "drug_name": "Gemcitabine",
+        "factor": null,
+        "notes": "Consider dose adjustment"
+      }
+    ],
+    "pre_medications": [
+      "Ondansetron 8mg oral or intravenous (day 1, 15-30 minutes prior to chemotherapy)",
+      "Dexamethasone 8mg oral or intravenous (day 1, 15-30 minutes prior to chemotherapy)",
+      "Dexamethasone 4mg twice a day oral for 3 days (take-home, starting day 2)",
+      "Metoclopramide 10mg three times a day when required oral (take-home)",
+      "Metoclopramide 10mg oral or intravenous (day 8, 15-30 minutes prior to chemotherapy only)"
+    ],
+    "special_warnings": [
+      "First line therapy of stage III or IV NSCLC; WHO PS 0-2; palliative intent",
+      "EDTA or calculated creatinine clearance required before first cycle; FBC day 8 required",
+      "Carboplatin is an irritant; Gemcitabine is neutral - extravasation precautions required",
+      "Gemcitabine has radiosensitising properties",
+      "Dose of carboplatin may need alteration if renal function changes >10% from previous cycle",
+      "Gastric protection (PPI or H2 antagonist) may be considered in patients at high risk of GI ulceration",
+      "Prophylactic antibiotics can be considered if required",
+      "Day 8 dose adjustments for gemcitabine should be made according to local practice guidelines"
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "neutrophil_count",
+      "platelet_count",
+      "renal_function",
+      "liver_function_bilirubin"
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 6,
+      "max_dose_mg": 890
+    }
+  },
+  {
+    "protocol_code": "SCLC-CARBOPLATIN-AUC6-ETOPOSIDE-IVPO",
+    "protocol_name": "SCLC - Carboplatin (AUC6)-Etoposide (Intravenous/Oral)",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 6.0,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": 890.0,
+        "max_dose_unit": "mg",
+        "notes": "Intravenous infusion in 500ml glucose 5% over 60 minutes. Dose banded per national dose band (10mg/ml). Maximum dose 890mg in ARIA (internationally recommended max 900mg at CrCl 125ml/min). AUC5 may be considered with EDTA clearance. Consider dose reduction in poor performance patients. Carboplatin is an irritant."
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 100.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 1000ml sodium chloride 0.9% over 60 minutes. Dose banded per national dose band (20mg/ml). Hypotension risk on rapid infusion. Etoposide is an irritant."
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 200.0,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          2,
+          3
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Oral etoposide taken once daily on days 2 and 3. Dose rounded to nearest 50mg (up if halfway). Take an hour before food or on an empty stomach. NPSA/2008/RRR001 oral chemotherapy safety alert must be followed."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1x10^9/L",
+        "drug_name": "Carboplatin",
+        "factor": 1.0,
+        "notes": "Delay 7 days. If recovery, continue at initial dose. If still low, use 80% of last dose. If myelosuppression recurs, stop treatment."
+      },
+      {
+        "condition": "Neutrophils <1x10^9/L",
+        "drug_name": "Etoposide",
+        "factor": 1.0,
+        "notes": "Delay 7 days. If recovery, continue at initial dose. If still low, use 80% of last dose. If myelosuppression recurs, stop treatment."
+      },
+      {
+        "condition": "Platelets 50-99x10^9/L",
+        "drug_name": "Carboplatin",
+        "factor": 1.0,
+        "notes": "Delay 7 days. If recovery, continue at initial dose. If still in range, continue using same approach."
+      },
+      {
+        "condition": "Platelets <50x10^9/L",
+        "drug_name": "Carboplatin",
+        "factor": 0.5,
+        "notes": "Reduce dose by 50%"
+      },
+      {
+        "condition": "Platelets <50x10^9/L",
+        "drug_name": "Etoposide",
+        "factor": 0.5,
+        "notes": "Reduce dose by 50%"
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Carboplatin",
+        "factor": 1.0,
+        "notes": "No dose adjustment necessary"
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin 26-51 micromol/L or AST/ALT 60-180 units",
+        "drug_name": "Etoposide",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose"
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin >51 micromol/L or AST/ALT >180 units",
+        "drug_name": "Etoposide",
+        "factor": null,
+        "notes": "Clinical decision required"
+      },
+      {
+        "condition": "Renal impairment: CrCl <20ml/min",
+        "drug_name": "Carboplatin",
+        "factor": 0.0,
+        "notes": "Do not use"
+      },
+      {
+        "condition": "Renal impairment: CrCl >50ml/min",
+        "drug_name": "Etoposide",
+        "factor": 1.0,
+        "notes": "100% of dose"
+      },
+      {
+        "condition": "Renal impairment: CrCl 15-50ml/min",
+        "drug_name": "Etoposide",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose"
+      },
+      {
+        "condition": "Renal impairment: CrCl <15ml/min",
+        "drug_name": "Etoposide",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose"
+      }
+    ],
+    "pre_medications": [
+      "Ondansetron 8mg oral or intravenous bolus (day 1, 15-30 minutes prior to chemotherapy)",
+      "Dexamethasone 8mg oral or intravenous bolus (day 1, 15-30 minutes prior to chemotherapy)",
+      "Dexamethasone 4mg twice a day oral for 3 days (take-home, starting day 2 morning and lunch)",
+      "Metoclopramide 10mg three times a day when required oral (take-home)",
+      "Ondansetron 8mg twice a day oral for 3 days (take-home, starting evening of day 1)"
+    ],
+    "special_warnings": [
+      "First line treatment of SCLC; WHO PS 0-3; palliative intent",
+      "SCLC can be very sensitive to chemotherapy - risk of tumour lysis syndrome. Consider allopurinol for at-risk patients starting the day before chemotherapy.",
+      "Etoposide IV on day 1; oral etoposide on days 2-3 - NPSA/2008/RRR001 oral chemotherapy safety alert MUST be adhered to for oral etoposide",
+      "Etoposide oral must be taken an hour before food or on an empty stomach",
+      "Hypotension risk with rapid IV etoposide infusion - administer over 60 minutes",
+      "Carboplatin and etoposide are both irritants - extravasation precautions required",
+      "AUC5 may be considered with EDTA clearance - seek consultant advice",
+      "Consider dose reduction in poor performance status patients",
+      "Gastric protection (PPI or H2 antagonist) may be considered in patients at high risk of GI ulceration",
+      "Prophylactic antibiotics can be considered if required"
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "neutrophil_count",
+      "platelet_count",
+      "renal_function",
+      "liver_function_tests"
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 6,
+      "max_dose_mg": 890
+    }
+  },
+  {
+    "protocol_code": "NSCLC-CARBOPLATIN-AUC5-PEMBROLIZUMAB-PEMETREXED",
+    "protocol_name": "NSCLC - Carboplatin (AUC5)-Pembrolizumab-Pemetrexed",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 21,
+    "number_of_cycles": 35,
+    "drugs": [
+      {
+        "drug_name": "Pembrolizumab",
+        "dose": 200.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 100ml sodium chloride 0.9% over 30 minutes using a 0.2 micron low protein binding filter. Administer BEFORE carboplatin and pemetrexed. Given for cycles 1-35 (up to 2 years total treatment). Dose reductions NOT permitted - treatment may be interrupted or discontinued only. Neutral extravasation risk."
+      },
+      {
+        "drug_name": "Pemetrexed",
+        "dose": 500.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 100ml glucose 5% or sodium chloride 0.9% over 10 minutes. Given for all 35 cycles. Carboplatin should be administered 30 minutes after end of pemetrexed infusion. Pemetrexed is an inflammitant. Dose banded per national dose bands (25NS). If CrCl <45ml/min consider dose reduction. Drain pleural/peritoneal effusions prior to administration."
+      },
+      {
+        "drug_name": "Carboplatin",
+        "dose": 5.0,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": 790.0,
+        "max_dose_unit": "mg",
+        "notes": "Intravenous infusion in 500ml glucose 5% over 60 minutes. Given for cycles 1-4 only. Dose banded per national dose band (10mg/ml). Maximum dose 790mg in ARIA (internationally recommended max 750mg at CrCl 125ml/min). AUC4 may be considered with EDTA clearance. Start 30 minutes after end of pemetrexed infusion. Carboplatin is an irritant."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Pembrolizumab - dose reductions not permitted",
+        "drug_name": "Pembrolizumab",
+        "factor": 1.0,
+        "notes": "Pembrolizumab dose reductions are NOT permitted. Treatment may only be interrupted or discontinued. Funding approval precludes further treatment after interruption of 12 weeks or longer."
+      },
+      {
+        "condition": "Haematological: platelets ≥50x10^9/L and neutrophils ≤0.5x10^9/L",
+        "drug_name": "Carboplatin",
+        "factor": null,
+        "notes": "Reduce to dose level -1 (AUC 3.75)"
+      },
+      {
+        "condition": "Haematological: platelets ≥50x10^9/L and neutrophils ≤0.5x10^9/L",
+        "drug_name": "Pemetrexed",
+        "factor": null,
+        "notes": "Reduce to dose level -1 (375mg/m2)"
+      },
+      {
+        "condition": "Haematological: platelets <49x10^9/L without bleeding",
+        "drug_name": "Carboplatin",
+        "factor": null,
+        "notes": "Reduce to dose level -1 (AUC 3.75)"
+      },
+      {
+        "condition": "Haematological: platelets <49x10^9/L without bleeding",
+        "drug_name": "Pemetrexed",
+        "factor": null,
+        "notes": "Reduce to dose level -1 (375mg/m2)"
+      },
+      {
+        "condition": "Haematological: platelets <49x10^9/L with NCI-CTC grade 2 bleeding",
+        "drug_name": "Carboplatin",
+        "factor": null,
+        "notes": "Reduce to dose level -2 (AUC 2.5)"
+      },
+      {
+        "condition": "Haematological: platelets <49x10^9/L with NCI-CTC grade 2 bleeding",
+        "drug_name": "Pemetrexed",
+        "factor": null,
+        "notes": "Reduce to dose level -2 (250mg/m2)"
+      },
+      {
+        "condition": "Haematological: neutrophils ≤0.99x10^9/L with fever",
+        "drug_name": "Carboplatin",
+        "factor": null,
+        "notes": "Reduce to dose level -1 (AUC 3.75)"
+      },
+      {
+        "condition": "Haematological: neutrophils ≤0.99x10^9/L with fever",
+        "drug_name": "Pemetrexed",
+        "factor": null,
+        "notes": "Reduce to dose level -1 (375mg/m2)"
+      },
+      {
+        "condition": "NCI-CTC Grade 3+ nausea/vomiting",
+        "drug_name": "Carboplatin",
+        "factor": 1.0,
+        "notes": "No dose change (maintain dose level 0)"
+      },
+      {
+        "condition": "NCI-CTC Grade 3+ nausea/vomiting",
+        "drug_name": "Pemetrexed",
+        "factor": 1.0,
+        "notes": "No dose change (maintain dose level 0)"
+      },
+      {
+        "condition": "NCI-CTC Grade 3+ diarrhoea",
+        "drug_name": "Pemetrexed",
+        "factor": null,
+        "notes": "Reduce to dose level -1 (375mg/m2)"
+      },
+      {
+        "condition": "NCI-CTC Grade 3+ mucositis",
+        "drug_name": "Pemetrexed",
+        "factor": null,
+        "notes": "Reduce to dose level -2 (250mg/m2)"
+      },
+      {
+        "condition": "NCI-CTC Grade 2 neurotoxicity",
+        "drug_name": "Carboplatin",
+        "factor": 1.0,
+        "notes": "No dose change"
+      },
+      {
+        "condition": "NCI-CTC Grade 2 neurotoxicity",
+        "drug_name": "Pemetrexed",
+        "factor": 1.0,
+        "notes": "No dose change"
+      },
+      {
+        "condition": "NCI-CTC Grade 3+ neurotoxicity",
+        "drug_name": "Carboplatin",
+        "factor": null,
+        "notes": "Reduce to dose level -1 (AUC 3.75)"
+      },
+      {
+        "condition": "NCI-CTC Grade 3+ neurotoxicity",
+        "drug_name": "Pemetrexed",
+        "factor": null,
+        "notes": "Reduce to dose level -1 (375mg/m2)"
+      },
+      {
+        "condition": "NCI-CTC Grade 3 transaminase",
+        "drug_name": "Carboplatin",
+        "factor": null,
+        "notes": "Reduce to dose level -1 (AUC 3.75)"
+      },
+      {
+        "condition": "NCI-CTC Grade 3 transaminase",
+        "drug_name": "Pemetrexed",
+        "factor": null,
+        "notes": "Reduce to dose level -1 (375mg/m2)"
+      },
+      {
+        "condition": "NCI-CTC Grade 4 transaminase",
+        "drug_name": "Carboplatin",
+        "factor": 0.0,
+        "notes": "Discontinue"
+      },
+      {
+        "condition": "NCI-CTC Grade 4 transaminase",
+        "drug_name": "Pemetrexed",
+        "factor": 0.0,
+        "notes": "Discontinue"
+      },
+      {
+        "condition": "Other NCI-CTC Grade 3+ toxicity",
+        "drug_name": "Carboplatin",
+        "factor": null,
+        "notes": "Reduce to dose level -1 (AUC 3.75)"
+      },
+      {
+        "condition": "Other NCI-CTC Grade 3+ toxicity",
+        "drug_name": "Pemetrexed",
+        "factor": null,
+        "notes": "Reduce to dose level -1 (375mg/m2)"
+      },
+      {
+        "condition": "Hepatic impairment: Carboplatin",
+        "drug_name": "Carboplatin",
+        "factor": 1.0,
+        "notes": "No dose reduction necessary"
+      },
+      {
+        "condition": "Hepatic impairment: Pembrolizumab (mild)",
+        "drug_name": "Pembrolizumab",
+        "factor": 1.0,
+        "notes": "No dose reduction in mild hepatic impairment"
+      },
+      {
+        "condition": "Pembrolizumab hepatitis: AST/ALT 3-5xULN and/or bilirubin 1.5-3xULN",
+        "drug_name": "Pembrolizumab",
+        "factor": 1.0,
+        "notes": "Withhold treatment and administer corticosteroids. May restart when liver function at NCI-CTC grade 1 following corticosteroid taper."
+      },
+      {
+        "condition": "Pembrolizumab hepatitis: AST/ALT ≥5xULN or bilirubin >3xULN or grade 3+",
+        "drug_name": "Pembrolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue pembrolizumab"
+      },
+      {
+        "condition": "Renal impairment: CrCl <20ml/min",
+        "drug_name": "Carboplatin",
+        "factor": 0.0,
+        "notes": "Do not administer"
+      },
+      {
+        "condition": "Renal impairment: CrCl <45ml/min",
+        "drug_name": "Pemetrexed",
+        "factor": null,
+        "notes": "Consider dose reduction"
+      },
+      {
+        "condition": "Pembrolizumab grade 2 nephritis",
+        "drug_name": "Pembrolizumab",
+        "factor": 1.0,
+        "notes": "Withhold treatment and administer corticosteroids. May restart when reaction at NCI-CTC grade 1 following corticosteroid taper."
+      },
+      {
+        "condition": "Pembrolizumab grade 3+ nephritis",
+        "drug_name": "Pembrolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue pembrolizumab"
+      },
+      {
+        "condition": "Pembrolizumab NCI-CTC grade 3 or 4 pneumonitis or any grade 4 adverse reaction",
+        "drug_name": "Pembrolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue pembrolizumab"
+      },
+      {
+        "condition": "Pembrolizumab NCI-CTC grade 2-3 colitis",
+        "drug_name": "Pembrolizumab",
+        "factor": 1.0,
+        "notes": "Withhold treatment and administer corticosteroids. May restart when colitis at grade 1 following corticosteroid taper."
+      }
+    ],
+    "pre_medications": [
+      "Folic acid 5mg once daily oral starting 1-2 weeks prior to pemetrexed and continuing for 3 weeks after last pemetrexed dose (MANDATORY)",
+      "Hydroxocobalamin (Vitamin B12) 1mg intramuscular injection every 3 months starting 1-2 weeks prior to pemetrexed (MANDATORY)",
+      "Dexamethasone 4mg twice a day oral starting day before pemetrexed for 3 days (skin rash prophylaxis - MANDATORY for pemetrexed)",
+      "Ondansetron 8mg oral or intravenous (cycles 1-4, 15-30 minutes prior to chemotherapy)",
+      "Dexamethasone 20mg intravenous if patient forgot to take oral dexamethasone pre-medication",
+      "Metoclopramide 10mg oral or intravenous (cycles 5-35, 15-30 minutes prior to chemotherapy)",
+      "Metoclopramide 10mg three times a day when required oral (take-home)",
+      "Chlorphenamine 10mg intravenous (as required for infusion-related reactions)",
+      "Hydrocortisone 100mg intravenous (as required for infusion-related reactions)",
+      "Paracetamol 1000mg oral (as required for infusion-related reactions)"
+    ],
+    "special_warnings": [
+      "Untreated PD-L1-positive or negative locally advanced or metastatic non-squamous NSCLC; EGFR and ALK mutation negative; PS 0-1",
+      "Pembrolizumab dose reductions are NOT permitted under any circumstances",
+      "Funding approval precludes further pembrolizumab after an interruption of 12 weeks or longer",
+      "Total treatment duration: 4 cycles carboplatin+pembrolizumab+pemetrexed, then up to 31 further cycles of pembrolizumab+pemetrexed maintenance (maximum 35 cycles / 2 years total)",
+      "Folic acid and B12 supplementation MANDATORY before pemetrexed - must start 1-2 weeks prior",
+      "Dexamethasone skin rash prophylaxis MANDATORY for pemetrexed (4mg twice daily for 3 days starting day before)",
+      "Pembrolizumab associated with immune-related adverse reactions: pneumonitis, nephritis, colitis, hepatitis, thyroid disorders, hypophysitis, endocrinopathy",
+      "Consider draining pleural or peritoneal effusions prior to pemetrexed administration",
+      "Pembrolizumab administered FIRST (before carboplatin and pemetrexed); carboplatin starts 30 minutes after end of pemetrexed",
+      "Pembrolizumab must be administered using a low protein binding (0.2 micron) filter",
+      "Carboplatin max dose 790mg (set at 790mg in ARIA); AUC4 may be considered with EDTA clearance",
+      "Gastric protection (PPI or H2 antagonist) may be considered in patients at high risk of GI ulceration",
+      "Thyroid function tests required before each cycle"
+    ],
+    "required_patient_fields": [
+      "pd_l1_status",
+      "egfr_mutation_status",
+      "alk_fusion_status",
+      "creatinine_clearance",
+      "neutrophil_count",
+      "platelet_count",
+      "renal_function",
+      "liver_function_tests",
+      "thyroid_function"
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 5,
+      "max_dose_mg": 790
+    }
+  },
+  {
+    "protocol_code": "NSCLC-CARBOPLATIN-AUC6-PEMETREXED",
+    "protocol_name": "NSCLC - Carboplatin (AUC6)-Pemetrexed",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 21,
+    "number_of_cycles": 4,
+    "drugs": [
+      {
+        "drug_name": "Pemetrexed",
+        "dose": 500.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 100ml glucose 5% or sodium chloride 0.9% over 10 minutes. Administered BEFORE carboplatin. Dose banded per national dose bands. If CrCl <45ml/min consider dose reduction. Drain pleural/peritoneal effusions prior to administration. Pemetrexed is an inflammitant."
+      },
+      {
+        "drug_name": "Carboplatin",
+        "dose": 6.0,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": 890.0,
+        "max_dose_unit": "mg",
+        "notes": "Intravenous infusion in 500ml glucose 5% over 60 minutes. Start 30 minutes after end of pemetrexed infusion. Dose banded per national dose band (10mg/ml). Maximum dose 890mg in ARIA (internationally recommended max 900mg at CrCl 125ml/min). AUC5 may be considered with EDTA clearance. Carboplatin is an irritant."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1.5x10^9/L",
+        "drug_name": "Carboplatin",
+        "factor": 1.0,
+        "notes": "Delay 7 days. If recovery, continue at initial dose. If still low, 20% dose reduction. If myelosuppression recurs, stop treatment."
+      },
+      {
+        "condition": "Neutrophils <1.5x10^9/L",
+        "drug_name": "Pemetrexed",
+        "factor": 1.0,
+        "notes": "Delay 7 days. If recovery, continue at initial dose. If still low, 20% dose reduction. If myelosuppression recurs, stop treatment."
+      },
+      {
+        "condition": "Platelets <100x10^9/L",
+        "drug_name": "Carboplatin",
+        "factor": 1.0,
+        "notes": "Delay 7 days. If recovery, continue at initial dose. If still low, 20% dose reduction."
+      },
+      {
+        "condition": "Platelets <50x10^9/L",
+        "drug_name": "Carboplatin",
+        "factor": 0.5,
+        "notes": "Reduce dose by 50%"
+      },
+      {
+        "condition": "Platelets <50x10^9/L",
+        "drug_name": "Pemetrexed",
+        "factor": 0.5,
+        "notes": "Reduce dose by 50%"
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Carboplatin",
+        "factor": 1.0,
+        "notes": "No dose reduction necessary"
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Pemetrexed",
+        "factor": null,
+        "notes": "Clinical decision required"
+      },
+      {
+        "condition": "Renal impairment: CrCl <20ml/min",
+        "drug_name": "Carboplatin",
+        "factor": 0.0,
+        "notes": "Do not administer"
+      },
+      {
+        "condition": "Renal impairment: CrCl <45ml/min",
+        "drug_name": "Pemetrexed",
+        "factor": null,
+        "notes": "Consider dose reduction"
+      }
+    ],
+    "pre_medications": [
+      "Folic acid 5mg once daily oral starting 1-2 weeks prior to pemetrexed and continuing for 3 weeks after last pemetrexed dose (MANDATORY)",
+      "Hydroxocobalamin (Vitamin B12) 1mg intramuscular injection every 3 months starting 1-2 weeks prior to pemetrexed (MANDATORY - prescribed separately, not in ARIA regime)",
+      "Dexamethasone 4mg twice a day oral starting day before pemetrexed for 3 days (skin rash prophylaxis - MANDATORY; given at pre-assessment/consent clinic for cycle 1)",
+      "Ondansetron 8mg oral or intravenous (15-30 minutes prior to SACT)",
+      "Dexamethasone 20mg intravenous if patient forgot to take oral dexamethasone pre-medication",
+      "Metoclopramide 10mg three times a day when required oral (take-home)"
+    ],
+    "special_warnings": [
+      "First line therapy of stage IIIB or IV adenocarcinoma or large cell carcinoma of the lung; WHO PS 0-1; palliative intent",
+      "Folic acid and B12 (hydroxocobalamin) supplementation MANDATORY before pemetrexed - must start 1-2 weeks prior to first dose",
+      "Dexamethasone skin rash prophylaxis MANDATORY for pemetrexed (4mg twice daily for 3 days starting day before each pemetrexed infusion)",
+      "Pemetrexed administered BEFORE carboplatin; carboplatin starts 30 minutes after end of pemetrexed infusion",
+      "Consideration should be given to draining pleural or peritoneal effusions prior to pemetrexed administration",
+      "Carboplatin is an irritant; pemetrexed is an inflammitant - extravasation precautions required",
+      "AUC5 may be considered with EDTA clearance - seek consultant advice",
+      "Dose of carboplatin may need alteration if renal function changes >10% from previous cycle",
+      "Gastric protection (PPI or H2 antagonist) may be considered in patients at high risk of GI ulceration",
+      "Prophylactic antibiotics can be considered if required",
+      "Cycle 4 dexamethasone pre-medication is removed from the schedule - see document for details"
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "neutrophil_count",
+      "platelet_count",
+      "renal_function",
+      "liver_function_tests"
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 6,
+      "max_dose_mg": 890
+    }
+  },
+  {
+    "protocol_code": "NSCLC-CARBOPLATIN-AUC6-VINORELBINE-IV-RT",
+    "protocol_name": "NSCLC - Carboplatin (AUC6)-Vinorelbine (Intravenous)-Radiotherapy",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 21,
+    "number_of_cycles": 4,
+    "drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 6.0,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": 890.0,
+        "max_dose_unit": "mg",
+        "notes": "Intravenous infusion in 500ml glucose 5% over 60 minutes. Dose banded per national dose band (10mg/ml). Maximum dose 890mg in ARIA (internationally recommended max 900mg at CrCl 125ml/min). AUC5 may be considered with EDTA clearance. Carboplatin is an irritant."
+      },
+      {
+        "drug_name": "Vinorelbine",
+        "dose": 15.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1,
+          8
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": 60.0,
+        "max_dose_unit": "mg",
+        "notes": "Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Dose banded per national dose band (10mg/ml). Maximum dose 60mg. During concurrent radiotherapy use 15mg/m2; increase to 30mg/m2 when radiotherapy is complete. Vinorelbine is a vesicant - extravasation precautions required. For severe hepatic impairment consider reduction to 10mg/m2."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1.5x10^9/L",
+        "drug_name": "Carboplatin",
+        "factor": 1.0,
+        "notes": "Delay 7 days. If recovery, continue at initial dose. If still low, 20% dose reduction. If myelosuppression recurs, stop treatment."
+      },
+      {
+        "condition": "Neutrophils <1.5x10^9/L",
+        "drug_name": "Vinorelbine",
+        "factor": 1.0,
+        "notes": "Delay 7 days. If recovery, continue at initial dose. If still low, 20% dose reduction. If myelosuppression recurs, stop treatment. On day 8: if neutrophils ≥1.5x10^9/L and platelets ≥100x10^9/L continue; if either falls below contact consultant."
+      },
+      {
+        "condition": "Platelets <100x10^9/L",
+        "drug_name": "Carboplatin",
+        "factor": 1.0,
+        "notes": "Delay 7 days. If recovery, continue at initial dose. If still low, 20% dose reduction."
+      },
+      {
+        "condition": "Platelets <50x10^9/L",
+        "drug_name": "Carboplatin",
+        "factor": 0.5,
+        "notes": "Reduce dose by 50%"
+      },
+      {
+        "condition": "Platelets <50x10^9/L",
+        "drug_name": "Vinorelbine",
+        "factor": 0.5,
+        "notes": "Reduce dose by 50%"
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Carboplatin",
+        "factor": 1.0,
+        "notes": "No dose reduction necessary"
+      },
+      {
+        "condition": "Hepatic impairment: severe",
+        "drug_name": "Vinorelbine",
+        "factor": null,
+        "notes": "For intravenous preparation consider reduction to 10mg/m2 in severe liver impairment"
+      },
+      {
+        "condition": "Renal impairment: CrCl <20ml/min",
+        "drug_name": "Carboplatin",
+        "factor": 0.0,
+        "notes": "Do not administer"
+      },
+      {
+        "condition": "Renal impairment",
+        "drug_name": "Vinorelbine",
+        "factor": 1.0,
+        "notes": "No dose adjustment necessary"
+      }
+    ],
+    "pre_medications": [
+      "Ondansetron 8mg oral or intravenous (day 1, 15-30 minutes prior to chemotherapy)",
+      "Dexamethasone 8mg oral or intravenous (day 1, 15-30 minutes prior to chemotherapy)",
+      "Dexamethasone 4mg twice a day oral for 3 days (take-home, starting day 2)",
+      "Metoclopramide 10mg three times a day when required oral (take-home)",
+      "Metoclopramide 10mg oral or intravenous (day 8, 15-30 minutes prior to chemotherapy)"
+    ],
+    "special_warnings": [
+      "First line therapy of stage I-IIIB NSCLC; WHO PS 0-2; radical intent with concurrent radiotherapy",
+      "During concurrent radiotherapy: vinorelbine dose is 15mg/m2; increase to 30mg/m2 when radiotherapy is complete",
+      "Haemoglobin should be kept above 12g/dL during radiotherapy",
+      "Vinorelbine is a VESICANT - strict extravasation precautions required",
+      "Carboplatin is an irritant",
+      "On day 8: if either neutrophils <1.5x10^9/L or platelets <100x10^9/L, contact relevant consultant for advice",
+      "AUC5 may be considered with EDTA clearance - seek consultant advice",
+      "Dose of carboplatin may need alteration if renal function changes >10% from previous cycle",
+      "Gastric protection (PPI or H2 antagonist) may be considered in patients at high risk of GI ulceration",
+      "Prophylactic antibiotics can be considered if required"
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "neutrophil_count",
+      "platelet_count",
+      "haemoglobin",
+      "renal_function",
+      "radiotherapy_status"
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 6,
+      "max_dose_mg": 890
+    }
+  },
+  {
+    "protocol_code": "NSCLC-CARBOPLATIN-AUC6-VINORELBINE-ORAL",
+    "protocol_name": "NSCLC - Carboplatin (AUC6)-Vinorelbine (Oral)",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 21,
+    "number_of_cycles": 4,
+    "drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 6.0,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": 890.0,
+        "max_dose_unit": "mg",
+        "notes": "Intravenous infusion in 500ml glucose 5% over 60 minutes. Dose banded per national dose bands (10mg/ml). Maximum dose 890mg in ARIA (internationally recommended max 900mg at CrCl 125ml/min). AUC5 may be considered with EDTA clearance. Carboplatin is an irritant."
+      },
+      {
+        "drug_name": "Vinorelbine",
+        "dose": 60.0,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          8
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": 120.0,
+        "max_dose_unit": "mg",
+        "notes": "Oral capsules (available as 20mg and 30mg). Maximum dose 120mg for 60mg/m2 dose. Dose rounded to nearest 20mg (up if halfway). Capsules must be swallowed whole with food, not chewed, sucked or dissolved. From cycle 2 onwards consider increasing to 80mg/m2 (maximum dose 160mg). Must NOT be supplied from primary care. NPSA/2008/RRR001 oral chemotherapy safety alert must be followed. In moderate hepatic impairment consider 50mg/m2/week. For severe hepatic impairment (IV preparation): consider reduction to 20mg/m2."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1.5x10^9/L",
+        "drug_name": "Carboplatin",
+        "factor": 1.0,
+        "notes": "Delay 7 days. If recovery, continue at initial dose. If still low, 20% dose reduction. If myelosuppression recurs, stop treatment."
+      },
+      {
+        "condition": "Neutrophils <1.5x10^9/L",
+        "drug_name": "Vinorelbine",
+        "factor": 1.0,
+        "notes": "Delay 7 days. If recovery, continue at initial dose. If still low, 20% dose reduction. If myelosuppression recurs, stop treatment. Day 8 dose adjustments per local practice guidelines."
+      },
+      {
+        "condition": "Platelets <100x10^9/L",
+        "drug_name": "Carboplatin",
+        "factor": 1.0,
+        "notes": "Delay 7 days. If recovery, continue at initial dose. If still low, 20% dose reduction."
+      },
+      {
+        "condition": "Platelets <50x10^9/L",
+        "drug_name": "Carboplatin",
+        "factor": 0.5,
+        "notes": "Reduce dose by 50%"
+      },
+      {
+        "condition": "Platelets <50x10^9/L",
+        "drug_name": "Vinorelbine",
+        "factor": 0.5,
+        "notes": "Reduce dose by 50%"
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Carboplatin",
+        "factor": 1.0,
+        "notes": "No dose reduction necessary"
+      },
+      {
+        "condition": "Hepatic impairment: moderate",
+        "drug_name": "Vinorelbine",
+        "factor": null,
+        "notes": "For oral preparation consider dose of 50mg/m2/week in moderate liver impairment"
+      },
+      {
+        "condition": "Renal impairment: CrCl <20ml/min",
+        "drug_name": "Carboplatin",
+        "factor": 0.0,
+        "notes": "Do not administer"
+      },
+      {
+        "condition": "Renal impairment",
+        "drug_name": "Vinorelbine",
+        "factor": 1.0,
+        "notes": "No dose adjustment necessary"
+      }
+    ],
+    "pre_medications": [
+      "Ondansetron 8mg oral or intravenous (day 1, 15-30 minutes prior to chemotherapy)",
+      "Dexamethasone 8mg oral or intravenous (day 1, 15-30 minutes prior to chemotherapy)",
+      "Dexamethasone 4mg twice a day oral for 3 days (take-home, starting day 2)",
+      "Metoclopramide 10mg three times a day when required oral (take-home)",
+      "Metoclopramide 10mg oral (day 8, 15-30 minutes prior to oral vinorelbine)"
+    ],
+    "special_warnings": [
+      "First line therapy of stage III or IV NSCLC; WHO PS 0-2; palliative intent",
+      "NPSA/2008/RRR001 oral chemotherapy safety alert MUST be followed for oral vinorelbine",
+      "Oral vinorelbine capsules must be swallowed whole with food - do NOT chew, suck or dissolve",
+      "Oral vinorelbine must NOT be supplied from primary care - secondary care prescribing only",
+      "Starting dose 60mg/m2 (max 120mg); from cycle 2 onwards consider increasing to 80mg/m2 (max 160mg) if tolerated",
+      "Capsules available in 20mg and 30mg strengths; round dose to nearest 20mg",
+      "Carboplatin is an irritant",
+      "AUC5 may be considered with EDTA clearance - seek consultant advice",
+      "Dose of carboplatin may need alteration if renal function changes >10% from previous cycle",
+      "Gastric protection (PPI or H2 antagonist) may be considered in patients at high risk of GI ulceration",
+      "Prophylactic antibiotics can be considered if required",
+      "Day 8 dose adjustments per local practice guidelines"
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "neutrophil_count",
+      "platelet_count",
+      "renal_function",
+      "liver_function_tests"
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 6,
+      "max_dose_mg": 890
+    }
+  }
+]

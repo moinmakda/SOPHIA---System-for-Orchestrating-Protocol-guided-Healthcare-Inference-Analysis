@@ -1,0 +1,1485 @@
+[
+  {
+    "protocol_id": "bladder_pembrolizumab_400mg",
+    "protocol_code": "BLADDERPEMBRO400",
+    "protocol_name": "Bladder – Pembrolizumab (400mg)",
+    "category": "urology",
+    "indication": "Locally advanced (T4b any N or any T N2-3) or metastatic (any T any N M1) transitional cell carcinoma of the urothelial tract previously treated with platinum-based chemotherapy, OR first line treatment of locally advanced or metastatic urothelial cancer in patients ineligible for cisplatin-based chemotherapy. WHO performance status 0, 1, 2.",
+    "version": "1",
+    "cycle_length_days": 42,
+    "total_cycles": 18,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Pembrolizumab",
+        "dose": 400,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Once every 42 days",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Administer using a low protein binding 0.2 micron filter. Maximum treatment duration two years (18 cycles). Treatment breaks up to 12 weeks beyond expected cycle length permitted only for immune toxicities.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "timing": "As required for infusion-related reactions",
+        "indication": "Infusion-related reaction management"
+      },
+      {
+        "drug_name": "Hydrocortisone sodium succinate",
+        "dose": 100,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "timing": "As required for infusion-related reactions",
+        "indication": "Infusion-related reaction management"
+      },
+      {
+        "drug_name": "Paracetamol",
+        "dose": 1000,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "As required for infusion-related reactions",
+        "indication": "Infusion-related reaction management; maximum 4g/24h, 4 hours between doses"
+      }
+    ],
+    "take_home_medicines": [],
+    "dose_modifications": [
+      {
+        "parameter": "Hepatic – immune hepatitis",
+        "condition": "AST/ALT 3–5xULN and/or bilirubin 1.5–3xULN",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold pembrolizumab and administer corticosteroids. Resume when liver function at NCI-CTC grade 1 following corticosteroid taper over at least 1 month."
+      },
+      {
+        "parameter": "Hepatic – immune hepatitis",
+        "condition": "AST/ALT ≥5xULN, or bilirubin >3xULN, or NCI-CTC grade 3 or above hepatic reaction, or no improvement to grade 1 within 12 weeks, or unable to taper corticosteroid to ≤10mg prednisolone/day within 12 weeks",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue pembrolizumab."
+      },
+      {
+        "parameter": "Renal – immune nephritis",
+        "condition": "NCI-CTC grade 2 nephritis",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold and administer corticosteroids. Resume when reaction ≤grade 1 following corticosteroid taper over at least 1 month."
+      },
+      {
+        "parameter": "Renal – immune nephritis",
+        "condition": "NCI-CTC grade 3 or above nephritis, or no improvement to grade 1 within 12 weeks, or unable to taper corticosteroid to ≤10mg prednisolone/day within 12 weeks",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue pembrolizumab."
+      },
+      {
+        "parameter": "Haematological",
+        "condition": "Haematological toxicity",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Little need to adjust dose for haematological toxicity. Consider transfusion or erythropoietin if Hb <8g/dL or symptomatic anaemia."
+      },
+      {
+        "parameter": "Immune-related – pneumonitis/colitis/skin/infusion reaction",
+        "condition": "NCI-CTC grade 3 or 4 pneumonitis, nephritis, infusion-related reaction, or NCI-CTC grade 4 adverse reaction",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue pembrolizumab. Dose reductions are NOT permitted for pembrolizumab."
+      },
+      {
+        "parameter": "Colitis",
+        "condition": "NCI-CTC grade 2–3 colitis",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold and administer corticosteroids. Resume at grade 1 following 1-month taper. Permanently discontinue if no improvement to grade 1 within 12 weeks."
+      },
+      {
+        "parameter": "Pneumonitis",
+        "condition": "NCI-CTC grade 2 pneumonitis",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold pembrolizumab. Corticosteroids 1–2mg/kg/day prednisone equivalent. Resume if improves to grade 0–1 within 12 weeks and steroids tapered to ≤10mg prednisolone. Discontinue on second episode."
+      },
+      {
+        "parameter": "Treatment interruption",
+        "condition": "Interruption of 12 weeks or longer",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Current funding approval precludes further treatment after an interruption of 12 weeks or longer."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": null,
+      "platelets_min": null,
+      "notes": "No specific haematological thresholds for treatment delay stated. FBC, LFTs and U&Es required prior to day 1 of each cycle. Thyroid function tests prior to starting and before each cycle."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to day 1 of each cycle",
+      "Thyroid function tests prior to starting treatment and before each cycle (or when clinically indicated)",
+      "Monitor for immune-related adverse reactions: pneumonitis, nephritis, colitis, hepatitis, endocrinopathies, skin reactions, ocular reactions"
+    ],
+    "special_warnings": [
+      "Pembrolizumab is an immunotherapy; dose reductions are NOT permitted – only delays or permanent discontinuation",
+      "Avoid systemic corticosteroids before starting pembrolizumab; they may be used after initiation for immune-related adverse reactions",
+      "Autoimmune toxicities can be severe or life-threatening; early diagnosis and management essential",
+      "Immune-related adverse reactions may occur during treatment or months after the last dose",
+      "Maximum treatment duration is two years (18 cycles of 42 days)",
+      "Formal medical review required at least by end of cycle 3",
+      "Treatment breaks up to 12 weeks beyond expected cycle length allowed only for immune toxicities to settle",
+      "No prior anti-PD-1, anti-PD-L1, anti-PD-L2, anti-CD137, or anti-CTLA-4 antibody treatment (unless under pembrolizumab compassionate use programme)",
+      "Pembrolizumab must be given as monotherapy"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "who_performance_status": "0, 1, or 2",
+      "brain_metastases_status": "No symptomatically active brain or leptomeningeal metastases",
+      "prior_immunotherapy": "No prior anti-PD-1/PD-L1/PD-L2/CD137/CTLA-4 therapy",
+      "renal_function_gfr": "Required if cisplatin-ineligible indication",
+      "hearing_assessment": "Required if cisplatin-ineligible indication",
+      "peripheral_neuropathy_grade": "Required if cisplatin-ineligible indication"
+    },
+    "disease_site": "Urology",
+    "number_of_cycles": 18,
+    "drugs": [
+      {
+        "drug_name": "Pembrolizumab",
+        "dose": 400,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Once every 42 days",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Administer using a low protein binding 0.2 micron filter. Maximum treatment duration two years (18 cycles). Treatment breaks up to 12 weeks beyond expected cycle length permitted only for immune toxicities.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.5,
+        "notes": "Once every 42 days | Administer using a low protein binding 0.2 micron filter. Maximum treatment duration two years (18 cycles). Treatment breaks up to 12 weeks beyond expected cycle length permitted only for immune toxicities."
+      }
+    ]
+  },
+  {
+    "protocol_id": "renal_cell_sunitinib",
+    "protocol_code": "RCCSUNITINIB",
+    "protocol_name": "Renal Cell – Sunitinib",
+    "category": "urology",
+    "indication": "First line treatment of advanced or metastatic renal cell carcinoma. WHO Performance status 0, 1. Palliative intent.",
+    "version": "1.1",
+    "cycle_length_days": 42,
+    "total_cycles": null,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Sunitinib",
+        "dose": 50,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "Once daily for 28 days followed by 14-day rest period (42-day cycle)",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Available as 12.5mg, 25mg, 37.5mg and 50mg capsules. Dose modifications in 12.5mg steps; minimum dose 25mg daily. NPSA/2008/RRR001 oral chemotherapy alert applies. Must only be prescribed under oncologist supervision.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [
+      {
+        "drug_name": "Sunitinib",
+        "dose": 50,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "instructions": "50mg once daily for 28 days followed by 14-day rest period"
+      },
+      {
+        "drug_name": "Loperamide",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "instructions": "4mg after first loose stool then 2–4mg four times a day as required for diarrhoea (maximum 16mg/24 hours)"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils",
+        "condition": "Neutrophils ≥1x10⁹/L",
+        "affected_drugs": [
+          "Sunitinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Proceed at 100% dose."
+      },
+      {
+        "parameter": "Neutrophils",
+        "condition": "Neutrophils <1x10⁹/L",
+        "affected_drugs": [
+          "Sunitinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay until recovery to ≥1x10⁹/L. If recovery within 7 days continue at last dose. If recovery takes longer than 7 days reduce dose by 12.5mg."
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets ≥75x10⁹/L",
+        "affected_drugs": [
+          "Sunitinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Proceed at 100% dose."
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets <75x10⁹/L",
+        "affected_drugs": [
+          "Sunitinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay until recovery to ≥75x10⁹/L. If recovery within 7 days continue at full dose. If recovery takes longer than 7 days reduce dose by 12.5mg."
+      },
+      {
+        "parameter": "Hepatic impairment",
+        "condition": "Child-Pugh A or B",
+        "affected_drugs": [
+          "Sunitinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "50mg daily (no dose reduction required for Child-Pugh A or B). No information for Child-Pugh C. No information for AST/ALT >2.5xULN (or >5xULN with liver metastases)."
+      },
+      {
+        "parameter": "Renal impairment",
+        "condition": "Any creatinine clearance",
+        "affected_drugs": [
+          "Sunitinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "No dose modification required."
+      },
+      {
+        "parameter": "Cardiovascular – hypertension",
+        "condition": "Persistent BP >140/90mmHg despite standard antihypertensive therapy",
+        "affected_drugs": [
+          "Sunitinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Reduce dose in 12.5mg steps and continue monitoring. If hypertension persists discontinue sunitinib."
+      },
+      {
+        "parameter": "Gastrointestinal – diarrhoea",
+        "condition": "NCI-CTC grade 3 diarrhoea",
+        "affected_drugs": [
+          "Sunitinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Reduce dose by 12.5mg."
+      },
+      {
+        "parameter": "Gastrointestinal – diarrhoea",
+        "condition": "NCI-CTC grade 4 diarrhoea",
+        "affected_drugs": [
+          "Sunitinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Stop until resolves to at least grade 2, then restart with 12.5mg dose reduction."
+      },
+      {
+        "parameter": "Skin – palmar-plantar erythrodysaesthesia",
+        "condition": "NCI-CTC grade 2",
+        "affected_drugs": [
+          "Sunitinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay until resolves to grade 1. Restart with 12.5mg dose reduction."
+      },
+      {
+        "parameter": "Skin – palmar-plantar erythrodysaesthesia",
+        "condition": "NCI-CTC grade 3",
+        "affected_drugs": [
+          "Sunitinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay until resolves to grade 1. Restart with 12.5–25mg dose reduction."
+      },
+      {
+        "parameter": "General",
+        "condition": "Third dose reduction required",
+        "affected_drugs": [
+          "Sunitinib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Treatment should be stopped if a third dose reduction is necessary."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 75,
+      "notes": "Prior to cycle 1: neutrophils ≥1x10⁹/L, platelets ≥75x10⁹/L. FBCs, LFTs and U&Es prior to each cycle for first three cycles (then every other cycle if stable). Minimum sunitinib dose 25mg daily; dose modifications in 12.5mg steps."
+    },
+    "monitoring_requirements": [
+      "FBCs, LFTs and U&Es prior to each cycle for first three cycles; may reduce to every other cycle if stable",
+      "Blood pressure weekly for first 4 weeks then every 6–12 weeks",
+      "Thyroid function tests at baseline then every 3 months",
+      "Baseline LVEF in patients with cardiac history or elderly; repeat every 3–6 months as clinically indicated"
+    ],
+    "special_warnings": [
+      "Dose modifications in 12.5mg steps; minimum dose 25mg daily",
+      "All dose reductions should not be re-escalated without consultant approval",
+      "If third dose reduction required, stop treatment",
+      "Hypothyroidism can occur – manage per standard practice, no need to discontinue or dose reduce",
+      "NPSA/2008/RRR001 oral chemotherapy safety alert must be followed",
+      "Must only be prescribed under oncologist supervision",
+      "8 cycles will be set in ARIA (until disease progression or unacceptable toxicity)"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "who_performance_status": "0 or 1",
+      "cardiac_history": "Baseline LVEF if cardiac history or elderly"
+    },
+    "disease_site": "Urology",
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Sunitinib",
+        "dose": 50,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "Once daily for 28 days followed by 14-day rest period (42-day cycle)",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Available as 12.5mg, 25mg, 37.5mg and 50mg capsules. Dose modifications in 12.5mg steps; minimum dose 25mg daily. NPSA/2008/RRR001 oral chemotherapy alert applies. Must only be prescribed under oncologist supervision.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "Once daily for 28 days followed by 14-day rest period (42-day cycle) | Available as 12.5mg, 25mg, 37.5mg and 50mg capsules. Dose modifications in 12.5mg steps; minimum dose 25mg daily. NPSA/2008/RRR001 oral chemotherapy alert applies. Must only be prescribed under oncologist supervision."
+      }
+    ]
+  },
+  {
+    "protocol_id": "renal_cell_temsirolimus",
+    "protocol_code": "RCCTEMSIROLIMUS",
+    "protocol_name": "Renal Cell – Temsirolimus",
+    "category": "urology",
+    "indication": "First line treatment of advanced renal cell cancer with poor prognostic features. Performance status 0, 1.",
+    "version": "1.1",
+    "cycle_length_days": 7,
+    "total_cycles": null,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Temsirolimus",
+        "dose": 25,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Once weekly (7-day cycle)",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose rounded to nearest 5mg. May reduce infusion to 30 minutes if well tolerated. Must be administered in a non-PVC bag via a low-adsorption administration set with an in-line filter of 0.2–5 microns. 24 cycles set in ARIA.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "timing": "30 minutes prior to treatment",
+        "indication": "Pre-medication to reduce hypersensitivity reactions"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15–30 minutes prior to treatment",
+        "indication": "Antiemetic"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "instructions": "Three times a day for 3 days then as required"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils",
+        "condition": "Neutrophils ≥1x10⁹/L",
+        "affected_drugs": [
+          "Temsirolimus"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Proceed at 100% dose."
+      },
+      {
+        "parameter": "Neutrophils",
+        "condition": "Neutrophils <1x10⁹/L",
+        "affected_drugs": [
+          "Temsirolimus"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay until counts recover. If recovery takes 8 days or longer, reduce dose by 5mg/week until tolerated."
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets ≥75x10⁹/L",
+        "affected_drugs": [
+          "Temsirolimus"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Proceed at 100% dose."
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets <75x10⁹/L",
+        "affected_drugs": [
+          "Temsirolimus"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay until counts recover. If recovery takes 8 days or longer, reduce dose by 5mg/week until tolerated."
+      },
+      {
+        "parameter": "Hepatic impairment – bilirubin",
+        "condition": "Bilirubin <3xULN and any AST/ALT and Child-Pugh A or B",
+        "affected_drugs": [
+          "Temsirolimus"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "No dose adjustment needed. Applies to patients with baseline platelet count ≥100x10⁹/L."
+      },
+      {
+        "parameter": "Hepatic impairment – bilirubin",
+        "condition": "Bilirubin >3xULN and any AST/ALT or Child-Pugh C",
+        "affected_drugs": [
+          "Temsirolimus"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Reduce to 10mg weekly. Applies to patients with baseline platelet count ≥100x10⁹/L."
+      },
+      {
+        "parameter": "Renal impairment",
+        "condition": "Any creatinine clearance",
+        "affected_drugs": [
+          "Temsirolimus"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "No dose adjustment required. However, temsirolimus can induce renal failure; monitor closely and discontinue if renal failure occurs."
+      },
+      {
+        "parameter": "Lung – pneumonitis",
+        "condition": "NCI-CTC grade 1 non-infectious pneumonitis (asymptomatic)",
+        "affected_drugs": [
+          "Temsirolimus"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Does not require discontinuation. Consider 5mg dose reduction."
+      },
+      {
+        "parameter": "Lung – pneumonitis",
+        "condition": "NCI-CTC grade 2 pneumonitis",
+        "affected_drugs": [
+          "Temsirolimus"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Interrupt treatment and consider short-term corticosteroids. Resume with 5mg dose reduction once resolved."
+      },
+      {
+        "parameter": "Lung – pneumonitis",
+        "condition": "NCI-CTC grade 3 or 4 pneumonitis",
+        "affected_drugs": [
+          "Temsirolimus"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Treat appropriately and permanently discontinue temsirolimus."
+      },
+      {
+        "parameter": "General",
+        "condition": "Third dose reduction required",
+        "affected_drugs": [
+          "Temsirolimus"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Treatment should be stopped if a third dose reduction is necessary."
+      },
+      {
+        "parameter": "Hypersensitivity reaction during infusion",
+        "condition": "Hypersensitivity or anaphylaxis during administration despite pre-medication",
+        "affected_drugs": [
+          "Temsirolimus"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Stop infusion immediately, observe for ≥30 minutes. At medical discretion may resume after additional chlorphenamine and/or ranitidine 50mg IV given 30 minutes before restarting at half the infusion rate."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 75,
+      "notes": "Weekly U&Es, LFTs, FBC and blood glucose for first 6 weeks; may reduce to fortnightly if stable. Serum cholesterol and triglycerides at baseline then every 12 weeks. Dose rounded to nearest 5mg."
+    },
+    "monitoring_requirements": [
+      "Weekly U&Es, LFTs, FBC and blood glucose for first 6 weeks; then fortnightly if results and patient stable",
+      "Serum cholesterol and triglycerides prior to starting therapy and every 12 weeks thereafter",
+      "Monitor for interstitial lung disease",
+      "Monitor renal function closely (temsirolimus can induce renal failure)"
+    ],
+    "special_warnings": [
+      "This protocol may require funding approval",
+      "Temsirolimus must be administered in a non-PVC bag via a low-adsorption set with 0.2–5 micron in-line filter",
+      "Dose rounded to nearest 5mg",
+      "Infusion may be reduced to 30 minutes if well tolerated",
+      "All dose reductions should not be re-escalated without consultant approval",
+      "Third dose reduction = stop treatment",
+      "Temsirolimus can induce renal failure; discontinue if renal failure occurs",
+      "24 cycles set in ARIA (until unacceptable toxicity or disease progression)"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "who_performance_status": "0 or 1",
+      "baseline_lipids": "Serum cholesterol and triglycerides required at baseline"
+    },
+    "disease_site": "Urology",
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Temsirolimus",
+        "dose": 25,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Once weekly (7-day cycle)",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose rounded to nearest 5mg. May reduce infusion to 30 minutes if well tolerated. Must be administered in a non-PVC bag via a low-adsorption administration set with an in-line filter of 0.2–5 microns. 24 cycles set in ARIA.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "Once weekly (7-day cycle) | Dose rounded to nearest 5mg. May reduce infusion to 30 minutes if well tolerated. Must be administered in a non-PVC bag via a low-adsorption administration set with an in-line filter of 0.2–5 microns. 24 cycles set in ARIA."
+      }
+    ]
+  },
+  {
+    "protocol_id": "renal_cell_tivozanib",
+    "protocol_code": "RCCTIVOZANIB",
+    "protocol_name": "Renal Cell – Tivozanib",
+    "category": "urology",
+    "indication": "Confirmed histological diagnosis of renal cell carcinoma with a clear cell component that is locally advanced or metastatic; treatment naïve to systemic therapy (no prior VEGF-targeted or mTOR inhibitor-targeted therapy, unless prior pazopanib or sunitinib stopped solely due to dose-limiting toxicity in clear absence of progression). WHO Performance status 0, 1.",
+    "version": "1",
+    "cycle_length_days": 28,
+    "total_cycles": null,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Tivozanib",
+        "dose": 1340,
+        "dose_unit": "mcg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "frequency": "Once daily for 21 days followed by 7-day rest period (28-day cycle)",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Available as 1340 microgram and 890 microgram capsules. May be taken with or without food. If a dose is missed do not give an additional dose; take usual dose next day. Reduced dose level: 890 microgram once daily on same 21/7 schedule. NPSA/2008/RRR001 applies. 12 cycles set in ARIA.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [
+      {
+        "drug_name": "Tivozanib",
+        "dose": 1340,
+        "dose_unit": "mcg",
+        "route": "Oral",
+        "instructions": "1340 microgram once daily for 21 days followed by 7-day rest period"
+      },
+      {
+        "drug_name": "Loperamide",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "instructions": "4mg after first loose stool then 2–4mg four times a day as required for diarrhoea (maximum 16mg/24 hours)"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils",
+        "condition": "Neutrophils ≥1x10⁹/L",
+        "affected_drugs": [
+          "Tivozanib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Proceed at 100% dose."
+      },
+      {
+        "parameter": "Neutrophils",
+        "condition": "Neutrophils <1x10⁹/L",
+        "affected_drugs": [
+          "Tivozanib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay until recovery to ≥1x10⁹/L. If recovery within 7 days continue at last dose."
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets ≥100x10⁹/L",
+        "affected_drugs": [
+          "Tivozanib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Proceed at 100% dose."
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets <100x10⁹/L",
+        "affected_drugs": [
+          "Tivozanib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay until recovery to ≥100x10⁹/L. If recovery within 7 days continue at last dose."
+      },
+      {
+        "parameter": "Hepatic impairment – mild",
+        "condition": "Mild hepatic impairment",
+        "affected_drugs": [
+          "Tivozanib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Use with caution with close monitoring; no initial dose adjustment unless in response to toxicity."
+      },
+      {
+        "parameter": "Hepatic impairment – moderate",
+        "condition": "Moderate hepatic impairment",
+        "affected_drugs": [
+          "Tivozanib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Prescribe 1340 microgram once daily on alternate days due to increased exposure risk."
+      },
+      {
+        "parameter": "Hepatic impairment – severe",
+        "condition": "Severe hepatic impairment",
+        "affected_drugs": [
+          "Tivozanib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Tivozanib is not recommended in severe hepatic impairment."
+      },
+      {
+        "parameter": "Renal impairment",
+        "condition": "Mild or moderate renal impairment",
+        "affected_drugs": [
+          "Tivozanib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "No dose adjustment required."
+      },
+      {
+        "parameter": "Renal impairment",
+        "condition": "Severe renal impairment or dialysis",
+        "affected_drugs": [
+          "Tivozanib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Caution advised due to limited experience."
+      },
+      {
+        "parameter": "Hypertension",
+        "condition": "Severe hypertension not controlled with medical management",
+        "affected_drugs": [
+          "Tivozanib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Temporary suspension recommended. Resume once controlled. In persistent hypertension, reduce dose or interrupt and re-initiate at lower dose. Discontinue for persistent severe hypertension, PRES, or other complications."
+      },
+      {
+        "parameter": "Proteinuria",
+        "condition": "NCI-CTC grade 2 (>1.0–3.4g/24h) or grade 3 (≥3.5g/24h) proteinuria",
+        "affected_drugs": [
+          "Tivozanib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Reduce dose or temporarily interrupt."
+      },
+      {
+        "parameter": "Proteinuria",
+        "condition": "NCI-CTC grade 4 proteinuria (nephrotic syndrome)",
+        "affected_drugs": [
+          "Tivozanib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discontinue tivozanib."
+      },
+      {
+        "parameter": "General toxicity",
+        "condition": "Grade 3 events (pivotal study)",
+        "affected_drugs": [
+          "Tivozanib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Reduce dose. First reduction level: 890 microgram once daily."
+      },
+      {
+        "parameter": "General toxicity",
+        "condition": "Grade 4 events (pivotal study)",
+        "affected_drugs": [
+          "Tivozanib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Interrupt treatment."
+      },
+      {
+        "parameter": "General",
+        "condition": "Third dose reduction required",
+        "affected_drugs": [
+          "Tivozanib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Treatment should be stopped if a third dose reduction is necessary."
+      },
+      {
+        "parameter": "Surgery",
+        "condition": "Prior to major surgical procedures",
+        "affected_drugs": [
+          "Tivozanib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Discontinue tivozanib prior to major surgery. Resume only after assessment of wound healing."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "Prior to cycle 1: neutrophils >1x10⁹/L, platelets >100x10⁹/L. FBCs, LFTs and U&Es prior to each cycle. No treatment breaks >6 weeks beyond expected cycle length. Formal review at least by end of first 8 weeks. There is a correlation between overall survival and cumulative dose exposure; manage toxicity before dose reduction."
+    },
+    "monitoring_requirements": [
+      "FBCs, LFTs and U&Es prior to each cycle",
+      "Blood pressure weekly for first 4 weeks then every 4–12 weeks",
+      "Thyroid function tests at baseline then every 12 weeks",
+      "Baseline LVEF in patients with cardiac history or elderly; repeat every 12–24 weeks as clinically indicated",
+      "Proteinuria monitoring before starting treatment and every 12 weeks (urine dipstick); 24-hour urine protein if 2+ on dipstick",
+      "Baseline and periodic ECG monitoring; maintain electrolytes (calcium, magnesium, potassium) within normal range (QT prolongation risk)"
+    ],
+    "special_warnings": [
+      "Correlation between overall survival and cumulative dose exposure; manage toxicity before reducing dose",
+      "Avoid verapamil and diltiazem (CYP3A4 inhibitors) during tivozanib treatment",
+      "Tivozanib may interact with many other agents – always check for drug interactions",
+      "Dose reduction level: 890 microgram once daily (same 21/7 schedule)",
+      "No treatment breaks >6 weeks beyond expected cycle length",
+      "Prior to major surgery, discontinue tivozanib; resume only after wound healing assessment",
+      "QT/QTc interval prolongation reported – use with caution in patients with QT history",
+      "All dose reductions should not be re-escalated without consultant approval",
+      "Third dose reduction = stop treatment",
+      "NPSA/2008/RRR001 oral chemotherapy safety alert applies; must only be prescribed under oncologist supervision",
+      "12 cycles set in ARIA (until disease progression or unacceptable toxicity)"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "who_performance_status": "0 or 1",
+      "prior_systemic_therapy": "Treatment naïve (no prior VEGF-targeted or mTOR inhibitor therapy)",
+      "histology_confirmation": "Confirmed clear cell component RCC",
+      "baseline_bp": "Screen for hypertension before starting",
+      "baseline_ecg": "Baseline ECG recommended",
+      "baseline_proteinuria": "Urine dipstick before starting"
+    },
+    "disease_site": "Urology",
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Tivozanib",
+        "dose": 1340,
+        "dose_unit": "mcg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "frequency": "Once daily for 21 days followed by 7-day rest period (28-day cycle)",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Available as 1340 microgram and 890 microgram capsules. May be taken with or without food. If a dose is missed do not give an additional dose; take usual dose next day. Reduced dose level: 890 microgram once daily on same 21/7 schedule. NPSA/2008/RRR001 applies. 12 cycles set in ARIA.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "Once daily for 21 days followed by 7-day rest period (28-day cycle) | Available as 1340 microgram and 890 microgram capsules. May be taken with or without food. If a dose is missed do not give an additional dose; take usual dose next day. Reduced dose level: 890 microgram once daily on same 21/7 schedule. NPSA/2008/RRR001 applies. 12 cycles set in ARIA."
+      }
+    ]
+  },
+  {
+    "protocol_id": "bladder_vinflunine",
+    "protocol_code": "BLADDERVINFLUNINE",
+    "protocol_name": "Bladder – Vinflunine",
+    "category": "urology",
+    "indication": "Bladder cancer that has failed to respond or progressed within twelve months of receiving a platinum based therapy.",
+    "version": "1.2",
+    "cycle_length_days": 21,
+    "total_cycles": 6,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Vinflunine",
+        "dose": 320,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "frequency": "Once every 21 days",
+        "duration_minutes": 20,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Starting dose 320mg/m² for PS 0 with no prior pelvic irradiation. Starting dose 280mg/m² for PS 1 or PS 0 with prior pelvic irradiation; increase to 320mg/m² from cycle 2 if no haematological toxicity causing delay or reduction in cycle 1. Dose banded per national dose bands. Patients ≥75 to <80 years: 280mg/m². Patients ≥80 years: 250mg/m². Vesicant – extravasation risk. NPSA/2008/RRR04 vinca alkaloid IV safety alert applies. Advise patients to drink ≥1500ml/day for 5 days post-treatment.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15–30 minutes prior to chemotherapy",
+        "indication": "Antiemetic"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "instructions": "Three times a day as required (cycle 1 only; further supplies from supportive therapies folder)"
+      },
+      {
+        "drug_name": "Lactulose",
+        "dose": 15,
+        "dose_unit": "ml",
+        "route": "Oral",
+        "instructions": "Twice a day for 7 days then as required (to prevent and treat constipation)"
+      },
+      {
+        "drug_name": "Senna",
+        "dose": 15,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "instructions": "At night for 7 days then as required (to prevent and treat constipation)"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Haematological – neutropenia",
+        "condition": "Grade 4 neutropenia OR febrile neutropenia: first event at starting dose 320mg/m²",
+        "affected_drugs": [
+          "Vinflunine"
+        ],
+        "action": "delay",
+        "factor": 0.875,
+        "notes": "Reduce to 280mg/m²."
+      },
+      {
+        "parameter": "Haematological – neutropenia",
+        "condition": "Grade 4 neutropenia OR febrile neutropenia: second consecutive event at starting dose 320mg/m²",
+        "affected_drugs": [
+          "Vinflunine"
+        ],
+        "action": "delay",
+        "factor": 0.78,
+        "notes": "Reduce to 250mg/m²."
+      },
+      {
+        "parameter": "Haematological – neutropenia",
+        "condition": "Grade 4 neutropenia OR febrile neutropenia: third consecutive event at starting dose 320mg/m²",
+        "affected_drugs": [
+          "Vinflunine"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discontinue treatment."
+      },
+      {
+        "parameter": "Haematological – neutropenia",
+        "condition": "Grade 4 neutropenia OR febrile neutropenia: first event at starting dose 280mg/m²",
+        "affected_drugs": [
+          "Vinflunine"
+        ],
+        "action": "delay",
+        "factor": 0.893,
+        "notes": "Reduce to 250mg/m²."
+      },
+      {
+        "parameter": "Haematological – neutropenia",
+        "condition": "Grade 4 neutropenia OR febrile neutropenia: second consecutive event at starting dose 280mg/m²",
+        "affected_drugs": [
+          "Vinflunine"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discontinue treatment."
+      },
+      {
+        "parameter": "Non-haematological – mucositis/constipation",
+        "condition": "Mucositis or constipation grade 2 for >5 days or grade 3 for any duration: first event at starting dose 320mg/m²",
+        "affected_drugs": [
+          "Vinflunine"
+        ],
+        "action": "delay",
+        "factor": 0.875,
+        "notes": "Reduce to 280mg/m²."
+      },
+      {
+        "parameter": "Non-haematological – mucositis/constipation",
+        "condition": "Mucositis or constipation grade 2 for >5 days or grade 3 for any duration: second consecutive event at starting dose 320mg/m²",
+        "affected_drugs": [
+          "Vinflunine"
+        ],
+        "action": "delay",
+        "factor": 0.78,
+        "notes": "Reduce to 250mg/m²."
+      },
+      {
+        "parameter": "Non-haematological – mucositis/constipation",
+        "condition": "Mucositis or constipation grade 2 for >5 days or grade 3 for any duration: third consecutive event at starting dose 320mg/m²",
+        "affected_drugs": [
+          "Vinflunine"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discontinue treatment."
+      },
+      {
+        "parameter": "Non-haematological – mucositis/constipation",
+        "condition": "Mucositis or constipation grade 2 for >5 days or grade 3 for any duration: first event at starting dose 280mg/m²",
+        "affected_drugs": [
+          "Vinflunine"
+        ],
+        "action": "delay",
+        "factor": 0.893,
+        "notes": "Reduce to 250mg/m²."
+      },
+      {
+        "parameter": "Non-haematological – mucositis/constipation",
+        "condition": "Mucositis or constipation grade 2 for >5 days or grade 3 for any duration: second consecutive event at starting dose 280mg/m²",
+        "affected_drugs": [
+          "Vinflunine"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discontinue treatment."
+      },
+      {
+        "parameter": "Any other toxicity grade 3 or above (except nausea and vomiting)",
+        "condition": "First event at starting dose 320mg/m²",
+        "affected_drugs": [
+          "Vinflunine"
+        ],
+        "action": "delay",
+        "factor": 0.875,
+        "notes": "Reduce to 280mg/m²."
+      },
+      {
+        "parameter": "Any other toxicity grade 3 or above (except nausea and vomiting)",
+        "condition": "Second consecutive event at starting dose 320mg/m²",
+        "affected_drugs": [
+          "Vinflunine"
+        ],
+        "action": "delay",
+        "factor": 0.78,
+        "notes": "Reduce to 250mg/m²."
+      },
+      {
+        "parameter": "Any other toxicity grade 3 or above (except nausea and vomiting)",
+        "condition": "Third consecutive event at starting dose 320mg/m²",
+        "affected_drugs": [
+          "Vinflunine"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discontinue treatment."
+      },
+      {
+        "parameter": "Any other toxicity grade 3 or above (except nausea and vomiting)",
+        "condition": "First event at starting dose 280mg/m²",
+        "affected_drugs": [
+          "Vinflunine"
+        ],
+        "action": "delay",
+        "factor": 0.893,
+        "notes": "Reduce to 250mg/m²."
+      },
+      {
+        "parameter": "Any other toxicity grade 3 or above (except nausea and vomiting)",
+        "condition": "Second consecutive event at starting dose 280mg/m²",
+        "affected_drugs": [
+          "Vinflunine"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discontinue treatment."
+      },
+      {
+        "parameter": "Hepatic impairment – mild",
+        "condition": "Child-Pugh A or prothrombin time >60% norm and bilirubin 1.5–3xULN with transaminases above ULN and/or GGT >5xULN",
+        "affected_drugs": [
+          "Vinflunine"
+        ],
+        "action": "delay",
+        "factor": 0.78,
+        "notes": "Reduce to 250mg/m² every 3 weeks."
+      },
+      {
+        "parameter": "Hepatic impairment – moderate",
+        "condition": "Child-Pugh B or prothrombin time >50% above norm and bilirubin >3xULN with transaminases and GGT above ULN",
+        "affected_drugs": [
+          "Vinflunine"
+        ],
+        "action": "delay",
+        "factor": 0.625,
+        "notes": "Reduce to 200mg/m² every 3 weeks."
+      },
+      {
+        "parameter": "Hepatic impairment – severe",
+        "condition": "Child-Pugh C, prothrombin time <50%, bilirubin >5xULN, isolated transaminases >2.5xULN (>5xULN with liver metastases), or GGT >15xULN",
+        "affected_drugs": [
+          "Vinflunine"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Vinflunine not evaluated in severe hepatic impairment – do not use."
+      },
+      {
+        "parameter": "Renal impairment",
+        "condition": "Creatinine clearance 40–60 ml/min",
+        "affected_drugs": [
+          "Vinflunine"
+        ],
+        "action": "delay",
+        "factor": 0.875,
+        "notes": "Reduce to 280mg/m²."
+      },
+      {
+        "parameter": "Renal impairment",
+        "condition": "Creatinine clearance 20–39 ml/min",
+        "affected_drugs": [
+          "Vinflunine"
+        ],
+        "action": "delay",
+        "factor": 0.78,
+        "notes": "Reduce to 250mg/m²."
+      },
+      {
+        "parameter": "Age-based dose",
+        "condition": "Age ≥75 to <80 years",
+        "affected_drugs": [
+          "Vinflunine"
+        ],
+        "action": "delay",
+        "factor": 0.875,
+        "notes": "Start at 280mg/m² every 3 weeks."
+      },
+      {
+        "parameter": "Age-based dose",
+        "condition": "Age ≥80 years",
+        "affected_drugs": [
+          "Vinflunine"
+        ],
+        "action": "delay",
+        "factor": 0.78,
+        "notes": "Start at 250mg/m² every 3 weeks."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "FBC, LFTs, U&Es prior to each cycle. Starting dose depends on PS and prior pelvic irradiation history: 280mg/m² for PS 1 or PS 0 with prior pelvic irradiation (may escalate to 320mg/m² from cycle 2 if no haematological toxicity in cycle 1); 320mg/m² for PS 0 without prior pelvic irradiation. Dose banded per national dose bands."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs, U&Es prior to each cycle",
+      "Monitor for constipation – prescribe laxatives prophylactically",
+      "Monitor for peripheral neuropathy"
+    ],
+    "special_warnings": [
+      "Vinflunine is a VESICANT – follow extravasation procedures",
+      "NPSA/2008/RRR04 vinca alkaloid IV safety alert must be followed",
+      "Starting dose varies by PS and prior pelvic irradiation: 280mg/m² for PS 1 or PS 0 with prior pelvic irradiation; 320mg/m² for all others",
+      "Patients ≥75 to <80 years: dose 280mg/m²; patients ≥80 years: dose 250mg/m²",
+      "Check dose before administration (Warning in regimen summary)",
+      "Advise patients to drink ≥1500ml liquid per day for 5 days post-treatment",
+      "All dose reductions should not be re-escalated without consultant approval",
+      "Third dose reduction = discontinue treatment",
+      "Dose banded per national dose bands"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "who_performance_status": "Required to determine starting dose (0 or 1)",
+      "prior_pelvic_irradiation": "Required to determine starting dose",
+      "age": "Required to determine starting dose (≥75 and ≥80 year dose adjustments)",
+      "creatinine_clearance": "Required to determine dose in renal impairment"
+    },
+    "disease_site": "Urology",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Vinflunine",
+        "dose": 320,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "frequency": "Once every 21 days",
+        "duration_minutes": 20,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Starting dose 320mg/m² for PS 0 with no prior pelvic irradiation. Starting dose 280mg/m² for PS 1 or PS 0 with prior pelvic irradiation; increase to 320mg/m² from cycle 2 if no haematological toxicity causing delay or reduction in cycle 1. Dose banded per national dose bands. Patients ≥75 to <80 years: 280mg/m². Patients ≥80 years: 250mg/m². Vesicant – extravasation risk. NPSA/2008/RRR04 vinca alkaloid IV safety alert applies. Advise patients to drink ≥1500ml/day for 5 days post-treatment.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.3333,
+        "notes": "Once every 21 days | Starting dose 320mg/m² for PS 0 with no prior pelvic irradiation. Starting dose 280mg/m² for PS 1 or PS 0 with prior pelvic irradiation; increase to 320mg/m² from cycle 2 if no haematological toxicity causing delay or reduction in cycle 1. Dose banded per national dose bands. Patients ≥75 to <80 years: 280mg/m². Patients ≥80 years: 250mg/m². Vesicant – extravasation risk. NPSA/2008/RRR04 vinca alkaloid IV safety alert applies. Advise patients to drink ≥1500ml/day for 5 days post-treatment."
+      }
+    ]
+  },
+  {
+    "protocol_id": "germ_cell_carboplatin_auc7",
+    "protocol_code": "GCCARBOAUC7",
+    "protocol_name": "Germ Cell – Carboplatin (AUC7)",
+    "category": "urology",
+    "indication": "Stage I seminoma of the testis with no metastases (retroperitoneal lymph nodes ≤10mm and normal levels of AFP/HCG), post orchidectomy.",
+    "version": "1.2",
+    "cycle_length_days": 21,
+    "total_cycles": 1,
+    "treatment_intent": "curative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 7,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Single cycle (one dose post orchidectomy)",
+        "duration_minutes": 60,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 500,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded per national dose bands (10mg/ml). AUC dosing: use EDTA or uncorrected Tc99 clearance to calculate GFR – Cockcroft & Gault formula is NOT recommended for this regimen. Irritant – extravasation risk.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15–30 minutes prior to chemotherapy",
+        "indication": "Antiemetic"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15–30 minutes prior to chemotherapy",
+        "indication": "Antiemetic"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "instructions": "Twice a day for 3 days starting day after chemotherapy (day 2). Take with or after food."
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "instructions": "Three times a day for 3 days starting on day of chemotherapy, then 10mg three times a day as required for nausea. Supply 5 days or original pack."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Renal impairment",
+        "condition": "Creatinine clearance <20 ml/min",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Omit carboplatin."
+      },
+      {
+        "parameter": "Hepatic impairment",
+        "condition": "Any bilirubin or AST/ALT",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "No dose adjustment needed."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "Prior to treatment: neutrophils ≥1x10⁹/L, platelets ≥100x10⁹/L. GFR must be measured by EDTA or uncorrected Tc99 clearance (not Cockcroft-Gault). Single cycle regimen only."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es",
+      "EDTA or uncorrected Tc99 GFR measurement (Cockcroft-Gault NOT recommended for this regimen)"
+    ],
+    "special_warnings": [
+      "Single cycle regimen – given once post orchidectomy",
+      "GFR MUST be measured by EDTA or uncorrected Tc99 clearance; Cockcroft-Gault formula is NOT recommended",
+      "Carboplatin is an IRRITANT – follow extravasation procedures",
+      "Dose banded per national dose bands (10mg/ml)",
+      "AUC 7 dosing – dose calculated using measured GFR (Calvert formula)",
+      "Verify cycle length against source NHS UHS PDF — assumed 21 days."
+    ],
+    "auc_dosing": {
+      "target_auc": 7,
+      "formula": "Calvert",
+      "gfr_method": "EDTA or uncorrected Tc99 clearance (Cockcroft-Gault NOT recommended)",
+      "dose_unit": "mg",
+      "notes": "Carboplatin dose (mg) = AUC x (GFR + 25). GFR must be measured by EDTA or uncorrected Tc99 clearance."
+    },
+    "required_patient_fields": {
+      "gfr_measured": "EDTA or uncorrected Tc99 clearance required pre-treatment",
+      "stage": "Stage I seminoma, post orchidectomy",
+      "tumour_markers": "Normal AFP and HCG required",
+      "lymph_node_size": "Retroperitoneal lymph nodes ≤10mm"
+    },
+    "disease_site": "Urology",
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 7,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Single cycle (one dose post orchidectomy)",
+        "duration_minutes": 60,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 500,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded per national dose bands (10mg/ml). AUC dosing: use EDTA or uncorrected Tc99 clearance to calculate GFR – Cockcroft & Gault formula is NOT recommended for this regimen. Irritant – extravasation risk.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "Single cycle (one dose post orchidectomy) | Dose banded per national dose bands (10mg/ml). AUC dosing: use EDTA or uncorrected Tc99 clearance to calculate GFR – Cockcroft & Gault formula is NOT recommended for this regimen. Irritant – extravasation risk."
+      }
+    ]
+  }
+]

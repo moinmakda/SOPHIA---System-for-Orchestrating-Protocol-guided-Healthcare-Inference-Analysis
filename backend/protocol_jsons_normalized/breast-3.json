@@ -1,0 +1,1453 @@
+[
+  {
+    "protocol_code": "BREAST-CAPECITABINE-1000-14",
+    "protocol_name": "Breast Cancer - Capecitabine 1000mg/m² (14 day)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Capecitabine",
+        "dose": 1000.0,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Twice daily dosing (BD). First dose should be given in the evening of day 1. Take with or after food. Total daily dose divided into two doses given 12 hours apart. Dose banded in accordance with national dose bands."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Renal impairment CrCl 51-80 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "100% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl 30-50 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "75% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl less than 30 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.0,
+        "notes": "Contraindicated"
+      },
+      {
+        "condition": "Hepatic impairment - mild to moderate due to liver metastases",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "100% of dose probably acceptable; limited information available"
+      },
+      {
+        "condition": "Haematological: neutrophil <1x10⁹/L or platelets <100x10⁹/L on day 1 of subsequent cycles",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "Delay treatment 7 days. Resume at original dose; if delay >7 days or second occurrence, resume at 80% original dose"
+      },
+      {
+        "condition": "NCI-CTC Grade 2 toxicity - first occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "Interrupt until grade ≤1 then continue at same dose"
+      },
+      {
+        "condition": "NCI-CTC Grade 2 toxicity - second occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until grade ≤1 then resume at 75% original dose"
+      },
+      {
+        "condition": "NCI-CTC Grade 2 toxicity - third occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Interrupt until grade ≤1 then continue at 50% original dose"
+      },
+      {
+        "condition": "NCI-CTC Grade 2 toxicity - fourth occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.0,
+        "notes": "Stop treatment"
+      },
+      {
+        "condition": "NCI-CTC Grade 3 toxicity - first occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until grade ≤1 then resume at 75% original dose with prophylaxis if appropriate"
+      },
+      {
+        "condition": "NCI-CTC Grade 3 toxicity - second occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Interrupt until grade ≤1 then resume at 50% original dose"
+      },
+      {
+        "condition": "NCI-CTC Grade 3 toxicity - third occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.0,
+        "notes": "Discontinue capecitabine"
+      },
+      {
+        "condition": "NCI-CTC Grade 4 toxicity",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Discontinue unless consultant deems continuation in patient's best interest; if continued, use 50% dose once toxicity resolves to grade ≤1"
+      }
+    ],
+    "pre_medications": [
+      "Metoclopramide 10mg oral three times a day when required (take home)"
+    ],
+    "special_warnings": [
+      "DPD deficiency testing required before initiation: patients with complete or partial DPD deficiency are at increased risk of severe and fatal toxicity",
+      "Total daily dose must be divided into TWO doses given 12 hours apart - serious toxicity has occurred where total daily dose given twice a day",
+      "Short course oral chemotherapy - must not be continued beyond 14 days",
+      "If chest pain occurs consider stopping capecitabine",
+      "Loperamide 4mg after first loose stool then 2-4mg four times a day when required (max 16mg/24h)",
+      "Mouthwashes for mucositis per local/national policy",
+      "Gastric protection (PPI or H2 antagonist) may be considered in high-risk patients",
+      "NPSA/2008/RRR001 alert must be followed for oral chemotherapy",
+      "Patients should be assessed for suitability for oral chemotherapy prior to starting"
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "dpd_status",
+      "neutrophil_count",
+      "platelet_count",
+      "liver_function_tests"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "BREAST-CAPECITABINE-1250-14",
+    "protocol_name": "Breast Cancer - Capecitabine 1250mg/m² (14 day)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Capecitabine",
+        "dose": 1250.0,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Twice daily dosing (BD). First dose should be given in the evening of day 1. Take with or after food. Total daily dose divided into two doses given 12 hours apart. Dose banded in accordance with national dose bands."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Renal impairment CrCl 51-80 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "100% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl 30-50 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "75% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl less than 30 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.0,
+        "notes": "Contraindicated"
+      },
+      {
+        "condition": "Hepatic impairment - mild to moderate due to liver metastases",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "100% of dose probably acceptable; limited information available"
+      },
+      {
+        "condition": "Haematological: neutrophil <1x10⁹/L or platelets <100x10⁹/L on day 1 of subsequent cycles",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "Delay treatment 7 days. Resume at original dose; if delay >7 days or second occurrence, resume at 80% original dose"
+      },
+      {
+        "condition": "NCI-CTC Grade 2 toxicity - first occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "Interrupt until grade ≤1 then continue at same dose"
+      },
+      {
+        "condition": "NCI-CTC Grade 2 toxicity - second occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until grade ≤1 then resume at 75% original dose"
+      },
+      {
+        "condition": "NCI-CTC Grade 2 toxicity - third occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Interrupt until grade ≤1 then continue at 50% original dose"
+      },
+      {
+        "condition": "NCI-CTC Grade 2 toxicity - fourth occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.0,
+        "notes": "Stop treatment"
+      },
+      {
+        "condition": "NCI-CTC Grade 3 toxicity - first occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until grade ≤1 then resume at 75% original dose with prophylaxis if appropriate"
+      },
+      {
+        "condition": "NCI-CTC Grade 3 toxicity - second occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Interrupt until grade ≤1 then resume at 50% original dose"
+      },
+      {
+        "condition": "NCI-CTC Grade 3 toxicity - third occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.0,
+        "notes": "Discontinue capecitabine"
+      },
+      {
+        "condition": "NCI-CTC Grade 4 toxicity",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Discontinue unless consultant deems continuation in patient's best interest; if continued, use 50% dose once toxicity resolves to grade ≤1"
+      }
+    ],
+    "pre_medications": [
+      "Metoclopramide 10mg oral three times a day when required (take home)"
+    ],
+    "special_warnings": [
+      "DPD deficiency testing required before initiation: patients with complete or partial DPD deficiency are at increased risk of severe and fatal toxicity",
+      "Total daily dose must be divided into TWO doses given 12 hours apart - serious toxicity has occurred where total daily dose given twice a day",
+      "Short course oral chemotherapy - must not be continued beyond 14 days",
+      "If chest pain occurs consider stopping capecitabine",
+      "Loperamide 4mg after first loose stool then 2-4mg four times a day when required (max 16mg/24h)",
+      "Mouthwashes for mucositis per local/national policy",
+      "Gastric protection (PPI or H2 antagonist) may be considered in high-risk patients",
+      "NPSA/2008/RRR001 alert must be followed for oral chemotherapy",
+      "Patients should be assessed for suitability for oral chemotherapy prior to starting"
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "dpd_status",
+      "neutrophil_count",
+      "platelet_count",
+      "liver_function_tests"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "BREAST-CAPECITABINE-LAPATINIB",
+    "protocol_name": "Breast Cancer - Capecitabine-Lapatinib",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Capecitabine",
+        "dose": 1000.0,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Twice daily (BD). Start in evening of day 1. Take with or after food. Total daily dose divided into two doses 12 hours apart. Dose banded per national dose bands."
+      },
+      {
+        "drug_name": "Lapatinib",
+        "dose": 1250.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Once daily. Take on empty stomach, one hour before or after food. Dose reduction to 1000mg/day may be required for haematological toxicity or NCI-CTC grade 3 adverse events."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Capecitabine - Renal impairment CrCl 51-80 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "100% of original dose"
+      },
+      {
+        "condition": "Capecitabine - Renal impairment CrCl 30-50 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "75% of original dose"
+      },
+      {
+        "condition": "Capecitabine - Renal impairment CrCl less than 30 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.0,
+        "notes": "Contraindicated"
+      },
+      {
+        "condition": "Lapatinib - Mild to moderate renal impairment",
+        "drug_name": "Lapatinib",
+        "factor": 1.0,
+        "notes": "No dose reductions required"
+      },
+      {
+        "condition": "Capecitabine - Hepatic impairment mild to moderate (liver metastases)",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "100% probably acceptable; limited data"
+      },
+      {
+        "condition": "Lapatinib - Hepatic impairment",
+        "drug_name": "Lapatinib",
+        "factor": 1.0,
+        "notes": "No information available"
+      },
+      {
+        "condition": "Haematological: neutrophil <1x10⁹/L or platelets <100x10⁹/L - capecitabine",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "Delay 7-14 days; resume at original dose or 75% if delay >14 days or second occurrence"
+      },
+      {
+        "condition": "Haematological: first occurrence resolving within 14 days - lapatinib",
+        "drug_name": "Lapatinib",
+        "factor": 1.0,
+        "notes": "Re-start at original dose"
+      },
+      {
+        "condition": "Haematological: second occurrence resolving within 14 days - lapatinib",
+        "drug_name": "Lapatinib",
+        "factor": 0.8,
+        "notes": "Consider reducing dose to 1000mg per day"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 - first occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "Interrupt until grade ≤1 then continue same dose"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 - second occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until grade ≤1 then resume at 75%"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 - third occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Interrupt until grade ≤1 then resume at 50%"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 - fourth occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.0,
+        "notes": "Stop treatment"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 - first occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until grade ≤1 then resume at 75%"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 - second occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Interrupt until grade ≤1 then resume at 50%"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 - third occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.0,
+        "notes": "Discontinue capecitabine"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 4 toxicity",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Discontinue unless consultant deems continuation in patient's best interest; if continued 50% dose"
+      },
+      {
+        "condition": "Lapatinib: asymptomatic LVEF decrease >20% from baseline - confirmed on repeat LVEF within 14 days",
+        "drug_name": "Lapatinib",
+        "factor": 0.0,
+        "notes": "Temporarily discontinue; if LVEF recovers within 21 days may re-start at 1000mg daily"
+      },
+      {
+        "condition": "Lapatinib: NCI-CTC grade 3 or above left ventricular systolic dysfunction or interstitial pneumonitis",
+        "drug_name": "Lapatinib",
+        "factor": 0.0,
+        "notes": "Stop lapatinib"
+      },
+      {
+        "condition": "Lapatinib: NCI-CTC grade 3 dermatological reaction or grade 2 not improving within 14 days",
+        "drug_name": "Lapatinib",
+        "factor": 0.0,
+        "notes": "Stop lapatinib for up to 14 days; if resolves to grade 1 re-start at original dose; discontinue if grade 3 recurs"
+      },
+      {
+        "condition": "Lapatinib: NCI-CTC grade 4 dermatological reaction",
+        "drug_name": "Lapatinib",
+        "factor": 0.0,
+        "notes": "Stop lapatinib"
+      },
+      {
+        "condition": "Lapatinib: NCI-CTC grade 2 adverse effects - third or fourth appearance",
+        "drug_name": "Lapatinib",
+        "factor": 0.8,
+        "notes": "Interrupt until grade 1 then re-start at 1000mg per day"
+      },
+      {
+        "condition": "Lapatinib: NCI-CTC grade 3 toxicity",
+        "drug_name": "Lapatinib",
+        "factor": 0.8,
+        "notes": "Interrupt until grade ≤1 (up to 14 days) then consider reducing to 1000mg per day"
+      }
+    ],
+    "pre_medications": [
+      "Metoclopramide 10mg oral three times a day when required (take home)",
+      "Loperamide 4mg oral after first loose stool then 2-4mg four times a day when required (max 16mg/24h)",
+      "Mouthwashes per local/national mucositis policy"
+    ],
+    "special_warnings": [
+      "DPD deficiency testing required before initiation: patients with complete or partial DPD deficiency are at increased risk of severe and fatal toxicity",
+      "HER2-positive breast cancer only: for patients with inadequate response to anthracycline, taxane and trastuzumab therapy",
+      "Cardiac function must be assessed prior to starting lapatinib and every 12 weeks thereafter (or 4-8 weekly if signs of cardiac impairment)",
+      "LVEF monitoring: if LVEF drops 10 ejection points from baseline and to below 50%, lapatinib should be suspended and repeat LVEF within 21 days",
+      "If chest pain occurs consider stopping capecitabine",
+      "Total daily capecitabine dose divided into two doses 12 hours apart - serious toxicity has occurred where total daily dose given twice a day",
+      "NPSA/2008/RRR001 alert must be followed for oral chemotherapy",
+      "Protocol may require funding approval"
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "dpd_status",
+      "lvef",
+      "her2_status",
+      "neutrophil_count",
+      "platelet_count",
+      "liver_function_tests"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "BREAST-CARBOPLATIN-AUC6",
+    "protocol_name": "Breast Cancer - Carboplatin AUC6 (6 cycles)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 6.0,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": 890.0,
+        "max_dose_unit": "mg",
+        "notes": "Calvert formula using calculated GFR. AUC5 may be considered with EDTA clearance (seek consultant advice). Max dose 900mg (set as 890mg in ARIA for national dose bands). In 500ml glucose 5% over 60 minutes. Dose may need altering if renal function changes >10% from previous cycle."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Renal impairment CrCl less than 20 ml/min",
+        "drug_name": "Carboplatin",
+        "factor": 0.0,
+        "notes": "Do not administer if CrCl <20ml/min"
+      },
+      {
+        "condition": "Renal function change >10% from previous cycle",
+        "drug_name": "Carboplatin",
+        "factor": 1.0,
+        "notes": "Recalculate dose based on updated GFR"
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Carboplatin",
+        "factor": 1.0,
+        "notes": "No dose reduction necessary"
+      },
+      {
+        "condition": "Haematological: neutrophil <1x10⁹/L or platelets <100x10⁹/L on day 1",
+        "drug_name": "Carboplatin",
+        "factor": 1.0,
+        "notes": "Delay 7 days; may resume at original dose or reduce to AUC5.5 (if starting AUC6) or AUC4.5 (if starting AUC5); stop if second episode or delay >7 days"
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg oral or IV 15-30 minutes prior to chemotherapy",
+      "Ondansetron 8mg oral or IV 15-30 minutes prior to chemotherapy",
+      "Dexamethasone 4mg twice a day oral for 3 days (take home, starting day 2)",
+      "Metoclopramide 10mg oral three times a day when required (take home)"
+    ],
+    "special_warnings": [
+      "EDTA or calculated creatinine clearance required before cycle 1",
+      "Carboplatin is an irritant - extravasation precautions required",
+      "Dose recalculation required if GFR changes by more than 10% from previous cycle",
+      "For obese patients or CrCl >125ml/min seek consultant advice",
+      "Consider erythropoietin per NICE TA323 if haemoglobin <8g/dL"
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "neutrophil_count",
+      "platelet_count"
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 6,
+      "max_dose_mg": 890
+    }
+  },
+  {
+    "protocol_code": "BREAST-CARBO-DOCE-PERTU-TRAST-IV-SC",
+    "protocol_name": "Breast Cancer - Carboplatin (AUC6)-Docetaxel-Pertuzumab-Trastuzumab (IV/SC) Neoadjuvant",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 18,
+    "drugs": [
+      {
+        "drug_name": "Pertuzumab (loading dose - Cycle 1)",
+        "dose": 840.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 loading dose: 840mg in 250ml sodium chloride 0.9% over 60 minutes. Observe patient 60 minutes after first infusion, 30 minutes after second infusion. If gap between infusions ≥6 weeks, re-administer 840mg loading dose."
+      },
+      {
+        "drug_name": "Pertuzumab (maintenance dose - Cycles 2-6)",
+        "dose": 420.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 2-6 maintenance: 420mg in 250ml sodium chloride 0.9% over 30-60 minutes. No dose reductions permitted; if not tolerated, stop permanently. Diarrhoea can be severe - ensure appropriate anti-diarrhoeal therapy prescribed."
+      },
+      {
+        "drug_name": "Trastuzumab (loading dose - Cycle 1)",
+        "dose": 8.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 loading dose: 8mg/kg in 250ml sodium chloride 0.9% over 90 minutes. Observe 6 hours after first infusion, 2 hours after second. Dose banded per national dose bands (21mg/ml)."
+      },
+      {
+        "drug_name": "Trastuzumab (maintenance dose - Cycles 2-6)",
+        "dose": 6.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 2-6 maintenance: 6mg/kg in 250ml sodium chloride 0.9% over 90 minutes (30 minutes if well tolerated). If missed by ≤7 days give 6mg/kg ASAP; if missed >7 days give re-loading dose 8mg/kg over 90 minutes. No dose reductions permitted."
+      },
+      {
+        "drug_name": "Carboplatin",
+        "dose": 6.0,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          2
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": 890.0,
+        "max_dose_unit": "mg",
+        "notes": "Cycle 1: given on day 2. Cycles 2-6: given on day 1. In 500ml glucose 5% over 60 minutes. Max dose 900mg (890mg in ARIA). Calvert formula with calculated GFR. AUC5 may be used with EDTA clearance. Dose adjust if renal function changes >10%."
+      },
+      {
+        "drug_name": "Docetaxel",
+        "dose": 75.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          2
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1: given on day 2. Cycles 2-6: given on day 1. In 250ml sodium chloride 0.9% over 60 minutes. Doses >200mg diluted in 500ml NaCl 0.9%. Starting dose 55mg/m² may be considered in highly myelosuppressive patients with plan to escalate to 75mg/m². Dose banded per national dose bands (20mg/ml). Docetaxel is a vesicant."
+      },
+      {
+        "drug_name": "Trastuzumab (subcutaneous - Cycles 7-18)",
+        "dose": 600.0,
+        "dose_unit": "mg",
+        "route": "Subcutaneous",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.083,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 7-18 (12 cycles, post-surgery maintenance): 600mg subcutaneous injection over 3-5 minutes. Alternate injection site between left and right thigh. New injections at least 2.5cm from old site. Interval between SC administrations not less than 3 weeks. No dose reductions permitted."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological: neutrophil <1x10⁹/L or platelets <100x10⁹/L on day 1 - carboplatin and docetaxel",
+        "drug_name": "Carboplatin",
+        "factor": 1.0,
+        "notes": "Delay 7 days. Only restart when levels reached. No haematological dose modifications for pertuzumab or trastuzumab."
+      },
+      {
+        "condition": "Febrile neutropenia or neutrophil <0.5x10⁹/L or platelets <50x10⁹/L for >7 days",
+        "drug_name": "Carboplatin",
+        "factor": 0.8,
+        "notes": "Reduce carboplatin and docetaxel to 80% of original dose"
+      },
+      {
+        "condition": "Neutropenia/thrombocytopenia recurring despite 80% dose reduction",
+        "drug_name": "Carboplatin",
+        "factor": 0.5,
+        "notes": "Further reduce to 50% or stop treatment"
+      },
+      {
+        "condition": "Docetaxel - peripheral neuropathy NCI-CTC grade 3 at 75mg/m²",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Reduce from 75mg/m² to 60mg/m²"
+      },
+      {
+        "condition": "Docetaxel - peripheral neuropathy grade 3 at doses lower than 75mg/m² or grade 4 neuropathy",
+        "drug_name": "Docetaxel",
+        "factor": 0.0,
+        "notes": "Stop treatment"
+      },
+      {
+        "condition": "Docetaxel - NCI-CTC grade 3 cutaneous toxicity on day 1",
+        "drug_name": "Docetaxel",
+        "factor": 1.0,
+        "notes": "Delay until grade ≤1; subsequent doses reduce from 75mg/m² to 60mg/m²"
+      },
+      {
+        "condition": "Docetaxel - NCI-CTC grade 4 cutaneous toxicity",
+        "drug_name": "Docetaxel",
+        "factor": 0.0,
+        "notes": "Stop docetaxel"
+      },
+      {
+        "condition": "Docetaxel - excessive tearing/lacrimation",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Hypromellose 0.3% eye drops QDS; if ocular irritation continues reduce to 60mg/m²"
+      },
+      {
+        "condition": "Hepatic impairment - Docetaxel: AST/ALT ≥1.5xULN and Alk Phos ≥2.5xULN",
+        "drug_name": "Docetaxel",
+        "factor": 0.75,
+        "notes": "Consider 75% dose"
+      },
+      {
+        "condition": "Hepatic impairment - Docetaxel: bilirubin >ULN and/or AST/ALT ≥3.5xULN and Alk Phos ≥6xULN",
+        "drug_name": "Docetaxel",
+        "factor": 0.0,
+        "notes": "Not recommended"
+      },
+      {
+        "condition": "Renal impairment - Carboplatin: CrCl ≤20 ml/min",
+        "drug_name": "Carboplatin",
+        "factor": 0.0,
+        "notes": "Contraindicated"
+      },
+      {
+        "condition": "Pertuzumab or trastuzumab intolerance",
+        "drug_name": "Pertuzumab",
+        "factor": 0.0,
+        "notes": "If patients do not tolerate pertuzumab or trastuzumab, treatment should be stopped"
+      },
+      {
+        "condition": "LVEF <50% or symptomatic cardiac dysfunction",
+        "drug_name": "Trastuzumab",
+        "factor": 0.0,
+        "notes": "Hold pertuzumab and trastuzumab; if LVEF <40% or LVEF 40-45% and 10 points below baseline on repeat - stop. If LVEF ≥45% or >10 points above nadir on repeat - resume. Symptomatic cardiac dysfunction: discontinue, commence ACE inhibitor, refer to cardiologist."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg twice daily oral for 3 days starting 24 hours before docetaxel (or dexamethasone 20mg IV if pre-medication forgotten)",
+      "Ondansetron 8mg oral or IV 15-30 minutes before chemotherapy",
+      "Ondansetron 8mg twice daily oral for 3 days (take home, starting evening of chemotherapy day)",
+      "Metoclopramide 10mg oral three times a day when required (take home)",
+      "Loperamide 4mg after first loose motion then 2mg after each loose motion (cycle 1 only, max 16mg/24h)",
+      "Chlorphenamine 10mg IV when required for infusion reactions",
+      "Hydrocortisone 100mg IV when required for infusion reactions",
+      "Paracetamol 1000mg oral when required for infusion reactions",
+      "Growth factors: filgrastim/bioequivalent 30 million units SC days 3-5, 10-12, 17-19 of cycle OR lenograstim 33.6 million units SC days 3-5, 10-12, 17-19 OR pegfilgrastim 6mg SC day 2"
+    ],
+    "special_warnings": [
+      "HER2-positive breast cancer only - confirm HER2 status prior to therapy",
+      "LVEF must be ≥50% before starting cycle 1 of pertuzumab and trastuzumab",
+      "Cardiac function assessed prior to treatment then every 9-12 weeks and as clinically indicated",
+      "Blood pressure monitoring prior to each trastuzumab administration",
+      "No dose reductions permitted for pertuzumab or trastuzumab - if not tolerated, stop permanently",
+      "Docetaxel is highly myelosuppressive - consider starting at 55mg/m² in patients with poor bone marrow reserves",
+      "Pertuzumab-associated diarrhoea can be severe - ensure appropriate anti-diarrhoeal therapy",
+      "Symptomatic cardiac dysfunction: discontinue pertuzumab and trastuzumab, commence ACE inhibitor therapy, refer to cardiologist",
+      "Trastuzumab SC (cycles 7-18): alternate injection sites (left/right thigh), minimum 3 weeks between injections",
+      "Carboplatin max dose 900mg (890mg in ARIA); carboplatin is an irritant; docetaxel is a vesicant",
+      "Neoadjuvant protocol: 6 cycles with carboplatin/docetaxel/pertuzumab/trastuzumab IV then 12 cycles trastuzumab SC post-surgery (18 cycles total)"
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "lvef",
+      "her2_status",
+      "neutrophil_count",
+      "platelet_count",
+      "liver_function_tests"
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 6,
+      "max_dose_mg": 890
+    }
+  },
+  {
+    "protocol_code": "BREAST-CARBO-DOCE-PERTU-TRAST-IV",
+    "protocol_name": "Breast Cancer - Carboplatin (AUC6)-Docetaxel-Pertuzumab-Trastuzumab (IV) Neoadjuvant",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 18,
+    "drugs": [
+      {
+        "drug_name": "Pertuzumab (loading dose - Cycle 1)",
+        "dose": 840.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 loading dose: 840mg in 250ml sodium chloride 0.9% over 60 minutes. Observe patient 60 minutes after first infusion, 30 minutes after second. If gap between infusions ≥6 weeks, re-administer 840mg loading dose."
+      },
+      {
+        "drug_name": "Pertuzumab (maintenance dose - Cycles 2-6)",
+        "dose": 420.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 2-6 maintenance: 420mg in 250ml sodium chloride 0.9% over 30-60 minutes. No dose reductions permitted. Diarrhoea can be severe - ensure appropriate anti-diarrhoeal therapy."
+      },
+      {
+        "drug_name": "Trastuzumab (loading dose - Cycle 1)",
+        "dose": 8.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 loading dose: 8mg/kg in 250ml sodium chloride 0.9% over 90 minutes. Dose banded per national dose bands (21mg/ml). Observe 6 hours after first infusion, 2 hours after second."
+      },
+      {
+        "drug_name": "Trastuzumab (maintenance dose - Cycles 2-6)",
+        "dose": 6.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 2-6 maintenance: 6mg/kg in 250ml NaCl 0.9% over 90 minutes (30 mins if well tolerated). If missed ≤7 days give 6mg/kg ASAP; if missed >7 days re-loading dose 8mg/kg over 90 minutes. No dose reductions permitted."
+      },
+      {
+        "drug_name": "Carboplatin",
+        "dose": 6.0,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          2
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": 890.0,
+        "max_dose_unit": "mg",
+        "notes": "Cycle 1: day 2. Cycles 2-6: day 1. In 500ml glucose 5% over 60 minutes. Max 900mg (890mg in ARIA). Calvert formula with calculated GFR. AUC5 with EDTA clearance if needed. Adjust if renal function changes >10%."
+      },
+      {
+        "drug_name": "Docetaxel",
+        "dose": 75.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          2
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1: day 2. Cycles 2-6: day 1. In 250ml NaCl 0.9% over 60 minutes. Doses >200mg in 500ml NaCl 0.9%. Starting 55mg/m² may be considered for myelosuppressive-risk patients with plan to increase. Dose banded (20mg/ml). Vesicant."
+      },
+      {
+        "drug_name": "Trastuzumab (maintenance - Cycles 7-18)",
+        "dose": 6.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 7-18 (12 cycles, post-surgery IV maintenance): 6mg/kg in 250ml NaCl 0.9% over 90 minutes. Dose banded (21mg/ml). No dose reductions permitted."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological: neutrophil <1x10⁹/L or platelets <100x10⁹/L on day 1 - carboplatin and docetaxel",
+        "drug_name": "Carboplatin",
+        "factor": 1.0,
+        "notes": "Delay 7 days. Only restart when levels reached. No haematological dose modifications for pertuzumab or trastuzumab."
+      },
+      {
+        "condition": "Febrile neutropenia or neutrophil <0.5x10⁹/L or platelets <50x10⁹/L for >7 days",
+        "drug_name": "Carboplatin",
+        "factor": 0.8,
+        "notes": "Reduce carboplatin and docetaxel to 80% of original dose"
+      },
+      {
+        "condition": "Neutropenia/thrombocytopenia recurring despite 80% dose reduction",
+        "drug_name": "Carboplatin",
+        "factor": 0.5,
+        "notes": "Further reduce to 50% or stop treatment"
+      },
+      {
+        "condition": "Docetaxel - peripheral neuropathy NCI-CTC grade 3 at 75mg/m²",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Reduce from 75mg/m² to 60mg/m²"
+      },
+      {
+        "condition": "Docetaxel - peripheral neuropathy grade 3 at <75mg/m² or grade 4",
+        "drug_name": "Docetaxel",
+        "factor": 0.0,
+        "notes": "Stop treatment"
+      },
+      {
+        "condition": "Docetaxel - NCI-CTC grade 3 cutaneous toxicity on day 1",
+        "drug_name": "Docetaxel",
+        "factor": 1.0,
+        "notes": "Delay until ≤grade 1; subsequent doses reduce 75→60mg/m²"
+      },
+      {
+        "condition": "Docetaxel - NCI-CTC grade 4 cutaneous toxicity",
+        "drug_name": "Docetaxel",
+        "factor": 0.0,
+        "notes": "Stop docetaxel"
+      },
+      {
+        "condition": "Hepatic: Docetaxel AST/ALT ≥1.5xULN and Alk Phos ≥2.5xULN",
+        "drug_name": "Docetaxel",
+        "factor": 0.75,
+        "notes": "Consider 75% dose"
+      },
+      {
+        "condition": "Hepatic: Docetaxel bilirubin >ULN and/or AST/ALT ≥3.5xULN and Alk Phos ≥6xULN",
+        "drug_name": "Docetaxel",
+        "factor": 0.0,
+        "notes": "Not recommended"
+      },
+      {
+        "condition": "Renal impairment - Carboplatin: CrCl ≤20 ml/min",
+        "drug_name": "Carboplatin",
+        "factor": 0.0,
+        "notes": "Contraindicated"
+      },
+      {
+        "condition": "LVEF <50% or symptomatic cardiac dysfunction",
+        "drug_name": "Trastuzumab",
+        "factor": 0.0,
+        "notes": "Hold pertuzumab and trastuzumab per LVEF flowchart; symptomatic cardiac dysfunction: discontinue both, commence ACE inhibitor, refer to cardiologist"
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg twice daily oral for 3 days starting 24 hours before docetaxel (or dexamethasone 20mg IV if pre-medication forgotten)",
+      "Ondansetron 8mg oral or IV 15-30 minutes before chemotherapy",
+      "Ondansetron 8mg twice daily oral for 3 days (take home, starting evening of chemotherapy day - not antibody administration day)",
+      "Metoclopramide 10mg oral three times a day when required (take home)",
+      "Loperamide 4mg after first loose motion then 2mg after each loose motion (cycle 1, max 16mg/24h)",
+      "Chlorphenamine 10mg IV when required for infusion reactions",
+      "Hydrocortisone 100mg IV when required for infusion reactions",
+      "Paracetamol 1000mg oral when required for infusion reactions",
+      "Growth factors: filgrastim/bioequivalent 30 million units SC days 3-5, 10-12, 17-19 OR lenograstim 33.6 million units SC days 3-5, 10-12, 17-19 OR pegfilgrastim 6mg SC day 2"
+    ],
+    "special_warnings": [
+      "HER2-positive breast cancer only - confirm HER2 status prior to therapy",
+      "LVEF must be ≥50% before starting cycle 1 of pertuzumab and trastuzumab",
+      "Cardiac function assessed prior to treatment then every 9-12 weeks and clinically indicated",
+      "Blood pressure prior to each trastuzumab administration",
+      "No dose reductions permitted for pertuzumab or trastuzumab - if not tolerated, stop permanently",
+      "Docetaxel highly myelosuppressive - consider starting at 55mg/m² in high-risk patients",
+      "Pertuzumab-associated diarrhoea can be severe - ensure appropriate anti-diarrhoeal therapy prescribed from support folder",
+      "Symptomatic cardiac dysfunction: discontinue pertuzumab and trastuzumab, ACE inhibitor, refer cardiologist",
+      "Neoadjuvant protocol: 6 cycles with carboplatin/docetaxel/pertuzumab/trastuzumab IV then 12 cycles trastuzumab IV post-surgery (18 cycles total)",
+      "Carboplatin is an irritant; docetaxel is a vesicant"
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "lvef",
+      "her2_status",
+      "neutrophil_count",
+      "platelet_count",
+      "liver_function_tests"
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 6,
+      "max_dose_mg": 890
+    }
+  },
+  {
+    "protocol_code": "BREAST-CARBOPLATIN-DOCETAXEL-TRASTUZUMAB-TCH",
+    "protocol_name": "Breast Cancer - Carboplatin (AUC6)-Docetaxel-Trastuzumab (TCH)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 18,
+    "drugs": [
+      {
+        "drug_name": "Trastuzumab (loading dose - Cycle 1)",
+        "dose": 8.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 loading dose: 8mg/kg in 250ml NaCl 0.9% over 90 minutes. Observe 6 hours after first infusion, 2 hours after second. Dose banded (21mg/ml)."
+      },
+      {
+        "drug_name": "Carboplatin",
+        "dose": 6.0,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          2
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": 890.0,
+        "max_dose_unit": "mg",
+        "notes": "Cycle 1: day 2. Cycles 2-6: day 1. In 500ml glucose 5% over 60 minutes. Max 900mg (890mg in ARIA). Calvert formula. Adjust if renal function changes >10%. AUC5 with EDTA clearance if indicated."
+      },
+      {
+        "drug_name": "Docetaxel",
+        "dose": 75.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          2
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1: day 2. Cycles 2-6: day 1. In 250ml NaCl 0.9% over 60 minutes. Doses >200mg in 500ml NaCl 0.9%. Starting 55mg/m² may be considered for high-risk myelosuppression patients. Dose banded. Vesicant (exfoliant per this PDF)."
+      },
+      {
+        "drug_name": "Trastuzumab (maintenance - Cycles 2-18)",
+        "dose": 6.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 2-6: 6mg/kg in 250ml NaCl 0.9% over 30 minutes. Cycles 7-18 (trastuzumab monotherapy): 6mg/kg in 250ml NaCl 0.9% over 30 minutes. If missed ≤14 days give 6mg/kg ASAP; if missed >14 days re-loading dose 8mg/kg over 90 minutes. No dose reductions permitted."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological: neutrophil <1x10⁹/L or platelets <100x10⁹/L - carboplatin and docetaxel",
+        "drug_name": "Carboplatin",
+        "factor": 1.0,
+        "notes": "Delay 7 days. No haematological dose modifications for trastuzumab - if not tolerated, stop."
+      },
+      {
+        "condition": "Febrile neutropenia or neutrophil <0.5x10⁹/L or platelets <50x10⁹/L for >7 days",
+        "drug_name": "Carboplatin",
+        "factor": 0.8,
+        "notes": "Reduce carboplatin and docetaxel to 80% original dose"
+      },
+      {
+        "condition": "Neutropenia/thrombocytopenia recurring despite 80% dose reduction",
+        "drug_name": "Carboplatin",
+        "factor": 0.5,
+        "notes": "Further reduce to 50% or stop treatment"
+      },
+      {
+        "condition": "Docetaxel - peripheral neuropathy NCI-CTC grade 3 at 75mg/m²",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Reduce from 75 to 60mg/m²"
+      },
+      {
+        "condition": "Docetaxel - peripheral neuropathy grade 3 at <75mg/m² or grade 4",
+        "drug_name": "Docetaxel",
+        "factor": 0.0,
+        "notes": "Stop treatment"
+      },
+      {
+        "condition": "Docetaxel - NCI-CTC grade 3 cutaneous toxicity on day 1",
+        "drug_name": "Docetaxel",
+        "factor": 1.0,
+        "notes": "Delay until ≤grade 1; subsequent doses reduce 75→60mg/m²"
+      },
+      {
+        "condition": "Docetaxel - NCI-CTC grade 4 cutaneous toxicity",
+        "drug_name": "Docetaxel",
+        "factor": 0.0,
+        "notes": "Stop docetaxel"
+      },
+      {
+        "condition": "Hepatic: Docetaxel AST/ALT ≥1.5xULN and Alk Phos ≥2.5xULN",
+        "drug_name": "Docetaxel",
+        "factor": 0.75,
+        "notes": "Consider 75% dose"
+      },
+      {
+        "condition": "Hepatic: Docetaxel bilirubin >ULN and/or AST/ALT ≥3.5xULN and Alk Phos ≥6xULN",
+        "drug_name": "Docetaxel",
+        "factor": 0.0,
+        "notes": "Not recommended"
+      },
+      {
+        "condition": "Renal impairment - Carboplatin: CrCl ≤20 ml/min",
+        "drug_name": "Carboplatin",
+        "factor": 0.0,
+        "notes": "Contraindicated"
+      },
+      {
+        "condition": "LVEF drop: LVEF ≥50% and drop >20 points from baseline",
+        "drug_name": "Trastuzumab",
+        "factor": 1.0,
+        "notes": "Continue trastuzumab and repeat LVEF in 3 weeks"
+      },
+      {
+        "condition": "LVEF drop: LVEF <50% and drop ≥10 points from baseline",
+        "drug_name": "Trastuzumab",
+        "factor": 0.0,
+        "notes": "Hold treatment, repeat LVEF in 3 weeks. If LVEF drop confirmed (still <50% and ≥10 points below baseline), stop. If not confirmed (drop <10 points or LVEF ≥50%), resume."
+      },
+      {
+        "condition": "Symptomatic cardiac dysfunction",
+        "drug_name": "Trastuzumab",
+        "factor": 0.0,
+        "notes": "Discontinue trastuzumab, commence ACE inhibitor, refer to cardiologist"
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg twice daily oral for 3 days starting 24 hours before docetaxel (or dexamethasone 20mg IV if pre-medication forgotten)",
+      "Ondansetron 8mg oral or IV 15-30 minutes prior to chemotherapy",
+      "Metoclopramide 10mg oral three times a day when required (take home)",
+      "Chlorphenamine 10mg IV when required for infusion reactions",
+      "Hydrocortisone 100mg IV when required for infusion reactions",
+      "Paracetamol 1000mg oral when required for infusion reactions",
+      "Growth factors according to local policy"
+    ],
+    "special_warnings": [
+      "HER2-positive breast cancer only - confirm HER2 status prior to therapy",
+      "LVEF must be ≥50% before starting trastuzumab",
+      "Cardiac function assessed prior to treatment then every 12 weeks (adjuvant: unless clinical evidence of cardiac failure; metastatic: every 12 weeks for 24 weeks then every 24 weeks)",
+      "Blood pressure prior to each trastuzumab administration",
+      "No dose reductions permitted for trastuzumab - if not tolerated, stop",
+      "Docetaxel highly myelosuppressive - consider 55mg/m² starting dose in high-risk patients",
+      "Carboplatin max dose 900mg (890mg in ARIA); carboplatin is an irritant",
+      "Protocol: 6 cycles TCH then 12 cycles trastuzumab monotherapy (18 cycles trastuzumab total)",
+      "Trastuzumab hypersensitivity: observe 6 hours after first infusion, 2 hours after second"
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "lvef",
+      "her2_status",
+      "neutrophil_count",
+      "platelet_count",
+      "liver_function_tests"
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 6,
+      "max_dose_mg": 890
+    }
+  },
+  {
+    "protocol_code": "BREAST-CARBO-PACLI-EC-PEMBRO-NEOADJUVANT",
+    "protocol_name": "Breast Cancer - Pembrolizumab with Carboplatin/Paclitaxel and EC Neoadjuvant followed by Adjuvant Pembrolizumab",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 17,
+    "drugs": [
+      {
+        "drug_name": "Pembrolizumab (Neoadjuvant phase - Cycles 1-8)",
+        "dose": 200.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1-8 (neoadjuvant): 200mg flat dose in 100ml NaCl 0.9% over 30 minutes via 0.2 micron filter. Cycles 1-4: with paclitaxel/carboplatin. Cycles 5-8: with epirubicin/cyclophosphamide. No dose reductions for pembrolizumab - withhold or permanently discontinue per immune-related toxicity guidelines."
+      },
+      {
+        "drug_name": "Paclitaxel (Cycles 1-4)",
+        "dose": 80.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1-4 only. Weekly paclitaxel: days 1, 8 and 15 of each 21-day cycle. In 250ml NaCl 0.9% over 60 minutes. Must be administered via non-PVC set with in-line 0.22 micron filter. Omit paclitaxel if occurring on day 8 or 15 with low counts."
+      },
+      {
+        "drug_name": "Carboplatin (Cycles 1-4)",
+        "dose": 5.0,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": 790.0,
+        "max_dose_unit": "mg",
+        "notes": "Cycles 1-4 only. AUC5 with calculated GFR. AUC4 with EDTA clearance if indicated. Max dose 750mg at CrCl 125ml/min (set as 790mg in ARIA). In 500ml glucose 5% over 60 minutes. Recalculate GFR if creatinine >1.5xULN or changes ≥10% from baseline."
+      },
+      {
+        "drug_name": "Epirubicin (Cycles 5-8)",
+        "dose": 90.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 5-8 only. 90mg/m² intravenous bolus over 10 minutes. Dose banded (2mg/ml). Vesicant."
+      },
+      {
+        "drug_name": "Cyclophosphamide (Cycles 5-8)",
+        "dose": 600.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 5-8 only. 600mg/m² intravenous bolus over 10 minutes. Dose banded (20mg/ml)."
+      },
+      {
+        "drug_name": "Pembrolizumab (Adjuvant phase - Cycles 9-17)",
+        "dose": 200.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 9-17 adjuvant monotherapy post-surgery: 200mg flat dose in 100ml NaCl 0.9% over 30 minutes via 0.2 micron filter. 9 cycles (21-day cycles). No dose reductions - withhold or permanently discontinue per immune toxicity guidelines."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Carboplatin/Paclitaxel phase (cycles 1-4): neutrophil ≥1.0 and platelets ≥100",
+        "drug_name": "Carboplatin",
+        "factor": 1.0,
+        "notes": "Proceed at 100%"
+      },
+      {
+        "condition": "Carboplatin/Paclitaxel phase: neutrophil <1.0 or platelets <100",
+        "drug_name": "Carboplatin",
+        "factor": 1.0,
+        "notes": "Delay 1 week (or until recovery) then reduce carboplatin dose by 1 AUC; omit paclitaxel if occurring on day 8 or 15"
+      },
+      {
+        "condition": "Carboplatin/Paclitaxel phase: febrile neutropenia (neutrophils <0.5x10⁹/L and fever >38.5°C requiring IV antibiotics)",
+        "drug_name": "Paclitaxel",
+        "factor": 0.75,
+        "notes": "Reduce paclitaxel to 60mg/m² and carboplatin by 1 AUC for all subsequent doses"
+      },
+      {
+        "condition": "EC phase (cycles 5-8): neutrophil <1.0 and/or platelets <100",
+        "drug_name": "Epirubicin",
+        "factor": 1.0,
+        "notes": "Delay 1 week or until recovery"
+      },
+      {
+        "condition": "EC phase: neutrophil <0.5 for >1 week or febrile neutropenia despite G-CSF",
+        "drug_name": "Epirubicin",
+        "factor": 0.8,
+        "notes": "Consider 20% dose reduction for future cycles (both epirubicin and cyclophosphamide)"
+      },
+      {
+        "condition": "Adjuvant pembrolizumab phase (cycles 9-17): neutrophil <1.0x10⁹/L or platelets <75x10⁹/L",
+        "drug_name": "Pembrolizumab",
+        "factor": 1.0,
+        "notes": "Discuss with consultant"
+      },
+      {
+        "condition": "Hepatic: Epirubicin - bilirubin 24-51 µmol/L or AST/ALT 2-4xULN",
+        "drug_name": "Epirubicin",
+        "factor": 0.5,
+        "notes": "50% of original dose"
+      },
+      {
+        "condition": "Hepatic: Epirubicin - bilirubin 52-85 µmol/L or AST/ALT >4xULN",
+        "drug_name": "Epirubicin",
+        "factor": 0.25,
+        "notes": "25% of original dose"
+      },
+      {
+        "condition": "Hepatic: Epirubicin - bilirubin >85 µmol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.0,
+        "notes": "Contraindicated"
+      },
+      {
+        "condition": "Hepatic: Paclitaxel - bilirubin ≥51 µmol/L",
+        "drug_name": "Paclitaxel",
+        "factor": 0.0,
+        "notes": "Not recommended"
+      },
+      {
+        "condition": "Renal: Carboplatin CrCl <20 ml/min",
+        "drug_name": "Carboplatin",
+        "factor": 0.0,
+        "notes": "Omit carboplatin"
+      },
+      {
+        "condition": "Renal: Cyclophosphamide CrCl 10-20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "75% of dose"
+      },
+      {
+        "condition": "Renal: Cyclophosphamide CrCl ≤10 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "50% of dose"
+      },
+      {
+        "condition": "Pembrolizumab - NCI-CTC grade 2-3 colitis",
+        "drug_name": "Pembrolizumab",
+        "factor": 0.0,
+        "notes": "Withhold and administer corticosteroids; may re-start when colitis at grade 1 following taper; permanently discontinue if grade 3 or above or not improving within 12 weeks"
+      },
+      {
+        "condition": "Pembrolizumab - NCI-CTC grade 2 pneumonitis",
+        "drug_name": "Pembrolizumab",
+        "factor": 0.0,
+        "notes": "Withhold; corticosteroids 1-2mg/kg/day prednisolone equivalent; may resume if event improves to grade 0 or 1 within 12 weeks and corticosteroids reduced to ≤10mg prednisolone/day"
+      },
+      {
+        "condition": "Pembrolizumab - NCI-CTC grade 3 or 4 pneumonitis",
+        "drug_name": "Pembrolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue"
+      },
+      {
+        "condition": "Pembrolizumab - NCI-CTC grade 2 nephritis",
+        "drug_name": "Pembrolizumab",
+        "factor": 0.0,
+        "notes": "Withhold; corticosteroids; may resume when reaction at grade ≤1 following taper"
+      },
+      {
+        "condition": "Pembrolizumab - NCI-CTC grade 3 or above nephritis",
+        "drug_name": "Pembrolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue"
+      },
+      {
+        "condition": "Pembrolizumab - hepatitis AST/ALT 3-5xULN and/or bilirubin 1.5-3xULN",
+        "drug_name": "Pembrolizumab",
+        "factor": 0.0,
+        "notes": "Withhold and administer corticosteroids; may resume when liver function at grade ≤1 following taper"
+      },
+      {
+        "condition": "Pembrolizumab - hepatitis AST/ALT ≥5xULN or bilirubin >3xULN",
+        "drug_name": "Pembrolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue"
+      },
+      {
+        "condition": "Pembrolizumab - NCI-CTC grade 3 or above skin reaction",
+        "drug_name": "Pembrolizumab",
+        "factor": 0.0,
+        "notes": "Withhold; systemic corticosteroids 1mg/kg/day prednisolone; taper ≥4 weeks once symptoms ≤grade 1"
+      },
+      {
+        "condition": "Pembrolizumab - any NCI-CTC grade 4 adverse reaction",
+        "drug_name": "Pembrolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue"
+      }
+    ],
+    "pre_medications": [
+      "Cycles 1-4 (paclitaxel pre-medication, 30 minutes before paclitaxel): Chlorphenamine 10mg IV",
+      "Cycles 1-4 (paclitaxel pre-medication, 30 minutes before paclitaxel): Dexamethasone 10mg oral or IV",
+      "Cycles 1-4 (paclitaxel pre-medication): H2 antagonist per local formulary (famotidine 20mg or nizatidine/ranitidine 150mg oral or ranitidine 50mg IV)",
+      "Cycles 1-4 antiemetic (60 minutes before chemotherapy, day 1): Netupitant and palonosetron 300mg/0.5mg (Akynzeo) oral",
+      "Cycles 1-4 antiemetic (days 8 and 15): Metoclopramide 10mg oral or IV",
+      "Cycles 5-8 antiemetic (day 1, 30 minutes before): Netupitant and palonosetron 300mg/0.5mg oral",
+      "Cycles 5-8 antiemetic (day 1): Dexamethasone 8mg oral or IV",
+      "Cycles 5-8 antiemetic (day 1): Olanzapine 10mg oral",
+      "Cycles 5-8 take home (starting day after chemotherapy): Olanzapine 10mg oral at night for 3 days (can reduce to 5mg if sedation concern)",
+      "Growth factors cycles 1-4: filgrastim/bioequivalent 30 million units SC days 3-5, 10-12, 17-19",
+      "Growth factors cycles 5-8: filgrastim/bioequivalent SC 5 days from day 3, or pegfilgrastim 6mg SC day 2",
+      "Mouthwashes if required for prevention of mucositis"
+    ],
+    "special_warnings": [
+      "Triple-negative breast cancer (TNBC) only - previously untreated locally advanced or early-stage at high risk of recurrence",
+      "Blueteq application required (PEMB21 form) - verify eligibility criteria before consenting patient",
+      "Pembrolizumab immune-related adverse reactions: can be severe or life-threatening affecting GI, liver, skin, nervous, endocrine, or other organ systems; early diagnosis essential",
+      "Pembrolizumab permanently discontinued for NCI-CTC grade 3 or 4 pneumonitis, nephritis, infusion-related reactions, or any grade 4 adverse reaction",
+      "Endocrine toxicity: pembrolizumab can cause hypophysitis, hypopituitarism, adrenal insufficiency, hypothyroidism - monitor cortisol, TFTs and blood glucose",
+      "Uveitis associated with pembrolizumab - rule out metastatic disease or other ocular causes",
+      "Paclitaxel must be administered via non-PVC administration set with in-line 0.22 micron filter",
+      "Paclitaxel is a vesicant; epirubicin is a vesicant; carboplatin is an irritant",
+      "Carboplatin AUC5 max dose 750mg (set as 790mg in ARIA) - NOT in national dose banding table; verify appropriate for patient",
+      "GFR must be recalculated if creatinine >1.5xULN or changes ≥10% from baseline",
+      "Ensure patient has been given a Pembrolizumab Patient Alert Card",
+      "Three-phase protocol: Cycles 1-4 (carboplatin/paclitaxel/pembrolizumab), Cycles 5-8 (EC/pembrolizumab neoadjuvant), Cycles 9-17 (pembrolizumab adjuvant monotherapy post-surgery)",
+      "ECG/ECHO prior to starting cycle 5 if clinically indicated",
+      "FBC, U&Es, LFTs, Magnesium monitored days 1, 8 and 15 for cycles 1-2; day 1 only from cycle 3"
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "neutrophil_count",
+      "platelet_count",
+      "liver_function_tests",
+      "cortisol",
+      "thyroid_function_tests",
+      "blood_glucose",
+      "magnesium",
+      "lvef_percent",
+      "prior_anthracycline_dose_mg_m2"
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 5,
+      "max_dose_mg": 790
+    }
+  }
+]

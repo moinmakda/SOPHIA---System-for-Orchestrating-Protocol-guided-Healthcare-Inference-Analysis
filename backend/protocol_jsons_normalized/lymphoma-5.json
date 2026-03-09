@@ -1,0 +1,1316 @@
+[
+  {
+    "protocol_code": "GDP",
+    "protocol_name": "Cisplatin-Dexamethasone-Gemcitabine (GDP)",
+    "disease_site": "Hodgkin Lymphoma",
+    "category": "lymphoma",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 40.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Tablets to be taken in the morning with or after food"
+      },
+      {
+        "drug_name": "Cisplatin",
+        "dose": 75.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "In 1000ml sodium chloride 0.9% with 20mmol potassium chloride over 120 minutes; max rate 1mg cisplatin/minute; dose banded at 1mg/ml"
+      },
+      {
+        "drug_name": "Gemcitabine",
+        "dose": 1000.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "In 250ml sodium chloride 0.9% over 30 minutes; dose banded at 100mg/ml"
+      },
+      {
+        "drug_name": "G-CSF (filgrastim or lenograstim)",
+        "dose": 1.0,
+        "dose_unit": "units",
+        "route": "Subcutaneous",
+        "days": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Filgrastim 30 million units once daily for 7 days OR lenograstim 33.6 million units once daily for 7 days, from day 9"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Day 1: Neutrophils >=1 AND Platelets >=75",
+        "drug_name": "Cisplatin and Gemcitabine",
+        "factor": 1.0,
+        "notes": "Give 100%"
+      },
+      {
+        "condition": "Day 1: Neutrophils >=1 AND Platelets <75",
+        "drug_name": "Cisplatin and Gemcitabine",
+        "factor": 1.0,
+        "notes": "Delay 1 week; if platelets >=50 give 100% with platelet transfusions"
+      },
+      {
+        "condition": "Day 1: Neutrophils <1 AND Platelets >=75",
+        "drug_name": "Cisplatin and Gemcitabine",
+        "factor": 1.0,
+        "notes": "Delay 1 week; if neutrophils >=0.5 give 100% with G-CSF"
+      },
+      {
+        "condition": "Day 1: Neutrophils <1 AND Platelets <75",
+        "drug_name": "Cisplatin and Gemcitabine",
+        "factor": 1.0,
+        "notes": "Delay 1 week; if neutrophils >=0.5 AND platelets >=50 give 100% with G-CSF and platelet transfusions; if neutrophils <0.5 AND/OR platelets <50 hold and recheck every 3 days"
+      },
+      {
+        "condition": "Day 8: Neutrophils 0.5-0.9 AND Platelets >=75",
+        "drug_name": "Gemcitabine",
+        "factor": 0.75,
+        "notes": "Give 100% with G-CSF support OR give 75% of original dose"
+      },
+      {
+        "condition": "Day 8: Neutrophils >=0.5 AND Platelets 50-75",
+        "drug_name": "Gemcitabine",
+        "factor": 0.75,
+        "notes": "Give 75% of original dose"
+      },
+      {
+        "condition": "Day 8: Neutrophils <0.5 OR Platelets <50",
+        "drug_name": "Gemcitabine",
+        "factor": 0.0,
+        "notes": "Omit"
+      },
+      {
+        "condition": "Hepatic: Bilirubin >30 micromol/L",
+        "drug_name": "Gemcitabine",
+        "factor": 0.8,
+        "notes": "Initiate treatment with dose of 800mg/m2 (reflects local practice)"
+      },
+      {
+        "condition": "Renal: CrCl >60 ml/min",
+        "drug_name": "Cisplatin",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "condition": "Renal: CrCl 40-59 ml/min",
+        "drug_name": "Cisplatin",
+        "factor": 0.75,
+        "notes": "Reduce to 75%"
+      },
+      {
+        "condition": "Renal: CrCl <40 ml/min",
+        "drug_name": "Cisplatin",
+        "factor": 0.0,
+        "notes": "Consider alternative agent"
+      },
+      {
+        "condition": "Renal: CrCl >=30 ml/min",
+        "drug_name": "Gemcitabine",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "condition": "Renal: CrCl <30 ml/min",
+        "drug_name": "Gemcitabine",
+        "factor": 0.75,
+        "notes": "Consider dose reduction"
+      },
+      {
+        "condition": "Ototoxicity grade 2 or above",
+        "drug_name": "Cisplatin",
+        "factor": 0.75,
+        "notes": "Discuss with consultant; dose may need to be reduced"
+      },
+      {
+        "condition": "Grade 3 non-haematological toxicity",
+        "drug_name": "Cisplatin and Gemcitabine",
+        "factor": 0.75,
+        "notes": "Reduce both agents to 75%"
+      },
+      {
+        "condition": "Grade 4 non-haematological toxicity",
+        "drug_name": "Cisplatin and Gemcitabine",
+        "factor": 0.5,
+        "notes": "Reduce both agents to 50%"
+      }
+    ],
+    "pre_medications": [
+      "Aprepitant 125mg oral (15-30 min prior, day 1)",
+      "Ondansetron 8mg oral or IV (15-30 min prior, day 1)",
+      "Metoclopramide 10mg oral or IV (15-30 min prior, day 8)",
+      "Furosemide 40mg oral or IV (pre-cisplatin hydration)",
+      "Sodium chloride 0.9% 1000ml with 20mmol KCl and 16mmol MgSO4 IV over 60 min (pre-hydration)",
+      "Sodium chloride 0.9% 1000ml with 20mmol KCl and 16mmol MgSO4 IV over 60 min (post-hydration)",
+      "Aciclovir 400mg twice daily oral (prophylaxis)",
+      "Co-trimoxazole 960mg once daily Mon/Wed/Fri oral (prophylaxis)",
+      "Allopurinol 300mg once daily oral for 7 days (cycle 1 only)"
+    ],
+    "special_warnings": [
+      "Hodgkin Lymphoma patients carry lifelong risk of TA-GVHD; ONLY irradiated blood products must be used for life",
+      "EDTA or calculated creatinine clearance required before day 1",
+      "Regular blood glucose monitoring required due to dexamethasone",
+      "Consider formal audiology testing; cisplatin is ototoxic",
+      "Patients should drink at least 3 litres of fluid in 24 hours after cisplatin",
+      "Cisplatin extravasation risk: classified as exfoliant",
+      "Cisplatin: mandatory IV hydration required — pre-hydration and post-hydration per local cisplatin hydration protocol. Monitor urine output, U&Es, and Mg²⁺ before and after each cycle."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "neutrophil_count",
+      "platelet_count",
+      "bilirubin",
+      "blood_glucose"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "GemVin",
+    "protocol_name": "Gemcitabine-Vinorelbine",
+    "disease_site": "Relapsed/refractory Hodgkin Lymphoma or Non-Hodgkin Lymphoma",
+    "category": "lymphoma",
+    "cycle_length_days": 21,
+    "number_of_cycles": 4,
+    "drugs": [
+      {
+        "drug_name": "Gemcitabine",
+        "dose": 1000.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "In 250ml sodium chloride 0.9% over 30 minutes"
+      },
+      {
+        "drug_name": "Vinorelbine",
+        "dose": 25.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1,
+          8
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes; vesicant - follow NPSA/2008/RRR04 for vinca alkaloid IV administration"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Day 1 or 8: Neutrophils >=1x10^9/L",
+        "drug_name": "Gemcitabine and Vinorelbine",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "condition": "Day 1 or 8: Neutrophils <1x10^9/L (1st occurrence, recovery within 7 days)",
+        "drug_name": "Gemcitabine and Vinorelbine",
+        "factor": 1.0,
+        "notes": "Delay until neutrophils recover to 1x10^9/L; if within 7 days give full dose with prophylactic G-CSF"
+      },
+      {
+        "condition": "Day 1 or 8: Neutrophils <1x10^9/L (1st occurrence, recovery >7 days or febrile neutropenia)",
+        "drug_name": "Gemcitabine and Vinorelbine",
+        "factor": 0.75,
+        "notes": "Reduce to 75% and give prophylactic G-CSF"
+      },
+      {
+        "condition": "Day 1 or 8: Neutrophils <1x10^9/L (2nd occurrence)",
+        "drug_name": "Gemcitabine and Vinorelbine",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose with prophylactic G-CSF"
+      },
+      {
+        "condition": "Platelets 50-74x10^9/L (1st occurrence)",
+        "drug_name": "Gemcitabine and Vinorelbine",
+        "factor": 0.75,
+        "notes": "Give 75% of original dose"
+      },
+      {
+        "condition": "Platelets 50-74x10^9/L (2nd occurrence)",
+        "drug_name": "Gemcitabine and Vinorelbine",
+        "factor": 0.5,
+        "notes": "Give 50% of original dose"
+      },
+      {
+        "condition": "Platelets <50x10^9/L or active haemorrhage (1st occurrence)",
+        "drug_name": "Gemcitabine and Vinorelbine",
+        "factor": 0.75,
+        "notes": "Delay until platelets >=75 then give 75% of original dose"
+      },
+      {
+        "condition": "Platelets <50x10^9/L or active haemorrhage (2nd occurrence)",
+        "drug_name": "Gemcitabine and Vinorelbine",
+        "factor": 0.5,
+        "notes": "Delay until platelets >=75 then give 50% of original dose"
+      },
+      {
+        "condition": "Hepatic: Bilirubin >30 micromol/L",
+        "drug_name": "Gemcitabine",
+        "factor": 0.8,
+        "notes": "Initiate with 800mg/m2 (local practice)"
+      },
+      {
+        "condition": "Hepatic: Bilirubin >2xULN AND AST/ALT >5xULN",
+        "drug_name": "Vinorelbine",
+        "factor": 0.67,
+        "notes": "Reduce to 67%"
+      },
+      {
+        "condition": "Renal: CrCl <30 ml/min",
+        "drug_name": "Gemcitabine",
+        "factor": 0.75,
+        "notes": "Consider dose reduction"
+      },
+      {
+        "condition": "NCI-CTC grade 2 peripheral neuropathy",
+        "drug_name": "Vinorelbine",
+        "factor": 0.8,
+        "notes": "Withhold until grade 1, then reduce to 20mg/m2"
+      },
+      {
+        "condition": "NCI-CTC grade 3 peripheral neuropathy",
+        "drug_name": "Vinorelbine",
+        "factor": 0.6,
+        "notes": "Withhold until grade 1, then reduce to 15mg/m2; discontinue if no recovery"
+      },
+      {
+        "condition": "NCI-CTC grade 3 constipation",
+        "drug_name": "Vinorelbine",
+        "factor": 0.8,
+        "notes": "Reduce to 20mg/m2; may further reduce to 15mg/m2 or stop for persistent symptoms"
+      }
+    ],
+    "pre_medications": [
+      "Metoclopramide 10mg oral or IV (15-30 min prior to chemotherapy)",
+      "Allopurinol 300mg once daily oral (first cycle only)",
+      "G-CSF from day 9 until neutrophil recovery >1x10^9/L (filgrastim 30MU/day SC or lenograstim 33.6MU/day SC or pegfilgrastim 6mg once SC)"
+    ],
+    "special_warnings": [
+      "Hodgkin Lymphoma patients carry lifelong risk of TA-GVHD; irradiated blood products must be used for life",
+      "Vinorelbine is a vesicant; NPSA/2008/RRR04 must be followed for IV vinca alkaloid administration",
+      "Prophylactic G-CSF recommended from day 9",
+      "Consider anti-infective prophylaxis in high-risk patients (aciclovir 400mg BD, co-trimoxazole 960mg Mon/Wed/Fri)"
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "bilirubin",
+      "AST_ALT",
+      "creatinine_clearance"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "GemP",
+    "protocol_name": "Cisplatin-Gemcitabine-Methylprednisolone (GemP)",
+    "disease_site": "Non-Hodgkin Lymphoma / Hodgkin Lymphoma",
+    "category": "lymphoma",
+    "cycle_length_days": 28,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Methylprednisolone",
+        "dose": 1000.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Oral or IV infusion in 100ml sodium chloride 0.9% over 30 minutes; when oral, take in morning with or after food [VERIFIED: Methylprednisolone 1000mg IV pulse is standard in GemP (Gemcitabine-Cisplatin-Methylprednisolone) salvage lymphoma — this is a high-dose steroid pulse, not a daily dose]"
+      },
+      {
+        "drug_name": "Gemcitabine",
+        "dose": 1000.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "In 250ml sodium chloride 0.9% over 30 minutes"
+      },
+      {
+        "drug_name": "Cisplatin",
+        "dose": 100.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          15
+        ],
+        "infusion_duration_hours": 3.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "In 1000ml sodium chloride 0.9% with 20mmol potassium chloride over 120-180 minutes; max rate 1mg cisplatin/minute. CrCl 40-59: dose in mg/m2 = CrCl value (e.g. CrCl 45 = 45mg/m2)"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Day 1 or 8: Neutrophils >=1x10^9/L",
+        "drug_name": "Gemcitabine",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "condition": "Day 1 or 8: Neutrophils 0.5-0.9x10^9/L",
+        "drug_name": "Gemcitabine",
+        "factor": 0.75,
+        "notes": "75% with prophylactic G-CSF"
+      },
+      {
+        "condition": "Day 1 or 8: Neutrophils <0.5 or febrile neutropenia",
+        "drug_name": "Gemcitabine",
+        "factor": 0.0,
+        "notes": "Omit"
+      },
+      {
+        "condition": "Day 1 or 8: Platelets >75x10^9/L",
+        "drug_name": "Gemcitabine",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "condition": "Day 1 or 8: Platelets 50-74x10^9/L",
+        "drug_name": "Gemcitabine",
+        "factor": 0.75,
+        "notes": "75% dose"
+      },
+      {
+        "condition": "Day 1 or 8: Platelets <50 or bleeding",
+        "drug_name": "Gemcitabine",
+        "factor": 0.0,
+        "notes": "Omit"
+      },
+      {
+        "condition": "Day 15: Neutrophils >1x10^9/L",
+        "drug_name": "Cisplatin and Gemcitabine",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "condition": "Day 15: Neutrophils 0.5-0.9x10^9/L",
+        "drug_name": "Cisplatin and Gemcitabine",
+        "factor": 0.75,
+        "notes": "75% with prophylactic G-CSF"
+      },
+      {
+        "condition": "Day 15: Neutrophils <0.5 or febrile neutropenia (1st occurrence)",
+        "drug_name": "Cisplatin and Gemcitabine",
+        "factor": 0.75,
+        "notes": "Delay until >=1x10^9/L then 75% with G-CSF"
+      },
+      {
+        "condition": "Day 15: Neutrophils <0.5 or febrile neutropenia (2nd occurrence)",
+        "drug_name": "Cisplatin and Gemcitabine",
+        "factor": 0.5,
+        "notes": "Delay until >=1x10^9/L then 50% with G-CSF"
+      },
+      {
+        "condition": "Day 15: Platelets >=75x10^9/L",
+        "drug_name": "Cisplatin and Gemcitabine",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "condition": "Day 15: Platelets 50-74x10^9/L",
+        "drug_name": "Cisplatin and Gemcitabine",
+        "factor": 0.75,
+        "notes": "75% dose"
+      },
+      {
+        "condition": "Day 15: Platelets <50 or bleeding (1st occurrence)",
+        "drug_name": "Cisplatin and Gemcitabine",
+        "factor": 0.75,
+        "notes": "Delay until >=75 then 75% dose"
+      },
+      {
+        "condition": "Day 15: Platelets <50 or bleeding (2nd occurrence)",
+        "drug_name": "Cisplatin and Gemcitabine",
+        "factor": 0.5,
+        "notes": "Delay until >=75 then 50% dose"
+      },
+      {
+        "condition": "Hepatic: Bilirubin >30 micromol/L",
+        "drug_name": "Gemcitabine",
+        "factor": 0.8,
+        "notes": "Initiate with 800mg/m2"
+      },
+      {
+        "condition": "Renal: CrCl >60 ml/min",
+        "drug_name": "Cisplatin",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "condition": "Renal: CrCl 40-59 ml/min",
+        "drug_name": "Cisplatin",
+        "factor": 1.0,
+        "notes": "Modify dose so that mg/m2 = CrCl value (e.g. CrCl 45ml/min = 45mg/m2)"
+      },
+      {
+        "condition": "Renal: CrCl <40 ml/min",
+        "drug_name": "Cisplatin",
+        "factor": 0.0,
+        "notes": "Consider alternative"
+      },
+      {
+        "condition": "Neurotoxicity NCI-CTC grade 2 or above, or new hearing deterioration/tinnitus",
+        "drug_name": "Cisplatin",
+        "factor": 0.75,
+        "notes": "Consider dose reduction to 75mg/m2 in the first instance"
+      }
+    ],
+    "pre_medications": [
+      "Metoclopramide 10mg oral or IV (day 1 and 8, 15-30 min prior)",
+      "Aprepitant 125mg oral (day 15, 15-30 min prior)",
+      "Dexamethasone 4mg oral or IV (day 15, 15-30 min prior)",
+      "Ondansetron 8mg oral or IV (day 15, 15-30 min prior)",
+      "Furosemide 40mg oral or IV (pre-cisplatin on day 15)",
+      "Sodium chloride 0.9% 1000ml with 20mmol KCl and 16mmol MgSO4 IV over 60 min (pre-hydration, day 15)",
+      "Sodium chloride 0.9% 1000ml with 20mmol KCl and 16mmol MgSO4 IV over 60 min (post-hydration, day 15)",
+      "Allopurinol 300mg once daily oral (first cycle only, 28-day supply)",
+      "Aciclovir 400mg twice daily oral (prophylaxis, high-risk patients)",
+      "Co-trimoxazole 960mg Mon/Wed/Fri oral (prophylaxis, high-risk patients)"
+    ],
+    "special_warnings": [
+      "Hodgkin Lymphoma patients carry lifelong risk of TA-GVHD; irradiated blood products must be used for life",
+      "EDTA or calculated CrCl required before each cycle",
+      "Regular blood glucose monitoring required",
+      "Consider formal audiology testing",
+      "Patients should drink at least 3 litres of fluid in 24 hours after cisplatin",
+      "Cisplatin: CrCl 40-59 requires dose individualisation (mg/m2 = CrCl value)",
+      "Cisplatin: mandatory IV hydration required — pre-hydration and post-hydration per local cisplatin hydration protocol. Monitor urine output, U&Es, and Mg²⁺ before and after each cycle."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "neutrophil_count",
+      "platelet_count",
+      "bilirubin",
+      "blood_glucose",
+      "LFTs"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "Glofitamab-Obin",
+    "protocol_name": "Glofitamab-Obinutuzumab",
+    "disease_site": "Relapsed/Refractory Diffuse Large B-Cell Lymphoma (DLBCL)",
+    "category": "lymphoma",
+    "cycle_length_days": 21,
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Obinutuzumab",
+        "dose": 1000.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 Day 1 ONLY (pre-treatment to reduce CRS risk). In 250ml sodium chloride 0.9%. Start at 50mg/hour; escalate in 50mg/hour increments every 30 min to max 400mg/hour"
+      },
+      {
+        "drug_name": "Glofitamab",
+        "dose": 2.5,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          8
+        ],
+        "infusion_duration_hours": 4.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 Day 8 ONLY (step-up dose 1). In 25ml sodium chloride 0.9% over 4 hours. Inpatient admission required for 24 hours monitoring for CRS. May be extended to 8 hours if CRS with previous dose."
+      },
+      {
+        "drug_name": "Glofitamab",
+        "dose": 10.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          15
+        ],
+        "infusion_duration_hours": 4.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 Day 15 ONLY (step-up dose 2). In 50ml sodium chloride 0.9% over 4 hours. May be extended to 8 hours if CRS with previous dose."
+      },
+      {
+        "drug_name": "Glofitamab",
+        "dose": 30.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 4.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 2-12 Day 1 (full dose). In 100ml sodium chloride 0.9% over 4 hours (Cycle 2) or 2 hours (Cycles 3-12, if well tolerated). If CRS with previous dose maintain 4 hours. Bispecific antibody CD3xCD20."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "No dose reductions recommended for glofitamab",
+        "drug_name": "Glofitamab",
+        "factor": 1.0,
+        "notes": "Adverse events managed with dose interruption, treatment discontinuation, and reduction of infusion rate. No formal dose reductions recommended."
+      },
+      {
+        "condition": "Mild hepatic impairment (bilirubin >ULN to <=1.5xULN or AST >ULN)",
+        "drug_name": "Glofitamab",
+        "factor": 1.0,
+        "notes": "No dose adjustment required. Not studied in moderate or severe hepatic impairment."
+      },
+      {
+        "condition": "Mild to moderate renal impairment (CrCl 30 to <90 mL/min)",
+        "drug_name": "Glofitamab",
+        "factor": 1.0,
+        "notes": "No dose adjustment required. Not studied in severe renal impairment."
+      },
+      {
+        "condition": "Glofitamab delayed >1 week following obinutuzumab pre-treatment (>2 week interval)",
+        "drug_name": "Glofitamab",
+        "factor": 1.0,
+        "notes": "Repeat obinutuzumab pre-treatment before restarting glofitamab step-up dosing"
+      },
+      {
+        "condition": "Treatment-free interval 2-6 weeks during step-up (after 2.5mg or 10mg dose)",
+        "drug_name": "Glofitamab",
+        "factor": 1.0,
+        "notes": "Repeat last tolerated glofitamab dose then resume planned step-up dosing"
+      },
+      {
+        "condition": "Treatment-free interval >6 weeks during step-up",
+        "drug_name": "Glofitamab",
+        "factor": 1.0,
+        "notes": "Repeat obinutuzumab pre-treatment and glofitamab step-up dosing"
+      },
+      {
+        "condition": "Treatment-free interval >6 weeks after Cycle 2 (30mg dose)",
+        "drug_name": "Glofitamab",
+        "factor": 1.0,
+        "notes": "Repeat obinutuzumab pre-treatment and glofitamab step-up dosing then resume planned cycle"
+      }
+    ],
+    "pre_medications": [
+      "Obinutuzumab pre-medications (60 min prior): Methylprednisolone sodium succinate 80mg IV, Chlorphenamine 10mg IV, Paracetamol 1000mg oral",
+      "Glofitamab pre-medications (Cycles 1 Day 8 & 15, and Cycles 2-3, all patients): Dexamethasone 20mg IV (60 min before), Chlorphenamine 10mg IV (30 min before), Paracetamol 1000mg oral (30 min before)",
+      "Glofitamab pre-medications (Cycles 4-13, no prior CRS): Chlorphenamine 10mg IV, Paracetamol 1000mg oral",
+      "Glofitamab pre-medications (Cycles 4-13, prior CRS): Dexamethasone 20mg IV, Chlorphenamine 10mg IV, Paracetamol 1000mg oral",
+      "Tocilizumab 8mg/kg IV (max 800mg) prescribed in advance for CRS management; one dose must be available on ward prior to glofitamab infusion",
+      "Allopurinol 300mg once daily oral (TLS prophylaxis, low-moderate risk); Rasburicase 3mg IV once (high-risk TLS patients)",
+      "Aciclovir 400mg twice daily oral (anti-infective prophylaxis)",
+      "Co-trimoxazole 960mg Mon/Wed/Fri oral (anti-infective prophylaxis)",
+      "Gastric protection (PPI or H2 antagonist)"
+    ],
+    "special_warnings": [
+      "CRITICAL: Cytokine Release Syndrome (CRS) risk - all patients must be hospitalised for Cycle 1 Day 8 (first glofitamab dose) for 24 hours post-infusion monitoring",
+      "CRS can occur weeks after infusion; patient must be issued CRS alert card to carry at all times",
+      "CRS symptoms: pyrexia, tiredness, cardiac failure, tachycardia, arrhythmias, dyspnoea, hypoxia, capillary leak, chills, renal impairment, headache, malaise, transaminitis, nausea, diarrhoea, hypotension",
+      "Patients with Grade >=2 CRS or who received tocilizumab must be hospitalised for next infusion",
+      "Tumour Lysis Syndrome (TLS) risk with obinutuzumab and glofitamab; TLS prophylaxis per individual risk assessment",
+      "High TLS risk: lymphocyte count >25x10^9/L and/or CrCl <70ml/min",
+      "Blueteq funding form must be completed (NICE TA927)",
+      "Check hepatitis B status before starting; positive serology requires liver specialist review",
+      "Viral screen required: CMV, HSV, EBV, VZV, HIV",
+      "2-3L/day oral fluids starting 1-2 days before Cycle 1 Day 1",
+      "Tocilizumab: max 3 doses in 6 weeks; do not exceed",
+      "Aria regimen built as in-patient on Cycle 1 Day 8; all other days as outpatient"
+    ],
+    "required_patient_fields": [
+      "FBC",
+      "LFTs",
+      "U_and_Es",
+      "bone_profile",
+      "CRP",
+      "LDH",
+      "viral_screen_CMV_HSV_EBV_VZV_HIV",
+      "hepatitis_B_status",
+      "creatinine_clearance",
+      "TLS_risk_assessment"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "Ibrutinib-MCL-560mg",
+    "protocol_name": "Ibrutinib 560mg (Mantle Cell Lymphoma)",
+    "disease_site": "Mantle Cell Lymphoma (MCL)",
+    "category": "lymphoma",
+    "cycle_length_days": 28,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Ibrutinib",
+        "dose": 560.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Once daily; swallowed whole with water at approximately the same time each day. Available as 140mg, 280mg, 420mg and 560mg tablets. Dose rounded to nearest 140mg (up if halfway). Continue until disease progression or intolerance (12 cycles set in Aria)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological toxicity: neutrophils <1x10^9/L with infection/fever OR neutrophils <0.5x10^9/L OR platelets <30x10^9/L - 1st occurrence after recovery to grade 1",
+        "drug_name": "Ibrutinib",
+        "factor": 1.0,
+        "notes": "Restart at 560mg once daily"
+      },
+      {
+        "condition": "Haematological toxicity - 2nd occurrence after recovery to grade 1",
+        "drug_name": "Ibrutinib",
+        "factor": 0.75,
+        "notes": "Restart at 420mg once daily"
+      },
+      {
+        "condition": "Haematological toxicity - 3rd occurrence after recovery to grade 1",
+        "drug_name": "Ibrutinib",
+        "factor": 0.5,
+        "notes": "Restart at 280mg once daily"
+      },
+      {
+        "condition": "Haematological toxicity - 4th occurrence",
+        "drug_name": "Ibrutinib",
+        "factor": 0.0,
+        "notes": "Discontinue"
+      },
+      {
+        "condition": "Child Pugh A (mild hepatic impairment)",
+        "drug_name": "Ibrutinib",
+        "factor": 0.5,
+        "notes": "Reduce to 280mg once daily"
+      },
+      {
+        "condition": "Child Pugh B (moderate hepatic impairment)",
+        "drug_name": "Ibrutinib",
+        "factor": 0.25,
+        "notes": "Reduce to 140mg once daily"
+      },
+      {
+        "condition": "Child Pugh C (severe hepatic impairment)",
+        "drug_name": "Ibrutinib",
+        "factor": 0.0,
+        "notes": "Not recommended"
+      },
+      {
+        "condition": "Renal: CrCl >30 ml/min",
+        "drug_name": "Ibrutinib",
+        "factor": 1.0,
+        "notes": "No dose adjustment required"
+      },
+      {
+        "condition": "Renal: CrCl <30 ml/min or dialysis",
+        "drug_name": "Ibrutinib",
+        "factor": 1.0,
+        "notes": "No data available; prescribe only if benefit outweighs risk; monitor carefully"
+      },
+      {
+        "condition": "Non-haematological toxicity NCI-CTC grade 3 or more",
+        "drug_name": "Ibrutinib",
+        "factor": 1.0,
+        "notes": "Withhold until resolved to grade 1, then restart using dose reduction table above"
+      }
+    ],
+    "pre_medications": [
+      "Co-trimoxazole 960mg once daily Mon/Wed/Fri oral (anti-infective prophylaxis)"
+    ],
+    "special_warnings": [
+      "MCL indication: cyclin D1 overexpression or t(11;14); failure to achieve PR or disease progression after most recent treatment; 1-5 prior lines",
+      "Ibrutinib: increased bleeding risk; withhold 3-7 days pre- and post-surgery depending on type and bleeding risk",
+      "Atrial fibrillation and ventricular tachycardia are known adverse effects; monitor cardiac status",
+      "Hypertension is a known adverse effect; monitor blood pressure",
+      "Many drug interactions - caution with agents affecting coagulation/platelet function or CYP3A4",
+      "Grapefruit, grapefruit juice, and Seville oranges must be avoided",
+      "Hepatitis B reactivation risk; check status before starting",
+      "Oral chemotherapy NPSA/2008/RRR001 must be followed",
+      "Must only be prescribed under supervision of consultant haematologist/oncologist"
+    ],
+    "required_patient_fields": [
+      "FBC",
+      "U_and_Es",
+      "LFTs",
+      "hepatitis_B_status",
+      "Child_Pugh_score"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "Ibrutinib-WM-420mg",
+    "protocol_name": "Ibrutinib 420mg (Waldenstrom's Macroglobulinaemia)",
+    "disease_site": "Waldenstrom's Macroglobulinaemia (WM)",
+    "category": "lymphoma",
+    "cycle_length_days": 28,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Ibrutinib",
+        "dose": 420.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Once daily; swallowed whole with water at approximately the same time each day. Available as 140mg, 280mg and 420mg tablets. Dose rounded to nearest 140mg (up if halfway). Continue until disease progression or intolerance (12 cycles set in Aria)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological toxicity: neutrophils <1x10^9/L with infection/fever OR neutrophils <0.5x10^9/L OR platelets <30x10^9/L - 1st occurrence after recovery to grade 1",
+        "drug_name": "Ibrutinib",
+        "factor": 1.0,
+        "notes": "Restart at 420mg once daily"
+      },
+      {
+        "condition": "Haematological toxicity - 2nd occurrence after recovery to grade 1",
+        "drug_name": "Ibrutinib",
+        "factor": 0.67,
+        "notes": "Restart at 280mg once daily"
+      },
+      {
+        "condition": "Haematological toxicity - 3rd occurrence after recovery to grade 1",
+        "drug_name": "Ibrutinib",
+        "factor": 0.33,
+        "notes": "Restart at 140mg once daily"
+      },
+      {
+        "condition": "Haematological toxicity - 4th occurrence",
+        "drug_name": "Ibrutinib",
+        "factor": 0.0,
+        "notes": "Discontinue"
+      },
+      {
+        "condition": "Child Pugh A (mild hepatic impairment)",
+        "drug_name": "Ibrutinib",
+        "factor": 0.67,
+        "notes": "Reduce to 280mg once daily"
+      },
+      {
+        "condition": "Child Pugh B (moderate hepatic impairment)",
+        "drug_name": "Ibrutinib",
+        "factor": 0.33,
+        "notes": "Reduce to 140mg once daily"
+      },
+      {
+        "condition": "Child Pugh C (severe hepatic impairment)",
+        "drug_name": "Ibrutinib",
+        "factor": 0.0,
+        "notes": "Not recommended"
+      },
+      {
+        "condition": "Renal: CrCl >30 ml/min",
+        "drug_name": "Ibrutinib",
+        "factor": 1.0,
+        "notes": "No dose adjustment required"
+      },
+      {
+        "condition": "Renal: CrCl <30 ml/min or dialysis",
+        "drug_name": "Ibrutinib",
+        "factor": 1.0,
+        "notes": "No data available; prescribe only if benefit outweighs risk; monitor carefully"
+      }
+    ],
+    "pre_medications": [
+      "Co-trimoxazole 960mg once daily Mon/Wed/Fri oral (anti-infective prophylaxis)"
+    ],
+    "special_warnings": [
+      "WM indication: at least one prior therapy, OR first-line for patients unsuitable for chemo-immunotherapy; WHO PS 0-2",
+      "Ibrutinib: increased bleeding risk; withhold 3-7 days pre- and post-surgery",
+      "Atrial fibrillation and ventricular tachycardia are known adverse effects",
+      "Hypertension is a known adverse effect; monitor blood pressure",
+      "Many drug interactions - caution with agents affecting coagulation/platelet function or CYP3A4",
+      "Grapefruit and grapefruit juice, and Seville oranges must be avoided",
+      "Hepatitis B reactivation risk; check status before starting",
+      "Oral chemotherapy NPSA/2008/RRR001 must be followed",
+      "Must only be prescribed under supervision of consultant haematologist/oncologist"
+    ],
+    "required_patient_fields": [
+      "FBC",
+      "U_and_Es",
+      "LFTs",
+      "hepatitis_B_status",
+      "Child_Pugh_score"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "InP-BEAM",
+    "protocol_name": "BEAM - Carmustine-Cytarabine-Etoposide-Melphalan (Inpatient)",
+    "disease_site": "Non-Hodgkin Lymphoma / Hodgkin Lymphoma (HSCT conditioning)",
+    "category": "lymphoma",
+    "cycle_length_days": 7,
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Carmustine (BCNU)",
+        "dose": 300.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          -6
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "In 500ml sodium chloride 0.9% over 60 minutes on day -6. Dose rounded to nearest 10mg (down if halfway). Irritant."
+      },
+      {
+        "drug_name": "Cytarabine",
+        "dose": 200.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          -5,
+          -4,
+          -3,
+          -2
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Every 12 hours (0900 and 2100) on days -5, -4, -3, -2 (total 8 doses). In 100ml sodium chloride 0.9% over 30 minutes. Dose banded at 20mg/ml."
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 200.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          -5,
+          -4,
+          -3,
+          -2
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Split into TWO sequential infusions of 100mg/m2 each in 1000ml sodium chloride 0.9% over 60 min each (total 120 min) due to stability. Dose banded at 20mg/ml. Irritant."
+      },
+      {
+        "drug_name": "Melphalan",
+        "dose": 140.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          -1
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "In 500ml sodium chloride 0.9% over 30 minutes on day -1. Dose rounded to nearest 10mg (down if halfway). Ensure urine output >250ml/hour immediately prior to administration. 90-minute expiry after preparation - strict timing essential. Autologous stem cells infused on day 0, >=24h after melphalan. Use oral cryotherapy (ice chips) to reduce mucositis. Irritant."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Treatment given regardless of blood counts (haematological)",
+        "drug_name": "All",
+        "factor": 1.0,
+        "notes": "No haematological dose modifications; irradiated blood products must be used"
+      },
+      {
+        "condition": "Hepatic: Bilirubin >34 micromol/L",
+        "drug_name": "Cytarabine",
+        "factor": 0.5,
+        "notes": "50%; dose may be escalated dependent on toxicity"
+      },
+      {
+        "condition": "Hepatic: Bilirubin 30-51 or AST/ALT 60-180 units/L",
+        "drug_name": "Etoposide",
+        "factor": 0.5,
+        "notes": "Consider reducing to 50%"
+      },
+      {
+        "condition": "Hepatic: Bilirubin >51 or AST/ALT >180 units/L",
+        "drug_name": "Etoposide",
+        "factor": 1.0,
+        "notes": "Clinical decision"
+      },
+      {
+        "condition": "Renal: CrCl >60 ml/min",
+        "drug_name": "Carmustine",
+        "factor": 1.0,
+        "notes": "100%"
+      },
+      {
+        "condition": "Renal: CrCl 46-60 ml/min",
+        "drug_name": "Carmustine",
+        "factor": 0.8,
+        "notes": "80%"
+      },
+      {
+        "condition": "Renal: CrCl 30-45 ml/min",
+        "drug_name": "Carmustine",
+        "factor": 0.75,
+        "notes": "75%"
+      },
+      {
+        "condition": "Renal: CrCl <30 ml/min",
+        "drug_name": "Carmustine",
+        "factor": 1.0,
+        "notes": "Clinical decision"
+      },
+      {
+        "condition": "Renal: CrCl >50 ml/min",
+        "drug_name": "Etoposide",
+        "factor": 1.0,
+        "notes": "100%"
+      },
+      {
+        "condition": "Renal: CrCl 15-50 ml/min",
+        "drug_name": "Etoposide",
+        "factor": 0.75,
+        "notes": "75%"
+      },
+      {
+        "condition": "Renal: CrCl <15 ml/min",
+        "drug_name": "Etoposide",
+        "factor": 0.5,
+        "notes": "50%"
+      },
+      {
+        "condition": "Renal: CrCl >50 ml/min",
+        "drug_name": "Melphalan",
+        "factor": 1.0,
+        "notes": "100%"
+      },
+      {
+        "condition": "Renal: CrCl 30-50 ml/min",
+        "drug_name": "Melphalan",
+        "factor": 0.75,
+        "notes": "75%"
+      },
+      {
+        "condition": "Renal: CrCl <30 ml/min",
+        "drug_name": "Melphalan",
+        "factor": 1.0,
+        "notes": "Clinical decision"
+      },
+      {
+        "condition": "Reduced pulmonary function",
+        "drug_name": "Carmustine",
+        "factor": 0.75,
+        "notes": "May be necessary to reduce dose; at discretion of consultant oncologist/haematologist only"
+      },
+      {
+        "condition": "Significant reduction in albumin levels",
+        "drug_name": "Etoposide",
+        "factor": 0.75,
+        "notes": "Consider reducing dose"
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 2mg twice daily for 10 days oral or IV (days -6 to +3)",
+      "Metoclopramide 10mg three times daily for 10 days oral or IV (days -6 to +3)",
+      "Ondansetron 8mg twice daily for 10 days oral or IV (days -6 to +3)",
+      "Aprepitant 125mg oral once on day of melphalan, then 80mg once daily for 2 subsequent days",
+      "Melphalan pre-hydration: sodium chloride 0.9% 1000ml IV over 90 min at 0930hrs day -1",
+      "Furosemide 20mg IV bolus at 1010hrs day -1 (pre-melphalan)",
+      "Melphalan post-hydration: multiple IV fluid bags per strict timed schedule",
+      "G-CSF (filgrastim biosimilar 30MU/day SC) from day +5 until neutrophils >1x10^9/L for 24h or >3x10^9/L",
+      "Aciclovir 400mg oral twice daily until day +90",
+      "Ciprofloxacin 250mg oral twice daily from day +1 (stop when neutrophils >1x10^9/L)",
+      "Fluconazole 100mg oral once daily (stop when neutrophils >1x10^9/L)",
+      "Co-trimoxazole 960mg Mon/Wed/Fri (start 28 days post-discharge when neutrophils >1x10^9/L and platelets >50x10^9/L; until day +120)",
+      "Pentamidine 300mg nebuliser prior to discharge",
+      "Thromboprophylaxis (LMWH) until platelets <50x10^9/L"
+    ],
+    "special_warnings": [
+      "Inpatient regimen only - HSCT conditioning",
+      "Autologous stem cells infused on day 0, at least 24 hours after melphalan",
+      "Irradiated blood products MUST be used; TA-GVHD risk for BEAM patients for 1 week pre-harvest and >=12 weeks post-transplant; Hodgkin patients: lifelong",
+      "Melphalan has 90-minute expiry after preparation - strict timing adherence essential",
+      "Ensure urine output >250ml/hour immediately before melphalan administration",
+      "Carmustine: risk of pulmonary toxicity; dose reduction may be needed in reduced pulmonary function",
+      "Etoposide: risk of hypotension on rapid infusion; split into two infusions due to stability",
+      "Cytarabine: risk of conjunctivitis - consider corticosteroid eye drops",
+      "Consider cryotherapy (ice chips) to reduce mucositis from melphalan",
+      "NEGATIVE DAY NUMBERING: Day 0 = stem cell reinfusion day (ASCT). BEAM conditioning chemotherapy on days -6 to -1. All negative days are relative to transplant day. This is standard ASCT conditioning — intentional."
+    ],
+    "required_patient_fields": [
+      "FBC",
+      "LFTs_including_albumin",
+      "U_and_Es",
+      "creatinine_clearance",
+      "urine_output_monitoring",
+      "pulmonary_function"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "InP-CytMtx",
+    "protocol_name": "Cytarabine-Methotrexate (Inpatient - CNS Lymphoma)",
+    "disease_site": "Non-Hodgkin Lymphoma (CNS disease)",
+    "category": "lymphoma",
+    "cycle_length_days": 21,
+    "number_of_cycles": 4,
+    "drugs": [
+      {
+        "drug_name": "Methotrexate",
+        "dose": 500.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.25,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Loading dose: in 100ml sodium chloride 0.9% over 15 minutes. Administered BEFORE the 3000mg/m2 infusion. Urinary pH must be >7 before start and maintained throughout. High-dose IV methotrexate for CNS lymphoma. | LOADING DOSE (500mg/m²): two Methotrexate entries exist on day 1 — 500mg/m² loading infusion over 15 minutes followed immediately by 3000mg/m² main infusion over 180 minutes. Total day 1 dose = 3500mg/m². Both entries are intentional and represent sequential administration."
+      },
+      {
+        "drug_name": "Methotrexate",
+        "dose": 3000.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 3.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Main dose: in 1000ml sodium chloride 0.9% over 180 minutes. CrCl must be >=50ml/min. Monitor methotrexate levels every 24h from 48h after start of infusion until level <0.1 micromol/L. Urinary pH maintained >7 throughout. Folinic acid rescue begins 24h after start of MTX infusion. | MAIN INFUSION DOSE (3000mg/m²): two Methotrexate entries exist on day 1 — 500mg/m² loading infusion over 15 minutes followed immediately by this 3000mg/m² main infusion over 180 minutes. Total day 1 dose = 3500mg/m². Both entries are intentional and represent sequential administration."
+      },
+      {
+        "drug_name": "Cytarabine",
+        "dose": 2000.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          2,
+          3
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Every 12 hours (4 doses total on days 2 and 3). In 100ml sodium chloride 0.9% over 60 minutes. High-dose IV cytarabine for CNS lymphoma."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological: Neutrophils <1x10^9/L or Platelets <100x10^9/L",
+        "drug_name": "All",
+        "factor": 1.0,
+        "notes": "Delay treatment until neutrophils >=1x10^9/L AND platelets >=100x10^9/L. No dose reductions for haematological toxicity."
+      },
+      {
+        "condition": "Hepatic: Bilirubin >34 micromol/L",
+        "drug_name": "Cytarabine",
+        "factor": 0.5,
+        "notes": "50% dose; escalate on subsequent cycles in absence of toxicity"
+      },
+      {
+        "condition": "Hepatic: Bilirubin <50 micromol/L AND AST/ALT <180 units/L",
+        "drug_name": "Methotrexate",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "condition": "Hepatic: Bilirubin 51-85 micromol/L OR AST/ALT >180 units/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.75,
+        "notes": "75% dose"
+      },
+      {
+        "condition": "Hepatic: Bilirubin >85 micromol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.0,
+        "notes": "Omit"
+      },
+      {
+        "condition": "Renal: CrCl >=50 ml/min",
+        "drug_name": "Methotrexate",
+        "factor": 1.0,
+        "notes": "CrCl must be >=50ml/min to administer methotrexate in this regimen"
+      },
+      {
+        "condition": "Renal: CrCl <50 ml/min",
+        "drug_name": "Methotrexate",
+        "factor": 0.0,
+        "notes": "Do NOT administer methotrexate if CrCl <50ml/min"
+      },
+      {
+        "condition": "Renal: CrCl >=50 ml/min",
+        "drug_name": "Cytarabine",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "condition": "Third fluid compartment (ascites, pleural effusion, oedema)",
+        "drug_name": "Methotrexate",
+        "factor": 0.0,
+        "notes": "Resolve third fluid compartment BEFORE methotrexate administration; delays clearance and increases toxicity"
+      }
+    ],
+    "pre_medications": [
+      "Methotrexate hydration: start >=6 hours before MTX; sodium chloride 0.9% with 20mmol KCl 1000ml over 240 min with 50-100mmol sodium bicarbonate (urinary pH >7), repeated every 12h until MTX <0.1 micromol/L",
+      "Dexamethasone 4mg twice daily for 5 days oral or IV (starting 15-30 min before chemotherapy)",
+      "Ondansetron 8mg twice daily for 5 days oral or IV",
+      "Metoclopramide 10mg three times daily when required oral or IV",
+      "Furosemide 40mg when required oral or IV (fluid overload/urine output)",
+      "Folinic acid 30mg IV every 3 hours beginning 24h after start of MTX infusion, until MTX level <0.1 micromol/L",
+      "Prednisolone 0.5% OR dexamethasone 0.1% eye drops, 1 drop both eyes four times daily, days 2-5 (cytarabine conjunctivitis prophylaxis)",
+      "G-CSF from day 6 until neutrophils >1x10^9/L (filgrastim 30MU/day SC or lenograstim 33.6MU/day SC or pegfilgrastim 6mg once SC day 4)",
+      "Aciclovir 400mg twice daily oral",
+      "Fluconazole 50mg once daily oral",
+      "Pentamidine 300mg nebule once monthly"
+    ],
+    "special_warnings": [
+      "INPATIENT regimen - all supportive medicines must be prescribed on inpatient chart",
+      "CrCl MUST be >=50ml/min before methotrexate administration",
+      "Urinary pH must be >7 before starting methotrexate and maintained throughout infusion and until MTX level <0.1 micromol/L",
+      "Methotrexate levels every 24h from 48h after start of infusion until <0.1 micromol/L",
+      "Strict fluid balance chart required; act if positive by >2 kg/L",
+      "Third fluid compartment (ascites, pleural effusion) must be resolved before MTX - delays clearance",
+      "Transient bilirubin/transaminase rises lasting up to 2 weeks after MTX are expected - do not stop treatment",
+      "Persistent hyperbilirubinaemia or grade 3-4 hypertransaminasemia >3 weeks: discontinue",
+      "Significant drug interactions with IV methotrexate at these doses - always check interactions",
+      "New cycles begin when neutrophils >=1x10^9/L AND platelets >=100x10^9/L (unsupported)",
+      "Consider norethisterone 5mg three times daily in menstruating women",
+      "High-dose IV cytarabine and methotrexate given as IV infusion for CNS lymphoma (NOT intrathecal in this protocol)",
+      "HIGH-DOSE METHOTREXATE: Leucovorin (folinic acid) rescue is MANDATORY. Start leucovorin 24 hours after methotrexate infusion begins. Continue until methotrexate level <0.1 micromol/L. Ensure adequate hydration (3L/m²/day) and urinary alkalinisation (urine pH >7) before and during infusion. Monitor methotrexate levels at 24h, 48h, 72h post-infusion."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance_GFR",
+      "neutrophil_count",
+      "platelet_count",
+      "bilirubin",
+      "AST_ALT",
+      "urinary_pH",
+      "methotrexate_level",
+      "fluid_balance",
+      "third_space_fluid_assessment",
+      "methotrexate_level_monitoring: Serum methotrexate levels at 24h, 48h, 72h post-infusion mandatory. Leucovorin dose adjusted per MTX level.",
+      "creatinine_clearance: CrCl required — HD-MTX contraindicated if CrCl <60ml/min without dose adjustment."
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Leucovorin (Folinic Acid)",
+        "dose": 15,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          2,
+          3,
+          4
+        ],
+        "frequency": "Every 6 hours starting 24 hours after methotrexate infusion, until MTX level <0.1 micromol/L",
+        "notes": "HD-MTX rescue — dose may need escalating based on MTX levels. Refer to local HD-MTX protocol."
+      }
+    ],
+    "auc_dosing": null
+  }
+]

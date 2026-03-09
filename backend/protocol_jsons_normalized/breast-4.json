@@ -1,0 +1,1199 @@
+[
+  {
+    "protocol_code": "Breast-Carboplatin-AUC5-Paclitaxel-7day",
+    "protocol_name": "Breast-Carboplatin (AUC 5)-Paclitaxel (7 day)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 4,
+    "drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 5.0,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": 750.0,
+        "max_dose_unit": "mg",
+        "notes": "Calvert formula using calculated GFR (capped at CrCl 125ml/min). Max dose 750mg (set at 790mg in ARIA). AUC4 may be considered with EDTA clearance. Recalculate GFR if serum creatinine >1.5xULN or changes ≥10% from baseline."
+      },
+      {
+        "drug_name": "Paclitaxel",
+        "dose": 80.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Administer in 250ml sodium chloride 0.9% over 60 minutes. Must use non-PVC administration set with in-line 0.22 micron filter. Vesicant."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Day 1: Neutrophils <1x10⁹/L or Platelets <75x10⁹/L — recovery takes >7 days (first occurrence)",
+        "drug_name": "Carboplatin",
+        "factor": null,
+        "notes": "Reduce carboplatin to AUC 4"
+      },
+      {
+        "condition": "Day 1: Neutrophils <1x10⁹/L or Platelets <75x10⁹/L — recovery takes >7 days (first occurrence)",
+        "drug_name": "Paclitaxel",
+        "factor": null,
+        "notes": "Reduce paclitaxel to 60mg/m²"
+      },
+      {
+        "condition": "Day 1: Neutrophils <1x10⁹/L or Platelets <75x10⁹/L — recovery takes >7 days (second occurrence)",
+        "drug_name": "Carboplatin",
+        "factor": null,
+        "notes": "Reduce carboplatin to AUC 3.5"
+      },
+      {
+        "condition": "Day 1: Neutrophils <1x10⁹/L or Platelets <75x10⁹/L — recovery takes >7 days (second occurrence)",
+        "drug_name": "Paclitaxel",
+        "factor": null,
+        "notes": "Reduce paclitaxel to 45mg/m²"
+      },
+      {
+        "condition": "Day 8 or 15: Neutrophils <1x10⁹/L",
+        "drug_name": "Paclitaxel",
+        "factor": 0.0,
+        "notes": "Omit paclitaxel on day 8 or 15"
+      },
+      {
+        "condition": "Day 8 or 15: Platelets <50x10⁹/L",
+        "drug_name": "Paclitaxel",
+        "factor": 0.0,
+        "notes": "Omit paclitaxel on day 8 or 15"
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin ≥51 µmol/L",
+        "drug_name": "Paclitaxel",
+        "factor": 0.0,
+        "notes": "Paclitaxel not recommended"
+      },
+      {
+        "condition": "Renal impairment: CrCl <20ml/min",
+        "drug_name": "Carboplatin",
+        "factor": 0.0,
+        "notes": "Omit carboplatin"
+      },
+      {
+        "condition": "Non-haematological NCI-CTC grade ≥3 toxicity",
+        "drug_name": "Carboplatin",
+        "factor": 0.75,
+        "notes": "Delay until resolved to grade ≤1, then reduce causative agent to 75% of original dose"
+      },
+      {
+        "condition": "Non-haematological NCI-CTC grade ≥3 toxicity",
+        "drug_name": "Paclitaxel",
+        "factor": 0.75,
+        "notes": "Delay until resolved to grade ≤1, then reduce causative agent to 75% of original dose"
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV 30 minutes before paclitaxel",
+      "Dexamethasone 10mg oral or IV 30 minutes before paclitaxel",
+      "H2 antagonist (e.g. ranitidine 50mg IV or famotidine 20mg oral) 30 minutes before paclitaxel",
+      "Ondansetron 8mg oral or IV 15-30 minutes before chemotherapy (day 1)",
+      "Metoclopramide 10mg oral or IV 15-30 minutes before chemotherapy (days 8 and 15)",
+      "Dexamethasone 4mg oral twice daily for 3 days starting day 2 (take home)",
+      "Metoclopramide 10mg oral TDS as required (take home)",
+      "G-CSF: filgrastim 30 million units SC days 3,4,5,10,11,12,17,18,19 OR lenograstim 33.6 million units SC days 3,4,5,10,11,12,17,18,19"
+    ],
+    "special_warnings": [
+      "Neo-adjuvant treatment of stage II/III triple negative breast cancer",
+      "Carboplatin maximum dose 750mg at AUC5 (capped at 790mg in ARIA); do not exceed CrCl cap of 125ml/min",
+      "Paclitaxel hypersensitivity reactions: interrupt for minor symptoms; immediately discontinue for severe reactions (hypotension, bronchospasm, generalised erythema)",
+      "Paclitaxel must be administered via non-PVC set with in-line 0.22 micron filter",
+      "Recalculate carboplatin dose if renal function changes by ≥10% between cycles"
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "bilirubin"
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 5,
+      "max_dose_mg": 750
+    }
+  },
+  {
+    "protocol_code": "Breast-Carboplatin-AUC6-Docetaxel",
+    "protocol_name": "Breast-Carboplatin (AUC6)-Docetaxel",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 6.0,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": 900.0,
+        "max_dose_unit": "mg",
+        "notes": "Calvert formula using calculated GFR (capped at CrCl 125ml/min). Max dose 900mg (set at 890mg in ARIA). AUC5 may be considered with EDTA clearance. Recalculate if renal function changes >10%."
+      },
+      {
+        "drug_name": "Docetaxel",
+        "dose": 75.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Administer in 250ml sodium chloride 0.9% over 60 minutes. Doses >200mg dilute in 500ml sodium chloride 0.9% (max concentration 0.74mg/ml). Consider starting dose 55mg/m² in those with poor bone marrow reserves. Exfoliant."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Day 1: Neutrophils <1x10⁹/L or Platelets <100x10⁹/L — delay 7 days; febrile neutropenia or count delay >7 days (first reduction)",
+        "drug_name": "Carboplatin",
+        "factor": 0.8,
+        "notes": "Reduce to 80% of original dose"
+      },
+      {
+        "condition": "Day 1: Neutrophils <1x10⁹/L or Platelets <100x10⁹/L — delay 7 days; febrile neutropenia or count delay >7 days (first reduction)",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Reduce to 80% of original dose"
+      },
+      {
+        "condition": "Recurrent neutropenia/thrombocytopenia despite 80% dose (second reduction)",
+        "drug_name": "Carboplatin",
+        "factor": 0.5,
+        "notes": "Reduce to 50% or stop treatment"
+      },
+      {
+        "condition": "Recurrent neutropenia/thrombocytopenia despite 80% dose (second reduction)",
+        "drug_name": "Docetaxel",
+        "factor": 0.5,
+        "notes": "Reduce to 50% or stop treatment"
+      },
+      {
+        "condition": "Hepatic impairment: Docetaxel AST/ALT ≥1.5xULN and Alk Phos ≥2.5xULN",
+        "drug_name": "Docetaxel",
+        "factor": 0.75,
+        "notes": "Consider 75% dose"
+      },
+      {
+        "condition": "Hepatic impairment: Docetaxel Bilirubin >ULN and/or AST/ALT ≥3.5xULN and Alk Phos ≥6xULN",
+        "drug_name": "Docetaxel",
+        "factor": 0.0,
+        "notes": "Not recommended"
+      },
+      {
+        "condition": "Renal impairment: CrCl ≤20ml/min",
+        "drug_name": "Carboplatin",
+        "factor": 0.0,
+        "notes": "Contra-indicated"
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 3 at 75mg/m²",
+        "drug_name": "Docetaxel",
+        "factor": null,
+        "notes": "Reduce docetaxel from 75mg/m² to 60mg/m². If grade 3 at <75mg/m² or grade 4: stop treatment"
+      },
+      {
+        "condition": "NCI-CTC grade 3 cutaneous toxicity present on day 1",
+        "drug_name": "Docetaxel",
+        "factor": null,
+        "notes": "Delay until grade ≤1 then reduce from 75mg/m² to 60mg/m². Stop if at 60mg/m² or no recovery in 2 weeks. Stop for grade 4 cutaneous toxicity"
+      },
+      {
+        "condition": "Excessive lacrimation/ocular irritation",
+        "drug_name": "Docetaxel",
+        "factor": null,
+        "notes": "Reduce to 60mg/m² if hypromellose 0.3% eye drops 4 times daily does not control symptoms"
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg oral twice daily for 3 days starting 24 hours before docetaxel (or 20mg IV if forgotten)",
+      "Ondansetron 8mg oral or IV 15-30 minutes before chemotherapy",
+      "Ondansetron 8mg oral twice daily for 3 days starting evening of day 1 (take home)",
+      "Metoclopramide 10mg oral TDS as required (take home)",
+      "G-CSF: filgrastim 30 million units SC for 7 days from day 3 OR lenograstim 33.6 million units SC for 7 days from day 3 OR pegfilgrastim 6mg SC on day 2"
+    ],
+    "special_warnings": [
+      "Neo-adjuvant or adjuvant treatment of triple negative breast cancer",
+      "Carboplatin maximum dose 900mg at AUC6 (set at 890mg in ARIA); cap CrCl at 125ml/min",
+      "Docetaxel hypersensitivity: do not interrupt for minor symptoms (flushing/rashes); immediately discontinue for severe reactions",
+      "Docetaxel-induced fluid retention may cause weight gain — not a reason to alter dose",
+      "Recalculate carboplatin dose if renal function changes by >10% between cycles",
+      "Consider loperamide 4mg after first loose stool then 2mg after each loose motion (max 48 hours, max 16mg/day)"
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "bilirubin",
+      "ast_alt"
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 6,
+      "max_dose_mg": 900
+    }
+  },
+  {
+    "protocol_code": "Breast-FE100CT-HP",
+    "protocol_name": "Cyclophosphamide-Docetaxel-Epirubicin (100)-Fluorouracil-Pertuzumab-Trastuzumab (FE100CT-HP)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 21,
+    "drugs": [
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 500.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1-3 only (FE100C phase). Administer as IV bolus over 10 minutes."
+      },
+      {
+        "drug_name": "Epirubicin",
+        "dose": 100.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1-3 only (FE100C phase). Administer as IV bolus over 10 minutes. Maximum lifetime cumulative dose is 900mg/m²."
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 500.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1-3 only (FE100C phase). Administer as IV bolus over 10 minutes. All patients must be tested for DPD deficiency before cycle 1."
+      },
+      {
+        "drug_name": "Docetaxel",
+        "dose": 75.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 4-7 (docetaxel-pertuzumab-trastuzumab phase). Administer in 250ml sodium chloride 0.9% over 60 minutes. Dose may be increased to 100mg/m² from cycle 5 if 75mg/m² tolerated. Exfoliant."
+      },
+      {
+        "drug_name": "Pertuzumab",
+        "dose": 840.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "LOADING DOSE — Cycle 4 only. Administer in 250ml sodium chloride 0.9% over 60 minutes. Observe patient for 60 minutes after first infusion. Dose reductions not permitted — discontinue if not tolerated."
+      },
+      {
+        "drug_name": "Pertuzumab",
+        "dose": 420.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "MAINTENANCE DOSE — Cycles 5-21. Administer in 250ml sodium chloride 0.9% over 30 minutes. If interval ≥6 weeks, re-administer loading dose of 840mg. Dose reductions not permitted — discontinue if not tolerated."
+      },
+      {
+        "drug_name": "Trastuzumab",
+        "dose": 8.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "LOADING DOSE — Cycle 4 only. Administer in 250ml sodium chloride 0.9% over 90 minutes. Observe patient for 6 hours after first infusion. If missed dose ≤14 days, give usual maintenance dose; if >14 days, re-load at 8mg/kg over 90 minutes. Dose reductions not permitted."
+      },
+      {
+        "drug_name": "Trastuzumab",
+        "dose": 6.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "MAINTENANCE DOSE — Cycles 5-21. Administer in 250ml sodium chloride 0.9% over 30 minutes (if first infusion well tolerated). Dose reductions not permitted — discontinue if not tolerated."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Cyclophosphamide renal impairment: CrCl 10-20ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75%"
+      },
+      {
+        "condition": "Cyclophosphamide renal impairment: CrCl <10ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Reduce to 50%"
+      },
+      {
+        "condition": "Epirubicin hepatic impairment: Bilirubin 24-51 µmol/L or AST 2-4xULN",
+        "drug_name": "Epirubicin",
+        "factor": 0.5,
+        "notes": "Give 50% of dose"
+      },
+      {
+        "condition": "Epirubicin hepatic impairment: Bilirubin 52-85 µmol/L or AST >4xULN",
+        "drug_name": "Epirubicin",
+        "factor": 0.25,
+        "notes": "Give 25% of dose"
+      },
+      {
+        "condition": "Epirubicin hepatic impairment: Bilirubin ≥85 µmol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.0,
+        "notes": "Contra-indicated"
+      },
+      {
+        "condition": "Fluorouracil hepatic impairment: Bilirubin >85 µmol/L or AST/ALT >180 units",
+        "drug_name": "Fluorouracil",
+        "factor": 0.0,
+        "notes": "Contra-indicated"
+      },
+      {
+        "condition": "Docetaxel hepatic impairment: AST/ALT ≥1.5xULN and Alk Phos ≥2.5xULN",
+        "drug_name": "Docetaxel",
+        "factor": 0.75,
+        "notes": "Give 75%"
+      },
+      {
+        "condition": "Docetaxel hepatic impairment: Bilirubin >ULN and/or AST/ALT ≥3.5xULN and Alk Phos ≥6xULN",
+        "drug_name": "Docetaxel",
+        "factor": 0.0,
+        "notes": "Not recommended"
+      },
+      {
+        "condition": "Docetaxel neutropenia NCI-CTC grade 3-4 or febrile neutropenia (previous dose 100mg/m²)",
+        "drug_name": "Docetaxel",
+        "factor": null,
+        "notes": "Delay until grade ≤1 then reduce to 75mg/m²"
+      },
+      {
+        "condition": "Docetaxel neutropenia NCI-CTC grade 4 or febrile neutropenia (previous dose 75mg/m²)",
+        "drug_name": "Docetaxel",
+        "factor": null,
+        "notes": "Delay until grade ≤1 then reduce to 60mg/m²"
+      },
+      {
+        "condition": "Docetaxel platelets <100x10⁹/L (previous dose 100mg/m²)",
+        "drug_name": "Docetaxel",
+        "factor": null,
+        "notes": "Delay until ≥100x10⁹/L then reduce to 75mg/m²"
+      },
+      {
+        "condition": "Docetaxel NCI-CTC grade 3 peripheral neuropathy",
+        "drug_name": "Docetaxel",
+        "factor": null,
+        "notes": "Reduce from 100mg/m² to 75mg/m² or 75mg/m² to 60mg/m². Consider stopping if at <100mg/m² or grade 4"
+      },
+      {
+        "condition": "Pertuzumab/Trastuzumab: LVEF <40% or LVEF 40-45% with ≥10 point decline from baseline",
+        "drug_name": "Pertuzumab",
+        "factor": 1.0,
+        "notes": "Hold treatment, repeat LVEF in 3 weeks. Stop if persists"
+      },
+      {
+        "condition": "Pertuzumab/Trastuzumab: LVEF <40% or LVEF 40-45% with ≥10 point decline from baseline",
+        "drug_name": "Trastuzumab",
+        "factor": 1.0,
+        "notes": "Hold treatment, repeat LVEF in 3 weeks. Stop if persists. Dose reductions NOT permitted"
+      },
+      {
+        "condition": "No dose modifications for haematological toxicity are necessary for pertuzumab or trastuzumab",
+        "drug_name": "Pertuzumab",
+        "factor": 1.0,
+        "notes": "If treatment not tolerated it should be stopped"
+      }
+    ],
+    "pre_medications": [
+      "FE100C cycles 1-3: Dexamethasone 8mg oral or IV 15-30 minutes before chemotherapy",
+      "FE100C cycles 1-3: Ondansetron 8mg oral or IV 15-30 minutes before chemotherapy",
+      "FE100C cycles 1-3 take home: Dexamethasone 4mg oral twice daily for 3 days from day 2",
+      "FE100C cycles 1-3 take home: Metoclopramide 10mg oral TDS as required",
+      "FE100C cycles 1-3 take home: Ondansetron 8mg oral twice daily for 3 days from evening of day 1",
+      "Docetaxel cycles 4-7: Dexamethasone 8mg oral twice daily for 3 days starting 24 hours before docetaxel (or 20mg IV bolus if forgotten)",
+      "Docetaxel cycles 4-7: Metoclopramide 10mg oral or IV 15-30 minutes before chemotherapy",
+      "Pertuzumab/trastuzumab infusion reactions (when required): Chlorphenamine 10mg IV, Hydrocortisone 100mg IV, Paracetamol 1000mg oral",
+      "G-CSF FE100C: filgrastim 30 million units SC for 5 days from day 5 OR pegfilgrastim 6mg SC on day 2",
+      "G-CSF Docetaxel: filgrastim 30 million units SC for 7 days from day 3 OR pegfilgrastim 6mg SC on day 2"
+    ],
+    "special_warnings": [
+      "Neo-adjuvant/adjuvant therapy of breast cancer — HER2-positive",
+      "FE100C administered first (cycles 1-3), followed by Docetaxel-Pertuzumab-Trastuzumab (cycles 4-7), then Pertuzumab-Trastuzumab maintenance (cycles 8-21)",
+      "Maximum lifetime cumulative dose of epirubicin is 900mg/m² — monitor cumulative dose",
+      "All patients must be tested for DPD deficiency before cycle 1 — risk of severe/fatal fluorouracil toxicity",
+      "LVEF must be ≥50% before starting pertuzumab and trastuzumab. Echocardiogram before cycle 4 then every 3 months",
+      "Pertuzumab and trastuzumab dose reductions are NOT permitted — discontinue if not tolerated",
+      "Patients with symptomatic cardiac dysfunction should have pertuzumab and trastuzumab discontinued; commence ACE inhibitor and refer to cardiologist",
+      "Discontinue epirubicin if cardiac failure develops",
+      "Pertuzumab associated with severe diarrhoea — ensure appropriate anti-diarrhoeal therapy",
+      "Docetaxel hypersensitivity: do not interrupt for minor symptoms; immediately discontinue for severe reactions"
+    ],
+    "required_patient_fields": [
+      "lvef",
+      "her2_status",
+      "creatinine_clearance",
+      "bilirubin",
+      "dpd_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "Breast-FE100CT",
+    "protocol_name": "Cyclophosphamide-Docetaxel-Epirubicin (100)-Fluorouracil (FE100CT)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 500.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1-3 only (FE100C phase). Administer as IV bolus over 10 minutes."
+      },
+      {
+        "drug_name": "Epirubicin",
+        "dose": 100.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1-3 only (FE100C phase). Administer as IV bolus over 10 minutes. Maximum lifetime cumulative dose is 900mg/m²."
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 500.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1-3 only (FE100C phase). Administer as IV bolus over 10 minutes. All patients must be tested for DPD deficiency before cycle 1."
+      },
+      {
+        "drug_name": "Docetaxel",
+        "dose": 100.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 4-6 (docetaxel phase). Administer in 250ml sodium chloride 0.9% over 60 minutes. Starting dose 75mg/m² may be used in those with poor bone marrow reserves with a view to increase to 100mg/m² if tolerated. Exfoliant."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "FEC arm: Neutrophils <1x10⁹/L or Platelets <100x10⁹/L on day 1 — delay 7 days (first occurrence)",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Delay treatment up to 7 days; maintain dose intensity if recovered"
+      },
+      {
+        "condition": "FEC arm febrile neutropenia or delay >7 days due to neutrophils <0.5x10⁹/L or platelets <50x10⁹/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.75,
+        "notes": "Reduce epirubicin to 75% of original dose. If recurs reduce to 50% or stop"
+      },
+      {
+        "condition": "Cyclophosphamide renal impairment: CrCl 10-20ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75%"
+      },
+      {
+        "condition": "Cyclophosphamide renal impairment: CrCl <10ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Reduce to 50%"
+      },
+      {
+        "condition": "Epirubicin hepatic impairment: Bilirubin 24-51 µmol/L or AST 2-4xULN",
+        "drug_name": "Epirubicin",
+        "factor": 0.5,
+        "notes": "Give 50% of dose"
+      },
+      {
+        "condition": "Epirubicin hepatic impairment: Bilirubin 51-85 µmol/L or AST >4xULN",
+        "drug_name": "Epirubicin",
+        "factor": 0.25,
+        "notes": "Give 25% of dose"
+      },
+      {
+        "condition": "Epirubicin hepatic impairment: Bilirubin ≥85 µmol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.0,
+        "notes": "Contra-indicated"
+      },
+      {
+        "condition": "Fluorouracil hepatic impairment: Bilirubin >85 µmol/L or AST/ALT >180 units",
+        "drug_name": "Fluorouracil",
+        "factor": 0.0,
+        "notes": "Contra-indicated. In moderate hepatic impairment reduce initial dose by one third; severe by one half"
+      },
+      {
+        "condition": "Docetaxel hepatic impairment: AST/ALT ≥1.5xULN and Alk Phos ≥2.5xULN",
+        "drug_name": "Docetaxel",
+        "factor": 0.75,
+        "notes": "Give 75%"
+      },
+      {
+        "condition": "Docetaxel hepatic impairment: Bilirubin >ULN and/or AST/ALT ≥3.5xULN and Alk Phos ≥6xULN",
+        "drug_name": "Docetaxel",
+        "factor": 0.0,
+        "notes": "Not recommended"
+      },
+      {
+        "condition": "Docetaxel NCI-CTC grade 3 peripheral neuropathy at 100mg/m²",
+        "drug_name": "Docetaxel",
+        "factor": null,
+        "notes": "Reduce to 75mg/m². If at <100mg/m² or grade 4: consider stopping"
+      },
+      {
+        "condition": "Docetaxel NCI-CTC grade 3 cutaneous toxicity on day 1",
+        "drug_name": "Docetaxel",
+        "factor": null,
+        "notes": "Delay until grade ≤1 then reduce from 100mg/m² to 75mg/m² or 75mg/m² to 60mg/m². Stop if at 60mg/m² or no recovery in 2 weeks"
+      }
+    ],
+    "pre_medications": [
+      "FE100C day 1: Dexamethasone 8mg oral or IV 15-30 minutes before chemotherapy",
+      "FE100C day 1: Ondansetron 8mg oral or IV 15-30 minutes before chemotherapy",
+      "FE100C take home: Dexamethasone 4mg oral twice daily for 3 days from day 2",
+      "FE100C take home: Metoclopramide 10mg oral TDS as required",
+      "FE100C take home: Ondansetron 8mg oral twice daily for 3 days from evening of day 1",
+      "FE100C G-CSF: filgrastim 300mcg SC for 5 days from day 5 OR lenograstim 263mcg SC for 5 days from day 5 OR pegfilgrastim 6mg SC on day 2",
+      "Docetaxel: Dexamethasone 8mg oral twice daily for 3 days starting 24 hours before docetaxel (or 20mg IV bolus if forgotten)",
+      "Docetaxel: Metoclopramide 10mg oral or IV 15-30 minutes before chemotherapy",
+      "Docetaxel take home: Metoclopramide 10mg oral TDS as required",
+      "Docetaxel G-CSF: filgrastim 300mcg SC for 7 days from day 3 OR lenograstim 263mcg SC for 7 days from day 3 OR pegfilgrastim 6mg SC on day 2"
+    ],
+    "special_warnings": [
+      "Neo-adjuvant/adjuvant therapy of breast cancer",
+      "FE100C administered first (cycles 1-3), followed by Docetaxel (cycles 4-6)",
+      "Maximum lifetime cumulative dose of epirubicin is 900mg/m² — monitor cumulative dose",
+      "All patients must be tested for DPD deficiency before cycle 1 — risk of severe/fatal fluorouracil toxicity",
+      "Ensure adequate cardiac function (baseline LVEF) before starting treatment; discontinue epirubicin if cardiac failure develops",
+      "Docetaxel hypersensitivity: do not interrupt for minor symptoms; immediately discontinue for severe reactions",
+      "Docetaxel-induced fluid retention may cause weight gain — not a reason to alter dose"
+    ],
+    "required_patient_fields": [
+      "lvef",
+      "creatinine_clearance",
+      "bilirubin",
+      "dpd_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "Breast-Cyclophosphamide-Doxorubicin-Paclitaxel-21day",
+    "protocol_name": "Cyclophosphamide-Doxorubicin-Paclitaxel (21 day)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 8,
+    "drugs": [
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 600.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1-4 only. Administer as IV bolus over 10 minutes."
+      },
+      {
+        "drug_name": "Doxorubicin",
+        "dose": 60.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1-4 only. Administer as IV bolus over 10 minutes. Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). Vesicant."
+      },
+      {
+        "drug_name": "Paclitaxel",
+        "dose": 175.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 3.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 5-8 only. Administer in 500ml sodium chloride 0.9% over 180 minutes. Must use non-PVC administration set with in-line 0.22 micron filter. Vesicant."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1x10⁹/L or Platelets <100x10⁹/L on day 1 — haematological event NCI-CTC grade ≥3",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.8,
+        "notes": "Reduce to 80% of original dose; stop if second episode or delay >7 days"
+      },
+      {
+        "condition": "Neutrophils <1x10⁹/L or Platelets <100x10⁹/L on day 1 — haematological event NCI-CTC grade ≥3",
+        "drug_name": "Doxorubicin",
+        "factor": 0.8,
+        "notes": "Reduce to 80% of original dose; stop if second episode or delay >7 days"
+      },
+      {
+        "condition": "Neutrophils <1x10⁹/L or Platelets <100x10⁹/L on day 1 — haematological event NCI-CTC grade ≥3",
+        "drug_name": "Paclitaxel",
+        "factor": 0.8,
+        "notes": "Reduce to 80% of original dose; stop if second episode or delay >7 days"
+      },
+      {
+        "condition": "Doxorubicin hepatic impairment: Bilirubin 20-50 µmol/L or AST 2-3xULN",
+        "drug_name": "Doxorubicin",
+        "factor": 0.5,
+        "notes": "Give 50% of dose"
+      },
+      {
+        "condition": "Doxorubicin hepatic impairment: Bilirubin 51-85 µmol/L or AST >3xULN",
+        "drug_name": "Doxorubicin",
+        "factor": 0.25,
+        "notes": "Give 25% of dose"
+      },
+      {
+        "condition": "Doxorubicin hepatic impairment: Bilirubin >85 µmol/L",
+        "drug_name": "Doxorubicin",
+        "factor": 0.0,
+        "notes": "Omit"
+      },
+      {
+        "condition": "Paclitaxel hepatic impairment: Bilirubin <26 µmol/L (with bilirubin <1.25xULN and transaminase <10xULN, dose at 175mg/m²)",
+        "drug_name": "Paclitaxel",
+        "factor": null,
+        "notes": "135mg/m² if bilirubin <26; 75mg/m² if bilirubin 27-51; 50mg/m² if bilirubin >51"
+      },
+      {
+        "condition": "Cyclophosphamide renal impairment: CrCl 10-20ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75%; consider mesna"
+      },
+      {
+        "condition": "Cyclophosphamide renal impairment: CrCl <10ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Reduce to 50%; consider mesna"
+      },
+      {
+        "condition": "Paclitaxel NCI-CTC grade 2 peripheral neuropathy",
+        "drug_name": "Paclitaxel",
+        "factor": 0.75,
+        "notes": "Withhold until grade ≤1 then reduce to 75% of original dose"
+      },
+      {
+        "condition": "Paclitaxel NCI-CTC grade 3 peripheral neuropathy",
+        "drug_name": "Paclitaxel",
+        "factor": 0.5,
+        "notes": "Withhold until grade ≤1 then reduce to 50% of original dose. Discontinue if neuropathy does not resolve to grade 1"
+      }
+    ],
+    "pre_medications": [
+      "Cyclophosphamide/Doxorubicin cycles 1-4: Dexamethasone 8mg oral or IV 15-30 minutes before chemotherapy",
+      "Cyclophosphamide/Doxorubicin cycles 1-4: Ondansetron 8mg oral or IV 15-30 minutes before chemotherapy",
+      "Cyclophosphamide/Doxorubicin take home: Dexamethasone 4mg oral twice daily for 3 days",
+      "Cyclophosphamide/Doxorubicin take home: Metoclopramide 10mg oral TDS as required",
+      "Cyclophosphamide/Doxorubicin take home: Ondansetron 8mg oral twice daily for 3 days",
+      "Paclitaxel cycles 5-8 (30 min before): Chlorphenamine 10mg IV",
+      "Paclitaxel cycles 5-8 (30 min before): Dexamethasone 20mg IV",
+      "Paclitaxel cycles 5-8 (30 min before): H2 antagonist per local formulary (e.g. ranitidine 50mg IV)",
+      "Paclitaxel cycles 5-8 (15-30 min before): Metoclopramide 10mg oral or IV",
+      "Paclitaxel take home: Metoclopramide 10mg oral TDS as required"
+    ],
+    "special_warnings": [
+      "Neoadjuvant/adjuvant therapy of early breast cancer",
+      "Maximum lifetime cumulative dose of doxorubicin is 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy)",
+      "Discontinue doxorubicin if cardiac failure develops",
+      "Ensure adequate cardiac function (baseline LVEF) before starting doxorubicin",
+      "Paclitaxel hypersensitivity reactions: interrupt for minor symptoms; immediately discontinue for severe reactions (hypotension, bronchospasm, erythema)",
+      "Paclitaxel must be administered via non-PVC set with in-line 0.22 micron filter",
+      "Blood pressure and pulse to be monitored half-hourly during paclitaxel infusion"
+    ],
+    "required_patient_fields": [
+      "lvef",
+      "creatinine_clearance",
+      "bilirubin"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "Breast-Cyclophosphamide-Doxorubicin",
+    "protocol_name": "Cyclophosphamide-Doxorubicin",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 600.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Administer as IV bolus over 10 minutes. Where followed by paclitaxel, only 4 cycles may be needed — check at cycle 1."
+      },
+      {
+        "drug_name": "Doxorubicin",
+        "dose": 60.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Administer as IV bolus over 10 minutes. Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). Vesicant."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1x10⁹/L or Platelets <100x10⁹/L on day 1 — delay 7 days; haematological event NCI-CTC grade ≥3",
+        "drug_name": "Doxorubicin",
+        "factor": 0.8,
+        "notes": "Reduce to 80%; stop if second episode or delay >7 days"
+      },
+      {
+        "condition": "Neutrophils <1x10⁹/L or Platelets <100x10⁹/L on day 1 — delay 7 days; haematological event NCI-CTC grade ≥3",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.8,
+        "notes": "Reduce to 80%; stop if second episode or delay >7 days"
+      },
+      {
+        "condition": "Doxorubicin hepatic impairment: Bilirubin 20-51 µmol/L",
+        "drug_name": "Doxorubicin",
+        "factor": 0.5,
+        "notes": "Give 50% of dose"
+      },
+      {
+        "condition": "Doxorubicin hepatic impairment: Bilirubin 51-85 µmol/L",
+        "drug_name": "Doxorubicin",
+        "factor": 0.25,
+        "notes": "Give 25% of dose"
+      },
+      {
+        "condition": "Doxorubicin hepatic impairment: Bilirubin >85 µmol/L",
+        "drug_name": "Doxorubicin",
+        "factor": 0.0,
+        "notes": "Omit"
+      },
+      {
+        "condition": "Doxorubicin hepatic impairment: AST 2-3xULN",
+        "drug_name": "Doxorubicin",
+        "factor": 0.75,
+        "notes": "Give 75% of dose"
+      },
+      {
+        "condition": "Doxorubicin hepatic impairment: AST >3xULN",
+        "drug_name": "Doxorubicin",
+        "factor": 0.5,
+        "notes": "Give 50% of dose"
+      },
+      {
+        "condition": "Cyclophosphamide renal impairment: CrCl 10-20ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75%; consider mesna"
+      },
+      {
+        "condition": "Cyclophosphamide renal impairment: CrCl <10ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Reduce to 50%; consider mesna"
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg oral or IV 15-30 minutes before chemotherapy",
+      "Ondansetron 8mg oral or IV 15-30 minutes before chemotherapy",
+      "Dexamethasone 4mg oral twice daily for 3 days starting day 2 (take home)",
+      "Metoclopramide 10mg oral TDS as required (take home)",
+      "Ondansetron 8mg oral twice daily for 3 days from evening of day 1 (take home)"
+    ],
+    "special_warnings": [
+      "Primary systemic (neoadjuvant) or adjuvant therapy of breast cancer",
+      "Maximum lifetime cumulative dose of doxorubicin is 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy)",
+      "Discontinue doxorubicin if cardiac failure develops",
+      "Ensure adequate cardiac function (baseline LVEF) before starting doxorubicin",
+      "Where intention is to follow with paclitaxel, only 4 cycles of this regimen may be needed — check at cycle 1"
+    ],
+    "required_patient_fields": [
+      "lvef",
+      "creatinine_clearance",
+      "bilirubin"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "Breast-Cyclophosphamide-Epirubicin-Paclitaxel-21day",
+    "protocol_name": "Cyclophosphamide-Epirubicin-Paclitaxel (21 day)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 8,
+    "drugs": [
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 600.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1-4 only. Administer as IV bolus over 10 minutes."
+      },
+      {
+        "drug_name": "Epirubicin",
+        "dose": 90.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1-4 only. Administer as IV bolus over 10 minutes. Maximum lifetime cumulative dose is 900mg/m². Vesicant."
+      },
+      {
+        "drug_name": "Paclitaxel",
+        "dose": 175.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 3.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 5-8 only. Administer in 500ml sodium chloride 0.9% over 180 minutes. Must use non-PVC administration set with in-line 0.22 micron filter. Vesicant."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1x10⁹/L or Platelets <100x10⁹/L on day 1 — haematological event NCI-CTC grade ≥3",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.8,
+        "notes": "Reduce to 80%; stop if second episode or delay >7 days"
+      },
+      {
+        "condition": "Neutrophils <1x10⁹/L or Platelets <100x10⁹/L on day 1 — haematological event NCI-CTC grade ≥3",
+        "drug_name": "Epirubicin",
+        "factor": 0.8,
+        "notes": "Reduce to 80%; stop if second episode or delay >7 days"
+      },
+      {
+        "condition": "Neutrophils <1x10⁹/L or Platelets <100x10⁹/L on day 1 — haematological event NCI-CTC grade ≥3",
+        "drug_name": "Paclitaxel",
+        "factor": 0.8,
+        "notes": "Reduce to 80%; stop if second episode or delay >7 days"
+      },
+      {
+        "condition": "Epirubicin hepatic impairment: Bilirubin 24-51 µmol/L or AST 2-4xULN",
+        "drug_name": "Epirubicin",
+        "factor": 0.5,
+        "notes": "Give 50% of dose"
+      },
+      {
+        "condition": "Epirubicin hepatic impairment: Bilirubin 51-85 µmol/L or AST >4xULN",
+        "drug_name": "Epirubicin",
+        "factor": 0.25,
+        "notes": "Give 25% of dose"
+      },
+      {
+        "condition": "Epirubicin hepatic impairment: Bilirubin ≥85 µmol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.0,
+        "notes": "Contra-indicated"
+      },
+      {
+        "condition": "Paclitaxel hepatic impairment: Bilirubin <26 µmol/L",
+        "drug_name": "Paclitaxel",
+        "factor": null,
+        "notes": "135mg/m² if bilirubin <26; 75mg/m² if bilirubin 27-51; 50mg/m² if bilirubin >51. If bilirubin <1.25xULN and transaminase <10xULN, dose at 175mg/m²"
+      },
+      {
+        "condition": "Cyclophosphamide renal impairment: CrCl 10-20ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75%"
+      },
+      {
+        "condition": "Cyclophosphamide renal impairment: CrCl <10ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Reduce to 50%"
+      },
+      {
+        "condition": "Paclitaxel NCI-CTC grade 2 peripheral neuropathy",
+        "drug_name": "Paclitaxel",
+        "factor": 0.75,
+        "notes": "Withhold until grade ≤1 then reduce to 75% of original dose"
+      },
+      {
+        "condition": "Paclitaxel NCI-CTC grade 3 peripheral neuropathy",
+        "drug_name": "Paclitaxel",
+        "factor": 0.5,
+        "notes": "Withhold until grade ≤1 then reduce to 50%. Discontinue if neuropathy does not resolve to grade 1"
+      }
+    ],
+    "pre_medications": [
+      "Cyclophosphamide/Epirubicin cycles 1-4 (15-30 min before): Dexamethasone 8mg oral or IV",
+      "Cyclophosphamide/Epirubicin cycles 1-4 (15-30 min before): Ondansetron 8mg oral or IV",
+      "Cyclophosphamide/Epirubicin take home: Dexamethasone 4mg oral twice daily for 3 days from day 2",
+      "Cyclophosphamide/Epirubicin take home: Metoclopramide 10mg oral TDS as required",
+      "Cyclophosphamide/Epirubicin take home: Ondansetron 8mg oral twice daily for 3 days",
+      "Paclitaxel cycles 5-8 (30 min before): Chlorphenamine 10mg IV",
+      "Paclitaxel cycles 5-8 (30 min before): Dexamethasone 20mg IV",
+      "Paclitaxel cycles 5-8 (30 min before): H2 antagonist per local formulary (e.g. ranitidine 50mg IV)",
+      "Paclitaxel cycles 5-8 (15-30 min before): Metoclopramide 10mg oral or IV",
+      "Paclitaxel take home: Metoclopramide 10mg oral TDS as required"
+    ],
+    "special_warnings": [
+      "Neoadjuvant/adjuvant therapy of early breast cancer",
+      "Maximum lifetime cumulative dose of epirubicin is 900mg/m² — monitor cumulative dose",
+      "Discontinue epirubicin if cardiac failure develops",
+      "Ensure adequate cardiac function (baseline LVEF) before starting epirubicin",
+      "Blood pressure and pulse to be monitored half-hourly during paclitaxel infusion",
+      "Paclitaxel hypersensitivity reactions: interrupt for minor symptoms; immediately discontinue for severe reactions",
+      "Paclitaxel must be administered via non-PVC set with in-line 0.22 micron filter"
+    ],
+    "required_patient_fields": [
+      "lvef",
+      "creatinine_clearance",
+      "bilirubin"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "Breast-Cyclophosphamide-Epirubicin-Paclitaxel-7day",
+    "protocol_name": "Cyclophosphamide-Epirubicin-Paclitaxel (7 day)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 8,
+    "drugs": [
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 600.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1-4 only. Administer as IV bolus over 10 minutes."
+      },
+      {
+        "drug_name": "Epirubicin",
+        "dose": 90.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1-4 only. Administer as IV bolus over 10 minutes. Maximum lifetime cumulative dose is 900mg/m². Vesicant."
+      },
+      {
+        "drug_name": "Paclitaxel",
+        "dose": 80.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 5-8 only (days 1, 8, 15 of each 21-day cycle). Administer in 250ml sodium chloride 0.9% over 60 minutes. Must use non-PVC administration set with in-line 0.22 micron filter. Vesicant."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1x10⁹/L or Platelets <100x10⁹/L on day 1 — haematological event NCI-CTC grade ≥3",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.8,
+        "notes": "Reduce to 80%; stop if second episode or delay >7 days"
+      },
+      {
+        "condition": "Neutrophils <1x10⁹/L or Platelets <100x10⁹/L on day 1 — haematological event NCI-CTC grade ≥3",
+        "drug_name": "Epirubicin",
+        "factor": 0.8,
+        "notes": "Reduce to 80%; stop if second episode or delay >7 days"
+      },
+      {
+        "condition": "Neutrophils <1x10⁹/L or Platelets <100x10⁹/L on day 1 — haematological event NCI-CTC grade ≥3",
+        "drug_name": "Paclitaxel",
+        "factor": 0.8,
+        "notes": "Reduce to 80%; stop if second episode or delay >7 days"
+      },
+      {
+        "condition": "Epirubicin hepatic impairment: Bilirubin 24-51 µmol/L or AST 2-4xULN",
+        "drug_name": "Epirubicin",
+        "factor": 0.5,
+        "notes": "Give 50% of dose"
+      },
+      {
+        "condition": "Epirubicin hepatic impairment: Bilirubin 50-85 µmol/L or AST >4xULN",
+        "drug_name": "Epirubicin",
+        "factor": 0.25,
+        "notes": "Give 25% of dose"
+      },
+      {
+        "condition": "Epirubicin hepatic impairment: Bilirubin ≥85 µmol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.0,
+        "notes": "Contra-indicated"
+      },
+      {
+        "condition": "Paclitaxel hepatic impairment: Bilirubin <26 µmol/L",
+        "drug_name": "Paclitaxel",
+        "factor": null,
+        "notes": "135mg/m² if bilirubin <26; 75mg/m² if bilirubin 27-51; 50mg/m² if bilirubin >51. If bilirubin <1.25xULN and transaminase <10xULN, dose at 175mg/m²"
+      },
+      {
+        "condition": "Cyclophosphamide renal impairment: CrCl 10-20ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75%"
+      },
+      {
+        "condition": "Cyclophosphamide renal impairment: CrCl <10ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Reduce to 50%"
+      },
+      {
+        "condition": "Paclitaxel NCI-CTC grade 2 peripheral neuropathy",
+        "drug_name": "Paclitaxel",
+        "factor": 0.75,
+        "notes": "Withhold until grade ≤1 then reduce to 75% of original dose"
+      },
+      {
+        "condition": "Paclitaxel NCI-CTC grade 3 peripheral neuropathy",
+        "drug_name": "Paclitaxel",
+        "factor": 0.5,
+        "notes": "Withhold until grade ≤1 then reduce to 50%. Discontinue if neuropathy does not resolve to grade 1"
+      }
+    ],
+    "pre_medications": [
+      "Cyclophosphamide/Epirubicin cycles 1-4 (15-30 min before): Dexamethasone 8mg oral or IV",
+      "Cyclophosphamide/Epirubicin cycles 1-4 (15-30 min before): Ondansetron 8mg oral or IV",
+      "Cyclophosphamide/Epirubicin take home: Dexamethasone 4mg oral twice daily for 3 days from day 2",
+      "Cyclophosphamide/Epirubicin take home: Metoclopramide 10mg oral TDS as required",
+      "Cyclophosphamide/Epirubicin take home: Ondansetron 8mg oral twice daily for 3 days",
+      "Paclitaxel cycles 5-8 (30 min before, days 1/8/15): Chlorphenamine 10mg IV",
+      "Paclitaxel cycles 5-8 (30 min before, days 1/8/15): Dexamethasone 10mg IV",
+      "Paclitaxel cycles 5-8 (30 min before, days 1/8/15): H2 antagonist per local formulary (e.g. ranitidine 50mg IV)",
+      "Paclitaxel cycles 5-8 (15-30 min before): Metoclopramide 10mg oral or IV",
+      "Paclitaxel take home: Metoclopramide 10mg oral TDS as required"
+    ],
+    "special_warnings": [
+      "Neoadjuvant/adjuvant therapy of early breast cancer — weekly paclitaxel schedule (7-day) in second phase",
+      "Maximum lifetime cumulative dose of epirubicin is 900mg/m² — monitor cumulative dose",
+      "Discontinue epirubicin if cardiac failure develops",
+      "Ensure adequate cardiac function (baseline LVEF) before starting epirubicin",
+      "Paclitaxel hypersensitivity reactions: interrupt for minor symptoms; immediately discontinue for severe reactions",
+      "Paclitaxel must be administered via non-PVC set with in-line 0.22 micron filter",
+      "Note: dexamethasone premedication for paclitaxel is 10mg IV (not 20mg) in this 7-day schedule"
+    ],
+    "required_patient_fields": [
+      "lvef",
+      "creatinine_clearance",
+      "bilirubin"
+    ],
+    "auc_dosing": null
+  }
+]

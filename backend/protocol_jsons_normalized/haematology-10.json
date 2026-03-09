@@ -1,0 +1,1379 @@
+[
+  {
+    "protocol_code": "CML-Ponatinib",
+    "protocol_name": "Chronic Myeloid Leukaemia - Ponatinib",
+    "disease_site": "CML",
+    "category": "haematology",
+    "cycle_length_days": 28,
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Ponatinib",
+        "dose": 45.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": 45.0,
+        "max_dose_unit": "mg",
+        "notes": "45mg once daily days 1-28 inclusive. Available as 15mg and 45mg film-coated tablets. Swallow whole, do not crush or dissolve. May be taken with or without food. Dose reductions to 30mg or 15mg as per toxicity guidelines."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils less than 1x10^9/L (1st occurrence)",
+        "drug_name": "Ponatinib",
+        "factor": 1.0,
+        "notes": "Withhold until neutrophils recover to >=1.5x10^9/L, then resume at 45mg"
+      },
+      {
+        "condition": "Neutrophils less than 1x10^9/L (2nd occurrence)",
+        "drug_name": "Ponatinib",
+        "factor": 0.67,
+        "notes": "Withhold until neutrophils recover to >=1.5x10^9/L, then resume at 30mg"
+      },
+      {
+        "condition": "Neutrophils less than 1x10^9/L (3rd occurrence)",
+        "drug_name": "Ponatinib",
+        "factor": 0.33,
+        "notes": "Withhold until neutrophils recover to >=1.5x10^9/L, then resume at 15mg"
+      },
+      {
+        "condition": "Neutrophils less than 1x10^9/L (4th occurrence)",
+        "drug_name": "Ponatinib",
+        "factor": 0,
+        "notes": "Consider stopping ponatinib after 4th occurrence"
+      },
+      {
+        "condition": "Platelets less than 50x10^9/L (1st occurrence)",
+        "drug_name": "Ponatinib",
+        "factor": 1.0,
+        "notes": "Withhold until platelets recover to >=75x10^9/L, then resume at 45mg"
+      },
+      {
+        "condition": "Platelets less than 50x10^9/L (2nd occurrence)",
+        "drug_name": "Ponatinib",
+        "factor": 0.67,
+        "notes": "Withhold until platelets recover to >=75x10^9/L, then resume at 30mg"
+      },
+      {
+        "condition": "Platelets less than 50x10^9/L (3rd occurrence)",
+        "drug_name": "Ponatinib",
+        "factor": 0.33,
+        "notes": "Withhold until platelets recover to >=75x10^9/L, then resume at 15mg"
+      },
+      {
+        "condition": "Hepatic: AST/ALT Grade 3 (>5xULN) or Grade 2 (>3-5xULN) for >7 days - previously on 45mg",
+        "drug_name": "Ponatinib",
+        "factor": 0.67,
+        "notes": "Stop, monitor LFTs. Once AST/ALT <=3xULN resume at 30mg"
+      },
+      {
+        "condition": "Hepatic: AST/ALT Grade 3 (>5xULN) or Grade 2 (>3-5xULN) for >7 days - previously on 30mg",
+        "drug_name": "Ponatinib",
+        "factor": 0.33,
+        "notes": "Stop, monitor LFTs. Once AST/ALT <=3xULN resume at 15mg"
+      },
+      {
+        "condition": "Hepatic: Bilirubin >2xULN AND AST/ALT >=3xULN",
+        "drug_name": "Ponatinib",
+        "factor": 0,
+        "notes": "Stop ponatinib permanently"
+      },
+      {
+        "condition": "Renal impairment CrCl <50 ml/min",
+        "drug_name": "Ponatinib",
+        "factor": 1.0,
+        "notes": "Renal excretion not major route. CrCl >=50ml/min: no adjustment. CrCl <50ml/min or ESRD: use with caution - not studied in this cohort"
+      },
+      {
+        "condition": "Pancreatitis: Grade 2 or asymptomatic lipase/amylase elevation <=2xULN",
+        "drug_name": "Ponatinib",
+        "factor": 1.0,
+        "notes": "Continue at same dose"
+      },
+      {
+        "condition": "Pancreatitis: Asymptomatic lipase/amylase >2xULN at 45mg",
+        "drug_name": "Ponatinib",
+        "factor": 0.67,
+        "notes": "Withhold, resume at 30mg after recovery to <=grade 1 (<1.5xULN)"
+      },
+      {
+        "condition": "Pancreatitis: Asymptomatic lipase/amylase >2xULN recurrence at 30mg",
+        "drug_name": "Ponatinib",
+        "factor": 0.33,
+        "notes": "Withhold, resume at 15mg after recovery to <=grade 1 (<1.5xULN)"
+      },
+      {
+        "condition": "Pancreatitis: Grade 3 at 45mg",
+        "drug_name": "Ponatinib",
+        "factor": 0.67,
+        "notes": "Withhold, resume at 30mg after recovery to <Grade 2"
+      },
+      {
+        "condition": "Pancreatitis: Grade 3 recurrence at 30mg",
+        "drug_name": "Ponatinib",
+        "factor": 0.33,
+        "notes": "Withhold, resume at 15mg after recovery to <Grade 2"
+      },
+      {
+        "condition": "Pancreatitis: Grade 4",
+        "drug_name": "Ponatinib",
+        "factor": 0,
+        "notes": "Discontinue ponatinib permanently"
+      }
+    ],
+    "pre_medications": [],
+    "special_warnings": [
+      "Arterial and venous thrombosis/occlusion risk - major vascular events warning",
+      "QTc prolongation risk",
+      "Pancreatitis risk - acute pancreatitis more frequent in first two months; monitor serum lipase/amylase every 2 weeks for first 2 months",
+      "FBC, U&Es and LFTs every 2 weeks for first 3 months then monthly",
+      "Check Hepatitis B, C and HIV status prior to starting therapy",
+      "HBV carriers and those with active disease must be discussed with a consultant hepatologist",
+      "Application for funding required before prescribing - not all licensed indications are funded",
+      "Must only be prescribed under supervision of a consultant haematologist",
+      "Ponatinib interacts with many other agents - always check for drug interactions",
+      "Can cause drowsiness - advise patient not to drive or use machinery if affected",
+      "NPSA/2008/RRR001 oral chemotherapy alert must be followed"
+    ],
+    "required_patient_fields": [
+      "bcr_abl_mutation",
+      "creatinine_clearance",
+      "neutrophil_count",
+      "platelet_count",
+      "ALT",
+      "AST",
+      "bilirubin",
+      "serum_lipase",
+      "hepatitis_B_status",
+      "hepatitis_C_status",
+      "HIV_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "CLL-RFC-IV",
+    "protocol_name": "Chronic Lymphocytic Leukaemia - Rituximab Fludarabine Cyclophosphamide (IV Cyclophosphamide)",
+    "disease_site": "CLL",
+    "category": "haematology",
+    "cycle_length_days": 28,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Rituximab",
+        "dose": 375.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 only: 375mg/m\u00b2 in 500ml sodium chloride 0.9%, starting at 50mg/hour, increasing by 50mg/hour every 30 minutes to maximum 400mg/hour. Dose rounded to nearest 100mg (up if halfway). | CYCLE 1 DOSE (375mg/m\u00b2): two Rituximab entries exist \u2014 375mg/m\u00b2 for cycle 1 only (standard CLL lower first-dose) and 500mg/m\u00b2 for cycles 2 onwards. Both are intentional and represent different cycle doses."
+      },
+      {
+        "drug_name": "Rituximab",
+        "dose": 500.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 2 onwards: 500mg/m\u00b2 in 500ml sodium chloride 0.9% as per local rituximab infusion guidelines. Dose rounded to nearest 100mg (up if halfway). [VERIFIED: Rituximab 500mg/m\u00b2 from cycle 2 onwards in CLL is standard per MHRA SmPC and NICE TA174 \u2014 higher than lymphoma dosing of 375mg/m\u00b2] | CYCLES 2+ DOSE (500mg/m\u00b2): two Rituximab entries exist \u2014 375mg/m\u00b2 for cycle 1 only and 500mg/m\u00b2 for cycles 2 onwards. Both are intentional and represent different cycle doses."
+      },
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 250.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV bolus",
+        "days": [
+          1,
+          2,
+          3
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "All cycles: 250mg/m\u00b2 IV bolus days 1, 2, 3. Dose banded according to agreed local bands (up if halfway)."
+      },
+      {
+        "drug_name": "Fludarabine",
+        "dose": 25.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "All cycles: 25mg/m\u00b2 in 100ml sodium chloride 0.9% over 30 minutes, days 1, 2, 3. Dose banded according to national dose bands (up if halfway)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils 0.5-1.0x10^9/L",
+        "drug_name": "Cyclophosphamide and Fludarabine",
+        "factor": 1.0,
+        "notes": "Delay 7 days; if counts recover give 100%. If 14 days needed to recover, restart at 50% dose reduction"
+      },
+      {
+        "condition": "Neutrophils 0.5-1.0x10^9/L - requiring 14 day delay",
+        "drug_name": "Cyclophosphamide and Fludarabine",
+        "factor": 0.5,
+        "notes": "If 14 days required for counts to recover then restart with 50% dose reduction"
+      },
+      {
+        "condition": "Platelets 50-75x10^9/L",
+        "drug_name": "Cyclophosphamide and Fludarabine",
+        "factor": 1.0,
+        "notes": "Delay 7 days; if counts recover give 100%. If 14 days needed to recover, restart at 50% dose reduction"
+      },
+      {
+        "condition": "Platelets 50-75x10^9/L - requiring 14 day delay",
+        "drug_name": "Cyclophosphamide and Fludarabine",
+        "factor": 0.5,
+        "notes": "If 14 days required for counts to recover then restart with 50% dose reduction"
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >21 \u00b5mol/L or AST/ALT 2-3xULN",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Clinical decision. Evidence that exposure to active metabolites may not be increased, suggesting dose reduction may not be necessary"
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Fludarabine",
+        "factor": 1.0,
+        "notes": "No dose adjustment required"
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Rituximab",
+        "factor": 1.0,
+        "notes": "No dose adjustment needed"
+      },
+      {
+        "condition": "Renal impairment CrCl 10-20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl <10 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0,
+        "notes": "Omit cyclophosphamide"
+      },
+      {
+        "condition": "Renal impairment CrCl 30-70 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl <30 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0,
+        "notes": "Omit fludarabine"
+      },
+      {
+        "condition": "Renal impairment",
+        "drug_name": "Rituximab",
+        "factor": 1.0,
+        "notes": "No dose adjustment needed"
+      },
+      {
+        "condition": "Non-haematological NCI-CTC grade >=3 toxicity",
+        "drug_name": "Cyclophosphamide and Fludarabine",
+        "factor": 0.75,
+        "notes": "Delay until adverse effect resolves to grade <=2, then reduce to 75%. If recurs reduce to 50% or discontinue"
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV (30 minutes prior to rituximab)",
+      "Hydrocortisone 100mg IV (30 minutes prior to rituximab)",
+      "Paracetamol 1000mg oral (30 minutes prior to rituximab)",
+      "Ondansetron 8mg oral or IV (on days of chemotherapy)",
+      "Metoclopramide 10mg oral three times a day when required (take home)",
+      "Ondansetron 8mg oral twice a day for 5 days starting evening of day 1 (take home)",
+      "Allopurinol 300mg oral once a day for 7 days (cycle 1 only)",
+      "Aciclovir 400mg oral twice a day for 28 days",
+      "Co-trimoxazole 960mg oral once a day Monday, Wednesday, Friday for 28 days",
+      "Hydrocortisone 100mg IV when required for rituximab infusion reactions",
+      "Salbutamol 2.5mg nebule when required for rituximab-related bronchospasm"
+    ],
+    "special_warnings": [
+      "Fludarabine: lifelong risk of transfusion-associated graft versus host disease (TA-GVHD) - IRRADIATED BLOOD PRODUCTS required for life",
+      "Blood transfusion departments must be notified immediately when decision to treat is made",
+      "Patient must be issued with an alert card to carry at all times",
+      "Rituximab: severe cytokine release syndrome risk - typically within 1-2 hours of first infusion",
+      "Rituximab: progressive multifocal leukoencephalopathy (PML) risk - monitor for neurological/cognitive/psychiatric symptoms",
+      "Rituximab: hypersensitivity/anaphylaxis risk - have resuscitation equipment available",
+      "Hepatitis B status must be checked prior to starting rituximab",
+      "FBC, LFTs and U&Es prior to day 1 of each cycle",
+      "If PML suspected, suspend dosing until excluded; if confirmed, permanently discontinue rituximab",
+      "If third dose reduction necessary, treatment should be stopped"
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "neutrophil_count",
+      "platelet_count",
+      "bilirubin",
+      "ALT",
+      "AST",
+      "hepatitis_B_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "CLL-RFC-IV-Split",
+    "protocol_name": "Chronic Lymphocytic Leukaemia - Rituximab Fludarabine Cyclophosphamide (IV Cyclophosphamide, Split Rituximab)",
+    "disease_site": "CLL",
+    "category": "haematology",
+    "cycle_length_days": 28,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Rituximab",
+        "dose": 100.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 only, Day 1: 100mg flat dose in 50ml sodium chloride 0.9% over 120 minutes. Split dose indicated where lymphocytes >25x10^9/L."
+      },
+      {
+        "drug_name": "Rituximab",
+        "dose": 325.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          2
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 only, Day 2: 325mg/m\u00b2 in 500ml sodium chloride 0.9%, starting at 50mg/hour, increasing by 50mg/hour every 30 minutes to maximum 400mg/hour. Dose rounded to nearest 100mg (up if halfway)."
+      },
+      {
+        "drug_name": "Rituximab",
+        "dose": 500.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 2 onwards: 500mg/m\u00b2 in 500ml sodium chloride 0.9% as per local rituximab infusion guidelines. If lymphocytes >25x10^9/L on day 1, consider fractionating: Day 1 125mg/m\u00b2 in 100ml NaCl 0.9%, Day 2 375mg/m\u00b2 in 500ml NaCl 0.9%. [VERIFIED: Rituximab 500mg/m\u00b2 from cycle 2 onwards in CLL is standard per MHRA SmPC and NICE TA174 \u2014 higher than lymphoma dosing of 375mg/m\u00b2]"
+      },
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 250.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV bolus",
+        "days": [
+          1,
+          2,
+          3
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "All cycles: 250mg/m\u00b2 IV bolus days 1, 2, 3. Dose banded according to agreed local bands (up if halfway)."
+      },
+      {
+        "drug_name": "Fludarabine",
+        "dose": 25.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "All cycles: 25mg/m\u00b2 in 100ml sodium chloride 0.9% over 30 minutes, days 1, 2, 3. Dose banded according to national dose bands (up if halfway)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils 0.5-1.0x10^9/L",
+        "drug_name": "Cyclophosphamide and Fludarabine",
+        "factor": 1.0,
+        "notes": "Delay 7 days; if counts recover give 100%. If 14 days needed to recover, restart at 50% dose reduction"
+      },
+      {
+        "condition": "Neutrophils 0.5-1.0x10^9/L - requiring 14 day delay",
+        "drug_name": "Cyclophosphamide and Fludarabine",
+        "factor": 0.5,
+        "notes": "If 14 days required for counts to recover then restart with 50% dose reduction"
+      },
+      {
+        "condition": "Platelets 50-75x10^9/L",
+        "drug_name": "Cyclophosphamide and Fludarabine",
+        "factor": 1.0,
+        "notes": "Delay 7 days; if counts recover give 100%. If 14 days needed to recover, restart at 50% dose reduction"
+      },
+      {
+        "condition": "Platelets 50-75x10^9/L - requiring 14 day delay",
+        "drug_name": "Cyclophosphamide and Fludarabine",
+        "factor": 0.5,
+        "notes": "If 14 days required for counts to recover then restart with 50% dose reduction"
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >21 \u00b5mol/L or AST/ALT 2-3xULN",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Clinical decision. Evidence that exposure to active metabolites may not be increased, suggesting dose reduction may not be necessary"
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Fludarabine",
+        "factor": 1.0,
+        "notes": "No dose adjustment required"
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Rituximab",
+        "factor": 1.0,
+        "notes": "No dose adjustment needed"
+      },
+      {
+        "condition": "Renal impairment CrCl 10-20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl <10 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0,
+        "notes": "Omit cyclophosphamide"
+      },
+      {
+        "condition": "Renal impairment CrCl 30-70 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl <30 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0,
+        "notes": "Omit fludarabine"
+      },
+      {
+        "condition": "Renal impairment",
+        "drug_name": "Rituximab",
+        "factor": 1.0,
+        "notes": "No dose adjustment needed"
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV (30 minutes prior to rituximab)",
+      "Hydrocortisone 100mg IV (30 minutes prior to rituximab)",
+      "Paracetamol 1000mg oral (30 minutes prior to rituximab)",
+      "Ondansetron 8mg oral or IV (on days of chemotherapy)",
+      "Metoclopramide 10mg oral three times a day when required (take home)",
+      "Ondansetron 8mg oral twice a day for 5 days starting evening of day 1 (take home)",
+      "Allopurinol 300mg oral once a day for 7 days (cycle 1 only)",
+      "Aciclovir 400mg oral twice a day for 28 days",
+      "Co-trimoxazole 960mg oral once a day Monday, Wednesday, Friday for 28 days",
+      "Hydrocortisone 100mg IV when required for rituximab infusion reactions",
+      "Salbutamol 2.5mg nebule when required for rituximab-related bronchospasm"
+    ],
+    "special_warnings": [
+      "Split rituximab dose indicated where lymphocytes >25x10^9/L on cycle 1: 100mg day 1, 325mg/m\u00b2 day 2",
+      "Fludarabine: lifelong risk of TA-GVHD - IRRADIATED BLOOD PRODUCTS required for life",
+      "Blood transfusion departments must be notified immediately when decision to treat is made",
+      "Patient must be issued with an alert card at all times",
+      "Rituximab: severe cytokine release syndrome risk - typically within 1-2 hours of first infusion",
+      "Rituximab: PML risk - monitor for neurological/cognitive/psychiatric symptoms",
+      "Rituximab: hypersensitivity/anaphylaxis risk",
+      "Hepatitis B status must be checked prior to starting rituximab",
+      "Cycles 2+ with lymphocytes >25x10^9/L: fractionate rituximab as Day 1 125mg/m\u00b2, Day 2 375mg/m\u00b2"
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "neutrophil_count",
+      "platelet_count",
+      "lymphocyte_count",
+      "bilirubin",
+      "ALT",
+      "AST",
+      "hepatitis_B_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "CLL-RFC-PO",
+    "protocol_name": "Chronic Lymphocytic Leukaemia - Rituximab Fludarabine Cyclophosphamide (Oral FC)",
+    "disease_site": "CLL",
+    "category": "haematology",
+    "cycle_length_days": 28,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Rituximab",
+        "dose": 375.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 only: 375mg/m\u00b2 in 500ml sodium chloride 0.9%, starting at 50mg/hour, increasing by 50mg/hour every 30 minutes to maximum 400mg/hour. Dose rounded to nearest 100mg (up if halfway). | CYCLE 1 DOSE (375mg/m\u00b2): two Rituximab entries exist \u2014 375mg/m\u00b2 for cycle 1 only (standard CLL lower first-dose) and 500mg/m\u00b2 for cycles 2 onwards. Both are intentional and represent different cycle doses."
+      },
+      {
+        "drug_name": "Rituximab",
+        "dose": 500.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 2 onwards: 500mg/m\u00b2 in 500ml sodium chloride 0.9% as per local rituximab administration guidelines. Dose rounded to nearest 100mg (up if halfway). [VERIFIED: Rituximab 500mg/m\u00b2 from cycle 2 onwards in CLL is standard per MHRA SmPC and NICE TA174 \u2014 higher than lymphoma dosing of 375mg/m\u00b2] | CYCLES 2+ DOSE (500mg/m\u00b2): two Rituximab entries exist \u2014 375mg/m\u00b2 for cycle 1 only and 500mg/m\u00b2 for cycles 2 onwards. Both are intentional and represent different cycle doses."
+      },
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 150.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "All cycles: 150mg/m\u00b2 oral once daily in the morning, days 1-5. Available as 50mg tablets; doses rounded to nearest 50mg (up if halfway). Oral chemotherapy."
+      },
+      {
+        "drug_name": "Fludarabine",
+        "dose": 24.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "All cycles: 24mg/m\u00b2 oral once daily at lunchtime, days 1-5. Available as 10mg tablets; doses rounded to nearest 10mg (up if halfway). Oral chemotherapy."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils 0.5-1.0x10^9/L",
+        "drug_name": "Cyclophosphamide and Fludarabine",
+        "factor": 1.0,
+        "notes": "Delay 7 days; if counts recover give 100%. If 14 days needed to recover, restart at 50% dose reduction"
+      },
+      {
+        "condition": "Neutrophils 0.5-1.0x10^9/L - requiring 14 day delay",
+        "drug_name": "Cyclophosphamide and Fludarabine",
+        "factor": 0.5,
+        "notes": "If 14 days required for counts to recover then restart with 50% dose reduction"
+      },
+      {
+        "condition": "Platelets 50-75x10^9/L",
+        "drug_name": "Cyclophosphamide and Fludarabine",
+        "factor": 1.0,
+        "notes": "Delay 7 days; if counts recover give 100%. If 14 days needed to recover, restart at 50% dose reduction"
+      },
+      {
+        "condition": "Platelets 50-75x10^9/L - requiring 14 day delay",
+        "drug_name": "Cyclophosphamide and Fludarabine",
+        "factor": 0.5,
+        "notes": "If 14 days required for counts to recover then restart with 50% dose reduction"
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >21 \u00b5mol/L or AST/ALT 2-3xULN",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Clinical decision. Evidence that exposure to active metabolites may not be increased, suggesting dose reduction may not be necessary"
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Fludarabine",
+        "factor": 1.0,
+        "notes": "No dose adjustment required"
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Rituximab",
+        "factor": 1.0,
+        "notes": "No dose adjustment needed"
+      },
+      {
+        "condition": "Renal impairment CrCl 10-20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl <10 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0,
+        "notes": "Omit cyclophosphamide"
+      },
+      {
+        "condition": "Renal impairment CrCl 30-70 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl <30 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0,
+        "notes": "Omit fludarabine"
+      },
+      {
+        "condition": "Renal impairment",
+        "drug_name": "Rituximab",
+        "factor": 1.0,
+        "notes": "No dose adjustment needed"
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV (30 minutes prior to rituximab)",
+      "Hydrocortisone 100mg IV (30 minutes prior to rituximab)",
+      "Paracetamol 1000mg oral (30 minutes prior to rituximab)",
+      "Metoclopramide 10mg oral three times a day when required (take home)",
+      "Ondansetron 8mg oral twice a day for 5 days starting morning of day 1 (take home)",
+      "Allopurinol 300mg oral once a day for 7 days (cycle 1 only)",
+      "Aciclovir 400mg oral twice a day for 28 days",
+      "Co-trimoxazole 960mg oral once a day Monday, Wednesday, Friday for 28 days",
+      "Hydrocortisone 100mg IV when required for rituximab infusion reactions",
+      "Salbutamol 2.5mg nebule when required for rituximab-related bronchospasm"
+    ],
+    "special_warnings": [
+      "Oral cyclophosphamide (150mg/m\u00b2) and oral fludarabine (24mg/m\u00b2) - taken at home",
+      "Fludarabine: lifelong risk of TA-GVHD - IRRADIATED BLOOD PRODUCTS required for life",
+      "Blood transfusion departments must be notified immediately when decision to treat is made",
+      "Patient must be issued with an alert card at all times",
+      "Rituximab: severe cytokine release syndrome risk",
+      "Rituximab: PML risk - monitor for neurological/cognitive/psychiatric symptoms",
+      "Tumour lysis syndrome (TLS) risk - allopurinol prophylaxis; rasburicase in high-risk individuals",
+      "Hepatitis B status must be checked prior to starting rituximab",
+      "NPSA/2008/RRR001 oral chemotherapy alert must be followed for oral cyclophosphamide and fludarabine"
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "neutrophil_count",
+      "platelet_count",
+      "bilirubin",
+      "ALT",
+      "AST",
+      "hepatitis_B_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "CLL-RFC-PO-Split",
+    "protocol_name": "Chronic Lymphocytic Leukaemia - Rituximab Fludarabine Cyclophosphamide (Oral FC, Split Rituximab)",
+    "disease_site": "CLL",
+    "category": "haematology",
+    "cycle_length_days": 28,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Rituximab",
+        "dose": 100.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 only, Day 1: 100mg flat dose in 50ml sodium chloride 0.9% over 120 minutes. Split dose indicated where lymphocytes >25x10^9/L."
+      },
+      {
+        "drug_name": "Rituximab",
+        "dose": 325.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          2
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 only, Day 2: 325mg/m\u00b2 in 500ml sodium chloride 0.9%, starting at 50mg/hour, increasing by 50mg/hour every 30 minutes to maximum 400mg/hour. Dose rounded to nearest 100mg (up if halfway)."
+      },
+      {
+        "drug_name": "Rituximab",
+        "dose": 500.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 2 onwards: 500mg/m\u00b2 in 500ml sodium chloride 0.9% as per local rituximab administration guidelines. If lymphocytes >25x10^9/L on day 1, consider fractionating: Day 1 125mg/m\u00b2 in 100ml NaCl 0.9%, Day 2 375mg/m\u00b2 in 500ml NaCl 0.9%. [VERIFIED: Rituximab 500mg/m\u00b2 from cycle 2 onwards in CLL is standard per MHRA SmPC and NICE TA174 \u2014 higher than lymphoma dosing of 375mg/m\u00b2]"
+      },
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 150.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "Oral",
+        "days": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1: days 2-6 (oral, once daily in morning). Cycles 2+: days 1-5. Available as 50mg tablets; doses rounded to nearest 50mg (up if halfway). Oral chemotherapy."
+      },
+      {
+        "drug_name": "Fludarabine",
+        "dose": 24.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "Oral",
+        "days": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1: days 2-6 (oral, once daily at lunchtime). Cycles 2+: days 1-5. Available as 10mg tablets; doses rounded to nearest 10mg (up if halfway). Oral chemotherapy."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils 0.5-1.0x10^9/L",
+        "drug_name": "Cyclophosphamide and Fludarabine",
+        "factor": 1.0,
+        "notes": "Delay 7 days; if counts recover give 100%. If 14 days needed to recover, restart at 50% dose reduction"
+      },
+      {
+        "condition": "Neutrophils 0.5-1.0x10^9/L - requiring 14 day delay",
+        "drug_name": "Cyclophosphamide and Fludarabine",
+        "factor": 0.5,
+        "notes": "If 14 days required for counts to recover then restart with 50% dose reduction"
+      },
+      {
+        "condition": "Platelets 50-75x10^9/L",
+        "drug_name": "Cyclophosphamide and Fludarabine",
+        "factor": 1.0,
+        "notes": "Delay 7 days; if counts recover give 100%. If 14 days needed to recover, restart at 50% dose reduction"
+      },
+      {
+        "condition": "Platelets 50-75x10^9/L - requiring 14 day delay",
+        "drug_name": "Cyclophosphamide and Fludarabine",
+        "factor": 0.5,
+        "notes": "If 14 days required for counts to recover then restart with 50% dose reduction"
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >21 \u00b5mol/L or AST/ALT 2-3xULN",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Clinical decision. Evidence that exposure to active metabolites may not be increased, suggesting dose reduction may not be necessary"
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Fludarabine",
+        "factor": 1.0,
+        "notes": "No dose adjustment required"
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Rituximab",
+        "factor": 1.0,
+        "notes": "No dose adjustment needed"
+      },
+      {
+        "condition": "Renal impairment CrCl 10-20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl <10 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0,
+        "notes": "Omit cyclophosphamide"
+      },
+      {
+        "condition": "Renal impairment CrCl 30-70 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl <30 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0,
+        "notes": "Omit fludarabine"
+      },
+      {
+        "condition": "Renal impairment",
+        "drug_name": "Rituximab",
+        "factor": 1.0,
+        "notes": "No dose adjustment needed"
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV (30 minutes prior to rituximab)",
+      "Hydrocortisone 100mg IV (30 minutes prior to rituximab)",
+      "Paracetamol 1000mg oral (30 minutes prior to rituximab)",
+      "Metoclopramide 10mg oral three times a day when required (take home)",
+      "Ondansetron 8mg oral twice a day for 5 days starting morning of day 2 cycle 1 / day 1 cycle 2+ (take home)",
+      "Allopurinol 300mg oral once a day for 7 days (cycle 1 only)",
+      "Aciclovir 400mg oral twice a day for 28 days",
+      "Co-trimoxazole 960mg oral once a day Monday, Wednesday, Friday for 28 days",
+      "Hydrocortisone 100mg IV when required for rituximab infusion reactions",
+      "Salbutamol 2.5mg nebule when required for rituximab-related bronchospasm"
+    ],
+    "special_warnings": [
+      "Split rituximab dose indicated where lymphocytes >25x10^9/L: Cycle 1 Day 1 100mg, Day 2 325mg/m\u00b2",
+      "Cycle 1: oral FC starts day 2 (not day 1) due to split rituximab on days 1-2",
+      "Fludarabine: lifelong risk of TA-GVHD - IRRADIATED BLOOD PRODUCTS required for life",
+      "Blood transfusion departments must be notified immediately when decision to treat is made",
+      "Patient must be issued with an alert card at all times",
+      "Rituximab: severe cytokine release syndrome risk",
+      "Rituximab: PML risk - monitor for neurological/cognitive/psychiatric symptoms",
+      "Tumour lysis syndrome (TLS) risk - allopurinol prophylaxis; rasburicase in high-risk individuals",
+      "Hepatitis B status must be checked prior to starting rituximab",
+      "Cycles 2+ with lymphocytes >25x10^9/L: fractionate rituximab as Day 1 125mg/m\u00b2, Day 2 375mg/m\u00b2",
+      "ORAL CHEMOTHERAPY \u2014 NPSA/2008/RRR001: Patient must be counselled and provided written information before starting. Prescriptions must be written on an approved oral chemotherapy prescription form. Dispensing must only be by a trained pharmacist. Patient must be provided with a chemotherapy alert card. Do not supply more than one cycle at a time without clinical review."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "neutrophil_count",
+      "platelet_count",
+      "lymphocyte_count",
+      "bilirubin",
+      "ALT",
+      "AST",
+      "hepatitis_B_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "MF-Ruxolitinib",
+    "protocol_name": "Myelofibrosis - Ruxolitinib",
+    "disease_site": "Myelofibrosis",
+    "category": "haematology",
+    "cycle_length_days": 28,
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Ruxolitinib",
+        "dose": 5.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": 25.0,
+        "max_dose_unit": "mg",
+        "notes": "Dose varies by indication and platelet count. Idiopathic MF starting dose: Platelets 50-99x10^9/L = 5mg BD; Platelets 100-200x10^9/L = 15mg BD; Platelets >200x10^9/L = 20mg BD. Post-PV MF: 10mg BD. Maximum dose 25mg BD. Twice daily dosing. Take at same time each day with or without food. Protocol set at lowest starting dose 5mg BD in ARIA - must be adjusted per platelet count and clinical assessment."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Idiopathic MF: Platelets 50-99x10^9/L",
+        "drug_name": "Ruxolitinib",
+        "factor": 1.0,
+        "notes": "Starting dose 5mg twice daily"
+      },
+      {
+        "condition": "Idiopathic MF: Platelets 100-200x10^9/L",
+        "drug_name": "Ruxolitinib",
+        "factor": 1.0,
+        "notes": "Starting dose 15mg twice daily"
+      },
+      {
+        "condition": "Idiopathic MF: Platelets >200x10^9/L",
+        "drug_name": "Ruxolitinib",
+        "factor": 1.0,
+        "notes": "Starting dose 20mg twice daily"
+      },
+      {
+        "condition": "Post-PV Myelofibrosis",
+        "drug_name": "Ruxolitinib",
+        "factor": 1.0,
+        "notes": "Starting dose 10mg twice daily regardless of platelet count"
+      },
+      {
+        "condition": "Neutrophils <0.5x10^9/L",
+        "drug_name": "Ruxolitinib",
+        "factor": 0,
+        "notes": "Discontinue ruxolitinib"
+      },
+      {
+        "condition": "Platelets <50x10^9/L",
+        "drug_name": "Ruxolitinib",
+        "factor": 0,
+        "notes": "Discontinue ruxolitinib"
+      },
+      {
+        "condition": "Platelets 50-100x10^9/L",
+        "drug_name": "Ruxolitinib",
+        "factor": 0.75,
+        "notes": "Consider dose reduction; ideally avoid treatment interruptions for thrombocytopenia"
+      },
+      {
+        "condition": "Hepatic impairment (any degree)",
+        "drug_name": "Ruxolitinib",
+        "factor": 0.5,
+        "notes": "Recommended starting dose based on platelet count should be reduced by approximately 50%, to be administered twice a day. Monitor CBC with differential at least every 1-2 weeks for first 6 weeks"
+      },
+      {
+        "condition": "Severe renal impairment CrCl <30 ml/min",
+        "drug_name": "Ruxolitinib",
+        "factor": 0.5,
+        "notes": "Recommended starting dose (based on platelet count) should be reduced by 50%"
+      },
+      {
+        "condition": "Mild/moderate renal impairment",
+        "drug_name": "Ruxolitinib",
+        "factor": 1.0,
+        "notes": "No dose adjustment required"
+      },
+      {
+        "condition": "Co-administration of strong CYP3A4 inhibitors or dual CYP2C9/CYP3A4 inhibitors (e.g. fluconazole)",
+        "drug_name": "Ruxolitinib",
+        "factor": 0.5,
+        "notes": "Unit dose should be reduced by approximately 50%, administered twice a day. More frequent monitoring recommended. Avoid if possible."
+      }
+    ],
+    "pre_medications": [],
+    "special_warnings": [
+      "JAK1/2 inhibitor - dose selection MUST be based on platelet count prior to starting",
+      "Haemoglobin nearly always falls initially before plateau at ~6 weeks - consider erythropoietin if symptomatic or Hb <8g/dL",
+      "If patient becomes transfusion dependent, review suitability of ruxolitinib continuation",
+      "Substantially increased risk of Herpes Zoster (HZV) reactivation - check HZV status and titres before starting; seropositive patients commence aciclovir minimum 400mg BD (increase to 800mg TDS if reactivation occurs)",
+      "Progressive multifocal leukoencephalopathy (PML) reported - monitor for cognitive/neurological/psychiatric symptoms",
+      "Non-melanoma skin cancers (NMSCs) reported - periodic skin examination recommended",
+      "Lipid abnormalities - lipid monitoring and treatment of dyslipidaemia recommended",
+      "Screen for HIV and HepB (HepBsAg and HepBcAb) before starting",
+      "Screen for active infections; do not start until active serious infections resolved",
+      "Consider screening for latent TB or herpes zoster",
+      "Gradual tapering recommended on discontinuation; avoid abrupt cessation where possible",
+      "Starting dose should not be increased within first 4 weeks; thereafter no more frequently than every 2 weeks",
+      "Maximum dose 25mg twice daily",
+      "If dose missed, patient should take next scheduled dose - do not double dose",
+      "FBC, LFTs and U&Es prior to starting and every 2-4 weeks until dose stabilised, then every 2-3 months",
+      "NPSA/2008/RRR001 oral chemotherapy alert must be followed"
+    ],
+    "required_patient_fields": [
+      "platelet_count",
+      "neutrophil_count",
+      "creatinine_clearance",
+      "haemoglobin",
+      "HIV_status",
+      "hepatitis_B_status",
+      "HZV_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "ALL-Tisacel-Cy500-Flu30",
+    "protocol_name": "ALL Tisagenlecleucel (Tisacel) with Lymphodepletion Cyclophosphamide 500mg/m\u00b2 and Fludarabine 30mg/m\u00b2",
+    "disease_site": "ALL",
+    "category": "haematology",
+    "cycle_length_days": 14,
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Fludarabine",
+        "dose": 30.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          -6,
+          -5,
+          -4,
+          -3
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Lymphodepletion: 30mg/m\u00b2 in 100ml sodium chloride 0.9% over 30 minutes on days -6, -5, -4, -3. Dose banded according to national dose band (25mg/ml). Lymphodepleting regimen must only be started after availability of Tisacel is confirmed."
+      },
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 500.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV bolus",
+        "days": [
+          -6,
+          -5
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Lymphodepletion: 500mg/m\u00b2 IV bolus over 10 minutes on days -6 and -5. Dose banded in accordance with national dose banding table (20mg/ml). Lymphodepleting chemotherapy may be omitted if WBC <1.0x10^9 cells/L within one week prior to infusion."
+      },
+      {
+        "drug_name": "Tisagenlecleucel",
+        "dose": null,
+        "dose_unit": "units",
+        "route": "IV infusion",
+        "days": [
+          0
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Target dose: Patients <=50kg: 0.2 to 5x10^6 cells/kg body weight. Patients >50kg: 0.1 to 2.5x10^8 cells (non-weight based). Total range 1.2x10^6 to 6x10^8 cells. Administer on Day 0 (CAR-T infusion day). Infuse within 30 minutes of thaw completion over maximum 30 minutes. Administer gravimetrically (NOT via volumetric pump). Use latex-free giving set WITHOUT leukocyte-depleting filter, primed with sodium chloride 0.9%. For autologous use only."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Renal impairment CrCl 30-50 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl <30 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "High dose therapy not generally undertaken below CrCl 30ml/min - clinical decision"
+      },
+      {
+        "condition": "Renal impairment CrCl 50-69 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.8,
+        "notes": "Reduce dose by 20%"
+      },
+      {
+        "condition": "Renal impairment CrCl 30-49 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.6,
+        "notes": "Reduce dose by 40%"
+      },
+      {
+        "condition": "Renal impairment CrCl <30 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0,
+        "notes": "Contraindicated - do not use fludarabine. Consider alternative lymphodepletion regimen (cytarabine/etoposide)."
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Fludarabine",
+        "factor": 1.0,
+        "notes": "No dose modification recommended for hepatic dysfunction"
+      },
+      {
+        "condition": "Severe hepatic impairment",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Severe hepatic impairment may decrease activation of cyclophosphamide - consider when selecting dose and interpreting response"
+      },
+      {
+        "condition": "Significant cytopenia: WBC <1.0x10^9 cells/L within 1 week prior to infusion",
+        "drug_name": "Cyclophosphamide and Fludarabine",
+        "factor": 0,
+        "notes": "Lymphodepleting chemotherapy may be omitted"
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV (30 minutes prior to Tisacel on Day 0)",
+      "Paracetamol 1000mg oral (30 minutes prior to Tisacel on Day 0)",
+      "Metoclopramide 10mg oral or IV three times a day",
+      "Ondansetron 8mg oral or IV twice a day",
+      "Aciclovir 400mg oral twice a day (anti-infective prophylaxis)",
+      "Fluconazole 100mg oral once a day (antifungal prophylaxis)",
+      "Pentamidine 300mg nebuliser during lymphodepletion - continue every 28 days until count recovery for co-trimoxazole use",
+      "Posaconazole 300mg once daily if prolonged neutropenia or previous invasive fungal infection",
+      "Gastric protection (PPI or H2 antagonist) from day 1 of lymphodepletion until platelets >50x10^9/L",
+      "Levetiracetam 500mg twice daily oral from day 0 until day +30 (seizure prophylaxis - consider due to neurotoxicity risk)",
+      "Tocilizumab 8mg/kg (maximum 800mg) IV 8-hourly if required for CRS - maximum 4 doses; 4 doses must be available on ward prior to Tisacel infusion",
+      "Allopurinol 300mg oral once a day OR Rasburicase 7.5mg IV once a day for TLS prophylaxis"
+    ],
+    "special_warnings": [
+      "CAR-T THERAPY - FOR AUTOLOGOUS USE ONLY",
+      "Only available at the Wessex Blood and Marrow Transplant Unit",
+      "CAR-T cell therapy: single administration procedure. cycle_length_days is not applicable \u2014 this is a one-time infusion following lymphodepletion conditioning.",
+      "Cytokine Release Syndrome (CRS): nearly all patients experience some degree of CRS including life-threatening and fatal reactions. Symptoms: pyrexia, tachycardia, dyspnoea, hypoxia, capillary leak, hypotension. Monitor vitals 4-hourly on Day 0, then twice daily.",
+      "ICANS (Immune Effector Cell-Associated Neurotoxicity Syndrome): seizures, somnolence, headaches, confusion, encephalopathy, speech disorders - ICE score assessed twice daily",
+      "CRS or ICANS symptoms can occur WEEKS after infusion - patient must carry alert card at all times",
+      "Fludarabine: lifelong risk of TA-GVHD - IRRADIATED BLOOD PRODUCTS required for life",
+      "Prophylactic systemic corticosteroids are NOT recommended - may interfere with CAR-T activity",
+      "If patient had previous Grade 4 haemorrhagic cystitis with cyclophosphamide or chemo-refractory state to cyclophosphamide-containing regimen: use alternative cytarabine/etoposide lymphodepletion regimen",
+      "Lymphodepleting regimen must only be started after Tisacel availability is confirmed",
+      "CAR-T administration must not occur out of core hours or over a weekend",
+      "Screening for HBV, HCV and HIV required before cell collection for manufacture",
+      "Echocardiogram and baseline lung function required prior to lymphodepletion",
+      "Do NOT administer via volumetric pump - administer gravimetrically",
+      "Do NOT use leukocyte-depleting filter",
+      "Administer within 30 minutes of thaw completion",
+      "Report all suspected adverse reactions to CAR-T infusion via MHRA Yellow Card"
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "neutrophil_count",
+      "platelet_count",
+      "WBC_count",
+      "hepatitis_B_status",
+      "hepatitis_C_status",
+      "HIV_status",
+      "patient_weight_kg",
+      "echocardiogram",
+      "lung_function_baseline"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "ALL-Tisacel-Cy500-Etop150",
+    "protocol_name": "ALL Tisagenlecleucel (Tisacel) with Lymphodepletion Cytarabine 500mg/m\u00b2 and Etoposide 150mg/m\u00b2",
+    "disease_site": "ALL",
+    "category": "haematology",
+    "cycle_length_days": 14,
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Cytarabine",
+        "dose": 500.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          -5,
+          -4
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Lymphodepletion: 500mg/m\u00b2 in 1000ml sodium chloride 0.9% over 60 minutes on days -5 and -4. Dose banded according to national dose bands (100mg/ml). Lymphodepleting regimen must only be started after availability of Tisacel is confirmed."
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 150.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          -5,
+          -4,
+          -3
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Lymphodepletion: 150mg/m\u00b2 in 1000ml sodium chloride 0.9% over 60 minutes on days -5, -4, -3. Dose banded according to national dose bands. Lymphodepleting chemotherapy may be omitted if WBC <=1000 cells/\u00b5L within one week prior to infusion."
+      },
+      {
+        "drug_name": "Tisagenlecleucel",
+        "dose": null,
+        "dose_unit": "units",
+        "route": "IV infusion",
+        "days": [
+          0
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Target dose: Patients <=50kg: 0.2 to 5x10^6 cells/kg body weight. Patients >50kg: 0.1 to 2.5x10^8 cells (non-weight based). Total range 1.2x10^6 to 6x10^8 cells. Infuse on Day 0 within 30 minutes of thaw completion, over maximum 30 minutes. Administer gravimetrically (NOT via volumetric pump). Use latex-free giving set WITHOUT leukocyte-depleting filter, primed with sodium chloride 0.9%. For autologous use only."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Hepatic impairment: Bilirubin >34 \u00b5mol/L",
+        "drug_name": "Cytarabine",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose"
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin 30-51 \u00b5mol/L or AST/ALT 60-180 units/L",
+        "drug_name": "Etoposide",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose"
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >51 \u00b5mol/L or AST/ALT >180 units/L",
+        "drug_name": "Etoposide",
+        "factor": 1.0,
+        "notes": "Clinical decision. Consider reducing dose if significant reductions in albumin levels occur."
+      },
+      {
+        "condition": "Renal impairment CrCl <60 ml/min",
+        "drug_name": "Cytarabine",
+        "factor": 0.6,
+        "notes": "Reduce to 60% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl <45 ml/min",
+        "drug_name": "Cytarabine",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl <30 ml/min",
+        "drug_name": "Cytarabine",
+        "factor": 1.0,
+        "notes": "Clinical decision required"
+      },
+      {
+        "condition": "Renal impairment CrCl 15-50 ml/min",
+        "drug_name": "Etoposide",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl <15 ml/min",
+        "drug_name": "Etoposide",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose"
+      },
+      {
+        "condition": "Significant cytopenia: WBC <=1000 cells/\u00b5L within 1 week prior to infusion",
+        "drug_name": "Cytarabine and Etoposide",
+        "factor": 0,
+        "notes": "Lymphodepleting chemotherapy may be omitted"
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV (30 minutes prior to Tisacel on Day 0)",
+      "Paracetamol 1000mg oral (30 minutes prior to Tisacel on Day 0)",
+      "Metoclopramide 10mg oral or IV three times a day",
+      "Ondansetron 8mg oral or IV twice a day",
+      "Prednisolone 0.5% eye drops into each eye four times a day - continue for 5 days after cytarabine administration",
+      "Aciclovir 400mg oral twice a day (anti-infective prophylaxis)",
+      "Fluconazole 100mg oral once a day (antifungal prophylaxis)",
+      "Pentamidine 300mg nebuliser during lymphodepletion - continue every 28 days until count recovery for co-trimoxazole use",
+      "Posaconazole 300mg once daily if prolonged neutropenia or previous invasive fungal infection",
+      "Gastric protection (PPI or H2 antagonist) from day 1 of lymphodepletion until platelets >50x10^9/L",
+      "Levetiracetam 500mg twice daily oral from day 0 until day +30 (seizure prophylaxis)",
+      "Tocilizumab 8mg/kg (maximum 800mg) IV 8-hourly if required for CRS - maximum 4 doses; 4 doses must be available on ward prior to Tisacel infusion",
+      "Allopurinol 300mg oral once a day OR Rasburicase 7.5mg IV once a day for TLS prophylaxis"
+    ],
+    "special_warnings": [
+      "CAR-T THERAPY - FOR AUTOLOGOUS USE ONLY",
+      "Only available at the Wessex Blood and Marrow Transplant Unit",
+      "CAR-T cell therapy: single administration procedure. cycle_length_days is not applicable \u2014 this is a one-time infusion following lymphodepletion conditioning.",
+      "Alternative lymphodepletion regimen to Cy/Flu: use when patient had previous Grade 4 haemorrhagic cystitis with cyclophosphamide OR demonstrated chemo-refractory state to cyclophosphamide-containing regimen",
+      "Cytokine Release Syndrome (CRS): nearly all patients experience some degree of CRS including life-threatening and fatal reactions. Symptoms: pyrexia, tachycardia, dyspnoea, hypoxia, capillary leak, hypotension. Monitor vitals 4-hourly on Day 0, then twice daily.",
+      "ICANS (Immune Effector Cell-Associated Neurotoxicity Syndrome): seizures, somnolence, headaches, confusion, encephalopathy, speech disorders - ICE score assessed twice daily",
+      "CRS or ICANS symptoms can occur WEEKS after infusion - patient must carry alert card at all times",
+      "Prophylactic systemic corticosteroids are NOT recommended - may interfere with CAR-T activity. May be used for CRS/ICANS treatment under consultant advice.",
+      "Lymphodepleting regimen must only be started after Tisacel availability is confirmed",
+      "CAR-T administration must not occur out of core hours or over a weekend",
+      "Screening for HBV, HCV and HIV required before cell collection for manufacture",
+      "Echocardiogram and baseline lung function required prior to lymphodepletion",
+      "Prednisolone eye drops required due to cytarabine ocular toxicity risk",
+      "Do NOT administer via volumetric pump - administer gravimetrically",
+      "Do NOT use leukocyte-depleting filter",
+      "Administer within 30 minutes of thaw completion",
+      "Report all suspected adverse reactions to CAR-T infusion via MHRA Yellow Card",
+      "Etoposide: anaphylactic reactions risk; consider albumin levels when dosing"
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "neutrophil_count",
+      "platelet_count",
+      "WBC_count",
+      "bilirubin",
+      "ALT",
+      "AST",
+      "albumin",
+      "hepatitis_B_status",
+      "hepatitis_C_status",
+      "HIV_status",
+      "patient_weight_kg",
+      "echocardiogram",
+      "lung_function_baseline"
+    ],
+    "auc_dosing": null
+  }
+]

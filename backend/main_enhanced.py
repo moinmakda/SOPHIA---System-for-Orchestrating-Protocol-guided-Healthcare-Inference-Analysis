@@ -24,6 +24,7 @@ from engine import ProtocolEngine, calculate_bsa_mosteller, calculate_creatinine
 from protocol_data import get_all_protocols, get_all_drugs, PROTOCOLS, DRUGS
 from gemini_parser import GeminiProtocolParser, ProtocolIngestionService
 from adapters import PatientStateAdapter
+from json_protocol_loader import load_all_json_protocols
 
 # Load environment variables
 load_dotenv()
@@ -88,12 +89,14 @@ app.add_middleware(
 parser = GeminiProtocolParser(settings.GEMINI_API_KEY)
 ingestion_service = ProtocolIngestionService(parser, settings.PROTOCOLS_DIR)
 
-# Load protocols - combine hardcoded and ingested
+# Load JSON protocols once at startup (581 NHS UHS protocols)
+_json_protocols: dict[str, Protocol] = load_all_json_protocols()
+
+
+# Load protocols — NHS UHS JSON protocols only
 def get_combined_protocols() -> dict[str, Protocol]:
-    """Get all protocols from both sources"""
-    protocols = dict(get_all_protocols())  # Hardcoded
-    protocols.update(ingestion_service.get_all_protocols())  # Ingested
-    return protocols
+    """Get all protocols from NHS UHS JSON files only"""
+    return dict(_json_protocols)
 
 # Initialize engine with combined protocols
 engine = ProtocolEngine(get_combined_protocols())
@@ -178,9 +181,10 @@ async def list_protocols(
     
     # Filter by category if specified
     if category:
-        category_protocols = ingestion_service.get_protocols_by_category(category)
-        category_ids = {p.id for p in category_protocols}
-        protocols = [p for p in protocols if p.id in category_ids]
+        category_lower = category.lower()
+        protocols = [p for p in protocols
+                     if category_lower in (p.source_file or '').lower()
+                     or category_lower in p.id.lower()]
     
     # Search filter
     if search:

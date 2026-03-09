@@ -1,0 +1,1386 @@
+[
+  {
+    "protocol_id": "ovarian_paclitaxel_7day",
+    "protocol_code": "OV-PAC-7D",
+    "protocol_name": "Paclitaxel (7 day)",
+    "category": "gynaecology",
+    "indication": "Second or subsequent line treatment of platinum refractory ovarian cancer; Ovarian cancer where the individual is unable to tolerate platinum therapy due to, for example, allergy; WHO Performance status 0, 1, 2",
+    "version": "1.2",
+    "cycle_length_days": 21,
+    "total_cycles": 6,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Paclitaxel",
+        "dose": 80,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "frequency": "Days 1, 8, 15 of each 21-day cycle",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded in accordance with national dose bands (6mg/ml). Must be administered via a non-PVC administration set containing an in-line 0.22 micron filter. Vesicant — extravasation precautions required. In patients with poor bone marrow reserves consider starting dose of 60mg/m² with a view to increase to 80mg/m² if well tolerated. This is an unlicensed dosage schedule.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "timing": "30 minutes before chemotherapy",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "indication": "Premedication to reduce risk of hypersensitivity reaction"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "timing": "30 minutes before chemotherapy",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "indication": "Premedication to reduce risk of hypersensitivity reaction"
+      },
+      {
+        "drug_name": "H2 antagonist (e.g. ranitidine 50mg IV / famotidine 20mg oral / nizatidine 150mg oral / ranitidine 150mg oral)",
+        "dose": null,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "timing": "30 minutes before chemotherapy — according to local formulary choice and availability",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "indication": "Premedication to reduce risk of hypersensitivity reaction"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "timing": "15-30 minutes before chemotherapy",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "indication": "Antiemetic"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Three times a day when required",
+        "notes": "Dispensed as original pack on day 1 only"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils",
+        "condition": "Neutrophil count less than 1x10⁹/L",
+        "affected_drugs": [
+          "Paclitaxel"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold treatment until recovery, then decrease subsequent weekly paclitaxel dose by one dose level (level 0: 80mg/m²/wk → level -1: 70mg/m²/wk → level -2: 60mg/m²/wk)"
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelet count 100x10⁹/L or lower",
+        "affected_drugs": [
+          "Paclitaxel"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold treatment until recovery, then decrease subsequent weekly paclitaxel dose by one dose level"
+      },
+      {
+        "parameter": "Bilirubin",
+        "condition": "Bilirubin more than 51 micromol/L",
+        "affected_drugs": [
+          "Paclitaxel"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Contraindicated if bilirubin >51 micromol/L"
+      },
+      {
+        "parameter": "Renal function",
+        "condition": "Any creatinine clearance",
+        "affected_drugs": [
+          "Paclitaxel"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "No dose adjustment needed for renal impairment"
+      },
+      {
+        "parameter": "Neuropathy",
+        "condition": "NCI-CTC grade 2 neuropathy",
+        "affected_drugs": [
+          "Paclitaxel"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Decrease weekly paclitaxel dose by one dose level without interruption of therapy"
+      },
+      {
+        "parameter": "Neuropathy",
+        "condition": "NCI-CTC grade 3 neuropathy",
+        "affected_drugs": [
+          "Paclitaxel"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold therapy until resolution to NCI-CTC grade 1 or lower, then decrease dose by one level"
+      },
+      {
+        "parameter": "Non-haematological toxicity",
+        "condition": "NCI-CTC grade 2-3 non-haematological toxicity (excluding neuropathy)",
+        "affected_drugs": [
+          "Paclitaxel"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until grade 1 or lower, then decrease subsequent weekly doses by one dose level. Stop if grade 3+ non-haematological toxicity, more than two dose reductions required, or treatment delay >2 weeks."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "For neutrophils <1x10⁹/L or platelets ≤100x10⁹/L withhold and reduce dose by one level on resumption. Consider blood transfusion if haemoglobin <8g/dL or symptomatic anaemia."
+    },
+    "monitoring_requirements": [
+      "FBC, U&Es and LFTs every 21 days starting from day 1 of cycle 1"
+    ],
+    "special_warnings": [
+      "Hypersensitivity reactions tend to occur with the first or second infusion. Interrupt for minor symptoms (flushing, localised rash); restart at lower rate if resolve within 5 minutes. Immediately discontinue for severe reactions (profound hypotension, bronchospasm, generalised erythema).",
+      "Paclitaxel is highly myelosuppressive; exercise caution in patients with poor bone marrow reserves (extensive prior treatment, bone metastasis, extensive skeletal radiation).",
+      "Paclitaxel is a vesicant — extravasation precautions required.",
+      "All dose reductions should not be re-escalated without consultant approval. If a third dose reduction is necessary, stop treatment.",
+      "This is an unlicensed dosage schedule."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "who_performance_status": "0, 1, or 2",
+      "body_surface_area": true,
+      "prior_platinum_treatment": true
+    },
+    "disease_site": "Gynaecology",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Paclitaxel",
+        "dose": 80,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "frequency": "Days 1, 8, 15 of each 21-day cycle",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded in accordance with national dose bands (6mg/ml). Must be administered via a non-PVC administration set containing an in-line 0.22 micron filter. Vesicant — extravasation precautions required. In patients with poor bone marrow reserves consider starting dose of 60mg/m² with a view to increase to 80mg/m² if well tolerated. This is an unlicensed dosage schedule.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "Days 1, 8, 15 of each 21-day cycle | Dose banded in accordance with national dose bands (6mg/ml). Must be administered via a non-PVC administration set containing an in-line 0.22 micron filter. Vesicant — extravasation precautions required. In patients with poor bone marrow reserves consider starting dose of 60mg/m² with a view to increase to 80mg/m² if well tolerated. This is an unlicensed dosage schedule."
+      }
+    ]
+  },
+  {
+    "protocol_id": "ovarian_rucaparib",
+    "protocol_code": "OV-RUCA",
+    "protocol_name": "Rucaparib",
+    "category": "gynaecology",
+    "indication": "Rucaparib as maintenance treatment in patients with high grade epithelial ovarian, fallopian tube or primary peritoneal carcinoma who have a deleterious or suspected deleterious germline and/or somatic BRCA mutation (or without BRCA mutation) and who have a recent first or subsequent relapse of platinum-sensitive disease and who are now in response following a second or subsequent platinum-based chemotherapy. ECOG performance status 0 or 1. Full eligibility criteria per NICE/Blueteq criteria.",
+    "version": "1",
+    "cycle_length_days": 28,
+    "total_cycles": null,
+    "treatment_intent": "maintenance",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Rucaparib",
+        "dose": 600,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "Twice daily (approximately 12 hours apart), continuous",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 600,
+        "max_dose_unit": "mg",
+        "special_instructions": "Tablets swallowed whole; may be taken with or without food. Doses approximately 12 hours apart. If patient vomits after taking rucaparib, do not retake — take next scheduled dose. If a dose is missed, take next dose at scheduled time. Available as 300mg, 250mg and 200mg film-coated tablets. Treatment continued until disease progression or unacceptable toxicity or patient choice to stop (12 cycles set in ARIA). Formal medical review to assess continuation at least by start of cycle 3. Oral SACT — NPSA/2008/RRR001 must be followed.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [
+      {
+        "drug_name": "Rucaparib",
+        "dose": 600,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice daily continuously",
+        "notes": "Oral SACT — to be prescribed only under supervision of an oncologist"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Three times a day when required",
+        "notes": "Not included in ARIA regimen; can be added from support regimens if required"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "General toxicity (grade 3-4 haematological or non-haematological)",
+        "condition": "Moderate to severe (grade 3-4) adverse reaction",
+        "affected_drugs": [
+          "Rucaparib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Dose reduction ladder: Starting dose 600mg BD → First reduction 500mg BD → Second reduction 400mg BD → Third reduction 300mg BD. If third dose reduction necessary, stop treatment."
+      },
+      {
+        "parameter": "Neutrophils",
+        "condition": "Neutrophils less than 1.5x10⁹/L",
+        "affected_drugs": [
+          "Rucaparib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay until neutrophils ≥1.5x10⁹/L with weekly FBCs. If not recovered within 4 weeks refer to haematology."
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets less than 75x10⁹/L",
+        "affected_drugs": [
+          "Rucaparib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay until platelets ≥75x10⁹/L with weekly FBCs. If not recovered within 4 weeks refer to haematology."
+      },
+      {
+        "parameter": "AST/ALT elevation",
+        "condition": "Grade 3 AST/ALT elevation without other signs of liver dysfunction",
+        "affected_drugs": [
+          "Rucaparib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Monitor LFTs weekly until resolution to grade ≤2. Continue rucaparib provided bilirubin <ULN and alkaline phosphatase <3xULN. Interrupt if AST/ALT levels do not decline within 2 weeks until grade ≤2, then resume at same or reduced dose."
+      },
+      {
+        "parameter": "AST/ALT elevation",
+        "condition": "Grade 4 AST/ALT elevation",
+        "affected_drugs": [
+          "Rucaparib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Interrupt rucaparib until values return to grade ≤2, then resume with a dose reduction and monitor LFTs weekly for 3 weeks."
+      },
+      {
+        "parameter": "Hepatic impairment",
+        "condition": "Severe hepatic impairment (total bilirubin >3 times ULN)",
+        "affected_drugs": [
+          "Rucaparib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Rucaparib not recommended in severe hepatic impairment. No starting dose adjustment for mild or moderate impairment."
+      },
+      {
+        "parameter": "Renal impairment",
+        "condition": "Severe renal impairment (CrCl <30ml/min)",
+        "affected_drugs": [
+          "Rucaparib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "No starting dose adjustment for mild or moderate renal impairment. No clinical data for CrCl <30ml/min — not recommended; use only if benefits outweigh risks."
+      },
+      {
+        "parameter": "MDS/AML",
+        "condition": "Diagnosis of myelodysplastic syndrome or acute myeloid leukaemia",
+        "affected_drugs": [
+          "Rucaparib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue rucaparib if MDS or AML diagnosed."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.5,
+      "platelets_min": 75,
+      "notes": "Eligible levels to initiate a new cycle: neutrophils ≥1.5x10⁹/L and platelets ≥75x10⁹/L. FBC, U&Es, creatinine, LFTs every 28 days for first 4 cycles, then may switch to every 56 days."
+    },
+    "monitoring_requirements": [
+      "BRCA testing prior to starting therapy",
+      "FBC, U&Es, creatinine, LFTs every 28 days for the first four cycles (prior to day 1 of each 28-day cycle)",
+      "After cycle 4: FBC, U&Es, creatinine and LFTs may be switched to every 56 days",
+      "CA125 where appropriate",
+      "Weekly FBCs if treatment delayed for haematological toxicity"
+    ],
+    "special_warnings": [
+      "Photosensitivity: patients should avoid direct sunlight, wear protective clothing, and use sunscreen/lip balm with SPF 50 or greater when outside.",
+      "0.5% of patients in clinical trials developed MDS or AML — monitor for signs of weakness, fatigue, fever, weight loss, infections, bleeding, bruising, breathlessness and haematological toxicities.",
+      "Rucaparib may have a minor influence on ability to drive and use machines — caution in patients reporting fatigue, nausea or dizziness.",
+      "Rucaparib interacts with other agents — always check for drug interactions.",
+      "Must only be prescribed under supervision of an oncologist.",
+      "NPSA/2008/RRR001 oral chemotherapy alert must be followed.",
+      "All dose reductions should not be re-escalated without consultant approval."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "ecog_performance_status": "0 or 1",
+      "brca_mutation_status": "germline and/or somatic BRCA testing required prior to starting",
+      "prior_platinum_response": "partial or complete response to second or subsequent line platinum-based chemotherapy",
+      "minimum_prior_platinum_cycles": 4,
+      "weeks_since_last_platinum_infusion": "less than 8 weeks"
+    },
+    "disease_site": "Gynaecology",
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Rucaparib",
+        "dose": 600,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "Twice daily (approximately 12 hours apart), continuous",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 600,
+        "max_dose_unit": "mg",
+        "special_instructions": "Tablets swallowed whole; may be taken with or without food. Doses approximately 12 hours apart. If patient vomits after taking rucaparib, do not retake — take next scheduled dose. If a dose is missed, take next dose at scheduled time. Available as 300mg, 250mg and 200mg film-coated tablets. Treatment continued until disease progression or unacceptable toxicity or patient choice to stop (12 cycles set in ARIA). Formal medical review to assess continuation at least by start of cycle 3. Oral SACT — NPSA/2008/RRR001 must be followed.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "Twice daily (approximately 12 hours apart), continuous | Tablets swallowed whole; may be taken with or without food. Doses approximately 12 hours apart. If patient vomits after taking rucaparib, do not retake — take next scheduled dose. If a dose is missed, take next dose at scheduled time. Available as 300mg, 250mg and 200mg film-coated tablets. Treatment continued until disease progression or unacceptable toxicity or patient choice to stop (12 cycles set in ARIA). Formal medical review to assess continuation at least by start of cycle 3. Oral SACT — NPSA/2008/RRR001 must be followed."
+      }
+    ]
+  },
+  {
+    "protocol_id": "ovarian_topotecan_days1_2_3_4_5",
+    "protocol_code": "OV-TOPO-12345",
+    "protocol_name": "Topotecan Intravenous (1, 2, 3, 4, 5)",
+    "category": "gynaecology",
+    "indication": "Second-line or subsequent treatment of platinum-refractory or platinum-resistant ovarian cancer, or in women who are allergic to platinum-based compounds, for whom pegylated liposomal doxorubicin and single-agent paclitaxel are considered inappropriate. WHO performance status 0, 1, 2. Palliative intent.",
+    "version": "1.1",
+    "cycle_length_days": 21,
+    "total_cycles": 6,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Topotecan",
+        "dose": 1.5,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "frequency": "Daily on days 1-5 of each 21-day cycle",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose rounded to nearest 0.4mg (up if halfway). Topotecan is an exfoliant — extravasation precautions required.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "indication": "Antiemetic"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "indication": "Antiemetic"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Three times a day when required for nausea",
+        "notes": "Dispensed on day 1 only"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "Neutrophils 1.5x10⁹/L or greater",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "100% dose — proceed"
+      },
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "Neutrophils 1.0-1.5x10⁹/L",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay until recovery to 1.5x10⁹/L or greater, then continue with reduced dose of 1.25mg/m²"
+      },
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "Neutrophils less than 1.0x10⁹/L",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Seek consultant advice"
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "Platelets less than 100x10⁹/L",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay until recovery to 100x10⁹/L or greater, then continue with reduced dose of 1.25mg/m² if the platelet count fell below 25x10⁹/L or symptomatic bleeding occurred"
+      },
+      {
+        "parameter": "Bilirubin",
+        "condition": "Bilirubin less than 170 micromol/L",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "parameter": "Bilirubin",
+        "condition": "Bilirubin 170 micromol/L or greater",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Clinical decision required"
+      },
+      {
+        "parameter": "Creatinine clearance",
+        "condition": "CrCl 40ml/min or greater",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "parameter": "Creatinine clearance",
+        "condition": "CrCl 20-39ml/min",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "50% dose reduction"
+      },
+      {
+        "parameter": "Creatinine clearance",
+        "condition": "CrCl less than 20ml/min",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Contraindicated"
+      },
+      {
+        "parameter": "Non-haematological toxicity",
+        "condition": "NCI-CTC grade 3 or above non-haematological toxicity",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay until resolved to NCI-CTC grade 1 or below, then reduce dose to 3mg/m² or discontinue as appropriate"
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.5,
+      "platelets_min": 100,
+      "notes": "Prior to cycle 1: neutrophils ≥1.5x10⁹/L and platelets ≥100x10⁹/L. Haemoglobin should reach 9g/dL prior to each cycle — support with blood transfusions if necessary."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to day 1 of each cycle",
+      "CA125 prior to day 1 of each cycle"
+    ],
+    "special_warnings": [
+      "Topotecan is an exfoliant — extravasation precautions required.",
+      "All dose reductions should not be re-escalated without consultant approval. If a third dose reduction is necessary, stop treatment.",
+      "Support with blood transfusions if haemoglobin below 9g/dL prior to each cycle."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "who_performance_status": "0, 1, or 2",
+      "body_surface_area": true,
+      "renal_function": "Creatinine clearance required prior to treatment",
+      "prior_treatment": "Second-line or subsequent; pegylated liposomal doxorubicin and single-agent paclitaxel must be considered inappropriate"
+    },
+    "disease_site": "Gynaecology",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Topotecan",
+        "dose": 1.5,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "frequency": "Daily on days 1-5 of each 21-day cycle",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose rounded to nearest 0.4mg (up if halfway). Topotecan is an exfoliant — extravasation precautions required.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.5,
+        "notes": "Daily on days 1-5 of each 21-day cycle | Dose rounded to nearest 0.4mg (up if halfway). Topotecan is an exfoliant — extravasation precautions required."
+      }
+    ]
+  },
+  {
+    "protocol_id": "ovarian_topotecan_day1_8",
+    "protocol_code": "OV-TOPO-18",
+    "protocol_name": "Topotecan Intravenous (1, 8)",
+    "category": "gynaecology",
+    "indication": "Second-line or subsequent treatment of platinum-refractory or platinum-resistant ovarian cancer, or in women who are allergic to platinum-based compounds, for whom pegylated liposomal doxorubicin and single-agent paclitaxel are considered inappropriate. WHO performance status 0, 1, 2. Palliative intent.",
+    "version": "1.1",
+    "cycle_length_days": 21,
+    "total_cycles": 6,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Topotecan",
+        "dose": 4,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8
+        ],
+        "frequency": "Days 1 and 8 of each 21-day cycle",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose rounded to nearest 0.4mg (up if halfway). Topotecan is an exfoliant — extravasation precautions required.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "days": [
+          1,
+          8
+        ],
+        "indication": "Antiemetic"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "days": [
+          1,
+          8
+        ],
+        "indication": "Antiemetic"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once a day for 2 days starting the day after chemotherapy",
+        "notes": "Please supply sufficient for days 1 and 8 of the cycle"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Three times a day when required for nausea",
+        "notes": "Please supply 60 tablets or nearest appropriate equivalent"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "Neutrophils 1.5x10⁹/L or greater",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "100% dose — proceed"
+      },
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "Neutrophils less than 1.5x10⁹/L on Day 1",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Day 1: delay until recovery to 1.5x10⁹/L or greater, then continue with reduced dose of 3mg/m². Day 8 or 15: omit treatment"
+      },
+      {
+        "parameter": "Neutrophils (Day 8)",
+        "condition": "Neutrophils less than 1.5x10⁹/L on Day 8",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Omit Day 8 dose"
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "Platelets less than 100x10⁹/L on Day 1",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Day 1: delay until recovery to 100x10⁹/L or greater, then continue with reduced dose of 3mg/m². Day 8 or 15: omit treatment"
+      },
+      {
+        "parameter": "Platelets (Day 8)",
+        "condition": "Platelets less than 100x10⁹/L on Day 8",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Omit Day 8 dose"
+      },
+      {
+        "parameter": "Bilirubin",
+        "condition": "Bilirubin less than 170 micromol/L",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "parameter": "Bilirubin",
+        "condition": "Bilirubin 170 micromol/L or greater",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Clinical decision required"
+      },
+      {
+        "parameter": "Creatinine clearance",
+        "condition": "CrCl 40ml/min or greater",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "parameter": "Creatinine clearance",
+        "condition": "CrCl 20-39ml/min",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "50% dose reduction"
+      },
+      {
+        "parameter": "Creatinine clearance",
+        "condition": "CrCl less than 20ml/min",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Contraindicated"
+      },
+      {
+        "parameter": "Non-haematological toxicity",
+        "condition": "NCI-CTC grade 3 or above non-haematological toxicity",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay until resolved to NCI-CTC grade 1 or below, then reduce dose to 3mg/m² or discontinue as appropriate"
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.5,
+      "platelets_min": 100,
+      "notes": "Prior to cycle 1: neutrophils ≥1.5x10⁹/L and platelets ≥100x10⁹/L. Haemoglobin should reach 9g/dL prior to each cycle. FBC, LFTs and U&Es prior to day 1 and 8 of each cycle."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to day 1 and 8 of each cycle",
+      "CA125 prior to day 1 of each cycle"
+    ],
+    "special_warnings": [
+      "Topotecan is an exfoliant — extravasation precautions required.",
+      "All dose reductions should not be re-escalated without consultant approval. If a third dose reduction is necessary, stop treatment.",
+      "Support with blood transfusions if haemoglobin below 9g/dL prior to each cycle."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "who_performance_status": "0, 1, or 2",
+      "body_surface_area": true,
+      "renal_function": "Creatinine clearance required prior to treatment",
+      "prior_treatment": "Second-line or subsequent; pegylated liposomal doxorubicin and single-agent paclitaxel must be considered inappropriate"
+    },
+    "disease_site": "Gynaecology",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Topotecan",
+        "dose": 4,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8
+        ],
+        "frequency": "Days 1 and 8 of each 21-day cycle",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose rounded to nearest 0.4mg (up if halfway). Topotecan is an exfoliant — extravasation precautions required.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.5,
+        "notes": "Days 1 and 8 of each 21-day cycle | Dose rounded to nearest 0.4mg (up if halfway). Topotecan is an exfoliant — extravasation precautions required."
+      }
+    ]
+  },
+  {
+    "protocol_id": "ovarian_topotecan_days1_8_15",
+    "protocol_code": "OV-TOPO-1815",
+    "protocol_name": "Topotecan Intravenous (1, 8, 15)",
+    "category": "gynaecology",
+    "indication": "Second-line or subsequent treatment of platinum-refractory or platinum-resistant ovarian cancer, or in women who are allergic to platinum-based compounds, for whom pegylated liposomal doxorubicin and single-agent paclitaxel are considered inappropriate. WHO performance status 0, 1, 2. Palliative intent.",
+    "version": "1.1",
+    "cycle_length_days": 28,
+    "total_cycles": 6,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Topotecan",
+        "dose": 4,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "frequency": "Days 1, 8 and 15 of each 28-day cycle",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose rounded to nearest 0.4mg (up if halfway). Topotecan is an exfoliant — extravasation precautions required.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "indication": "Antiemetic"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "indication": "Antiemetic"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once a day for 2 days starting the day after chemotherapy",
+        "notes": "Please supply sufficient for days 1, 8, 15 of the cycle"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Three times a day when required for nausea",
+        "notes": "Please supply 60 tablets or nearest appropriate equivalent"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "Neutrophils 1.5x10⁹/L or greater",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "100% dose — proceed"
+      },
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "Neutrophils less than 1.5x10⁹/L on Day 1",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Day 1: delay until recovery to 1.5x10⁹/L or greater, then continue with reduced dose of 3mg/m². Day 8 or 15: omit treatment"
+      },
+      {
+        "parameter": "Neutrophils (Days 8, 15)",
+        "condition": "Neutrophils less than 1.5x10⁹/L on Day 8 or Day 15",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Omit Day 8 or Day 15 dose"
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "Platelets less than 100x10⁹/L on Day 1",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Day 1: delay until recovery to 100x10⁹/L or greater, then continue with reduced dose of 3mg/m². Day 8 or 15: omit treatment"
+      },
+      {
+        "parameter": "Platelets (Days 8, 15)",
+        "condition": "Platelets less than 100x10⁹/L on Day 8 or Day 15",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Omit Day 8 or Day 15 dose"
+      },
+      {
+        "parameter": "Bilirubin",
+        "condition": "Bilirubin less than 170 micromol/L",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "parameter": "Bilirubin",
+        "condition": "Bilirubin 170 micromol/L or greater",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Clinical decision required"
+      },
+      {
+        "parameter": "Creatinine clearance",
+        "condition": "CrCl 40ml/min or greater",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "parameter": "Creatinine clearance",
+        "condition": "CrCl 20-39ml/min",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "50% dose reduction"
+      },
+      {
+        "parameter": "Creatinine clearance",
+        "condition": "CrCl less than 20ml/min",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Contraindicated"
+      },
+      {
+        "parameter": "Non-haematological toxicity",
+        "condition": "NCI-CTC grade 3 or above non-haematological toxicity",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay until resolved to NCI-CTC grade 1 or below, then reduce dose to 3mg/m² or discontinue as appropriate"
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.5,
+      "platelets_min": 100,
+      "notes": "Prior to cycle 1: neutrophils ≥1.5x10⁹/L and platelets ≥100x10⁹/L. Haemoglobin should reach 9g/dL prior to each cycle. FBC, LFTs and U&Es prior to day 1, 8 and 15 of each cycle."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to day 1, 8 and 15 of each cycle",
+      "CA125 prior to day 1 of each cycle"
+    ],
+    "special_warnings": [
+      "Topotecan is an exfoliant — extravasation precautions required.",
+      "All dose reductions should not be re-escalated without consultant approval. If a third dose reduction is necessary, stop treatment.",
+      "Support with blood transfusions if haemoglobin below 9g/dL prior to each cycle."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "who_performance_status": "0, 1, or 2",
+      "body_surface_area": true,
+      "renal_function": "Creatinine clearance required prior to treatment",
+      "prior_treatment": "Second-line or subsequent; pegylated liposomal doxorubicin and single-agent paclitaxel must be considered inappropriate"
+    },
+    "disease_site": "Gynaecology",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Topotecan",
+        "dose": 4,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "frequency": "Days 1, 8 and 15 of each 28-day cycle",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose rounded to nearest 0.4mg (up if halfway). Topotecan is an exfoliant — extravasation precautions required.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.5,
+        "notes": "Days 1, 8 and 15 of each 28-day cycle | Dose rounded to nearest 0.4mg (up if halfway). Topotecan is an exfoliant — extravasation precautions required."
+      }
+    ]
+  },
+  {
+    "protocol_id": "ovarian_bevacizumab_15mgkg",
+    "protocol_code": "OV-BEV-15",
+    "protocol_name": "Bevacizumab (15)",
+    "category": "gynaecology",
+    "indication": "Recurrent platinum sensitive ovarian, peritoneal or fallopian tube cancer; WHO performance status 0, 1, 2",
+    "version": "1.1",
+    "cycle_length_days": 21,
+    "total_cycles": null,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Bevacizumab",
+        "dose": 15,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Day 1 of each 21-day cycle",
+        "duration_minutes": 90,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded according to CSCCN agreed bands. First infusion over 90 minutes; if well tolerated second infusion may be given over 60 minutes; if well tolerated subsequent infusions may be given over 30 minutes. Bevacizumab — neutral (extravasation). Treatment continued until unacceptable toxicity or disease progression (six cycles set in ARIA). DOSE REDUCTIONS ARE NOT PERMITTED — doses should be omitted (not reduced) for adverse reactions. If more than two doses are missed due to adverse events, stop treatment. Half-life approximately 20 days.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [],
+    "dose_modifications": [
+      {
+        "parameter": "Haematological toxicity",
+        "condition": "Haematological toxicity",
+        "affected_drugs": [
+          "Bevacizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Little need to adjust dose of bevacizumab for haematological toxicity. Consider blood transfusion if haemoglobin <8g/dL or symptomatic anaemia."
+      },
+      {
+        "parameter": "Hepatic impairment",
+        "condition": "Any hepatic impairment",
+        "affected_drugs": [
+          "Bevacizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "No information available on hepatic dose adjustment."
+      },
+      {
+        "parameter": "Renal impairment",
+        "condition": "Any renal impairment",
+        "affected_drugs": [
+          "Bevacizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "No information available on renal dose adjustment."
+      },
+      {
+        "parameter": "Adverse reaction — dose omission",
+        "condition": "Adverse reactions requiring dose modification",
+        "affected_drugs": [
+          "Bevacizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Doses should be OMITTED and NOT REDUCED. If more than two doses missed, stop treatment."
+      },
+      {
+        "parameter": "Gastrointestinal perforation",
+        "condition": "Gastrointestinal perforation",
+        "affected_drugs": [
+          "Bevacizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently stop bevacizumab"
+      },
+      {
+        "parameter": "Arterial thromboembolic event",
+        "condition": "Arterial thromboembolic event",
+        "affected_drugs": [
+          "Bevacizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently stop bevacizumab"
+      },
+      {
+        "parameter": "Haemorrhage",
+        "condition": "NCI-CTC grade 3 or above haemorrhagic event (requiring blood transfusion or major non-elective intervention)",
+        "affected_drugs": [
+          "Bevacizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently stop bevacizumab"
+      },
+      {
+        "parameter": "Cardiac toxicity",
+        "condition": "NCI-CTC grade 3 or above congestive heart failure or left ventricular dysfunction",
+        "affected_drugs": [
+          "Bevacizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently stop bevacizumab"
+      },
+      {
+        "parameter": "Fistula",
+        "condition": "NCI-CTC grade 4 fistula",
+        "affected_drugs": [
+          "Bevacizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently stop bevacizumab"
+      },
+      {
+        "parameter": "Venous thromboembolic event",
+        "condition": "NCI-CTC symptomatic grade 4 venous thromboembolic event",
+        "affected_drugs": [
+          "Bevacizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Stop bevacizumab. Exception: if pulmonary embolism, may restart once full recovery made and patient anti-coagulated with subcutaneous LMWH (oral anticoagulant must NOT be used)."
+      },
+      {
+        "parameter": "Hypertension",
+        "condition": "NCI-CTC grade 1 hypertension",
+        "affected_drugs": [
+          "Bevacizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "No treatment necessary — continue bevacizumab"
+      },
+      {
+        "parameter": "Hypertension",
+        "condition": "NCI-CTC grade 2 hypertension",
+        "affected_drugs": [
+          "Bevacizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Consider anti-hypertensive therapy — continue bevacizumab"
+      },
+      {
+        "parameter": "Hypertension",
+        "condition": "NCI-CTC grade 3 or above hypertension that is persistent",
+        "affected_drugs": [
+          "Bevacizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Consider stopping treatment"
+      },
+      {
+        "parameter": "Proteinuria",
+        "condition": "NCI-CTC grade 1 or first occurrence of grade 2 proteinuria",
+        "affected_drugs": [
+          "Bevacizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Continue bevacizumab"
+      },
+      {
+        "parameter": "Proteinuria",
+        "condition": "Second occurrence of NCI-CTC grade 2 or any grade 3 proteinuria",
+        "affected_drugs": [
+          "Bevacizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Conduct 24-hour urine collection or UPCR within 3 days before next dose. If <2g protein/24h or UPCR 0-1: administer bevacizumab and return to dipstick monitoring. If >2g protein/24h: omit bevacizumab, repeat 24-hour urine before next scheduled dose."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "Blood pressure and dipstick urinalysis for proteinuria required prior to each treatment with bevacizumab. FBC, LFTs, U&Es, EDTA or calculated creatinine clearance, and CA125 prior to each cycle."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to each cycle",
+      "EDTA or calculated creatinine clearance prior to each cycle",
+      "CA125 prior to each cycle",
+      "Blood pressure and dipstick urinalysis for proteinuria prior to each treatment with bevacizumab"
+    ],
+    "special_warnings": [
+      "DOSE REDUCTIONS ARE NOT PERMITTED for bevacizumab — doses must be OMITTED (not reduced) for adverse reactions. If more than two doses are missed due to adverse events, stop treatment.",
+      "Haemorrhage risk: monitor for haemorrhagic events. Stop for NCI-CTC grade ≥3 haemorrhage.",
+      "Hypertension is a common consequence of bevacizumab therapy — monitor blood pressure at each visit.",
+      "Gastrointestinal perforation: stop permanently if this occurs.",
+      "Impaired wound healing: bevacizumab should not be initiated for at least 28 days following major surgery.",
+      "Arterial thromboembolism: stop permanently.",
+      "Venous thromboembolism: stop for symptomatic grade 4 VTE; may restart for PE if anticoagulated with LMWH (not oral anticoagulant).",
+      "Proteinuria: monitor with dipstick urinalysis; if grade 2+ at second occurrence or grade 3, perform 24-hour urine collection or UPCR.",
+      "Half-life of bevacizumab is approximately 20 days — discontinuation not expected to influence short-term clinical evolution of adverse events.",
+      "This protocol may require funding approval.",
+      "All dose reductions should not be re-escalated without consultant approval."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "who_performance_status": "0, 1, or 2",
+      "weight_kg": true,
+      "renal_function": "EDTA or calculated creatinine clearance required",
+      "blood_pressure": "Required at each visit prior to treatment",
+      "urinalysis": "Dipstick urinalysis for proteinuria required prior to each treatment"
+    },
+    "disease_site": "Gynaecology",
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Bevacizumab",
+        "dose": 15,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Day 1 of each 21-day cycle",
+        "duration_minutes": 90,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded according to CSCCN agreed bands. First infusion over 90 minutes; if well tolerated second infusion may be given over 60 minutes; if well tolerated subsequent infusions may be given over 30 minutes. Bevacizumab — neutral (extravasation). Treatment continued until unacceptable toxicity or disease progression (six cycles set in ARIA). DOSE REDUCTIONS ARE NOT PERMITTED — doses should be omitted (not reduced) for adverse reactions. If more than two doses are missed due to adverse events, stop treatment. Half-life approximately 20 days.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.5,
+        "notes": "Day 1 of each 21-day cycle | Dose banded according to CSCCN agreed bands. First infusion over 90 minutes; if well tolerated second infusion may be given over 60 minutes; if well tolerated subsequent infusions may be given over 30 minutes. Bevacizumab — neutral (extravasation). Treatment continued until unacceptable toxicity or disease progression (six cycles set in ARIA). DOSE REDUCTIONS ARE NOT PERMITTED — doses should be omitted (not reduced) for adverse reactions. If more than two doses are missed due to adverse events, stop treatment. Half-life approximately 20 days."
+      }
+    ]
+  }
+]

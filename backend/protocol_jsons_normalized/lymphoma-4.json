@@ -1,0 +1,1079 @@
+[
+  {
+    "protocol_code": "CVP",
+    "protocol_name": "Cyclophosphamide-Prednisolone-Vincristine (CVP)",
+    "disease_site": "Non-Hodgkin's Lymphoma",
+    "category": "lymphoma",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 750.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus over 10 minutes. Dose banded according to CSCCN agreed bands."
+      },
+      {
+        "drug_name": "Vincristine",
+        "dose": 1.4,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": 2,
+        "max_dose_unit": "mg",
+        "notes": "Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Vesicant. Rounded to nearest 0.1mg. NPSA/2008/RRR04 must be followed."
+      },
+      {
+        "drug_name": "Prednisolone",
+        "dose": 100.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Take in the morning with or after food. Consider initial dose reduction in patients over 70 years of age."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils 0.5-0.9 x10⁹/L, 1st occurrence, no prior G-CSF",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Administer 100% with prophylactic growth factors. Alternative for poor PS or non-curative intent: delay until neutrophils ≥1x10⁹/L then give 75% plus G-CSF."
+      },
+      {
+        "condition": "Neutrophils 0.5-0.9 x10⁹/L, 2nd occurrence",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Delay until neutrophils ≥1x10⁹/L then give 50% plus growth factors."
+      },
+      {
+        "condition": "Neutrophils <0.5 or febrile neutropenia, 1st occurrence",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Delay until neutrophils ≥1x10⁹/L then give 75% plus prophylactic growth factors."
+      },
+      {
+        "condition": "Neutrophils <0.5 or febrile neutropenia, 2nd occurrence",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Delay until neutrophils ≥1x10⁹/L then give 50% plus growth factors."
+      },
+      {
+        "condition": "Platelets 50-74 x10⁹/L, 1st occurrence",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Give 75% of original dose."
+      },
+      {
+        "condition": "Platelets 50-74 x10⁹/L, 2nd occurrence",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Give 50% of original dose."
+      },
+      {
+        "condition": "Platelets <50 or active haemorrhage, 1st occurrence",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Delay until platelets ≥75 then give 75%."
+      },
+      {
+        "condition": "Platelets <50 or active haemorrhage, 2nd occurrence",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Delay until platelets ≥75 then give 50%."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin 30-51 µmol/L or AST/ALT 60-180 units/L",
+        "drug_name": "Vincristine",
+        "factor": 0.5,
+        "notes": "Reduce vincristine to 50%."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >51 µmol/L and normal AST/ALT",
+        "drug_name": "Vincristine",
+        "factor": 0.5,
+        "notes": "Reduce vincristine to 50%."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >51 µmol/L and AST/ALT >180 units/L",
+        "drug_name": "Vincristine",
+        "factor": 0,
+        "notes": "Omit vincristine."
+      },
+      {
+        "condition": "Renal impairment: CrCl 10-20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75%. Consider mesna in patients with pre-existing bladder disorders."
+      },
+      {
+        "condition": "Renal impairment: CrCl <10 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Reduce to 50%."
+      },
+      {
+        "condition": "NCI-CTC grade 2 motor or grade 3 sensory neurotoxicity",
+        "drug_name": "Vincristine",
+        "factor": 0.75,
+        "notes": "Reduce vincristine dose to 1mg. Stop vincristine for higher toxicity grades or if toxicity increases despite dose reduction."
+      }
+    ],
+    "pre_medications": [
+      "Ondansetron 8mg oral or intravenous 15-30 minutes prior to chemotherapy",
+      "Allopurinol 300mg oral once daily for first cycle only (for 21 days)",
+      "Consider aciclovir 400mg twice daily oral in high-risk patients",
+      "Consider co-trimoxazole 960mg oral Monday/Wednesday/Friday in high-risk patients"
+    ],
+    "special_warnings": [
+      "NPSA/2008/RRR04 must be followed for intravenous administration of vincristine (vinca alkaloid).",
+      "Vincristine is a vesicant - extravasation risk.",
+      "Consider initial dose reduction in patients over 70 years of age.",
+      "Cyclophosphamide may cause haemorrhagic cystitis (rare). Consider mesna in patients with pre-existing bladder disorders.",
+      "Consider gastric protection with PPI or H2 antagonist in high-risk patients."
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "creatinine_clearance",
+      "bilirubin",
+      "ast_alt"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "CYCLO-ETO-PO",
+    "protocol_name": "Cyclophosphamide-Etoposide Oral",
+    "disease_site": "Malignant Lymphoma (palliative)",
+    "category": "lymphoma",
+    "cycle_length_days": 21,
+    "number_of_cycles": 4,
+    "drugs": [
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 100.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Available as 50mg tablets. Swallow whole with a full glass of water."
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 100.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Available as 50mg and 100mg capsules. Take one hour before food or on an empty stomach. Reduce dose if significant reduction in albumin levels."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1 x10⁹/L",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Delay until recovery to ≥1x10⁹/L. Applies to both cyclophosphamide and etoposide."
+      },
+      {
+        "condition": "Neutrophils <1 x10⁹/L",
+        "drug_name": "Etoposide",
+        "factor": 1.0,
+        "notes": "Delay until recovery to ≥1x10⁹/L."
+      },
+      {
+        "condition": "Platelets <75 x10⁹/L",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Delay until recovery to ≥75x10⁹/L. Applies to both drugs."
+      },
+      {
+        "condition": "Platelets <75 x10⁹/L",
+        "drug_name": "Etoposide",
+        "factor": 1.0,
+        "notes": "Delay until recovery to ≥75x10⁹/L."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin 30-51 µmol/L or AST/ALT 60-180 units/L",
+        "drug_name": "Etoposide",
+        "factor": 0.5,
+        "notes": "Consider dose reduction to 50%. Guidance only for palliative regimen."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >51 µmol/L or AST/ALT >180 units/L",
+        "drug_name": "Etoposide",
+        "factor": 1.0,
+        "notes": "Clinical decision required."
+      },
+      {
+        "condition": "Renal impairment CrCl 10-20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75%. Guidance only for palliative regimen."
+      },
+      {
+        "condition": "Renal impairment CrCl <10 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Reduce to 50%."
+      },
+      {
+        "condition": "Renal impairment CrCl 15-50 ml/min",
+        "drug_name": "Etoposide",
+        "factor": 0.75,
+        "notes": "Reduce to 75%."
+      },
+      {
+        "condition": "Renal impairment CrCl <15 ml/min",
+        "drug_name": "Etoposide",
+        "factor": 0.5,
+        "notes": "Reduce to 50%."
+      }
+    ],
+    "pre_medications": [
+      "Metoclopramide 10mg three times daily oral when required"
+    ],
+    "special_warnings": [
+      "NPSA/2008/RRR001 oral chemotherapy alert must be followed when prescribing, dispensing or administering oral chemotherapy.",
+      "This is a short course of oral chemotherapy that must NOT be continued beyond the prescribed days.",
+      "Patients with Hodgkin's Lymphoma carry a lifelong risk of TA-GVHD. Irradiated blood products must be used for life. Notify blood transfusion department and issue patient alert card.",
+      "Monitor albumin prior to each cycle; reduce etoposide dose if significant albumin reduction.",
+      "Patients should be assessed for suitability for oral chemotherapy prior to starting treatment."
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "albumin",
+      "creatinine_clearance",
+      "bilirubin",
+      "ast_alt"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "R-CP-21",
+    "protocol_name": "Cyclophosphamide-Prednisolone-Rituximab (R-CP 21-day)",
+    "disease_site": "Lymphoplasmacytic Lymphoma / Waldenstrom's Macroglobulinaemia",
+    "category": "lymphoma",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Rituximab",
+        "dose": 375.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 500ml sodium chloride 0.9% as per rituximab administration guidelines. Dose rounded to nearest 100mg."
+      },
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 750.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus over 10 minutes. Dose banded in accordance with national dose bands (20mg/ml)."
+      },
+      {
+        "drug_name": "Prednisolone",
+        "dose": 40.0,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Take in the morning with or after food. Administration begins on the morning of chemotherapy. Also acts as rituximab pre-medication. Rounded to nearest 5mg. Prednisolone 40mg/m² oral also serves as rituximab premedication."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils ≥1.5 x10⁹/L and platelets ≥100 x10⁹/L",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Continue at 100%."
+      },
+      {
+        "condition": "Neutrophils 1.0-1.49 x10⁹/L and platelets ≥100 x10⁹/L",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce cyclophosphamide to 75%."
+      },
+      {
+        "condition": "Neutrophils 0.5-1.0 x10⁹/L and/or platelets 50-100 x10⁹/L",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Reduce cyclophosphamide to 50%."
+      },
+      {
+        "condition": "Neutrophils <0.5 x10⁹/L and/or platelets <50 x10⁹/L",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0,
+        "notes": "Omit cyclophosphamide. Prednisolone and rituximab do not require haematological dose modifications."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >30 µmol/L and AST/ALT 2-3x ULN",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Clinical decision. Evidence suggests exposure to active metabolites may not be increased, suggesting dose reduction may not be necessary. May be decreased efficacy in severe hepatic impairment."
+      },
+      {
+        "condition": "Renal impairment CrCl 10-20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75%. Consider mesna in patients with pre-existing bladder disorders."
+      },
+      {
+        "condition": "Renal impairment CrCl <10 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Reduce to 50%."
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg intravenous bolus 30 minutes prior to rituximab",
+      "Paracetamol 1000mg oral 30 minutes prior to rituximab",
+      "Prednisolone 40mg/m² oral on morning of treatment (also chemotherapy component)",
+      "Ondansetron 8mg oral or intravenous 15-30 minutes prior to chemotherapy",
+      "Allopurinol 300mg oral once daily for 7 days (first cycle only)"
+    ],
+    "special_warnings": [
+      "Check hepatitis B status before starting rituximab.",
+      "Rituximab associated with cytokine release syndrome (CRS) - occurs most commonly within 1-2 hours of first infusion. Monitor for severe dyspnoea, bronchospasm, hypoxia, fever, chills, urticaria, angioedema.",
+      "Rituximab associated with risk of progressive multifocal leukoencephalopathy (PML). Monitor for neurological/cognitive/psychiatric symptoms.",
+      "Assess for cold or flu-like symptoms prior to rituximab (viral URTI increases risk of hepatotoxicity).",
+      "Consider mesna for patients with pre-existing bladder disorders.",
+      "Growth factor support recommended: filgrastim 300mcg SC daily for 7 days from day 6, or pegfilgrastim 6mg SC day 2.",
+      "Hydrocortisone 100mg IV and salbutamol 2.5mg nebule available as required for rituximab infusion reactions.",
+      "Consider pethidine 25-50mg IV for rituximab-related rigors not responding to steroids."
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "creatinine_clearance",
+      "bilirubin",
+      "ast_alt",
+      "hepatitis_b_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "DRC",
+    "protocol_name": "Cyclophosphamide-Dexamethasone-Rituximab (DRC)",
+    "disease_site": "Lymphoplasmacytic Lymphoma / Waldenstrom's Macroglobulinaemia",
+    "category": "lymphoma",
+    "cycle_length_days": 21,
+    "number_of_cycles": 8,
+    "drugs": [
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 100.0,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Twice daily oral (total daily dose 200mg/m², total course dose 1000mg/m²). Available as 50mg tablets only; dose rounded to nearest 50mg. Swallow whole with a full glass of water. Drink minimum 3 litres fluid per 24 hours."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20.0,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "20mg IV equivalent on day 1. If rituximab is omitted, dexamethasone must be prescribed orally. On cycle 1 day 2 (split rituximab dose), hydrocortisone 100mg IV is given instead of dexamethasone."
+      },
+      {
+        "drug_name": "Rituximab",
+        "dose": 375.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 2 onwards: 375mg/m² in 500ml NaCl 0.9% on day 1. Cycle 1 split dose: 100mg in 50ml NaCl 0.9% over 120 min on day 1, then 325mg/m² in 500ml NaCl 0.9% on day 2 (if total IgM >20g/L). Omit rituximab if total IgM >40g/L. Dose rounded to nearest 100mg."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1 x10⁹/L on proposed day 1",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Delay until neutrophils ≥1x10⁹/L. Consider G-CSF as secondary prophylaxis. Reconsider treatment if not recovered after 14 days."
+      },
+      {
+        "condition": "Grade 4 neutropenia or febrile neutropenia following any cycle",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Give G-CSF with all subsequent cycles."
+      },
+      {
+        "condition": "Grade 4 neutropenia leading to infection despite G-CSF",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Reduce cyclophosphamide by 50% for all subsequent cycles."
+      },
+      {
+        "condition": "Grade 4 neutropenia recurs despite 50% cyclophosphamide dose reduction",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0,
+        "notes": "Stop treatment."
+      },
+      {
+        "condition": "Platelets <100 x10⁹/L on proposed day 1",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Delay until platelets ≥100x10⁹/L. Reconsider if not recovered after 14 days."
+      },
+      {
+        "condition": "Grade 4 thrombocytopenia following any cycle",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Reduce cyclophosphamide by 50% for all subsequent cycles."
+      },
+      {
+        "condition": "Grade 4 thrombocytopenia recurs despite 50% dose reduction",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0,
+        "notes": "Stop treatment."
+      },
+      {
+        "condition": "Non-haematological NCI-CTC grade 3 or above toxicity",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Delay until resolved to grade 1 or below, then reduce to 75% or discontinue as appropriate."
+      },
+      {
+        "condition": "Renal impairment CrCl 10-20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75%."
+      },
+      {
+        "condition": "Renal impairment CrCl <10 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Reduce to 50%."
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg intravenous 30 minutes prior to rituximab",
+      "Paracetamol 1000mg oral 30 minutes prior to rituximab",
+      "Hydrocortisone 100mg intravenous if dexamethasone not given (i.e. cycle 1 day 2 split dose rituximab)",
+      "Ondansetron 8mg twice daily for 5 days oral (take home, starting before first cyclophosphamide dose)",
+      "Allopurinol 300mg oral once daily (cycle 1 only, until bulk disease reduced)"
+    ],
+    "special_warnings": [
+      "Check hepatitis B status before starting rituximab.",
+      "Omit rituximab if total IgM >40g/L. Consider plasma exchange prior to each cycle if IgM >40g/L or clinical signs of hyperviscosity.",
+      "Split first rituximab dose if total IgM >20g/L: 100mg in 50ml NaCl 0.9% over 2 hours day 1, then 325mg/m² in 500ml NaCl 0.9% day 2.",
+      "Blood transfusion carries higher risk of TACO and thrombosis related to IgM paraprotein height; decisions must be made by consultant.",
+      "Rituximab associated with CRS, PML, and hypersensitivity reactions. Monitor carefully.",
+      "Regular monitoring of blood glucose is recommended (dexamethasone).",
+      "Cyclophosphamide oral: tablets must be swallowed whole, minimum 3 litres fluid per 24 hours.",
+      "Consider gastric protection with H2 antagonist or PPI.",
+      "Hydrocortisone 100mg IV and salbutamol 2.5mg nebule available as required for rituximab infusion reactions.",
+      "ORAL CHEMOTHERAPY — NPSA/2008/RRR001: Patient must be counselled and provided written information before starting. Prescriptions must be written on an approved oral chemotherapy prescription form. Dispensing must only be by a trained pharmacist. Patient must be provided with a chemotherapy alert card. Do not supply more than one cycle at a time without clinical review."
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "creatinine_clearance",
+      "igm_level",
+      "hepatitis_b_status",
+      "blood_glucose"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "EPCORITAMAB-C1-PRIMING",
+    "protocol_name": "Epcoritamab Cycle 1 - 28-Day Priming",
+    "disease_site": "Relapsed/Refractory Diffuse Large B-Cell Lymphoma (DLBCL)",
+    "category": "lymphoma",
+    "cycle_length_days": 28,
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Epcoritamab",
+        "dose": 0.16,
+        "dose_unit": "mg",
+        "route": "Subcutaneous",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Priming dose 0.16mg on day 1. Subcutaneous injection preferably in lower abdomen or thigh. Rotate injection site left to right."
+      },
+      {
+        "drug_name": "Epcoritamab",
+        "dose": 0.8,
+        "dose_unit": "mg",
+        "route": "Subcutaneous",
+        "days": [
+          8
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intermediate dose 0.8mg on day 8. Subcutaneous injection."
+      },
+      {
+        "drug_name": "Epcoritamab",
+        "dose": 48.0,
+        "dose_unit": "mg",
+        "route": "Subcutaneous",
+        "days": [
+          15,
+          22
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Full dose 48mg on days 15 and 22. Day 15 first full dose MUST be administered as an in-patient with 24-hour monitoring for CRS and ICANS. Bispecific antibody CD3xCD20."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <0.5 x10⁹/L",
+        "drug_name": "Epcoritamab",
+        "factor": 1.0,
+        "notes": "Withhold until ANC ≥0.5 x10⁹/L. No dose reductions recommended; manage with interruption or discontinuation."
+      },
+      {
+        "condition": "Platelets <50 x10⁰/L",
+        "drug_name": "Epcoritamab",
+        "factor": 1.0,
+        "notes": "Withhold until platelet count ≥50."
+      },
+      {
+        "condition": "Haemoglobin <80 g/L",
+        "drug_name": "Epcoritamab",
+        "factor": 1.0,
+        "notes": "Withhold until returns to <LLN-100 or baseline."
+      },
+      {
+        "condition": "Grade 4 CRS or ICANS event",
+        "drug_name": "Epcoritamab",
+        "factor": 0,
+        "notes": "Permanently discontinue epcoritamab."
+      },
+      {
+        "condition": "NCI-CTC grade 3 or above non-haematological toxicity",
+        "drug_name": "Epcoritamab",
+        "factor": 1.0,
+        "notes": "Delay treatment until resolved to grade 1 or baseline."
+      },
+      {
+        "condition": "Active infection",
+        "drug_name": "Epcoritamab",
+        "factor": 1.0,
+        "notes": "Withhold until infection resolves."
+      },
+      {
+        "condition": "Re-priming required: >8 days between 0.16mg and 0.8mg doses",
+        "drug_name": "Epcoritamab",
+        "factor": 1.0,
+        "notes": "Repeat full cycle 1 priming sequence with standard CRS prophylaxis."
+      },
+      {
+        "condition": "Re-priming required: >14 days between 0.8mg and 48mg doses",
+        "drug_name": "Epcoritamab",
+        "factor": 1.0,
+        "notes": "Repeat full cycle 1 priming sequence."
+      },
+      {
+        "condition": "Re-priming required: >6 weeks between full 48mg doses",
+        "drug_name": "Epcoritamab",
+        "factor": 1.0,
+        "notes": "Repeat full cycle 1 priming sequence."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 15mg oral 30 minutes prior to epcoritamab (all doses in cycle 1; continue for 3 consecutive days following each weekly administration)",
+      "Chlorphenamine 10mg oral 30 minutes prior to epcoritamab",
+      "Paracetamol 1000mg oral 30 minutes prior to epcoritamab",
+      "Tocilizumab 8mg/kg IV (maximum 800mg) 8-hourly if required for CRS - maximum 3 doses; one dose must be available on ward prior to each epcoritamab administration",
+      "Allopurinol 300mg oral once daily for 28 days (TLS prophylaxis; 100mg if renal impairment)",
+      "Aciclovir 400mg oral twice daily for 28 days",
+      "Co-trimoxazole 960mg oral Monday/Wednesday/Friday"
+    ],
+    "special_warnings": [
+      "NICE TA954 funding approval required (Blueteq form must be completed).",
+      "Epcoritamab is a bispecific antibody targeting CD3 and CD20. Step-up dosing is essential to reduce risk of CRS.",
+      "ALL patients must be hospitalised on Cycle 1 Day 15 (first 48mg dose) for 24 hours post-administration to monitor for CRS and ICANS.",
+      "CRS risk: symptoms include pyrexia, tachycardia, hypoxia, hypotension. Temperature, BP and oxygen saturation monitored 4-hourly after day 15 administration. Patient must carry CRS alert card at all times.",
+      "ICANS risk: symptoms include seizures, confusion, encephalopathy, ataxia. Seek immediate medical attention.",
+      "Tocilizumab must be prescribed in advance for CRS management. Access to additional dose within 8 hours of use must be ensured.",
+      "TLS risk assessment required prior to treatment. High-risk patients (high tumour burden and/or lymphocytes >25x10⁹/L and/or CrCl <70ml/min) require prophylaxis with rasburicase 3mg IV then allopurinol 300mg oral.",
+      "Patients with Grade ≥2 CRS or prior tocilizumab use must be hospitalised for next scheduled infusion.",
+      "Hepatitis B: check status before starting; positive serology requires liver disease expert consultation.",
+      "Viral screen required: CMV, HSV, EBV, VZV, HIV.",
+      "Symptoms of CRS can occur weeks after administration.",
+      "Severe hepatic impairment (bilirubin >3x ULN): safety not established.",
+      "Severe renal impairment (CrCl <30ml/min): safety not established."
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "haemoglobin",
+      "creatinine_clearance",
+      "bilirubin",
+      "ast_alt",
+      "hepatitis_b_status",
+      "viral_screen",
+      "tls_risk_assessment",
+      "igm_level"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "EPCORITAMAB-C2-ONWARDS",
+    "protocol_name": "Epcoritamab Cycle 2 Onwards - 28-Day",
+    "disease_site": "Relapsed/Refractory Diffuse Large B-Cell Lymphoma (DLBCL)",
+    "category": "lymphoma",
+    "cycle_length_days": 28,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Epcoritamab",
+        "dose": 48.0,
+        "dose_unit": "mg",
+        "route": "Subcutaneous",
+        "days": [
+          1,
+          8,
+          15,
+          22
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 2-3: 48mg on days 1, 8, 15, 22 (weekly). Cycles 4-9: 48mg on days 1 and 15 (biweekly). Cycle 10 onwards: 48mg on day 1 only (monthly). Subcutaneous injection in lower abdomen or thigh. Rotate injection sites. Bispecific antibody CD3xCD20. Treatment until disease progression or unacceptable toxicity."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <0.5 x10⁹/L",
+        "drug_name": "Epcoritamab",
+        "factor": 1.0,
+        "notes": "Withhold until ANC ≥0.5 x10⁹/L. No dose reductions recommended."
+      },
+      {
+        "condition": "Platelets <50 x10⁰/L",
+        "drug_name": "Epcoritamab",
+        "factor": 1.0,
+        "notes": "Withhold until platelet count ≥50."
+      },
+      {
+        "condition": "Haemoglobin <80 g/L",
+        "drug_name": "Epcoritamab",
+        "factor": 1.0,
+        "notes": "Withhold until returns to <LLN-100 or baseline."
+      },
+      {
+        "condition": "Grade 4 CRS or ICANS event",
+        "drug_name": "Epcoritamab",
+        "factor": 0,
+        "notes": "Permanently discontinue epcoritamab."
+      },
+      {
+        "condition": "NCI-CTC grade 3 or above non-haematological toxicity",
+        "drug_name": "Epcoritamab",
+        "factor": 1.0,
+        "notes": "Delay treatment until resolved to grade 1 or baseline."
+      },
+      {
+        "condition": "Active infection",
+        "drug_name": "Epcoritamab",
+        "factor": 1.0,
+        "notes": "Withhold until infection resolves."
+      },
+      {
+        "condition": "Re-priming required: >6 weeks between full 48mg doses",
+        "drug_name": "Epcoritamab",
+        "factor": 1.0,
+        "notes": "Repeat full cycle 1 priming sequence (0.16mg, 0.8mg, 48mg step-up)."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 15mg oral 30 minutes prior to epcoritamab (only for patients who experienced CRS grade 2 or 3 with previous dose; continue for 3 consecutive days following administration)",
+      "Chlorphenamine 10mg oral 30 minutes prior to epcoritamab (if prior CRS grade 2-3)",
+      "Paracetamol 1000mg oral 30 minutes prior to epcoritamab (if prior CRS grade 2-3)",
+      "Tocilizumab 8mg/kg IV (maximum 800mg) available as required for CRS - maximum 3 doses",
+      "Allopurinol 300mg oral once daily for 28 days (TLS prophylaxis)",
+      "Aciclovir 400mg oral twice daily for 28 days",
+      "Co-trimoxazole 960mg oral Monday/Wednesday/Friday"
+    ],
+    "special_warnings": [
+      "NICE TA954 funding approval required (Blueteq form must be completed).",
+      "Up-titration to 48mg full dose must be completed before starting cycle 2 (via cycle 1 priming protocol).",
+      "Epcoritamab is a bispecific antibody targeting CD3 and CD20.",
+      "Dosing schedule changes: Cycles 2-3 weekly (days 1,8,15,22); Cycles 4-9 biweekly (days 1,15); Cycle 10+ monthly (day 1).",
+      "CRS risk: symptoms include pyrexia, tachycardia, hypoxia, hypotension. Patient must carry CRS alert card at all times. Symptoms can occur weeks after administration.",
+      "Patients who experienced Grade ≥2 CRS or received tocilizumab must be hospitalised for next scheduled infusion.",
+      "ICANS risk: symptoms include seizures, confusion, encephalopathy. Seek immediate medical attention.",
+      "Tocilizumab must be available on ward prior to each epcoritamab dose during cycles 1 and 2.",
+      "TLS risk assessment required prior to treatment.",
+      "Hepatitis B: check status before starting; positive serology requires liver disease expert consultation.",
+      "Severe hepatic impairment (bilirubin >3x ULN): safety not established.",
+      "Severe renal impairment (CrCl <30ml/min): safety not established.",
+      "Pre-medications (dexamethasone, chlorphenamine, paracetamol) are conditional on prior CRS grade 2-3 for cycle 2 onwards."
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "haemoglobin",
+      "creatinine_clearance",
+      "bilirubin",
+      "ast_alt",
+      "hepatitis_b_status",
+      "tls_risk_assessment",
+      "prior_crs_grade"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "FC-IV-3DAY",
+    "protocol_name": "Cyclophosphamide-Fludarabine IV 3-Day (FC IV)",
+    "disease_site": "Non-Hodgkin Lymphoma / CLL",
+    "category": "lymphoma",
+    "cycle_length_days": 28,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 250.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1,
+          2,
+          3
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus over 10 minutes. Dose banded according to CSCCN agreed bands."
+      },
+      {
+        "drug_name": "Fludarabine",
+        "dose": 25.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 100ml sodium chloride 0.9% over 30 minutes. Dose banded according to CSCCN agreed bands."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1 x10⁹/L, 1st occurrence",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Delay until recovery then give 75%. Applies to both cyclophosphamide and fludarabine."
+      },
+      {
+        "condition": "Neutrophils <1 x10⁹/L, 1st occurrence",
+        "drug_name": "Fludarabine",
+        "factor": 0.75,
+        "notes": "Delay until recovery then give 75%."
+      },
+      {
+        "condition": "Neutrophils <1 x10⁹/L, 2nd occurrence",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Delay until recovery then give 50%."
+      },
+      {
+        "condition": "Neutrophils <1 x10⁹/L, 2nd occurrence",
+        "drug_name": "Fludarabine",
+        "factor": 0.5,
+        "notes": "Delay until recovery then give 50%."
+      },
+      {
+        "condition": "Platelets <75 x10⁹/L, 1st occurrence",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Delay until recovery then give 75%."
+      },
+      {
+        "condition": "Platelets <75 x10⁹/L, 1st occurrence",
+        "drug_name": "Fludarabine",
+        "factor": 0.75,
+        "notes": "Delay until recovery then give 75%."
+      },
+      {
+        "condition": "Platelets <75 x10⁹/L, 2nd occurrence",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Delay until recovery then give 50%."
+      },
+      {
+        "condition": "Platelets <75 x10⁹/L, 2nd occurrence",
+        "drug_name": "Fludarabine",
+        "factor": 0.5,
+        "notes": "Delay until recovery then give 50%."
+      },
+      {
+        "condition": "Renal impairment CrCl 10-20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75%."
+      },
+      {
+        "condition": "Renal impairment CrCl <10 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Reduce to 50%."
+      },
+      {
+        "condition": "Renal impairment CrCl 30-70 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.5,
+        "notes": "Reduce fludarabine to 50%."
+      },
+      {
+        "condition": "Renal impairment CrCl <30 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0,
+        "notes": "Omit fludarabine."
+      }
+    ],
+    "pre_medications": [
+      "Metoclopramide 10mg oral or intravenous 15-30 minutes prior to chemotherapy",
+      "Ondansetron 8mg oral or intravenous 15-30 minutes prior to chemotherapy",
+      "Allopurinol 300mg oral once daily for first cycle only (28 days)",
+      "Aciclovir 400mg oral twice daily",
+      "Co-trimoxazole 960mg oral Monday/Wednesday/Friday (continued for 6 months after treatment completion or per CD4 count)"
+    ],
+    "special_warnings": [
+      "Patients treated with fludarabine carry a LIFELONG risk of transfusion-associated graft versus host disease (TA-GVHD). Irradiated blood products must be used for life. Notify blood transfusion department and issue patient alert card immediately.",
+      "Direct Coombs test required prior to starting treatment.",
+      "Fludarabine patients are at higher risk of fungal and atypical infections. Maintain high level of suspicion.",
+      "Co-trimoxazole prophylaxis must continue for 6 months after treatment completion or per CD4 count.",
+      "Irradiated blood products must always be used."
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "creatinine_clearance",
+      "direct_coombs_test"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "FC-PO-5DAY",
+    "protocol_name": "Cyclophosphamide-Fludarabine Oral 5-Day (FC PO)",
+    "disease_site": "Non-Hodgkin Lymphoma / CLL",
+    "category": "lymphoma",
+    "cycle_length_days": 28,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 150.0,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Once daily oral. Available as 50mg tablets; rounded to nearest 50mg. Take with breakfast, swallow whole with a full glass of water."
+      },
+      {
+        "drug_name": "Fludarabine",
+        "dose": 24.0,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Once daily oral. Available as 10mg tablets; rounded to nearest 10mg. Take with lunch, swallow whole with a full glass of water. Consider switching to IV version if severe nausea/vomiting."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1 x10⁹/L, 1st occurrence",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Delay until recovery then give 75%. Applies to both cyclophosphamide and fludarabine."
+      },
+      {
+        "condition": "Neutrophils <1 x10⁹/L, 1st occurrence",
+        "drug_name": "Fludarabine",
+        "factor": 0.75,
+        "notes": "Delay until recovery then give 75%."
+      },
+      {
+        "condition": "Neutrophils <1 x10⁹/L, 2nd occurrence",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Delay until recovery then give 50%."
+      },
+      {
+        "condition": "Neutrophils <1 x10⁹/L, 2nd occurrence",
+        "drug_name": "Fludarabine",
+        "factor": 0.5,
+        "notes": "Delay until recovery then give 50%."
+      },
+      {
+        "condition": "Platelets <75 x10⁹/L, 1st occurrence",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Delay until recovery then give 75%."
+      },
+      {
+        "condition": "Platelets <75 x10⁹/L, 1st occurrence",
+        "drug_name": "Fludarabine",
+        "factor": 0.75,
+        "notes": "Delay until recovery then give 75%."
+      },
+      {
+        "condition": "Platelets <75 x10⁹/L, 2nd occurrence",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Delay until recovery then give 50%."
+      },
+      {
+        "condition": "Platelets <75 x10⁹/L, 2nd occurrence",
+        "drug_name": "Fludarabine",
+        "factor": 0.5,
+        "notes": "Delay until recovery then give 50%."
+      },
+      {
+        "condition": "Renal impairment CrCl 10-20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75%."
+      },
+      {
+        "condition": "Renal impairment CrCl <10 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Reduce to 50%."
+      },
+      {
+        "condition": "Renal impairment CrCl 30-70 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.5,
+        "notes": "Reduce fludarabine to 50%."
+      },
+      {
+        "condition": "Renal impairment CrCl <30 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0,
+        "notes": "Omit fludarabine."
+      }
+    ],
+    "pre_medications": [
+      "Ondansetron 8mg oral twice daily for 7 days (take home, starting prior to first dose of oral chemotherapy)",
+      "Metoclopramide 10mg oral three times daily when required",
+      "Allopurinol 300mg oral once daily for first cycle only (28 days)",
+      "Aciclovir 400mg oral twice daily",
+      "Co-trimoxazole 960mg oral Monday/Wednesday/Friday (continued for 6 months after treatment completion or per CD4 count)"
+    ],
+    "special_warnings": [
+      "NPSA/2008/RRR001 oral chemotherapy alert must be followed when prescribing, dispensing or administering oral chemotherapy.",
+      "This is a short course of oral chemotherapy that must NOT be continued beyond prescribed days.",
+      "Patients treated with fludarabine carry a LIFELONG risk of TA-GVHD. Irradiated blood products must be used for life. Notify blood transfusion department and issue patient alert card immediately.",
+      "Direct Coombs test required prior to starting treatment.",
+      "Fludarabine patients are at higher risk of fungal and atypical infections. Maintain high level of suspicion.",
+      "Consider switching to IV version (FC IV 3-day) if severe nausea and vomiting occurs.",
+      "Patients should be assessed for suitability for oral chemotherapy prior to starting treatment.",
+      "Co-trimoxazole prophylaxis must continue for 6 months after treatment completion or per CD4 count."
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "creatinine_clearance",
+      "direct_coombs_test"
+    ],
+    "auc_dosing": null
+  }
+]

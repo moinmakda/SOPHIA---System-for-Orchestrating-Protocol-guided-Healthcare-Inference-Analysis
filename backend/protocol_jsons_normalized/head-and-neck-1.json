@@ -1,0 +1,2312 @@
+[
+  {
+    "protocol_id": "capecitabine-carboplatin-auc5-cetuximab",
+    "protocol_code": "CAP-CARB-CETU",
+    "protocol_name": "Capecitabine-Carboplatin (AUC5)-Cetuximab",
+    "category": "head-and-neck",
+    "indication": "The treatment of advanced head and neck cancer that has not been previously treated with cetuximab. WHO performance status 0, 1.",
+    "version": "1.2",
+    "cycle_length_days": 21,
+    "total_cycles": 6,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Capecitabine",
+        "dose": 1000,
+        "dose_unit": "mg/m\u00b2",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "frequency": "twice daily",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Start on the evening of day 1. Take with or after food. Total daily dose divided into two doses given twelve hours apart. Must not be continued beyond day 10. NPSA/2008/RRR001 must be followed.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Carboplatin",
+        "dose": 5,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 60,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 500,
+        "max_dose": 790,
+        "max_dose_unit": "mg",
+        "special_instructions": "Maximum dose capped at creatinine clearance 125ml/min. Internationally recommended maximum dose at AUC5 is 750mg; set at 790mg in ARIA to comply with national dose bands. AUC4 may be considered with EDTA clearance. Dose may need to be altered if renal function changes by more than 10% from previous cycle. An interval of 60 minutes should be left between administration of cetuximab and carboplatin.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Cetuximab",
+        "dose": 400,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 120,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "LOADING DOSE: Cycle 1, day 1 only. Rate must not exceed 5mg/min (minimum 120 minutes). An interval of 60 minutes must be left before carboplatin. Dose banded (5mg/ml).",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Cetuximab",
+        "dose": 250,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          8,
+          15
+        ],
+        "frequency": null,
+        "duration_minutes": 60,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "MAINTENANCE DOSE: Cycle 1 days 8 and 15; Cycle 2 onwards days 1, 8, 15. Well tolerated subsequent infusions may be given at 10mg/min (minimum 60 minutes). Cetuximab may be continued if disease is at least stable at end of 6 cycles until disease progression or toxicity. Cetuximab dose reductions are permanent.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "timing": "30 minutes prior to cetuximab infusion",
+        "indication": "Pre-medication for cetuximab hypersensitivity prophylaxis"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy on day 1 (also serves as cetuximab pre-medication)",
+        "indication": "Antiemetic and cetuximab pre-medication"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to SACT on day 1",
+        "indication": "Antiemetic"
+      },
+      {
+        "drug_name": "Paracetamol",
+        "dose": 1000,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "30 minutes prior to cetuximab infusion (max 4000mg/24 hours)",
+        "indication": "Cetuximab pre-medication"
+      },
+      {
+        "drug_name": "H2 antagonist",
+        "dose": null,
+        "dose_unit": null,
+        "route": "Oral",
+        "timing": "30 minutes prior to SACT (famotidine 20mg or nizatidine 150mg or ranitidine 150mg oral, or ranitidine 50mg IV)",
+        "indication": "Cetuximab pre-medication; according to local formulary choice and availability"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Capecitabine",
+        "dose": 1000,
+        "dose_unit": "mg/m\u00b2",
+        "route": "Oral",
+        "frequency": "twice daily for 10 days starting on evening of day 1 of cycle",
+        "indication": "Core oral SACT"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "twice daily (morning and lunch) for 3 days starting on day 2 of cycle",
+        "indication": "Antiemetic"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "three times a day when required",
+        "indication": "Antiemetic"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "neutrophils",
+        "condition": "< 1.5 x10\u2079/L on day 1",
+        "affected_drugs": [
+          "Capecitabine",
+          "Carboplatin"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "On day one if the neutrophils are less than 1.5x10\u2079/L in the first instance delay treatment for 7 days. If counts recover at this point continue at the initial dose. If counts remain low continue with treatment using a 20% dose reduction. If the myelosuppression recurs despite this dose reduction stop treatment."
+      },
+      {
+        "parameter": "platelets",
+        "condition": "< 100 x10\u2079/L on day 1",
+        "affected_drugs": [
+          "Capecitabine",
+          "Carboplatin"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "On day one if the platelets are less than 100x10\u2079/L in the first instance delay treatment for 7 days. If the counts recover at this point continue at the initial dose. If the counts still fall within this range continue using a 20% dose reduction."
+      },
+      {
+        "parameter": "platelets",
+        "condition": "< 50 x10\u2079/L",
+        "affected_drugs": [
+          "Capecitabine",
+          "Carboplatin"
+        ],
+        "action": "reduce_50",
+        "factor": 0.5,
+        "notes": "If the platelet level falls below 50x10\u2079/L reduce the dose by 50%."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "30-50 ml/min",
+        "affected_drugs": [
+          "Capecitabine"
+        ],
+        "action": "reduce_25",
+        "factor": 0.75,
+        "notes": "Capecitabine: CrCl 30-50ml/min give 75% of dose."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "< 30 ml/min",
+        "affected_drugs": [
+          "Capecitabine"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Capecitabine: CrCl less than 30ml/min - do not use."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "< 20 ml/min",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Carboplatin: CrCl less than 20ml/min - do not use. Changes in GFR of more than 10% between cycles may require dose adjustment."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "creatinine > 180 micromol/L (1.5xULN)",
+        "affected_drugs": [
+          "Cetuximab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Cetuximab: If the creatinine is more than 180 (1.5xULN), do not use. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC \u2014 this is not a standard chemotherapy dose reduction]"
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "> 1.5xULN or transaminases > 5xULN",
+        "affected_drugs": [
+          "Cetuximab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Cetuximab: Administer only when the transaminases are 5xULN or below and the bilirubin is 1.5xULN or below. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC \u2014 this is not a standard chemotherapy dose reduction]"
+      },
+      {
+        "parameter": "other",
+        "condition": "Capecitabine NCI-CTC Grade 2, 1st occurrence",
+        "affected_drugs": [
+          "Capecitabine"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Interrupt treatment until toxicity resolves to NCI-CTC grade 0-1 then continue at the same dose."
+      },
+      {
+        "parameter": "other",
+        "condition": "Capecitabine NCI-CTC Grade 2, 2nd occurrence",
+        "affected_drugs": [
+          "Capecitabine"
+        ],
+        "action": "reduce_25",
+        "factor": 0.75,
+        "notes": "Interrupt until grade 0-1 then resume at 75% of original dose."
+      },
+      {
+        "parameter": "other",
+        "condition": "Capecitabine NCI-CTC Grade 2, 3rd occurrence",
+        "affected_drugs": [
+          "Capecitabine"
+        ],
+        "action": "reduce_50",
+        "factor": 0.5,
+        "notes": "Interrupt until grade 0-1 then continue at 50% of original dose."
+      },
+      {
+        "parameter": "other",
+        "condition": "Capecitabine NCI-CTC Grade 2, 4th occurrence",
+        "affected_drugs": [
+          "Capecitabine"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Stop treatment if toxicity re-appears on a fourth instance."
+      },
+      {
+        "parameter": "other",
+        "condition": "Capecitabine NCI-CTC Grade 3, 1st occurrence",
+        "affected_drugs": [
+          "Capecitabine"
+        ],
+        "action": "reduce_25",
+        "factor": 0.75,
+        "notes": "Interrupt until grade 0-1 then continue using 75% of original dose with prophylaxis if appropriate."
+      },
+      {
+        "parameter": "other",
+        "condition": "Capecitabine NCI-CTC Grade 3, 2nd occurrence",
+        "affected_drugs": [
+          "Capecitabine"
+        ],
+        "action": "reduce_50",
+        "factor": 0.5,
+        "notes": "Interrupt until grade 0-1 then resume at 50% of original dose."
+      },
+      {
+        "parameter": "other",
+        "condition": "Capecitabine NCI-CTC Grade 3, 3rd occurrence",
+        "affected_drugs": [
+          "Capecitabine"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "If the same adverse effect develops on a third occasion discontinue capecitabine."
+      },
+      {
+        "parameter": "other",
+        "condition": "Capecitabine NCI-CTC Grade 4",
+        "affected_drugs": [
+          "Capecitabine"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discontinue treatment unless responsible consultant considers it in best interest of patient to continue at 50% once toxicity resolves to grade 0-1. When capecitabine stopped for toxicity doses are omitted, not delayed."
+      },
+      {
+        "parameter": "other",
+        "condition": "Cetuximab NCI-CTC grade 1 infusion reaction",
+        "affected_drugs": [
+          "Cetuximab"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Reduce infusion rate by 50%. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC \u2014 this is not a standard chemotherapy dose reduction]"
+      },
+      {
+        "parameter": "other",
+        "condition": "Cetuximab NCI-CTC grade 2 infusion reaction",
+        "affected_drugs": [
+          "Cetuximab"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Stop infusion; administer supportive therapies. Once resolved to grade 1 or below resume at 50% of previous rate. If second reaction on slower rate stop infusion and give no further treatment. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC \u2014 this is not a standard chemotherapy dose reduction]"
+      },
+      {
+        "parameter": "other",
+        "condition": "Cetuximab NCI-CTC grade 3 or 4 infusion reaction",
+        "affected_drugs": [
+          "Cetuximab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Stop infusion immediately and disconnect tubing. Administer appropriate supportive therapies. Once recovered patients should not receive cetuximab again. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC \u2014 this is not a standard chemotherapy dose reduction]"
+      },
+      {
+        "parameter": "other",
+        "condition": "Cetuximab NCI-CTC grade 3 skin toxicity (acneiform rash), 1st occurrence",
+        "affected_drugs": [
+          "Cetuximab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay until resolves to grade 2 or below. If within 14 days resume at same dose. If more than 14 days required stop treatment."
+      },
+      {
+        "parameter": "other",
+        "condition": "Cetuximab NCI-CTC grade 3 skin toxicity, 2nd occurrence",
+        "affected_drugs": [
+          "Cetuximab"
+        ],
+        "action": "reduce_50",
+        "factor": 0.5,
+        "notes": "Delay up to 14 days with concomitant dose reduction to 200mg/m\u00b2. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC \u2014 this is not a standard chemotherapy dose reduction]"
+      },
+      {
+        "parameter": "other",
+        "condition": "Cetuximab NCI-CTC grade 3 skin toxicity, 3rd occurrence",
+        "affected_drugs": [
+          "Cetuximab"
+        ],
+        "action": "reduce_50",
+        "factor": 0.375,
+        "notes": "Delay up to 14 days with concomitant dose reduction to 150mg/m\u00b2. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC \u2014 this is not a standard chemotherapy dose reduction]"
+      },
+      {
+        "parameter": "other",
+        "condition": "Cetuximab NCI-CTC grade 3 skin toxicity, 4th occurrence OR grade 4 at any time OR >2 consecutive infusions withheld",
+        "affected_drugs": [
+          "Cetuximab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Cetuximab must be discontinued if more than two consecutive infusions are withheld or a fourth episode of NCI-CTC grade 3 skin toxicity or a NCI-CTC grade 4 toxicity at any time. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC \u2014 this is not a standard chemotherapy dose reduction]"
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.5,
+      "platelets_min": 100,
+      "notes": "FBC, LFT's and U&E's prior to day one of treatment. Neutrophil equal to or more than 1.5x10\u2079/L and platelets equal to or more than 100x10\u2079/L required. Consider blood transfusion if patient symptomatic of anaemia or haemoglobin less than 8g/dL. All patients should be tested for DPD deficiency before initiation (cycle 1)."
+    },
+    "monitoring_requirements": [
+      "FBC, LFT's and U&E's prior to day one of treatment",
+      "Monitor for hypersensitivity reactions for 60 minutes after the end of the cetuximab infusion",
+      "All patients should be tested for DPD deficiency before initiation (cycle 1) to minimise the risk of severe and fatal toxicity"
+    ],
+    "special_warnings": [
+      "Patients with complete or partial DPD deficiency are at increased risk of severe and fatal toxicity with capecitabine. DPD testing is mandatory before cycle 1.",
+      "Acneiform skin rash occurs in over 70% of those receiving cetuximab, onset normally within three weeks. UV radiation may worsen skin reactions; sun safety practices should be followed during and for up to two months after end of treatment.",
+      "Stop treatment if there is a confirmed pneumonitis.",
+      "Consider stopping capecitabine therapy if chest pain occurs.",
+      "The NPSA/2008/RRR001 must be followed when prescribing, dispensing or administering oral chemotherapy.",
+      "Ensure the total daily dose of capecitabine is divided into two doses given twelve hours apart (first administered on evening of day 1). Serious toxicity has occurred where the total daily dose has been given twice a day.",
+      "It must be made clear to all staff including those in the community that this is a short course of oral chemotherapy that must not be continued beyond day 10.",
+      "Cetuximab loading dose (400mg/m\u00b2) cycle 1 day 1 minimum 120 minutes; maintenance (250mg/m\u00b2) weekly minimum 60 minutes. Rate must not exceed 5mg/min for first infusion; subsequent well-tolerated infusions may be given at 10mg/min.",
+      "Cetuximab dose reductions are permanent.",
+      "An interval of 60 minutes should be left between administration of cetuximab and carboplatin."
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 5,
+      "max_dose_mg": 790
+    },
+    "required_patient_fields": {
+      "weight_kg": true,
+      "height_cm": true,
+      "bsa_m2": true,
+      "creatinine_clearance_ml_min": true,
+      "dpd_status": true
+    },
+    "disease_site": "Head and Neck",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Capecitabine",
+        "dose": 1000,
+        "dose_unit": "mg/m\u00b2",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "frequency": "twice daily",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Start on the evening of day 1. Take with or after food. Total daily dose divided into two doses given twelve hours apart. Must not be continued beyond day 10. NPSA/2008/RRR001 must be followed.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "twice daily | Start on the evening of day 1. Take with or after food. Total daily dose divided into two doses given twelve hours apart. Must not be continued beyond day 10. NPSA/2008/RRR001 must be followed."
+      },
+      {
+        "drug_name": "Carboplatin",
+        "dose": 5,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 60,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 500,
+        "max_dose": 790,
+        "max_dose_unit": "mg",
+        "special_instructions": "Maximum dose capped at creatinine clearance 125ml/min. Internationally recommended maximum dose at AUC5 is 750mg; set at 790mg in ARIA to comply with national dose bands. AUC4 may be considered with EDTA clearance. Dose may need to be altered if renal function changes by more than 10% from previous cycle. An interval of 60 minutes should be left between administration of cetuximab and carboplatin.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "Maximum dose capped at creatinine clearance 125ml/min. Internationally recommended maximum dose at AUC5 is 750mg; set at 790mg in ARIA to comply with national dose bands. AUC4 may be considered with EDTA clearance. Dose may need to be altered if renal function changes by more than 10% from previous cycle. An interval of 60 minutes should be left between administration of cetuximab and carboplatin."
+      },
+      {
+        "drug_name": "Cetuximab",
+        "dose": 400,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 120,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "LOADING DOSE: Cycle 1, day 1 only. Rate must not exceed 5mg/min (minimum 120 minutes). An interval of 60 minutes must be left before carboplatin. Dose banded (5mg/ml).",
+        "is_core_drug": true,
+        "infusion_duration_hours": 2.0,
+        "notes": "LOADING DOSE: Cycle 1, day 1 only. Rate must not exceed 5mg/min (minimum 120 minutes). An interval of 60 minutes must be left before carboplatin. Dose banded (5mg/ml)."
+      },
+      {
+        "drug_name": "Cetuximab",
+        "dose": 250,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          8,
+          15
+        ],
+        "frequency": null,
+        "duration_minutes": 60,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "MAINTENANCE DOSE: Cycle 1 days 8 and 15; Cycle 2 onwards days 1, 8, 15. Well tolerated subsequent infusions may be given at 10mg/min (minimum 60 minutes). Cetuximab may be continued if disease is at least stable at end of 6 cycles until disease progression or toxicity. Cetuximab dose reductions are permanent.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "MAINTENANCE DOSE: Cycle 1 days 8 and 15; Cycle 2 onwards days 1, 8, 15. Well tolerated subsequent infusions may be given at 10mg/min (minimum 60 minutes). Cetuximab may be continued if disease is at least stable at end of 6 cycles until disease progression or toxicity. Cetuximab dose reductions are permanent."
+      }
+    ]
+  },
+  {
+    "protocol_id": "carboplatin-auc1-5-radiotherapy",
+    "protocol_code": "CARB-AUC1.5-RT",
+    "protocol_name": "Carboplatin (AUC1.5)-Radiotherapy",
+    "category": "head-and-neck",
+    "indication": "SCC of the head and neck in those who have received cisplatin-docetaxel-fluorouracil (TPF) as induction treatment. WHO performance status 0, 1, 2.",
+    "version": "1",
+    "cycle_length_days": 7,
+    "total_cycles": 7,
+    "treatment_intent": "curative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 1.5,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 30,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 250,
+        "max_dose": 225,
+        "max_dose_unit": "mg",
+        "special_instructions": "Maximum dose 225mg when using calculated creatinine clearance at AUC1.5. Capped at CrCl 125ml/min. Dose banded (10mg/ml). Radiotherapy should commence within one hour of the end of the carboplatin infusion.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "indication": "Antiemetic"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "indication": "Antiemetic"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "once daily for 2 days starting the day after chemotherapy",
+        "indication": "Antiemetic"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "three times a day oral as necessary",
+        "indication": "Antiemetic"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "neutrophils",
+        "condition": "< 1.5 x10\u2079/L",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay carboplatin until neutrophils are greater than or equal to 1.5x10\u2079/L. Continue radiotherapy during this time."
+      },
+      {
+        "parameter": "platelets",
+        "condition": "< 100 x10\u2079/L",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay chemotherapy until platelets are greater than or equal to 100x10\u2079/L. Continue radiotherapy during this time."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "< 20 ml/min",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Carboplatin: CrCl less than 20ml/min - Omit. Significant changes in GFR of more than 10% may require dose adjustment. If more than 30% change in serum creatinine during treatment perform an EDTA."
+      },
+      {
+        "parameter": "other",
+        "condition": "Non-haematological NCI-CTC grade 2, 1st occurrence",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Interrupt chemotherapy until resolved to NCI-CTC grade 1 or below. Resume at original dose. Continue radiotherapy regardless of any delays to carboplatin treatment."
+      },
+      {
+        "parameter": "other",
+        "condition": "Non-haematological NCI-CTC grade 2, 2nd occurrence",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "reduce_25",
+        "factor": 0.75,
+        "notes": "Resume at 75% of original dose."
+      },
+      {
+        "parameter": "other",
+        "condition": "Non-haematological NCI-CTC grade 2, 3rd occurrence",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "reduce_50",
+        "factor": 0.5,
+        "notes": "Resume at 50% of original dose."
+      },
+      {
+        "parameter": "other",
+        "condition": "Non-haematological NCI-CTC grade 2, 4th occurrence",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discontinue treatment."
+      },
+      {
+        "parameter": "other",
+        "condition": "Non-haematological NCI-CTC grade 3, 1st occurrence",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "reduce_25",
+        "factor": 0.75,
+        "notes": "Interrupt chemotherapy until resolved to NCI-CTC grade 1 or below. Resume at 75% of original dose."
+      },
+      {
+        "parameter": "other",
+        "condition": "Non-haematological NCI-CTC grade 3, 2nd occurrence",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "reduce_50",
+        "factor": 0.5,
+        "notes": "Resume at 50% of original dose."
+      },
+      {
+        "parameter": "other",
+        "condition": "Non-haematological NCI-CTC grade 3, 3rd occurrence",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discontinue treatment."
+      },
+      {
+        "parameter": "other",
+        "condition": "Non-haematological NCI-CTC grade 4",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discontinue treatment."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.5,
+      "platelets_min": 100,
+      "notes": "FBC, LFTs and U&Es (including magnesium) prior to each day 1 of treatment. EDTA or calculated creatinine clearance before the first cycle. Haemoglobin must be maintained above 12g/dL throughout treatment; consider blood transfusion if it falls below."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es (including magnesium) prior to each day 1 of treatment (day 1 is the day of chemo-radiotherapy)",
+      "EDTA or calculated creatinine clearance before the first cycle"
+    ],
+    "special_warnings": [
+      "Concurrent radiotherapy protocol: 7 day cycle for 6 to 7 cycles starting on the first day of radiotherapy (7 cycles will be set in ARIA).",
+      "Radiotherapy should commence within one hour of the end of the carboplatin infusion.",
+      "Continue radiotherapy regardless of any delays to carboplatin treatment.",
+      "Hypersensitivity reactions may occur within a few minutes following initiation of carboplatin infusion. Facilities for treatment of hypotension and bronchospasm must be available.",
+      "For minor hypersensitivity symptoms the infusion may be temporarily interrupted and restarted at a slower rate; chlorphenamine 10mg IV may be administered. Severe reactions require immediate discontinuation.",
+      "Gastric protection with a proton pump inhibitor or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed."
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 1.5,
+      "max_dose_mg": 225
+    },
+    "required_patient_fields": {
+      "weight_kg": true,
+      "height_cm": true,
+      "creatinine_clearance_ml_min": true
+    },
+    "disease_site": "Head and Neck",
+    "number_of_cycles": 7,
+    "drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 1.5,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 30,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 250,
+        "max_dose": 225,
+        "max_dose_unit": "mg",
+        "special_instructions": "Maximum dose 225mg when using calculated creatinine clearance at AUC1.5. Capped at CrCl 125ml/min. Dose banded (10mg/ml). Radiotherapy should commence within one hour of the end of the carboplatin infusion.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.5,
+        "notes": "Maximum dose 225mg when using calculated creatinine clearance at AUC1.5. Capped at CrCl 125ml/min. Dose banded (10mg/ml). Radiotherapy should commence within one hour of the end of the carboplatin infusion."
+      }
+    ]
+  },
+  {
+    "protocol_id": "carboplatin-auc2-radiotherapy",
+    "protocol_code": "CARB-AUC2-RT",
+    "protocol_name": "Carboplatin (AUC2)-Radiotherapy",
+    "category": "head-and-neck",
+    "indication": "SCC of the head and neck in those who have not received cisplatin-docetaxel-fluorouracil (TPF) as induction treatment. WHO performance status 0, 1, 2.",
+    "version": "1",
+    "cycle_length_days": 7,
+    "total_cycles": 5,
+    "treatment_intent": "curative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 2,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 30,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 250,
+        "max_dose": 300,
+        "max_dose_unit": "mg",
+        "special_instructions": "Maximum dose 300mg when using calculated creatinine clearance at AUC2. Capped at CrCl 125ml/min. Dose banded (10mg/ml). Radiotherapy should commence within one hour of the end of the carboplatin infusion.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "indication": "Antiemetic"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "indication": "Antiemetic"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "once daily for 2 days starting the day after chemotherapy",
+        "indication": "Antiemetic"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "three times a day oral as necessary",
+        "indication": "Antiemetic"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "neutrophils",
+        "condition": "< 1.5 x10\u2079/L",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay carboplatin until neutrophils are greater than or equal to 1.5x10\u2079/L. Continue radiotherapy during this time."
+      },
+      {
+        "parameter": "platelets",
+        "condition": "< 100 x10\u2079/L",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay chemotherapy until platelets are greater than or equal to 100x10\u2079/L. Continue radiotherapy during this time."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "< 20 ml/min",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Carboplatin: CrCl less than 20ml/min - Omit. Significant changes in GFR of more than 10% may require dose adjustment. If more than 30% change in serum creatinine during treatment perform an EDTA."
+      },
+      {
+        "parameter": "other",
+        "condition": "Non-haematological NCI-CTC grade 2, 1st occurrence",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Interrupt chemotherapy until resolved to NCI-CTC grade 1 or below. Resume at original dose. Continue radiotherapy regardless of any delays to carboplatin treatment."
+      },
+      {
+        "parameter": "other",
+        "condition": "Non-haematological NCI-CTC grade 2, 2nd occurrence",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "reduce_25",
+        "factor": 0.75,
+        "notes": "Resume at 75% of original dose."
+      },
+      {
+        "parameter": "other",
+        "condition": "Non-haematological NCI-CTC grade 2, 3rd occurrence",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "reduce_50",
+        "factor": 0.5,
+        "notes": "Resume at 50% of original dose."
+      },
+      {
+        "parameter": "other",
+        "condition": "Non-haematological NCI-CTC grade 2, 4th occurrence",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discontinue treatment."
+      },
+      {
+        "parameter": "other",
+        "condition": "Non-haematological NCI-CTC grade 3, 1st occurrence",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "reduce_25",
+        "factor": 0.75,
+        "notes": "Interrupt chemotherapy until resolved to NCI-CTC grade 1 or below. Resume at 75% of original dose."
+      },
+      {
+        "parameter": "other",
+        "condition": "Non-haematological NCI-CTC grade 3, 2nd occurrence",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "reduce_50",
+        "factor": 0.5,
+        "notes": "Resume at 50% of original dose."
+      },
+      {
+        "parameter": "other",
+        "condition": "Non-haematological NCI-CTC grade 3, 3rd occurrence",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discontinue treatment."
+      },
+      {
+        "parameter": "other",
+        "condition": "Non-haematological NCI-CTC grade 4",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discontinue treatment."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.5,
+      "platelets_min": 100,
+      "notes": "FBC, LFTs and U&Es (including magnesium) prior to each day 1 of treatment. EDTA or calculated creatinine clearance before the first cycle. Haemoglobin must be maintained above 12g/dL throughout treatment; consider blood transfusion if it falls below."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es (including magnesium) prior to each day 1 of treatment (day 1 is the day of chemo-radiotherapy)",
+      "EDTA or calculated creatinine clearance before the first cycle"
+    ],
+    "special_warnings": [
+      "Concurrent radiotherapy protocol: 7 day cycle for 5 cycles starting on the first day of radiotherapy.",
+      "Radiotherapy should commence within one hour of the end of the carboplatin infusion.",
+      "Continue radiotherapy regardless of any delays to carboplatin treatment.",
+      "Hypersensitivity reactions may occur within a few minutes following initiation of carboplatin infusion. Facilities for treatment of hypotension and bronchospasm must be available.",
+      "For minor hypersensitivity symptoms the infusion may be temporarily interrupted and restarted at a slower rate; chlorphenamine 10mg IV may be administered. Severe reactions require immediate discontinuation.",
+      "Gastric protection with a proton pump inhibitor or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed."
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 2,
+      "max_dose_mg": 300
+    },
+    "required_patient_fields": {
+      "weight_kg": true,
+      "height_cm": true,
+      "creatinine_clearance_ml_min": true
+    },
+    "disease_site": "Head and Neck",
+    "number_of_cycles": 5,
+    "drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 2,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 30,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 250,
+        "max_dose": 300,
+        "max_dose_unit": "mg",
+        "special_instructions": "Maximum dose 300mg when using calculated creatinine clearance at AUC2. Capped at CrCl 125ml/min. Dose banded (10mg/ml). Radiotherapy should commence within one hour of the end of the carboplatin infusion.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.5,
+        "notes": "Maximum dose 300mg when using calculated creatinine clearance at AUC2. Capped at CrCl 125ml/min. Dose banded (10mg/ml). Radiotherapy should commence within one hour of the end of the carboplatin infusion."
+      }
+    ]
+  },
+  {
+    "protocol_id": "carboplatin-auc5",
+    "protocol_code": "CARB-AUC5",
+    "protocol_name": "Carboplatin (AUC5)",
+    "category": "head-and-neck",
+    "indication": "Neoadjuvant (in combination with fluorouracil) and palliative treatment of squamous cell carcinoma of the head and neck. WHO performance status 0, 1, 2.",
+    "version": "1.1",
+    "cycle_length_days": 21,
+    "total_cycles": 6,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 5,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 60,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 500,
+        "max_dose": 790,
+        "max_dose_unit": "mg",
+        "special_instructions": "Maximum dose capped at CrCl 125ml/min. Internationally recommended maximum dose at AUC5 is 750mg; set at 790mg in ARIA to comply with national dose bands. AUC4 may be considered with EDTA clearance. Dose banded (10mg/ml). Dose may need to be altered if renal function changes by more than 10% from previous cycle.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to SACT",
+        "indication": "Antiemetic"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to SACT",
+        "indication": "Antiemetic"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "twice daily for 3 days starting on day 2 of cycle",
+        "indication": "Antiemetic"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "three times a day for 3 days then as required for nausea",
+        "indication": "Antiemetic"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "neutrophils",
+        "condition": "< 1 x10\u2079/L",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay for 7 days. If counts recover to 1x10\u2079/L or greater within this time continue with full dose. If counts do not recover within 7 days or repeated delays are required then delay until recovery then reduce dose by 20%."
+      },
+      {
+        "parameter": "platelets",
+        "condition": "50-99 x10\u2079/L",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay for 7 days. If counts recover to 100x10\u2079/L or greater within this time continue with full dose. If counts do not recover within 7 days or repeated delays are required then delay until recovery then reduce dose by 20%."
+      },
+      {
+        "parameter": "platelets",
+        "condition": "< 50 x10\u2079/L",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "reduce_50",
+        "factor": 0.5,
+        "notes": "Delay until recovery then reduce dose by 50%."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "< 20 ml/min",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Carboplatin: CrCl less than 20ml/min - Omit. Significant changes in GFR of more than 10% may require dose adjustment."
+      },
+      {
+        "parameter": "other",
+        "condition": "Non-haematological NCI-CTC grade 3 or above",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "delay",
+        "factor": 0.8,
+        "notes": "Delay treatment until adverse effect resolved to NCI-CTC grade 1 or below. Dose should then be reduced to 80% of original dose or discontinued as appropriate."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "FBC, LFTs and U&Es prior to each cycle. Neutrophil equal to or more than 1x10\u2079/L and platelets equal to or more than 100x10\u2079/L required. Consider blood transfusion if patient symptomatic of anaemia or haemoglobin less than 8g/dL."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to each cycle"
+    ],
+    "special_warnings": [
+      "Maximum dose of carboplatin for AUC5 is 750mg; set at 790mg in ARIA to comply with national dose bands.",
+      "Dose may need to be altered if renal function changes by more than 10% from the previous cycle.",
+      "Gastric protection with a proton pump inhibitor or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed."
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 5,
+      "max_dose_mg": 790
+    },
+    "required_patient_fields": {
+      "weight_kg": true,
+      "height_cm": true,
+      "creatinine_clearance_ml_min": true
+    },
+    "disease_site": "Head and Neck",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 5,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 60,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 500,
+        "max_dose": 790,
+        "max_dose_unit": "mg",
+        "special_instructions": "Maximum dose capped at CrCl 125ml/min. Internationally recommended maximum dose at AUC5 is 750mg; set at 790mg in ARIA to comply with national dose bands. AUC4 may be considered with EDTA clearance. Dose banded (10mg/ml). Dose may need to be altered if renal function changes by more than 10% from previous cycle.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "Maximum dose capped at CrCl 125ml/min. Internationally recommended maximum dose at AUC5 is 750mg; set at 790mg in ARIA to comply with national dose bands. AUC4 may be considered with EDTA clearance. Dose banded (10mg/ml). Dose may need to be altered if renal function changes by more than 10% from previous cycle."
+      }
+    ]
+  },
+  {
+    "protocol_id": "cetuximab-radiotherapy-7day",
+    "protocol_code": "CETU-RT-7D",
+    "protocol_name": "Cetuximab RT (7 day)",
+    "category": "head-and-neck",
+    "indication": "Cetuximab in combination with radiotherapy is recommended as a possible treatment for people with locally advanced squamous cell carcinoma of the head and neck where all forms of platinum based therapy are considered inappropriate. Karnofsky performance status of above 90%.",
+    "version": "1.1",
+    "cycle_length_days": 7,
+    "total_cycles": 8,
+    "treatment_intent": "curative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Cetuximab",
+        "dose": 400,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 120,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "LOADING DOSE: Cycle 1, day 1 only. Intravenous infusion over 120 minutes. Rate must not exceed 5mg/min. The first dose of cetuximab (cycle 1) may be started one week prior to radiotherapy starting. Cetuximab should be administered before radiotherapy when used concurrently. Dose banded (5mg/ml).",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Cetuximab",
+        "dose": 250,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 60,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "MAINTENANCE DOSE: Cycle 2 onwards, day 1 of each 7-day cycle. Intravenous infusion over 60 minutes. Rate must not exceed 10mg/min. 7 day cycle until intolerance or disease progression; number of cycles depends on diagnosis and radiotherapy fractionation (8 cycles set in ARIA). Cetuximab dose reductions are permanent.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "timing": "30 minutes prior to cetuximab infusion",
+        "indication": "Cetuximab hypersensitivity prophylaxis"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "30 minutes prior to cetuximab infusion",
+        "indication": "Cetuximab pre-medication"
+      },
+      {
+        "drug_name": "Paracetamol",
+        "dose": 1000,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "30 minutes prior to cetuximab infusion (max 4000mg/24 hours)",
+        "indication": "Cetuximab pre-medication"
+      },
+      {
+        "drug_name": "H2 antagonist",
+        "dose": null,
+        "dose_unit": null,
+        "route": "Oral",
+        "timing": "30 minutes prior to cetuximab infusion (famotidine 20mg or nizatidine 150mg or ranitidine 150mg oral, or ranitidine 50mg IV)",
+        "indication": "Cetuximab pre-medication; according to local formulary choice and availability"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "three times a day when required for nausea (supply day 1 cycle 1 only, then as required)",
+        "indication": "Antiemetic"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "neutrophils",
+        "condition": "< 1.5 x10\u2079/L on day 1 cycle 1",
+        "affected_drugs": [
+          "Cetuximab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Prior to prescribing on day one of cycle one the following criteria must be met: neutrophil equal to or more than 1.5x10\u2079/L."
+      },
+      {
+        "parameter": "platelets",
+        "condition": "< 100 x10\u2079/L on day 1 cycle 1",
+        "affected_drugs": [
+          "Cetuximab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Prior to prescribing on day one of cycle one the following criteria must be met: platelets equal to or more than 100x10\u2079/L."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "> 1.5xULN or transaminases > 5xULN",
+        "affected_drugs": [
+          "Cetuximab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Administer only when the transaminases are 5xULN or below and the bilirubin is 1.5xULN or below. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC \u2014 this is not a standard chemotherapy dose reduction]"
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "serum creatinine > 1.5xULN",
+        "affected_drugs": [
+          "Cetuximab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Administer only where the serum creatinine is 1.5xULN or below. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC \u2014 this is not a standard chemotherapy dose reduction]"
+      },
+      {
+        "parameter": "other",
+        "condition": "NCI-CTC grade 1 infusion reaction",
+        "affected_drugs": [
+          "Cetuximab"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Reduce infusion rate by 50% (total infusion time should not exceed 240 minutes). [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC \u2014 this is not a standard chemotherapy dose reduction]"
+      },
+      {
+        "parameter": "other",
+        "condition": "NCI-CTC grade 2 infusion reaction",
+        "affected_drugs": [
+          "Cetuximab"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Stop infusion; administer supportive therapies as indicated. Once reaction resolved to grade 1 or below resume infusion at 50% of the previous rate. If a second reaction occurs on the slower rate the infusion should be stopped and no further treatment given. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC \u2014 this is not a standard chemotherapy dose reduction]"
+      },
+      {
+        "parameter": "other",
+        "condition": "NCI-CTC grade 3 or 4 infusion reaction",
+        "affected_drugs": [
+          "Cetuximab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Stop infusion immediately and disconnect tubing from the patient. Administer appropriate supportive therapies. Once recovered, patients should not receive cetuximab again. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC \u2014 this is not a standard chemotherapy dose reduction]"
+      },
+      {
+        "parameter": "other",
+        "condition": "NCI-CTC grade 1-2 acneiform skin rash",
+        "affected_drugs": [
+          "Cetuximab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Use symptomatic treatments such as topical or oral antibiotics and continue with cetuximab."
+      },
+      {
+        "parameter": "other",
+        "condition": "NCI-CTC grade 3 skin toxicity, 1st occurrence",
+        "affected_drugs": [
+          "Cetuximab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay treatment until toxicity resolves to NCI-CTC grade 2 or below. If within 14 days resume at same dose. If more than 14 days required stop treatment."
+      },
+      {
+        "parameter": "other",
+        "condition": "NCI-CTC grade 3 skin toxicity, 2nd occurrence",
+        "affected_drugs": [
+          "Cetuximab"
+        ],
+        "action": "reduce_50",
+        "factor": 0.5,
+        "notes": "Delay up to 14 days with concomitant dose reduction to 200mg/m\u00b2. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC \u2014 this is not a standard chemotherapy dose reduction]"
+      },
+      {
+        "parameter": "other",
+        "condition": "NCI-CTC grade 3 skin toxicity, 3rd occurrence",
+        "affected_drugs": [
+          "Cetuximab"
+        ],
+        "action": "reduce_50",
+        "factor": 0.375,
+        "notes": "Delay up to 14 days with concomitant dose reduction to 150mg/m\u00b2. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC \u2014 this is not a standard chemotherapy dose reduction]"
+      },
+      {
+        "parameter": "other",
+        "condition": "NCI-CTC grade 3 skin toxicity 4th occurrence, or grade 4 at any time, or more than 2 consecutive infusions withheld",
+        "affected_drugs": [
+          "Cetuximab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Cetuximab must be discontinued if more than two consecutive infusions are withheld or a fourth episode of NCI-CTC grade 3 skin toxicity develops or a NCI-CTC grade 4 toxicity at any time. [VERIFIED: Cetuximab dose reduction is permitted for infusion-related reactions per MHRA SmPC \u2014 this is not a standard chemotherapy dose reduction]"
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.5,
+      "platelets_min": 100,
+      "notes": "FBC, LFT's and U&E's prior to day one of cycle one of treatment and every 6-8 weeks thereafter. Monitor for hypersensitivity reactions for 60 minutes after the end of the cetuximab infusion. Consider blood transfusion if haemoglobin less than 12g/dL."
+    },
+    "monitoring_requirements": [
+      "FBC, LFT's and U&E's prior to day one of cycle one of treatment and every 6-8 weeks thereafter",
+      "Monitor for hypersensitivity reactions for 60 minutes after the end of the cetuximab infusion"
+    ],
+    "special_warnings": [
+      "Concurrent radiotherapy protocol: 7 day cycle until intolerance or disease progression. Number of cycles depends on diagnosis and radiotherapy fractionation (8 cycles set in ARIA).",
+      "Cetuximab should be administered before radiotherapy when used concurrently.",
+      "The first dose of cetuximab (cycle 1) may be started one week prior to radiotherapy starting.",
+      "Acneiform skin rash occurs in over 70% of those receiving cetuximab; onset normally within three weeks, often resolves after week twelve.",
+      "UV radiation may worsen skin reactions. Sun safety practices should be followed during and for up to two months after end of treatment.",
+      "Stop treatment if there is a confirmed pneumonitis.",
+      "Cetuximab dose reductions are permanent.",
+      "Loading dose 400mg/m\u00b2 cycle 1 over minimum 120 minutes (rate not to exceed 5mg/min); maintenance 250mg/m\u00b2 weekly over minimum 60 minutes (rate not to exceed 10mg/min).",
+      "Once the rate has been reduced it should not be increased on subsequent infusions.",
+      "Gastric protection with a proton pump inhibitor or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "weight_kg": true,
+      "height_cm": true,
+      "bsa_m2": true,
+      "creatinine_umol_l": true
+    },
+    "disease_site": "Head and Neck",
+    "number_of_cycles": 8,
+    "drugs": [
+      {
+        "drug_name": "Cetuximab",
+        "dose": 400,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 120,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "LOADING DOSE: Cycle 1, day 1 only. Intravenous infusion over 120 minutes. Rate must not exceed 5mg/min. The first dose of cetuximab (cycle 1) may be started one week prior to radiotherapy starting. Cetuximab should be administered before radiotherapy when used concurrently. Dose banded (5mg/ml).",
+        "is_core_drug": true,
+        "infusion_duration_hours": 2.0,
+        "notes": "LOADING DOSE: Cycle 1, day 1 only. Intravenous infusion over 120 minutes. Rate must not exceed 5mg/min. The first dose of cetuximab (cycle 1) may be started one week prior to radiotherapy starting. Cetuximab should be administered before radiotherapy when used concurrently. Dose banded (5mg/ml)."
+      },
+      {
+        "drug_name": "Cetuximab",
+        "dose": 250,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 60,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "MAINTENANCE DOSE: Cycle 2 onwards, day 1 of each 7-day cycle. Intravenous infusion over 60 minutes. Rate must not exceed 10mg/min. 7 day cycle until intolerance or disease progression; number of cycles depends on diagnosis and radiotherapy fractionation (8 cycles set in ARIA). Cetuximab dose reductions are permanent.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "MAINTENANCE DOSE: Cycle 2 onwards, day 1 of each 7-day cycle. Intravenous infusion over 60 minutes. Rate must not exceed 10mg/min. 7 day cycle until intolerance or disease progression; number of cycles depends on diagnosis and radiotherapy fractionation (8 cycles set in ARIA). Cetuximab dose reductions are permanent."
+      }
+    ]
+  },
+  {
+    "protocol_id": "cisplatin-100-rt-21-day",
+    "protocol_code": "CISP100-RT-21D",
+    "protocol_name": "Cisplatin (100) RT (21 day)",
+    "category": "head-and-neck",
+    "indication": "Radical treatment of squamous cell carcinoma of the head and neck.",
+    "version": "1",
+    "cycle_length_days": 21,
+    "total_cycles": 2,
+    "treatment_intent": "curative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Cisplatin",
+        "dose": 100,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 120,
+        "diluent": "Sodium Chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Infusion in 1000ml sodium chloride 0.9% with 20mmol potassium chloride at a maximum rate of 1mg cisplatin/min (minimum time 120 minutes). Dose banded according to CSCCN agreed bands. Requires pre and post hydration with 1000ml NaCl 0.9% with 20mmol KCl and 16mmol MgSO4 over 60 minutes each.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Aprepitant",
+        "dose": 125,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy on day 1",
+        "indication": "Antiemetic (NK1 antagonist)"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy on day 1",
+        "indication": "Antiemetic"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy on day 1",
+        "indication": "Antiemetic"
+      },
+      {
+        "drug_name": "Furosemide",
+        "dose": 40,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "Pre-hydration",
+        "indication": "Diuresis prior to cisplatin"
+      },
+      {
+        "drug_name": "Sodium Chloride 0.9% with 20mmol KCl and 16mmol MgSO4",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Pre-hydration over 60 minutes",
+        "indication": "Cisplatin pre-hydration"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Aprepitant",
+        "dose": 80,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "once daily for two days starting on day two of the cycle",
+        "indication": "Antiemetic"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "once daily for three days starting on day two of the cycle",
+        "indication": "Antiemetic"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "twice daily for three days starting on the evening of day one of the cycle",
+        "indication": "Antiemetic"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "three times a day when required",
+        "indication": "Antiemetic"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "neutrophils",
+        "condition": "< 1.5 x10\u2079/L",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Eligible level: neutrophils 1.5x10\u2079/L or greater required prior to treatment. Consider blood transfusion if haemoglobin less than 12g/dL."
+      },
+      {
+        "parameter": "platelets",
+        "condition": "< 100 x10\u2079/L",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Eligible level: platelets 100x10\u2079/L or greater required prior to treatment."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "< 50 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "CrCl less than 50ml/min: consider dose reduction or stopping. CrCl more than 50ml/min: 100% dose."
+      },
+      {
+        "parameter": "other",
+        "condition": "Peripheral sensory/motor neurotoxicity, ototoxicity or nephrotoxicity NCI-CTC grade 3 or more",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Modifications in the dose of cisplatin are necessary for peripheral sensory and motor neurotoxicity, ototoxicity, or nephrotoxicity. Consider stopping treatment for patients with neurotoxicity or ototoxicity of NCI-CTC grade 3 or more."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.5,
+      "platelets_min": 100,
+      "notes": "FBC, LFTs and U&Es prior to each cycle. Concurrent radiotherapy protocol: 2 cycles of 21 days. Patients should be advised to drink at least 3 litres of fluid in the 24 hours after cisplatin administration."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to each cycle"
+    ],
+    "special_warnings": [
+      "Concurrent radiotherapy protocol: 2 cycles of 21 days.",
+      "Cisplatin requires pre and post hydration: furosemide 40mg + 1000ml NaCl 0.9% with 20mmol KCl and 16mmol MgSO4 over 60 minutes pre; 1000ml NaCl 0.9% with 20mmol KCl and 16mmol MgSO4 over 60 minutes post.",
+      "Patients should be advised to drink at least 3 litres of fluid in the 24 hours after administration of cisplatin.",
+      "Modifications in dose of cisplatin are necessary for peripheral sensory and motor neurotoxicity, ototoxicity, or nephrotoxicity.",
+      "Gastric protection with a proton pump inhibitor or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "weight_kg": true,
+      "height_cm": true,
+      "bsa_m2": true,
+      "creatinine_clearance_ml_min": true
+    },
+    "disease_site": "Head and Neck",
+    "number_of_cycles": 2,
+    "drugs": [
+      {
+        "drug_name": "Cisplatin",
+        "dose": 100,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 120,
+        "diluent": "Sodium Chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Infusion in 1000ml sodium chloride 0.9% with 20mmol potassium chloride at a maximum rate of 1mg cisplatin/min (minimum time 120 minutes). Dose banded according to CSCCN agreed bands. Requires pre and post hydration with 1000ml NaCl 0.9% with 20mmol KCl and 16mmol MgSO4 over 60 minutes each.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 2.0,
+        "notes": "Infusion in 1000ml sodium chloride 0.9% with 20mmol potassium chloride at a maximum rate of 1mg cisplatin/min (minimum time 120 minutes). Dose banded according to CSCCN agreed bands. Requires pre and post hydration with 1000ml NaCl 0.9% with 20mmol KCl and 16mmol MgSO4 over 60 minutes each."
+      }
+    ]
+  },
+  {
+    "protocol_id": "cisplatin-75-docetaxel-75-fluorouracil-4000",
+    "protocol_code": "TPF",
+    "protocol_name": "Cisplatin(75)-Docetaxel(75)-Fluorouracil(4000)",
+    "category": "head-and-neck",
+    "indication": "Advanced squamous cell carcinoma of the head and neck.",
+    "version": "1.1",
+    "cycle_length_days": 21,
+    "total_cycles": 4,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Docetaxel",
+        "dose": 75,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 60,
+        "diluent": "Sodium Chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Infusion in 250ml sodium chloride 0.9% over 60 minutes. Dose banded (20mg/ml). Doses more than 200mg must be diluted in 500ml NaCl 0.9% (max concentration 0.74mg/ml). Given before cisplatin.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Cisplatin",
+        "dose": 75,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 120,
+        "diluent": "Sodium Chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Infusion in 1000ml sodium chloride 0.9% with 20mmol potassium chloride at maximum rate 1mg cisplatin/min (minimum time 120 minutes). Dose banded (1mg/ml). Requires pre and post hydration.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 1000,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": null,
+        "duration_minutes": 5760,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Total dose 4000mg/m\u00b2 given as continuous intravenous infusion over 96 hours (days 1-4). Dose banded (50mg/ml). A central or PICC line is recommended. Given as continuous infusion of 1000mg/m\u00b2/day.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "Day minus 1: twice daily (docetaxel premedication - from TTO supply)",
+        "indication": "Docetaxel premedication to reduce fluid retention and hypersensitivity"
+      },
+      {
+        "drug_name": "Aprepitant",
+        "dose": 125,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "Day 1: 15-30 minutes prior to chemotherapy",
+        "indication": "Antiemetic"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "Day 1 (from TTO supply, serves as docetaxel premedication and antiemetic)",
+        "indication": "Antiemetic and docetaxel premedication"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "Day 1: 15-30 minutes prior to chemotherapy",
+        "indication": "Antiemetic"
+      },
+      {
+        "drug_name": "Furosemide",
+        "dose": 40,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "Day 1 pre-hydration",
+        "indication": "Diuresis prior to cisplatin"
+      },
+      {
+        "drug_name": "Sodium Chloride 0.9% with 20mmol KCl and 16mmol MgSO4",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Day 1 pre-hydration over 60 minutes",
+        "indication": "Cisplatin pre-hydration"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Aprepitant",
+        "dose": 80,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "once daily for two days starting on day two of cycle",
+        "indication": "Antiemetic"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "twice daily day before, once daily day of and day after docetaxel (docetaxel premedication)",
+        "indication": "Docetaxel premedication and antiemetic"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "twice daily for five days starting on evening of day one of cycle",
+        "indication": "Antiemetic"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "three times a day when required",
+        "indication": "Antiemetic"
+      },
+      {
+        "drug_name": "Ciprofloxacin",
+        "dose": 500,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "twice daily for 10 days starting on day 5 of cycle",
+        "indication": "Antibacterial prophylaxis"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "neutrophils",
+        "condition": "< 1.5 x10\u2079/L",
+        "affected_drugs": [
+          "Cisplatin",
+          "Docetaxel",
+          "Fluorouracil"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Defer treatment for 7 days. If counts have recovered to 1.5x10\u2079/L or greater at 7 days resume treatment. Consider using a 75% dose reduction. If counts do not recover delay a further seven days. If satisfactory at 14 days treatment can be re-started using a 50% dose reduction."
+      },
+      {
+        "parameter": "platelets",
+        "condition": "< 100 x10\u2079/L",
+        "affected_drugs": [
+          "Cisplatin",
+          "Docetaxel",
+          "Fluorouracil"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Defer treatment for 7 days. If counts have recovered to 100x10\u2079/L or greater at 7 days resume treatment. Consider using a 75% dose reduction. If counts do not recover delay a further seven days. If satisfactory at 14 days treatment can be re-started using a 50% dose reduction."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "Docetaxel: AST/ALT >= 1.5xULN with Alk Phos >= 2.5xULN",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "reduce_25",
+        "factor": 0.75,
+        "notes": "Docetaxel: AST/ALT 1.5xULN or greater with Alk Phos 2.5xULN or greater: give 75%."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "Docetaxel: bilirubin > ULN OR AST/ALT >= 3.5xULN with Alk Phos >= 6xULN",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Docetaxel: bilirubin greater than ULN or AST/ALT 3.5xULN or greater with Alk Phos 6xULN or greater: not recommended."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "Fluorouracil: bilirubin < 85 umol/L and AST/ALT < 180 units",
+        "affected_drugs": [
+          "Fluorouracil"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Fluorouracil: Bilirubin less than 85 umol/L and AST/ALT less than 180 units: give 100%."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "Fluorouracil: bilirubin > 85 umol/L and AST/ALT > 180 units",
+        "affected_drugs": [
+          "Fluorouracil"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Fluorouracil: Bilirubin more than 85 umol/L and AST/ALT more than 180 units: contra-indicated."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "45-59 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "reduce_25",
+        "factor": 0.75,
+        "notes": "Cisplatin: CrCl 45-59ml/min: give 75% dose."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "< 45 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Cisplatin: CrCl less than 45ml/min: consider carboplatin."
+      },
+      {
+        "parameter": "other",
+        "condition": "NCI-CTC grade 3 or more toxicity",
+        "affected_drugs": [
+          "Cisplatin",
+          "Docetaxel",
+          "Fluorouracil"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay up to two weeks to allow reduction to NCI-CTC grade 1 or less (except alopecia, fatigue, malaise, nail changes). Delays beyond two weeks require discontinuation of chemotherapy."
+      },
+      {
+        "parameter": "other",
+        "condition": "Neurotoxicity or ototoxicity NCI-CTC grade 3 or more (cisplatin)",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Modifications in the dose of cisplatin are necessary for peripheral sensory and motor neurotoxicity, ototoxicity, or nephrotoxicity. Consider stopping treatment for patients with neurotoxicity or ototoxicity of NCI-CTC grade 3 or more."
+      },
+      {
+        "parameter": "other",
+        "condition": "NCI-CTC grade 3 cutaneous toxicity on day 1 (docetaxel)",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "delay",
+        "factor": 0.8,
+        "notes": "Delay docetaxel until resolves to grade 1 or below. Reduce subsequent doses from 75mg/m\u00b2 to 60mg/m\u00b2. If occurs with 60mg/m\u00b2 or no recovery after two weeks stop docetaxel. Grade 4 cutaneous toxicity: stop docetaxel."
+      },
+      {
+        "parameter": "other",
+        "condition": "Excessive lacrimation (docetaxel cumulative dose >400mg/m\u00b2)",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "reduce_25",
+        "factor": 0.8,
+        "notes": "If ocular irritation continues reduce docetaxel dose to 60mg/m\u00b2. Hypromellose 0.3% eye drops four times a day may help symptomatically."
+      },
+      {
+        "parameter": "other",
+        "condition": "Mucositis or diarrhoea (fluorouracil)",
+        "affected_drugs": [
+          "Fluorouracil"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Modifications in the dose of fluorouracil are necessary for mucositis and diarrhoea."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.5,
+      "platelets_min": 100,
+      "notes": "FBC, LFTs and U&Es prior to each cycle. DPD testing required before cycle 1. Consider blood transfusion if haemoglobin less than 8g/dL. Patients should drink at least 3 litres of fluid in 24 hours after cisplatin."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to each cycle",
+      "All patients should be tested for DPD deficiency before initiation (cycle 1)"
+    ],
+    "special_warnings": [
+      "21 day cycle for 4 cycles.",
+      "DPD testing mandatory before cycle 1 for fluorouracil.",
+      "Fluorouracil is given as a continuous infusion over 96 hours. A central or PICC line is recommended.",
+      "Cisplatin requires pre and post hydration: furosemide 40mg + 1000ml NaCl 0.9% with 20mmol KCl and 16mmol MgSO4 over 60 minutes each.",
+      "Patients should be advised to drink at least 3 litres of fluid in the 24 hours after administration of cisplatin.",
+      "Docetaxel premedication: dexamethasone 8mg twice daily the day before, once daily on the day of and the day after docetaxel.",
+      "Growth factor support required: filgrastim or bioequivalent 30mU SC once daily for 7 days starting day 5, or lenograstim 33.6mU SC once daily for 7 days from day 5, or pegfilgrastim 6mg SC once on day 2.",
+      "Ciprofloxacin 500mg twice daily for 10 days from day 5 as antibacterial prophylaxis.",
+      "Docetaxel hypersensitivity reactions tend to occur with first or second infusion; for severe reactions discontinue immediately.",
+      "Loperamide 4mg after first loose stool then 2-4mg four times a day for diarrhoea (maximum 16mg/24 hours).",
+      "Mouthwashes as per local or national guidelines.",
+      "Gastric protection with a proton pump inhibitor or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "weight_kg": true,
+      "height_cm": true,
+      "bsa_m2": true,
+      "creatinine_clearance_ml_min": true,
+      "dpd_status": true
+    },
+    "disease_site": "Head and Neck",
+    "number_of_cycles": 4,
+    "drugs": [
+      {
+        "drug_name": "Docetaxel",
+        "dose": 75,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 60,
+        "diluent": "Sodium Chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Infusion in 250ml sodium chloride 0.9% over 60 minutes. Dose banded (20mg/ml). Doses more than 200mg must be diluted in 500ml NaCl 0.9% (max concentration 0.74mg/ml). Given before cisplatin.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "Infusion in 250ml sodium chloride 0.9% over 60 minutes. Dose banded (20mg/ml). Doses more than 200mg must be diluted in 500ml NaCl 0.9% (max concentration 0.74mg/ml). Given before cisplatin."
+      },
+      {
+        "drug_name": "Cisplatin",
+        "dose": 75,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 120,
+        "diluent": "Sodium Chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Infusion in 1000ml sodium chloride 0.9% with 20mmol potassium chloride at maximum rate 1mg cisplatin/min (minimum time 120 minutes). Dose banded (1mg/ml). Requires pre and post hydration.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 2.0,
+        "notes": "Infusion in 1000ml sodium chloride 0.9% with 20mmol potassium chloride at maximum rate 1mg cisplatin/min (minimum time 120 minutes). Dose banded (1mg/ml). Requires pre and post hydration."
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 1000,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": null,
+        "duration_minutes": 5760,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Total dose 4000mg/m\u00b2 given as continuous intravenous infusion over 96 hours (days 1-4). Dose banded (50mg/ml). A central or PICC line is recommended. Given as continuous infusion of 1000mg/m\u00b2/day.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 96.0,
+        "notes": "Total dose 4000mg/m\u00b2 given as continuous intravenous infusion over 96 hours (days 1-4). Dose banded (50mg/ml). A central or PICC line is recommended. Given as continuous infusion of 1000mg/m\u00b2/day."
+      }
+    ]
+  },
+  {
+    "protocol_id": "cisplatin-fluorouracil",
+    "protocol_code": "CISP-FU",
+    "protocol_name": "Cisplatin-Fluorouracil",
+    "category": "head-and-neck",
+    "indication": "Neoadjuvant and palliative treatment of squamous cell carcinoma of the head and neck.",
+    "version": "1.1",
+    "cycle_length_days": 21,
+    "total_cycles": 6,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Cisplatin",
+        "dose": 100,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 120,
+        "diluent": "Sodium Chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Infusion in 1000ml sodium chloride 0.9% with 20mmol potassium chloride at a maximum rate of 1mg cisplatin/min (minimum time 120 minutes). Dose banded (1mg/ml). Requires pre and post hydration.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 4000,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 5760,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Total dose 4000mg/m\u00b2 as intravenous infusion over 96 hours starting day 1. Dose banded (50mg/ml). A central or PICC line is recommended.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Aprepitant",
+        "dose": 125,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "Day 1: 15-30 minutes prior to chemotherapy",
+        "indication": "Antiemetic (NK1 antagonist)"
+      },
+      {
+        "drug_name": "Aprepitant",
+        "dose": 80,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "Days 2 and 3 oral",
+        "indication": "Antiemetic continuation"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "Day 1: 15-30 minutes prior to chemotherapy",
+        "indication": "Antiemetic"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "Day 1: twice daily for 3 days",
+        "indication": "Antiemetic"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "Day 1: three times a day when required",
+        "indication": "Antiemetic"
+      },
+      {
+        "drug_name": "Furosemide",
+        "dose": 40,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "Pre-hydration on day 1",
+        "indication": "Diuresis prior to cisplatin"
+      },
+      {
+        "drug_name": "Sodium Chloride 0.9% with 20mmol KCl and 16mmol MgSO4",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Pre-hydration over 60 minutes on day 1",
+        "indication": "Cisplatin pre-hydration"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Aprepitant",
+        "dose": 80,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "once daily for two days starting on day two of the cycle",
+        "indication": "Antiemetic"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "once daily for three days starting on day two of the cycle",
+        "indication": "Antiemetic"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "twice daily for three days starting on the evening of day one of the cycle",
+        "indication": "Antiemetic"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "three times a day when required",
+        "indication": "Antiemetic"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "neutrophils",
+        "condition": "< 1.5 x10\u2079/L",
+        "affected_drugs": [
+          "Cisplatin",
+          "Fluorouracil"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Defer treatment for 7 days. If counts have recovered to 1.5x10\u2079/L or greater at 7 days resume treatment. Consider using a 75% dose reduction. If counts do not recover delay a further seven days. If satisfactory at 14 days treatment can be re-started using a 50% dose reduction."
+      },
+      {
+        "parameter": "platelets",
+        "condition": "< 100 x10\u2079/L",
+        "affected_drugs": [
+          "Cisplatin",
+          "Fluorouracil"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Defer treatment for 7 days. If counts have recovered to 100x10\u2079/L or greater at 7 days resume treatment. Consider using a 75% dose reduction. If counts do not recover delay a further seven days. If satisfactory at 14 days treatment can be re-started using a 50% dose reduction."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "Fluorouracil: bilirubin < 85 umol/L and AST/ALT < 180 units",
+        "affected_drugs": [
+          "Fluorouracil"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Fluorouracil: Bilirubin less than 85 umol/L and AST/ALT less than 180 units: give 100%."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "Fluorouracil: bilirubin > 85 umol/L and AST/ALT > 180 units",
+        "affected_drugs": [
+          "Fluorouracil"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Fluorouracil: Bilirubin more than 85 umol/L and AST/ALT more than 180 units: contra-indicated."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "45-59 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "reduce_25",
+        "factor": 0.75,
+        "notes": "Cisplatin: CrCl 45-59ml/min: give 75% dose."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "< 45 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Cisplatin: CrCl less than 45ml/min: consider carboplatin."
+      },
+      {
+        "parameter": "other",
+        "condition": "NCI-CTC grade 3 or more toxicity",
+        "affected_drugs": [
+          "Cisplatin",
+          "Fluorouracil"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay up to two weeks to allow reduction to NCI-CTC grade 1 or less (except alopecia, fatigue, malaise, nail changes). Delays beyond two weeks require discontinuation of chemotherapy."
+      },
+      {
+        "parameter": "other",
+        "condition": "Neurotoxicity or ototoxicity NCI-CTC grade 3 or more (cisplatin)",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Modifications in the dose of cisplatin are necessary for peripheral sensory and motor neurotoxicity, ototoxicity, or nephrotoxicity. Consider stopping treatment for patients with neurotoxicity or ototoxicity of NCI-CTC grade 3 or more."
+      },
+      {
+        "parameter": "other",
+        "condition": "Mucositis or diarrhoea (fluorouracil)",
+        "affected_drugs": [
+          "Fluorouracil"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Modifications in the dose of fluorouracil are necessary for mucositis and diarrhoea."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.5,
+      "platelets_min": 100,
+      "notes": "FBC, LFTs and U&Es prior to each cycle. DPD testing required before cycle 1. Consider blood transfusion if haemoglobin less than 8g/dL. Neoadjuvant: 2 cycles prior to radiotherapy; Palliative: 6 cycles set in ARIA."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to each cycle",
+      "All patients should be tested for DPD deficiency before initiation (cycle 1)"
+    ],
+    "special_warnings": [
+      "Neoadjuvant: 2 cycles prior to radiotherapy. Palliative: 6 cycles. 6 cycles will be set in ARIA.",
+      "DPD testing mandatory before cycle 1 for fluorouracil.",
+      "Fluorouracil is given as a continuous infusion over 96 hours. A central or PICC line is recommended.",
+      "Cisplatin requires pre and post hydration: furosemide 40mg + 1000ml NaCl 0.9% with 20mmol KCl and 16mmol MgSO4 over 60 minutes each.",
+      "Patients should be advised to drink at least 3 litres of fluid in the 24 hours after administration of cisplatin.",
+      "Modifications in dose of cisplatin are necessary for peripheral sensory and motor neurotoxicity, ototoxicity, or nephrotoxicity.",
+      "Loperamide 4mg after first loose stool then 2-4mg four times a day for diarrhoea (maximum 16mg/24 hours).",
+      "Mouthwashes as per local or national guidelines.",
+      "Gastric protection with a proton pump inhibitor or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "weight_kg": true,
+      "height_cm": true,
+      "bsa_m2": true,
+      "creatinine_clearance_ml_min": true,
+      "dpd_status": true
+    },
+    "disease_site": "Head and Neck",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Cisplatin",
+        "dose": 100,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 120,
+        "diluent": "Sodium Chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Infusion in 1000ml sodium chloride 0.9% with 20mmol potassium chloride at a maximum rate of 1mg cisplatin/min (minimum time 120 minutes). Dose banded (1mg/ml). Requires pre and post hydration.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 2.0,
+        "notes": "Infusion in 1000ml sodium chloride 0.9% with 20mmol potassium chloride at a maximum rate of 1mg cisplatin/min (minimum time 120 minutes). Dose banded (1mg/ml). Requires pre and post hydration."
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 4000,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 5760,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Total dose 4000mg/m\u00b2 as intravenous infusion over 96 hours starting day 1. Dose banded (50mg/ml). A central or PICC line is recommended.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 96.0,
+        "notes": "Total dose 4000mg/m\u00b2 as intravenous infusion over 96 hours starting day 1. Dose banded (50mg/ml). A central or PICC line is recommended. [VERIFIED: 5-FU 4000mg/m\u00b2 in cisplatin-5FU head and neck is a recognised regimen (96-120h infusion) \u2014 verify 4-day vs 5-day infusion against source PDF]"
+      }
+    ]
+  }
+]

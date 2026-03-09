@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { Header } from './components/Header';
 import { ProtocolBrowser } from './components/ProtocolBrowser';
 import { PatientForm } from './components/PatientForm';
 import { DrugSelector } from './components/DrugSelector';
 import { FlexibleProtocolBuilder } from './components/FlexibleProtocolBuilder';
 import { ProtocolDisplay } from './components/ProtocolDisplay';
-import { AdminPanel } from './components/AdminPanel';
 import { api } from './utils/api';
 import './App.css';
 
@@ -59,7 +59,6 @@ function App() {
   const [step, setStep] = useState(1); // 1: Select Protocol, 2: Patient Data, 3: Drug Selection, 4: Review
   const [useFlexibleBuilder, setUseFlexibleBuilder] = useState(false);
   const [customDrugSelection, setCustomDrugSelection] = useState(null);
-  const [showAdmin, setShowAdmin] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState(null);
 
@@ -294,7 +293,7 @@ function App() {
 
   return (
     <div className="app">
-      <Header onReset={resetForm} onAdminOpen={() => setShowAdmin(true)} />
+      <Header onReset={resetForm} />
       
       <main className="main-content">
         {error && (
@@ -495,12 +494,6 @@ function App() {
         )}
       </main>
 
-      {showAdmin && (
-        <AdminPanel
-          onClose={() => setShowAdmin(false)}
-          onProtocolIngested={() => loadProtocols(searchTerm || null, selectedCategory)}
-        />
-      )}
     </div>
   );
 }

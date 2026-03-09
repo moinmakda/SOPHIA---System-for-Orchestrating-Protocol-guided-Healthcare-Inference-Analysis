@@ -1,0 +1,3111 @@
+[
+  {
+    "protocol_id": "dvd-weekly-bortezomib-daratumumab-dexamethasone-cycles-9-onwards",
+    "protocol_code": "DVd-Weekly-C9+",
+    "protocol_name": "DVd (weekly) Bortezomib-Daratumumab-Dexamethasone (cycles 9 onwards)",
+    "category": "myeloma",
+    "indication": "Daratumumab in combination with bortezomib and dexamethasone is recommended for use within the Cancer Drugs Fund as an option for treating relapsed multiple myeloma in people who have had 1 previous treatment. This weekly bortezomib regimen is for patients who experience neuropathy or those with pre-existing neuropathy.",
+    "version": "1",
+    "cycle_length_days": 28,
+    "total_cycles": null,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Bortezomib",
+        "dose": 1.3,
+        "dose_unit": "mg/m²",
+        "route": "Subcutaneous",
+        "days": [
+          1,
+          8,
+          15,
+          22
+        ],
+        "frequency": "weekly",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Cycles 9 and 10 only. Weekly bortezomib continuation phase (cycles 9 onwards). Both twice-weekly and weekly regimens include 32 doses total; bortezomib continues to end of cycle 10 in weekly regimen. Dose banded per national dose bands (2.5).",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Daratumumab",
+        "dose": 16,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "every 28 days",
+        "duration_minutes": null,
+        "diluent": "sodium chloride 0.9%",
+        "diluent_volume_ml": 500,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Cycles 9 and 10: day 1 only. Cycle 11 onwards: day 1 only (daratumumab monotherapy). Prescribed per national dose bands (20 NS). Continue until disease progression. Use PES filter (0.22 or 0.2 micrometre). Rapid infusion protocol available from 3rd infusion onwards if criteria met (90 min total). Inform blood transfusion before first administration. Daratumumab binds CD38 on RBCs - patient requires red cell phenotyping.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1
+        ],
+        "frequency": "day 1 of each cycle",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Cycles 9 and 10: 20mg day 1 (pre-daratumumab, reduce to 10mg in over 75s). Can be given as IV bolus equivalent. Additional dexamethasone 20mg oral on days 2, 8, 9, 15, 16, 22, 23 (reduce to 10mg in over 75s). Cycle 11 onwards: 20mg day 1 pre-daratumumab; 4mg days 2 and 3 to reduce delayed infusion reactions.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "timing": "1-3 hours before daratumumab",
+        "indication": "Pre-medication for daratumumab infusion related reaction prevention"
+      },
+      {
+        "drug_name": "Paracetamol",
+        "dose": 1000,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "1-3 hours before daratumumab",
+        "indication": "Pre-medication for daratumumab infusion related reaction prevention. Max 4000mg/24 hours."
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "Days 2, 8, 9, 15, 16, 22, 23 (cycles 9 and 10); day 1 of next cycle",
+        "frequency": "as per schedule",
+        "special_instructions": "Reduce to 10mg in patients over 75 years old. Take in the morning with or after food. Dispense all days on day 1 of cycle. Cycle 11 onwards: 4mg days 2 and 3 only."
+      },
+      {
+        "drug_name": "Aciclovir",
+        "dose": 400,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "Daily for 28 days",
+        "frequency": "twice a day",
+        "special_instructions": "VZV prophylaxis. Supply 28 days or original pack."
+      },
+      {
+        "drug_name": "Co-trimoxazole",
+        "dose": 960,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "Monday, Wednesday and Friday for 28 days",
+        "frequency": "once a day on Mon/Wed/Fri",
+        "special_instructions": "PCP prophylaxis. May be dispensed as 480mg twice a day on Mon/Wed/Fri."
+      },
+      {
+        "drug_name": "Gastric protection (PPI or H2 antagonist)",
+        "dose": null,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "28 days",
+        "frequency": "as per local formulary",
+        "special_instructions": "For patients at high risk of GI ulceration or bleed. Options include esomeprazole 20mg OD, omeprazole 20mg OD, lansoprazole 15mg OD, pantoprazole 20mg OD, rabeprazole 20mg OD, cimetidine 400mg BD, famotidine 20mg OD, nizatidine 150mg BD, ranitidine 150mg BD."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils",
+        "condition": "Less than 0.5x10⁹/L or febrile neutropenia (fever ≥38.5°C and neutrophils less than 1)",
+        "affected_drugs": [
+          "Daratumumab",
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Interrupt daratumumab and monitor FBC weekly. Once neutrophils recover to 1x10⁹/L, resume daratumumab at 16mg/kg. Bortezomib: consider treatment delay or dose reduction or growth factor support. Seek consultant advice. No dose reductions of daratumumab are recommended."
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Daratumumab: less than 50x10⁹/L",
+        "affected_drugs": [
+          "Daratumumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Interrupt daratumumab and monitor FBC weekly. Once platelets recover to 50x10⁹/L or greater, resume daratumumab at 16mg/kg."
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Bortezomib: less than 25x10⁹/L",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Consider treatment delay or dose reduction or platelet transfusion. Seek consultant advice."
+      },
+      {
+        "parameter": "Hepatic impairment - Bilirubin",
+        "condition": "Bilirubin greater than 1.5xULN",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Initiate bortezomib at 0.7mg/m². May be escalated to 1mg/m² or reduced to 0.5mg/m² in subsequent cycles based on tolerability. Bilirubin 1.5xULN or below: 100% dose."
+      },
+      {
+        "parameter": "Hepatic impairment",
+        "condition": "Any degree of hepatic impairment",
+        "affected_drugs": [
+          "Daratumumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "No formal studies conducted. Based on population PK analysis no dosage adjustments necessary."
+      },
+      {
+        "parameter": "Renal impairment - Creatinine Clearance",
+        "condition": "Creatinine clearance greater than 20 ml/min",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "100% dose."
+      },
+      {
+        "parameter": "Renal impairment - Creatinine Clearance",
+        "condition": "Creatinine clearance 20 ml/min and below",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Clinical decision required."
+      },
+      {
+        "parameter": "Peripheral neuropathy",
+        "condition": "NCI-CTC grade 1 without pain",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Continue full dose bortezomib."
+      },
+      {
+        "parameter": "Peripheral neuropathy",
+        "condition": "NCI-CTC grade 1 with pain or grade 2",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Reduce bortezomib dose to 1mg/m²."
+      },
+      {
+        "parameter": "Peripheral neuropathy",
+        "condition": "NCI-CTC grade 2 with pain or grade 3",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Discontinue until resolved to grade 1 or less, then reinitiate at 0.7mg/m²."
+      },
+      {
+        "parameter": "Peripheral neuropathy",
+        "condition": "NCI-CTC grade 4 or severe autonomic neuropathy",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Discontinue bortezomib permanently."
+      },
+      {
+        "parameter": "Non-haematological toxicity",
+        "condition": "NCI-CTC grade 3 non-haematological (other)",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Discontinue until grade 1 or below. First occurrence: reinitiate at 1mg/m². Second occurrence: reduce to 0.7mg/m². If recurs at lowest dose, discontinue unless benefit outweighs risk."
+      },
+      {
+        "parameter": "Infusion related reaction",
+        "condition": "Grade 1-2 IRR",
+        "affected_drugs": [
+          "Daratumumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Once symptoms resolve, resume at no more than half the rate. If no further reaction, rate escalation may resume."
+      },
+      {
+        "parameter": "Infusion related reaction",
+        "condition": "Grade 3 IRR",
+        "affected_drugs": [
+          "Daratumumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "If decreases to ≤grade 2, restart at no more than half the rate. Permanently discontinue upon third occurrence of grade 3 or greater."
+      },
+      {
+        "parameter": "Infusion related reaction",
+        "condition": "Grade 4 (life-threatening) IRR",
+        "affected_drugs": [
+          "Daratumumab"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue treatment."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 50,
+      "notes": "To initiate a new cycle: neutrophils ≥1x10⁹/L and platelets ≥50x10⁹/L unless low counts due to bone marrow infiltration with myeloma, in which case may proceed at consultant discretion with blood products and growth factor support."
+    },
+    "monitoring_requirements": [
+      "FBC, U&Es, Ca²⁺ and LFTs prior to day 1 of each cycle",
+      "Paraprotein and/or light chains prior to each cycle",
+      "Hepatitis B virus (HBV) testing before initiating daratumumab; hepatitis C, CMV and HIV if clinically appropriate",
+      "Red cell phenotyping required before first daratumumab - send blood sample to transfusion lab",
+      "Regular blood glucose monitoring (dexamethasone)",
+      "Vital signs before infusion start, every 15 minutes during first 60 minutes, and at end of each daratumumab infusion",
+      "For rapid rate infusion: observe 30 minutes post-completion for delayed IRR"
+    ],
+    "special_warnings": [
+      "Continuation/maintenance phase: cycle length changes from 21 days to 28 days from cycle 9 onwards",
+      "Cycles 9 and 10 include bortezomib; cycle 11 onwards is daratumumab plus dexamethasone only",
+      "Ensure correct daratumumab cycle 9 onwards protocol is selected",
+      "Daratumumab interferes with indirect antiglobulin tests (binds CD38 on RBCs) - notify blood transfusion before first dose",
+      "Daratumumab may cause false positive SPE and IFE assay results for IgG kappa myeloma protein",
+      "VZV prophylaxis with aciclovir 400mg twice daily mandatory",
+      "Rapid infusion protocol (90 min) available from 3rd infusion if criteria met - unlicensed rate",
+      "Dexamethasone doses before and after daratumumab are to reduce IRR risk AND serve as steroid component of triple combination"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "weight_kg": true,
+      "bsa_m2": true,
+      "age_years": true,
+      "creatinine_clearance_ml_min": true,
+      "bilirubin_umol_l": true,
+      "neutrophils_x10_9_l": true,
+      "platelets_x10_9_l": true,
+      "peripheral_neuropathy_grade": true,
+      "daratumumab_infusion_history": true
+    },
+    "disease_site": "Myeloma",
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Bortezomib",
+        "dose": 1.3,
+        "dose_unit": "mg/m²",
+        "route": "Subcutaneous",
+        "days": [
+          1,
+          8,
+          15,
+          22
+        ],
+        "frequency": "weekly",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Cycles 9 and 10 only. Weekly bortezomib continuation phase (cycles 9 onwards). Both twice-weekly and weekly regimens include 32 doses total; bortezomib continues to end of cycle 10 in weekly regimen. Dose banded per national dose bands (2.5).",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "weekly | Cycles 9 and 10 only. Weekly bortezomib continuation phase (cycles 9 onwards). Both twice-weekly and weekly regimens include 32 doses total; bortezomib continues to end of cycle 10 in weekly regimen. Dose banded per national dose bands (2.5)."
+      },
+      {
+        "drug_name": "Daratumumab",
+        "dose": 16,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "every 28 days",
+        "duration_minutes": null,
+        "diluent": "sodium chloride 0.9%",
+        "diluent_volume_ml": 500,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Cycles 9 and 10: day 1 only. Cycle 11 onwards: day 1 only (daratumumab monotherapy). Prescribed per national dose bands (20 NS). Continue until disease progression. Use PES filter (0.22 or 0.2 micrometre). Rapid infusion protocol available from 3rd infusion onwards if criteria met (90 min total). Inform blood transfusion before first administration. Daratumumab binds CD38 on RBCs - patient requires red cell phenotyping.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "every 28 days | Cycles 9 and 10: day 1 only. Cycle 11 onwards: day 1 only (daratumumab monotherapy). Prescribed per national dose bands (20 NS). Continue until disease progression. Use PES filter (0.22 or 0.2 micrometre). Rapid infusion protocol available from 3rd infusion onwards if criteria met (90 min total). Inform blood transfusion before first administration. Daratumumab binds CD38 on RBCs - patient requires red cell phenotyping."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1
+        ],
+        "frequency": "day 1 of each cycle",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Cycles 9 and 10: 20mg day 1 (pre-daratumumab, reduce to 10mg in over 75s). Can be given as IV bolus equivalent. Additional dexamethasone 20mg oral on days 2, 8, 9, 15, 16, 22, 23 (reduce to 10mg in over 75s). Cycle 11 onwards: 20mg day 1 pre-daratumumab; 4mg days 2 and 3 to reduce delayed infusion reactions.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "day 1 of each cycle | Cycles 9 and 10: 20mg day 1 (pre-daratumumab, reduce to 10mg in over 75s). Can be given as IV bolus equivalent. Additional dexamethasone 20mg oral on days 2, 8, 9, 15, 16, 22, 23 (reduce to 10mg in over 75s). Cycle 11 onwards: 20mg day 1 pre-daratumumab; 4mg days 2 and 3 to reduce delayed infusion reactions."
+      }
+    ]
+  },
+  {
+    "protocol_id": "dvdsc-weekly-daratumumab-sc-bortezomib-dexamethasone-cycles-9-onwards",
+    "protocol_code": "DVdSC-Weekly-C9+",
+    "protocol_name": "DVd SC (weekly) Bortezomib Daratumumab SC Dexamethasone Cycles 9 onwards",
+    "category": "myeloma",
+    "indication": "Daratumumab in combination with bortezomib and dexamethasone is recommended for use as an option for treating relapsed multiple myeloma in people who have had 1 previous treatment. This weekly bortezomib regimen is for patients who experience neuropathy or those with pre-existing neuropathy.",
+    "version": "1",
+    "cycle_length_days": 28,
+    "total_cycles": null,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Bortezomib",
+        "dose": 1.3,
+        "dose_unit": "mg/m²",
+        "route": "Subcutaneous",
+        "days": [
+          1,
+          8,
+          15,
+          22
+        ],
+        "frequency": "weekly",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Cycles 9 and 10 only. Continuation phase (cycles 9 onwards). Bortezomib continues to end of cycle 10 in weekly regimen. Both twice-weekly and weekly regimens include 32 doses of bortezomib.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Daratumumab",
+        "dose": 1800,
+        "dose_unit": "mg",
+        "route": "Subcutaneous",
+        "days": [
+          1
+        ],
+        "frequency": "every 28 days",
+        "duration_minutes": 3,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Subcutaneous injection 1800mg over 3-5 minutes. Cycles 9 and 10: day 1 only. Cycle 11 onwards: day 1 only. Inject into subcutaneous tissue of abdomen 7.5cm right or left of navel. Do not inject into other sites. Rotate injection sites. Do not inject into red, bruised, tender or scarred skin. Continue until disease progression. Patients require patient identification card for 6 months after stopping. DARZALEX SC formulation. Post-injection monitoring required.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1
+        ],
+        "frequency": "day 1 of each cycle",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Cycles 9 and 10: 20mg day 1 (pre-daratumumab; can be IV bolus equivalent; reduce to 10mg in over 75s). Additional 20mg oral days 2, 8, 9, 15, 16, 22, 23 (reduce to 10mg in over 75s). Cycle 11 onwards: 20mg day 1; 4mg days 2 and 3 to reduce delayed injection reactions.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Antihistamine (chlorphenamine 4mg oral or loratadine 10mg or cetirizine 10mg or fexofenadine 120mg or acrivastine 8mg)",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "1-3 hours before daratumumab",
+        "indication": "Pre-medication for daratumumab injection related reaction prevention"
+      },
+      {
+        "drug_name": "Paracetamol",
+        "dose": 1000,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "1-3 hours before daratumumab",
+        "indication": "Pre-medication for daratumumab injection related reaction prevention. Max 4000mg/24 hours."
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "Days 2, 8, 9, 15, 16, 22, 23 (cycles 9 and 10); day 1 of next cycle",
+        "frequency": "as per schedule",
+        "special_instructions": "Reduce to 10mg in patients over 75 years old. Take morning with or after food. Cycle 11 onwards: 4mg days 2 and 3 only. Dispense 1 dose day 1 of next cycle to take on morning of next daratumumab injection."
+      },
+      {
+        "drug_name": "Antihistamine (oral)",
+        "dose": null,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "On days of daratumumab administration",
+        "frequency": "per local formulary choice",
+        "special_instructions": "Supply 1 x OP to cover all cycles. Options: chlorphenamine 4mg, loratadine 10mg, cetirizine 10mg, fexofenadine 120mg, or acrivastine 8mg."
+      },
+      {
+        "drug_name": "Aciclovir",
+        "dose": 400,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "Daily for 28 days",
+        "frequency": "twice a day",
+        "special_instructions": "VZV prophylaxis. Supply 28 days or original pack."
+      },
+      {
+        "drug_name": "Co-trimoxazole",
+        "dose": 960,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "Monday, Wednesday and Friday for 28 days",
+        "frequency": "once a day on Mon/Wed/Fri",
+        "special_instructions": "PCP prophylaxis. May be dispensed as 480mg twice a day on Mon/Wed/Fri."
+      },
+      {
+        "drug_name": "Gastric protection (PPI or H2 antagonist)",
+        "dose": null,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "28 days",
+        "frequency": "as per local formulary",
+        "special_instructions": "For patients at high risk of GI ulceration or bleed."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils",
+        "condition": "Less than 0.5x10⁹/L or febrile neutropenia",
+        "affected_drugs": [
+          "Daratumumab",
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Interrupt daratumumab and monitor FBC weekly. Bortezomib: consider treatment delay or dose reduction or growth factor support. Seek consultant advice."
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Daratumumab: less than 50x10⁹/L",
+        "affected_drugs": [
+          "Daratumumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Interrupt daratumumab. Once platelets recover to 50x10⁹/L or greater, resume daratumumab."
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Bortezomib: less than 25x10⁹/L",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Consider treatment delay or dose reduction or platelet transfusion. Seek consultant advice."
+      },
+      {
+        "parameter": "Hepatic impairment - Bilirubin",
+        "condition": "Bilirubin greater than 1.5xULN",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Initiate at 0.7mg/m². May escalate to 1mg/m² or reduce to 0.5mg/m² based on tolerability."
+      },
+      {
+        "parameter": "Renal impairment",
+        "condition": "Creatinine clearance 20 ml/min and below",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Clinical decision. CrCl >20: 100% dose."
+      },
+      {
+        "parameter": "Peripheral neuropathy",
+        "condition": "NCI-CTC grade 1 with pain or grade 2",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Reduce to 1mg/m²."
+      },
+      {
+        "parameter": "Peripheral neuropathy",
+        "condition": "NCI-CTC grade 2 with pain or grade 3",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Discontinue until grade 1 or less, reinitiate at 0.7mg/m²."
+      },
+      {
+        "parameter": "Peripheral neuropathy",
+        "condition": "NCI-CTC grade 4 or severe autonomic neuropathy",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue bortezomib."
+      },
+      {
+        "parameter": "Injection related reaction (IRR) - SC daratumumab",
+        "condition": "Grade 4 or anaphylactic reaction",
+        "affected_drugs": [
+          "Daratumumab"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Discontinue DARZALEX therapy immediately and permanently. Approximately 11% of patients experience IRR with SC daratumumab."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 50,
+      "notes": "To initiate a new cycle: neutrophils ≥1x10⁹/L and platelets ≥50x10⁹/L unless low counts due to bone marrow infiltration, in which case may proceed at consultant discretion."
+    },
+    "monitoring_requirements": [
+      "FBC, U&Es, Ca²⁺ and LFTs prior to day 1 of each cycle",
+      "Paraprotein and/or light chains prior to each cycle",
+      "Hepatitis B virus (HBV) testing before initiating daratumumab",
+      "Red cell phenotyping required before first daratumumab",
+      "Regular blood glucose monitoring (dexamethasone)",
+      "Observe for 4 hours following first daratumumab SC dose",
+      "For patients with COPD history: consider post-injection bronchodilators and inhaled corticosteroids"
+    ],
+    "special_warnings": [
+      "Continuation/maintenance phase: cycle length changes from 21 days to 28 days from cycle 9 onwards",
+      "Cycles 9 and 10 include bortezomib; cycle 11 onwards is daratumumab SC plus dexamethasone only",
+      "DARZALEX subcutaneous formulation - fixed dose 1800mg; do not administer at other body sites",
+      "Daratumumab SC can cause severe/serious IRRs including anaphylaxis - median onset 3.7 hours",
+      "Oral corticosteroids must be administered to all patients following SC daratumumab injection to reduce delayed IRR risk",
+      "Daratumumab binds CD38 on RBCs - positive indirect antiglobulin (Coombs) test may persist up to 6 months",
+      "Daratumumab may cause false positive SPE/IFE assay results",
+      "VZV prophylaxis with aciclovir 400mg twice daily mandatory",
+      "Hepatitis B reactivation reported - screen all patients before treatment; monitor those with positive serology during and 6 months after treatment"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "weight_kg": true,
+      "bsa_m2": true,
+      "age_years": true,
+      "creatinine_clearance_ml_min": true,
+      "bilirubin_umol_l": true,
+      "neutrophils_x10_9_l": true,
+      "platelets_x10_9_l": true,
+      "peripheral_neuropathy_grade": true
+    },
+    "disease_site": "Myeloma",
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Bortezomib",
+        "dose": 1.3,
+        "dose_unit": "mg/m²",
+        "route": "Subcutaneous",
+        "days": [
+          1,
+          8,
+          15,
+          22
+        ],
+        "frequency": "weekly",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Cycles 9 and 10 only. Continuation phase (cycles 9 onwards). Bortezomib continues to end of cycle 10 in weekly regimen. Both twice-weekly and weekly regimens include 32 doses of bortezomib.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "weekly | Cycles 9 and 10 only. Continuation phase (cycles 9 onwards). Bortezomib continues to end of cycle 10 in weekly regimen. Both twice-weekly and weekly regimens include 32 doses of bortezomib."
+      },
+      {
+        "drug_name": "Daratumumab",
+        "dose": 1800,
+        "dose_unit": "mg",
+        "route": "Subcutaneous",
+        "days": [
+          1
+        ],
+        "frequency": "every 28 days",
+        "duration_minutes": 3,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Subcutaneous injection 1800mg over 3-5 minutes. Cycles 9 and 10: day 1 only. Cycle 11 onwards: day 1 only. Inject into subcutaneous tissue of abdomen 7.5cm right or left of navel. Do not inject into other sites. Rotate injection sites. Do not inject into red, bruised, tender or scarred skin. Continue until disease progression. Patients require patient identification card for 6 months after stopping. DARZALEX SC formulation. Post-injection monitoring required.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.05,
+        "notes": "every 28 days | Subcutaneous injection 1800mg over 3-5 minutes. Cycles 9 and 10: day 1 only. Cycle 11 onwards: day 1 only. Inject into subcutaneous tissue of abdomen 7.5cm right or left of navel. Do not inject into other sites. Rotate injection sites. Do not inject into red, bruised, tender or scarred skin. Continue until disease progression. Patients require patient identification card for 6 months after stopping. DARZALEX SC formulation. Post-injection monitoring required."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1
+        ],
+        "frequency": "day 1 of each cycle",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Cycles 9 and 10: 20mg day 1 (pre-daratumumab; can be IV bolus equivalent; reduce to 10mg in over 75s). Additional 20mg oral days 2, 8, 9, 15, 16, 22, 23 (reduce to 10mg in over 75s). Cycle 11 onwards: 20mg day 1; 4mg days 2 and 3 to reduce delayed injection reactions.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "day 1 of each cycle | Cycles 9 and 10: 20mg day 1 (pre-daratumumab; can be IV bolus equivalent; reduce to 10mg in over 75s). Additional 20mg oral days 2, 8, 9, 15, 16, 22, 23 (reduce to 10mg in over 75s). Cycle 11 onwards: 20mg day 1; 4mg days 2 and 3 to reduce delayed injection reactions."
+      }
+    ]
+  },
+  {
+    "protocol_id": "dvdsc-weekly-cycles-1-8-bortezomib-daratumumab-sc-dexamethasone",
+    "protocol_code": "DVdSC-Weekly-C1-8",
+    "protocol_name": "DVd SC (weekly cycles 1-8) Bortezomib-Daratumumab-Dexamethasone",
+    "category": "myeloma",
+    "indication": "Daratumumab in combination with bortezomib and dexamethasone is recommended for use within the Cancer Drugs Fund as an option for treating relapsed multiple myeloma in people who have had 1 previous treatment. This weekly bortezomib regimen is for patients who experience neuropathy or those with pre-existing neuropathy.",
+    "version": "1",
+    "cycle_length_days": 21,
+    "total_cycles": 8,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Bortezomib",
+        "dose": 1.3,
+        "dose_unit": "mg/m²",
+        "route": "Subcutaneous",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "frequency": "weekly",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Cycles 1-8 on 21-day cycle. Both twice-weekly and weekly regimens include 32 total bortezomib doses. Bortezomib given cycles 1 to 8 only (then cycle 9 onwards see separate protocol). Dose banded per national dose bands (2.5). Cycles 9 onwards: see separate protocol.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Daratumumab",
+        "dose": 1800,
+        "dose_unit": "mg",
+        "route": "Subcutaneous",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "frequency": "weekly cycles 1-3; day 1 only cycles 4-8",
+        "duration_minutes": 3,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Cycles 1-3: days 1, 8, 15 SC. Cycles 4-8: day 1 only SC. Fixed dose 1800mg SC over 3-5 minutes into abdomen 7.5cm from navel. Rotate injection sites. Do not inject at other body sites. Continue until disease progression (cycle 9 onwards see separate protocol). For first dose: cannula should be inserted for emergency anaphylaxis treatment. Observe for 4 hours following first dose.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "frequency": "days 1, 8, 15 (cycles 1-3); day 1 only (cycles 4-8)",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Cycles 1-3: 20mg days 1, 8, 15 (pre-daratumumab) and 20mg days 2, 9, 16 (post-daratumumab). Reduce to 10mg in over 75s. Cycles 4-8: 20mg day 1 (pre-daratumumab) and 20mg days 2, 8, 9, 15, 16 (reduce to 10mg in over 75s). Can be given as IV equivalent. Take in morning.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Antihistamine (chlorphenamine 4mg or loratadine 10mg or cetirizine 10mg or fexofenadine 120mg or acrivastine 8mg)",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "1-3 hours before daratumumab",
+        "indication": "Pre-medication for daratumumab injection related reaction prevention"
+      },
+      {
+        "drug_name": "Paracetamol",
+        "dose": 1000,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "1-3 hours before daratumumab",
+        "indication": "Pre-medication for daratumumab injection related reaction prevention"
+      },
+      {
+        "drug_name": "Montelukast",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "1-3 hours before daratumumab - first two cycles only",
+        "indication": "Pre-medication for daratumumab IRR prevention (cycles 1 and 2 only)"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "Cycles 1-3: days 2, 8, 9, 15, 16; Cycles 4-8: days 2, 8, 9, 15, 16; plus day 1 of next cycle",
+        "frequency": "as per schedule",
+        "special_instructions": "Reduce to 10mg in over 75s. Take morning with or after food. Dispense all days on day 1 of cycle. Supply 1 dose for day 1 of next cycle to take morning of next daratumumab injection."
+      },
+      {
+        "drug_name": "Allopurinol",
+        "dose": 300,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "7 days - cycle 1 only",
+        "frequency": "once a day",
+        "special_instructions": "Tumour lysis prophylaxis, first cycle only. Take morning with food and plenty of water."
+      },
+      {
+        "drug_name": "Aciclovir",
+        "dose": 400,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "Daily for 21 days",
+        "frequency": "twice a day",
+        "special_instructions": "VZV prophylaxis. Supply 21 days or original pack."
+      },
+      {
+        "drug_name": "Co-trimoxazole",
+        "dose": 960,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "Monday, Wednesday and Friday for 21 days",
+        "frequency": "once a day on Mon/Wed/Fri",
+        "special_instructions": "PCP prophylaxis."
+      },
+      {
+        "drug_name": "Antihistamine (oral)",
+        "dose": null,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "On days of daratumumab administration",
+        "frequency": "per local formulary",
+        "special_instructions": "Supply 1 x OP to cover all cycles. Options: chlorphenamine 4mg, loratadine 10mg, cetirizine 10mg, fexofenadine 120mg, acrivastine 8mg."
+      },
+      {
+        "drug_name": "Gastric protection (PPI or H2 antagonist)",
+        "dose": null,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "21 days",
+        "frequency": "as per local formulary",
+        "special_instructions": "High-risk patients only."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils",
+        "condition": "Less than 0.5x10⁹/L or febrile neutropenia",
+        "affected_drugs": [
+          "Daratumumab",
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Interrupt daratumumab and monitor FBC weekly. Once neutrophils recover to 1x10⁹/L, resume daratumumab. Bortezomib: consider treatment delay or dose reduction or growth factor support."
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Daratumumab: less than 50x10⁹/L",
+        "affected_drugs": [
+          "Daratumumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Interrupt daratumumab. Resume once platelets ≥50x10⁹/L."
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Bortezomib: less than 25x10⁹/L",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Consider delay or dose reduction or platelet transfusion. Seek consultant advice."
+      },
+      {
+        "parameter": "Hepatic impairment - Bilirubin",
+        "condition": "Bilirubin greater than 1.5xULN",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Initiate at 0.7mg/m². Escalate to 1mg/m² or reduce to 0.5mg/m² based on tolerability."
+      },
+      {
+        "parameter": "Renal impairment",
+        "condition": "Creatinine clearance 20 ml/min and below",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Clinical decision. CrCl >20: 100%."
+      },
+      {
+        "parameter": "Peripheral neuropathy",
+        "condition": "NCI-CTC grade 1 with pain or grade 2",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Reduce to 1mg/m²."
+      },
+      {
+        "parameter": "Peripheral neuropathy",
+        "condition": "NCI-CTC grade 2 with pain or grade 3",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Discontinue until grade 1 or less, reinitiate at 0.7mg/m²."
+      },
+      {
+        "parameter": "Peripheral neuropathy",
+        "condition": "NCI-CTC grade 4 or severe autonomic neuropathy",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue bortezomib."
+      },
+      {
+        "parameter": "Non-haematological toxicity",
+        "condition": "NCI-CTC grade 3 non-haematological",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Discontinue until grade 1 or below. First occurrence: reinitiate at 1mg/m². Second occurrence: 0.7mg/m²."
+      },
+      {
+        "parameter": "Dexamethasone tolerability",
+        "condition": "Elderly or unable to tolerate standard dose",
+        "affected_drugs": [
+          "Dexamethasone"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Dose given day after bortezomib alone (days 8 and 15 from cycle 4 onwards) may be reduced."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 50,
+      "notes": "To initiate new cycle: neutrophils ≥1x10⁹/L and platelets ≥50x10⁹/L unless counts low due to bone marrow infiltration."
+    },
+    "monitoring_requirements": [
+      "FBC, U&Es, Ca²⁺ and LFTs prior to day 1 of each cycle",
+      "Paraprotein and/or light chains prior to each cycle",
+      "Hepatitis B virus testing before initiating daratumumab",
+      "Red cell phenotyping - send blood sample to transfusion before first daratumumab",
+      "Regular blood glucose monitoring",
+      "For first SC dose: cannula in situ for emergency anaphylaxis treatment; observe 4 hours",
+      "Hepatitis B reactivation monitoring during treatment and 6 months after"
+    ],
+    "special_warnings": [
+      "21-day cycle for cycles 1-8; cycle 9 onwards switches to 28-day cycle - use separate protocol",
+      "Bortezomib given cycles 1-8 only; total 32 doses across entire treatment course",
+      "Daratumumab SC formulation (DARZALEX SC) - 1800mg fixed dose; cycles 1-3 weekly, cycles 4-8 day 1 only",
+      "DARZALEX SC can cause severe/serious IRRs including anaphylaxis; median onset 3.7 hours; most in first injection",
+      "For first dose: cannula must be inserted for emergency anaphylaxis treatment",
+      "Oral corticosteroids post-injection to reduce delayed IRR risk; consider inhaled bronchodilators for COPD patients",
+      "Daratumumab binds CD38 on RBCs - positive Coombs test may persist 6 months",
+      "Daratumumab interferes with SPE/IFE assays",
+      "Hepatitis B reactivation reported - screen all patients before treatment",
+      "VZV prophylaxis with aciclovir 400mg twice daily mandatory",
+      "Montelukast 10mg oral pre-medication required for first two cycles only"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "weight_kg": true,
+      "bsa_m2": true,
+      "age_years": true,
+      "creatinine_clearance_ml_min": true,
+      "bilirubin_umol_l": true,
+      "neutrophils_x10_9_l": true,
+      "platelets_x10_9_l": true,
+      "peripheral_neuropathy_grade": true
+    },
+    "disease_site": "Myeloma",
+    "number_of_cycles": 8,
+    "drugs": [
+      {
+        "drug_name": "Bortezomib",
+        "dose": 1.3,
+        "dose_unit": "mg/m²",
+        "route": "Subcutaneous",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "frequency": "weekly",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Cycles 1-8 on 21-day cycle. Both twice-weekly and weekly regimens include 32 total bortezomib doses. Bortezomib given cycles 1 to 8 only (then cycle 9 onwards see separate protocol). Dose banded per national dose bands (2.5). Cycles 9 onwards: see separate protocol.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "weekly | Cycles 1-8 on 21-day cycle. Both twice-weekly and weekly regimens include 32 total bortezomib doses. Bortezomib given cycles 1 to 8 only (then cycle 9 onwards see separate protocol). Dose banded per national dose bands (2.5). Cycles 9 onwards: see separate protocol."
+      },
+      {
+        "drug_name": "Daratumumab",
+        "dose": 1800,
+        "dose_unit": "mg",
+        "route": "Subcutaneous",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "frequency": "weekly cycles 1-3; day 1 only cycles 4-8",
+        "duration_minutes": 3,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Cycles 1-3: days 1, 8, 15 SC. Cycles 4-8: day 1 only SC. Fixed dose 1800mg SC over 3-5 minutes into abdomen 7.5cm from navel. Rotate injection sites. Do not inject at other body sites. Continue until disease progression (cycle 9 onwards see separate protocol). For first dose: cannula should be inserted for emergency anaphylaxis treatment. Observe for 4 hours following first dose.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.05,
+        "notes": "weekly cycles 1-3; day 1 only cycles 4-8 | Cycles 1-3: days 1, 8, 15 SC. Cycles 4-8: day 1 only SC. Fixed dose 1800mg SC over 3-5 minutes into abdomen 7.5cm from navel. Rotate injection sites. Do not inject at other body sites. Continue until disease progression (cycle 9 onwards see separate protocol). For first dose: cannula should be inserted for emergency anaphylaxis treatment. Observe for 4 hours following first dose."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "frequency": "days 1, 8, 15 (cycles 1-3); day 1 only (cycles 4-8)",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Cycles 1-3: 20mg days 1, 8, 15 (pre-daratumumab) and 20mg days 2, 9, 16 (post-daratumumab). Reduce to 10mg in over 75s. Cycles 4-8: 20mg day 1 (pre-daratumumab) and 20mg days 2, 8, 9, 15, 16 (reduce to 10mg in over 75s). Can be given as IV equivalent. Take in morning.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "days 1, 8, 15 (cycles 1-3); day 1 only (cycles 4-8) | Cycles 1-3: 20mg days 1, 8, 15 (pre-daratumumab) and 20mg days 2, 9, 16 (post-daratumumab). Reduce to 10mg in over 75s. Cycles 4-8: 20mg day 1 (pre-daratumumab) and 20mg days 2, 8, 9, 15, 16 (reduce to 10mg in over 75s). Can be given as IV equivalent. Take in morning."
+      }
+    ]
+  },
+  {
+    "protocol_id": "dvd-twice-weekly-daratumumab-bortezomib-dexamethasone-cycles-9-onwards",
+    "protocol_code": "DVd-2W-C9+",
+    "protocol_name": "Bortezomib (twice weekly) Daratumumab Dexamethasone Cycles 9 onwards",
+    "category": "myeloma",
+    "indication": "Daratumumab in combination with bortezomib and dexamethasone is recommended for use within the Cancer Drugs Fund as an option for treating relapsed multiple myeloma in people who have had 1 previous treatment. Note bortezomib is given during cycles 1 to 8 only.",
+    "version": "1",
+    "cycle_length_days": 28,
+    "total_cycles": null,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Daratumumab",
+        "dose": 16,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "every 28 days",
+        "duration_minutes": null,
+        "diluent": "sodium chloride 0.9%",
+        "diluent_volume_ml": 500,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Cycle 9 onwards (bortezomib given cycles 1-8 only; both regimens include 32 doses of bortezomib). Daratumumab monotherapy maintenance from cycle 9 onwards. Continue until disease progression. Prescribed per national dose bands (20 NS). Use PES filter. Rapid infusion (90 min) protocol available from 3rd infusion if criteria met. Inform blood transfusion before first administration.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1
+        ],
+        "frequency": "day 1 of each cycle",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "20mg day 1 pre-daratumumab (can be IV bolus equivalent; reduce to 10mg in over 75s). Additionally 4mg on days 2 and 3 to reduce delayed infusion reactions.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "timing": "1-3 hours before daratumumab",
+        "indication": "Pre-medication for daratumumab infusion related reaction prevention"
+      },
+      {
+        "drug_name": "Paracetamol",
+        "dose": 1000,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "1-3 hours before daratumumab",
+        "indication": "Pre-medication for daratumumab infusion related reaction prevention. Max 4000mg/24 hours."
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "Days 2 and 3",
+        "frequency": "once a day",
+        "special_instructions": "Take morning with or after food, for two days starting day after daratumumab infusion, to reduce risk of delayed infusion reactions."
+      },
+      {
+        "drug_name": "Aciclovir",
+        "dose": 400,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "Daily for 28 days",
+        "frequency": "twice a day",
+        "special_instructions": "VZV prophylaxis."
+      },
+      {
+        "drug_name": "Co-trimoxazole",
+        "dose": 960,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "Monday, Wednesday and Friday for 28 days",
+        "frequency": "once a day on Mon/Wed/Fri",
+        "special_instructions": "PCP prophylaxis."
+      },
+      {
+        "drug_name": "Gastric protection (PPI or H2 antagonist)",
+        "dose": null,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "28 days",
+        "frequency": "as per local formulary",
+        "special_instructions": "High-risk patients only."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils",
+        "condition": "Less than 0.5x10⁹/L or febrile neutropenia",
+        "affected_drugs": [
+          "Daratumumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Interrupt daratumumab and monitor FBC weekly. Once neutrophils recover to 1x10⁹/L, resume daratumumab at 16mg/kg. No dose reductions of daratumumab recommended."
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Daratumumab: less than 50x10⁹/L",
+        "affected_drugs": [
+          "Daratumumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Interrupt daratumumab. Once platelets recover to ≥50x10⁹/L, resume at 16mg/kg."
+      },
+      {
+        "parameter": "Hepatic impairment",
+        "condition": "Any degree",
+        "affected_drugs": [
+          "Daratumumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "No dose adjustments necessary based on population PK analysis."
+      },
+      {
+        "parameter": "Infusion related reaction",
+        "condition": "Grade 1-2",
+        "affected_drugs": [
+          "Daratumumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Interrupt infusion. Once resolved, resume at no more than half the rate."
+      },
+      {
+        "parameter": "Infusion related reaction",
+        "condition": "Grade 3",
+        "affected_drugs": [
+          "Daratumumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "If decreases to ≤grade 2, restart at no more than half the rate. Permanently discontinue on third occurrence."
+      },
+      {
+        "parameter": "Infusion related reaction",
+        "condition": "Grade 4 (life-threatening)",
+        "affected_drugs": [
+          "Daratumumab"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue treatment."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 50,
+      "notes": "To initiate new cycle: neutrophils ≥1x10⁹/L and platelets ≥50x10⁹/L unless low counts due to bone marrow infiltration with myeloma."
+    },
+    "monitoring_requirements": [
+      "FBC, U&Es, Ca²⁺ and LFTs prior to day 1 of each cycle",
+      "Paraprotein and/or light chains prior to each cycle",
+      "Hepatitis B, hepatitis C, CMV and HIV testing before initiating daratumumab",
+      "Red cell phenotyping required before first daratumumab",
+      "Regular blood glucose monitoring",
+      "Vital signs every 15 minutes during first 60 minutes of daratumumab infusion and at end"
+    ],
+    "special_warnings": [
+      "Continuation/maintenance phase from cycle 9 onwards: bortezomib is given cycles 1-8 only (twice-weekly schedule); this protocol is daratumumab monotherapy maintenance",
+      "Cycle length changes from 21 days to 28 days from cycle 9 onwards",
+      "Both twice-weekly and weekly bortezomib regimens include 32 total bortezomib doses; weekly regimen continues to end of cycle 10",
+      "Ensure correct daratumumab cycle 9 onwards protocol is selected",
+      "Daratumumab IV infusion - use PES filter; polyurethane/PBD/PVC/PP/PE sets required",
+      "Daratumumab interferes with indirect antiglobulin tests and SPE/IFE assays",
+      "Notify blood transfusion before first daratumumab administration",
+      "VZV prophylaxis with aciclovir 400mg twice daily mandatory",
+      "Rapid infusion (90 min) protocol available from 3rd infusion if criteria met - currently unlicensed"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "weight_kg": true,
+      "bsa_m2": false,
+      "age_years": true,
+      "creatinine_clearance_ml_min": false,
+      "neutrophils_x10_9_l": true,
+      "platelets_x10_9_l": true,
+      "daratumumab_infusion_history": true
+    },
+    "disease_site": "Myeloma",
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Daratumumab",
+        "dose": 16,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "every 28 days",
+        "duration_minutes": null,
+        "diluent": "sodium chloride 0.9%",
+        "diluent_volume_ml": 500,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Cycle 9 onwards (bortezomib given cycles 1-8 only; both regimens include 32 doses of bortezomib). Daratumumab monotherapy maintenance from cycle 9 onwards. Continue until disease progression. Prescribed per national dose bands (20 NS). Use PES filter. Rapid infusion (90 min) protocol available from 3rd infusion if criteria met. Inform blood transfusion before first administration.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "every 28 days | Cycle 9 onwards (bortezomib given cycles 1-8 only; both regimens include 32 doses of bortezomib). Daratumumab monotherapy maintenance from cycle 9 onwards. Continue until disease progression. Prescribed per national dose bands (20 NS). Use PES filter. Rapid infusion (90 min) protocol available from 3rd infusion if criteria met. Inform blood transfusion before first administration."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1
+        ],
+        "frequency": "day 1 of each cycle",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "20mg day 1 pre-daratumumab (can be IV bolus equivalent; reduce to 10mg in over 75s). Additionally 4mg on days 2 and 3 to reduce delayed infusion reactions.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "day 1 of each cycle | 20mg day 1 pre-daratumumab (can be IV bolus equivalent; reduce to 10mg in over 75s). Additionally 4mg on days 2 and 3 to reduce delayed infusion reactions."
+      }
+    ]
+  },
+  {
+    "protocol_id": "elranatamab",
+    "protocol_code": "ELRANATAMAB",
+    "protocol_name": "Elranatamab",
+    "category": "myeloma",
+    "indication": "Monotherapy for the treatment of adult patients with relapsed and refractory multiple myeloma, who have received at least three prior therapies, including an immunomodulatory agent, a proteasome inhibitor, and an anti-CD38 antibody and have demonstrated disease progression on the last therapy.",
+    "version": "2",
+    "cycle_length_days": 28,
+    "total_cycles": 16,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Elranatamab",
+        "dose": 12,
+        "dose_unit": "mg",
+        "route": "Subcutaneous",
+        "days": [
+          1
+        ],
+        "frequency": "step-up dose 1 - cycle 1 day 1 only",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Step-up dose 1 (12mg): cycle 1 day 1 only. BCMA x CD3 bispecific T-cell engager antibody (ELREXFIO). Inject into subcutaneous tissue of abdomen (preferred) or thigh. Do not inject into red, bruised, tender or scarred skin. Minimum 2 days between step-up dose 1 and step-up dose 2. Pre-medications mandatory for first three doses. Tocilizumab must be available on ward before injection. Monitor for CRS and ICANS for 48 hours after step-up doses - patients must remain within close proximity of healthcare facility.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Elranatamab",
+        "dose": 32,
+        "dose_unit": "mg",
+        "route": "Subcutaneous",
+        "days": [
+          4
+        ],
+        "frequency": "step-up dose 2 - cycle 1 day 4 only",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Step-up dose 2 (32mg): cycle 1 day 4 only. Minimum 3 days between step-up dose 2 and first full treatment dose. Pre-medications mandatory.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Elranatamab",
+        "dose": 76,
+        "dose_unit": "mg",
+        "route": "Subcutaneous",
+        "days": [
+          8,
+          15,
+          22
+        ],
+        "frequency": "weekly cycle 1; weekly cycles 2-6; biweekly cycle 7 onwards",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Full treatment dose 76mg. Cycle 1: days 8, 15, 22. Cycles 2-6: days 1, 8, 15, 22 (weekly). Cycle 7 onwards: days 1 and 15 (every 2 weeks). Total 16 cycles. Minimum 6 days between doses. 28-day cycle.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "timing": "60 minutes before elranatamab injection (first 3 doses mandatory)",
+        "indication": "Pre-medication for step-up doses and first full treatment dose"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "60 minutes before elranatamab injection (first 3 doses mandatory)",
+        "indication": "Pre-medication for step-up doses and first full treatment dose. Can be given as 20mg IV bolus if patient has not taken oral."
+      },
+      {
+        "drug_name": "Paracetamol",
+        "dose": 1000,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "60 minutes before elranatamab injection (first 3 doses mandatory)",
+        "indication": "Pre-medication for step-up doses and first full treatment dose"
+      },
+      {
+        "drug_name": "Tocilizumab",
+        "dose": 8,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "timing": "As required - must be available on ward before each elranatamab injection",
+        "indication": "CRS management. Max dose 800mg. 8-hourly if required (max 3 doses per 6 weeks). One dose must be on ward prior to each injection during cycles 1 and 2."
+      },
+      {
+        "drug_name": "Hydrocortisone",
+        "dose": 100,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "timing": "When required for injection related reactions",
+        "indication": "Treatment of elranatamab injection related reactions"
+      },
+      {
+        "drug_name": "Salbutamol",
+        "dose": 2.5,
+        "dose_unit": "mg",
+        "route": "Subcutaneous",
+        "timing": "When required for bronchospasm",
+        "indication": "Treatment of elranatamab related bronchospasm (nebulised)"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Allopurinol",
+        "dose": 300,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "7 days - cycle 1 only",
+        "frequency": "once a day",
+        "special_instructions": "Tumour lysis prophylaxis, first cycle only."
+      },
+      {
+        "drug_name": "Aciclovir",
+        "dose": 400,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "28 days per cycle",
+        "frequency": "twice a day",
+        "special_instructions": "VZV/HSV prophylaxis. All cycles."
+      },
+      {
+        "drug_name": "Co-trimoxazole",
+        "dose": 960,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "Monday, Wednesday and Friday for 28 days",
+        "frequency": "once a day on Mon/Wed/Fri",
+        "special_instructions": "PCP prophylaxis. All cycles."
+      },
+      {
+        "drug_name": "Fluconazole",
+        "dose": 50,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "28 days per cycle",
+        "frequency": "once a day",
+        "special_instructions": "Antifungal prophylaxis. All cycles."
+      },
+      {
+        "drug_name": "Thromboprophylaxis (LMWH or NOAC)",
+        "dose": null,
+        "dose_unit": "mg",
+        "route": "Subcutaneous",
+        "days": "28 days per cycle",
+        "frequency": "as per local formulary",
+        "special_instructions": "For patients with additional VTE risk factors. Options: dalteparin 5000 units SC OD, enoxaparin 40mg SC OD, heparin 5000 units SC BD, apixaban 2.5mg oral BD. Aspirin may be considered after cycle 6."
+      },
+      {
+        "drug_name": "Gastric protection (PPI or H2 antagonist)",
+        "dose": null,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "28 days per cycle",
+        "frequency": "as per local formulary",
+        "special_instructions": "All cycles."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Thrombocytopenia",
+        "condition": "Platelet count less than 25x10⁹/L OR platelets 25-50x10⁹/L with bleeding",
+        "affected_drugs": [
+          "Elranatamab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold treatment until platelet count ≥25x10⁹/L and no evidence of bleeding."
+      },
+      {
+        "parameter": "Neutropenia",
+        "condition": "Absolute neutrophil count less than 0.5x10⁹/L",
+        "affected_drugs": [
+          "Elranatamab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold treatment until ANC ≥0.5x10⁹/L."
+      },
+      {
+        "parameter": "Febrile neutropenia",
+        "condition": "Febrile neutropenia",
+        "affected_drugs": [
+          "Elranatamab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold treatment until ANC ≥1x10⁹/L and fever resolves."
+      },
+      {
+        "parameter": "Anaemia",
+        "condition": "Haemoglobin less than 8g/dL",
+        "affected_drugs": [
+          "Elranatamab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold treatment until haemoglobin ≥8g/dL."
+      },
+      {
+        "parameter": "Hepatic impairment - mild",
+        "condition": "Mild hepatic impairment",
+        "affected_drugs": [
+          "Elranatamab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "No dose adjustment required."
+      },
+      {
+        "parameter": "Hepatic impairment - moderate/severe",
+        "condition": "Moderate or severe hepatic impairment",
+        "affected_drugs": [
+          "Elranatamab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Insufficient data - no dose recommendation."
+      },
+      {
+        "parameter": "Renal impairment",
+        "condition": "Mild or moderate renal impairment (eGFR ≥30 ml/min)",
+        "affected_drugs": [
+          "Elranatamab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "No dose adjustment required. Insufficient data for severe renal impairment."
+      },
+      {
+        "parameter": "Treatment delay - restart dosing",
+        "condition": "Last dose step-up dose 1 (12mg), delay ≤14 days",
+        "affected_drugs": [
+          "Elranatamab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Restart at step-up dose 2 (32mg). If tolerated, increase to 76mg 4 days later."
+      },
+      {
+        "parameter": "Treatment delay - restart dosing",
+        "condition": "Last dose step-up dose 1 (12mg), delay >14 days",
+        "affected_drugs": [
+          "Elranatamab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Restart step-up dosing schedule at step-up dose 1 (12mg)."
+      },
+      {
+        "parameter": "Treatment delay - restart dosing",
+        "condition": "Last dose any full treatment dose (76mg), delay ≤42 days",
+        "affected_drugs": [
+          "Elranatamab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Restart at 76mg."
+      },
+      {
+        "parameter": "Treatment delay - restart dosing",
+        "condition": "Last dose any full treatment dose (76mg), delay 43-84 days",
+        "affected_drugs": [
+          "Elranatamab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Restart at step-up dose 2 (32mg). If tolerated, increase to 76mg 1 week later."
+      },
+      {
+        "parameter": "Treatment delay - restart dosing",
+        "condition": "Last dose any full treatment dose (76mg), delay >84 days",
+        "affected_drugs": [
+          "Elranatamab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Restart step-up dosing schedule at step-up dose 1 (12mg)."
+      },
+      {
+        "parameter": "CMV",
+        "condition": "Symptomatic CMV or rising titre",
+        "affected_drugs": [
+          "Elranatamab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Consider delaying treatment."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 50,
+      "notes": "To initiate new cycle: ANC ≥1.0x10⁹/L, Haemoglobin ≥80g/L, Platelets ≥50x10⁹/L."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs, U&Es, bone profile, CRP and LDH prior to day 1 of treatment",
+      "Documented viral screen: CMV, HSV, EBV, VZV, HIV, hepatitis B, hepatitis C (EBV and CMV PCRs)",
+      "2-4 weekly CMV and EBV monitoring",
+      "Urine protein/creatinine ratio every 3-4 weeks",
+      "Calcium and magnesium at regular intervals",
+      "Immunoglobulins and paraprotein monthly",
+      "VTE risk assessment prior to starting treatment",
+      "Hepatitis B status before starting",
+      "Temperature, blood pressure and oxygen saturation 4-hourly after elranatamab on Day 0 then twice daily",
+      "CRS graded on WBMT CRS Assessment Form",
+      "Monitor for CRS and ICANS for 48 hours after step-up doses",
+      "Patients hospitalised 7-10 days for step-up doses monitoring at many centres"
+    ],
+    "special_warnings": [
+      "Bispecific T-cell engager (BCMA x CD3) antibody - ELREXFIO brand",
+      "Step-up dosing mandatory: 12mg day 1, then 32mg day 4, then 76mg weekly from day 8 - to reduce CRS and ICANS",
+      "CRS monitoring mandatory: patients must remain near healthcare facility for 48 hours after each of the 2 step-up doses",
+      "Tocilizumab 8mg/kg (max 800mg) IV must be available on ward before every elranatamab injection during cycles 1 and 2",
+      "Patients who experienced Grade ≥2 CRS or received tocilizumab with most recent injection must be hospitalised for next injection",
+      "ICANS monitoring required - refer to Wessex guidelines on monitoring bispecific antibody therapy related CRS and neurological toxicity",
+      "This protocol may require funding approval",
+      "Pre-medications mandatory for first 3 doses (step-up dose 1, step-up dose 2, and first 76mg dose)",
+      "Consider pethidine 25-50mg IV for elranatamab-related rigors failing to respond to steroids",
+      "Viral screen mandatory before starting; 2-4 weekly CMV/EBV monitoring throughout",
+      "Thromboprophylaxis required for patients with additional VTE risk factors"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "weight_kg": true,
+      "bsa_m2": false,
+      "age_years": true,
+      "creatinine_clearance_ml_min": true,
+      "egfr_ml_min": true,
+      "neutrophils_x10_9_l": true,
+      "platelets_x10_9_l": true,
+      "haemoglobin_g_dl": true,
+      "hepatitis_b_status": true,
+      "viral_screen_done": true,
+      "prior_daratumumab_exposure": true,
+      "prior_imid_exposure": true,
+      "prior_pi_exposure": true
+    },
+    "disease_site": "Myeloma",
+    "number_of_cycles": 16,
+    "drugs": [
+      {
+        "drug_name": "Elranatamab",
+        "dose": 12,
+        "dose_unit": "mg",
+        "route": "Subcutaneous",
+        "days": [
+          1
+        ],
+        "frequency": "step-up dose 1 - cycle 1 day 1 only",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Step-up dose 1 (12mg): cycle 1 day 1 only. BCMA x CD3 bispecific T-cell engager antibody (ELREXFIO). Inject into subcutaneous tissue of abdomen (preferred) or thigh. Do not inject into red, bruised, tender or scarred skin. Minimum 2 days between step-up dose 1 and step-up dose 2. Pre-medications mandatory for first three doses. Tocilizumab must be available on ward before injection. Monitor for CRS and ICANS for 48 hours after step-up doses - patients must remain within close proximity of healthcare facility.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "step-up dose 1 - cycle 1 day 1 only | Step-up dose 1 (12mg): cycle 1 day 1 only. BCMA x CD3 bispecific T-cell engager antibody (ELREXFIO). Inject into subcutaneous tissue of abdomen (preferred) or thigh. Do not inject into red, bruised, tender or scarred skin. Minimum 2 days between step-up dose 1 and step-up dose 2. Pre-medications mandatory for first three doses. Tocilizumab must be available on ward before injection. Monitor for CRS and ICANS for 48 hours after step-up doses - patients must remain within close proximity of healthcare facility."
+      },
+      {
+        "drug_name": "Elranatamab",
+        "dose": 32,
+        "dose_unit": "mg",
+        "route": "Subcutaneous",
+        "days": [
+          4
+        ],
+        "frequency": "step-up dose 2 - cycle 1 day 4 only",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Step-up dose 2 (32mg): cycle 1 day 4 only. Minimum 3 days between step-up dose 2 and first full treatment dose. Pre-medications mandatory.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "step-up dose 2 - cycle 1 day 4 only | Step-up dose 2 (32mg): cycle 1 day 4 only. Minimum 3 days between step-up dose 2 and first full treatment dose. Pre-medications mandatory."
+      },
+      {
+        "drug_name": "Elranatamab",
+        "dose": 76,
+        "dose_unit": "mg",
+        "route": "Subcutaneous",
+        "days": [
+          8,
+          15,
+          22
+        ],
+        "frequency": "weekly cycle 1; weekly cycles 2-6; biweekly cycle 7 onwards",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Full treatment dose 76mg. Cycle 1: days 8, 15, 22. Cycles 2-6: days 1, 8, 15, 22 (weekly). Cycle 7 onwards: days 1 and 15 (every 2 weeks). Total 16 cycles. Minimum 6 days between doses. 28-day cycle.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "weekly cycle 1; weekly cycles 2-6; biweekly cycle 7 onwards | Full treatment dose 76mg. Cycle 1: days 8, 15, 22. Cycles 2-6: days 1, 8, 15, 22 (weekly). Cycle 7 onwards: days 1 and 15 (every 2 weeks). Total 16 cycles. Minimum 6 days between doses. 28-day cycle."
+      }
+    ]
+  },
+  {
+    "protocol_id": "inp-vtd-pace-iv-bortezomib-iv-cisplatin-cyclophosphamide-dexamethasone-doxorubicin-etoposide-thalidomide",
+    "protocol_code": "VTD-PACE-IV",
+    "protocol_name": "VTD-PACE (IV) Bortezomib (IV)-Cisplatin-Cyclophosphamide-Dexamethasone-Doxorubicin-Etoposide-Thalidomide",
+    "category": "myeloma",
+    "indication": "Multiple myeloma in selected patients of good performance status with resistant disease, particularly where urgent disease control is required.",
+    "version": "1",
+    "cycle_length_days": 21,
+    "total_cycles": 3,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Bortezomib",
+        "dose": 1.3,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1,
+          4,
+          8,
+          11
+        ],
+        "frequency": "days 1, 4, 8, 11",
+        "duration_minutes": 1,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "IV injection over 5 seconds. Dose banded per agreed bands. IMPORTANT: dose of bortezomib in this protocol is higher than that used in other versions - confirm with consultant before prescribing. Days 8 and 11 may be given as outpatient.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Cisplatin",
+        "dose": 10,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": "days 1-4",
+        "duration_minutes": 1440,
+        "diluent": "sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "10mg/m²/day. Continuous intravenous infusion in 1000ml sodium chloride 0.9% over 24 hours or via portable infusion device. Dose banded. Exfoliant - extravasation risk. Consider carboplatin 50mg/m²/day x4 days if CrCl <40ml/min.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 400,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": "days 1-4",
+        "duration_minutes": 1440,
+        "diluent": "sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "400mg/m²/day. Continuous intravenous infusion in 1000ml sodium chloride 0.9% over 24 hours (mixed with cisplatin and etoposide). Dose banded. Neutral extravasation. Consider mesna in patients with pre-existing bladder disorders: 40% of cyclophosphamide dose (rounded to nearest 400mg) orally at 0, 2 and 6 hours after cyclophosphamide.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 40,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": "days 1-4",
+        "duration_minutes": 1440,
+        "diluent": "sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "40mg/m²/day. Continuous intravenous infusion in 1000ml sodium chloride 0.9% over 24 hours (mixed with cisplatin and cyclophosphamide). Dose banded. Irritant extravasation. Reduce dose if albumin significantly low.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Doxorubicin",
+        "dose": 10,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": "days 1-4",
+        "duration_minutes": 1440,
+        "diluent": "sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "10mg/m²/day. Intravenous infusion in 1000ml sodium chloride 0.9% over 24 hours or via portable infusion device (separate bag from PACE). Dose banded. VESICANT - extravasation risk. Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). Discontinue if cardiac failure develops. Baseline LVEF required if cardiac history/risk factors.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 40,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": "days 1-4",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "40mg once a day in the morning days 1-4. Haematological modifications not necessary. Take with or after food.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Thalidomide",
+        "dose": 50,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "frequency": "once a day at night, days 1-21",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 100,
+        "max_dose_unit": "mg",
+        "special_instructions": "Cycle 1: 50mg once a day at night, days 1-21 inclusive. Cycle 2-3: 100mg once a day at night (dose escalation optional - consult). Taken at night to avoid daytime drowsiness. TERATOGENIC - Pregnancy Prevention Programme mandatory for all. Available as 50mg capsules. Haematological modifications not necessary.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy, then three times a day for 5 days",
+        "indication": "Antiemetic"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy, then twice a day for 5 days",
+        "indication": "Antiemetic"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Thalidomide",
+        "dose": 50,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "Days 1-21 (nights)",
+        "frequency": "once a day at night",
+        "special_instructions": "TERATOGENIC. Pregnancy Prevention Programme. Short course oral chemotherapy - must not be continued beyond prescribed course. Prescription Authorisation Form required."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 40,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "Days 1-4",
+        "frequency": "once a day in morning",
+        "special_instructions": "To be written on in-patient chart."
+      },
+      {
+        "drug_name": "Aciclovir",
+        "dose": 400,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "21 days",
+        "frequency": "twice a day",
+        "special_instructions": "VZV/HSV prophylaxis."
+      },
+      {
+        "drug_name": "Ciprofloxacin",
+        "dose": 250,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "21 days",
+        "frequency": "twice a day",
+        "special_instructions": "Antibacterial prophylaxis."
+      },
+      {
+        "drug_name": "Co-trimoxazole",
+        "dose": 960,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "Mon, Wed, Fri",
+        "frequency": "once a day on Mon/Wed/Fri (or consider pentamidine nebules 300mg every 4 weeks)",
+        "special_instructions": "PCP prophylaxis."
+      },
+      {
+        "drug_name": "Fluconazole",
+        "dose": 100,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "21 days",
+        "frequency": "once a day",
+        "special_instructions": "Antifungal prophylaxis."
+      },
+      {
+        "drug_name": "Thromboprophylaxis (LMWH)",
+        "dose": null,
+        "dose_unit": "units",
+        "route": "Subcutaneous",
+        "days": "21 days",
+        "frequency": "as per local formulary",
+        "special_instructions": "If platelets >50x10⁹/L. Options: dalteparin 5000 units SC OD, enoxaparin 40mg SC OD, heparin 5000 units SC BD. DVT prophylaxis mandatory with thalidomide."
+      },
+      {
+        "drug_name": "Allopurinol",
+        "dose": 300,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "7 days",
+        "frequency": "once a day",
+        "special_instructions": "Cycle 1 only. Tumour lysis prophylaxis."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Haematological",
+        "condition": "Neutrophils ≥1x10⁹/L and platelets ≥75x10⁹/L",
+        "affected_drugs": [
+          "Bortezomib",
+          "Cisplatin",
+          "Cyclophosphamide",
+          "Doxorubicin",
+          "Etoposide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "100% dose. Haematological modifications not necessary for dexamethasone or thalidomide."
+      },
+      {
+        "parameter": "Haematological",
+        "condition": "Neutrophils <1x10⁹/L and/or platelets <75x10⁹/L",
+        "affected_drugs": [
+          "Bortezomib",
+          "Cisplatin",
+          "Cyclophosphamide",
+          "Doxorubicin",
+          "Etoposide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Consider delay until recovery. In the presence of cytopenias due to marrow involvement with myeloma, cycle 1 day 1 may proceed even if counts below threshold - confirm with consultant."
+      },
+      {
+        "parameter": "Hepatic impairment - Bortezomib",
+        "condition": "Bilirubin greater than 1.5xULN",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Initiate at 0.7mg/m². Escalate to 1mg/m² or reduce to 0.5mg/m² based on tolerability."
+      },
+      {
+        "parameter": "Hepatic impairment - Doxorubicin",
+        "condition": "Bilirubin <30 and AST/ALT 2-3xULN",
+        "affected_drugs": [
+          "Doxorubicin"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "75% dose."
+      },
+      {
+        "parameter": "Hepatic impairment - Doxorubicin",
+        "condition": "Bilirubin 30-50 and/or AST/ALT >3xULN",
+        "affected_drugs": [
+          "Doxorubicin"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "50% dose."
+      },
+      {
+        "parameter": "Hepatic impairment - Doxorubicin",
+        "condition": "Bilirubin 51-85",
+        "affected_drugs": [
+          "Doxorubicin"
+        ],
+        "action": "delay",
+        "factor": 0.25,
+        "notes": "25% dose."
+      },
+      {
+        "parameter": "Hepatic impairment - Doxorubicin",
+        "condition": "Bilirubin >85",
+        "affected_drugs": [
+          "Doxorubicin"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Omit doxorubicin."
+      },
+      {
+        "parameter": "Hepatic impairment - Etoposide",
+        "condition": "Bilirubin 30-51 or AST/ALT 60-180",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Consider 50% dose reduction."
+      },
+      {
+        "parameter": "Hepatic impairment - Etoposide",
+        "condition": "Bilirubin >51 or AST/ALT >180",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Clinical decision."
+      },
+      {
+        "parameter": "Renal impairment - Cisplatin",
+        "condition": "CrCl 40-50 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "50% dose."
+      },
+      {
+        "parameter": "Renal impairment - Cisplatin",
+        "condition": "CrCl <40 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Omit cisplatin. Consider carboplatin 50mg/m²/day x4 days as alternative."
+      },
+      {
+        "parameter": "Renal impairment - Cyclophosphamide",
+        "condition": "CrCl 10-20 ml/min",
+        "affected_drugs": [
+          "Cyclophosphamide"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "75% dose."
+      },
+      {
+        "parameter": "Renal impairment - Cyclophosphamide",
+        "condition": "CrCl <10 ml/min",
+        "affected_drugs": [
+          "Cyclophosphamide"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Omit cyclophosphamide."
+      },
+      {
+        "parameter": "Renal impairment - Etoposide",
+        "condition": "CrCl 15-50 ml/min",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "75% dose."
+      },
+      {
+        "parameter": "Renal impairment - Etoposide",
+        "condition": "CrCl <15 ml/min",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "50% dose."
+      },
+      {
+        "parameter": "Peripheral neuropathy - Bortezomib",
+        "condition": "NCI-CTC grade 1 with pain or grade 2",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Reduce to 1mg/m² or switch to weekly bortezomib 1.3mg/m²."
+      },
+      {
+        "parameter": "Peripheral neuropathy - Bortezomib",
+        "condition": "NCI-CTC grade 2 with pain or grade 3",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Discontinue until grade 1 or less, reinitiate at 0.7mg/m²."
+      },
+      {
+        "parameter": "Peripheral neuropathy - Bortezomib",
+        "condition": "NCI-CTC grade 4 or severe autonomic neuropathy",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue bortezomib."
+      },
+      {
+        "parameter": "Peripheral neuropathy - Thalidomide",
+        "condition": "NCI-CTC grade 2 neurological toxicity",
+        "affected_drugs": [
+          "Thalidomide"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Suspend treatment or reduce dose by at least 50%. Reintroduce at reduced dose if symptoms resolve to grade 1 or below."
+      },
+      {
+        "parameter": "Peripheral neuropathy - Thalidomide",
+        "condition": "NCI-CTC grade 3 or above, or toxicity not resolving",
+        "affected_drugs": [
+          "Thalidomide"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Stop thalidomide."
+      },
+      {
+        "parameter": "Cardiac toxicity",
+        "condition": "Cardiac failure",
+        "affected_drugs": [
+          "Doxorubicin"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Discontinue doxorubicin permanently."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 75,
+      "notes": "Neutrophils ≥1x10⁹/L and platelets ≥75x10⁹/L for 100% dose. Consider delay if below thresholds. Cycle 1 day 1 may proceed with cytopenias due to myeloma marrow involvement - confirm with consultant."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es (including calcium and magnesium) prior to day 1",
+      "FBC assessed frequently as blood products often required",
+      "Regular blood glucose monitoring",
+      "Baseline LVEF before starting (cardiac history, risk factors or elderly); discontinue doxorubicin if cardiac failure",
+      "Paraprotein or light chains every 3 weeks",
+      "Pregnancy testing in women of childbearing potential: negative test within 3 days of starting thalidomide, repeat every 4 weeks (every 2 weeks if irregular menstrual cycles), final test 4 weeks after last thalidomide dose"
+    ],
+    "special_warnings": [
+      "IN-PATIENT REGIMEN - intensive 4-day continuous infusion regimen requiring hospitalisation",
+      "Central catheter or PICC line advised for administration",
+      "Multiple versions of this protocol exist - ensure correct version selected for diagnosis",
+      "BORTEZOMIB DOSE: this protocol uses 1.3mg/m² IV which is higher than some other versions - confirm with consultant",
+      "THALIDOMIDE IS HIGHLY TERATOGENIC: Pregnancy Prevention Programme mandatory for all patients and prescribers; Prescription Authorisation Form required",
+      "Thalidomide increases DVT/PE risk: thromboprophylaxis mandatory (LMWH preferred for first 5 months; therapeutic warfarin alternative)",
+      "Doxorubicin is a VESICANT - extravasation risk",
+      "Cisplatin is an EXFOLIANT - extravasation risk",
+      "Maximum lifetime cumulative doxorubicin dose 450mg/m² (400mg/m² with prior mediastinal radiotherapy)",
+      "Growth factors recommended from day 5 until neutrophils >1x10⁹/L",
+      "Thalidomide dose escalates on cycle 2 (optional): 50mg cycle 1, 100mg cycles 2-3",
+      "VZV prophylaxis with aciclovir 400mg twice daily mandatory",
+      "Short course oral chemotherapy (thalidomide) - must not be continued beyond prescribed course; NPSA alert applies"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "weight_kg": true,
+      "bsa_m2": true,
+      "age_years": true,
+      "creatinine_clearance_ml_min": true,
+      "bilirubin_umol_l": true,
+      "ast_alt_units_l": true,
+      "neutrophils_x10_9_l": true,
+      "platelets_x10_9_l": true,
+      "lvef_percent": true,
+      "peripheral_neuropathy_grade": true,
+      "pregnancy_test_female": true,
+      "albumin_g_l": true
+    },
+    "disease_site": "Myeloma",
+    "number_of_cycles": 3,
+    "drugs": [
+      {
+        "drug_name": "Bortezomib",
+        "dose": 1.3,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1,
+          4,
+          8,
+          11
+        ],
+        "frequency": "days 1, 4, 8, 11",
+        "duration_minutes": 1,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "IV injection over 5 seconds. Dose banded per agreed bands. IMPORTANT: dose of bortezomib in this protocol is higher than that used in other versions - confirm with consultant before prescribing. Days 8 and 11 may be given as outpatient.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.0167,
+        "notes": "days 1, 4, 8, 11 | IV injection over 5 seconds. Dose banded per agreed bands. IMPORTANT: dose of bortezomib in this protocol is higher than that used in other versions - confirm with consultant before prescribing. Days 8 and 11 may be given as outpatient."
+      },
+      {
+        "drug_name": "Cisplatin",
+        "dose": 10,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": "days 1-4",
+        "duration_minutes": 1440,
+        "diluent": "sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "10mg/m²/day. Continuous intravenous infusion in 1000ml sodium chloride 0.9% over 24 hours or via portable infusion device. Dose banded. Exfoliant - extravasation risk. Consider carboplatin 50mg/m²/day x4 days if CrCl <40ml/min.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 24.0,
+        "notes": "days 1-4 | 10mg/m²/day. Continuous intravenous infusion in 1000ml sodium chloride 0.9% over 24 hours or via portable infusion device. Dose banded. Exfoliant - extravasation risk. Consider carboplatin 50mg/m²/day x4 days if CrCl <40ml/min."
+      },
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 400,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": "days 1-4",
+        "duration_minutes": 1440,
+        "diluent": "sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "400mg/m²/day. Continuous intravenous infusion in 1000ml sodium chloride 0.9% over 24 hours (mixed with cisplatin and etoposide). Dose banded. Neutral extravasation. Consider mesna in patients with pre-existing bladder disorders: 40% of cyclophosphamide dose (rounded to nearest 400mg) orally at 0, 2 and 6 hours after cyclophosphamide.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 24.0,
+        "notes": "days 1-4 | 400mg/m²/day. Continuous intravenous infusion in 1000ml sodium chloride 0.9% over 24 hours (mixed with cisplatin and etoposide). Dose banded. Neutral extravasation. Consider mesna in patients with pre-existing bladder disorders: 40% of cyclophosphamide dose (rounded to nearest 400mg) orally at 0, 2 and 6 hours after cyclophosphamide."
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 40,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": "days 1-4",
+        "duration_minutes": 1440,
+        "diluent": "sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "40mg/m²/day. Continuous intravenous infusion in 1000ml sodium chloride 0.9% over 24 hours (mixed with cisplatin and cyclophosphamide). Dose banded. Irritant extravasation. Reduce dose if albumin significantly low.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 24.0,
+        "notes": "days 1-4 | 40mg/m²/day. Continuous intravenous infusion in 1000ml sodium chloride 0.9% over 24 hours (mixed with cisplatin and cyclophosphamide). Dose banded. Irritant extravasation. Reduce dose if albumin significantly low."
+      },
+      {
+        "drug_name": "Doxorubicin",
+        "dose": 10,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": "days 1-4",
+        "duration_minutes": 1440,
+        "diluent": "sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "10mg/m²/day. Intravenous infusion in 1000ml sodium chloride 0.9% over 24 hours or via portable infusion device (separate bag from PACE). Dose banded. VESICANT - extravasation risk. Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). Discontinue if cardiac failure develops. Baseline LVEF required if cardiac history/risk factors.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 24.0,
+        "notes": "days 1-4 | 10mg/m²/day. Intravenous infusion in 1000ml sodium chloride 0.9% over 24 hours or via portable infusion device (separate bag from PACE). Dose banded. VESICANT - extravasation risk. Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). Discontinue if cardiac failure develops. Baseline LVEF required if cardiac history/risk factors."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 40,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": "days 1-4",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "40mg once a day in the morning days 1-4. Haematological modifications not necessary. Take with or after food.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "days 1-4 | 40mg once a day in the morning days 1-4. Haematological modifications not necessary. Take with or after food."
+      },
+      {
+        "drug_name": "Thalidomide",
+        "dose": 50,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "frequency": "once a day at night, days 1-21",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 100,
+        "max_dose_unit": "mg",
+        "special_instructions": "Cycle 1: 50mg once a day at night, days 1-21 inclusive. Cycle 2-3: 100mg once a day at night (dose escalation optional - consult). Taken at night to avoid daytime drowsiness. TERATOGENIC - Pregnancy Prevention Programme mandatory for all. Available as 50mg capsules. Haematological modifications not necessary.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "once a day at night, days 1-21 | Cycle 1: 50mg once a day at night, days 1-21 inclusive. Cycle 2-3: 100mg once a day at night (dose escalation optional - consult). Taken at night to avoid daytime drowsiness. TERATOGENIC - Pregnancy Prevention Programme mandatory for all. Available as 50mg capsules. Haematological modifications not necessary."
+      }
+    ]
+  },
+  {
+    "protocol_id": "inp-vtd-pace-sc-bortezomib-sc-cisplatin-cyclophosphamide-dexamethasone-doxorubicin-etoposide-thalidomide",
+    "protocol_code": "VTD-PACE-SC",
+    "protocol_name": "VTD-PACE (SC) Bortezomib (SC)-Cisplatin-Cyclophosphamide-Dexamethasone-Doxorubicin-Etoposide-Thalidomide",
+    "category": "myeloma",
+    "indication": "Multiple myeloma in selected patients of good performance status with resistant disease, particularly where urgent disease control is required.",
+    "version": "1",
+    "cycle_length_days": 21,
+    "total_cycles": 3,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Bortezomib",
+        "dose": 1.3,
+        "dose_unit": "mg/m²",
+        "route": "Subcutaneous",
+        "days": [
+          1,
+          4,
+          8,
+          11
+        ],
+        "frequency": "days 1, 4, 8, 11",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Subcutaneous injection. Dose banded per agreed bands. IMPORTANT: dose of bortezomib in this protocol is higher than that used in other versions - confirm with consultant before prescribing. Days 8 and 11 may be given as outpatient.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Cisplatin",
+        "dose": 10,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": "days 1-4",
+        "duration_minutes": 1440,
+        "diluent": "sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "10mg/m²/day. Continuous intravenous infusion in 1000ml sodium chloride 0.9% over 24 hours or via portable infusion device (combined with cyclophosphamide and etoposide). Dose banded. Consider carboplatin 50mg/m²/day x4 days if CrCl <40ml/min.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 400,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": "days 1-4",
+        "duration_minutes": 1440,
+        "diluent": "sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "400mg/m²/day. Continuous intravenous infusion in 1000ml sodium chloride 0.9% over 24 hours (mixed with cisplatin and etoposide). Dose banded. Consider mesna for pre-existing bladder disorders.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 40,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": "days 1-4",
+        "duration_minutes": 1440,
+        "diluent": "sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "40mg/m²/day. Continuous intravenous infusion in 1000ml sodium chloride 0.9% over 24 hours (mixed with cisplatin and cyclophosphamide). Dose banded. Reduce if albumin significantly low.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Doxorubicin",
+        "dose": 10,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": "days 1-4",
+        "duration_minutes": 1440,
+        "diluent": "sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "10mg/m²/day. Intravenous infusion in 1000ml sodium chloride 0.9% over 24 hours or via portable infusion device (separate bag). Dose banded. VESICANT. Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). Discontinue if cardiac failure develops.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 40,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": "days 1-4",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "40mg once a day in the morning days 1-4. Haematological modifications not necessary. Take with or after food.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Thalidomide",
+        "dose": 50,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "frequency": "once a day at night, days 1-21",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 100,
+        "max_dose_unit": "mg",
+        "special_instructions": "Cycle 1: 50mg once a day at night, days 1-21 inclusive. Cycle 2-3: 100mg once a day at night (dose escalation optional - consult). Available as 50mg capsules. TERATOGENIC - Pregnancy Prevention Programme mandatory. Haematological modifications not necessary. Taken at night to avoid daytime drowsiness.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy, then three times a day for 5 days",
+        "indication": "Antiemetic"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy, then twice a day for 5 days",
+        "indication": "Antiemetic"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Thalidomide",
+        "dose": 50,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "Days 1-21 (nights)",
+        "frequency": "once a day at night",
+        "special_instructions": "TERATOGENIC. Pregnancy Prevention Programme. Short course oral chemotherapy - must not be continued beyond prescribed course. Prescription Authorisation Form required."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 40,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "Days 1-4",
+        "frequency": "once a day in morning",
+        "special_instructions": "To be written on in-patient chart."
+      },
+      {
+        "drug_name": "Aciclovir",
+        "dose": 400,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "21 days",
+        "frequency": "twice a day",
+        "special_instructions": "VZV/HSV prophylaxis."
+      },
+      {
+        "drug_name": "Ciprofloxacin",
+        "dose": 250,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "21 days",
+        "frequency": "twice a day",
+        "special_instructions": "Antibacterial prophylaxis."
+      },
+      {
+        "drug_name": "Co-trimoxazole",
+        "dose": 960,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "Mon, Wed, Fri",
+        "frequency": "once a day Mon/Wed/Fri (or pentamidine nebules 300mg every 4 weeks)",
+        "special_instructions": "PCP prophylaxis."
+      },
+      {
+        "drug_name": "Fluconazole",
+        "dose": 100,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "21 days",
+        "frequency": "once a day",
+        "special_instructions": "Antifungal prophylaxis."
+      },
+      {
+        "drug_name": "Thromboprophylaxis (LMWH)",
+        "dose": null,
+        "dose_unit": "units",
+        "route": "Subcutaneous",
+        "days": "21 days",
+        "frequency": "as per local formulary",
+        "special_instructions": "If platelets >50x10⁹/L. DVT prophylaxis mandatory with thalidomide."
+      },
+      {
+        "drug_name": "Allopurinol",
+        "dose": 300,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": "7 days",
+        "frequency": "once a day",
+        "special_instructions": "Cycle 1 only. Tumour lysis prophylaxis."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Haematological",
+        "condition": "Neutrophils ≥1x10⁹/L and platelets ≥75x10⁹/L",
+        "affected_drugs": [
+          "Bortezomib",
+          "Cisplatin",
+          "Cyclophosphamide",
+          "Doxorubicin",
+          "Etoposide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "100% dose. Haematological modifications not necessary for dexamethasone or thalidomide."
+      },
+      {
+        "parameter": "Haematological",
+        "condition": "Neutrophils <1x10⁹/L and/or platelets <75x10⁹/L",
+        "affected_drugs": [
+          "Bortezomib",
+          "Cisplatin",
+          "Cyclophosphamide",
+          "Doxorubicin",
+          "Etoposide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Consider delay until recovery. Cycle 1 day 1 may proceed with cytopenias due to myeloma - confirm with consultant."
+      },
+      {
+        "parameter": "Hepatic impairment - Bortezomib",
+        "condition": "Bilirubin greater than 1.5xULN",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Initiate at 0.7mg/m². May escalate to 1mg/m² or reduce to 0.5mg/m² based on tolerability."
+      },
+      {
+        "parameter": "Hepatic impairment - Doxorubicin",
+        "condition": "Bilirubin <30 and AST/ALT 2-3xULN",
+        "affected_drugs": [
+          "Doxorubicin"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "75% dose."
+      },
+      {
+        "parameter": "Hepatic impairment - Doxorubicin",
+        "condition": "Bilirubin 30-50 and/or AST/ALT >3xULN",
+        "affected_drugs": [
+          "Doxorubicin"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "50% dose."
+      },
+      {
+        "parameter": "Hepatic impairment - Doxorubicin",
+        "condition": "Bilirubin 51-85",
+        "affected_drugs": [
+          "Doxorubicin"
+        ],
+        "action": "delay",
+        "factor": 0.25,
+        "notes": "25% dose."
+      },
+      {
+        "parameter": "Hepatic impairment - Doxorubicin",
+        "condition": "Bilirubin >85",
+        "affected_drugs": [
+          "Doxorubicin"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Omit doxorubicin."
+      },
+      {
+        "parameter": "Hepatic impairment - Etoposide",
+        "condition": "Bilirubin 30-51 or AST/ALT 60-180",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Consider 50% dose reduction."
+      },
+      {
+        "parameter": "Renal impairment - Cisplatin",
+        "condition": "CrCl 40-50 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "50% dose."
+      },
+      {
+        "parameter": "Renal impairment - Cisplatin",
+        "condition": "CrCl <40 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Omit cisplatin. Consider carboplatin 50mg/m²/day x4 days."
+      },
+      {
+        "parameter": "Renal impairment - Cyclophosphamide",
+        "condition": "CrCl 10-20 ml/min",
+        "affected_drugs": [
+          "Cyclophosphamide"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "75% dose."
+      },
+      {
+        "parameter": "Renal impairment - Cyclophosphamide",
+        "condition": "CrCl <10 ml/min",
+        "affected_drugs": [
+          "Cyclophosphamide"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Omit cyclophosphamide."
+      },
+      {
+        "parameter": "Renal impairment - Etoposide",
+        "condition": "CrCl 15-50 ml/min",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "75% dose."
+      },
+      {
+        "parameter": "Renal impairment - Etoposide",
+        "condition": "CrCl <15 ml/min",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "50% dose."
+      },
+      {
+        "parameter": "Peripheral neuropathy - Bortezomib",
+        "condition": "NCI-CTC grade 1 with pain or grade 2",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Reduce to 1mg/m² or switch to weekly bortezomib 1.3mg/m²."
+      },
+      {
+        "parameter": "Peripheral neuropathy - Bortezomib",
+        "condition": "NCI-CTC grade 2 with pain or grade 3",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Discontinue until grade 1 or less, reinitiate at 0.7mg/m²."
+      },
+      {
+        "parameter": "Peripheral neuropathy - Bortezomib",
+        "condition": "NCI-CTC grade 4 or severe autonomic neuropathy",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue bortezomib."
+      },
+      {
+        "parameter": "Peripheral neuropathy - Thalidomide",
+        "condition": "NCI-CTC grade 2 neurological toxicity",
+        "affected_drugs": [
+          "Thalidomide"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Suspend or reduce dose by at least 50%."
+      },
+      {
+        "parameter": "Peripheral neuropathy - Thalidomide",
+        "condition": "NCI-CTC grade 3 or above",
+        "affected_drugs": [
+          "Thalidomide"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Stop thalidomide."
+      },
+      {
+        "parameter": "Cardiac toxicity",
+        "condition": "Cardiac failure",
+        "affected_drugs": [
+          "Doxorubicin"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Discontinue doxorubicin permanently."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 75,
+      "notes": "Neutrophils ≥1x10⁹/L and platelets ≥75x10⁹/L for 100% dose. Cycle 1 day 1 may proceed with cytopenias due to myeloma marrow involvement - confirm with consultant."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es (including calcium and magnesium) prior to day 1",
+      "FBC assessed frequently - blood products often required",
+      "Regular blood glucose monitoring",
+      "Baseline LVEF before starting (cardiac history, risk factors or elderly); discontinue doxorubicin if cardiac failure",
+      "Paraprotein or light chains every 3 weeks",
+      "Pregnancy testing in women of childbearing potential: negative test within 3 days of starting thalidomide, repeat every 4 weeks (every 2 weeks if irregular menstrual cycles), final test 4 weeks after last thalidomide dose"
+    ],
+    "special_warnings": [
+      "IN-PATIENT REGIMEN - intensive 4-day continuous infusion regimen requiring hospitalisation",
+      "Central catheter or PICC line advised for administration",
+      "SC bortezomib version: bortezomib given by subcutaneous injection (versus IV in VTD-PACE IV version)",
+      "Multiple versions of this protocol exist - ensure correct version selected",
+      "BORTEZOMIB DOSE: this protocol uses 1.3mg/m² SC which is higher than some other versions - confirm with consultant",
+      "THALIDOMIDE IS HIGHLY TERATOGENIC: Pregnancy Prevention Programme mandatory; Prescription Authorisation Form required",
+      "Thalidomide increases DVT/PE risk: thromboprophylaxis mandatory (LMWH preferred for first 5 months)",
+      "Doxorubicin is a VESICANT - extravasation risk",
+      "Cisplatin is an EXFOLIANT - extravasation risk",
+      "Maximum lifetime cumulative doxorubicin dose 450mg/m² (400mg/m² with prior mediastinal radiotherapy)",
+      "Growth factors recommended from day 5 until neutrophils >1x10⁹/L",
+      "Thalidomide dose escalates on cycle 2 (optional): 50mg cycle 1, 100mg cycles 2-3",
+      "VZV prophylaxis with aciclovir 400mg twice daily mandatory",
+      "Short course oral chemotherapy (thalidomide) - must not be continued beyond prescribed course",
+      "ORAL CHEMOTHERAPY — NPSA/2008/RRR001: Patient must be counselled and provided written information before starting. Prescriptions must be written on an approved oral chemotherapy prescription form. Dispensing must only be by a trained pharmacist. Patient must be provided with a chemotherapy alert card. Do not supply more than one cycle at a time without clinical review."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "weight_kg": true,
+      "bsa_m2": true,
+      "age_years": true,
+      "creatinine_clearance_ml_min": true,
+      "bilirubin_umol_l": true,
+      "ast_alt_units_l": true,
+      "neutrophils_x10_9_l": true,
+      "platelets_x10_9_l": true,
+      "lvef_percent": true,
+      "peripheral_neuropathy_grade": true,
+      "pregnancy_test_female": true,
+      "albumin_g_l": true
+    },
+    "disease_site": "Myeloma",
+    "number_of_cycles": 3,
+    "drugs": [
+      {
+        "drug_name": "Bortezomib",
+        "dose": 1.3,
+        "dose_unit": "mg/m²",
+        "route": "Subcutaneous",
+        "days": [
+          1,
+          4,
+          8,
+          11
+        ],
+        "frequency": "days 1, 4, 8, 11",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Subcutaneous injection. Dose banded per agreed bands. IMPORTANT: dose of bortezomib in this protocol is higher than that used in other versions - confirm with consultant before prescribing. Days 8 and 11 may be given as outpatient.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "days 1, 4, 8, 11 | Subcutaneous injection. Dose banded per agreed bands. IMPORTANT: dose of bortezomib in this protocol is higher than that used in other versions - confirm with consultant before prescribing. Days 8 and 11 may be given as outpatient."
+      },
+      {
+        "drug_name": "Cisplatin",
+        "dose": 10,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": "days 1-4",
+        "duration_minutes": 1440,
+        "diluent": "sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "10mg/m²/day. Continuous intravenous infusion in 1000ml sodium chloride 0.9% over 24 hours or via portable infusion device (combined with cyclophosphamide and etoposide). Dose banded. Consider carboplatin 50mg/m²/day x4 days if CrCl <40ml/min.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 24.0,
+        "notes": "days 1-4 | 10mg/m²/day. Continuous intravenous infusion in 1000ml sodium chloride 0.9% over 24 hours or via portable infusion device (combined with cyclophosphamide and etoposide). Dose banded. Consider carboplatin 50mg/m²/day x4 days if CrCl <40ml/min."
+      },
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 400,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": "days 1-4",
+        "duration_minutes": 1440,
+        "diluent": "sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "400mg/m²/day. Continuous intravenous infusion in 1000ml sodium chloride 0.9% over 24 hours (mixed with cisplatin and etoposide). Dose banded. Consider mesna for pre-existing bladder disorders.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 24.0,
+        "notes": "days 1-4 | 400mg/m²/day. Continuous intravenous infusion in 1000ml sodium chloride 0.9% over 24 hours (mixed with cisplatin and etoposide). Dose banded. Consider mesna for pre-existing bladder disorders."
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 40,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": "days 1-4",
+        "duration_minutes": 1440,
+        "diluent": "sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "40mg/m²/day. Continuous intravenous infusion in 1000ml sodium chloride 0.9% over 24 hours (mixed with cisplatin and cyclophosphamide). Dose banded. Reduce if albumin significantly low.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 24.0,
+        "notes": "days 1-4 | 40mg/m²/day. Continuous intravenous infusion in 1000ml sodium chloride 0.9% over 24 hours (mixed with cisplatin and cyclophosphamide). Dose banded. Reduce if albumin significantly low."
+      },
+      {
+        "drug_name": "Doxorubicin",
+        "dose": 10,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": "days 1-4",
+        "duration_minutes": 1440,
+        "diluent": "sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "10mg/m²/day. Intravenous infusion in 1000ml sodium chloride 0.9% over 24 hours or via portable infusion device (separate bag). Dose banded. VESICANT. Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). Discontinue if cardiac failure develops.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 24.0,
+        "notes": "days 1-4 | 10mg/m²/day. Intravenous infusion in 1000ml sodium chloride 0.9% over 24 hours or via portable infusion device (separate bag). Dose banded. VESICANT. Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). Discontinue if cardiac failure develops."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 40,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": "days 1-4",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "40mg once a day in the morning days 1-4. Haematological modifications not necessary. Take with or after food.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "days 1-4 | 40mg once a day in the morning days 1-4. Haematological modifications not necessary. Take with or after food."
+      },
+      {
+        "drug_name": "Thalidomide",
+        "dose": 50,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "frequency": "once a day at night, days 1-21",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 100,
+        "max_dose_unit": "mg",
+        "special_instructions": "Cycle 1: 50mg once a day at night, days 1-21 inclusive. Cycle 2-3: 100mg once a day at night (dose escalation optional - consult). Available as 50mg capsules. TERATOGENIC - Pregnancy Prevention Programme mandatory. Haematological modifications not necessary. Taken at night to avoid daytime drowsiness.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "once a day at night, days 1-21 | Cycle 1: 50mg once a day at night, days 1-21 inclusive. Cycle 2-3: 100mg once a day at night (dose escalation optional - consult). Available as 50mg capsules. TERATOGENIC - Pregnancy Prevention Programme mandatory. Haematological modifications not necessary. Taken at night to avoid daytime drowsiness."
+      }
+    ]
+  }
+]

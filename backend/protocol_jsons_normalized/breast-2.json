@@ -1,0 +1,1139 @@
+[
+  {
+    "protocol_code": "BREAST-CYCLOPHOSPHAMIDE-DOCETAXEL",
+    "protocol_name": "Breast Cancer - Cyclophosphamide-Docetaxel",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 4,
+    "drugs": [
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 600.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus over 10 minutes. Dose banded as per CSCCN agreed bands. Consider mesna if renal impairment."
+      },
+      {
+        "drug_name": "Docetaxel",
+        "dose": 75.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 250ml sodium chloride 0.9% over 60 minutes. Doses >200mg diluted in 500ml NaCl 0.9% (max concentration 0.74mg/ml). Consider starting dose of 55mg/m² in those with poor bone marrow reserves. Docetaxel-induced fluid retention can lead to weight gain - not a reason to alter doses."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophil <1x10^9/L or platelets <100x10^9/L on day 1",
+        "drug_name": "Cyclophosphamide and Docetaxel",
+        "factor": 1.0,
+        "notes": "Delay treatment for 7 days. Only restart when levels reached."
+      },
+      {
+        "condition": "Febrile neutropenia or treatment delay due to neutrophils <0.5x10^9/L or platelets <50x10^9/L for more than 1 week",
+        "drug_name": "Cyclophosphamide and Docetaxel",
+        "factor": 0.8,
+        "notes": "Reduce dose to 80% of original dose."
+      },
+      {
+        "condition": "Recurrence of neutropenia/thrombocytopenia following 80% dose reduction",
+        "drug_name": "Cyclophosphamide and Docetaxel",
+        "factor": 0.5,
+        "notes": "Further reduce to 50% of original dose or stop treatment."
+      },
+      {
+        "condition": "Hepatic impairment: AST/ALT ≥1.5xULN and Alk Phos ≥2.5xULN",
+        "drug_name": "Docetaxel",
+        "factor": 0.75,
+        "notes": "Consider 75% dose reduction."
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin >ULN and/or AST/ALT ≥3.5xULN and Alk Phos ≥6xULN",
+        "drug_name": "Docetaxel",
+        "factor": 0.0,
+        "notes": "Not recommended."
+      },
+      {
+        "condition": "Renal impairment: CrCl 10-20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose. Consider mesna."
+      },
+      {
+        "condition": "Renal impairment: CrCl <10 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose. Consider mesna."
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 3",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Reduce from 75mg/m² to 60mg/m² once neuropathy resolves to grade 2 or below. If grade 3 occurs at doses <75mg/m² or grade 4 develops, consider stopping."
+      },
+      {
+        "condition": "Excessive lacrimation related to cumulative docetaxel dose",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "If ocular irritation continues despite hypromellose 0.3% eye drops, reduce to 80% of original dose."
+      },
+      {
+        "condition": "NCI-CTC grade 3 cutaneous toxicity on day 1 of cycle",
+        "drug_name": "Docetaxel",
+        "factor": 0.75,
+        "notes": "Delay until resolves to grade 1 or below. Reduce from 100mg/m² to 75mg/m² or from 75mg/m² to 60mg/m². Stop if occurs at 60mg/m² or no recovery after 2 weeks. Stop for grade 4 cutaneous toxicity."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg twice a day oral for 3 days starting 24 hours before docetaxel (days -1, 1, 2)",
+      "Ondansetron 8mg oral or intravenous 15-30 minutes before chemotherapy",
+      "If dexamethasone pre-medication forgotten: Dexamethasone 20mg IV bolus once only",
+      "Growth factor: filgrastim 300mcg SC daily for 7 days from day 3, OR lenograstim 263mcg SC daily for 7 days from day 3, OR pegfilgrastim 6mg SC on day 2"
+    ],
+    "special_warnings": [
+      "Hypersensitivity reactions tend to occur with first or second infusion of docetaxel. Immediately discontinue for severe reactions (profound hypotension, bronchospasm, generalised erythema).",
+      "Docetaxel is highly myelosuppressive. Consider starting dose of 55mg/m² in patients with poor bone marrow reserves.",
+      "Docetaxel-induced fluid retention can cause weight gain - not a reason to alter doses.",
+      "Cyclophosphamide extravasation classification: neutral. Docetaxel extravasation classification: exfoliant.",
+      "Growth factors may be considered according to local policy."
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "creatinine_clearance",
+      "liver_function_tests"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "BREAST-DOXORUBICIN-21DAY",
+    "protocol_name": "Breast Cancer - Doxorubicin (21 day)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 4,
+    "drugs": [
+      {
+        "drug_name": "Doxorubicin",
+        "dose": 75.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus over 10 minutes. Dose banded as per CSCCN agreed bands. Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). Vesicant - extravasation precautions required."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophil <1.5x10^9/L or platelets <100x10^9/L on day 1",
+        "drug_name": "Doxorubicin",
+        "factor": 1.0,
+        "notes": "Delay treatment for 7 days. Resume at original dose or reduce to 80% depending on clinical circumstances."
+      },
+      {
+        "condition": "Second episode of neutropenia/thrombocytopenia or delay >7 days to reach eligible levels",
+        "drug_name": "Doxorubicin",
+        "factor": 0.0,
+        "notes": "Consider stopping or changing treatment."
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin 20-51 µmol/L",
+        "drug_name": "Doxorubicin",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin 51-85 µmol/L",
+        "drug_name": "Doxorubicin",
+        "factor": 0.25,
+        "notes": "Reduce to 25% of original dose."
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin >85 µmol/L",
+        "drug_name": "Doxorubicin",
+        "factor": 0.0,
+        "notes": "Omit dose."
+      },
+      {
+        "condition": "Hepatic impairment: AST 2-3xULN",
+        "drug_name": "Doxorubicin",
+        "factor": 0.75,
+        "notes": "Give 75% of the dose."
+      },
+      {
+        "condition": "Hepatic impairment: AST >3xULN",
+        "drug_name": "Doxorubicin",
+        "factor": 0.5,
+        "notes": "Give 50% of the dose."
+      },
+      {
+        "condition": "Cardiac failure develops",
+        "drug_name": "Doxorubicin",
+        "factor": 0.0,
+        "notes": "Discontinue doxorubicin."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg oral or equivalent IV dose 15-30 minutes prior to chemotherapy",
+      "Ondansetron 8mg oral or intravenous 15-30 minutes prior to chemotherapy",
+      "Take home: Dexamethasone 4mg twice a day for 3 days oral starting day 2",
+      "Take home: Metoclopramide 10mg three times a day when required oral",
+      "Take home: Ondansetron 8mg twice a day for 3 days oral starting evening of day 1"
+    ],
+    "special_warnings": [
+      "Maximum lifetime cumulative dose of doxorubicin is 450mg/m². Patients with prior radiotherapy to mediastinal/pericardial area must not exceed 400mg/m² lifetime cumulative dose.",
+      "Ensure adequate cardiac function before starting treatment. Baseline LVEF should be measured, particularly in patients with history of cardiac problems or elderly.",
+      "Discontinue doxorubicin if cardiac failure develops.",
+      "Doxorubicin is a vesicant - extravasation precautions required.",
+      "Urinary discolouration (red) is expected - counsel patient."
+    ],
+    "required_patient_fields": [
+      "lvef",
+      "neutrophil_count",
+      "platelet_count",
+      "liver_function_tests"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "BREAST-DOXORUBICIN-7DAY",
+    "protocol_name": "Breast Cancer - Doxorubicin (7 day)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 7,
+    "number_of_cycles": 18,
+    "drugs": [
+      {
+        "drug_name": "Doxorubicin",
+        "dose": 20.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus over 10 minutes. Dose banded as per CSCCN agreed bands. Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). Vesicant - extravasation precautions required."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophil <1.5x10^9/L or platelets <100x10^9/L on day 1",
+        "drug_name": "Doxorubicin",
+        "factor": 1.0,
+        "notes": "Delay treatment for 7 days. Resume at original dose or reduce to 80% depending on clinical circumstances."
+      },
+      {
+        "condition": "Second episode of neutropenia/thrombocytopenia or delay >7 days to reach eligible levels",
+        "drug_name": "Doxorubicin",
+        "factor": 0.0,
+        "notes": "Consider changing treatment. Note: in bone marrow failure due to malignant infiltration, haematological dose modifications may not be relevant - seek consultant advice."
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin 20-51 µmol/L",
+        "drug_name": "Doxorubicin",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin 51-85 µmol/L",
+        "drug_name": "Doxorubicin",
+        "factor": 0.25,
+        "notes": "Reduce to 25% of original dose."
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin >85 µmol/L",
+        "drug_name": "Doxorubicin",
+        "factor": 0.0,
+        "notes": "Omit dose."
+      },
+      {
+        "condition": "Hepatic impairment: AST 2-3xULN",
+        "drug_name": "Doxorubicin",
+        "factor": 0.75,
+        "notes": "Give 75% of the dose."
+      },
+      {
+        "condition": "Hepatic impairment: AST >3xULN",
+        "drug_name": "Doxorubicin",
+        "factor": 0.5,
+        "notes": "Give 50% of the dose."
+      },
+      {
+        "condition": "Cardiac failure develops",
+        "drug_name": "Doxorubicin",
+        "factor": 0.0,
+        "notes": "Discontinue doxorubicin."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 4mg oral or equivalent IV dose 15-30 minutes prior to chemotherapy",
+      "Ondansetron 8mg oral or intravenous 15-30 minutes prior to chemotherapy",
+      "Take home: Metoclopramide 10mg three times a day when required oral (supply once on day 1, thereafter on request)",
+      "Take home: Ondansetron 8mg twice a day for 1 day oral starting evening of day 1"
+    ],
+    "special_warnings": [
+      "Maximum lifetime cumulative dose of doxorubicin is 450mg/m². Patients with prior radiotherapy to mediastinal/pericardial area must not exceed 400mg/m² lifetime cumulative dose.",
+      "Ensure adequate cardiac function before starting treatment. Baseline LVEF should be measured, particularly in patients with history of cardiac problems or elderly.",
+      "Discontinue doxorubicin if cardiac failure develops.",
+      "Doxorubicin is a vesicant - extravasation precautions required.",
+      "Urinary discolouration (red) is expected - counsel patient.",
+      "When used for bone marrow failure secondary to malignant infiltration, haematological dose modifications may not be relevant - seek consultant advice."
+    ],
+    "required_patient_fields": [
+      "lvef",
+      "neutrophil_count",
+      "platelet_count",
+      "liver_function_tests"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "BREAST-EPIRUBICIN-21DAY",
+    "protocol_name": "Breast Cancer - Epirubicin (21 day)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 4,
+    "drugs": [
+      {
+        "drug_name": "Epirubicin",
+        "dose": 100.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus over 10 minutes. Dose banded as per CSCCN agreed bands. Maximum lifetime cumulative dose 900mg/m². Vesicant - extravasation precautions required. Number of cycles may vary depending on whether used as single agent or sequential/combination therapy."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1.5x10^9/L or platelets <100x10^9/L on day 1 of cycle 1",
+        "drug_name": "Epirubicin",
+        "factor": 1.0,
+        "notes": "Delay treatment for 7 days. Resume at original dose or reduce to 80% depending on clinical circumstances."
+      },
+      {
+        "condition": "Second episode of neutropenia/thrombocytopenia or delay >7 days to reach eligible levels",
+        "drug_name": "Epirubicin",
+        "factor": 0.0,
+        "notes": "Consider stopping or changing treatment."
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin 24-51 µmol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin 51-85 µmol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.25,
+        "notes": "Reduce to 25% of original dose."
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin >85 µmol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.0,
+        "notes": "Contra-indicated."
+      },
+      {
+        "condition": "Hepatic impairment: AST 2-4xULN",
+        "drug_name": "Epirubicin",
+        "factor": 0.5,
+        "notes": "Give 50% dose."
+      },
+      {
+        "condition": "Hepatic impairment: AST >4xULN",
+        "drug_name": "Epirubicin",
+        "factor": 0.25,
+        "notes": "Give 25% dose."
+      },
+      {
+        "condition": "Severe renal impairment",
+        "drug_name": "Epirubicin",
+        "factor": 0.75,
+        "notes": "Dose reduce in severe impairment only."
+      },
+      {
+        "condition": "Cardiac failure develops",
+        "drug_name": "Epirubicin",
+        "factor": 0.0,
+        "notes": "Discontinue epirubicin."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg oral or equivalent IV dose 15-30 minutes prior to chemotherapy",
+      "Ondansetron 8mg oral or intravenous 15-30 minutes prior to chemotherapy",
+      "Take home: Dexamethasone 4mg twice a day for 3 days oral starting day 2 of cycle",
+      "Take home: Metoclopramide 10mg three times a day when required oral",
+      "Take home: Ondansetron 8mg twice a day for 3 days oral starting evening of day of treatment"
+    ],
+    "special_warnings": [
+      "Maximum lifetime cumulative dose of epirubicin is 900mg/m².",
+      "Ensure adequate cardiac function before starting treatment. Baseline LVEF should be measured, particularly in patients with history of cardiac problems or elderly.",
+      "Discontinue epirubicin if cardiac failure develops.",
+      "Epirubicin is a vesicant - extravasation precautions required.",
+      "Urinary discolouration (red) is expected - counsel patient.",
+      "Check number of cycles required prior to prescribing - may vary depending on single agent vs sequential/combination use."
+    ],
+    "required_patient_fields": [
+      "lvef",
+      "neutrophil_count",
+      "platelet_count",
+      "liver_function_tests"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "BREAST-EPIRUBICIN-7DAY",
+    "protocol_name": "Breast Cancer - Epirubicin (7 day)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 7,
+    "number_of_cycles": 18,
+    "drugs": [
+      {
+        "drug_name": "Epirubicin",
+        "dose": 25.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus over 10 minutes. Dose banded as per CSCCN agreed bands. Maximum lifetime cumulative dose 900mg/m². Vesicant - extravasation precautions required."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1.5x10^9/L or platelets <100x10^9/L on day 1 of cycle 1",
+        "drug_name": "Epirubicin",
+        "factor": 1.0,
+        "notes": "Delay treatment for 7 days. Resume at original dose or reduce to 80% depending on clinical circumstances."
+      },
+      {
+        "condition": "Second episode of neutropenia/thrombocytopenia or delay >7 days to reach eligible levels",
+        "drug_name": "Epirubicin",
+        "factor": 0.0,
+        "notes": "Consider stopping or changing treatment. Note: when used for bone marrow failure secondary to malignant infiltration, haematological dose modifications may not be relevant - seek consultant advice."
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin 24-51 µmol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin 51-85 µmol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.25,
+        "notes": "Reduce to 25% of original dose."
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin >85 µmol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.0,
+        "notes": "Contra-indicated."
+      },
+      {
+        "condition": "Hepatic impairment: AST 2-4xULN",
+        "drug_name": "Epirubicin",
+        "factor": 0.5,
+        "notes": "Give 50% dose."
+      },
+      {
+        "condition": "Hepatic impairment: AST >4xULN",
+        "drug_name": "Epirubicin",
+        "factor": 0.25,
+        "notes": "Give 25% dose."
+      },
+      {
+        "condition": "Severe renal impairment",
+        "drug_name": "Epirubicin",
+        "factor": 0.75,
+        "notes": "Dose reduce in severe impairment only."
+      },
+      {
+        "condition": "Cardiac failure develops",
+        "drug_name": "Epirubicin",
+        "factor": 0.0,
+        "notes": "Discontinue epirubicin."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 4mg oral or equivalent IV dose 15-30 minutes prior to chemotherapy",
+      "Ondansetron 8mg oral or intravenous 15-30 minutes prior to chemotherapy",
+      "Take home: Metoclopramide 10mg three times a day when required oral (supply once on day 1, thereafter on request)",
+      "Take home: Ondansetron 8mg twice a day for 1 day oral starting evening of day of treatment"
+    ],
+    "special_warnings": [
+      "Maximum lifetime cumulative dose of epirubicin is 900mg/m².",
+      "Ensure adequate cardiac function before starting treatment. Baseline LVEF should be measured, particularly in patients with history of cardiac problems or elderly.",
+      "Discontinue epirubicin if cardiac failure develops.",
+      "Epirubicin is a vesicant - extravasation precautions required.",
+      "Urinary discolouration (red) is expected - counsel patient.",
+      "When used for bone marrow failure secondary to malignant infiltration, haematological dose modifications may not be relevant - seek consultant advice."
+    ],
+    "required_patient_fields": [
+      "lvef",
+      "neutrophil_count",
+      "platelet_count",
+      "liver_function_tests"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "BREAST-ERIBULIN",
+    "protocol_name": "Breast Cancer - Eribulin",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Eribulin",
+        "dose": 1.23,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1,
+          8
+        ],
+        "infusion_duration_hours": 0.083,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus in 100ml sodium chloride 0.9% over 5 minutes. 1.23mg/m² of ready-made solution is equivalent to 1.4mg/m² eribulin mesylate. Dose banded in accordance with national dose bands. Eribulin extravasation classification: neutral."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophil <1.5x10^9/L or platelets <100x10^9/L prior to cycle 1",
+        "drug_name": "Eribulin",
+        "factor": 1.0,
+        "notes": "Delay treatment until criteria met."
+      },
+      {
+        "condition": "Day 1 or 8: neutrophil 0.5-1x10^9/L or platelet 50-75x10^9/L with no active bleeding",
+        "drug_name": "Eribulin",
+        "factor": 1.0,
+        "notes": "Delay treatment on day 1 or 8."
+      },
+      {
+        "condition": "Neutrophil <0.5x10^9/L for >7 days, OR neutrophil <1x10^9/L complicated by fever/infection, OR platelets <25x10^9/L, OR platelets <50x10^9/L complicated by haemorrhage or requiring transfusion",
+        "drug_name": "Eribulin",
+        "factor": 0.79,
+        "notes": "Reduce dose to 0.97mg/m²."
+      },
+      {
+        "condition": "Recurrence of haematological toxicity despite dose reduction to 0.97mg/m²",
+        "drug_name": "Eribulin",
+        "factor": 0.5,
+        "notes": "Further reduce to 0.62mg/m². If haematological toxicity recurs at this dose, discontinue treatment."
+      },
+      {
+        "condition": "Renal impairment: CrCl <40 ml/min",
+        "drug_name": "Eribulin",
+        "factor": 0.75,
+        "notes": "Consider reducing the dose."
+      },
+      {
+        "condition": "Moderate hepatic impairment (Child Pugh B)",
+        "drug_name": "Eribulin",
+        "factor": 0.5,
+        "notes": "Consider reducing dose to 0.62mg/m²."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg oral or equivalent IV dose 15-30 minutes before chemotherapy",
+      "Metoclopramide 10mg oral or intravenous 15-30 minutes before chemotherapy",
+      "Take home: Metoclopramide 10mg three times a day when required oral (day 1 only - one pack for use on both day 1 and day 8)"
+    ],
+    "special_warnings": [
+      "Eribulin can cause prolonged QT interval - monitor ECG as clinically indicated.",
+      "Prior therapy should have included an anthracycline and a taxane unless patients were not suitable for these.",
+      "Treatment is for locally advanced or metastatic breast cancer which has progressed after at least two chemotherapeutic regimens for advanced disease.",
+      "Eribulin extravasation classification: neutral."
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "creatinine_clearance",
+      "liver_function_tests"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "BREAST-CAPECITABINE-TRASTUZUMAB-IV-TUCATINIB",
+    "protocol_name": "Breast Cancer - Capecitabine-Trastuzumab (IV)-Tucatinib",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Trastuzumab",
+        "dose": 8.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "CYCLE 1 ONLY: Loading dose 8mg/kg in 250ml sodium chloride 0.9% over 90 minutes. CYCLE 2 ONWARDS: Maintenance dose 6mg/kg in 250ml sodium chloride 0.9% over 30 minutes (if first infusion well tolerated). Trastuzumab IV formulation - dose differs from SC. Dose banded in accordance with national dose bands (21mg/ml). If dose missed by ≤1 week, give usual maintenance dose 6mg/kg as soon as possible. If missed by >1 week, re-load with 8mg/kg over 90 minutes. Minimum 21 days between doses. Dose reductions are NOT permitted for trastuzumab."
+      },
+      {
+        "drug_name": "Capecitabine",
+        "dose": 1000.0,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "1000mg/m² twice daily on days 1-14 followed by 7-day break. Take with or after food. Dose banded in accordance with national dose bands. Available as 500mg and 150mg tablets. Doses are omitted (not delayed) when stopped for toxicity."
+      },
+      {
+        "drug_name": "Tucatinib",
+        "dose": 300.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "300mg twice daily continuously days 1-21. Available as 150mg and 50mg film-coated tablets. Swallow whole - do not chew, crush or split. Take approximately 12 hours apart, same time every day with or without food. May be taken at same time as capecitabine. If dose missed, take next dose at regularly scheduled time."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophil <1.5x10^9/L or platelets <100x10^9/L on day 1 (capecitabine criteria)",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "Delay treatment by 7 days. Resume same dose if delay ≤7 days. If delay >7 days or second occurrence, reduce to 80%. If levels not achieved despite dose reduction, consider stopping."
+      },
+      {
+        "condition": "Unscheduled neutrophil <1x10^9/L or platelets <75x10^9/L during treatment",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "Interrupt capecitabine treatment."
+      },
+      {
+        "condition": "Capecitabine hepatic: bilirubin >3xULN or AST/ALT >2.5xULN (treatment-related elevation)",
+        "drug_name": "Capecitabine",
+        "factor": 0.0,
+        "notes": "Hold capecitabine. Restart when bilirubin ≤3xULN or AST/ALT ≤2.5xULN."
+      },
+      {
+        "condition": "Capecitabine renal impairment: CrCl 30-50 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose."
+      },
+      {
+        "condition": "Capecitabine renal impairment: CrCl <30 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.0,
+        "notes": "Contraindicated."
+      },
+      {
+        "condition": "Capecitabine NCI-CTC grade 2 toxicity (first occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "Interrupt until resolves to grade 1 or below, then continue at same dose."
+      },
+      {
+        "condition": "Capecitabine NCI-CTC grade 2 toxicity (second occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until resolves to grade 1 or below, then resume at 75% of original dose."
+      },
+      {
+        "condition": "Capecitabine NCI-CTC grade 2 toxicity (third occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Interrupt until resolves to grade 1 or below, then continue at 50% of original dose. Stop if fourth occurrence."
+      },
+      {
+        "condition": "Capecitabine NCI-CTC grade 3 toxicity (first occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until resolves to grade 1 or below, then continue at 75% with prophylaxis if appropriate."
+      },
+      {
+        "condition": "Capecitabine NCI-CTC grade 3 toxicity (second occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Interrupt until resolves to grade 1 or below, then resume at 50% of original dose."
+      },
+      {
+        "condition": "Capecitabine NCI-CTC grade 3 toxicity (third occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.0,
+        "notes": "Discontinue capecitabine."
+      },
+      {
+        "condition": "Capecitabine NCI-CTC grade 4 toxicity",
+        "drug_name": "Capecitabine",
+        "factor": 0.0,
+        "notes": "Discontinue unless consultant considers continuing at 50% once toxicity resolves to grade 1."
+      },
+      {
+        "condition": "Trastuzumab IV: LVEF drop - LVEF ≥50% and drop ≤20 points",
+        "drug_name": "Trastuzumab",
+        "factor": 1.0,
+        "notes": "Continue treatment."
+      },
+      {
+        "condition": "Trastuzumab IV: LVEF ≥50% and drop >20 points",
+        "drug_name": "Trastuzumab",
+        "factor": 1.0,
+        "notes": "Continue treatment and repeat LVEF in 3 weeks."
+      },
+      {
+        "condition": "Trastuzumab IV: LVEF <50% and drop <10 points",
+        "drug_name": "Trastuzumab",
+        "factor": 1.0,
+        "notes": "Hold treatment and repeat LVEF in 3 weeks. If not confirmed (drop <10 points or LVEF ≥50%), resume treatment."
+      },
+      {
+        "condition": "Trastuzumab IV: LVEF <50% and drop ≥10 points (confirmed on repeat)",
+        "drug_name": "Trastuzumab",
+        "factor": 0.0,
+        "notes": "Stop treatment. Dose reductions NOT permitted for trastuzumab."
+      },
+      {
+        "condition": "Tucatinib hepatotoxicity: Grade 2 bilirubin (>1.5-3xULN)",
+        "drug_name": "Tucatinib",
+        "factor": 1.0,
+        "notes": "Hold tucatinib until recovery to ≤grade 1, then resume at same dose level."
+      },
+      {
+        "condition": "Tucatinib hepatotoxicity: Grade 3 AST or ALT (>5-20xULN) OR Grade 3 bilirubin (>3-10xULN)",
+        "drug_name": "Tucatinib",
+        "factor": 0.83,
+        "notes": "Hold tucatinib until recovery to ≤grade 1, then resume at next lower dose level (300→250→200→150mg twice daily)."
+      },
+      {
+        "condition": "Tucatinib hepatotoxicity: Grade 4 ALT or AST (>20xULN) OR Grade 4 bilirubin (>10xULN)",
+        "drug_name": "Tucatinib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue tucatinib."
+      },
+      {
+        "condition": "Tucatinib hepatotoxicity: ALT or AST >3xULN AND bilirubin >2xULN",
+        "drug_name": "Tucatinib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue tucatinib."
+      },
+      {
+        "condition": "Tucatinib severe hepatic impairment (Child Pugh C)",
+        "drug_name": "Tucatinib",
+        "factor": 0.67,
+        "notes": "Initiate at reduced dose of 200mg twice daily."
+      },
+      {
+        "condition": "Tucatinib diarrhoea grade 3 without anti-diarrheal treatment",
+        "drug_name": "Tucatinib",
+        "factor": 1.0,
+        "notes": "Initiate/intensify anti-diarrheal therapy. Hold until recovery to ≤grade 1, then resume at same dose level."
+      },
+      {
+        "condition": "Tucatinib diarrhoea grade 3 with anti-diarrheal treatment",
+        "drug_name": "Tucatinib",
+        "factor": 0.83,
+        "notes": "Hold until recovery to ≤grade 1, then resume at one dose level lower."
+      },
+      {
+        "condition": "Tucatinib diarrhoea grade 4",
+        "drug_name": "Tucatinib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue tucatinib."
+      },
+      {
+        "condition": "Tucatinib other adverse effect grade 3",
+        "drug_name": "Tucatinib",
+        "factor": 0.83,
+        "notes": "Hold until recovery to ≤grade 1, then resume at one dose level lower."
+      },
+      {
+        "condition": "Tucatinib other adverse effect grade 4",
+        "drug_name": "Tucatinib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue tucatinib."
+      },
+      {
+        "condition": "Tucatinib unable to tolerate 150mg twice daily",
+        "drug_name": "Tucatinib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue tucatinib."
+      }
+    ],
+    "pre_medications": [
+      "For trastuzumab injection reactions (once only when required): Chlorphenamine 10mg intravenous",
+      "For trastuzumab injection reactions (once only when required): Hydrocortisone 100mg intravenous",
+      "For trastuzumab injection reactions (once only when required): Paracetamol 1000mg oral",
+      "Take home (cycle 1 only): Metoclopramide 10mg three times a day when required oral",
+      "Take home (cycle 1 only): Loperamide 4mg after first loose stool then 2-4mg four times a day when required (max 16mg/24h)"
+    ],
+    "special_warnings": [
+      "DPD TESTING REQUIRED: All patients must be tested for DPD (dihydropyrimidine dehydrogenase) deficiency before initiating capecitabine (cycle 1) unless they have previously had capecitabine or fluorouracil. Patients with complete or partial DPD deficiency are at increased risk of severe and fatal toxicity.",
+      "HER2-positive disease required: Patient must have HER2 3+ by immunohistochemistry and/or HER2 amplification ratio >2 by in situ hybridisation.",
+      "Prior anti-HER2 therapy required: Patient must have received 2 or more anti-HER2 regimens including a trastuzumab-containing regimen and trastuzumab emtansine.",
+      "LVEF must be 50% or above before starting cycle 1 of trastuzumab. Assess cardiac function every 12 weeks for 24 weeks, then every 24 weeks.",
+      "Trastuzumab IV formulation - dose reductions are NOT permitted for trastuzumab. Loading dose 8mg/kg (cycle 1), maintenance 6mg/kg (cycle 2 onwards).",
+      "Tucatinib hepatotoxicity monitoring required: Monitor LFTs and bilirubin. Dose reductions required for elevated transaminases/bilirubin.",
+      "Trastuzumab is associated with hypersensitivity/infusion reactions. Observe patients for 6 hours after first IV administration and 2 hours after subsequent administrations.",
+      "Capecitabine: ensure total daily dose is divided into two doses given 12 hours apart. Serious toxicity has occurred where total daily dose given twice a day.",
+      "Capecitabine doses are omitted (not delayed) when stopped for toxicity.",
+      "Treatment continues until disease progression or unacceptable toxicity.",
+      "Trastuzumab: patients who develop symptomatic cardiac dysfunction should have trastuzumab discontinued, commence ACE inhibitor therapy and be referred to a cardiologist.",
+      "ORAL CHEMOTHERAPY — NPSA/2008/RRR001: Patient must be counselled and provided written information before starting. Prescriptions must be written on an approved oral chemotherapy prescription form. Dispensing must only be by a trained pharmacist. Patient must be provided with a chemotherapy alert card. Do not supply more than one cycle at a time without clinical review."
+    ],
+    "required_patient_fields": [
+      "lvef",
+      "her2_status",
+      "creatinine_clearance",
+      "liver_function_tests",
+      "dpd_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "BREAST-CAPECITABINE-TRASTUZUMAB-SC-TUCATINIB",
+    "protocol_name": "Breast Cancer - Capecitabine-Trastuzumab (SC)-Tucatinib",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Trastuzumab",
+        "dose": 600.0,
+        "dose_unit": "mg",
+        "route": "Subcutaneous",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.067,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "600mg subcutaneous injection over 2-5 minutes on day 1 of every cycle (same dose for all cycles - no loading dose required for SC formulation). Alternate injection site between left and right thigh; new injections at least 2.5cm from old site, never into red/bruised/tender/hard skin. If dose missed, administer 600mg as soon as possible; interval between consecutive SC administrations should not be less than 3 weeks. Dose reductions are NOT permitted for trastuzumab SC."
+      },
+      {
+        "drug_name": "Capecitabine",
+        "dose": 1000.0,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "1000mg/m² twice daily on days 1-14 followed by 7-day break. Take with or after food. Dose banded in accordance with national dose bands. Available as 500mg and 150mg tablets. Doses are omitted (not delayed) when stopped for toxicity."
+      },
+      {
+        "drug_name": "Tucatinib",
+        "dose": 300.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "300mg twice daily continuously days 1-21. Available as 150mg and 50mg film-coated tablets. Swallow whole - do not chew, crush or split. Take approximately 12 hours apart, same time every day with or without food. May be taken at same time as capecitabine. If dose missed, take next dose at regularly scheduled time."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophil <1.5x10^9/L or platelets <100x10^9/L on day 1 (capecitabine criteria)",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "Delay treatment by 7 days. Resume same dose if delay ≤7 days. If delay >7 days or second occurrence, reduce to 80%. If levels not achieved despite dose reduction, consider stopping."
+      },
+      {
+        "condition": "Unscheduled neutrophil <1x10^9/L or platelets <75x10^9/L during treatment",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "Interrupt capecitabine treatment."
+      },
+      {
+        "condition": "Capecitabine hepatic: bilirubin >3xULN or AST/ALT >2.5xULN (treatment-related elevation)",
+        "drug_name": "Capecitabine",
+        "factor": 0.0,
+        "notes": "Hold capecitabine. Restart when bilirubin ≤3xULN or AST/ALT ≤2.5xULN."
+      },
+      {
+        "condition": "Capecitabine renal impairment: CrCl 30-50 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose."
+      },
+      {
+        "condition": "Capecitabine renal impairment: CrCl <30 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.0,
+        "notes": "Contraindicated."
+      },
+      {
+        "condition": "Capecitabine NCI-CTC grade 2 toxicity (first occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "Interrupt until resolves to grade 1 or below, then continue at same dose."
+      },
+      {
+        "condition": "Capecitabine NCI-CTC grade 2 toxicity (second occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until resolves to grade 1 or below, then resume at 75% of original dose."
+      },
+      {
+        "condition": "Capecitabine NCI-CTC grade 2 toxicity (third occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Interrupt until resolves to grade 1 or below, then continue at 50% of original dose. Stop if fourth occurrence."
+      },
+      {
+        "condition": "Capecitabine NCI-CTC grade 3 toxicity (first occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until resolves to grade 1 or below, then continue at 75% with prophylaxis if appropriate."
+      },
+      {
+        "condition": "Capecitabine NCI-CTC grade 3 toxicity (second occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Interrupt until resolves to grade 1 or below, then resume at 50% of original dose."
+      },
+      {
+        "condition": "Capecitabine NCI-CTC grade 3 toxicity (third occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.0,
+        "notes": "Discontinue capecitabine."
+      },
+      {
+        "condition": "Capecitabine NCI-CTC grade 4 toxicity",
+        "drug_name": "Capecitabine",
+        "factor": 0.0,
+        "notes": "Discontinue unless consultant considers continuing at 50% once toxicity resolves to grade 1."
+      },
+      {
+        "condition": "Trastuzumab SC: LVEF ≥50% and drop ≤20 points",
+        "drug_name": "Trastuzumab",
+        "factor": 1.0,
+        "notes": "Continue treatment."
+      },
+      {
+        "condition": "Trastuzumab SC: LVEF ≥50% and drop >20 points",
+        "drug_name": "Trastuzumab",
+        "factor": 1.0,
+        "notes": "Continue treatment and repeat LVEF in 3 weeks."
+      },
+      {
+        "condition": "Trastuzumab SC: LVEF <50% and drop <10 points",
+        "drug_name": "Trastuzumab",
+        "factor": 1.0,
+        "notes": "Hold treatment and repeat LVEF in 3 weeks. If not confirmed, resume treatment."
+      },
+      {
+        "condition": "Trastuzumab SC: LVEF <50% and drop ≥10 points (confirmed on repeat)",
+        "drug_name": "Trastuzumab",
+        "factor": 0.0,
+        "notes": "Stop treatment. Dose reductions NOT permitted for trastuzumab SC."
+      },
+      {
+        "condition": "Tucatinib hepatotoxicity: Grade 2 bilirubin (>1.5-3xULN)",
+        "drug_name": "Tucatinib",
+        "factor": 1.0,
+        "notes": "Hold tucatinib until recovery to ≤grade 1, then resume at same dose level."
+      },
+      {
+        "condition": "Tucatinib hepatotoxicity: Grade 3 AST or ALT (>5-20xULN) OR Grade 3 bilirubin (>3-10xULN)",
+        "drug_name": "Tucatinib",
+        "factor": 0.83,
+        "notes": "Hold tucatinib until recovery to ≤grade 1, then resume at next lower dose level (300→250→200→150mg twice daily)."
+      },
+      {
+        "condition": "Tucatinib hepatotoxicity: Grade 4 ALT or AST (>20xULN) OR Grade 4 bilirubin (>10xULN)",
+        "drug_name": "Tucatinib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue tucatinib."
+      },
+      {
+        "condition": "Tucatinib hepatotoxicity: ALT or AST >3xULN AND bilirubin >2xULN",
+        "drug_name": "Tucatinib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue tucatinib."
+      },
+      {
+        "condition": "Tucatinib severe hepatic impairment (Child Pugh C)",
+        "drug_name": "Tucatinib",
+        "factor": 0.67,
+        "notes": "Initiate at reduced dose of 200mg twice daily."
+      },
+      {
+        "condition": "Tucatinib diarrhoea grade 3 without anti-diarrheal treatment",
+        "drug_name": "Tucatinib",
+        "factor": 1.0,
+        "notes": "Initiate/intensify anti-diarrheal therapy. Hold until recovery to ≤grade 1, then resume at same dose level."
+      },
+      {
+        "condition": "Tucatinib diarrhoea grade 3 with anti-diarrheal treatment",
+        "drug_name": "Tucatinib",
+        "factor": 0.83,
+        "notes": "Hold until recovery to ≤grade 1, then resume at one dose level lower."
+      },
+      {
+        "condition": "Tucatinib diarrhoea grade 4",
+        "drug_name": "Tucatinib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue tucatinib."
+      },
+      {
+        "condition": "Tucatinib other adverse effect grade 3",
+        "drug_name": "Tucatinib",
+        "factor": 0.83,
+        "notes": "Hold until recovery to ≤grade 1, then resume at one dose level lower."
+      },
+      {
+        "condition": "Tucatinib other adverse effect grade 4",
+        "drug_name": "Tucatinib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue tucatinib."
+      },
+      {
+        "condition": "Tucatinib unable to tolerate 150mg twice daily",
+        "drug_name": "Tucatinib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue tucatinib."
+      }
+    ],
+    "pre_medications": [
+      "For trastuzumab injection reactions (once only when required): Chlorphenamine 10mg intravenous",
+      "For trastuzumab injection reactions (once only when required): Hydrocortisone 100mg intravenous",
+      "For trastuzumab injection reactions (once only when required): Paracetamol 1000mg oral",
+      "Take home (cycle 1 only): Metoclopramide 10mg three times a day when required oral",
+      "Take home (cycle 1 only): Loperamide 4mg after first loose stool then 2-4mg four times a day when required (max 16mg/24h)"
+    ],
+    "special_warnings": [
+      "DPD TESTING REQUIRED: All patients must be tested for DPD (dihydropyrimidine dehydrogenase) deficiency before initiating capecitabine (cycle 1) unless they have previously had capecitabine or fluorouracil. Patients with complete or partial DPD deficiency are at increased risk of severe and fatal toxicity.",
+      "HER2-positive disease required: Patient must have HER2 3+ by immunohistochemistry and/or HER2 amplification ratio >2 by in situ hybridisation.",
+      "Prior anti-HER2 therapy required: Patient must have received 2 or more anti-HER2 regimens including a trastuzumab-containing regimen and trastuzumab emtansine.",
+      "LVEF must be 50% or above before starting cycle 1 of trastuzumab. Assess cardiac function every 12 weeks for 24 weeks, then every 24 weeks.",
+      "Trastuzumab SC formulation (600mg fixed dose) - dose differs from IV formulation. Dose reductions are NOT permitted for trastuzumab SC.",
+      "Trastuzumab SC is associated with administration-related reactions. Observe patients for 30 minutes after first SC injection and 15 minutes after subsequent injections.",
+      "Tucatinib hepatotoxicity monitoring required: Monitor LFTs and bilirubin. Dose reductions required for elevated transaminases/bilirubin.",
+      "Capecitabine: ensure total daily dose is divided into two doses given 12 hours apart. Serious toxicity has occurred where total daily dose given twice a day.",
+      "Capecitabine doses are omitted (not delayed) when stopped for toxicity.",
+      "Treatment continues until disease progression or unacceptable toxicity.",
+      "Trastuzumab: patients who develop symptomatic cardiac dysfunction should have trastuzumab discontinued, commence ACE inhibitor therapy and be referred to a cardiologist.",
+      "ORAL CHEMOTHERAPY — NPSA/2008/RRR001: Patient must be counselled and provided written information before starting. Prescriptions must be written on an approved oral chemotherapy prescription form. Dispensing must only be by a trained pharmacist. Patient must be provided with a chemotherapy alert card. Do not supply more than one cycle at a time without clinical review."
+    ],
+    "required_patient_fields": [
+      "lvef",
+      "her2_status",
+      "creatinine_clearance",
+      "liver_function_tests",
+      "dpd_status"
+    ],
+    "auc_dosing": null
+  }
+]

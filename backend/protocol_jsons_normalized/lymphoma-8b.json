@@ -1,0 +1,1086 @@
+[
+  {
+    "protocol_code": "NORDIC-2000",
+    "protocol_name": "Nordic (2000) - Cyclophosphamide-Cytarabine-Doxorubicin-Prednisolone-Rituximab-Vincristine",
+    "disease_site": "Mantle Cell Lymphoma",
+    "category": "lymphoma",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 1200.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1, 3, 5 only (Maxi-CHOP cycles). Intravenous infusion in 250ml sodium chloride 0.9% over 30 minutes or as an intravenous bolus over 10 minutes. Dose banded per national dose bands (20mg/ml)."
+      },
+      {
+        "drug_name": "Doxorubicin",
+        "dose": 75.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1, 3, 5 only (Maxi-CHOP cycles). Intravenous bolus over 10 minutes. Dose banded per national dose bands (2mg/ml). Maximum lifetime cumulative dose 450mg/m\u00b2 (400mg/m\u00b2 if prior mediastinal/pericardial radiotherapy). Discontinue if cardiac failure develops."
+      },
+      {
+        "drug_name": "Vincristine",
+        "dose": 2.0,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": 2.0,
+        "max_dose_unit": "mg",
+        "notes": "Cycles 1, 3, 5 only (Maxi-CHOP cycles). Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Flat dose 2mg (maximum). Dose banded per national dose bands (1mg/ml) when dose reductions are necessary."
+      },
+      {
+        "drug_name": "Prednisolone",
+        "dose": 100.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1, 3, 5 only (Maxi-CHOP cycles). Taken in the morning with or after food. Administration begins on the morning of chemotherapy."
+      },
+      {
+        "drug_name": "Rituximab",
+        "dose": 375.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "All 6 cycles. Intravenous infusion in 500ml sodium chloride 0.9% (cycles 1, 3, 5 day 1; cycles 2, 4 day 1; cycle 6 days 1 and 9 - day 9 dose in 500ml). Cycle 6 also given on day 9 as outpatient. Dose rounded to nearest 100mg. Rate of administration varies - refer to rituximab administration guidelines. Consider omitting on cycle 1 if WBC >=25x10^9/L."
+      },
+      {
+        "drug_name": "Cytarabine",
+        "dose": 2000.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2
+        ],
+        "infusion_duration_hours": 3.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 2, 4, 6 only (high-dose cytarabine cycles). Given every 12 hours (4 doses total over days 1 and 2). Intravenous infusion in 1000ml sodium chloride 0.9% over 180 minutes. Doses MUST be given 12 hours apart. Dose banded per national dose bands (100mg/ml)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological: neutrophils <1x10^9/L or platelets <75x10^9/L on day 1",
+        "drug_name": "All drugs",
+        "factor": 1.0,
+        "notes": "Delay treatment until neutrophils >=1x10^9/L and platelets >=75x10^9/L. No dose reductions for haematological toxicity - delay only."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >30 \u00b5mol/L or AST/ALT 2-3xULN",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Clinical decision. Evidence that exposure to active metabolites may not be increased, suggesting dose reduction may not be necessary."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >40 \u00b5mol/L",
+        "drug_name": "Cytarabine",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin <30 \u00b5mol/L and AST/ALT 2-3xULN",
+        "drug_name": "Doxorubicin",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin 30-50 \u00b5mol/L and/or AST/ALT >3xULN",
+        "drug_name": "Doxorubicin",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin 51-85 \u00b5mol/L",
+        "drug_name": "Doxorubicin",
+        "factor": 0.25,
+        "notes": "Reduce to 25% of original dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >85 \u00b5mol/L",
+        "drug_name": "Doxorubicin",
+        "factor": 0,
+        "notes": "Omit doxorubicin."
+      },
+      {
+        "condition": "Hepatic impairment: any",
+        "drug_name": "Rituximab",
+        "factor": 1.0,
+        "notes": "No dose adjustment needed."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin 30-51 \u00b5mol/L or AST/ALT 60-180 units",
+        "drug_name": "Vincristine",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >51 \u00b5mol/L and AST/ALT normal",
+        "drug_name": "Vincristine",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >51 \u00b5mol/L and AST/ALT >180 units",
+        "drug_name": "Vincristine",
+        "factor": 0,
+        "notes": "Omit vincristine."
+      },
+      {
+        "condition": "Renal impairment: CrCl >20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Full dose. Consider mesna in patients with pre-existing bladder disorders."
+      },
+      {
+        "condition": "Renal impairment: CrCl 10-20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose. Consider mesna (oral 40% of cyclophosphamide dose at 0, 2 and 6 hours)."
+      },
+      {
+        "condition": "Renal impairment: CrCl <10 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Renal impairment: any",
+        "drug_name": "Cytarabine",
+        "factor": 1.0,
+        "notes": "No dose adjustment needed."
+      },
+      {
+        "condition": "Renal impairment: CrCl <10 ml/min",
+        "drug_name": "Doxorubicin",
+        "factor": 1.0,
+        "notes": "Consider dose reduction in severe renal failure (clinical decision)."
+      },
+      {
+        "condition": "Renal impairment: any",
+        "drug_name": "Rituximab",
+        "factor": 1.0,
+        "notes": "No dose adjustment needed."
+      },
+      {
+        "condition": "Renal impairment: any",
+        "drug_name": "Vincristine",
+        "factor": 1.0,
+        "notes": "No dose adjustment needed."
+      },
+      {
+        "condition": "Neurotoxicity: NCI-CTC grade 2 motor or grade 3 sensory neurological toxicity",
+        "drug_name": "Vincristine",
+        "factor": 0.5,
+        "notes": "Reduce vincristine dose to 1mg."
+      },
+      {
+        "condition": "Neurotoxicity: higher than grade 2 motor or grade 3 sensory, or toxicity increases despite dose reduction",
+        "drug_name": "Vincristine",
+        "factor": 0,
+        "notes": "Stop vincristine."
+      },
+      {
+        "condition": "Cardiac failure develops",
+        "drug_name": "Doxorubicin",
+        "factor": 0,
+        "notes": "Discontinue doxorubicin."
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV bolus (30 minutes prior to rituximab; cycles 2, 4, 6 hydrocortisone also)",
+      "Hydrocortisone 100mg IV bolus (cycles 2, 4, 6 only - 30 minutes prior to rituximab)",
+      "Paracetamol 1000mg oral (30 minutes prior to rituximab)",
+      "Prednisolone 100mg oral on morning of treatment (cycles 3 and 5 - self-administered, also serves as rituximab pre-medication)",
+      "Ondansetron 8mg oral or IV (15-30 minutes prior to chemotherapy)",
+      "Dexamethasone 4mg oral twice daily for 3 days (cycles 2, 4, 6 only antiemetic)",
+      "Metoclopramide 10mg oral three times daily when required",
+      "Ondansetron 8mg oral twice daily for 3 days (take home)",
+      "Allopurinol 300mg oral once daily for 7 days (cycle 1 only)",
+      "Corticosteroid eye drops: prednisolone 0.5% or dexamethasone 0.1% - 1 drop both eyes four times daily for 4 days with cytarabine administration",
+      "Aciclovir 400mg oral twice daily (anti-infective prophylaxis)",
+      "Co-trimoxazole 960mg oral once daily Monday, Wednesday and Friday (cycles 1-5)",
+      "Pentamidine 300mg nebuliser once monthly from cycle 6 only, continued for 6 months after completion or per CD4 count",
+      "Filgrastim (or bioequivalent) 30 million units subcutaneous once daily from day 8 (or lenograstim 33.6 million units subcutaneous once daily from day 8) following each cycle until neutrophil count >1x10^9/L"
+    ],
+    "special_warnings": [
+      "There are multiple versions of this protocol. Choice depends on patient age - Nordic-2000 is for patients aged 60 years and above.",
+      "CD20 positive Mantle Cell Lymphoma only. Performance status 0 or 1.",
+      "Alternating regimen: odd cycles (1,3,5) are Maxi-CHOP plus rituximab (outpatient); even cycles (2,4,6) are high-dose cytarabine 2000mg/m\u00b2 plus rituximab (inpatient). Cycle 6 rituximab also given on day 9.",
+      "Consider omitting rituximab on cycle 1 if white cell count >=25x10^9/L - seek consultant advice.",
+      "Cytarabine is given TWICE a day (12 hours apart) - 4 doses total over 2 days.",
+      "Corticosteroid eye drops are mandatory with cytarabine administration to reduce conjunctivitis risk.",
+      "Baseline LVEF should be measured in patients with history of cardiac problems, cardiac risk factors or elderly. Discontinue doxorubicin if cardiac failure develops.",
+      "Maximum lifetime cumulative doxorubicin dose 450mg/m\u00b2 (400mg/m\u00b2 if prior mediastinal/pericardial radiotherapy).",
+      "Maximum vincristine dose is 2mg (flat dose).",
+      "Check hepatitis B status before starting rituximab. Monitor for PML during rituximab therapy.",
+      "Rituximab infusion-related reactions: cytokine release syndrome risk; have emergency medications available.",
+      "CMV serology, LDH, beta-2 microglobulin, DAT and immunoglobulin levels required at baseline.",
+      "NPSA/2008/RRR04 must be followed for IV vincristine administration.",
+      "In principle, dose reductions should not be re-escalated without consultant approval. If third dose reduction required, stop treatment."
+    ],
+    "required_patient_fields": [
+      "lvef",
+      "creatinine_clearance",
+      "bilirubin",
+      "ast_alt",
+      "neutrophil_count",
+      "platelet_count",
+      "hepatitis_b_status",
+      "cmv_serology",
+      "white_cell_count"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "NORDIC-3000",
+    "protocol_name": "Nordic (3000) - Cyclophosphamide-Cytarabine-Doxorubicin-Prednisolone-Rituximab-Vincristine",
+    "disease_site": "Mantle Cell Lymphoma",
+    "category": "lymphoma",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 1200.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1, 3, 5 only (Maxi-CHOP cycles). Intravenous infusion in 250ml sodium chloride 0.9% over 30 minutes or as an intravenous bolus over 10 minutes. Dose banded per national dose bands (20mg/ml)."
+      },
+      {
+        "drug_name": "Doxorubicin",
+        "dose": 75.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1, 3, 5 only (Maxi-CHOP cycles). Intravenous bolus over 10 minutes. Dose banded per national dose bands (2mg/ml). Maximum lifetime cumulative dose 450mg/m\u00b2 (400mg/m\u00b2 if prior mediastinal/pericardial radiotherapy). Discontinue if cardiac failure develops."
+      },
+      {
+        "drug_name": "Vincristine",
+        "dose": 2.0,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": 2.0,
+        "max_dose_unit": "mg",
+        "notes": "Cycles 1, 3, 5 only (Maxi-CHOP cycles). Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Flat dose 2mg (maximum). Dose banded per national dose bands (1mg/ml) when dose reductions are necessary."
+      },
+      {
+        "drug_name": "Prednisolone",
+        "dose": 100.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1, 3, 5 only (Maxi-CHOP cycles). Taken in the morning with or after food. Administration begins on the morning of chemotherapy."
+      },
+      {
+        "drug_name": "Rituximab",
+        "dose": 375.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "All 6 cycles. Intravenous infusion in 500ml sodium chloride 0.9% (cycles 1, 3, 5 day 1; cycles 2, 4 day 1; cycle 6 days 1 and 9 - day 9 dose in 500ml). Cycle 6 also given on day 9 as outpatient. Dose rounded to nearest 100mg. Rate of administration varies - refer to rituximab administration guidelines. Consider omitting on cycle 1 if WBC >=25x10^9/L."
+      },
+      {
+        "drug_name": "Cytarabine",
+        "dose": 3000.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2
+        ],
+        "infusion_duration_hours": 3.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 2, 4, 6 only (high-dose cytarabine cycles). Given every 12 hours (4 doses total over days 1 and 2). Intravenous infusion in 1000ml sodium chloride 0.9% over 180 minutes. Doses MUST be given 12 hours apart. Dose banded per national dose bands (100mg/ml)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological: neutrophils <1x10^9/L or platelets <75x10^9/L on day 1",
+        "drug_name": "All drugs",
+        "factor": 1.0,
+        "notes": "Delay treatment until neutrophils >=1x10^9/L and platelets >=75x10^9/L. No dose reductions for haematological toxicity - delay only."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >30 \u00b5mol/L or AST/ALT 2-3xULN",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Clinical decision. Evidence that exposure to active metabolites may not be increased, suggesting dose reduction may not be necessary."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >40 \u00b5mol/L",
+        "drug_name": "Cytarabine",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin <30 \u00b5mol/L and AST/ALT 2-3xULN",
+        "drug_name": "Doxorubicin",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin 30-50 \u00b5mol/L and/or AST/ALT >3xULN",
+        "drug_name": "Doxorubicin",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin 51-85 \u00b5mol/L",
+        "drug_name": "Doxorubicin",
+        "factor": 0.25,
+        "notes": "Reduce to 25% of original dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >85 \u00b5mol/L",
+        "drug_name": "Doxorubicin",
+        "factor": 0,
+        "notes": "Omit doxorubicin."
+      },
+      {
+        "condition": "Hepatic impairment: any",
+        "drug_name": "Rituximab",
+        "factor": 1.0,
+        "notes": "No dose adjustment needed."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin 30-51 \u00b5mol/L or AST/ALT 60-180 units",
+        "drug_name": "Vincristine",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >51 \u00b5mol/L and AST/ALT normal",
+        "drug_name": "Vincristine",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >51 \u00b5mol/L and AST/ALT >180 units",
+        "drug_name": "Vincristine",
+        "factor": 0,
+        "notes": "Omit vincristine."
+      },
+      {
+        "condition": "Renal impairment: CrCl >20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Full dose. Consider mesna in patients with pre-existing bladder disorders."
+      },
+      {
+        "condition": "Renal impairment: CrCl 10-20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose. Consider mesna (oral 40% of cyclophosphamide dose at 0, 2 and 6 hours)."
+      },
+      {
+        "condition": "Renal impairment: CrCl <10 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Renal impairment: any",
+        "drug_name": "Cytarabine",
+        "factor": 1.0,
+        "notes": "No dose adjustment needed."
+      },
+      {
+        "condition": "Renal impairment: CrCl <10 ml/min",
+        "drug_name": "Doxorubicin",
+        "factor": 1.0,
+        "notes": "Consider dose reduction in severe renal failure (clinical decision)."
+      },
+      {
+        "condition": "Renal impairment: any",
+        "drug_name": "Rituximab",
+        "factor": 1.0,
+        "notes": "No dose adjustment needed."
+      },
+      {
+        "condition": "Renal impairment: any",
+        "drug_name": "Vincristine",
+        "factor": 1.0,
+        "notes": "No dose adjustment needed."
+      },
+      {
+        "condition": "Neurotoxicity: NCI-CTC grade 2 motor or grade 3 sensory neurological toxicity",
+        "drug_name": "Vincristine",
+        "factor": 0.5,
+        "notes": "Reduce vincristine dose to 1mg."
+      },
+      {
+        "condition": "Neurotoxicity: higher than grade 2 motor or grade 3 sensory, or toxicity increases despite dose reduction",
+        "drug_name": "Vincristine",
+        "factor": 0,
+        "notes": "Stop vincristine."
+      },
+      {
+        "condition": "Cardiac failure develops",
+        "drug_name": "Doxorubicin",
+        "factor": 0,
+        "notes": "Discontinue doxorubicin."
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV bolus (30 minutes prior to rituximab; cycles 2, 4, 6 hydrocortisone also)",
+      "Hydrocortisone 100mg IV bolus (cycles 2, 4, 6 only - 30 minutes prior to rituximab)",
+      "Paracetamol 1000mg oral (30 minutes prior to rituximab)",
+      "Prednisolone 100mg oral on morning of treatment (cycles 3 and 5 - self-administered, also serves as rituximab pre-medication)",
+      "Ondansetron 8mg oral or IV (15-30 minutes prior to chemotherapy)",
+      "Dexamethasone 4mg oral twice daily for 3 days (cycles 2, 4, 6 only antiemetic)",
+      "Metoclopramide 10mg oral three times daily when required",
+      "Ondansetron 8mg oral twice daily for 3 days (take home)",
+      "Allopurinol 300mg oral once daily for 7 days (cycle 1 only)",
+      "Corticosteroid eye drops: prednisolone 0.5% or dexamethasone 0.1% - 1 drop both eyes four times daily for 4 days with cytarabine administration (mandatory)",
+      "Aciclovir 400mg oral twice daily (anti-infective prophylaxis)",
+      "Co-trimoxazole 960mg oral once daily Monday, Wednesday and Friday (cycles 1-5)",
+      "Pentamidine 300mg nebuliser once monthly from cycle 6 only, continued for 6 months after completion or per CD4 count",
+      "Filgrastim (or bioequivalent) 30 million units subcutaneous once daily from day 8 (or lenograstim 33.6 million units subcutaneous once daily from day 8) following each cycle until neutrophil count >1x10^9/L"
+    ],
+    "special_warnings": [
+      "There are multiple versions of this protocol. Choice depends on patient age - Nordic-3000 is for patients aged 59 years and below.",
+      "CD20 positive Mantle Cell Lymphoma only. Performance status 0 or 1.",
+      "Alternating regimen: odd cycles (1,3,5) are Maxi-CHOP plus rituximab (outpatient); even cycles (2,4,6) are high-dose cytarabine 3000mg/m\u00b2 plus rituximab (inpatient). Cycle 6 rituximab also given on day 9.",
+      "Consider omitting rituximab on cycle 1 if white cell count >=25x10^9/L - seek consultant advice.",
+      "Cytarabine is given TWICE a day (12 hours apart) - 4 doses total over 2 days.",
+      "Corticosteroid eye drops are MANDATORY with cytarabine 3000mg/m\u00b2 administration to reduce conjunctivitis risk.",
+      "Baseline LVEF should be measured in patients with history of cardiac problems, cardiac risk factors or elderly. Discontinue doxorubicin if cardiac failure develops.",
+      "Maximum lifetime cumulative doxorubicin dose 450mg/m\u00b2 (400mg/m\u00b2 if prior mediastinal/pericardial radiotherapy).",
+      "Maximum vincristine dose is 2mg (flat dose).",
+      "Check hepatitis B status before starting rituximab. Monitor for PML during rituximab therapy.",
+      "Rituximab infusion-related reactions: cytokine release syndrome risk; have emergency medications available.",
+      "CMV serology, LDH, beta-2 microglobulin, DAT and immunoglobulin levels required at baseline.",
+      "NPSA/2008/RRR04 must be followed for IV vincristine administration.",
+      "In principle, dose reductions should not be re-escalated without consultant approval. If third dose reduction required, stop treatment."
+    ],
+    "required_patient_fields": [
+      "lvef",
+      "creatinine_clearance",
+      "bilirubin",
+      "ast_alt",
+      "neutrophil_count",
+      "platelet_count",
+      "hepatitis_b_status",
+      "cmv_serology",
+      "white_cell_count"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "O-CHOP",
+    "protocol_name": "O-CHOP - Cyclophosphamide-Doxorubicin-Obinutuzumab-Prednisolone-Vincristine",
+    "disease_site": "Follicular Lymphoma",
+    "category": "lymphoma",
+    "cycle_length_days": 21,
+    "number_of_cycles": 8,
+    "drugs": [
+      {
+        "drug_name": "Obinutuzumab",
+        "dose": 1000.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1: given on days 1, 8, and 15 (1000mg each occasion) in 250ml sodium chloride 0.9%. Cycles 2-6: day 1 only (1000mg). Cycles 7-8: day 1 only (obinutuzumab monotherapy - no CHOP). Flat dose 1000mg (not weight/BSA based). NOT dose-reducible based on haematological parameters. Followed by maintenance obinutuzumab as separate protocol. Infusion rate: cycle 1 day 1 start at 50mg/hr, escalate by 50mg/hr every 30 min to max 400mg/hr; subsequent infusions per protocol guidelines."
+      },
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 750.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1-6 only. Intravenous bolus over 10 minutes. Dose banded per national dose bands (20mg/ml). Consider mesna in patients with pre-existing bladder disorders (oral 40% cyclophosphamide dose at 0, 2 and 6 hours)."
+      },
+      {
+        "drug_name": "Doxorubicin",
+        "dose": 50.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1-6 only. Intravenous bolus over 10 minutes. Dose banded per national dose bands (2mg/ml). Maximum lifetime cumulative dose 450mg/m\u00b2 (400mg/m\u00b2 if prior mediastinal/pericardial radiotherapy). Discontinue if cardiac failure develops."
+      },
+      {
+        "drug_name": "Vincristine",
+        "dose": 1.4,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": 2.0,
+        "max_dose_unit": "mg",
+        "notes": "Cycles 1-6 only. Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Maximum dose 2mg. Dose banded per national dose bands (1mg/ml)."
+      },
+      {
+        "drug_name": "Prednisolone",
+        "dose": 100.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1-6 only. Taken on days 2, 3, 4, 5 (100mg once daily in the morning). Methylprednisolone is given as obinutuzumab pre-medication on day 1."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological: neutrophils <1x10^9/L on day 1 (unless disease-related)",
+        "drug_name": "Cyclophosphamide and Doxorubicin",
+        "factor": 1.0,
+        "notes": "Delay therapy until neutrophils >=1x10^9/L. Consider growth factors as secondary prophylaxis. Reconsider treatment if not recovered after 14 days."
+      },
+      {
+        "condition": "Haematological: Grade 4 neutropenia or any febrile neutropenia following any cycle",
+        "drug_name": "Cyclophosphamide and Doxorubicin",
+        "factor": 1.0,
+        "notes": "Give growth factors with all subsequent cycles."
+      },
+      {
+        "condition": "Haematological: Grade 4 neutropenia leading to infection despite G-CSF support",
+        "drug_name": "Cyclophosphamide and Doxorubicin",
+        "factor": 0.5,
+        "notes": "Reduce dose of cyclophosphamide and doxorubicin by 50% for all subsequent cycles."
+      },
+      {
+        "condition": "Haematological: Grade 4 neutropenia recurs despite 50% dose reduction in cyclophosphamide and doxorubicin",
+        "drug_name": "Cyclophosphamide and Doxorubicin",
+        "factor": 0,
+        "notes": "Stop treatment."
+      },
+      {
+        "condition": "Haematological: platelets <100x10^9/L on day 1 (unless disease-related)",
+        "drug_name": "Cyclophosphamide and Doxorubicin",
+        "factor": 1.0,
+        "notes": "Delay therapy until platelets >=100x10^9/L. Reconsider treatment if not recovered after 14 days."
+      },
+      {
+        "condition": "Haematological: Grade 4 thrombocytopenia following any cycle",
+        "drug_name": "Cyclophosphamide and Doxorubicin",
+        "factor": 0.5,
+        "notes": "Reduce dose by 50% for all subsequent cycles."
+      },
+      {
+        "condition": "Haematological: Grade 4 thrombocytopenia recurs despite 50% dose reduction",
+        "drug_name": "Cyclophosphamide and Doxorubicin",
+        "factor": 0,
+        "notes": "Stop treatment."
+      },
+      {
+        "condition": "Haematological: any",
+        "drug_name": "Obinutuzumab",
+        "factor": 1.0,
+        "notes": "There are no dose reductions for obinutuzumab based on haematological parameters."
+      },
+      {
+        "condition": "Hepatic impairment: any",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Evidence suggests dose modification not necessary."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin <30 \u00b5mol/L and AST/ALT 2-3xULN",
+        "drug_name": "Doxorubicin",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin 30-50 \u00b5mol/L and/or AST/ALT >3xULN",
+        "drug_name": "Doxorubicin",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin 51-85 \u00b5mol/L",
+        "drug_name": "Doxorubicin",
+        "factor": 0.25,
+        "notes": "Reduce to 25% of original dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >85 \u00b5mol/L",
+        "drug_name": "Doxorubicin",
+        "factor": 0,
+        "notes": "Omit doxorubicin."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin 30-51 \u00b5mol/L or AST/ALT 60-180 units/L",
+        "drug_name": "Vincristine",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >51 \u00b5mol/L and AST/ALT normal",
+        "drug_name": "Vincristine",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >51 \u00b5mol/L and AST/ALT >180 units/L",
+        "drug_name": "Vincristine",
+        "factor": 0,
+        "notes": "Omit vincristine."
+      },
+      {
+        "condition": "Renal impairment: CrCl >20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Full dose."
+      },
+      {
+        "condition": "Renal impairment: CrCl 10-20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose."
+      },
+      {
+        "condition": "Renal impairment: CrCl <10 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Renal impairment: CrCl <10 ml/min",
+        "drug_name": "Doxorubicin",
+        "factor": 1.0,
+        "notes": "Consider dose reduction in severe renal failure (clinical decision)."
+      },
+      {
+        "condition": "Renal impairment: mild to moderate",
+        "drug_name": "Obinutuzumab",
+        "factor": 1.0,
+        "notes": "Dose adjustment not considered necessary for obinutuzumab in mild to moderate renal impairment."
+      },
+      {
+        "condition": "Renal impairment: any",
+        "drug_name": "Vincristine",
+        "factor": 1.0,
+        "notes": "No dose adjustment needed."
+      },
+      {
+        "condition": "Obinutuzumab toxicity: Grade 2 or 3 related organ/non-haematological toxicity",
+        "drug_name": "Obinutuzumab",
+        "factor": 1.0,
+        "notes": "Hold obinutuzumab until toxicity resolves to grade 1 or below."
+      },
+      {
+        "condition": "Obinutuzumab toxicity: Grade 2 non-haematological toxicity delaying treatment by more than 4 weeks",
+        "drug_name": "Obinutuzumab",
+        "factor": 0,
+        "notes": "Discontinue obinutuzumab."
+      },
+      {
+        "condition": "Obinutuzumab toxicity: Grade 4 related organ/non-haematological toxicity, severe haemorrhage, severe skin reaction, pneumonitis, severe arrhythmias or other severe cardiovascular events",
+        "drug_name": "Obinutuzumab",
+        "factor": 0,
+        "notes": "Discontinue obinutuzumab."
+      },
+      {
+        "condition": "Obinutuzumab toxicity: Viral hepatitis or other serious infections; reactivation of hepatitis B",
+        "drug_name": "Obinutuzumab",
+        "factor": 0,
+        "notes": "Discontinue obinutuzumab."
+      },
+      {
+        "condition": "Non-haematological NCI-CTC grade 3 and above toxicity (general)",
+        "drug_name": "All drugs",
+        "factor": 0.75,
+        "notes": "Delay until resolved to grade 2 or below, then reduce to 75%. If recurs, delay until recovery then reduce to 50% or discontinue."
+      },
+      {
+        "condition": "Neurotoxicity: NCI-CTC grade 2 motor or grade 3 sensory neurological toxicity",
+        "drug_name": "Vincristine",
+        "factor": 0.5,
+        "notes": "Reduce vincristine dose to 1mg."
+      },
+      {
+        "condition": "Neurotoxicity: higher than grade 2 motor or grade 3 sensory, or toxicity increases despite dose reduction",
+        "drug_name": "Vincristine",
+        "factor": 0,
+        "notes": "Stop vincristine."
+      },
+      {
+        "condition": "Cardiac failure develops",
+        "drug_name": "Doxorubicin",
+        "factor": 0,
+        "notes": "Discontinue doxorubicin."
+      }
+    ],
+    "pre_medications": [
+      "Sodium chloride 0.9% 500ml IV infusion over 60 minutes (prior to obinutuzumab, cycle 1 day 1)",
+      "Methylprednisolone sodium succinate 80mg IV (60 minutes prior to obinutuzumab; cycle 1 day 1 all patients; cycle 1 days 8 and 15 and cycles 2-6 only if grade 3 infusion reaction history or lymphocyte count >25x10^9/L)",
+      "Chlorphenamine 10mg IV (60 minutes prior to obinutuzumab; cycle 1 day 1 all patients; cycle 1 days 8 and 15 and cycles 2-6 for patients with grades 1-2 or grade 3 infusion reaction history)",
+      "Paracetamol 1000mg oral (60 minutes prior to obinutuzumab; all patients cycle 1 day 1 and cycles 1 days 8 and 15 and all subsequent cycles)",
+      "Ondansetron 8mg oral or IV (15-30 minutes prior to CHOP on day 1)",
+      "Metoclopramide 10mg oral three times daily when required (take home)",
+      "Ondansetron 8mg oral twice daily for 3 days (take home)",
+      "Allopurinol 300mg oral once daily for 7 days (TLS prophylaxis for cycle 1 where risk indicated; high risk patients may require rasburicase)",
+      "Aciclovir 400mg oral twice daily (anti-infective prophylaxis, high risk patients)",
+      "Co-trimoxazole 960mg oral once daily Monday, Wednesday and Friday (anti-infective prophylaxis, high risk patients)"
+    ],
+    "special_warnings": [
+      "Obinutuzumab in combination with CHOP for untreated advanced follicular lymphoma (FLIPI score 2 or more). WHO Performance Status 0, 1, 2.",
+      "Obinutuzumab is NOT dose-reducible based on haematological parameters.",
+      "Obinutuzumab dose is a flat 1000mg dose (not BSA-based). Cycle 1 given on days 1, 8, and 15; cycles 2-6 on day 1 only; cycles 7-8 obinutuzumab monotherapy only.",
+      "Followed by obinutuzumab maintenance therapy as a separate protocol.",
+      "Infusion-related reactions are particularly common during cycle 1. Patients with high tumour burden or lymphocyte count >25x10^9/L at increased risk.",
+      "Withhold antihypertensive treatments for 12 hours prior to and throughout each obinutuzumab infusion and for the first hour after administration.",
+      "Tumour lysis syndrome risk: patients with high tumour burden and/or lymphocyte count >25x10^9/L and/or CrCl <70 ml/min should receive TLS prophylaxis.",
+      "Progressive multifocal leukoencephalopathy (PML) has been reported with obinutuzumab. Refer to neurologist if suspected.",
+      "Baseline LVEF required. Discontinue doxorubicin if cardiac failure develops.",
+      "Maximum lifetime cumulative doxorubicin dose 450mg/m\u00b2 (400mg/m\u00b2 if prior mediastinal/pericardial radiotherapy).",
+      "Maximum vincristine dose is 2mg.",
+      "FBC, U&Es and LFTs on day 1 of first six cycles; optionally days 8 and 15 of cycle 1.",
+      "NPSA/2008/RRR04 must be followed for IV vincristine administration.",
+      "Anti-CD20 therapy: HBV reactivation risk \u2014 screen all patients for HBsAg and HBcAb before starting. HBsAg positive: antiviral prophylaxis mandatory (entecavir or tenofovir). HBcAb positive/HBsAg negative: prophylaxis or close monitoring per local hepatology policy."
+    ],
+    "required_patient_fields": [
+      "lvef",
+      "creatinine_clearance",
+      "bilirubin",
+      "ast_alt",
+      "neutrophil_count",
+      "platelet_count",
+      "flipi_score",
+      "lymphocyte_count",
+      "hep_b_surface_antigen",
+      "hep_b_core_antibody"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "O-CVP",
+    "protocol_name": "O-CVP - Cyclophosphamide-Obinutuzumab-Prednisolone-Vincristine",
+    "disease_site": "Follicular Lymphoma",
+    "category": "lymphoma",
+    "cycle_length_days": 21,
+    "number_of_cycles": 8,
+    "drugs": [
+      {
+        "drug_name": "Obinutuzumab",
+        "dose": 1000.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1: given on days 1, 8, and 15 (1000mg each occasion) in 250ml sodium chloride 0.9%. Cycles 2-6: day 1 only (1000mg). Cycles 7-8: day 1 only (obinutuzumab monotherapy - no CVP). Flat dose 1000mg (not weight/BSA based). NOT dose-reducible based on haematological parameters. Followed by maintenance obinutuzumab as separate protocol. Infusion rate: cycle 1 day 1 start at 50mg/hr, escalate by 50mg/hr every 30 min to max 400mg/hr; subsequent infusions per protocol guidelines."
+      },
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 750.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1-6 only. Intravenous bolus over 10 minutes. Dose banded per national dose bands (20mg/ml). Consider mesna in patients with pre-existing bladder disorders (oral 40% cyclophosphamide dose at 0, 2 and 6 hours)."
+      },
+      {
+        "drug_name": "Vincristine",
+        "dose": 1.4,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": 2.0,
+        "max_dose_unit": "mg",
+        "notes": "Cycles 1-6 only. Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Maximum dose 2mg. Dose banded per national dose bands (1mg/ml)."
+      },
+      {
+        "drug_name": "Prednisolone",
+        "dose": 100.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1-6 only. Taken on days 2, 3, 4, 5 (100mg once daily in the morning). Methylprednisolone is given as obinutuzumab pre-medication on day 1."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological: neutrophils <1x10^9/L on day 1 (unless disease-related)",
+        "drug_name": "Cyclophosphamide and Vincristine",
+        "factor": 1.0,
+        "notes": "Delay therapy until neutrophils >=1x10^9/L. Consider growth factors as secondary prophylaxis. Reconsider treatment if not recovered after 14 days."
+      },
+      {
+        "condition": "Haematological: Grade 4 neutropenia or any febrile neutropenia following any cycle",
+        "drug_name": "Cyclophosphamide and Vincristine",
+        "factor": 1.0,
+        "notes": "Give growth factors with all subsequent cycles."
+      },
+      {
+        "condition": "Haematological: Grade 4 neutropenia leading to infection despite G-CSF support",
+        "drug_name": "Cyclophosphamide and Vincristine",
+        "factor": 0.5,
+        "notes": "Reduce dose of cyclophosphamide by 50% for all subsequent cycles."
+      },
+      {
+        "condition": "Haematological: Grade 4 neutropenia recurs despite 50% dose reduction",
+        "drug_name": "Cyclophosphamide and Vincristine",
+        "factor": 0,
+        "notes": "Stop treatment."
+      },
+      {
+        "condition": "Haematological: platelets <100x10^9/L on day 1 (unless disease-related)",
+        "drug_name": "Cyclophosphamide and Vincristine",
+        "factor": 1.0,
+        "notes": "Delay therapy until platelets >=100x10^9/L. Reconsider treatment if not recovered after 14 days."
+      },
+      {
+        "condition": "Haematological: Grade 4 thrombocytopenia following any cycle",
+        "drug_name": "Cyclophosphamide and Vincristine",
+        "factor": 0.5,
+        "notes": "Reduce dose by 50% for all subsequent cycles."
+      },
+      {
+        "condition": "Haematological: Grade 4 thrombocytopenia recurs despite 50% dose reduction",
+        "drug_name": "Cyclophosphamide and Vincristine",
+        "factor": 0,
+        "notes": "Stop treatment."
+      },
+      {
+        "condition": "Haematological: any",
+        "drug_name": "Obinutuzumab",
+        "factor": 1.0,
+        "notes": "There are no dose reductions for obinutuzumab based on haematological parameters."
+      },
+      {
+        "condition": "Hepatic impairment: any",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Evidence suggests dose modification not necessary."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin 30-51 \u00b5mol/L or AST/ALT 60-180 units/L",
+        "drug_name": "Vincristine",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >51 \u00b5mol/L and AST/ALT normal",
+        "drug_name": "Vincristine",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >51 \u00b5mol/L and AST/ALT >180 units/L",
+        "drug_name": "Vincristine",
+        "factor": 0,
+        "notes": "Omit vincristine."
+      },
+      {
+        "condition": "Renal impairment: CrCl >20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Full dose."
+      },
+      {
+        "condition": "Renal impairment: CrCl 10-20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose."
+      },
+      {
+        "condition": "Renal impairment: CrCl <10 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Renal impairment: mild to moderate",
+        "drug_name": "Obinutuzumab",
+        "factor": 1.0,
+        "notes": "Dose adjustment not considered necessary for obinutuzumab in mild to moderate renal impairment."
+      },
+      {
+        "condition": "Renal impairment: any",
+        "drug_name": "Vincristine",
+        "factor": 1.0,
+        "notes": "No dose adjustment needed."
+      },
+      {
+        "condition": "Obinutuzumab toxicity: Grade 2 or 3 related organ/non-haematological toxicity",
+        "drug_name": "Obinutuzumab",
+        "factor": 1.0,
+        "notes": "Hold obinutuzumab until toxicity resolves to grade 1 or below."
+      },
+      {
+        "condition": "Obinutuzumab toxicity: Grade 2 non-haematological toxicity delaying treatment by more than 4 weeks",
+        "drug_name": "Obinutuzumab",
+        "factor": 0,
+        "notes": "Discontinue obinutuzumab."
+      },
+      {
+        "condition": "Obinutuzumab toxicity: Grade 4 related organ/non-haematological toxicity, severe haemorrhage, severe skin reaction, pneumonitis, severe arrhythmias or other severe cardiovascular events",
+        "drug_name": "Obinutuzumab",
+        "factor": 0,
+        "notes": "Discontinue obinutuzumab."
+      },
+      {
+        "condition": "Obinutuzumab toxicity: Viral hepatitis or other serious infections; reactivation of hepatitis B",
+        "drug_name": "Obinutuzumab",
+        "factor": 0,
+        "notes": "Discontinue obinutuzumab."
+      },
+      {
+        "condition": "Non-haematological NCI-CTC grade 3 and above toxicity (general)",
+        "drug_name": "All drugs",
+        "factor": 0.75,
+        "notes": "Delay until resolved to grade 2 or below, then reduce to 75%. If recurs, delay until recovery then reduce to 50% or discontinue."
+      },
+      {
+        "condition": "Neurotoxicity: NCI-CTC grade 2 motor or grade 3 sensory neurological toxicity",
+        "drug_name": "Vincristine",
+        "factor": 0.5,
+        "notes": "Reduce vincristine dose to 1mg."
+      },
+      {
+        "condition": "Neurotoxicity: higher than grade 2 motor or grade 3 sensory, or toxicity increases despite dose reduction",
+        "drug_name": "Vincristine",
+        "factor": 0,
+        "notes": "Stop vincristine."
+      }
+    ],
+    "pre_medications": [
+      "Sodium chloride 0.9% 500ml IV infusion over 60 minutes (prior to obinutuzumab, cycle 1 day 1)",
+      "Methylprednisolone sodium succinate 80mg IV (60 minutes prior to obinutuzumab; cycle 1 day 1 all patients; cycle 1 days 8 and 15 and cycles 2-6 only if grade 3 infusion reaction history or lymphocyte count >25x10^9/L)",
+      "Chlorphenamine 10mg IV (60 minutes prior to obinutuzumab; cycle 1 day 1 all patients; cycle 1 days 8 and 15 and cycles 2-6 for patients with grades 1-2 or grade 3 infusion reaction history)",
+      "Paracetamol 1000mg oral (60 minutes prior to obinutuzumab; all patients cycle 1 day 1 and cycles 1 days 8 and 15 and all subsequent cycles)",
+      "Ondansetron 8mg oral or IV (15-30 minutes prior to CVP on day 1)",
+      "Metoclopramide 10mg oral three times daily when required (take home)",
+      "Ondansetron 8mg oral twice daily for 3 days (take home)",
+      "Allopurinol 300mg oral once daily for 7 days (TLS prophylaxis for cycle 1 where risk indicated; high risk patients may require rasburicase)",
+      "Aciclovir 400mg oral twice daily (anti-infective prophylaxis, high risk patients)",
+      "Co-trimoxazole 960mg oral once daily Monday, Wednesday and Friday (anti-infective prophylaxis, high risk patients)"
+    ],
+    "special_warnings": [
+      "Obinutuzumab in combination with CVP (no anthracycline) for untreated advanced follicular lymphoma (FLIPI score 2 or more). WHO Performance Status 0, 1, 2.",
+      "Obinutuzumab is NOT dose-reducible based on haematological parameters.",
+      "Obinutuzumab dose is a flat 1000mg dose (not BSA-based). Cycle 1 given on days 1, 8, and 15; cycles 2-6 on day 1 only; cycles 7-8 obinutuzumab monotherapy only.",
+      "Followed by obinutuzumab maintenance therapy as a separate protocol.",
+      "Infusion-related reactions are particularly common during cycle 1. Patients with high tumour burden or lymphocyte count >25x10^9/L at increased risk.",
+      "Withhold antihypertensive treatments for 12 hours prior to and throughout each obinutuzumab infusion and for the first hour after administration.",
+      "Tumour lysis syndrome risk: patients with high tumour burden and/or lymphocyte count >25x10^9/L and/or CrCl <70 ml/min should receive TLS prophylaxis.",
+      "Progressive multifocal leukoencephalopathy (PML) has been reported with obinutuzumab. Refer to neurologist if suspected.",
+      "Maximum vincristine dose is 2mg.",
+      "FBC, U&Es and LFTs on day 1 of first six cycles; optionally days 8 and 15 of cycle 1.",
+      "NPSA/2008/RRR04 must be followed for IV vincristine administration.",
+      "Anti-CD20 therapy: HBV reactivation risk \u2014 screen all patients for HBsAg and HBcAb before starting. HBsAg positive: antiviral prophylaxis mandatory (entecavir or tenofovir). HBcAb positive/HBsAg negative: prophylaxis or close monitoring per local hepatology policy."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "bilirubin",
+      "ast_alt",
+      "neutrophil_count",
+      "platelet_count",
+      "flipi_score",
+      "lymphocyte_count",
+      "hep_b_surface_antigen",
+      "hep_b_core_antibody"
+    ],
+    "auc_dosing": null
+  }
+]

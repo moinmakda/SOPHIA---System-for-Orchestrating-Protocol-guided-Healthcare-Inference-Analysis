@@ -1,0 +1,811 @@
+[
+  {
+    "protocol_code": "BREAST-PACLITAXEL-21DAY",
+    "protocol_name": "Breast Cancer - Paclitaxel (21 day)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Paclitaxel",
+        "dose": 175.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 3.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Administer in 500ml sodium chloride 0.9% over 180 minutes. Must be given via non-PVC administration set with in-line 0.22 micron filter. Dose banded in accordance with nationally agreed bands (6mg/ml). Vesicant."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1.5x10\u2079/L or platelets <100x10\u2079/L on day 1",
+        "drug_name": "Paclitaxel",
+        "factor": 1.0,
+        "notes": "Delay treatment for 7 days until counts recover"
+      },
+      {
+        "condition": "Febrile neutropenia or neutrophils <0.5x10\u2079/L or platelets <50x10\u2079/L for >7 days",
+        "drug_name": "Paclitaxel",
+        "factor": 0.8,
+        "notes": "Reduce dose to 80% of original dose"
+      },
+      {
+        "condition": "Recurrence of neutropenia or thrombocytopenia after first dose reduction",
+        "drug_name": "Paclitaxel",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose or stop treatment"
+      },
+      {
+        "condition": "Renal impairment (any degree)",
+        "drug_name": "Paclitaxel",
+        "factor": 1.0,
+        "notes": "No dose adjustment necessary"
+      },
+      {
+        "condition": "Liver impairment: bilirubin <26 umol/L",
+        "drug_name": "Paclitaxel",
+        "factor": 1.0,
+        "notes": "Full dose 135mg/m\u00b2"
+      },
+      {
+        "condition": "Liver impairment: bilirubin 27-51 umol/L",
+        "drug_name": "Paclitaxel",
+        "factor": 0.75,
+        "notes": "Reduce dose to 75mg/m\u00b2"
+      },
+      {
+        "condition": "Liver impairment: bilirubin >51 umol/L",
+        "drug_name": "Paclitaxel",
+        "factor": 0.5,
+        "notes": "Reduce dose to 50mg/m\u00b2"
+      },
+      {
+        "condition": "NCI-CTC grade 2 peripheral neuropathy",
+        "drug_name": "Paclitaxel",
+        "factor": 1.0,
+        "notes": "Withhold until recovery to grade 1, then reduce to 75% of original dose"
+      },
+      {
+        "condition": "NCI-CTC grade 3 peripheral neuropathy",
+        "drug_name": "Paclitaxel",
+        "factor": 0.5,
+        "notes": "Withhold until recovery to grade 1, then reduce to 50% of original dose. Discontinue if neuropathy does not resolve to grade 1."
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV (30 minutes before chemotherapy)",
+      "Dexamethasone 20mg IV (30 minutes before chemotherapy)",
+      "H2 antagonist according to local formulary choice and availability (30 minutes before chemotherapy): ranitidine 50mg IV or famotidine 20mg oral or nizatidine 150mg oral or ranitidine 150mg oral",
+      "Metoclopramide 10mg oral or IV (15-30 minutes before chemotherapy)"
+    ],
+    "special_warnings": [
+      "Hypersensitivity reactions tend to occur with the first or second infusion. Interrupt infusion for minor symptoms (flushing, localised rashes); if resolved within 5 minutes may restart at lower rate. Immediately discontinue for severe reactions (profound hypotension, bronchospasm, generalised erythema).",
+      "Paclitaxel must be administered via a non-PVC administration set with an in-line 0.22 micron filter.",
+      "Paclitaxel is a vesicant - follow extravasation policy.",
+      "If a third dose reduction is necessary, treatment should be stopped.",
+      "All dose reductions should not be re-escalated without consultant approval."
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "bilirubin",
+      "alt",
+      "ast"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "BREAST-PACLITAXEL-7DAY",
+    "protocol_name": "Breast Cancer - Paclitaxel (7 day)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 7,
+    "number_of_cycles": 18,
+    "drugs": [
+      {
+        "drug_name": "Paclitaxel",
+        "dose": 80.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Administer in 250ml sodium chloride 0.9% over 60 minutes. Must be given via non-PVC administration set with in-line 0.22 micron filter. Dose banded in accordance with national dose bands (6mg/ml). Vesicant. In patients with poor bone marrow reserves, consider starting dose of 60mg/m\u00b2 with a view to increase to 80mg/m\u00b2 if well tolerated."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1.5x10\u2079/L or platelets <100x10\u2079/L on day 1 (unless due to bone marrow impairment)",
+        "drug_name": "Paclitaxel",
+        "factor": 1.0,
+        "notes": "Delay treatment for 7 days. Consider stopping if counts remain below threshold."
+      },
+      {
+        "condition": "Renal impairment (any degree)",
+        "drug_name": "Paclitaxel",
+        "factor": 1.0,
+        "notes": "No dose adjustment necessary"
+      },
+      {
+        "condition": "Liver impairment: bilirubin >51 umol/L",
+        "drug_name": "Paclitaxel",
+        "factor": 0.0,
+        "notes": "Contra-indicated"
+      },
+      {
+        "condition": "Grade 3 or above adverse effects (general)",
+        "drug_name": "Paclitaxel",
+        "factor": 0.0,
+        "notes": "For the 7-day schedule, if adverse effects are grade 3+ and cannot be managed, stop treatment rather than adjust dose."
+      },
+      {
+        "condition": "NCI-CTC grade 3 or above peripheral neuropathy",
+        "drug_name": "Paclitaxel",
+        "factor": 0.75,
+        "notes": "Delay until resolves to NCI-CTC grade 2, then reduce dose to 60mg/m\u00b2"
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV (30 minutes before chemotherapy)",
+      "Dexamethasone 10mg IV (30 minutes before chemotherapy)",
+      "H2 antagonist according to local formulary choice and availability (30 minutes before chemotherapy): ranitidine 50mg IV or famotidine 20mg oral or nizatidine 150mg oral or ranitidine 150mg oral",
+      "Metoclopramide 10mg oral or IV (15-30 minutes before chemotherapy)"
+    ],
+    "special_warnings": [
+      "This is an unlicensed dosage schedule.",
+      "Hypersensitivity reactions tend to occur with the first or second infusion. Interrupt infusion for minor symptoms; if resolved within 5 minutes may restart at lower rate. Immediately discontinue for severe reactions (profound hypotension, bronchospasm, generalised erythema).",
+      "Paclitaxel must be administered via a non-PVC administration set with an in-line 0.22 micron filter.",
+      "Paclitaxel is a vesicant - follow extravasation policy.",
+      "Paclitaxel is highly myelosuppressive; consider reduced starting dose of 60mg/m\u00b2 in patients with poor bone marrow reserves (extensive prior treatment, bone metastases, extensive skeletal radiation).",
+      "For the 7-day schedule, grade 3+ adverse effects should generally lead to stopping treatment rather than dose adjustment."
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "bilirubin"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "BREAST-PACLITAXEL-ALBUMIN-BOUND",
+    "protocol_name": "Breast Cancer - Paclitaxel Albumin Bound (Abraxane)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Paclitaxel albumin bound (Abraxane)",
+        "dose": 260.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion over 30 minutes. NOT interchangeable with solvent-based paclitaxel. Dose banded in accordance with national dose bands. Vesicant. Use infusion set incorporating a 15 micron filter. Number of cycles may vary with indication; 6 cycles set in ARIA. Neo-adjuvant and adjuvant use is unlicensed. [VERIFIED: nab-Paclitaxel (Abraxane) 260mg/m\u00b2 is the MHRA-approved dose for metastatic breast cancer per MHRA SmPC \u2014 not the same as solvent-based paclitaxel]"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1x10\u2079/L or platelets <100x10\u2079/L",
+        "drug_name": "Paclitaxel albumin bound (Abraxane)",
+        "factor": 1.0,
+        "notes": "Delay treatment until counts recover. If NCI-CTC grade 1 or 2 toxicity, continue at same dose on recovery."
+      },
+      {
+        "condition": "NCI-CTC grade 3 or above haematological toxicity (first occurrence)",
+        "drug_name": "Paclitaxel albumin bound (Abraxane)",
+        "factor": 0.85,
+        "notes": "Reduce dose to 220mg/m\u00b2 on recovery"
+      },
+      {
+        "condition": "NCI-CTC grade 3 or above haematological toxicity (second recurrence)",
+        "drug_name": "Paclitaxel albumin bound (Abraxane)",
+        "factor": 0.69,
+        "notes": "Reduce dose to 180mg/m\u00b2 on recovery"
+      },
+      {
+        "condition": "Hepatic impairment moderate: ALT <10xULN and bilirubin 1.25-2xULN",
+        "drug_name": "Paclitaxel albumin bound (Abraxane)",
+        "factor": 0.77,
+        "notes": "Reduce dose to 200mg/m\u00b2"
+      },
+      {
+        "condition": "Hepatic impairment severe: ALT <10xULN and bilirubin 2.01-5xULN",
+        "drug_name": "Paclitaxel albumin bound (Abraxane)",
+        "factor": 0.5,
+        "notes": "Reduce dose to 130mg/m\u00b2. If tolerated, consider increasing to 200mg/m\u00b2."
+      },
+      {
+        "condition": "Hepatic impairment severe: ALT >10xULN or bilirubin >5xULN",
+        "drug_name": "Paclitaxel albumin bound (Abraxane)",
+        "factor": 0.0,
+        "notes": "Do not use"
+      },
+      {
+        "condition": "Renal impairment",
+        "drug_name": "Paclitaxel albumin bound (Abraxane)",
+        "factor": 1.0,
+        "notes": "No information available regarding dose adjustment"
+      },
+      {
+        "condition": "NCI-CTC grade 3 or above sensory neuropathy (first occurrence)",
+        "drug_name": "Paclitaxel albumin bound (Abraxane)",
+        "factor": 0.85,
+        "notes": "Allow symptoms to settle to grade 1 or 2 and resume at 220mg/m\u00b2"
+      },
+      {
+        "condition": "NCI-CTC grade 3 or above sensory neuropathy (recurrence after first reduction)",
+        "drug_name": "Paclitaxel albumin bound (Abraxane)",
+        "factor": 0.69,
+        "notes": "Reduce to 180mg/m\u00b2"
+      },
+      {
+        "condition": "NCI-CTC grade 2 sensory neuropathy (first occurrence)",
+        "drug_name": "Paclitaxel albumin bound (Abraxane)",
+        "factor": 0.85,
+        "notes": "Reduce dose to 220mg/m\u00b2"
+      },
+      {
+        "condition": "NCI-CTC grade 2 sensory neuropathy (recurrence)",
+        "drug_name": "Paclitaxel albumin bound (Abraxane)",
+        "factor": 0.69,
+        "notes": "Reduce to 180mg/m\u00b2"
+      }
+    ],
+    "pre_medications": [
+      "No pre-medication antiemetics required prior to treatment",
+      "Metoclopramide 10mg three times a day when required oral (take home medication - cycle 1 only)"
+    ],
+    "special_warnings": [
+      "Paclitaxel albumin bound (Abraxane/nab-paclitaxel) is NOT interchangeable with solvent-based paclitaxel or docetaxel. Different dose, schedule, and pre-medication requirements apply.",
+      "Paclitaxel albumin bound is a vesicant - follow extravasation policy.",
+      "Use infusion set incorporating a 15 micron filter. Do NOT use filters with pore size <15 micron (may block). Avoid medical devices containing silicone oil (may cause proteinaceous strand formation).",
+      "Neo-adjuvant and adjuvant use is unlicensed.",
+      "If a third dose reduction is necessary, treatment should be stopped.",
+      "No routine antiemetic premedication is required prior to treatment (unlike solvent-based paclitaxel)."
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "alt",
+      "bilirubin"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "BREAST-PERTUZUMAB-TRASTUZUMAB-SC",
+    "protocol_name": "Breast Cancer - Pertuzumab / Trastuzumab SC (Phesgo)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 18,
+    "drugs": [
+      {
+        "drug_name": "Pertuzumab / Trastuzumab SC (Phesgo)",
+        "dose": 1200.0,
+        "dose_unit": "mg",
+        "route": "Subcutaneous",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.133,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "LOADING DOSE (Cycle 1 only): Pertuzumab 1200mg / Trastuzumab 600mg. Administer as single subcutaneous injection over 8 minutes into thigh (alternating left/right). Observe for 30 minutes after loading dose. Administer before any taxane; complete observation period before starting taxane. Do not split dose between two syringes or two sites."
+      },
+      {
+        "drug_name": "Pertuzumab / Trastuzumab SC (Phesgo)",
+        "dose": 600.0,
+        "dose_unit": "mg",
+        "route": "Subcutaneous",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.083,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "MAINTENANCE DOSE (Cycle 2 onwards): Pertuzumab 600mg / Trastuzumab 600mg. Administer as single subcutaneous injection over 5 minutes into thigh (alternating left/right). Observe for 15 minutes after each maintenance dose. If interval between doses <6 weeks, give maintenance dose. If interval \u22656 weeks, re-administer loading dose 1200mg/600mg then resume maintenance."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Dose reductions not recommended",
+        "drug_name": "Pertuzumab / Trastuzumab SC (Phesgo)",
+        "factor": 1.0,
+        "notes": "Dose reductions are not recommended. If treatment is not tolerated it should be stopped."
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Pertuzumab / Trastuzumab SC (Phesgo)",
+        "factor": 1.0,
+        "notes": "No specific dose adjustments recommended in hepatic impairment"
+      },
+      {
+        "condition": "Mild or moderate renal impairment",
+        "drug_name": "Pertuzumab / Trastuzumab SC (Phesgo)",
+        "factor": 1.0,
+        "notes": "No dose adjustment necessary for mild or moderate renal impairment. No dose recommendations available for severe renal impairment."
+      },
+      {
+        "condition": "Left ventricular dysfunction (EBC): LVEF drops to <50% with fall \u226510% points below pre-treatment (confirmed)",
+        "drug_name": "Pertuzumab / Trastuzumab SC (Phesgo)",
+        "factor": 0.0,
+        "notes": "Withhold for at least 3 weeks. Discontinue if symptomatic heart failure confirmed."
+      },
+      {
+        "condition": "Left ventricular dysfunction (MBC): LVEF drops to <40%, or LVEF 40-45% with fall \u226510% points below pre-treatment (confirmed)",
+        "drug_name": "Pertuzumab / Trastuzumab SC (Phesgo)",
+        "factor": 0.0,
+        "notes": "Withhold for at least 3 weeks. May resume if LVEF recovers to >45% or to 40-45% with <10% points below pre-treatment."
+      },
+      {
+        "condition": "NCI-CTCAE Grade 4 injection reaction, bronchospasm, or acute respiratory distress syndrome",
+        "drug_name": "Pertuzumab / Trastuzumab SC (Phesgo)",
+        "factor": 0.0,
+        "notes": "Discontinue immediately and permanently"
+      },
+      {
+        "condition": "Severe or uncontrolled diarrhoea",
+        "drug_name": "Pertuzumab / Trastuzumab SC (Phesgo)",
+        "factor": 1.0,
+        "notes": "Consider interruption if no improvement. Reinstate when diarrhoea is under control."
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV when required for injection-related reactions",
+      "Hydrocortisone 100mg IV when required for injection-related reactions",
+      "Paracetamol 1000mg oral when required for injection-related reactions"
+    ],
+    "special_warnings": [
+      "Pertuzumab/Trastuzumab SC (Phesgo) is NOT interchangeable with IV trastuzumab or IV pertuzumab given separately.",
+      "HER2 positive status must be confirmed before initiating therapy.",
+      "LVEF must be assessed at baseline, prior to cycle 4, and every 4 months thereafter (or as clinically indicated). For EBC: pre-treatment LVEF must be \u226555% (\u226550% after anthracycline component). For MBC: pre-treatment LVEF must be \u226550%.",
+      "Diarrhoea can be severe, especially during concurrent taxane therapy. Elderly patients (\u226565 years) are at higher risk. Early intervention with loperamide, fluids and electrolyte replacement recommended.",
+      "Severe pulmonary events have been reported. Patients with dyspnoea at rest should not be treated. Caution for pneumonitis, especially with concomitant taxanes.",
+      "Injection-related reactions can occur. Observe for 30 minutes after loading dose and 15 minutes after each maintenance dose.",
+      "Administer before any taxane; complete observation period before starting taxane administration.",
+      "Injection site should be alternated between left and right thigh only. Give new injections at least 2.5cm from previous site on healthy skin.",
+      "For EBC (neoadjuvant): administer for 3-6 cycles in combination with chemotherapy. For EBC (adjuvant): administer for up to 18 cycles (one year). Continue even if chemotherapy is discontinued.",
+      "Blood pressure monitoring required on day 1 of each cycle."
+    ],
+    "required_patient_fields": [
+      "her2_status",
+      "lvef"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "BREAST-SACITUZUMAB-GOVITECAN",
+    "protocol_name": "Breast Cancer - Sacituzumab Govitecan (Trodelvy)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Sacituzumab govitecan",
+        "dose": 10.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8
+        ],
+        "infusion_duration_hours": 3.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Administer in 250ml sodium chloride 0.9%. First infusion over 180 minutes (3 hours); if well tolerated, subsequent infusions may be given over 60-120 minutes. Observe for at least 30 minutes after each infusion. For patients over 170kg, dose must be divided into two separate infusions. Dose banded per national bands (10mg/ml). Continue until disease progression or unacceptable toxicity. 6 cycles set in ARIA. TROP2-targeted antibody-drug conjugate."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Day 1: Neutrophils <1.5x10\u2079/L or platelets <100x10\u2079/L",
+        "drug_name": "Sacituzumab govitecan",
+        "factor": 1.0,
+        "notes": "Delay cycle until count recovery"
+      },
+      {
+        "condition": "Day 8: Neutrophils <1.0x10\u2079/L or platelets <100x10\u2079/L",
+        "drug_name": "Sacituzumab govitecan",
+        "factor": 0.0,
+        "notes": "Omit day 8 dose; proceed to next cycle"
+      },
+      {
+        "condition": "Grade 4 neutropenia \u22657 days OR grade 3 febrile neutropenia OR grade 3-4 neutropenia delaying dosing 2-3 weeks (first occurrence)",
+        "drug_name": "Sacituzumab govitecan",
+        "factor": 0.75,
+        "notes": "25% dose reduction and administer G-CSF"
+      },
+      {
+        "condition": "Grade 4 neutropenia \u22657 days OR grade 3 febrile neutropenia OR grade 3-4 neutropenia delaying dosing 2-3 weeks (second occurrence)",
+        "drug_name": "Sacituzumab govitecan",
+        "factor": 0.5,
+        "notes": "50% dose reduction"
+      },
+      {
+        "condition": "Grade 4 neutropenia \u22657 days OR grade 3 febrile neutropenia OR grade 3-4 neutropenia delaying dosing 2-3 weeks (third occurrence)",
+        "drug_name": "Sacituzumab govitecan",
+        "factor": 0.0,
+        "notes": "Discontinue treatment"
+      },
+      {
+        "condition": "Grade 3-4 neutropenia delaying dosing beyond 3 weeks (first occurrence)",
+        "drug_name": "Sacituzumab govitecan",
+        "factor": 0.0,
+        "notes": "Discontinue treatment"
+      },
+      {
+        "condition": "Grade 4 non-haematological toxicity OR grade 3-4 uncontrolled nausea/vomiting/diarrhoea OR grade 3-4 non-haematological toxicity persisting >48hrs OR grade 3-4 toxicity delaying dose by 2-3 weeks (first occurrence)",
+        "drug_name": "Sacituzumab govitecan",
+        "factor": 0.75,
+        "notes": "25% dose reduction"
+      },
+      {
+        "condition": "Same non-haematological criteria as above (second occurrence)",
+        "drug_name": "Sacituzumab govitecan",
+        "factor": 0.5,
+        "notes": "50% dose reduction"
+      },
+      {
+        "condition": "Same non-haematological criteria as above (third occurrence)",
+        "drug_name": "Sacituzumab govitecan",
+        "factor": 0.0,
+        "notes": "Discontinue treatment"
+      },
+      {
+        "condition": "Grade 3-4 non-neutropenic haematologic or non-haematologic toxicity / grade 3 nausea / grade 3-4 vomiting not recovering to \u2264grade 1 within 3 weeks (first occurrence)",
+        "drug_name": "Sacituzumab govitecan",
+        "factor": 0.0,
+        "notes": "Discontinue treatment"
+      },
+      {
+        "condition": "Hepatic impairment: mild (bilirubin \u22641.5xULN, AST/ALT within limits)",
+        "drug_name": "Sacituzumab govitecan",
+        "factor": 1.0,
+        "notes": "No adjustment to starting dose required"
+      },
+      {
+        "condition": "Hepatic impairment: moderate to severe (bilirubin >1.5xULN, or AST/ALT >3xULN without metastases, or AST/ALT >5xULN with metastases)",
+        "drug_name": "Sacituzumab govitecan",
+        "factor": 0.0,
+        "notes": "Not recommended - not studied in these patients"
+      },
+      {
+        "condition": "Mild renal impairment",
+        "drug_name": "Sacituzumab govitecan",
+        "factor": 1.0,
+        "notes": "No adjustment to starting dose required"
+      },
+      {
+        "condition": "Moderate, severe, or end-stage renal impairment",
+        "drug_name": "Sacituzumab govitecan",
+        "factor": 1.0,
+        "notes": "Not studied - use with caution; no specific recommendation available"
+      },
+      {
+        "condition": "Grade 3-4 diarrhoea at time of scheduled treatment",
+        "drug_name": "Sacituzumab govitecan",
+        "factor": 0.0,
+        "notes": "Do not administer until resolved to \u2264grade 1"
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV (30 minutes before SACT)",
+      "Dexamethasone 8mg oral or IV (30 minutes before SACT)",
+      "Paracetamol 1000mg oral (30 minutes before SACT - check patient has not already taken; max 4g/24 hours)",
+      "H2 antagonist according to local formulary (30 minutes before SACT): ranitidine 50mg IV or famotidine 20mg oral or nizatidine 150mg oral or ranitidine 150mg oral",
+      "Aprepitant 125mg oral (30 minutes before SACT)",
+      "Ondansetron 8mg oral or IV (30 minutes before SACT)"
+    ],
+    "special_warnings": [
+      "Sacituzumab govitecan can cause severe diarrhoea and life-threatening neutropenia.",
+      "TROP2-targeted antibody-drug conjugate. Indicated for triple negative breast cancer (HER2-negative, ER-negative, PR-negative).",
+      "Patients homozygous for UGT1A1*28 allele (reduced UGT1A1 activity) are at increased risk of severe neutropenia, severe diarrhoea, febrile neutropenia, and anaemia. Monitor closely. Consider withholding or permanently discontinuing based on severity of adverse reactions.",
+      "Drug interactions with UGT1A1 inhibitors and inducers - always check for drug interactions before prescribing.",
+      "Diarrhoea management: at onset of diarrhoea (no infectious cause identified), initiate loperamide 4mg immediately, then 2mg with every episode up to maximum 16mg/day. Discontinue loperamide 12 hours after diarrhoea resolves.",
+      "Patients with excessive cholinergic response (abdominal cramping, diarrhoea, salivation) may receive atropine premedication for subsequent treatments.",
+      "Severe and life-threatening hypersensitivity can occur. Medication and emergency equipment must be available. Observe during infusion and for at least 30 minutes after.",
+      "Permanently discontinue if life-threatening infusion-related reactions occur.",
+      "For patients >170kg, divide dose into two separate infusions.",
+      "FBC required prior to day 1 AND day 8 of each cycle. U&E, LFTs and magnesium prior to day 1 only.",
+      "Take home medications: Aprepitant 80mg daily for 2 days (starting day 2/9), Dexamethasone 4mg daily for 3 days (starting day 2/9), Ondansetron 8mg twice daily for 3 days (days 1-3/8-10), Metoclopramide 10mg TDS PRN, Loperamide 4mg after first loose stool then 2mg QDS PRN (max 16mg/24h)."
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "bilirubin",
+      "alt",
+      "ast",
+      "creatinine_clearance"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "BREAST-TRASTUZUMAB-21DAY-LOAD",
+    "protocol_name": "Breast Cancer - Trastuzumab (21 day - Loading)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 18,
+    "drugs": [
+      {
+        "drug_name": "Trastuzumab",
+        "dose": 8.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "LOADING DOSE (Cycle 1 only): 8mg/kg IV infusion in 250ml sodium chloride 0.9% over 90 minutes. Observe for 6 hours following start of first infusion. Dose banded per national dose bands (21mg/ml). If dose missed by >14 days, re-administer 8mg/kg loading dose over 90 minutes."
+      },
+      {
+        "drug_name": "Trastuzumab",
+        "dose": 6.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "MAINTENANCE DOSE (Cycle 2 onwards): 6mg/kg IV infusion in 250ml sodium chloride 0.9% over minimum 30 minutes. Observe for 2 hours following start of subsequent infusions. If dose missed by \u226414 days, give usual maintenance 6mg/kg as soon as possible."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological toxicity",
+        "drug_name": "Trastuzumab",
+        "factor": 1.0,
+        "notes": "No dose modifications necessary for haematological toxicity. If not tolerated, stop treatment."
+      },
+      {
+        "condition": "Renal impairment",
+        "drug_name": "Trastuzumab",
+        "factor": 1.0,
+        "notes": "No dose adjustment necessary"
+      },
+      {
+        "condition": "Liver impairment",
+        "drug_name": "Trastuzumab",
+        "factor": 1.0,
+        "notes": "No dose adjustment necessary"
+      },
+      {
+        "condition": "Asymptomatic LVEF drop: LVEF <50% with drop \u226510 points below pre-treatment (confirmed on repeat echo at 3 weeks)",
+        "drug_name": "Trastuzumab",
+        "factor": 0.0,
+        "notes": "STOP treatment. LVEF must be \u226550% before starting cycle 1."
+      },
+      {
+        "condition": "Asymptomatic LVEF drop: LVEF <50% with drop \u226510 points (initial echo - hold and repeat in 3 weeks)",
+        "drug_name": "Trastuzumab",
+        "factor": 1.0,
+        "notes": "HOLD treatment and repeat LVEF in 3 weeks. Resume if drop not confirmed."
+      },
+      {
+        "condition": "Asymptomatic LVEF drop: LVEF \u226550% with drop >20 points",
+        "drug_name": "Trastuzumab",
+        "factor": 1.0,
+        "notes": "Continue treatment and repeat LVEF in 3 weeks"
+      },
+      {
+        "condition": "Symptomatic cardiac dysfunction",
+        "drug_name": "Trastuzumab",
+        "factor": 0.0,
+        "notes": "Discontinue trastuzumab, commence ACE inhibitor therapy, refer to cardiologist"
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV when required for infusion-related reactions",
+      "Hydrocortisone 100mg IV when required for infusion-related reactions",
+      "Paracetamol 1000mg oral when required for infusion-related reactions"
+    ],
+    "special_warnings": [
+      "HER2-positive status must be confirmed before initiating therapy.",
+      "Dose reductions are NOT permitted for trastuzumab. If not tolerated, stop treatment.",
+      "Cardiotoxicity monitoring: LVEF must be \u226550% before starting cycle 1. Assess cardiac function prior to starting, then every 12 weeks in adjuvant setting; in metastatic setting every 12 weeks for 24 weeks then every 24 weeks (unless clinical evidence of cardiac failure).",
+      "Blood pressure monitoring required prior to each administration.",
+      "Trastuzumab is associated with hypersensitivity reactions. Observe for 6 hours after first infusion and 2 hours after subsequent infusions.",
+      "Loading dose 8mg/kg (Cycle 1) vs maintenance dose 6mg/kg (Cycle 2 onwards) - these are separate clinical protocols.",
+      "If dose missed by \u226414 days: give maintenance 6mg/kg as soon as possible. If missed by >14 days: re-administer loading dose 8mg/kg over 90 minutes, then resume maintenance every 21 days.",
+      "Trastuzumab is classified as neutral for extravasation purposes.",
+      "18 cycles set in Aria for adjuvant setting; continue until disease progression or intolerance in metastatic setting."
+    ],
+    "required_patient_fields": [
+      "her2_status",
+      "lvef"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "BREAST-TRASTUZUMAB-21DAY-MAINTENANCE",
+    "protocol_name": "Breast Cancer - Trastuzumab (21 day - Maintenance)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 18,
+    "drugs": [
+      {
+        "drug_name": "Trastuzumab",
+        "dose": 6.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "MAINTENANCE DOSE: 6mg/kg IV infusion in 250ml sodium chloride 0.9% over minimum 30 minutes. This regimen is for maintenance only - the first cycle must be the loading dose (separate protocol). 17 cycles set in ARIA (first cycle is loading dose). Dose banded per national dose bands (21mg/ml). Should only be used where patient has had recent exposure to trastuzumab - if not, first infusion should be administered over 90 minutes. If dose missed by >14 days, re-administer loading dose 8mg/kg over 90 minutes."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological toxicity",
+        "drug_name": "Trastuzumab",
+        "factor": 1.0,
+        "notes": "No dose modifications necessary for haematological toxicity. If not tolerated, stop treatment."
+      },
+      {
+        "condition": "Renal impairment",
+        "drug_name": "Trastuzumab",
+        "factor": 1.0,
+        "notes": "No dose adjustment necessary"
+      },
+      {
+        "condition": "Liver impairment",
+        "drug_name": "Trastuzumab",
+        "factor": 1.0,
+        "notes": "No dose adjustment necessary"
+      },
+      {
+        "condition": "Asymptomatic LVEF drop: LVEF <50% with drop \u226510 points below pre-treatment (confirmed on repeat echo at 3 weeks)",
+        "drug_name": "Trastuzumab",
+        "factor": 0.0,
+        "notes": "STOP treatment. LVEF must be \u226540% before starting maintenance trastuzumab."
+      },
+      {
+        "condition": "Asymptomatic LVEF drop: LVEF <50% with drop \u226510 points (initial echo - hold and repeat in 3 weeks)",
+        "drug_name": "Trastuzumab",
+        "factor": 1.0,
+        "notes": "HOLD treatment and repeat LVEF in 3 weeks. Resume if drop not confirmed."
+      },
+      {
+        "condition": "Asymptomatic LVEF drop: LVEF \u226550% with drop >20 points",
+        "drug_name": "Trastuzumab",
+        "factor": 1.0,
+        "notes": "Continue treatment and repeat LVEF in 3 weeks"
+      },
+      {
+        "condition": "Symptomatic cardiac dysfunction",
+        "drug_name": "Trastuzumab",
+        "factor": 0.0,
+        "notes": "Discontinue trastuzumab, commence ACE inhibitor therapy, refer to cardiologist"
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV when required for infusion-related reactions",
+      "Hydrocortisone 100mg IV when required for infusion-related reactions",
+      "Paracetamol 1000mg oral when required for infusion-related reactions"
+    ],
+    "special_warnings": [
+      "HER2-positive status must be confirmed before initiating therapy.",
+      "Dose reductions are NOT permitted for trastuzumab. If not tolerated, stop treatment.",
+      "This regimen is for MAINTENANCE ONLY (Cycle 2 onwards). The first cycle must use the Trastuzumab 21-day Loading protocol (8mg/kg). 17 cycles set in ARIA.",
+      "This regimen should only be used where the patient has had recent exposure to trastuzumab as the first infusion is over 30 minutes. If not the case, first infusion should be administered over 90 minutes.",
+      "Cardiotoxicity monitoring: LVEF must be \u226540% before starting maintenance trastuzumab. Assess cardiac function prior to starting, then every 12 weeks in adjuvant setting; in metastatic setting every 12 weeks for 24 weeks then every 24 weeks.",
+      "Blood pressure monitoring required prior to each administration.",
+      "Trastuzumab is associated with hypersensitivity reactions. Observe for 6 hours after first infusion and 2 hours after subsequent infusions.",
+      "If dose missed by \u226414 days: give usual maintenance 6mg/kg as soon as possible. If missed by >14 days: re-administer loading dose 8mg/kg over 90 minutes, then resume maintenance every 21 days.",
+      "Trastuzumab is classified as neutral for extravasation purposes."
+    ],
+    "required_patient_fields": [
+      "her2_status",
+      "lvef"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "BREAST-TRASTUZUMAB-SC",
+    "protocol_name": "Breast Cancer - Trastuzumab SC",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 18,
+    "drugs": [
+      {
+        "drug_name": "Trastuzumab SC",
+        "dose": 600.0,
+        "dose_unit": "mg",
+        "route": "Subcutaneous",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.067,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Fixed dose 600mg subcutaneous injection over 2-5 minutes. Inject into thigh (alternate left and right). New injections at least 2.5cm from previous site on healthy skin; never into areas that are red, bruised, tender or hard. Minimum interval between consecutive SC administrations: 3 weeks. If dose missed, administer 600mg as soon as possible. 18 cycles set in ARIA."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological toxicity",
+        "drug_name": "Trastuzumab SC",
+        "factor": 1.0,
+        "notes": "No dose reductions made during clinical trials. Patients may continue during periods of reversible chemotherapy-induced myelosuppression. If not tolerated, stop treatment."
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Trastuzumab SC",
+        "factor": 1.0,
+        "notes": "No information available"
+      },
+      {
+        "condition": "Renal impairment",
+        "drug_name": "Trastuzumab SC",
+        "factor": 1.0,
+        "notes": "No information available"
+      },
+      {
+        "condition": "Asymptomatic LVEF drop: LVEF <50% with drop \u226510 points below pre-treatment (confirmed on repeat echo at 3 weeks)",
+        "drug_name": "Trastuzumab SC",
+        "factor": 0.0,
+        "notes": "STOP treatment. LVEF must be \u226550% before starting cycle 1."
+      },
+      {
+        "condition": "Asymptomatic LVEF drop: LVEF <50% with drop \u226510 points (initial - hold and repeat at 3 weeks)",
+        "drug_name": "Trastuzumab SC",
+        "factor": 1.0,
+        "notes": "HOLD treatment and repeat LVEF in 3 weeks. Resume if drop not confirmed."
+      },
+      {
+        "condition": "Asymptomatic LVEF drop: LVEF \u226550% with drop >20 points",
+        "drug_name": "Trastuzumab SC",
+        "factor": 1.0,
+        "notes": "Continue treatment and repeat LVEF in 3 weeks"
+      },
+      {
+        "condition": "Symptomatic cardiac dysfunction",
+        "drug_name": "Trastuzumab SC",
+        "factor": 0.0,
+        "notes": "Discontinue trastuzumab, commence ACE inhibitor therapy, refer to cardiologist"
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV when required for hypersensitivity reactions",
+      "Hydrocortisone 100mg IV when required for hypersensitivity reactions",
+      "Paracetamol 1000mg oral when required for hypersensitivity reactions"
+    ],
+    "special_warnings": [
+      "Trastuzumab SC (subcutaneous, fixed 600mg dose) is NOT interchangeable with IV trastuzumab (weight-based 6mg/kg or 8mg/kg dosing). These are different formulations with different pharmacokinetics.",
+      "HER2-positive status must be confirmed before initiating therapy.",
+      "Dose reductions are NOT permitted for subcutaneous trastuzumab. If not tolerated, stop treatment.",
+      "Cardiotoxicity monitoring required: LVEF must be \u226550% before starting cycle 1. Assess cardiac function prior to starting, then every 12 weeks in adjuvant setting; in metastatic setting every 12 weeks for 24 weeks then every 24 weeks (unless clinical evidence of cardiac failure).",
+      "Trastuzumab SC is associated with hypersensitivity reactions. Observe for 6 hours following first administration and 2 hours following subsequent administrations (in practice shorter observation periods have been safely used).",
+      "Injection site: alternate between left and right thigh only. New injections at least 2.5cm from previous site. Never inject into red, bruised, tender or hard skin.",
+      "Minimum interval between consecutive SC administrations must not be less than 3 weeks.",
+      "Trastuzumab is classified as neutral for extravasation purposes."
+    ],
+    "required_patient_fields": [
+      "her2_status",
+      "lvef"
+    ],
+    "auc_dosing": null
+  }
+]

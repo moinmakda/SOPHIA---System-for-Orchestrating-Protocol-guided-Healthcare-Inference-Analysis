@@ -1,0 +1,1226 @@
+[
+  {
+    "protocol_code": "CRC-5FU-FA-MDG",
+    "protocol_name": "Fluorouracil and Folinic Acid (Modified de Gramont)",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 14,
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 400.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV bolus over 10 minutes. Dose banded at 25mg/ml. Inflammitant - extravasation risk."
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 2800.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2
+        ],
+        "infusion_duration_hours": 46.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Continuous IV infusion over 46 hours via ambulatory pump. Dose banded at 50mg/ml. Central venous access required. [VERIFIED: 5-FU 2800mg/m\u00b2 in de Gramont infusional regimen (46h continuous infusion) is standard \u2014 this is total infusion dose not bolus dose]"
+      },
+      {
+        "drug_name": "Folinic Acid",
+        "dose": 350.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV infusion in 250ml glucose 5% over 120 minutes. May be replaced with calcium levofolinate 175mg IV in 250ml glucose 5% over 120 minutes."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1.5x10^9/L or platelets <75x10^9/L: delay up to 7 days",
+        "drug_name": "Fluorouracil",
+        "factor": 1.0,
+        "notes": "Reinitiate at full dose for up to 7-day delay."
+      },
+      {
+        "condition": "Thrombocytopenia requiring >7-day delay",
+        "drug_name": "Fluorouracil",
+        "factor": 0.75,
+        "notes": "75% of original dose after >7-day delay for thrombocytopenia."
+      },
+      {
+        "condition": "Neutropenia requiring >7-day delay",
+        "drug_name": "Fluorouracil bolus",
+        "factor": 0.0,
+        "notes": "After 7-day delay for neutropenia, omit bolus fluorouracil for this and subsequent cycles."
+      },
+      {
+        "condition": "Further delay after bolus omission for neutropenia",
+        "drug_name": "Fluorouracil infusion",
+        "factor": 0.8,
+        "notes": "Reduce infusional fluorouracil to 80% if further delay needed despite omitting bolus."
+      },
+      {
+        "condition": "Delay of 21 days or more",
+        "drug_name": "Fluorouracil",
+        "factor": 0.0,
+        "notes": "Stop therapy if delay is 21 days or more."
+      },
+      {
+        "condition": "Moderate hepatic impairment",
+        "drug_name": "Fluorouracil",
+        "factor": 0.7,
+        "notes": "Reduce dose by 30% in moderate hepatic impairment."
+      },
+      {
+        "condition": "Severe hepatic impairment",
+        "drug_name": "Fluorouracil",
+        "factor": 0.5,
+        "notes": "Reduce dose by 50% in severe hepatic impairment."
+      },
+      {
+        "condition": "Bilirubin >85 umol/L and/or AST >180",
+        "drug_name": "Fluorouracil",
+        "factor": 0.0,
+        "notes": "Fluorouracil is contra-indicated if bilirubin >85 umol/L and/or AST >180."
+      },
+      {
+        "condition": "Severe renal impairment",
+        "drug_name": "Fluorouracil",
+        "factor": 0.75,
+        "notes": "Dose adjustment only required in severe renal impairment; discuss with consultant."
+      }
+    ],
+    "pre_medications": [
+      "Metoclopramide 10mg oral or IV 15-30 minutes prior to chemotherapy"
+    ],
+    "special_warnings": [
+      "DPD deficiency testing required before cycle 1: patients with complete or partial DPD deficiency are at increased risk of severe and fatal toxicity with fluorouracil.",
+      "Central venous access and ambulatory infusion pump required for 46-hour infusion.",
+      "Fluorouracil is an inflammitant - extravasation precautions required.",
+      "Third dose reduction should result in treatment discontinuation.",
+      "Dose reductions should not be re-escalated without consultant approval."
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "bilirubin",
+      "ast",
+      "creatinine_clearance",
+      "dpd_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "CRC-FOLFIRI-PANI",
+    "protocol_name": "Fluorouracil, Folinic Acid (Modified de Gramont), Irinotecan and Panitumumab (FOLFIRI-Panitumumab)",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 14,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 400.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV bolus over 10 minutes. Dose banded at 25mg/ml. Inflammitant."
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 2400.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2
+        ],
+        "infusion_duration_hours": 46.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Continuous IV infusion over 46 hours via ambulatory pump. Dose banded at 50mg/ml."
+      },
+      {
+        "drug_name": "Folinic Acid",
+        "dose": 350.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV infusion in 250ml glucose 5% over 120 minutes. May be replaced with calcium levofolinate 175mg IV in 250ml glucose 5% over 120 minutes."
+      },
+      {
+        "drug_name": "Irinotecan",
+        "dose": 180.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.5,
+        "max_dose": 360.0,
+        "max_dose_unit": "mg",
+        "notes": "IV infusion in 250ml sodium chloride 0.9% over 90 minutes. May be given over 30-90 minutes. Maximum daily dose 360mg. Dose banded at 20mg/ml. Irritant."
+      },
+      {
+        "drug_name": "Panitumumab",
+        "dose": 6.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV infusion in 100ml sodium chloride 0.9% over 60 minutes. Doses 1000mg and above must be given over 90 minutes in 150ml NaCl 0.9%. Must use 0.22 micron in-line filter. Dose banded at 20mg/ml. Neutral (extravasation). Dose reductions NOT permitted for panitumumab."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1.5x10^9/L and/or platelets <100x10^9/L: delay 7 days",
+        "drug_name": "Fluorouracil bolus",
+        "factor": 0.0,
+        "notes": "Omit bolus fluorouracil on restart after 7-day delay."
+      },
+      {
+        "condition": "14-day delay required OR two separate 7-day delays",
+        "drug_name": "Irinotecan",
+        "factor": 0.8,
+        "notes": "Reduce irinotecan by 20% if 14-day delay needed or two separate 7-day delays occur."
+      },
+      {
+        "condition": "14-day delay required OR two separate 7-day delays",
+        "drug_name": "Fluorouracil infusion",
+        "factor": 0.8,
+        "notes": "Consider reducing infusional fluorouracil by 20% alongside irinotecan reduction."
+      },
+      {
+        "condition": "Nadir neutrophil <0.5x10^9/L or febrile neutropenia",
+        "drug_name": "Irinotecan",
+        "factor": 0.8,
+        "notes": "Reduce subsequent irinotecan dose by 20% of original dose."
+      },
+      {
+        "condition": "NCI-CTC grade 3 or above irinotecan toxicity (non-diarrhoea)",
+        "drug_name": "Irinotecan",
+        "factor": 0.8,
+        "notes": "Next cycle not until all toxicities resolve to grade 0-1. Irinotecan reduced to 80% of original dose after grade 3+ event."
+      },
+      {
+        "condition": "NCI-CTC grade 3 skin toxicity (panitumumab)",
+        "drug_name": "Panitumumab",
+        "factor": 0.5,
+        "notes": "Delay until toxicity resolves to grade 2 or below, then reinstate at 50% dose. Escalate in 25% increments if no recurrence. Discontinue if skin toxicity unresolved after 2 withheld doses or recurs/is intolerable at 50% dose."
+      },
+      {
+        "condition": "Moderate hepatic impairment (fluorouracil)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.7,
+        "notes": "Reduce dose by 30%."
+      },
+      {
+        "condition": "Severe hepatic impairment (fluorouracil)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.5,
+        "notes": "Reduce dose by 50%."
+      },
+      {
+        "condition": "Bilirubin >85 umol/L and/or AST >180",
+        "drug_name": "Fluorouracil",
+        "factor": 0.0,
+        "notes": "Contra-indicated."
+      },
+      {
+        "condition": "Bilirubin >1.5xULN and <3xULN (irinotecan)",
+        "drug_name": "Irinotecan",
+        "factor": 0.75,
+        "notes": "Consider dose reduction if bilirubin 1.5-3xULN."
+      },
+      {
+        "condition": "Bilirubin >3xULN (irinotecan)",
+        "drug_name": "Irinotecan",
+        "factor": 0.0,
+        "notes": "Irinotecan contra-indicated if bilirubin >3xULN."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg oral or IV 15-30 minutes prior to chemotherapy on day 1",
+      "Ondansetron 8mg oral or IV 15-30 minutes prior to chemotherapy on day 1",
+      "Atropine 250 microgram SC immediately prior to irinotecan (prevention of cholinergic syndrome)"
+    ],
+    "special_warnings": [
+      "Wild type RAS status must be confirmed before starting therapy. Panitumumab is only indicated for RAS wild-type tumours.",
+      "Panitumumab dose reductions are NOT permitted. Dose may be delayed for toxicity.",
+      "DPD deficiency testing required before cycle 1: increased risk of severe and fatal toxicity with fluorouracil.",
+      "Acneiform skin rash occurs in >90% of patients receiving panitumumab; onset normally within 3 weeks. Sun safety practices required during and for 2 months after treatment.",
+      "Stop panitumumab if confirmed pneumonitis.",
+      "UV radiation may worsen panitumumab skin reactions.",
+      "Central venous access and ambulatory pump required.",
+      "Fluorouracil is an inflammitant; irinotecan is an irritant.",
+      "This protocol may require funding approval."
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "bilirubin",
+      "ast",
+      "creatinine_clearance",
+      "dpd_status",
+      "kras_status",
+      "ras_wild_type_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "CRC-FOLFIRI",
+    "protocol_name": "Fluorouracil, Folinic Acid (Modified de Gramont) and Irinotecan (FOLFIRI)",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 14,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 400.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV bolus over 10 minutes. Dose banded at 25mg/ml. Inflammitant."
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 2400.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2
+        ],
+        "infusion_duration_hours": 46.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Continuous IV infusion over 46 hours via ambulatory pump. Dose banded at 50mg/ml."
+      },
+      {
+        "drug_name": "Folinic Acid",
+        "dose": 350.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV infusion in 250ml glucose 5% over 120 minutes. May be replaced with calcium levofolinate 175mg IV in 250ml glucose 5% over 120 minutes."
+      },
+      {
+        "drug_name": "Irinotecan",
+        "dose": 180.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.5,
+        "max_dose": 700.0,
+        "max_dose_unit": "mg",
+        "notes": "IV infusion in 250ml sodium chloride 0.9% over 90 minutes. May be administered over 30-90 minutes. Maximum daily dose 700mg. Dose banded at 20mg/ml. Irritant."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1.5x10^9/L and/or platelets <100x10^9/L: delay 7 days",
+        "drug_name": "Irinotecan",
+        "factor": 0.8,
+        "notes": "On restart, reduce irinotecan to 80% of original dose."
+      },
+      {
+        "condition": "14-day delay required OR two separate 7-day delays",
+        "drug_name": "Fluorouracil bolus",
+        "factor": 0.0,
+        "notes": "Omit bolus fluorouracil."
+      },
+      {
+        "condition": "14-day delay required OR two separate 7-day delays",
+        "drug_name": "Irinotecan",
+        "factor": 0.8,
+        "notes": "Reduce irinotecan by 20%."
+      },
+      {
+        "condition": "Nadir neutrophil <0.5x10^9/L or febrile neutropenia",
+        "drug_name": "Irinotecan",
+        "factor": 0.8,
+        "notes": "Reduce subsequent irinotecan to 80% of original dose."
+      },
+      {
+        "condition": "NCI-CTC grade 3 or above irinotecan-related toxicity",
+        "drug_name": "Irinotecan",
+        "factor": 0.8,
+        "notes": "Reduce irinotecan to 80% of original dose. All toxicities must resolve to grade 0-1 and diarrhoea must resolve completely before next cycle."
+      },
+      {
+        "condition": "Moderate hepatic impairment (fluorouracil)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.7,
+        "notes": "Reduce dose by 30%."
+      },
+      {
+        "condition": "Severe hepatic impairment (fluorouracil)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.5,
+        "notes": "Reduce dose by 50%."
+      },
+      {
+        "condition": "Bilirubin >85 umol/L and/or AST >180 (fluorouracil)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.0,
+        "notes": "Contra-indicated."
+      },
+      {
+        "condition": "Irinotecan hepatic: bilirubin 26-51 umol/L (for 350mg/m\u00b2 dose reference)",
+        "drug_name": "Irinotecan",
+        "factor": 0.57,
+        "notes": "If bilirubin 26-51 umol/L prescribe 200mg/m\u00b2; if bilirubin >51 umol/L consider stopping therapy."
+      },
+      {
+        "condition": "Severe renal impairment (fluorouracil)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.75,
+        "notes": "Dose adjustment only required in severe renal impairment."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg oral or IV 15-30 minutes prior to chemotherapy on day 1",
+      "Ondansetron 8mg oral or IV 15-30 minutes prior to chemotherapy on day 1",
+      "Atropine 250 microgram SC immediately prior to irinotecan (prevention of cholinergic syndrome)"
+    ],
+    "special_warnings": [
+      "DPD deficiency testing required before cycle 1: increased risk of severe and fatal fluorouracil toxicity.",
+      "Central venous access and ambulatory pump required.",
+      "Fluorouracil is an inflammitant; irinotecan is an irritant.",
+      "Irinotecan associated with acute cholinergic syndrome; prophylactic atropine required.",
+      "Delayed diarrhoea associated with irinotecan: treat promptly with loperamide."
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "bilirubin",
+      "ast",
+      "creatinine_clearance",
+      "dpd_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "CRC-FOLFOX",
+    "protocol_name": "Fluorouracil, Folinic Acid (Modified de Gramont) and Oxaliplatin (FOLFOX)",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 14,
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Folinic Acid",
+        "dose": 350.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV infusion in 250ml glucose 5% over 120 minutes. May be replaced with calcium levofolinate 175mg IV in 250ml glucose 5% over 120 minutes."
+      },
+      {
+        "drug_name": "Oxaliplatin",
+        "dose": 85.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV infusion in 500ml glucose 5% over 120 minutes. Dose banded at 5mg/ml. Exfoliant. Glucose 5% flush before and after. Do NOT mix with saline."
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 400.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV bolus over 10 minutes. Dose banded at 25mg/ml. Inflammitant."
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 2400.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2
+        ],
+        "infusion_duration_hours": 46.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Continuous IV infusion over 46 hours via ambulatory pump. Dose banded at 50mg/ml."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1.5x10^9/L or platelets <75x10^9/L: delay up to 7 days",
+        "drug_name": "Fluorouracil",
+        "factor": 1.0,
+        "notes": "Reinitiate at full dose for up to 7-day delay."
+      },
+      {
+        "condition": "Thrombocytopenia requiring >7-day delay",
+        "drug_name": "Fluorouracil",
+        "factor": 0.75,
+        "notes": "Resume at 75% of original dose after >7-day delay for thrombocytopenia."
+      },
+      {
+        "condition": "Neutropenia requiring >7-day delay",
+        "drug_name": "Fluorouracil bolus",
+        "factor": 0.0,
+        "notes": "Omit bolus fluorouracil for this and subsequent cycles."
+      },
+      {
+        "condition": "Further delay needed after bolus omission",
+        "drug_name": "Fluorouracil infusion",
+        "factor": 0.8,
+        "notes": "Reduce infusional fluorouracil to 80% of original dose."
+      },
+      {
+        "condition": "Further delay needed after bolus omission",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.8,
+        "notes": "Reduce oxaliplatin to 80% of original dose alongside infusional fluorouracil reduction."
+      },
+      {
+        "condition": "Delay of 21 days or more",
+        "drug_name": "Fluorouracil",
+        "factor": 0.0,
+        "notes": "Stop therapy."
+      },
+      {
+        "condition": "NCI-CTC grade 2 diarrhoea (first episode)",
+        "drug_name": "Fluorouracil",
+        "factor": 1.0,
+        "notes": "Withhold until resolves to grade 1, restart at full dose."
+      },
+      {
+        "condition": "NCI-CTC grade 2 diarrhoea (second episode)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.75,
+        "notes": "Restart at 75% of original dose after resolution to grade 1."
+      },
+      {
+        "condition": "NCI-CTC grade 2 diarrhoea (third episode)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.5,
+        "notes": "Restart at 50% of original dose after resolution to grade 1."
+      },
+      {
+        "condition": "NCI-CTC grade 3 diarrhoea (first episode)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.75,
+        "notes": "Withhold until grade 1, restart at 75%."
+      },
+      {
+        "condition": "NCI-CTC grade 3 diarrhoea (second episode)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.5,
+        "notes": "Restart at 50% after resolution to grade 1."
+      },
+      {
+        "condition": "NCI-CTC grade 3 diarrhoea (third episode) or grade 4 at any time",
+        "drug_name": "Fluorouracil",
+        "factor": 0.0,
+        "notes": "Stop fluorouracil therapy."
+      },
+      {
+        "condition": "Oxaliplatin neurosensory toxicity grade 1-2 lasting <7 days",
+        "drug_name": "Oxaliplatin",
+        "factor": 1.0,
+        "notes": "Full dose oxaliplatin."
+      },
+      {
+        "condition": "Oxaliplatin neurosensory toxicity grade 2 persisting >7 days",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.88,
+        "notes": "Reduce oxaliplatin dose to 75mg/m\u00b2."
+      },
+      {
+        "condition": "Oxaliplatin neurosensory toxicity grade 3 or above",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.0,
+        "notes": "Discontinue oxaliplatin."
+      },
+      {
+        "condition": "NCI-CTC grade 3-4 diarrhoea or stomatitis recurring despite fluorouracil reduction",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.88,
+        "notes": "Reduce oxaliplatin dose to 75mg/m\u00b2."
+      },
+      {
+        "condition": "Moderate hepatic impairment (fluorouracil)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.67,
+        "notes": "Reduce initial dose by 33%; may increase as tolerated."
+      },
+      {
+        "condition": "Severe hepatic impairment (fluorouracil)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.5,
+        "notes": "Reduce initial dose by 50%; may increase as tolerated."
+      },
+      {
+        "condition": "Bilirubin >85 umol/L and/or AST >180 (fluorouracil)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.0,
+        "notes": "Contra-indicated."
+      },
+      {
+        "condition": "Oxaliplatin renal: CrCl <20 ml/min",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.75,
+        "notes": "Dose reduce if CrCl <20ml/min. Monitor renal function in moderate impairment."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg oral or IV 15-30 minutes prior to chemotherapy",
+      "Ondansetron 8mg oral or IV 15-30 minutes prior to chemotherapy"
+    ],
+    "special_warnings": [
+      "DPD deficiency testing required before cycle 1: increased risk of severe and fatal fluorouracil toxicity.",
+      "Central venous access and ambulatory pump required.",
+      "Fluorouracil is an inflammitant; oxaliplatin is an exfoliant.",
+      "Glucose 5% flush required before and after oxaliplatin infusion; do not mix oxaliplatin with saline.",
+      "Oxaliplatin causes cumulative peripheral neuropathy; monitor closely.",
+      "Rare reports of acute interstitial lung disease/fibrosis with oxaliplatin: stop treatment and investigate if unexplained respiratory symptoms develop.",
+      "Acute laryngopharyngeal dysaesthesia may occur with oxaliplatin; increase infusion duration if this occurs."
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "bilirubin",
+      "ast",
+      "creatinine_clearance",
+      "dpd_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "CRC-FOLFOX-PANI",
+    "protocol_name": "Fluorouracil, Folinic Acid (Modified de Gramont), Oxaliplatin and Panitumumab (FOLFOX-Panitumumab)",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 14,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Panitumumab",
+        "dose": 6.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV infusion in 100ml sodium chloride 0.9% over 60 minutes. Doses 1000mg and above must be given over 90 minutes in 150ml NaCl 0.9%. Must use 0.22 micron in-line filter. Dose banded at 20mg/ml. Neutral (extravasation). Dose reductions NOT permitted."
+      },
+      {
+        "drug_name": "Folinic Acid",
+        "dose": 350.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV infusion in 250ml glucose 5% over 120 minutes. May be replaced with calcium levofolinate 175mg IV in 250ml glucose 5% over 120 minutes."
+      },
+      {
+        "drug_name": "Oxaliplatin",
+        "dose": 85.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": 170.0,
+        "max_dose_unit": "mg",
+        "notes": "IV infusion in 500ml glucose 5% over 120 minutes. Maximum dose capped at 170mg. Dose banded at 5mg/ml. Exfoliant. Glucose 5% flush before and after."
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 400.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV bolus over 10 minutes. Dose banded at 25mg/ml. Inflammitant."
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 2400.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2
+        ],
+        "infusion_duration_hours": 46.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Continuous IV infusion over 46 hours via ambulatory pump. Dose banded at 50mg/ml."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1.5x10^9/L or platelets <75x10^9/L: delay up to 7 days",
+        "drug_name": "Fluorouracil",
+        "factor": 1.0,
+        "notes": "Reinitiate at full dose for up to 7-day delay. Panitumumab may be delayed."
+      },
+      {
+        "condition": "Thrombocytopenia requiring >7-day delay",
+        "drug_name": "Fluorouracil",
+        "factor": 0.75,
+        "notes": "Resume at 75% after >7-day delay for thrombocytopenia."
+      },
+      {
+        "condition": "Neutropenia requiring >7-day delay",
+        "drug_name": "Fluorouracil bolus",
+        "factor": 0.0,
+        "notes": "Omit bolus fluorouracil for this and subsequent cycles."
+      },
+      {
+        "condition": "Further delay needed after bolus omission",
+        "drug_name": "Fluorouracil infusion",
+        "factor": 0.8,
+        "notes": "Reduce infusional fluorouracil to 80%."
+      },
+      {
+        "condition": "Further delay needed after bolus omission",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.8,
+        "notes": "Reduce oxaliplatin to 80% of original dose."
+      },
+      {
+        "condition": "Delay of 21 days or more",
+        "drug_name": "All drugs",
+        "factor": 0.0,
+        "notes": "Stop therapy."
+      },
+      {
+        "condition": "NCI-CTC grade 2 diarrhoea (first episode)",
+        "drug_name": "Fluorouracil",
+        "factor": 1.0,
+        "notes": "Withhold until resolves to grade 1, restart at full dose."
+      },
+      {
+        "condition": "NCI-CTC grade 2 diarrhoea (second episode)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.75,
+        "notes": "Restart at 75% after resolution to grade 1."
+      },
+      {
+        "condition": "NCI-CTC grade 2 diarrhoea (third episode)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.5,
+        "notes": "Restart at 50% after resolution to grade 1."
+      },
+      {
+        "condition": "NCI-CTC grade 3 diarrhoea (first episode)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.75,
+        "notes": "Withhold until grade 1, restart at 75%."
+      },
+      {
+        "condition": "NCI-CTC grade 3 diarrhoea (second episode)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.5,
+        "notes": "Restart at 50% after resolution."
+      },
+      {
+        "condition": "NCI-CTC grade 3 diarrhoea (third episode) or grade 4 at any time",
+        "drug_name": "Fluorouracil",
+        "factor": 0.0,
+        "notes": "Stop fluorouracil."
+      },
+      {
+        "condition": "Oxaliplatin neurosensory toxicity grade 2 persisting >7 days",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.88,
+        "notes": "Reduce oxaliplatin to 75mg/m\u00b2."
+      },
+      {
+        "condition": "Oxaliplatin neurosensory toxicity grade 3 or above",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.0,
+        "notes": "Discontinue oxaliplatin."
+      },
+      {
+        "condition": "NCI-CTC grade 3-4 diarrhoea or stomatitis recurring despite fluorouracil reduction",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.88,
+        "notes": "Reduce oxaliplatin to 75mg/m\u00b2."
+      },
+      {
+        "condition": "NCI-CTC grade 3 skin toxicity (panitumumab)",
+        "drug_name": "Panitumumab",
+        "factor": 0.5,
+        "notes": "Delay until resolves to grade 2 or below, reinstate at 50%. Escalate in 25% increments if no recurrence. Discontinue if unresolved after 2 withheld doses or recurs at 50% dose."
+      },
+      {
+        "condition": "Moderate hepatic impairment (fluorouracil)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.67,
+        "notes": "Reduce initial dose by 33%; may increase as tolerated."
+      },
+      {
+        "condition": "Severe hepatic impairment (fluorouracil)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.5,
+        "notes": "Reduce initial dose by 50%; may increase as tolerated."
+      },
+      {
+        "condition": "Bilirubin >85 umol/L and/or AST >180 (fluorouracil)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.0,
+        "notes": "Contra-indicated."
+      },
+      {
+        "condition": "Oxaliplatin renal: CrCl <20 ml/min",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.75,
+        "notes": "Dose reduce. Monitor renal function in moderate impairment."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg oral or IV 15-30 minutes prior to chemotherapy",
+      "Ondansetron 8mg oral or IV 15-30 minutes prior to chemotherapy"
+    ],
+    "special_warnings": [
+      "Wild type RAS status must be confirmed before starting therapy. Panitumumab is only indicated for RAS wild-type tumours.",
+      "Panitumumab dose reductions are NOT permitted. Dose may be delayed for haematological toxicity.",
+      "DPD deficiency testing required before cycle 1: increased risk of severe and fatal fluorouracil toxicity.",
+      "Acneiform skin rash occurs in >90% of patients receiving panitumumab. Sun safety practices required during and for 2 months after treatment.",
+      "Stop panitumumab if confirmed pneumonitis.",
+      "UV radiation may worsen panitumumab skin reactions.",
+      "Glucose 5% flush required before and after oxaliplatin; do not mix with saline.",
+      "Oxaliplatin causes cumulative peripheral neuropathy.",
+      "Rare reports of acute interstitial lung disease/fibrosis with oxaliplatin.",
+      "Central venous access and ambulatory pump required.",
+      "Fluorouracil is an inflammitant; oxaliplatin is an exfoliant."
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "bilirubin",
+      "ast",
+      "creatinine_clearance",
+      "dpd_status",
+      "kras_status",
+      "ras_wild_type_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "ANAL-5FU-MMC-RT",
+    "protocol_name": "Fluorouracil-Mitomycin-Radiotherapy (Anal Canal)",
+    "disease_site": "Anal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 42,
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 1000.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          29,
+          30,
+          31,
+          32
+        ],
+        "infusion_duration_hours": 96.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Continuous IV infusion 1000mg/m\u00b2/day over 96 hours (total 4000mg/m\u00b2/96 hours) in sodium chloride 0.9% via infusor device. Days 1-4 and days 29-32. Dose banded at 50mg/ml. Inflammitant. Infusion must start at least 2 hours before radiotherapy. In patients aged \u226571 years or significant intercurrent illness, dose often reduced to 750mg/m\u00b2/day."
+      },
+      {
+        "drug_name": "Mitomycin",
+        "dose": 12.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": 20.0,
+        "max_dose_unit": "mg",
+        "notes": "IV bolus in water for injection over 10 minutes. Maximum dose 20mg. Dose rounded to nearest 1mg. Vesicant. In patients aged \u226571 years or significant intercurrent illness, dose often reduced to 10mg/m\u00b2 (maximum 20mg)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "NCI-CTC grade 3 neutrophil and/or platelet toxicity",
+        "drug_name": "Fluorouracil",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose."
+      },
+      {
+        "condition": "NCI-CTC grade 3 neutrophil and/or platelet toxicity",
+        "drug_name": "Mitomycin",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose."
+      },
+      {
+        "condition": "NCI-CTC grade 4 neutrophil and/or platelet toxicity",
+        "drug_name": "Fluorouracil",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "NCI-CTC grade 4 neutrophil and/or platelet toxicity",
+        "drug_name": "Mitomycin",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "NCI-CTC grade 3 diarrhoea (fluorouracil)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose."
+      },
+      {
+        "condition": "NCI-CTC grade 4 diarrhoea (fluorouracil)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Moderate hepatic impairment (fluorouracil)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.7,
+        "notes": "Reduce by 30%."
+      },
+      {
+        "condition": "Severe hepatic impairment (fluorouracil)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.5,
+        "notes": "Reduce by 50%."
+      },
+      {
+        "condition": "Bilirubin >85 umol/L and/or AST >180 (fluorouracil)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.0,
+        "notes": "Contra-indicated."
+      },
+      {
+        "condition": "Mitomycin renal: CrCl 50-59 ml/min",
+        "drug_name": "Mitomycin",
+        "factor": 0.67,
+        "notes": "Reduce mitomycin dose to 8mg/m\u00b2."
+      },
+      {
+        "condition": "Mitomycin renal: CrCl <50 ml/min",
+        "drug_name": "Mitomycin",
+        "factor": 0.0,
+        "notes": "Mitomycin contra-indicated if CrCl <50 ml/min."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg oral or IV 15-30 minutes prior to chemotherapy on day 1",
+      "Metoclopramide 10mg oral or IV 15-30 minutes prior to chemotherapy on day 1"
+    ],
+    "special_warnings": [
+      "Concurrent radiotherapy protocol: fluorouracil infusion must be started at least 2 hours before administration of radiotherapy.",
+      "DPD deficiency testing required before cycle 1: increased risk of severe and fatal fluorouracil toxicity.",
+      "Mitomycin is a vesicant; extravasation precautions required. Fluorouracil is an inflammitant.",
+      "Mitomycin causes cumulative myelosuppression and nephrotoxicity.",
+      "In patients aged 71 years and above or with significant intercurrent illness, fluorouracil dose often reduced to 750mg/m\u00b2/day and mitomycin to 10mg/m\u00b2 (maximum 20mg); confirm dose with responsible consultant oncologist.",
+      "Both fluorouracil and mitomycin should be stopped for any treatment-related toxicity requiring interruption; complete course on recovery.",
+      "Ciprofloxacin 250mg BD oral for 42 days prophylaxis prescribed.",
+      "Central venous access and ambulatory pump required."
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "bilirubin",
+      "ast",
+      "creatinine_clearance",
+      "dpd_status",
+      "age"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "CRC-5FU-RT",
+    "protocol_name": "Fluorouracil with Concurrent Radiotherapy (Neoadjuvant Rectal Cancer)",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 35,
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 225.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8,
+          15,
+          22,
+          29
+        ],
+        "infusion_duration_hours": 168.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "225mg/m\u00b2/day as continuous IV infusion over 7 days (total 1575mg/m\u00b2 per 7-day pump). Administered on days 1, 8, 15, 22, 29 (each starting a new 7-day infusion). Dose banded at 50mg/ml. Concurrent with radiotherapy. Central venous access and ambulatory pump required. If made in unlicensed unit: patient must be scheduled in afternoon; pump is 7-day treatment with 7-day expiry; cannot be made in advance."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Moderate hepatic impairment",
+        "drug_name": "Fluorouracil",
+        "factor": 0.7,
+        "notes": "Reduce dose by 30%."
+      },
+      {
+        "condition": "Severe hepatic impairment",
+        "drug_name": "Fluorouracil",
+        "factor": 0.5,
+        "notes": "Reduce dose by 50%."
+      },
+      {
+        "condition": "Bilirubin >85 umol/L and/or AST >180",
+        "drug_name": "Fluorouracil",
+        "factor": 0.0,
+        "notes": "Contra-indicated."
+      },
+      {
+        "condition": "Severe renal impairment",
+        "drug_name": "Fluorouracil",
+        "factor": 0.75,
+        "notes": "Dose adjustment only required in severe renal impairment."
+      }
+    ],
+    "pre_medications": [
+      "Metoclopramide 10mg three times a day when required oral (take home, supplied on day 1)"
+    ],
+    "special_warnings": [
+      "Concurrent radiotherapy protocol: given as neoadjuvant treatment for rectal cancer alongside radiotherapy.",
+      "DPD deficiency testing required before cycle 1: increased risk of severe and fatal fluorouracil toxicity.",
+      "FBC, U&E and LFTs taken weekly at point of pump change; treatment should not be delayed waiting for results.",
+      "Central venous access and ambulatory pump required.",
+      "Fluorouracil is an inflammitant.",
+      "If product made in unlicensed unit: 7-day expiry, cannot be made in advance, patient must be scheduled in the afternoon."
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "bilirubin",
+      "ast",
+      "creatinine_clearance",
+      "dpd_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "PANC-GEM-NAB-PAC",
+    "protocol_name": "Gemcitabine-Paclitaxel Albumin Bound (Abraxane)",
+    "disease_site": "Pancreatic",
+    "category": "gastrointestinal",
+    "cycle_length_days": 28,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Paclitaxel albumin bound (nab-paclitaxel)",
+        "dose": 125.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV infusion over 30 minutes. Administer before gemcitabine. Use 15 micron in-line filter (NOT <15 micron). Do NOT use medical devices containing silicone oil (syringes/IV bags) as proteinaceous strands may form. Dose banded as per agreed bands. Irritant - treat as vesicant. NOT interchangeable with conventional paclitaxel; different formulation, dose and pre-medication requirements."
+      },
+      {
+        "drug_name": "Gemcitabine",
+        "dose": 1000.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV infusion in 250ml sodium chloride 0.9% over 30 minutes. Administered after paclitaxel albumin bound. Dose banded as per agreed bands. Neutral (extravasation)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Day 1: Neutrophils <1.5x10^9/L or platelets <100x10^9/L",
+        "drug_name": "All drugs",
+        "factor": 1.0,
+        "notes": "Delay until recovery of both neutrophils and platelets to eligible levels."
+      },
+      {
+        "condition": "Day 8: Neutrophils \u22650.5 but <1.0x10^9/L or platelets \u226550 but <75x10^9/L",
+        "drug_name": "Paclitaxel albumin bound",
+        "factor": 0.8,
+        "notes": "Reduce one dose level (125 \u2192 100 mg/m\u00b2)."
+      },
+      {
+        "condition": "Day 8: Neutrophils \u22650.5 but <1.0x10^9/L or platelets \u226550 but <75x10^9/L",
+        "drug_name": "Gemcitabine",
+        "factor": 0.8,
+        "notes": "Reduce one dose level (1000 \u2192 800 mg/m\u00b2)."
+      },
+      {
+        "condition": "Day 8: Neutrophils <0.5x10^9/L or platelets <50x10^9/L",
+        "drug_name": "Paclitaxel albumin bound",
+        "factor": 0.0,
+        "notes": "Withhold dose."
+      },
+      {
+        "condition": "Day 8: Neutrophils <0.5x10^9/L or platelets <50x10^9/L",
+        "drug_name": "Gemcitabine",
+        "factor": 0.0,
+        "notes": "Withhold dose."
+      },
+      {
+        "condition": "Febrile neutropenia (NCI-CTC grade 3-4)",
+        "drug_name": "All drugs",
+        "factor": 0.0,
+        "notes": "Withhold all doses until fever resolves and neutrophils \u22651.5x10^9/L, then resume at next lower dose level."
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 3-4 (paclitaxel albumin bound)",
+        "drug_name": "Paclitaxel albumin bound",
+        "factor": 0.0,
+        "notes": "Withhold until improves to NCI-CTC grade 1 or below, then resume at next lower dose level."
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 3-4 (gemcitabine)",
+        "drug_name": "Gemcitabine",
+        "factor": 1.0,
+        "notes": "Treat with the same dose (no reduction for gemcitabine for peripheral neuropathy)."
+      },
+      {
+        "condition": "Cutaneous toxicity NCI-CTC grade 2-3",
+        "drug_name": "All drugs",
+        "factor": 0.8,
+        "notes": "Reduce to next lower dose level. Discontinue treatment if ADR persists."
+      },
+      {
+        "condition": "GI toxicity: grade 3 mucositis or diarrhoea",
+        "drug_name": "All drugs",
+        "factor": 0.0,
+        "notes": "Withhold until improves to NCI-CTC grade 1 or below, then resume at next lower dose level."
+      },
+      {
+        "condition": "Hepatic impairment with raised bilirubin (gemcitabine)",
+        "drug_name": "Gemcitabine",
+        "factor": 0.75,
+        "notes": "Consider dose reductions especially where bilirubin is raised."
+      },
+      {
+        "condition": "Renal impairment: CrCl <30 ml/min (gemcitabine)",
+        "drug_name": "Gemcitabine",
+        "factor": 0.75,
+        "notes": "Consider dose adjustments when CrCl <30 ml/min."
+      },
+      {
+        "condition": "Additional dose reduction required beyond 2nd level",
+        "drug_name": "All drugs",
+        "factor": 0.0,
+        "notes": "Discontinue treatment if additional dose reduction is required beyond 2nd level reduction (Paclitaxel albumin bound: full 125 \u2192 1st level 100 \u2192 2nd level 75 mg/m\u00b2; Gemcitabine: full 1000 \u2192 1st level 800 \u2192 2nd level 600 mg/m\u00b2)."
+      }
+    ],
+    "pre_medications": [
+      "Metoclopramide 10mg oral or IV 15-30 minutes prior to chemotherapy"
+    ],
+    "special_warnings": [
+      "Paclitaxel albumin bound (Abraxane/nab-paclitaxel) is NOT interchangeable with conventional paclitaxel: different formulation, different dosing schedule, different pre-medication requirements. Confusion between the two products may lead to serious harm.",
+      "Paclitaxel albumin bound does NOT require routine steroid or antihistamine pre-medication (unlike conventional paclitaxel), but hypersensitivity reactions can still occur.",
+      "Use 15 micron in-line filter for administration of paclitaxel albumin bound. Do NOT use filters <15 micron.",
+      "Do NOT use medical devices containing silicone oil (syringes, IV bags) to reconstitute or administer paclitaxel albumin bound as proteinaceous strands may form.",
+      "Paclitaxel albumin bound is classified as an irritant but should be treated as a vesicant for extravasation purposes.",
+      "Gemcitabine is radiosensitising; caution if concurrent or recent radiotherapy.",
+      "FBC, U&E and LFTs required prior to each treatment day (days 1, 8, 15).",
+      "Dose level reductions: Paclitaxel albumin bound: 125 \u2192 100 \u2192 75 mg/m\u00b2 (then discontinue). Gemcitabine: 1000 \u2192 800 \u2192 600 mg/m\u00b2 (then discontinue)."
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "bilirubin",
+      "ast",
+      "creatinine_clearance"
+    ],
+    "auc_dosing": null
+  }
+]

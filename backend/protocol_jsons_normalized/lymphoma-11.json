@@ -1,0 +1,1475 @@
+[
+  {
+    "protocol_code": "R-GEMOX",
+    "protocol_name": "Rituximab-Gemcitabine-Oxaliplatin (R-GemOx)",
+    "disease_site": "Relapsed/Refractory DLBCL / Lymphoma",
+    "category": "lymphoma",
+    "cycle_length_days": 14,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Rituximab",
+        "dose": 375.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "In 500ml sodium chloride 0.9%. Rate varies - refer to rituximab administration guidelines. Dose rounded to nearest 100mg (up if halfway)."
+      },
+      {
+        "drug_name": "Gemcitabine",
+        "dose": 1000.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "In 250ml sodium chloride 0.9% over 30 minutes. Dose banded per national dose bands (38mg/ml)."
+      },
+      {
+        "drug_name": "Oxaliplatin",
+        "dose": 100.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "In 500ml glucose 5% over 120 minutes. Rate may be increased to 360 minutes if acute laryngopharyngeal dysaesthesia occurs. Dose banded per national dose bands (5mg/ml). Exfoliant - extravasation risk."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1.0 x10⁹/L OR Platelets <100 x10⁹/L",
+        "drug_name": "All drugs",
+        "factor": 1.0,
+        "notes": "Delay until count recovery."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >27 µmol/L",
+        "drug_name": "Gemcitabine",
+        "factor": null,
+        "notes": "Initiate dose at 800mg/m²."
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Oxaliplatin",
+        "factor": 1.0,
+        "notes": "Limited information available; probably little need to adjust dose. Use clinical judgement."
+      },
+      {
+        "condition": "Renal impairment: CrCl <30 ml/min",
+        "drug_name": "Gemcitabine",
+        "factor": null,
+        "notes": "Consider dose reduction."
+      },
+      {
+        "condition": "Renal impairment: CrCl <30 ml/min",
+        "drug_name": "Oxaliplatin",
+        "factor": null,
+        "notes": "For moderate renal impairment treat at normal dose and monitor. If CrCl <30ml/min then dose reduce according to toxicity."
+      },
+      {
+        "condition": "Oxaliplatin neurosensory toxicity NCI-CTC grade 2 persisting >7 days",
+        "drug_name": "Oxaliplatin",
+        "factor": null,
+        "notes": "Reduce oxaliplatin to 75mg/m²."
+      },
+      {
+        "condition": "Oxaliplatin neurosensory toxicity NCI-CTC grade 3 or above",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.0,
+        "notes": "Discontinue oxaliplatin."
+      },
+      {
+        "condition": "Non-haematological NCI-CTC grade 3 or above toxicity (other)",
+        "drug_name": "All drugs",
+        "factor": 0.75,
+        "notes": "Delay until resolved to grade 1 or below then reduce to 75% of original dose. Gemcitabine may be reduced to 750mg/m² to maintain dose intensity."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg oral or IV 30 minutes prior to rituximab",
+      "Chlorphenamine 10mg IV 30 minutes prior to rituximab",
+      "Paracetamol 1000mg oral 30 minutes prior to rituximab",
+      "Ondansetron 8mg oral or IV 15-30 minutes prior to chemotherapy",
+      "Hydrocortisone 100mg IV when required for rituximab infusion reactions",
+      "Salbutamol 2.5mg nebule when required for rituximab-related bronchospasm"
+    ],
+    "special_warnings": [
+      "Check hepatitis B status before starting rituximab.",
+      "Rituximab associated with severe cytokine release syndrome (CRS) - typically within 1-2 hours of first infusion. Emergency medications must be available.",
+      "Risk of progressive multifocal leukoencephalopathy (PML) with rituximab - monitor for neurological symptoms. Suspend if PML suspected.",
+      "Oxaliplatin: cumulative peripheral neuropathy. Increase infusion duration to 360 minutes if acute laryngopharyngeal dysaesthesia.",
+      "Gemcitabine is radiosensitising.",
+      "FBC, LFTs, U&Es including magnesium and calcium required prior to day 1.",
+      "Anti-infective prophylaxis: co-trimoxazole 960mg Mon/Wed/Fri, aciclovir 400mg BD (high risk patients).",
+      "Allopurinol 300mg OD for 7 days first cycle (TLS prophylaxis).",
+      "Growth factor support recommended from day 5 of cycle."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "hepatitis_B_status",
+      "FBC",
+      "LFTs",
+      "U_and_Es",
+      "magnesium",
+      "calcium"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "RITUXIMAB-SC-12-WEEKLY",
+    "protocol_name": "Rituximab SC (12 weekly) Maintenance",
+    "disease_site": "Follicular / Mantle Cell / Marginal Zone / Lymphoplasmacytic Lymphoma",
+    "category": "lymphoma",
+    "cycle_length_days": 84,
+    "number_of_cycles": 8,
+    "drugs": [
+      {
+        "drug_name": "Rituximab",
+        "dose": 1400.0,
+        "dose_unit": "mg",
+        "route": "Subcutaneous",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.083,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Fixed dose 1400mg SC. Administered over approximately 5 minutes into abdominal wall. Only for patients who have previously received IV rituximab. Needle must be attached immediately prior to administration. Inject into abdominal wall; avoid red, bruised, tender or hard areas and areas with moles or scars."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1.0 x10⁹/L OR Platelets <75 x10⁹/L",
+        "drug_name": "Rituximab",
+        "factor": 1.0,
+        "notes": "Do not administer SC rituximab until counts recover to these minimum thresholds."
+      },
+      {
+        "condition": "Non-haematological NCI-CTC grade 3 or above toxicity",
+        "drug_name": "Rituximab",
+        "factor": 1.0,
+        "notes": "Delay until resolved to grade 1 or below. Dose reductions are NOT permitted for SC rituximab."
+      }
+    ],
+    "pre_medications": [
+      "Non-sedating oral antihistamine (e.g. cetirizine 10mg, loratadine 10mg, fexofenadine 120mg, or acrivastine 8mg) 15-30 minutes prior to rituximab",
+      "Paracetamol 1000mg oral 15-30 minutes prior to rituximab",
+      "Hydrocortisone 100mg IV bolus when required for infusion-related reactions",
+      "Salbutamol 2.5mg nebule when required for bronchospasm"
+    ],
+    "special_warnings": [
+      "FIXED DOSE 1400mg SC - NOT interchangeable with IV rituximab formulation. Do NOT substitute IV rituximab for SC rituximab.",
+      "Dose reductions are NOT permitted for SC rituximab.",
+      "Must only be given to patients who have previously received IV rituximab.",
+      "Starting 12 weeks after the last dose of induction chemotherapy.",
+      "Check hepatitis B status before starting rituximab.",
+      "Risk of progressive multifocal leukoencephalopathy (PML) - monitor for neurological symptoms.",
+      "Consider monitoring serum immunoglobulin levels.",
+      "Other SC medicines should preferably be injected at different sites."
+    ],
+    "required_patient_fields": [
+      "hepatitis_B_status",
+      "FBC",
+      "LFTs",
+      "U_and_Es",
+      "prior_IV_rituximab_confirmed"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "RITUXIMAB-SC-8-WEEKLY",
+    "protocol_name": "Rituximab SC (8 weekly) Maintenance",
+    "disease_site": "Follicular / Mantle Cell / Marginal Zone / Lymphoplasmacytic Lymphoma",
+    "category": "lymphoma",
+    "cycle_length_days": 56,
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Rituximab",
+        "dose": 1400.0,
+        "dose_unit": "mg",
+        "route": "Subcutaneous",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.083,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Fixed dose 1400mg SC. Administered over approximately 5 minutes into abdominal wall. Only for patients who have previously received IV rituximab. Needle must be attached immediately prior to administration. Inject into abdominal wall; avoid red, bruised, tender or hard areas and areas with moles or scars."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1.0 x10⁹/L OR Platelets <75 x10⁹/L",
+        "drug_name": "Rituximab",
+        "factor": 1.0,
+        "notes": "Do not administer SC rituximab until counts recover to these minimum thresholds."
+      },
+      {
+        "condition": "Non-haematological NCI-CTC grade 3 or above toxicity",
+        "drug_name": "Rituximab",
+        "factor": 1.0,
+        "notes": "Delay until resolved to grade 1 or below. Dose reductions are NOT permitted for SC rituximab."
+      }
+    ],
+    "pre_medications": [
+      "Non-sedating oral antihistamine (e.g. cetirizine 10mg, loratadine 10mg, fexofenadine 120mg, or acrivastine 8mg) 15-30 minutes prior to rituximab",
+      "Paracetamol 1000mg oral 15-30 minutes prior to rituximab",
+      "Hydrocortisone 100mg IV bolus when required for infusion-related reactions",
+      "Salbutamol 2.5mg nebule when required for bronchospasm"
+    ],
+    "special_warnings": [
+      "FIXED DOSE 1400mg SC - NOT interchangeable with IV rituximab formulation. Do NOT substitute IV rituximab for SC rituximab.",
+      "Dose reductions are NOT permitted for SC rituximab.",
+      "Must only be given to patients who have previously received IV rituximab.",
+      "Starting 8 weeks after the last dose of induction chemotherapy.",
+      "Check hepatitis B status before starting rituximab.",
+      "Risk of progressive multifocal leukoencephalopathy (PML) - monitor for neurological symptoms.",
+      "Consider monitoring serum immunoglobulin levels.",
+      "Other SC medicines should preferably be injected at different sites.",
+      "Indication: previously UNTREATED follicular/mantle cell/marginal zone/lymphoplasmacytic lymphoma (contrast with 12-weekly which is for relapsed/refractory)."
+    ],
+    "required_patient_fields": [
+      "hepatitis_B_status",
+      "FBC",
+      "LFTs",
+      "U_and_Es",
+      "prior_IV_rituximab_confirmed"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "RITUXIMAB-WEEKLY",
+    "protocol_name": "Rituximab IV Weekly (Induction)",
+    "disease_site": "CD20-positive indolent Non-Hodgkin Lymphoma",
+    "category": "lymphoma",
+    "cycle_length_days": 7,
+    "number_of_cycles": 4,
+    "drugs": [
+      {
+        "drug_name": "Rituximab",
+        "dose": 375.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "In 500ml sodium chloride 0.9%. Rate varies - refer to rituximab administration guidelines. Dose rounded to nearest 100mg (up if halfway)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Non-haematological NCI-CTC grade 3 or above toxicity",
+        "drug_name": "Rituximab",
+        "factor": 1.0,
+        "notes": "Delay until resolved to grade 1 or below. Dose reductions are NOT permitted for rituximab weekly induction."
+      },
+      {
+        "condition": "WBC >25 x10⁹/L or bulky disease",
+        "drug_name": "Rituximab",
+        "factor": 1.0,
+        "notes": "Use with caution or consider reducing cell load by other means prior to rituximab infusion to reduce risk of severe CRS."
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV 30 minutes prior to rituximab",
+      "Hydrocortisone 100mg IV 30 minutes prior to rituximab",
+      "Paracetamol 1000mg oral 30 minutes prior to rituximab",
+      "Hydrocortisone 100mg IV when required for rituximab infusion reactions",
+      "Salbutamol 2.5mg nebule when required for rituximab-related bronchospasm"
+    ],
+    "special_warnings": [
+      "Dose reductions are NOT permitted for rituximab weekly induction.",
+      "Check hepatitis B status before starting rituximab.",
+      "Risk of severe cytokine release syndrome (CRS) especially with WBC >25 x10⁹/L or bulky disease.",
+      "Risk of progressive multifocal leukoencephalopathy (PML) - monitor for neurological symptoms.",
+      "Allopurinol 300mg OD oral for first 21 days of treatment (TLS prophylaxis).",
+      "4-dose induction course; each dose given on days 1, 8, 15, 22 (7-day cycle x 4)."
+    ],
+    "required_patient_fields": [
+      "hepatitis_B_status",
+      "FBC",
+      "LFTs",
+      "U_and_Es",
+      "white_cell_count"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "RPACEBOM",
+    "protocol_name": "RPACEBOM - Rituximab-Prednisolone-Doxorubicin-Cyclophosphamide-Etoposide-Bleomycin-Vincristine-Methotrexate",
+    "disease_site": "CD20-positive Non-Hodgkin Lymphoma",
+    "category": "lymphoma",
+    "cycle_length_days": 28,
+    "number_of_cycles": 3,
+    "drugs": [
+      {
+        "drug_name": "Rituximab",
+        "dose": 375.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          15
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "In 500ml sodium chloride 0.9%. Rate varies per rituximab administration guidelines. Dose rounded to nearest 100mg (up if halfway)."
+      },
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 300.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1,
+          15
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV bolus over 10 minutes. Dose banded per CSCCN agreed bands."
+      },
+      {
+        "drug_name": "Doxorubicin",
+        "dose": 35.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1,
+          15
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV bolus over 10 minutes. Dose banded per CSCCN agreed bands. Vesicant. Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy)."
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 150.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          15
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "In 1000ml sodium chloride 0.9% over 60 minutes. Dose banded per CSCCN agreed bands. Irritant."
+      },
+      {
+        "drug_name": "Prednisolone",
+        "dose": 50.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "50mg once daily oral days 1-28 inclusive in cycle 1. From cycle 2 onwards: 50mg on alternate days from day 29 onwards (i.e. alternate days). To be taken in the morning with or after food. Self-administered on the morning of treatment - check patient has taken prior to chemotherapy."
+      },
+      {
+        "drug_name": "Bleomycin",
+        "dose": 10000.0,
+        "dose_unit": "units",
+        "route": "IV bolus",
+        "days": [
+          8,
+          22
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "10,000 International Units/m² IV bolus over 10 minutes. Dose rounded to nearest 1000 IU (up if halfway). Maximum cumulative dose 500,000 IU in patients <60 years (refer to SPC for older patients). GCSF must be omitted on days of bleomycin administration to avoid pulmonary toxicity."
+      },
+      {
+        "drug_name": "Methotrexate",
+        "dose": 50.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          8,
+          22
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV bolus over 10 minutes. Dose banded per CSCCN agreed bands. Folinic acid rescue 15mg oral 6-hourly for 6 doses starting 24 hours after methotrexate. Inflammitant."
+      },
+      {
+        "drug_name": "Vincristine",
+        "dose": 1.4,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          8,
+          22
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": 2.0,
+        "max_dose_unit": "mg",
+        "notes": "IV bolus in 50ml sodium chloride 0.9% over 10 minutes. Maximum dose 2mg. Rounded to nearest 0.1mg (up if halfway). Vesicant. NPSA/2008/RRR04 must be followed for IV vinca alkaloid administration."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils 1.0 x10⁹/L or greater (day 1 and 15)",
+        "drug_name": "Cyclophosphamide, Doxorubicin, Etoposide",
+        "factor": 1.0,
+        "notes": "100% dose. Day 8 and 22 given irrespective of haematological counts."
+      },
+      {
+        "condition": "Neutrophils 0.5-0.9 x10⁹/L (day 1/15) - 1st occurrence, curative intent, WHO PS ≤2, no prior GCSF",
+        "drug_name": "Cyclophosphamide, Doxorubicin, Etoposide",
+        "factor": 1.0,
+        "notes": "Administer 100% with prophylactic growth factors. Alternative: delay until neutrophils ≥1.0 x10⁹/L then give 75% with prophylactic growth factors."
+      },
+      {
+        "condition": "Neutrophils 0.5-0.9 x10⁹/L (day 1/15) - 2nd occurrence",
+        "drug_name": "Cyclophosphamide, Doxorubicin, Etoposide",
+        "factor": null,
+        "notes": "Delay until neutrophils ≥1.0 x10⁹/L then reduce by further 25% of original dose with prophylactic growth factors."
+      },
+      {
+        "condition": "Neutrophils <0.5 x10⁹/L or febrile neutropenia (day 1/15) - 1st occurrence",
+        "drug_name": "Cyclophosphamide, Doxorubicin, Etoposide",
+        "factor": 0.75,
+        "notes": "Delay until neutrophils ≥1.0 x10⁹/L then give 75% with prophylactic growth factors."
+      },
+      {
+        "condition": "Neutrophils <0.5 x10⁹/L or febrile neutropenia (day 1/15) - 2nd occurrence",
+        "drug_name": "Cyclophosphamide, Doxorubicin, Etoposide",
+        "factor": 0.5,
+        "notes": "Delay until neutrophils ≥1.0 x10⁹/L then give 50% with prophylactic growth factors."
+      },
+      {
+        "condition": "Platelets 75 x10⁹/L or above (day 1/15)",
+        "drug_name": "Cyclophosphamide, Doxorubicin, Etoposide",
+        "factor": 1.0,
+        "notes": "100% dose."
+      },
+      {
+        "condition": "Platelets 50-74 x10⁹/L (day 1/15) - 1st occurrence",
+        "drug_name": "Cyclophosphamide, Doxorubicin, Etoposide",
+        "factor": 0.75,
+        "notes": "Give 75%."
+      },
+      {
+        "condition": "Platelets 50-74 x10⁹/L (day 1/15) - 2nd occurrence",
+        "drug_name": "Cyclophosphamide, Doxorubicin, Etoposide",
+        "factor": 0.5,
+        "notes": "Give 50%."
+      },
+      {
+        "condition": "Platelets <50 x10⁹/L or bleeding (day 1/15) - 1st occurrence",
+        "drug_name": "Cyclophosphamide, Doxorubicin, Etoposide",
+        "factor": 0.75,
+        "notes": "Delay until platelets ≥75 x10⁹/L then give 75%."
+      },
+      {
+        "condition": "Platelets <50 x10⁹/L or bleeding (day 1/15) - 2nd occurrence",
+        "drug_name": "Cyclophosphamide, Doxorubicin, Etoposide",
+        "factor": 0.5,
+        "notes": "Delay until platelets ≥75 x10⁹/L then give 50%."
+      },
+      {
+        "condition": "Hepatic: Bilirubin <30 µmol/L AND AST/ALT 2-3xULN",
+        "drug_name": "Doxorubicin",
+        "factor": 0.75,
+        "notes": "Reduce to 75%."
+      },
+      {
+        "condition": "Hepatic: Bilirubin 30-50 µmol/L and/or AST/ALT >3xULN",
+        "drug_name": "Doxorubicin",
+        "factor": 0.5,
+        "notes": "Reduce to 50%."
+      },
+      {
+        "condition": "Hepatic: Bilirubin 51-85 µmol/L",
+        "drug_name": "Doxorubicin",
+        "factor": 0.25,
+        "notes": "Reduce to 25%."
+      },
+      {
+        "condition": "Hepatic: Bilirubin >85 µmol/L",
+        "drug_name": "Doxorubicin",
+        "factor": 0.0,
+        "notes": "Omit doxorubicin."
+      },
+      {
+        "condition": "Hepatic: Bilirubin 30-51 µmol/L or AST/ALT 60-180",
+        "drug_name": "Etoposide",
+        "factor": 0.5,
+        "notes": "Consider dose reduction to 50%."
+      },
+      {
+        "condition": "Hepatic: Bilirubin >51 µmol/L or AST/ALT >180",
+        "drug_name": "Etoposide",
+        "factor": null,
+        "notes": "Clinical decision."
+      },
+      {
+        "condition": "Hepatic: Bilirubin <30 µmol/L AND AST/ALT <1.5xULN",
+        "drug_name": "Methotrexate",
+        "factor": 1.0,
+        "notes": "100% dose."
+      },
+      {
+        "condition": "Hepatic: Bilirubin ≥30 µmol/L or AST/ALT ≥1.5xULN",
+        "drug_name": "Methotrexate",
+        "factor": 0.0,
+        "notes": "Omit methotrexate."
+      },
+      {
+        "condition": "Hepatic: Bilirubin 30-51 µmol/L or AST/ALT 60-180",
+        "drug_name": "Vincristine",
+        "factor": 0.5,
+        "notes": "Reduce to 50%."
+      },
+      {
+        "condition": "Hepatic: Bilirubin >51 µmol/L and normal AST/ALT",
+        "drug_name": "Vincristine",
+        "factor": 0.5,
+        "notes": "Reduce to 50%."
+      },
+      {
+        "condition": "Hepatic: Bilirubin >51 µmol/L and AST/ALT >180",
+        "drug_name": "Vincristine",
+        "factor": 0.0,
+        "notes": "Omit vincristine."
+      },
+      {
+        "condition": "Renal: CrCl >50 ml/min",
+        "drug_name": "Bleomycin",
+        "factor": 1.0,
+        "notes": "100%."
+      },
+      {
+        "condition": "Renal: CrCl 10-50 ml/min",
+        "drug_name": "Bleomycin",
+        "factor": 0.75,
+        "notes": "75%."
+      },
+      {
+        "condition": "Renal: CrCl <10 ml/min",
+        "drug_name": "Bleomycin",
+        "factor": 0.5,
+        "notes": "50%."
+      },
+      {
+        "condition": "Renal: CrCl >20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "100%."
+      },
+      {
+        "condition": "Renal: CrCl 10-20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "75%."
+      },
+      {
+        "condition": "Renal: CrCl <10 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "50%."
+      },
+      {
+        "condition": "Renal: CrCl <10 ml/min",
+        "drug_name": "Doxorubicin",
+        "factor": null,
+        "notes": "Clinical decision."
+      },
+      {
+        "condition": "Renal: CrCl >50 ml/min",
+        "drug_name": "Etoposide",
+        "factor": 1.0,
+        "notes": "100%."
+      },
+      {
+        "condition": "Renal: CrCl 15-50 ml/min",
+        "drug_name": "Etoposide",
+        "factor": 0.75,
+        "notes": "75%."
+      },
+      {
+        "condition": "Renal: CrCl <15 ml/min",
+        "drug_name": "Etoposide",
+        "factor": 0.5,
+        "notes": "50%."
+      },
+      {
+        "condition": "Renal: CrCl >80 ml/min",
+        "drug_name": "Methotrexate",
+        "factor": 1.0,
+        "notes": "100%."
+      },
+      {
+        "condition": "Renal: CrCl 60 ml/min",
+        "drug_name": "Methotrexate",
+        "factor": 0.65,
+        "notes": "65%."
+      },
+      {
+        "condition": "Renal: CrCl 45 ml/min",
+        "drug_name": "Methotrexate",
+        "factor": 0.5,
+        "notes": "50%."
+      },
+      {
+        "condition": "Renal: CrCl <30 ml/min",
+        "drug_name": "Methotrexate",
+        "factor": 0.0,
+        "notes": "Omit methotrexate."
+      },
+      {
+        "condition": "Vincristine: NCI-CTC grade 2 motor or grade 3 sensory neurotoxicity",
+        "drug_name": "Vincristine",
+        "factor": null,
+        "notes": "Reduce vincristine dose to 1mg. For higher grades or if toxicity worsens despite reduction, stop vincristine."
+      },
+      {
+        "condition": "Etoposide: significant reduction in albumin",
+        "drug_name": "Etoposide",
+        "factor": null,
+        "notes": "Consider dose reduction."
+      },
+      {
+        "condition": "Doxorubicin: cardiac failure develops",
+        "drug_name": "Doxorubicin",
+        "factor": 0.0,
+        "notes": "Discontinue doxorubicin."
+      }
+    ],
+    "pre_medications": [
+      "Prednisolone 50mg oral morning of treatment (patient self-administers; check prior to chemotherapy)",
+      "Chlorphenamine 10mg IV 30 minutes prior to rituximab",
+      "Paracetamol 1000mg oral 30 minutes prior to rituximab",
+      "Ondansetron 8mg oral or IV 15-30 minutes prior to chemotherapy (days 1 and 15)",
+      "Metoclopramide 10mg oral or IV 15-30 minutes prior to chemotherapy (days 8 and 22)",
+      "Hydrocortisone 100mg IV when required for rituximab infusion reactions",
+      "Salbutamol 2.5mg nebule when required for rituximab-related bronchospasm",
+      "Hydrocortisone 100mg IV when required for bleomycin-related reactions"
+    ],
+    "special_warnings": [
+      "Complex 28-day 8-drug alternating weekly regimen: Days 1+15 receive R, Cyclophosphamide, Doxorubicin, Etoposide, Prednisolone; Days 8+22 receive Bleomycin, Methotrexate, Vincristine.",
+      "Bleomycin maximum cumulative dose: 500,000 IU in patients <60 years.",
+      "Doxorubicin maximum lifetime cumulative dose: 450mg/m² (400mg/m² with prior mediastinal/pericardial radiotherapy).",
+      "Vincristine maximum single dose: 2mg.",
+      "GCSF must be OMITTED on days of bleomycin administration to reduce pulmonary toxicity risk.",
+      "Folinic acid rescue 15mg oral 6-hourly x6 doses starting 24 hours after methotrexate on days 8 and 22.",
+      "Check hepatitis B status before starting rituximab.",
+      "Baseline LVEF required for patients with cardiac history. Discontinue doxorubicin if cardiac failure develops.",
+      "Pulmonary function tests recommended before starting; repeat if respiratory symptoms develop.",
+      "NPSA/2008/RRR04 must be followed for IV vinca alkaloid administration.",
+      "Haematological dose modifications apply to days 1 and 15 only; days 8 and 22 given irrespective of counts.",
+      "Anti-infective prophylaxis: aciclovir 400mg BD, co-trimoxazole 960mg Mon/Wed/Fri.",
+      "Allopurinol 300mg OD first cycle for TLS prophylaxis.",
+      "FBC, LFTs, U&Es prior to day 1 and day 15; albumin prior to each cycle."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "hepatitis_B_status",
+      "FBC",
+      "LFTs",
+      "U_and_Es",
+      "albumin",
+      "LVEF"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "RPMITCEBO",
+    "protocol_name": "RPMitCEBO - Rituximab-Prednisolone-Mitoxantrone-Cyclophosphamide-Etoposide-Bleomycin-Vincristine",
+    "disease_site": "CD20-positive Non-Hodgkin Lymphoma (patients unsuitable for anthracyclines)",
+    "category": "lymphoma",
+    "cycle_length_days": 28,
+    "number_of_cycles": 3,
+    "drugs": [
+      {
+        "drug_name": "Rituximab",
+        "dose": 375.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          15
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "In 500ml sodium chloride 0.9%. Rate varies per rituximab administration guidelines. Dose rounded to nearest 100mg (up if halfway)."
+      },
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 300.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1,
+          15
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV bolus over 10 minutes. Dose banded per CSCCN agreed bands."
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 150.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          15
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "In 1000ml sodium chloride 0.9% over 60 minutes. Dose banded per CSCCN agreed bands. Irritant."
+      },
+      {
+        "drug_name": "Mitoxantrone",
+        "dose": 7.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1,
+          15
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV bolus in 50ml sodium chloride 0.9% over 10 minutes. Dose rounded to nearest 1mg (up if halfway). Vesicant. Replaces doxorubicin for patients unsuitable for anthracyclines. Cardiac toxicity more likely at cumulative doses >160mg/m² (>100mg/m² after prior anthracycline therapy). Discontinue if cardiac failure develops."
+      },
+      {
+        "drug_name": "Prednisolone",
+        "dose": 50.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "50mg once daily oral days 1-28 inclusive in cycle 1. From cycle 2 onwards: 50mg on alternate days. To be taken in the morning with or after food. Patient self-administers; check prior to rituximab administration."
+      },
+      {
+        "drug_name": "Bleomycin",
+        "dose": 10000.0,
+        "dose_unit": "units",
+        "route": "IV bolus",
+        "days": [
+          8,
+          22
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "10,000 International Units/m² IV bolus over 10 minutes. Dose rounded to nearest 1000 IU (up if halfway). Maximum cumulative dose 500,000 IU in patients <60 years. GCSF must be omitted on days of bleomycin administration."
+      },
+      {
+        "drug_name": "Vincristine",
+        "dose": 1.4,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          8,
+          22
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": 2.0,
+        "max_dose_unit": "mg",
+        "notes": "IV bolus in 50ml sodium chloride 0.9% over 10 minutes. Maximum dose 2mg. Rounded to nearest 0.1mg (up if halfway). Vesicant. NPSA/2008/RRR04 must be followed for IV vinca alkaloid administration."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils ≥1.0 x10⁹/L (day 1 and 15)",
+        "drug_name": "Cyclophosphamide, Etoposide, Mitoxantrone",
+        "factor": 1.0,
+        "notes": "100% dose. Day 8 and 22 given irrespective of haematological counts."
+      },
+      {
+        "condition": "Neutrophils 0.5-0.9 x10⁹/L (day 1/15) - 1st occurrence, curative intent, WHO PS ≤2, no prior GCSF",
+        "drug_name": "Cyclophosphamide, Etoposide, Mitoxantrone",
+        "factor": 1.0,
+        "notes": "Administer 100% with prophylactic growth factors. Alternative: delay until neutrophils ≥1.0 x10⁹/L then 75% with GCSF."
+      },
+      {
+        "condition": "Neutrophils 0.5-0.9 x10⁹/L (day 1/15) - 2nd occurrence",
+        "drug_name": "Cyclophosphamide, Etoposide, Mitoxantrone",
+        "factor": null,
+        "notes": "Delay until neutrophils ≥1.0 x10⁹/L then reduce by further 25% with prophylactic GCSF."
+      },
+      {
+        "condition": "Neutrophils <0.5 x10⁹/L or febrile neutropenia (day 1/15) - 1st occurrence",
+        "drug_name": "Cyclophosphamide, Etoposide, Mitoxantrone",
+        "factor": 0.75,
+        "notes": "Delay until neutrophils ≥1.0 x10⁹/L then give 75% with GCSF."
+      },
+      {
+        "condition": "Neutrophils <0.5 x10⁹/L or febrile neutropenia (day 1/15) - 2nd occurrence",
+        "drug_name": "Cyclophosphamide, Etoposide, Mitoxantrone",
+        "factor": 0.5,
+        "notes": "Delay until neutrophils ≥1.0 x10⁹/L then give 50% with GCSF."
+      },
+      {
+        "condition": "Platelets ≥75 x10⁹/L (day 1/15)",
+        "drug_name": "Cyclophosphamide, Etoposide, Mitoxantrone",
+        "factor": 1.0,
+        "notes": "100% dose."
+      },
+      {
+        "condition": "Platelets 50-74 x10⁹/L (day 1/15) - 1st occurrence",
+        "drug_name": "Cyclophosphamide, Etoposide, Mitoxantrone",
+        "factor": 0.75,
+        "notes": "Give 75%."
+      },
+      {
+        "condition": "Platelets 50-74 x10⁹/L (day 1/15) - 2nd occurrence",
+        "drug_name": "Cyclophosphamide, Etoposide, Mitoxantrone",
+        "factor": 0.5,
+        "notes": "Give 50%."
+      },
+      {
+        "condition": "Platelets <50 x10⁹/L or bleeding (day 1/15) - 1st occurrence",
+        "drug_name": "Cyclophosphamide, Etoposide, Mitoxantrone",
+        "factor": 0.75,
+        "notes": "Delay until platelets ≥75 x10⁹/L then give 75%."
+      },
+      {
+        "condition": "Platelets <50 x10⁹/L or bleeding (day 1/15) - 2nd occurrence",
+        "drug_name": "Cyclophosphamide, Etoposide, Mitoxantrone",
+        "factor": 0.5,
+        "notes": "Delay until platelets ≥75 x10⁹/L then give 50%."
+      },
+      {
+        "condition": "Hepatic: Etoposide - Bilirubin 30-51 µmol/L or AST/ALT 60-180",
+        "drug_name": "Etoposide",
+        "factor": 0.5,
+        "notes": "Consider dose reduction to 50%."
+      },
+      {
+        "condition": "Hepatic: Etoposide - Bilirubin >51 µmol/L or AST/ALT >180",
+        "drug_name": "Etoposide",
+        "factor": null,
+        "notes": "Clinical decision."
+      },
+      {
+        "condition": "Hepatic: Mitoxantrone - Bilirubin >60 µmol/L",
+        "drug_name": "Mitoxantrone",
+        "factor": null,
+        "notes": "Clinical decision."
+      },
+      {
+        "condition": "Hepatic: Vincristine - Bilirubin 30-51 µmol/L or AST/ALT 60-180",
+        "drug_name": "Vincristine",
+        "factor": 0.5,
+        "notes": "Reduce to 50%."
+      },
+      {
+        "condition": "Hepatic: Vincristine - Bilirubin >51 µmol/L and normal AST/ALT",
+        "drug_name": "Vincristine",
+        "factor": 0.5,
+        "notes": "Reduce to 50%."
+      },
+      {
+        "condition": "Hepatic: Vincristine - Bilirubin >51 µmol/L and AST/ALT >180",
+        "drug_name": "Vincristine",
+        "factor": 0.0,
+        "notes": "Omit vincristine."
+      },
+      {
+        "condition": "Renal: CrCl >50 ml/min",
+        "drug_name": "Bleomycin",
+        "factor": 1.0,
+        "notes": "100%."
+      },
+      {
+        "condition": "Renal: CrCl 10-50 ml/min",
+        "drug_name": "Bleomycin",
+        "factor": 0.75,
+        "notes": "75%."
+      },
+      {
+        "condition": "Renal: CrCl <10 ml/min",
+        "drug_name": "Bleomycin",
+        "factor": 0.5,
+        "notes": "50%."
+      },
+      {
+        "condition": "Renal: CrCl >20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "100%."
+      },
+      {
+        "condition": "Renal: CrCl 10-20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "75%."
+      },
+      {
+        "condition": "Renal: CrCl <10 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "50%."
+      },
+      {
+        "condition": "Renal: CrCl >50 ml/min",
+        "drug_name": "Etoposide",
+        "factor": 1.0,
+        "notes": "100%."
+      },
+      {
+        "condition": "Renal: CrCl 15-50 ml/min",
+        "drug_name": "Etoposide",
+        "factor": 0.75,
+        "notes": "75%."
+      },
+      {
+        "condition": "Renal: CrCl <15 ml/min",
+        "drug_name": "Etoposide",
+        "factor": 0.5,
+        "notes": "50%."
+      },
+      {
+        "condition": "Vincristine: NCI-CTC grade 2 motor or grade 3 sensory neurotoxicity",
+        "drug_name": "Vincristine",
+        "factor": null,
+        "notes": "Reduce vincristine to 1mg. For higher grades or if worsens despite reduction, stop vincristine."
+      },
+      {
+        "condition": "Mitoxantrone: cardiac failure develops",
+        "drug_name": "Mitoxantrone",
+        "factor": 0.0,
+        "notes": "Discontinue mitoxantrone."
+      },
+      {
+        "condition": "Etoposide: significant reduction in albumin",
+        "drug_name": "Etoposide",
+        "factor": null,
+        "notes": "Consider dose reduction."
+      }
+    ],
+    "pre_medications": [
+      "Prednisolone 50mg oral morning of treatment (patient self-administers; check prior to rituximab)",
+      "Chlorphenamine 10mg IV 30 minutes prior to rituximab",
+      "Paracetamol 1000mg oral 30 minutes prior to rituximab",
+      "Ondansetron 8mg oral or IV 15-30 minutes prior to chemotherapy (days 1 and 15)",
+      "Hydrocortisone 100mg IV when required for rituximab infusion reactions",
+      "Salbutamol 2.5mg nebule when required for rituximab-related bronchospasm",
+      "Hydrocortisone 100mg IV when required for bleomycin-related reactions"
+    ],
+    "special_warnings": [
+      "RPMitCEBO is a variant of RPACEBOM for patients UNSUITABLE FOR ANTHRACYCLINES - mitoxantrone replaces doxorubicin.",
+      "Complex 28-day alternating weekly regimen: Days 1+15 receive R, Cyclophosphamide, Etoposide, Mitoxantrone, Prednisolone; Days 8+22 receive Bleomycin, Vincristine.",
+      "Bleomycin maximum cumulative dose: 500,000 IU in patients <60 years.",
+      "Vincristine maximum single dose: 2mg.",
+      "Mitoxantrone cardiac toxicity risk at cumulative doses >160mg/m² (>100mg/m² after prior anthracycline therapy).",
+      "GCSF must be OMITTED on days of bleomycin administration to reduce pulmonary toxicity risk.",
+      "Check hepatitis B status before starting rituximab.",
+      "Baseline LVEF required in patients with cardiac history. Discontinue mitoxantrone if cardiac failure develops.",
+      "Pulmonary function tests recommended before starting; repeat if respiratory symptoms develop.",
+      "NPSA/2008/RRR04 must be followed for IV vinca alkaloid administration.",
+      "Haematological dose modifications apply to days 1 and 15 only; days 8 and 22 given irrespective of counts.",
+      "Anti-infective prophylaxis: aciclovir 400mg BD, co-trimoxazole 960mg Mon/Wed/Fri.",
+      "Allopurinol 300mg OD first cycle for TLS prophylaxis.",
+      "FBC, LFTs (including albumin), U&Es prior to day 1 and day 15."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "hepatitis_B_status",
+      "FBC",
+      "LFTs",
+      "U_and_Es",
+      "albumin",
+      "LVEF"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "SMILE",
+    "protocol_name": "InP-SMILE - Pegasparagase-Dexamethasone-Etoposide-Ifosfamide-Methotrexate (SMILE)",
+    "disease_site": "NK/T-cell lymphoma (extranodal natural killer T-cell lymphoma)",
+    "category": "lymphoma",
+    "cycle_length_days": 28,
+    "number_of_cycles": 2,
+    "drugs": [
+      {
+        "drug_name": "Methotrexate",
+        "dose": 2000.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 6.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "HIGH DOSE. In 1000ml sodium chloride 0.9% over 360 minutes. Urinary pH must be above 7 before starting and maintained throughout infusion until methotrexate level ≤0.1 micromol/L. Folinic acid rescue 30mg IV every 3 hours starting 24 hours after start of infusion continued until levels <0.1 micromol/L. Monitor methotrexate levels every 24 hours from 48h post-infusion. DO NOT give if fluid space (pleural effusion/ascites) present. Dose banded per nationally agreed bands."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 40.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          2,
+          3,
+          4
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "40mg oral or IV daily on days 2, 3, 4. Also given as dexamethasone 8mg pre-medication on day 1 prior to methotrexate."
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 100.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          2,
+          3,
+          4
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "In 500ml sodium chloride 0.9% over 60 minutes on days 2, 3, 4. Dose banded per nationally agreed bands (20mg/ml). Irritant."
+      },
+      {
+        "drug_name": "Mesna",
+        "dose": 300.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          2,
+          3,
+          4
+        ],
+        "infusion_duration_hours": 0.25,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "In sodium chloride 0.9% 100ml over 15 minutes on days 2, 3, 4 (pre-ifosfamide uroprotection). Additional mesna 1500mg/m² mixed with ifosfamide and mesna 900mg/m² over 12 hours also given. Dose banded per nationally agreed bands (100mg/ml). | Mesna given as multiple fractions — dose represents one administration. Total daily Mesna dose = sum of all Mesna entries."
+      },
+      {
+        "drug_name": "Ifosfamide",
+        "dose": 1500.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          2,
+          3,
+          4
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "In sodium chloride 0.9% 1000ml over 60 minutes on days 2, 3, 4 (mixed with mesna 1500mg/m² in the same bag). Dose banded per nationally agreed bands (80mg/ml). Urine dipstick for haematuria every 4 hours on day of and day after administration. Monitor neurological toxicity - if grade 1 may reduce; if grade 2 stop ifosfamide. Methylene blue 50mg QDS IV can prevent/treat encephalopathy."
+      },
+      {
+        "drug_name": "Mesna",
+        "dose": 1500.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          2,
+          3,
+          4
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Mixed with ifosfamide in same 1000ml sodium chloride 0.9% bag over 60 minutes on days 2, 3, 4. | Mesna given as multiple fractions — dose represents one administration. Total daily Mesna dose = sum of all Mesna entries."
+      },
+      {
+        "drug_name": "Mesna",
+        "dose": 900.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          2,
+          3,
+          4
+        ],
+        "infusion_duration_hours": 12.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "In sodium chloride 0.9% 1000ml over 12 hours on days 2, 3, 4 starting immediately after ifosfamide/mesna bag. On day 4 may be replaced with oral mesna 320mg/m² (rounded up to nearest 400mg tablet) at 0, 2 and 6 hours post-ifosfamide. | Mesna given as multiple fractions — dose represents one administration. Total daily Mesna dose = sum of all Mesna entries."
+      },
+      {
+        "drug_name": "Pegasparagase",
+        "dose": 1500.0,
+        "dose_unit": "units",
+        "route": "Intramuscular",
+        "days": [
+          7
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "1500 units/m² IM on day 7. Preferred route is intramuscular; volume per site must not exceed 3mL in adults (divide if higher volume needed). Can be given between days 5-10 if day 7 falls on a weekend or if given as outpatient/ambulatory. Monitor for hypersensitivity for 1 hour post-dose. Discontinue if pancreatitis, thrombosis, grade 3-4 hypersensitivity reaction, or any grade 3 non-haematological toxicity. Reduce to 50% if prior grade 1-2 hypersensitivity reaction."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological: delay start of cycle until neutrophils ≥1.0 x10⁹/L and platelets ≥100 x10⁹/L",
+        "drug_name": "All drugs",
+        "factor": 1.0,
+        "notes": "No dose modifications for grade ≤3 haematological toxicity on day 1; delay until minimum criteria met."
+      },
+      {
+        "condition": "NCI-CTC grade 4 thrombocytopenia (platelets <25 x10⁹/L) in cycle 1",
+        "drug_name": "Etoposide, Ifosfamide, Methotrexate",
+        "factor": 0.75,
+        "notes": "Reduce dose by 25% in next cycle."
+      },
+      {
+        "condition": "Platelets must be >25 x10⁹/L prior to Pegasparagase administration",
+        "drug_name": "Pegasparagase",
+        "factor": 1.0,
+        "notes": "Delay if platelets <25 x10⁹/L."
+      },
+      {
+        "condition": "Liver: Pegasparagase - Bilirubin >3xULN or AST/ALT >5xULN",
+        "drug_name": "Pegasparagase",
+        "factor": null,
+        "notes": "Clinical decision."
+      },
+      {
+        "condition": "Liver: Etoposide - Bilirubin 30-51 µmol/L or AST/ALT 60-180",
+        "drug_name": "Etoposide",
+        "factor": 0.5,
+        "notes": "Consider dose reduction to 50%."
+      },
+      {
+        "condition": "Liver: Etoposide - Bilirubin >51 µmol/L or AST/ALT >180",
+        "drug_name": "Etoposide",
+        "factor": null,
+        "notes": "Clinical decision."
+      },
+      {
+        "condition": "Liver: Ifosfamide - Bilirubin >20 µmol/L or AST/ALT >2.5xULN or ALP >2.5xULN",
+        "drug_name": "Ifosfamide",
+        "factor": null,
+        "notes": "Not recommended."
+      },
+      {
+        "condition": "Liver: Methotrexate - Bilirubin <50 µmol/L and AST/ALT <180",
+        "drug_name": "Methotrexate",
+        "factor": 1.0,
+        "notes": "100%."
+      },
+      {
+        "condition": "Liver: Methotrexate - Bilirubin 51-85 µmol/L or AST/ALT >180",
+        "drug_name": "Methotrexate",
+        "factor": 0.75,
+        "notes": "75%."
+      },
+      {
+        "condition": "Liver: Methotrexate - Bilirubin >85 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.0,
+        "notes": "Omit methotrexate."
+      },
+      {
+        "condition": "Renal: Etoposide - CrCl >50 ml/min",
+        "drug_name": "Etoposide",
+        "factor": 1.0,
+        "notes": "100%."
+      },
+      {
+        "condition": "Renal: Etoposide - CrCl 15-50 ml/min",
+        "drug_name": "Etoposide",
+        "factor": 0.75,
+        "notes": "75%."
+      },
+      {
+        "condition": "Renal: Etoposide - CrCl <15 ml/min",
+        "drug_name": "Etoposide",
+        "factor": 0.5,
+        "notes": "50%."
+      },
+      {
+        "condition": "Renal: Ifosfamide - CrCl >60 ml/min",
+        "drug_name": "Ifosfamide",
+        "factor": 1.0,
+        "notes": "100%."
+      },
+      {
+        "condition": "Renal: Ifosfamide - CrCl 40-59 ml/min",
+        "drug_name": "Ifosfamide",
+        "factor": 0.7,
+        "notes": "70%."
+      },
+      {
+        "condition": "Renal: Ifosfamide - CrCl <40 ml/min",
+        "drug_name": "Ifosfamide",
+        "factor": null,
+        "notes": "Clinical decision."
+      },
+      {
+        "condition": "Renal: Methotrexate - CrCl ≥80 ml/min",
+        "drug_name": "Methotrexate",
+        "factor": 1.0,
+        "notes": "100%."
+      },
+      {
+        "condition": "Renal: Methotrexate - CrCl 60-79 ml/min",
+        "drug_name": "Methotrexate",
+        "factor": 0.65,
+        "notes": "65%."
+      },
+      {
+        "condition": "Renal: Methotrexate - CrCl 45-59 ml/min",
+        "drug_name": "Methotrexate",
+        "factor": 0.5,
+        "notes": "50%."
+      },
+      {
+        "condition": "Renal: Methotrexate - CrCl <45 ml/min",
+        "drug_name": "Methotrexate",
+        "factor": 0.0,
+        "notes": "Do not administer methotrexate."
+      },
+      {
+        "condition": "Pegasparagase hypersensitivity reaction grade 1-2 (prior)",
+        "drug_name": "Pegasparagase",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of dose. Consider prednisolone 1mg/kg/day premedication."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg oral or IV on day 1 only prior to methotrexate infusion",
+      "Metoclopramide 10mg TDS for 7 days then when required oral or IV bolus",
+      "Ondansetron 8mg BD for 7 days oral or IV bolus",
+      "Folinic acid 30mg IV every 3 hours starting 24 hours after start of methotrexate infusion (continued until MTX level <0.1 micromol/L)",
+      "Chlorphenamine 10mg IV 30 minutes prior to Pegasparagase (when required for reactions)",
+      "Hydrocortisone 100mg IV bolus when required for Pegasparagase reactions",
+      "Paracetamol 1000mg when required for Pegasparagase reactions",
+      "H2 antagonist (famotidine 20mg or nizatidine 150mg oral) 30 minutes prior to Pegasparagase on day 7"
+    ],
+    "special_warnings": [
+      "INPATIENT REGIMEN - requires hospital admission.",
+      "HIGH DOSE METHOTREXATE (2000mg/m²): urinary alkalinisation mandatory - pH must be >7 BEFORE starting infusion and maintained throughout until MTX level ≤0.1 micromol/L.",
+      "DO NOT give high-dose methotrexate if patient has fluid third space (pleural effusion, ascites).",
+      "Folinic acid rescue mandatory starting 24 hours after start of MTX infusion.",
+      "Monitor methotrexate blood levels every 24 hours from 48h post-infusion.",
+      "Pegasparagase (L-asparaginase): ANAPHYLAXIS RISK - monitor for at least 1 hour post-dose.",
+      "Discontinue Pegasparagase in: pancreatitis, thrombosis, grade 3-4 hypersensitivity, any grade 3 non-haematological toxicity.",
+      "Ifosfamide: haemorrhagic cystitis risk - urine dipstick every 4 hours. Ifosfamide encephalopathy risk - methylene blue may be used.",
+      "Growth factors starting day 6 continued until neutrophils >1.0 x10⁹/L.",
+      "Anti-infective prophylaxis: aciclovir 400mg BD, fluconazole 50mg OD, pentamidine 300mg nebulised every 28 days.",
+      "AVOID proton pump inhibitors while receiving high-dose methotrexate (H2 antagonists may be used instead).",
+      "Many drugs interact with IV methotrexate at these doses - check for interactions before prescribing additional medications.",
+      "In female patients consider norethisterone 5mg TDS to delay menstruation (caution: increased thrombosis risk with asparaginase).",
+      "This regimen causes marked myelosuppression in ~70% of patients (grade ≥3 neutropenia).",
+      "Pegasparagase can be given between days 5-10 if day 7 falls on a weekend or in outpatient/ambulatory setting.",
+      "FBC, LFTs (including albumin), U&Es, EDTA CrCl prior to day 1 and each Pegasparagase dose."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "FBC",
+      "LFTs",
+      "U_and_Es",
+      "albumin",
+      "urinary_pH",
+      "fluid_spaces_assessment",
+      "amylase",
+      "coagulation_screen"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "TISACEL-BENDAMUSTINE90",
+    "protocol_name": "Tisacel (Tisagenlecleucel) CAR-T with Bendamustine 90mg/m² Lymphodepletion (DLBCL/FL)",
+    "disease_site": "Relapsed/Refractory DLBCL / Follicular Lymphoma",
+    "category": "lymphoma",
+    "cycle_length_days": 5,
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Bendamustine",
+        "dose": 90.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          -4,
+          -3
+        ],
+        "infusion_duration_hours": 0.75,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "In 500ml sodium chloride 0.9% over 30-60 minutes on days -4 and -3 (lymphodepletion). Dose banded per national dose band (2.5mg/ml). Vesicant. Lymphodepleting regimen must only be started after availability of Tisacel is confirmed."
+      },
+      {
+        "drug_name": "Tisagenlecleucel",
+        "dose": null,
+        "dose_unit": "units",
+        "route": "IV infusion",
+        "days": [
+          0
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Target dose 0.6 to 6 x10⁸ cells (1.2 x10⁶ to 6 x10⁸ cells; non-weight-based dosing range). One dose comprising 1 or more infusion bags infused within 30 minutes. Must be administered gravimetrically - NOT via volumetric pump. Via Baxter non-leukodepleting filter latex-free giving set primed with sodium chloride 0.9%. Administer immediately after thawing. Autologous use only. CAR-T administration must not occur out of core hours or over a weekend. Only available at Wessex Blood and Marrow Transplant Unit."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Hepatic: Bendamustine - Bilirubin <21 µmol/L",
+        "drug_name": "Bendamustine",
+        "factor": 1.0,
+        "notes": "100%."
+      },
+      {
+        "condition": "Hepatic: Bendamustine - Bilirubin 21-51 µmol/L",
+        "drug_name": "Bendamustine",
+        "factor": 0.7,
+        "notes": "70%."
+      },
+      {
+        "condition": "Hepatic: Bendamustine - Bilirubin >51 µmol/L",
+        "drug_name": "Bendamustine",
+        "factor": null,
+        "notes": "No information available."
+      },
+      {
+        "condition": "Renal: Bendamustine - CrCl >10 ml/min",
+        "drug_name": "Bendamustine",
+        "factor": 1.0,
+        "notes": "100%."
+      },
+      {
+        "condition": "Renal: Bendamustine - CrCl ≤10 ml/min",
+        "drug_name": "Bendamustine",
+        "factor": null,
+        "notes": "No information available; use with caution."
+      },
+      {
+        "condition": "Possible disease relapse",
+        "drug_name": "All drugs",
+        "factor": 1.0,
+        "notes": "Confirm with consultant before proceeding if signs of possible disease relapse."
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV 30 minutes prior to Tisacel on day 0",
+      "Paracetamol 1000mg oral 30 minutes prior to Tisacel on day 0",
+      "Metoclopramide 10mg TDS oral or IV (anti-emetic)",
+      "Ondansetron 8mg BD oral or IV (anti-emetic)",
+      "Levetiracetam 500mg BD oral from day 0 until day +30 (seizure prophylaxis)",
+      "Tocilizumab 8mg/kg (max 800mg) IV 8-hourly if required for CRS - maximum 4 doses (must be prescribed in advance)",
+      "TLS prophylaxis per consultant review: allopurinol 300mg OD or rasburicase 7.5mg IV OD"
+    ],
+    "special_warnings": [
+      "IRRADIATED BLOOD PRODUCTS REQUIRED FOR LIFE: Patients treated with bendamustine carry a lifelong risk of transfusion-associated graft versus host disease (TA-GVHD). Blood products must be irradiated for life. Transfusion departments must be notified immediately.",
+      "Patient must be issued with Tisacel treatment alert card at all times.",
+      "This bendamustine lymphodepletion regimen is an ALTERNATIVE to Tisacel-Fludarabine-Cyclophosphamide for patients with prior Grade 4 haemorrhagic cystitis with cyclophosphamide or chemorefractory state to cyclophosphamide-containing regimen.",
+      "Prophylactic systemic corticosteroids are NOT recommended prior to CAR-T as may interfere with cellular therapy activity.",
+      "Cytokine Release Syndrome (CRS) - nearly all patients experience some degree. Monitor temperature, BP, oxygen saturation 4-hourly after Tisacel on day 0 then twice daily.",
+      "ICANS (Immune effector cell-associated neurotoxicity syndrome) - ICE score assessed twice daily.",
+      "Four doses of tocilizumab must be available on ward prior to Tisacel infusion.",
+      "Tisacel cells must be administered gravimetrically - NOT via volumetric pump.",
+      "Anti-infective prophylaxis: aciclovir 400mg BD, fluconazole 100mg OD, pentamidine 300mg nebulised every 28 days during lymphodepletion (continued until count recovery for co-trimoxazole use).",
+      "Posaconazole 300mg OD if prolonged neutropenia or prior invasive fungal infection.",
+      "Stevens-Johnson syndrome/toxic epidermal necrolysis risk if bendamustine given with allopurinol - monitor closely.",
+      "Bendamustine metabolised via CYP1A2 - check for drug interactions.",
+      "Echocardiogram and baseline lung function required prior to initiating lymphodepletion.",
+      "Screening for HBV, HCV and HIV required before cell collection for Tisagenlecleucel manufacture.",
+      "Minimum period between last dose of conditioning chemotherapy and CAR-T infusion must elapse per patient's CAR-T schedule.",
+      "Only available at the Wessex Blood and Marrow Transplant Unit (WBMT).",
+      "This is a one-time protocol: bendamustine given days -4 and -3; Tisacel infused on day 0."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "hepatitis_B_status",
+      "FBC",
+      "LFTs",
+      "U_and_Es",
+      "LVEF",
+      "lung_function",
+      "HBV_HCV_HIV_screen",
+      "tisacel_availability_confirmed"
+    ],
+    "auc_dosing": null
+  }
+]

@@ -1,0 +1,1298 @@
+[
+  {
+    "protocol_code": "ALL-BREXUCEL-CY900-FLU25",
+    "protocol_name": "ALL - Brexucel (Brexucabtagene Autoleucel) - Cyclophosphamide (900) - Fludarabine (25)",
+    "disease_site": "ALL",
+    "category": "haematology",
+    "cycle_length_days": 14,
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Mesna",
+        "dose": 200.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV bolus",
+        "days": [
+          -2
+        ],
+        "infusion_duration_hours": 0.25,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus in 100ml sodium chloride 0.9% over 15 minutes. To start at the same time as the cyclophosphamide infusion."
+      },
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 900.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          -2
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 1000ml sodium chloride 0.9% over 60 minutes. Dose banded per national dose banding table (20mg/ml). Lymphodepleting regimen must only be started after availability of Brexucel is confirmed."
+      },
+      {
+        "drug_name": "Mesna",
+        "dose": 400.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "Oral",
+        "days": [
+          -2
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Oral, two doses taken at 2 and 6 hours after the start of the cyclophosphamide infusion. Rounded to nearest 400mg (up if halfway)."
+      },
+      {
+        "drug_name": "Fludarabine",
+        "dose": 25.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          -4,
+          -3,
+          -2
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 100ml sodium chloride 0.9% over 30 minutes. Dose banded per national dose band (25mg/ml). Patients carry lifelong risk of transfusion-associated GVHD; irradiated blood products required for life."
+      },
+      {
+        "drug_name": "Brexucabtagene autoleucel",
+        "dose": 1.0,
+        "dose_unit": "units",
+        "route": "IV infusion",
+        "days": [
+          0
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Target dose 1x10^6 cells/kg; maximum dose 1x10^8 cells for patients 100kg and above. Intravenous infusion of approximately 68ml within 30 minutes. Administer gravimetrically via non-leukodepleting filter; must NOT be administered via volumetric pump. Infusion must begin within 30 minutes of thaw completion. CAR-T administration should not occur out of core hours or over the weekend. Autologous use only. Available at Wessex Blood and Marrow Transplant Unit only."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Cyclophosphamide: CrCl greater than 50 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "100% of original dose"
+      },
+      {
+        "condition": "Cyclophosphamide: CrCl 30-50 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "75% of original dose"
+      },
+      {
+        "condition": "Cyclophosphamide: CrCl less than 30 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.0,
+        "notes": "High dose therapy not generally undertaken"
+      },
+      {
+        "condition": "Fludarabine: CrCl greater than 70 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 1.0,
+        "notes": "100% of original dose"
+      },
+      {
+        "condition": "Fludarabine: CrCl 50-69 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.8,
+        "notes": "Reduce dose by 20%"
+      },
+      {
+        "condition": "Fludarabine: CrCl 30-49 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.6,
+        "notes": "Reduce dose by 40%"
+      },
+      {
+        "condition": "Fludarabine: CrCl less than 30 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.0,
+        "notes": "Contraindicated - do not use fludarabine; consider alternative lymphodepletion regimen"
+      },
+      {
+        "condition": "Hepatic impairment - Cyclophosphamide",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Severe hepatic impairment may decrease activation of cyclophosphamide; consider when selecting dose and interpreting response. No specific reduction recommended."
+      },
+      {
+        "condition": "Hepatic impairment - Fludarabine",
+        "drug_name": "Fludarabine",
+        "factor": 1.0,
+        "notes": "No dose modification recommended for hepatic dysfunction"
+      },
+      {
+        "condition": "Haematological: signs of possible disease relapse",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Confirm with consultant before proceeding if there are signs of possible disease relapse"
+      }
+    ],
+    "pre_medications": [
+      "Mesna 200mg/m\u00b2 IV bolus at same time as cyclophosphamide (Day -2)",
+      "Mesna 400mg/m\u00b2 oral at 2 and 6 hours after cyclophosphamide start (Day -2)",
+      "Metoclopramide 10mg three times a day oral or intravenous (antiemetic)",
+      "Ondansetron 8mg twice a day oral or intravenous (antiemetic)",
+      "Aciclovir 400mg oral twice a day (anti-infective prophylaxis)",
+      "Fluconazole 100mg oral once a day (anti-infective prophylaxis)",
+      "Pentamidine 300mg nebuliser during lymphodepletion, then every 28 days until count recovery sufficient for co-trimoxazole",
+      "Posaconazole 300mg once daily if prolonged neutropenia or previous invasive fungal infection",
+      "Gastric protection with proton pump inhibitor or H2 antagonist from first day of lymphodepletion until platelet count >50x10^9/L",
+      "Nystatin 1ml four times a day mouthwash",
+      "Sodium chloride 0.9% 10ml four times a day mouthwash",
+      "Chlorphenamine 10mg IV 30 minutes prior to Brexucel (Day 0 pre-medication)",
+      "Paracetamol 1000mg oral 30 minutes prior to Brexucel (Day 0 pre-medication)",
+      "Levetiracetam 500mg twice daily oral from first day of lymphodepletion until Day +30 (seizure prophylaxis, consider if neurotoxicity risk or history of seizures)",
+      "Tocilizumab 8mg/kg (max 800mg) IV 8-hourly if required for CRS - maximum four doses; four doses must be available on ward prior to Brexucel infusion",
+      "TLS prophylaxis: Allopurinol 300mg oral once a day or Rasburicase 7.5mg IV once a day (as indicated by individual patient TLS risk)"
+    ],
+    "special_warnings": [
+      "CAR-T therapy available only at the Wessex Blood and Marrow Transplant Unit",
+      "CAR-T cell therapy: single administration procedure. cycle_length_days is not applicable \u2014 this is a one-time infusion following lymphodepletion conditioning.",
+      "Lymphodepleting regimen must only be started after availability of Brexucel is confirmed",
+      "Nearly all patients treated with Brexucel experience some degree of CRS including life-threatening and fatal reactions; monitor temperature, BP and oxygen saturation 4-hourly after Brexucel on Day 0, then twice daily",
+      "ICANS (immune effector cell-associated neurotoxicity syndrome) risk: monitor ICE score twice daily",
+      "Prophylactic systemic corticosteroids must NOT be administered as they may interfere with CAR-T activity; corticosteroids may only be used for treatment of CRS or ICANS under consultant advice",
+      "Patients treated with fludarabine carry a lifelong risk of transfusion-associated GVHD (TA-GVHD); ONLY irradiated blood products for life; issue alert card",
+      "Symptoms of CRS or ICANS can occur weeks after infusion; patient must carry alert card at all times",
+      "Cautions: unresolved serious adverse reactions from preceding chemotherapies, active uncontrolled infection or inflammatory disease, active GVHD",
+      "Brexucel contains genetically modified human blood cells; handle with PPE, GM spill-kit must be available on ward",
+      "Brexucel cells are cryopreserved; require thawing prior to administration (WBMT SOP P-P-78)",
+      "Brexucel must be administered via giving set with non-leukodepleting filter; NOT via volumetric pump",
+      "Infusion must begin within 30 minutes of thaw completion; infuse over maximum 30 minutes",
+      "Screening for HBV, HCV and HIV before collection of cells for manufacture",
+      "Echocardiogram and baseline lung function required prior to initiating lymphodepletion",
+      "Report suspected adverse reactions to MHRA Yellow Card and manufacturer"
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "weight_kg",
+      "body_surface_area",
+      "HBV_HCV_HIV_status",
+      "echocardiogram",
+      "lung_function"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "CLL-CHLORAMBUCIL-14D-OBINUTUZUMAB-6C",
+    "protocol_name": "CLL - Chlorambucil (14 day) - Obinutuzumab (6 cycles)",
+    "disease_site": "CLL",
+    "category": "haematology",
+    "cycle_length_days": 28,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Chlorambucil",
+        "dose": 10.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "10mg once daily days 1-14 inclusive all cycles. Swallow whole on empty stomach 1 hour before meals or 3 hours after. Do not crush or dissolve. Available as 2mg film-coated tablets. NPSA/2008/RRR001 oral chemotherapy safety alert applies. Short course repeated under consultant haematologist supervision only."
+      },
+      {
+        "drug_name": "Obinutuzumab",
+        "dose": 100.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 4.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 Day 1 only: 100mg in 100ml sodium chloride 0.9% at rate of 25mg/hour (over 240 minutes). Do not increase the rate. If completed without interruption, 900mg dose may follow on same day."
+      },
+      {
+        "drug_name": "Obinutuzumab",
+        "dose": 900.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          2
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 Day 2 (or Day 1 continued if 100mg completed without interruption): 900mg in 250ml sodium chloride 0.9%; start at 50mg/hour, escalate in increments of 50mg/hour every 30 minutes to maximum 400mg/hour. Dose reductions of obinutuzumab are NOT permitted."
+      },
+      {
+        "drug_name": "Obinutuzumab",
+        "dose": 1000.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          8,
+          15
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 Days 8 and 15: 1000mg in 250ml sodium chloride 0.9%; start at 100mg/hour, increase by 100mg/hour every 30 minutes to maximum 400mg/hour. Dose reductions NOT permitted. | CYCLE 1 DAYS 8 AND 15 (1000mg): multiple Obinutuzumab entries exist \u2014 100mg day 1 (split-dose initiation), 900mg day 2 (remainder of cycle 1 loading), 1000mg days 8 and 15 (cycle 1 continuation), and 1000mg day 1 cycles 2-6 (maintenance). All entries are intentional."
+      },
+      {
+        "drug_name": "Obinutuzumab",
+        "dose": 1000.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 2-6 Day 1: 1000mg in 250ml sodium chloride 0.9%; start at 100mg/hour, increase by 100mg/hour every 30 minutes to maximum 400mg/hour. Dose reductions NOT permitted. | CYCLES 2-6 DAY 1 (1000mg): multiple Obinutuzumab entries exist \u2014 100mg day 1 (split-dose initiation), 900mg day 2 (remainder of cycle 1 loading), 1000mg days 8 and 15 (cycle 1 continuation), and 1000mg day 1 cycles 2-6 (maintenance). All entries are intentional."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Grade 3-4 haematological toxicity, febrile neutropenia or thrombocytopenic bleeding delaying treatment by less than 4 weeks: Obinutuzumab",
+        "drug_name": "Obinutuzumab",
+        "factor": 1.0,
+        "notes": "Hold until neutrophil >=1x10^9/L and platelets >=100x10^9/L, then restart at usual dose. Dose reductions of obinutuzumab are NOT permitted."
+      },
+      {
+        "condition": "Grade 3-4 haematological toxicity, 1st episode: Chlorambucil",
+        "drug_name": "Chlorambucil",
+        "factor": 0.75,
+        "notes": "Hold until above parameters met; upon recovery restart at 75% of previous dose"
+      },
+      {
+        "condition": "Grade 3-4 haematological toxicity, 2nd episode: Chlorambucil",
+        "drug_name": "Chlorambucil",
+        "factor": 0.5,
+        "notes": "Upon recovery restart at 50% of previous dose"
+      },
+      {
+        "condition": "Grade 3-4 haematological toxicity, 3rd episode: Chlorambucil",
+        "drug_name": "Chlorambucil",
+        "factor": 0.0,
+        "notes": "Discontinue chlorambucil"
+      },
+      {
+        "condition": "Grade 3-4 haematological toxicity delaying treatment by more than 4 weeks",
+        "drug_name": "Obinutuzumab",
+        "factor": 0.0,
+        "notes": "Discontinue obinutuzumab"
+      },
+      {
+        "condition": "Grade 3-4 haematological toxicity delaying treatment by more than 4 weeks",
+        "drug_name": "Chlorambucil",
+        "factor": 0.0,
+        "notes": "Discontinue chlorambucil"
+      },
+      {
+        "condition": "Grade 2-3 related organ/non-haematological toxicity: Obinutuzumab",
+        "drug_name": "Obinutuzumab",
+        "factor": 1.0,
+        "notes": "Hold until less than or equal to grade 1"
+      },
+      {
+        "condition": "Grade 2-3 related organ/non-haematological toxicity: Chlorambucil",
+        "drug_name": "Chlorambucil",
+        "factor": 1.0,
+        "notes": "Hold until less than or equal to grade 1"
+      },
+      {
+        "condition": "Grade 2 non-haematological toxicity delaying treatment by more than 4 weeks",
+        "drug_name": "Obinutuzumab",
+        "factor": 0.0,
+        "notes": "Discontinue"
+      },
+      {
+        "condition": "Grade 2 non-haematological toxicity delaying treatment by more than 4 weeks",
+        "drug_name": "Chlorambucil",
+        "factor": 0.0,
+        "notes": "Discontinue"
+      },
+      {
+        "condition": "Grade 4 organ/non-haematological toxicity, severe haemorrhage, severe skin reaction, pneumonitis, severe arrhythmias or severe cardiovascular events",
+        "drug_name": "Obinutuzumab",
+        "factor": 0.0,
+        "notes": "Discontinue"
+      },
+      {
+        "condition": "Grade 4 organ/non-haematological toxicity, severe haemorrhage, severe skin reaction, pneumonitis, severe arrhythmias or severe cardiovascular events",
+        "drug_name": "Chlorambucil",
+        "factor": 0.0,
+        "notes": "Discontinue"
+      },
+      {
+        "condition": "Viral hepatitis or other serious infections; reactivation of hepatitis B",
+        "drug_name": "Obinutuzumab",
+        "factor": 0.0,
+        "notes": "Discontinue"
+      },
+      {
+        "condition": "Viral hepatitis or other serious infections; reactivation of hepatitis B",
+        "drug_name": "Chlorambucil",
+        "factor": 0.0,
+        "notes": "Discontinue"
+      },
+      {
+        "condition": "Obinutuzumab infusion reaction Grade 1-2",
+        "drug_name": "Obinutuzumab",
+        "factor": 0.5,
+        "notes": "Reduce infusion rate by half; treat symptoms; restart once resolved; escalate rate as tolerated"
+      },
+      {
+        "condition": "Obinutuzumab infusion reaction 1st episode Grade 3",
+        "drug_name": "Obinutuzumab",
+        "factor": 1.0,
+        "notes": "Hold infusion; restart at no more than half previous rate once resolved; escalate as tolerated. Day 1 cycle 1 rate may be increased up to 25mg/hr after 60 minutes but not further."
+      },
+      {
+        "condition": "Obinutuzumab infusion reaction 2nd episode Grade 3 (same or subsequent infusion)",
+        "drug_name": "Obinutuzumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue"
+      },
+      {
+        "condition": "Obinutuzumab infusion reaction Grade 4 or acute life-threatening respiratory reactions",
+        "drug_name": "Obinutuzumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue"
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Chlorambucil",
+        "factor": 1.0,
+        "notes": "Dose reduction should be considered in severe hepatic impairment; insufficient data for specific recommendation. Monitor closely."
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Obinutuzumab",
+        "factor": 1.0,
+        "notes": "Safety and efficacy not established in hepatic impairment"
+      },
+      {
+        "condition": "Mild to moderate renal impairment",
+        "drug_name": "Chlorambucil",
+        "factor": 1.0,
+        "notes": "Dose adjustment not considered necessary; monitor carefully as prone to additional myelosuppression"
+      },
+      {
+        "condition": "Mild to moderate renal impairment",
+        "drug_name": "Obinutuzumab",
+        "factor": 1.0,
+        "notes": "Dose adjustment not considered necessary"
+      }
+    ],
+    "pre_medications": [
+      "Sodium chloride 0.9% 500ml IV infusion over 60 minutes prior to obinutuzumab (all obinutuzumab infusion days)",
+      "Methylprednisolone sodium succinate 80mg IV 60 minutes prior to obinutuzumab (Cycle 1 Days 1 and 2; and Day 8/15/subsequent cycles if grade 3 prior reaction or lymphocyte count >25x10^9/L)",
+      "Chlorphenamine 10mg IV 60 minutes prior to obinutuzumab (Cycle 1 Days 1 and 2; and Days 8/15/subsequent cycles if grade 1-2 prior infusion reaction or lymphocyte count >25x10^9/L)",
+      "Paracetamol 1000mg oral 60 minutes prior to obinutuzumab (all obinutuzumab infusion days)",
+      "Metoclopramide 10mg three times a day when required (antiemetic)",
+      "Allopurinol 300mg oral starting 2 days prior to Day 1 Cycle 1 for 7 days (TLS prophylaxis; not in ARIA); rasburicase for high TLS risk",
+      "Aciclovir 400mg twice a day oral (anti-infective prophylaxis; at consultant discretion)"
+    ],
+    "special_warnings": [
+      "Obinutuzumab dose reductions are NOT permitted",
+      "Obinutuzumab complex split first-dose in Cycle 1: 100mg Day 1 then 900mg Day 2 (or same day if 100mg completed without interruption); then 1000mg Days 8 and 15",
+      "Infusion related reactions particularly likely during Cycle 1; anaphylaxis reported - permanently discontinue if hypersensitivity reaction suspected",
+      "Progressive Multifocal Leukoencephalopathy (PML) reported with obinutuzumab; refer to neurologist if new neurological symptoms",
+      "Tumour Lysis Syndrome (TLS) risk with obinutuzumab; high risk patients (high lymphocyte count >25x10^9/L or CrCl <70ml/min) require TLS prophylaxis 12-24 hours prior to infusion",
+      "Hepatitis B reactivation risk; screen before starting treatment; monitor positive serology patients",
+      "Withhold antihypertensive treatments 12 hours prior to and during obinutuzumab infusion and for 1 hour after; hypotension may occur",
+      "NPSA/2008/RRR001 oral chemotherapy safety alert must be followed for chlorambucil",
+      "Chlorambucil is a short course that is repeated; must be prescribed under consultant haematologist supervision only",
+      "At start of each cycle: neutrophil count >=1x10^9/L and platelets >=100x10^9/L required"
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "hepatitis_B_status",
+      "creatinine_clearance",
+      "uric_acid"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "CLL-CHLORAMBUCIL-14D-RITUXIMAB-SPLIT",
+    "protocol_name": "CLL - Chlorambucil (14 day) - Rituximab (Split)",
+    "disease_site": "CLL",
+    "category": "haematology",
+    "cycle_length_days": 28,
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Chlorambucil",
+        "dose": 10.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "10mg once daily days 1-14 inclusive all cycles (including cycles 7-12 which are chlorambucil only). Swallow whole on empty stomach 1 hour before meals or 3 hours after. Do not crush or dissolve. 2mg film-coated tablets. NPSA/2008/RRR001 oral chemotherapy safety alert applies."
+      },
+      {
+        "drug_name": "Rituximab",
+        "dose": 100.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 Day 1 only (split dose fraction 1): 100mg in 50ml sodium chloride 0.9% over 120 minutes. Split dosing indicated where lymphocyte count >25x10^9/L."
+      },
+      {
+        "drug_name": "Rituximab",
+        "dose": 325.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          2
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 Day 2 (split dose fraction 2): 325mg/m\u00b2 in 500ml sodium chloride 0.9%; start at 50mg/hour, increase by 50mg/hour every 30 minutes to maximum 400mg/hour. Dose rounded to nearest 100mg (up if halfway) for doses >=325mg/m\u00b2. National dose bands (10mg/ml) for 50-125mg/m\u00b2 doses."
+      },
+      {
+        "drug_name": "Rituximab",
+        "dose": 500.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 2-6 Day 1: 500mg/m\u00b2 in 500ml sodium chloride 0.9% per rituximab infusion guidelines. If lymphocyte count >25x10^9/L, fractionate: Day 1 rituximab 125mg/m\u00b2 in 100ml, Day 2 rituximab 375mg/m\u00b2 in 500ml. If no problems with cycle 1 infusions start both fractions at 100mg/hour escalating by 100mg/hour every 30 minutes to max 400mg/hour. If reactions occurred in cycle 1, give both fractions as for day 2 of cycle 1. [VERIFIED: Rituximab 500mg/m\u00b2 from cycle 2 onwards in CLL is standard per MHRA SmPC and NICE TA174 \u2014 higher than lymphoma dosing of 375mg/m\u00b2]"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Chlorambucil: Neutrophils >1x10^9/L and/or Platelets >75x10^9/L",
+        "drug_name": "Chlorambucil",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "condition": "Chlorambucil: Neutrophils 0.5-1x10^9/L and/or Platelets 50-75x10^9/L",
+        "drug_name": "Chlorambucil",
+        "factor": 1.0,
+        "notes": "Delay treatment one week. If counts recover, restart. If counts take 8-14 days to recover, may restart with 50% dose reduction."
+      },
+      {
+        "condition": "Chlorambucil: Neutrophils <0.5x10^9/L and/or Platelets <50x10^9/L",
+        "drug_name": "Chlorambucil",
+        "factor": 0.5,
+        "notes": "Delay until counts recover, then restart with 50% dose reduction"
+      },
+      {
+        "condition": "Non-haematological NCI-CTC Grade 3 or above toxicity",
+        "drug_name": "Chlorambucil",
+        "factor": 0.75,
+        "notes": "Delay until resolved to grade 2 or below, then reduce to 75% of original dose. If toxicity recurs, reduce to 50% or discontinue."
+      },
+      {
+        "condition": "Non-haematological NCI-CTC Grade 3 or above toxicity, recurrence",
+        "drug_name": "Chlorambucil",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose or discontinue as appropriate"
+      },
+      {
+        "condition": "Hepatic impairment - severe",
+        "drug_name": "Chlorambucil",
+        "factor": 1.0,
+        "notes": "Dose reduction should be considered; no specific recommendation. Rituximab does not require dose adjustment in hepatic impairment."
+      },
+      {
+        "condition": "Renal impairment",
+        "drug_name": "Chlorambucil",
+        "factor": 1.0,
+        "notes": "Dose adjustment not considered necessary; monitor for additional myelosuppression. Rituximab does not require dose adjustment."
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV 30 minutes prior to rituximab",
+      "Hydrocortisone 100mg IV 30 minutes prior to rituximab",
+      "Paracetamol 1000mg oral 30 minutes prior to rituximab",
+      "Allopurinol 300mg once a day oral for 7 days of first cycle only (TLS prophylaxis)",
+      "Gastric protection with proton pump inhibitor or H2 antagonist in patients at high risk of GI ulceration or bleed"
+    ],
+    "special_warnings": [
+      "Split dose rituximab indicated where lymphocyte count >25x10^9/L: Cycle 1 Day 1 100mg flat dose, Cycle 1 Day 2 325mg/m\u00b2; Cycles 2-6 500mg/m\u00b2 (with option to split if lymphocytes still >25x10^9/L)",
+      "Cycle 7 onwards (cycles 7-12) should only be considered for patients demonstrating continuing response to treatment; chlorambucil only from cycle 7",
+      "Cytokine release syndrome (CRS) risk with rituximab; frequently occurs within 1-2 hours of first infusion",
+      "Progressive Multifocal Leukoencephalopathy (PML) risk with rituximab; monitor for neurological symptoms",
+      "Anaphylaxis/hypersensitivity reactions possible; medicinal products for allergic reactions must be available",
+      "Hepatitis B status must be checked prior to starting rituximab",
+      "NPSA/2008/RRR001 oral chemotherapy safety alert must be followed for chlorambucil",
+      "Chlorambucil is a short course that is repeated; must be prescribed under consultant haematologist supervision",
+      "Rituximab infusion reactions: have hydrocortisone 100mg IV, salbutamol 2.5mg nebule, and consider pethidine 25-50mg IV bolus available for reactions/rigors"
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "lymphocyte_count",
+      "hepatitis_B_status",
+      "body_surface_area"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "CLL-CHLORAMBUCIL-14D-RITUXIMAB",
+    "protocol_name": "CLL - Chlorambucil (14 day) - Rituximab",
+    "disease_site": "CLL",
+    "category": "haematology",
+    "cycle_length_days": 28,
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Chlorambucil",
+        "dose": 10.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "10mg once daily days 1-14 inclusive all cycles (including cycles 7-12 which are chlorambucil only). Swallow whole on empty stomach 1 hour before meals or 3 hours after. Do not crush or dissolve. 2mg film-coated tablets. NPSA/2008/RRR001 oral chemotherapy safety alert applies."
+      },
+      {
+        "drug_name": "Rituximab",
+        "dose": 375.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 Day 1: 375mg/m\u00b2 in 500ml sodium chloride 0.9%; start at 50mg/hour increasing by 50mg/hour every 30 minutes to maximum 400mg/hour. Dose rounded to nearest 100mg (up if halfway) for doses >=325mg/m\u00b2. | CYCLE 1 DOSE (375mg/m\u00b2): two Rituximab entries exist \u2014 375mg/m\u00b2 for cycle 1 only and 500mg/m\u00b2 for cycles 2-6. Both are intentional and represent different cycle doses."
+      },
+      {
+        "drug_name": "Rituximab",
+        "dose": 500.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 2-6 Day 1: 500mg/m\u00b2 in 500ml sodium chloride 0.9% per local rituximab infusion guidelines. If lymphocyte count >25x10^9/L, consider fractionating: Day 1 rituximab 125mg/m\u00b2 in 100ml, Day 2 rituximab 375mg/m\u00b2 in 500ml. Cycles 7-12: chlorambucil only. [VERIFIED: Rituximab 500mg/m\u00b2 from cycle 2 onwards in CLL is standard per MHRA SmPC and NICE TA174 \u2014 higher than lymphoma dosing of 375mg/m\u00b2] | CYCLES 2-6 DOSE (500mg/m\u00b2): two Rituximab entries exist \u2014 375mg/m\u00b2 for cycle 1 only and 500mg/m\u00b2 for cycles 2-6. Both are intentional and represent different cycle doses."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Chlorambucil: Neutrophils >1x10^9/L and/or Platelets >75x10^9/L",
+        "drug_name": "Chlorambucil",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "condition": "Chlorambucil: Neutrophils 0.5-1x10^9/L and/or Platelets 50-75x10^9/L",
+        "drug_name": "Chlorambucil",
+        "factor": 1.0,
+        "notes": "Delay treatment one week. If counts recover, restart. If counts take 8-14 days to recover, may restart with 50% dose reduction."
+      },
+      {
+        "condition": "Chlorambucil: Neutrophils <0.5x10^9/L and/or Platelets <50x10^9/L",
+        "drug_name": "Chlorambucil",
+        "factor": 0.5,
+        "notes": "Delay until counts recover, then restart with 50% dose reduction"
+      },
+      {
+        "condition": "Non-haematological NCI-CTC Grade 3 or above toxicity",
+        "drug_name": "Chlorambucil",
+        "factor": 0.75,
+        "notes": "Delay until resolved to grade 2 or below, then reduce to 75% original dose. If toxicity recurs, reduce to 50% or discontinue."
+      },
+      {
+        "condition": "Non-haematological NCI-CTC Grade 3 or above toxicity, recurrence",
+        "drug_name": "Chlorambucil",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose or discontinue as appropriate"
+      },
+      {
+        "condition": "Hepatic impairment - severe",
+        "drug_name": "Chlorambucil",
+        "factor": 1.0,
+        "notes": "Dose reduction should be considered; no specific recommendation. Rituximab does not require dose adjustment."
+      },
+      {
+        "condition": "Renal impairment",
+        "drug_name": "Chlorambucil",
+        "factor": 1.0,
+        "notes": "Dose adjustment not considered necessary; monitor for additional myelosuppression. Rituximab does not require dose adjustment."
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV 30 minutes prior to rituximab",
+      "Hydrocortisone 100mg IV 30 minutes prior to rituximab",
+      "Paracetamol 1000mg oral 30 minutes prior to rituximab",
+      "Allopurinol 300mg once a day oral for 7 days of first cycle only (TLS prophylaxis)",
+      "Gastric protection with proton pump inhibitor or H2 antagonist in patients at high risk of GI ulceration or bleed"
+    ],
+    "special_warnings": [
+      "Non-split rituximab protocol: Cycle 1 375mg/m\u00b2, Cycles 2-6 500mg/m\u00b2; if lymphocyte count >25x10^9/L consider fractionating to 125mg/m\u00b2 Day 1 and 375mg/m\u00b2 Day 2",
+      "Cycle 7 onwards (cycles 7-12): chlorambucil only; should only be considered for patients demonstrating continuing response",
+      "Cytokine release syndrome (CRS) risk with rituximab; frequently occurs within 1-2 hours of first infusion",
+      "Progressive Multifocal Leukoencephalopathy (PML) risk with rituximab; monitor for neurological symptoms",
+      "Anaphylaxis/hypersensitivity reactions possible",
+      "Hepatitis B status must be checked prior to starting rituximab",
+      "NPSA/2008/RRR001 oral chemotherapy safety alert must be followed for chlorambucil",
+      "Chlorambucil is a short course that is repeated; must be prescribed under consultant haematologist supervision",
+      "Rituximab infusion reactions: have hydrocortisone 100mg IV, salbutamol 2.5mg nebule, and consider pethidine 25-50mg IV bolus available"
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "lymphocyte_count",
+      "hepatitis_B_status",
+      "body_surface_area"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "CLL-CHLORAMBUCIL-14D",
+    "protocol_name": "CLL - Chlorambucil (14 day)",
+    "disease_site": "CLL",
+    "category": "haematology",
+    "cycle_length_days": 28,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Chlorambucil",
+        "dose": 10.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "10mg once daily days 1-14 inclusive. 28 day cycle until disease progression or intolerance (12 cycles set in ARIA). Swallow whole on empty stomach 1 hour before meals or 3 hours after. Do not crush or dissolve. Available as 2mg film-coated tablets. NPSA/2008/RRR001 oral chemotherapy safety alert applies. Prescribed under consultant haematologist supervision only. Several versions of this protocol exist - confirm correct version."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils >1x10^9/L and/or Platelets >75x10^9/L",
+        "drug_name": "Chlorambucil",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "condition": "Neutrophils 0.5-1x10^9/L and/or Platelets 50-75x10^9/L",
+        "drug_name": "Chlorambucil",
+        "factor": 1.0,
+        "notes": "Delay treatment one week. If counts recover, restart. If counts take 8-14 days to recover, may restart with 50% dose reduction."
+      },
+      {
+        "condition": "Neutrophils <0.5x10^9/L and/or Platelets <50x10^9/L",
+        "drug_name": "Chlorambucil",
+        "factor": 0.5,
+        "notes": "Delay until counts recovered, then restart with 50% dose reduction"
+      },
+      {
+        "condition": "Hepatic impairment - severe",
+        "drug_name": "Chlorambucil",
+        "factor": 1.0,
+        "notes": "Dose reduction should be considered in severe hepatic impairment; insufficient data for specific recommendation. Monitor closely."
+      },
+      {
+        "condition": "Renal impairment",
+        "drug_name": "Chlorambucil",
+        "factor": 1.0,
+        "notes": "Dose adjustment not considered necessary; monitor for additional myelosuppression"
+      }
+    ],
+    "pre_medications": [
+      "Allopurinol 300mg once a day oral for 7 days (Cycle 1 only, TLS prophylaxis)"
+    ],
+    "special_warnings": [
+      "Several versions of this protocol exist with different doses or cycle lengths - verify correct version is used",
+      "NPSA/2008/RRR001 oral chemotherapy safety alert must be followed for chlorambucil",
+      "Chlorambucil is a short course that is repeated; must only be prescribed under consultant haematologist supervision",
+      "Continuous 10mg daily dosing for 14 days per 28-day cycle",
+      "Consider blood transfusion if patient symptomatic of anaemia or haemoglobin <8g/dL (80g/L)"
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "CLL-CHLORAMBUCIL-2D-OBINUTUZUMAB-6C",
+    "protocol_name": "CLL - Chlorambucil (2 day) - Obinutuzumab (6 cycles)",
+    "disease_site": "CLL",
+    "category": "haematology",
+    "cycle_length_days": 28,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Chlorambucil",
+        "dose": 0.5,
+        "dose_unit": "mg/kg",
+        "route": "Oral",
+        "days": [
+          1,
+          15
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "0.5mg/kg on Days 1 and 15 of each cycle (all cycles). Swallow whole on empty stomach 1 hour before meals or 3 hours after. Do not crush or dissolve. Available as 2mg film-coated tablets. NPSA/2008/RRR001 oral chemotherapy safety alert applies. Short course repeated under consultant haematologist supervision only."
+      },
+      {
+        "drug_name": "Obinutuzumab",
+        "dose": 100.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 4.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 Day 1 only: 100mg in 100ml sodium chloride 0.9% at rate of 25mg/hour (over 240 minutes). Do not increase the rate. If completed without interruption, 900mg dose may follow on same day."
+      },
+      {
+        "drug_name": "Obinutuzumab",
+        "dose": 900.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          2
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 Day 2 (or Day 1 continued): 900mg in 250ml sodium chloride 0.9%; start at 50mg/hour, escalate in increments of 50mg/hour every 30 minutes to maximum 400mg/hour. Dose reductions of obinutuzumab are NOT permitted."
+      },
+      {
+        "drug_name": "Obinutuzumab",
+        "dose": 1000.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          8,
+          15
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 Days 8 and 15: 1000mg in 250ml sodium chloride 0.9%; start at 100mg/hour, increase by 100mg/hour every 30 minutes to maximum 400mg/hour. Dose reductions NOT permitted. | CYCLE 1 DAYS 8 AND 15 (1000mg): multiple Obinutuzumab entries exist \u2014 100mg day 1 (split-dose initiation), 900mg day 2 (remainder of cycle 1 loading), 1000mg days 8 and 15 (cycle 1 continuation), and 1000mg day 1 cycles 2-6 (maintenance). All entries are intentional."
+      },
+      {
+        "drug_name": "Obinutuzumab",
+        "dose": 1000.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 2-6 Day 1: 1000mg in 250ml sodium chloride 0.9%; start at 100mg/hour, increase by 100mg/hour every 30 minutes to maximum 400mg/hour. Dose reductions NOT permitted. | CYCLES 2-6 DAY 1 (1000mg): multiple Obinutuzumab entries exist \u2014 100mg day 1 (split-dose initiation), 900mg day 2 (remainder of cycle 1 loading), 1000mg days 8 and 15 (cycle 1 continuation), and 1000mg day 1 cycles 2-6 (maintenance). All entries are intentional."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Grade 3-4 haematological toxicity, febrile neutropenia or thrombocytopenic bleeding delaying treatment by less than 4 weeks: Obinutuzumab",
+        "drug_name": "Obinutuzumab",
+        "factor": 1.0,
+        "notes": "Hold until neutrophil >=1x10^9/L and platelets >=100x10^9/L, then restart at usual dose. Dose reductions NOT permitted."
+      },
+      {
+        "condition": "Grade 3-4 haematological toxicity, 1st episode: Chlorambucil",
+        "drug_name": "Chlorambucil",
+        "factor": 0.75,
+        "notes": "Hold until above parameters met; upon recovery restart at 75% of previous dose"
+      },
+      {
+        "condition": "Grade 3-4 haematological toxicity, 2nd episode: Chlorambucil",
+        "drug_name": "Chlorambucil",
+        "factor": 0.5,
+        "notes": "Upon recovery restart at 50% of previous dose"
+      },
+      {
+        "condition": "Grade 3-4 haematological toxicity, 3rd episode: Chlorambucil",
+        "drug_name": "Chlorambucil",
+        "factor": 0.0,
+        "notes": "Discontinue chlorambucil"
+      },
+      {
+        "condition": "Grade 3-4 haematological toxicity delaying treatment by more than 4 weeks",
+        "drug_name": "Obinutuzumab",
+        "factor": 0.0,
+        "notes": "Discontinue"
+      },
+      {
+        "condition": "Grade 3-4 haematological toxicity delaying treatment by more than 4 weeks",
+        "drug_name": "Chlorambucil",
+        "factor": 0.0,
+        "notes": "Discontinue"
+      },
+      {
+        "condition": "Grade 2-3 related organ/non-haematological toxicity",
+        "drug_name": "Obinutuzumab",
+        "factor": 1.0,
+        "notes": "Hold until less than or equal to grade 1"
+      },
+      {
+        "condition": "Grade 2-3 related organ/non-haematological toxicity",
+        "drug_name": "Chlorambucil",
+        "factor": 1.0,
+        "notes": "Hold until less than or equal to grade 1"
+      },
+      {
+        "condition": "Grade 2 non-haematological toxicity delaying treatment by more than 4 weeks",
+        "drug_name": "Obinutuzumab",
+        "factor": 0.0,
+        "notes": "Discontinue"
+      },
+      {
+        "condition": "Grade 2 non-haematological toxicity delaying treatment by more than 4 weeks",
+        "drug_name": "Chlorambucil",
+        "factor": 0.0,
+        "notes": "Discontinue"
+      },
+      {
+        "condition": "Grade 4 organ/non-haematological toxicity or severe cardiovascular events",
+        "drug_name": "Obinutuzumab",
+        "factor": 0.0,
+        "notes": "Discontinue"
+      },
+      {
+        "condition": "Grade 4 organ/non-haematological toxicity or severe cardiovascular events",
+        "drug_name": "Chlorambucil",
+        "factor": 0.0,
+        "notes": "Discontinue"
+      },
+      {
+        "condition": "Viral hepatitis or other serious infections; reactivation of hepatitis B",
+        "drug_name": "Obinutuzumab",
+        "factor": 0.0,
+        "notes": "Discontinue"
+      },
+      {
+        "condition": "Viral hepatitis or other serious infections; reactivation of hepatitis B",
+        "drug_name": "Chlorambucil",
+        "factor": 0.0,
+        "notes": "Discontinue"
+      },
+      {
+        "condition": "Obinutuzumab infusion reaction Grade 1-2",
+        "drug_name": "Obinutuzumab",
+        "factor": 0.5,
+        "notes": "Reduce rate by half; treat symptoms; restart once resolved; escalate as tolerated"
+      },
+      {
+        "condition": "Obinutuzumab infusion reaction 1st episode Grade 3",
+        "drug_name": "Obinutuzumab",
+        "factor": 1.0,
+        "notes": "Hold; restart at no more than half previous rate once resolved. Day 1 cycle 1 rate may be increased up to 25mg/hr after 60 minutes but not further."
+      },
+      {
+        "condition": "Obinutuzumab infusion reaction 2nd episode Grade 3 or Grade 4",
+        "drug_name": "Obinutuzumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue"
+      },
+      {
+        "condition": "Mild to moderate renal impairment",
+        "drug_name": "Chlorambucil",
+        "factor": 1.0,
+        "notes": "Dose adjustment not considered necessary; monitor carefully"
+      },
+      {
+        "condition": "Mild to moderate renal impairment",
+        "drug_name": "Obinutuzumab",
+        "factor": 1.0,
+        "notes": "Dose adjustment not considered necessary"
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Chlorambucil",
+        "factor": 1.0,
+        "notes": "Consider reduction in severe impairment; no specific data available"
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Obinutuzumab",
+        "factor": 1.0,
+        "notes": "Safety and efficacy not established"
+      }
+    ],
+    "pre_medications": [
+      "Sodium chloride 0.9% 500ml IV infusion over 60 minutes prior to obinutuzumab (all obinutuzumab infusion days)",
+      "Methylprednisolone sodium succinate 80mg IV 60 minutes prior to obinutuzumab (Cycle 1 Days 1 and 2; and Day 8/15/subsequent cycles if grade 3 prior reaction or lymphocyte count >25x10^9/L)",
+      "Chlorphenamine 10mg IV 60 minutes prior to obinutuzumab (Cycle 1 Days 1 and 2; and Days 8/15/subsequent cycles if grade 1-2 prior infusion reaction or lymphocyte count >25x10^9/L)",
+      "Paracetamol 1000mg oral 60 minutes prior to obinutuzumab (all obinutuzumab infusion days)",
+      "Metoclopramide 10mg three times a day when required (antiemetic)",
+      "Allopurinol 300mg oral starting 2 days prior to Day 1 Cycle 1 for 7 days (TLS prophylaxis; not in ARIA); rasburicase for high risk patients",
+      "Aciclovir 400mg twice a day oral (at consultant discretion)"
+    ],
+    "special_warnings": [
+      "Obinutuzumab dose reductions are NOT permitted",
+      "Obinutuzumab complex split first-dose in Cycle 1: 100mg Day 1 then 900mg Day 2; then 1000mg Days 8 and 15",
+      "Chlorambucil given on Days 1 and 15 only (2-day dosing); distinguish carefully from 14-day chlorambucil protocol",
+      "Infusion related reactions particularly likely during Cycle 1; anaphylaxis reported - permanently discontinue if hypersensitivity suspected",
+      "Progressive Multifocal Leukoencephalopathy (PML) reported with obinutuzumab",
+      "Tumour Lysis Syndrome (TLS) risk; high risk patients require TLS prophylaxis 12-24 hours prior to infusion",
+      "Hepatitis B reactivation risk; screen before starting treatment",
+      "Withhold antihypertensive treatments 12 hours prior to and during obinutuzumab infusion and for 1 hour after",
+      "NPSA/2008/RRR001 oral chemotherapy safety alert must be followed for chlorambucil",
+      "At start of each cycle: neutrophil count >=1x10^9/L and platelets >=100x10^9/L required"
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "weight_kg",
+      "hepatitis_B_status",
+      "creatinine_clearance",
+      "uric_acid"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "CLL-CHLORAMBUCIL-7D-RITUXIMAB-SPLIT",
+    "protocol_name": "CLL - Chlorambucil (7 day) - Rituximab (Split)",
+    "disease_site": "CLL",
+    "category": "haematology",
+    "cycle_length_days": 28,
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Chlorambucil",
+        "dose": 10.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "10mg/m\u00b2 once daily days 1-7 inclusive all cycles (including cycles 7-12 which are chlorambucil only). Swallow whole on empty stomach 1 hour before meals or 3 hours after. Do not crush or dissolve. 2mg film-coated tablets; dose rounded to nearest 2mg (up if halfway). NPSA/2008/RRR001 oral chemotherapy safety alert applies."
+      },
+      {
+        "drug_name": "Rituximab",
+        "dose": 100.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 Day 1 only (split dose fraction 1): 100mg in 50ml sodium chloride 0.9% over 120 minutes. Split dosing indicated where lymphocyte count >25x10^9/L."
+      },
+      {
+        "drug_name": "Rituximab",
+        "dose": 325.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          2
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 Day 2 (split dose fraction 2): 325mg/m\u00b2 in 500ml sodium chloride 0.9%; start at 50mg/hour, increase by 50mg/hour every 30 minutes to maximum 400mg/hour. Dose rounded to nearest 100mg (up if halfway) for doses >=325mg/m\u00b2; national dose bands (10mg/ml) for 50-125mg/m\u00b2 doses."
+      },
+      {
+        "drug_name": "Rituximab",
+        "dose": 500.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 2-6 Day 1: 500mg/m\u00b2 in 500ml sodium chloride 0.9% per local rituximab infusion guidelines. If lymphocyte count >25x10^9/L, fractionate: Day 1 rituximab 125mg/m\u00b2 in 100ml, Day 2 rituximab 375mg/m\u00b2 in 500ml. Cycles 7-12: chlorambucil only. [VERIFIED: Rituximab 500mg/m\u00b2 from cycle 2 onwards in CLL is standard per MHRA SmPC and NICE TA174 \u2014 higher than lymphoma dosing of 375mg/m\u00b2]"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Chlorambucil: Neutrophils >1x10^9/L and/or Platelets >75x10^9/L",
+        "drug_name": "Chlorambucil",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "condition": "Chlorambucil: Neutrophils 0.5-1x10^9/L and/or Platelets 50-75x10^9/L",
+        "drug_name": "Chlorambucil",
+        "factor": 1.0,
+        "notes": "Delay treatment one week. If counts recover, restart. If counts take 8-14 days to recover, may restart with 50% dose reduction."
+      },
+      {
+        "condition": "Chlorambucil: Neutrophils <0.5x10^9/L and/or Platelets <50x10^9/L",
+        "drug_name": "Chlorambucil",
+        "factor": 0.5,
+        "notes": "Delay until counts recovered, then restart with 50% dose reduction"
+      },
+      {
+        "condition": "Non-haematological NCI-CTC Grade 3 or above toxicity",
+        "drug_name": "Chlorambucil",
+        "factor": 0.75,
+        "notes": "Delay until resolved to grade 2 or below, then reduce to 75% of original dose. If toxicity recurs, reduce to 50% or discontinue."
+      },
+      {
+        "condition": "Non-haematological NCI-CTC Grade 3 or above toxicity, recurrence",
+        "drug_name": "Chlorambucil",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose or discontinue as appropriate"
+      },
+      {
+        "condition": "Hepatic impairment - severe",
+        "drug_name": "Chlorambucil",
+        "factor": 1.0,
+        "notes": "Dose reduction should be considered; no specific recommendation. Rituximab does not require dose adjustment."
+      },
+      {
+        "condition": "Renal impairment",
+        "drug_name": "Chlorambucil",
+        "factor": 1.0,
+        "notes": "Dose adjustment not considered necessary; monitor for additional myelosuppression. Rituximab does not require dose adjustment."
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV 30 minutes prior to rituximab",
+      "Hydrocortisone 100mg IV 30 minutes prior to rituximab",
+      "Paracetamol 1000mg oral 30 minutes prior to rituximab",
+      "Allopurinol 300mg once a day oral for 7 days of first cycle only (TLS prophylaxis; set in ARIA)",
+      "Gastric protection with proton pump inhibitor or H2 antagonist in patients at high risk of GI ulceration or bleed"
+    ],
+    "special_warnings": [
+      "7-day chlorambucil dosing (days 1-7); dose expressed as mg/m\u00b2 - distinguish from 14-day flat-dose protocols",
+      "Split dose rituximab indicated where lymphocyte count >25x10^9/L: Cycle 1 Day 1 100mg flat, Cycle 1 Day 2 325mg/m\u00b2; Cycles 2-6 500mg/m\u00b2 (with option to split if still >25x10^9/L)",
+      "Cycle 7 onwards (cycles 7-12): chlorambucil only; for patients demonstrating continuing response",
+      "Cytokine release syndrome (CRS) risk with rituximab; frequently occurs within 1-2 hours of first infusion",
+      "Progressive Multifocal Leukoencephalopathy (PML) risk",
+      "Anaphylaxis/hypersensitivity reactions possible with rituximab",
+      "Hepatitis B status must be checked prior to starting rituximab",
+      "NPSA/2008/RRR001 oral chemotherapy safety alert must be followed for chlorambucil",
+      "Chlorambucil must be prescribed under consultant haematologist supervision",
+      "Rituximab infusion reactions: have hydrocortisone 100mg IV, salbutamol 2.5mg nebule, consider pethidine 25-50mg IV available"
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "lymphocyte_count",
+      "hepatitis_B_status",
+      "body_surface_area"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "CLL-CHLORAMBUCIL-7D-RITUXIMAB",
+    "protocol_name": "CLL - Chlorambucil (7 day) - Rituximab",
+    "disease_site": "CLL",
+    "category": "haematology",
+    "cycle_length_days": 28,
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Chlorambucil",
+        "dose": 10.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "10mg/m\u00b2 once daily days 1-7 inclusive all cycles (including cycles 7-12 which are chlorambucil only). Swallow whole on empty stomach 1 hour before meals or 3 hours after. Do not crush or dissolve. 2mg film-coated tablets; dose rounded to nearest 2mg (up if halfway). NPSA/2008/RRR001 oral chemotherapy safety alert applies."
+      },
+      {
+        "drug_name": "Rituximab",
+        "dose": 375.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 Day 1: 375mg/m\u00b2 in 500ml sodium chloride 0.9%; start at 50mg/hour, increasing by 50mg/hour every 30 minutes to maximum 400mg/hour. Dose rounded to nearest 100mg (up if halfway) for doses >=325mg/m\u00b2; national dose bands (10mg/ml) for 50-125mg/m\u00b2. | CYCLE 1 DOSE (375mg/m\u00b2): two Rituximab entries exist \u2014 375mg/m\u00b2 for cycle 1 only and 500mg/m\u00b2 for cycles 2-6. Both are intentional and represent different cycle doses."
+      },
+      {
+        "drug_name": "Rituximab",
+        "dose": 500.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 2-6 Day 1: 500mg/m\u00b2 in 500ml sodium chloride 0.9% per local rituximab infusion guidelines. Cycles 7-12: chlorambucil only. If lymphocyte >25x10^9/L consider fractionating: Day 1 125mg/m\u00b2 in 100ml, Day 2 375mg/m\u00b2 in 500ml. [VERIFIED: Rituximab 500mg/m\u00b2 from cycle 2 onwards in CLL is standard per MHRA SmPC and NICE TA174 \u2014 higher than lymphoma dosing of 375mg/m\u00b2] | CYCLES 2-6 DOSE (500mg/m\u00b2): two Rituximab entries exist \u2014 375mg/m\u00b2 for cycle 1 only and 500mg/m\u00b2 for cycles 2-6. Both are intentional and represent different cycle doses."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Chlorambucil: Neutrophils >1x10^9/L and/or Platelets >75x10^9/L",
+        "drug_name": "Chlorambucil",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "condition": "Chlorambucil: Neutrophils 0.5-1x10^9/L and/or Platelets 50-75x10^9/L",
+        "drug_name": "Chlorambucil",
+        "factor": 1.0,
+        "notes": "Delay treatment one week. If counts recover, restart. If counts take 8-14 days to recover, may restart with 50% dose reduction."
+      },
+      {
+        "condition": "Chlorambucil: Neutrophils <0.5x10^9/L and/or Platelets <50x10^9/L",
+        "drug_name": "Chlorambucil",
+        "factor": 0.5,
+        "notes": "Delay until counts recovered, then restart with 50% dose reduction"
+      },
+      {
+        "condition": "Non-haematological NCI-CTC Grade 3 or above toxicity",
+        "drug_name": "Chlorambucil",
+        "factor": 0.75,
+        "notes": "Delay until resolved to grade 2 or below, then reduce to 75% of original dose. If toxicity recurs, reduce to 50% or discontinue."
+      },
+      {
+        "condition": "Non-haematological NCI-CTC Grade 3 or above toxicity, recurrence",
+        "drug_name": "Chlorambucil",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose or discontinue as appropriate"
+      },
+      {
+        "condition": "Hepatic impairment - severe",
+        "drug_name": "Chlorambucil",
+        "factor": 1.0,
+        "notes": "Dose reduction should be considered; no specific recommendation. Rituximab does not require dose adjustment."
+      },
+      {
+        "condition": "Renal impairment",
+        "drug_name": "Chlorambucil",
+        "factor": 1.0,
+        "notes": "Dose adjustment not considered necessary; monitor for additional myelosuppression. Rituximab does not require dose adjustment."
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV 30 minutes prior to rituximab",
+      "Hydrocortisone 100mg IV 30 minutes prior to rituximab",
+      "Paracetamol 1000mg oral 30 minutes prior to rituximab",
+      "Allopurinol 300mg once a day oral for 7 days of first cycle only (TLS prophylaxis; set in ARIA)",
+      "Gastric protection with proton pump inhibitor or H2 antagonist in patients at high risk of GI ulceration or bleed"
+    ],
+    "special_warnings": [
+      "7-day chlorambucil dosing (days 1-7); dose expressed as mg/m\u00b2 - distinguish from 14-day flat-dose protocols",
+      "Non-split rituximab protocol: Cycle 1 375mg/m\u00b2, Cycles 2-6 500mg/m\u00b2; if lymphocyte count >25x10^9/L consider fractionating",
+      "Cycle 7 onwards (cycles 7-12): chlorambucil only; for patients demonstrating continuing response",
+      "Cytokine release syndrome (CRS) risk with rituximab; frequently occurs within 1-2 hours of first infusion",
+      "Progressive Multifocal Leukoencephalopathy (PML) risk with rituximab",
+      "Anaphylaxis/hypersensitivity reactions possible with rituximab",
+      "Hepatitis B status must be checked prior to starting rituximab",
+      "NPSA/2008/RRR001 oral chemotherapy safety alert must be followed for chlorambucil",
+      "Chlorambucil must be prescribed under consultant haematologist supervision",
+      "Rituximab infusion reactions: have hydrocortisone 100mg IV, salbutamol 2.5mg nebule, consider pethidine 25-50mg IV available"
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "lymphocyte_count",
+      "hepatitis_B_status",
+      "body_surface_area"
+    ],
+    "auc_dosing": null
+  }
+]

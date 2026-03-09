@@ -1,0 +1,1026 @@
+[
+  {
+    "protocol_code": "NSCLC-PEMBROLIZUMAB-200MG",
+    "protocol_name": "NSCLC – Pembrolizumab (200mg) Q3W",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 21,
+    "number_of_cycles": 35,
+    "drugs": [
+      {
+        "drug_name": "Pembrolizumab",
+        "dose": 200.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Administer in 100ml sodium chloride 0.9% over 30 minutes using a low protein binding 0.2 micron filter. Dose banding not applicable — flat dose."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Hepatitis AST/ALT 3-5x ULN and/or total bilirubin 1.5-3x ULN",
+        "drug_name": "Pembrolizumab",
+        "factor": 1.0,
+        "notes": "Withhold treatment and administer corticosteroids. Resume when LFTs at NCI-CTC grade 1 following corticosteroid taper."
+      },
+      {
+        "condition": "Hepatitis AST/ALT ≥5x ULN or bilirubin >3x ULN, or AST/ALT ≥50% increase lasting ≥1 week in patients with liver metastases with grade 2 elevation at baseline",
+        "drug_name": "Pembrolizumab",
+        "factor": 0,
+        "notes": "Permanently discontinue pembrolizumab."
+      },
+      {
+        "condition": "NCI-CTC grade 2 nephritis",
+        "drug_name": "Pembrolizumab",
+        "factor": 1.0,
+        "notes": "Withhold and administer corticosteroids. Resume when nephritis at grade 1 or below following corticosteroid taper."
+      },
+      {
+        "condition": "NCI-CTC grade 3 or above nephritis",
+        "drug_name": "Pembrolizumab",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "condition": "NCI-CTC grade 2-3 colitis",
+        "drug_name": "Pembrolizumab",
+        "factor": 1.0,
+        "notes": "Withhold and administer corticosteroids. Resume when colitis at grade 1 following taper."
+      },
+      {
+        "condition": "NCI-CTC grade 3 or above colitis failing to improve to grade 1 within 12 weeks",
+        "drug_name": "Pembrolizumab",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "condition": "NCI-CTC grade 2 pneumonitis",
+        "drug_name": "Pembrolizumab",
+        "factor": 1.0,
+        "notes": "Withhold. Treat with corticosteroids 1-2mg/kg/day prednisone. Resume if event improves to grade 0-1 within 12 weeks and steroids reduced to ≤10mg prednisolone/day."
+      },
+      {
+        "condition": "NCI-CTC grade 3 or 4 pneumonitis, or second episode of pneumonitis",
+        "drug_name": "Pembrolizumab",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "condition": "NCI-CTC grade 3 skin reaction",
+        "drug_name": "Pembrolizumab",
+        "factor": 1.0,
+        "notes": "Withhold and consider dermatology referral. Treat with systemic corticosteroids prednisolone 1mg/kg/day. Resume when grade 1 or below."
+      },
+      {
+        "condition": "NCI-CTC grade 4 adverse reaction or any grade 3-4 infusion related reaction",
+        "drug_name": "Pembrolizumab",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "condition": "Treatment interruption of 12 weeks or longer",
+        "drug_name": "Pembrolizumab",
+        "factor": 0,
+        "notes": "Current funding approval precludes further treatment after interruption of 12 weeks or longer."
+      }
+    ],
+    "pre_medications": [
+      "No routine antiemetics required",
+      "Chlorphenamine 10mg IV when required for infusion related reactions",
+      "Hydrocortisone 100mg IV when required for infusion related reactions",
+      "Paracetamol 1000mg oral when required for infusion related reactions (max 4g/24h, minimum 4h between doses)"
+    ],
+    "special_warnings": [
+      "Dose reductions are NOT permitted for pembrolizumab — treatment is withheld or permanently discontinued.",
+      "PD-L1 tumour proportion score (TPS) ≥50% required; confirmed by approved validated test.",
+      "No prior anti-PD-1, anti-PD-L2, anti-CD137 or anti-CTLA-4 therapy (unless via pembrolizumab EAMS programme).",
+      "No active brain or leptomeningeal metastases.",
+      "Maximum treatment duration 2 years (35 cycles at Q3W).",
+      "Atypical immune responses observed — continue in clinically stable patients with initial evidence of progression until confirmed.",
+      "Systemic corticosteroids should be avoided before starting treatment due to potential interference with pharmacodynamic activity. Corticosteroids may be used after starting to treat immune-related adverse reactions.",
+      "FBC, LFTs and U&Es prior to each cycle. Thyroid function tests prior to starting and before each cycle.",
+      "Immune-related adverse reactions can involve GI, liver, skin, nervous, endocrine or other organ systems — onset may be months after last dose.",
+      "Pembrolizumab — extravasation classification: neutral. Use low protein binding filter."
+    ],
+    "required_patient_fields": [
+      "pd_l1_status",
+      "egfr_alk_status",
+      "performance_status",
+      "thyroid_function"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "NSCLC-PEMBROLIZUMAB-400MG",
+    "protocol_name": "NSCLC – Pembrolizumab (400mg) Q6W",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 42,
+    "number_of_cycles": 18,
+    "drugs": [
+      {
+        "drug_name": "Pembrolizumab",
+        "dose": 400.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Administer in 100ml sodium chloride 0.9% over 30 minutes using a low protein binding 0.2 micron filter."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Hepatitis AST/ALT 3-5x ULN and/or total bilirubin 1.5-3x ULN",
+        "drug_name": "Pembrolizumab",
+        "factor": 1.0,
+        "notes": "Withhold treatment and administer corticosteroids. Resume when LFTs at NCI-CTC grade 1 following corticosteroid taper."
+      },
+      {
+        "condition": "Hepatitis AST/ALT ≥5x ULN or bilirubin >3x ULN, or AST/ALT ≥50% increase lasting ≥1 week in patients with liver metastases with grade 2 elevation at baseline",
+        "drug_name": "Pembrolizumab",
+        "factor": 0,
+        "notes": "Permanently discontinue pembrolizumab."
+      },
+      {
+        "condition": "NCI-CTC grade 2 nephritis",
+        "drug_name": "Pembrolizumab",
+        "factor": 1.0,
+        "notes": "Withhold and administer corticosteroids. Resume when nephritis at grade 1 or below."
+      },
+      {
+        "condition": "NCI-CTC grade 3 or above nephritis",
+        "drug_name": "Pembrolizumab",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "condition": "NCI-CTC grade 2-3 colitis",
+        "drug_name": "Pembrolizumab",
+        "factor": 1.0,
+        "notes": "Withhold and administer corticosteroids. Resume when colitis at grade 1 following taper."
+      },
+      {
+        "condition": "NCI-CTC grade 3 or above colitis failing to improve to grade 1 within 12 weeks",
+        "drug_name": "Pembrolizumab",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "condition": "NCI-CTC grade 2 pneumonitis",
+        "drug_name": "Pembrolizumab",
+        "factor": 1.0,
+        "notes": "Withhold. Treat with systemic corticosteroids 1-2mg/kg/day prednisone. Resume if event improves to grade 0-1 within 12 weeks and steroids ≤10mg prednisolone/day."
+      },
+      {
+        "condition": "NCI-CTC grade 3 or 4 pneumonitis, or second episode of pneumonitis",
+        "drug_name": "Pembrolizumab",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "condition": "NCI-CTC grade 3 skin reaction",
+        "drug_name": "Pembrolizumab",
+        "factor": 1.0,
+        "notes": "Withhold; consider dermatology referral. Treat with systemic corticosteroids prednisolone 1mg/kg/day. Resume when grade 1 or below."
+      },
+      {
+        "condition": "NCI-CTC grade 4 adverse reaction or any grade 3-4 infusion related reaction",
+        "drug_name": "Pembrolizumab",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "condition": "Treatment interruption of 12 weeks or longer",
+        "drug_name": "Pembrolizumab",
+        "factor": 0,
+        "notes": "Current funding approval precludes further treatment after interruption of 12 weeks or longer."
+      }
+    ],
+    "pre_medications": [
+      "No routine antiemetics required",
+      "Chlorphenamine 10mg IV when required for infusion related reactions",
+      "Hydrocortisone 100mg IV when required for infusion related reactions",
+      "Paracetamol 1000mg oral when required for infusion related reactions (max 4g/24h, minimum 4h between doses)"
+    ],
+    "special_warnings": [
+      "Dose reductions are NOT permitted for pembrolizumab — treatment is withheld or permanently discontinued.",
+      "PD-L1 tumour proportion score (TPS) ≥50% required; confirmed by approved validated test.",
+      "No prior anti-PD-1, anti-PD-L2, anti-CD137 or anti-CTLA-4 therapy (unless via pembrolizumab EAMS programme).",
+      "No active brain or leptomeningeal metastases.",
+      "Maximum treatment duration 2 years (18 cycles at Q6W / 42-day cycle).",
+      "Atypical immune responses observed — continue in clinically stable patients with initial evidence of progression until confirmed.",
+      "Systemic corticosteroids should be avoided before starting treatment. Corticosteroids may be used after starting to treat immune-related adverse reactions.",
+      "FBC, LFTs and U&Es prior to each cycle. Thyroid function tests prior to starting and before each cycle.",
+      "Immune-related adverse reactions can involve GI, liver, skin, nervous, endocrine or other organ systems — onset may be months after last dose.",
+      "Pembrolizumab — extravasation classification: neutral. Use low protein binding filter."
+    ],
+    "required_patient_fields": [
+      "pd_l1_status",
+      "egfr_alk_status",
+      "performance_status",
+      "thyroid_function"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "NSCLC-PEMBROLIZUMAB-2MGKG",
+    "protocol_name": "NSCLC – Pembrolizumab (2mg/kg) Q3W",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 21,
+    "number_of_cycles": 35,
+    "drugs": [
+      {
+        "drug_name": "Pembrolizumab",
+        "dose": 2.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Administer in 50ml sodium chloride 0.9% over 30 minutes using a low protein binding 0.2 micron filter. Dose banded as per agreed bands."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Hepatitis AST/ALT 3-5x ULN and/or total bilirubin 1.5-3x ULN",
+        "drug_name": "Pembrolizumab",
+        "factor": 1.0,
+        "notes": "Withhold treatment and administer corticosteroids. Resume when LFTs at NCI-CTC grade 1 following corticosteroid taper."
+      },
+      {
+        "condition": "Hepatitis AST/ALT ≥5x ULN or bilirubin >3x ULN, or AST/ALT ≥50% increase lasting ≥1 week in patients with liver metastases with grade 2 elevation at baseline",
+        "drug_name": "Pembrolizumab",
+        "factor": 0,
+        "notes": "Permanently discontinue pembrolizumab."
+      },
+      {
+        "condition": "NCI-CTC grade 2 nephritis",
+        "drug_name": "Pembrolizumab",
+        "factor": 1.0,
+        "notes": "Withhold and administer corticosteroids. Resume when nephritis at grade 1 or below."
+      },
+      {
+        "condition": "NCI-CTC grade 3 or above nephritis",
+        "drug_name": "Pembrolizumab",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "condition": "NCI-CTC grade 2-3 colitis",
+        "drug_name": "Pembrolizumab",
+        "factor": 1.0,
+        "notes": "Withhold and administer corticosteroids. Resume when colitis at grade 1 following taper."
+      },
+      {
+        "condition": "NCI-CTC grade 3 or above colitis failing to improve to grade 1 within 12 weeks",
+        "drug_name": "Pembrolizumab",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "condition": "NCI-CTC grade 2 pneumonitis",
+        "drug_name": "Pembrolizumab",
+        "factor": 1.0,
+        "notes": "Withhold. Treat with systemic corticosteroids 1-2mg/kg/day. Resume if event improves to grade 0-1 within 12 weeks and steroids ≤10mg prednisolone/day."
+      },
+      {
+        "condition": "NCI-CTC grade 3 or 4 pneumonitis, or second episode of pneumonitis",
+        "drug_name": "Pembrolizumab",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "condition": "NCI-CTC grade 3 skin reaction",
+        "drug_name": "Pembrolizumab",
+        "factor": 1.0,
+        "notes": "Withhold; consider dermatology referral. Treat with systemic corticosteroids prednisolone 1mg/kg/day. Resume when grade 1 or below."
+      },
+      {
+        "condition": "NCI-CTC grade 4 adverse reaction or any grade 3-4 infusion related reaction",
+        "drug_name": "Pembrolizumab",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "condition": "Treatment interruption of 12 weeks or longer",
+        "drug_name": "Pembrolizumab",
+        "factor": 0,
+        "notes": "Current funding approval precludes further treatment after interruption of 12 weeks or longer."
+      }
+    ],
+    "pre_medications": [
+      "No routine antiemetics required",
+      "Chlorphenamine 10mg IV when required for infusion related reactions",
+      "Hydrocortisone 100mg IV when required for infusion related reactions",
+      "Paracetamol 1000mg oral when required for infusion related reactions"
+    ],
+    "special_warnings": [
+      "Dose reductions are NOT permitted for pembrolizumab — treatment is withheld or permanently discontinued.",
+      "Indication: previously treated locally advanced or metastatic PD-L1-positive NSCLC; at least one prior chemotherapy (and targeted treatment if EGFR/ALK-positive tumour).",
+      "Stopped at 2 years of uninterrupted treatment if no documented disease progression.",
+      "WHO performance status 0 or 1.",
+      "FBC, LFTs and U&Es prior to each cycle. Thyroid function tests prior to starting and before each cycle.",
+      "Immune-related adverse reactions can involve GI, liver, skin, nervous, endocrine or other organ systems — onset may be months after last dose.",
+      "Systemic corticosteroids should be avoided before starting treatment. Corticosteroids may be used after starting to treat immune-related adverse reactions.",
+      "Pembrolizumab — extravasation classification: neutral. Use low protein binding filter."
+    ],
+    "required_patient_fields": [
+      "pd_l1_status",
+      "egfr_alk_status",
+      "performance_status",
+      "thyroid_function"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "NSCLC-PEMETREXED-MAINTENANCE",
+    "protocol_name": "NSCLC – Pemetrexed (Maintenance)",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 21,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Pemetrexed",
+        "dose": 500.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Administer in 100ml sodium chloride 0.9% over 10 minutes. Dose banded as per CSCCN agreed bands. Pemetrexed is an inflammitant — extravasation precautions required. Drain pleural or peritoneal effusions prior to administration where possible."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1.5x10⁹/L at start of subsequent cycle",
+        "drug_name": "Pemetrexed",
+        "factor": 1.0,
+        "notes": "Delay treatment for 7 days. If counts recover, continue at initial dose. If counts still low, reduce to 80% of original dose."
+      },
+      {
+        "condition": "Neutrophils <1.5x10⁹/L despite 80% dose reduction",
+        "drug_name": "Pemetrexed",
+        "factor": 0,
+        "notes": "Stop treatment if myelosuppression recurs despite dose reduction."
+      },
+      {
+        "condition": "Platelets <100x10⁹/L at start of subsequent cycle",
+        "drug_name": "Pemetrexed",
+        "factor": 1.0,
+        "notes": "Delay treatment for 7 days. If counts recover, continue at initial dose. If counts still low, reduce to 80% of original dose."
+      },
+      {
+        "condition": "Platelet count <50x10⁹/L",
+        "drug_name": "Pemetrexed",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose. If platelet count remains <50x10⁹/L despite dose reductions, consider stopping therapy."
+      },
+      {
+        "condition": "Renal impairment CrCl <45ml/min",
+        "drug_name": "Pemetrexed",
+        "factor": 0,
+        "notes": "Do not administer if CrCl <45ml/min."
+      },
+      {
+        "condition": "Hepatic: total bilirubin >1.5x ULN or transaminases >3x ULN (>5x ULN if liver metastases)",
+        "drug_name": "Pemetrexed",
+        "factor": 0,
+        "notes": "Do not administer. Pemetrexed requires bilirubin ≤1.5x ULN and ALT/AST/AP ≤3x ULN (or ≤5x ULN with liver tumour involvement)."
+      }
+    ],
+    "pre_medications": [
+      "Folic acid 5mg once daily oral — start 1-2 weeks prior to first pemetrexed dose and continue for 3 weeks after the last dose (continuous throughout treatment)",
+      "Hydroxocobalamin (vitamin B12) 1mg intramuscular injection every 3 months — start 1-2 weeks prior to first pemetrexed dose (prescribed separately, not in ARIA)",
+      "Dexamethasone 4mg twice daily oral — start the day before chemotherapy (day -1), continue on day 1 and day 2 (3 days total). If forgotten pre-treatment, administer dexamethasone 20mg IV 15-30 minutes before chemotherapy.",
+      "Metoclopramide 10mg oral or IV 15-30 minutes prior to chemotherapy",
+      "Metoclopramide 10mg three times daily when required oral (take-home)"
+    ],
+    "special_warnings": [
+      "POST-INDUCTION MAINTENANCE ONLY — for non-squamous NSCLC that has not progressed immediately following platinum-based chemotherapy with gemcitabine, paclitaxel or docetaxel.",
+      "Patients who received pemetrexed+cisplatin as first-line cannot receive pemetrexed maintenance.",
+      "Mandatory folic acid supplementation (5mg daily oral) and vitamin B12 (hydroxocobalamin 1mg IM every 3 months) must be in place before first dose and continued throughout treatment.",
+      "CrCl must be ≥45ml/min — do not administer if below this threshold.",
+      "Consideration should be given to draining pleural or peritoneal effusions prior to administration.",
+      "Palliative intent. WHO performance status 0 or 1.",
+      "FBC, LFTs and U&Es prior to each cycle. Chest x-ray prior to each cycle.",
+      "Baseline cross-sectional imaging required prior to starting treatment.",
+      "Prophylactic antibiotics may be considered if required.",
+      "NPSA oral chemotherapy alert does not apply — IV administration only."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "performance_status",
+      "histology_non_squamous",
+      "prior_platinum_regimen"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "NSCLC-SOTORASIB",
+    "protocol_name": "NSCLC – Sotorasib (KRAS G12C)",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 28,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Sotorasib",
+        "dose": 960.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": 960.0,
+        "max_dose_unit": "mg",
+        "notes": "960mg (8 x 120mg tablets) once daily continuously. Swallow whole with water at the same time each day, with or without food. If dose missed and <6 hours since scheduled time, take as normal. If >6 hours, omit and continue next day. If vomiting occurs, do not take additional dose. Available as 120mg tablets. NPSA/2008/RRR001 oral chemotherapy alert applies."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "First dose reduction required",
+        "drug_name": "Sotorasib",
+        "factor": 0.5,
+        "notes": "Reduce to 480mg once daily."
+      },
+      {
+        "condition": "Second dose reduction required",
+        "drug_name": "Sotorasib",
+        "factor": 0.25,
+        "notes": "Reduce to 240mg once daily."
+      },
+      {
+        "condition": "Hepatic: AST/ALT grade 3 or above AND bilirubin ≥2x ULN",
+        "drug_name": "Sotorasib",
+        "factor": 0,
+        "notes": "Permanently discontinue sotorasib."
+      },
+      {
+        "condition": "Hepatic: AST/ALT grade 2 with symptoms or grade 3 or greater (without bilirubin ≥2x ULN)",
+        "drug_name": "Sotorasib",
+        "factor": 1.0,
+        "notes": "Interrupt treatment until recovered to grade 1 or below, then resume at next dose reduction level."
+      },
+      {
+        "condition": "NCI-CTC grade 3 or above diarrhoea despite supportive care",
+        "drug_name": "Sotorasib",
+        "factor": 1.0,
+        "notes": "Stop treatment until diarrhoea resolves to grade 1 or below/baseline, then resume at next dose reduction level."
+      },
+      {
+        "condition": "NCI-CTC grade 3 hypertension (SBP ≥160 or DBP ≥100)",
+        "drug_name": "Sotorasib",
+        "factor": 1.0,
+        "notes": "Stop treatment. Resume when recovered to ≤grade 1. Resume at next dose reduction level. If grade 4 hypertension recurs, permanently discontinue."
+      },
+      {
+        "condition": "NCI-CTC grade 4 hypertension",
+        "drug_name": "Sotorasib",
+        "factor": 0,
+        "notes": "Permanently discontinue if recurrent grade 4 hypertension."
+      },
+      {
+        "condition": "Proteinuria grade 3-4 or urinary protein ≥3.5g/24 hours",
+        "drug_name": "Sotorasib",
+        "factor": 1.0,
+        "notes": "Stop treatment until recovered to grade 1 or baseline."
+      },
+      {
+        "condition": "ILD/pneumonitis (suspected)",
+        "drug_name": "Sotorasib",
+        "factor": 1.0,
+        "notes": "Immediately withhold and contact clinical lead. Permanently discontinue if no other potential causes identified."
+      },
+      {
+        "condition": "NCI-CTC grade 3 or above nausea or vomiting despite supportive care",
+        "drug_name": "Sotorasib",
+        "factor": 1.0,
+        "notes": "Stop treatment until recovered to grade 1 or less, then resume at next dose reduction level."
+      },
+      {
+        "condition": "Renal impairment CrCl <60ml/min",
+        "drug_name": "Sotorasib",
+        "factor": 1.0,
+        "notes": "Sotorasib not studied in moderate or severe renal impairment (CrCl <60ml/min). Use with caution."
+      }
+    ],
+    "pre_medications": [
+      "Metoclopramide 10mg oral up to three times daily when required for nausea and vomiting (take-home, supply 28 x 10mg tablets cycle 1 only)",
+      "Loperamide 4mg after first loose stool, then 2mg after each subsequent loose stool, maximum 16mg in 24 hours (take-home, cycle 1 only)"
+    ],
+    "special_warnings": [
+      "KRAS G12C mutation MUST be confirmed by validated assay on tumour tissue biopsy or plasma specimen (liquid biopsy) prior to treatment.",
+      "Patient must have had prior platinum doublet chemotherapy and/or PD-1/PD-L1 immunotherapy.",
+      "No prior KRAS G12C-targeted therapy (unless via company early access scheme).",
+      "NPSA/2008/RRR001 National Patient Safety Alert on oral chemotherapy must be followed.",
+      "Sotorasib must only be prescribed under the supervision of a consultant oncologist.",
+      "Significant drug interactions: avoid strong CYP3A4 inducers. Co-administration of PPIs and H2 antagonists not recommended — if required, take sotorasib 4 hours before and 10 hours after acid-reducing agent.",
+      "ILD/pneumonitis risk increased in patients previously treated with immunotherapy or radiotherapy — monitor for new or worsening pulmonary symptoms.",
+      "FBC, U&Es, LFTs at baseline and every 2 weeks for first 6 weeks, then prior to day 1 of each cycle.",
+      "Formal medical review before start of second month and by end of second month of therapy.",
+      "ECOG performance status 0, 1 or 2."
+    ],
+    "required_patient_fields": [
+      "kras_g12c_mutation",
+      "performance_status",
+      "creatinine_clearance",
+      "prior_chemotherapy",
+      "liver_function"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "SCLC-TARLATAMAB-EAMS",
+    "protocol_name": "SCLC – Tarlatamab (EAMS) – DLL3xCD3 Bispecific T-cell Engager",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 28,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Tarlatamab",
+        "dose": 1.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "CYCLE 1 DAY 1 ONLY — 1mg step-up dose. Reconstitute and dilute in 250ml sodium chloride 0.9%. Administer over 1 hour at constant flow rate using infusion pump. Monitor patient from start of infusion for 24 hours in appropriate healthcare setting. Patient must remain within 1-hour of healthcare setting for 48 hours from start of infusion with caregiver."
+      },
+      {
+        "drug_name": "Tarlatamab",
+        "dose": 10.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          8,
+          15
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "CYCLE 1 DAYS 8 AND 15 — 10mg dose. Day 8: monitor for 24 hours in healthcare setting; remain within 1 hour for 48 hours with caregiver. Day 15: observe for 6-8 hours post infusion. From Cycle 2 Day 1 and Day 15 (every 2 weeks): 10mg each dose. Observation post-infusion: Cycle 2 = 6-8h; Cycles 3-4 = 3-4h; Cycle 5 onwards = 2h (unless prior Grade ≥2 CRS/ICANS). Available as 1mg and 10mg lyophilised powder single-dose vials."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "No dose reductions recommended for tarlatamab",
+        "drug_name": "Tarlatamab",
+        "factor": 1.0,
+        "notes": "No dose reductions are recommended. Treatment is withheld or permanently discontinued based on toxicity."
+      },
+      {
+        "condition": "Neutrophils <1.0x10⁹/L or febrile neutropenia",
+        "drug_name": "Tarlatamab",
+        "factor": 1.0,
+        "notes": "Withhold until neutrophil count improves to ≥1.0x10⁹/L and fever resolves. Consider G-CSF. Permanently discontinue if recovery does not occur within 3 weeks."
+      },
+      {
+        "condition": "Recurrent grade 4 neutropenia (<0.5x10⁹/L)",
+        "drug_name": "Tarlatamab",
+        "factor": 0,
+        "notes": "Permanently discontinue tarlatamab."
+      },
+      {
+        "condition": "Platelets <50x10⁹/L",
+        "drug_name": "Tarlatamab",
+        "factor": 1.0,
+        "notes": "Withhold until platelet count improves to ≥50x10⁹/L with no evidence of bleeding. Permanently discontinue if recovery does not occur within 3 weeks."
+      },
+      {
+        "condition": "Recurrent grade 4 thrombocytopenia (<25x10⁹/L)",
+        "drug_name": "Tarlatamab",
+        "factor": 0,
+        "notes": "Permanently discontinue tarlatamab."
+      },
+      {
+        "condition": "Haemoglobin <8 g/dL",
+        "drug_name": "Tarlatamab",
+        "factor": 1.0,
+        "notes": "Withhold until haemoglobin ≥8 g/dL."
+      },
+      {
+        "condition": "Hepatic: grade 3 ALT/AST (5.0-20x ULN) or grade 3 bilirubin (3.0-10x ULN)",
+        "drug_name": "Tarlatamab",
+        "factor": 1.0,
+        "notes": "Withhold tarlatamab until toxicity improves to ≤grade 1."
+      },
+      {
+        "condition": "Hepatic: grade 4 ALT/AST (>20x ULN) or grade 4 bilirubin (>10x ULN) or AST/ALT >3x ULN with total bilirubin >2x ULN in absence of alternative causes",
+        "drug_name": "Tarlatamab",
+        "factor": 0,
+        "notes": "Permanently discontinue tarlatamab."
+      },
+      {
+        "condition": "Renal: CrCl <30mL/min",
+        "drug_name": "Tarlatamab",
+        "factor": 1.0,
+        "notes": "No data available. Use only if benefit outweighs risks."
+      },
+      {
+        "condition": "CRS grade 1 (temperature ≥38°C without hypotension or hypoxia)",
+        "drug_name": "Tarlatamab",
+        "factor": 1.0,
+        "notes": "Withhold until adverse reaction resolves, then resume at next scheduled dose. See CRS management guidelines."
+      },
+      {
+        "condition": "CRS grade 2 or grade 3 (duration <48h)",
+        "drug_name": "Tarlatamab",
+        "factor": 1.0,
+        "notes": "Withhold until adverse reaction resolves, then resume at next scheduled dose. When resuming, monitor for 24 hours in healthcare setting. See CRS management guidelines."
+      },
+      {
+        "condition": "CRS grade 3 (recurrent or duration >48h)",
+        "drug_name": "Tarlatamab",
+        "factor": 0,
+        "notes": "For recurrent grade 3 CRS, permanently discontinue tarlatamab."
+      },
+      {
+        "condition": "CRS grade 4",
+        "drug_name": "Tarlatamab",
+        "factor": 0,
+        "notes": "Permanently discontinue tarlatamab."
+      },
+      {
+        "condition": "ICANS grade 1 or 2",
+        "drug_name": "Tarlatamab",
+        "factor": 1.0,
+        "notes": "Withhold until adverse reaction resolves, then resume at next scheduled dose. Grade 2: monitor for 24 hours when resuming."
+      },
+      {
+        "condition": "ICANS grade 3 (ICE score 0-2, depressed consciousness, seizures or focal oedema)",
+        "drug_name": "Tarlatamab",
+        "factor": 1.0,
+        "notes": "Withhold until adverse reaction resolves. If no improvement to grade ≤1 within 7 days or recurrent grade 3, permanently discontinue. ICU care may be required. Monitor for 24 hours when resuming."
+      },
+      {
+        "condition": "ICANS grade 4 (unarousable, stupor/coma, life-threatening seizure, diffuse cerebral oedema)",
+        "drug_name": "Tarlatamab",
+        "factor": 0,
+        "notes": "Permanent discontinuation. ICU care. Treat convulsive status epilepticus per local guidelines."
+      },
+      {
+        "condition": "Other adverse reactions grade 3 or 4",
+        "drug_name": "Tarlatamab",
+        "factor": 1.0,
+        "notes": "Withhold until recovery to ≤grade 1 or baseline. Permanently discontinue if no resolution within 28 days, or consider for grade 4 events."
+      },
+      {
+        "condition": "Infection (active, any grade during step-up phase)",
+        "drug_name": "Tarlatamab",
+        "factor": 1.0,
+        "notes": "Withhold tarlatamab in step-up phase until infection resolves."
+      },
+      {
+        "condition": "Infection grade 4",
+        "drug_name": "Tarlatamab",
+        "factor": 0,
+        "notes": "Permanently discontinue tarlatamab."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg IV injection — administer 60 minutes prior to tarlatamab on Cycle 1 Days 1 and 8 (mandatory). Not required for Cycle 1 Day 15 onwards unless resuming step-up dosing or prior CRS/infusion reaction.",
+      "Sodium chloride 0.9% 1000ml IV infusion over 60 minutes — administer immediately after completion of tarlatamab infusion on Cycle 1 Days 1, 8 and 15 (mandatory).",
+      "Tocilizumab 8mg/kg (maximum 800mg) IV 8-hourly if required for CRS — one dose must be available on ward prior to each infusion. Maximum 3 doses. See CRS management guidelines.",
+      "Allopurinol 300mg oral once daily for 28 days (take-home) — for TLS prophylaxis (low-moderate risk patients). High-risk patients: consider rasburicase 3mg IV once prior to first dose followed by allopurinol 300mg daily starting the day after rasburicase.",
+      "Hydrocortisone 100mg IV when required for infusion related hypersensitivity reactions.",
+      "Salbutamol 2.5mg nebule when required for tarlatamab-related bronchospasm."
+    ],
+    "special_warnings": [
+      "CYTOKINE RELEASE SYNDROME (CRS) — severe and life-threatening CRS can occur. Step-up dosing regimen (1mg on Cycle 1 Day 1, then 10mg) is mandatory to mitigate CRS risk. Patients MUST be admitted as inpatients during Cycle 1 Days 1 and 8 (step-up dosing period). Monitor from start of infusion for 24 hours. Refer to hospital CRS management guidelines (Assessment and Management of CRS following CAR-T Therapy).",
+      "ICANS (Immune Effector Cell-Associated Neurotoxicity Syndrome) — severe ICANS can occur. Monitor neurological status. Refer to hospital ICANS management guidelines (Diagnosis and Management of ICANS POST CAR-T Therapy).",
+      "TUMOUR LYSIS SYNDROME (TLS) — risk increased in patients with high tumour burden or rapidly growing tumour. Assess TLS risk prior to each dose increment. Ensure TLS assessment completed before each dose.",
+      "STEP-UP DOSING IS MANDATORY — do not omit the 1mg step-up dose on Cycle 1 Day 1. If dose delayed, refer to re-start protocol (Table 6 in PDF) to determine whether step-up must be repeated.",
+      "This is an UNLICENSED drug in the UK supplied under manufacturer's Expanded Access Management System (EAMS) on a named-patient basis.",
+      "Bispecific T-cell engager (DLL3 x CD3) — mechanism of action differs from conventional chemotherapy and checkpoint inhibitors.",
+      "Hypersensitivity reactions reported, including rare severe events (rash, bronchospasm) — monitor during infusion.",
+      "No dose reductions are recommended for tarlatamab.",
+      "Administer using infusion pump at constant flow rate. Flush IV catheter with sodium chloride 0.9% over 3-5 minutes to ensure patency.",
+      "FBC, U&Es, Ca²⁺ and LFTs at baseline and prior to each dose.",
+      "SCLC — advanced, disease progression on or after platinum-based chemotherapy.",
+      "Treatment agreed at relevant MDT. Written consent required prior to treatment."
+    ],
+    "required_patient_fields": [
+      "performance_status",
+      "tls_risk_assessment",
+      "prior_platinum_chemotherapy",
+      "creatinine_clearance",
+      "liver_function"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "NSCLC-TEPOTINIB",
+    "protocol_name": "NSCLC – Tepotinib (MET Exon 14 Skipping)",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 28,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Tepotinib",
+        "dose": 450.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": 450.0,
+        "max_dose_unit": "mg",
+        "notes": "450mg (2 x 225mg film-coated tablets) once daily, days 1-28 inclusive (continuous). Take with or just after food. Swallow whole — do not crush or chew. If dose missed, can be taken as soon as remembered the same day unless next dose due within 8 hours. NPSA/2008/RRR001 oral chemotherapy alert applies."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1.5x10⁹/L and/or platelets <75x10⁹/L",
+        "drug_name": "Tepotinib",
+        "factor": 1.0,
+        "notes": "Consider withholding tepotinib until recovered and resume at reduced dose."
+      },
+      {
+        "condition": "Neutrophils <1.0x10⁹/L and/or platelets <50x10⁹/L",
+        "drug_name": "Tepotinib",
+        "factor": 1.0,
+        "notes": "Withhold tepotinib until resolved, then resume at reduced dose."
+      },
+      {
+        "condition": "Neutrophils <0.5x10⁹/L and/or platelets <25x10⁹/L",
+        "drug_name": "Tepotinib",
+        "factor": 0,
+        "notes": "Permanently discontinue tepotinib."
+      },
+      {
+        "condition": "Hepatic: increased ALT/AST without increased bilirubin — grade 3",
+        "drug_name": "Tepotinib",
+        "factor": 1.0,
+        "notes": "Withhold until recovery to baseline ALT/AST. If recovered within 7 days, resume at same dose; otherwise resume at reduced dose."
+      },
+      {
+        "condition": "Hepatic: increased ALT/AST without increased bilirubin — grade 4",
+        "drug_name": "Tepotinib",
+        "factor": 0,
+        "notes": "Permanently discontinue tepotinib."
+      },
+      {
+        "condition": "Hepatic: ALT/AST >3x ULN with total bilirubin >2x ULN (absence of cholestasis or haemolysis)",
+        "drug_name": "Tepotinib",
+        "factor": 0,
+        "notes": "Permanently discontinue tepotinib."
+      },
+      {
+        "condition": "Hepatic: increased total bilirubin without concurrent increased ALT/AST — grade 3",
+        "drug_name": "Tepotinib",
+        "factor": 1.0,
+        "notes": "Withhold until recovery to baseline bilirubin. If recovered within 7 days, resume at reduced dose; otherwise permanently discontinue."
+      },
+      {
+        "condition": "Hepatic: increased total bilirubin — grade 4",
+        "drug_name": "Tepotinib",
+        "factor": 0,
+        "notes": "Permanently discontinue tepotinib."
+      },
+      {
+        "condition": "Renal: mild/moderate impairment CrCl 30-89ml/min",
+        "drug_name": "Tepotinib",
+        "factor": 1.0,
+        "notes": "No dose adjustment required for CrCl 30-89ml/min."
+      },
+      {
+        "condition": "Renal: severe impairment CrCl <30ml/min",
+        "drug_name": "Tepotinib",
+        "factor": 1.0,
+        "notes": "No information available for CrCl <30ml/min. Use with extreme caution."
+      },
+      {
+        "condition": "ILD/pneumonitis (any grade, suspected)",
+        "drug_name": "Tepotinib",
+        "factor": 1.0,
+        "notes": "Withhold tepotinib if ILD suspected. Permanently discontinue if ILD confirmed."
+      },
+      {
+        "condition": "ILD/pneumonitis confirmed",
+        "drug_name": "Tepotinib",
+        "factor": 0,
+        "notes": "Permanently discontinue tepotinib."
+      },
+      {
+        "condition": "Other adverse reactions grade 2 (intolerable)",
+        "drug_name": "Tepotinib",
+        "factor": 1.0,
+        "notes": "Maintain dose level. If intolerable, withhold until resolved, then resume at reduced dose."
+      },
+      {
+        "condition": "Other adverse reactions grade 3",
+        "drug_name": "Tepotinib",
+        "factor": 1.0,
+        "notes": "Withhold tepotinib until resolved, then resume at reduced dose."
+      },
+      {
+        "condition": "Other adverse reactions grade 4",
+        "drug_name": "Tepotinib",
+        "factor": 0,
+        "notes": "Permanently discontinue tepotinib."
+      }
+    ],
+    "pre_medications": [
+      "No routine antiemetics or premedications required",
+      "Take tepotinib with or just after food"
+    ],
+    "special_warnings": [
+      "MET EXON 14 SKIPPING ALTERATION must be confirmed by histological/cytological biopsy or liquid biopsy using validated assay prior to treatment.",
+      "Patient must be EGFR wild type AND negative for ALK and ROS1 gene rearrangements.",
+      "PERIPHERAL OEDEMA monitoring is required — oedema is a frequent adverse effect. Monitor weight and fluid balance at each cycle. Dose reduce or withhold as clinically indicated.",
+      "INTERSTITIAL LUNG DISEASE (ILD)/PNEUMONITIS — withhold if suspected, permanently discontinue if confirmed.",
+      "HEPATOTOXICITY — monitor LFTs; dose modification required for elevated transaminases.",
+      "NPSA/2008/RRR001 National Patient Safety Alert on oral chemotherapy must be followed.",
+      "Tepotinib interacts with several medicines including metformin — always check for drug interactions.",
+      "Tepotinib may have a minor influence on ability to drive or use machinery — fatigue and asthenia reported.",
+      "FBC, LFTs and U&Es prior to day one of each cycle.",
+      "ROS1, ALK, EGFR and MET exon 14 skipping alteration must be confirmed before initiating treatment.",
+      "Formal medical review before start of second month and by end of second month of therapy.",
+      "Severe hepatic impairment (Child Pugh C) not studied — use not recommended.",
+      "ECOG performance status 0 or 1."
+    ],
+    "required_patient_fields": [
+      "met_exon14_skipping",
+      "egfr_status",
+      "alk_status",
+      "ros1_status",
+      "performance_status",
+      "creatinine_clearance",
+      "liver_function"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "SCLC-TOPOTECAN-ORAL",
+    "protocol_name": "SCLC – Topotecan (Oral) – Relapsed",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 21,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Topotecan",
+        "dose": 2.3,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "2.3mg/m²/day orally once daily for 5 consecutive days (days 1-5). Doses rounded to nearest 0.25mg capsule (available as 0.25mg and 1mg capsules). Swallow whole, not chewed, with plenty of water. Short course — must not be continued beyond 5 days. Prescribed from secondary care only. NPSA/2008/RRR001 oral chemotherapy alert must be adhered to."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1.0x10⁹/L on day 1 of subsequent cycle",
+        "drug_name": "Topotecan",
+        "factor": 1.0,
+        "notes": "Delay treatment for 7 days. If counts recover, continue at initial dose. If counts remain low or episode of grade 3+ neutropenia, reduce dose to 1.9mg/m²/day."
+      },
+      {
+        "condition": "Recurrent neutropenia at 1.9mg/m²/day",
+        "drug_name": "Topotecan",
+        "factor": 0.65,
+        "notes": "Consider stopping treatment or further reducing to 1.5mg/m²/day. Treatment discontinued in clinical trials if dose needed to be reduced below 1.5mg/m²/day."
+      },
+      {
+        "condition": "Platelets <100x10⁹/L on day 1 of subsequent cycle",
+        "drug_name": "Topotecan",
+        "factor": 1.0,
+        "notes": "Delay treatment for 7 days. If counts recover, continue at initial dose. If counts still low or dropped below 25x10⁹/L, reduce dose to 1.9mg/m²/day."
+      },
+      {
+        "condition": "Recurrent thrombocytopenia at 1.9mg/m²/day",
+        "drug_name": "Topotecan",
+        "factor": 0.65,
+        "notes": "Consider stopping treatment or further reducing to 1.5mg/m²/day."
+      },
+      {
+        "condition": "Grade 3 or 4 diarrhoea",
+        "drug_name": "Topotecan",
+        "factor": 0.83,
+        "notes": "Reduce to 1.9mg/m²/day for subsequent courses. Grade 2 diarrhoea may also require dose modification."
+      },
+      {
+        "condition": "Renal impairment CrCl 30-49ml/min",
+        "drug_name": "Topotecan",
+        "factor": 0.83,
+        "notes": "Reduce starting dose to 1.9mg/m²/day for 5 days. If well tolerated, dose may be increased to 2.3mg/m²/day in subsequent cycles."
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Topotecan",
+        "factor": 1.0,
+        "notes": "Limited information available — seek specialist guidance."
+      }
+    ],
+    "pre_medications": [
+      "Metoclopramide 10mg oral three times daily for 5 days (antiemetic — moderate emetogenicity)",
+      "Loperamide 4mg oral after first loose stool, then 2-4mg four times daily when required for diarrhoea (maximum 16mg per 24 hours)"
+    ],
+    "special_warnings": [
+      "NPSA/2008/RRR001 National Patient Safety Alert on oral chemotherapy MUST be adhered to — this is a short course (5 days only) that MUST NOT be continued beyond day 5.",
+      "Prescribed from secondary care only. Community staff must be made aware this is a short fixed-course treatment.",
+      "HAEMATOLOGICAL TOXICITY — significant myelosuppression expected. FBC, LFTs and U&Es prior to each cycle. Neutrophils ≥1.5x10⁹/L and platelets ≥100x10⁹/L required before cycle 1.",
+      "TUMOUR LYSIS SYNDROME (TLS) — SCLC can be highly chemosensitive. Allopurinol should be prescribed for at-risk patients, starting the day before chemotherapy and continuing while significant chemosensitive tumour bulk remains (normally one cycle).",
+      "Indication: relapsed SCLC where re-treatment with first-line therapy is not appropriate AND CAV (cyclophosphamide, doxorubicin, vincristine) is contra-indicated.",
+      "Palliative intent. WHO performance status 0, 1 or 2.",
+      "Doses are rounded to nearest 0.25mg capsule; alternate day dosing schedule may be used to facilitate correct dose.",
+      "Growth factors may be considered according to local policy.",
+      "Baseline chest x-ray and cross-sectional imaging required before starting treatment. Chest x-ray before each cycle.",
+      "Renal dose reduction required for CrCl 30-49ml/min (reduce starting dose to 1.9mg/m²/day).",
+      "Topotecan was discontinued in clinical trials if dose needed to be reduced below 1.5mg/m²/day."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "performance_status",
+      "prior_first_line_sclc_regimen",
+      "cav_contraindication_confirmed"
+    ],
+    "auc_dosing": null
+  }
+]

@@ -124,12 +124,26 @@ export function ProtocolDisplay({ protocol, onBack, onReset }) {
     printWindow.print();
   };
 
-  const formatDose = (drug) => {
-    let doseStr = `${drug.calculated_dose} ${drug.calculated_dose_unit}`;
-    if (drug.banded_dose) {
-      doseStr += ` (banded: ${drug.banded_dose} ${drug.calculated_dose_unit})`;
+  const formatDuration = (minutes) => {
+    if (!minutes) return null;
+    if (minutes < 60) return `${minutes} mins`;
+    const hours = minutes / 60;
+    // Show as hours if < 48h or not a round number of days
+    const days = hours / 24;
+    const isRoundDays = Math.abs(days - Math.round(days)) < 0.05;
+    if (hours < 48 || !isRoundDays) {
+      const h = Math.floor(hours);
+      const m = Math.round((hours - h) * 60);
+      return m > 0 ? `${h} hr ${m} mins` : `${h} hr`;
     }
-    return doseStr;
+    return `${Math.round(days)} days`;
+  };
+
+  const formatDose = (drug) => {
+    if (drug.banded_dose) {
+      return `${drug.banded_dose} ${drug.calculated_dose_unit} (banded; calculated: ${drug.calculated_dose} ${drug.calculated_dose_unit})`;
+    }
+    return `${drug.calculated_dose} ${drug.calculated_dose_unit}`;
   };
 
   const DrugTable = ({ drugs, title }) => {
@@ -157,9 +171,9 @@ export function ProtocolDisplay({ protocol, onBack, onReset }) {
                 </td>
                 <td className={drug.dose_modified ? 'modified' : ''}>
                   {formatDose(drug)}
-                  {drug.dose_modified && (
+                  {drug.dose_modified && drug.modification_percent > 0 && drug.modification_percent < 100 && (
                     <div className="modification-note">
-                      {drug.modification_reason}
+                      ↓{100 - drug.modification_percent}% dose reduction applied
                     </div>
                   )}
                 </td>
@@ -167,7 +181,7 @@ export function ProtocolDisplay({ protocol, onBack, onReset }) {
                 <td>{drug.days?.join(', ')}</td>
                 <td>
                   {drug.duration_minutes && (
-                    <div>Over {drug.duration_minutes} mins</div>
+                    <div>Over {formatDuration(drug.duration_minutes)}</div>
                   )}
                   {drug.diluent && (
                     <div>In {drug.diluent_volume_ml}ml {drug.diluent}</div>

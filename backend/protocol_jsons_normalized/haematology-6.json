@@ -1,0 +1,1117 @@
+[
+  {
+    "protocol_code": "CML-DASATINIB-CHRONIC",
+    "protocol_name": "Dasatinib (Chronic Phase CML)",
+    "disease_site": "CML",
+    "category": "haematology",
+    "cycle_length_days": 28,
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Dasatinib",
+        "dose": 100.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": 140.0,
+        "max_dose_unit": "mg",
+        "notes": "100mg once daily. Dose escalation to 140mg once daily allowed if no haematologic or cytogenetic response at starting dose. Available as 20mg, 50mg, 80mg, 100mg and 140mg tablets. Swallow whole, do not crush or cut. Take consistently at the same time each day with or without food."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <0.5x10^9/L, 1st occurrence (chronic phase)",
+        "drug_name": "Dasatinib",
+        "factor": 1.0,
+        "notes": "Stop until neutrophils >1x10^9/L then resume at original starting dose of 100mg"
+      },
+      {
+        "condition": "Neutrophils <0.5x10^9/L, 2nd occurrence (chronic phase)",
+        "drug_name": "Dasatinib",
+        "factor": 0.8,
+        "notes": "Resume at reduced dose of 80mg once daily"
+      },
+      {
+        "condition": "Neutrophils <0.5x10^9/L, 3rd occurrence, newly diagnosed (chronic phase)",
+        "drug_name": "Dasatinib",
+        "factor": 0.5,
+        "notes": "Resume at reduced dose of 50mg once daily for newly diagnosed patients; discontinue for patients resistant or intolerant to prior therapy"
+      },
+      {
+        "condition": "Platelets <50x10^9/L, 1st occurrence (chronic phase)",
+        "drug_name": "Dasatinib",
+        "factor": 1.0,
+        "notes": "Stop until platelets >=50x10^9/L then resume at original starting dose of 100mg"
+      },
+      {
+        "condition": "Platelets <50x10^9/L, 2nd occurrence with platelets <25x10^9/L and/or neutrophils <0.5 for >7 days (chronic phase)",
+        "drug_name": "Dasatinib",
+        "factor": 0.8,
+        "notes": "Resume at reduced dose of 80mg once daily"
+      },
+      {
+        "condition": "Platelets <50x10^9/L, 3rd occurrence, newly diagnosed (chronic phase)",
+        "drug_name": "Dasatinib",
+        "factor": 0.5,
+        "notes": "Resume at reduced dose of 50mg once daily for newly diagnosed patients; discontinue for patients resistant or intolerant to prior therapy"
+      },
+      {
+        "condition": "Hepatic impairment (mild, moderate or severe)",
+        "drug_name": "Dasatinib",
+        "factor": 1.0,
+        "notes": "May receive starting doses but use with caution, particularly during dose escalation"
+      },
+      {
+        "condition": "Renal impairment (any)",
+        "drug_name": "Dasatinib",
+        "factor": 1.0,
+        "notes": "No dose reduction required; low renal excretion means clearance unlikely to be reduced"
+      },
+      {
+        "condition": "Pleural effusion (any grade)",
+        "drug_name": "Dasatinib",
+        "factor": 1.0,
+        "notes": "Interrupt dasatinib until asymptomatic or returned to baseline. If no improvement within ~1 week consider diuretics or corticosteroids. After 1st episode resume at same dose; after subsequent episode reduce by one dose level; after grade 3/4 reduce dose or switch to alternative TKI"
+      }
+    ],
+    "pre_medications": [],
+    "special_warnings": [
+      "BCR-ABL tyrosine kinase inhibitor — Philadelphia chromosome-positive CML chronic phase",
+      "ECG at baseline for patients with symptoms of cardiac or pulmonary disease risk factors — QTc monitoring required",
+      "Pleural effusion risk: monitor for dyspnoea and fluid accumulation",
+      "Pulmonary arterial hypertension (PAH) risk — monitor respiratory symptoms",
+      "Test all patients for hepatitis B virus (HBV) before initiating; discuss HBV-positive patients with HBV specialist before starting",
+      "FBC weekly for first 2 months then monthly thereafter",
+      "CYP3A4 inhibitor and substrate — check for drug interactions before prescribing concomitant medicines",
+      "NPSA/2008/RRR001 oral chemotherapy alert must be followed",
+      "Must be prescribed under supervision of oncologist/haematologist",
+      "Film-coated tablets must not be crushed or cut — risk of dermal exposure"
+    ],
+    "required_patient_fields": [
+      "bcr_abl_mutation",
+      "ecg_qtc_baseline",
+      "hepatitis_b_status",
+      "fbc",
+      "lft",
+      "u_and_e"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "CML-DASATINIB-ACCELERATED",
+    "protocol_name": "Dasatinib (Accelerated Phase CML)",
+    "disease_site": "CML",
+    "category": "haematology",
+    "cycle_length_days": 28,
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Dasatinib",
+        "dose": 140.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": 180.0,
+        "max_dose_unit": "mg",
+        "notes": "140mg once daily. Dose escalation to 180mg once daily allowed in patients not achieving haematologic or cytogenetic response. Available as 20mg, 50mg, 80mg, 100mg and 140mg tablets. Swallow whole, do not crush or cut. Take consistently at the same time each day with or without food."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <0.5x10^9/L unrelated to leukaemia, 1st occurrence (accelerated phase)",
+        "drug_name": "Dasatinib",
+        "factor": 1.0,
+        "notes": "Check if neutropenia is leukaemia-related (marrow aspirate/biopsy). If unrelated, stop until neutrophils >=1x10^9/L then resume at original starting dose of 140mg"
+      },
+      {
+        "condition": "Neutrophils <0.5x10^9/L unrelated to leukaemia, 2nd occurrence (accelerated phase)",
+        "drug_name": "Dasatinib",
+        "factor": 0.71,
+        "notes": "Resume at reduced dose of 100mg once daily (second episode)"
+      },
+      {
+        "condition": "Neutrophils <0.5x10^9/L unrelated to leukaemia, 3rd occurrence (accelerated phase)",
+        "drug_name": "Dasatinib",
+        "factor": 0.57,
+        "notes": "Resume at reduced dose of 80mg once daily (third episode)"
+      },
+      {
+        "condition": "Neutrophils <0.5x10^9/L leukaemia-related (accelerated phase)",
+        "drug_name": "Dasatinib",
+        "factor": 1.0,
+        "notes": "Consider dose escalation to 180mg once daily if neutropenia is leukaemia-related"
+      },
+      {
+        "condition": "Platelets <10x10^9/L unrelated to leukaemia, 1st occurrence (accelerated phase)",
+        "drug_name": "Dasatinib",
+        "factor": 1.0,
+        "notes": "Check if thrombocytopenia is leukaemia-related. If unrelated, stop until platelets >=20x10^9/L then resume at original starting dose of 140mg"
+      },
+      {
+        "condition": "Platelets <10x10^9/L unrelated to leukaemia, 2nd occurrence (accelerated phase)",
+        "drug_name": "Dasatinib",
+        "factor": 0.71,
+        "notes": "Resume at reduced dose of 100mg once daily"
+      },
+      {
+        "condition": "Platelets <10x10^9/L unrelated to leukaemia, 3rd occurrence (accelerated phase)",
+        "drug_name": "Dasatinib",
+        "factor": 0.57,
+        "notes": "Resume at reduced dose of 80mg once daily"
+      },
+      {
+        "condition": "Platelets <10x10^9/L leukaemia-related (accelerated phase)",
+        "drug_name": "Dasatinib",
+        "factor": 1.0,
+        "notes": "Consider dose escalation to 180mg once daily if thrombocytopenia is leukaemia-related"
+      },
+      {
+        "condition": "Hepatic impairment (mild, moderate or severe)",
+        "drug_name": "Dasatinib",
+        "factor": 1.0,
+        "notes": "May receive starting doses but use with caution, particularly during dose escalation"
+      },
+      {
+        "condition": "Renal impairment (any)",
+        "drug_name": "Dasatinib",
+        "factor": 1.0,
+        "notes": "No dose reduction required; low renal excretion means clearance unlikely to be reduced"
+      },
+      {
+        "condition": "Pleural effusion (any grade)",
+        "drug_name": "Dasatinib",
+        "factor": 1.0,
+        "notes": "Interrupt dasatinib until asymptomatic or returned to baseline. If no improvement within ~1 week consider diuretics or corticosteroids. After 1st episode resume at same dose; after subsequent episode reduce by one dose level; after grade 3/4 reduce dose"
+      }
+    ],
+    "pre_medications": [],
+    "special_warnings": [
+      "BCR-ABL tyrosine kinase inhibitor — Philadelphia chromosome-positive CML accelerated phase",
+      "ECG at baseline for patients with cardiac or pulmonary disease risk factors — QTc monitoring required",
+      "Pleural effusion risk: monitor for dyspnoea and fluid accumulation",
+      "Pulmonary arterial hypertension (PAH) risk — monitor respiratory symptoms",
+      "Haematological toxicity occurs earlier and with increased frequency in accelerated phase CML",
+      "Test all patients for hepatitis B, C and HIV before initiating; discuss HBV-positive patients with HBV specialist",
+      "FBC and LFTs weekly for first 2 months then monthly thereafter",
+      "CYP3A4 inhibitor and substrate — check for drug interactions before prescribing concomitant medicines",
+      "NPSA/2008/RRR001 oral chemotherapy alert must be followed",
+      "Must be prescribed under supervision of a haematologist",
+      "Film-coated tablets must not be crushed or cut — risk of dermal exposure"
+    ],
+    "required_patient_fields": [
+      "bcr_abl_mutation",
+      "ecg_qtc_baseline",
+      "hepatitis_b_status",
+      "hepatitis_c_status",
+      "hiv_status",
+      "fbc",
+      "lft",
+      "u_and_e"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "AML-GILTERITINIB",
+    "protocol_name": "Gilteritinib (Relapsed/Refractory FLT3-mutated AML)",
+    "disease_site": "AML",
+    "category": "haematology",
+    "cycle_length_days": 28,
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Gilteritinib",
+        "dose": 120.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": 200.0,
+        "max_dose_unit": "mg",
+        "notes": "120mg once daily. Dose may be increased to 200mg once daily if no composite complete remission after 4 weeks of treatment. Available as 40mg film-coated tablets. Swallow whole with water, do not break or crush. Take at about the same time each day with or without food. Continue until disease progression, unacceptable toxicity, cure, or HSCT."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Differentiation syndrome — severe signs/symptoms persisting >48 hours after corticosteroids",
+        "drug_name": "Gilteritinib",
+        "factor": 1.0,
+        "notes": "Interrupt gilteritinib. Administer corticosteroids and initiate haemodynamic monitoring at first suspicion. Resume at same dose when signs/symptoms improve to grade 2 or lower"
+      },
+      {
+        "condition": "Posterior reversible encephalopathy syndrome (PRES)",
+        "drug_name": "Gilteritinib",
+        "factor": 0.0,
+        "notes": "Discontinue gilteritinib permanently"
+      },
+      {
+        "condition": "QTcF interval >500 msec",
+        "drug_name": "Gilteritinib",
+        "factor": 0.67,
+        "notes": "Interrupt gilteritinib. Resume at reduced dose (80mg or 120mg) when QTcF returns to within 30 msec of baseline or <=480 msec"
+      },
+      {
+        "condition": "QTcF increased by >30 msec on ECG on Day 8 of Cycle 1",
+        "drug_name": "Gilteritinib",
+        "factor": 0.67,
+        "notes": "Confirm with ECG on day 9. If confirmed, consider dose reduction to 80mg"
+      },
+      {
+        "condition": "Pancreatitis",
+        "drug_name": "Gilteritinib",
+        "factor": 0.67,
+        "notes": "Interrupt gilteritinib until pancreatitis resolved then resume at reduced dose (80mg or 120mg)"
+      },
+      {
+        "condition": "Other grade 3 or higher toxicity related to treatment",
+        "drug_name": "Gilteritinib",
+        "factor": 0.67,
+        "notes": "Interrupt gilteritinib until toxicity resolves or improves to grade 1 then resume at reduced dose (80mg or 120mg)"
+      },
+      {
+        "condition": "Hepatic impairment — mild (Child-Pugh A) or moderate (Child-Pugh B)",
+        "drug_name": "Gilteritinib",
+        "factor": 1.0,
+        "notes": "No dose adjustment required"
+      },
+      {
+        "condition": "Hepatic impairment — severe (Child-Pugh C)",
+        "drug_name": "Gilteritinib",
+        "factor": 1.0,
+        "notes": "Not recommended — safety and efficacy not evaluated in this population"
+      },
+      {
+        "condition": "Renal impairment — mild or moderate",
+        "drug_name": "Gilteritinib",
+        "factor": 1.0,
+        "notes": "No dose adjustment necessary"
+      },
+      {
+        "condition": "Renal impairment — severe",
+        "drug_name": "Gilteritinib",
+        "factor": 1.0,
+        "notes": "No clinical experience; use with caution"
+      },
+      {
+        "condition": "Disease-related haematological abnormality",
+        "drug_name": "Gilteritinib",
+        "factor": 1.0,
+        "notes": "No dose reduction required for disease-related abnormal haematological counts"
+      }
+    ],
+    "pre_medications": [],
+    "special_warnings": [
+      "FLT3 inhibitor — only for patients with confirmed FLT3 mutation (ITD or TKD) by validated test",
+      "Differentiation syndrome risk — monitor closely; administer corticosteroids and haemodynamic monitoring if suspected",
+      "QT prolongation risk — ECG monitoring: baseline, Day 8 and Day 15 of Cycle 1, then prior to each of the next 3 subsequent monthly cycles",
+      "Creatine phosphokinase monitoring: baseline, Cycle 1 Day 15, then monthly",
+      "FBC, U&Es, LFTs (including magnesium) prior to each cycle",
+      "Posterior reversible encephalopathy syndrome (PRES) — discontinue if confirmed",
+      "Pancreatitis risk — interrupt if suspected",
+      "Gilteritinib interacts with azole antifungals — additional toxicity monitoring including ECG required",
+      "Negative pregnancy test required before starting in women of childbearing potential; barrier contraception recommended",
+      "Minor influence on driving and operating machinery — dizziness reported",
+      "Must be prescribed under supervision of consultant haematologist",
+      "NPSA/2008/RRR001 oral chemotherapy alert must be followed",
+      "Not for use with prior FLT3 inhibitor therapy (except sorafenib or midostaurin in 1st line)"
+    ],
+    "required_patient_fields": [
+      "flt3_mutation_status",
+      "ecg_qtc_baseline",
+      "fbc",
+      "u_and_e",
+      "lft",
+      "magnesium",
+      "creatine_phosphokinase",
+      "ecog_performance_status",
+      "pregnancy_test"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "HSCT-GVHD-MTX-T-DEPLETED",
+    "protocol_name": "GvHD Prophylaxis — Methotrexate (T-Depleted Allograft)",
+    "disease_site": "HSCT",
+    "category": "haematology",
+    "cycle_length_days": 14,
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Methotrexate",
+        "dose": 10.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          3
+        ],
+        "infusion_duration_hours": 0.083,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "10mg/m² IV bolus over 5 minutes on Day +3 post-transplant. Dose rounded to nearest 2.5mg (down if halfway). Common doses: 5mg, 7.5mg, 10mg, 12.5mg, 15mg. Administer at 1700hrs. Confirm bilirubin, creatinine and mucositis assessed and dose documented by transplant clinician before each dose. T-depleted allograft: reduced dose schedule (Day +3 only at 10mg/m², Days +6 and +11 at 5mg/m²)."
+      },
+      {
+        "drug_name": "Methotrexate",
+        "dose": 5.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          6,
+          11
+        ],
+        "infusion_duration_hours": 0.083,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "5mg/m² IV bolus over 5 minutes on Days +6 and +11 post-transplant. T-depleted allograft: reduced dose compared to T-replete schedule. Dose rounded to nearest 2.5mg. Administer at 1700hrs."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Serum bilirubin <=35 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "condition": "Serum bilirubin 36-50 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.5,
+        "notes": "50% dose"
+      },
+      {
+        "condition": "Serum bilirubin 51-85 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.25,
+        "notes": "25% dose"
+      },
+      {
+        "condition": "Serum bilirubin >85 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.0,
+        "notes": "Omit dose"
+      },
+      {
+        "condition": "Serum creatinine <=145 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "condition": "Serum creatinine 146-165 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.5,
+        "notes": "50% dose"
+      },
+      {
+        "condition": "Serum creatinine 166-180 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.25,
+        "notes": "25% dose"
+      },
+      {
+        "condition": "Serum creatinine >180 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.0,
+        "notes": "Omit dose"
+      },
+      {
+        "condition": "NCI-CTC grade 3 or more mucositis on Day +11",
+        "drug_name": "Methotrexate",
+        "factor": 0.5,
+        "notes": "Day +11 dose may be reduced or omitted — discuss with transplant clinician"
+      }
+    ],
+    "pre_medications": [
+      "Calcium folinate 30mg IV bolus (precise dose 15mg/m²) every 6 hours for 4 doses starting 24 hours after each methotrexate dose (Days +4, +7, +12)"
+    ],
+    "special_warnings": [
+      "Post-HSCT GvHD prophylaxis — T-depleted allograft schedule with reduced/modified doses vs T-replete",
+      "Restricted to Wessex Blood and Marrow Transplant Unit only",
+      "Check calcium folinate is prescribed before each methotrexate dose",
+      "Assess bilirubin, creatinine and mucositis before each methotrexate dose — transplant clinician must document dose to be given",
+      "Mucositis monitoring: if NCI-CTC grade 3 or more on Day +11, reduce or omit that dose",
+      "Methotrexate is non-vesicant",
+      "Dose rounding to nearest 2.5mg (round down if halfway)"
+    ],
+    "required_patient_fields": [
+      "serum_bilirubin",
+      "serum_creatinine",
+      "mucositis_grade"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "HSCT-GVHD-MTX-T-REPLETE",
+    "protocol_name": "GvHD Prophylaxis — Methotrexate (T-Replete Allograft)",
+    "disease_site": "HSCT",
+    "category": "haematology",
+    "cycle_length_days": 14,
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Methotrexate",
+        "dose": 10.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          3,
+          6,
+          11
+        ],
+        "infusion_duration_hours": 0.083,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "10mg/m² IV bolus over 5 minutes on Days +3, +6, and +11 post-transplant. T-replete allograft: full dose on all three days (compared to T-depleted which uses 5mg/m² on Days +6 and +11). Dose rounded to nearest 2.5mg (down if halfway). Common doses: 5mg, 7.5mg, 10mg, 12.5mg, 15mg. Administer at 1700hrs. Confirm bilirubin, creatinine and mucositis assessed before each dose."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Serum bilirubin <=35 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "condition": "Serum bilirubin 36-50 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.5,
+        "notes": "50% dose"
+      },
+      {
+        "condition": "Serum bilirubin 51-85 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.25,
+        "notes": "25% dose"
+      },
+      {
+        "condition": "Serum bilirubin >85 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.0,
+        "notes": "Omit dose"
+      },
+      {
+        "condition": "Serum creatinine <=145 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "condition": "Serum creatinine 146-165 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.5,
+        "notes": "50% dose"
+      },
+      {
+        "condition": "Serum creatinine 166-180 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.25,
+        "notes": "25% dose"
+      },
+      {
+        "condition": "Serum creatinine >180 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.0,
+        "notes": "Omit dose"
+      },
+      {
+        "condition": "NCI-CTC grade 3 or more mucositis on Day +11",
+        "drug_name": "Methotrexate",
+        "factor": 0.5,
+        "notes": "Day +11 dose may be reduced or omitted — discuss with transplant clinician"
+      }
+    ],
+    "pre_medications": [
+      "Calcium folinate 30mg IV bolus (precise dose 15mg/m²) every 6 hours for 4 doses starting 24 hours after each methotrexate dose (Days +4, +7, +12)"
+    ],
+    "special_warnings": [
+      "Post-HSCT GvHD prophylaxis — T-replete allograft schedule: 10mg/m² on all three days (+3, +6, +11)",
+      "Restricted to Wessex Blood and Marrow Transplant Unit only",
+      "Check calcium folinate is prescribed before each methotrexate dose",
+      "Assess bilirubin, creatinine and mucositis before each methotrexate dose — transplant clinician must document dose to be given",
+      "Mucositis monitoring: if NCI-CTC grade 3 or more on Day +11, reduce or omit that dose",
+      "Methotrexate is non-vesicant",
+      "Dose rounding to nearest 2.5mg (round down if halfway)"
+    ],
+    "required_patient_fields": [
+      "serum_bilirubin",
+      "serum_creatinine",
+      "mucositis_grade"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "HSCT-AMB-MELPHALAN-BORTEZOMIB-SC",
+    "protocol_name": "HSCT Ambulatory Conditioning — Melphalan + Bortezomib SC (Multiple Myeloma)",
+    "disease_site": "HSCT",
+    "category": "haematology",
+    "cycle_length_days": 7,
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Melphalan",
+        "dose": 200.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          -1
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "200mg/m² in 500ml sodium chloride 0.9% over 30 minutes on Day -1. Dose rounded down to nearest 10mg. Short 90-minute expiry — must be made locally for individual patient. Administer at 1130hrs. For CrCl 30-50ml/min reduce to 140mg/m²; CrCl <30ml/min not recommended (clinical decision required)."
+      },
+      {
+        "drug_name": "Bortezomib",
+        "dose": 1.3,
+        "dose_unit": "mg/m²",
+        "route": "Subcutaneous",
+        "days": [
+          -1,
+          5
+        ],
+        "infusion_duration_hours": 0.0014,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "1.3mg/m² subcutaneous injection over 5 seconds. Day -1 dose to be given 8 hours after melphalan infusion. Day +5 second dose. Dose banded per national dose banding table (2.5). For neuropathy grade 1 with pain or grade 2: reduce to 1mg/m²."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Melphalan: CrCl >50ml/min",
+        "drug_name": "Melphalan",
+        "factor": 1.0,
+        "notes": "Full dose 200mg/m²"
+      },
+      {
+        "condition": "Melphalan: CrCl 30-50ml/min",
+        "drug_name": "Melphalan",
+        "factor": 0.7,
+        "notes": "Reduce dose to 140mg/m²"
+      },
+      {
+        "condition": "Melphalan: CrCl <30ml/min",
+        "drug_name": "Melphalan",
+        "factor": 0.0,
+        "notes": "High dose melphalan not recommended — clinical decision required"
+      },
+      {
+        "condition": "Melphalan: hepatic impairment (any grade)",
+        "drug_name": "Melphalan",
+        "factor": 1.0,
+        "notes": "No information available; no dose changes recommended"
+      },
+      {
+        "condition": "Bortezomib: bilirubin <=1.5xULN",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "condition": "Bortezomib: bilirubin >1.5xULN",
+        "drug_name": "Bortezomib",
+        "factor": 0.54,
+        "notes": "Consider initiating at 0.7mg/m²"
+      },
+      {
+        "condition": "Bortezomib: CrCl >20ml/min",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "condition": "Bortezomib: CrCl <=20ml/min",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Clinical decision required"
+      },
+      {
+        "condition": "Bortezomib: NCI-CTC grade 1 neuropathy without pain or loss of function",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Continue at full dose"
+      },
+      {
+        "condition": "Bortezomib: NCI-CTC grade 1 with pain or grade 2 neuropathy",
+        "drug_name": "Bortezomib",
+        "factor": 0.77,
+        "notes": "Reduce dose to 1mg/m²"
+      },
+      {
+        "condition": "Disease relapse signs",
+        "drug_name": "Melphalan",
+        "factor": 1.0,
+        "notes": "Confirm with transplant consultant before proceeding"
+      }
+    ],
+    "pre_medications": [
+      "Aprepitant 125mg oral once on Day -1 prior to melphalan; then 80mg oral once daily for 2 days (Day 0 and Day +1)",
+      "Dexamethasone 4mg oral each morning on same days as aprepitant (Day -1, Day 0, Day +1)",
+      "Ondansetron 8mg oral or IV twice daily for 10 days starting Day -1 evening then review",
+      "Metoclopramide 10mg oral or IV three times daily until nausea subsides",
+      "Furosemide 20mg IV bolus at 0930hrs on Day -1 (repeat at 1030hrs if urine output <500ml since 0900hrs)",
+      "IV hydration: sodium chloride 0.9% with potassium chloride 27mmol 1000ml evening before melphalan",
+      "IV hydration: 1000ml sodium chloride 0.9% over 90 minutes at 1000hrs on Day -1",
+      "IV hydration: 1000ml sodium chloride 0.9% over 120 minutes at 1200hrs (post-melphalan)",
+      "Chlorphenamine 10mg IV bolus pre stem cell infusion (Day 0)",
+      "Paracetamol 1000mg oral pre stem cell infusion (Day 0)",
+      "Ciprofloxacin 250mg oral twice daily from Day +5 whilst neutropenic",
+      "Fluconazole 100mg oral once daily from admission until neutropenia recovery",
+      "Aciclovir 400mg oral two to three times daily from admission continuing after discharge",
+      "G-CSF (filgrastim 30MU SC once daily from Day +7 or lenograstim 33.6MU SC once daily from Day +5) until neutrophils >0.5",
+      "Proton pump inhibitor gastric protection throughout admission",
+      "Nystatin 1ml oral four times daily until count recovery",
+      "Sodium chloride 0.9% oral rinse 10ml four times daily until count recovery"
+    ],
+    "special_warnings": [
+      "High-dose melphalan HSCT conditioning — ambulatory setting with bortezomib SC",
+      "Restricted to units carrying out autograft transplantation",
+      "Melphalan has a 90-minute expiry — must be made locally; adhere strictly to 1130hrs administration time",
+      "Pre-hydration and post-hydration mandatory with furosemide-guided urine output assessment before melphalan",
+      "Urine output must exceed 500ml since 0900hrs before melphalan infusion can proceed; if not achieved re-challenge with furosemide and reassess at 1100hrs",
+      "Bortezomib Day -1 must be given 8 hours after melphalan infusion",
+      "GFR measurement (Nuclear Medicine or creatinine clearance calculation) required prior to Day 1",
+      "FBC, LFTs, U&Es, bone profile, CRP, LDH, serum immunoglobulins and electrophoresis, serum free light chains prior to treatment",
+      "Confirm with transplant consultant if signs of disease relapse before proceeding",
+      "Peripheral neuropathy monitoring for bortezomib — dose reduce to 1mg/m² for grade 1 with pain or grade 2"
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "gfr_measurement",
+      "fbc",
+      "lft",
+      "u_and_e",
+      "bone_profile",
+      "serum_immunoglobulins",
+      "serum_free_light_chains"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "HSCT-AMB-MELPHALAN-200",
+    "protocol_name": "HSCT Ambulatory Conditioning — High-Dose Melphalan 200mg/m² (Multiple Myeloma)",
+    "disease_site": "HSCT",
+    "category": "haematology",
+    "cycle_length_days": 2,
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Melphalan",
+        "dose": 200.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          -1
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "200mg/m² in 500ml sodium chloride 0.9% over 30 minutes on Day -1 at 1130hrs. Dose rounded down to nearest 10mg. 90-minute expiry — must be made locally. For CrCl 30-50ml/min: clinical decision (dose reduction considered); CrCl <30ml/min: reduce to 140mg/m². No dose change for hepatic impairment."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Melphalan: CrCl >50ml/min",
+        "drug_name": "Melphalan",
+        "factor": 1.0,
+        "notes": "Full dose 200mg/m²"
+      },
+      {
+        "condition": "Melphalan: CrCl 30-50ml/min",
+        "drug_name": "Melphalan",
+        "factor": 1.0,
+        "notes": "Clinical decision"
+      },
+      {
+        "condition": "Melphalan: CrCl <30ml/min",
+        "drug_name": "Melphalan",
+        "factor": 0.7,
+        "notes": "Reduce to 140mg/m²"
+      },
+      {
+        "condition": "Melphalan: hepatic impairment (any grade)",
+        "drug_name": "Melphalan",
+        "factor": 1.0,
+        "notes": "No information available; no dose changes recommended"
+      },
+      {
+        "condition": "Disease relapse signs",
+        "drug_name": "Melphalan",
+        "factor": 1.0,
+        "notes": "Confirm with transplant consultant before proceeding"
+      }
+    ],
+    "pre_medications": [
+      "Aprepitant 125mg oral once on Day -1 prior to melphalan; then 80mg oral once daily for 2 days afterwards",
+      "Dexamethasone 4mg oral each morning on same days as aprepitant",
+      "Ondansetron 8mg oral or IV twice daily for 10 days then review",
+      "Metoclopramide 10mg oral or IV three times daily until nausea subsides",
+      "Furosemide 20mg IV bolus at 0930hrs on Day -1 (repeat if urine output <500ml since 0900hrs)",
+      "IV hydration: sodium chloride 0.9% with potassium chloride 27mmol 1000ml evening before melphalan (completed by 0930 day of infusion)",
+      "IV hydration: 1000ml sodium chloride 0.9% over 90 minutes at 1000hrs on Day -1",
+      "IV hydration: 1000ml sodium chloride 0.9% over 120 minutes at 1200hrs (post-melphalan)",
+      "Chlorphenamine 10mg IV bolus pre stem cell infusion (Day 0)",
+      "Paracetamol 1000mg oral pre stem cell infusion (Day 0)",
+      "Ciprofloxacin 250mg oral twice daily from Day +5 whilst neutropenic",
+      "Fluconazole 100mg oral once daily from admission until neutropenia recovery",
+      "Aciclovir 400mg oral two to three times daily from admission continuing after discharge",
+      "G-CSF (filgrastim 30MU SC once daily from Day +7 or lenograstim 33.6MU SC once daily from Day +5) until neutrophils >0.5",
+      "Proton pump inhibitor gastric protection throughout admission",
+      "Levomepromazine 6.25mg oral four times daily for rescue nausea on advice from medical team",
+      "Nystatin 1ml oral four times daily until count recovery",
+      "Sodium chloride 0.9% oral rinse 10ml four times daily until count recovery"
+    ],
+    "special_warnings": [
+      "High-dose melphalan HSCT conditioning — ambulatory setting, single agent melphalan 200mg/m²",
+      "Restricted to units carrying out autograft transplantation",
+      "Melphalan has a 90-minute expiry — must be made locally; adhere strictly to 1130hrs administration time",
+      "Pre-hydration and post-hydration mandatory with furosemide-guided urine output assessment",
+      "Urine output must exceed 500ml since 0900hrs before proceeding with melphalan; re-challenge with furosemide if <500ml; contact prescriber if still <500ml at 1100hrs",
+      "GFR measurement (Nuclear Medicine or creatinine clearance) required prior to Day 1",
+      "FBC, LFTs, U&Es, bone profile, CRP, LDH, serum immunoglobulins and electrophoresis, serum free light chains prior to treatment",
+      "Confirm with transplant consultant if signs of disease relapse",
+      "Melphalan is non-vesicant"
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "gfr_measurement",
+      "fbc",
+      "lft",
+      "u_and_e",
+      "bone_profile",
+      "serum_immunoglobulins",
+      "serum_free_light_chains"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "HSCT-ALEMTUZUMAB-BUSULFAN10-FLUDARABINE-VUD-MTX-GVHD",
+    "protocol_name": "HSCT Conditioning — Alemtuzumab + Busulfan (10 doses) + Fludarabine + Methotrexate GvHD Prophylaxis (VUD)",
+    "disease_site": "HSCT",
+    "category": "haematology",
+    "cycle_length_days": 20,
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Alemtuzumab",
+        "dose": 10.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          -8
+        ],
+        "infusion_duration_hours": 6.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "10mg in 100ml sodium chloride 0.9% over 6 to 8 hours on Day -8 (test/initial dose). Premedication with chlorphenamine 10mg IV and paracetamol 1000mg oral 15-30 minutes before. If rigors occur, slow infusion and administer pethidine 12.5-25mg IV under doctor supervision. Non-vesicant."
+      },
+      {
+        "drug_name": "Alemtuzumab",
+        "dose": 20.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          -7,
+          -6
+        ],
+        "infusion_duration_hours": 6.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "20mg in 100ml sodium chloride 0.9% over 6 to 8 hours on Days -7 and -6. Total alemtuzumab 50mg (10mg + 20mg + 20mg) over 3 days. Premedication with chlorphenamine 10mg IV and paracetamol 1000mg oral 15-30 minutes before each dose. Non-vesicant."
+      },
+      {
+        "drug_name": "Busulfan",
+        "dose": 0.8,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          -8,
+          -7,
+          -6
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "0.8mg/kg every 6 hours for 10 doses total. Diluted to 0.5mg/ml in sodium chloride 0.9%, infused over 2 hours. Schedule: Day -8 at 1000hrs, 1600hrs, 2200hrs (3 doses); Day -7 at 0400hrs, 1000hrs, 1600hrs, 2200hrs (4 doses); Day -6 at 0400hrs, 1000hrs, 1600hrs (3 doses — finishing at 1600hrs Day -6). Dose rounded to nearest 3mg (down if halfway) due to 15-hour expiry and high toxicity. Obese patients: dose based on adjusted ideal body weight. Non-vesicant. Busulfan TDM monitoring required."
+      },
+      {
+        "drug_name": "Fludarabine",
+        "dose": 30.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          -7,
+          -6,
+          -5,
+          -4,
+          -3
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "30mg/m² in 50ml sodium chloride 0.9% over 30 minutes on Days -7, -6, -5, -4, -3. 5 doses total. Doses rounded to nearest 2.5mg (down if halfway). National dose banding tables not applicable in transplant setting. Non-vesicant."
+      },
+      {
+        "drug_name": "Methotrexate",
+        "dose": 10.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          3
+        ],
+        "infusion_duration_hours": 0.083,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "GvHD prophylaxis: 10mg/m² IV bolus over 5 minutes on Day +3. Administer at 1700hrs. Dose rounded to nearest 2.5mg (down if halfway). Confirm bilirubin, creatinine and mucositis checked and documented by transplant clinician before administration. Non-vesicant."
+      },
+      {
+        "drug_name": "Methotrexate",
+        "dose": 5.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          6,
+          11
+        ],
+        "infusion_duration_hours": 0.083,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "GvHD prophylaxis: 5mg/m² IV bolus over 5 minutes on Days +6 and +11. Administer at 1700hrs. Dose rounded to nearest 2.5mg. Ciclosporin prescribed separately on in-patient prescribing system as additional GvHD prophylaxis."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Alemtuzumab: hepatic impairment",
+        "drug_name": "Alemtuzumab",
+        "factor": 1.0,
+        "notes": "No studies done; dose adjustment is clinical decision but unlikely to require reduction"
+      },
+      {
+        "condition": "Alemtuzumab: renal impairment",
+        "drug_name": "Alemtuzumab",
+        "factor": 1.0,
+        "notes": "No studies conducted; no dose adjustment recommended in renal impairment"
+      },
+      {
+        "condition": "Busulfan: severe hepatic impairment",
+        "drug_name": "Busulfan",
+        "factor": 1.0,
+        "notes": "Caution in severe hepatic impairment; consider dose reduction in patients with raised liver enzymes"
+      },
+      {
+        "condition": "Busulfan: renal impairment",
+        "drug_name": "Busulfan",
+        "factor": 1.0,
+        "notes": "No dose adjustment recommended in renal impairment"
+      },
+      {
+        "condition": "Fludarabine: CrCl >70ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "condition": "Fludarabine: CrCl 30-70ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.5,
+        "notes": "Adjust towards 50% dose"
+      },
+      {
+        "condition": "Fludarabine: CrCl <30ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.0,
+        "notes": "Contraindicated"
+      },
+      {
+        "condition": "Fludarabine: hepatic impairment",
+        "drug_name": "Fludarabine",
+        "factor": 1.0,
+        "notes": "No dose modification recommended for hepatic dysfunction"
+      },
+      {
+        "condition": "Methotrexate: serum bilirubin <=35 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "condition": "Methotrexate: serum bilirubin 36-50 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.5,
+        "notes": "50% dose"
+      },
+      {
+        "condition": "Methotrexate: serum bilirubin 51-85 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.25,
+        "notes": "25% dose"
+      },
+      {
+        "condition": "Methotrexate: serum bilirubin >85 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.0,
+        "notes": "Omit dose"
+      },
+      {
+        "condition": "Methotrexate: serum creatinine <=145 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "condition": "Methotrexate: serum creatinine 146-165 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.5,
+        "notes": "50% dose"
+      },
+      {
+        "condition": "Methotrexate: serum creatinine 166-180 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.25,
+        "notes": "25% dose"
+      },
+      {
+        "condition": "Methotrexate: serum creatinine >180 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.0,
+        "notes": "Omit dose"
+      },
+      {
+        "condition": "Methotrexate: NCI-CTC grade 3 or more mucositis on Day +11",
+        "drug_name": "Methotrexate",
+        "factor": 0.5,
+        "notes": "Day +11 dose may be reduced or omitted — discuss with transplant clinician"
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV 15-30 minutes prior to each alemtuzumab infusion",
+      "Paracetamol 1000mg oral 15-30 minutes prior to each alemtuzumab infusion",
+      "Clonazepam 500 micrograms oral twice daily starting the night before busulfan; continue until 3 days after last busulfan dose (seizure prophylaxis)",
+      "Metoclopramide 10mg oral or IV three times daily",
+      "Ondansetron 8mg oral or IV twice daily",
+      "Calcium folinate 30mg IV bolus (precise dose 15mg/m²) every 6 hours for 4 doses starting 24 hours after each methotrexate dose (Days +4, +7, +12)",
+      "Ciclosporin oral or IV — GvHD prophylaxis prescribed separately on in-patient prescribing system",
+      "Nystatin 1ml oral four times daily",
+      "Sodium chloride 0.9% 10ml oral mouthwash four times daily",
+      "Antimicrobials per individual transplant schedule (gut decontamination, antifungal, antivirals, antibacterials)",
+      "Furosemide 20mg oral or IV four times daily when required for fluid overload",
+      "Gastric protection per local formulary",
+      "Pethidine 12.5-25mg IV under doctor supervision for alemtuzumab-induced rigors"
+    ],
+    "special_warnings": [
+      "Reduced intensity myeloablative conditioning for allogeneic HSCT with Volunteer Unrelated Donor (VUD)",
+      "Restricted to Wessex Blood and Marrow Transplant Unit only",
+      "Busulfan TDM (therapeutic drug monitoring) required — 10 doses given every 6 hours over Days -8 to -6",
+      "Busulfan dosing in obese patients based on adjusted ideal body weight per SPC",
+      "Busulfan dose rounded to nearest 3mg (down if halfway) due to 15-hour expiry and high toxicity",
+      "Clonazepam seizure prophylaxis must be prescribed before busulfan starts and continued for 3 days after last dose",
+      "Alemtuzumab infusion-related reactions: fever, hypotension, chills, rashes, anaphylaxis risk — chlorphenamine and paracetamol premedication mandatory",
+      "If rigors occur during alemtuzumab, slow infusion rate and administer pethidine 12.5-25mg IV",
+      "GvHD prophylaxis with both ciclosporin (prescribed on in-patient system) and methotrexate IV bolus (Days +3, +6, +11 — on ARIA)",
+      "Calcium folinate rescue after each methotrexate dose mandatory",
+      "Check bilirubin, creatinine and mucositis before each methotrexate dose",
+      "FBC, LFTs and U&Es prior to initiating treatment; GFR by Nuclear Medicine prior to Day 1; LFTs and creatinine prior to each methotrexate dose",
+      "Confirm with transplant consultant if signs of possible disease relapse before proceeding",
+      "Fludarabine contraindicated if CrCl <30ml/min"
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "gfr_measurement",
+      "fbc",
+      "lft",
+      "u_and_e",
+      "serum_bilirubin",
+      "serum_creatinine",
+      "mucositis_grade",
+      "body_weight",
+      "ideal_body_weight"
+    ],
+    "auc_dosing": null
+  }
+]

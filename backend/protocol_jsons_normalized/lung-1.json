@@ -1,0 +1,1430 @@
+[
+  {
+    "protocol_code": "NSCLC-AFATINIB",
+    "protocol_name": "NSCLC - Afatinib",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 28,
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Afatinib",
+        "dose": 40.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": 50.0,
+        "max_dose_unit": "mg",
+        "notes": "Starting dose 40mg once daily continuous oral. Dose escalation to 50mg once daily may be considered for patients who tolerate 40mg (absence of diarrhoea, skin rash, stomatitis) in first 3 weeks. Maximum daily dose 50mg. Take on empty stomach: no food for at least 3 hours before and 1 hour after taking. Available as 50mg, 40mg, 30mg and 20mg tablets. Can be dispersed in 100ml non-carbonated water if unable to swallow whole. 12 cycles set in ARIA."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "NCI-CTC Grade 1-2 toxicity (non-prolonged/non-intolerable)",
+        "drug_name": "Afatinib",
+        "factor": 1.0,
+        "notes": "Continue treatment, no dose adjustment required"
+      },
+      {
+        "condition": "NCI-CTC Grade 2 prolonged or intolerable (eg >48 hours diarrhoea or 7 days rash) or Grade 3 or above",
+        "drug_name": "Afatinib",
+        "factor": 0.75,
+        "notes": "Interrupt until grade 0-1, then dose reduce by 10mg decrements. Do not re-escalate once a dose reduction has occurred. Discontinue if unable to tolerate 20mg once daily."
+      },
+      {
+        "condition": "Hepatic impairment - mild (Child-Pugh A) or moderate (Child-Pugh B)",
+        "drug_name": "Afatinib",
+        "factor": 1.0,
+        "notes": "No starting dose adjustment required"
+      },
+      {
+        "condition": "Hepatic impairment - severe (Child-Pugh C) or worsening liver function",
+        "drug_name": "Afatinib",
+        "factor": 0.0,
+        "notes": "Treatment not recommended in severe hepatic impairment. Dose interruption may be necessary if worsening liver function; discontinue if severe hepatic impairment develops. Discuss with relevant consultant."
+      },
+      {
+        "condition": "Renal impairment CrCl >= 30 ml/min",
+        "drug_name": "Afatinib",
+        "factor": 1.0,
+        "notes": "No starting dose adjustment required"
+      },
+      {
+        "condition": "Renal impairment CrCl < 30 ml/min",
+        "drug_name": "Afatinib",
+        "factor": 1.0,
+        "notes": "No data available in patients with CrCl < 30ml/min; no dosing recommendation can be made"
+      },
+      {
+        "condition": "Interstitial lung disease (ILD) confirmed",
+        "drug_name": "Afatinib",
+        "factor": 0.0,
+        "notes": "Discontinue afatinib permanently and initiate appropriate treatment. Interrupt afatinib if acute/worsening respiratory symptoms (dyspnoea, cough, fever) pending assessment."
+      },
+      {
+        "condition": "Ulcerative keratitis diagnosed",
+        "drug_name": "Afatinib",
+        "factor": 0.0,
+        "notes": "Interrupt or discontinue afatinib. Refer to ophthalmologist for any acute/worsening eye inflammation, lacrimation, light sensitivity, blurred vision, eye pain or red eye."
+      },
+      {
+        "condition": "Severe bullous, blistering or exfoliative skin reactions",
+        "drug_name": "Afatinib",
+        "factor": 0.0,
+        "notes": "Treatment must be interrupted or discontinued if severe skin reactions occur"
+      }
+    ],
+    "pre_medications": [
+      "Loperamide 4mg oral stat after first loose stool then 2-4mg when required (max 16mg/24h)",
+      "Metoclopramide 10mg oral three times a day when required for nausea and vomiting"
+    ],
+    "special_warnings": [
+      "EGFR-TK mutation positive status required before starting treatment",
+      "For locally advanced or metastatic NSCLC with positive EGFR-TK mutation; no prior EGFR-TK inhibitor treatment",
+      "Interstitial lung disease (ILD) risk: reported in 0.7% of patients (lung infiltration, pneumonitis, ARDS, allergic alveolitis). Interrupt afatinib if acute/worsening respiratory symptoms; discontinue permanently if ILD confirmed",
+      "Diarrhoea: usually occurs within first 2 weeks; grade 3 most frequent within first 6 weeks. Ensure patients have loperamide supply and counselling. Severe diarrhoea unresponsive to loperamide may require IV hydration and dose interruption/reduction/discontinuation",
+      "Skin toxicity: mild/moderate erythematous acneiform rash may worsen on sun-exposed areas - advise protective clothing and sunscreen. Bullous, blistering, exfoliative reactions require interruption/discontinuation if severe",
+      "Ocular toxicity: refer to ophthalmologist for any acute/worsening eye symptoms. Interrupt/discontinue for ulcerative keratitis",
+      "Dose escalation to 50mg may be considered if 40mg well tolerated in first 3 weeks; once a dose reduction has occurred, do NOT re-escalate",
+      "Discontinue if patient unable to tolerate 20mg once daily",
+      "Afatinib interacts with a number of other medications",
+      "Follow National Patient Safety Alert on oral chemotherapy (NPSA/2008/RRR001)",
+      "Monitoring: CT scan within 1 month before starting (repeat within 3 months); chest x-ray before treatment then every 4 weeks; LFTs every 2 weeks for 2 months then monthly; FBC and U&Es every 4 weeks"
+    ],
+    "required_patient_fields": [
+      "egfr_mutation_status",
+      "creatinine_clearance",
+      "liver_function_tests",
+      "chest_xray_baseline",
+      "ct_scan_baseline"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "NSCLC-ALECTINIB",
+    "protocol_name": "NSCLC - Alectinib (ALECtinib)",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 28,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Alectinib",
+        "dose": 600.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "600mg twice daily (1200mg total daily dose) continuous oral. Available as 150mg hard capsules. Take with or after food. Swallow whole - do not open or dissolve capsules. If dose missed and next dose due within 6 hours, skip missed dose. If vomiting occurs after a dose, take next dose at scheduled time. 12 cycles set in ARIA; continue until disease progression, unacceptable toxicity or patient choice to stop."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "First dose reduction required",
+        "drug_name": "Alectinib",
+        "factor": 0.75,
+        "notes": "Reduce to 450mg twice daily (900mg/day total)"
+      },
+      {
+        "condition": "Second dose reduction required",
+        "drug_name": "Alectinib",
+        "factor": 0.5,
+        "notes": "Reduce to 300mg twice daily (600mg/day total). Permanently discontinue if unable to tolerate 300mg twice daily"
+      },
+      {
+        "condition": "Interstitial lung disease / pneumonitis (any grade)",
+        "drug_name": "Alectinib",
+        "factor": 0.0,
+        "notes": "Discontinue treatment if no other causes identified"
+      },
+      {
+        "condition": "Bradycardia Grade 2-3: no contributing concomitant medicinal product identified, or contributing drug not discontinued/adjusted",
+        "drug_name": "Alectinib",
+        "factor": 1.0,
+        "notes": "Withhold until recovery to at least grade 1 or heart rate >= 60 bpm, then resume at reduced dose"
+      },
+      {
+        "condition": "Bradycardia Grade 2-3: contributing concomitant drug identified and discontinued or dose adjusted",
+        "drug_name": "Alectinib",
+        "factor": 1.0,
+        "notes": "Withhold until recovery to at least grade 1, then resume at previous dose upon recovery"
+      },
+      {
+        "condition": "Bradycardia Grade 4: no contributing concomitant medicinal product identified",
+        "drug_name": "Alectinib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue alectinib"
+      },
+      {
+        "condition": "Bradycardia Grade 4: contributing concomitant drug identified and discontinued/adjusted",
+        "drug_name": "Alectinib",
+        "factor": 1.0,
+        "notes": "Resume at reduced dose upon recovery to at least grade 1 with frequent monitoring. Permanently discontinue in case of recurrence."
+      },
+      {
+        "condition": "CPK elevation 5-10x ULN, 1st occurrence",
+        "drug_name": "Alectinib",
+        "factor": 1.0,
+        "notes": "Temporarily withhold until recovery to baseline or <= 2.5xULN, then resume at the same dose"
+      },
+      {
+        "condition": "CPK elevation 5-10x ULN, 2nd occurrence, or CPK > 10x ULN",
+        "drug_name": "Alectinib",
+        "factor": 0.75,
+        "notes": "Temporarily withhold until recovery to baseline or <= 2.5xULN, then resume at reduced dose"
+      },
+      {
+        "condition": "Hepatic toxicity: Bilirubin <= 1.5xULN AND ALT/AST > 5xULN",
+        "drug_name": "Alectinib",
+        "factor": 1.0,
+        "notes": "Temporarily withhold until recovery to baseline or ALT/AST <= 3xULN, then resume at reduced dose"
+      },
+      {
+        "condition": "Hepatic toxicity: Bilirubin > 2xULN AND ALT/AST > 3xULN (in absence of cholestasis or haemolysis)",
+        "drug_name": "Alectinib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue alectinib"
+      },
+      {
+        "condition": "Hepatic impairment - mild (Child-Pugh A) or moderate (Child-Pugh B) at baseline",
+        "drug_name": "Alectinib",
+        "factor": 1.0,
+        "notes": "No starting dose adjustment required"
+      },
+      {
+        "condition": "Hepatic impairment - severe (Child-Pugh C) at baseline",
+        "drug_name": "Alectinib",
+        "factor": 0.75,
+        "notes": "Starting dose 450mg twice daily (total 900mg/day). Appropriate monitoring advised for all patients with hepatic impairment."
+      },
+      {
+        "condition": "Renal impairment - mild or moderate",
+        "drug_name": "Alectinib",
+        "factor": 1.0,
+        "notes": "No dose adjustment required"
+      },
+      {
+        "condition": "Renal impairment - severe",
+        "drug_name": "Alectinib",
+        "factor": 1.0,
+        "notes": "No information available; negligible renal elimination so no dose adjustment required, but monitor patient carefully"
+      }
+    ],
+    "pre_medications": [],
+    "special_warnings": [
+      "ALK-positive fusion/rearrangement status required before starting treatment",
+      "First-line treatment only for ALK-positive advanced NSCLC (stage IIIB or IV). Patient must have no previous ALK-targeted therapy and no previous cytotoxic chemotherapy for locally advanced/metastatic NSCLC (prior neoadjuvant/adjuvant or concurrent with radiotherapy permitted)",
+      "Alectinib cannot be used in any line other than 1st line (manufacturer did not submit to NICE for post-crizotinib indication)",
+      "WHO performance status 0, 1, or 2",
+      "In cases of intolerance (not disease progression on alectinib): ceritinib or crizotinib may be used only if no progressive disease whilst on alectinib. Neither ceritinib nor crizotinib to be used following disease progression on alectinib",
+      "Liver function monitoring required: FBC, LFTs, U&Es every 2 weeks for first 12 weeks, then on day 1 of each cycle thereafter",
+      "CPK, heart rate and blood pressure monitoring on day 1 of each cycle",
+      "Interstitial lung disease/pneumonitis: discontinue if confirmed with no other cause identified",
+      "Bradycardia risk: monitor heart rate; evaluate concomitant medications that may cause bradycardia",
+      "If a third dose reduction is necessary, treatment should be stopped",
+      "All dose reductions should not be re-escalated without consultant approval",
+      "Treatment breaks of up to 6 weeks allowed solely to allow toxicities to settle",
+      "Follow National Patient Safety Alert on oral chemotherapy (NPSA/2008/RRR001)"
+    ],
+    "required_patient_fields": [
+      "alk_fusion_status",
+      "liver_function_tests",
+      "creatinine_clearance",
+      "creatine_phosphokinase",
+      "heart_rate",
+      "blood_pressure"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "NSCLC-ATEZ-BEV-CARBO-PAC-IV",
+    "protocol_name": "Atezolizumab-Bevacizumab-Carboplatin (AUC6)-Paclitaxel (IV Atezolizumab)",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 21,
+    "number_of_cycles": 35,
+    "drugs": [
+      {
+        "drug_name": "Atezolizumab",
+        "dose": 1200.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Induction cycles 1-4 and maintenance cycles 5-35: 1200mg IV in 250ml sodium chloride 0.9% over 60 minutes. First infusion over 60 minutes; if well tolerated, subsequent infusions can be administered over 30 minutes. If dose missed (not due to toxicity), administer as soon as possible and adjust schedule to maintain 21-day interval. Dose reductions NOT permitted; delay or discontinue only. Patients must receive atezolizumab Patient Alert Card. Atezolizumab is neutral on extravasation."
+      },
+      {
+        "drug_name": "Bevacizumab",
+        "dose": 15.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Induction cycles 1-4 and maintenance cycles 5-35: 15mg/kg IV in 100ml sodium chloride 0.9% over 90 minutes (first infusion); 60 minutes if well tolerated on 2nd infusion; 30 minutes if well tolerated subsequently. Bevacizumab doses should be OMITTED (not reduced) for adverse reactions. Stop permanently if >2 doses missed. Continue until disease progression or unacceptable toxicity. Bevacizumab is neutral on extravasation. Dose banded per national dose bands."
+      },
+      {
+        "drug_name": "Carboplatin",
+        "dose": 6.0,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": 900.0,
+        "max_dose_unit": "mg",
+        "notes": "Induction cycles 1-4 only. AUC6 by Calvert formula using calculated GFR. AUC5 may be considered with EDTA clearance (seek consultant advice). Maximum dose 900mg (set at 890mg in ARIA for national dose bands). IV in 500ml glucose 5% over 60 minutes. Carboplatin is irritant. Dose may need adjustment if renal function changes by >10% from previous cycle. Dose banded per national dose bands."
+      },
+      {
+        "drug_name": "Paclitaxel",
+        "dose": 200.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 3.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Induction cycles 1-4 only. 200mg/m2 IV in 500ml sodium chloride 0.9% over 180 minutes. Lower starting dose of 175mg/m2 for patients of Asian origin as per SPC. Must be administered via non-PVC administration set with in-line 0.22 micron filter. Paclitaxel is vesicant. Dose banded per national dose bands (6mg/ml)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils >= 1x10^9/L on Day 1",
+        "drug_name": "Carboplatin and Paclitaxel",
+        "factor": 1.0,
+        "notes": "Proceed at 100% dose"
+      },
+      {
+        "condition": "Neutrophils < 1x10^9/L on Day 1",
+        "drug_name": "Carboplatin and Paclitaxel",
+        "factor": 1.0,
+        "notes": "Delay 7 days. If recovered to >= 1x10^9/L continue at full dose. If not recovered within 7 days or repeated delays required, delay until recovery then reduce dose by 20%"
+      },
+      {
+        "condition": "Platelets 50-99 x10^9/L on Day 1",
+        "drug_name": "Carboplatin and Paclitaxel",
+        "factor": 1.0,
+        "notes": "Delay 7 days. If recovered to >= 100x10^9/L continue at full dose. If not recovered within 7 days or repeated delays required, delay until recovery then reduce dose by 20%"
+      },
+      {
+        "condition": "Platelets < 50 x10^9/L on Day 1",
+        "drug_name": "Carboplatin and Paclitaxel",
+        "factor": 0.5,
+        "notes": "Delay until recovery then reduce dose by 50%"
+      },
+      {
+        "condition": "Atezolizumab hepatic: Bilirubin 1.5-3xULN OR ALT/AST 3-5xULN",
+        "drug_name": "Atezolizumab",
+        "factor": 1.0,
+        "notes": "Delay atezolizumab. For grade 2 hepatitis persisting 5-7 days: withhold and consider corticosteroid. May resume if improved to grade 1 within 12 weeks and corticosteroids reduced to <= 10mg prednisolone equivalent/day"
+      },
+      {
+        "condition": "Atezolizumab hepatic: Bilirubin > 3xULN OR ALT/AST > 3xULN (grade 3+)",
+        "drug_name": "Atezolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue atezolizumab"
+      },
+      {
+        "condition": "Paclitaxel hepatic: Bilirubin < 21 µmol/L AND ALT/AST < 10xULN",
+        "drug_name": "Paclitaxel",
+        "factor": 1.0,
+        "notes": "Full dose 175mg/m2 (or 200mg/m2 per protocol standard dose)"
+      },
+      {
+        "condition": "Paclitaxel hepatic: Bilirubin 21-26 µmol/L",
+        "drug_name": "Paclitaxel",
+        "factor": 0.75,
+        "notes": "Reduce paclitaxel to 135mg/m2"
+      },
+      {
+        "condition": "Paclitaxel hepatic: Bilirubin 27-51 µmol/L",
+        "drug_name": "Paclitaxel",
+        "factor": 0.5,
+        "notes": "Reduce paclitaxel to 75mg/m2"
+      },
+      {
+        "condition": "Paclitaxel hepatic: Bilirubin 52-85 µmol/L",
+        "drug_name": "Paclitaxel",
+        "factor": 0.5,
+        "notes": "Reduce paclitaxel to 50mg/m2"
+      },
+      {
+        "condition": "Paclitaxel hepatic: Bilirubin > 85 µmol/L OR ALT/AST > 10xULN",
+        "drug_name": "Paclitaxel",
+        "factor": 0.0,
+        "notes": "Paclitaxel is contra-indicated"
+      },
+      {
+        "condition": "Carboplatin renal: CrCl < 20 ml/min",
+        "drug_name": "Carboplatin",
+        "factor": 0.0,
+        "notes": "Omit carboplatin"
+      },
+      {
+        "condition": "Non-haematological NCI-CTC grade 3+ toxicity (non-atezolizumab, non-bevacizumab)",
+        "drug_name": "Causative agent",
+        "factor": 0.75,
+        "notes": "Delay until resolved to grade 1 or below, then reduce causative agent to 75% of original dose or discontinue as appropriate"
+      },
+      {
+        "condition": "Atezolizumab: immune-related pneumonitis Grade 2",
+        "drug_name": "Atezolizumab",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve and radiographic abnormalities improve. Consider oral prednisolone 1-2mg/kg/day. May resume if improved to grade 0-1 within 12 weeks and corticosteroids reduced to <= 10mg oral prednisone equivalent/day"
+      },
+      {
+        "condition": "Atezolizumab: immune-related pneumonitis Grade 3-4",
+        "drug_name": "Atezolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue atezolizumab. Consider corticosteroids."
+      },
+      {
+        "condition": "Bevacizumab: adverse reactions (any)",
+        "drug_name": "Bevacizumab",
+        "factor": 0.0,
+        "notes": "Omit bevacizumab doses - do NOT reduce dose. Stop permanently if patient develops: GI perforation, arterial thromboembolic events, grade 3+ haemorrhagic events, grade 3+ congestive heart failure or LV dysfunction, grade 4 fistula"
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV 30 minutes before paclitaxel",
+      "Dexamethasone 20mg oral or IV 30 minutes before paclitaxel",
+      "H2 antagonist according to local formulary choice and availability 30 minutes before paclitaxel (e.g. famotidine 20mg oral, nizatidine 150mg oral, ranitidine 150mg oral, or ranitidine 50mg IV)",
+      "Ondansetron 8mg oral or IV 15-30 minutes before chemotherapy (cycles 1-4 only)",
+      "Dexamethasone 4mg oral twice daily for 3 days starting day 2 (take-home, cycles 1-4 only)",
+      "Metoclopramide 10mg oral three times daily as required for nausea (take-home, cycles 1-4 only)",
+      "Loperamide 4mg oral then 2mg after each loose stool as required up to max 16mg/24h (cycle 1 only)",
+      "As required for infusion reactions: chlorphenamine 10mg IV, hydrocortisone 100mg IV, paracetamol 1000mg oral"
+    ],
+    "special_warnings": [
+      "Indicated for locally advanced or metastatic non-squamous NSCLC with PD-L1 TPS 0-49% and no EGFR activating mutations, no positive ALK mutation, no positive ROS1 mutation. NOT approved or funded if TPS is 50-100%",
+      "PD-L1 TPS testing with approved and validated test required before treatment",
+      "No prior cytotoxic chemotherapy for advanced/metastatic disease; prior adjuvant/neoadjuvant allowed if completed >= 6 months before recurrence",
+      "No prior treatment with anti-PD1, anti-PDL1, anti-PDL2, anti-CD137 or anti-CTLA-4 antibody",
+      "Patient must not have contra-indication to bevacizumab",
+      "Atezolizumab and bevacizumab dose reductions NOT permitted; doses must be omitted or treatment discontinued",
+      "Maximum 4 induction cycles (atezolizumab + bevacizumab + carboplatin + paclitaxel), followed by maintenance atezolizumab + bevacizumab for up to 31 further cycles (35 total, equivalent to 2 years)",
+      "Systemic corticosteroids should be avoided before starting atezolizumab (pharmacodynamic interference); can be used after starting for immune-related adverse reactions",
+      "Patients must receive atezolizumab Patient Alert Card",
+      "Immune-related adverse reactions can be severe/life-threatening across GI, liver, skin, nervous, endocrine and other organ systems; early diagnosis essential",
+      "Permanently discontinue atezolizumab for: grade 3-4 pneumonitis or hepatitis; any life-threatening grade 4 reaction (including colitis, renal impairment); recurrence of severe/grade 3 reaction; persistent grade 2-3 not recovering to grade 1 within 12 weeks",
+      "Treatment interruption >= 12 weeks may preclude further funding approval",
+      "Bevacizumab: monitor BP and dipstick urinalysis for proteinuria before each bevacizumab dose; thyroid function tests before starting atezolizumab then every 6 weeks",
+      "Paclitaxel hypersensitivity most likely with first or second infusion: interrupt for minor symptoms (flushing, localised rashes) - may restart at lower rate with intensive monitoring; immediately discontinue for severe reactions (profound hypotension, bronchospasm, generalised erythema)",
+      "Lower paclitaxel starting dose 175mg/m2 for patients of Asian origin as per SPC",
+      "No symptomatically active brain metastases or leptomeningeal metastases",
+      "WHO performance status 0 or 1",
+      "Formal medical review scheduled by end of first 6 weeks of treatment",
+      "Treatment breaks of up to 12 weeks beyond expected cycle length allowed to allow immune toxicities to settle"
+    ],
+    "required_patient_fields": [
+      "pd_l1_status",
+      "egfr_mutation_status",
+      "alk_fusion_status",
+      "creatinine_clearance",
+      "liver_function_tests",
+      "blood_pressure",
+      "urinalysis_proteinuria",
+      "thyroid_function_tests"
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 6,
+      "max_dose_mg": 900
+    }
+  },
+  {
+    "protocol_code": "SCLC-ATEZ-IV-CARBO-ETOP-IVPO",
+    "protocol_name": "Atezolizumab IV-Carboplatin (AUC5)-Etoposide (IV/PO) - SCLC",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 21,
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Atezolizumab",
+        "dose": 1200.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Induction cycles 1-4 and maintenance cycles 5-12: 1200mg IV in 250ml sodium chloride 0.9% over 60 minutes. First infusion over 60 minutes; subsequent infusions may be over 30 minutes if well tolerated. Maintenance continues until disease progression or unacceptable toxicity. Dose reductions NOT permitted; delay or discontinue only. Patients must receive atezolizumab Patient Alert Card. Atezolizumab is neutral on extravasation."
+      },
+      {
+        "drug_name": "Carboplatin",
+        "dose": 5.0,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": 790.0,
+        "max_dose_unit": "mg",
+        "notes": "Induction cycles 1-4 only. AUC5 by Calvert formula using calculated creatinine clearance. Maximum dose 750mg (set at 790mg in ARIA for national dose bands). IV in 500ml glucose 5% over 60 minutes. Carboplatin is irritant. Dose may need adjustment if renal function changes by >10% from previous cycle. Dose banded per national dose bands (10mg/ml)."
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 100.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Induction cycles 1-4 only. 100mg/m2 IV in 1000ml sodium chloride 0.9% over 60 minutes on Day 1. Etoposide is irritant. Dose banded per national dose bands (20mg/ml). Consider dose reduction if significant albumin reductions occur."
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 200.0,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          2,
+          3
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Induction cycles 1-4 only. 200mg/m2 oral once daily on Days 2 and 3. Available as 50mg and 100mg soft capsules. Swallow whole on empty stomach or 1 hour before food. Consider dose reduction if significant albumin reductions occur."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils < 1.5x10^9/L or Platelets < 100x10^9/L on Day 1 (cycles 1-4)",
+        "drug_name": "Carboplatin and Etoposide",
+        "factor": 1.0,
+        "notes": "Delay 1 week, repeat FBC. If within normal parameters, resume at full dose. If counts do not recover within 7 days or repeated delays required, consider reduction of oral etoposide dose to 100mg/m2 on Days 2 and 3"
+      },
+      {
+        "condition": "Atezolizumab hepatic: Bilirubin 1.5-3xULN OR ALT/AST 3-5xULN",
+        "drug_name": "Atezolizumab",
+        "factor": 1.0,
+        "notes": "Delay. For grade 2 hepatitis persisting 5-7 days: withhold and consider corticosteroid. May resume if improved to grade 1 within 12 weeks and corticosteroids reduced to <= 10mg prednisolone equivalent/day"
+      },
+      {
+        "condition": "Atezolizumab hepatic: Bilirubin > 3xULN OR ALT/AST > 3xULN (grade 3+)",
+        "drug_name": "Atezolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue atezolizumab"
+      },
+      {
+        "condition": "Etoposide hepatic: Bilirubin 26-51 µmol/L OR ALT/AST 60-180 units/L",
+        "drug_name": "Etoposide",
+        "factor": 0.5,
+        "notes": "Reduce etoposide dose to 50% of planned dose"
+      },
+      {
+        "condition": "Etoposide hepatic: Bilirubin > 51 µmol/L OR ALT/AST > 180 units/L",
+        "drug_name": "Etoposide",
+        "factor": 1.0,
+        "notes": "Clinical decision required regarding etoposide dose"
+      },
+      {
+        "condition": "Carboplatin renal: CrCl < 20 ml/min",
+        "drug_name": "Carboplatin",
+        "factor": 0.0,
+        "notes": "Omit carboplatin"
+      },
+      {
+        "condition": "Etoposide renal: CrCl > 50 ml/min",
+        "drug_name": "Etoposide",
+        "factor": 1.0,
+        "notes": "Full dose 100%"
+      },
+      {
+        "condition": "Etoposide renal: CrCl 15-50 ml/min",
+        "drug_name": "Etoposide",
+        "factor": 0.75,
+        "notes": "Reduce etoposide to 75% of dose"
+      },
+      {
+        "condition": "Etoposide renal: CrCl < 15 ml/min",
+        "drug_name": "Etoposide",
+        "factor": 0.5,
+        "notes": "Reduce etoposide to 50% of dose"
+      },
+      {
+        "condition": "Atezolizumab: immune-related pneumonitis Grade 2",
+        "drug_name": "Atezolizumab",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve and radiographic abnormalities improve. Consider prednisolone 1-2mg/kg/day. May resume if improved to grade 0-1 within 12 weeks and corticosteroids reduced to <= 10mg prednisolone equivalent/day"
+      },
+      {
+        "condition": "Atezolizumab: immune-related pneumonitis Grade 3-4",
+        "drug_name": "Atezolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue. Consider corticosteroids."
+      },
+      {
+        "condition": "Non-haematological NCI-CTC grade 3+ toxicity",
+        "drug_name": "Causative agent",
+        "factor": 0.75,
+        "notes": "Delay until resolved to grade 1 or below, then reduce causative agent to 75% of original dose or discontinue as appropriate"
+      },
+      {
+        "condition": "Significant albumin level reduction",
+        "drug_name": "Etoposide",
+        "factor": 0.75,
+        "notes": "Consider reducing etoposide dose where significant reductions in albumin levels occur"
+      }
+    ],
+    "pre_medications": [
+      "Ondansetron 8mg oral or IV 15-30 minutes before chemotherapy (Day 1, cycles 1-4 only)",
+      "Dexamethasone 4mg oral twice daily for 3 days starting day after chemotherapy (take-home, cycles 1-4 only)",
+      "Metoclopramide 10mg oral three times daily for 3 days then as required for nausea (take-home, cycles 1-4 only)",
+      "Ondansetron 8mg oral twice daily for 3 days starting evening of Day 1 (take-home, cycles 1-4 only)",
+      "Growth factor as per local formulary choice (cycles 1-4 only): filgrastim 30 million units SC daily for 5 days from Day 5, OR lenograstim 33.6 million units SC daily for 5 days from Day 5, OR pegfilgrastim/lipegfilgrastim 6mg SC day after SACT",
+      "Loperamide 4mg oral then 2mg after each loose stool as required up to max 16mg/24h (cycle 1 only)",
+      "As required for infusion reactions: chlorphenamine 10mg IV, hydrocortisone 100mg IV, paracetamol 1000mg oral"
+    ],
+    "special_warnings": [
+      "Indicated for first-line treatment of extensive-stage small cell lung cancer (ES-SCLC); WHO performance status 0 or 1",
+      "Atezolizumab dose reductions NOT permitted; delay or discontinue only",
+      "Systemic corticosteroids should be avoided before starting atezolizumab; can be used after starting for immune-related adverse reactions",
+      "Patients must receive atezolizumab Patient Alert Card",
+      "Immune-related adverse reactions can be severe/life-threatening; early diagnosis essential",
+      "Permanently discontinue atezolizumab for: grade 3-4 pneumonitis or hepatitis; any life-threatening grade 4 reaction (including colitis, renal impairment); recurrence of severe/grade 3 reaction; persistent grade 2-3 not recovering to grade 1 within 12 weeks",
+      "Treatment interruption >= 12 weeks may preclude further funding approval",
+      "Oral etoposide capsules must be swallowed whole on empty stomach or 1 hour before food",
+      "Consider etoposide dose reduction if significant albumin reductions occur; albumin should be monitored",
+      "Total 12 cycles in ARIA: 4 induction cycles (atezolizumab + carboplatin + etoposide) then maintenance atezolizumab monotherapy until disease progression or unacceptable toxicity",
+      "ORAL CHEMOTHERAPY — NPSA/2008/RRR001: Patient must be counselled and provided written information before starting. Prescriptions must be written on an approved oral chemotherapy prescription form. Dispensing must only be by a trained pharmacist. Patient must be provided with a chemotherapy alert card. Do not supply more than one cycle at a time without clinical review."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "liver_function_tests",
+      "albumin",
+      "thyroid_function_tests"
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 5,
+      "max_dose_mg": 750
+    }
+  },
+  {
+    "protocol_code": "SCLC-ATEZ-SC-CARBO-ETOP-IVPO",
+    "protocol_name": "Atezolizumab SC-Carboplatin (AUC5)-Etoposide (IV/PO) - SCLC",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 21,
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Atezolizumab",
+        "dose": 1875.0,
+        "dose_unit": "mg",
+        "route": "Subcutaneous",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.12,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Fixed dose 1875mg (15mL) subcutaneous injection into thigh over approximately 7 minutes. Induction cycles 1-4 and maintenance cycles 5-12. SC formulation (Tecentriq 1875mg) is NOT interchangeable with IV atezolizumab 1200mg. Alternate injection sites between left and right thigh only; new injections at least 2.5cm from old site; do not inject into red, bruised, tender or hard skin. Other SC medicines preferably injected at different sites during treatment. Dose reductions NOT permitted; delay or discontinue only. Patients must receive atezolizumab Patient Alert Card."
+      },
+      {
+        "drug_name": "Carboplatin",
+        "dose": 5.0,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": 790.0,
+        "max_dose_unit": "mg",
+        "notes": "Induction cycles 1-4 only. AUC5 by Calvert formula. Maximum dose 750mg (set at 790mg in ARIA). IV in 500ml glucose 5% over 60 minutes. Carboplatin is irritant. Dose may need adjustment if renal function changes by >10% from previous cycle. Dose banded per national dose bands (10mg/ml)."
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 100.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Induction cycles 1-4 only. 100mg/m2 IV in 1000ml sodium chloride 0.9% over 60 minutes on Day 1. Etoposide is irritant. Dose banded per national dose bands (20mg/ml)."
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 200.0,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          2,
+          3
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Induction cycles 1-4 only. 200mg/m2 oral once daily on Days 2 and 3. Available as 50mg and 100mg soft capsules. Swallow whole on empty stomach or 1 hour before food."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils < 1.5x10^9/L or Platelets < 100x10^9/L on Day 1 (cycles 1-4)",
+        "drug_name": "Carboplatin and Etoposide",
+        "factor": 1.0,
+        "notes": "Delay 1 week, repeat FBC. If within normal parameters, resume at full dose. If counts do not recover within 7 days or repeated delays required, consider reduction of oral etoposide to 100mg/m2 on Days 2 and 3"
+      },
+      {
+        "condition": "Atezolizumab SC hepatic: Bilirubin 1.5-3xULN OR ALT/AST 3-5xULN",
+        "drug_name": "Atezolizumab",
+        "factor": 1.0,
+        "notes": "Delay. For grade 2 hepatitis persisting 5-7 days: withhold and consider corticosteroid. May resume if improved to grade 1 within 12 weeks and corticosteroids reduced to <= 10mg prednisolone equivalent/day"
+      },
+      {
+        "condition": "Atezolizumab SC hepatic: Bilirubin > 3xULN OR ALT/AST > 3xULN (grade 3+)",
+        "drug_name": "Atezolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue atezolizumab SC"
+      },
+      {
+        "condition": "Etoposide hepatic: Bilirubin 26-51 µmol/L OR ALT/AST 60-180 units/L",
+        "drug_name": "Etoposide",
+        "factor": 0.5,
+        "notes": "Reduce etoposide dose to 50%"
+      },
+      {
+        "condition": "Etoposide hepatic: Bilirubin > 51 µmol/L OR ALT/AST > 180 units/L",
+        "drug_name": "Etoposide",
+        "factor": 1.0,
+        "notes": "Clinical decision required"
+      },
+      {
+        "condition": "Carboplatin renal: CrCl < 20 ml/min",
+        "drug_name": "Carboplatin",
+        "factor": 0.0,
+        "notes": "Omit carboplatin"
+      },
+      {
+        "condition": "Etoposide renal: CrCl > 50 ml/min",
+        "drug_name": "Etoposide",
+        "factor": 1.0,
+        "notes": "Full dose 100%"
+      },
+      {
+        "condition": "Etoposide renal: CrCl 15-50 ml/min",
+        "drug_name": "Etoposide",
+        "factor": 0.75,
+        "notes": "Reduce etoposide to 75% of dose"
+      },
+      {
+        "condition": "Etoposide renal: CrCl < 15 ml/min",
+        "drug_name": "Etoposide",
+        "factor": 0.5,
+        "notes": "Reduce etoposide to 50% of dose"
+      },
+      {
+        "condition": "Atezolizumab SC: immune-related pneumonitis Grade 2",
+        "drug_name": "Atezolizumab",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve and radiographic abnormalities improve. Consider prednisolone 1-2mg/kg/day. May resume if improved to grade 0-1 within 12 weeks and corticosteroids reduced to <= 10mg prednisolone equivalent/day"
+      },
+      {
+        "condition": "Atezolizumab SC: immune-related pneumonitis Grade 3-4",
+        "drug_name": "Atezolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue. Consider corticosteroids."
+      },
+      {
+        "condition": "Atezolizumab SC: injection-related reactions Grade 1-2",
+        "drug_name": "Atezolizumab",
+        "factor": 1.0,
+        "notes": "Reduce injection rate or pause injection. Resume when event resolved."
+      },
+      {
+        "condition": "Atezolizumab SC: injection-related reactions Grade 3-4",
+        "drug_name": "Atezolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue atezolizumab SC"
+      }
+    ],
+    "pre_medications": [
+      "Metoclopramide 10mg oral or IV 15-30 minutes before chemotherapy (Day 1, cycles 1-4 only)",
+      "Ondansetron 8mg oral or IV 15-30 minutes before chemotherapy (Day 1, cycles 1-4 only)",
+      "Dexamethasone 4mg oral twice daily for 3 days starting day after chemotherapy (take-home, cycles 1-4 only)",
+      "Metoclopramide 10mg oral three times daily for 3 days then as required for nausea (take-home)",
+      "Ondansetron 8mg oral twice daily for 3 days starting evening of Day 1 (take-home, cycles 1-4 only)",
+      "Growth factor as per local formulary choice (cycles 1-4 only): filgrastim 30 million units SC daily for 5 days from Day 5, OR lenograstim 33.6 million units SC daily for 5 days from Day 5, OR pegfilgrastim/lipegfilgrastim 6mg SC day after SACT",
+      "Loperamide 4mg oral then 2mg after each loose stool as required up to max 16mg/24h (cycle 1 only)",
+      "As required for infusion reactions: chlorphenamine 10mg IV, hydrocortisone 100mg IV, paracetamol 1000mg oral"
+    ],
+    "special_warnings": [
+      "Atezolizumab SC 1875mg (Tecentriq) is NOT interchangeable with IV atezolizumab 1200mg",
+      "Indicated for first-line treatment of extensive-stage small cell lung cancer (ES-SCLC); WHO performance status 0 or 1",
+      "Requires Blueteq application (form ATE7) and patient must meet eligibility criteria before consenting",
+      "Atezolizumab SC dose reductions NOT permitted; delay or discontinue only",
+      "Injection site must be alternated between left and right thigh ONLY; new injections at least 2.5cm from old site; avoid red, bruised, tender or hard skin areas",
+      "Administer 15mL solution SC into thigh over approximately 7 minutes using SC infusion set (e.g. winged/butterfly). DO NOT administer residual hold-up volume in tubing",
+      "During treatment course, other SC medicines preferably injected at different sites",
+      "Systemic corticosteroids should be avoided before starting atezolizumab; can be used after starting for immune-related adverse reactions",
+      "Patients must receive atezolizumab Patient Alert Card",
+      "Immune-related adverse reactions can be severe/life-threatening; early diagnosis essential",
+      "Permanently discontinue atezolizumab for: grade 3-4 pneumonitis or hepatitis; any life-threatening grade 4 reaction; recurrence of severe/grade 3 reaction; persistent grade 2-3 not recovering to grade 1 within 12 weeks",
+      "Treatment interruption >= 12 weeks may preclude further funding approval",
+      "Oral etoposide capsules must be swallowed whole on empty stomach or 1 hour before food",
+      "Total 12 cycles in ARIA: 4 induction cycles (atezolizumab SC + carboplatin + etoposide) then maintenance atezolizumab SC monotherapy until disease progression or unacceptable toxicity",
+      "ORAL CHEMOTHERAPY — NPSA/2008/RRR001: Patient must be counselled and provided written information before starting. Prescriptions must be written on an approved oral chemotherapy prescription form. Dispensing must only be by a trained pharmacist. Patient must be provided with a chemotherapy alert card. Do not supply more than one cycle at a time without clinical review."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "liver_function_tests",
+      "albumin",
+      "cortisol",
+      "thyroid_function_tests"
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 5,
+      "max_dose_mg": 750
+    }
+  },
+  {
+    "protocol_code": "NSCLC-ATEZOLIZUMAB-1200-21D",
+    "protocol_name": "Atezolizumab 1200mg IV (21-day cycle) - NSCLC Monotherapy",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 21,
+    "number_of_cycles": 35,
+    "drugs": [
+      {
+        "drug_name": "Atezolizumab",
+        "dose": 1200.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "1200mg IV in 250ml sodium chloride 0.9% over 60 minutes. 21-day cycle until loss of clinical benefit or unmanageable toxicity; maximum 35 cycles (two years). First infusion over 60 minutes; if well tolerated, subsequent infusions can be administered over 30 minutes. If dose missed (not due to toxicity), administer as soon as possible and adjust schedule to maintain 21-day interval. Dose reductions NOT permitted; delay or discontinue only. Patients must receive atezolizumab Patient Alert Card. Atezolizumab is neutral on extravasation."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Hepatic: Bilirubin 1.5-3xULN OR ALT/AST 3-5xULN",
+        "drug_name": "Atezolizumab",
+        "factor": 1.0,
+        "notes": "Delay. For grade 2 hepatitis persisting 5-7 days: withhold and consider corticosteroid. Corticosteroid may be tapered over at least 1 month if LFTs improve. May resume if improved to grade 1 within 12 weeks and corticosteroids tapered to <= 10mg prednisolone equivalent/day"
+      },
+      {
+        "condition": "Hepatic: Bilirubin > 3xULN OR ALT/AST > 5xULN (grade 3+)",
+        "drug_name": "Atezolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue atezolizumab"
+      },
+      {
+        "condition": "Renal impairment (any degree)",
+        "drug_name": "Atezolizumab",
+        "factor": 1.0,
+        "notes": "No dose adjustment required in pre-existing renal impairment"
+      },
+      {
+        "condition": "Immune-related pneumonitis Grade 2",
+        "drug_name": "Atezolizumab",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve and radiographic abnormalities improve. Consider oral prednisolone 1-2mg/kg/day or equivalent. May resume if improved to grade 0-1 within 12 weeks and corticosteroids reduced to <= 10mg prednisone equivalent/day"
+      },
+      {
+        "condition": "Immune-related pneumonitis Grade 3-4",
+        "drug_name": "Atezolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue. Consider corticosteroids."
+      },
+      {
+        "condition": "Immune-related colitis Grade 2-3 diarrhoea or symptomatic colitis",
+        "drug_name": "Atezolizumab",
+        "factor": 1.0,
+        "notes": "Withhold initially. Grade 2 persisting >5 days or recurring: add prednisolone 1-2mg/kg/day. Grade 3: IV corticosteroids then convert to oral when improving; taper over 1 month when grade 1. May resume if improved to grade 0-1 within 12 weeks and corticosteroids reduced to <= 10mg prednisone equivalent/day"
+      },
+      {
+        "condition": "Immune-related colitis Grade 4",
+        "drug_name": "Atezolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue. Consider corticosteroids."
+      },
+      {
+        "condition": "Immune-related pancreatitis Grade 3-4 amylase/lipase (>2xULN) or grade 2-3 pancreatitis",
+        "drug_name": "Atezolizumab",
+        "factor": 1.0,
+        "notes": "Withhold atezolizumab. May resume if amylase/lipase improved to grade 0-1 within 12 weeks or pancreatitis symptoms resolved and corticosteroids reduced to <= 10mg prednisone equivalent/day"
+      },
+      {
+        "condition": "Immune-related pancreatitis Grade 4 or any grade of recurrent pancreatitis",
+        "drug_name": "Atezolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue. Consider corticosteroids."
+      },
+      {
+        "condition": "Immune-related thyroid disorders (symptomatic)",
+        "drug_name": "Atezolizumab",
+        "factor": 1.0,
+        "notes": "Withhold. Hypothyroidism: resume when controlled by thyroid replacement therapy and TSH decreasing. Hyperthyroidism: resume when controlled by carbimazole or equivalent and thyroid function improving"
+      },
+      {
+        "condition": "Immune-related adrenal insufficiency (symptomatic)",
+        "drug_name": "Atezolizumab",
+        "factor": 1.0,
+        "notes": "Withhold. May resume if improved to grade 0-1 within 12 weeks and corticosteroids reduced to <= 10mg prednisone equivalent/day and patient stable on replacement therapy"
+      },
+      {
+        "condition": "Immune-related diabetes mellitus Grade 3-4 hyperglycaemia (fasting glucose >250-500mg/dL)",
+        "drug_name": "Atezolizumab",
+        "factor": 1.0,
+        "notes": "Withhold. May resume if metabolic control achieved on insulin replacement therapy"
+      },
+      {
+        "condition": "Immune-related myasthenic syndrome/myasthenia gravis/Guillain-Barre syndrome/meningoencephalitis (all grades)",
+        "drug_name": "Atezolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue atezolizumab"
+      },
+      {
+        "condition": "Myositis Grade 2-3",
+        "drug_name": "Atezolizumab",
+        "factor": 1.0,
+        "notes": "Withhold for moderate to severe myositis and discontinue"
+      },
+      {
+        "condition": "Myositis Grade 3-4",
+        "drug_name": "Atezolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue"
+      },
+      {
+        "condition": "Infusion reactions Grade 1",
+        "drug_name": "Atezolizumab",
+        "factor": 1.0,
+        "notes": "Reduce infusion rate to half. After event resolved, wait 30 minutes at reduced rate; if tolerated, increase to original rate"
+      },
+      {
+        "condition": "Infusion reactions Grade 2",
+        "drug_name": "Atezolizumab",
+        "factor": 1.0,
+        "notes": "Withhold. Restart at half the infusion rate only after symptoms resolved"
+      },
+      {
+        "condition": "Infusion reactions Grade 4",
+        "drug_name": "Atezolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue atezolizumab"
+      },
+      {
+        "condition": "Immune-related rash Grade 3",
+        "drug_name": "Atezolizumab",
+        "factor": 1.0,
+        "notes": "Withhold. May resume if rash resolved and corticosteroids reduced to <= 10mg prednisone equivalent/day"
+      },
+      {
+        "condition": "Immune-related rash Grade 4",
+        "drug_name": "Atezolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue. Consider corticosteroids."
+      }
+    ],
+    "pre_medications": [
+      "No routine antiemetics required",
+      "As required for infusion reactions: chlorphenamine 10mg IV, hydrocortisone 100mg IV, paracetamol 1000mg oral",
+      "Loperamide 4mg oral then 2mg after each loose stool as required (max 16mg/24h)",
+      "Gastric protection with PPI or H2 antagonist may be considered in high-risk patients"
+    ],
+    "special_warnings": [
+      "Indicated for previously platinum-treated locally advanced/metastatic NSCLC (squamous or non-squamous, stage IIIB/IV). PD-L1 testing attempted (TPS score documented, or documented as unquantifiable, or insufficient tissue)",
+      "Patient must have progressed after >= 2 cycles of platinum-containing chemotherapy for stage IIIB/IV NSCLC (and targeted treatment if EGFR/ALK positive), OR progressed within 6 months of platinum-based adjuvant/neoadjuvant therapy",
+      "No prior treatment with anti-PD-1, anti-PDL1, anti-PDL2, anti-CD137, or anti-CTLA-4 antibody",
+      "No symptomatically active brain metastases or leptomeningeal metastases",
+      "WHO performance status 0-1 and otherwise fit for second-line docetaxel",
+      "Atezolizumab dose reductions NOT permitted; delay or discontinue only. Preference is to delay the dose or discontinue treatment",
+      "Systemic corticosteroids should be avoided before starting atezolizumab (interfere with pharmacodynamic activity); can be used after starting for immune-related adverse reactions",
+      "Patients must receive atezolizumab Patient Alert Card",
+      "Immune-related adverse reactions can be severe/life-threatening across GI, liver, skin, nervous, endocrine and other organ systems; early diagnosis essential",
+      "Permanently discontinue atezolizumab for: grade 3-4 pneumonitis or hepatitis; any life-threatening grade 4 reaction (including colitis, renal impairment); recurrence of severe/grade 3 reaction; persistent grade 2-3 not recovering to grade 1 within 12 weeks",
+      "Treatment interruption >= 12 weeks may preclude further funding approval",
+      "Maximum 2 years (35 cycles at 21-day intervals) of treatment",
+      "Atezolizumab will be stopped at 2 years or on loss of clinical benefit or unacceptable toxicity, whichever is first",
+      "Formal medical review scheduled at least by end of first 9 weeks of treatment",
+      "Treatment breaks of up to 12 weeks beyond expected cycle length allowed solely to allow immune toxicities to settle"
+    ],
+    "required_patient_fields": [
+      "pd_l1_status",
+      "creatinine_clearance",
+      "liver_function_tests",
+      "thyroid_function_tests"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "LUNG-ATEZOLIZUMAB-1680-28D",
+    "protocol_name": "Atezolizumab 1680mg IV (28-day cycle) - NSCLC Monotherapy",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 28,
+    "number_of_cycles": 26,
+    "drugs": [
+      {
+        "drug_name": "Atezolizumab",
+        "dose": 1680.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "1680mg IV in 250ml sodium chloride 0.9% over 60 minutes. 28-day cycle until loss of clinical benefit or unmanageable toxicity; maximum 26 cycles (two years). First infusion over 60 minutes; if well tolerated, subsequent infusions can be administered over 30 minutes. If dose missed (not due to toxicity), administer as soon as possible and adjust schedule to maintain 28-day interval. Dose reductions NOT permitted; delay or discontinue only. Patients must receive atezolizumab Patient Alert Card. Atezolizumab is neutral on extravasation."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Hepatic: Bilirubin 1.5-3xULN OR ALT/AST 3-5xULN",
+        "drug_name": "Atezolizumab",
+        "factor": 1.0,
+        "notes": "Delay. For grade 2 hepatitis persisting 5-7 days: withhold and consider corticosteroid. Corticosteroid may be tapered over at least 1 month if LFTs improve. May resume if improved to grade 1 within 12 weeks and corticosteroids reduced to <= 10mg prednisolone equivalent/day"
+      },
+      {
+        "condition": "Hepatic: Bilirubin > 3xULN OR ALT/AST > 5xULN (grade 3+)",
+        "drug_name": "Atezolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue atezolizumab"
+      },
+      {
+        "condition": "Renal impairment (any degree)",
+        "drug_name": "Atezolizumab",
+        "factor": 1.0,
+        "notes": "No dose adjustment required in pre-existing renal impairment"
+      },
+      {
+        "condition": "Immune-related pneumonitis Grade 2",
+        "drug_name": "Atezolizumab",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve and radiographic abnormalities improve. Consider prednisolone 1-2mg/kg/day. May resume if improved to grade 0-1 within 12 weeks and corticosteroids reduced to <= 10mg prednisone equivalent/day"
+      },
+      {
+        "condition": "Immune-related pneumonitis Grade 3-4",
+        "drug_name": "Atezolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue. Consider corticosteroids."
+      },
+      {
+        "condition": "Immune-related colitis Grade 2-3 diarrhoea or symptomatic colitis",
+        "drug_name": "Atezolizumab",
+        "factor": 1.0,
+        "notes": "Withhold initially. Grade 2 persisting >5 days or recurring: add prednisolone 1-2mg/kg/day. Grade 3: IV corticosteroids then convert to oral; taper over 1 month when grade 1. May resume if improved to grade 0-1 within 12 weeks and corticosteroids reduced to <= 10mg/day"
+      },
+      {
+        "condition": "Immune-related colitis Grade 4",
+        "drug_name": "Atezolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue. Consider corticosteroids."
+      },
+      {
+        "condition": "Immune-related pancreatitis Grade 3-4 amylase/lipase (>2xULN) or grade 2-3 pancreatitis",
+        "drug_name": "Atezolizumab",
+        "factor": 1.0,
+        "notes": "Withhold. May resume if improved to grade 0-1 within 12 weeks and corticosteroids reduced to <= 10mg prednisone equivalent/day"
+      },
+      {
+        "condition": "Immune-related pancreatitis Grade 4 or any grade of recurrent pancreatitis",
+        "drug_name": "Atezolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue. Consider corticosteroids."
+      },
+      {
+        "condition": "Immune-related thyroid disorders (symptomatic)",
+        "drug_name": "Atezolizumab",
+        "factor": 1.0,
+        "notes": "Withhold. Hypothyroidism: resume when controlled by thyroid replacement therapy and TSH decreasing. Hyperthyroidism: resume when controlled by cabimazole or equivalent and thyroid function improving"
+      },
+      {
+        "condition": "Immune-related adrenal insufficiency (symptomatic)",
+        "drug_name": "Atezolizumab",
+        "factor": 1.0,
+        "notes": "Withhold. May resume if improved to grade 0-1 within 12 weeks and corticosteroids reduced to <= 10mg prednisone equivalent/day and patient stable on replacement therapy"
+      },
+      {
+        "condition": "Immune-related diabetes mellitus Grade 3-4 hyperglycaemia",
+        "drug_name": "Atezolizumab",
+        "factor": 1.0,
+        "notes": "Withhold. May resume if metabolic control achieved on insulin replacement therapy"
+      },
+      {
+        "condition": "Immune-related myasthenic syndrome/myasthenia gravis/Guillain-Barre syndrome/meningoencephalitis (all grades)",
+        "drug_name": "Atezolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue atezolizumab"
+      },
+      {
+        "condition": "Myositis Grade 2-3",
+        "drug_name": "Atezolizumab",
+        "factor": 1.0,
+        "notes": "Withhold for moderate to severe myositis"
+      },
+      {
+        "condition": "Myositis Grade 3-4",
+        "drug_name": "Atezolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue"
+      },
+      {
+        "condition": "Infusion reactions Grade 1",
+        "drug_name": "Atezolizumab",
+        "factor": 1.0,
+        "notes": "Reduce infusion rate to half. After event resolved, wait 30 minutes at reduced rate; if tolerated, increase to original rate"
+      },
+      {
+        "condition": "Infusion reactions Grade 2",
+        "drug_name": "Atezolizumab",
+        "factor": 1.0,
+        "notes": "Withhold. Restart at half the infusion rate only after symptoms resolved"
+      },
+      {
+        "condition": "Infusion reactions Grade 4",
+        "drug_name": "Atezolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue atezolizumab"
+      },
+      {
+        "condition": "Immune-related rash Grade 3",
+        "drug_name": "Atezolizumab",
+        "factor": 1.0,
+        "notes": "Withhold. May resume if rash resolved and corticosteroids reduced to <= 10mg prednisone equivalent/day"
+      },
+      {
+        "condition": "Immune-related rash Grade 4",
+        "drug_name": "Atezolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue. Consider corticosteroids."
+      }
+    ],
+    "pre_medications": [
+      "No routine antiemetics required",
+      "As required for infusion reactions: chlorphenamine 10mg IV, hydrocortisone 100mg IV, paracetamol 1000mg oral",
+      "Loperamide 4mg oral then 2mg after each loose stool as required (max 16mg/24h)",
+      "Gastric protection with PPI or H2 antagonist may be considered in high-risk patients"
+    ],
+    "special_warnings": [
+      "Indicated for previously platinum-treated locally advanced/metastatic NSCLC (squamous or non-squamous, stage IIIB/IV). PD-L1 testing attempted (TPS score documented or documented as unquantifiable or insufficient tissue noted)",
+      "Patient must have progressed after >= 2 cycles of platinum-containing chemotherapy for stage IIIB/IV NSCLC (and targeted treatment if EGFR/ALK positive), OR progressed within 6 months of platinum-based adjuvant/neoadjuvant therapy",
+      "No prior treatment with anti-PD-1, anti-PDL1, anti-PDL2, anti-CD137, or anti-CTLA-4 antibody",
+      "No symptomatically active brain metastases or leptomeningeal metastases",
+      "WHO performance status 0-1 and otherwise fit for second-line docetaxel",
+      "Atezolizumab dose reductions NOT permitted; delay or discontinue only. In principle no dose reductions recommended",
+      "Systemic corticosteroids should be avoided before starting atezolizumab; can be used after starting for immune-related adverse reactions",
+      "Patients must receive atezolizumab Patient Alert Card",
+      "Immune-related adverse reactions can be severe/life-threatening; early diagnosis essential",
+      "Permanently discontinue atezolizumab for: grade 3-4 pneumonitis or hepatitis; any life-threatening grade 4 reaction (including colitis, renal impairment); recurrence of severe/grade 3 reaction; persistent grade 2-3 not recovering to grade 1 within 12 weeks",
+      "Treatment interruption >= 12 weeks may preclude further funding approval",
+      "Maximum 2 years (26 cycles at 28-day intervals) of treatment",
+      "Atezolizumab stopped at 2 years or loss of clinical benefit or unacceptable toxicity, whichever is first",
+      "Formal medical review scheduled at least by end of first 9 weeks of treatment",
+      "Treatment breaks of up to 12 weeks beyond expected cycle length allowed solely to allow immune toxicities to settle"
+    ],
+    "required_patient_fields": [
+      "pd_l1_status",
+      "creatinine_clearance",
+      "liver_function_tests",
+      "thyroid_function_tests"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "NSCLC-ATEZ-SC-BEV-CARBO-PAC",
+    "protocol_name": "Atezolizumab SC-Bevacizumab-Carboplatin (AUC6)-Paclitaxel - NSCLC",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 21,
+    "number_of_cycles": 35,
+    "drugs": [
+      {
+        "drug_name": "Atezolizumab",
+        "dose": 1875.0,
+        "dose_unit": "mg",
+        "route": "Subcutaneous",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.12,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Fixed dose 1875mg (15mL) subcutaneous injection into thigh over approximately 7 minutes. Induction cycles 1-4 and maintenance cycles 5-35. SC formulation (Tecentriq 1875mg) is NOT interchangeable with IV atezolizumab 1200mg. Alternate injection sites between left and right thigh only; new injections at least 2.5cm from old site; do not inject into red, bruised, tender or hard skin. Other SC medicines preferably injected at different sites during treatment. Dose reductions NOT permitted; delay or discontinue only. Patients must receive atezolizumab Patient Alert Card. Atezolizumab continued until loss of clinical benefit or unmanageable toxicity."
+      },
+      {
+        "drug_name": "Bevacizumab",
+        "dose": 15.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Induction cycles 1-4 and maintenance cycles 5-35: 15mg/kg IV in 100ml sodium chloride 0.9% over 90 minutes (first infusion); 60 minutes if well tolerated on 2nd infusion; 30 minutes if well tolerated subsequently. Bevacizumab doses should be OMITTED (not reduced) for adverse reactions. Stop permanently if >2 doses missed. Continue until disease progression or unacceptable toxicity. Bevacizumab is neutral on extravasation. Dose banded per national dose bands."
+      },
+      {
+        "drug_name": "Carboplatin",
+        "dose": 6.0,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": 900.0,
+        "max_dose_unit": "mg",
+        "notes": "Induction cycles 1-4 only. AUC6 by Calvert formula using calculated GFR. AUC5 may be considered with EDTA clearance (seek consultant advice). Maximum dose 900mg (set at 890mg in ARIA for national dose bands). IV in 500ml glucose 5% over 60 minutes. Carboplatin is irritant. Dose may need adjustment if renal function changes by >10% from previous cycle. Dose banded per national dose bands."
+      },
+      {
+        "drug_name": "Paclitaxel",
+        "dose": 200.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 3.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Induction cycles 1-4 only. 200mg/m2 IV in 500ml sodium chloride 0.9% over 180 minutes. Lower starting dose of 175mg/m2 for patients of Asian origin as per SPC. Must be administered via non-PVC administration set with in-line 0.22 micron filter. Paclitaxel is vesicant. Dose banded per national dose bands (6mg/ml)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils >= 1x10^9/L on Day 1",
+        "drug_name": "Carboplatin and Paclitaxel",
+        "factor": 1.0,
+        "notes": "Proceed at 100% dose"
+      },
+      {
+        "condition": "Neutrophils < 1x10^9/L on Day 1",
+        "drug_name": "Carboplatin and Paclitaxel",
+        "factor": 1.0,
+        "notes": "Delay 7 days. If recovered to >= 1x10^9/L continue at full dose. If not recovered within 7 days or repeated delays required, delay until recovery then reduce dose by 20%"
+      },
+      {
+        "condition": "Platelets 50-99 x10^9/L on Day 1",
+        "drug_name": "Carboplatin and Paclitaxel",
+        "factor": 1.0,
+        "notes": "Delay 7 days. If recovered to >= 100x10^9/L continue at full dose. If not recovered or repeated delays required, delay until recovery then reduce dose by 20%"
+      },
+      {
+        "condition": "Platelets < 50 x10^9/L on Day 1",
+        "drug_name": "Carboplatin and Paclitaxel",
+        "factor": 0.5,
+        "notes": "Delay until recovery then reduce dose by 50%"
+      },
+      {
+        "condition": "Atezolizumab SC hepatic: Bilirubin 1.5-3xULN OR ALT/AST 3-5xULN",
+        "drug_name": "Atezolizumab",
+        "factor": 1.0,
+        "notes": "Delay. For grade 2 hepatitis persisting 5-7 days: withhold and consider corticosteroid. May resume if improved to grade 1 within 12 weeks and corticosteroids reduced to <= 10mg prednisolone equivalent/day"
+      },
+      {
+        "condition": "Atezolizumab SC hepatic: Bilirubin > 3xULN OR ALT/AST > 3xULN (grade 3+)",
+        "drug_name": "Atezolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue atezolizumab SC"
+      },
+      {
+        "condition": "Paclitaxel hepatic: Bilirubin < 21 µmol/L AND ALT/AST < 10xULN",
+        "drug_name": "Paclitaxel",
+        "factor": 1.0,
+        "notes": "Full dose 175mg/m2 (or 200mg/m2 per protocol standard dose)"
+      },
+      {
+        "condition": "Paclitaxel hepatic: Bilirubin 21-26 µmol/L",
+        "drug_name": "Paclitaxel",
+        "factor": 0.75,
+        "notes": "Reduce paclitaxel to 135mg/m2"
+      },
+      {
+        "condition": "Paclitaxel hepatic: Bilirubin 27-51 µmol/L",
+        "drug_name": "Paclitaxel",
+        "factor": 0.5,
+        "notes": "Reduce paclitaxel to 75mg/m2"
+      },
+      {
+        "condition": "Paclitaxel hepatic: Bilirubin 52-85 µmol/L",
+        "drug_name": "Paclitaxel",
+        "factor": 0.5,
+        "notes": "Reduce paclitaxel to 50mg/m2"
+      },
+      {
+        "condition": "Paclitaxel hepatic: Bilirubin > 85 µmol/L OR ALT/AST > 10xULN",
+        "drug_name": "Paclitaxel",
+        "factor": 0.0,
+        "notes": "Paclitaxel is contra-indicated"
+      },
+      {
+        "condition": "Carboplatin renal: CrCl < 20 ml/min",
+        "drug_name": "Carboplatin",
+        "factor": 0.0,
+        "notes": "Omit carboplatin"
+      },
+      {
+        "condition": "Non-haematological NCI-CTC grade 3+ toxicity (non-atezolizumab, non-bevacizumab)",
+        "drug_name": "Causative agent",
+        "factor": 0.75,
+        "notes": "Delay until resolved to grade 1 or below, then reduce causative agent to 75% of original dose or discontinue as appropriate"
+      },
+      {
+        "condition": "Bevacizumab: adverse reactions (any)",
+        "drug_name": "Bevacizumab",
+        "factor": 0.0,
+        "notes": "Omit bevacizumab doses - do NOT reduce dose. Stop permanently if patient develops: GI perforation, arterial thromboembolic events, grade 3+ haemorrhagic events, grade 3+ congestive heart failure or LV dysfunction, grade 4 fistula"
+      },
+      {
+        "condition": "Atezolizumab SC: immune-related pneumonitis Grade 2",
+        "drug_name": "Atezolizumab",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve. Consider prednisolone 1-2mg/kg/day. Resume if improved to grade 0-1 within 12 weeks with corticosteroids reduced to <= 10mg prednisolone equivalent/day"
+      },
+      {
+        "condition": "Atezolizumab SC: immune-related pneumonitis Grade 3-4",
+        "drug_name": "Atezolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue. Consider corticosteroids."
+      },
+      {
+        "condition": "Atezolizumab SC: injection-related reactions Grade 1-2",
+        "drug_name": "Atezolizumab",
+        "factor": 1.0,
+        "notes": "Reduce injection rate or pause injection. Resume when event resolved."
+      },
+      {
+        "condition": "Atezolizumab SC: injection-related reactions Grade 3-4",
+        "drug_name": "Atezolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue atezolizumab SC"
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV 30 minutes before paclitaxel",
+      "Dexamethasone 20mg IV 30 minutes before paclitaxel",
+      "H2 antagonist according to local formulary choice and availability 30 minutes before paclitaxel (e.g. famotidine 20mg oral, nizatidine 150mg oral, ranitidine 150mg oral, or ranitidine 50mg IV)",
+      "Ondansetron 8mg oral or IV 15-30 minutes before chemotherapy (cycles 1-6 only)",
+      "Dexamethasone 4mg oral twice daily for 3 days starting day 2 (take-home, cycles 1-4 only)",
+      "Metoclopramide 10mg oral three times daily as required for nausea (take-home, cycles 1-4 only)",
+      "Loperamide 4mg oral then 2mg after each loose stool as required up to max 16mg/24h (cycle 1 only)",
+      "As required for infusion reactions: chlorphenamine 10mg IV, hydrocortisone 100mg IV, paracetamol 1000mg oral"
+    ],
+    "special_warnings": [
+      "Atezolizumab SC 1875mg (Tecentriq) is NOT interchangeable with IV atezolizumab 1200mg",
+      "Indicated for: (1) first-line locally advanced or metastatic non-squamous NSCLC with PD-L1 TPS 0-49% and no EGFR/ALK mutations (Blueteq ATE4); or (2) EGFR/ALK/ROS1/MET exon 14/KRAS G12C/RET/BRAF mutation-positive non-squamous NSCLC after failure of appropriate targeted therapy (Blueteq ATE5)",
+      "Requires Blueteq application (ATE4 or ATE5) and eligibility criteria confirmed before consenting patient",
+      "Atezolizumab and bevacizumab dose reductions NOT permitted; doses must be omitted or treatment discontinued",
+      "Maximum 4 induction cycles (atezolizumab SC + bevacizumab + carboplatin + paclitaxel) then maintenance atezolizumab SC + bevacizumab for up to 31 further cycles (35 total, 2 years)",
+      "Injection site must be alternated between left and right thigh ONLY; new injections at least 2.5cm from old site; avoid red, bruised, tender or hard skin",
+      "Administer 15mL SC into thigh over approximately 7 minutes using SC infusion set (e.g. winged/butterfly). DO NOT administer residual hold-up volume in tubing",
+      "Other SC medicines preferably injected at different sites during treatment course",
+      "Systemic corticosteroids should be avoided before starting atezolizumab; can be used after starting for immune-related adverse reactions",
+      "Patients must receive atezolizumab Patient Alert Card",
+      "Immune-related adverse reactions can be severe/life-threatening; early diagnosis essential",
+      "Permanently discontinue atezolizumab for: grade 3-4 pneumonitis or hepatitis; any life-threatening grade 4 reaction; recurrence of severe/grade 3 reaction; persistent grade 2-3 not recovering to grade 1 within 12 weeks",
+      "Treatment interruption >= 12 weeks may preclude further funding approval",
+      "Bevacizumab: monitor BP and dipstick urinalysis for proteinuria before each bevacizumab dose; thyroid function tests before starting and every 6 weeks",
+      "Paclitaxel hypersensitivity reactions most likely with first or second infusion: interrupt for minor symptoms; immediately discontinue for severe reactions (profound hypotension, bronchospasm, generalised erythema)",
+      "Lower paclitaxel starting dose 175mg/m2 for patients of Asian origin as per SPC"
+    ],
+    "required_patient_fields": [
+      "pd_l1_status",
+      "egfr_mutation_status",
+      "alk_fusion_status",
+      "creatinine_clearance",
+      "liver_function_tests",
+      "cortisol",
+      "thyroid_function_tests",
+      "blood_pressure",
+      "urinalysis_proteinuria"
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 6,
+      "max_dose_mg": 900
+    }
+  }
+]

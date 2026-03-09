@@ -1,0 +1,856 @@
+[
+  {
+    "protocol_code": "CLL-CHLORAMBUCIL-7DAY",
+    "protocol_name": "CLL Chlorambucil (7 day)",
+    "disease_site": "CLL",
+    "category": "haematology",
+    "cycle_length_days": 28,
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Chlorambucil",
+        "dose": 10.0,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Available as 2mg film-coated tablets. Dose rounded to nearest 2mg (up if halfway). Swallow whole on empty stomach, one hour before meals or three hours after. Daily dose may be divided into three (morning, noon and night) if nausea/vomiting problematic. Do not crush or dissolve tablets."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils 0.5-1 x10⁹/L and/or platelets 50-75 x10⁹/L",
+        "drug_name": "Chlorambucil",
+        "factor": 1.0,
+        "notes": "Delay treatment for one week. If counts recover treatment can be re-started. If counts take 8-14 days to recover, may re-start with 50% dose reduction."
+      },
+      {
+        "condition": "Neutrophils less than 0.5 x10⁹/L and/or platelets less than 50 x10⁹/L",
+        "drug_name": "Chlorambucil",
+        "factor": 0.5,
+        "notes": "Delay treatment until counts have recovered, then restart using a 50% dose reduction."
+      },
+      {
+        "condition": "Severe hepatic impairment",
+        "drug_name": "Chlorambucil",
+        "factor": 1.0,
+        "notes": "Chlorambucil is primarily metabolised in the liver. Dose reduction should be considered in severe hepatic impairment. Insufficient data to give specific dosing recommendation. Monitor closely."
+      },
+      {
+        "condition": "Renal impairment (any degree)",
+        "drug_name": "Chlorambucil",
+        "factor": 1.0,
+        "notes": "Dose adjustment not considered necessary. Monitor carefully for additional myelosuppression."
+      }
+    ],
+    "pre_medications": [
+      "Allopurinol 300mg once daily oral for 7 days (cycle 1 only)"
+    ],
+    "special_warnings": [
+      "NPSA/2008/RRR001: National Patient Safety Alert on oral chemotherapy must be followed for chlorambucil.",
+      "Chlorambucil is given as a short course that is repeated and should only be prescribed under the supervision of a consultant haematologist.",
+      "Multiple versions of this protocol exist with different doses/cycle lengths — confirm correct version before prescribing.",
+      "Consider blood transfusion if patient symptomatic of anaemia or haemoglobin less than 8g/dL (80g/L)."
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "liver_function_tests",
+      "creatinine_clearance"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "HCL-CLADRIBINE-IV",
+    "protocol_name": "HCL Cladribine (IV 5-day)",
+    "disease_site": "HCL",
+    "category": "haematology",
+    "cycle_length_days": 5,
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Cladribine",
+        "dose": 0.12,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Leustat brand only (licensed for IV administration). Administered in 500ml sodium chloride 0.9% over 120 minutes. Dose banded according to agreed national dose bands (1mg/ml). This is an unlicensed dose and administration schedule for hairy cell leukaemia; the standard HCL schedule is 24-hour continuous infusion for 7 days. The schedule described here is licensed for CLL. Subcutaneous cladribine should be preferred in most patients."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Renal impairment CrCl ≤50 ml/min",
+        "drug_name": "Cladribine",
+        "factor": 1.0,
+        "notes": "Use with caution and close monitoring. Consider alternatives (rituximab or interferon) until renal function normalises. Discuss with consultant."
+      },
+      {
+        "condition": "Haematological toxicity (anaemia, neutropenia, thrombocytopenia)",
+        "drug_name": "Cladribine",
+        "factor": 1.0,
+        "notes": "No pre-treatment dose reductions or delays should be made for anaemia, neutropenia or thrombocytopenia."
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Cladribine",
+        "factor": 1.0,
+        "notes": "No information available."
+      },
+      {
+        "condition": "Severe skin rash",
+        "drug_name": "Cladribine",
+        "factor": 1.0,
+        "notes": "Skin rash (can be severe) occurs in up to 80% of patients. Early treatment with topical or systemic corticosteroids is usually necessary."
+      }
+    ],
+    "pre_medications": [
+      "No antiemetics required",
+      "Allopurinol 300mg once daily oral for 7 days",
+      "Aciclovir 400mg twice daily oral — start day 6, continue until lymphocytes above 1x10⁹/L (may be years)",
+      "Co-trimoxazole 960mg once daily on Monday, Wednesday and Friday oral — start day 6, continue until lymphocytes above 1x10⁹/L",
+      "Mouthwashes per local/national mucositis policy",
+      "Gastric protection (PPI or H2 antagonist) if high risk of GI ulceration or bleed"
+    ],
+    "special_warnings": [
+      "IRRADIATED BLOOD PRODUCTS REQUIRED FOR LIFE: Patients treated with cladribine carry a lifelong risk of transfusion-associated graft versus host disease (TA-GVHD). Only irradiated blood products must be used for life. Local blood transfusion departments must be notified immediately and patient must carry an alert card at all times.",
+      "Unlicensed dose and administration schedule for hairy cell leukaemia.",
+      "FBC, LFTs and U&Es required prior to initiating treatment."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "lymphocyte_count",
+      "fbc",
+      "lft",
+      "blood_transfusion_irradiation_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "HCL-CLADRIBINE-SC",
+    "protocol_name": "HCL Cladribine (SC)",
+    "disease_site": "HCL",
+    "category": "haematology",
+    "cycle_length_days": 5,
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Cladribine",
+        "dose": 0.14,
+        "dose_unit": "mg/kg",
+        "route": "Subcutaneous",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Litak brand only (licensed for subcutaneous administration). Dose banded per national bands (2mg/ml). Each dose injected as a single subcutaneous injection into abdominal tissue at approximately 24-hour intervals. Up to 7ml per site; no need to split dose unless preferred. Allow to warm to room temperature; inject slowly over approximately 1 minute and massage site."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Renal impairment CrCl ≤50 ml/min",
+        "drug_name": "Cladribine",
+        "factor": 1.0,
+        "notes": "Use with caution and close monitoring. Consider alternatives (rituximab or interferon) until renal function normalises. Discuss with consultant."
+      },
+      {
+        "condition": "Haematological toxicity (anaemia, neutropenia, thrombocytopenia)",
+        "drug_name": "Cladribine",
+        "factor": 1.0,
+        "notes": "No pre-treatment dose reductions or delays should be made for anaemia, neutropenia or thrombocytopenia."
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Cladribine",
+        "factor": 1.0,
+        "notes": "No information available."
+      }
+    ],
+    "pre_medications": [
+      "No antiemetics required",
+      "Allopurinol 300mg once daily oral for 7 days",
+      "Aciclovir 400mg twice daily oral — start day 6, continue until lymphocytes above 1x10⁹/L (may be years)",
+      "Co-trimoxazole 960mg once daily on Monday, Wednesday and Friday oral — start day 6, continue until lymphocytes above 1x10⁹/L",
+      "Mouthwashes per local/national mucositis policy",
+      "Gastric protection (PPI or H2 antagonist) if high risk of GI ulceration or bleed"
+    ],
+    "special_warnings": [
+      "IRRADIATED BLOOD PRODUCTS REQUIRED FOR LIFE: Patients treated with cladribine carry a lifelong risk of transfusion-associated graft versus host disease (TA-GVHD). Only irradiated blood products must be used for life. Local blood transfusion departments must be notified immediately and patient must carry an alert card at all times.",
+      "FBC, LFTs and U&Es required prior to initiating treatment."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "lymphocyte_count",
+      "fbc",
+      "lft",
+      "blood_transfusion_irradiation_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "AML-INP-CLOFARABINE",
+    "protocol_name": "AML InP-Clofarabine (Inpatient)",
+    "disease_site": "AML",
+    "category": "haematology",
+    "cycle_length_days": 28,
+    "number_of_cycles": 2,
+    "drugs": [
+      {
+        "drug_name": "Clofarabine",
+        "dose": 40.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Dose banded per national dose bands (1mg/ml). Doses ≤74.9mg in 100ml NaCl 0.9%; doses 75-124.9mg in 150ml NaCl 0.9%; doses ≥125mg in 200ml NaCl 0.9%. Use 0.2 or 0.22 micron in-line filter if not already filtered during manufacture. Infusion time may be increased to 120 minutes if neurotoxicity develops. Clofarabine not licensed in adult patients — may require funding."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Renal impairment CrCl 30-60 ml/min",
+        "drug_name": "Clofarabine",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Renal impairment CrCl less than 30 ml/min",
+        "drug_name": "Clofarabine",
+        "factor": 1.0,
+        "notes": "Discuss with consultant."
+      },
+      {
+        "condition": "Mild to moderate hepatic impairment",
+        "drug_name": "Clofarabine",
+        "factor": 1.0,
+        "notes": "Use with caution."
+      },
+      {
+        "condition": "Severe hepatic impairment",
+        "drug_name": "Clofarabine",
+        "factor": 0.0,
+        "notes": "Avoid in severe hepatic impairment."
+      },
+      {
+        "condition": "Neurotoxicity (agitation, anxiety, somnolence, dystonia)",
+        "drug_name": "Clofarabine",
+        "factor": 1.0,
+        "notes": "Increase infusion time to 120 minutes."
+      }
+    ],
+    "pre_medications": [
+      "Hydrocortisone 50-100mg IV bolus immediately prior to each clofarabine infusion (to prevent infusion-related reactions)",
+      "Ondansetron 8mg twice daily oral or IV days 1-5",
+      "Metoclopramide 10mg three times daily when required oral or IV",
+      "Aciclovir 400mg twice daily oral until neutrophils >1x10⁹/L",
+      "Antifungal — discuss need and choice with consultant; azole antifungals CONTRA-INDICATED during clofarabine",
+      "Allopurinol 300mg once daily oral for 7 days (initial induction only) or rasburicase IV in high-risk individuals",
+      "Mouthwashes per local/national mucositis policy",
+      "Gastric protection (PPI or H2 antagonist) if high risk of GI ulceration or bleed"
+    ],
+    "special_warnings": [
+      "IRRADIATED BLOOD PRODUCTS REQUIRED FOR LIFE: Patients treated with clofarabine carry a lifelong risk of TA-GVHD. Only irradiated blood products must be used for life. Notify transfusion departments and issue alert card.",
+      "Clofarabine not licensed in adult patients — funding may be required.",
+      "Monitor for tumour lysis syndrome and SIRS (tachypnoea, tachycardia, hypotension, pulmonary oedema, capillary leak). Discontinue immediately if early signs of SIRS or organ dysfunction.",
+      "Prophylactic hydrocortisone 100mg/m² days 1-3 may prevent SIRS.",
+      "Azole antifungal agents are contra-indicated during clofarabine administration.",
+      "Co-trimoxazole is not recommended as it delays blood count recovery.",
+      "Take care with aminoglycosides during clofarabine administration.",
+      "Monitor U&Es, FBC and LFTs daily prior to clofarabine. Monitor blood pressure, fluid balance and weight daily.",
+      "Bone marrow aspirate and trephine between days 18-21.",
+      "Inpatient regimen — ensure all supportive medications prescribed on inpatient chart.",
+      "1-2 cycles (1 cycle set in ARIA)."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "liver_function_tests",
+      "fbc",
+      "blood_transfusion_irradiation_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "AML-INP-CLOFARABINE-CYTARABINE",
+    "protocol_name": "AML InP-Clofarabine-Cytarabine (Inpatient)",
+    "disease_site": "AML",
+    "category": "haematology",
+    "cycle_length_days": 28,
+    "number_of_cycles": 2,
+    "drugs": [
+      {
+        "drug_name": "Clofarabine",
+        "dose": 40.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Dose banded per national dose bands (1mg/ml). Doses ≤74.9mg in 100ml NaCl 0.9%; doses 75-124.9mg in 150ml NaCl 0.9%; doses 125-130mg in 200ml NaCl 0.9%. Use 0.2 or 0.22 micron in-line filter if not already filtered. Infusion time may be increased to 120 minutes if neurotoxicity develops. Administer BEFORE cytarabine; cytarabine must start 4 hours after completion of clofarabine infusion. Clofarabine not licensed in adult patients."
+      },
+      {
+        "drug_name": "Cytarabine",
+        "dose": 1000.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Dose banded per national dose bands (100mg/ml). Administered in 1000ml sodium chloride 0.9% over 120 minutes. MUST be started 4 hours after completion of the clofarabine infusion."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Renal impairment CrCl 30-60 ml/min",
+        "drug_name": "Clofarabine",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Renal impairment CrCl less than 30 ml/min",
+        "drug_name": "Clofarabine",
+        "factor": 1.0,
+        "notes": "Discuss with consultant."
+      },
+      {
+        "condition": "Mild to moderate hepatic impairment",
+        "drug_name": "Clofarabine",
+        "factor": 1.0,
+        "notes": "Use with caution."
+      },
+      {
+        "condition": "Severe hepatic impairment",
+        "drug_name": "Clofarabine",
+        "factor": 0.0,
+        "notes": "Avoid in severe hepatic impairment."
+      },
+      {
+        "condition": "Renal impairment CrCl less than 60 ml/min",
+        "drug_name": "Cytarabine",
+        "factor": 0.6,
+        "notes": "Reduce to 60% of original dose."
+      },
+      {
+        "condition": "Renal impairment CrCl less than 45 ml/min",
+        "drug_name": "Cytarabine",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Renal impairment CrCl less than 30 ml/min",
+        "drug_name": "Cytarabine",
+        "factor": 0.0,
+        "notes": "Omit cytarabine."
+      },
+      {
+        "condition": "Hepatic impairment bilirubin greater than 34 µmol/L",
+        "drug_name": "Cytarabine",
+        "factor": 0.5,
+        "notes": "Reduce to 50%. Escalate doses in subsequent cycles in the absence of toxicity."
+      },
+      {
+        "condition": "Neurotoxicity (agitation, anxiety, somnolence, dystonia)",
+        "drug_name": "Clofarabine",
+        "factor": 1.0,
+        "notes": "Increase infusion time to 120 minutes."
+      }
+    ],
+    "pre_medications": [
+      "Hydrocortisone 50-100mg IV bolus immediately prior to each clofarabine infusion (to prevent infusion-related reactions)",
+      "Ondansetron 8mg twice daily oral or IV days 1-5",
+      "Metoclopramide 10mg three times daily when required oral or IV",
+      "Aciclovir 400mg twice daily oral until neutrophils >1x10⁹/L",
+      "Prednisolone 0.5% eye drops 1 drop each eye four times daily — continue for 5 days after last cytarabine",
+      "Antifungal — discuss need and choice with consultant; azole antifungals CONTRA-INDICATED during clofarabine",
+      "Allopurinol 300mg once daily oral (review cycle 2) or rasburicase IV in high-risk individuals",
+      "Mouthwashes per local/national mucositis policy",
+      "Gastric protection (PPI or H2 antagonist) if high risk of GI ulceration or bleed"
+    ],
+    "special_warnings": [
+      "IRRADIATED BLOOD PRODUCTS REQUIRED FOR LIFE: Patients treated with clofarabine carry a lifelong risk of TA-GVHD. Only irradiated blood products must be used for life. Notify transfusion departments and issue alert card.",
+      "ADMINISTRATION SEQUENCE CRITICAL: Cytarabine must be started 4 hours after completion of the clofarabine infusion.",
+      "Clofarabine not licensed in adult patients — funding may be required.",
+      "Monitor for tumour lysis syndrome and SIRS. Discontinue clofarabine immediately if early signs of SIRS, capillary leak or organ dysfunction.",
+      "Prophylactic hydrocortisone 100mg/m² days 1-3 may prevent SIRS.",
+      "Azole antifungal agents are contra-indicated during clofarabine administration.",
+      "Co-trimoxazole is not recommended as it delays blood count recovery.",
+      "Take care with aminoglycosides during clofarabine administration.",
+      "Monitor FBC, LFTs and U&Es daily prior to clofarabine. Monitor blood pressure, fluid balance and weight throughout.",
+      "Bone marrow aspirate and trephine between days 18-21.",
+      "Inpatient regimen — ensure all supportive medications prescribed on inpatient chart.",
+      "1-2 cycles (1 cycle set in ARIA)."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "liver_function_tests",
+      "fbc",
+      "blood_transfusion_irradiation_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "SCD-CRIZANLIZUMAB",
+    "protocol_name": "Crizanlizumab for Recurrent Vaso-Occlusive Crises in Sickle Cell Disease",
+    "disease_site": "Sickle Cell Disease",
+    "category": "haematology",
+    "cycle_length_days": 28,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Crizanlizumab",
+        "dose": 5.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1,
+          15
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "CYCLE 1 LOADING (42-day cycle): Doses on Day 1 AND Day 15. Administered in 100ml Sodium Chloride 0.9% or Glucose 5% over 30 minutes. CYCLE 2 ONWARDS MAINTENANCE (28-day cycle): Day 1 only, every 28 days. Dosing based on actual body weight. Dose rounded to nearest measurable volume (nearest 10mg). If weight changes, dose should be within 6% of calculated dose. Administer via non-PVC administration set with in-line 0.22 micron filter. Flush line with at least 25ml NaCl 0.9% or Glucose 5% after administration. Standard infusion time 30 minutes; may be extended up to 2 hours depending on tolerance. Not a cytotoxic drug."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Renal impairment CrCl ≥35 ml/min/1.73m²",
+        "drug_name": "Crizanlizumab",
+        "factor": 1.0,
+        "notes": "No dose adjustment required."
+      },
+      {
+        "condition": "Severe renal impairment CrCl <35 ml/min/1.73m²",
+        "drug_name": "Crizanlizumab",
+        "factor": 1.0,
+        "notes": "Data too limited to draw conclusions on use in severe renal impairment. Discuss with consultant."
+      },
+      {
+        "condition": "Mild to moderate hepatic impairment",
+        "drug_name": "Crizanlizumab",
+        "factor": 1.0,
+        "notes": "No dose adjustment required."
+      },
+      {
+        "condition": "Severe hepatic impairment",
+        "drug_name": "Crizanlizumab",
+        "factor": 0.0,
+        "notes": "Crizanlizumab should not be given in severe hepatic impairment."
+      },
+      {
+        "condition": "Mild to moderate infusion-related reaction (Grade 1-2)",
+        "drug_name": "Crizanlizumab",
+        "factor": 1.0,
+        "notes": "Temporarily interrupt or reduce infusion rate. Treat with antipyretic, analgesic and/or antihistamine (caution with corticosteroids in sickle cell disease unless clinically indicated e.g. anaphylaxis). When symptoms resolve, restart at reduced rate then up-titrate. Total infusion time must not exceed 2 hours. For subsequent infusions consider pre-medications (paracetamol, chlorphenamine) and/or extend administration to 1 hour."
+      },
+      {
+        "condition": "Severe infusion-related reaction (Grade ≥3)",
+        "drug_name": "Crizanlizumab",
+        "factor": 0.0,
+        "notes": "Discontinue crizanlizumab treatment. Treat with antipyretic, analgesic and/or antihistamine."
+      }
+    ],
+    "pre_medications": [
+      "No pre-medications, antiemetics or supportive medications routinely required",
+      "If prior infusion-related reaction: consider paracetamol and chlorphenamine pre-medications and/or extend infusion to 1 hour"
+    ],
+    "special_warnings": [
+      "Not a cytotoxic chemotherapy — monoclonal antibody for vaso-occlusive crisis prevention in sickle cell disease.",
+      "LOADING SCHEDULE: Cycle 1 is a 42-day cycle with doses on Day 1 and Day 15. From cycle 2 onwards, 28-day cycles with Day 1 dosing only.",
+      "Patient must be 16 years or older with confirmed sickle cell disease (any genotype) and ≥2 confirmed vaso-occlusive crises in the last 12 months.",
+      "Application must be made by a specialised haemoglobinopathy team and approved by the haemoglobinopathy co-ordinating centre MDT.",
+      "Patients must not be receiving regular blood transfusions.",
+      "Blueteq form required for funding (NICE TA743).",
+      "Crizanlizumab can cause platelet clumping — may lead to falsely decreased platelet counts. Run blood test within 4 hours of sampling. No evidence of actual platelet reduction.",
+      "Infusion-related reactions occur in ~2.7% of patients — most within hours of first or second infusion. Monitor for 60 minutes after first two infusions; can reduce to 30 minutes thereafter if tolerated.",
+      "Avoid in pregnancy — potential for foetal harm especially in third trimester.",
+      "FBC, LFTs, U&Es and reticulocytes required prior to first dose."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "liver_function_tests",
+      "fbc",
+      "reticulocyte_count",
+      "body_weight"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "AML-INP-FLA-IDA-1000",
+    "protocol_name": "AML InP-Cytarabine (1000)-Fludarabine-Idarubicin (FLA-Ida)",
+    "disease_site": "AML",
+    "category": "haematology",
+    "cycle_length_days": 28,
+    "number_of_cycles": 3,
+    "drugs": [
+      {
+        "drug_name": "Fludarabine",
+        "dose": 30.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Dose banded per national dose bands (25mg/ml). Administered in 100ml sodium chloride 0.9% over 30 minutes. MUST be administered BEFORE cytarabine — fludarabine must precede cytarabine by 4 hours on each day."
+      },
+      {
+        "drug_name": "Cytarabine",
+        "dose": 1000.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": 4.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Dose banded per national dose bands (100mg/ml). Administered in 1000ml sodium chloride 0.9% over 240 minutes (4 hours). MUST be given 4 hours after fludarabine. Standard dose is 2000mg/m²; decreased to 1000mg/m² in patients over 60 years or those who are less fit."
+      },
+      {
+        "drug_name": "Idarubicin",
+        "dose": 8.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": 0.083,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Dose banded per national dose bands (1mg/ml). Administered as IV bolus over 5-10 minutes. Given on days 3, 4 and 5 (after fludarabine and cytarabine on those days)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Renal impairment CrCl less than 60 ml/min",
+        "drug_name": "Cytarabine",
+        "factor": 0.6,
+        "notes": "Reduce to 60% of original dose."
+      },
+      {
+        "condition": "Renal impairment CrCl less than 45 ml/min",
+        "drug_name": "Cytarabine",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Renal impairment CrCl less than 30 ml/min",
+        "drug_name": "Cytarabine",
+        "factor": 1.0,
+        "notes": "Discuss with consultant."
+      },
+      {
+        "condition": "Hepatic impairment bilirubin greater than 34 µmol/L",
+        "drug_name": "Cytarabine",
+        "factor": 0.5,
+        "notes": "Reduce to 50%. Escalate doses in subsequent cycles in the absence of toxicity."
+      },
+      {
+        "condition": "Renal or hepatic impairment",
+        "drug_name": "Fludarabine",
+        "factor": 1.0,
+        "notes": "No dose adjustment required for hepatic impairment. For renal: CrCl >70 ml/min = 100%; CrCl 30-70 ml/min = 50%; CrCl <30 ml/min = discuss with consultant."
+      },
+      {
+        "condition": "Renal impairment CrCl greater than 70 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 1.0,
+        "notes": "Full dose."
+      },
+      {
+        "condition": "Renal impairment CrCl 30-70 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Renal impairment CrCl less than 30 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 1.0,
+        "notes": "Discuss with consultant."
+      },
+      {
+        "condition": "Hepatic impairment bilirubin 40-85 µmol/L",
+        "drug_name": "Idarubicin",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Hepatic impairment bilirubin greater than 85 µmol/L",
+        "drug_name": "Idarubicin",
+        "factor": 1.0,
+        "notes": "Clinical decision — discuss with consultant."
+      },
+      {
+        "condition": "Renal impairment CrCl 20-50 ml/min",
+        "drug_name": "Idarubicin",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose."
+      },
+      {
+        "condition": "Renal impairment CrCl 10-20 ml/min",
+        "drug_name": "Idarubicin",
+        "factor": 0.75,
+        "notes": "Reduce to 75% with caution."
+      },
+      {
+        "condition": "Renal impairment CrCl less than 10 ml/min",
+        "drug_name": "Idarubicin",
+        "factor": 0.5,
+        "notes": "Reduce to 50% with caution."
+      }
+    ],
+    "pre_medications": [
+      "Ondansetron 8mg twice daily oral or IV days 1-7",
+      "Metoclopramide 10mg three times daily when required oral or IV",
+      "Aciclovir 400mg twice daily oral until neutrophils >1x10⁹/L",
+      "Pentamidine 300mg nebule every 28 days until neutrophils >1x10⁹/L",
+      "Prednisolone 0.5% eye drops 1 drop each eye four times daily — continue for 5 days after last cytarabine",
+      "Antifungal — discuss need and choice with consultant",
+      "Allopurinol 300mg once daily oral for 7 days (initial induction; review cycle 2)",
+      "Mouthwashes per local/national mucositis policy",
+      "Gastric protection (PPI or H2 antagonist) if high risk of GI ulceration or bleed"
+    ],
+    "special_warnings": [
+      "IRRADIATED BLOOD PRODUCTS REQUIRED FOR LIFE: Patients treated with fludarabine carry a lifelong risk of TA-GVHD. Only irradiated blood products must be used for life. Notify transfusion departments and issue alert card.",
+      "ADMINISTRATION SEQUENCE CRITICAL: Fludarabine MUST precede cytarabine by 4 hours on every day (days 1-5). Idarubicin given days 3-5 (after fludarabine and cytarabine).",
+      "Cumulative idarubicin lifetime limit: maximum safe cumulative dose not known; 150mg/m² would be considered problematic. Always consider previous anthracycline exposure.",
+      "Prior to treatment consider ECG, ECHO or MUGA scan if cardiac history, elderly or previous cardiac disease.",
+      "3 cycles planned (1 set in ARIA); cycles 2 and 3 proceed when neutrophil and platelet recovery confirmed.",
+      "Inpatient regimen — ensure all supportive medications prescribed on inpatient chart.",
+      "Idarubicin is a vesicant — take appropriate extravasation precautions."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "liver_function_tests",
+      "fbc",
+      "lvef",
+      "blood_transfusion_irradiation_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "AML-INP-FLA-IDA-2000",
+    "protocol_name": "AML InP-Cytarabine (2000)-Fludarabine-Idarubicin (FLA-Ida)",
+    "disease_site": "AML",
+    "category": "haematology",
+    "cycle_length_days": 28,
+    "number_of_cycles": 3,
+    "drugs": [
+      {
+        "drug_name": "Fludarabine",
+        "dose": 30.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Dose banded per national dose bands (25mg/ml). Administered in 100ml sodium chloride 0.9% over 30 minutes. MUST be administered BEFORE cytarabine — fludarabine must precede cytarabine by 4 hours on each day."
+      },
+      {
+        "drug_name": "Cytarabine",
+        "dose": 2000.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": 4.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Dose banded per national dose bands (100mg/ml). Administered in 1000ml sodium chloride 0.9% over 240 minutes (4 hours). MUST be given 4 hours after fludarabine. Standard dose is 2000mg/m²; may be decreased to 1000mg/m² in patients over 60 or who are less fit."
+      },
+      {
+        "drug_name": "Idarubicin",
+        "dose": 8.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": 0.083,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Dose banded per national dose bands (1mg/ml). Administered as IV bolus over 5-10 minutes. Given on days 3, 4 and 5."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Renal impairment CrCl less than 60 ml/min",
+        "drug_name": "Cytarabine",
+        "factor": 0.6,
+        "notes": "Reduce to 60% of original dose."
+      },
+      {
+        "condition": "Renal impairment CrCl less than 45 ml/min",
+        "drug_name": "Cytarabine",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Renal impairment CrCl less than 30 ml/min",
+        "drug_name": "Cytarabine",
+        "factor": 1.0,
+        "notes": "Discuss with consultant."
+      },
+      {
+        "condition": "Hepatic impairment bilirubin greater than 34 µmol/L",
+        "drug_name": "Cytarabine",
+        "factor": 0.5,
+        "notes": "Reduce to 50%. Escalate doses in subsequent cycles in the absence of toxicity."
+      },
+      {
+        "condition": "Renal impairment CrCl greater than 70 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 1.0,
+        "notes": "Full dose."
+      },
+      {
+        "condition": "Renal impairment CrCl 30-70 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Renal impairment CrCl less than 30 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 1.0,
+        "notes": "Discuss with consultant."
+      },
+      {
+        "condition": "Hepatic impairment (any degree)",
+        "drug_name": "Fludarabine",
+        "factor": 1.0,
+        "notes": "No dose adjustment required."
+      },
+      {
+        "condition": "Hepatic impairment bilirubin 40-85 µmol/L",
+        "drug_name": "Idarubicin",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Hepatic impairment bilirubin greater than 85 µmol/L",
+        "drug_name": "Idarubicin",
+        "factor": 1.0,
+        "notes": "Clinical decision — discuss with consultant."
+      },
+      {
+        "condition": "Renal impairment CrCl 20-50 ml/min",
+        "drug_name": "Idarubicin",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose."
+      },
+      {
+        "condition": "Renal impairment CrCl 10-20 ml/min",
+        "drug_name": "Idarubicin",
+        "factor": 0.75,
+        "notes": "Reduce to 75% with caution."
+      },
+      {
+        "condition": "Renal impairment CrCl less than 10 ml/min",
+        "drug_name": "Idarubicin",
+        "factor": 0.5,
+        "notes": "Reduce to 50% with caution."
+      }
+    ],
+    "pre_medications": [
+      "Ondansetron 8mg twice daily oral or IV days 1-7",
+      "Metoclopramide 10mg three times daily when required oral or IV",
+      "Aciclovir 400mg twice daily oral until neutrophils >1x10⁹/L",
+      "Pentamidine 300mg nebule every 28 days until neutrophils >1x10⁹/L",
+      "Prednisolone 0.5% eye drops 1 drop each eye four times daily — continue for 5 days after last cytarabine",
+      "Antifungal — discuss need and choice with consultant",
+      "Allopurinol 300mg once daily oral for 7 days (initial induction; review cycle 2)",
+      "Mouthwashes per local/national mucositis policy",
+      "Gastric protection (PPI or H2 antagonist) if high risk of GI ulceration or bleed"
+    ],
+    "special_warnings": [
+      "IRRADIATED BLOOD PRODUCTS REQUIRED FOR LIFE: Patients treated with fludarabine carry a lifelong risk of TA-GVHD. Only irradiated blood products must be used for life. Notify transfusion departments and issue alert card.",
+      "ADMINISTRATION SEQUENCE CRITICAL: Fludarabine MUST precede cytarabine by 4 hours on every day (days 1-5). Idarubicin given days 3-5 (after fludarabine and cytarabine).",
+      "Cumulative idarubicin lifetime limit: maximum safe cumulative dose not known; 150mg/m² would be considered problematic. Always consider previous anthracycline exposure.",
+      "Prior to treatment consider ECG, ECHO or MUGA scan if cardiac history, elderly or previous cardiac disease.",
+      "3 cycles planned (1 set in ARIA); cycles 2 and 3 proceed when neutrophil and platelet recovery confirmed.",
+      "Inpatient regimen — ensure all supportive medications prescribed on inpatient chart.",
+      "Idarubicin is a vesicant — take appropriate extravasation precautions.",
+      "Standard dose is 2000mg/m² cytarabine; may be decreased to 1000mg/m² in elderly or less fit patients (see separate FLA-Ida 1000 protocol)."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "liver_function_tests",
+      "fbc",
+      "lvef",
+      "blood_transfusion_irradiation_status"
+    ],
+    "auc_dosing": null
+  }
+]

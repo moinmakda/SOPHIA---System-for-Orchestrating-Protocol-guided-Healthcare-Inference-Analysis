@@ -1,0 +1,1260 @@
+[
+  {
+    "protocol_code": "FE60C",
+    "protocol_name": "Cyclophosphamide-Epirubicin (60)-Fluorouracil (FE60C)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 600.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Administer over 10 minutes. Dose banded at 20mg/ml PM. Extravasation risk: neutral."
+      },
+      {
+        "drug_name": "Epirubicin",
+        "dose": 60.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Administer over 10 minutes. Dose banded at 2mg/ml PM. Extravasation risk: vesicant. Maximum lifetime cumulative dose 900 mg/m²."
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 600.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Administer over 10 minutes. Dose banded at 25mg/ml PM. Extravasation risk: inflammitant. Test all patients for DPD deficiency before cycle 1."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1x10⁹/L or Platelets <100x10⁹/L on Day 1",
+        "drug_name": "All drugs",
+        "factor": 1.0,
+        "notes": "Delay treatment for 7 days until counts recover. On subsequent cycles, delay and/or reduce to 80% of original dose."
+      },
+      {
+        "condition": "Febrile neutropenia or neutrophils <0.5x10⁹/L or platelets <50x10⁹/L for >7 days",
+        "drug_name": "All drugs",
+        "factor": 0.8,
+        "notes": "Reduce to 80% of original dose. If recurs, reduce to 50% or stop treatment."
+      },
+      {
+        "condition": "Second episode neutropenia/thrombocytopenia or recovery >7 days",
+        "drug_name": "All drugs",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose or stop treatment."
+      },
+      {
+        "condition": "Cyclophosphamide: CrCl 10-20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose."
+      },
+      {
+        "condition": "Cyclophosphamide: CrCl <10 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Epirubicin: severe renal impairment",
+        "drug_name": "Epirubicin",
+        "factor": 0.75,
+        "notes": "Dose reduce in severe renal impairment only."
+      },
+      {
+        "condition": "Epirubicin: Bilirubin 24-51 umol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Epirubicin: Bilirubin 51-85 umol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.25,
+        "notes": "Reduce to 25% of original dose."
+      },
+      {
+        "condition": "Epirubicin: Bilirubin ≥85 umol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0,
+        "notes": "Contra-indicated."
+      },
+      {
+        "condition": "Epirubicin: AST 2-4xULN",
+        "drug_name": "Epirubicin",
+        "factor": 0.5,
+        "notes": "Give 50% dose."
+      },
+      {
+        "condition": "Epirubicin: AST >4xULN",
+        "drug_name": "Epirubicin",
+        "factor": 0.25,
+        "notes": "Give 25% dose."
+      },
+      {
+        "condition": "Fluorouracil: Bilirubin ≥85 umol/L or AST/ALT ≥180 units",
+        "drug_name": "Fluorouracil",
+        "factor": 0,
+        "notes": "Contra-indicated."
+      },
+      {
+        "condition": "Fluorouracil: moderate hepatic impairment",
+        "drug_name": "Fluorouracil",
+        "factor": 0.67,
+        "notes": "Reduce initial dose by one third. May be increased if no toxicity."
+      },
+      {
+        "condition": "Fluorouracil: severe hepatic impairment",
+        "drug_name": "Fluorouracil",
+        "factor": 0.5,
+        "notes": "Reduce initial dose by one half. May be increased if no toxicity."
+      },
+      {
+        "condition": "Epirubicin: cardiac failure",
+        "drug_name": "Epirubicin",
+        "factor": 0,
+        "notes": "Discontinue epirubicin if cardiac failure develops."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg oral or equivalent IV dose (15-30 min prior to chemotherapy)",
+      "Ondansetron 8mg oral or IV (15-30 min prior to chemotherapy)",
+      "Take-home: Dexamethasone 4mg twice daily for 3 days oral (starting Day 2)",
+      "Take-home: Metoclopramide 10mg three times daily when required oral",
+      "Take-home: Ondansetron 8mg twice daily for 3 days oral (starting evening of Day 1)"
+    ],
+    "special_warnings": [
+      "Maximum lifetime cumulative dose of epirubicin is 900 mg/m².",
+      "Baseline LVEF must be measured before starting treatment, particularly in patients with cardiac history or elderly patients.",
+      "Discontinue epirubicin if cardiac failure develops.",
+      "All patients must be tested for DPD deficiency before initiation (cycle 1). Patients with complete or partial DPD deficiency are at increased risk of severe and fatal fluorouracil toxicity.",
+      "Epirubicin is a vesicant — follow extravasation guidelines.",
+      "Cyclophosphamide may cause haemorrhagic cystitis and dysuria.",
+      "If a third dose reduction is necessary, treatment should be stopped."
+    ],
+    "required_patient_fields": [
+      "lvef",
+      "creatinine_clearance",
+      "bilirubin",
+      "ast_alt",
+      "dpd_status",
+      "neutrophils",
+      "platelets"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "FE75C",
+    "protocol_name": "Cyclophosphamide-Epirubicin (75)-Fluorouracil (FE75C)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 600.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Administer over 10 minutes. Dose banded at 20mg/ml PM. Extravasation risk: neutral."
+      },
+      {
+        "drug_name": "Epirubicin",
+        "dose": 75.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Administer over 10 minutes. Dose banded at 2mg/ml PM. Extravasation risk: vesicant. Maximum lifetime cumulative dose 900 mg/m²."
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 600.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Administer over 10 minutes. Dose banded at 25mg/ml PM. Extravasation risk: inflammitant. Test all patients for DPD deficiency before cycle 1."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1x10⁹/L or Platelets <100x10⁹/L on Day 1",
+        "drug_name": "All drugs",
+        "factor": 1.0,
+        "notes": "Delay treatment for 7 days or until recovery. In adjuvant/neo-adjuvant setting, always check with consultant before delaying or reducing."
+      },
+      {
+        "condition": "Febrile neutropenia or neutrophils <0.5x10⁹/L or platelets <50x10⁹/L for >7 days",
+        "drug_name": "All drugs",
+        "factor": 0.8,
+        "notes": "Reduce to 80% of original dose. Growth factors may be considered in neo-adjuvant/adjuvant setting."
+      },
+      {
+        "condition": "Second episode neutropenia/thrombocytopenia or recovery >7 days",
+        "drug_name": "All drugs",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose or stop treatment."
+      },
+      {
+        "condition": "Cyclophosphamide: CrCl 10-20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose."
+      },
+      {
+        "condition": "Cyclophosphamide: CrCl <10 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Epirubicin: severe renal impairment",
+        "drug_name": "Epirubicin",
+        "factor": 0.75,
+        "notes": "Dose reduce in severe renal impairment only."
+      },
+      {
+        "condition": "Epirubicin: Bilirubin 24-51 umol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Epirubicin: Bilirubin 51-85 umol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.25,
+        "notes": "Reduce to 25% of original dose."
+      },
+      {
+        "condition": "Epirubicin: Bilirubin ≥85 umol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0,
+        "notes": "Contra-indicated."
+      },
+      {
+        "condition": "Epirubicin: AST 2-4xULN",
+        "drug_name": "Epirubicin",
+        "factor": 0.5,
+        "notes": "Give 50% dose."
+      },
+      {
+        "condition": "Epirubicin: AST >4xULN",
+        "drug_name": "Epirubicin",
+        "factor": 0.25,
+        "notes": "Give 25% dose."
+      },
+      {
+        "condition": "Fluorouracil: Bilirubin ≥85 umol/L or AST/ALT ≥180 units",
+        "drug_name": "Fluorouracil",
+        "factor": 0,
+        "notes": "Contra-indicated."
+      },
+      {
+        "condition": "Fluorouracil: moderate hepatic impairment",
+        "drug_name": "Fluorouracil",
+        "factor": 0.67,
+        "notes": "Reduce initial dose by one third. May be increased if no toxicity."
+      },
+      {
+        "condition": "Fluorouracil: severe hepatic impairment",
+        "drug_name": "Fluorouracil",
+        "factor": 0.5,
+        "notes": "Reduce initial dose by one half. May be increased if no toxicity."
+      },
+      {
+        "condition": "Epirubicin: cardiac failure",
+        "drug_name": "Epirubicin",
+        "factor": 0,
+        "notes": "Discontinue epirubicin if cardiac failure develops."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg oral or equivalent IV dose (15-30 min prior to chemotherapy)",
+      "Ondansetron 8mg oral or IV (15-30 min prior to chemotherapy)",
+      "Take-home: Dexamethasone 4mg twice daily for 3 days oral (starting Day 2)",
+      "Take-home: Metoclopramide 10mg three times daily when required oral",
+      "Take-home: Ondansetron 8mg twice daily for 3 days oral (starting evening of Day 1)"
+    ],
+    "special_warnings": [
+      "Maximum lifetime cumulative dose of epirubicin is 900 mg/m².",
+      "Baseline LVEF must be measured before starting treatment, particularly in patients with cardiac history or elderly patients.",
+      "Discontinue epirubicin if cardiac failure develops.",
+      "All patients must be tested for DPD deficiency before initiation (cycle 1). Patients with complete or partial DPD deficiency are at increased risk of severe and fatal fluorouracil toxicity.",
+      "Epirubicin is a vesicant — follow extravasation guidelines.",
+      "Cyclophosphamide may cause haemorrhagic cystitis and dysuria.",
+      "In the adjuvant/neo-adjuvant setting, always check with the relevant consultant before delaying or reducing the dose.",
+      "If a third dose reduction is necessary, treatment should be stopped."
+    ],
+    "required_patient_fields": [
+      "lvef",
+      "creatinine_clearance",
+      "bilirubin",
+      "ast_alt",
+      "dpd_status",
+      "neutrophils",
+      "platelets"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "FULVESTRANT-PALBOCICLIB",
+    "protocol_name": "Fulvestrant-Palbociclib",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 28,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Fulvestrant",
+        "dose": 500.0,
+        "dose_unit": "mg",
+        "route": "Intramuscular",
+        "days": [
+          1,
+          15
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 only: given on Days 1 and 15. Cycle 2 onwards: given on Day 1 only. Administer as two consecutive 5ml slow IM injections (1-2 min/injection), one in each gluteal area. Caution at dorsogluteal site due to proximity of sciatic nerve. Available as pre-filled syringes 250mg/5ml."
+      },
+      {
+        "drug_name": "Palbociclib",
+        "dose": 125.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "21 days on, 7 days off within 28-day cycle. Take with food, preferably a meal. Swallow whole. Do not take with grapefruit or grapefruit juice. If vomited or missed, do not replace — take next dose at usual time. Available as 75mg, 100mg, 125mg capsules."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Palbociclib: Grade 3 neutropenia (ANC 0.5-0.9) on Day 1",
+        "drug_name": "Palbociclib",
+        "factor": 1.0,
+        "notes": "Withhold until recovery to grade 2 or below; restart at same dose. If recovery takes >1 week or recurrent grade 3 on Day 1, consider dose reduction."
+      },
+      {
+        "condition": "Palbociclib: Grade 3 neutropenia with fever/infection at any time",
+        "drug_name": "Palbociclib",
+        "factor": 0.8,
+        "notes": "Withhold until recovery to grade 2 or below, then resume at next lower dose level (125→100→75mg). Discontinue if 75mg not tolerated."
+      },
+      {
+        "condition": "Palbociclib: Grade 4 neutropenia (ANC <0.5) at any time",
+        "drug_name": "Palbociclib",
+        "factor": 0.8,
+        "notes": "Withhold until recovery to grade 2 or below, then resume at next lower dose level."
+      },
+      {
+        "condition": "Palbociclib: Grade 3 on Day 15 of first 2 cycles",
+        "drug_name": "Palbociclib",
+        "factor": 1.0,
+        "notes": "Continue palbociclib at current dose to complete cycle; repeat FBC on Day 22. If grade 4 on Day 22 apply grade 4 dose modification."
+      },
+      {
+        "condition": "Palbociclib: severe hepatic impairment (Child-Pugh C)",
+        "drug_name": "Palbociclib",
+        "factor": 0.6,
+        "notes": "Starting dose 75mg once daily (21 days on/7 days off). No adjustment needed for Child-Pugh A or B."
+      },
+      {
+        "condition": "Palbociclib: co-administration with strong CYP3A inhibitor",
+        "drug_name": "Palbociclib",
+        "factor": 0.6,
+        "notes": "Reduce palbociclib dose to 75mg once daily if strong CYP3A inhibitor co-administration unavoidable."
+      },
+      {
+        "condition": "Palbociclib: other NCI-CTC grade 3 or above toxicity persisting despite treatment",
+        "drug_name": "Palbociclib",
+        "factor": 0.8,
+        "notes": "Withhold until symptoms resolve to grade 1 or below (or grade 2 if not safety risk), then resume at next lower dose level."
+      },
+      {
+        "condition": "Palbociclib: severe ILD/pneumonitis",
+        "drug_name": "Palbociclib",
+        "factor": 0,
+        "notes": "Permanently discontinue palbociclib."
+      },
+      {
+        "condition": "Fulvestrant: severe renal impairment",
+        "drug_name": "Fulvestrant",
+        "factor": 1.0,
+        "notes": "Administer with caution in severe renal impairment. No dose change in mild or moderate renal impairment."
+      }
+    ],
+    "pre_medications": [
+      "No routine pre-medications specified for this regimen"
+    ],
+    "special_warnings": [
+      "ER-positive, HER2-negative locally advanced or metastatic breast cancer only. No prior CDK4/6 inhibitor (with limited exceptions), no prior fulvestrant, no prior everolimus.",
+      "Ovarian ablation or suppression with LHRH agonist is mandatory for pre- or peri-menopausal patients.",
+      "Monitor FBC and LFTs at baseline then every 2 weeks for first 2 cycles, then every 4 weeks; U&Es at baseline and Day 1 of each cycle.",
+      "Monitor for pulmonary symptoms indicative of ILD/pneumonitis (hypoxia, cough, dyspnoea). Permanently discontinue palbociclib for severe ILD/pneumonitis.",
+      "Palbociclib interacts with many other agents including CYP3A inhibitors/inducers. Always check for drug interactions.",
+      "Treatment breaks of up to 6 weeks are allowed solely to allow toxicities to settle.",
+      "Oral chemotherapy — NPSA/2008/RRR001 applies. Must be prescribed under consultant oncologist supervision.",
+      "CDK4/6 inhibitor: monitor for neutropenia (most frequent adverse effect); hepatotoxicity monitoring required."
+    ],
+    "required_patient_fields": [
+      "neutrophils",
+      "platelets",
+      "liver_function_tests",
+      "creatinine_clearance",
+      "er_status",
+      "her2_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "FULVESTRANT-RIBOCICLIB",
+    "protocol_name": "Fulvestrant-Ribociclib",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 28,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Fulvestrant",
+        "dose": 500.0,
+        "dose_unit": "mg",
+        "route": "Intramuscular",
+        "days": [
+          1,
+          15
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 only: given on Days 1 and 15. Cycle 2 onwards: given on Day 1 only. Administer as two consecutive 5ml slow IM injections (1-2 min/injection), one in each gluteal area. Caution at dorsogluteal site due to proximity of sciatic nerve. Available as pre-filled syringes 250mg/5ml."
+      },
+      {
+        "drug_name": "Ribociclib",
+        "dose": 600.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "21 days on, 7 days off within 28-day cycle. May be taken with or without food, preferably in the morning. Swallow whole; do not chew or crush. If vomited or missed, do not replace — take next dose at usual time. Available as 200mg tablets."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Ribociclib: Grade 3 neutropenia (ANC 0.5-0.9)",
+        "drug_name": "Ribociclib",
+        "factor": 1.0,
+        "notes": "Dose interruption until recovery to grade 2 or below; resume at same dose. If grade 3 recurs: interrupt until recovery, then reduce by 1 dose level (600→400→200mg). Discontinue if 200mg not tolerated."
+      },
+      {
+        "condition": "Ribociclib: Grade 3 neutropenia with fever",
+        "drug_name": "Ribociclib",
+        "factor": 0.67,
+        "notes": "Dose interruption until recovery to grade 2 or below; resume ribociclib and reduce by 1 dose level."
+      },
+      {
+        "condition": "Ribociclib: Grade 4 neutropenia (ANC <0.5)",
+        "drug_name": "Ribociclib",
+        "factor": 0.67,
+        "notes": "Dose interruption until recovery to grade 2 or below; resume ribociclib and reduce by 1 dose level."
+      },
+      {
+        "condition": "Ribociclib: severe renal impairment (CrCl <30 ml/min)",
+        "drug_name": "Ribociclib",
+        "factor": 0.67,
+        "notes": "Starting dose 400mg once daily. Close monitoring for signs of toxicity."
+      },
+      {
+        "condition": "Ribociclib: moderate or severe hepatic impairment (Child-Pugh B or C)",
+        "drug_name": "Ribociclib",
+        "factor": 0.67,
+        "notes": "Starting dose 400mg once daily (21 days on/7 days off). No adjustment for Child-Pugh A."
+      },
+      {
+        "condition": "Ribociclib: Grade 2 AST/ALT (baseline <Grade 2); bilirubin ≤2xULN",
+        "drug_name": "Ribociclib",
+        "factor": 1.0,
+        "notes": "Dose interrupt until recovery to baseline, then resume at same dose. If grade 2 recurs, reduce by 1 dose level."
+      },
+      {
+        "condition": "Ribociclib: Grade 3 AST/ALT; bilirubin ≤2xULN",
+        "drug_name": "Ribociclib",
+        "factor": 0.67,
+        "notes": "Interrupt until recovery to baseline, then resume at next lower dose. If grade 3 recurs, discontinue."
+      },
+      {
+        "condition": "Ribociclib: Grade 4 AST/ALT; bilirubin ≤2xULN",
+        "drug_name": "Ribociclib",
+        "factor": 0,
+        "notes": "Discontinue ribociclib."
+      },
+      {
+        "condition": "Ribociclib: AST/ALT >3xULN and bilirubin >2xULN (absence of cholestasis)",
+        "drug_name": "Ribociclib",
+        "factor": 0,
+        "notes": "Discontinue ribociclib irrespective of baseline grade."
+      },
+      {
+        "condition": "Ribociclib: QTcF >480msec on ECG",
+        "drug_name": "Ribociclib",
+        "factor": 1.0,
+        "notes": "Interrupt dose. If QTcF resolves to <481msec, resume at same dose. If QTcF ≥481msec recurs, interrupt until <481msec then reduce by 1 dose level."
+      },
+      {
+        "condition": "Ribociclib: QTcF >500msec on ECG",
+        "drug_name": "Ribociclib",
+        "factor": 0.67,
+        "notes": "Interrupt until QTcF <481msec then resume at next lower dose. Permanently discontinue if QTcF >500msec or >60msec change from baseline with torsade de pointes, polymorphic VT, or signs/symptoms of serious arrhythmia."
+      },
+      {
+        "condition": "Ribociclib: other NCI-CTC grade 3 toxicity",
+        "drug_name": "Ribociclib",
+        "factor": 1.0,
+        "notes": "Interrupt until recovery to grade 1 or below, then resume at same dose. If grade 3 recurs, reduce by 1 dose level."
+      },
+      {
+        "condition": "Ribociclib: NCI-CTC grade 4 toxicity",
+        "drug_name": "Ribociclib",
+        "factor": 0,
+        "notes": "Discontinue ribociclib."
+      }
+    ],
+    "pre_medications": [
+      "No routine pre-medications specified for this regimen"
+    ],
+    "special_warnings": [
+      "ER-positive, HER2-negative locally advanced or metastatic breast cancer only. No prior CDK4/6 inhibitor (with limited exceptions), no prior fulvestrant, no prior everolimus.",
+      "Ovarian ablation or suppression with LHRH agonist is mandatory for pre- or peri-menopausal patients.",
+      "QTcF must be <450msec before initiating ribociclib. ECG monitoring: repeat at Day 14 of cycle 1, beginning of cycle 2, then as clinically indicated. More frequent ECG monitoring if QTcF prolongation occurs.",
+      "Monitor FBC and LFTs at baseline then every 2 weeks for first 2 cycles, then every 4 weeks; U&Es at baseline and Day 1 of each cycle.",
+      "Neutropenia: most frequent adverse effect; median onset 16 days for grade 2/3/4 neutropenia; median resolution time 12 days.",
+      "Ribociclib interacts with many other agents. Always check for drug interactions.",
+      "Treatment breaks of up to 6 weeks are allowed solely to allow toxicities to settle.",
+      "Oral chemotherapy — NPSA/2008/RRR001 applies. Must be prescribed under consultant oncologist supervision.",
+      "CDK4/6 inhibitor: hepatotoxicity monitoring required; cardiac QTc monitoring mandatory for ribociclib."
+    ],
+    "required_patient_fields": [
+      "neutrophils",
+      "platelets",
+      "liver_function_tests",
+      "creatinine_clearance",
+      "qtcf_ecg",
+      "er_status",
+      "her2_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "KADCYLA-T-DM1",
+    "protocol_name": "Kadcyla (Trastuzumab Emtansine / T-DM1)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Trastuzumab emtansine",
+        "dose": 3.6,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "First infusion: administer over 90 minutes in 250ml sodium chloride 0.9%. Observe during infusion and for at least 90 minutes following initial dose. Subsequent infusions: administer over 30 minutes if prior infusions well tolerated; observe for at least 30 minutes post-infusion. Use 0.22 micron in-line PES filter. Dilute in PVC or latex-free PVC-free polyolefin bags only. Slow infusion for mild reactions; stop for severe/life-threatening reactions. Dose banded per agreed bands. Mild irritant on extravasation. CAUTION: NOT the same as Herceptin (trastuzumab) — use full INN name trastuzumab emtansine and brand name Kadcyla."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "T-DM1: Grade 3 thrombocytopenia (platelets 25,000-50,000/mm³)",
+        "drug_name": "Trastuzumab emtansine",
+        "factor": 1.0,
+        "notes": "Do not administer until platelet count recovers to grade 1 or below (≥75,000/mm³). No dose modification required on recovery."
+      },
+      {
+        "condition": "T-DM1: Grade 4 thrombocytopenia (platelets <25,000/mm³)",
+        "drug_name": "Trastuzumab emtansine",
+        "factor": 0.83,
+        "notes": "Do not administer until platelet count recovers to grade 1 or below (≥75,000/mm³), then reduce by one dose level (3.6→3.0→2.4mg/kg). Discontinue if further reduction required."
+      },
+      {
+        "condition": "T-DM1: Grade 2 AST/ALT (2.5-5xULN)",
+        "drug_name": "Trastuzumab emtansine",
+        "factor": 1.0,
+        "notes": "No dose modification required."
+      },
+      {
+        "condition": "T-DM1: Grade 3 AST/ALT (5-20xULN)",
+        "drug_name": "Trastuzumab emtansine",
+        "factor": 0.83,
+        "notes": "Do not administer until AST/ALT recovers to grade 2 or below, then reduce by one dose level."
+      },
+      {
+        "condition": "T-DM1: Grade 4 AST/ALT (>20xULN)",
+        "drug_name": "Trastuzumab emtansine",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "condition": "T-DM1: Grade 2 bilirubin (1.5-3xULN)",
+        "drug_name": "Trastuzumab emtansine",
+        "factor": 1.0,
+        "notes": "Do not administer until total bilirubin recovers to grade 1 or below (>ULN to 1.5xULN). No dose modification required on recovery."
+      },
+      {
+        "condition": "T-DM1: Grade 3 bilirubin (3-10xULN)",
+        "drug_name": "Trastuzumab emtansine",
+        "factor": 0.83,
+        "notes": "Do not administer until total bilirubin recovers to grade 1 or below, then reduce by one dose level."
+      },
+      {
+        "condition": "T-DM1: Grade 4 bilirubin (>10xULN)",
+        "drug_name": "Trastuzumab emtansine",
+        "factor": 0,
+        "notes": "Discontinue."
+      },
+      {
+        "condition": "T-DM1: LVEF <40%",
+        "drug_name": "Trastuzumab emtansine",
+        "factor": 0,
+        "notes": "Do not administer. Repeat LVEF assessment within 3 weeks. If LVEF <40% confirmed, discontinue treatment."
+      },
+      {
+        "condition": "T-DM1: LVEF 40-45% and decrease ≥10 percentage points from baseline",
+        "drug_name": "Trastuzumab emtansine",
+        "factor": 0,
+        "notes": "Do not administer. Repeat LVEF within 3 weeks. If LVEF has not recovered to within 10 percentage points from baseline, discontinue."
+      },
+      {
+        "condition": "T-DM1: LVEF 40-45% and decrease <10 percentage points from baseline",
+        "drug_name": "Trastuzumab emtansine",
+        "factor": 1.0,
+        "notes": "Continue treatment. Repeat LVEF within 3 weeks."
+      },
+      {
+        "condition": "T-DM1: symptomatic CHF",
+        "drug_name": "Trastuzumab emtansine",
+        "factor": 0,
+        "notes": "Discontinue treatment."
+      },
+      {
+        "condition": "T-DM1: Grade 3 or 4 peripheral neuropathy",
+        "drug_name": "Trastuzumab emtansine",
+        "factor": 1.0,
+        "notes": "Temporarily discontinue until resolution to NCI-CTC grade 2 or below. At retreatment, dose reduction may be considered per dose reduction schedule."
+      },
+      {
+        "condition": "T-DM1: mild or moderate renal impairment",
+        "drug_name": "Trastuzumab emtansine",
+        "factor": 1.0,
+        "notes": "No dose adjustment needed. Insufficient data in severe renal impairment — monitor carefully."
+      }
+    ],
+    "pre_medications": [
+      "Take-home: Metoclopramide 10mg three times daily when required oral",
+      "Gastric protection with PPI or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed"
+    ],
+    "special_warnings": [
+      "CRITICAL: Trastuzumab emtansine (Kadcyla) is NOT the same drug as trastuzumab (Herceptin). Use full INN name 'trastuzumab emtansine' and brand name 'Kadcyla' at all times to avoid confusion. Confusion can lead to overdose, undertreating and/or toxicity.",
+      "HER2 positive status required: HER2 3+ by IHC or positive by FISH. HER2 test required prior to first cycle.",
+      "LVEF must be >50% prior to commencing treatment. Monitor LVEF every 3 months. Cardiac assessment (ECG, echocardiogram +/- MUGA) required before first cycle.",
+      "Dose should NOT be re-escalated after a dose reduction. Starting dose 3.6mg/kg; first reduction 3.0mg/kg; second reduction 2.4mg/kg; further reduction requires discontinuation.",
+      "Monitor for ILD/pneumonitis and peripheral neuropathy.",
+      "Hepatotoxicity monitoring: LFTs, U&Es and creatinine required prior to all cycles.",
+      "Reconstituted solution must be diluted in PVC or latex-free PVC-free polyolefin bags; use 0.22 micron in-line PES filter.",
+      "This protocol may require funding approval."
+    ],
+    "required_patient_fields": [
+      "lvef",
+      "her2_status",
+      "neutrophils",
+      "platelets",
+      "liver_function_tests",
+      "creatinine_clearance",
+      "bilirubin"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "LETROZOLE-PALBOCICLIB",
+    "protocol_name": "Letrozole-Palbociclib",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 28,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Letrozole",
+        "dose": 2.5,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Continuous daily dosing Days 1-28. Available as 2.5mg tablets. No dose reduction for myelosuppression. Caution in moderate to severe hepatic impairment; caution in severe renal impairment."
+      },
+      {
+        "drug_name": "Palbociclib",
+        "dose": 125.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "21 days on, 7 days off within 28-day cycle. Take with food (with or after a meal). Swallow capsules whole; do not chew. If vomited or missed, do not replace — take next dose at usual time. Available as 75mg, 100mg, 125mg capsules."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Palbociclib: haematological grade 1 or 2",
+        "drug_name": "Palbociclib",
+        "factor": 1.0,
+        "notes": "No dose change."
+      },
+      {
+        "condition": "Palbociclib: haematological grade 3 on Day 1",
+        "drug_name": "Palbociclib",
+        "factor": 1.0,
+        "notes": "Delay one week. When recovered to grade 2 or below restart at same dose."
+      },
+      {
+        "condition": "Palbociclib: haematological grade 3 on Day 14 of first 2 cycles",
+        "drug_name": "Palbociclib",
+        "factor": 1.0,
+        "notes": "Continue current dose to complete cycle. Repeat FBC on Day 21. Consider dose reduction if recovery takes ≥7 days or recurrent grade 3 neutropenia on Day 1 of subsequent cycles."
+      },
+      {
+        "condition": "Palbociclib: grade 3 haematological toxicity with fever",
+        "drug_name": "Palbociclib",
+        "factor": 0.8,
+        "notes": "Delay until recovery to grade 2 or below. Restart at next lower dose level (125→100→75mg)."
+      },
+      {
+        "condition": "Palbociclib: grade 4 haematological toxicity",
+        "drug_name": "Palbociclib",
+        "factor": 0.8,
+        "notes": "Delay until recovery to grade 2 or below. Restart at next lower dose level."
+      },
+      {
+        "condition": "Palbociclib: non-haematological grade 3 or 4 toxicity",
+        "drug_name": "Palbociclib",
+        "factor": 0.8,
+        "notes": "Delay until recovery to grade 2 or below. Restart at next lower dose level."
+      },
+      {
+        "condition": "Palbociclib: severe hepatic impairment (bilirubin >1.5xULN and any AST)",
+        "drug_name": "Palbociclib",
+        "factor": 1.0,
+        "notes": "Insufficient data — administer only after careful consideration of benefits/risks with close monitoring."
+      },
+      {
+        "condition": "Palbociclib: severe renal impairment (CrCl <30 ml/min)",
+        "drug_name": "Palbociclib",
+        "factor": 1.0,
+        "notes": "Insufficient data — administer only after careful consideration of benefits/risks with close monitoring."
+      }
+    ],
+    "pre_medications": [
+      "No routine pre-medications specified for this regimen"
+    ],
+    "special_warnings": [
+      "ER-positive, HER2-negative locally advanced or metastatic breast cancer, previously untreated for metastatic disease. No prior CDK4/6 inhibitor (with limited exceptions).",
+      "Ovarian ablation or suppression with LHRH agonist is mandatory for pre- or peri-menopausal patients.",
+      "FBC, LFTs and U&Es at baseline and Day 1 of each cycle. FBC also on Day 14 for cycles 1 and 2.",
+      "Neutropenia is the most frequent adverse effect: median onset 15 days (any grade), 28 days (grade 3/4); median duration 7 days.",
+      "Infections more frequent with palbociclib — patients must promptly report fever.",
+      "Treatment breaks of up to 6 weeks allowed solely to allow toxicities to settle.",
+      "Palbociclib interacts with many other agents including CYP3A inhibitors/inducers. Always check for drug interactions.",
+      "Oral chemotherapy — NPSA/2008/RRR001 applies. Must be prescribed under consultant oncologist supervision.",
+      "CDK4/6 inhibitor: neutropenia monitoring; hepatotoxicity monitoring required."
+    ],
+    "required_patient_fields": [
+      "neutrophils",
+      "platelets",
+      "liver_function_tests",
+      "creatinine_clearance",
+      "er_status",
+      "her2_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "LETROZOLE-RIBOCICLIB",
+    "protocol_name": "Letrozole-Ribociclib",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 28,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Letrozole",
+        "dose": 2.5,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Continuous daily dosing Days 1-28. Available as 2.5mg tablets. No dose reduction for myelosuppression. Caution in moderate to severe hepatic impairment; caution in severe renal impairment."
+      },
+      {
+        "drug_name": "Ribociclib",
+        "dose": 600.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "21 days on, 7 days off within 28-day cycle. Take with or without food, preferably in the morning. If vomited or missed, do not replace — take next dose at usual time. Available as 200mg tablets. Dose levels: 600mg (level 0), 400mg (level -1), 200mg (level -2). Discontinue if 200mg not tolerated."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Ribociclib: haematological grade 1 or 2",
+        "drug_name": "Ribociclib",
+        "factor": 1.0,
+        "notes": "No dose change."
+      },
+      {
+        "condition": "Ribociclib: haematological grade 3 on Day 1",
+        "drug_name": "Ribociclib",
+        "factor": 1.0,
+        "notes": "Delay one week. When recovered to grade 2 or below restart at same dose."
+      },
+      {
+        "condition": "Ribociclib: haematological grade 3 on Day 14 of first 2 cycles",
+        "drug_name": "Ribociclib",
+        "factor": 1.0,
+        "notes": "Continue current dose to complete cycle. Repeat FBC on Day 21. Consider dose reduction if recovery takes ≥7 days or recurrent grade 3 neutropenia in subsequent cycles."
+      },
+      {
+        "condition": "Ribociclib: haematological grade 3 with fever",
+        "drug_name": "Ribociclib",
+        "factor": 0.67,
+        "notes": "Delay until recovery to grade 2 or below. Restart at next lower dose level (600→400→200mg)."
+      },
+      {
+        "condition": "Ribociclib: haematological grade 4",
+        "drug_name": "Ribociclib",
+        "factor": 0.67,
+        "notes": "Delay until recovery to grade 2 or below. Restart at next lower dose level."
+      },
+      {
+        "condition": "Ribociclib: hepatic NCI-CTC grade 1 or 2",
+        "drug_name": "Ribociclib",
+        "factor": 1.0,
+        "notes": "No dose adjustment."
+      },
+      {
+        "condition": "Ribociclib: hepatic NCI-CTC grade 3",
+        "drug_name": "Ribociclib",
+        "factor": 1.0,
+        "notes": "Delay treatment until recovery to grade 2 or below, then resume at same dose. If grade 2 toxicity recurs, resume at lower dose level."
+      },
+      {
+        "condition": "Ribociclib: hepatic NCI-CTC grade 4",
+        "drug_name": "Ribociclib",
+        "factor": 0.67,
+        "notes": "Interrupt dose until recovery to grade 2 or below, then resume at next lowest dose level. Discontinue if NCI-CTC toxicity recurs."
+      },
+      {
+        "condition": "Ribociclib: ALT/AST >3xULN and total bilirubin >2xULN",
+        "drug_name": "Ribociclib",
+        "factor": 0,
+        "notes": "Discontinue ribociclib irrespective of baseline grade."
+      },
+      {
+        "condition": "Ribociclib: QTcF >480msec on ECG",
+        "drug_name": "Ribociclib",
+        "factor": 1.0,
+        "notes": "Interrupt dose. If QTcF resolves to <481msec, resume at same dose. If QTcF ≥481msec recurs, interrupt until <481msec then reduce by 1 dose level."
+      },
+      {
+        "condition": "Ribociclib: QTcF >500msec on ≥2 separate ECGs",
+        "drug_name": "Ribociclib",
+        "factor": 0.67,
+        "notes": "Interrupt until QTcF <481msec, then resume at next lower dose level. Permanently discontinue if QTcF >500msec or >60msec change from baseline with torsade de pointes, polymorphic VT, or serious arrhythmia."
+      },
+      {
+        "condition": "Ribociclib: other non-haematological/cardiac NCI-CTC grade 3",
+        "drug_name": "Ribociclib",
+        "factor": 1.0,
+        "notes": "Interrupt until recovery to grade 1 or below, then resume at same dose. If grade 3 recurs, reduce by 1 dose level."
+      },
+      {
+        "condition": "Ribociclib: other non-haematological/cardiac NCI-CTC grade 4",
+        "drug_name": "Ribociclib",
+        "factor": 0,
+        "notes": "Discontinue ribociclib."
+      },
+      {
+        "condition": "Ribociclib: severe renal impairment (CrCl <30 ml/min)",
+        "drug_name": "Ribociclib",
+        "factor": 1.0,
+        "notes": "Insufficient data — administer only after careful consideration with close monitoring."
+      }
+    ],
+    "pre_medications": [
+      "No routine pre-medications specified for this regimen"
+    ],
+    "special_warnings": [
+      "ER-positive, HER2-negative locally advanced or metastatic breast cancer, previously untreated for metastatic disease. No prior CDK4/6 inhibitor (with limited exceptions).",
+      "Ovarian ablation or suppression with LHRH agonist is mandatory for pre- or peri-menopausal patients.",
+      "QTcF monitoring mandatory: ECG before initiating ribociclib, repeated at Day 14 of cycle 1, beginning of cycle 2, then as clinically indicated. More frequent monitoring if QTcF prolongation occurs.",
+      "FBC and LFTs at baseline, Day 1 and Day 14 for cycles 1 and 2, then Day 1 of each subsequent cycle.",
+      "Neutropenia: most frequent adverse effect; median onset 15 days (any grade), 28 days (grade 3/4); median duration 7 days.",
+      "Ribociclib interacts with many agents including CYP3A4 inhibitors/inducers. Always check for drug interactions.",
+      "Treatment breaks of up to 6 weeks allowed solely to allow toxicities to settle.",
+      "Oral chemotherapy — NPSA/2008/RRR001 applies. Must be prescribed under consultant oncologist supervision.",
+      "CDK4/6 inhibitor: neutropenia monitoring; hepatotoxicity monitoring; QTc monitoring mandatory for ribociclib.",
+      "Ribociclib should be discontinued if the 200mg dose is not tolerated."
+    ],
+    "required_patient_fields": [
+      "neutrophils",
+      "platelets",
+      "liver_function_tests",
+      "creatinine_clearance",
+      "qtcf_ecg",
+      "er_status",
+      "her2_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "NERATINIB",
+    "protocol_name": "Neratinib",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 28,
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Neratinib",
+        "dose": 240.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Continuous daily dosing Days 1-28 per cycle. Available as 40mg film coated tablets (6 tablets = 240mg). Take with food, preferably in the morning. Swallow whole with water; do not crush or dissolve. If dose missed, do not replace — resume with next scheduled dose. Dose reduction levels: 240mg (starting) → 200mg → 160mg → 120mg. Discontinue if third dose reduction required or if grade 4 diarrhoea recurs at 120mg/day."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neratinib: grade 3 ALT/AST (5-20xULN) hepatotoxicity",
+        "drug_name": "Neratinib",
+        "factor": 0.83,
+        "notes": "Stop neratinib until recovery to grade 0-1. Evaluate alternative causes. Resume at next lower dose level if recovery within 3 weeks. If grade 3 ALT/bilirubin recurs despite one dose reduction, permanently discontinue. If grade 3 hepatotoxicity persists >3 weeks, permanently discontinue."
+      },
+      {
+        "condition": "Neratinib: grade 3 bilirubin (3-10xULN) hepatotoxicity",
+        "drug_name": "Neratinib",
+        "factor": 0.83,
+        "notes": "Stop neratinib until recovery to grade 0-1. Resume at next lower dose level if recovery within 3 weeks. Permanently discontinue if recurs or persists >3 weeks."
+      },
+      {
+        "condition": "Neratinib: grade 4 ALT (>20xULN) or grade 4 bilirubin (>10xULN)",
+        "drug_name": "Neratinib",
+        "factor": 0,
+        "notes": "Permanently discontinue neratinib. Evaluate alternative causes."
+      },
+      {
+        "condition": "Neratinib: grade 1 diarrhoea, grade 2 diarrhoea <5 days, grade 3 diarrhoea <2 days",
+        "drug_name": "Neratinib",
+        "factor": 1.0,
+        "notes": "Adjust anti-diarrhoeal treatment. Dietary modification. Maintain ~2L fluid intake. Once resolved to grade 0-1, consider restarting anti-diarrhoeal prophylaxis."
+      },
+      {
+        "condition": "Neratinib: any grade diarrhoea with complicated features (dehydration, fever, hypotension, renal failure, grade 3/4 neutropenia)",
+        "drug_name": "Neratinib",
+        "factor": 1.0,
+        "notes": "Interrupt neratinib treatment. Dietary modification. Fluid intake ~2L. If diarrhoea resolves to grade 0-1 within 1 week, resume at same dose. If resolves in >1 week, resume at reduced dose. If grade 3 diarrhoea persists >3 weeks, permanently discontinue."
+      },
+      {
+        "condition": "Neratinib: grade 2 diarrhoea lasting ≥5 days or grade 3 diarrhoea lasting 2 days to 3 weeks (despite optimal medical therapy)",
+        "drug_name": "Neratinib",
+        "factor": 0.83,
+        "notes": "Interrupt treatment. If resolves to grade 0-1 in ≤1 week, resume at same dose. If resolves in >1 week, resume at reduced dose. Permanently discontinue if grade 3 diarrhoea persists >3 weeks."
+      },
+      {
+        "condition": "Neratinib: grade 4 diarrhoea",
+        "drug_name": "Neratinib",
+        "factor": 0,
+        "notes": "Permanently discontinue neratinib."
+      },
+      {
+        "condition": "Neratinib: diarrhoea recurs to grade 2 or higher at 120mg/day",
+        "drug_name": "Neratinib",
+        "factor": 0,
+        "notes": "Permanently discontinue neratinib."
+      },
+      {
+        "condition": "Neratinib: other grade 3 toxicity (not haematology, diarrhoea, or liver)",
+        "drug_name": "Neratinib",
+        "factor": 0.83,
+        "notes": "Stop until recovery to grade 0-1 or baseline within 3 weeks. Resume at next lower dose level. If grade 3 toxicity does not recover within 3 weeks, permanently discontinue."
+      },
+      {
+        "condition": "Neratinib: other grade 4 toxicity",
+        "drug_name": "Neratinib",
+        "factor": 0,
+        "notes": "Permanently discontinue neratinib."
+      },
+      {
+        "condition": "Neratinib: severe renal impairment or dialysis",
+        "drug_name": "Neratinib",
+        "factor": 0,
+        "notes": "Not recommended. No dose adjustment for mild to moderate renal impairment."
+      }
+    ],
+    "pre_medications": [
+      "Loperamide 4mg three times daily for first 2 weeks, then 4mg twice daily for 6 weeks, then 2-4mg as required (max 16mg/day), titrated to 1-2 bowel movements per day — MANDATORY diarrhoea prophylaxis starting with first dose of neratinib"
+    ],
+    "special_warnings": [
+      "Extended adjuvant therapy for hormone receptor-positive HER2-overexpressed early breast cancer after completion of trastuzumab monotherapy (within 1 year). NICE does not recommend neratinib if patient received adjuvant pertuzumab.",
+      "Diarrhoea prophylaxis with loperamide is MANDATORY from day 1 of treatment. Titrate to 1-2 bowel movements per day. Diarrhoea is the most common and clinically significant adverse effect.",
+      "LVEF must be ≥50% prior to commencing neratinib. Left ventricular dysfunction has been associated with HER2 inhibition. Cardiac monitoring (including LVEF assessment) in patients with known cardiac risk factors.",
+      "HER2 overexpression required: HER2 3+ by IHC and/or ratio ≥2 by in situ hybridisation.",
+      "Dose reduction ladder: 240mg → 200mg → 160mg → 120mg. Permanently discontinue if third dose reduction required or diarrhoea recurs at grade 2+ at 120mg/day.",
+      "Hepatotoxicity: monitor LFTs after first week of cycle 1, then prior to each cycle. Grade 4 hepatotoxicity requires permanent discontinuation.",
+      "Treatment breaks of up to 3 weeks allowed solely to allow toxicities to settle.",
+      "A formal medical review as to whether treatment should continue and at what dose must be scheduled at least by the start of month 2.",
+      "Oral chemotherapy — NPSA/2008/RRR001 applies. Must be prescribed under consultant oncologist supervision.",
+      "Neratinib interacts with many other agents. Always check for drug interactions.",
+      "ECOG performance status 0 or 1 required."
+    ],
+    "required_patient_fields": [
+      "lvef",
+      "her2_status",
+      "er_status",
+      "neutrophils",
+      "platelets",
+      "liver_function_tests",
+      "creatinine_clearance"
+    ],
+    "auc_dosing": null
+  }
+]

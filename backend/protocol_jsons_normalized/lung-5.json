@@ -1,0 +1,1053 @@
+[
+  {
+    "protocol_code": "SCLC-CAV",
+    "protocol_name": "SCLC Cyclophosphamide-Doxorubicin-Vincristine (CAV)",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 1000.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Dose banded as per CSCCN agreed bands. Neutral extravasation risk. Consider mesna if renal impairment."
+      },
+      {
+        "drug_name": "Doxorubicin",
+        "dose": 50.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Dose banded as per CSCCN agreed bands. Vesicant - extravasation risk. Lifetime cumulative limit 450 mg/m² (400 mg/m² if prior mediastinal/pericardial radiotherapy)."
+      },
+      {
+        "drug_name": "Vincristine",
+        "dose": 1.4,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": 2,
+        "max_dose_unit": "mg",
+        "notes": "Administer in 50ml sodium chloride 0.9% over 10 minutes. Vesicant - extravasation risk. Not dose banded. Doses need not be adjusted for haematological toxicity."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils < 1x10⁹/L at start of cycle (after initial delay of 7 days without recovery)",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.8,
+        "notes": "20% dose reduction. If myelosuppression recurs despite reduction, stop treatment."
+      },
+      {
+        "condition": "Neutrophils < 1x10⁹/L at start of cycle (after initial delay of 7 days without recovery)",
+        "drug_name": "Doxorubicin",
+        "factor": 0.8,
+        "notes": "20% dose reduction. If myelosuppression recurs despite reduction, stop treatment."
+      },
+      {
+        "condition": "Platelets < 100x10⁹/L (after delay of 7 days without recovery)",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.8,
+        "notes": "20% dose reduction."
+      },
+      {
+        "condition": "Platelets < 50x10⁹/L",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "50% dose reduction."
+      },
+      {
+        "condition": "Neutropenic sepsis on previous cycle",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.8,
+        "notes": "Reduce by 20% on subsequent courses."
+      },
+      {
+        "condition": "Neutropenic sepsis on previous cycle",
+        "drug_name": "Doxorubicin",
+        "factor": 0.8,
+        "notes": "Reduce by 20% on subsequent courses. Vincristine doses need not be adjusted for haematological toxicity."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin 20-51 µmol/L",
+        "drug_name": "Doxorubicin",
+        "factor": 0.5,
+        "notes": "Give 50% of the dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin 51-85 µmol/L",
+        "drug_name": "Doxorubicin",
+        "factor": 0.25,
+        "notes": "Give 25% of the dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin > 85 µmol/L",
+        "drug_name": "Doxorubicin",
+        "factor": 0,
+        "notes": "Omit doxorubicin."
+      },
+      {
+        "condition": "Hepatic impairment: AST 2-3x ULN",
+        "drug_name": "Doxorubicin",
+        "factor": 0.75,
+        "notes": "Give 75% of the dose."
+      },
+      {
+        "condition": "Hepatic impairment: AST > 3x ULN",
+        "drug_name": "Doxorubicin",
+        "factor": 0.5,
+        "notes": "Give 50% of the dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin 26-51 µmol/L and AST/ALT 60-180",
+        "drug_name": "Vincristine",
+        "factor": 0.5,
+        "notes": "Give 50% of the dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin > 51 µmol/L and AST/ALT > 180",
+        "drug_name": "Vincristine",
+        "factor": 0,
+        "notes": "Omit vincristine."
+      },
+      {
+        "condition": "Renal impairment: CrCl 10-20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Give 75% of dose. Consider mesna."
+      },
+      {
+        "condition": "Renal impairment: CrCl < 10 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Give 50% of dose. Consider mesna."
+      }
+    ],
+    "pre_medications": [
+      "Ondansetron 8mg oral or IV bolus (15-30 minutes prior to chemotherapy)",
+      "Dexamethasone 8mg oral or IV bolus (15-30 minutes prior to chemotherapy)",
+      "Dexamethasone 4mg twice a day oral for 3 days (take home)",
+      "Metoclopramide 10mg three times daily when required oral (take home)",
+      "Ondansetron 8mg twice a day oral for 3 days starting evening of chemotherapy (take home)",
+      "Allopurinol for tumour lysis prophylaxis in at-risk patients (start day before chemotherapy)"
+    ],
+    "special_warnings": [
+      "Doxorubicin maximum lifetime cumulative dose is 450 mg/m². Patients who have had prior radiotherapy to mediastinal/pericardial area should not receive doxorubicin > 400 mg/m².",
+      "LVEF must be assessed prior to initiating doxorubicin; monitor for cardiotoxicity.",
+      "Vincristine maximum single dose is 2 mg.",
+      "SCLC can be very sensitive to chemotherapy and may lead to tumour lysis syndrome at the start of therapy; allopurinol should be prescribed for at-risk patients.",
+      "Doxorubicin is a vesicant - take full extravasation precautions.",
+      "Vincristine is a vesicant - take full extravasation precautions.",
+      "Gastric protection with PPI or H2 antagonist may be considered in high-risk patients.",
+      "Prophylactic antibiotics can be considered if required."
+    ],
+    "required_patient_fields": [
+      "lvef",
+      "creatinine_clearance",
+      "bilirubin",
+      "ast"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "NSCLC-DACOMITINIB",
+    "protocol_name": "NSCLC Dacomitinib",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 28,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Dacomitinib",
+        "dose": 45.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "45mg once daily continuously (days 1-28 inclusive). Tablets available as 15mg, 30mg, and 45mg film-coated tablets. Swallow whole, do not crush or chew. Can be taken with or without food. Take at approximately the same time each day. If dose missed or vomited, do not take additional dose - take next dose at usual time. 12 cycles will be set in ARIA. Treatment continues until disease progression, unacceptable toxicity, or patient choice."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "First dose reduction required (any toxicity requiring reduction)",
+        "drug_name": "Dacomitinib",
+        "factor": 0.667,
+        "notes": "Reduce from 45mg once daily to 30mg once daily."
+      },
+      {
+        "condition": "Second dose reduction required",
+        "drug_name": "Dacomitinib",
+        "factor": 0.333,
+        "notes": "Reduce from 30mg once daily to 15mg once daily. If third dose reduction is necessary, treatment should be stopped."
+      },
+      {
+        "condition": "Interstitial lung disease (ILD/Pneumonitis) confirmed",
+        "drug_name": "Dacomitinib",
+        "factor": 0,
+        "notes": "Withhold during diagnostic evaluation. Permanently discontinue if ILD/Pneumonitis confirmed."
+      },
+      {
+        "condition": "Grade 2 diarrhoea not improved to Grade ≤1 within 24 hours despite anti-diarrhoeals",
+        "drug_name": "Dacomitinib",
+        "factor": 1.0,
+        "notes": "Withhold dacomitinib. Upon recovery to Grade ≤1, resume at same dose level or consider reduction of 1 dose level."
+      },
+      {
+        "condition": "Grade ≥3 diarrhoea despite anti-diarrhoeals",
+        "drug_name": "Dacomitinib",
+        "factor": 0.667,
+        "notes": "Withhold. Upon recovery to Grade ≤1, resume with reduction of 1 dose level."
+      },
+      {
+        "condition": "Grade 2 rash/erythematous/exfoliative skin conditions persisting for 72 hours despite treatment",
+        "drug_name": "Dacomitinib",
+        "factor": 1.0,
+        "notes": "Withhold. Upon recovery to Grade ≤1, resume at same dose level or consider reduction of 1 dose level."
+      },
+      {
+        "condition": "Grade ≥3 rash, erythematous or exfoliative skin conditions",
+        "drug_name": "Dacomitinib",
+        "factor": 0.667,
+        "notes": "Withhold. Upon recovery to Grade ≤1, resume with reduction of 1 dose level."
+      },
+      {
+        "condition": "Grade ≥3 other toxicity",
+        "drug_name": "Dacomitinib",
+        "factor": 0.667,
+        "notes": "Withhold until symptoms resolve to Grade ≤2. Upon recovery, resume with reduction of 1 dose level."
+      },
+      {
+        "condition": "Severe hepatic impairment (Child-Pugh class C)",
+        "drug_name": "Dacomitinib",
+        "factor": 0.667,
+        "notes": "Start at 30mg once daily. May be increased to 45mg once daily after at least 4 weeks based on individual safety and tolerability."
+      }
+    ],
+    "pre_medications": [],
+    "special_warnings": [
+      "EGFR-activating mutation must be confirmed by an accurate and validated assay prior to initiating treatment.",
+      "Interstitial lung disease (ILD) risk: withhold during evaluation; permanently discontinue if confirmed.",
+      "Dacomitinib interacts with several medicines - always check for drug interactions.",
+      "Dacomitinib may have a minor influence on the ability to drive or use machinery; fatigue and ocular adverse effects have been reported during treatment.",
+      "Follow the National Patient Safety Alert on oral chemotherapy (NPSA/2008/RRR001).",
+      "No starting dose adjustment required for mild or moderate renal impairment (CrCl ≥30 ml/min). Limited data for severe renal impairment (CrCl <30 ml/min) - no dosing recommendations available.",
+      "No starting dose adjustment for mild (Child-Pugh A) or moderate (Child-Pugh B) hepatic impairment."
+    ],
+    "required_patient_fields": [
+      "egfr_mutation_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "NSCLC-DOCETAXEL-NINTEDANIB",
+    "protocol_name": "NSCLC Docetaxel-Nintedanib",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 21,
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Docetaxel",
+        "dose": 75.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 250ml sodium chloride 0.9% over 60 minutes. Doses >200mg dilute in 500ml sodium chloride 0.9% (max concentration 0.74mg/ml). Dose banded as per CSCCN agreed bands. Docetaxel is given for 4 cycles; nintedanib can continue until intolerance or disease progression (up to 12 cycles total set in ARIA). For poor bone marrow reserves consider starting at 55mg/m² with a view to increase to 75mg/m². Exfoliant - extravasation precaution."
+      },
+      {
+        "drug_name": "Nintedanib",
+        "dose": 200.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "200mg twice daily orally, starting on day 2 of each cycle (do NOT administer on the same day as docetaxel - Day 1). Continuous oral administration days 2-21 (and beyond cycle 4 as maintenance). From cycles 5-12, nintedanib 200mg twice daily oral only (no docetaxel)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophil grade 4 toxicity (Docetaxel starting at 75mg/m²)",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Delay until grade 1, then reduce to 60mg/m²."
+      },
+      {
+        "condition": "Febrile Neutropenia grade 3-4 (Docetaxel starting at 75mg/m²)",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Delay until grade 1, then reduce to 60mg/m²."
+      },
+      {
+        "condition": "Platelets < 100x10⁹/L (Docetaxel at 75mg/m²)",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Delay until platelets ≥100x10⁹/L, then reduce to 60mg/m²."
+      },
+      {
+        "condition": "Neutrophil grade 4 or febrile neutropenia grades 3-4 (Docetaxel already at 60mg/m²)",
+        "drug_name": "Docetaxel",
+        "factor": 0,
+        "notes": "Stop docetaxel."
+      },
+      {
+        "condition": "Hepatic impairment: AST/ALT ≥1.5xULN and Alk Phos ≥2.5xULN",
+        "drug_name": "Docetaxel",
+        "factor": 0.75,
+        "notes": "Give 75% of dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin > ULN and/or AST/ALT ≥3.5xULN and Alk Phos ≥6xULN",
+        "drug_name": "Docetaxel",
+        "factor": 0,
+        "notes": "Not recommended."
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 3 (Docetaxel at 75mg/m²)",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Reduce from 75mg/m² to 60mg/m² once neuropathy resolves to grade 2 or below. If grade 3 neuropathy occurs at doses lower than 75mg/m² or grade 4 develops, consider stopping."
+      },
+      {
+        "condition": "Grade 3 cutaneous toxicity present on day 1 of cycle",
+        "drug_name": "Docetaxel",
+        "factor": 1.0,
+        "notes": "Delay until resolves to grade 1 or below, then reduce subsequent doses from 75mg/m² to 60mg/m². If at 60mg/m² or no recovery after 2 weeks, stop docetaxel."
+      },
+      {
+        "condition": "Excessive lacrimation/ocular irritation continuing despite hypromellose eye drops",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Reduce docetaxel dose to 80% of original dose (i.e. from 75mg/m² to 60mg/m²). Lacrimation related to cumulative docetaxel doses, occurs after median of 400mg/m²."
+      },
+      {
+        "condition": "Nintedanib: Diarrhoea ≥grade 2 for >7 consecutive days despite anti-diarrhoeals, or diarrhoea ≥grade 3 despite anti-diarrhoeals",
+        "drug_name": "Nintedanib",
+        "factor": 0.75,
+        "notes": "After treatment interruption and recovery to grade 1 or baseline, reduce from 200mg twice daily to 150mg twice daily."
+      },
+      {
+        "condition": "Nintedanib: Second dose reduction required for diarrhoea or vomiting/nausea",
+        "drug_name": "Nintedanib",
+        "factor": 0.5,
+        "notes": "Reduce from 150mg twice daily to 100mg twice daily."
+      },
+      {
+        "condition": "Nintedanib: Vomiting ≥grade 2 and/or nausea ≥grade 3 despite anti-emetics",
+        "drug_name": "Nintedanib",
+        "factor": 0.75,
+        "notes": "After interruption and recovery, reduce from 200mg twice daily to 150mg twice daily."
+      },
+      {
+        "condition": "Nintedanib: Other non-haematological or haematological adverse reaction ≥grade 3",
+        "drug_name": "Nintedanib",
+        "factor": 0.75,
+        "notes": "Reduce dose after recovery."
+      },
+      {
+        "condition": "Nintedanib: AST/ALT >2.5xULN with total bilirubin ≥1.5xULN, or AST/ALT >5xULN",
+        "drug_name": "Nintedanib",
+        "factor": 0.75,
+        "notes": "After interruption and recovery of transaminases to ≤2.5xULN with bilirubin normal, reduce from 200mg twice daily to 150mg twice daily."
+      },
+      {
+        "condition": "Nintedanib: AST/ALT >3xULN with total bilirubin >2xULN and ALKP <2xULN (no alternative cause)",
+        "drug_name": "Nintedanib",
+        "factor": 0,
+        "notes": "Permanently discontinue nintedanib unless alternative cause established."
+      },
+      {
+        "condition": "Nintedanib: CrCl < 30ml/min",
+        "drug_name": "Nintedanib",
+        "factor": 1.0,
+        "notes": "Safety in patients with CrCl <30ml/min is not established - use with caution and discuss with consultant."
+      },
+      {
+        "condition": "Nintedanib: Child-Pugh B or C hepatic impairment",
+        "drug_name": "Nintedanib",
+        "factor": 0,
+        "notes": "No safety data in Child-Pugh B or C hepatic impairment - not recommended."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg twice daily orally for 3 days starting 24 hours before docetaxel administration (to prevent fluid retention and hypersensitivity)",
+      "Dexamethasone 20mg IV bolus (once only, if pre-medication dexamethasone doses missed)",
+      "Metoclopramide 10mg oral or IV (15-30 minutes before docetaxel)",
+      "Metoclopramide 10mg three times a day when required oral (take home)",
+      "Gastric protection with PPI or H2 antagonist may be considered for high-risk GI ulceration/bleed patients"
+    ],
+    "special_warnings": [
+      "Nintedanib should NOT be administered on the same day as docetaxel (docetaxel given Day 1; nintedanib starts Day 2).",
+      "Docetaxel is highly myelosuppressive; in patients with poor bone marrow reserves consider starting at 55mg/m² with view to increase to 75mg/m².",
+      "Hepatotoxicity monitoring required for nintedanib: monitor LFTs prior to each cycle.",
+      "Nintedanib dose reduction ladder: 200mg twice daily → 150mg twice daily → 100mg twice daily. Dose not re-escalated without consultant approval. Stop if third dose reduction necessary.",
+      "Nintedanib associated with haemorrhage and venous thromboembolism.",
+      "Hypersensitivity reactions with docetaxel tend to occur with first or second infusion. Do not interrupt for minor symptoms (flushing, localised rash). Immediately discontinue for severe reactions (profound hypotension, bronchospasm, generalised erythema).",
+      "Docetaxel-induced fluid retention can lead to weight gain - not a reason to alter doses.",
+      "Docetaxel is an exfoliant - take extravasation precautions.",
+      "Haematological toxicity: dose of nintedanib does not need to be reduced for haematological toxicity."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "bilirubin",
+      "ast",
+      "alt"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "NSCLC-DOCETAXEL-75",
+    "protocol_name": "NSCLC Docetaxel (75mg/m²)",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 21,
+    "number_of_cycles": 4,
+    "drugs": [
+      {
+        "drug_name": "Docetaxel",
+        "dose": 75.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 250ml sodium chloride 0.9% over 60 minutes. Doses >200mg dilute in 500ml sodium chloride 0.9% (max concentration 0.74mg/ml). Dose banded as per CSCCN agreed bands. For poor bone marrow reserves consider starting at 60mg/m² with view to increase to 75mg/m². Exfoliant - extravasation precaution."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils < 1.5x10⁹/L: delay 7 days; if still low after delay",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Continue at 60mg/m². If myelosuppression recurs at 60mg/m², stop treatment."
+      },
+      {
+        "condition": "Platelets < 100x10⁹/L: delay 7 days; if still low after delay",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Continue at 60mg/m². If platelets fall below 50x10⁹/L, stop treatment."
+      },
+      {
+        "condition": "Hepatic impairment: AST/ALT ≥1.5xULN and Alk Phos ≥2.5xULN",
+        "drug_name": "Docetaxel",
+        "factor": 0.75,
+        "notes": "Give 75% of dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin > ULN and/or AST/ALT ≥3.5xULN and Alk Phos ≥6xULN",
+        "drug_name": "Docetaxel",
+        "factor": 0,
+        "notes": "Not recommended."
+      },
+      {
+        "condition": "Non-haematological NCI-CTC grade 3 and above toxicities",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Delay treatment until adverse effect resolves to NCI-CTC grade 1 or below. Then reduce to 60mg/m² or discontinue as appropriate."
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 3",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Reduce from 75mg/m² to 60mg/m² once neuropathy resolves to grade 2 or below. If grade 3 neuropathy at dose lower than 75mg/m² or grade 4 develops, consider stopping."
+      },
+      {
+        "condition": "Excessive lacrimation/ocular irritation continuing despite hypromellose eye drops",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Reduce docetaxel dose to 60mg/m². Lacrimation related to cumulative doses, occurs after median of 400mg/m²."
+      },
+      {
+        "condition": "NCI-CTC grade 3 cutaneous toxicity present on day 1 of cycle",
+        "drug_name": "Docetaxel",
+        "factor": 1.0,
+        "notes": "Delay until resolves to grade 1 or below. Subsequent doses reduced from 75mg/m² to 60mg/m². If at 60mg/m² or no recovery after 2 weeks, stop. Grade 4 cutaneous toxicity: stop."
+      },
+      {
+        "condition": "NCI-CTC grade 2 stomatitis",
+        "drug_name": "Docetaxel",
+        "factor": 1.0,
+        "notes": "Delay until NCI-CTC grade 1 or below, then restart at previous dose."
+      },
+      {
+        "condition": "NCI-CTC grade 3 stomatitis",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Delay until recovers to NCI-CTC grade 1 or below, then reduce to 60mg/m². Grade 4 stomatitis: stop treatment."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg twice daily orally for 3 days starting 24 hours before docetaxel administration (to prevent fluid retention and hypersensitivity)",
+      "Dexamethasone 20mg IV (once only, if pre-medication dexamethasone doses missed)",
+      "Metoclopramide 10mg oral or IV (15-30 minutes prior to chemotherapy)",
+      "Metoclopramide 10mg three times a day when required oral (take home)",
+      "Gastric protection with PPI or H2 antagonist may be considered for high-risk patients",
+      "Prophylactic antibiotics can be considered if required",
+      "Growth factors may be considered according to local policy"
+    ],
+    "special_warnings": [
+      "Hypersensitivity reactions tend to occur with first or second infusion. Do not interrupt for minor symptoms (flushing, localised rash). Discontinue immediately for severe reactions (profound hypotension, bronchospasm, generalised erythema).",
+      "Docetaxel-induced fluid retention can lead to weight gain - not a reason to alter doses.",
+      "Docetaxel is an exfoliant - take extravasation precautions.",
+      "Baseline and pre-cycle chest x-ray required. Baseline CT scan required before starting treatment.",
+      "Second line therapy for stage IIIB or IV NSCLC. WHO performance status 0-1 only. Palliative intent."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "bilirubin",
+      "ast",
+      "alt"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "NSCLC-DURVALUMAB-14DAY",
+    "protocol_name": "NSCLC Durvalumab 10mg/kg (14-day cycle)",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 14,
+    "number_of_cycles": 26,
+    "drugs": [
+      {
+        "drug_name": "Durvalumab",
+        "dose": 10.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 250ml sodium chloride 0.9% over 60 minutes. Dose rounded to the nearest 50mg, up if halfway. Neutral extravasation risk. Indicated for stage 3 NSCLC after radical chemoradiotherapy."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Dose escalation or reduction",
+        "drug_name": "Durvalumab",
+        "factor": 1.0,
+        "notes": "Dose escalation or reduction is NOT recommended. Treatment delays are preferred for toxicity management."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >1.5xULN or ALT/AST >3xULN",
+        "drug_name": "Durvalumab",
+        "factor": 1.0,
+        "notes": "Withhold dose until resolved. Administer corticosteroids for hepatitis. Taper corticosteroids over 1 month upon improvement to grade 1."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >5xULN or ALT/AST >8xULN, or Bilirubin >2xULN and AST/ALT >3xULN simultaneously",
+        "drug_name": "Durvalumab",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "condition": "Renal impairment: Creatinine 1.5-3xULN (Grade 2-3)",
+        "drug_name": "Durvalumab",
+        "factor": 1.0,
+        "notes": "Withhold dose. Initiate corticosteroids. Resume when reaction remains at grade 1 or below following corticosteroid taper."
+      },
+      {
+        "condition": "Renal impairment: Creatinine >3xULN (Grade 4)",
+        "drug_name": "Durvalumab",
+        "factor": 0,
+        "notes": "Permanently discontinue. Initiate corticosteroids 1-2mg/kg/day methylprednisolone equivalent."
+      },
+      {
+        "condition": "Immune-related pneumonitis Grade 2",
+        "drug_name": "Durvalumab",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve, radiographic abnormalities improve, and corticosteroid management complete."
+      },
+      {
+        "condition": "Immune-related pneumonitis Grade 3 or 4",
+        "drug_name": "Durvalumab",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "condition": "Immune-related colitis Grade 2 or 3 diarrhoea or colitis",
+        "drug_name": "Durvalumab",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve and corticosteroid management (if needed) complete."
+      },
+      {
+        "condition": "Immune-related colitis Grade 4 diarrhoea or colitis",
+        "drug_name": "Durvalumab",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "condition": "Immune-related hepatitis Grade 2 elevation AST/ALT or total bilirubin",
+        "drug_name": "Durvalumab",
+        "factor": 1.0,
+        "notes": "Withhold until laboratory values return to baseline and corticosteroid management (if needed) complete."
+      },
+      {
+        "condition": "Immune-related hepatitis Grade 3 or 4 elevation AST/ALT or total bilirubin",
+        "drug_name": "Durvalumab",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "condition": "Immune-related rash Grade 3",
+        "drug_name": "Durvalumab",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve and corticosteroid management complete."
+      },
+      {
+        "condition": "Immune-related rash Grade 4",
+        "drug_name": "Durvalumab",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "condition": "Symptomatic endocrinopathies (hypothyroidism, hyperthyroidism, hypophysitis, adrenal insufficiency, diabetes)",
+        "drug_name": "Durvalumab",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve and corticosteroid management complete. May continue with hormone replacement therapy if no symptoms. Isolated hypothyroidism can be managed with replacement therapy without treatment interruption."
+      },
+      {
+        "condition": "NCI-CTC grade 3 or 4 infusion reaction",
+        "drug_name": "Durvalumab",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      }
+    ],
+    "pre_medications": [
+      "No routine antiemetics required",
+      "Chlorphenamine 10mg IV once only when required for infusion related reactions",
+      "Hydrocortisone 100mg IV once only when required for infusion related reactions",
+      "Salbutamol 2.5mg nebule when required for infusion related bronchospasm",
+      "Loperamide 4mg oral initially then 2mg after each loose stool (max 16mg/24 hours) for diarrhoea",
+      "Gastric protection with PPI or H2 antagonist for high-risk GI ulceration/bleed patients"
+    ],
+    "special_warnings": [
+      "Dose reductions are NOT permitted for durvalumab (immunotherapy). Treatment delays preferred.",
+      "Immune-mediated adverse reactions can be severe or life-threatening involving GI, liver, skin, nervous, endocrine, or other organ systems. Early diagnosis and appropriate management essential.",
+      "Systemic corticosteroids BEFORE starting durvalumab should be avoided due to potential interference with pharmacodynamic activity. Corticosteroids CAN be used after starting durvalumab for immune-related adverse reactions.",
+      "Do not resume durvalumab if patient is still receiving immunosuppressive doses of corticosteroids or other immunosuppressive therapy.",
+      "Permanently discontinue for: grade 3-4 pneumonitis or hepatitis; grade 4 life-threatening reactions; recurrence of severe grade 3 reaction; persistent grade 2-3 reaction not recovering to grade 1 within 12 weeks.",
+      "14-day cycle (10mg/kg) variant: indicated for stage 3 NSCLC after radical chemoradiotherapy. 26 cycles.",
+      "Infusion-related reactions: interrupt or slow rate for mild-moderate; permanently discontinue for grade 3-4.",
+      "Monitor for immune-related endocrinopathies; long-term hormone replacement therapy may be necessary."
+    ],
+    "required_patient_fields": [
+      "creatinine",
+      "bilirubin",
+      "ast",
+      "alt"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "NSCLC-DURVALUMAB-28DAY-1500MG",
+    "protocol_name": "NSCLC Durvalumab 1500mg (28-day cycle)",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 28,
+    "number_of_cycles": 13,
+    "drugs": [
+      {
+        "drug_name": "Durvalumab",
+        "dose": 1500.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "1500mg as IV infusion in 250ml sodium chloride 0.9% over 60 minutes. Administer using a sterile low protein 0.2 or 0.22 micron in-line filter. Neutral extravasation risk. This is an unlicensed dose used to reduce risk during COVID-19 pandemic. Maximum treatment duration 12 months from first infusion (13 four-weekly cycles). Re-treatment with durvalumab is not permitted."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Dose escalation or reduction",
+        "drug_name": "Durvalumab",
+        "factor": 1.0,
+        "notes": "Dose escalation or reduction is NOT recommended. Treatment delays are preferred."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >1.5xULN or ALT/AST >3xULN",
+        "drug_name": "Durvalumab",
+        "factor": 1.0,
+        "notes": "Withhold dose. Administer corticosteroids for hepatitis. Resume when liver function at grade 1 following corticosteroid taper."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >5xULN or ALT/AST >8xULN, or Bilirubin >2xULN and AST/ALT >3xULN simultaneously",
+        "drug_name": "Durvalumab",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "condition": "Renal impairment: Creatinine 1.5-3xULN (Grade 2-3)",
+        "drug_name": "Durvalumab",
+        "factor": 1.0,
+        "notes": "Withhold. Initiate corticosteroids. Resume when reaction at grade 1 or below following taper."
+      },
+      {
+        "condition": "Renal impairment: Creatinine >3xULN (Grade 4)",
+        "drug_name": "Durvalumab",
+        "factor": 0,
+        "notes": "Permanently discontinue. Initiate corticosteroids 1-2mg/kg/day methylprednisolone equivalent."
+      },
+      {
+        "condition": "Immune-related pneumonitis Grade 2",
+        "drug_name": "Durvalumab",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve, radiographic abnormalities improve, and corticosteroid management complete."
+      },
+      {
+        "condition": "Immune-related pneumonitis Grade 3 or 4",
+        "drug_name": "Durvalumab",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "condition": "Immune-related colitis Grade 2 or 3",
+        "drug_name": "Durvalumab",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve and corticosteroid management (if needed) complete."
+      },
+      {
+        "condition": "Immune-related colitis Grade 4",
+        "drug_name": "Durvalumab",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "condition": "Immune-related hepatitis Grade 2 elevation AST/ALT or total bilirubin",
+        "drug_name": "Durvalumab",
+        "factor": 1.0,
+        "notes": "Withhold until laboratory values return to baseline and corticosteroid management (if needed) complete."
+      },
+      {
+        "condition": "Immune-related hepatitis Grade 3 or 4 elevation AST/ALT or total bilirubin",
+        "drug_name": "Durvalumab",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "condition": "Immune-related rash Grade 3",
+        "drug_name": "Durvalumab",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve and corticosteroid management complete."
+      },
+      {
+        "condition": "Immune-related rash Grade 4",
+        "drug_name": "Durvalumab",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "condition": "Symptomatic endocrinopathies (hypothyroidism, hyperthyroidism, hypophysitis, adrenal insufficiency, diabetes)",
+        "drug_name": "Durvalumab",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve. May continue with hormone replacement therapy if asymptomatic. Isolated hypothyroidism managed with replacement therapy without interruption."
+      },
+      {
+        "condition": "NCI-CTC grade 3 or 4 infusion reaction",
+        "drug_name": "Durvalumab",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      }
+    ],
+    "pre_medications": [
+      "No routine antiemetics required",
+      "Chlorphenamine 10mg IV once only when required for infusion related reactions",
+      "Hydrocortisone 100mg IV once only when required for infusion related reactions",
+      "Salbutamol 2.5mg nebule when required for infusion related bronchospasm",
+      "Loperamide 4mg oral initially then 2mg after each loose stool (max 16mg/24 hours) for diarrhoea",
+      "Gastric protection with PPI or H2 antagonist for high-risk GI ulceration/bleed patients"
+    ],
+    "special_warnings": [
+      "Dose reductions are NOT permitted for durvalumab (immunotherapy). Treatment delays are preferred.",
+      "This is an UNLICENSED dose of durvalumab (1500mg q4w) developed to reduce hospital attendance risk during COVID-19 pandemic.",
+      "Immune-mediated adverse reactions can be severe or life-threatening. Early diagnosis and appropriate management are essential.",
+      "Systemic corticosteroids BEFORE starting durvalumab should be avoided. May be used AFTER starting durvalumab for immune-related adverse reactions.",
+      "Do not resume durvalumab if patient still receiving immunosuppressive doses of corticosteroids.",
+      "Permanently discontinue for: grade 3-4 pneumonitis or hepatitis; life-threatening grade 4 reactions; recurrence of severe grade 3 reactions; persistent grade 2-3 reactions not recovering to grade 1 within 12 weeks.",
+      "28-day cycle (1500mg fixed dose) variant: indicated for locally advanced unresectable stage IIIA/B/C NSCLC after concurrent chemoradiotherapy. Maximum 13 cycles (12 months). Re-treatment not permitted.",
+      "Treatment must start within 42 days of last active treatment date of concurrent chemoradiotherapy.",
+      "PD-L1 TPS must be ≥1% (or status cannot be ascertained). Patients must have no evidence of disease progression after chemoradiotherapy.",
+      "Treatment breaks up to 12 weeks beyond expected cycle length allowed to allow immune toxicities to settle.",
+      "Administer using sterile low protein 0.2 or 0.22 micron in-line filter."
+    ],
+    "required_patient_fields": [
+      "creatinine",
+      "bilirubin",
+      "ast",
+      "alt",
+      "pdl1_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "NSCLC-ERLOTINIB",
+    "protocol_name": "NSCLC Erlotinib",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 28,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Erlotinib",
+        "dose": 150.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "150mg once daily continuously (28-day cycle). Second line therapy for stage IIIB or IV NSCLC. WHO PS 0-1, palliative intent."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Grade III or IV adverse effects that cannot be managed symptomatically",
+        "drug_name": "Erlotinib",
+        "factor": 0.667,
+        "notes": "Dose reductions in multiples of 50mg (i.e. reduce from 150mg to 100mg, then to 50mg if further reduction needed)."
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Erlotinib",
+        "factor": 1.0,
+        "notes": "Erlotinib undergoes hepatic metabolism and biliary excretion. Use with caution in those with hepatic impairment; refer to SPC for full details."
+      },
+      {
+        "condition": "Severe renal impairment",
+        "drug_name": "Erlotinib",
+        "factor": 1.0,
+        "notes": "No dose adjustment for mild-moderate renal impairment. Use in severe renal impairment is not recommended."
+      }
+    ],
+    "pre_medications": [
+      "Loperamide 4mg oral stat after first loose stool, then 2-4mg when required for diarrhoea (maximum 16mg/24 hours)",
+      "Metoclopramide 10mg oral three times a day when required for nausea and vomiting",
+      "Skin support (e.g. E45/aqueous cream) as needed"
+    ],
+    "special_warnings": [
+      "Interstitial lung disease (ILD) risk: monitor for new or worsening respiratory symptoms.",
+      "Avoid proton pump inhibitors; only H2 antagonists to be used if gastric acid suppression necessary.",
+      "Erlotinib interacts with medications affecting stomach pH and cytochrome CYP3A4 liver enzymes - always check for drug interactions.",
+      "Cigarette smoking reduces erlotinib exposure by approximately 50-60%. Smokers should be strongly advised to stop smoking.",
+      "Follow the National Patient Safety Alert on oral chemotherapy (NPSA/2008/RRR001).",
+      "Baseline CT scan (within 1 month) required before starting. Repeat CT within 3 months of starting.",
+      "Chest x-ray before starting and every 4 weeks.",
+      "FBC, LFTs and U&Es before starting and every 60 days thereafter.",
+      "EGFR mutation status should be considered for patient selection."
+    ],
+    "required_patient_fields": [
+      "egfr_mutation_status",
+      "creatinine_clearance"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "NSCLC-GEFITINIB",
+    "protocol_name": "NSCLC Gefitinib",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 28,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Gefitinib",
+        "dose": 250.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "250mg once daily continuously (28-day cycle). First-line treatment for locally advanced or metastatic NSCLC with EGFR-TK mutation. Palliative intent. An original pack of 30 tablets should be dispensed for every 28-day cycle. Patients may be prescribed up to three cycles at any one time."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Toxicity (particularly diarrhoea, rash or eye problems) at NCI-CTC grade 3 or above, or grade 1-2 failing to respond to initial symptomatic management",
+        "drug_name": "Gefitinib",
+        "factor": 1.0,
+        "notes": "Interrupt treatment for up to 14 days. Restart at original dose once symptoms resolve. If symptoms recur, consider stopping treatment."
+      },
+      {
+        "condition": "Interstitial lung disease (ILD) confirmed",
+        "drug_name": "Gefitinib",
+        "factor": 0,
+        "notes": "Gefitinib treatment must be permanently discontinued if ILD occurs."
+      },
+      {
+        "condition": "Moderate to severe hepatic impairment (Child-Pugh B or C) due to cirrhosis",
+        "drug_name": "Gefitinib",
+        "factor": 1.0,
+        "notes": "Increased plasma concentrations in patients with cirrhosis - monitor closely for adverse events. Plasma concentrations NOT increased in patients with elevated AST, Alk Phos, or bilirubin due to liver metastases."
+      },
+      {
+        "condition": "Renal impairment: CrCl ≤20 ml/min",
+        "drug_name": "Gefitinib",
+        "factor": 1.0,
+        "notes": "Use with caution in those with CrCl ≤20ml/min."
+      }
+    ],
+    "pre_medications": [
+      "Loperamide 4mg oral stat after first loose stool, then 2-4mg when required for diarrhoea (maximum 16mg/24 hours)",
+      "Metoclopramide 10mg oral three times a day when required for nausea and vomiting",
+      "Skin support as per local guidelines"
+    ],
+    "special_warnings": [
+      "EGFR-TK mutation must be confirmed prior to initiating gefitinib (first-line treatment for EGFR mutation-positive locally advanced or metastatic NSCLC).",
+      "Interstitial lung disease (ILD) risk: treatment must be permanently discontinued if ILD occurs.",
+      "Hepatotoxicity risk: patients with moderate to severe hepatic impairment (Child-Pugh B or C) due to cirrhosis have increased plasma concentrations; monitor closely.",
+      "Gefitinib interacts with medications affecting stomach pH and cytochrome CYP3A4 liver enzymes - always check for drug interactions.",
+      "Follow the National Patient Safety Alert on oral chemotherapy (NPSA/2008/RRR001).",
+      "Gefitinib should only be prescribed by the specialist cancer care team.",
+      "Baseline CT scan (within 1 month) required before starting. Repeat CT within 3 months.",
+      "Chest x-ray before starting and at every review appointment.",
+      "FBC, LFTs and U&Es before starting and every 56 days thereafter.",
+      "Use with caution in patients with CrCl ≤20ml/min."
+    ],
+    "required_patient_fields": [
+      "egfr_mutation_status",
+      "creatinine_clearance"
+    ],
+    "auc_dosing": null
+  }
+]

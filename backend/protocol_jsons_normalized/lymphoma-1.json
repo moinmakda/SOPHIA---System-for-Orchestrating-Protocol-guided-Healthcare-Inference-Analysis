@@ -1,0 +1,1226 @@
+[
+  {
+    "protocol_code": "ABVD",
+    "protocol_name": "Bleomycin-Dacarbazine-Doxorubicin-Vinblastine (ABVD)",
+    "disease_site": "Hodgkin Lymphoma",
+    "category": "lymphoma",
+    "cycle_length_days": 28,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Bleomycin",
+        "dose": 10000.0,
+        "dose_unit": "units",
+        "route": "IV bolus",
+        "days": [
+          1,
+          15
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Administer for first six cycles only. Maximum cumulative dose 500,000 units (<60 years). Dose rounded to nearest 1,000 units."
+      },
+      {
+        "drug_name": "Dacarbazine",
+        "dose": 375.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          15
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Infusion in 500ml sodium chloride 0.9%. Protect from light. Dose banded per CSCCN bands."
+      },
+      {
+        "drug_name": "Doxorubicin",
+        "dose": 25.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1,
+          15
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Maximum lifetime cumulative dose 450 mg/m². If prior mediastinal/pericardial radiotherapy, maximum 400 mg/m². Discontinue if cardiac failure develops. Dose banded per CSCCN bands."
+      },
+      {
+        "drug_name": "Vinblastine",
+        "dose": 6.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1,
+          15
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Infusion in 50ml sodium chloride 0.9% over 10 minutes. Dose rounded to nearest 1mg. No maximum dose in this protocol. Reduce to 3 mg/m² for NCI-CTC grade 2 motor or grade 3 sensory neurotoxicity."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Bleomycin: Renal impairment CrCl 10-50 ml/min",
+        "drug_name": "Bleomycin",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose"
+      },
+      {
+        "condition": "Bleomycin: Renal impairment CrCl <10 ml/min",
+        "drug_name": "Bleomycin",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose"
+      },
+      {
+        "condition": "Bleomycin: Hepatic impairment",
+        "drug_name": "Bleomycin",
+        "factor": 1.0,
+        "notes": "Clinical decision; increased risk of lung dysfunction"
+      },
+      {
+        "condition": "Dacarbazine: Renal impairment CrCl 45-60 ml/min",
+        "drug_name": "Dacarbazine",
+        "factor": 0.8,
+        "notes": "Reduce to 80%"
+      },
+      {
+        "condition": "Dacarbazine: Renal impairment CrCl 30-44 ml/min",
+        "drug_name": "Dacarbazine",
+        "factor": 0.75,
+        "notes": "Reduce to 75%"
+      },
+      {
+        "condition": "Dacarbazine: Renal impairment CrCl <30 ml/min",
+        "drug_name": "Dacarbazine",
+        "factor": 0.7,
+        "notes": "Reduce to 70%"
+      },
+      {
+        "condition": "Dacarbazine: Hepatic impairment",
+        "drug_name": "Dacarbazine",
+        "factor": 1.0,
+        "notes": "Activated and metabolised in the liver; can be hepatotoxic. Consider dose reduction."
+      },
+      {
+        "condition": "Doxorubicin: Hepatic impairment bilirubin <30 µmol/L and AST/ALT 2-3xULN",
+        "drug_name": "Doxorubicin",
+        "factor": 0.75,
+        "notes": "Reduce to 75%"
+      },
+      {
+        "condition": "Doxorubicin: Hepatic impairment bilirubin 30-50 µmol/L and/or AST/ALT >3xULN",
+        "drug_name": "Doxorubicin",
+        "factor": 0.5,
+        "notes": "Reduce to 50%"
+      },
+      {
+        "condition": "Doxorubicin: Hepatic impairment bilirubin 51-85 µmol/L",
+        "drug_name": "Doxorubicin",
+        "factor": 0.25,
+        "notes": "Reduce to 25%"
+      },
+      {
+        "condition": "Doxorubicin: Hepatic impairment bilirubin >85 µmol/L",
+        "drug_name": "Doxorubicin",
+        "factor": 0.0,
+        "notes": "Omit"
+      },
+      {
+        "condition": "Doxorubicin: Renal impairment CrCl <10 ml/min",
+        "drug_name": "Doxorubicin",
+        "factor": 1.0,
+        "notes": "Consider dose reduction in severe renal failure"
+      },
+      {
+        "condition": "Vinblastine: Hepatic impairment bilirubin 30-51 µmol/L or AST/ALT 60-180 units/L",
+        "drug_name": "Vinblastine",
+        "factor": 0.5,
+        "notes": "Reduce to 50%"
+      },
+      {
+        "condition": "Vinblastine: Hepatic impairment bilirubin >51 µmol/L and AST/ALT normal",
+        "drug_name": "Vinblastine",
+        "factor": 0.5,
+        "notes": "Reduce to 50%"
+      },
+      {
+        "condition": "Vinblastine: Hepatic impairment bilirubin >51 µmol/L and AST/ALT >180 units/L",
+        "drug_name": "Vinblastine",
+        "factor": 0.0,
+        "notes": "Omit"
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg oral or equivalent IV dose, 15-30 minutes prior to chemotherapy",
+      "Ondansetron 8mg oral or intravenous, 15-30 minutes prior to chemotherapy",
+      "Domperidone 10mg oral TDS PRN (take home)",
+      "Ondansetron 8mg oral BD for 3 days (take home)",
+      "Co-trimoxazole 960mg oral once daily on Monday, Wednesday and Friday",
+      "Allopurinol 300mg oral once daily (first cycle only)"
+    ],
+    "special_warnings": [
+      "Bleomycin cumulative dose limit: 500,000 international units (patients <60 years of age)",
+      "Doxorubicin maximum lifetime cumulative dose: 450 mg/m² (400 mg/m² if prior mediastinal/pericardial radiotherapy)",
+      "Bleomycin lung toxicity monitoring: perform pulmonary function tests before therapy and if respiratory symptoms develop. Stop bleomycin if pulmonary symptoms occur until investigated. Risk increased in age >40, smokers, underlying lung disease, prior mediastinal RT, poor renal function, use of growth factors.",
+      "LVEF: Baseline LVEF measurement required for patients with history of cardiac problems, cardiac risk factors or elderly. Discontinue doxorubicin if cardiac failure develops.",
+      "Hodgkin's Lymphoma patients carry a lifelong risk of TA-GVHD: IRRADIATED BLOOD PRODUCTS must be used for life. Notify transfusion department immediately.",
+      "Growth factors may increase risk of bleomycin pulmonary complications. Use only if consultant-directed.",
+      "Vinblastine: vesicant - follow NPSA/2008/RRR04 for IV vinca alkaloid administration.",
+      "Dacarbazine: vesicant - protect infusion from light."
+    ],
+    "required_patient_fields": [
+      "lvef",
+      "creatinine_clearance",
+      "bilirubin",
+      "ast_alt",
+      "pulmonary_function"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "AMB-AXICEL-CYCLO500-FLUDA30",
+    "protocol_name": "AmB - Axicabtagene ciloleucel (Axicel) - Cyclophosphamide 500 - Fludarabine 30 (CAR-T Lymphodepletion)",
+    "disease_site": "Large B-cell Lymphoma (DLBCL / PMBCL)",
+    "category": "lymphoma",
+    "cycle_length_days": 6,
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 500.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          -5,
+          -4,
+          -3
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus over 10 minutes. Dose banded per national dose banding table (20mg/ml). Lymphodepleting regimen must only be started after availability of Axicel is confirmed."
+      },
+      {
+        "drug_name": "Fludarabine",
+        "dose": 30.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          -5,
+          -4,
+          -3
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 100ml sodium chloride 0.9% over 30 minutes. Dose banded per national dose band (25mg/ml). Patients treated with fludarabine carry lifelong risk of TA-GVHD — irradiated blood products required for life."
+      },
+      {
+        "drug_name": "Axicabtagene ciloleucel",
+        "dose": 2.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          0
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Target dose 2x10^6 cells/kg. Dosing range 1x10^6 - 2x10^6 cells/kg; maximum dose 2x10^8 cells. Administered as inpatient. Infuse approx. 68ml within 30 minutes. Administer gravimetrically - do NOT use volumetric pump. Non-leukodepleting filter. Begin within 30 minutes of thaw completion. Also known as AXICEL."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Cyclophosphamide: Renal impairment CrCl 30-50 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75%"
+      },
+      {
+        "condition": "Cyclophosphamide: Renal impairment CrCl <30 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.0,
+        "notes": "High dose therapy not generally undertaken"
+      },
+      {
+        "condition": "Fludarabine: Renal impairment CrCl 50-69 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.8,
+        "notes": "Reduce dose by 20%"
+      },
+      {
+        "condition": "Fludarabine: Renal impairment CrCl 30-49 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.6,
+        "notes": "Reduce dose by 40%"
+      },
+      {
+        "condition": "Fludarabine: Renal impairment CrCl <30 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.0,
+        "notes": "Contraindicated - do not use fludarabine. Consider alternative lymphodepletion regimen."
+      }
+    ],
+    "pre_medications": [
+      "Ondansetron 8mg oral or intravenous (antiemetic)",
+      "Metoclopramide 10mg oral or intravenous (antiemetic)",
+      "Chlorphenamine 10mg intravenous 30 minutes prior to Axicel infusion",
+      "Paracetamol 1000mg oral 30 minutes prior to Axicel infusion",
+      "Aciclovir 400mg oral twice daily (anti-infective prophylaxis)",
+      "Fluconazole 100mg oral once daily",
+      "Pentamidine 300mg nebuliser during lymphodepletion (continue every 28 days until co-trimoxazole can be used)",
+      "Posaconazole 300mg oral once daily if prolonged neutropenia or previous invasive fungal infection",
+      "Gastric protection (PPI or H2 antagonist) from first day of lymphodepletion until platelets >50x10^9/L",
+      "Levetiracetam 500mg twice daily oral from day 0 until day +30 (seizure prophylaxis)",
+      "Tocilizumab 8mg/kg (max 800mg) IV 8-hourly PRN for CRS (maximum 4 doses - must be available on ward prior to Axicel infusion)",
+      "Allopurinol 300mg oral once daily (TLS prophylaxis)",
+      "Rasburicase 3mg IV once daily (TLS prophylaxis if required)"
+    ],
+    "special_warnings": [
+      "CRS CRITICAL WARNING: Nearly all patients experience some degree of CRS including life-threatening and fatal reactions. Monitor temperature, BP and oxygen saturation 4-hourly after Axicel on Day 0 then twice daily. Grade CRS on WBMT CRS Assessment Form.",
+      "ICANS CRITICAL WARNING: Symptoms include seizures, somnolence, confusion, encephalopathy, speech disorders. Assess ICE score twice daily. Symptoms can occur weeks after infusion.",
+      "Tocilizumab must be prescribed in advance and 4 doses must be available on the ward prior to Axicel infusion.",
+      "Prophylactic systemic corticosteroids are NOT recommended as they may interfere with CAR-T activity. Corticosteroids may only be used for CRS/ICANS treatment under consultant advice.",
+      "Patients treated with fludarabine carry a lifelong risk of TA-GVHD: irradiated blood products required for life.",
+      "Lymphodepleting regimen must only be started after Axicel availability is confirmed.",
+      "CAR-T administration must not occur out of core hours or over the weekend.",
+      "Minimum period must elapse between last conditioning chemotherapy dose and CAR-T infusion (longer if renal insufficiency).",
+      "Cautions: unresolved serious adverse reactions (pulmonary, cardiac, hypotension), active uncontrolled infection, active GVHD.",
+      "Screening for HBV, HCV and HIV required before cell collection.",
+      "Echocardiogram and baseline lung function required prior to lymphodepletion."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "hbv_hcv_hiv_status",
+      "lvef",
+      "pulmonary_function"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "AMB-BREXUCEL-CYCLO500-FLUDA30",
+    "protocol_name": "AmB - Brexucabtagene autoleucel (Brexucel) - Cyclophosphamide 500 - Fludarabine 30 (CAR-T Lymphodepletion)",
+    "disease_site": "Mantle Cell Lymphoma (MCL)",
+    "category": "lymphoma",
+    "cycle_length_days": 6,
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 500.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          -5,
+          -4,
+          -3
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus over 10 minutes. Dose banded per national dose banding table (20mg/ml). Lymphodepleting regimen must only be started after availability of Brexucel is confirmed."
+      },
+      {
+        "drug_name": "Fludarabine",
+        "dose": 30.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          -5,
+          -4,
+          -3
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 100ml sodium chloride 0.9% over 30 minutes. Dose banded per national dose band (25mg/ml). Patients treated with fludarabine carry lifelong risk of TA-GVHD — irradiated blood products required for life."
+      },
+      {
+        "drug_name": "Brexucabtagene autoleucel",
+        "dose": 2.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          0
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Target dose 2x10^6 cells/kg. Dosing range 1x10^6 - 2x10^6 cells/kg; maximum dose 2x10^8 cells. Administered as inpatient. Infuse approx. 68ml within 30 minutes. Administer gravimetrically - do NOT use volumetric pump. Baxter non-filtered giving set. Begin within 30 minutes of thaw. Also known as BREXUCEL/Tecartus."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Cyclophosphamide: Renal impairment CrCl 30-50 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75%"
+      },
+      {
+        "condition": "Cyclophosphamide: Renal impairment CrCl <30 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.0,
+        "notes": "High dose therapy not generally undertaken"
+      },
+      {
+        "condition": "Fludarabine: Renal impairment CrCl 50-69 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.8,
+        "notes": "Reduce dose by 20%"
+      },
+      {
+        "condition": "Fludarabine: Renal impairment CrCl 30-49 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.6,
+        "notes": "Reduce dose by 40%"
+      },
+      {
+        "condition": "Fludarabine: Renal impairment CrCl <30 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.0,
+        "notes": "Contraindicated - do not use fludarabine. Consider alternative lymphodepletion regimen."
+      }
+    ],
+    "pre_medications": [
+      "Ondansetron 8mg oral or intravenous (antiemetic)",
+      "Metoclopramide 10mg oral or intravenous (antiemetic)",
+      "Chlorphenamine 10mg intravenous 30 minutes prior to Brexucel infusion",
+      "Paracetamol 1000mg oral 30 minutes prior to Brexucel infusion",
+      "Aciclovir 400mg oral twice daily (anti-infective prophylaxis)",
+      "Fluconazole 100mg oral once daily",
+      "Pentamidine 300mg nebuliser during lymphodepletion (continue every 28 days until co-trimoxazole can be used)",
+      "Posaconazole 300mg oral once daily if prolonged neutropenia or previous invasive fungal infection",
+      "Gastric protection (PPI or H2 antagonist) from first day of lymphodepletion until platelets >50x10^9/L",
+      "Levetiracetam 500mg twice daily oral from first day of lymphodepletion until day +30 (seizure prophylaxis)",
+      "Tocilizumab 8mg/kg (max 800mg) IV 8-hourly PRN for CRS (maximum 4 doses - must be available on ward prior to Brexucel infusion)",
+      "Allopurinol 300mg oral once daily (TLS prophylaxis)",
+      "Rasburicase 3mg IV once daily (TLS prophylaxis if required)"
+    ],
+    "special_warnings": [
+      "CRS CRITICAL WARNING: Nearly all patients experience some degree of CRS including life-threatening and fatal reactions. Monitor temperature, BP and oxygen saturation 4-hourly after Brexucel on Day 0 then twice daily. Grade CRS on WBMT CRS Assessment Form.",
+      "ICANS CRITICAL WARNING: Symptoms include seizures, somnolence, confusion, encephalopathy, speech disorders. Assess ICE score twice daily. Symptoms can occur weeks after infusion.",
+      "Tocilizumab must be prescribed in advance and 4 doses must be available on the ward prior to Brexucel infusion.",
+      "Prophylactic systemic corticosteroids are NOT recommended as they may interfere with CAR-T activity. Corticosteroids may only be used for CRS/ICANS treatment under consultant advice.",
+      "Patients treated with fludarabine carry a lifelong risk of TA-GVHD: irradiated blood products required for life.",
+      "Lymphodepleting regimen must only be started after Brexucel availability is confirmed.",
+      "CAR-T administration must not occur out of core hours or over the weekend.",
+      "Minimum period must elapse between last conditioning chemotherapy dose and CAR-T infusion (longer if renal insufficiency).",
+      "Cautions: unresolved serious adverse reactions (pulmonary, cardiac, hypotension), active uncontrolled infection or inflammatory disease, active GVHD.",
+      "Screening for HBV, HCV and HIV required before cell collection.",
+      "Echocardiogram and baseline lung function required prior to lymphodepletion.",
+      "Indication: relapsed/refractory MCL after ≥2 lines including BTK inhibitor."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "hbv_hcv_hiv_status",
+      "lvef",
+      "pulmonary_function"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "AMB-RICE",
+    "protocol_name": "AmB-RICE - Rituximab-Ifosfamide-Carboplatin-Etoposide (Ambulatory)",
+    "disease_site": "Non-Hodgkin Lymphoma (CD20 positive)",
+    "category": "lymphoma",
+    "cycle_length_days": 21,
+    "number_of_cycles": 3,
+    "drugs": [
+      {
+        "drug_name": "Rituximab",
+        "dose": 375.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 500ml sodium chloride 0.9%. Rate of administration varies - refer to rituximab prescribing and administration guidelines. Dose rounded to nearest 100mg."
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 100.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 1000ml sodium chloride 0.9% over 60 minutes. Dose banded per national dose bands (20mg/ml). Reduce dose if significant hypoalbuminaemia."
+      },
+      {
+        "drug_name": "Carboplatin",
+        "dose": 5.0,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          2
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": 790.0,
+        "max_dose_unit": "mg",
+        "notes": "Intravenous infusion in 500ml glucose 5% over 60 minutes. Dose banded per national dose bands (10mg/ml). Maximum dose 790mg. Omit if CrCl <20 ml/min."
+      },
+      {
+        "drug_name": "Mesna",
+        "dose": 1000.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          2
+        ],
+        "infusion_duration_hours": 0.25,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 100ml sodium chloride 0.9% over 15 minutes. Uroprotection pre-ifosfamide. | Mesna given as multiple fractions — dose represents one administration. Total daily Mesna dose = sum of all Mesna entries."
+      },
+      {
+        "drug_name": "Ifosfamide",
+        "dose": 5000.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          2
+        ],
+        "infusion_duration_hours": 24.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 1000ml sodium chloride 0.9% over 24 hours via backpack and pump. Mixed in same bag as mesna 5000mg/m². Dose banded per national dose bands (80mg/ml). Reduce to 70% for CrCl 40-59 ml/min. Not recommended if hepatic impairment (bilirubin >20 µmol/L or ALT/AST >2.5xULN or ALP >2.5xULN). [VERIFIED: Ifosfamide 5000mg/m² over 24h is standard in salvage R-ICE protocol — higher than standard ifosfamide dosing]"
+      },
+      {
+        "drug_name": "Mesna",
+        "dose": 5000.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          2
+        ],
+        "infusion_duration_hours": 24.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Mixed with ifosfamide in same bag, 1000ml sodium chloride 0.9% over 24 hours. Uroprotection co-administered with ifosfamide. | Mesna given as multiple fractions — dose represents one administration. Total daily Mesna dose = sum of all Mesna entries."
+      },
+      {
+        "drug_name": "Mesna",
+        "dose": 1800.0,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          3
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Oral mesna tablets (rounded to nearest 400mg). Given at 0, 2 and 6 hours after end of last ifosfamide infusion. | Mesna given as multiple fractions — dose represents one administration. Total daily Mesna dose = sum of all Mesna entries."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Carboplatin: Renal impairment CrCl <20 ml/min",
+        "drug_name": "Carboplatin",
+        "factor": 0.0,
+        "notes": "Omit carboplatin"
+      },
+      {
+        "condition": "Etoposide: Renal impairment CrCl 15-50 ml/min",
+        "drug_name": "Etoposide",
+        "factor": 0.75,
+        "notes": "Reduce to 75%"
+      },
+      {
+        "condition": "Etoposide: Renal impairment CrCl <15 ml/min",
+        "drug_name": "Etoposide",
+        "factor": 0.5,
+        "notes": "Reduce to 50%"
+      },
+      {
+        "condition": "Etoposide: Hepatic impairment bilirubin 30-51 µmol/L or AST/ALT 60-180 units/L",
+        "drug_name": "Etoposide",
+        "factor": 0.5,
+        "notes": "Reduce to 50%"
+      },
+      {
+        "condition": "Etoposide: Hepatic impairment bilirubin >51 µmol/L or AST/ALT >180 units/L",
+        "drug_name": "Etoposide",
+        "factor": 1.0,
+        "notes": "Clinical decision"
+      },
+      {
+        "condition": "Ifosfamide: Renal impairment CrCl 40-59 ml/min",
+        "drug_name": "Ifosfamide",
+        "factor": 0.7,
+        "notes": "Reduce to 70%"
+      },
+      {
+        "condition": "Ifosfamide: Renal impairment CrCl <40 ml/min",
+        "drug_name": "Ifosfamide",
+        "factor": 1.0,
+        "notes": "Clinical decision"
+      },
+      {
+        "condition": "Ifosfamide: Hepatic impairment bilirubin >20 µmol/L or AST/ALT >2.5xULN or ALP >2.5xULN",
+        "drug_name": "Ifosfamide",
+        "factor": 0.0,
+        "notes": "Not recommended"
+      },
+      {
+        "condition": "Ifosfamide: NCI-CTC grade 1 neurological toxicity",
+        "drug_name": "Ifosfamide",
+        "factor": 1.0,
+        "notes": "Dose may be reduced for next cycle"
+      },
+      {
+        "condition": "Ifosfamide: NCI-CTC grade 2 neurological toxicity or worsening despite dose reduction",
+        "drug_name": "Ifosfamide",
+        "factor": 0.0,
+        "notes": "Stop ifosfamide"
+      }
+    ],
+    "pre_medications": [
+      "Rituximab premedication (30 minutes prior): Chlorphenamine 10mg IV, Hydrocortisone 100mg IV, Paracetamol 1000mg oral",
+      "Dexamethasone 4mg twice daily for 5 days starting oral or IV (antiemetic)",
+      "Ondansetron 8mg twice daily for 5 days oral or IV (antiemetic)",
+      "Metoclopramide 10mg TDS PRN oral or IV (antiemetic)",
+      "Aciclovir 400mg oral twice daily",
+      "Co-trimoxazole 960mg oral once daily Monday, Wednesday and Friday",
+      "Allopurinol 300mg oral once daily (first cycle only)",
+      "Growth factors: filgrastim/bioequivalent 30 million units SC once daily from day 6, or pegfilgrastim 6mg SC day 4"
+    ],
+    "special_warnings": [
+      "Mesna uroprotection is mandatory with ifosfamide to prevent haemorrhagic cystitis.",
+      "Urine diptest for protein every 4 hours on day of and day after ifosfamide. Maintain urine output >100ml/hour.",
+      "Ifosfamide encephalopathy risk factors: low albumin, renal impairment, prior cisplatin, poor performance status, CNS tumour, concomitant psychotropic drugs. Methylene blue 50mg IV QDS can be used to treat ifosfamide-induced encephalopathy.",
+      "Rituximab: risk of severe cytokine release syndrome, progressive multifocal leukoencephalopathy (PML). Monitor for new neurological/psychiatric symptoms. If PML confirmed, permanently discontinue.",
+      "EDTA or calculated creatinine clearance required prior to each cycle for carboplatin AUC dosing.",
+      "New cycles begin when neutrophil count >1x10^9/L and platelets >50x10^9/L.",
+      "Check hepatitis B status before starting rituximab.",
+      "Patient should remain well hydrated: 2-3 litres fluid per day.",
+      "Ambulatory regimen - patient counselling essential."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "bilirubin",
+      "ast_alt",
+      "albumin",
+      "cd20_status"
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 5,
+      "max_dose_mg": 790
+    }
+  },
+  {
+    "protocol_code": "AMB-LEAM-SPLIT",
+    "protocol_name": "AmB-LEAM (split) - Lomustine-Cytarabine-Etoposide-Melphalan (Autograft Conditioning)",
+    "disease_site": "Non-Hodgkin Lymphoma / Hodgkin Lymphoma (autologous PBSCT/BMT conditioning)",
+    "category": "lymphoma",
+    "cycle_length_days": 7,
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Lomustine",
+        "dose": 200.0,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          -6
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Oral, once only on day -6. Give before midday. Swallow whole with full glass of water. Do not open or chew. Dose rounded to nearest 40mg (down if halfway). May need reduction in patients with reduced pulmonary function."
+      },
+      {
+        "drug_name": "Cytarabine",
+        "dose": 1600.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          -5,
+          -4,
+          -3,
+          -2
+        ],
+        "infusion_duration_hours": 0.25,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Total 1600 mg/m² given as 8 doses of 200 mg/m² every 12 hours (BD at 0900 and 2100) on days -5 to -2. Each dose: 200mg/m² in 30ml NaCl 0.9% over 15 minutes at 120ml/hr via CADD Solis VIP pump. Connect cassette day -5, disconnect day -1 AM. Dose banded per national dose bands (100mg/ml)."
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 200.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          -5,
+          -4,
+          -3,
+          -2
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "200 mg/m² daily on days -5 to -2. Split into TWO infusions of 100mg/m² each in 1000ml NaCl 0.9% over 60 minutes administered sequentially (total 120 minutes). Dose banded per national dose bands (20mg/ml). Reduce if significant hypoalbuminaemia."
+      },
+      {
+        "drug_name": "Melphalan",
+        "dose": 140.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          -1
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 500ml sodium chloride 0.9% over 30 minutes on day -1. Dose rounded to nearest 10mg (down if halfway). Short expiry - administer at 1130hrs. Ensure urine output >250ml/hour immediately prior to administration. Pre/post hydration protocol mandatory."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Lomustine: Renal impairment CrCl 45-60 ml/min",
+        "drug_name": "Lomustine",
+        "factor": 0.75,
+        "notes": "Reduce to 75%"
+      },
+      {
+        "condition": "Lomustine: Renal impairment CrCl 30 to <45 ml/min",
+        "drug_name": "Lomustine",
+        "factor": 0.5,
+        "notes": "Reduce to 50%"
+      },
+      {
+        "condition": "Lomustine: Renal impairment CrCl <30 ml/min",
+        "drug_name": "Lomustine",
+        "factor": 1.0,
+        "notes": "Clinical decision"
+      },
+      {
+        "condition": "Cytarabine: Hepatic impairment bilirubin >34 µmol/L",
+        "drug_name": "Cytarabine",
+        "factor": 0.5,
+        "notes": "Reduce to 50%. Dose may be escalated dependent on toxicity."
+      },
+      {
+        "condition": "Etoposide: Hepatic impairment bilirubin 30-51 µmol/L or AST/ALT 60-180 units/L",
+        "drug_name": "Etoposide",
+        "factor": 0.5,
+        "notes": "Consider reducing to 50%"
+      },
+      {
+        "condition": "Etoposide: Hepatic impairment bilirubin >51 µmol/L or AST/ALT >180 units/L",
+        "drug_name": "Etoposide",
+        "factor": 1.0,
+        "notes": "Clinical decision"
+      },
+      {
+        "condition": "Etoposide: Renal impairment CrCl 15-50 ml/min",
+        "drug_name": "Etoposide",
+        "factor": 0.75,
+        "notes": "Reduce to 75%"
+      },
+      {
+        "condition": "Etoposide: Renal impairment CrCl <15 ml/min",
+        "drug_name": "Etoposide",
+        "factor": 0.5,
+        "notes": "Reduce to 50%"
+      },
+      {
+        "condition": "Melphalan: Renal impairment CrCl 30-50 ml/min",
+        "drug_name": "Melphalan",
+        "factor": 0.75,
+        "notes": "Reduce to 75%"
+      },
+      {
+        "condition": "Melphalan: Renal impairment CrCl <30 ml/min",
+        "drug_name": "Melphalan",
+        "factor": 1.0,
+        "notes": "Clinical decision"
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 2mg twice daily for 10 days oral or IV starting day -6",
+      "Ondansetron 8mg twice daily for 10 days oral or IV",
+      "Metoclopramide 10mg TDS for 10 days oral or IV starting day -6",
+      "Aprepitant 125mg oral once on day of melphalan infusion, then 80mg once daily for 2 subsequent days",
+      "Aciclovir 400mg oral TDS until day +180",
+      "Ciprofloxacin 250mg oral twice daily from day +1 (stop when neutrophils >1)",
+      "Pentamidine 300mg nebuliser prior to discharge",
+      "Co-trimoxazole 960mg oral once daily Mon/Wed/Fri (start 28 days post-discharge when neutrophils >1 and platelets >50)",
+      "Fluconazole 100mg oral once daily (stop when neutrophils >1 unless on corticosteroids)",
+      "Nystatin suspension 1ml oral QDS",
+      "Oral cryotherapy commencing approximately 15 minutes prior to melphalan infusion (replenish to cover infusion and 75 minutes afterwards)",
+      "Thromboprophylaxis: dalteparin 5000 units SC, enoxaparin 40mg SC, or heparin 5000 units SC BD until platelets <50x10^9/L"
+    ],
+    "special_warnings": [
+      "Autologous stem cell conditioning regimen — for use only at units performing autograft transplantation.",
+      "Irradiated blood products must be used. Hodgkin lymphoma patients require irradiated blood products for life.",
+      "Autologous stem cells/bone marrow infused on day 0, at least 24 hours after melphalan infusion.",
+      "Melphalan has 90-minute expiry — strict timing adherence is essential. Administer at 1130hrs.",
+      "Ensure urine output >250ml/hour immediately prior to melphalan administration. Pre/post hydration protocol mandatory.",
+      "EDTA or calculated CrCl required prior to each melphalan infusion.",
+      "Lomustine pulmonary toxicity: reduce dose in patients with reduced pulmonary function.",
+      "Etoposide total daily dose 200 mg/m² MUST be split into two 100mg/m² infusions due to stability.",
+      "Cytarabine administered via CADD Solis VIP pump as intermittent infusion. Cassette connected day -5, disconnected day -1 AM.",
+      "Day 0: chlorphenamine 10mg IV and paracetamol 1000mg oral pre stem cell infusion.",
+      "ORAL CHEMOTHERAPY — NPSA/2008/RRR001: Patient must be counselled and provided written information before starting. Prescriptions must be written on an approved oral chemotherapy prescription form. Dispensing must only be by a trained pharmacist. Patient must be provided with a chemotherapy alert card. Do not supply more than one cycle at a time without clinical review."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "bilirubin",
+      "ast_alt",
+      "albumin",
+      "pulmonary_function"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "AMB-LISOCEL-CYCLO300-FLUDA30",
+    "protocol_name": "AmB - Lisocabtagene maraleucel (Lisocel) - Cyclophosphamide 300 - Fludarabine 30 (CAR-T Lymphodepletion)",
+    "disease_site": "DLBCL / PMBCL / Follicular Lymphoma Grade 3B",
+    "category": "lymphoma",
+    "cycle_length_days": 6,
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 300.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          -5,
+          -4,
+          -3
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus over 10 minutes. Dose banded per national dose banding table (20mg/ml). Lymphodepleting regimen must only be started after Lisocel availability is confirmed."
+      },
+      {
+        "drug_name": "Fludarabine",
+        "dose": 30.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          -5,
+          -4,
+          -3
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 100ml sodium chloride 0.9% over 30 minutes. Dose banded per national dose band (25mg/ml). Patients treated with fludarabine carry lifelong risk of TA-GVHD — irradiated blood products required for life."
+      },
+      {
+        "drug_name": "Lisocabtagene maraleucel",
+        "dose": 100.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          0
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Target dose 100x10^6 CAR+ viable cells. Dosing range 44-120x10^6 cells. Supplied as two components (CD8+ and CD4+); CD8+ administered first then CD4+ immediately after with flush. Administered via non-leukodepleting in-line filter at ~0.5ml/minute. Must be infused within 2 hours of thaw start. Do NOT use volumetric pump. Also known as LISOCEL/Breyanzi."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Cyclophosphamide: Renal impairment CrCl 30-50 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75%"
+      },
+      {
+        "condition": "Cyclophosphamide: Renal impairment CrCl <30 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "As directed by cell therapy consultant"
+      },
+      {
+        "condition": "Fludarabine: Renal impairment CrCl 50-69 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.8,
+        "notes": "Reduce dose by 20%"
+      },
+      {
+        "condition": "Fludarabine: Renal impairment CrCl 30-49 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.6,
+        "notes": "Reduce dose by 40%"
+      },
+      {
+        "condition": "Fludarabine: Renal impairment CrCl <30 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 1.0,
+        "notes": "As directed by cell therapy consultant"
+      }
+    ],
+    "pre_medications": [
+      "Ondansetron 8mg oral or intravenous (antiemetic)",
+      "Metoclopramide 10mg oral or intravenous (antiemetic)",
+      "Chlorphenamine 10mg intravenous 30 minutes prior to Lisocel infusion",
+      "Paracetamol 1000mg oral 30 minutes prior to Lisocel infusion",
+      "Aciclovir 400mg oral twice daily",
+      "Pentamidine 300mg nebuliser during lymphodepletion (continue every 28 days until co-trimoxazole can be used)",
+      "Fluconazole 100mg oral once daily",
+      "Posaconazole 300mg oral once daily if prolonged neutropenia or previous invasive fungal infection",
+      "Gastric protection (PPI or H2 antagonist) from first day of lymphodepletion until platelets >50x10^9/L",
+      "Levetiracetam 500mg twice daily oral starting day 0 until day +28 (seizure prophylaxis)",
+      "Ciprofloxacin 250mg oral twice daily for 28 days (start when advised by CAR-T team)",
+      "Tocilizumab 8mg/kg (max 800mg) IV 8-hourly PRN for CRS (maximum 4 doses - must be available on ward prior to Lisocel infusion)",
+      "Allopurinol 300mg oral once daily from day -5 (TLS prophylaxis)",
+      "Rasburicase 3mg IV once daily (TLS prophylaxis if required)"
+    ],
+    "special_warnings": [
+      "CRS CRITICAL WARNING: Nearly all patients experience some degree of CRS including life-threatening and fatal reactions. Monitor temperature, BP and oxygen saturation 4-hourly after Lisocel on Day 0 then twice daily. Grade CRS on WBMT CRS Assessment Form.",
+      "ICANS CRITICAL WARNING: Symptoms include seizures, somnolence, confusion, encephalopathy, speech disorders, delirium. Assess ICE score twice daily. Symptoms can occur weeks after infusion.",
+      "Tocilizumab must be prescribed in advance and 4 doses must be available on the ward prior to Lisocel infusion.",
+      "Prophylactic systemic corticosteroids are NOT recommended as they may interfere with CAR-T activity. Corticosteroids may only be used for CRS/ICANS treatment under consultant advice.",
+      "Patients treated with fludarabine carry a lifelong risk of TA-GVHD: irradiated blood products required for life.",
+      "Lymphodepleting regimen must only be started after Lisocel availability is confirmed.",
+      "CAR-T administration must not occur out of core hours or over the weekend.",
+      "Minimum period must elapse between last conditioning dose and CAR-T infusion (longer if renal insufficiency).",
+      "Lisocel is supplied as two components (CD8+ and CD4+). CD8+ must be administered first. Infuse within 2 hours of thaw start.",
+      "Cautions: unresolved serious adverse reactions, active infections/inflammatory disorders, active GVHD. Not recommended in patients with active GVHD post-allogeneic SCT.",
+      "Screening for HBV, HCV and HIV required before cell collection.",
+      "Echocardiogram and baseline lung function required prior to lymphodepletion.",
+      "HHV-6 reactivation is a known risk with Lisocel."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "hbv_hcv_hiv_status",
+      "lvef",
+      "pulmonary_function"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "AXICEL-CYCLO500-FLUDA30",
+    "protocol_name": "Axicel - Cyclophosphamide 500 - Fludarabine 30 (CAR-T Inpatient)",
+    "disease_site": "Large B-cell Lymphoma (DLBCL / PMBCL / Follicular Lymphoma)",
+    "category": "lymphoma",
+    "cycle_length_days": 6,
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 500.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          -5,
+          -4,
+          -3
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus over 10 minutes. Dose banded per national dose banding table (20mg/ml). Lymphodepleting regimen must only be started after Axicel availability is confirmed."
+      },
+      {
+        "drug_name": "Fludarabine",
+        "dose": 30.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          -5,
+          -4,
+          -3
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 100ml sodium chloride 0.9% over 30 minutes. Dose banded per national dose band (25mg/ml). Patients treated with fludarabine carry lifelong risk of TA-GVHD — irradiated blood products required for life."
+      },
+      {
+        "drug_name": "Axicabtagene ciloleucel",
+        "dose": 2.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          0
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Target dose 2x10^6 cells/kg. Dosing range 1x10^6-2x10^6 cells/kg; maximum dose 2x10^8 cells. Administered intravenously within 30 minutes. Administer gravimetrically - do NOT use volumetric pump. Baxter non-filtered giving set primed with NaCl 0.9%. Begin within 30 minutes of thaw completion. Also known as AXICEL (inpatient pathway, Wessex BMTU)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Cyclophosphamide: Renal impairment CrCl 30-50 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75%"
+      },
+      {
+        "condition": "Cyclophosphamide: Renal impairment CrCl <30 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.0,
+        "notes": "High dose therapy not generally undertaken"
+      },
+      {
+        "condition": "Fludarabine: Renal impairment CrCl 50-69 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.8,
+        "notes": "Reduce dose by 20%"
+      },
+      {
+        "condition": "Fludarabine: Renal impairment CrCl 30-49 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.6,
+        "notes": "Reduce dose by 40%"
+      },
+      {
+        "condition": "Fludarabine: Renal impairment CrCl <30 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.0,
+        "notes": "Contraindicated - do not use fludarabine. Consider alternative lymphodepletion regimen."
+      }
+    ],
+    "pre_medications": [
+      "Metoclopramide 10mg TDS oral or intravenous (antiemetic)",
+      "Ondansetron 8mg twice daily oral or intravenous (antiemetic)",
+      "Chlorphenamine 10mg intravenous 30 minutes prior to Axicel infusion",
+      "Paracetamol 1000mg oral 30 minutes prior to Axicel infusion",
+      "Aciclovir 400mg oral twice daily (anti-infective prophylaxis)",
+      "Pentamidine 300mg nebuliser during lymphodepletion (continue every 28 days until co-trimoxazole can be used)",
+      "Posaconazole 300mg oral once daily if prolonged neutropenia or previous invasive fungal infection",
+      "Gastric protection (PPI or H2 antagonist) from first day of lymphodepletion until platelets >50x10^9/L",
+      "Levetiracetam 500mg twice daily oral from day 0 until day +30 (seizure prophylaxis)",
+      "Tocilizumab 8mg/kg (max 800mg) IV 8-hourly PRN for CRS (maximum 4 doses - must be available on ward prior to Axicel infusion)",
+      "Allopurinol 300mg oral once daily (TLS prophylaxis)",
+      "Rasburicase 7.5mg IV once daily (TLS prophylaxis if required)"
+    ],
+    "special_warnings": [
+      "CRS CRITICAL WARNING: Nearly all patients experience some degree of CRS including life-threatening and fatal reactions. Monitor temperature, BP and oxygen saturation 4-hourly after Axicel on Day 0 then twice daily. Grade CRS on WBMT CRS Assessment Form.",
+      "ICANS CRITICAL WARNING: Symptoms include seizures, somnolence, confusion, encephalopathy, speech disorders. Assess ICE score twice daily. Symptoms can occur weeks after infusion.",
+      "Tocilizumab must be prescribed in advance and 4 doses must be available on the ward prior to Axicel infusion.",
+      "Prophylactic systemic corticosteroids are NOT recommended as they may interfere with CAR-T activity. Corticosteroids may only be used for CRS/ICANS treatment under consultant advice.",
+      "Patients treated with fludarabine carry a lifelong risk of TA-GVHD: irradiated blood products required for life.",
+      "Lymphodepleting regimen must only be started after Axicel availability is confirmed.",
+      "CAR-T administration must not occur out of core hours or over the weekend.",
+      "This protocol is for inpatient use only (non-ambulatory). Available only at Wessex BMTU.",
+      "Cautions: unresolved serious adverse reactions (pulmonary, cardiac, hypotension), active uncontrolled infection, active GVHD.",
+      "Screening for HBV, HCV and HIV required before cell collection.",
+      "Echocardiogram and baseline lung function required prior to lymphodepletion.",
+      "Indications: R/R DLBCL, PMBCL (≥2 prior lines), R/R follicular lymphoma (≥3 prior lines)."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "hbv_hcv_hiv_status",
+      "lvef",
+      "pulmonary_function"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "B-AVD",
+    "protocol_name": "B-AVD - Brentuximab vedotin-Dacarbazine-Doxorubicin-Vinblastine",
+    "disease_site": "Hodgkin Lymphoma (Stage III/IV, CD30 positive)",
+    "category": "lymphoma",
+    "cycle_length_days": 28,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Dacarbazine",
+        "dose": 375.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          15
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 500ml sodium chloride 0.9% over 60 minutes. Dose banded per national dose bands. Can cause considerable pain at infusion site - adjust infusion time/volume; protect from light."
+      },
+      {
+        "drug_name": "Doxorubicin",
+        "dose": 25.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1,
+          15
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus over 10 minutes. Maximum lifetime cumulative dose 450 mg/m² (400 mg/m² if prior mediastinal/pericardial radiotherapy). Dose banded per national dose bands. Discontinue if cardiac failure develops."
+      },
+      {
+        "drug_name": "Vinblastine",
+        "dose": 6.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1,
+          15
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Dose rounded to nearest 1mg. No maximum dose in this protocol. Reduce to 3 mg/m² for NCI-CTC grade 2 motor or grade 3 sensory neurotoxicity."
+      },
+      {
+        "drug_name": "Brentuximab vedotin",
+        "dose": 1.2,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1,
+          15
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": 120.0,
+        "max_dose_unit": "mg",
+        "notes": "Intravenous infusion in 100mL sodium chloride 0.9% over 30 minutes. Must be administered AFTER completion of AVD, starting approximately 1 hour after end of dacarbazine infusion. Dose capped at 120mg. Dose banded per national dose bands (50mg/10ml). For NCI-CTC grade 2 peripheral neuropathy reduce to 0.9mg/kg (max 90mg); withhold for grade 3 then reduce to 0.9mg/kg on recovery."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Brentuximab vedotin: Hepatic impairment (Child-Pugh A, B or C)",
+        "drug_name": "Brentuximab vedotin",
+        "factor": 1.0,
+        "notes": "Recommended starting dose is 0.9mg/kg. Monitor closely for adverse events."
+      },
+      {
+        "condition": "Brentuximab vedotin: Renal impairment CrCl <30 ml/min",
+        "drug_name": "Brentuximab vedotin",
+        "factor": 1.0,
+        "notes": "Recommended starting dose is 0.9mg/kg. Monitor closely for adverse events."
+      },
+      {
+        "condition": "Brentuximab vedotin: NCI-CTC grade 2 peripheral neuropathy",
+        "drug_name": "Brentuximab vedotin",
+        "factor": 1.0,
+        "notes": "Reduce dose to 0.9mg/kg (maximum 90mg every two weeks)"
+      },
+      {
+        "condition": "Brentuximab vedotin: NCI-CTC grade 3 peripheral neuropathy",
+        "drug_name": "Brentuximab vedotin",
+        "factor": 1.0,
+        "notes": "Withhold until toxicity at grade 2, then reduce to 0.9mg/kg (maximum 90mg every two weeks)"
+      },
+      {
+        "condition": "Dacarbazine: Renal impairment CrCl 45-60 ml/min",
+        "drug_name": "Dacarbazine",
+        "factor": 0.8,
+        "notes": "Reduce to 80%"
+      },
+      {
+        "condition": "Dacarbazine: Renal impairment CrCl 30-44 ml/min",
+        "drug_name": "Dacarbazine",
+        "factor": 0.75,
+        "notes": "Reduce to 75%"
+      },
+      {
+        "condition": "Dacarbazine: Renal impairment CrCl <30 ml/min",
+        "drug_name": "Dacarbazine",
+        "factor": 0.7,
+        "notes": "Reduce to 70%"
+      },
+      {
+        "condition": "Dacarbazine: Severe hepatic impairment",
+        "drug_name": "Dacarbazine",
+        "factor": 1.0,
+        "notes": "Consider dose reduction or omission in severe hepatic impairment"
+      },
+      {
+        "condition": "Doxorubicin: Hepatic impairment bilirubin <30 µmol/L and AST/ALT 2-3xULN",
+        "drug_name": "Doxorubicin",
+        "factor": 0.75,
+        "notes": "Reduce to 75%"
+      },
+      {
+        "condition": "Doxorubicin: Hepatic impairment bilirubin 22-50 µmol/L and/or AST/ALT >3xULN",
+        "drug_name": "Doxorubicin",
+        "factor": 0.5,
+        "notes": "Reduce to 50%"
+      },
+      {
+        "condition": "Doxorubicin: Hepatic impairment bilirubin 51-86 µmol/L",
+        "drug_name": "Doxorubicin",
+        "factor": 0.25,
+        "notes": "Reduce to 25%"
+      },
+      {
+        "condition": "Doxorubicin: Hepatic impairment bilirubin >86 µmol/L or Child-Pugh C",
+        "drug_name": "Doxorubicin",
+        "factor": 0.0,
+        "notes": "Omit"
+      },
+      {
+        "condition": "Doxorubicin: Renal impairment CrCl <10 ml/min",
+        "drug_name": "Doxorubicin",
+        "factor": 1.0,
+        "notes": "Consider dose reduction in severe renal failure"
+      },
+      {
+        "condition": "Vinblastine: Hepatic impairment bilirubin 22-51 µmol/L",
+        "drug_name": "Vinblastine",
+        "factor": 0.75,
+        "notes": "Reduce to 75%"
+      },
+      {
+        "condition": "Vinblastine: Hepatic impairment bilirubin >51 µmol/L",
+        "drug_name": "Vinblastine",
+        "factor": 0.5,
+        "notes": "Reduce to 50%"
+      }
+    ],
+    "pre_medications": [
+      "Aprepitant 125mg oral on day 1 and day 15 (15-30 minutes prior to chemotherapy)",
+      "Dexamethasone 4mg oral or equivalent IV dose (15-30 minutes prior to chemotherapy)",
+      "Ondansetron 8mg oral or intravenous (15-30 minutes prior to chemotherapy)",
+      "Aprepitant 80mg oral days 2, 3, 16 and 17 (take home)",
+      "Dexamethasone 4mg oral once daily days 2, 3, 16 and 17 (take home)",
+      "Domperidone 10mg oral TDS PRN (take home)",
+      "Ondansetron 8mg oral BD for 3 days starting evening of day 1 and day 15 (take home)",
+      "Co-trimoxazole 960mg oral once daily Mon/Wed/Fri",
+      "Aciclovir 400mg oral twice daily",
+      "Allopurinol 300mg oral once daily (first cycle only)",
+      "Brentuximab vedotin infusion reaction premedication (for subsequent infusions if reaction): Chlorphenamine 10mg IV, Hydrocortisone 100mg IV, Paracetamol 1000mg oral"
+    ],
+    "special_warnings": [
+      "Doxorubicin maximum lifetime cumulative dose: 450 mg/m² (400 mg/m² if prior mediastinal/pericardial radiotherapy). Discontinue if cardiac failure develops.",
+      "LVEF: Baseline LVEF measurement required for patients with history of cardiac problems, cardiac risk factors or elderly.",
+      "CD30 positive status required for Brentuximab vedotin eligibility.",
+      "Peripheral neuropathy monitoring: Brentuximab vedotin causes peripheral sensory/motor neuropathy. Monitor at each visit. Reduce dose to 0.9mg/kg (max 90mg) for grade 2; withhold for grade 3 then resume at reduced dose.",
+      "Progressive multifocal leukoencephalopathy (PML): monitor for new neurological/cognitive/psychiatric symptoms. Suspend if PML suspected; discontinue permanently if confirmed.",
+      "Brentuximab vedotin infusion reactions including anaphylaxis possible. If anaphylaxis occurs, immediately and permanently discontinue.",
+      "Stevens-Johnson syndrome and toxic epidermal necrolysis reported with brentuximab vedotin. Monitor skin closely.",
+      "Brentuximab vedotin is given AFTER completion of AVD (~1 hour after end of dacarbazine infusion).",
+      "Hodgkin's Lymphoma patients carry a lifelong risk of TA-GVHD: IRRADIATED BLOOD PRODUCTS must be used for life.",
+      "This regimen does NOT include bleomycin (AVD not ABVD).",
+      "Vinblastine: vesicant — follow NPSA/2008/RRR04 for IV vinca alkaloid administration.",
+      "Co-trimoxazole and Aciclovir should continue for three months after final dose of B-AVD."
+    ],
+    "required_patient_fields": [
+      "lvef",
+      "creatinine_clearance",
+      "bilirubin",
+      "ast_alt",
+      "cd30_status"
+    ],
+    "auc_dosing": null
+  }
+]

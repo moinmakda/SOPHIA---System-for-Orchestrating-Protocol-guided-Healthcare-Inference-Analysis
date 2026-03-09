@@ -920,8 +920,8 @@ class PatientData(BaseModel):
     @computed_field
     @property
     def elderly_patient(self) -> bool:
-        """True if patient is elderly (>70 years) and may require dose reduction"""
-        return self.age_years > 70
+        """True if patient is elderly (>=70 years) and may require dose reduction"""
+        return self.age_years >= 70
     
     @computed_field
     @property
@@ -1010,15 +1010,36 @@ class CalculatedDose(BaseModel):
     frequency: Optional[str] = None
     special_instructions: Optional[str] = None
     prn: bool = False
-    
+
     # Modification tracking
     dose_modified: bool = False
     modification_reason: Optional[str] = None
     modification_percent: Optional[int] = None
-    
+
     # Banding info (for dose banding)
     banded_dose: Optional[float] = None
-    
+
+    @property
+    def duration_human(self) -> Optional[str]:
+        """Human-readable duration string (e.g. '2 hr', '7 days', '30 mins')"""
+        if not self.duration_minutes:
+            return None
+        mins = self.duration_minutes
+        if mins < 60:
+            return f"{mins} mins"
+        hours = mins / 60
+        if hours < 24:
+            h = int(hours)
+            m = round((hours - h) * 60)
+            return f"{h} hr {m} mins" if m else f"{h} hr"
+        days = hours / 24
+        is_round_days = abs(days - round(days)) < 0.05
+        if hours < 48 or not is_round_days:
+            h = int(hours)
+            m = round((hours - h) * 60)
+            return f"{h} hr {m} mins" if m else f"{h} hr"
+        return f"{round(days)} days"
+
     class Config:
         use_enum_values = True
 

@@ -1,0 +1,1587 @@
+[
+  {
+    "protocol_code": "InP-RICE",
+    "protocol_name": "Carboplatin-Etoposide-Ifosfamide-Rituximab (RICE) Inpatient",
+    "disease_site": "DLBCL / Non-Hodgkin Lymphoma CD20 positive",
+    "category": "lymphoma",
+    "cycle_length_days": 21,
+    "number_of_cycles": 3,
+    "drugs": [
+      {
+        "drug_name": "Rituximab",
+        "dose": 375.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 500ml sodium chloride 0.9% as per local rituximab administration guidelines. Dose rounded to nearest 100mg (up if halfway). An additional dose of rituximab 375mg/m\u00b2 was given on day -2, cycle 1 only in the original CORAL study (not in Aria but can be added manually)."
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 100.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 1000ml sodium chloride 0.9% over 60 minutes. Dose banded per national dose bands (20mg/ml)."
+      },
+      {
+        "drug_name": "Carboplatin",
+        "dose": 5.0,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          2
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": 790.0,
+        "max_dose_unit": "mg",
+        "notes": "AUC 5 (max 790mg set in Aria to comply with national dose bands; maximum dose 800mg). Intravenous infusion in 500ml glucose 5% over 60 minutes. Dose banded per national dose bands (10mg/ml)."
+      },
+      {
+        "drug_name": "Mesna",
+        "dose": 1000.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          2
+        ],
+        "infusion_duration_hours": 0.25,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Pre-ifosfamide uroprotection. Intravenous infusion in sodium chloride 0.9% 100ml over 15 minutes. Dose banded per national dose bands (100 NS). | Mesna given as multiple fractions \u2014 dose represents one administration. Total daily Mesna dose = sum of all Mesna entries."
+      },
+      {
+        "drug_name": "Ifosfamide",
+        "dose": 2500.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          2
+        ],
+        "infusion_duration_hours": 12.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Total daily dose 5000mg/m\u00b2 given as two infusions of 2500mg/m\u00b2 each over 12 hours (run one after the other consecutively). Mixed in the same bag as mesna (2500mg/m\u00b2). Intravenous infusion in sodium chloride 0.9% 1000ml over 12 hours. Dose banded per national dose bands (80mg/ml)."
+      },
+      {
+        "drug_name": "Mesna",
+        "dose": 2500.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          2
+        ],
+        "infusion_duration_hours": 12.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Mixed in same bag as ifosfamide (2500mg/m\u00b2 x2 bags over 12 hours each). Total 5000mg/m\u00b2 per day. Dose banded per national dose bands. | Mesna given as multiple fractions \u2014 dose represents one administration. Total daily Mesna dose = sum of all Mesna entries."
+      },
+      {
+        "drug_name": "Mesna",
+        "dose": 3000.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          3
+        ],
+        "infusion_duration_hours": 8.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Post-ifosfamide uroprotection. Intravenous infusion in sodium chloride 0.9% 1000ml over 8 hours. To start immediately at end of last ifosfamide/mesna infusion bag. May alternatively be given as oral mesna 1800mg/m\u00b2 (rounded to nearest 400mg) at 0, 2 and 6 hours after end of last ifosfamide infusion. | Mesna given as multiple fractions \u2014 dose represents one administration. Total daily Mesna dose = sum of all Mesna entries."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Carboplatin: CrCl less than 20 ml/min",
+        "drug_name": "Carboplatin",
+        "factor": 0.0,
+        "notes": "Omit carboplatin"
+      },
+      {
+        "condition": "Etoposide: hepatic impairment Bilirubin 30-51 \u00b5mol/L or AST/ALT 60-180 units/L",
+        "drug_name": "Etoposide",
+        "factor": 0.5,
+        "notes": "Consider dose reduction to 50%"
+      },
+      {
+        "condition": "Etoposide: hepatic impairment Bilirubin >51 \u00b5mol/L or AST/ALT >180 units/L",
+        "drug_name": "Etoposide",
+        "factor": 1.0,
+        "notes": "Clinical decision"
+      },
+      {
+        "condition": "Etoposide: CrCl 15-50 ml/min",
+        "drug_name": "Etoposide",
+        "factor": 0.75,
+        "notes": "Reduce to 75%"
+      },
+      {
+        "condition": "Etoposide: CrCl less than 15 ml/min",
+        "drug_name": "Etoposide",
+        "factor": 0.5,
+        "notes": "Reduce to 50%"
+      },
+      {
+        "condition": "Etoposide: significant reduction in albumin levels",
+        "drug_name": "Etoposide",
+        "factor": 1.0,
+        "notes": "Consider dose reduction"
+      },
+      {
+        "condition": "Ifosfamide: hepatic impairment Bilirubin >20 \u00b5mol/L or AST/ALT >2.5xULN or ALP >2.5xULN",
+        "drug_name": "Ifosfamide",
+        "factor": 0.0,
+        "notes": "Not recommended"
+      },
+      {
+        "condition": "Ifosfamide: CrCl 40-59 ml/min",
+        "drug_name": "Ifosfamide",
+        "factor": 0.7,
+        "notes": "Reduce to 70%"
+      },
+      {
+        "condition": "Ifosfamide: CrCl less than 40 ml/min",
+        "drug_name": "Ifosfamide",
+        "factor": 1.0,
+        "notes": "Clinical decision"
+      },
+      {
+        "condition": "Ifosfamide: NCI-CTC grade 1 neurological toxicity",
+        "drug_name": "Ifosfamide",
+        "factor": 1.0,
+        "notes": "May reduce dose for next cycle"
+      },
+      {
+        "condition": "Ifosfamide: NCI-CTC grade 2 or worsening neurological toxicity despite dose reduction",
+        "drug_name": "Ifosfamide",
+        "factor": 0.0,
+        "notes": "Stop ifosfamide"
+      },
+      {
+        "condition": "Haematological: Neutrophils <1x10\u2079/L or Platelets <50x10\u2079/L",
+        "drug_name": "All drugs",
+        "factor": 1.0,
+        "notes": "Delay treatment until neutrophils \u22651x10\u2079/L and unsupported platelets \u226550x10\u2079/L. No dose modifications for haematological toxicity."
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg intravenous (30 min before rituximab)",
+      "Hydrocortisone 100mg intravenous (30 min before rituximab)",
+      "Paracetamol 1000mg oral (30 min before rituximab)",
+      "Dexamethasone 4mg twice a day for 5 days oral or intravenous (starting 15-30 min before chemo)",
+      "Metoclopramide 10mg three times a day when required oral or intravenous",
+      "Ondansetron 8mg twice a day for 5 days oral or intravenous",
+      "Allopurinol 300mg once a day oral (cycle 1 only)",
+      "Aciclovir 400mg twice a day oral",
+      "Co-trimoxazole 960mg once a day on Monday, Wednesday and Friday oral"
+    ],
+    "special_warnings": [
+      "Ifosfamide encephalopathy risk: methylene blue 50mg four times a day intravenous infusion in 100ml sodium chloride 0.9% over 30 minutes can be used to prevent or treat ifosfamide-induced encephalopathy. Risk factors: low albumin, renal impairment, prior cisplatin, poor performance status, CNS tumour, bulky pelvic disease, concomitant psychotropic drugs, younger age.",
+      "Urine diptest for protein every 4 hours the day of and day after ifosfamide administration. Fluid balance monitoring every 4 hours. Urine output must be maintained above 100ml/hour.",
+      "Rituximab: cytokine release syndrome risk (usually within 1-2 hours of first infusion). Medicinal products for allergic reactions must be available. Monitor for PML.",
+      "Carboplatin: AUC-based dosing - creatinine clearance must be measured (EDTA or calculated) prior to each cycle.",
+      "Growth factors (G-CSF) to be continued until neutrophil count above 1x10\u2079/L: filgrastim/bioequivalent 30 million units SC from day 6, or pegfilgrastim 6mg SC day 4.",
+      "Check hepatitis B status before starting rituximab.",
+      "In female patients consider norethisterone 5mg three times a day oral to delay menstruation.",
+      "Ifosfamide and mesna infusions should be run one after the other consecutively (not simultaneously). Total ifosfamide dose over 24 hours is 5000mg/m\u00b2 in 2000ml sodium chloride 0.9%."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "body_surface_area"
+    ],
+    "auc_dosing": {
+      "drug": "Carboplatin",
+      "auc_target": 5,
+      "formula": "Calvert",
+      "max_dose_mg": 790
+    }
+  },
+  {
+    "protocol_code": "InP-RIVAC-65",
+    "protocol_name": "Cytarabine-Etoposide-Ifosfamide-Rituximab (RIVAC) 65 Years and Below Inpatient",
+    "disease_site": "Burkitt Lymphoma / DLBCL CD20 positive",
+    "category": "lymphoma",
+    "cycle_length_days": 21,
+    "number_of_cycles": 2,
+    "drugs": [
+      {
+        "drug_name": "Rituximab",
+        "dose": 375.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 500ml sodium chloride 0.9% as per local guidelines. Dose rounded to nearest 100mg. Two additional doses of rituximab on days 21 and 42 after end of last R-IVAC to total 8 doses."
+      },
+      {
+        "drug_name": "Cytarabine",
+        "dose": 2000.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2
+        ],
+        "infusion_duration_hours": 3.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "2000mg/m\u00b2 every 12 hours on days 1 and 2 (4 doses total). Intravenous infusion in 1000ml sodium chloride 0.9% over 180 minutes. Doses given at 12-hour intervals. Dose banded per nationally agreed bands (100mg/ml). For patients aged 65 years and below (higher dose than RIVAC-66)."
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 60.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 500ml sodium chloride 0.9% over 60 minutes. Dose banded per nationally agreed bands (20mg/ml)."
+      },
+      {
+        "drug_name": "Mesna",
+        "dose": 300.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": 0.25,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Pre-ifosfamide uroprotection bolus. Intravenous infusion in sodium chloride 0.9% 100ml over 15 minutes. Dose banded per nationally agreed bands (100mg/ml). | Mesna given as multiple fractions \u2014 dose represents one administration. Total daily Mesna dose = sum of all Mesna entries."
+      },
+      {
+        "drug_name": "Ifosfamide",
+        "dose": 1500.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in sodium chloride 0.9% 1000ml over 60 minutes. Mixed in the same bag as mesna (1500mg/m\u00b2). Dose banded per nationally agreed bands (80mg/ml)."
+      },
+      {
+        "drug_name": "Mesna",
+        "dose": 1500.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Mixed in same bag as ifosfamide (1500mg/m\u00b2). Intravenous infusion in sodium chloride 0.9% 1000ml over 60 minutes. | Mesna given as multiple fractions \u2014 dose represents one administration. Total daily Mesna dose = sum of all Mesna entries."
+      },
+      {
+        "drug_name": "Mesna",
+        "dose": 900.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": 12.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Post-ifosfamide uroprotection. Intravenous infusion in sodium chloride 0.9% 1000ml over 12 hours. Starting immediately after the ifosfamide/mesna combination bag. On day 5 may be replaced with oral mesna 360mg/m\u00b2 (rounded to nearest 400mg capsule) at 0, 2 and 6 hours post ifosfamide infusion. | Mesna given as multiple fractions \u2014 dose represents one administration. Total daily Mesna dose = sum of all Mesna entries."
+      },
+      {
+        "drug_name": "Methotrexate",
+        "dose": 12.5,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          5
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intrathecal administration (not IV). Given intrathecally on day 5. For patients with CNS disease at diagnosis (first cycle of R-IVAC only): also give cytarabine 70mg intrathecally on days 7 and 9."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Cytarabine: hepatic impairment Bilirubin >34 \u00b5mol/L",
+        "drug_name": "Cytarabine",
+        "factor": 0.5,
+        "notes": "Reduce to 50%. Escalate doses on subsequent cycles in absence of toxicity."
+      },
+      {
+        "condition": "Cytarabine: CrCl 46-60 ml/min",
+        "drug_name": "Cytarabine",
+        "factor": 0.6,
+        "notes": "Reduce to 60%"
+      },
+      {
+        "condition": "Cytarabine: CrCl 31-45 ml/min",
+        "drug_name": "Cytarabine",
+        "factor": 0.5,
+        "notes": "Reduce to 50%"
+      },
+      {
+        "condition": "Cytarabine: CrCl less than 30 ml/min",
+        "drug_name": "Cytarabine",
+        "factor": 0.0,
+        "notes": "Omit cytarabine"
+      },
+      {
+        "condition": "Etoposide: hepatic impairment Bilirubin 30-51 \u00b5mol/L or AST/ALT 60-180 units/L",
+        "drug_name": "Etoposide",
+        "factor": 0.5,
+        "notes": "Consider dose reduction to 50%"
+      },
+      {
+        "condition": "Etoposide: hepatic impairment Bilirubin >51 \u00b5mol/L or AST/ALT >180 units/L",
+        "drug_name": "Etoposide",
+        "factor": 1.0,
+        "notes": "Clinical decision"
+      },
+      {
+        "condition": "Etoposide: CrCl 15-50 ml/min",
+        "drug_name": "Etoposide",
+        "factor": 0.75,
+        "notes": "Reduce to 75%"
+      },
+      {
+        "condition": "Etoposide: CrCl less than 15 ml/min",
+        "drug_name": "Etoposide",
+        "factor": 0.5,
+        "notes": "Reduce to 50%"
+      },
+      {
+        "condition": "Etoposide: significant reduction in albumin levels",
+        "drug_name": "Etoposide",
+        "factor": 1.0,
+        "notes": "Consider dose reduction"
+      },
+      {
+        "condition": "Ifosfamide: hepatic impairment Bilirubin >20 \u00b5mol/L or AST/ALT >2.5xULN or ALP >2.5xULN",
+        "drug_name": "Ifosfamide",
+        "factor": 0.0,
+        "notes": "Not recommended"
+      },
+      {
+        "condition": "Ifosfamide: CrCl 40-59 ml/min",
+        "drug_name": "Ifosfamide",
+        "factor": 0.7,
+        "notes": "Reduce to 70%"
+      },
+      {
+        "condition": "Ifosfamide: CrCl less than 40 ml/min",
+        "drug_name": "Ifosfamide",
+        "factor": 1.0,
+        "notes": "Clinical decision"
+      },
+      {
+        "condition": "Ifosfamide: NCI-CTC grade 1 neurological toxicity",
+        "drug_name": "Ifosfamide",
+        "factor": 1.0,
+        "notes": "May reduce dose for next cycle"
+      },
+      {
+        "condition": "Ifosfamide: NCI-CTC grade 2 neurological toxicity or worsening despite dose reduction",
+        "drug_name": "Ifosfamide",
+        "factor": 0.0,
+        "notes": "Stop ifosfamide"
+      },
+      {
+        "condition": "Haematological: Neutrophils <1x10\u2079/L or Platelets <75x10\u2079/L",
+        "drug_name": "All drugs",
+        "factor": 1.0,
+        "notes": "Delay until neutrophils \u22651x10\u2079/L and unsupported platelets \u226575x10\u2079/L. No dose modifications for haematological toxicity."
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg intravenous bolus (30 min before rituximab)",
+      "Hydrocortisone 100mg intravenous bolus (30 min before rituximab; may omit if patient already on corticosteroids)",
+      "Paracetamol 1000mg oral (30 min before rituximab)",
+      "Dexamethasone 4mg twice a day for 7 days oral or intravenous bolus (starting 15-30 min before chemo)",
+      "Metoclopramide 10mg three times a day for 7 days then when required oral or intravenous bolus",
+      "Ondansetron 8mg twice a day for 7 days oral or intravenous bolus",
+      "Prednisolone 0.5% or dexamethasone 0.1% eye drops one drop into both eyes four times a day for 4 days (cytarabine conjunctivitis prophylaxis)",
+      "Folinic acid 15mg four times a day for one day starting 24 hours after intrathecal methotrexate",
+      "Aciclovir 400mg twice a day oral",
+      "Pentamidine 300mg nebule once a month",
+      "Fluconazole 50mg once a day oral"
+    ],
+    "special_warnings": [
+      "Multiple protocol versions in use: RIVAC-65 is for patients aged 65 years and below; RIVAC-66 is for patients aged 66 and above or poor performance status. Ensure correct version is used.",
+      "Alternating with R-CODOX-M: order R-CODOX-M, R-IVAC, R-CODOX-M, R-IVAC. Two additional rituximab doses on days 21 and 42 after last R-IVAC to total 8 rituximab doses.",
+      "Cytarabine TWICE a day warning: cytarabine doses given at 12-hour intervals on days 1 and 2.",
+      "Ifosfamide encephalopathy risk: methylene blue 50mg four times a day IV infusion in 100ml sodium chloride 0.9% can be used to prevent or treat ifosfamide-induced encephalopathy. Risk factors include low albumin, renal impairment, prior cisplatin, poor performance status, CNS tumour.",
+      "Ifosfamide and mesna mixed in same bag: combination bag given over 60 minutes, followed by mesna 900mg/m\u00b2 over 12 hours.",
+      "Intrathecal chemotherapy: Methotrexate 12.5mg intrathecal on day 5 (national guidance HSC 2008/001 must be followed). For CNS disease: additional cytarabine 70mg intrathecal on days 7 and 9 (cycle 1 only).",
+      "Corticosteroid eye drops required for cytarabine-associated conjunctivitis prophylaxis.",
+      "Urine dip test for proteinuria/haematuria every 4 hours day of and day after ifosfamide. Fluid balance monitoring every 4 hours. Urine output above 100ml/hour.",
+      "Check hepatitis B status before rituximab. Rituximab: monitor for PML."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "body_surface_area",
+      "age",
+      "cns_disease_at_diagnosis"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "InP-RIVAC-66",
+    "protocol_name": "Cytarabine-Etoposide-Ifosfamide-Rituximab (RIVAC) 66 Years and Above Inpatient",
+    "disease_site": "Burkitt Lymphoma / DLBCL CD20 positive",
+    "category": "lymphoma",
+    "cycle_length_days": 21,
+    "number_of_cycles": 2,
+    "drugs": [
+      {
+        "drug_name": "Rituximab",
+        "dose": 375.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 500ml sodium chloride 0.9% as per local guidelines. Dose rounded to nearest 100mg. Two additional doses of rituximab on days 21 and 42 after end of last R-IVAC to total 8 doses."
+      },
+      {
+        "drug_name": "Cytarabine",
+        "dose": 1000.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2
+        ],
+        "infusion_duration_hours": 3.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "1000mg/m\u00b2 every 12 hours on days 1 and 2 (4 doses total). Intravenous infusion in 1000ml sodium chloride 0.9% over 180 minutes. Doses given at 12-hour intervals. Dose banded per nationally agreed bands (100mg/ml). For patients aged 66 and above or poor performance status (lower dose than RIVAC-65)."
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 60.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 500ml sodium chloride 0.9% over 60 minutes. Dose banded per nationally agreed bands (20mg/ml)."
+      },
+      {
+        "drug_name": "Mesna",
+        "dose": 200.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": 0.25,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Pre-ifosfamide uroprotection bolus. Intravenous infusion in sodium chloride 0.9% 100ml over 15 minutes. Dose banded per nationally agreed bands (100mg/ml). | Mesna given as multiple fractions \u2014 dose represents one administration. Total daily Mesna dose = sum of all Mesna entries."
+      },
+      {
+        "drug_name": "Ifosfamide",
+        "dose": 1000.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in sodium chloride 0.9% 1000ml over 60 minutes. Mixed in the same bag as mesna (1000mg/m\u00b2). Dose banded per nationally agreed bands (80mg/ml). Reduced dose compared to RIVAC-65 due to older age/poor performance status."
+      },
+      {
+        "drug_name": "Mesna",
+        "dose": 1000.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Mixed in same bag as ifosfamide (1000mg/m\u00b2). Intravenous infusion in sodium chloride 0.9% 1000ml over 60 minutes. | Mesna given as multiple fractions \u2014 dose represents one administration. Total daily Mesna dose = sum of all Mesna entries."
+      },
+      {
+        "drug_name": "Mesna",
+        "dose": 600.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "infusion_duration_hours": 12.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Post-ifosfamide uroprotection. Intravenous infusion in sodium chloride 0.9% 1000ml over 12 hours. Starting immediately after the ifosfamide/mesna combination bag. On day 5 may be replaced with oral mesna 360mg/m\u00b2 (rounded to nearest 400mg capsule) at 0, 2 and 6 hours post ifosfamide infusion. | Mesna given as multiple fractions \u2014 dose represents one administration. Total daily Mesna dose = sum of all Mesna entries."
+      },
+      {
+        "drug_name": "Methotrexate",
+        "dose": 12.5,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          5
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intrathecal administration (not IV). Given intrathecally on day 5. For patients with CNS disease at diagnosis (first cycle of R-IVAC only): also give cytarabine 70mg intrathecally on days 7 and 9."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Cytarabine: hepatic impairment Bilirubin >34 \u00b5mol/L",
+        "drug_name": "Cytarabine",
+        "factor": 0.5,
+        "notes": "Reduce to 50%. Escalate doses on subsequent cycles in absence of toxicity."
+      },
+      {
+        "condition": "Cytarabine: CrCl 46-60 ml/min",
+        "drug_name": "Cytarabine",
+        "factor": 0.6,
+        "notes": "Reduce to 60%"
+      },
+      {
+        "condition": "Cytarabine: CrCl 31-45 ml/min",
+        "drug_name": "Cytarabine",
+        "factor": 0.5,
+        "notes": "Reduce to 50%"
+      },
+      {
+        "condition": "Cytarabine: CrCl less than 30 ml/min",
+        "drug_name": "Cytarabine",
+        "factor": 0.0,
+        "notes": "Omit cytarabine"
+      },
+      {
+        "condition": "Etoposide: hepatic impairment Bilirubin 30-51 \u00b5mol/L or AST/ALT 60-180 units/L",
+        "drug_name": "Etoposide",
+        "factor": 0.5,
+        "notes": "Consider dose reduction to 50%"
+      },
+      {
+        "condition": "Etoposide: hepatic impairment Bilirubin >51 \u00b5mol/L or AST/ALT >180 units/L",
+        "drug_name": "Etoposide",
+        "factor": 1.0,
+        "notes": "Clinical decision"
+      },
+      {
+        "condition": "Etoposide: CrCl 15-50 ml/min",
+        "drug_name": "Etoposide",
+        "factor": 0.75,
+        "notes": "Reduce to 75%"
+      },
+      {
+        "condition": "Etoposide: CrCl less than 15 ml/min",
+        "drug_name": "Etoposide",
+        "factor": 0.5,
+        "notes": "Reduce to 50%"
+      },
+      {
+        "condition": "Etoposide: significant reduction in albumin levels",
+        "drug_name": "Etoposide",
+        "factor": 1.0,
+        "notes": "Consider dose reduction"
+      },
+      {
+        "condition": "Ifosfamide: hepatic impairment Bilirubin >20 \u00b5mol/L or AST/ALT >2.5xULN or ALP >2.5xULN",
+        "drug_name": "Ifosfamide",
+        "factor": 0.0,
+        "notes": "Not recommended"
+      },
+      {
+        "condition": "Ifosfamide: CrCl 40-59 ml/min",
+        "drug_name": "Ifosfamide",
+        "factor": 0.7,
+        "notes": "Reduce to 70%"
+      },
+      {
+        "condition": "Ifosfamide: CrCl less than 40 ml/min",
+        "drug_name": "Ifosfamide",
+        "factor": 1.0,
+        "notes": "Clinical decision"
+      },
+      {
+        "condition": "Ifosfamide: NCI-CTC grade 1 neurological toxicity",
+        "drug_name": "Ifosfamide",
+        "factor": 1.0,
+        "notes": "May reduce dose for next cycle"
+      },
+      {
+        "condition": "Ifosfamide: NCI-CTC grade 2 neurological toxicity or worsening despite dose reduction",
+        "drug_name": "Ifosfamide",
+        "factor": 0.0,
+        "notes": "Stop ifosfamide"
+      },
+      {
+        "condition": "Haematological: Neutrophils <1x10\u2079/L or Platelets <75x10\u2079/L",
+        "drug_name": "All drugs",
+        "factor": 1.0,
+        "notes": "Delay until neutrophils \u22651x10\u2079/L and unsupported platelets \u226575x10\u2079/L. No dose modifications for haematological toxicity."
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg intravenous bolus (30 min before rituximab)",
+      "Hydrocortisone 100mg intravenous bolus (30 min before rituximab; may omit if patient already on corticosteroids)",
+      "Paracetamol 1000mg oral (30 min before rituximab)",
+      "Dexamethasone 4mg twice a day for 7 days oral or intravenous bolus (starting 15-30 min before chemo)",
+      "Metoclopramide 10mg three times a day for 7 days then when required oral or intravenous bolus",
+      "Ondansetron 8mg twice a day for 7 days oral or intravenous bolus",
+      "Prednisolone 0.5% or dexamethasone 0.1% eye drops one drop into both eyes four times a day for 4 days (cytarabine conjunctivitis prophylaxis)",
+      "Folinic acid 15mg four times a day for one day starting 24 hours after intrathecal methotrexate",
+      "Aciclovir 400mg twice a day oral",
+      "Pentamidine 300mg nebule once a month",
+      "Fluconazole 50mg once a day oral"
+    ],
+    "special_warnings": [
+      "Multiple protocol versions in use: RIVAC-66 is for patients aged 66 and above OR with poor performance status; RIVAC-65 is for patients aged 65 and below. Cytarabine dose is lower (1000mg/m\u00b2 vs 2000mg/m\u00b2). Ifosfamide dose is lower (1000mg/m\u00b2 vs 1500mg/m\u00b2). Ensure correct version is used.",
+      "Alternating with R-CODOX-M: order R-CODOX-M, R-IVAC, R-CODOX-M, R-IVAC. Two additional rituximab doses on days 21 and 42 after last R-IVAC to total 8 rituximab doses.",
+      "Cytarabine TWICE a day warning: cytarabine doses given at 12-hour intervals on days 1 and 2.",
+      "Ifosfamide encephalopathy risk: methylene blue 50mg four times a day IV infusion in 100ml sodium chloride 0.9% can be used to prevent or treat ifosfamide-induced encephalopathy.",
+      "Ifosfamide and mesna mixed in same bag: combination bag given over 60 minutes, followed by mesna 600mg/m\u00b2 over 12 hours.",
+      "Intrathecal chemotherapy: Methotrexate 12.5mg intrathecal on day 5 (national guidance HSC 2008/001 must be followed). For CNS disease: additional cytarabine 70mg intrathecal on days 7 and 9 (cycle 1 only).",
+      "Corticosteroid eye drops required for cytarabine-associated conjunctivitis prophylaxis.",
+      "Urine dip test for proteinuria/haematuria every 4 hours day of and day after ifosfamide. Fluid balance monitoring every 4 hours. Urine output above 100ml/hour.",
+      "Check hepatitis B status before rituximab. Rituximab: monitor for PML."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "body_surface_area",
+      "age",
+      "cns_disease_at_diagnosis"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "InP-RIVE",
+    "protocol_name": "Epirubicin-Etoposide-Ifosfamide-Rituximab (RIVE) Inpatient",
+    "disease_site": "DLBCL / Non-Hodgkin Lymphoma CD20 positive",
+    "category": "lymphoma",
+    "cycle_length_days": 21,
+    "number_of_cycles": 3,
+    "drugs": [
+      {
+        "drug_name": "Rituximab",
+        "dose": 375.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 500ml sodium chloride 0.9% as per local guidelines. Dose rounded to nearest 100mg."
+      },
+      {
+        "drug_name": "Epirubicin",
+        "dose": 50.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous injection over 10 minutes. Vesicant. Maximum lifetime cumulative dose of epirubicin is 900mg/m\u00b2. Dose banded per CSCCN agreed bands. Discontinue epirubicin if cardiac failure develops. If dose reductions made at cycle 1 and well tolerated, dose increases may be considered on subsequent cycles."
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 200.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 1000ml sodium chloride 0.9% over 60 minutes. Dose banded per CSCCN agreed bands."
+      },
+      {
+        "drug_name": "Mesna",
+        "dose": 600.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3
+        ],
+        "infusion_duration_hours": 0.25,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Pre-ifosfamide uroprotection. Intravenous infusion in sodium chloride 0.9% 100ml over 15 minutes. | Mesna given as multiple fractions \u2014 dose represents one administration. Total daily Mesna dose = sum of all Mesna entries."
+      },
+      {
+        "drug_name": "Ifosfamide",
+        "dose": 1500.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3
+        ],
+        "infusion_duration_hours": 12.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "1500mg/m\u00b2 twice a day (total daily dose 3000mg/m\u00b2). Intravenous infusion in sodium chloride 0.9% 1000ml over 12 hours. Mixed in the same bag as mesna (1500mg/m\u00b2). Dose banded per CSCCN agreed bands."
+      },
+      {
+        "drug_name": "Mesna",
+        "dose": 1500.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3
+        ],
+        "infusion_duration_hours": 12.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Mixed in same bag as ifosfamide (1500mg/m\u00b2 twice a day). Total daily dose 3000mg/m\u00b2. | Mesna given as multiple fractions \u2014 dose represents one administration. Total daily Mesna dose = sum of all Mesna entries."
+      },
+      {
+        "drug_name": "Mesna",
+        "dose": 1800.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          4
+        ],
+        "infusion_duration_hours": 12.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Post-ifosfamide uroprotection. Intravenous infusion in sodium chloride 0.9% 1000ml over 12 hours. To start immediately after the final ifosfamide/mesna infusion bag. | Mesna given as multiple fractions \u2014 dose represents one administration. Total daily Mesna dose = sum of all Mesna entries."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Epirubicin: hepatic impairment Bilirubin 30-50 \u00b5mol/L or AST/ALT 2-4xULN",
+        "drug_name": "Epirubicin",
+        "factor": 0.5,
+        "notes": "Reduce to 50%"
+      },
+      {
+        "condition": "Epirubicin: hepatic impairment Bilirubin 51-85 \u00b5mol/L or AST/ALT >4xULN",
+        "drug_name": "Epirubicin",
+        "factor": 0.25,
+        "notes": "Reduce to 25%"
+      },
+      {
+        "condition": "Epirubicin: hepatic impairment Bilirubin >85 \u00b5mol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.0,
+        "notes": "Omit epirubicin"
+      },
+      {
+        "condition": "Epirubicin: CrCl less than 10 ml/min (severe renal failure)",
+        "drug_name": "Epirubicin",
+        "factor": 1.0,
+        "notes": "Consider dose reduction in severe renal failure"
+      },
+      {
+        "condition": "Epirubicin: cardiac failure develops",
+        "drug_name": "Epirubicin",
+        "factor": 0.0,
+        "notes": "Discontinue epirubicin permanently"
+      },
+      {
+        "condition": "Etoposide: hepatic impairment Bilirubin 30-51 \u00b5mol/L or AST/ALT 60-180 units/L",
+        "drug_name": "Etoposide",
+        "factor": 0.5,
+        "notes": "Consider dose reduction to 50%"
+      },
+      {
+        "condition": "Etoposide: hepatic impairment Bilirubin >51 \u00b5mol/L or AST/ALT >180 units/L",
+        "drug_name": "Etoposide",
+        "factor": 1.0,
+        "notes": "Clinical decision"
+      },
+      {
+        "condition": "Etoposide: CrCl 15-50 ml/min",
+        "drug_name": "Etoposide",
+        "factor": 0.75,
+        "notes": "Reduce to 75%"
+      },
+      {
+        "condition": "Etoposide: CrCl less than 15 ml/min",
+        "drug_name": "Etoposide",
+        "factor": 0.5,
+        "notes": "Reduce to 50%"
+      },
+      {
+        "condition": "Etoposide: significant reduction in albumin levels",
+        "drug_name": "Etoposide",
+        "factor": 1.0,
+        "notes": "Consider dose reduction"
+      },
+      {
+        "condition": "Ifosfamide: hepatic impairment Bilirubin >20 \u00b5mol/L or AST/ALT >2.5xULN or ALP >2.5xULN",
+        "drug_name": "Ifosfamide",
+        "factor": 0.0,
+        "notes": "Not recommended"
+      },
+      {
+        "condition": "Ifosfamide: CrCl 40-59 ml/min",
+        "drug_name": "Ifosfamide",
+        "factor": 0.7,
+        "notes": "Reduce to 70%"
+      },
+      {
+        "condition": "Ifosfamide: CrCl less than 40 ml/min",
+        "drug_name": "Ifosfamide",
+        "factor": 1.0,
+        "notes": "Clinical decision"
+      },
+      {
+        "condition": "Ifosfamide: NCI-CTC grade 1 neurological toxicity",
+        "drug_name": "Ifosfamide",
+        "factor": 1.0,
+        "notes": "May reduce dose for next cycle"
+      },
+      {
+        "condition": "Ifosfamide: NCI-CTC grade 2 neurological toxicity or worsening despite dose reduction",
+        "drug_name": "Ifosfamide",
+        "factor": 0.0,
+        "notes": "Stop ifosfamide"
+      },
+      {
+        "condition": "Haematological: Neutrophils <1x10\u2079/L or Platelets <100x10\u2079/L",
+        "drug_name": "All drugs",
+        "factor": 1.0,
+        "notes": "Delay until neutrophils \u22651x10\u2079/L and unsupported platelets \u2265100x10\u2079/L. No dose modifications for haematological toxicity."
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg intravenous (30 min before rituximab)",
+      "Hydrocortisone 100mg intravenous (30 min before rituximab; may omit if patient already on corticosteroids)",
+      "Paracetamol 1000mg oral (30 min before rituximab)",
+      "Dexamethasone 4mg twice a day for 5 days oral or intravenous (starting 15-30 min before chemo)",
+      "Metoclopramide 10mg three times a day for 5 days then when required oral or intravenous",
+      "Ondansetron 8mg twice a day for 5 days oral or intravenous",
+      "Allopurinol 300mg once a day oral (cycle 1 only)",
+      "Aciclovir 400mg twice a day oral",
+      "Co-trimoxazole 960mg once a day on Monday, Wednesday and Friday oral"
+    ],
+    "special_warnings": [
+      "Epirubicin: maximum lifetime cumulative dose is 900mg/m\u00b2. Baseline LVEF should be measured in patients with history of cardiac problems, cardiac risk factors, or elderly. Discontinue epirubicin if cardiac failure develops.",
+      "Epirubicin is a VESICANT - extravasation precautions required.",
+      "Ifosfamide encephalopathy risk: methylene blue 50mg four times a day IV infusion in 100ml sodium chloride 0.9% can be used to prevent or treat ifosfamide-induced encephalopathy.",
+      "Urine dip test for protein every 4 hours the day of and day after ifosfamide. Fluid balance monitoring every 4 hours. Urine output above 100ml/hour.",
+      "Rituximab: cytokine release syndrome risk. Monitor for PML. Check hepatitis B status before starting.",
+      "Growth factors (G-CSF) to be continued until neutrophil count above 1x10\u2079/L: filgrastim from day 7 or pegfilgrastim day 5.",
+      "In female patients consider norethisterone 5mg three times a day oral to delay menstruation.",
+      "Ensure adequate cardiac function before starting therapy. EDTA or calculated creatinine clearance prior to each cycle."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "body_surface_area",
+      "lvef"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "Lena-R-IV",
+    "protocol_name": "Lenalidomide-Rituximab (IV) - R\u00b2 Protocol",
+    "disease_site": "Follicular Lymphoma",
+    "category": "lymphoma",
+    "cycle_length_days": 28,
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Lenalidomide",
+        "dose": 20.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "20mg once a day days 1-21 inclusive of 28-day cycle. Available as 20mg, 15mg, 10mg, 7.5mg, 5mg and 2.5mg capsules. Swallow whole with water. Pregnancy prevention programme mandatory."
+      },
+      {
+        "drug_name": "Rituximab",
+        "dose": 375.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8,
+          15,
+          22
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1: rituximab 375mg/m\u00b2 IV on days 1, 8, 15, 22. Cycles 2-5: rituximab 375mg/m\u00b2 IV on day 1 only. Cycles 6-12: lenalidomide only (no rituximab). Intravenous infusion in 500ml sodium chloride 0.9%. Dose rounded to nearest 100mg (up if halfway)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Lenalidomide: Neutrophils <1x10\u2079/L - 1st occurrence",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "Delay until recovery. Restart at full dose."
+      },
+      {
+        "condition": "Lenalidomide: Neutrophils <1x10\u2079/L - 2nd occurrence",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "Delay until recovery. Restart at 15mg."
+      },
+      {
+        "condition": "Lenalidomide: Neutrophils <1x10\u2079/L - 3rd occurrence",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "Delay until recovery. Restart at 10mg."
+      },
+      {
+        "condition": "Lenalidomide: Neutrophils <1x10\u2079/L - 4th occurrence",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "Delay until recovery. Restart at 5mg."
+      },
+      {
+        "condition": "Lenalidomide: Platelets <50x10\u2079/L - 1st occurrence",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "Delay until recovery. Restart at 15mg."
+      },
+      {
+        "condition": "Lenalidomide: Platelets <50x10\u2079/L - 2nd occurrence",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "Delay until recovery. Restart at 10mg."
+      },
+      {
+        "condition": "Lenalidomide: Platelets <50x10\u2079/L - 3rd occurrence",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "Delay until recovery. Restart at 5mg."
+      },
+      {
+        "condition": "Lenalidomide: CrCl 30-50 ml/min",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "Start at 10mg once a day. Can increase to 15mg after 2 cycles if no response."
+      },
+      {
+        "condition": "Lenalidomide: CrCl less than 30 ml/min (not requiring dialysis)",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "Start at 15mg on alternate days."
+      },
+      {
+        "condition": "Lenalidomide: CrCl less than 30 ml/min requiring dialysis",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "5mg once a day. On dialysis days, administer following dialysis."
+      },
+      {
+        "condition": "Lenalidomide: non-haematological NCI-CTC grade 3 or above toxicity",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "Delay until resolved to grade 1 or below. Reduce to 15mg, then 10mg, then 5mg on subsequent occurrences. Stop if 5mg not tolerated."
+      },
+      {
+        "condition": "Lenalidomide: grade 2-4 clinical TLS",
+        "drug_name": "Lenalidomide",
+        "factor": 0.0,
+        "notes": "Interrupt lenalidomide. Restart at next lower dose when TLS resolves to grade 0."
+      },
+      {
+        "condition": "Lenalidomide: venous thrombosis or embolism NCI-CTC grade 3 or above",
+        "drug_name": "Lenalidomide",
+        "factor": 0.0,
+        "notes": "Stop treatment and start anticoagulation. May be reinstated at clinician's discretion."
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg intravenous (30 min before rituximab IV)",
+      "Hydrocortisone 100mg intravenous (30 min before rituximab IV)",
+      "Paracetamol 1000mg oral (30 min before rituximab IV)",
+      "Metoclopramide 10mg three times a day when required oral",
+      "Allopurinol 300mg once a day for 7 days cycle 1 only (TLS prophylaxis in patients at risk)",
+      "Thromboprophylaxis for patients with additional VTE risk factors"
+    ],
+    "special_warnings": [
+      "Multiple protocol versions in use - ensure correct protocol for relevant diagnosis.",
+      "Pregnancy prevention programme: patient, prescriber and pharmacy must comply. Lenalidomide is teratogenic.",
+      "DVT prophylaxis mandatory for patients with additional VTE risk factors. VTE risk assessment prior to starting treatment.",
+      "Tumour lysis syndrome: weekly biochemistry monitoring during cycle 1. Adequate hydration required. TLS prophylaxis (allopurinol/rasburicase) prior to cycle 1.",
+      "Formal medical review at least by end of first 8 weeks of treatment to determine whether to continue.",
+      "If rituximab discontinued for toxicity, lenalidomide may continue up to maximum 12 cycles.",
+      "Thyroid function tests at baseline and regular intervals. Calcium and magnesium levels monitored throughout.",
+      "Rituximab: cytokine release syndrome risk. Monitor for PML. Check hepatitis B status.",
+      "Maximum 12 four-weekly cycles of lenalidomide. Patient must have had no previous lenalidomide treatment.",
+      "National Patient Safety Agency alert NPSA/2008/RRR001 must be followed for oral chemotherapy."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "body_surface_area",
+      "pregnancy_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "Lena-R-IVSC",
+    "protocol_name": "Lenalidomide-Rituximab (IV/SC) - R\u00b2 Protocol",
+    "disease_site": "Follicular Lymphoma grade 1-3a",
+    "category": "lymphoma",
+    "cycle_length_days": 28,
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Lenalidomide",
+        "dose": 20.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "20mg once a day days 1-21 inclusive of 28-day cycle. Available as 20mg, 15mg, 10mg, 7.5mg, 5mg and 2.5mg capsules. Swallow whole with water. Pregnancy prevention programme mandatory."
+      },
+      {
+        "drug_name": "Rituximab",
+        "dose": 375.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8,
+          15,
+          22
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 only: rituximab 375mg/m\u00b2 IV on days 1, 8, 15, 22. Intravenous infusion in 500ml sodium chloride 0.9%. Dose rounded to nearest 100mg (up if halfway). Pre-medication: chlorphenamine 10mg IV + hydrocortisone 100mg IV + paracetamol 1000mg oral 30 min prior."
+      },
+      {
+        "drug_name": "Rituximab",
+        "dose": 1400.0,
+        "dose_unit": "mg",
+        "route": "Subcutaneous",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.083,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 2-5: rituximab 1400mg subcutaneous injection over approximately 5 minutes on day 1. Injected into abdominal wall. Cycles 6-12: lenalidomide only (no rituximab). SC pre-medication: non-sedating oral antihistamine + paracetamol 1000mg oral 15-30 min prior."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Lenalidomide: Neutrophils <1x10\u2079/L - 1st occurrence",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "Delay until recovery. Restart at full dose."
+      },
+      {
+        "condition": "Lenalidomide: Neutrophils <1x10\u2079/L - 2nd occurrence",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "Delay until recovery. Restart at 15mg."
+      },
+      {
+        "condition": "Lenalidomide: Neutrophils <1x10\u2079/L - 3rd occurrence",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "Delay until recovery. Restart at 10mg."
+      },
+      {
+        "condition": "Lenalidomide: Neutrophils <1x10\u2079/L - 4th occurrence",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "Delay until recovery. Restart at 5mg."
+      },
+      {
+        "condition": "Lenalidomide: Platelets <50x10\u2079/L - 1st occurrence",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "Delay until recovery. Restart at 15mg."
+      },
+      {
+        "condition": "Lenalidomide: Platelets <50x10\u2079/L - 2nd occurrence",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "Delay until recovery. Restart at 10mg."
+      },
+      {
+        "condition": "Lenalidomide: Platelets <50x10\u2079/L - 3rd occurrence",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "Delay until recovery. Restart at 5mg."
+      },
+      {
+        "condition": "Lenalidomide: CrCl 30-50 ml/min",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "Start at 10mg once a day. Can increase to 15mg after 2 cycles if no response."
+      },
+      {
+        "condition": "Lenalidomide: CrCl less than 30 ml/min (not requiring dialysis)",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "Start at 15mg on alternate days."
+      },
+      {
+        "condition": "Lenalidomide: CrCl less than 30 ml/min requiring dialysis",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "5mg once a day. On dialysis days, administer following dialysis."
+      },
+      {
+        "condition": "Rituximab SC: Neutrophils <1x10\u2079/L or Platelets <50x10\u2079/L",
+        "drug_name": "Rituximab",
+        "factor": 0.0,
+        "notes": "Each SC injection of rituximab should only be given if neutrophil count at least 1x10\u2079/L and platelet count at least 50x10\u2079/L."
+      },
+      {
+        "condition": "Lenalidomide: venous thrombosis or embolism NCI-CTC grade 3 or above",
+        "drug_name": "Lenalidomide",
+        "factor": 0.0,
+        "notes": "Stop treatment and start anticoagulation. May be reinstated at clinician's discretion."
+      }
+    ],
+    "pre_medications": [
+      "Cycle 1 rituximab IV pre-medication: Chlorphenamine 10mg intravenous + Hydrocortisone 100mg intravenous + Paracetamol 1000mg oral (30 min prior)",
+      "Cycles 2-5 rituximab SC pre-medication: non-sedating oral antihistamine (e.g. cetirizine 10mg, loratadine 10mg, fexofenadine 120mg, or acrivastine 8mg) + Paracetamol 1000mg oral (15-30 min prior)",
+      "Metoclopramide 10mg three times a day when required oral",
+      "Allopurinol 300mg once a day for 7 days cycle 1 only (TLS prophylaxis in patients at risk)",
+      "Thromboprophylaxis for patients with additional VTE risk factors"
+    ],
+    "special_warnings": [
+      "Multiple protocol versions in use - ensure correct protocol for relevant diagnosis (IV/SC version vs IV-only version).",
+      "Cycle 1 rituximab given IV (four weekly doses days 1, 8, 15, 22). Cycles 2-5 rituximab given SC (1400mg fixed dose, day 1). Cycles 6-12 lenalidomide monotherapy only.",
+      "Subcutaneous rituximab 1400mg fixed dose (not weight-based). Administer over approximately 5 minutes into abdominal wall. Do not inject into areas where skin is red, bruised, tender, hard or has moles/scars.",
+      "Pregnancy prevention programme: patient, prescriber and pharmacy must comply. Lenalidomide is teratogenic.",
+      "DVT prophylaxis mandatory for patients with additional VTE risk factors. VTE risk assessment prior to starting treatment.",
+      "Tumour lysis syndrome: weekly biochemistry monitoring during cycle 1. Adequate hydration required.",
+      "Formal medical review at least by end of first 8 weeks of treatment.",
+      "Thyroid function tests at baseline and regular intervals. Calcium and magnesium levels monitored throughout.",
+      "Rituximab: cytokine release syndrome risk. Monitor for PML. Check hepatitis B status.",
+      "National Patient Safety Agency alert NPSA/2008/RRR001 must be followed for oral chemotherapy."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "pregnancy_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "Lena-Mono",
+    "protocol_name": "Lenalidomide Monotherapy",
+    "disease_site": "Relapsed or Refractory Non-Hodgkin Lymphoma",
+    "category": "lymphoma",
+    "cycle_length_days": 28,
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Lenalidomide",
+        "dose": 25.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "25mg once a day days 1-21 inclusive of 28-day cycle. Available as 25mg, 15mg, 10mg and 5mg tablets. Tablets should be swallowed whole, not chewed. Pregnancy prevention programme mandatory."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Lenalidomide: Neutrophils <1x10\u2079/L - 1st occurrence",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "Delay until recovery. Restart at full dose."
+      },
+      {
+        "condition": "Lenalidomide: Neutrophils <1x10\u2079/L - 2nd occurrence",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "Delay until recovery. Restart at 15mg."
+      },
+      {
+        "condition": "Lenalidomide: Neutrophils <1x10\u2079/L - 3rd occurrence",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "Delay until recovery. Restart at 10mg."
+      },
+      {
+        "condition": "Lenalidomide: Neutrophils <1x10\u2079/L - 4th occurrence",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "Delay until recovery. Restart at 5mg."
+      },
+      {
+        "condition": "Lenalidomide: Platelets <50x10\u2079/L - 1st occurrence",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "Delay until recovery. Restart at 15mg."
+      },
+      {
+        "condition": "Lenalidomide: Platelets <50x10\u2079/L - 2nd occurrence",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "Delay until recovery. Restart at 10mg."
+      },
+      {
+        "condition": "Lenalidomide: Platelets <50x10\u2079/L - 3rd occurrence",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "Delay until recovery. Restart at 5mg."
+      },
+      {
+        "condition": "Lenalidomide: CrCl 30-50 ml/min",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "Start at 10mg once a day."
+      },
+      {
+        "condition": "Lenalidomide: CrCl less than 30 ml/min (not requiring dialysis)",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "Start at 15mg on alternate days."
+      },
+      {
+        "condition": "Lenalidomide: CrCl less than 30 ml/min requiring dialysis",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "5mg once a day. On dialysis days, administer following dialysis."
+      },
+      {
+        "condition": "Lenalidomide: non-haematological NCI-CTC grade 3 or above toxicity",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "Delay until resolved to grade 1 or below. Reduce to 15mg, then 10mg, then 5mg on subsequent occurrences. Stop if 5mg not tolerated."
+      },
+      {
+        "condition": "Lenalidomide: NCI-CTC grade 2 allergic/hypersensitivity reaction",
+        "drug_name": "Lenalidomide",
+        "factor": 0.0,
+        "notes": "Withhold until resolved to grade 1 or below. Restart cautiously at 15mg. Grade 3 or above: discontinue permanently."
+      },
+      {
+        "condition": "Lenalidomide: desquamating rash NCI-CTC grade 3 or above, or grade 4 non-desquamating rash",
+        "drug_name": "Lenalidomide",
+        "factor": 0.0,
+        "notes": "Discontinue lenalidomide permanently."
+      },
+      {
+        "condition": "Lenalidomide: venous thrombosis or embolism NCI-CTC grade 3 or above",
+        "drug_name": "Lenalidomide",
+        "factor": 0.0,
+        "notes": "Stop treatment and start anticoagulation. May be reinstated at clinician's discretion."
+      }
+    ],
+    "pre_medications": [
+      "Metoclopramide 10mg three times a day when required oral",
+      "Allopurinol 300mg once a day cycle 1 only",
+      "Thromboprophylaxis in patients with additional VTE risk factors"
+    ],
+    "special_warnings": [
+      "Multiple protocol versions in use - ensure correct protocol for relevant diagnosis.",
+      "Pregnancy prevention programme: patient, prescriber and pharmacy must comply. Lenalidomide is teratogenic.",
+      "DVT prophylaxis mandatory for patients with additional VTE risk factors. VTE risk assessment prior to starting.",
+      "National Patient Safety Agency alert NPSA/2008/RRR001 must be followed for oral chemotherapy.",
+      "It must be made clear to all staff (including community) that this is a short course of oral chemotherapy that must not be continued.",
+      "Patients should be assessed for suitability for oral chemotherapy prior to starting treatment.",
+      "Dose step-wise reduction ladder: 25mg \u2192 15mg \u2192 10mg \u2192 5mg. Stop if 5mg not tolerated.",
+      "Thyroid function tests at baseline and regular intervals. Calcium and magnesium levels monitored throughout.",
+      "This protocol may require funding approval."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "pregnancy_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "Lisocel-CyFlu",
+    "protocol_name": "Lisocabtagene Maraleucel (Lisocel) - Cyclophosphamide 300 - Fludarabine 30 CAR-T Lymphodepletion",
+    "disease_site": "DLBCL / PMBCL / Follicular Lymphoma grade 3B",
+    "category": "lymphoma",
+    "cycle_length_days": 14,
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 300.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV bolus",
+        "days": [
+          -5,
+          -4,
+          -3
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Lymphodepletion chemotherapy. Intravenous bolus over 10 minutes on days -5, -4, -3. Dose banded in accordance with national dose banding table (20mg/ml). Non-vesicant."
+      },
+      {
+        "drug_name": "Fludarabine",
+        "dose": 30.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          -5,
+          -4,
+          -3
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Lymphodepletion chemotherapy. Intravenous infusion in 100ml sodium chloride 0.9% over 30 minutes on days -5, -4, -3. Dose banded according to national dose band (25mg/ml). Non-vesicant. Patients treated with fludarabine carry a LIFELONG risk of transfusion-associated GVHD - must receive irradiated blood products for life."
+      },
+      {
+        "drug_name": "Lisocabtagene maraleucel",
+        "dose": 100.0,
+        "dose_unit": "units",
+        "route": "IV infusion",
+        "days": [
+          0
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Target dose: 100 x10\u2076 CAR+ viable cells (dosing range 44-120 x10\u2076). Consists of CD8+ and CD4+ cell components (target 1:1 ratio). Day 0: administered as IV infusion from 2 or more syringes at approximately 0.5ml/minute via a giving set with non-leukodepleting in-line filter primed with sodium chloride 0.9%. Must be administered within 2 hours from start of thaw. CD8+ component must be infused first, followed immediately by CD4+ component. Do not administer via volumetric pump. Administration may be via central or peripheral line. Only available at Wessex Blood and Marrow Transplant Unit. Autologous use only."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Cyclophosphamide: CrCl 30-50 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75%"
+      },
+      {
+        "condition": "Cyclophosphamide: CrCl less than 30 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "As directed by cell therapy consultant"
+      },
+      {
+        "condition": "Fludarabine: CrCl 50-69 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.8,
+        "notes": "Reduce dose by 20%"
+      },
+      {
+        "condition": "Fludarabine: CrCl 30-49 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.6,
+        "notes": "Reduce dose by 40%"
+      },
+      {
+        "condition": "Fludarabine: CrCl less than 30 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 1.0,
+        "notes": "As directed by cell therapy consultant"
+      },
+      {
+        "condition": "Hepatic impairment: fludarabine",
+        "drug_name": "Fludarabine",
+        "factor": 1.0,
+        "notes": "No dose modification recommended for hepatic dysfunction"
+      },
+      {
+        "condition": "Hepatic impairment: cyclophosphamide (severe)",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Severe hepatic impairment may decrease activation of cyclophosphamide - consider when selecting dose"
+      },
+      {
+        "condition": "Lisocel infusion: active unresolved serious adverse events or active infections/inflammatory disorders or active GVHD",
+        "drug_name": "Lisocabtagene maraleucel",
+        "factor": 0.0,
+        "notes": "Delay Lisocel infusion if patient has unresolved serious adverse events, active infections or inflammatory disorders, or active GVHD."
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg intravenous (30 min prior to Lisocel on day 0)",
+      "Paracetamol 1000mg oral (30 min prior to Lisocel on day 0)",
+      "Metoclopramide 10mg three times a day oral or intravenous",
+      "Ondansetron 8mg twice a day oral or intravenous",
+      "Aciclovir 400mg oral twice a day",
+      "Pentamidine 300mg nebuliser during lymphodepletion, then every 28 days until count recovery sufficient for co-trimoxazole",
+      "Fluconazole 100mg once a day (or posaconazole 300mg once daily if prolonged neutropenia or previous invasive fungal infection)",
+      "Gastric protection with PPI or H2 antagonist from first day of lymphodepletion until platelet count >50x10\u2079/L",
+      "Tocilizumab 8mg/kg (max 800mg) IV 8-hourly if required for CRS (maximum 4 doses - must be prescribed in advance of CAR-T infusion)",
+      "Levetiracetam 500mg twice daily oral commencing day 0 until day +28 (seizure prophylaxis, reduce to 250mg twice daily for 2 weeks then stop)",
+      "Tumour lysis syndrome prophylaxis per individual patient risk: Allopurinol 300mg oral once a day or Rasburicase 3mg IV once a day",
+      "NOTE: Prophylactic systemic corticosteroids are NOT recommended as they may interfere with CAR-T activity"
+    ],
+    "special_warnings": [
+      "CAR-T THERAPY - LIFE-THREATENING CRS AND ICANS RISK: Nearly all patients experience some degree of CRS including life-threatening and fatal reactions. CRS symptoms: pyrexia, tiredness, cardiac failure, tachycardia, dysrhythmias, dyspnoea, hypoxia, capillary leak, chills, renal impairment, headache, nausea. Temperature, BP and O2 saturation monitored 4-hourly after Lisocel on day 0 then twice daily.",
+      "CAR-T cell therapy: single administration procedure. cycle_length_days is not applicable \u2014 this is a one-time infusion following lymphodepletion conditioning.",
+      "ICANS (immune effector cell-associated neurotoxicity syndrome): symptoms include seizures, somnolence, headaches, confusion, agitation, speech disorders, tremor, encephalopathy, ataxia, memory impairment, hallucinations, delirium. ICE score assessed twice daily.",
+      "LIFELONG IRRADIATED BLOOD PRODUCTS: Fludarabine causes lifelong risk of transfusion-associated GVHD. ALL blood products must be irradiated for life. Local blood transfusion department must be notified immediately.",
+      "Patient must be issued with a Lisocel treatment alert card to carry at all times (CRS/ICANS can occur weeks after infusion).",
+      "Lymphodepleting regimen must only be started after availability of Lisocel is confirmed. A minimum period must elapse between last lymphodepletion dose and CAR-T infusion (see patient CAR-T schedule).",
+      "CAR-T administration must not occur out of core hours or over the weekend.",
+      "Lisocel cells are genetically modified human blood cells - GMO spill-kit must accompany Lisocel. Strict PPE and waste disposal procedures.",
+      "Indications: DLBCL/PMBCL/FL3B relapsed within 12 months of or refractory to first-line chemoimmunotherapy; OR relapsed/refractory DLBCL/PMBCL/FL3B after 2+ lines of systemic therapy.",
+      "Not recommended for patients with active GVHD or who have undergone allogeneic stem cell transplant with active acute/chronic GVHD.",
+      "Echocardiogram and baseline lung function must be performed prior to initiating lymphodepleting chemotherapy.",
+      "HBV, HCV and HIV screening must be performed before collection of cells for Lisocel manufacture.",
+      "Regimen summary header shows CYCLOPHOSPHAMIDE (500) in the Aria regimen summary page title but the actual dose is 300mg/m\u00b2 as stated throughout the protocol.",
+      "Any suspected adverse reaction to CAR-T cell infusion should be reported via MHRA Yellow Card scheme."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "body_surface_area",
+      "lvef",
+      "hepatitis_b_status",
+      "hcv_status",
+      "hiv_status"
+    ],
+    "auc_dosing": null
+  }
+]

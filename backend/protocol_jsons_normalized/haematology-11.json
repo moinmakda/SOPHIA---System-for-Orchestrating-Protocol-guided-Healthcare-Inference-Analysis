@@ -1,0 +1,1356 @@
+[
+  {
+    "protocol_code": "CLL-VENETOCLAX-LOW-RISK",
+    "protocol_name": "CLL Venetoclax (Low Risk TLS) - Dose Titration and Maintenance",
+    "disease_site": "CLL",
+    "category": "haematology",
+    "cycle_length_days": 28,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Venetoclax",
+        "dose": 20.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1, Week 1 ramp-up dose. Day 1 dispensed as separate supply to allow TLS evaluation on day 2. Take with food and a full glass of water in the morning to facilitate laboratory monitoring. | RAMP-UP SCHEDULE: multiple Venetoclax entries exist for this protocol, each representing a different weekly dose in the ramp-up schedule (20mg → 50mg → 100mg → 200mg → 400mg). All entries are intentional."
+      },
+      {
+        "drug_name": "Venetoclax",
+        "dose": 50.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1, Week 2 ramp-up dose. Check dose escalation is appropriate before prescribing. Ensure adequate hydration at each dose increase. | RAMP-UP SCHEDULE: multiple Venetoclax entries exist for this protocol, each representing a different weekly dose in the ramp-up schedule (20mg → 50mg → 100mg → 200mg → 400mg). All entries are intentional."
+      },
+      {
+        "drug_name": "Venetoclax",
+        "dose": 100.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1, Week 3 ramp-up dose. Check dose escalation is appropriate before prescribing. Ensure adequate hydration at each dose increase. | RAMP-UP SCHEDULE: multiple Venetoclax entries exist for this protocol, each representing a different weekly dose in the ramp-up schedule (20mg → 50mg → 100mg → 200mg → 400mg). All entries are intentional."
+      },
+      {
+        "drug_name": "Venetoclax",
+        "dose": 200.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1, Week 4 ramp-up dose. Check dose escalation is appropriate before prescribing. Ensure adequate hydration at each dose increase. | RAMP-UP SCHEDULE: multiple Venetoclax entries exist for this protocol, each representing a different weekly dose in the ramp-up schedule (20mg → 50mg → 100mg → 200mg → 400mg). All entries are intentional."
+      },
+      {
+        "drug_name": "Venetoclax",
+        "dose": 400.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 2 onwards full maintenance dose (400mg daily days 1-28). Day 1 of cycle 2 only dispensed separately to allow TLS evaluation on day 2. Take with food and a full glass of water. | RAMP-UP SCHEDULE: multiple Venetoclax entries exist for this protocol, each representing a different weekly dose in the ramp-up schedule (20mg → 50mg → 100mg → 200mg → 400mg). All entries are intentional."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "TLS biochemical changes resolving within 24-48 hours",
+        "drug_name": "Venetoclax",
+        "factor": 1.0,
+        "notes": "Withhold next venetoclax dose. If biochemical changes resolve within 24-48 hours of last dose, resume at same dose."
+      },
+      {
+        "condition": "TLS biochemical changes requiring more than 48 hours to resolve - dose at interruption 400mg",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Restart at reduced dose of 300mg. Modified dose should be continued for 1 week before increasing."
+      },
+      {
+        "condition": "TLS biochemical changes requiring more than 48 hours to resolve - dose at interruption 300mg",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Restart at reduced dose of 200mg. Modified dose should be continued for 1 week before increasing."
+      },
+      {
+        "condition": "TLS biochemical changes requiring more than 48 hours to resolve - dose at interruption 200mg",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Restart at reduced dose of 100mg. Modified dose should be continued for 1 week before increasing."
+      },
+      {
+        "condition": "TLS biochemical changes requiring more than 48 hours to resolve - dose at interruption 100mg",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Restart at reduced dose of 50mg. Modified dose should be continued for 1 week before increasing."
+      },
+      {
+        "condition": "TLS biochemical changes requiring more than 48 hours to resolve - dose at interruption 50mg",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Restart at reduced dose of 20mg. Modified dose should be continued for 1 week before increasing."
+      },
+      {
+        "condition": "TLS biochemical changes requiring more than 48 hours to resolve - dose at interruption 20mg",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Restart at reduced dose of 10mg. Modified dose should be continued for 1 week before increasing."
+      },
+      {
+        "condition": "Grade 3-4 febrile neutropenia and/or infection, or grade 4 haematological toxicity (except lymphopenia)",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Withhold venetoclax until toxicity resolves to grade 1 or baseline. May restart at same dose. If toxicity recurs, follow dose reduction table. Discontinue if dose reductions to less than 100mg required for more than 2 weeks."
+      },
+      {
+        "condition": "Severe hepatic impairment",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Not recommended in severe hepatic impairment - safety not established. No dose adjustment required for mild or moderate hepatic impairment."
+      },
+      {
+        "condition": "Severe renal impairment (CrCl less than 80 ml/min)",
+        "drug_name": "Venetoclax",
+        "factor": 1.0,
+        "notes": "No dose adjustment required but more intensive TLS prophylaxis and monitoring required. Use in severe renal impairment only if benefit outweighs risk."
+      }
+    ],
+    "pre_medications": [
+      "Allopurinol 300mg once daily oral starting 72 hours prior to first dose of venetoclax, continuing for 28 days",
+      "Metoclopramide 10mg three times daily when required (oral, take-home antiemetic)",
+      "Adequate oral hydration: 1.5-2L of water daily starting 2 days before dose titration and throughout titration phase",
+      "Intravenous fluids as indicated based on overall TLS risk or if patient cannot maintain adequate oral hydration",
+      "Gastric protection with proton pump inhibitor or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed"
+    ],
+    "special_warnings": [
+      "CRITICAL TLS RISK: Venetoclax can cause rapid tumour reduction and poses a significant risk for tumour lysis syndrome (TLS) during the initial 5-week dose-titration phase. TLS changes can occur as early as 6-8 hours after the first dose and at each dose increase.",
+      "LOW RISK TLS CRITERIA: All measurable lymph nodes with largest diameter less than 5cm AND lymphocyte count less than 25x10^9/L. Medium risk: lymph nodes 5-10cm, lymphocytes less than 25x10^9/L. High risk: any lymph node greater than 10cm OR lymphocyte count greater than 25x10^9/L.",
+      "Tumour burden assessment including CT scan must be performed for all patients prior to starting venetoclax. Blood chemistry (potassium, uric acid, phosphorus, calcium, creatinine) must be assessed and abnormalities corrected before starting.",
+      "Monitor FBC, U&Es and LFTs at 6-8 hours and 24 hours after first dose and each dose increase. Do not administer next dose until 24-hour results evaluated.",
+      "Strong or moderate CYP3A inhibitors must NOT be prescribed together with venetoclax during initiation and dose-titration phase due to increased TLS risk.",
+      "Grapefruit products, Seville oranges, and starfruit (carambola) must be avoided during venetoclax treatment.",
+      "Venetoclax must only be prescribed under supervision of a consultant haematologist.",
+      "For patients with dosing interruption greater than 1 week during first 5 weeks of titration, or greater than 2 weeks at 400mg dose, TLS risk must be reassessed.",
+      "Discontinuation of venetoclax should be considered if dose reductions to less than 100mg are required for more than 2 weeks.",
+      "Day 1 of each new dose level dispensed separately to allow TLS evaluation the following day.",
+      "NPSA/2008/RRR001 National Patient Safety Alert on oral chemotherapy must be followed."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "lymphocyte_count",
+      "lymph_node_size_cm",
+      "uric_acid",
+      "potassium",
+      "phosphate",
+      "calcium",
+      "creatinine",
+      "LFTs",
+      "FBC"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "CLL-VENETOCLAX-HIGH-RISK",
+    "protocol_name": "CLL Venetoclax (High Risk TLS) - Inpatient/Outpatient Dose Titration and Maintenance",
+    "disease_site": "CLL",
+    "category": "haematology",
+    "cycle_length_days": 28,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Venetoclax",
+        "dose": 20.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1, Week 1 ramp-up dose. Days 1, 8, 15 and 22 dispensed separately to allow TLS evaluation on days 2, 9, 16 and 23. Administer at least 1 hour after start of sodium chloride 0.9% infusion. Record time of administration. Take with food and full glass of water. | RAMP-UP SCHEDULE: multiple Venetoclax entries exist for this protocol, each representing a different weekly dose in the ramp-up schedule (20mg → 50mg → 100mg → 200mg → 400mg). All entries are intentional."
+      },
+      {
+        "drug_name": "Venetoclax",
+        "dose": 50.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1, Week 2 ramp-up dose. Dispensed separately on day 8. Check in-patient administration records. Take with food and full glass of water. | RAMP-UP SCHEDULE: multiple Venetoclax entries exist for this protocol, each representing a different weekly dose in the ramp-up schedule (20mg → 50mg → 100mg → 200mg → 400mg). All entries are intentional."
+      },
+      {
+        "drug_name": "Venetoclax",
+        "dose": 100.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1, Week 3 ramp-up dose. Dispensed separately on day 15. Ensure all correct blood tests taken at correct time. | RAMP-UP SCHEDULE: multiple Venetoclax entries exist for this protocol, each representing a different weekly dose in the ramp-up schedule (20mg → 50mg → 100mg → 200mg → 400mg). All entries are intentional."
+      },
+      {
+        "drug_name": "Venetoclax",
+        "dose": 200.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1, Week 4 ramp-up dose. Dispensed separately on day 22. Ensure minimum 2 litres of fluid daily. | RAMP-UP SCHEDULE: multiple Venetoclax entries exist for this protocol, each representing a different weekly dose in the ramp-up schedule (20mg → 50mg → 100mg → 200mg → 400mg). All entries are intentional."
+      },
+      {
+        "drug_name": "Venetoclax",
+        "dose": 400.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 2 onwards full maintenance dose 400mg daily days 1-28. Day 1 of cycle 2 dispensed separately to allow TLS evaluation on day 2. Take with food and full glass of water. | RAMP-UP SCHEDULE: multiple Venetoclax entries exist for this protocol, each representing a different weekly dose in the ramp-up schedule (20mg → 50mg → 100mg → 200mg → 400mg). All entries are intentional."
+      },
+      {
+        "drug_name": "Rasburicase",
+        "dose": 7.5,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          8,
+          9
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 days 1, 2, 8 and 9 only. Infuse in 50ml sodium chloride 0.9% over 30 minutes. Administer after baseline blood sample has been taken. Used prophylactically for high-risk TLS prevention at initiation and first dose increase. Start allopurinol before third dose increase (from approximately day 12)."
+      },
+      {
+        "drug_name": "Sodium Chloride 0.9%",
+        "dose": 1000.0,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8
+        ],
+        "infusion_duration_hours": 4.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 days 1 and 8 only. 1000ml over 4 hours (240 minutes). Start at least 1 hour prior to venetoclax administration. Advise patient to drink an additional litre of water during the day."
+      },
+      {
+        "drug_name": "Sodium Chloride 0.9%",
+        "dose": 500.0,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "days": [
+          2,
+          9
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 days 2 and 9 only. 500ml over 2 hours (120 minutes). Start at least 1 hour before venetoclax administration. Advise patient to drink an additional 1.5 litres of water during the day."
+      },
+      {
+        "drug_name": "Calcium Carbonate",
+        "dose": 1500.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": 1500.0,
+        "max_dose_unit": "mg",
+        "notes": "Calcium carbonate 1.5g or 1.25g (as per local protocol) three times daily for 28 days starting on day 1 of cycle 1 only. Used as phosphate binder to reduce risk of dose delay due to hyperphosphataemia during initial titration phase. Take with food."
+      },
+      {
+        "drug_name": "Allopurinol",
+        "dose": 300.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Start on day 12 of cycle 1 (after rasburicase course completed at days 1, 2, 8, 9) and continue for 28 days. For high-risk patients: rasburicase 7.5mg used prophylactically at initiation and first dose increase, then allopurinol started before third dose increase."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Hyperkalaemia: Potassium increase >=0.5mmol/L from prior value and within upper limit of normal (ULN)",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Hold venetoclax until resolution. Recheck calcium, creatinine, phosphate, potassium and uric acid in 1 hour. If further 0.2mmol/L or more rise in potassium do ECG and consider calcium gluconate and calcium resonium per local hyperkalaemia policy. Continue to monitor TLS every 2 hours. Resume venetoclax when potassium change is less than 0.2mmol/L and no other TLS evidence."
+      },
+      {
+        "condition": "Hyperkalaemia: Potassium more than ULN but less than 6.0mmol/L",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Hold venetoclax until resolution. Do ECG and consider calcium gluconate and calcium resonium per local hyperkalaemia policy. Recheck calcium, creatinine, phosphate, potassium and uric acid in 1 hour. Continue TLS monitoring at 2 and 4 hours if potassium less than ULN."
+      },
+      {
+        "condition": "Hyperkalaemia: Potassium >=6.0mmol/L and/or symptomatic (muscle cramps, weakness, paraesthesia, nausea, vomiting or diarrhoea)",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Hold venetoclax until resolution. Refer to local hyperkalaemia guideline and seek advice from renal team. Recheck calcium, creatinine, phosphate, potassium and uric acid every hour."
+      },
+      {
+        "condition": "Hyperuricaemia: Uric acid >=476 micromol/L",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Hold venetoclax until resolution. Consider giving rasburicase if not given in last 24 hours."
+      },
+      {
+        "condition": "Hypocalcaemia: Adjusted calcium less than 1.75mmol/L or symptomatic (muscle cramps, hypotension, tetany, cardiac arrhythmias)",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Hold venetoclax until resolution. Administer calcium gluconate 10% 10-20ml in 100ml sodium chloride 0.9% over 15 minutes with ECG monitoring. Recheck calcium, creatinine, phosphate, potassium and uric acid every 1-2 hours."
+      },
+      {
+        "condition": "Hyperphosphataemia: Phosphate >1.45mmol/L and <1.67mmol/L",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Withhold venetoclax until resolution. Does not require treatment. Recheck calcium, creatinine, phosphate, potassium and uric acid in 1 hour."
+      },
+      {
+        "condition": "Hyperphosphataemia: Phosphate 1.67 to 2.1mmol/L",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Withhold venetoclax until resolution to less than 1.45mmol/L. Discuss with renal team - phosphate binder may be necessary (e.g. calcium carbonate, sevelamer, lanthanum). Recheck calcium, creatinine, phosphate, potassium and uric acid in 1 hour."
+      },
+      {
+        "condition": "Hyperphosphataemia: Phosphate >2.1mmol/L",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Withhold venetoclax until resolution to less than 1.45mmol/L. Discuss with renal team - phosphate binder or haemodialysis may be required. Recheck calcium, creatinine, phosphate, potassium and uric acid in 1 hour."
+      },
+      {
+        "condition": "Creatinine increase >=25% from baseline",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Hold venetoclax until resolution. Administer intravenous fluids. Recheck potassium, phosphate, uric acid, calcium and creatinine in 1-2 hours."
+      },
+      {
+        "condition": "LDH increase >50% from baseline",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Hold venetoclax until level is back to baseline (check level weekly). Restart at previous dose level. If occurred on first dose restart at 10mg daily."
+      },
+      {
+        "condition": "TLS biochemical changes resolving within 24-48 hours",
+        "drug_name": "Venetoclax",
+        "factor": 1.0,
+        "notes": "Withhold next venetoclax dose and give remainder of rasburicase treatment dose 0.2mg/kg/day (less 7.5mg prophylactic dose). Monitor blood electrolytes every 2 hours. If changes resolve within 24-48 hours, resume at same dose."
+      },
+      {
+        "condition": "TLS biochemical or clinical changes requiring more than 48 hours to resolve - dose at interruption 400mg",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Restart at reduced dose of 300mg. Modified dose should be continued for 1 week before increasing."
+      },
+      {
+        "condition": "TLS biochemical or clinical changes requiring more than 48 hours to resolve - dose at interruption 300mg",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Restart at reduced dose of 200mg. Modified dose should be continued for 1 week before increasing."
+      },
+      {
+        "condition": "TLS biochemical or clinical changes requiring more than 48 hours to resolve - dose at interruption 200mg",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Restart at reduced dose of 100mg. Modified dose should be continued for 1 week before increasing."
+      },
+      {
+        "condition": "TLS biochemical or clinical changes requiring more than 48 hours to resolve - dose at interruption 100mg",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Restart at reduced dose of 50mg. Modified dose should be continued for 1 week before increasing."
+      },
+      {
+        "condition": "TLS biochemical or clinical changes requiring more than 48 hours to resolve - dose at interruption 50mg",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Restart at reduced dose of 20mg. Modified dose should be continued for 1 week before increasing."
+      },
+      {
+        "condition": "TLS biochemical or clinical changes requiring more than 48 hours to resolve - dose at interruption 20mg",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Restart at reduced dose of 10mg. Modified dose should be continued for 1 week before increasing."
+      },
+      {
+        "condition": "Grade 3-4 febrile neutropenia and/or infection, or grade 4 haematological toxicity (except lymphopenia)",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Withhold venetoclax until toxicity resolves to grade 1 or baseline. May restart at same dose. If toxicity recurs, follow dose reduction table (Table 2). Discontinue if dose reductions to less than 100mg required for more than 2 weeks."
+      },
+      {
+        "condition": "Severe hepatic impairment",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Not recommended in severe hepatic impairment - safety not established. No dose adjustment required for mild or moderate hepatic impairment."
+      },
+      {
+        "condition": "Severe renal impairment (CrCl <80 ml/min)",
+        "drug_name": "Venetoclax",
+        "factor": 1.0,
+        "notes": "No dose adjustment required but more intensive TLS prophylaxis and monitoring required. Use in severe renal impairment only if benefit outweighs risk."
+      }
+    ],
+    "pre_medications": [
+      "Rasburicase 7.5mg IV infusion in 50ml sodium chloride 0.9% over 30 minutes on cycle 1 days 1, 2, 8 and 9 (after baseline blood sample taken)",
+      "Sodium chloride 0.9% 1000ml IV infusion over 4 hours on days 1 and 8, starting at least 1 hour before venetoclax",
+      "Sodium chloride 0.9% 500ml IV infusion over 2 hours on days 2 and 9, starting at least 1 hour before venetoclax",
+      "Allopurinol 300mg once daily oral starting on day 12 of cycle 1 for 28 days (after rasburicase course)",
+      "Calcium carbonate 1.5g or 1.25g (per local protocol) three times daily oral for 28 days starting day 1 of cycle 1 only (phosphate binder - must take with food)",
+      "Metoclopramide 10mg three times daily when required oral (take-home antiemetic)",
+      "Adequate oral hydration: 1.5-2L water daily starting 2 days before and throughout dose-titration phase",
+      "Intravenous fluids as indicated based on overall TLS risk or if patient cannot maintain adequate oral hydration",
+      "Gastric protection with proton pump inhibitor or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed",
+      "Check in-patient administration records on days 1 and 8 if patient admitted for TLS monitoring"
+    ],
+    "special_warnings": [
+      "CRITICAL TLS RISK - HIGH RISK PROTOCOL: This protocol is for high-risk TLS patients. Patient admission for TLS monitoring is strongly recommended initially. TLS changes can occur as early as 6-8 hours after first dose and at each dose increase.",
+      "HIGH RISK TLS CRITERIA: Any measurable lymph node with largest diameter >10cm, OR lymphocyte count >25x10^9/L, AND any measurable lymph nodes 5-10cm, OR lymphocyte count >100x10^9/L. Reduced renal function (CrCl <80ml/min) further increases risk.",
+      "FBC, U&Es (including potassium, phosphate, LDH, adjusted calcium and uric acid) and LFTs must be monitored on cycle 1 days 1, 2, 8, 9, 15, 16, 22, 23 and cycle 2 day 2. Parameters must be checked prior to any dose increase.",
+      "Tumour burden assessment including CT scan must be performed for all patients prior to starting venetoclax. Blood chemistry (potassium, uric acid, phosphate, adjusted calcium, LDH and creatinine) must be assessed before starting.",
+      "Viral screening required before starting treatment: Hepatitis B surface antigen, core antibody and HIV status.",
+      "Rasburicase is used prophylactically for high-risk TLS at initiation (days 1, 2) and first dose increase (days 8, 9). Allopurinol started before third dose increase (from day 12).",
+      "Strong or moderate CYP3A inhibitors must NOT be prescribed with venetoclax during initiation and dose-titration due to increased TLS risk.",
+      "Time of venetoclax administration MUST be recorded on ARIA to facilitate TLS diagnosis from blood results.",
+      "Venetoclax dispensed as separate supply on days 1, 8, 15 and 22 to allow TLS evaluation the following day.",
+      "Grapefruit products, Seville oranges, and starfruit (carambola) must be avoided during venetoclax treatment.",
+      "Venetoclax must only be prescribed under supervision of a consultant haematologist.",
+      "Venetoclax interacts with many other medications - always check for drug interactions.",
+      "NPSA/2008/RRR001 National Patient Safety Alert on oral chemotherapy must be followed.",
+      "For patients with dosing interruption greater than 1 week during first 5 weeks of titration, or greater than 2 weeks at 400mg dose, TLS risk must be reassessed.",
+      "RASBURICASE: Contraindicated in G6PD deficiency. Screen all patients for G6PD status before first dose. Collect blood sample for urate level on ICE in pre-cooled tube — do NOT use room temperature."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "lymphocyte_count",
+      "lymph_node_size_cm",
+      "uric_acid",
+      "potassium",
+      "phosphate",
+      "calcium",
+      "creatinine",
+      "LDH",
+      "LFTs",
+      "FBC",
+      "hepatitis_B_surface_antigen",
+      "hepatitis_B_core_antibody",
+      "HIV_status",
+      "g6pd_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "CLL-VR-RITUXIMAB-VENETOCLAX-CYCLE1",
+    "protocol_name": "CLL VR Rituximab-Venetoclax (High Risk) Cycle 1 - Venetoclax Dose Titration",
+    "disease_site": "CLL",
+    "category": "haematology",
+    "cycle_length_days": 35,
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Venetoclax",
+        "dose": 20.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 Week 1 ramp-up. Days 1, 8, 15, 22 and 29 dispensed separately to allow TLS evaluation on days 2, 9, 16, 23 and 30. Administer at least 1 hour after start of sodium chloride 0.9% infusion on days 1 and 8. Record time of administration. Take with food and full glass of water."
+      },
+      {
+        "drug_name": "Venetoclax",
+        "dose": 50.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 Week 2 ramp-up. Day 8 dispensed separately. Check in-patient administration records on day 8. Take with food and full glass of water."
+      },
+      {
+        "drug_name": "Venetoclax",
+        "dose": 100.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 Week 3 ramp-up. Day 15 dispensed separately. Ensure all correct blood tests taken at correct time and patient drinking minimum 2 litres of fluid daily."
+      },
+      {
+        "drug_name": "Venetoclax",
+        "dose": 200.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 Week 4 ramp-up. Day 22 dispensed separately. Ensure minimum 2 litres of fluid daily."
+      },
+      {
+        "drug_name": "Venetoclax",
+        "dose": 400.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 Week 5 ramp-up to full dose. Day 29 dispensed separately to allow TLS evaluation on day 30. Once 400mg/day reached, rituximab can be added using VR Cycle 2 onwards protocol. Record time of administration."
+      },
+      {
+        "drug_name": "Rasburicase",
+        "dose": 7.5,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          8,
+          9
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 days 1, 2, 8 and 9 only. Infuse in 50ml sodium chloride 0.9% over 30 minutes. Administer after baseline blood sample taken. High-risk TLS prophylaxis at initiation and first dose increase. Allopurinol started before third dose increase (approx day 12)."
+      },
+      {
+        "drug_name": "Sodium Chloride 0.9%",
+        "dose": 1000.0,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8
+        ],
+        "infusion_duration_hours": 4.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 days 1 and 8 only. 1000ml over 4 hours (240 minutes). Start at least 1 hour prior to venetoclax administration. Advise patient to drink additional litre of water during the day."
+      },
+      {
+        "drug_name": "Sodium Chloride 0.9%",
+        "dose": 500.0,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "days": [
+          2,
+          9
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 days 2 and 9 only. 500ml over 2 hours (120 minutes). Start at least 1 hour before venetoclax administration. Advise patient to drink additional 1.5 litres of water during the day."
+      },
+      {
+        "drug_name": "Calcium Carbonate",
+        "dose": 1500.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": 1500.0,
+        "max_dose_unit": "mg",
+        "notes": "Calcium carbonate 1.5g or 1.25g (as per local protocol) three times daily for 28 days starting day 1 of cycle 1 only. Phosphate binder to reduce risk of dose delay due to hyperphosphataemia during initial titration phase. Must be taken with food."
+      },
+      {
+        "drug_name": "Allopurinol",
+        "dose": 300.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Start on day 12 of cycle 1 for 28 days. Initiated after rasburicase course, before third dose increase."
+      },
+      {
+        "drug_name": "Aciclovir",
+        "dose": 400.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Anti-infective prophylaxis. 400mg twice daily for 35 days (full cycle 1 duration). Anti-viral prophylaxis required throughout VR treatment."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Hyperkalaemia: Potassium increase >=0.5mmol/L from prior value and within ULN",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Hold venetoclax until resolution. Recheck calcium, creatinine, phosphate, potassium and uric acid in 1 hour. If further 0.2mmol/L or more rise, do ECG and consider calcium gluconate and calcium resonium per local hyperkalaemia policy. Monitor TLS every 2 hours. Resume when potassium change less than 0.2mmol/L and no other TLS evidence."
+      },
+      {
+        "condition": "Hyperkalaemia: Potassium more than ULN but less than 6.0mmol/L",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Hold venetoclax until resolution. Do ECG and consider calcium gluconate and calcium resonium per local hyperkalaemia policy. Recheck calcium, creatinine, phosphate, potassium and uric acid in 1 hour. Continue TLS monitoring at 2 and 4 hours if potassium less than ULN."
+      },
+      {
+        "condition": "Hyperkalaemia: Potassium >=6.0mmol/L and/or symptomatic",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Hold venetoclax until resolution. Refer to local hyperkalaemia guideline and seek advice from renal team. Recheck calcium, creatinine, phosphate, potassium and uric acid every hour."
+      },
+      {
+        "condition": "Hyperuricaemia: Uric acid >=476 micromol/L",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Hold venetoclax until resolution. Consider giving rasburicase if not given in last 24 hours."
+      },
+      {
+        "condition": "Hypocalcaemia: Adjusted calcium less than 1.75mmol/L or symptomatic",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Hold venetoclax until resolution. Administer calcium gluconate 10% 10-20ml in 100ml sodium chloride 0.9% over 15 minutes with ECG monitoring. Recheck calcium, creatinine, phosphate, potassium and uric acid every 1-2 hours."
+      },
+      {
+        "condition": "Hyperphosphataemia: Phosphate >1.45mmol/L and <1.67mmol/L",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Withhold venetoclax until resolution. Does not require treatment. Recheck calcium, creatinine, phosphate, potassium and uric acid in 1 hour."
+      },
+      {
+        "condition": "Hyperphosphataemia: Phosphate 1.67 to 2.1mmol/L",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Withhold venetoclax until resolution to less than 1.45mmol/L. Discuss with renal team - phosphate binder may be necessary. Recheck in 1 hour."
+      },
+      {
+        "condition": "Hyperphosphataemia: Phosphate >2.1mmol/L",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Withhold venetoclax until resolution to less than 1.45mmol/L. Discuss with renal team - phosphate binder or haemodialysis may be required. Recheck in 1 hour."
+      },
+      {
+        "condition": "Creatinine increase >=25% from baseline",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Hold venetoclax until resolution. Administer intravenous fluids. Recheck potassium, phosphate, uric acid, calcium and creatinine in 1-2 hours."
+      },
+      {
+        "condition": "LDH increase >50% from baseline",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Hold venetoclax until level back to baseline (check level weekly). Restart at previous dose level. If occurred on first dose restart at 10mg daily."
+      },
+      {
+        "condition": "TLS biochemical changes resolving within 24-48 hours",
+        "drug_name": "Venetoclax",
+        "factor": 1.0,
+        "notes": "Withhold next venetoclax dose and give remainder of rasburicase treatment dose 0.2mg/kg/day (less 7.5mg prophylactic dose). Monitor blood electrolytes every 2 hours. If changes resolve within 24-48 hours, resume at same dose."
+      },
+      {
+        "condition": "TLS changes requiring more than 48 hours to resolve - dose at interruption 400mg",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Restart at 300mg. Continue modified dose for 1 week before increasing."
+      },
+      {
+        "condition": "TLS changes requiring more than 48 hours to resolve - dose at interruption 300mg",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Restart at 200mg. Continue modified dose for 1 week before increasing."
+      },
+      {
+        "condition": "TLS changes requiring more than 48 hours to resolve - dose at interruption 200mg",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Restart at 100mg. Continue modified dose for 1 week before increasing."
+      },
+      {
+        "condition": "TLS changes requiring more than 48 hours to resolve - dose at interruption 100mg",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Restart at 50mg. Continue modified dose for 1 week before increasing."
+      },
+      {
+        "condition": "TLS changes requiring more than 48 hours to resolve - dose at interruption 50mg",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Restart at 20mg. Continue modified dose for 1 week before increasing."
+      },
+      {
+        "condition": "TLS changes requiring more than 48 hours to resolve - dose at interruption 20mg",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Restart at 10mg. Continue modified dose for 1 week before increasing."
+      },
+      {
+        "condition": "Grade 3-4 febrile neutropenia (neutrophils <1x10^9/L) and/or infection, or grade 4 haematological toxicity (neutrophils <0.5x10^9/L or platelets <25x10^9/L), except lymphopenia",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Withhold venetoclax until toxicity resolves to grade 1 or baseline. May restart at same dose. If toxicity recurs, follow dose reduction table (Table 2). Discontinue if dose reductions to less than 100mg required for more than 2 weeks."
+      },
+      {
+        "condition": "Severe hepatic impairment (Child Pugh C or bilirubin >3xULN)",
+        "drug_name": "Venetoclax",
+        "factor": 0.5,
+        "notes": "Dose reduction of at least 50% throughout treatment recommended. Monitor closely for signs of toxicity."
+      },
+      {
+        "condition": "Severe renal impairment (CrCl <30ml/min)",
+        "drug_name": "Venetoclax",
+        "factor": 1.0,
+        "notes": "Use only if benefit outweighs risk. Monitor closely for TLS signs. No dose adjustment required for mild or moderate renal impairment but more intensive TLS monitoring required if CrCl <80ml/min."
+      },
+      {
+        "condition": "Concomitant strong CYP3A inhibitors (e.g. itraconazole, ketoconazole, posaconazole, voriconazole, clarithromycin, ritonavir)",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "CONTRAINDICATED at initiation and during dose-titration phase due to increased TLS risk."
+      },
+      {
+        "condition": "Concomitant moderate CYP3A inhibitors (e.g. ciprofloxacin, diltiazem, erythromycin, fluconazole, verapamil)",
+        "drug_name": "Venetoclax",
+        "factor": 0.5,
+        "notes": "Avoid during initiation and dose-titration phase. If moderate CYP3A inhibitor must be used, reduce initiation dose and all titration doses by at least 50%. Monitor closely for TLS signs and symptoms."
+      }
+    ],
+    "pre_medications": [
+      "Rasburicase 7.5mg IV infusion in 50ml sodium chloride 0.9% over 30 minutes on days 1, 2, 8 and 9 (after baseline blood sample taken)",
+      "Sodium chloride 0.9% 1000ml IV infusion over 4 hours on days 1 and 8, starting at least 1 hour before venetoclax",
+      "Sodium chloride 0.9% 500ml IV infusion over 2 hours on days 2 and 9, starting at least 1 hour before venetoclax",
+      "Allopurinol 300mg once daily oral starting day 12 of cycle 1 for 28 days",
+      "Calcium carbonate 1.5g or 1.25g (per local protocol) three times daily oral for 28 days starting day 1 of cycle 1 (phosphate binder - take with food)",
+      "Aciclovir 400mg twice daily oral for 35 days (anti-viral prophylaxis)",
+      "Consider co-trimoxazole 960mg once daily oral on Monday, Wednesday and Friday only (anti-infective prophylaxis)",
+      "Metoclopramide 10mg three times daily when required oral (take-home antiemetic)",
+      "Adequate oral hydration: 1.5-2L water daily starting 2 days before and throughout dose-titration phase",
+      "Gastric protection with proton pump inhibitor or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed",
+      "Rituximab pre-medication: see cycle 2 onwards protocol (rituximab not given in cycle 1)"
+    ],
+    "special_warnings": [
+      "CRITICAL TLS RISK - HIGH RISK VR CYCLE 1: This is the venetoclax dose titration cycle only. Rituximab is NOT given in cycle 1. Rituximab up-titration to 400mg daily must be COMPLETED before initiating rituximab in cycle 2.",
+      "35-DAY CYCLE: This cycle 1 is 35 days (5 x 7-day blocks). For cycle 2 onwards use VR-Rituximab-Venetoclax Cycle 2 onwards protocol.",
+      "FBC, U&Es and LFTs monitored on cycle 1 days 1, 2, 8, 9, 15, 16, 22, 23, 29 and 30. Parameters must be checked prior to any dose increase.",
+      "Tumour burden assessment including CT scan must be performed prior to starting venetoclax. Viral screening required: Hepatitis B surface antigen, core antibody and HIV status.",
+      "Strong CYP3A inhibitors are CONTRAINDICATED during dose-titration. Moderate CYP3A inhibitors should be avoided; if unavoidable, reduce venetoclax doses by at least 50%.",
+      "Time of venetoclax administration MUST be recorded on ARIA. Administer at least 1 hour after start of IV sodium chloride on days 1 and 8.",
+      "Patient admission for monitoring strongly recommended if at risk of TLS.",
+      "Grapefruit products, Seville oranges, and starfruit (carambola) must be avoided during venetoclax treatment.",
+      "Venetoclax must only be prescribed under supervision of a consultant haematologist.",
+      "NPSA/2008/RRR001 National Patient Safety Alert on oral chemotherapy must be followed.",
+      "Venetoclax interacts with many other medications - always check for drug interactions.",
+      "RASBURICASE: Contraindicated in G6PD deficiency. Screen all patients for G6PD status before first dose. Collect blood sample for urate level on ICE in pre-cooled tube — do NOT use room temperature."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "lymphocyte_count",
+      "lymph_node_size_cm",
+      "uric_acid",
+      "potassium",
+      "phosphate",
+      "calcium",
+      "creatinine",
+      "LDH",
+      "LFTs",
+      "FBC",
+      "hepatitis_B_surface_antigen",
+      "hepatitis_B_core_antibody",
+      "HIV_status",
+      "g6pd_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "CLL-VR-RITUXIMAB-VENETOCLAX-CYCLE2-ONWARDS",
+    "protocol_name": "CLL VR Rituximab-Venetoclax (High Risk) Cycle 2 Onwards",
+    "disease_site": "CLL",
+    "category": "haematology",
+    "cycle_length_days": 28,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Venetoclax",
+        "dose": 400.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "400mg daily days 1-28 inclusive for all cycles (cycle 2 through cycle 27). Take with food and full glass of water at approximately the same time each day."
+      },
+      {
+        "drug_name": "Rituximab",
+        "dose": 375.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 2 ONLY: Rituximab 375mg/m2 IV infusion in 500ml sodium chloride 0.9% on day 1. Dose rounded to nearest 100mg (up if halfway). Rate of administration varies - refer to rituximab administration guidelines. Dose reductions NOT permitted. | CYCLE 2 DOSE (375mg/m²): two Rituximab entries exist — 375mg/m² for cycle 2 only and 500mg/m² for cycles 3-7. Both are intentional and represent different cycle doses."
+      },
+      {
+        "drug_name": "Rituximab",
+        "dose": 500.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 3-7 ONLY: Rituximab 500mg/m2 IV infusion in 500ml sodium chloride 0.9% on day 1. Dose rounded to nearest 100mg (up if halfway). Rate of administration varies - refer to rituximab administration guidelines. Dose reductions NOT permitted. Cycles 8-27: Venetoclax only (no rituximab). [VERIFIED: Rituximab 500mg/m² from cycle 2 onwards in CLL is standard per MHRA SmPC and NICE TA174 — higher than lymphoma dosing of 375mg/m²] | CYCLES 3-7 DOSE (500mg/m²): two Rituximab entries exist — 375mg/m² for cycle 2 only and 500mg/m² for cycles 3-7. Both are intentional and represent different cycle doses."
+      },
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10.0,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Rituximab pre-medication. Administer 30 minutes prior to rituximab on day 1 of cycles 2-7 only."
+      },
+      {
+        "drug_name": "Hydrocortisone",
+        "dose": 100.0,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Rituximab pre-medication. Administer 30 minutes prior to rituximab on day 1 of cycles 2-7. May be omitted if patient is already taking steroids. Additional 100mg IV hydrocortisone available when required for rituximab infusion-related reactions."
+      },
+      {
+        "drug_name": "Paracetamol",
+        "dose": 1000.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Rituximab pre-medication. Administer 30 minutes prior to rituximab on day 1 of cycles 2-7 only."
+      },
+      {
+        "drug_name": "Aciclovir",
+        "dose": 400.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Anti-infective prophylaxis: aciclovir 400mg twice daily for 28 days each cycle. Continue throughout all cycles."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Grade 3-4 febrile neutropenia (neutrophils <1x10^9/L) and/or infection, or grade 4 haematological toxicity (neutrophils <0.5x10^9/L or platelets <25x10^9/L), except lymphopenia",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Withhold venetoclax until toxicity resolves to grade 1 or baseline. May restart at same dose. If toxicity recurs, follow dose reduction table. Discontinue if dose reductions to less than 100mg required for more than 2 weeks."
+      },
+      {
+        "condition": "TLS - dose at interruption 400mg",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Restart at 300mg. Modified dose continued for 1 week before increasing. See cycle 1 ramp up protocol for further TLS detail."
+      },
+      {
+        "condition": "TLS - dose at interruption 300mg",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Restart at 200mg. Modified dose continued for 1 week before increasing."
+      },
+      {
+        "condition": "TLS - dose at interruption 200mg",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Restart at 100mg. Modified dose continued for 1 week before increasing."
+      },
+      {
+        "condition": "TLS - dose at interruption 100mg",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Restart at 50mg. Modified dose continued for 1 week before increasing."
+      },
+      {
+        "condition": "TLS - dose at interruption 50mg",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Restart at 20mg. Modified dose continued for 1 week before increasing."
+      },
+      {
+        "condition": "TLS - dose at interruption 20mg",
+        "drug_name": "Venetoclax",
+        "factor": 0.0,
+        "notes": "Restart at 10mg. Modified dose continued for 1 week before increasing."
+      },
+      {
+        "condition": "Severe hepatic impairment (Child Pugh C or bilirubin >3xULN)",
+        "drug_name": "Venetoclax",
+        "factor": 0.5,
+        "notes": "Dose reduction of at least 50% recommended throughout treatment. No dose adjustment required for mild or moderate hepatic impairment."
+      },
+      {
+        "condition": "Severe renal impairment (CrCl <30ml/min)",
+        "drug_name": "Venetoclax",
+        "factor": 1.0,
+        "notes": "Use only if benefit outweighs risk. Monitor closely for TLS. Patients with CrCl <80ml/min may require more intensive prophylaxis and monitoring."
+      },
+      {
+        "condition": "Rituximab infusion-related reaction",
+        "drug_name": "Rituximab",
+        "factor": 0.0,
+        "notes": "Interrupt infusion. Administer hydrocortisone 100mg IV. Salbutamol 2.5mg nebule for bronchospasm. Consider pethidine 25-50mg IV for rigors failing to respond to steroids. Dose reductions of rituximab are NOT permitted. Restart infusion at reduced rate when symptoms resolve."
+      },
+      {
+        "condition": "Progressive multifocal leukoencephalopathy (PML) suspected",
+        "drug_name": "Rituximab",
+        "factor": 0.0,
+        "notes": "Suspend further rituximab dosing until PML excluded. If PML confirmed, permanently discontinue rituximab."
+      },
+      {
+        "condition": "Viral upper respiratory tract infection at time of treatment",
+        "drug_name": "Rituximab",
+        "factor": 1.0,
+        "notes": "Assess patient for cold or flu-like symptoms prior to treatment. Viral URTI may increase risk of rituximab-associated hepatotoxicity."
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV injection 30 minutes prior to rituximab (day 1, cycles 2-7 only)",
+      "Hydrocortisone 100mg IV injection 30 minutes prior to rituximab (day 1, cycles 2-7; may be omitted if patient already taking steroids)",
+      "Paracetamol 1000mg oral 30 minutes prior to rituximab (day 1, cycles 2-7 only)",
+      "Hydrocortisone 100mg IV when required for rituximab infusion-related reactions",
+      "Salbutamol 2.5mg nebule when required for rituximab-related bronchospasm",
+      "Pethidine 25-50mg IV when required for rituximab-related rigors failing to respond to steroids",
+      "Aciclovir 400mg twice daily oral (anti-viral prophylaxis, all cycles)",
+      "Consider co-trimoxazole 960mg once daily oral on Monday, Wednesday and Friday only (anti-infective prophylaxis)",
+      "Metoclopramide 10mg three times daily when required oral (take-home antiemetic)",
+      "Gastric protection with proton pump inhibitor or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed",
+      "This protocol must always be preceded by VR-Rituximab-Venetoclax dose titration (Cycle 1). Check dates when prescribing cycle 2."
+    ],
+    "special_warnings": [
+      "CRITICAL: This protocol starts at CYCLE 2 and must always be preceded by the VR-Rituximab-Venetoclax Cycle 1 dose titration protocol. Venetoclax up-titration to 400mg daily must be COMPLETED before initiating rituximab.",
+      "TREATMENT DURATION: 28-day cycles continuing for 2 years from first dose of rituximab (up to 27 cycles total). Cycle 2: Rituximab 375mg/m2 + Venetoclax 400mg. Cycles 3-7: Rituximab 500mg/m2 + Venetoclax 400mg. Cycles 8-27: Venetoclax 400mg only.",
+      "RITUXIMAB DOSE REDUCTIONS ARE NOT PERMITTED. Rituximab is rounded to nearest 100mg (up if halfway).",
+      "RITUXIMAB INFUSION REACTIONS: Infusion-related adverse reactions in 10% of patients. Cytokine release syndrome can occur within 1-2 hours of first infusion. Medicinal products for allergic reactions must be immediately available.",
+      "CRITICAL TLS RISK: See cycle 1 ramp-up protocol for TLS management detail. FBC, U&Es (including potassium, phosphate, LDH, adjusted calcium, magnesium and uric acid) and LFTs must be measured prior to each cycle.",
+      "Progressive multifocal leukoencephalopathy (PML): Monitor at regular intervals for new or worsening neurological, cognitive or psychiatric symptoms. Suspend rituximab if PML suspected; permanently discontinue if confirmed.",
+      "Viral URTI at time of treatment may increase risk of rituximab-associated hepatotoxicity. Assess for cold/flu symptoms before each infusion.",
+      "Viral screening required before starting treatment: Hepatitis B surface antigen, core antibody and HIV status.",
+      "Grapefruit products, Seville oranges, and starfruit (carambola) must be avoided during venetoclax treatment.",
+      "Venetoclax must only be prescribed under supervision of a consultant haematologist.",
+      "Venetoclax interacts with many other medications - always check for drug interactions.",
+      "NPSA/2008/RRR001 National Patient Safety Alert on oral chemotherapy must be followed.",
+      "Rituximab extravasation classification: neutral."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "body_surface_area",
+      "uric_acid",
+      "potassium",
+      "phosphate",
+      "calcium",
+      "magnesium",
+      "creatinine",
+      "LDH",
+      "LFTs",
+      "FBC",
+      "hepatitis_B_surface_antigen",
+      "hepatitis_B_core_antibody",
+      "HIV_status"
+    ],
+    "auc_dosing": null
+  }
+]

@@ -1,0 +1,3213 @@
+[
+  {
+    "protocol_id": "bep_5day",
+    "protocol_code": "BEP5DAY",
+    "protocol_name": "Germ Cell – Bleomycin-Cisplatin-Etoposide (BEP 5 Day)",
+    "category": "urology",
+    "indication": "In patients 40 years and below with: metastatic non-seminomatous germ cell tumours; metastatic seminoma where radiotherapy is not appropriate; renal impairment or a poor performance status",
+    "version": "1",
+    "cycle_length_days": 21,
+    "total_cycles": 3,
+    "treatment_intent": "curative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Bleomycin",
+        "dose": 30000,
+        "dose_unit": "units",
+        "route": "IV infusion",
+        "days": [
+          2,
+          8,
+          15
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Cumulative lifetime limit 360,000 units. Stop if pulmonary symptoms develop until investigations complete. Risk of pneumonitis increased in patients >40 years, smokers, underlying lung disease, prior mediastinal radiotherapy or poor renal function. Do NOT dose cap at 2.4m² — override any caps. If 4 cycles required, omit day 8 and 15 bleomycin on cycle 4 only.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Cisplatin",
+        "dose": 20,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded per agreed bands. Pre- and post-hydration required. Do NOT dose cap at 2.4m² — override any caps.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 100,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded per agreed bands. Do NOT dose cap at 2.4m² — override any caps.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Aprepitant",
+        "dose": 125,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1
+        ],
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "once",
+        "notes": "Day 1 only"
+      },
+      {
+        "drug_name": "Aprepitant",
+        "dose": 80,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          2,
+          3
+        ],
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "once daily",
+        "notes": "Days 2 and 3 only"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "once daily",
+        "notes": "Days 1-5 in hospital"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          8,
+          15
+        ],
+        "timing": "Prior to bleomycin",
+        "frequency": "once",
+        "notes": "On days 8 and 15 bleomycin administration"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "when required",
+        "notes": null
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "twice daily",
+        "notes": "Days 1-7"
+      },
+      {
+        "drug_name": "Furosemide",
+        "dose": 40,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "timing": "Prior to cisplatin",
+        "frequency": "when required",
+        "notes": "For maintenance of diuresis; oral or IV"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9% with magnesium sulphate 8mmol",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "timing": "Pre-hydration before cisplatin",
+        "frequency": "once",
+        "duration_minutes": 60,
+        "notes": "Pre-hydration"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9%",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "timing": "Post-hydration after cisplatin",
+        "frequency": "once",
+        "duration_minutes": 240,
+        "notes": "Post-hydration"
+      },
+      {
+        "drug_name": "Hydrocortisone",
+        "dose": 100,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          2,
+          8,
+          15
+        ],
+        "timing": "On days of bleomycin administration",
+        "frequency": "when required",
+        "notes": "For bleomycin reactions"
+      },
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          2,
+          8,
+          15
+        ],
+        "timing": "On days of bleomycin administration",
+        "frequency": "when required",
+        "notes": "For bleomycin reactions"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "once daily in the morning",
+        "duration": "2 days starting on day 6 of cycle",
+        "notes": null
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "up to three times a day when required",
+        "duration": "as required",
+        "notes": "For relief of nausea"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "evening of days 1-5, then twice daily days 6-7",
+        "duration": "7 days",
+        "notes": "Evening of days 1, 2, 3, 4 and 5 of chemotherapy and 8mg twice a day for 2 days starting day 6"
+      },
+      {
+        "drug_name": "Ciprofloxacin",
+        "dose": 500,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "twice daily",
+        "duration": "7 days",
+        "notes": "Starting on day 8 of cycle"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils",
+        "condition": "Neutrophils less than 0.5 x10⁹/L prior to cycle",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay for three days at a time; restart as soon as parameters met. Dose delays preferred over dose reductions. Discuss with consultant."
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets less than 100 x10⁹/L prior to cycle",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay for three days at a time; restart as soon as parameters met."
+      },
+      {
+        "parameter": "Hepatic – Bilirubin/AST/ALT",
+        "condition": "Bleomycin – any hepatic impairment",
+        "affected_drugs": [
+          "Bleomycin"
+        ],
+        "action": "clinical decision",
+        "factor": 1.0,
+        "notes": "Clinical decision"
+      },
+      {
+        "parameter": "Hepatic – Bilirubin",
+        "condition": "Etoposide: Bilirubin 26-51 µmol/L or AST/ALT 60-180 units/L",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "reduce",
+        "factor": 0.5,
+        "notes": "Consider dose reducing to 50%"
+      },
+      {
+        "parameter": "Hepatic – Bilirubin",
+        "condition": "Etoposide: Bilirubin >51 µmol/L or AST/ALT >180 units/L",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "clinical decision",
+        "factor": 1.0,
+        "notes": "Clinical decision"
+      },
+      {
+        "parameter": "Renal – Creatinine Clearance",
+        "condition": "Bleomycin: CrCl less than 50 ml/min",
+        "affected_drugs": [
+          "Bleomycin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discuss with consultant and omit"
+      },
+      {
+        "parameter": "Renal – Creatinine Clearance",
+        "condition": "Cisplatin: CrCl 59 ml/min or below",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Refer to consultant for advice"
+      },
+      {
+        "parameter": "Renal – Creatinine Clearance",
+        "condition": "Etoposide: CrCl 15-50 ml/min",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "reduce",
+        "factor": 0.75,
+        "notes": "75% of original dose"
+      },
+      {
+        "parameter": "Renal – Creatinine Clearance",
+        "condition": "Etoposide: CrCl less than 15 ml/min",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "reduce",
+        "factor": 0.5,
+        "notes": "50% of original dose"
+      },
+      {
+        "parameter": "Non-haematological toxicity",
+        "condition": "NCI-CTC grade 3 or above non-haematological toxicity",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay until resolved to grade 1 or below; causative agent dose may then be reduced or discontinued at consultant discretion"
+      },
+      {
+        "parameter": "Pulmonary toxicity",
+        "condition": "Pulmonary symptoms develop",
+        "affected_drugs": [
+          "Bleomycin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Stop bleomycin until investigations complete and diagnosis made"
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 0.5,
+      "platelets_min": 100,
+      "notes": "Curative regimen. Dose delays preferred over reductions. Delay 3 days at a time and restart when criteria met. All reductions/delays to be discussed with consultant."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es on day one of each cycle",
+      "AFP and HCG prior to day one of each cycle",
+      "Chest X-ray",
+      "Consider pulmonary function tests before starting therapy; repeat if respiratory symptoms develop or if drop in oxygen saturation on exercise",
+      "Bleomycin should be stopped until pulmonary investigation results known"
+    ],
+    "special_warnings": [
+      "Bleomycin cumulative lifetime limit 360,000 units — must be recorded and monitored",
+      "Lung function tests mandatory before starting bleomycin; repeat if respiratory symptoms develop",
+      "Bleomycin pneumonitis risk higher in patients >40 years, smokers, underlying lung disease, prior mediastinal radiotherapy, or poor renal function",
+      "This regimen must NOT be dose-capped at 2.4m² — override any caps in ARIA",
+      "Cisplatin: extravasation risk — exfoliant; ensure adequate hydration",
+      "Good prognosis: 3 cycles; Intermediate/poor prognosis: 4 cycles (omit day 8 and 15 bleomycin on cycle 4 only)",
+      "Consider growth factor support per local policy from day 7",
+      "Ciprofloxacin prophylaxis: 500mg twice daily for 7 days from day 8"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "age": "Required — protocol restricted to patients ≤40 years",
+      "weight": "Required for BSA calculation",
+      "height": "Required for BSA calculation",
+      "cumulative_bleomycin_dose_units": "Required — must not exceed lifetime limit of 360,000 units",
+      "lung_function_tests": "Required prior to starting bleomycin",
+      "creatinine_clearance": "Required for renal dose modifications",
+      "afp_hcg": "Required prior to each cycle"
+    },
+    "disease_site": "Urology",
+    "number_of_cycles": 3,
+    "drugs": [
+      {
+        "drug_name": "Bleomycin",
+        "dose": 30000,
+        "dose_unit": "units",
+        "route": "IV infusion",
+        "days": [
+          2,
+          8,
+          15
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Cumulative lifetime limit 360,000 units. Stop if pulmonary symptoms develop until investigations complete. Risk of pneumonitis increased in patients >40 years, smokers, underlying lung disease, prior mediastinal radiotherapy or poor renal function. Do NOT dose cap at 2.4m² — override any caps. If 4 cycles required, omit day 8 and 15 bleomycin on cycle 4 only.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.5,
+        "notes": "per cycle | Cumulative lifetime limit 360,000 units. Stop if pulmonary symptoms develop until investigations complete. Risk of pneumonitis increased in patients >40 years, smokers, underlying lung disease, prior mediastinal radiotherapy or poor renal function. Do NOT dose cap at 2.4m² — override any caps. If 4 cycles required, omit day 8 and 15 bleomycin on cycle 4 only."
+      },
+      {
+        "drug_name": "Cisplatin",
+        "dose": 20,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded per agreed bands. Pre- and post-hydration required. Do NOT dose cap at 2.4m² — override any caps.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "per cycle | Dose banded per agreed bands. Pre- and post-hydration required. Do NOT dose cap at 2.4m² — override any caps."
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 100,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded per agreed bands. Do NOT dose cap at 2.4m² — override any caps.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "per cycle | Dose banded per agreed bands. Do NOT dose cap at 2.4m² — override any caps."
+      }
+    ]
+  },
+  {
+    "protocol_id": "bep_5day_modified",
+    "protocol_code": "BEP5DAYMOD",
+    "protocol_name": "Germ Cell – Bleomycin-Cisplatin-Etoposide (BEP 5 Day Modified)",
+    "category": "urology",
+    "indication": "In patients 41 years and above with: metastatic non-seminomatous germ cell tumours; metastatic seminoma where radiotherapy is not appropriate; renal impairment or a poor performance status",
+    "version": "1",
+    "cycle_length_days": 21,
+    "total_cycles": 4,
+    "treatment_intent": "curative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Bleomycin",
+        "dose": 30000,
+        "dose_unit": "units",
+        "route": "IV infusion",
+        "days": [
+          2
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": 120000,
+        "max_dose_unit": "units",
+        "special_instructions": "Maximum cumulative dose limited to 120,000 IU in this protocol (patients >40 years at increased risk of pulmonary toxicity). Stop if pulmonary symptoms develop. Do NOT dose cap at 2.4m² — override any caps.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Cisplatin",
+        "dose": 20,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded per agreed bands. Pre- and post-hydration required. Do NOT dose cap at 2.4m² — override any caps.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 100,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded per agreed bands. Do NOT dose cap at 2.4m² — override any caps.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Aprepitant",
+        "dose": 125,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1
+        ],
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "once",
+        "notes": "Day 1 only"
+      },
+      {
+        "drug_name": "Aprepitant",
+        "dose": 80,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          2,
+          3
+        ],
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "once daily",
+        "notes": "Days 2 and 3 only"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "once daily",
+        "notes": "Days 1-7"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "when required",
+        "notes": null
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "twice daily",
+        "notes": "Days 1-7"
+      },
+      {
+        "drug_name": "Furosemide",
+        "dose": 40,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "timing": "Prior to cisplatin",
+        "frequency": "when required",
+        "notes": "For maintenance of diuresis; oral or IV"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9% with magnesium sulphate 8mmol",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "timing": "Pre-hydration before cisplatin",
+        "frequency": "once",
+        "duration_minutes": 30,
+        "notes": "Pre-hydration; day 1 over 30 min, days 3-5 over 60 min"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9%",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "timing": "Post-hydration after cisplatin",
+        "frequency": "once",
+        "duration_minutes": 240,
+        "notes": "Post-hydration"
+      },
+      {
+        "drug_name": "Hydrocortisone",
+        "dose": 100,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          2
+        ],
+        "timing": "On day of bleomycin administration",
+        "frequency": "when required",
+        "notes": "For bleomycin reactions"
+      },
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          2
+        ],
+        "timing": "On day of bleomycin administration",
+        "frequency": "when required",
+        "notes": "For bleomycin reactions"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "once daily in the morning",
+        "duration": "2 days starting day 6",
+        "notes": null
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "up to three times a day when required",
+        "duration": "as required",
+        "notes": "For relief of nausea"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "evening of days 1-5, then twice daily days 6-7",
+        "duration": "7 days",
+        "notes": null
+      },
+      {
+        "drug_name": "Ciprofloxacin",
+        "dose": 500,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "twice daily",
+        "duration": "7 days",
+        "notes": "Starting on day 8 of cycle"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils",
+        "condition": "Neutrophils less than 0.5 x10⁹/L prior to cycle",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay 3 days at a time; discuss all reductions/delays with consultant"
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets less than 100 x10⁹/L prior to cycle",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay 3 days at a time"
+      },
+      {
+        "parameter": "Hepatic – Bilirubin/AST/ALT",
+        "condition": "Bleomycin – any hepatic impairment",
+        "affected_drugs": [
+          "Bleomycin"
+        ],
+        "action": "clinical decision",
+        "factor": 1.0,
+        "notes": "Clinical decision"
+      },
+      {
+        "parameter": "Hepatic – Bilirubin",
+        "condition": "Etoposide: Bilirubin 26-51 µmol/L or AST/ALT 60-180 units/L",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "reduce",
+        "factor": 0.5,
+        "notes": "Consider dose reducing to 50%"
+      },
+      {
+        "parameter": "Hepatic – Bilirubin",
+        "condition": "Etoposide: Bilirubin >51 µmol/L or AST/ALT >180 units/L",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "clinical decision",
+        "factor": 1.0,
+        "notes": "Clinical decision"
+      },
+      {
+        "parameter": "Renal – Creatinine Clearance",
+        "condition": "Bleomycin: CrCl less than 50 ml/min",
+        "affected_drugs": [
+          "Bleomycin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discuss with consultant and omit"
+      },
+      {
+        "parameter": "Renal – Creatinine Clearance",
+        "condition": "Cisplatin: CrCl 59 ml/min or below",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Refer to consultant for advice"
+      },
+      {
+        "parameter": "Renal – Creatinine Clearance",
+        "condition": "Etoposide: CrCl 15-50 ml/min",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "reduce",
+        "factor": 0.75,
+        "notes": "75% of original dose"
+      },
+      {
+        "parameter": "Renal – Creatinine Clearance",
+        "condition": "Etoposide: CrCl less than 15 ml/min",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "reduce",
+        "factor": 0.5,
+        "notes": "50% of original dose"
+      },
+      {
+        "parameter": "Pulmonary toxicity",
+        "condition": "Pulmonary symptoms develop",
+        "affected_drugs": [
+          "Bleomycin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Stop bleomycin until investigations complete and diagnosis made"
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 0.5,
+      "platelets_min": 100,
+      "notes": "Curative regimen. Dose delays preferred over reductions. Delay 3 days at a time. All reductions/delays discussed with consultant."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es on day one of each cycle",
+      "AFP and HCG prior to day one of each cycle",
+      "Chest X-ray",
+      "Pulmonary function tests before starting therapy; repeat if respiratory symptoms develop"
+    ],
+    "special_warnings": [
+      "For patients aged 41 years and above — modified BEP with bleomycin on day 2 only (not days 8 and 15)",
+      "Maximum cumulative bleomycin dose 120,000 IU in this protocol due to increased pulmonary toxicity risk in patients >40 years",
+      "Bleomycin pneumonitis risk heightened in this age group",
+      "Lung function mandatory before starting bleomycin",
+      "This regimen must NOT be dose-capped at 2.4m² — override any ARIA caps",
+      "4 cycles — 21-day cycle",
+      "Consider growth factor support from day 7 per local policy",
+      "Ciprofloxacin prophylaxis 500mg twice daily for 7 days from day 8"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "age": "Required — protocol for patients ≥41 years",
+      "weight": "Required for BSA calculation",
+      "height": "Required for BSA calculation",
+      "cumulative_bleomycin_dose_units": "Required — max 120,000 IU cumulative in this protocol",
+      "lung_function_tests": "Required prior to starting bleomycin",
+      "creatinine_clearance": "Required for renal dose modifications",
+      "afp_hcg": "Required prior to each cycle"
+    },
+    "disease_site": "Urology",
+    "number_of_cycles": 4,
+    "drugs": [
+      {
+        "drug_name": "Bleomycin",
+        "dose": 30000,
+        "dose_unit": "units",
+        "route": "IV infusion",
+        "days": [
+          2
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": 120000,
+        "max_dose_unit": "units",
+        "special_instructions": "Maximum cumulative dose limited to 120,000 IU in this protocol (patients >40 years at increased risk of pulmonary toxicity). Stop if pulmonary symptoms develop. Do NOT dose cap at 2.4m² — override any caps.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.5,
+        "notes": "per cycle | Maximum cumulative dose limited to 120,000 IU in this protocol (patients >40 years at increased risk of pulmonary toxicity). Stop if pulmonary symptoms develop. Do NOT dose cap at 2.4m² — override any caps."
+      },
+      {
+        "drug_name": "Cisplatin",
+        "dose": 20,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded per agreed bands. Pre- and post-hydration required. Do NOT dose cap at 2.4m² — override any caps.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "per cycle | Dose banded per agreed bands. Pre- and post-hydration required. Do NOT dose cap at 2.4m² — override any caps."
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 100,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded per agreed bands. Do NOT dose cap at 2.4m² — override any caps.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "per cycle | Dose banded per agreed bands. Do NOT dose cap at 2.4m² — override any caps."
+      }
+    ]
+  },
+  {
+    "protocol_id": "bep_3day",
+    "protocol_code": "BEP3DAY",
+    "protocol_name": "Germ Cell – Bleomycin-Cisplatin-Etoposide (BEP 3 Day)",
+    "category": "urology",
+    "indication": "In patients 40 years and below with: metastatic non-seminomatous germ cell tumours; metastatic seminoma where radiotherapy is not appropriate",
+    "version": "1.2",
+    "cycle_length_days": 21,
+    "total_cycles": 3,
+    "treatment_intent": "curative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Bleomycin",
+        "dose": 30000,
+        "dose_unit": "units",
+        "route": "IV infusion",
+        "days": [
+          2,
+          8,
+          15
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": 300000,
+        "max_dose_unit": "units",
+        "special_instructions": "Maximum cumulative dose 300,000 IU in patients <40 years. Administered on days 8 and 15 irrespective of neutrophil and platelet count. Stop if pulmonary symptoms develop. Do NOT dose cap at 2.4m².",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Cisplatin",
+        "dose": 50,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 120,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded per CSCCN agreed bands. Pre- and post-hydration required. If CrCl <60 ml/min consider changing to 5-day schedule or carboplatin rather than dose reducing. Do NOT dose cap at 2.4m².",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 165,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded per CSCCN agreed bands. Do NOT dose cap at 2.4m².",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Aprepitant",
+        "dose": 125,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1
+        ],
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "once",
+        "notes": "Day 1 only"
+      },
+      {
+        "drug_name": "Aprepitant",
+        "dose": 80,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          2,
+          3
+        ],
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "once daily",
+        "notes": "Days 2 and 3"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3
+        ],
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "once daily",
+        "notes": null
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          8,
+          15
+        ],
+        "timing": "Prior to bleomycin",
+        "frequency": "once",
+        "notes": "Days 8 and 15"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "twice daily",
+        "notes": null
+      },
+      {
+        "drug_name": "Furosemide",
+        "dose": 40,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2
+        ],
+        "timing": "Prior to cisplatin",
+        "frequency": "once",
+        "notes": "Pre-hydration"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9% with magnesium sulphate 16mmol and potassium chloride 20mmol",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2
+        ],
+        "timing": "Pre-hydration before cisplatin",
+        "frequency": "once",
+        "duration_minutes": 60,
+        "notes": null
+      },
+      {
+        "drug_name": "Sodium chloride 0.9% with magnesium sulphate 16mmol and potassium chloride 20mmol",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2
+        ],
+        "timing": "Post-hydration after cisplatin",
+        "frequency": "once",
+        "duration_minutes": 60,
+        "notes": "Post-hydration"
+      },
+      {
+        "drug_name": "Hydrocortisone",
+        "dose": 100,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          2,
+          8,
+          15
+        ],
+        "timing": "On days of bleomycin administration",
+        "frequency": "when required",
+        "notes": "For bleomycin reactions"
+      },
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          2,
+          8,
+          15
+        ],
+        "timing": "On days of bleomycin administration",
+        "frequency": "when required",
+        "notes": "For bleomycin reactions"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "up to three times a day when required",
+        "duration": "as required",
+        "notes": "For relief of nausea"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "evening of days 1, 2 and 3 of chemotherapy, then twice daily for 2 days after",
+        "duration": "5 days",
+        "notes": null
+      },
+      {
+        "drug_name": "Ciprofloxacin",
+        "dose": 500,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "twice daily",
+        "duration": "7 days",
+        "notes": "Starting on day 7 of cycle"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils",
+        "condition": "Neutrophils less than 1 x10⁹/L prior to cycle",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay 3 days at a time. Bleomycin on days 8 and 15 given irrespective of counts."
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets less than 100 x10⁹/L prior to cycle",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay 3 days at a time"
+      },
+      {
+        "parameter": "Hepatic – Bilirubin/AST/ALT",
+        "condition": "Bleomycin – any hepatic impairment",
+        "affected_drugs": [
+          "Bleomycin"
+        ],
+        "action": "clinical decision",
+        "factor": 1.0,
+        "notes": "Clinical decision"
+      },
+      {
+        "parameter": "Hepatic – Bilirubin",
+        "condition": "Etoposide: Bilirubin 26-51 µmol/L or AST/ALT 60-180 units/L",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "reduce",
+        "factor": 0.5,
+        "notes": "Consider dose reducing to 50%"
+      },
+      {
+        "parameter": "Hepatic – Bilirubin",
+        "condition": "Etoposide: Bilirubin >51 µmol/L or AST/ALT >180 units/L",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "clinical decision",
+        "factor": 1.0,
+        "notes": "Clinical decision"
+      },
+      {
+        "parameter": "Renal – Creatinine Clearance",
+        "condition": "Bleomycin: CrCl less than 50 ml/min",
+        "affected_drugs": [
+          "Bleomycin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discuss with consultant and omit"
+      },
+      {
+        "parameter": "Renal – Creatinine Clearance",
+        "condition": "Cisplatin: CrCl below 60 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Seek consultant advice. Consider changing to 5-day schedule or carboplatin rather than dose reducing cisplatin."
+      },
+      {
+        "parameter": "Renal – Creatinine Clearance",
+        "condition": "Etoposide: CrCl 15-50 ml/min",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "reduce",
+        "factor": 0.75,
+        "notes": "75% of original dose"
+      },
+      {
+        "parameter": "Renal – Creatinine Clearance",
+        "condition": "Etoposide: CrCl less than 15 ml/min",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "reduce",
+        "factor": 0.5,
+        "notes": "50% of original dose"
+      },
+      {
+        "parameter": "Pulmonary toxicity",
+        "condition": "Pulmonary symptoms develop",
+        "affected_drugs": [
+          "Bleomycin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Stop bleomycin until investigations complete and diagnosis made"
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "Curative regimen. Bleomycin administered on days 8 and 15 irrespective of neutrophil and platelet count. Dose delays preferred. Discuss all changes with consultant."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to day 1, 8 and 15 of cycle",
+      "AFP and HCG prior to day one of each cycle",
+      "EDTA or calculated creatinine clearance",
+      "Chest X-ray",
+      "Pulmonary function tests before starting therapy; repeat if respiratory symptoms develop"
+    ],
+    "special_warnings": [
+      "Bleomycin cumulative maximum dose 300,000 IU in patients <40 years",
+      "Lung function tests mandatory prior to bleomycin",
+      "Bleomycin given on days 8 and 15 irrespective of blood counts",
+      "Good prognosis: 3 cycles; Intermediate/poor prognosis: 4 cycles (omit day 8 and 15 bleomycin on cycle 4 only)",
+      "If CrCl <60 ml/min for cisplatin: consider switching to 5-day schedule or carboplatin",
+      "This regimen must NOT be dose-capped at 2.4m² — override any ARIA caps",
+      "Ciprofloxacin prophylaxis 500mg twice daily for 7 days from day 7"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "age": "Required — protocol restricted to patients ≤40 years",
+      "weight": "Required for BSA calculation",
+      "height": "Required for BSA calculation",
+      "cumulative_bleomycin_dose_units": "Required — max 300,000 IU cumulative",
+      "lung_function_tests": "Required prior to starting bleomycin",
+      "creatinine_clearance": "Required (EDTA or calculated) prior to each cycle",
+      "afp_hcg": "Required prior to day one of each cycle"
+    },
+    "disease_site": "Urology",
+    "number_of_cycles": 3,
+    "drugs": [
+      {
+        "drug_name": "Bleomycin",
+        "dose": 30000,
+        "dose_unit": "units",
+        "route": "IV infusion",
+        "days": [
+          2,
+          8,
+          15
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": 300000,
+        "max_dose_unit": "units",
+        "special_instructions": "Maximum cumulative dose 300,000 IU in patients <40 years. Administered on days 8 and 15 irrespective of neutrophil and platelet count. Stop if pulmonary symptoms develop. Do NOT dose cap at 2.4m².",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.5,
+        "notes": "per cycle | Maximum cumulative dose 300,000 IU in patients <40 years. Administered on days 8 and 15 irrespective of neutrophil and platelet count. Stop if pulmonary symptoms develop. Do NOT dose cap at 2.4m²."
+      },
+      {
+        "drug_name": "Cisplatin",
+        "dose": 50,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 120,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded per CSCCN agreed bands. Pre- and post-hydration required. If CrCl <60 ml/min consider changing to 5-day schedule or carboplatin rather than dose reducing. Do NOT dose cap at 2.4m².",
+        "is_core_drug": true,
+        "infusion_duration_hours": 2.0,
+        "notes": "per cycle | Dose banded per CSCCN agreed bands. Pre- and post-hydration required. If CrCl <60 ml/min consider changing to 5-day schedule or carboplatin rather than dose reducing. Do NOT dose cap at 2.4m²."
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 165,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded per CSCCN agreed bands. Do NOT dose cap at 2.4m².",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "per cycle | Dose banded per CSCCN agreed bands. Do NOT dose cap at 2.4m²."
+      }
+    ]
+  },
+  {
+    "protocol_id": "bep_3day_modified",
+    "protocol_code": "BEP3DAYMOD",
+    "protocol_name": "Germ Cell – Bleomycin-Cisplatin-Etoposide (BEP 3 Day Modified)",
+    "category": "urology",
+    "indication": "In patients 41 years and above with: metastatic non-seminomatous germ cell tumours; metastatic seminoma where radiotherapy is not appropriate",
+    "version": "1.2",
+    "cycle_length_days": 21,
+    "total_cycles": 4,
+    "treatment_intent": "curative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Bleomycin",
+        "dose": 30000,
+        "dose_unit": "units",
+        "route": "IV infusion",
+        "days": [
+          2
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": 300000,
+        "max_dose_unit": "units",
+        "special_instructions": "Maximum cumulative dose 300,000 IU (refer to SPC for patients >40 years). Modified protocol: bleomycin on day 2 only (not days 8 and 15). Stop if pulmonary symptoms. Do NOT dose cap at 2.4m².",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Cisplatin",
+        "dose": 50,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 120,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded per CSCCN agreed bands. Pre- and post-hydration required. If CrCl <60 ml/min consider 5-day schedule or carboplatin. Do NOT dose cap at 2.4m².",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 165,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded per CSCCN agreed bands. Do NOT dose cap at 2.4m².",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Aprepitant",
+        "dose": 125,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1
+        ],
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "once",
+        "notes": null
+      },
+      {
+        "drug_name": "Aprepitant",
+        "dose": 80,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          2,
+          3
+        ],
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "once daily",
+        "notes": null
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3
+        ],
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "once daily",
+        "notes": null
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "twice daily",
+        "notes": null
+      },
+      {
+        "drug_name": "Furosemide",
+        "dose": 40,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2
+        ],
+        "timing": "Prior to cisplatin",
+        "frequency": "once",
+        "notes": "Pre-hydration"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9% with magnesium sulphate 16mmol and potassium chloride 20mmol",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2
+        ],
+        "timing": "Pre-hydration before cisplatin",
+        "frequency": "once",
+        "duration_minutes": 60,
+        "notes": "Pre-hydration"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9% with magnesium sulphate 16mmol and potassium chloride 20mmol",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2
+        ],
+        "timing": "Post-hydration after cisplatin",
+        "frequency": "once",
+        "duration_minutes": 60,
+        "notes": "Post-hydration"
+      },
+      {
+        "drug_name": "Hydrocortisone",
+        "dose": 100,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          2
+        ],
+        "timing": "On day of bleomycin administration",
+        "frequency": "when required",
+        "notes": "For bleomycin reactions"
+      },
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          2
+        ],
+        "timing": "On day of bleomycin administration",
+        "frequency": "when required",
+        "notes": "For bleomycin reactions"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "up to three times a day when required",
+        "duration": "as required",
+        "notes": "For relief of nausea"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "evening of days 1, 2 and 3 of chemotherapy, then twice daily for 2 days",
+        "duration": "5 days",
+        "notes": null
+      },
+      {
+        "drug_name": "Ciprofloxacin",
+        "dose": 500,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "twice daily",
+        "duration": "7 days",
+        "notes": "Starting on day 7 of cycle"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils",
+        "condition": "Neutrophils less than 1 x10⁹/L prior to cycle",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay 3 days at a time; discuss with consultant"
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets less than 100 x10⁹/L prior to cycle",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay 3 days at a time"
+      },
+      {
+        "parameter": "Hepatic – Bilirubin/AST/ALT",
+        "condition": "Bleomycin – any hepatic impairment",
+        "affected_drugs": [
+          "Bleomycin"
+        ],
+        "action": "clinical decision",
+        "factor": 1.0,
+        "notes": "Clinical decision"
+      },
+      {
+        "parameter": "Hepatic – Bilirubin",
+        "condition": "Etoposide: Bilirubin 26-51 µmol/L or AST/ALT 60-180 units/L",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "reduce",
+        "factor": 0.5,
+        "notes": "Consider dose reducing to 50%"
+      },
+      {
+        "parameter": "Hepatic – Bilirubin",
+        "condition": "Etoposide: Bilirubin >51 µmol/L or AST/ALT >180 units/L",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "clinical decision",
+        "factor": 1.0,
+        "notes": "Clinical decision"
+      },
+      {
+        "parameter": "Renal – Creatinine Clearance",
+        "condition": "Bleomycin: CrCl less than 50 ml/min",
+        "affected_drugs": [
+          "Bleomycin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Omit and discuss with consultant"
+      },
+      {
+        "parameter": "Renal – Creatinine Clearance",
+        "condition": "Cisplatin: CrCl below 60 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Seek consultant advice. Consider changing to 5-day schedule or carboplatin rather than dose reducing cisplatin."
+      },
+      {
+        "parameter": "Renal – Creatinine Clearance",
+        "condition": "Etoposide: CrCl 15-50 ml/min",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "reduce",
+        "factor": 0.75,
+        "notes": "75% of original dose"
+      },
+      {
+        "parameter": "Renal – Creatinine Clearance",
+        "condition": "Etoposide: CrCl less than 15 ml/min",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "reduce",
+        "factor": 0.5,
+        "notes": "50% of original dose"
+      },
+      {
+        "parameter": "Pulmonary toxicity",
+        "condition": "Pulmonary symptoms develop",
+        "affected_drugs": [
+          "Bleomycin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Stop bleomycin until investigations complete and diagnosis made"
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "Curative regimen. Dose delays preferred over reductions. Delay 3 days at a time. Discuss all changes with consultant. Note: bleomycin only on day 2 in this modified protocol (not days 8 and 15)."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to day 1 of cycle",
+      "AFP and HCG prior to day one of each cycle",
+      "EDTA or calculated creatinine clearance",
+      "Chest X-ray",
+      "Pulmonary function tests before starting therapy; repeat if respiratory symptoms develop"
+    ],
+    "special_warnings": [
+      "For patients aged 41 years and above — modified protocol with bleomycin on day 2 only",
+      "Bleomycin maximum cumulative dose 300,000 IU (refer to SPC for patients >40 years)",
+      "Bleomycin pneumonitis risk heightened in this age group",
+      "Lung function mandatory before starting bleomycin",
+      "4 cycles for all patients",
+      "If CrCl <60 ml/min: consider switching to 5-day schedule or carboplatin",
+      "This regimen must NOT be dose-capped at 2.4m² — override any ARIA caps",
+      "Ciprofloxacin prophylaxis 500mg twice daily for 7 days from day 7"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "age": "Required — protocol for patients ≥41 years",
+      "weight": "Required for BSA calculation",
+      "height": "Required for BSA calculation",
+      "cumulative_bleomycin_dose_units": "Required — max 300,000 IU cumulative (refer to SPC)",
+      "lung_function_tests": "Required prior to starting bleomycin",
+      "creatinine_clearance": "Required (EDTA or calculated)",
+      "afp_hcg": "Required prior to day one of each cycle"
+    },
+    "disease_site": "Urology",
+    "number_of_cycles": 4,
+    "drugs": [
+      {
+        "drug_name": "Bleomycin",
+        "dose": 30000,
+        "dose_unit": "units",
+        "route": "IV infusion",
+        "days": [
+          2
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": 300000,
+        "max_dose_unit": "units",
+        "special_instructions": "Maximum cumulative dose 300,000 IU (refer to SPC for patients >40 years). Modified protocol: bleomycin on day 2 only (not days 8 and 15). Stop if pulmonary symptoms. Do NOT dose cap at 2.4m².",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.5,
+        "notes": "per cycle | Maximum cumulative dose 300,000 IU (refer to SPC for patients >40 years). Modified protocol: bleomycin on day 2 only (not days 8 and 15). Stop if pulmonary symptoms. Do NOT dose cap at 2.4m²."
+      },
+      {
+        "drug_name": "Cisplatin",
+        "dose": 50,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 120,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded per CSCCN agreed bands. Pre- and post-hydration required. If CrCl <60 ml/min consider 5-day schedule or carboplatin. Do NOT dose cap at 2.4m².",
+        "is_core_drug": true,
+        "infusion_duration_hours": 2.0,
+        "notes": "per cycle | Dose banded per CSCCN agreed bands. Pre- and post-hydration required. If CrCl <60 ml/min consider 5-day schedule or carboplatin. Do NOT dose cap at 2.4m²."
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 165,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded per CSCCN agreed bands. Do NOT dose cap at 2.4m².",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "per cycle | Dose banded per CSCCN agreed bands. Do NOT dose cap at 2.4m²."
+      }
+    ]
+  },
+  {
+    "protocol_id": "bep_adjuvant",
+    "protocol_code": "BEPADJ",
+    "protocol_name": "Germ Cell – Bleomycin-Cisplatin-Etoposide (BEP Adjuvant)",
+    "category": "urology",
+    "indication": "Adjuvant treatment of high risk stage I teratoma",
+    "version": "1.2",
+    "cycle_length_days": 21,
+    "total_cycles": 2,
+    "treatment_intent": "curative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Bleomycin",
+        "dose": 30000,
+        "dose_unit": "units",
+        "route": "IV infusion",
+        "days": [
+          2,
+          8,
+          15
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": 300000,
+        "max_dose_unit": "units",
+        "special_instructions": "Maximum cumulative dose 300,000 IU in patients <40 years; refer to SPC for older patients. Administered on days 8 and 15 irrespective of neutrophil and platelet count. Stop if pulmonary symptoms. Do NOT dose cap at 2.4m².",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Cisplatin",
+        "dose": 50,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 120,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Infuse at rate of 1mg cisplatin/min (minimum 120 minutes). Dose banded per CSCCN bands. Pre- and post-hydration required. If CrCl <60 ml/min consider 5-day schedule or carboplatin. Do NOT dose cap at 2.4m².",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 120,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded per CSCCN agreed bands. Do NOT dose cap at 2.4m².",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Aprepitant",
+        "dose": 125,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1
+        ],
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "once",
+        "notes": null
+      },
+      {
+        "drug_name": "Aprepitant",
+        "dose": 80,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          2,
+          3
+        ],
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "once daily",
+        "notes": null
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3
+        ],
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "once daily",
+        "notes": null
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          8,
+          15
+        ],
+        "timing": "15-30 minutes prior to bleomycin",
+        "frequency": "once",
+        "notes": "Days 8 and 15"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "twice daily",
+        "notes": null
+      },
+      {
+        "drug_name": "Furosemide",
+        "dose": 40,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2
+        ],
+        "timing": "Prior to cisplatin",
+        "frequency": "once",
+        "notes": "Pre-hydration"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9% with magnesium sulphate 16mmol and potassium chloride 20mmol",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2
+        ],
+        "timing": "Pre-hydration before cisplatin",
+        "frequency": "once",
+        "duration_minutes": 60,
+        "notes": "Pre-hydration"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9% with magnesium sulphate 16mmol and potassium chloride 20mmol",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2
+        ],
+        "timing": "Post-hydration after cisplatin",
+        "frequency": "once",
+        "duration_minutes": 60,
+        "notes": "Post-hydration"
+      },
+      {
+        "drug_name": "Hydrocortisone",
+        "dose": 100,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          2,
+          8,
+          15
+        ],
+        "timing": "On days of bleomycin administration",
+        "frequency": "when required",
+        "notes": "For bleomycin reactions"
+      },
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          2,
+          8,
+          15
+        ],
+        "timing": "On days of bleomycin administration",
+        "frequency": "when required",
+        "notes": "For bleomycin reactions"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "up to three times a day when required",
+        "duration": "as required",
+        "notes": "For relief of nausea"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "evening of days 1, 2 and 3, then twice daily for 2 days after chemotherapy",
+        "duration": "5 days",
+        "notes": null
+      },
+      {
+        "drug_name": "Ciprofloxacin",
+        "dose": 500,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "twice daily",
+        "duration": "7 days",
+        "notes": "Starting on day 7 of cycle"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils",
+        "condition": "Neutrophils less than 0.5 x10⁹/L prior to cycle",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay 3 days at a time; discuss with consultant. Bleomycin on days 8 and 15 given irrespective of counts."
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets less than 100 x10⁹/L prior to cycle",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay 3 days at a time"
+      },
+      {
+        "parameter": "Hepatic – Bilirubin/AST/ALT",
+        "condition": "Bleomycin – any hepatic impairment",
+        "affected_drugs": [
+          "Bleomycin"
+        ],
+        "action": "clinical decision",
+        "factor": 1.0,
+        "notes": "Clinical decision"
+      },
+      {
+        "parameter": "Hepatic – Bilirubin",
+        "condition": "Etoposide: Bilirubin 26-51 µmol/L or AST/ALT 60-180 units/L",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "reduce",
+        "factor": 0.5,
+        "notes": "Consider dose reducing to 50%"
+      },
+      {
+        "parameter": "Hepatic – Bilirubin",
+        "condition": "Etoposide: Bilirubin >51 µmol/L or AST/ALT >180 units/L",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "clinical decision",
+        "factor": 1.0,
+        "notes": "Clinical decision"
+      },
+      {
+        "parameter": "Renal – Creatinine Clearance",
+        "condition": "Bleomycin: CrCl less than 50 ml/min",
+        "affected_drugs": [
+          "Bleomycin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discuss with consultant and omit"
+      },
+      {
+        "parameter": "Renal – Creatinine Clearance",
+        "condition": "Cisplatin: CrCl below 60 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Seek consultant advice. Consider 5-day schedule or carboplatin rather than dose reducing."
+      },
+      {
+        "parameter": "Renal – Creatinine Clearance",
+        "condition": "Etoposide: CrCl 15-50 ml/min",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "reduce",
+        "factor": 0.75,
+        "notes": "75% of original dose"
+      },
+      {
+        "parameter": "Renal – Creatinine Clearance",
+        "condition": "Etoposide: CrCl less than 15 ml/min",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "reduce",
+        "factor": 0.5,
+        "notes": "50% of original dose"
+      },
+      {
+        "parameter": "Pulmonary toxicity",
+        "condition": "Pulmonary symptoms develop",
+        "affected_drugs": [
+          "Bleomycin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Stop bleomycin until investigations complete"
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 0.5,
+      "platelets_min": 100,
+      "notes": "Curative regimen. Bleomycin given on days 8 and 15 irrespective of counts. Dose delays preferred. Discuss all changes with consultant."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to day 1, 8 and 15 of cycle",
+      "AFP and HCG prior to day one of each cycle",
+      "EDTA or calculated creatinine clearance",
+      "Chest X-ray",
+      "Pulmonary function tests before starting therapy; repeat if respiratory symptoms develop"
+    ],
+    "special_warnings": [
+      "Adjuvant therapy — 2 cycles only for high risk stage I teratoma",
+      "Bleomycin cumulative maximum dose 300,000 IU in patients <40 years; refer to SPC for older patients",
+      "Lung function tests mandatory before starting bleomycin",
+      "Bleomycin given on days 8 and 15 irrespective of blood counts",
+      "Cisplatin must be infused at minimum 1mg/min (minimum 120 minutes)",
+      "If CrCl <60 ml/min: consider 5-day schedule or carboplatin",
+      "This regimen must NOT be dose-capped at 2.4m² — override any ARIA caps"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "weight": "Required for BSA calculation",
+      "height": "Required for BSA calculation",
+      "cumulative_bleomycin_dose_units": "Required — max 300,000 IU cumulative",
+      "lung_function_tests": "Required prior to starting bleomycin",
+      "creatinine_clearance": "Required (EDTA or calculated)",
+      "afp_hcg": "Required prior to each cycle"
+    },
+    "disease_site": "Urology",
+    "number_of_cycles": 2,
+    "drugs": [
+      {
+        "drug_name": "Bleomycin",
+        "dose": 30000,
+        "dose_unit": "units",
+        "route": "IV infusion",
+        "days": [
+          2,
+          8,
+          15
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": 300000,
+        "max_dose_unit": "units",
+        "special_instructions": "Maximum cumulative dose 300,000 IU in patients <40 years; refer to SPC for older patients. Administered on days 8 and 15 irrespective of neutrophil and platelet count. Stop if pulmonary symptoms. Do NOT dose cap at 2.4m².",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.5,
+        "notes": "per cycle | Maximum cumulative dose 300,000 IU in patients <40 years; refer to SPC for older patients. Administered on days 8 and 15 irrespective of neutrophil and platelet count. Stop if pulmonary symptoms. Do NOT dose cap at 2.4m²."
+      },
+      {
+        "drug_name": "Cisplatin",
+        "dose": 50,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 120,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Infuse at rate of 1mg cisplatin/min (minimum 120 minutes). Dose banded per CSCCN bands. Pre- and post-hydration required. If CrCl <60 ml/min consider 5-day schedule or carboplatin. Do NOT dose cap at 2.4m².",
+        "is_core_drug": true,
+        "infusion_duration_hours": 2.0,
+        "notes": "per cycle | Infuse at rate of 1mg cisplatin/min (minimum 120 minutes). Dose banded per CSCCN bands. Pre- and post-hydration required. If CrCl <60 ml/min consider 5-day schedule or carboplatin. Do NOT dose cap at 2.4m²."
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 120,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded per CSCCN agreed bands. Do NOT dose cap at 2.4m².",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "per cycle | Dose banded per CSCCN agreed bands. Do NOT dose cap at 2.4m²."
+      }
+    ]
+  },
+  {
+    "protocol_id": "cabazitaxel_prednisolone",
+    "protocol_code": "CABAZIPRED",
+    "protocol_name": "Prostate-Cabazitaxel-Prednisolone",
+    "category": "urology",
+    "indication": "Castrate resistant metastatic prostate cancer previously treated with docetaxel containing regimens; Performance status 0, 1, 2",
+    "version": "1.4",
+    "cycle_length_days": 21,
+    "total_cycles": 10,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Cabazitaxel",
+        "dose": 20,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": 25,
+        "max_dose_unit": "mg/m²",
+        "special_instructions": "Licensed dose is 25mg/m²; protocol set at 20mg/m² due to poor bone marrow reserves. In PS 0 or 1 who tolerate 20mg/m² well, consider increase to 25mg/m². Must be administered via non-PVC administration set with in-line 0.22 micron filter. Dose banded per national dose bands (10mg/ml). Extravasation risk: exfoliant.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Prednisolone",
+        "dose": 5,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "frequency": "twice daily",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Days 1-21 inclusive. Continue even if cabazitaxel is delayed. Take with or after food (morning and lunchtime). Patients stopping cabazitaxel may require gradual prednisolone withdrawal.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "timing": "At least 30 minutes prior to chemotherapy",
+        "frequency": "once",
+        "notes": "Premedication"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1
+        ],
+        "timing": "At least 30 minutes prior to chemotherapy",
+        "frequency": "once",
+        "notes": "Premedication; oral or intravenous bolus"
+      },
+      {
+        "drug_name": "H2 Antagonist",
+        "dose": null,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1
+        ],
+        "timing": "30 minutes prior to chemotherapy",
+        "frequency": "once",
+        "notes": "Per local formulary (ranitidine 50mg IV, famotidine 20mg oral, nizatidine 150mg oral, or ranitidine 150mg oral). May be omitted from cycle 3 onwards on individual patient/Trust basis."
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1
+        ],
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "once",
+        "notes": "Antiemetic; oral or IV bolus"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Prednisolone",
+        "dose": 5,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "twice daily for 21 days",
+        "duration": "21 days",
+        "notes": "Take morning and lunchtime with or after food. Continue even if cabazitaxel delayed. Gradual withdrawal required on stopping cabazitaxel."
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "three times a day for 3 days then as required",
+        "duration": "3 days minimum",
+        "notes": "Supply 28 tablets or nearest appropriate pack size"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils",
+        "condition": "Neutrophils less than 1 x10⁹/L",
+        "affected_drugs": [
+          "Cabazitaxel"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay until recovery then give 100% dose"
+      },
+      {
+        "parameter": "Neutrophils – grade 3 or febrile neutropenia",
+        "condition": "NCI-CTC grade 3 neutropenia despite growth factors or febrile neutropenia — 1st occurrence",
+        "affected_drugs": [
+          "Cabazitaxel"
+        ],
+        "action": "reduce",
+        "factor": 0.8,
+        "notes": "Delay until neutrophils ≥1 x10⁹/L then give 20mg/m²"
+      },
+      {
+        "parameter": "Neutrophils – grade 3 or febrile neutropenia",
+        "condition": "NCI-CTC grade 3 neutropenia despite growth factors or febrile neutropenia — 2nd occurrence",
+        "affected_drugs": [
+          "Cabazitaxel"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discontinue treatment"
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets less than 100 x10⁹/L — 1st occurrence",
+        "affected_drugs": [
+          "Cabazitaxel"
+        ],
+        "action": "reduce",
+        "factor": 0.8,
+        "notes": "Delay until platelets ≥100 x10⁹/L then give 20mg/m²"
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets less than 100 x10⁹/L — 2nd occurrence",
+        "affected_drugs": [
+          "Cabazitaxel"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discontinue treatment"
+      },
+      {
+        "parameter": "Hepatic – Bilirubin",
+        "condition": "Cabazitaxel: Bilirubin 1-1.5x ULN or AST/ALT ≥1.5x ULN",
+        "affected_drugs": [
+          "Cabazitaxel"
+        ],
+        "action": "reduce",
+        "factor": 0.8,
+        "notes": "Maximum dose 20mg/m²"
+      },
+      {
+        "parameter": "Hepatic – Bilirubin",
+        "condition": "Cabazitaxel: Bilirubin 1.6-3x ULN and/or AST/ALT ≥1.5x ULN",
+        "affected_drugs": [
+          "Cabazitaxel"
+        ],
+        "action": "reduce",
+        "factor": 0.6,
+        "notes": "Maximum recommended dose 15mg/m²"
+      },
+      {
+        "parameter": "Hepatic – Bilirubin",
+        "condition": "Cabazitaxel: Bilirubin >3x ULN",
+        "affected_drugs": [
+          "Cabazitaxel"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Not recommended"
+      },
+      {
+        "parameter": "Non-haematological toxicity",
+        "condition": "NCI-CTC grade 3 or above non-haematological toxicity",
+        "affected_drugs": [
+          "Cabazitaxel"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay until resolved to grade 1 or below; then reduce to 20mg/m² or discontinue as appropriate. Discontinue if reactions persist after re-starting."
+      },
+      {
+        "parameter": "Diarrhoea",
+        "condition": "NCI-CTC grade 3 or above or persisting despite treatment",
+        "affected_drugs": [
+          "Cabazitaxel"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay until improved/resolved; seek consultant advice on continuing or reducing dose"
+      },
+      {
+        "parameter": "Peripheral neuropathy",
+        "condition": "NCI-CTC grade 2 or above",
+        "affected_drugs": [
+          "Cabazitaxel"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay until improvement; seek consultant advice"
+      },
+      {
+        "parameter": "Renal failure",
+        "condition": "NCI-CTC grade 3 or above renal failure",
+        "affected_drugs": [
+          "Cabazitaxel"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discontinue cabazitaxel"
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "Prednisolone continued even if cabazitaxel delayed. Monitor serum creatinine at each blood count."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs, PSA and U&Es prior to day one of each cycle",
+      "Serum creatinine at baseline, with each blood count, and whenever patient reports change in urinary output",
+      "Adequate hydration throughout treatment",
+      "Monitor for hypersensitivity reactions (particularly first and second infusions)",
+      "Growth factor support per local formulary (e.g. filgrastim 30M units SC for 5 days from day 5, or pegfilgrastim 6mg SC on day 2)"
+    ],
+    "special_warnings": [
+      "Cabazitaxel is myelosuppressive; G-CSF support recommended per local policy",
+      "Hypersensitivity reactions may occur with first or second infusion — for severe reactions (hypotension, bronchospasm, generalised erythema) discontinue immediately",
+      "Administer via non-PVC set with in-line 0.22 micron filter",
+      "Prednisolone must be continued even when cabazitaxel is delayed; require gradual withdrawal when stopping cabazitaxel",
+      "Renal failure including fatal outcomes reported — ensure adequate hydration; discontinue for grade 3 or above renal failure",
+      "Up to 10 cycles (21-day cycle)"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "weight": "Required for BSA-based cabazitaxel dosing",
+      "height": "Required for BSA calculation",
+      "performance_status": "Required — PS 0, 1 or 2 only",
+      "prior_docetaxel": "Required — must have had prior docetaxel-containing regimen",
+      "creatinine_clearance": "Required for renal monitoring",
+      "psa": "Required prior to each cycle"
+    },
+    "disease_site": "Urology",
+    "number_of_cycles": 10,
+    "drugs": [
+      {
+        "drug_name": "Cabazitaxel",
+        "dose": 20,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": 25,
+        "max_dose_unit": "mg/m²",
+        "special_instructions": "Licensed dose is 25mg/m²; protocol set at 20mg/m² due to poor bone marrow reserves. In PS 0 or 1 who tolerate 20mg/m² well, consider increase to 25mg/m². Must be administered via non-PVC administration set with in-line 0.22 micron filter. Dose banded per national dose bands (10mg/ml). Extravasation risk: exfoliant.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "per cycle | Licensed dose is 25mg/m²; protocol set at 20mg/m² due to poor bone marrow reserves. In PS 0 or 1 who tolerate 20mg/m² well, consider increase to 25mg/m². Must be administered via non-PVC administration set with in-line 0.22 micron filter. Dose banded per national dose bands (10mg/ml). Extravasation risk: exfoliant."
+      },
+      {
+        "drug_name": "Prednisolone",
+        "dose": 5,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "frequency": "twice daily",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Days 1-21 inclusive. Continue even if cabazitaxel is delayed. Take with or after food (morning and lunchtime). Patients stopping cabazitaxel may require gradual prednisolone withdrawal.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "twice daily | Days 1-21 inclusive. Continue even if cabazitaxel is delayed. Take with or after food (morning and lunchtime). Patients stopping cabazitaxel may require gradual prednisolone withdrawal."
+      }
+    ]
+  },
+  {
+    "protocol_id": "cabozantinib_rcc",
+    "protocol_code": "CABOZANTINIB",
+    "protocol_name": "Renal Cell – Cabozantinib (60mg tablets)",
+    "category": "urology",
+    "indication": "Treatment of advanced renal cell carcinoma (RCC) in adults following prior vascular endothelial growth factor (VEGF)-targeted therapy",
+    "version": "1",
+    "cycle_length_days": 28,
+    "total_cycles": null,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Cabozantinib",
+        "dose": 60,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "once daily",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 60,
+        "max_dose_unit": "mg",
+        "special_instructions": "Swallow tablets whole — do not crush. Nothing to eat for at least 2 hours before and 1 hour after taking tablets. If dose missed and less than 12 hours until next dose, skip the missed dose. Cabometyx tablets and Cometriq capsules are NOT bioequivalent — do not interchange. Available as 20mg, 40mg and 60mg tablets; dose modifications in multiples of these strengths. 12 cycles set in ARIA; continue until disease progression or intolerance. NPSA/2008/RRR001 oral chemotherapy alert applies.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [
+      {
+        "drug_name": "Cabozantinib",
+        "dose": 60,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "once daily",
+        "duration": "28 days per cycle; continue until progression or intolerance",
+        "notes": "Oral chemotherapy. Swallow whole. Fasting 2 hours before and 1 hour after each dose. Available as 20mg, 40mg, 60mg tablets."
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "three times a day when required",
+        "duration": "as required",
+        "notes": "Antiemetic"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Haematological",
+        "condition": "Neutrophils less than 1.5 x10⁹/L or platelets less than 100 x10⁹/L",
+        "affected_drugs": [
+          "Cabozantinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Discuss with consultant; low counts may reflect bone marrow infiltration rather than drug toxicity"
+      },
+      {
+        "parameter": "Hepatic – ALT/AST",
+        "condition": "Grade 2 elevated ALT, AST or bilirubin for >1 week",
+        "affected_drugs": [
+          "Cabozantinib"
+        ],
+        "action": "reduce",
+        "factor": 0.75,
+        "notes": "Consider dose reduction (1st reduction to 40mg, 2nd reduction to 20mg)"
+      },
+      {
+        "parameter": "Hepatic – ALT/AST",
+        "condition": "Grade 3 or above elevated liver enzymes/bilirubin",
+        "affected_drugs": [
+          "Cabozantinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until resolved to baseline, then restart at reduced dose"
+      },
+      {
+        "parameter": "Non-haematological – NCI-CTC grade 3 or intolerable grade 2",
+        "condition": "NCI-CTC grade 3 or greater toxicities or intolerable grade 2 toxicities",
+        "affected_drugs": [
+          "Cabozantinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Interrupt treatment; resume at reduced dose (40mg then 20mg) once toxicity improves to grade 1. Third dose reduction: stop treatment."
+      },
+      {
+        "parameter": "Diarrhoea",
+        "condition": "NCI-CTC grade 3 diarrhoea",
+        "affected_drugs": [
+          "Cabozantinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Stop treatment; re-start at reduced dose once resolved. Initiate loperamide at first sign of diarrhoea."
+      },
+      {
+        "parameter": "Hypertension",
+        "condition": "Persistent blood pressure >150/100 mmHg despite antihypertensives",
+        "affected_drugs": [
+          "Cabozantinib"
+        ],
+        "action": "reduce",
+        "factor": 0.75,
+        "notes": "Consider dose reduction; discontinue for severe hypertension despite dose reduction and antihypertensives"
+      },
+      {
+        "parameter": "PRES",
+        "condition": "Posterior Reversible Encephalopathy Syndrome diagnosed",
+        "affected_drugs": [
+          "Cabozantinib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discontinue cabozantinib permanently if PRES diagnosed"
+      },
+      {
+        "parameter": "GI perforation or fistula",
+        "condition": "GI perforation or GI/non-GI fistula",
+        "affected_drugs": [
+          "Cabozantinib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discontinue permanently"
+      },
+      {
+        "parameter": "Osteonecrosis of the jaw",
+        "condition": "ONJ diagnosed",
+        "affected_drugs": [
+          "Cabozantinib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discontinue permanently; hold at least 28 days before invasive dental procedures"
+      },
+      {
+        "parameter": "Proteinuria",
+        "condition": "Nephrotic syndrome",
+        "affected_drugs": [
+          "Cabozantinib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discontinue permanently"
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.5,
+      "platelets_min": 100,
+      "notes": "Oral continuous dosing — 28-day cycle. Dose reductions: 1st to 40mg, 2nd to 20mg. Third dose reduction: stop treatment."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs, U&Es (including magnesium, potassium, calcium, phosphate) prior to day one of treatment; correct abnormal electrolytes",
+      "Thyroid function tests at baseline and weeks 2, 4, 8, 12, then every 12 weeks",
+      "ECG at baseline and weeks 2, 4, 8, 12, then every 12 weeks (QTc must not exceed 480 msec)",
+      "Blood pressure prior to each cycle; hypertension must be well controlled before starting",
+      "Urine dipstick for protein prior to every cycle",
+      "Oral examination prior to initiation and periodically during therapy (osteonecrosis of jaw risk)"
+    ],
+    "special_warnings": [
+      "Cabometyx (tablets) and Cometriq (capsules) are NOT bioequivalent — do not interchange",
+      "NPSA/2008/RRR001 oral chemotherapy safety alert applies",
+      "Many significant drug interactions — always check before prescribing or dispensing",
+      "QT interval prolongation risk — ECG monitoring required; QTc must not exceed 480 msec",
+      "Serious and sometimes fatal perforations, fistulas and intra-abdominal abscesses reported",
+      "Posterior Reversible Encephalopathy Syndrome (PRES) reported — perform brain MRI for seizures, confusion, altered mental status",
+      "Osteonecrosis of the jaw — oral examination required before and during treatment; hold 28 days before invasive dental procedures",
+      "Hypertension must be well controlled prior to starting",
+      "Monitor for palmer-plantar erythrodysaesthesia — dose interruption may be required",
+      "Patients to fast 2 hours before and 1 hour after each dose",
+      "Continue until disease progression or intolerance (12 cycles in ARIA)",
+      "Toxicity more common in patients ≥75 years"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "prior_vegf_therapy": "Required — must have received prior VEGF-targeted therapy",
+      "blood_pressure": "Required at baseline and prior to each cycle",
+      "ecg_qtc": "Required at baseline",
+      "thyroid_function": "Required at baseline",
+      "urine_protein": "Required prior to each cycle",
+      "electrolytes_including_mg_k_ca_phos": "Required at baseline and correct if abnormal",
+      "renal_function": "No specific dose modification data available for renal impairment"
+    },
+    "disease_site": "Urology",
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Cabozantinib",
+        "dose": 60,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "once daily",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 60,
+        "max_dose_unit": "mg",
+        "special_instructions": "Swallow tablets whole — do not crush. Nothing to eat for at least 2 hours before and 1 hour after taking tablets. If dose missed and less than 12 hours until next dose, skip the missed dose. Cabometyx tablets and Cometriq capsules are NOT bioequivalent — do not interchange. Available as 20mg, 40mg and 60mg tablets; dose modifications in multiples of these strengths. 12 cycles set in ARIA; continue until disease progression or intolerance. NPSA/2008/RRR001 oral chemotherapy alert applies.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "once daily | Swallow tablets whole — do not crush. Nothing to eat for at least 2 hours before and 1 hour after taking tablets. If dose missed and less than 12 hours until next dose, skip the missed dose. Cabometyx tablets and Cometriq capsules are NOT bioequivalent — do not interchange. Available as 20mg, 40mg and 60mg tablets; dose modifications in multiples of these strengths. 12 cycles set in ARIA; continue until disease progression or intolerance. NPSA/2008/RRR001 oral chemotherapy alert applies."
+      }
+    ]
+  },
+  {
+    "protocol_id": "carboplatin_auc4_5_gemcitabine",
+    "protocol_code": "CARBOGEM",
+    "protocol_name": "Bladder-Carboplatin (AUC4.5)-Gemcitabine",
+    "category": "urology",
+    "indication": "Locally advanced or metastatic urothelial cancer; WHO performance status 0, 1, 2; Palliative intent",
+    "version": "1.2",
+    "cycle_length_days": 21,
+    "total_cycles": 6,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 4.5,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 60,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 500,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose calculated using Calvert formula. Dose banded per national dose bands (10mg/ml). Omit if CrCl <20 ml/min. No hepatic dose adjustment required. Extravasation risk: irritant.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Gemcitabine",
+        "dose": 1000,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded per national dose bands (38mg/ml). If bilirubin >30 µmol/L initiate at 800mg/m². If CrCl <30 ml/min consider dose reduction. Extravasation risk: neutral.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1
+        ],
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "once",
+        "notes": "Day 1 only; oral or intravenous"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1
+        ],
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "once",
+        "notes": "Day 1 only; oral or intravenous"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          8
+        ],
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "once",
+        "notes": "Day 8 only; oral or intravenous"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "twice daily",
+        "duration": "3 days starting day 2 of cycle",
+        "notes": "Supplied to cover both day 1 and day 8 administration"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "three times a day for 3 days then as required",
+        "duration": "10 days supply (to cover day 1 and day 8)",
+        "notes": "Supply 10 days or original pack to cover day 1 and 8"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils – Day 1",
+        "condition": "Neutrophils ≥1 x10⁹/L on day 1",
+        "affected_drugs": [
+          "Carboplatin",
+          "Gemcitabine"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "parameter": "Neutrophils – Day 1",
+        "condition": "Neutrophils <1 x10⁹/L on day 1 — 1st occurrence",
+        "affected_drugs": [
+          "Carboplatin",
+          "Gemcitabine"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay until recovery"
+      },
+      {
+        "parameter": "Neutrophils – Day 1",
+        "condition": "Neutrophils <1 x10⁹/L on day 1 — 2nd occurrence",
+        "affected_drugs": [
+          "Carboplatin",
+          "Gemcitabine"
+        ],
+        "action": "reduce",
+        "factor": 0.75,
+        "notes": "Delay until recovery then give 75% of original dose"
+      },
+      {
+        "parameter": "Febrile Neutropenia – Day 1",
+        "condition": "Febrile neutropenia — 1st occurrence",
+        "affected_drugs": [
+          "Carboplatin",
+          "Gemcitabine"
+        ],
+        "action": "reduce",
+        "factor": 0.75,
+        "notes": "Delay until recovery then re-start at 75%"
+      },
+      {
+        "parameter": "Platelets – Day 1",
+        "condition": "Platelets <100 x10⁹/L — 1st occurrence",
+        "affected_drugs": [
+          "Carboplatin",
+          "Gemcitabine"
+        ],
+        "action": "reduce",
+        "factor": 0.75,
+        "notes": "Delay until recovery then 75%"
+      },
+      {
+        "parameter": "Platelets – Day 1",
+        "condition": "Platelets <100 x10⁹/L — 2nd occurrence",
+        "affected_drugs": [
+          "Carboplatin",
+          "Gemcitabine"
+        ],
+        "action": "reduce",
+        "factor": 0.5,
+        "notes": "Delay until recovery then 50%"
+      },
+      {
+        "parameter": "Neutrophils – Day 8",
+        "condition": "Neutrophils ≥1 x10⁹/L on day 8",
+        "affected_drugs": [
+          "Gemcitabine"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "100% gemcitabine"
+      },
+      {
+        "parameter": "Neutrophils – Day 8",
+        "condition": "Neutrophils 0.5-1 x10⁹/L on day 8",
+        "affected_drugs": [
+          "Gemcitabine"
+        ],
+        "action": "reduce",
+        "factor": 0.75,
+        "notes": "75% gemcitabine dose"
+      },
+      {
+        "parameter": "Neutrophils – Day 8",
+        "condition": "Neutrophils <0.5 x10⁹/L on day 8",
+        "affected_drugs": [
+          "Gemcitabine"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Omit gemcitabine day 8"
+      },
+      {
+        "parameter": "Platelets – Day 8",
+        "condition": "Platelets 50-100 x10⁹/L on day 8",
+        "affected_drugs": [
+          "Gemcitabine"
+        ],
+        "action": "reduce",
+        "factor": 0.75,
+        "notes": "75% gemcitabine"
+      },
+      {
+        "parameter": "Platelets – Day 8",
+        "condition": "Platelets <50 x10⁹/L on day 8",
+        "affected_drugs": [
+          "Gemcitabine"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Omit gemcitabine day 8"
+      },
+      {
+        "parameter": "Hepatic – Bilirubin",
+        "condition": "Gemcitabine: Bilirubin >30 µmol/L",
+        "affected_drugs": [
+          "Gemcitabine"
+        ],
+        "action": "reduce",
+        "factor": 0.8,
+        "notes": "Initiate at 800mg/m² (local practice, may vary from published sources)"
+      },
+      {
+        "parameter": "Renal – Creatinine Clearance",
+        "condition": "Carboplatin: CrCl <20 ml/min",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Omit carboplatin"
+      },
+      {
+        "parameter": "Renal – Creatinine Clearance",
+        "condition": "Gemcitabine: CrCl <30 ml/min",
+        "affected_drugs": [
+          "Gemcitabine"
+        ],
+        "action": "reduce",
+        "factor": 1.0,
+        "notes": "Consider dose reduction"
+      },
+      {
+        "parameter": "Non-haematological toxicity",
+        "condition": "NCI-CTC grade 3 or above non-haematological toxicity",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay until resolved to grade 1 or below; then reduce causative agent to 75% or discontinue"
+      },
+      {
+        "parameter": "Day 1 dose reductions",
+        "condition": "If gemcitabine dose reduced on day 1",
+        "affected_drugs": [
+          "Gemcitabine"
+        ],
+        "action": "reduce",
+        "factor": 0.75,
+        "notes": "Continue with reduced dose for day 8"
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "Day 1 criteria for both carboplatin and gemcitabine. Day 8 gemcitabine-only criteria apply separately. If third dose reduction required, stop treatment."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to day 1 and day 8 of treatment",
+      "Calculated or measured creatinine clearance prior to each cycle",
+      "EDTA creatinine clearance may be considered prior to cycle 1 or if significant renal function changes occur during treatment"
+    ],
+    "special_warnings": [
+      "Palliative intent — 21-day cycle for 6 cycles",
+      "Carboplatin dose calculated using Calvert formula (AUC 4.5); requires accurate creatinine clearance",
+      "Carboplatin omitted if CrCl <20 ml/min",
+      "Gemcitabine starting dose 800mg/m² if bilirubin >30 µmol/L (local practice)",
+      "Gemcitabine dose-banded at 38mg/ml per national bands",
+      "Radiosensitising potential of gemcitabine — relevant if prior or concurrent radiotherapy",
+      "Day 8 gemcitabine modifications independent of day 1; if day 1 dose reduced, continue with reduced dose on day 8"
+    ],
+    "auc_dosing": {
+      "drug": "Carboplatin",
+      "target_auc": 4.5,
+      "formula": "Calvert",
+      "gfr_method": "Calculated or measured creatinine clearance (EDTA for cycle 1 or if significant changes)",
+      "notes": "Carboplatin dose (mg) = AUC x (GFR + 25); AUC 4.5"
+    },
+    "required_patient_fields": {
+      "weight": "Required for Calvert formula and BSA-based gemcitabine dosing",
+      "height": "Required for BSA calculation",
+      "creatinine_clearance": "Required prior to each cycle for Calvert formula; EDTA recommended cycle 1",
+      "performance_status": "Required — WHO PS 0, 1 or 2 only"
+    },
+    "disease_site": "Urology",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 4.5,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 60,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 500,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose calculated using Calvert formula. Dose banded per national dose bands (10mg/ml). Omit if CrCl <20 ml/min. No hepatic dose adjustment required. Extravasation risk: irritant.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "per cycle | Dose calculated using Calvert formula. Dose banded per national dose bands (10mg/ml). Omit if CrCl <20 ml/min. No hepatic dose adjustment required. Extravasation risk: irritant."
+      },
+      {
+        "drug_name": "Gemcitabine",
+        "dose": 1000,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8
+        ],
+        "frequency": "per cycle",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded per national dose bands (38mg/ml). If bilirubin >30 µmol/L initiate at 800mg/m². If CrCl <30 ml/min consider dose reduction. Extravasation risk: neutral.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.5,
+        "notes": "per cycle | Dose banded per national dose bands (38mg/ml). If bilirubin >30 µmol/L initiate at 800mg/m². If CrCl <30 ml/min consider dose reduction. Extravasation risk: neutral."
+      }
+    ]
+  }
+]

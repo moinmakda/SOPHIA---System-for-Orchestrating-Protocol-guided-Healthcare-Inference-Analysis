@@ -1,0 +1,1594 @@
+[
+  {
+    "protocol_code": "EC-DPH-IV",
+    "protocol_name": "Cyclophosphamide-Epirubicin-Docetaxel-Pertuzumab-Trastuzumab IV (EC-DPH IV)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 500.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "EC phase: cycles 1-3. Intravenous bolus over 10 minutes. Dose banded per national dose bands (20PM)."
+      },
+      {
+        "drug_name": "Epirubicin",
+        "dose": 100.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "EC phase: cycles 1-3. Intravenous bolus over 10 minutes. Dose banded per national dose bands (2PM). Maximum lifetime cumulative dose 900 mg/m²."
+      },
+      {
+        "drug_name": "Docetaxel",
+        "dose": 75.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "DPH phase: cycles 4-7. Intravenous infusion in 250ml sodium chloride 0.9% over 60 minutes. Starting dose may be 55 mg/m² in those with poor bone marrow reserves with a view to increasing to 75 mg/m² if well tolerated. Dose banded per national dose bands."
+      },
+      {
+        "drug_name": "Pertuzumab",
+        "dose": 840.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 4 LOADING dose: 840 mg IV over 60 minutes. Intravenous infusion in 250ml sodium chloride 0.9%. Dose reductions NOT permitted; if not tolerated, discontinue."
+      },
+      {
+        "drug_name": "Pertuzumab",
+        "dose": 420.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 5 onwards MAINTENANCE dose: 420 mg IV over 30 minutes. If gap ≥6 weeks between doses, re-administer loading dose of 840 mg over 60 minutes. Dose reductions NOT permitted."
+      },
+      {
+        "drug_name": "Trastuzumab",
+        "dose": 8.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 4 LOADING dose: 8 mg/kg IV over 90 minutes. Intravenous infusion in 250ml sodium chloride 0.9%. Dose banded per national dose bands (21 mg/ml). Dose reductions NOT permitted."
+      },
+      {
+        "drug_name": "Trastuzumab",
+        "dose": 6.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 5 onwards MAINTENANCE dose: 6 mg/kg IV over 30 minutes. If dose missed ≤7 days give 6 mg/kg ASAP; if missed >7 days re-load at 8 mg/kg over 90 minutes. Cycles 8-21: Pertuzumab 420 mg + Trastuzumab 6 mg/kg only (no Docetaxel)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological toxicity NCI-CTC grade 3 or above: delay up to 7 days",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.8,
+        "notes": "Reduce cyclophosphamide and epirubicin to 80% of original dose if NCI-CTC grade 3 or above haematological event occurs."
+      },
+      {
+        "condition": "Haematological toxicity NCI-CTC grade 3 or above: delay up to 7 days",
+        "drug_name": "Epirubicin",
+        "factor": 0.8,
+        "notes": "Reduce cyclophosphamide and epirubicin to 80% of original dose if NCI-CTC grade 3 or above haematological event. Consider stopping docetaxel."
+      },
+      {
+        "condition": "Haematological toxicity: second episode despite dose reduction or delay >7 days",
+        "drug_name": "Docetaxel",
+        "factor": 0.0,
+        "notes": "Consider stopping docetaxel. Consider changing or stopping therapy."
+      },
+      {
+        "condition": "Kidney impairment: CrCl 10-20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose."
+      },
+      {
+        "condition": "Kidney impairment: CrCl less than 10 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Severe renal impairment",
+        "drug_name": "Epirubicin",
+        "factor": 0.75,
+        "notes": "Dose reduce in severe impairment only."
+      },
+      {
+        "condition": "Liver impairment: bilirubin 24-51 umol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.5,
+        "notes": "Give 50% of original dose."
+      },
+      {
+        "condition": "Liver impairment: bilirubin 52-85 umol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.25,
+        "notes": "Give 25% of original dose."
+      },
+      {
+        "condition": "Liver impairment: bilirubin 85 umol/L or greater",
+        "drug_name": "Epirubicin",
+        "factor": 0.0,
+        "notes": "Contra-indicated."
+      },
+      {
+        "condition": "Liver impairment: AST 2-4 x ULN and bilirubin 21-51 umol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.5,
+        "notes": "Give 50% of original dose."
+      },
+      {
+        "condition": "Liver impairment: AST >4 x ULN or bilirubin >51 umol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.25,
+        "notes": "Give 25% of original dose."
+      },
+      {
+        "condition": "Liver impairment: AST/ALT 1.5xULN and Alk Phos 2.5xULN or greater",
+        "drug_name": "Docetaxel",
+        "factor": 0.75,
+        "notes": "Give 75% of dose."
+      },
+      {
+        "condition": "Liver impairment: bilirubin above ULN and/or AST/ALT 3.5xULN or Alk Phos 6xULN or greater",
+        "drug_name": "Docetaxel",
+        "factor": 0.0,
+        "notes": "Docetaxel not recommended."
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 3: reduce once resolved to grade 2 or below",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Reduce from 75 mg/m² to 60 mg/m². If grade 3 at doses below 75 mg/m² or grade 4 develops, consider stopping."
+      },
+      {
+        "condition": "NCI-CTC grade 3 cutaneous toxicity on day 1 of cycle",
+        "drug_name": "Docetaxel",
+        "factor": 1.0,
+        "notes": "Delay until resolves to grade 1 or below, then reduce from 75 mg/m² to 60 mg/m². Stop for grade 4 cutaneous toxicity."
+      },
+      {
+        "condition": "Cardiac failure",
+        "drug_name": "Epirubicin",
+        "factor": 0.0,
+        "notes": "Discontinue epirubicin if cardiac failure develops."
+      },
+      {
+        "condition": "Symptomatic cardiac dysfunction",
+        "drug_name": "Pertuzumab",
+        "factor": 0.0,
+        "notes": "Discontinue pertuzumab and trastuzumab. Commence ACE inhibitor and refer to cardiologist."
+      },
+      {
+        "condition": "Symptomatic cardiac dysfunction",
+        "drug_name": "Trastuzumab",
+        "factor": 0.0,
+        "notes": "Discontinue pertuzumab and trastuzumab. No dose reductions permitted; treatment should be stopped if not tolerated."
+      },
+      {
+        "condition": "Asymptomatic LVEF decline: LVEF <40% or LVEF 40-45% and ≥10 points below baseline confirmed after 3 weeks",
+        "drug_name": "Pertuzumab",
+        "factor": 0.0,
+        "notes": "Stop study treatment permanently per LVEF flowchart."
+      },
+      {
+        "condition": "Renal impairment",
+        "drug_name": "Pertuzumab",
+        "factor": 1.0,
+        "notes": "Safety and efficacy not established in renal impairment; use with caution."
+      }
+    ],
+    "pre_medications": [
+      "EC phase: Aprepitant 125mg oral 15-30 minutes before chemotherapy",
+      "EC phase: Dexamethasone 4mg oral or intravenous 15-30 minutes before chemotherapy",
+      "EC phase: Ondansetron 8mg oral or intravenous 15-30 minutes before chemotherapy",
+      "Docetaxel phase: Dexamethasone 8mg twice daily oral for 3 days starting 24 hours before docetaxel (or dexamethasone 20mg IV if forgotten)",
+      "Docetaxel phase: Metoclopramide 10mg oral or intravenous 15-30 minutes before docetaxel",
+      "Pertuzumab/Trastuzumab infusion reactions (when required): Chlorphenamine 10mg IV, Hydrocortisone 100mg IV, Paracetamol 1000mg oral"
+    ],
+    "special_warnings": [
+      "Epirubicin: maximum lifetime cumulative dose is 900 mg/m². Monitor cardiac function (LVEF) throughout.",
+      "LVEF must be ≥50% before starting pertuzumab and trastuzumab. Echocardiogram before cycle 4 then every 3 months.",
+      "Pertuzumab and trastuzumab: dose reductions NOT permitted. Discontinue if not tolerated.",
+      "Trastuzumab: observe 6 hours after first infusion, 2 hours after subsequent infusions for hypersensitivity.",
+      "Pertuzumab: observe 60 minutes after first infusion, 30-60 minutes after subsequent infusions.",
+      "Docetaxel: hypersensitivity reactions tend to occur with first or second infusion. Interrupt for minor symptoms.",
+      "Sequential protocol: EC (cycles 1-3) followed by Docetaxel-Pertuzumab-Trastuzumab (cycles 4-7) then Pertuzumab-Trastuzumab alone (cycles 8-21).",
+      "Epirubicin is a vesicant; docetaxel is an exfolliant; cyclophosphamide is neutral.",
+      "Growth factor support required per local formulary."
+    ],
+    "required_patient_fields": [
+      "lvef",
+      "her2_status",
+      "creatinine_clearance",
+      "liver_function_tests",
+      "fbc"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "EC-DPH-SC",
+    "protocol_name": "Cyclophosphamide-Epirubicin-Docetaxel-Pertuzumab/Trastuzumab SC (EC-DPH SC)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 500.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "EC phase: cycles 1-3. Intravenous bolus over 10 minutes. Dose banded per national dose bands (20PM)."
+      },
+      {
+        "drug_name": "Epirubicin",
+        "dose": 100.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "EC phase: cycles 1-3. Intravenous bolus over 10 minutes. Dose banded per national dose bands (2PM). Maximum lifetime cumulative dose 900 mg/m²."
+      },
+      {
+        "drug_name": "Docetaxel",
+        "dose": 75.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "DPH SC phase: cycles 4-7. Intravenous infusion in 250ml sodium chloride 0.9% over 60 minutes. Starting dose may be 55 mg/m² with a view to increasing to 75 mg/m² if well tolerated."
+      },
+      {
+        "drug_name": "Pertuzumab/Trastuzumab SC (Phesgo)",
+        "dose": 1200.0,
+        "dose_unit": "mg",
+        "route": "Subcutaneous",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.13,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 4 LOADING dose: Pertuzumab 1200mg/Trastuzumab 600mg SC injection over 8 minutes. Fixed combination (Phesgo). Administer before any taxane; observation period must be completed before starting taxane. Injection site alternated between left and right thigh only. Observe 30 minutes after loading dose."
+      },
+      {
+        "drug_name": "Pertuzumab/Trastuzumab SC (Phesgo)",
+        "dose": 600.0,
+        "dose_unit": "mg",
+        "route": "Subcutaneous",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.08,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 5 onwards MAINTENANCE dose: Pertuzumab 600mg/Trastuzumab 600mg SC injection over 5 minutes. If gap ≥6 weeks re-administer loading dose 1200mg/600mg. Cycles 8-21: maintenance SC injection only (no Docetaxel). Observe 15 minutes after each maintenance injection."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological toxicity NCI-CTC grade 3 or above",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.8,
+        "notes": "Reduce cyclophosphamide and epirubicin to 80% of original dose. Consider stopping docetaxel."
+      },
+      {
+        "condition": "Haematological toxicity NCI-CTC grade 3 or above",
+        "drug_name": "Epirubicin",
+        "factor": 0.8,
+        "notes": "Reduce cyclophosphamide and epirubicin to 80% of original dose."
+      },
+      {
+        "condition": "Second episode of neutropenia/thrombocytopenia despite dose reduction or delay >7 days",
+        "drug_name": "Docetaxel",
+        "factor": 0.0,
+        "notes": "Consider changing or stopping therapy."
+      },
+      {
+        "condition": "Kidney impairment: CrCl 10-20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose."
+      },
+      {
+        "condition": "Kidney impairment: CrCl less than 10 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Severe renal impairment",
+        "drug_name": "Epirubicin",
+        "factor": 0.75,
+        "notes": "Dose reduce in severe impairment only."
+      },
+      {
+        "condition": "Liver impairment: bilirubin 24-51 umol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.5,
+        "notes": "Give 50% of original dose."
+      },
+      {
+        "condition": "Liver impairment: bilirubin 52-85 umol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.25,
+        "notes": "Give 25% of original dose."
+      },
+      {
+        "condition": "Liver impairment: bilirubin 85 umol/L or greater",
+        "drug_name": "Epirubicin",
+        "factor": 0.0,
+        "notes": "Contra-indicated."
+      },
+      {
+        "condition": "Liver impairment: AST/ALT 1.5xULN and Alk Phos 2.5xULN or greater",
+        "drug_name": "Docetaxel",
+        "factor": 0.75,
+        "notes": "Give 75% of dose."
+      },
+      {
+        "condition": "Liver impairment: bilirubin above ULN and/or AST/ALT 3.5xULN or Alk Phos 6xULN or greater",
+        "drug_name": "Docetaxel",
+        "factor": 0.0,
+        "notes": "Docetaxel not recommended."
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 3",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Reduce from 75 mg/m² to 60 mg/m² once neuropathy resolves to grade 2 or below. Consider stopping if at 60 mg/m² or no recovery in 2 weeks."
+      },
+      {
+        "condition": "Cardiac failure",
+        "drug_name": "Epirubicin",
+        "factor": 0.0,
+        "notes": "Discontinue epirubicin if cardiac failure develops."
+      },
+      {
+        "condition": "Symptomatic cardiac dysfunction or LVEF decline per flowchart",
+        "drug_name": "Pertuzumab/Trastuzumab SC (Phesgo)",
+        "factor": 0.0,
+        "notes": "Discontinue if symptomatic cardiac dysfunction. No dose reductions permitted for pertuzumab/trastuzumab SC."
+      },
+      {
+        "condition": "Renal impairment",
+        "drug_name": "Pertuzumab/Trastuzumab SC (Phesgo)",
+        "factor": 1.0,
+        "notes": "Safety and efficacy of pertuzumab not established in renal impairment."
+      }
+    ],
+    "pre_medications": [
+      "EC phase: Aprepitant 125mg oral 15-30 minutes before chemotherapy",
+      "EC phase: Dexamethasone 4mg oral or intravenous 15-30 minutes before chemotherapy",
+      "EC phase: Ondansetron 8mg oral or intravenous 15-30 minutes before chemotherapy",
+      "Docetaxel phase: Dexamethasone 8mg twice daily oral for 3 days starting 24 hours before docetaxel (or dexamethasone 20mg IV if forgotten)",
+      "Docetaxel phase: Metoclopramide 10mg oral or intravenous 15-30 minutes before docetaxel",
+      "Infusion reaction cover (when required): Chlorphenamine 10mg IV, Hydrocortisone 100mg IV, Paracetamol 1000mg oral",
+      "Loperamide 4mg after first loose stool then 2mg after each subsequent loose stool (max 16mg/24h) for diarrhoea"
+    ],
+    "special_warnings": [
+      "Epirubicin: maximum lifetime cumulative dose is 900 mg/m². Monitor cardiac function (LVEF).",
+      "LVEF must be ≥50% before starting pertuzumab/trastuzumab SC. Echocardiogram before cycle 4 then every 3 months.",
+      "Pertuzumab/Trastuzumab SC (Phesgo): fixed combination SC injection. Dose reductions NOT permitted. Discontinue if not tolerated.",
+      "SC injection site must be alternated between left and right thigh only. Do not split dose between two syringes or two sites.",
+      "Administer Phesgo before any taxane; observation period must be completed before starting taxane administration.",
+      "Sequential protocol: EC (cycles 1-3) followed by Docetaxel + Pertuzumab/Trastuzumab SC (cycles 4-7) then Pertuzumab/Trastuzumab SC alone (cycles 8-21).",
+      "Diarrhoea is common, particularly on cycle 1. Prescribe loperamide prophylactically.",
+      "Epirubicin is a vesicant; docetaxel is an exfolliant."
+    ],
+    "required_patient_fields": [
+      "lvef",
+      "her2_status",
+      "creatinine_clearance",
+      "liver_function_tests",
+      "fbc"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "EC-PPH",
+    "protocol_name": "Cyclophosphamide-Epirubicin-Paclitaxel-Pertuzumab-Trastuzumab (EC-PPH)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 500.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "EC phase: cycles 1-4. Intravenous bolus over 10 minutes. Dose banded per national dose bands (20PM)."
+      },
+      {
+        "drug_name": "Epirubicin",
+        "dose": 90.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "EC phase: cycles 1-4. Intravenous bolus over 10 minutes. Dose banded per national dose bands (2PM). Maximum lifetime cumulative dose 900 mg/m²."
+      },
+      {
+        "drug_name": "Paclitaxel",
+        "dose": 80.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "PPH phase: cycles 5-8. Days 1, 8, 15. Intravenous infusion in 250ml sodium chloride 0.9% over 60 minutes. Must be administered via non-PVC administration set with in-line 0.22 micron filter. Dose banded per national dose bands (6 mg/mL)."
+      },
+      {
+        "drug_name": "Pertuzumab",
+        "dose": 840.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 5 LOADING dose: 840 mg IV over 60 minutes. Intravenous infusion in 250ml sodium chloride 0.9%. Dose reductions NOT permitted."
+      },
+      {
+        "drug_name": "Pertuzumab",
+        "dose": 420.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 6 onwards MAINTENANCE dose: 420 mg IV over 30 minutes. Cycles 9-22: Pertuzumab 420mg + Trastuzumab 6mg/kg only (no paclitaxel). Dose reductions NOT permitted."
+      },
+      {
+        "drug_name": "Trastuzumab",
+        "dose": 8.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 5 LOADING dose: 8 mg/kg IV over 90 minutes. Intravenous infusion in 250ml sodium chloride 0.9%. Dose banded per national dose bands (21 mg/ml). Dose reductions NOT permitted."
+      },
+      {
+        "drug_name": "Trastuzumab",
+        "dose": 6.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 6 onwards MAINTENANCE dose: 6 mg/kg IV over 30 minutes. If dose missed ≤7 days give 6 mg/kg ASAP; if missed >7 days re-load at 8 mg/kg over 90 minutes."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological toxicity NCI-CTC grade 3 or above",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.8,
+        "notes": "Reduce cyclophosphamide and epirubicin to 80% of original dose. Consider stopping paclitaxel."
+      },
+      {
+        "condition": "Haematological toxicity NCI-CTC grade 3 or above",
+        "drug_name": "Epirubicin",
+        "factor": 0.8,
+        "notes": "Reduce cyclophosphamide and epirubicin to 80% of original dose."
+      },
+      {
+        "condition": "Kidney impairment: CrCl 10-20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose."
+      },
+      {
+        "condition": "Kidney impairment: CrCl less than 10 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Severe renal impairment",
+        "drug_name": "Epirubicin",
+        "factor": 0.75,
+        "notes": "Dose reduce in severe impairment only."
+      },
+      {
+        "condition": "Liver impairment: bilirubin 24-51 umol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.5,
+        "notes": "Give 50% of original dose."
+      },
+      {
+        "condition": "Liver impairment: bilirubin 52-85 umol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.25,
+        "notes": "Give 25% of original dose."
+      },
+      {
+        "condition": "Liver impairment: bilirubin 85 umol/L or greater",
+        "drug_name": "Epirubicin",
+        "factor": 0.0,
+        "notes": "Contra-indicated."
+      },
+      {
+        "condition": "Liver impairment: bilirubin less than 26 umol/L",
+        "drug_name": "Paclitaxel",
+        "factor": 1.0,
+        "notes": "Full dose 90 mg/m² (note: standard dose in this regimen is 80 mg/m²)."
+      },
+      {
+        "condition": "Liver impairment: bilirubin 27-51 umol/L",
+        "drug_name": "Paclitaxel",
+        "factor": 0.83,
+        "notes": "Give 75 mg/m²."
+      },
+      {
+        "condition": "Liver impairment: bilirubin greater than 51 umol/L",
+        "drug_name": "Paclitaxel",
+        "factor": 0.56,
+        "notes": "Give 50 mg/m²."
+      },
+      {
+        "condition": "Liver impairment: bilirubin ≥1.25xULN with transaminase <10xULN",
+        "drug_name": "Paclitaxel",
+        "factor": 1.0,
+        "notes": "Prescribe at last dose. If bilirubin ≥1.25xULN and transaminase ≥10xULN, consider dose reduction or stopping."
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 2",
+        "drug_name": "Paclitaxel",
+        "factor": 1.0,
+        "notes": "Withhold paclitaxel until neuropathy recovers to grade 1, then reduce to 75% of original dose."
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 3",
+        "drug_name": "Paclitaxel",
+        "factor": 0.5,
+        "notes": "Withhold until recovers to grade 1 then reduce to 50% of original dose. Discontinue if does not resolve to grade 1."
+      },
+      {
+        "condition": "Cardiac failure",
+        "drug_name": "Epirubicin",
+        "factor": 0.0,
+        "notes": "Discontinue epirubicin if cardiac failure develops."
+      },
+      {
+        "condition": "Symptomatic cardiac dysfunction",
+        "drug_name": "Pertuzumab",
+        "factor": 0.0,
+        "notes": "Discontinue pertuzumab and trastuzumab. No dose reductions permitted."
+      },
+      {
+        "condition": "Symptomatic cardiac dysfunction",
+        "drug_name": "Trastuzumab",
+        "factor": 0.0,
+        "notes": "Discontinue. No dose reductions permitted."
+      }
+    ],
+    "pre_medications": [
+      "EC phase: Aprepitant 125mg oral 15-30 minutes before chemotherapy",
+      "EC phase: Dexamethasone 4mg oral or intravenous 15-30 minutes before chemotherapy",
+      "EC phase: Ondansetron 8mg oral or intravenous 15-30 minutes before chemotherapy",
+      "Paclitaxel premedication (30 min before): Chlorphenamine 10mg IV, Dexamethasone 10mg IV, H2 antagonist per local formulary",
+      "Paclitaxel: Metoclopramide 10mg oral or intravenous 15-30 minutes before",
+      "Pertuzumab/Trastuzumab infusion reactions (when required): Chlorphenamine 10mg IV, Hydrocortisone 100mg IV, Paracetamol 1000mg oral"
+    ],
+    "special_warnings": [
+      "Epirubicin: maximum lifetime cumulative dose is 900 mg/m². Monitor cardiac function (LVEF).",
+      "LVEF must be ≥50% before starting pertuzumab and trastuzumab. Echocardiogram before cycle 5 (first PPH cycle) then every 3 months.",
+      "Pertuzumab and trastuzumab: dose reductions NOT permitted. Discontinue if not tolerated.",
+      "Paclitaxel must be administered via a non-PVC administration set with in-line 0.22 micron filter.",
+      "Sequential protocol: EC (cycles 1-4) followed by Paclitaxel-Pertuzumab-Trastuzumab (cycles 5-8) then Pertuzumab-Trastuzumab alone (cycles 9-22).",
+      "FBC to be assessed before days 8 and 15 of paclitaxel administration.",
+      "Epirubicin is a vesicant; paclitaxel is a vesicant.",
+      "Growth factor support per local formulary."
+    ],
+    "required_patient_fields": [
+      "lvef",
+      "her2_status",
+      "creatinine_clearance",
+      "liver_function_tests",
+      "fbc"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "ENHERTU-TDXd",
+    "protocol_name": "Enhertu (Trastuzumab Deruxtecan)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Trastuzumab deruxtecan (Enhertu)",
+        "dose": 5.4,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "21-day cycle until disease progression or unacceptable toxicity. First infusion over 90 minutes in 100ml glucose 5%; subsequent infusions over 30 minutes if prior infusions well tolerated. Dose banded per national dose bands. Use 0.20 or 0.22 micron in-line PES or PS filter. Dilute in PVC or latex-free PVC-free polyolefin infusion bags. NOT the same as Kadcyla (trastuzumab emtansine) or generic trastuzumab."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "First dose reduction required",
+        "drug_name": "Trastuzumab deruxtecan (Enhertu)",
+        "factor": 0.81,
+        "notes": "Reduce to 4.4 mg/kg. Dose should NOT be re-escalated after reduction."
+      },
+      {
+        "condition": "Second dose reduction required",
+        "drug_name": "Trastuzumab deruxtecan (Enhertu)",
+        "factor": 0.59,
+        "notes": "Reduce to 3.2 mg/kg."
+      },
+      {
+        "condition": "Third dose reduction required",
+        "drug_name": "Trastuzumab deruxtecan (Enhertu)",
+        "factor": 0.0,
+        "notes": "Discontinue treatment."
+      },
+      {
+        "condition": "Haematological: neutrophils grade 3 (0.5-1.0 x10⁹/L) first occurrence",
+        "drug_name": "Trastuzumab deruxtecan (Enhertu)",
+        "factor": 1.0,
+        "notes": "Interrupt until resolved to NCI-CTC grade 2 or less, then maintain dose."
+      },
+      {
+        "condition": "Haematological: neutrophils grade 4 (<0.5 x10⁹/L) or febrile neutropenia",
+        "drug_name": "Trastuzumab deruxtecan (Enhertu)",
+        "factor": 1.0,
+        "notes": "Interrupt until resolved to NCI-CTC grade 2 or less, then reduce dose by one level."
+      },
+      {
+        "condition": "Haematological: platelets grade 3 (25-50 x10⁹/L), resolved within 7 days",
+        "drug_name": "Trastuzumab deruxtecan (Enhertu)",
+        "factor": 1.0,
+        "notes": "Delay until resolved to grade 1 or below; if resolved in 7 days maintain dose."
+      },
+      {
+        "condition": "Haematological: platelets grade 3, resolution takes more than 7 days",
+        "drug_name": "Trastuzumab deruxtecan (Enhertu)",
+        "factor": 1.0,
+        "notes": "Reduce dose by one level."
+      },
+      {
+        "condition": "Haematological: platelets grade 4 (<25 x10⁹/L)",
+        "drug_name": "Trastuzumab deruxtecan (Enhertu)",
+        "factor": 1.0,
+        "notes": "Delay until resolved to grade 1 or below, then reduce dose by one level."
+      },
+      {
+        "condition": "ILD/pneumonitis grade 1 (asymptomatic), resolved within 28 days",
+        "drug_name": "Trastuzumab deruxtecan (Enhertu)",
+        "factor": 1.0,
+        "notes": "Interrupt treatment until resolved to grade 0, then maintain dose. Consider corticosteroids (prednisolone 0.5 mg/kg or equivalent)."
+      },
+      {
+        "condition": "ILD/pneumonitis grade 1 (asymptomatic), resolved after more than 28 days",
+        "drug_name": "Trastuzumab deruxtecan (Enhertu)",
+        "factor": 1.0,
+        "notes": "Interrupt treatment until resolved to grade 0, then reduce dose by one level."
+      },
+      {
+        "condition": "ILD/pneumonitis grade 2 or greater (symptomatic)",
+        "drug_name": "Trastuzumab deruxtecan (Enhertu)",
+        "factor": 0.0,
+        "notes": "Permanently discontinue treatment. Promptly initiate corticosteroids (prednisolone 1 mg/kg or equivalent) for at least 14 days then taper over at least 4 weeks."
+      },
+      {
+        "condition": "Cardiac: LVEF 40-45% and absolute decrease from baseline 10-20%",
+        "drug_name": "Trastuzumab deruxtecan (Enhertu)",
+        "factor": 1.0,
+        "notes": "Interrupt treatment; repeat LVEF within 3 weeks. If LVEF recovers to within 10% of baseline, resume at same dose."
+      },
+      {
+        "condition": "Cardiac: LVEF less than 40% or absolute decrease from baseline greater than 20%",
+        "drug_name": "Trastuzumab deruxtecan (Enhertu)",
+        "factor": 0.0,
+        "notes": "Interrupt treatment; repeat LVEF within 3 weeks. Permanently discontinue if confirmed."
+      },
+      {
+        "condition": "Symptomatic congestive heart failure",
+        "drug_name": "Trastuzumab deruxtecan (Enhertu)",
+        "factor": 0.0,
+        "notes": "Permanently discontinue treatment."
+      },
+      {
+        "condition": "Hepatic impairment: total bilirubin greater than 1.5x ULN",
+        "drug_name": "Trastuzumab deruxtecan (Enhertu)",
+        "factor": 1.0,
+        "notes": "Insufficient data; monitor patient carefully and consider dose adjustment."
+      }
+    ],
+    "pre_medications": [
+      "Metoclopramide 10mg three times a day oral when required (take home)",
+      "Infusion reactions (when required): Chlorphenamine 10mg IV, Hydrocortisone 100mg IV, Paracetamol 1000mg oral"
+    ],
+    "special_warnings": [
+      "CRITICAL: Enhertu (trastuzumab deruxtecan) is NOT the same as Kadcyla (trastuzumab emtansine) or generic trastuzumab. Always use full INN name 'trastuzumab deruxtecan' when prescribing, preparing and administering.",
+      "Interstitial lung disease (ILD)/pneumonitis: fatal cases reported. All patients must immediately report cough, dyspnoea, fever or new/worsening respiratory symptoms. Monitor with respiratory assessment every cycle.",
+      "Baseline LVEF must be at least 50% before initiating treatment. Monitor LVEF every 3 months.",
+      "HER2 testing (IHC 3+ and/or HER2 amplification ratio ≥2.0) required before initiating.",
+      "Not to be used beyond first disease progression outside the CNS.",
+      "Dose should NOT be re-escalated after a dose reduction is made.",
+      "Irritant on extravasation.",
+      "Patients with history of ILD/pneumonitis may be at increased risk."
+    ],
+    "required_patient_fields": [
+      "her2_status",
+      "lvef",
+      "creatinine_clearance",
+      "liver_function_tests",
+      "fbc"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "EVEROLIMUS-EXEMESTANE",
+    "protocol_name": "Everolimus and Exemestane",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 28,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Everolimus",
+        "dose": 10.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "10mg once daily (days 1-28 inclusive). Take at same time every day with or without food, but NOT after a high fat meal. Do not crush or chew. Available as 2.5mg, 5mg and 10mg tablets. Continue as long as clinical benefit observed or until unacceptable toxicity."
+      },
+      {
+        "drug_name": "Exemestane",
+        "dose": 25.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "25mg once daily (days 1-28 inclusive). Take with or just after food or a meal. Available as 25mg tablets."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological: neutrophils 0.5-1 x10⁹/L, first occurrence",
+        "drug_name": "Everolimus",
+        "factor": 1.0,
+        "notes": "Interrupt until recovery to ≥1x10⁹/L then restart at full dose."
+      },
+      {
+        "condition": "Haematological: neutrophils 0.5-1 x10⁹/L, second occurrence",
+        "drug_name": "Everolimus",
+        "factor": 0.5,
+        "notes": "Interrupt until recovery to ≥1x10⁹/L then restart at 5mg once daily."
+      },
+      {
+        "condition": "Haematological: neutrophils <0.5 x10⁹/L or NCI-CTC grade 3 febrile neutropenia, first occurrence",
+        "drug_name": "Everolimus",
+        "factor": 0.5,
+        "notes": "Interrupt until fever resolved and neutrophils ≥1x10⁹/L, restart at 5mg once daily."
+      },
+      {
+        "condition": "Haematological: neutrophils <0.5 x10⁹/L or NCI-CTC grade 3 febrile neutropenia, second occurrence",
+        "drug_name": "Everolimus",
+        "factor": 0.0,
+        "notes": "Discontinue treatment permanently."
+      },
+      {
+        "condition": "NCI-CTC grade 4 febrile neutropenia",
+        "drug_name": "Everolimus",
+        "factor": 0.0,
+        "notes": "Discontinue treatment permanently."
+      },
+      {
+        "condition": "Haematological: platelets 50-75 x10⁹/L, first occurrence",
+        "drug_name": "Everolimus",
+        "factor": 1.0,
+        "notes": "Interrupt until recovery to ≥75x10⁹/L then restart at full dose."
+      },
+      {
+        "condition": "Haematological: platelets 50-75 x10⁹/L, second occurrence",
+        "drug_name": "Everolimus",
+        "factor": 0.5,
+        "notes": "Interrupt until recovery to ≥75x10⁹/L then restart at 5mg once daily."
+      },
+      {
+        "condition": "Haematological: platelets 25-50 x10⁹/L, first occurrence",
+        "drug_name": "Everolimus",
+        "factor": 0.5,
+        "notes": "Interrupt until recovery to ≥75x10⁹/L then restart at 5mg once daily."
+      },
+      {
+        "condition": "Haematological: platelets 25-50 x10⁹/L, second occurrence",
+        "drug_name": "Everolimus",
+        "factor": 0.0,
+        "notes": "Discontinue treatment permanently."
+      },
+      {
+        "condition": "Haematological: platelets less than 25 x10⁹/L",
+        "drug_name": "Everolimus",
+        "factor": 0.0,
+        "notes": "Discontinue treatment permanently."
+      },
+      {
+        "condition": "Mucositis NCI-CTC grade 2",
+        "drug_name": "Everolimus",
+        "factor": 1.0,
+        "notes": "Continue without dose adjustment or interrupt until resolved to grade 1 or below then re-challenge at same dose."
+      },
+      {
+        "condition": "Mucositis NCI-CTC grade 3 or recurrence of grade 2",
+        "drug_name": "Everolimus",
+        "factor": 0.5,
+        "notes": "Interrupt until resolved to grade 1 or below then restart at 5mg once daily."
+      },
+      {
+        "condition": "Mucositis NCI-CTC grade 4 or recurrence of grade 3",
+        "drug_name": "Everolimus",
+        "factor": 0.0,
+        "notes": "Discontinue everolimus."
+      },
+      {
+        "condition": "Non-infectious pneumonitis NCI-CTC grade 1",
+        "drug_name": "Everolimus",
+        "factor": 1.0,
+        "notes": "Continue without dose adjustment."
+      },
+      {
+        "condition": "Non-infectious pneumonitis NCI-CTC grade 2",
+        "drug_name": "Everolimus",
+        "factor": 0.5,
+        "notes": "Interrupt therapy. Consider corticosteroids (prednisolone 20mg daily for 10-14 days). Restart at 5mg once daily when symptoms resolved."
+      },
+      {
+        "condition": "Non-infectious pneumonitis NCI-CTC grade 3",
+        "drug_name": "Everolimus",
+        "factor": 0.5,
+        "notes": "Interrupt therapy. Prescribe corticosteroids (prednisolone 40mg as indicated). Restart at 5mg daily once resolved or discontinue as appropriate."
+      },
+      {
+        "condition": "Non-infectious pneumonitis NCI-CTC grade 4",
+        "drug_name": "Everolimus",
+        "factor": 0.0,
+        "notes": "Discontinue everolimus."
+      },
+      {
+        "condition": "All other non-haematological NCI-CTC grade 3 or above toxicities",
+        "drug_name": "Everolimus",
+        "factor": 0.5,
+        "notes": "Delay treatment until resolved to grade 1 or below. Reduce to 5mg once daily or discontinue as appropriate."
+      },
+      {
+        "condition": "Hepatic impairment: Child-Pugh Class A",
+        "drug_name": "Everolimus",
+        "factor": 0.75,
+        "notes": "Reduce to 7.5mg once daily."
+      },
+      {
+        "condition": "Hepatic impairment: Child-Pugh Class B",
+        "drug_name": "Everolimus",
+        "factor": 0.5,
+        "notes": "Reduce to 5mg once daily."
+      },
+      {
+        "condition": "Hepatic impairment: Child-Pugh Class C",
+        "drug_name": "Everolimus",
+        "factor": 0.25,
+        "notes": "If benefit-risk favourable, maximum 2.5mg once daily."
+      },
+      {
+        "condition": "Hyperglycaemia: fasting glucose 14-27.8 mmol/L or triglycerides 5.8-11.4 mmol/L",
+        "drug_name": "Everolimus",
+        "factor": 1.0,
+        "notes": "Interrupt everolimus until resolved, then restart at 5mg once daily."
+      },
+      {
+        "condition": "Hyperglycaemia: fasting glucose >27.8 mmol/L or triglycerides >11.4 mmol/L",
+        "drug_name": "Everolimus",
+        "factor": 0.0,
+        "notes": "Discontinue everolimus."
+      }
+    ],
+    "pre_medications": [
+      "Mouthcare for prophylaxis or treatment of mucositis per local guidelines",
+      "Gastric protection with proton pump inhibitor or H2 antagonist in high-risk patients"
+    ],
+    "special_warnings": [
+      "Stomatitis/mucositis is a common and significant toxicity. Monitor closely and initiate mouthcare per local guidelines.",
+      "Non-infectious pneumonitis reported in ~12% of patients. Advise patients to report respiratory symptoms (hypoxia, pleural effusion, cough, dyspnoea) promptly.",
+      "Everolimus has immunosuppressant properties and may increase risk of bacterial, fungal, viral or protozoal infections. Pre-existing infections must resolve before starting. Screen for hepatitis B and C; monitor for reactivation.",
+      "Monitor blood glucose and lipids at baseline and during treatment. Optimise glycaemic control before starting in diabetic patients.",
+      "Everolimus interacts with many other agents. Always check for drug interactions before prescribing.",
+      "Must be prescribed under supervision of an oncologist. Follow National Patient Safety Alert on oral chemotherapy (NPSA/2008/RRR001).",
+      "Monitor FBC, U&Es and LFTs every 4 weeks. Blood glucose at baseline and after 4 weeks then every 4-8 weeks.",
+      "In patients with osteoporosis or at risk, consider bone densitometry before starting exemestane.",
+      "Hepatitis serology at baseline. Respiratory assessment at baseline."
+    ],
+    "required_patient_fields": [
+      "liver_function_tests",
+      "creatinine_clearance",
+      "fbc",
+      "blood_glucose",
+      "lipids"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "EXEMESTANE-PALBOCICLIB",
+    "protocol_name": "Exemestane-Palbociclib",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 28,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Exemestane",
+        "dose": 25.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "25mg per day, days 1-28 inclusive. Best taken after food. Available as 25mg tablets."
+      },
+      {
+        "drug_name": "Palbociclib",
+        "dose": 125.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "125mg per day, days 1-21 inclusive (followed by 7 days off). Available as 125mg, 100mg and 75mg capsules. Take with food. Swallow whole, do not chew. If patient vomits or misses a dose, do not take an additional dose; take next prescribed dose at usual time. Treatment breaks up to 6 weeks allowed for toxicity."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological NCI-CTC grade 1 or 2",
+        "drug_name": "Palbociclib",
+        "factor": 1.0,
+        "notes": "No change."
+      },
+      {
+        "condition": "Haematological NCI-CTC grade 3: day 1 of cycle",
+        "drug_name": "Palbociclib",
+        "factor": 1.0,
+        "notes": "Delay one week. When recovered to grade 2 or below restart at same dose. On day 14 of first 2 cycles continue current dose; repeat FBC on day 21. Consider dose reduction if recovery takes ≥7 days or recurrent grade 3 neutropenia."
+      },
+      {
+        "condition": "Haematological NCI-CTC grade 3 with fever",
+        "drug_name": "Palbociclib",
+        "factor": 1.0,
+        "notes": "Delay until recovery to grade 2 or below. Restart at next lower dose level (100mg then 75mg)."
+      },
+      {
+        "condition": "Haematological NCI-CTC grade 4",
+        "drug_name": "Palbociclib",
+        "factor": 1.0,
+        "notes": "Delay until recovery to grade 2 or below. Restart at next lower dose level."
+      },
+      {
+        "condition": "Non-haematological NCI-CTC grade 3 or 4",
+        "drug_name": "Palbociclib",
+        "factor": 1.0,
+        "notes": "Delay until recovery to grade 2 or below. Restart at next lower dose level."
+      },
+      {
+        "condition": "Dose level -1",
+        "drug_name": "Palbociclib",
+        "factor": 0.8,
+        "notes": "Reduce to 100mg per day."
+      },
+      {
+        "condition": "Dose level -2",
+        "drug_name": "Palbociclib",
+        "factor": 0.6,
+        "notes": "Reduce to 75mg per day. If 75mg not tolerated, discontinue."
+      },
+      {
+        "condition": "Moderate to severe hepatic impairment",
+        "drug_name": "Palbociclib",
+        "factor": 1.0,
+        "notes": "Insufficient data for moderate/severe hepatic impairment (bilirubin >1.5xULN and any AST). Administer with careful consideration of potential benefits and risks."
+      },
+      {
+        "condition": "Severe renal impairment: CrCl less than 30 ml/min",
+        "drug_name": "Palbociclib",
+        "factor": 1.0,
+        "notes": "Insufficient data; administer with caution and close monitoring."
+      }
+    ],
+    "pre_medications": [],
+    "special_warnings": [
+      "CDK4/6 inhibitor: hepatotoxicity monitoring required. Monitor LFTs at baseline, day 1 of each cycle, and day 14 of first two cycles.",
+      "Neutropenia is the most frequently reported adverse effect (median onset 15 days, 28 days for grade 3-4). Monitor FBC regularly.",
+      "Palbociclib interacts with many other agents. Always check for drug interactions.",
+      "Must be prescribed under supervision of a consultant oncologist. Follow National Patient Safety Alert on oral chemotherapy (NPSA/2008/RRR001).",
+      "Ovarian ablation or suppression with LHRH agonist is mandatory in pre/peri-menopausal patients.",
+      "Treatment breaks up to 6 weeks allowed for toxicities to settle.",
+      "Infections were reported more frequently with palbociclib combination; warn patients to report fever promptly."
+    ],
+    "required_patient_fields": [
+      "liver_function_tests",
+      "creatinine_clearance",
+      "fbc"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "EXEMESTANE-RIBOCICLIB",
+    "protocol_name": "Exemestane-Ribociclib",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 28,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Exemestane",
+        "dose": 25.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "25mg per day, days 1-28 inclusive. Available as 25mg tablets."
+      },
+      {
+        "drug_name": "Ribociclib",
+        "dose": 600.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "600mg per day, days 1-21 inclusive (followed by 7 days off). Available as 200mg tablets. Take with or without food. If patient vomits or misses a dose, do not take an additional dose. Discontinue if 200mg dose not tolerated. Treatment breaks up to 6 weeks allowed for toxicity."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological NCI-CTC grade 1 or 2",
+        "drug_name": "Ribociclib",
+        "factor": 1.0,
+        "notes": "No change."
+      },
+      {
+        "condition": "Haematological NCI-CTC grade 3: day 1 of cycle",
+        "drug_name": "Ribociclib",
+        "factor": 1.0,
+        "notes": "Delay one week. When recovered to grade 2 or below restart at same dose. Day 14 of first 2 cycles continue current dose; repeat FBC on day 21. Consider dose reduction if recovery takes ≥7 days or recurrent grade 3."
+      },
+      {
+        "condition": "Haematological NCI-CTC grade 3 with fever",
+        "drug_name": "Ribociclib",
+        "factor": 1.0,
+        "notes": "Delay until recovery to grade 2 or below. Restart at next lower dose level (400mg then 200mg)."
+      },
+      {
+        "condition": "Haematological NCI-CTC grade 4",
+        "drug_name": "Ribociclib",
+        "factor": 1.0,
+        "notes": "Delay until recovery to grade 2 or below. Restart at next lower dose level."
+      },
+      {
+        "condition": "Dose level -1",
+        "drug_name": "Ribociclib",
+        "factor": 0.67,
+        "notes": "Reduce to 400mg per day."
+      },
+      {
+        "condition": "Dose level -2",
+        "drug_name": "Ribociclib",
+        "factor": 0.33,
+        "notes": "Reduce to 200mg per day. Discontinue if 200mg not tolerated."
+      },
+      {
+        "condition": "Hepatic impairment NCI-CTC grade 3",
+        "drug_name": "Ribociclib",
+        "factor": 1.0,
+        "notes": "Delay until recovery to grade 2 or below, then resume at same dose level. If grade 2 recurs resume at lower dose level."
+      },
+      {
+        "condition": "Hepatic impairment NCI-CTC grade 4",
+        "drug_name": "Ribociclib",
+        "factor": 1.0,
+        "notes": "Interrupt until recovery to grade 2 or below then resume at next lowest dose level. Discontinue if NCI-CTC toxicity recurs."
+      },
+      {
+        "condition": "ALT/AST >3xULN with total bilirubin >2xULN irrespective of baseline grade",
+        "drug_name": "Ribociclib",
+        "factor": 0.0,
+        "notes": "Discontinue ribociclib permanently."
+      },
+      {
+        "condition": "Non-haematological NCI-CTC grade 1 or 2 (cardiac/other)",
+        "drug_name": "Ribociclib",
+        "factor": 1.0,
+        "notes": "No dose adjustment required. Initiate appropriate medical therapy and monitor."
+      },
+      {
+        "condition": "Non-haematological NCI-CTC grade 3 (other toxicities)",
+        "drug_name": "Ribociclib",
+        "factor": 1.0,
+        "notes": "Dose interruption until recovery to grade 1 or below, then resume at same dose level. If grade 3 recurs, resume at next lower dose level."
+      },
+      {
+        "condition": "Non-haematological NCI-CTC grade 4",
+        "drug_name": "Ribociclib",
+        "factor": 0.0,
+        "notes": "Discontinue ribociclib."
+      },
+      {
+        "condition": "QTcF greater than 480 msec",
+        "drug_name": "Ribociclib",
+        "factor": 1.0,
+        "notes": "Interrupt dose. If QTcF resolves to <481 msec, resume at same dose level. If QTcF ≥481 msec recurs, interrupt until <481 msec then resume at next lower dose level."
+      },
+      {
+        "condition": "QTcF greater than 500 msec on at least 2 separate ECGs",
+        "drug_name": "Ribociclib",
+        "factor": 1.0,
+        "notes": "Interrupt ribociclib until QTcF <481 msec then resume at next lower dose level."
+      },
+      {
+        "condition": "QTcF >500 msec or >60 msec change from baseline with torsade de pointes or polymorphic VT or serious arrhythmia symptoms",
+        "drug_name": "Ribociclib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue ribociclib."
+      },
+      {
+        "condition": "Severe renal impairment: CrCl less than 30 ml/min",
+        "drug_name": "Ribociclib",
+        "factor": 1.0,
+        "notes": "Insufficient data; administer with caution and close monitoring."
+      }
+    ],
+    "pre_medications": [],
+    "special_warnings": [
+      "CDK4/6 inhibitor: hepatotoxicity monitoring required. Monitor LFTs and FBC at baseline, day 1 of each cycle, and day 14 of first two cycles.",
+      "QTc prolongation monitoring critical for ribociclib. ECG required before initiating treatment, at approximately day 14 of cycle 1, and at start of cycle 2. More frequent ECG monitoring if QTcF prolongation occurs.",
+      "Ribociclib must not be started if baseline QTcF is ≥450 msec.",
+      "Neutropenia most frequently reported adverse effect. Monitor FBC regularly.",
+      "Ribociclib interacts with many other agents. Always check for drug interactions.",
+      "Must be prescribed under supervision of a consultant oncologist. Follow National Patient Safety Alert on oral chemotherapy (NPSA/2008/RRR001).",
+      "Ovarian ablation or suppression with LHRH agonist is mandatory in pre/peri-menopausal patients.",
+      "Treatment breaks up to 6 weeks allowed for toxicities to settle.",
+      "Cardiac abnormalities (QTc prolongation, arrhythmias) are a known risk. Cardiac monitoring mandatory."
+    ],
+    "required_patient_fields": [
+      "liver_function_tests",
+      "creatinine_clearance",
+      "fbc",
+      "ecg_qtc"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "FE100C",
+    "protocol_name": "Cyclophosphamide-Epirubicin (100)-Fluorouracil (FE100C)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 500.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus over 10 minutes. Dose banded per national dose bands (25mg/ml PM). 21-day cycle for 6 cycles."
+      },
+      {
+        "drug_name": "Epirubicin",
+        "dose": 100.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus over 10 minutes. Dose banded per national dose bands (2mg/ml PM). Maximum lifetime cumulative dose 900 mg/m². Vesicant."
+      },
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 500.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus over 10 minutes. Dose banded per national dose bands (20mg/ml PM). Neutral on extravasation."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological: counts below eligible levels on day 1 (neutrophils <1x10⁹/L or platelets <100x10⁹/L)",
+        "drug_name": "Epirubicin",
+        "factor": 0.75,
+        "notes": "Delay 7 days until eligible levels reached. On subsequent cycles if below levels on day 1, consider reducing epirubicin to 75% of original dose."
+      },
+      {
+        "condition": "Febrile neutropenia or treatment delay due to neutrophils <0.5x10⁹/L or platelets <50x10⁹/L for more than 7 days",
+        "drug_name": "Epirubicin",
+        "factor": 0.75,
+        "notes": "Then reduce to 75% of original dose."
+      },
+      {
+        "condition": "Recurrence of neutropenia/thrombocytopenia after 75% dose",
+        "drug_name": "Epirubicin",
+        "factor": 0.5,
+        "notes": "Further reduce to 50% of original dose or stop treatment."
+      },
+      {
+        "condition": "Kidney impairment: CrCl 10-20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose."
+      },
+      {
+        "condition": "Kidney impairment: CrCl less than 10 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose."
+      },
+      {
+        "condition": "Severe renal impairment",
+        "drug_name": "Epirubicin",
+        "factor": 0.75,
+        "notes": "Dose reduce in severe impairment only."
+      },
+      {
+        "condition": "Severe renal impairment",
+        "drug_name": "Fluorouracil",
+        "factor": 0.75,
+        "notes": "Consider dose reduction in severe renal impairment only."
+      },
+      {
+        "condition": "Liver impairment: bilirubin 24-51 umol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.5,
+        "notes": "Give 50% of original dose."
+      },
+      {
+        "condition": "Liver impairment: bilirubin 51-85 umol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.25,
+        "notes": "Give 25% of original dose."
+      },
+      {
+        "condition": "Liver impairment: bilirubin 85 umol/L or greater",
+        "drug_name": "Epirubicin",
+        "factor": 0.0,
+        "notes": "Contra-indicated."
+      },
+      {
+        "condition": "Liver impairment: AST 2-4xULN give 50% dose; AST >4xULN give 25% dose",
+        "drug_name": "Epirubicin",
+        "factor": 0.5,
+        "notes": "If AST 2-4xULN give 50%; if AST >4xULN give 25%."
+      },
+      {
+        "condition": "Liver impairment: bilirubin less than 85 umol/L and AST/ALT less than 180 units",
+        "drug_name": "Fluorouracil",
+        "factor": 1.0,
+        "notes": "Full dose."
+      },
+      {
+        "condition": "Liver impairment: bilirubin ≥85 umol/L or AST/ALT ≥180 units",
+        "drug_name": "Fluorouracil",
+        "factor": 0.0,
+        "notes": "Contra-indicated."
+      },
+      {
+        "condition": "Moderate hepatic impairment",
+        "drug_name": "Fluorouracil",
+        "factor": 0.67,
+        "notes": "Reduce initial dose by one third. May be increased if no toxicity."
+      },
+      {
+        "condition": "Severe hepatic impairment",
+        "drug_name": "Fluorouracil",
+        "factor": 0.5,
+        "notes": "Reduce initial dose by one half. May be increased if no toxicity."
+      },
+      {
+        "condition": "Cardiac failure",
+        "drug_name": "Epirubicin",
+        "factor": 0.0,
+        "notes": "Discontinue epirubicin if cardiac failure develops."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg oral or equivalent intravenous dose 15-30 minutes before chemotherapy",
+      "Ondansetron 8mg oral or intravenous 15-30 minutes before chemotherapy",
+      "Take home: Dexamethasone 4mg twice daily for 3 days oral starting day 2",
+      "Take home: Metoclopramide 10mg three times a day when required oral",
+      "Take home: Ondansetron 8mg twice daily for 3 days oral starting evening of day 1",
+      "Growth factor per local formulary (e.g. filgrastim 300mcg SC daily x5 days from day 5, or pegfilgrastim 6mg SC on day 2)"
+    ],
+    "special_warnings": [
+      "Epirubicin: maximum lifetime cumulative dose is 900 mg/m². Ensure adequate cardiac function before starting. Baseline LVEF should be measured, particularly in patients with history of cardiac problems or elderly.",
+      "DPD deficiency testing mandatory before initiating fluorouracil (cycle 1). Patients with complete or partial DPD deficiency are at increased risk of severe and fatal toxicity with fluorouracil.",
+      "Epirubicin is a vesicant; fluorouracil is an inflammitant; cyclophosphamide is neutral.",
+      "Indicate adjuvant/neo-adjuvant setting: always check with relevant consultant before delaying or reducing dose.",
+      "Growth factor support required per local formulary."
+    ],
+    "required_patient_fields": [
+      "lvef",
+      "creatinine_clearance",
+      "liver_function_tests",
+      "fbc",
+      "dpd_status"
+    ],
+    "auc_dosing": null
+  }
+]

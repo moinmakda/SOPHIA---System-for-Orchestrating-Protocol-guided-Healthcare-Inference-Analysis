@@ -1,0 +1,2815 @@
+[
+  {
+    "protocol_id": "belantamab-bortezomib-dexamethasone-weekly",
+    "protocol_code": "BEL-BORT-DEX",
+    "protocol_name": "Belantamab Mafodotin – Bortezomib - Dexamethasone",
+    "category": "myeloma",
+    "indication": "1 previous line of patients which contained lenalidomide and their condition is either refractory to lenalidomide or they cannot tolerate lenalidomide",
+    "version": "1",
+    "cycle_length_days": 28,
+    "total_cycles": null,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Belantamab mafodotin",
+        "dose": 2.5,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Day 1 of each 28 day cycle",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Cycles 1-8 given with bortezomib. From cycle 9 onwards belantamab monotherapy continues. Premeds mandatory on C1D1. Patient to drink 3 litres water per day.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Bortezomib",
+        "dose": 1.3,
+        "dose_unit": "mg/m²",
+        "route": "Subcutaneous",
+        "days": [
+          1,
+          8,
+          15,
+          22
+        ],
+        "frequency": "Weekly on days 1, 8, 15, 22 of cycles 1-8",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Subcutaneous injection. Cycles 1-8 only. VZV prophylaxis mandatory.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          8,
+          9,
+          15,
+          16,
+          22,
+          23
+        ],
+        "frequency": "Days 1,2,8,9,15,16,22,23 of each cycle",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Reduce to 10mg in patients over 75 years old. Take in the morning with or after food. Day 1 dose acts as premed — administer 60-180 minutes prior to belantamab infusion. Can be given as 20mg IV bolus if patient has not taken oral dose.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "timing": "60 minutes prior to belantamab mafodotin infusion on C1D1",
+        "indication": "Infusion-related reaction prophylaxis"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "60 minutes prior to belantamab mafodotin infusion",
+        "indication": "Infusion-related reaction prophylaxis / included in regimen dose"
+      },
+      {
+        "drug_name": "Paracetamol",
+        "dose": 1000,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "60 minutes prior to belantamab mafodotin infusion on C1D1",
+        "indication": "Infusion-related reaction prophylaxis"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          2,
+          8,
+          9,
+          15,
+          16,
+          22,
+          23
+        ],
+        "frequency": "Days 2,8,9,15,16,22,23 of each cycle",
+        "notes": "Reduce to 10mg in patients over 75 years. Dispense all days on day 1 of cycle."
+      },
+      {
+        "drug_name": "Aciclovir",
+        "dose": 400,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice a day for 28 days (VZV prophylaxis)",
+        "notes": "Anti-infective prophylaxis — VZV prophylaxis mandatory for bortezomib"
+      },
+      {
+        "drug_name": "Co-trimoxazole",
+        "dose": 960,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once a day on Monday, Wednesday and Friday only for 28 days",
+        "notes": "PCP prophylaxis. May be dispensed as 480mg twice a day on Mon/Wed/Fri."
+      },
+      {
+        "drug_name": "Allopurinol",
+        "dose": 300,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once a day for 7 days — cycle one only",
+        "notes": "TLS prophylaxis. First cycle only."
+      },
+      {
+        "drug_name": "Preservative-free artificial tears",
+        "dose": 1,
+        "dose_unit": "units",
+        "route": "Oral",
+        "frequency": "1 drop both eyes four times a day from first day of infusion until completion of treatment",
+        "notes": "Ocular protection. Supply 21 days."
+      },
+      {
+        "drug_name": "Gastric protection (PPI or H2 antagonist)",
+        "dose": null,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once daily",
+        "notes": "As per local formulary choice. For patients at high risk of GI ulceration."
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Three times a day when required",
+        "notes": "Antiemetic PRN"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils",
+        "condition": "ANC < 1.0 x10^9/L (belantamab cycle initiation)",
+        "affected_drugs": [
+          "Belantamab mafodotin"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "ANC must be ≥1.0x10^9/L to initiate new cycle of belantamab. Consider withholding and/or reducing dose to 1.9mg/kg. Consider G-CSF support. Seek consultant advice."
+      },
+      {
+        "parameter": "Haemoglobin",
+        "condition": "Haemoglobin < 80g/L",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Consider erythropoietin stimulating agents. Haemoglobin must be ≥80g/L to initiate new belantamab cycle."
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets < 50 x10^9/L (belantamab cycle initiation)",
+        "affected_drugs": [
+          "Belantamab mafodotin"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Platelets must be ≥50x10^9/L to initiate new belantamab cycle."
+      },
+      {
+        "parameter": "Thrombocytopenia — Belantamab",
+        "condition": "Grade 2-3 thrombocytopenia",
+        "affected_drugs": [
+          "Belantamab mafodotin"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Consider withholding belantamab and/or reducing dose to 1.9mg/kg. [VERIFIED: Belantamab mafodotin dose reduction to 1.9mg/kg is permitted per MHRA SmPC for ocular toxicity — this is antibody-drug conjugate specific]"
+      },
+      {
+        "parameter": "Thrombocytopenia — Belantamab",
+        "condition": "Grade 4 thrombocytopenia",
+        "affected_drugs": [
+          "Belantamab mafodotin"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Withhold belantamab until platelet count improves to Grade 3 or better. Consider resuming at reduced dose of 1.9mg/kg. [VERIFIED: Belantamab mafodotin dose reduction to 1.9mg/kg is permitted per MHRA SmPC for ocular toxicity — this is antibody-drug conjugate specific]"
+      },
+      {
+        "parameter": "Thrombocytopenia — Bortezomib",
+        "condition": "Platelets < 25 x10^9/L",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Consider treatment delay, dose reduction, or platelet transfusion. Seek consultant advice."
+      },
+      {
+        "parameter": "Neutropenia — Bortezomib",
+        "condition": "Neutrophils < 0.5 x10^9/L or febrile",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Consider treatment delay, dose reduction, or G-CSF support. Seek consultant advice."
+      },
+      {
+        "parameter": "Infusion-related reaction — Belantamab",
+        "condition": "Grade 2 infusion-related reaction",
+        "affected_drugs": [
+          "Belantamab mafodotin"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Interrupt infusion and provide supportive treatment. Once symptoms resolve, resume at lower infusion rate reduced by at least 50%. [VERIFIED: Belantamab mafodotin dose reduction to 1.9mg/kg is permitted per MHRA SmPC for ocular toxicity — this is antibody-drug conjugate specific]"
+      },
+      {
+        "parameter": "Infusion-related reaction — Belantamab",
+        "condition": "Grade 3 or 4 infusion-related reaction",
+        "affected_drugs": [
+          "Belantamab mafodotin"
+        ],
+        "action": "delay",
+        "factor": 0.0,
+        "notes": "Interrupt infusion and provide supportive treatment. If anaphylactic or life-threatening, permanently discontinue. Otherwise resume at lower infusion rate reduced by at least 50%. [VERIFIED: Belantamab mafodotin dose reduction to 1.9mg/kg is permitted per MHRA SmPC for ocular toxicity — this is antibody-drug conjugate specific]"
+      },
+      {
+        "parameter": "Hepatic impairment — Bortezomib",
+        "condition": "Bilirubin > 1.5xULN",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Initiate at 0.7mg/m². May escalate to 1mg/m² or reduce to 0.5mg/m² in subsequent cycles based on tolerability."
+      },
+      {
+        "parameter": "Renal impairment — Bortezomib",
+        "condition": "CrCl ≤ 20 ml/min",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Clinical decision required."
+      },
+      {
+        "parameter": "Renal impairment — Belantamab",
+        "condition": "Significant proteinuria — ACR > 50",
+        "affected_drugs": [
+          "Belantamab mafodotin"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Hold belantamab dose until ACR drops to 50 or below."
+      },
+      {
+        "parameter": "Ocular toxicity — Grade 1",
+        "condition": "Mild superficial keratopathy / BCVA decline 1 line on Snellen",
+        "affected_drugs": [
+          "Belantamab mafodotin"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Continue treatment at current dose."
+      },
+      {
+        "parameter": "Ocular toxicity — Grade 2 or 3",
+        "condition": "Moderate/severe keratopathy or BCVA decline ≥2 lines (Snellen not worse than 20/200)",
+        "affected_drugs": [
+          "Belantamab mafodotin"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Withhold until improvement to Grade 1 or better. Resume at reduced dose level 1 (1.9mg/kg). [VERIFIED: Belantamab mafodotin dose reduction to 1.9mg/kg is permitted per MHRA SmPC for ocular toxicity — this is antibody-drug conjugate specific]"
+      },
+      {
+        "parameter": "Ocular toxicity — Grade 4",
+        "condition": "Corneal epithelial defect or BCVA decline to Snellen >20/200",
+        "affected_drugs": [
+          "Belantamab mafodotin"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Withhold until Grade 1 or better. Resume at 1.9mg/kg if applicable. For worsening symptoms unresponsive to dose reductions, consider permanent discontinuation. [VERIFIED: Belantamab mafodotin dose reduction to 1.9mg/kg is permitted per MHRA SmPC for ocular toxicity — this is antibody-drug conjugate specific]"
+      },
+      {
+        "parameter": "Pneumonitis — Grade 2",
+        "condition": "Grade 2 pneumonitis",
+        "affected_drugs": [
+          "Belantamab mafodotin"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Continue treatment when toxicity resolves to Grade 0-1."
+      },
+      {
+        "parameter": "Pneumonitis — Grade 3-4",
+        "condition": "Grade 3 or 4 pneumonitis",
+        "affected_drugs": [
+          "Belantamab mafodotin"
+        ],
+        "action": "delay",
+        "factor": 0.0,
+        "notes": "Permanently discontinue. [VERIFIED: Belantamab mafodotin dose reduction to 1.9mg/kg is permitted per MHRA SmPC for ocular toxicity — this is antibody-drug conjugate specific]"
+      },
+      {
+        "parameter": "Peripheral neuropathy — Bortezomib",
+        "condition": "NCI-CTC Grade 1 without pain or loss of function",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Continue with full dose bortezomib."
+      },
+      {
+        "parameter": "Peripheral neuropathy — Bortezomib",
+        "condition": "NCI-CTC Grade 1 with pain or Grade 2",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Reduce bortezomib dose to 1mg/m²."
+      },
+      {
+        "parameter": "Peripheral neuropathy — Bortezomib",
+        "condition": "NCI-CTC Grade 2 with pain or Grade 3",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Discontinue until resolved to Grade 1 or less, then reinitiate at 0.7mg/m²."
+      },
+      {
+        "parameter": "Peripheral neuropathy — Bortezomib",
+        "condition": "NCI-CTC Grade 4 or severe autonomic neuropathy",
+        "affected_drugs": [
+          "Bortezomib"
+        ],
+        "action": "delay",
+        "factor": 0.0,
+        "notes": "Discontinue bortezomib permanently."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 50,
+      "notes": "To initiate a new cycle of belantamab mafodotin: ANC ≥1.0x10^9/L, Haemoglobin ≥80g/L, Platelets ≥50x10^9/L. Non-haematological toxicity should resolve to NCI-CTC grade 1 or baseline."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to day 1 of treatment",
+      "Calcium and magnesium levels at regular intervals throughout treatment",
+      "Immunoglobulins and paraprotein monthly",
+      "VTE risk assessment prior to starting treatment",
+      "Ophthalmology assessments every cycle before belantamab dosing for first 4 doses and based on clinic need after cycle 4",
+      "Regular monitoring of blood glucose due to dexamethasone use"
+    ],
+    "special_warnings": [
+      "Belantamab mafodotin: ocular toxicity (keratitis, blurred vision) — ophthalmology review mandatory every cycle for first 4 doses",
+      "Bortezomib: subcutaneous route preferred to reduce peripheral neuropathy risk",
+      "VZV prophylaxis is mandatory with bortezomib",
+      "Preserve-free artificial tears QDS from first day of infusion throughout treatment",
+      "This protocol may require funding approval",
+      "If a third dose reduction is necessary, treatment should be stopped",
+      "NPSA/2008/RRR001 must be followed for oral chemotherapy",
+      "Adequate hydration essential — potential for tumour lysis syndrome",
+      "Thromboprophylaxis required for patients with additional VTE risk factors"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "weight_kg": "Required for belantamab mafodotin dose calculation (mg/kg)",
+      "bsa_m2": "Required for bortezomib dose calculation (mg/m²)",
+      "vzv_prophylaxis_confirmed": "VZV prophylaxis (aciclovir 400mg BD) mandatory before bortezomib",
+      "ophthalmology_review": "Ophthalmology assessment required before each belantamab dose for first 4 cycles",
+      "pregnancy_status": "Confirm not pregnant / adequate contraception",
+      "vte_risk_assessment": "VTE risk assessment mandatory prior to treatment"
+    },
+    "disease_site": "Myeloma",
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Belantamab mafodotin",
+        "dose": 2.5,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Day 1 of each 28 day cycle",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Cycles 1-8 given with bortezomib. From cycle 9 onwards belantamab monotherapy continues. Premeds mandatory on C1D1. Patient to drink 3 litres water per day.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.5,
+        "notes": "Day 1 of each 28 day cycle | Cycles 1-8 given with bortezomib. From cycle 9 onwards belantamab monotherapy continues. Premeds mandatory on C1D1. Patient to drink 3 litres water per day."
+      },
+      {
+        "drug_name": "Bortezomib",
+        "dose": 1.3,
+        "dose_unit": "mg/m²",
+        "route": "Subcutaneous",
+        "days": [
+          1,
+          8,
+          15,
+          22
+        ],
+        "frequency": "Weekly on days 1, 8, 15, 22 of cycles 1-8",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Subcutaneous injection. Cycles 1-8 only. VZV prophylaxis mandatory.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "Weekly on days 1, 8, 15, 22 of cycles 1-8 | Subcutaneous injection. Cycles 1-8 only. VZV prophylaxis mandatory."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          8,
+          9,
+          15,
+          16,
+          22,
+          23
+        ],
+        "frequency": "Days 1,2,8,9,15,16,22,23 of each cycle",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Reduce to 10mg in patients over 75 years old. Take in the morning with or after food. Day 1 dose acts as premed — administer 60-180 minutes prior to belantamab infusion. Can be given as 20mg IV bolus if patient has not taken oral dose.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "Days 1,2,8,9,15,16,22,23 of each cycle | Reduce to 10mg in patients over 75 years old. Take in the morning with or after food. Day 1 dose acts as premed — administer 60-180 minutes prior to belantamab infusion. Can be given as 20mg IV bolus if patient has not taken oral dose."
+      }
+    ]
+  },
+  {
+    "protocol_id": "carfilzomib-dexamethasone-20",
+    "protocol_code": "CARF-DEX20",
+    "protocol_name": "Carfilzomib-Dexamethasone (20)",
+    "category": "myeloma",
+    "indication": "Carfilzomib in combination with dexamethasone is an option for treating multiple myeloma in adults if the patient has had one previous therapy which did not include bortezomib. Treatment intent – disease modification. WHO performance status 0, 1, 2.",
+    "version": "1",
+    "cycle_length_days": 28,
+    "total_cycles": 12,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Carfilzomib",
+        "dose": 20,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2
+        ],
+        "frequency": "Cycle 1 days 1 and 2 only (escalation dose)",
+        "duration_minutes": 30,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 100,
+        "max_dose": 44,
+        "max_dose_unit": "mg",
+        "special_instructions": "Cycle 1 days 1-2 only: 20mg/m² (max 44mg). Dose escalation to 56mg/m² from day 8 cycle 1 onwards if tolerated. Dose capped at 2.2m². Dose banded per nationally agreed 2mg/ml bands.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Carfilzomib",
+        "dose": 56,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          8,
+          9,
+          15,
+          16
+        ],
+        "frequency": "Days 1,2,8,9,15,16 of cycles 2-12; days 8,9,15,16 of cycle 1",
+        "duration_minutes": 30,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 100,
+        "max_dose": 123,
+        "max_dose_unit": "mg",
+        "special_instructions": "Normal dose 56mg/m² (max 123mg). Dose level reductions: 1st 45mg/m², 2nd 36mg/m², 3rd 27mg/m². Dexamethasone must be administered prior to carfilzomib.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          8,
+          9,
+          15,
+          16,
+          22,
+          23
+        ],
+        "frequency": "Days 1,2,8,9,15,16,22,23 of each cycle",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Administer at least 30 minutes and up to 4 hours prior to carfilzomib infusion on carfilzomib days. Take in the morning with or after food. Dose level reductions: starting 20mg, level 1 10mg. If toxicity recovery prolonged beyond 14 days, decrease by one dose level.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "At least 30 minutes and up to 4 hours prior to carfilzomib infusion",
+        "indication": "Reduces incidence and severity of infusion-related reactions — part of regimen dose"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9%",
+        "dose": 500,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Pre-hydration before carfilzomib infusion over 30 minutes",
+        "indication": "Hydration / renal protection"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9%",
+        "dose": 500,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Post-hydration after carfilzomib infusion over 30 minutes",
+        "indication": "Hydration / renal protection"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          22,
+          23
+        ],
+        "frequency": "Days 22 and 23 of each cycle — dispensed on day 1",
+        "notes": "Take with or after food, once a day in the morning."
+      },
+      {
+        "drug_name": "Co-trimoxazole",
+        "dose": 960,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once a day on Monday, Wednesday and Friday for 28 days",
+        "notes": "PCP prophylaxis. May be dispensed as 480mg twice a day on Mon/Wed/Fri."
+      },
+      {
+        "drug_name": "Aciclovir",
+        "dose": 400,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice a day for 28 days",
+        "notes": "Anti-infective prophylaxis."
+      },
+      {
+        "drug_name": "Allopurinol",
+        "dose": 300,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once a day for 7 days — first cycle only",
+        "notes": "TLS prophylaxis."
+      },
+      {
+        "drug_name": "Gastric protection (PPI or H2 antagonist)",
+        "dose": null,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once daily as per local formulary",
+        "notes": "For patients at high risk of GI ulceration."
+      },
+      {
+        "drug_name": "Fluconazole",
+        "dose": 50,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once a day",
+        "notes": "Anti-fungal prophylaxis."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils — mid-cycle",
+        "condition": "Neutrophils < 0.5x10^9/L during cycle",
+        "affected_drugs": [
+          "Carfilzomib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold dose until neutrophils recover to ≥0.5x10^9/L. 1st occurrence: restart at current dose level. 2nd occurrence: restart and consider 1 dose level reduction."
+      },
+      {
+        "parameter": "Platelets — mid-cycle",
+        "condition": "Platelets < 10x10^9/L during cycle",
+        "affected_drugs": [
+          "Carfilzomib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold dose until platelets ≥10x10^9/L. 1st occurrence: continue at current dose. 2nd occurrence: consider 1 dose level reduction."
+      },
+      {
+        "parameter": "Renal impairment — Carfilzomib",
+        "condition": "Creatinine ≥2x baseline, CrCl <15ml/min, or CrCl decreased ≤50% baseline",
+        "affected_drugs": [
+          "Carfilzomib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold dose. Restart carfilzomib when renal function recovered to within 25% of baseline (consider 1 dose level reduction)."
+      },
+      {
+        "parameter": "Non-haematological toxicity — Grade 3/4",
+        "condition": "Grade 3 or 4 non-haematological toxicity",
+        "affected_drugs": [
+          "Carfilzomib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Stop until toxicity resolved/returned to baseline. Consider restarting at 1 dose level reduction. Dose levels: 56mg/m², 45mg/m², 36mg/m², 27mg/m²."
+      },
+      {
+        "parameter": "Dexamethasone — Dyspepsia",
+        "condition": "Dyspepsia Grade 1-2",
+        "affected_drugs": [
+          "Dexamethasone"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Maintain dose and treat with H2 antagonist or PPI. Decrease by one dose level if symptoms persist."
+      },
+      {
+        "parameter": "Dexamethasone — Dyspepsia",
+        "condition": "Dyspepsia Grade 3 or above",
+        "affected_drugs": [
+          "Dexamethasone"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Interrupt dose until symptoms controlled. Add H2 blocker or PPI. Decrease one dose level when restarted."
+      },
+      {
+        "parameter": "Dexamethasone — Oedema",
+        "condition": "Oedema Grade 3 or above",
+        "affected_drugs": [
+          "Dexamethasone"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Use diuretics as needed and decrease dose by one level."
+      },
+      {
+        "parameter": "Dexamethasone — Hyperglycaemia",
+        "condition": "Hyperglycaemia Grade 3 or above",
+        "affected_drugs": [
+          "Dexamethasone"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Decrease dose by one dose level. Treat with insulin or oral hypoglycaemic agents as needed."
+      },
+      {
+        "parameter": "Dexamethasone — Acute pancreatitis",
+        "condition": "Acute pancreatitis (any grade)",
+        "affected_drugs": [
+          "Dexamethasone"
+        ],
+        "action": "delay",
+        "factor": 0.0,
+        "notes": "Discontinue dexamethasone from treatment regimen."
+      },
+      {
+        "parameter": "Toxicity recovery prolonged",
+        "condition": "Recovery from toxicities prolonged beyond 14 days",
+        "affected_drugs": [
+          "Dexamethasone"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Decrease dexamethasone dose by one dose level."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 50,
+      "notes": "Prior to starting new cycle: neutrophils ≥1x10^9/L, platelets ≥50x10^9/L, non-haematological toxicity should resolve to NCI-CTC grade 1 or below or baseline."
+    },
+    "monitoring_requirements": [
+      "FBC, LFT and U&Es prior to day 1 of treatment",
+      "Regular monitoring of blood glucose — good practice due to dexamethasone"
+    ],
+    "special_warnings": [
+      "Carfilzomib infusion-related reactions can occur immediately or up to 24 hours after administration — dexamethasone must be given prior to reduce incidence",
+      "Pre- and post-hydration with sodium chloride 0.9% 500ml over 30 minutes required",
+      "If a third dose reduction is necessary treatment should be stopped",
+      "Carfilzomib is neutral for extravasation",
+      "Dose banded in accordance with nationally agreed dose bands (2mg/ml); dose capped at 2.2m²",
+      "12 cycles will be set in ARIA system"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "bsa_m2": "Required for carfilzomib dose calculation (mg/m²); dose capped at 2.2m²",
+      "who_performance_status": "Must be 0, 1, or 2",
+      "previous_bortezomib": "Must confirm no previous bortezomib therapy for this indication"
+    },
+    "disease_site": "Myeloma",
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Carfilzomib",
+        "dose": 20,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2
+        ],
+        "frequency": "Cycle 1 days 1 and 2 only (escalation dose)",
+        "duration_minutes": 30,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 100,
+        "max_dose": 44,
+        "max_dose_unit": "mg",
+        "special_instructions": "Cycle 1 days 1-2 only: 20mg/m² (max 44mg). Dose escalation to 56mg/m² from day 8 cycle 1 onwards if tolerated. Dose capped at 2.2m². Dose banded per nationally agreed 2mg/ml bands.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.5,
+        "notes": "Cycle 1 days 1 and 2 only (escalation dose) | Cycle 1 days 1-2 only: 20mg/m² (max 44mg). Dose escalation to 56mg/m² from day 8 cycle 1 onwards if tolerated. Dose capped at 2.2m². Dose banded per nationally agreed 2mg/ml bands. | CYCLE 1 DAYS 1-2 ESCALATION DOSE (20mg/m²): two Carfilzomib entries exist — 20mg/m² test/escalation dose for cycle 1 days 1-2 only, and 56mg/m² full dose for subsequent days. Both entries are intentional; the 20mg/m² entry is a required lower first-dose to assess tolerability."
+      },
+      {
+        "drug_name": "Carfilzomib",
+        "dose": 56,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          8,
+          9,
+          15,
+          16
+        ],
+        "frequency": "Days 1,2,8,9,15,16 of cycles 2-12; days 8,9,15,16 of cycle 1",
+        "duration_minutes": 30,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 100,
+        "max_dose": 123,
+        "max_dose_unit": "mg",
+        "special_instructions": "Normal dose 56mg/m² (max 123mg). Dose level reductions: 1st 45mg/m², 2nd 36mg/m², 3rd 27mg/m². Dexamethasone must be administered prior to carfilzomib.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.5,
+        "notes": "Days 1,2,8,9,15,16 of cycles 2-12; days 8,9,15,16 of cycle 1 | Normal dose 56mg/m² (max 123mg). Dose level reductions: 1st 45mg/m², 2nd 36mg/m², 3rd 27mg/m². Dexamethasone must be administered prior to carfilzomib. | FULL DOSE (56mg/m²): two Carfilzomib entries exist — 20mg/m² test/escalation dose for cycle 1 days 1-2 only, and this 56mg/m² full dose for day 8 cycle 1 onwards. Both entries are intentional; the 20mg/m² entry is a required lower first-dose to assess tolerability."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          8,
+          9,
+          15,
+          16,
+          22,
+          23
+        ],
+        "frequency": "Days 1,2,8,9,15,16,22,23 of each cycle",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Administer at least 30 minutes and up to 4 hours prior to carfilzomib infusion on carfilzomib days. Take in the morning with or after food. Dose level reductions: starting 20mg, level 1 10mg. If toxicity recovery prolonged beyond 14 days, decrease by one dose level.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "Days 1,2,8,9,15,16,22,23 of each cycle | Administer at least 30 minutes and up to 4 hours prior to carfilzomib infusion on carfilzomib days. Take in the morning with or after food. Dose level reductions: starting 20mg, level 1 10mg. If toxicity recovery prolonged beyond 14 days, decrease by one dose level."
+      }
+    ]
+  },
+  {
+    "protocol_id": "carfilzomib-lenalidomide-dexamethasone-40",
+    "protocol_code": "KRD",
+    "protocol_name": "Carfilzomib-Lenalidomide-Dexamethasone",
+    "category": "myeloma",
+    "indication": "Carfilzomib in combination with lenalidomide and dexamethasone is an option for treating multiple myeloma in adults if the patient has had one previous therapy which included bortezomib. Treatment intent – disease modification. WHO performance status 0, 1, 2.",
+    "version": "1",
+    "cycle_length_days": 28,
+    "total_cycles": 18,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Carfilzomib",
+        "dose": 20,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2
+        ],
+        "frequency": "Cycle 1 days 1 and 2 only (escalation dose)",
+        "duration_minutes": 10,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 100,
+        "max_dose": 44,
+        "max_dose_unit": "mg",
+        "special_instructions": "Cycle 1 days 1-2 only: 20mg/m² (max 44mg) over 10 minutes. Escalate to 27mg/m² from day 8 cycle 1 onwards. Dose capped at 2.2m². Carfilzomib stops after 18 cycles.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Carfilzomib",
+        "dose": 27,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          8,
+          9,
+          15,
+          16
+        ],
+        "frequency": "Days 1,2,8,9,15,16 of cycles 2-18; days 8,9,15,16 of cycle 1",
+        "duration_minutes": 10,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 100,
+        "max_dose": 60,
+        "max_dose_unit": "mg",
+        "special_instructions": "27mg/m² (max 60mg) over 10 minutes. Cycles 13-18: days 1,2,15,16 only. Dose level reductions: 27mg/m², 20mg/m², 15mg/m². Patients observed for 1 hour post infusion.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Lenalidomide",
+        "dose": 25,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "frequency": "Days 1-21 of each cycle (cycles 1-18 and continues as maintenance from cycle 19 with lenalidomide-dexamethasone)",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Oral chemotherapy. Pregnancy Prevention Programme mandatory. Swallow whole with water. Dose reductions: 25mg, 15mg, 10mg, 5mg. Adjust for renal impairment.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          8,
+          9,
+          15,
+          16,
+          22,
+          23
+        ],
+        "frequency": "Days 1,2,8,9,15,16,22,23 of cycles 1-18; from cycle 19 dexamethasone 40mg on days 1,8,15,22",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Administer 30 mins to 4 hours prior to carfilzomib on carfilzomib days. Take in morning with or after food. Starting dose level 40mg (in context of cycles 1-18 this is 20mg per dose per the regimen table). Cycle 19 onwards: 40mg on days 1,8,15,22.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "At least 30 minutes and up to 4 hours prior to carfilzomib infusion",
+        "indication": "Reduces incidence and severity of carfilzomib infusion-related reactions — part of regimen"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9%",
+        "dose": 500,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Pre-hydration before carfilzomib — from cycle 2 onwards if necessary",
+        "indication": "Hydration / renal protection"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Lenalidomide",
+        "dose": 25,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "frequency": "Days 1-21 of each cycle",
+        "notes": "Pregnancy Prevention Programme mandatory. Oral chemotherapy. NPSA alert applies."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          2,
+          8,
+          9,
+          15,
+          16,
+          22,
+          23
+        ],
+        "frequency": "Non-carfilzomib days of each cycle",
+        "notes": "Dispensed on day 1 of cycle. Take in morning."
+      },
+      {
+        "drug_name": "Co-trimoxazole",
+        "dose": 960,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once a day on Monday, Wednesday and Friday for 28 days",
+        "notes": "PCP prophylaxis. Supply 42 days."
+      },
+      {
+        "drug_name": "Aciclovir",
+        "dose": 400,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice a day for 28 days",
+        "notes": "Anti-infective prophylaxis."
+      },
+      {
+        "drug_name": "Allopurinol",
+        "dose": 300,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once a day for 7 days — first cycle only",
+        "notes": "TLS prophylaxis."
+      },
+      {
+        "drug_name": "Thromboprophylaxis (LMWH)",
+        "dose": null,
+        "dose_unit": "units",
+        "route": "Subcutaneous",
+        "frequency": "As per local formulary choice",
+        "notes": "Mandatory DVT prophylaxis with lenalidomide. Aspirin may be considered after 6 cycles."
+      },
+      {
+        "drug_name": "Gastric protection (PPI or H2 antagonist)",
+        "dose": null,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once daily as per local formulary",
+        "notes": "For patients at high risk of GI ulceration."
+      },
+      {
+        "drug_name": "Fluconazole",
+        "dose": 50,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once a day",
+        "notes": "Anti-fungal prophylaxis."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils — Carfilzomib mid-cycle",
+        "condition": "Neutrophils < 0.5x10^9/L during cycle",
+        "affected_drugs": [
+          "Carfilzomib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until ≥0.5x10^9/L. 1st: restart at current dose. 2nd: consider 1 dose level reduction. Levels: 27mg/m², 20mg/m², 15mg/m²."
+      },
+      {
+        "parameter": "Platelets — Carfilzomib mid-cycle",
+        "condition": "Platelets < 10x10^9/L during cycle",
+        "affected_drugs": [
+          "Carfilzomib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until ≥10x10^9/L. 1st: continue at current dose. 2nd: consider 1 dose level reduction."
+      },
+      {
+        "parameter": "Neutrophils — Lenalidomide",
+        "condition": "Neutrophils < 1x10^9/L",
+        "affected_drugs": [
+          "Lenalidomide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "1st: consider G-CSF, delay until recovery, restart at full dose. 2nd: restart at 15mg. 3rd: restart at 10mg. Subsequent: restart at 5mg."
+      },
+      {
+        "parameter": "Platelets — Lenalidomide",
+        "condition": "Platelets < 50x10^9/L",
+        "affected_drugs": [
+          "Lenalidomide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "1st: delay until recovery, restart at 15mg. 2nd: restart at 10mg. 3rd: restart at 5mg. Dose levels: 25mg, 15mg, 10mg, 5mg."
+      },
+      {
+        "parameter": "Renal impairment — Lenalidomide",
+        "condition": "CrCl 30-50 ml/min",
+        "affected_drugs": [
+          "Lenalidomide"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Start at 10mg once a day. Can increase to 15mg after 2 cycles if no response."
+      },
+      {
+        "parameter": "Renal impairment — Lenalidomide",
+        "condition": "CrCl < 30 ml/min (not on dialysis)",
+        "affected_drugs": [
+          "Lenalidomide"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Start at 15mg on alternate days."
+      },
+      {
+        "parameter": "Renal impairment — Lenalidomide",
+        "condition": "CrCl < 30 ml/min on dialysis",
+        "affected_drugs": [
+          "Lenalidomide"
+        ],
+        "action": "delay",
+        "factor": 0.25,
+        "notes": "5mg once a day. On dialysis days administer following dialysis."
+      },
+      {
+        "parameter": "Renal impairment — Carfilzomib",
+        "condition": "Creatinine ≥2x baseline, CrCl <15ml/min, or CrCl ≤50% baseline",
+        "affected_drugs": [
+          "Carfilzomib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold. Restart when recovered to within 25% of baseline (consider 1 dose level reduction)."
+      },
+      {
+        "parameter": "VTE — Lenalidomide",
+        "condition": "Venous thrombosis or embolism NCI-CTC grade 3 or above",
+        "affected_drugs": [
+          "Lenalidomide"
+        ],
+        "action": "delay",
+        "factor": 0.0,
+        "notes": "Stop treatment and start full anticoagulation. May be reinstated at clinician's discretion once fully anticoagulated."
+      },
+      {
+        "parameter": "Dexamethasone — Dyspepsia Grade 1-2",
+        "condition": "Dyspepsia Grade 1-2",
+        "affected_drugs": [
+          "Dexamethasone"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Maintain dose and treat with H2 antagonist or PPI. Decrease by one dose level if symptoms persist."
+      },
+      {
+        "parameter": "Dexamethasone — Hyperglycaemia",
+        "condition": "Hyperglycaemia Grade 3 or above",
+        "affected_drugs": [
+          "Dexamethasone"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Decrease by one dose level. Treat with insulin or oral hypoglycaemic agents."
+      },
+      {
+        "parameter": "Dexamethasone — Acute pancreatitis",
+        "condition": "Acute pancreatitis",
+        "affected_drugs": [
+          "Dexamethasone"
+        ],
+        "action": "delay",
+        "factor": 0.0,
+        "notes": "Discontinue dexamethasone from treatment regimen."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 75,
+      "notes": "Prior to new cycle: neutrophils ≥1x10^9/L, platelets ≥75x10^9/L, non-haematological toxicity should resolve to NCI-CTC grade 1 or baseline. Carfilzomib stops after 18 cycles; lenalidomide-dexamethasone maintenance continues from cycle 19."
+    },
+    "monitoring_requirements": [
+      "FBC, LFT and U&Es prior to day 1 of treatment",
+      "Regular monitoring of blood glucose — good practice due to dexamethasone",
+      "VTE risk assessment prior to starting treatment — thromboprophylaxis mandatory",
+      "Consider monitoring serum immunoglobulin levels",
+      "Patients observed for 1 hour post carfilzomib infusion"
+    ],
+    "special_warnings": [
+      "Lenalidomide: Pregnancy Prevention Programme (PPP) mandatory — teratogenic risk as thalidomide analogue",
+      "Lenalidomide: negative pregnancy test required within 3 days prior to each cycle",
+      "Lenalidomide: DVT/PE prophylaxis mandatory — LMWH or aspirin depending on risk",
+      "Carfilzomib: infusion-related reactions — dexamethasone must be given prior",
+      "Patients observed for 1 hour post carfilzomib infusion",
+      "Carfilzomib: no information available on hepatic impairment dosing",
+      "Carfilzomib stops after 18 cycles; lenalidomide-dexamethasone maintenance from cycle 19 as separate regimen",
+      "Lenalidomide: all prescriptions must be accompanied by electronic prescription authorisation form (ePAF)",
+      "If a third dose reduction is necessary treatment should be stopped",
+      "Dose capped at 2.2m² for carfilzomib",
+      "Lenalidomide associated with increased risk of secondary malignancies",
+      "ORAL CHEMOTHERAPY — NPSA/2008/RRR001: Patient must be counselled and provided written information before starting. Prescriptions must be written on an approved oral chemotherapy prescription form. Dispensing must only be by a trained pharmacist. Patient must be provided with a chemotherapy alert card. Do not supply more than one cycle at a time without clinical review."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "bsa_m2": "Required for carfilzomib dose calculation; capped at 2.2m²",
+      "crcl_ml_min": "Required for lenalidomide renal dose adjustment",
+      "pregnancy_test_negative": "Negative pregnancy test required for all women of childbearing potential within 3 days prior to starting lenalidomide",
+      "pregnancy_prevention_programme": "Celgene/Lenalidomide Pregnancy Prevention Programme enrolment mandatory",
+      "who_performance_status": "Must be 0, 1, or 2",
+      "vte_risk_assessment": "VTE risk assessment mandatory"
+    },
+    "disease_site": "Myeloma",
+    "number_of_cycles": 18,
+    "drugs": [
+      {
+        "drug_name": "Carfilzomib",
+        "dose": 20,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2
+        ],
+        "frequency": "Cycle 1 days 1 and 2 only (escalation dose)",
+        "duration_minutes": 10,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 100,
+        "max_dose": 44,
+        "max_dose_unit": "mg",
+        "special_instructions": "Cycle 1 days 1-2 only: 20mg/m² (max 44mg) over 10 minutes. Escalate to 27mg/m² from day 8 cycle 1 onwards. Dose capped at 2.2m². Carfilzomib stops after 18 cycles.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.1667,
+        "notes": "Cycle 1 days 1 and 2 only (escalation dose) | Cycle 1 days 1-2 only: 20mg/m² (max 44mg) over 10 minutes. Escalate to 27mg/m² from day 8 cycle 1 onwards. Dose capped at 2.2m². Carfilzomib stops after 18 cycles. | CYCLE 1 DAYS 1-2 ESCALATION DOSE (20mg/m²): two Carfilzomib entries exist — 20mg/m² test/escalation dose for cycle 1 days 1-2 only, and 27mg/m² full dose for subsequent days. Both entries are intentional; the 20mg/m² entry is a required lower first-dose to assess tolerability."
+      },
+      {
+        "drug_name": "Carfilzomib",
+        "dose": 27,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          8,
+          9,
+          15,
+          16
+        ],
+        "frequency": "Days 1,2,8,9,15,16 of cycles 2-18; days 8,9,15,16 of cycle 1",
+        "duration_minutes": 10,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 100,
+        "max_dose": 60,
+        "max_dose_unit": "mg",
+        "special_instructions": "27mg/m² (max 60mg) over 10 minutes. Cycles 13-18: days 1,2,15,16 only. Dose level reductions: 27mg/m², 20mg/m², 15mg/m². Patients observed for 1 hour post infusion.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.1667,
+        "notes": "Days 1,2,8,9,15,16 of cycles 2-18; days 8,9,15,16 of cycle 1 | 27mg/m² (max 60mg) over 10 minutes. Cycles 13-18: days 1,2,15,16 only. Dose level reductions: 27mg/m², 20mg/m², 15mg/m². Patients observed for 1 hour post infusion. | FULL DOSE (27mg/m²): two Carfilzomib entries exist — 20mg/m² test/escalation dose for cycle 1 days 1-2 only, and this 27mg/m² full dose for day 8 cycle 1 onwards. Both entries are intentional; the 20mg/m² entry is a required lower first-dose to assess tolerability."
+      },
+      {
+        "drug_name": "Lenalidomide",
+        "dose": 25,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "frequency": "Days 1-21 of each cycle (cycles 1-18 and continues as maintenance from cycle 19 with lenalidomide-dexamethasone)",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Oral chemotherapy. Pregnancy Prevention Programme mandatory. Swallow whole with water. Dose reductions: 25mg, 15mg, 10mg, 5mg. Adjust for renal impairment.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "Days 1-21 of each cycle (cycles 1-18 and continues as maintenance from cycle 19 with lenalidomide-dexamethasone) | Oral chemotherapy. Pregnancy Prevention Programme mandatory. Swallow whole with water. Dose reductions: 25mg, 15mg, 10mg, 5mg. Adjust for renal impairment."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          8,
+          9,
+          15,
+          16,
+          22,
+          23
+        ],
+        "frequency": "Days 1,2,8,9,15,16,22,23 of cycles 1-18; from cycle 19 dexamethasone 40mg on days 1,8,15,22",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Administer 30 mins to 4 hours prior to carfilzomib on carfilzomib days. Take in morning with or after food. Starting dose level 40mg (in context of cycles 1-18 this is 20mg per dose per the regimen table). Cycle 19 onwards: 40mg on days 1,8,15,22.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "Days 1,2,8,9,15,16,22,23 of cycles 1-18; from cycle 19 dexamethasone 40mg on days 1,8,15,22 | Administer 30 mins to 4 hours prior to carfilzomib on carfilzomib days. Take in morning with or after food. Starting dose level 40mg (in context of cycles 1-18 this is 20mg per dose per the regimen table). Cycle 19 onwards: 40mg on days 1,8,15,22."
+      }
+    ]
+  },
+  {
+    "protocol_id": "carfilzomib-14day-dexamethasone-20",
+    "protocol_code": "CARF14-DEX20",
+    "protocol_name": "Carfilzomib (14 day)-Dexamethasone (20)",
+    "category": "myeloma",
+    "indication": "Carfilzomib in combination with dexamethasone is an option for treating multiple myeloma in adults; relapsed or progressing disease, if the patient has received 1 and only 1 prior line of treatment. Criteria: prior bortezomib permitted only if at least 6-month proteasome inhibitor treatment-free interval since last bortezomib dose, OR no prior bortezomib. WHO performance status 0, 1, 2.",
+    "version": "1",
+    "cycle_length_days": 42,
+    "total_cycles": 12,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Carfilzomib",
+        "dose": 56,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          15,
+          29
+        ],
+        "frequency": "Days 1, 15, 29 of each 42-day cycle",
+        "duration_minutes": 30,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 100,
+        "max_dose": 120,
+        "max_dose_unit": "mg",
+        "special_instructions": "56mg/m² (max 120mg, equates to 2.2m² dose capped). 42-day cycle. Dose level reductions: 56mg/m², 45mg/m², 36mg/m², 27mg/m². Dexamethasone must be given prior. Pre- and post-hydration required.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          15,
+          16,
+          29,
+          30
+        ],
+        "frequency": "Days 1,2,15,16,29,30 of each 42-day cycle",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Administer at least 30 minutes and up to 4 hours prior to carfilzomib on carfilzomib days. Take in morning with or after food. Dose level reductions: starting 20mg, level 1 10mg.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "At least 30 minutes and up to 4 hours prior to carfilzomib infusion",
+        "indication": "Reduces infusion-related reactions — part of regimen"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9%",
+        "dose": 500,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Pre-hydration before carfilzomib over 30 minutes",
+        "indication": "Hydration / renal protection"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9%",
+        "dose": 500,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Post-hydration after carfilzomib over 30 minutes",
+        "indication": "Hydration / renal protection"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          2,
+          16,
+          30
+        ],
+        "frequency": "Days 2, 16, 30 of each 42-day cycle",
+        "notes": "Take in morning with or after food."
+      },
+      {
+        "drug_name": "Co-trimoxazole",
+        "dose": 960,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once a day on Monday, Wednesday and Friday for 42 days",
+        "notes": "PCP prophylaxis. Supply 42 days."
+      },
+      {
+        "drug_name": "Aciclovir",
+        "dose": 400,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice a day for 42 days",
+        "notes": "Anti-infective / VZV prophylaxis."
+      },
+      {
+        "drug_name": "Allopurinol",
+        "dose": 300,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once a day for 7 days — first cycle only",
+        "notes": "TLS prophylaxis."
+      },
+      {
+        "drug_name": "Gastric protection (PPI or H2 antagonist)",
+        "dose": null,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once daily as per local formulary",
+        "notes": "For patients at high risk of GI ulceration."
+      },
+      {
+        "drug_name": "Fluconazole",
+        "dose": 50,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once a day",
+        "notes": "Anti-fungal prophylaxis."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils — mid-cycle",
+        "condition": "Neutrophils < 0.5x10^9/L during cycle",
+        "affected_drugs": [
+          "Carfilzomib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until ≥0.5x10^9/L. 1st: restart at current level. 2nd: consider 1 dose level reduction. Levels: 56mg/m², 45mg/m², 36mg/m², 27mg/m²."
+      },
+      {
+        "parameter": "Platelets — mid-cycle",
+        "condition": "Platelets < 10x10^9/L during cycle",
+        "affected_drugs": [
+          "Carfilzomib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until ≥10x10^9/L. 1st: continue at current dose. 2nd: consider 1 dose level reduction."
+      },
+      {
+        "parameter": "Renal impairment — Carfilzomib",
+        "condition": "Creatinine ≥2x baseline, CrCl <15ml/min, or CrCl ≤50% baseline",
+        "affected_drugs": [
+          "Carfilzomib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold. Restart when recovered to within 25% of baseline (consider 1 dose level reduction)."
+      },
+      {
+        "parameter": "Non-haematological toxicity — Grade 3/4",
+        "condition": "Grade 3 or 4 non-haematological toxicity",
+        "affected_drugs": [
+          "Carfilzomib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Stop until resolved/returned to baseline. Consider restarting at 1 dose level reduction."
+      },
+      {
+        "parameter": "Dexamethasone — Dyspepsia Grade 1-2",
+        "condition": "Dyspepsia Grade 1-2",
+        "affected_drugs": [
+          "Dexamethasone"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Maintain dose and treat with H2 antagonist or PPI. Decrease by one dose level if symptoms persist."
+      },
+      {
+        "parameter": "Dexamethasone — Oedema Grade 3+",
+        "condition": "Oedema Grade 3 or above",
+        "affected_drugs": [
+          "Dexamethasone"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Use diuretics as needed and decrease dose by one level."
+      },
+      {
+        "parameter": "Dexamethasone — Hyperglycaemia Grade 3+",
+        "condition": "Hyperglycaemia Grade 3 or above",
+        "affected_drugs": [
+          "Dexamethasone"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Decrease dose by one level. Treat with insulin or oral hypoglycaemic agents."
+      },
+      {
+        "parameter": "Dexamethasone — Acute pancreatitis",
+        "condition": "Acute pancreatitis",
+        "affected_drugs": [
+          "Dexamethasone"
+        ],
+        "action": "delay",
+        "factor": 0.0,
+        "notes": "Discontinue dexamethasone from regimen."
+      },
+      {
+        "parameter": "Toxicity recovery prolonged",
+        "condition": "Recovery prolonged beyond 14 days",
+        "affected_drugs": [
+          "Dexamethasone"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Decrease dexamethasone dose by one dose level."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 50,
+      "notes": "Prior to new cycle: neutrophils ≥1x10^9/L, platelets ≥50x10^9/L, non-haematological toxicity should resolve to NCI-CTC grade 1 or baseline. 42-day cycle. 12 cycles set in ARIA."
+    },
+    "monitoring_requirements": [
+      "FBC, LFT and U&Es prior to day 1 of treatment",
+      "Regular monitoring of blood glucose — good practice"
+    ],
+    "special_warnings": [
+      "42-day cycle (not 28-day) — carfilzomib given weekly on days 1, 15, 29 only",
+      "Carfilzomib infusion-related reactions can occur immediately or up to 24 hours post-administration",
+      "Dexamethasone must be administered prior to carfilzomib to reduce IRR incidence",
+      "Pre- and post-hydration with sodium chloride 0.9% 500ml required",
+      "Dose capped at 2.2m² (equates to 120mg using national dose bands)",
+      "If a third dose reduction is necessary treatment should be stopped",
+      "Carfilzomib neutral for extravasation",
+      "12 cycles will be set in ARIA"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "bsa_m2": "Required for carfilzomib dose calculation; capped at 2.2m²",
+      "who_performance_status": "Must be 0, 1, or 2",
+      "prior_bortezomib_details": "If prior bortezomib: must confirm ≥6-month proteasome inhibitor treatment-free interval from last bortezomib dose",
+      "prior_lines_of_therapy": "Must have received exactly 1 prior line of therapy"
+    },
+    "disease_site": "Myeloma",
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Carfilzomib",
+        "dose": 56,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          15,
+          29
+        ],
+        "frequency": "Days 1, 15, 29 of each 42-day cycle",
+        "duration_minutes": 30,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 100,
+        "max_dose": 120,
+        "max_dose_unit": "mg",
+        "special_instructions": "56mg/m² (max 120mg, equates to 2.2m² dose capped). 42-day cycle. Dose level reductions: 56mg/m², 45mg/m², 36mg/m², 27mg/m². Dexamethasone must be given prior. Pre- and post-hydration required.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.5,
+        "notes": "Days 1, 15, 29 of each 42-day cycle | 56mg/m² (max 120mg, equates to 2.2m² dose capped). 42-day cycle. Dose level reductions: 56mg/m², 45mg/m², 36mg/m², 27mg/m². Dexamethasone must be given prior. Pre- and post-hydration required."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          15,
+          16,
+          29,
+          30
+        ],
+        "frequency": "Days 1,2,15,16,29,30 of each 42-day cycle",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Administer at least 30 minutes and up to 4 hours prior to carfilzomib on carfilzomib days. Take in morning with or after food. Dose level reductions: starting 20mg, level 1 10mg.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "Days 1,2,15,16,29,30 of each 42-day cycle | Administer at least 30 minutes and up to 4 hours prior to carfilzomib on carfilzomib days. Take in morning with or after food. Dose level reductions: starting 20mg, level 1 10mg."
+      }
+    ]
+  },
+  {
+    "protocol_id": "clarithromycin-dexamethasone-20-pomalidomide",
+    "protocol_code": "CLARI-DEX20-POMA",
+    "protocol_name": "Clarithromycin-Dexamethasone (20)-Pomalidomide",
+    "category": "myeloma",
+    "indication": "Pomalidomide, in combination with low-dose dexamethasone, is recommended as an option for treating multiple myeloma in adults at third or subsequent relapse; that is, after 3 previous treatments including both lenalidomide and bortezomib. This protocol with a dose of dexamethasone of 20mg is recommended for those aged over 75 years.",
+    "version": "1",
+    "cycle_length_days": 28,
+    "total_cycles": null,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Pomalidomide",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "frequency": "Once a day days 1-21 of each 28-day cycle",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Oral chemotherapy. Pregnancy Prevention Programme mandatory. Take at same time each day. Swallow whole. May cause drowsiness — take at night. Available as 1mg, 2mg, 3mg, 4mg capsules. All prescriptions accompanied by ePAF.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Clarithromycin",
+        "dose": 500,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "Twice a day days 1-28 of each cycle",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Check for drug interactions. Available as 250mg and 500mg tablets.",
+        "is_core_drug": false
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          8,
+          15,
+          22
+        ],
+        "frequency": "Days 1, 8, 15 and 22 of each cycle",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "20mg weekly dose for patients aged over 75 years. Take in morning with or immediately after food. Dose level reductions: starting 20mg, level 2 12mg, level 1 8mg.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [
+      {
+        "drug_name": "Clarithromycin",
+        "dose": 500,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice a day for 28 days",
+        "notes": "Continuous throughout cycle."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          8,
+          15,
+          22
+        ],
+        "frequency": "Days 1, 8, 15 and 22 of each cycle",
+        "notes": "Take in morning with or after food."
+      },
+      {
+        "drug_name": "Pomalidomide",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "frequency": "Once daily days 1-21",
+        "notes": "Pregnancy Prevention Programme mandatory. Oral chemotherapy alert applies."
+      },
+      {
+        "drug_name": "Aciclovir",
+        "dose": 400,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice a day for 28 days",
+        "notes": "Anti-infective prophylaxis."
+      },
+      {
+        "drug_name": "Co-trimoxazole",
+        "dose": 960,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once a day on Monday, Wednesday and Friday only for 28 days",
+        "notes": "PCP prophylaxis. May dispense as 480mg twice a day on Mon/Wed/Fri."
+      },
+      {
+        "drug_name": "Fluconazole",
+        "dose": 50,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once a day for 28 days",
+        "notes": "Anti-fungal prophylaxis."
+      },
+      {
+        "drug_name": "Allopurinol",
+        "dose": 300,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once a day for 7 days — first cycle only",
+        "notes": "TLS prophylaxis."
+      },
+      {
+        "drug_name": "Thromboprophylaxis",
+        "dose": null,
+        "dose_unit": "units",
+        "route": "Subcutaneous",
+        "frequency": "As per risk assessment",
+        "notes": "Aspirin 75mg daily for low risk. LMWH (dalteparin 5000 units OD, enoxaparin 40mg OD, or heparin 5000 units BD) for high risk. Supply 28 days."
+      },
+      {
+        "drug_name": "Gastric protection (PPI or H2 antagonist)",
+        "dose": null,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once daily as per local formulary",
+        "notes": "For patients at high risk of GI ulceration."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils — Pomalidomide",
+        "condition": "Neutrophils < 0.5x10^9/L or febrile neutropenia (fever ≥38.5°C and neutrophils <1)",
+        "affected_drugs": [
+          "Pomalidomide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Interrupt pomalidomide and monitor FBC weekly. Once neutrophils recover to ≥1x10^9/L resume at 3mg. For each subsequent drop below 0.5x10^9/L: resume at 1mg less than previous dose."
+      },
+      {
+        "parameter": "Platelets — Pomalidomide",
+        "condition": "Platelets < 25x10^9/L",
+        "affected_drugs": [
+          "Pomalidomide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Interrupt pomalidomide and monitor FBC weekly. Once platelets recover to ≥50x10^9/L resume at 3mg. For each subsequent drop: resume at 1mg less than previous dose."
+      },
+      {
+        "parameter": "VTE — Pomalidomide",
+        "condition": "Venous thrombosis or embolism NCI-CTC grade 3 or above",
+        "affected_drugs": [
+          "Pomalidomide"
+        ],
+        "action": "delay",
+        "factor": 0.0,
+        "notes": "Stop treatment. Start full anticoagulation. May be reinstated at clinician's discretion once fully anticoagulated."
+      },
+      {
+        "parameter": "Skin rash — Pomalidomide",
+        "condition": "WHO grade 2-3 skin rash",
+        "affected_drugs": [
+          "Pomalidomide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Interrupt or discontinue pomalidomide. Must discontinue for angioedema, grade 4 rash, SJS, TEN, DRESS."
+      },
+      {
+        "parameter": "NCI-CTCAE grade 3-4 adverse reactions",
+        "condition": "Grade 3 or 4 adverse reactions related to pomalidomide",
+        "affected_drugs": [
+          "Pomalidomide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Stop treatment. Restart when resolved to NCI-CTC grade 2 or below at 1mg less than previous dose."
+      },
+      {
+        "parameter": "Dexamethasone — Dyspepsia Grade 1-2",
+        "condition": "Dyspepsia Grade 1-2",
+        "affected_drugs": [
+          "Dexamethasone"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Maintain dose and treat with H2 antagonist or PPI. Decrease by one dose level if symptoms persist."
+      },
+      {
+        "parameter": "Dexamethasone — Acute pancreatitis",
+        "condition": "Acute pancreatitis",
+        "affected_drugs": [
+          "Dexamethasone"
+        ],
+        "action": "delay",
+        "factor": 0.0,
+        "notes": "Discontinue dexamethasone from treatment regimen."
+      },
+      {
+        "parameter": "Toxicity recovery prolonged",
+        "condition": "Recovery from toxicities prolonged beyond 14 days",
+        "affected_drugs": [
+          "Dexamethasone"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Decrease dexamethasone dose by one dose level."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 50,
+      "notes": "To initiate new cycle: neutrophil count ≥1x10^9/L and platelet count ≥50x10^9/L. No dose reductions necessary for clarithromycin or dexamethasone for haematological toxicity — modifications apply to pomalidomide only."
+    },
+    "monitoring_requirements": [
+      "FBC at baseline, then every 2 weeks for first 8 weeks of treatment, thereafter prior to each cycle",
+      "U&Es, Ca2+ and LFTs prior to day 1 of each cycle",
+      "Paraprotein and/or light chains prior to each cycle",
+      "Negative pregnancy test within 3 days prior to starting pomalidomide — repeat every 4 weeks (every 2 weeks in women with irregular cycles), final test 4 weeks after last dose",
+      "HBV testing before initiating pomalidomide",
+      "VTE risk assessment prior to treatment",
+      "Regular monitoring of blood glucose — good practice",
+      "LFT monitoring for first 6 months — pomalidomide associated with hepatotoxicity",
+      "Cardiac monitoring — pomalidomide associated with cardiac failure and atrial fibrillation"
+    ],
+    "special_warnings": [
+      "Pomalidomide: Pregnancy Prevention Programme (PPP) mandatory — structurally related to thalidomide, teratogenic",
+      "Pomalidomide: must not be taken during pregnancy; contraception required for at least 4 weeks before, during, and 4 weeks after treatment",
+      "DVT/PE prophylaxis mandatory with pomalidomide",
+      "Clarithromycin and pomalidomide interact with many other medications — always check drug interactions",
+      "Pomalidomide: cardiac failure and atrial fibrillation risk — monitor cardiac symptoms",
+      "Pomalidomide: interstitial lung disease risk — assess acute pulmonary symptoms",
+      "Pomalidomide: HBV reactivation — all patients screened before treatment",
+      "All prescriptions for pomalidomide accompanied by ePAF",
+      "NPSA/2008/RRR001 must be followed for oral chemotherapy",
+      "Pomalidomide only prescribed under supervision of consultant haematologist",
+      "If a third dose reduction is necessary treatment should be stopped",
+      "Dexamethasone starting dose levels: 20mg (starting), 12mg (level 2), 8mg (level 1)"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "age_years": "If aged >75 years, use this protocol with 20mg dexamethasone",
+      "pregnancy_test_negative": "Negative pregnancy test required within 3 days prior to each cycle for women of childbearing potential",
+      "pregnancy_prevention_programme": "Celgene Pregnancy Prevention Programme enrolment mandatory",
+      "hbv_status": "HBV screening before initiating pomalidomide",
+      "vte_risk_assessment": "VTE risk assessment mandatory",
+      "prior_treatments": "Must have received ≥3 prior treatments including lenalidomide and bortezomib"
+    },
+    "disease_site": "Myeloma",
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Pomalidomide",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "frequency": "Once a day days 1-21 of each 28-day cycle",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Oral chemotherapy. Pregnancy Prevention Programme mandatory. Take at same time each day. Swallow whole. May cause drowsiness — take at night. Available as 1mg, 2mg, 3mg, 4mg capsules. All prescriptions accompanied by ePAF.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "Once a day days 1-21 of each 28-day cycle | Oral chemotherapy. Pregnancy Prevention Programme mandatory. Take at same time each day. Swallow whole. May cause drowsiness — take at night. Available as 1mg, 2mg, 3mg, 4mg capsules. All prescriptions accompanied by ePAF."
+      },
+      {
+        "drug_name": "Clarithromycin",
+        "dose": 500,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "Twice a day days 1-28 of each cycle",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Check for drug interactions. Available as 250mg and 500mg tablets.",
+        "is_core_drug": false,
+        "infusion_duration_hours": null,
+        "notes": "Twice a day days 1-28 of each cycle | Check for drug interactions. Available as 250mg and 500mg tablets."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          8,
+          15,
+          22
+        ],
+        "frequency": "Days 1, 8, 15 and 22 of each cycle",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "20mg weekly dose for patients aged over 75 years. Take in morning with or immediately after food. Dose level reductions: starting 20mg, level 2 12mg, level 1 8mg.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "Days 1, 8, 15 and 22 of each cycle | 20mg weekly dose for patients aged over 75 years. Take in morning with or immediately after food. Dose level reductions: starting 20mg, level 2 12mg, level 1 8mg."
+      }
+    ]
+  },
+  {
+    "protocol_id": "clarithromycin-dexamethasone-40-pomalidomide",
+    "protocol_code": "CLARI-DEX40-POMA",
+    "protocol_name": "Clarithromycin-Dexamethasone (40)-Pomalidomide",
+    "category": "myeloma",
+    "indication": "Pomalidomide, in combination with dexamethasone, is recommended as an option for treating multiple myeloma in adults at third or subsequent relapse; that is, after 3 previous treatments including both lenalidomide and bortezomib. This protocol with a dose of dexamethasone of 40mg is recommended for those aged 75 years or below.",
+    "version": "1",
+    "cycle_length_days": 28,
+    "total_cycles": null,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Pomalidomide",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "frequency": "Once a day days 1-21 of each 28-day cycle",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Oral chemotherapy. Pregnancy Prevention Programme mandatory. Take at same time each day. Swallow whole. May cause drowsiness — take at night. All prescriptions accompanied by ePAF.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Clarithromycin",
+        "dose": 500,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "Twice a day days 1-28 of each cycle",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Check for drug interactions. Available as 250mg and 500mg tablets.",
+        "is_core_drug": false
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 40,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          8,
+          15,
+          22
+        ],
+        "frequency": "Days 1, 8, 15 and 22 of each cycle",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "40mg weekly dose for patients aged 75 years or below. Take in morning with or immediately after food. Dose level reductions: starting 40mg, level 2 20mg, level 1 10mg.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [
+      {
+        "drug_name": "Clarithromycin",
+        "dose": 500,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice a day for 28 days",
+        "notes": "Continuous throughout cycle."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 40,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          8,
+          15,
+          22
+        ],
+        "frequency": "Days 1, 8, 15 and 22 of each cycle",
+        "notes": "Take in morning with or after food."
+      },
+      {
+        "drug_name": "Pomalidomide",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "frequency": "Once daily days 1-21",
+        "notes": "Pregnancy Prevention Programme mandatory. Oral chemotherapy alert applies."
+      },
+      {
+        "drug_name": "Aciclovir",
+        "dose": 400,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice a day for 28 days",
+        "notes": "Anti-infective prophylaxis."
+      },
+      {
+        "drug_name": "Co-trimoxazole",
+        "dose": 960,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once a day on Monday, Wednesday and Friday only for 28 days",
+        "notes": "PCP prophylaxis."
+      },
+      {
+        "drug_name": "Fluconazole",
+        "dose": 50,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once a day for 28 days",
+        "notes": "Anti-fungal prophylaxis."
+      },
+      {
+        "drug_name": "Allopurinol",
+        "dose": 300,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once a day for 7 days — first cycle only",
+        "notes": "TLS prophylaxis."
+      },
+      {
+        "drug_name": "Thromboprophylaxis",
+        "dose": null,
+        "dose_unit": "units",
+        "route": "Subcutaneous",
+        "frequency": "As per risk assessment",
+        "notes": "Aspirin 75mg daily for low risk. LMWH for high risk (dalteparin 5000 units OD, enoxaparin 40mg OD, or heparin 5000 units BD). Supply 28 days."
+      },
+      {
+        "drug_name": "Gastric protection (PPI or H2 antagonist)",
+        "dose": null,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once daily as per local formulary",
+        "notes": "For patients at high risk of GI ulceration."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils — Pomalidomide",
+        "condition": "Neutrophils < 0.5x10^9/L or febrile neutropenia (fever ≥38.5°C and neutrophils <1)",
+        "affected_drugs": [
+          "Pomalidomide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Interrupt pomalidomide and monitor FBC weekly. Once neutrophils recover to ≥1x10^9/L resume at 3mg. For each subsequent drop: resume at 1mg less than previous dose."
+      },
+      {
+        "parameter": "Platelets — Pomalidomide",
+        "condition": "Platelets < 25x10^9/L",
+        "affected_drugs": [
+          "Pomalidomide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Interrupt pomalidomide and monitor FBC weekly. Once platelets recover to ≥50x10^9/L resume at 3mg. For each subsequent drop: resume at 1mg less than previous dose."
+      },
+      {
+        "parameter": "VTE — Pomalidomide",
+        "condition": "Venous thrombosis or embolism NCI-CTC grade 3 or above",
+        "affected_drugs": [
+          "Pomalidomide"
+        ],
+        "action": "delay",
+        "factor": 0.0,
+        "notes": "Stop treatment. Start full anticoagulation. May be reinstated at clinician's discretion once fully anticoagulated."
+      },
+      {
+        "parameter": "Skin rash — Pomalidomide",
+        "condition": "WHO grade 2-3 skin rash",
+        "affected_drugs": [
+          "Pomalidomide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Interrupt or discontinue. Must permanently discontinue for angioedema, grade 4 rash, SJS, TEN, DRESS."
+      },
+      {
+        "parameter": "NCI-CTCAE grade 3-4 adverse reactions — Pomalidomide",
+        "condition": "Grade 3 or 4 adverse reactions related to pomalidomide",
+        "affected_drugs": [
+          "Pomalidomide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Stop treatment. Restart when resolved to NCI-CTC grade 2 or below at 1mg less than previous dose or at consultant's discretion."
+      },
+      {
+        "parameter": "Dexamethasone — Dyspepsia Grade 1-2",
+        "condition": "Dyspepsia Grade 1-2",
+        "affected_drugs": [
+          "Dexamethasone"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Maintain dose and treat with H2 antagonist or PPI. Decrease by one dose level if symptoms persist."
+      },
+      {
+        "parameter": "Dexamethasone — Dyspepsia Grade 3+",
+        "condition": "Dyspepsia Grade 3 or above",
+        "affected_drugs": [
+          "Dexamethasone"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Interrupt dose until controlled. Add H2 blocker or PPI. Decrease one dose level when restarted."
+      },
+      {
+        "parameter": "Dexamethasone — Oedema Grade 3+",
+        "condition": "Oedema Grade 3 or above",
+        "affected_drugs": [
+          "Dexamethasone"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Use diuretics as needed. Decrease dose by one level."
+      },
+      {
+        "parameter": "Dexamethasone — Hyperglycaemia Grade 3+",
+        "condition": "Hyperglycaemia Grade 3 or above",
+        "affected_drugs": [
+          "Dexamethasone"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Decrease dose by one level. Treat with insulin or oral hypoglycaemic agents."
+      },
+      {
+        "parameter": "Dexamethasone — Acute pancreatitis",
+        "condition": "Acute pancreatitis",
+        "affected_drugs": [
+          "Dexamethasone"
+        ],
+        "action": "delay",
+        "factor": 0.0,
+        "notes": "Discontinue dexamethasone from treatment regimen."
+      },
+      {
+        "parameter": "Toxicity recovery prolonged",
+        "condition": "Recovery from toxicities prolonged beyond 14 days",
+        "affected_drugs": [
+          "Dexamethasone"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Decrease dexamethasone dose by one dose level."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 50,
+      "notes": "To initiate new cycle: neutrophil count ≥1x10^9/L and platelet count ≥50x10^9/L. No dose reductions for clarithromycin or dexamethasone for haematological toxicity — modifications apply to pomalidomide only."
+    },
+    "monitoring_requirements": [
+      "FBC at baseline, then every 2 weeks for first 8 weeks of treatment, thereafter prior to each cycle",
+      "U&Es, Ca2+ and LFTs prior to day 1 of each cycle",
+      "Paraprotein and/or light chains prior to each cycle",
+      "Negative pregnancy test within 3 days prior to starting pomalidomide — repeat every 4 weeks (every 2 weeks with irregular cycles), final test 4 weeks after last dose",
+      "HBV testing before initiating pomalidomide",
+      "VTE risk assessment prior to treatment",
+      "Regular monitoring of blood glucose — good practice",
+      "LFT monitoring for first 6 months",
+      "Cardiac monitoring — pomalidomide associated with cardiac failure and atrial fibrillation"
+    ],
+    "special_warnings": [
+      "Pomalidomide: Pregnancy Prevention Programme (PPP) mandatory — structurally related to thalidomide, teratogenic",
+      "Pomalidomide: must not be taken during pregnancy; contraception required for at least 4 weeks before, during, and 4 weeks after treatment",
+      "DVT/PE prophylaxis mandatory with pomalidomide",
+      "Clarithromycin and pomalidomide interact with many other drugs — always check interactions",
+      "Pomalidomide: cardiac failure and atrial fibrillation risk",
+      "Pomalidomide: interstitial lung disease risk",
+      "Pomalidomide: HBV reactivation — screen before treatment",
+      "All prescriptions for pomalidomide accompanied by ePAF",
+      "NPSA/2008/RRR001 must be followed for oral chemotherapy",
+      "Pomalidomide only prescribed under consultant haematologist supervision",
+      "If a third dose reduction necessary treatment should be stopped",
+      "Dexamethasone starting dose levels: 40mg (starting/level 3), 20mg (level 2), 10mg (level 1)"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "age_years": "If aged ≤75 years, use this protocol with 40mg dexamethasone",
+      "pregnancy_test_negative": "Negative pregnancy test required within 3 days prior to each cycle for women of childbearing potential",
+      "pregnancy_prevention_programme": "Celgene Pregnancy Prevention Programme enrolment mandatory",
+      "hbv_status": "HBV screening mandatory before initiating pomalidomide",
+      "vte_risk_assessment": "VTE risk assessment mandatory",
+      "prior_treatments": "Must have received ≥3 prior treatments including lenalidomide and bortezomib"
+    },
+    "disease_site": "Myeloma",
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Pomalidomide",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "frequency": "Once a day days 1-21 of each 28-day cycle",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Oral chemotherapy. Pregnancy Prevention Programme mandatory. Take at same time each day. Swallow whole. May cause drowsiness — take at night. All prescriptions accompanied by ePAF.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "Once a day days 1-21 of each 28-day cycle | Oral chemotherapy. Pregnancy Prevention Programme mandatory. Take at same time each day. Swallow whole. May cause drowsiness — take at night. All prescriptions accompanied by ePAF."
+      },
+      {
+        "drug_name": "Clarithromycin",
+        "dose": 500,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "Twice a day days 1-28 of each cycle",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Check for drug interactions. Available as 250mg and 500mg tablets.",
+        "is_core_drug": false,
+        "infusion_duration_hours": null,
+        "notes": "Twice a day days 1-28 of each cycle | Check for drug interactions. Available as 250mg and 500mg tablets."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 40,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          8,
+          15,
+          22
+        ],
+        "frequency": "Days 1, 8, 15 and 22 of each cycle",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "40mg weekly dose for patients aged 75 years or below. Take in morning with or immediately after food. Dose level reductions: starting 40mg, level 2 20mg, level 1 10mg.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "Days 1, 8, 15 and 22 of each cycle | 40mg weekly dose for patients aged 75 years or below. Take in morning with or immediately after food. Dose level reductions: starting 40mg, level 2 20mg, level 1 10mg."
+      }
+    ]
+  },
+  {
+    "protocol_id": "daratumumab-sc",
+    "protocol_code": "DARA-SC",
+    "protocol_name": "Daratumumab Subcutaneous",
+    "category": "myeloma",
+    "indication": "Daratumumab monotherapy is recommended as an option for treating relapsed and refractory multiple myeloma in adults whose previous therapy included a proteasome inhibitor and an immunomodulator ('imid') as a fourth line of treatment, that is, after 3 previous treatments.",
+    "version": "1",
+    "cycle_length_days": 28,
+    "total_cycles": null,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Daratumumab",
+        "dose": 1800,
+        "dose_unit": "mg",
+        "route": "Subcutaneous",
+        "days": [
+          1,
+          8,
+          15,
+          22
+        ],
+        "frequency": "Cycles 1-2: weekly (days 1,8,15,22); Cycles 3-6: fortnightly (days 1,15); Cycle 7 onwards: monthly (day 1 only)",
+        "duration_minutes": 5,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Fixed dose 1800mg. Subcutaneous injection into abdomen approximately 7.5cm to right or left of umbilicus over approximately 3-5 minutes. Rotate injection sites. Do NOT inject into areas where skin is red, bruised, tender, hard or scarred. For patients >120kg consider IV preparation. Observe for 4 hours after first dose. If no major IRR after first dose, subsequent doses do not require 4-hour observation unless IRR occurs.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Antihistamine (oral)",
+        "dose": null,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "1-3 hours prior to daratumumab injection every dose",
+        "indication": "IRR prophylaxis. Options: chlorphenamine 4mg, loratadine 10mg, cetirizine 10mg, fexofenadine 120mg, or acrivastine 8mg oral."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "1-3 hours prior to daratumumab injection. Cycles 1-2: 20mg oral. Can be reduced to 10mg oral from cycle 3 onwards.",
+        "indication": "IRR prophylaxis / post-injection corticosteroid"
+      },
+      {
+        "drug_name": "Paracetamol",
+        "dose": 1000,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "1-3 hours prior to daratumumab injection every dose",
+        "indication": "IRR prophylaxis"
+      },
+      {
+        "drug_name": "Montelukast",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "Prior to injection for first cycle only",
+        "indication": "IRR prophylaxis — first cycle only"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Each morning for 2 days starting the day after each injection (post-injection corticosteroid)",
+        "notes": "To reduce risk of delayed IRRs. Take in morning with or after food."
+      },
+      {
+        "drug_name": "Antihistamine",
+        "dose": null,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "On the days of daratumumab administration — 1-3 hours prior",
+        "notes": "As per local formulary choice. Supply 1 x OP to cover all cycles."
+      },
+      {
+        "drug_name": "Paracetamol",
+        "dose": 1000,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "On the days of daratumumab administration — 1-3 hours prior",
+        "notes": "Supply 1 x 100 x 500mg to cover all cycles."
+      },
+      {
+        "drug_name": "Aciclovir",
+        "dose": 400,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice a day for 28 days",
+        "notes": "Anti-infective prophylaxis."
+      },
+      {
+        "drug_name": "Co-trimoxazole",
+        "dose": 960,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once a day on Monday, Wednesday and Friday only for 28 days",
+        "notes": "PCP prophylaxis."
+      },
+      {
+        "drug_name": "Allopurinol",
+        "dose": 300,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once a day for 7 days — first cycle only",
+        "notes": "TLS prophylaxis."
+      },
+      {
+        "drug_name": "Gastric protection (PPI or H2 antagonist)",
+        "dose": null,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once daily as per local formulary",
+        "notes": "For patients at high risk of GI ulceration."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "No dose reductions for daratumumab",
+        "condition": "All haematological toxicities",
+        "affected_drugs": [
+          "Daratumumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "No dose reductions recommended. Dose delay only. Neutrophils must be ≥1x10^9/L and platelets ≥50x10^9/L to initiate new cycle (unless counts are due to bone marrow infiltration — may administer at consultant discretion with blood products and G-CSF support)."
+      },
+      {
+        "parameter": "Neutrophils — febrile neutropenia or <0.5x10^9/L",
+        "condition": "Neutrophils < 0.5x10^9/L or febrile neutropenia (fever ≥38.5°C and neutrophils <1)",
+        "affected_drugs": [
+          "Daratumumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Interrupt daratumumab and monitor FBC weekly. Once neutrophils recover to ≥1x10^9/L resume daratumumab."
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets < 50x10^9/L",
+        "affected_drugs": [
+          "Daratumumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Interrupt daratumumab and monitor FBC weekly. Once platelets recover to ≥50x10^9/L resume daratumumab."
+      },
+      {
+        "parameter": "IRR — anaphylactic/life-threatening Grade 4",
+        "condition": "Anaphylactic or life-threatening (Grade 4) injection-related reaction",
+        "affected_drugs": [
+          "Daratumumab"
+        ],
+        "action": "delay",
+        "factor": 0.0,
+        "notes": "Discontinue daratumumab immediately and permanently. Institute appropriate emergency care."
+      },
+      {
+        "parameter": "HBV reactivation",
+        "condition": "Hepatitis B virus reactivation",
+        "affected_drugs": [
+          "Daratumumab"
+        ],
+        "action": "delay",
+        "factor": 0.0,
+        "notes": "Daratumumab must be stopped if HBV reactivation occurs."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 50,
+      "notes": "To initiate new cycle: neutrophils ≥1x10^9/L and platelets ≥50x10^9/L, unless low counts due to bone marrow infiltration with myeloma — may administer at consultant discretion. No dose reductions — delays only. Post-injection observation 4 hours first dose."
+    },
+    "monitoring_requirements": [
+      "FBC, U&Es, Ca2+ and LFTs prior to day 1 of each cycle",
+      "Paraprotein and/or light chains prior to each cycle",
+      "HBV, hepatitis C, CMV and HIV testing before initiating daratumumab",
+      "Blood typing and screening prior to daratumumab — red cell phenotyping required as daratumumab binds CD38 on RBCs causing positive indirect antiglobulin test (Coombs)",
+      "All patients issued an identification card carried for 6 months after stopping therapy",
+      "Monitor for clinical and laboratory signs of HBV reactivation during treatment and for at least 6 months after completion",
+      "Regular monitoring of blood glucose due to dexamethasone use",
+      "Monitor for IRR signs and symptoms during and following injection — particularly first and second injections",
+      "All instances of infusion/injection related reactions recorded on ARIA"
+    ],
+    "special_warnings": [
+      "Daratumumab binds CD38 on red blood cells — interferes with compatibility testing including antibody screening and cross-matching (positive indirect antiglobulin test / Coombs test may persist up to 6 months after last dose). Blood transfusion laboratory must be informed. Red cell phenotyping required.",
+      "Daratumumab detectable on SPE and IFE assays — may cause false positive results for IgG kappa myeloma protein impacting complete response assessment",
+      "HBV reactivation reported — all patients screened before treatment; monitoring required during and for at least 6 months after treatment",
+      "Daratumumab SC can cause severe/serious IRRs including anaphylaxis — 11% incidence in clinical studies; most with first injection",
+      "Premedication with antihistamine, antipyretic, and corticosteroid mandatory prior to every injection",
+      "Post-injection corticosteroid (dexamethasone 4mg) required for 2 days after each injection to reduce delayed IRR risk",
+      "For patients >120kg consider IV preparation",
+      "First dose: cannula should be inserted for emergency anaphylaxis treatment; observe for 4 hours",
+      "Patients with history of COPD: post-injection bronchodilators and inhaled corticosteroids should be considered",
+      "Do not inject into areas where skin is red, bruised, tender, hard or scarred",
+      "Injection sites should be rotated",
+      "Dosing schedule: cycles 1-2 weekly (days 1,8,15,22), cycles 3-6 fortnightly (days 1,15), cycle 7 onwards monthly (day 1)"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "weight_kg": "Required — if >120kg consider IV daratumumab preparation instead",
+      "hbv_hcv_cmv_hiv_status": "HBV, hepatitis C, CMV and HIV screening mandatory before treatment",
+      "blood_group_and_screen": "Blood typing and screening required prior to treatment; red cell phenotyping needed",
+      "blood_transfusion_lab_informed": "Blood transfusion laboratory must be informed patient is receiving daratumumab",
+      "patient_id_card_issued": "Identification card must be issued and carried for 6 months after stopping therapy",
+      "prior_treatments": "Must have received at least 3 prior treatments including a proteasome inhibitor and an immunomodulator"
+    },
+    "disease_site": "Myeloma",
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Daratumumab",
+        "dose": 1800,
+        "dose_unit": "mg",
+        "route": "Subcutaneous",
+        "days": [
+          1,
+          8,
+          15,
+          22
+        ],
+        "frequency": "Cycles 1-2: weekly (days 1,8,15,22); Cycles 3-6: fortnightly (days 1,15); Cycle 7 onwards: monthly (day 1 only)",
+        "duration_minutes": 5,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Fixed dose 1800mg. Subcutaneous injection into abdomen approximately 7.5cm to right or left of umbilicus over approximately 3-5 minutes. Rotate injection sites. Do NOT inject into areas where skin is red, bruised, tender, hard or scarred. For patients >120kg consider IV preparation. Observe for 4 hours after first dose. If no major IRR after first dose, subsequent doses do not require 4-hour observation unless IRR occurs.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.0833,
+        "notes": "Cycles 1-2: weekly (days 1,8,15,22); Cycles 3-6: fortnightly (days 1,15); Cycle 7 onwards: monthly (day 1 only) | Fixed dose 1800mg. Subcutaneous injection into abdomen approximately 7.5cm to right or left of umbilicus over approximately 3-5 minutes. Rotate injection sites. Do NOT inject into areas where skin is red, bruised, tender, hard or scarred. For patients >120kg consider IV preparation. Observe for 4 hours after first dose. If no major IRR after first dose, subsequent doses do not require 4-hour observation unless IRR occurs."
+      }
+    ]
+  }
+]

@@ -1,0 +1,1915 @@
+[
+  {
+    "protocol_id": "skin_nivolumab_relatlimab",
+    "protocol_code": "NIV-RELA",
+    "protocol_name": "Nivolumab in combination with Relatlimab (Opdualag)",
+    "category": "skin",
+    "indication": "The treatment of unresectable or metastatic melanoma in patients aged 12 years or more where the following criteria are met: the patient has unresectable stage III or stage IV histologically confirmed melanoma; the patient is aged 12 years or older; the patient has not received previous treatment for this indication with anti-PD-1, anti-PD-L1, anti-PD-L2, or anti-CTLA-4 antibodies; the patient is of ECOG performance status 0 or 1 (or Lansky score \u226580% if aged 12-17 years); the patient has no symptomatic brain metastases or leptomeningeal metastases currently requiring steroids.",
+    "version": "1.1",
+    "cycle_length_days": 28,
+    "total_cycles": null,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Nivolumab/Relatlimab (Opdualag)",
+        "dose": 480,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Every 28 days",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Nivolumab 480mg combined with Relatlimab 160mg as fixed-dose combination (Opdualag). Flat dose \u2014 doses are delayed, not reduced, for toxicity. Use in-line or add-on sterile, non-pyrogenic, low protein binding filter (pore size 0.2\u20131.2 \u00b5m). Compatible with EVA, PVC and polyolefin containers. Do not co-administer other medicinal products through the same infusion line. Flush line at end of infusion with sodium chloride 0.9% or glucose 5%. Treatment duration: up to 2 years.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils",
+        "condition": "Neutrophils < 1.0 x10\u2079/L",
+        "affected_drugs": [
+          "Nivolumab/Relatlimab (Opdualag)"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Discuss with appropriate clinician if criteria not met. Proceed if neutrophils \u2265 1.0 x10\u2079/L."
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets < 75 x10\u2079/L",
+        "affected_drugs": [
+          "Nivolumab/Relatlimab (Opdualag)"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Discuss with appropriate clinician if criteria not met. Proceed if platelets \u2265 75 x10\u2079/L."
+      },
+      {
+        "parameter": "Hepatic \u2014 AST/ALT",
+        "condition": "AST/ALT > 3 and \u2264 5 times ULN, or total bilirubin > 1.5 and \u2264 3 times ULN",
+        "affected_drugs": [
+          "Nivolumab/Relatlimab (Opdualag)"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold treatment. Initiate corticosteroids 0.5\u20131 mg/kg/day methylprednisolone equivalents. May resume after corticosteroid taper if improvement occurs. If no improvement, escalate corticosteroids to 1\u20132 mg/kg/day and permanently discontinue."
+      },
+      {
+        "parameter": "Hepatic \u2014 AST/ALT severe",
+        "condition": "AST or ALT > 5 times ULN regardless of baseline, or total bilirubin > 3 times ULN, or concurrent AST/ALT > 3 times ULN and total bilirubin > 2 times ULN",
+        "affected_drugs": [
+          "Nivolumab/Relatlimab (Opdualag)"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue. Initiate corticosteroids 1\u20132 mg/kg/day methylprednisolone equivalents."
+      },
+      {
+        "parameter": "Renal \u2014 creatinine",
+        "condition": "Grade 2 or 3 serum creatinine elevation",
+        "affected_drugs": [
+          "Nivolumab/Relatlimab (Opdualag)"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold and initiate corticosteroids 0.5\u20131 mg/kg/day. May resume after taper on improvement. If no improvement escalate to 1\u20132 mg/kg/day and permanently discontinue."
+      },
+      {
+        "parameter": "Renal \u2014 creatinine Grade 4",
+        "condition": "Grade 4 serum creatinine elevation",
+        "affected_drugs": [
+          "Nivolumab/Relatlimab (Opdualag)"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue. Initiate corticosteroids 1\u20132 mg/kg/day methylprednisolone equivalents."
+      },
+      {
+        "parameter": "Immune-related pneumonitis",
+        "condition": "Grade 2 pneumonitis",
+        "affected_drugs": [
+          "Nivolumab/Relatlimab (Opdualag)"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold dose(s) until symptoms resolve, radiographic abnormalities improve, and corticosteroid management is complete."
+      },
+      {
+        "parameter": "Immune-related pneumonitis",
+        "condition": "Grade 3 or 4 pneumonitis",
+        "affected_drugs": [
+          "Nivolumab/Relatlimab (Opdualag)"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue treatment."
+      },
+      {
+        "parameter": "Immune-related colitis",
+        "condition": "Grade 2 or 3 diarrhoea or colitis",
+        "affected_drugs": [
+          "Nivolumab/Relatlimab (Opdualag)"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold dose(s) until symptoms resolve and corticosteroid management is complete."
+      },
+      {
+        "parameter": "Immune-related colitis",
+        "condition": "Grade 4 diarrhoea or colitis",
+        "affected_drugs": [
+          "Nivolumab/Relatlimab (Opdualag)"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue treatment."
+      },
+      {
+        "parameter": "Immune-related endocrinopathies",
+        "condition": "Symptomatic Grade 2 or 3 hypothyroidism/hyperthyroidism/hypophysitis, Grade 2 adrenal insufficiency, Grade 3 diabetes",
+        "affected_drugs": [
+          "Nivolumab/Relatlimab (Opdualag)"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve. Treatment may continue in presence of hormone replacement therapy as long as no symptoms are present."
+      },
+      {
+        "parameter": "Immune-related endocrinopathies",
+        "condition": "Grade 4 hypothyroidism/hyperthyroidism/hypophysitis, Grade 3 or 4 adrenal insufficiency, Grade 4 diabetes",
+        "affected_drugs": [
+          "Nivolumab/Relatlimab (Opdualag)"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue treatment."
+      },
+      {
+        "parameter": "Immune-related skin reactions",
+        "condition": "Grade 3 rash or suspected SJS/TEN",
+        "affected_drugs": [
+          "Nivolumab/Relatlimab (Opdualag)"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold dose(s). Grade 3 rash: withhold until symptoms resolve and corticosteroid management complete. Suspected SJS/TEN: withhold dose(s)."
+      },
+      {
+        "parameter": "Immune-related skin reactions",
+        "condition": "Grade 4 rash or confirmed SJS/TEN",
+        "affected_drugs": [
+          "Nivolumab/Relatlimab (Opdualag)"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue treatment."
+      },
+      {
+        "parameter": "Immune-related myocarditis",
+        "condition": "Grade 2 myocarditis",
+        "affected_drugs": [
+          "Nivolumab/Relatlimab (Opdualag)"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve and corticosteroid management complete."
+      },
+      {
+        "parameter": "Immune-related myocarditis",
+        "condition": "Grade 3 or 4 myocarditis",
+        "affected_drugs": [
+          "Nivolumab/Relatlimab (Opdualag)"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue treatment."
+      },
+      {
+        "parameter": "Other immune-related adverse reactions",
+        "condition": "Grade 3 (first occurrence)",
+        "affected_drugs": [
+          "Nivolumab/Relatlimab (Opdualag)"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold dose(s)."
+      },
+      {
+        "parameter": "Other immune-related adverse reactions",
+        "condition": "Grade 4 or recurrent Grade 3; persistent Grade 2 or 3 despite treatment modification; inability to reduce corticosteroid to \u226410mg prednisone/day",
+        "affected_drugs": [
+          "Nivolumab/Relatlimab (Opdualag)"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue treatment."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 75,
+      "notes": "Proceed with treatment if neutrophils \u2265 1.0 x10\u2079/L and platelets \u2265 75 x10\u2079/L. Discuss with clinician if criteria not met."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to each cycle",
+      "Thyroid function tests prior to starting treatment and then every 6 weeks or when clinically indicated"
+    ],
+    "special_warnings": [
+      "Dose escalation or reduction is NOT recommended. Doses are delayed, not reduced, for toxicity.",
+      "Opdualag should not be resumed while the patient is receiving immunosuppressive doses of corticosteroids or other immunosuppressive therapy.",
+      "For suspected immune-related adverse reactions, corticosteroid taper should be of at least 1 month duration. Rapid tapering may lead to worsening or recurrence.",
+      "Non-corticosteroid immunosuppressive therapy should be added if there is worsening or no improvement despite corticosteroid use.",
+      "Prophylactic antibiotics may be used in patients receiving immunosuppressive therapy."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "ecog_ps": "Required: ECOG PS 0 or 1 (or Lansky \u226580% if aged 12-17)",
+      "age": "Required: aged 12 years or older",
+      "prior_checkpoint_inhibitor": "Must not have received prior anti-PD-1/PD-L1/PD-L2/anti-CTLA-4 for unresectable/metastatic melanoma"
+    },
+    "disease_site": "Skin",
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Nivolumab/Relatlimab (Opdualag)",
+        "dose": 480,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Every 28 days",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Nivolumab 480mg combined with Relatlimab 160mg as fixed-dose combination (Opdualag). Flat dose \u2014 doses are delayed, not reduced, for toxicity. Use in-line or add-on sterile, non-pyrogenic, low protein binding filter (pore size 0.2\u20131.2 \u00b5m). Compatible with EVA, PVC and polyolefin containers. Do not co-administer other medicinal products through the same infusion line. Flush line at end of infusion with sodium chloride 0.9% or glucose 5%. Treatment duration: up to 2 years.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.5,
+        "notes": "Every 28 days | Nivolumab 480mg combined with Relatlimab 160mg as fixed-dose combination (Opdualag). Flat dose \u2014 doses are delayed, not reduced, for toxicity. Use in-line or add-on sterile, non-pyrogenic, low protein binding filter (pore size 0.2\u20131.2 \u00b5m). Compatible with EVA, PVC and polyolefin containers. Do not co-administer other medicinal products through the same infusion line. Flush line at end of infusion with sodium chloride 0.9% or glucose 5%. Treatment duration: up to 2 years."
+      }
+    ]
+  },
+  {
+    "protocol_id": "skin_nivolumab",
+    "protocol_code": "NIV-SKIN",
+    "protocol_name": "Nivolumab",
+    "category": "skin",
+    "indication": "The treatment of advanced (unresectable or metastatic) melanoma in adults. WHO performance status 0, 1.",
+    "version": "1.1",
+    "cycle_length_days": 14,
+    "total_cycles": 12,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Nivolumab",
+        "dose": 3,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Every 14 days",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded according to CSCCN agreed bands. Administer via 0.2\u20131.2 micron low protein binding filter. Polyethylene lined giving sets used for paclitaxel with 0.22 micron filter are appropriate. Extravasation risk: neutral.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [],
+    "dose_modifications": [
+      {
+        "parameter": "Haematological",
+        "condition": "Little need to adjust for haematological toxicity",
+        "affected_drugs": [
+          "Nivolumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Dose escalation or reduction is not recommended. Consider blood transfusion or erythropoietin if Hb < 8g/dL."
+      },
+      {
+        "parameter": "Hepatic \u2014 AST/ALT",
+        "condition": "AST/ALT 3\u20135xULN and/or total bilirubin 1.5\u20133xULN",
+        "affected_drugs": [
+          "Nivolumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold and administer corticosteroids. On improvement to grade 1 taper corticosteroid over 1 month. May restart when LFTs remain grade 1 after taper. Permanently discontinue if: no improvement to grade 1 within 12 weeks; corticosteroids cannot be reduced to \u226410mg prednisolone/day within 12 weeks; or any grade 3+ reaction."
+      },
+      {
+        "parameter": "Hepatic \u2014 AST/ALT severe",
+        "condition": "AST/ALT \u2265 5xULN or bilirubin > 3xULN",
+        "affected_drugs": [
+          "Nivolumab"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue in first instance."
+      },
+      {
+        "parameter": "Renal \u2014 creatinine",
+        "condition": "NCI-CTC Grade 2 or 3 serum creatinine elevation",
+        "affected_drugs": [
+          "Nivolumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold and initiate corticosteroids. Taper over at least 1 month on improvement to grade 1. May resume when reaction remains grade 1 or below following taper. Permanently discontinue if: no improvement to grade 1 within 12 weeks; corticosteroids cannot be reduced to \u226410mg/day within 12 weeks; or recurrent grade 3."
+      },
+      {
+        "parameter": "Renal \u2014 creatinine Grade 4",
+        "condition": "NCI-CTC Grade 4 serum creatinine elevation",
+        "affected_drugs": [
+          "Nivolumab"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue. Initiate corticosteroids 1\u20132 mg/kg/day methylprednisolone equivalents."
+      },
+      {
+        "parameter": "Immune-related pneumonitis",
+        "condition": "Grade 2 pneumonitis",
+        "affected_drugs": [
+          "Nivolumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve, radiographic abnormalities improve, and corticosteroid management is complete."
+      },
+      {
+        "parameter": "Immune-related pneumonitis",
+        "condition": "Grade 3 or 4 pneumonitis",
+        "affected_drugs": [
+          "Nivolumab"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "parameter": "Immune-related colitis",
+        "condition": "Grade 2 or 3 diarrhoea or colitis",
+        "affected_drugs": [
+          "Nivolumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve and corticosteroid management complete."
+      },
+      {
+        "parameter": "Immune-related colitis",
+        "condition": "Grade 4 diarrhoea or colitis",
+        "affected_drugs": [
+          "Nivolumab"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "parameter": "Immune-related hepatitis",
+        "condition": "Grade 2 elevation in AST, ALT, or total bilirubin",
+        "affected_drugs": [
+          "Nivolumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until laboratory values return to baseline and corticosteroid management complete."
+      },
+      {
+        "parameter": "Immune-related hepatitis",
+        "condition": "Grade 3 or 4 elevation in AST, ALT, or total bilirubin",
+        "affected_drugs": [
+          "Nivolumab"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "parameter": "Immune-related nephritis",
+        "condition": "Grade 2 or 3 creatinine elevation",
+        "affected_drugs": [
+          "Nivolumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until creatinine returns to baseline and corticosteroid management complete."
+      },
+      {
+        "parameter": "Immune-related nephritis",
+        "condition": "Grade 4 creatinine elevation",
+        "affected_drugs": [
+          "Nivolumab"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "parameter": "Immune-related endocrinopathies",
+        "condition": "Symptomatic endocrinopathies (hypothyroidism, hyperthyroidism, hypophysitis, adrenal insufficiency, diabetes)",
+        "affected_drugs": [
+          "Nivolumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve. Continue in presence of hormone replacement therapy if no symptoms. Isolated hypothyroidism may be managed with replacement therapy without interruption."
+      },
+      {
+        "parameter": "Immune-related rash",
+        "condition": "Grade 3 rash",
+        "affected_drugs": [
+          "Nivolumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve and corticosteroid management complete."
+      },
+      {
+        "parameter": "Immune-related rash",
+        "condition": "Grade 4 rash",
+        "affected_drugs": [
+          "Nivolumab"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "parameter": "Persistent immune-related adverse reactions",
+        "condition": "Grade 2 or 3 immune-related adverse reactions that persist despite treatment modifications or corticosteroid dose cannot be reduced to \u226410mg prednisolone equivalent",
+        "affected_drugs": [
+          "Nivolumab"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "Little need to adjust dose for haematological toxicity. Dose escalation or reduction not recommended."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to day one of each cycle",
+      "Thyroid function tests prior to starting treatment and then every 6 weeks or when clinically indicated"
+    ],
+    "special_warnings": [
+      "Dose escalation or reduction is NOT recommended for nivolumab \u2014 delay or discontinue only.",
+      "Do not resume nivolumab if the patient is still receiving immunosuppressive doses of corticosteroids or other immunosuppressive therapy.",
+      "Systemic corticosteroids before starting nivolumab should be avoided due to potential interference with pharmacodynamic activity.",
+      "Patients must be given a nivolumab Patient Alert Card.",
+      "Immune-related adverse reactions may onset months after the last dose \u2014 early diagnosis and management essential."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "weight_kg": "Required for mg/kg dosing",
+      "ecog_ps": "Required: WHO PS 0 or 1"
+    },
+    "disease_site": "Skin",
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Nivolumab",
+        "dose": 3,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Every 14 days",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded according to CSCCN agreed bands. Administer via 0.2\u20131.2 micron low protein binding filter. Polyethylene lined giving sets used for paclitaxel with 0.22 micron filter are appropriate. Extravasation risk: neutral.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "Every 14 days | Dose banded according to CSCCN agreed bands. Administer via 0.2\u20131.2 micron low protein binding filter. Polyethylene lined giving sets used for paclitaxel with 0.22 micron filter are appropriate. Extravasation risk: neutral."
+      }
+    ]
+  },
+  {
+    "protocol_id": "skin_pembrolizumab_200mg",
+    "protocol_code": "PEMBRO-200",
+    "protocol_name": "Pembrolizumab (200mg)",
+    "category": "skin",
+    "indication": "Pembrolizumab is recommended: as an option for treating adults with advanced (unresectable or metastatic) melanoma that has not been previously treated with ipilimumab; as an option for treating advanced (unresectable or metastatic) melanoma in adults only after the disease has progressed with ipilimumab and, for BRAF V600 mutation-positive disease, a BRAF or MEK inhibitor. WHO Performance Status 0 or 1.",
+    "version": "1.1",
+    "cycle_length_days": 21,
+    "total_cycles": 35,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Pembrolizumab",
+        "dose": 200,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Every 21 days",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Administer using a low protein binding filter (0.2 micron). Extravasation risk: neutral. Treat until disease progression/loss of clinical benefit, excessive toxicity, or patient choice (35 cycles or two years set in ARIA). Funding precludes further treatment after interruption of 12 weeks or longer.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [],
+    "dose_modifications": [
+      {
+        "parameter": "Haematological",
+        "condition": "Little need to adjust for haematological toxicity",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Consider blood transfusion or erythropoietin if Hb < 8g/dL. No routine dose adjustment for haematological toxicity."
+      },
+      {
+        "parameter": "Hepatic \u2014 AST/ALT",
+        "condition": "AST/ALT 3\u20135xULN and/or total bilirubin 1.5\u20133xULN",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold and administer corticosteroids. Taper over 1 month on improvement to grade 1. May restart when LFTs remain grade 1 after taper. Permanently discontinue if no improvement to grade 1 within 12 weeks, corticosteroids cannot be reduced to \u226410mg prednisolone/day within 12 weeks, or any grade 3+ reaction."
+      },
+      {
+        "parameter": "Hepatic \u2014 AST/ALT severe",
+        "condition": "AST/ALT \u2265 5xULN; or AST/ALT increase \u226550% from baseline lasting \u22651 week in patients with liver metastasis starting with grade 2 elevation; or bilirubin > 3xULN",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue in first instance."
+      },
+      {
+        "parameter": "Renal \u2014 nephritis",
+        "condition": "NCI-CTC Grade 2 nephritis",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold and administer corticosteroids. Taper over at least 1 month on improvement to grade 1 or below. Permanently discontinue if no improvement to grade 1 within 12 weeks, corticosteroids cannot be reduced to \u226410mg/day within 12 weeks, or any grade 3+ reaction."
+      },
+      {
+        "parameter": "Renal \u2014 nephritis Grade 3+",
+        "condition": "NCI-CTC Grade 3 or above nephritis",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "parameter": "Immune-related pneumonitis",
+        "condition": "Grade 2 pneumonitis",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold and initiate corticosteroids 1\u20132 mg/kg/day prednisone or equivalent. Taper over \u22654 weeks on improvement to grade 1. May resume if event improves to grade 0/1 within 12 weeks and corticosteroids reduced to \u226410mg prednisolone/day. Discontinue if second episode."
+      },
+      {
+        "parameter": "Immune-related pneumonitis",
+        "condition": "Grade 3 or 4 pneumonitis",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue. Consider IV methylprednisolone 125mg, then oral prednisone 1\u20132 mg/kg/day. Consider infliximab 5mg/kg if no improvement within 48\u201372 hours."
+      },
+      {
+        "parameter": "Immune-related colitis",
+        "condition": "Grade 2\u20133 colitis",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold and administer corticosteroids. Taper over 1 month on improvement to grade 1."
+      },
+      {
+        "parameter": "Immune-related colitis",
+        "condition": "Grade 3+ colitis not improving, or corticosteroids cannot be tapered",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "parameter": "Immune-related skin reactions",
+        "condition": "Grade 3 or above skin reactions",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold and consider dermatology referral. Systemic corticosteroids (prednisolone 1mg/kg/day). Taper over \u22654 weeks on improvement to grade 1."
+      },
+      {
+        "parameter": "Immune-related adverse reactions \u2014 grade 3/4",
+        "condition": "Any NCI-CTC grade 3 or 4 pneumonitis, nephritis, infusion related reaction, or grade 4 adverse reaction",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "No specific haematological thresholds stated \u2014 little need to adjust for haematological toxicity."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to day one of each cycle",
+      "Thyroid function tests prior to starting treatment and then before each administration (cycle) or when clinically indicated"
+    ],
+    "special_warnings": [
+      "Dose reductions are NOT permitted for pembrolizumab \u2014 delay or discontinue only.",
+      "Systemic corticosteroids before starting pembrolizumab should be avoided due to potential interference with pharmacodynamic activity.",
+      "Current funding approval precludes further treatment after an interruption of 12 weeks or longer.",
+      "Immune-related adverse reactions may onset months after the last dose \u2014 early diagnosis essential.",
+      "Do not resume pembrolizumab while receiving immunosuppressive doses of corticosteroids."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "ecog_ps": "Required: WHO PS 0 or 1",
+      "prior_ipilimumab": "Document prior ipilimumab treatment status and BRAF mutation status"
+    },
+    "disease_site": "Skin",
+    "number_of_cycles": 35,
+    "drugs": [
+      {
+        "drug_name": "Pembrolizumab",
+        "dose": 200,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Every 21 days",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Administer using a low protein binding filter (0.2 micron). Extravasation risk: neutral. Treat until disease progression/loss of clinical benefit, excessive toxicity, or patient choice (35 cycles or two years set in ARIA). Funding precludes further treatment after interruption of 12 weeks or longer.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.5,
+        "notes": "Every 21 days | Administer using a low protein binding filter (0.2 micron). Extravasation risk: neutral. Treat until disease progression/loss of clinical benefit, excessive toxicity, or patient choice (35 cycles or two years set in ARIA). Funding precludes further treatment after interruption of 12 weeks or longer."
+      }
+    ]
+  },
+  {
+    "protocol_id": "skin_pembrolizumab_400mg",
+    "protocol_code": "PEMBRO-400",
+    "protocol_name": "Pembrolizumab (400mg)",
+    "category": "skin",
+    "indication": "Pembrolizumab is recommended: as an option for treating adults with advanced (unresectable or metastatic) melanoma that has not been previously treated with ipilimumab; as an option for treating advanced (unresectable or metastatic) melanoma in adults only after the disease has progressed with ipilimumab and, for BRAF V600 mutation-positive disease, a BRAF or MEK inhibitor. WHO Performance Status 0 or 1.",
+    "version": "1",
+    "cycle_length_days": 42,
+    "total_cycles": 18,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Pembrolizumab",
+        "dose": 400,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Every 42 days",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Administer using a low protein binding filter (0.2 micron). Extravasation risk: neutral. Treat until disease progression/loss of clinical benefit, excessive toxicity, or patient choice (18 cycles or two years set in ARIA). Funding precludes further treatment after interruption of 12 weeks or longer.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [],
+    "dose_modifications": [
+      {
+        "parameter": "Haematological",
+        "condition": "Little need to adjust for haematological toxicity",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Consider blood transfusion or erythropoietin if Hb < 8g/dL. No routine dose adjustment for haematological toxicity."
+      },
+      {
+        "parameter": "Hepatic \u2014 AST/ALT",
+        "condition": "AST/ALT 3\u20135xULN and/or total bilirubin 1.5\u20133xULN",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold and administer corticosteroids. Taper over 1 month on improvement to grade 1. May restart when LFTs remain grade 1 after taper. Permanently discontinue if no improvement to grade 1 within 12 weeks, corticosteroids cannot be reduced to \u226410mg prednisolone/day within 12 weeks, or any grade 3+ reaction."
+      },
+      {
+        "parameter": "Hepatic \u2014 AST/ALT severe",
+        "condition": "AST/ALT \u2265 5xULN; or AST/ALT increase \u226550% from baseline lasting \u22651 week in liver metastasis patients with grade 2 elevation; or bilirubin > 3xULN",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue in first instance."
+      },
+      {
+        "parameter": "Renal \u2014 nephritis",
+        "condition": "NCI-CTC Grade 2 nephritis",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold and administer corticosteroids. Taper over at least 1 month on improvement to grade 1 or below. Permanently discontinue if no improvement to grade 1 within 12 weeks, corticosteroids cannot be reduced to \u226410mg/day within 12 weeks, or any grade 3+ reaction."
+      },
+      {
+        "parameter": "Renal \u2014 nephritis Grade 3+",
+        "condition": "NCI-CTC Grade 3 or above nephritis",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "parameter": "Immune-related pneumonitis",
+        "condition": "Grade 2 pneumonitis",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold and initiate corticosteroids 1\u20132 mg/kg/day prednisone or equivalent. Taper over \u22654 weeks on improvement. May resume if event improves to grade 0/1 within 12 weeks and corticosteroids reduced to \u226410mg prednisolone/day. Discontinue if second episode."
+      },
+      {
+        "parameter": "Immune-related pneumonitis",
+        "condition": "Grade 3 or 4 pneumonitis",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue. Consider IV methylprednisolone 125mg, then oral prednisone 1\u20132 mg/kg/day. Consider infliximab 5mg/kg (consultant decision) if no improvement within 48\u201372 hours."
+      },
+      {
+        "parameter": "Immune-related colitis",
+        "condition": "Grade 2\u20133 colitis",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold and administer corticosteroids. Taper over 1 month on improvement to grade 1."
+      },
+      {
+        "parameter": "Immune-related colitis",
+        "condition": "Grade 3+ colitis not improving, or corticosteroids cannot be tapered",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "parameter": "Immune-related skin reactions",
+        "condition": "Grade 3 or above skin reactions",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold and consider dermatology referral. Systemic corticosteroids (prednisolone 1mg/kg/day). Taper over \u22654 weeks on improvement to grade 1."
+      },
+      {
+        "parameter": "Immune-related adverse reactions \u2014 grade 3/4",
+        "condition": "Any NCI-CTC grade 3 or 4 pneumonitis, nephritis, infusion related reaction, or grade 4 adverse reaction",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "No specific haematological thresholds stated \u2014 little need to adjust for haematological toxicity."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to day one of each cycle",
+      "Thyroid function tests prior to starting treatment and then before each administration (cycle) or when clinically indicated"
+    ],
+    "special_warnings": [
+      "Dose reductions are NOT permitted for pembrolizumab \u2014 delay or discontinue only.",
+      "Systemic corticosteroids before starting pembrolizumab should be avoided due to potential interference with pharmacodynamic activity.",
+      "Current funding approval precludes further treatment after an interruption of 12 weeks or longer.",
+      "Immune-related adverse reactions may onset months after the last dose \u2014 early diagnosis essential.",
+      "Do not resume pembrolizumab while receiving immunosuppressive doses of corticosteroids.",
+      "42-day cycle (6-weekly) \u2014 18 cycles maximum (2 years)."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "ecog_ps": "Required: WHO PS 0 or 1",
+      "prior_ipilimumab": "Document prior ipilimumab treatment status and BRAF mutation status"
+    },
+    "disease_site": "Skin",
+    "number_of_cycles": 18,
+    "drugs": [
+      {
+        "drug_name": "Pembrolizumab",
+        "dose": 400,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Every 42 days",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Administer using a low protein binding filter (0.2 micron). Extravasation risk: neutral. Treat until disease progression/loss of clinical benefit, excessive toxicity, or patient choice (18 cycles or two years set in ARIA). Funding precludes further treatment after interruption of 12 weeks or longer.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.5,
+        "notes": "Every 42 days | Administer using a low protein binding filter (0.2 micron). Extravasation risk: neutral. Treat until disease progression/loss of clinical benefit, excessive toxicity, or patient choice (18 cycles or two years set in ARIA). Funding precludes further treatment after interruption of 12 weeks or longer."
+      }
+    ]
+  },
+  {
+    "protocol_id": "skin_dabrafenib_trametinib",
+    "protocol_code": "DABRAF-TRAM",
+    "protocol_name": "Dabrafenib-Trametinib",
+    "category": "skin",
+    "indication": "The combination of dabrafenib and trametinib is recommended as an option for the first line treatment of stage III (unresectable) or stage IV BRAF V600 mutation positive malignant melanoma. WHO performance status 0, 1.",
+    "version": "1",
+    "cycle_length_days": 28,
+    "total_cycles": 12,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Dabrafenib",
+        "dose": 150,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "Twice daily, continuously",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 150,
+        "max_dose_unit": "mg",
+        "special_instructions": "Swallow whole with water on an empty stomach, either 1 hour before or 2 hours after a meal, approximately 12 hours apart. Do not crush or chew. Available as 50mg and 75mg capsules. If a dose is missed, do not take if less than 6 hours until the next dose. Dose may be modified in 50mg or 75mg steps. Not recommended in patients with uncorrectable electrolyte abnormalities (including magnesium), long QT syndrome (QTc >500ms), or taking medicines known to prolong QT interval. Follow NPSA/2008/RRR001 alert.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Trametinib",
+        "dose": 2,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "Once daily, continuously",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 2,
+        "max_dose_unit": "mg",
+        "special_instructions": "Take at least 1 hour before or 2 hours after a meal. Available as 0.5mg and 2mg tablets. If a dose is missed, only take if more than 12 hours until next scheduled dose. Dose should not be reduced below 1mg once daily. Follow NPSA/2008/RRR001 alert.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dabrafenib",
+        "dose": 150,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice daily continuously",
+        "instructions": "Take on empty stomach 1 hour before or 2 hours after a meal, approximately 12 hours apart. Do not crush or chew."
+      },
+      {
+        "drug_name": "Trametinib",
+        "dose": 2,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once daily continuously",
+        "instructions": "Take at least 1 hour before or 2 hours after a meal."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils",
+        "condition": "Neutrophils < 1.5 x10\u2079/L",
+        "affected_drugs": [
+          "Dabrafenib",
+          "Trametinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Prior to prescribing: neutrophils must be \u2265 1.5 x10\u2079/L."
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets < 100 x10\u2079/L",
+        "affected_drugs": [
+          "Dabrafenib",
+          "Trametinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Prior to prescribing: platelets must be \u2265 100 x10\u2079/L."
+      },
+      {
+        "parameter": "Dabrafenib toxicity \u2014 Grade 1 or tolerable Grade 2",
+        "condition": "Grade 1 or tolerable Grade 2 toxicity",
+        "affected_drugs": [
+          "Dabrafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Continue at current dose and monitor."
+      },
+      {
+        "parameter": "Dabrafenib toxicity \u2014 intolerable Grade 2 or Grade 3",
+        "condition": "Intolerable Grade 2 or Grade 3 toxicity",
+        "affected_drugs": [
+          "Dabrafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Interrupt until resolved to grade 0\u20131. First occurrence: reduce to 100mg twice daily. Second occurrence: reduce to 75mg twice daily. Third occurrence: reduce to 50mg twice daily."
+      },
+      {
+        "parameter": "Dabrafenib toxicity \u2014 Grade 4",
+        "condition": "Grade 4 toxicity",
+        "affected_drugs": [
+          "Dabrafenib"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue, OR interrupt until resolved to grade 0\u20131 then reduce to 100mg twice daily (discuss with consultant). If grade 4 recurs, permanently discontinue."
+      },
+      {
+        "parameter": "Trametinib toxicity \u2014 Grade 1 or tolerable Grade 2",
+        "condition": "Grade 1 or tolerable Grade 2 toxicity",
+        "affected_drugs": [
+          "Trametinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Continue and monitor."
+      },
+      {
+        "parameter": "Trametinib toxicity \u2014 intolerable Grade 2 or Grade 3",
+        "condition": "Intolerable Grade 2 or Grade 3 toxicity",
+        "affected_drugs": [
+          "Trametinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Interrupt until toxicity is grade 0\u20131 and reduce by one dose level when resuming. Dose ladder: 2mg \u2192 1.5mg \u2192 1mg once daily (minimum 1mg/day)."
+      },
+      {
+        "parameter": "Trametinib toxicity \u2014 Grade 4",
+        "condition": "Grade 4 toxicity",
+        "affected_drugs": [
+          "Trametinib"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue, OR interrupt until grade 0\u20131 and reduce by one dose level when resuming."
+      },
+      {
+        "parameter": "Cardiac \u2014 QTc dabrafenib",
+        "condition": "QTc > 500ms at baseline",
+        "affected_drugs": [
+          "Dabrafenib"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Treatment not recommended."
+      },
+      {
+        "parameter": "Cardiac \u2014 QTc dabrafenib",
+        "condition": "QTc > 500ms and < 60ms change from baseline",
+        "affected_drugs": [
+          "Dabrafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Interrupt until QTc < 500ms. Correct electrolyte imbalances (including Mg). Assess cardiac risk factors. First occurrence: reduce to 100mg BD. Second: 75mg BD. Third: 50mg BD."
+      },
+      {
+        "parameter": "Cardiac \u2014 QTc dabrafenib",
+        "condition": "QTc > 500ms and \u2265 60ms change from baseline",
+        "affected_drugs": [
+          "Dabrafenib"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "parameter": "Cardiac \u2014 LVEF trametinib",
+        "condition": "Asymptomatic absolute decrease in LVEF \u226510% from baseline and below institutional LLN",
+        "affected_drugs": [
+          "Trametinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Do not modify dabrafenib. Withhold trametinib for up to 4 weeks. If LVEF improves to normal, resume at lower dose. If not improved, permanently discontinue trametinib."
+      },
+      {
+        "parameter": "Ocular \u2014 RVO (trametinib)",
+        "condition": "Retinal vein occlusion",
+        "affected_drugs": [
+          "Trametinib"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue trametinib. No modification of dabrafenib required."
+      },
+      {
+        "parameter": "Ocular \u2014 RPED Grade 2\u20133 (trametinib)",
+        "condition": "NCI CTC grade 2\u20133 retinal pigment epithelial detachment",
+        "affected_drugs": [
+          "Trametinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Do not modify dabrafenib. Withhold trametinib for up to 3 weeks. If improved to grade 0\u20131, resume at lower dose. If not improved, permanently discontinue."
+      },
+      {
+        "parameter": "Ocular \u2014 uveitis/iritis (dabrafenib)",
+        "condition": "Uveitis or iritis",
+        "affected_drugs": [
+          "Dabrafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold dabrafenib for up to 6 weeks. If improved to grade 0\u20131, resume at same dose. If not improved, permanently discontinue. Do not modify trametinib."
+      },
+      {
+        "parameter": "ILD/Pneumonitis (trametinib)",
+        "condition": "Suspected or confirmed ILD or pneumonitis",
+        "affected_drugs": [
+          "Trametinib"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Withhold trametinib while under investigation. Permanently discontinue for treatment-related ILD/pneumonitis. No modification of dabrafenib required."
+      },
+      {
+        "parameter": "Pyrexia (dabrafenib)",
+        "condition": "Pyrexia (first occurrence)",
+        "affected_drugs": [
+          "Dabrafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Administer antipyretics (paracetamol/ibuprofen). Interrupt dabrafenib but continue trametinib. Restart dabrafenib at same dose when pyrexia resolves. If pyrexia associated with dehydration/hypotension/renal insufficiency, reduce dabrafenib by one dose level and give oral corticosteroids (prednisone 10mg) for \u22655 days."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.5,
+      "platelets_min": 100,
+      "notes": "Neutrophils \u2265 1.5 x10\u2079/L and platelets \u2265 100 x10\u2079/L required prior to prescribing."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es including magnesium prior to day one of each cycle",
+      "Baseline chest CT then 6-monthly",
+      "Baseline ECG, repeated after 1 month and then as required (after dose changes). Monthly for 3 months, then 3-monthly in patients with moderate to severe hepatic impairment",
+      "BRAF V600 mutation status prior to starting therapy",
+      "LVEF assessment (echocardiogram or MUGA) for trametinib \u2014 baseline and as required"
+    ],
+    "special_warnings": [
+      "Dabrafenib is NOT recommended in patients with uncorrectable electrolyte abnormalities (including magnesium), long QT syndrome (QTc > 500ms), or taking medicines known to prolong the QT interval.",
+      "Trametinib minimum dose is 1mg once daily \u2014 dose reductions below this are not recommended.",
+      "Third dose reduction requires treatment cessation.",
+      "Dose reductions should not be re-escalated without consultant approval.",
+      "NPSA/2008/RRR001 alert must be followed for both dabrafenib and trametinib.",
+      "Risk of secondary cutaneous or non-cutaneous squamous cell carcinoma with dabrafenib.",
+      "Extended ECG monitoring required in patients with moderate/severe hepatic impairment."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "braf_mutation": "Required: BRAF V600 mutation positive status confirmed",
+      "ecog_ps": "Required: WHO PS 0 or 1",
+      "ecg_qtc": "Required: baseline ECG/QTc",
+      "magnesium": "Required: baseline magnesium (included in U&Es)"
+    },
+    "disease_site": "Skin",
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Dabrafenib",
+        "dose": 150,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "Twice daily, continuously",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 150,
+        "max_dose_unit": "mg",
+        "special_instructions": "Swallow whole with water on an empty stomach, either 1 hour before or 2 hours after a meal, approximately 12 hours apart. Do not crush or chew. Available as 50mg and 75mg capsules. If a dose is missed, do not take if less than 6 hours until the next dose. Dose may be modified in 50mg or 75mg steps. Not recommended in patients with uncorrectable electrolyte abnormalities (including magnesium), long QT syndrome (QTc >500ms), or taking medicines known to prolong QT interval. Follow NPSA/2008/RRR001 alert.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "Twice daily, continuously | Swallow whole with water on an empty stomach, either 1 hour before or 2 hours after a meal, approximately 12 hours apart. Do not crush or chew. Available as 50mg and 75mg capsules. If a dose is missed, do not take if less than 6 hours until the next dose. Dose may be modified in 50mg or 75mg steps. Not recommended in patients with uncorrectable electrolyte abnormalities (including magnesium), long QT syndrome (QTc >500ms), or taking medicines known to prolong QT interval. Follow NPSA/2008/RRR001 alert."
+      },
+      {
+        "drug_name": "Trametinib",
+        "dose": 2,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "Once daily, continuously",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 2,
+        "max_dose_unit": "mg",
+        "special_instructions": "Take at least 1 hour before or 2 hours after a meal. Available as 0.5mg and 2mg tablets. If a dose is missed, only take if more than 12 hours until next scheduled dose. Dose should not be reduced below 1mg once daily. Follow NPSA/2008/RRR001 alert.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "Once daily, continuously | Take at least 1 hour before or 2 hours after a meal. Available as 0.5mg and 2mg tablets. If a dose is missed, only take if more than 12 hours until next scheduled dose. Dose should not be reduced below 1mg once daily. Follow NPSA/2008/RRR001 alert."
+      }
+    ]
+  },
+  {
+    "protocol_id": "skin_dabrafenib",
+    "protocol_code": "DABRAF",
+    "protocol_name": "Dabrafenib",
+    "category": "skin",
+    "indication": "Dabrafenib is recommended as an option for the first line treatment of unresectable BRAF V600 mutation positive melanoma. Dabrafenib is recommended as an option for the treatment of unresectable BRAF V600 mutation positive melanoma in those who have had a severe intolerance to vemurafenib that has necessitated the discontinuation of vemurafenib within two months of starting treatment. WHO performance status 0, 1.",
+    "version": "1",
+    "cycle_length_days": 28,
+    "total_cycles": 12,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Dabrafenib",
+        "dose": 150,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "Twice daily, continuously",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 150,
+        "max_dose_unit": "mg",
+        "special_instructions": "Swallow whole with water on an empty stomach, either 1 hour before or 2 hours after a meal, approximately 12 hours apart. Do not chew or crush. Available as 50mg and 75mg capsules. Dose may be modified in 50mg or 75mg steps. Not recommended in patients with uncorrectable electrolyte abnormalities (including magnesium), long QT syndrome (QTc > 500ms), or taking medicines known to prolong the QT interval. Follow NPSA/2008/RRR001 alert.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dabrafenib",
+        "dose": 150,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice daily continuously",
+        "instructions": "Take on empty stomach 1 hour before or 2 hours after a meal, approximately 12 hours apart. Do not crush or chew."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils",
+        "condition": "Neutrophils < 1.5 x10\u2079/L",
+        "affected_drugs": [
+          "Dabrafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Prior to prescribing: neutrophils must be \u2265 1.5 x10\u2079/L."
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets < 100 x10\u2079/L",
+        "affected_drugs": [
+          "Dabrafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Prior to prescribing: platelets must be \u2265 100 x10\u2079/L."
+      },
+      {
+        "parameter": "Dabrafenib toxicity \u2014 Grade 1 or tolerable Grade 2",
+        "condition": "Grade 1 or tolerable Grade 2 toxicity",
+        "affected_drugs": [
+          "Dabrafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Continue at current dose and monitor."
+      },
+      {
+        "parameter": "Dabrafenib toxicity \u2014 intolerable Grade 2 or Grade 3",
+        "condition": "Intolerable Grade 2 or Grade 3 toxicity",
+        "affected_drugs": [
+          "Dabrafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Interrupt until resolved to grade 0\u20131. First occurrence: reduce to 100mg twice daily. Second occurrence: reduce to 75mg twice daily. Third occurrence: reduce to 50mg twice daily."
+      },
+      {
+        "parameter": "Dabrafenib toxicity \u2014 Grade 4",
+        "condition": "Grade 4 toxicity",
+        "affected_drugs": [
+          "Dabrafenib"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue, OR interrupt until resolved to grade 0\u20131 then reduce to 100mg twice daily (discuss with consultant). If grade 4 recurs, permanently discontinue."
+      },
+      {
+        "parameter": "Cardiac \u2014 QTc",
+        "condition": "QTc > 500ms at baseline",
+        "affected_drugs": [
+          "Dabrafenib"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Treatment not recommended."
+      },
+      {
+        "parameter": "Cardiac \u2014 QTc",
+        "condition": "QTc > 500ms and < 60ms change from baseline",
+        "affected_drugs": [
+          "Dabrafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Interrupt until QTc < 500ms. Correct electrolyte imbalances (including Mg). Assess cardiac risk factors. First occurrence: reduce to 100mg BD. Second: 75mg BD. Third: 50mg BD."
+      },
+      {
+        "parameter": "Cardiac \u2014 QTc",
+        "condition": "QTc > 500ms and \u2265 60ms change from baseline",
+        "affected_drugs": [
+          "Dabrafenib"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "parameter": "Hepatic impairment",
+        "condition": "Mild hepatic impairment",
+        "affected_drugs": [
+          "Dabrafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "No adjustment to starting dose needed. Extended ECG monitoring required in moderate/severe hepatic impairment."
+      },
+      {
+        "parameter": "Renal impairment",
+        "condition": "Severe renal impairment",
+        "affected_drugs": [
+          "Dabrafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Limited data available. Risk of increased exposure \u2014 monitor closely."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.5,
+      "platelets_min": 100,
+      "notes": "Neutrophils \u2265 1.5 x10\u2079/L and platelets \u2265 100 x10\u2079/L required prior to prescribing."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es including magnesium prior to day one of each cycle",
+      "Baseline chest CT then 6-monthly",
+      "Baseline ECG, repeated after 1 month and then as required. Monthly for 3 months, then 3-monthly in patients with moderate to severe hepatic impairment",
+      "BRAF V600 mutation status prior to starting therapy"
+    ],
+    "special_warnings": [
+      "Dabrafenib is NOT recommended in patients with uncorrectable electrolyte abnormalities (including magnesium), long QT syndrome (QTc > 500ms), or taking medicines known to prolong the QT interval.",
+      "Dose reductions should not be re-escalated without consultant approval.",
+      "If a third dose reduction is necessary, treatment should be stopped.",
+      "NPSA/2008/RRR001 alert must be followed for dabrafenib.",
+      "Risk of secondary cutaneous or non-cutaneous squamous cell carcinoma.",
+      "Extended ECG monitoring required in patients with moderate/severe hepatic impairment."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "braf_mutation": "Required: BRAF V600 mutation positive status confirmed",
+      "ecog_ps": "Required: WHO PS 0 or 1",
+      "ecg_qtc": "Required: baseline ECG/QTc",
+      "magnesium": "Required: baseline magnesium (included in U&Es)"
+    },
+    "disease_site": "Skin",
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Dabrafenib",
+        "dose": 150,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "Twice daily, continuously",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 150,
+        "max_dose_unit": "mg",
+        "special_instructions": "Swallow whole with water on an empty stomach, either 1 hour before or 2 hours after a meal, approximately 12 hours apart. Do not chew or crush. Available as 50mg and 75mg capsules. Dose may be modified in 50mg or 75mg steps. Not recommended in patients with uncorrectable electrolyte abnormalities (including magnesium), long QT syndrome (QTc > 500ms), or taking medicines known to prolong the QT interval. Follow NPSA/2008/RRR001 alert.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "Twice daily, continuously | Swallow whole with water on an empty stomach, either 1 hour before or 2 hours after a meal, approximately 12 hours apart. Do not chew or crush. Available as 50mg and 75mg capsules. Dose may be modified in 50mg or 75mg steps. Not recommended in patients with uncorrectable electrolyte abnormalities (including magnesium), long QT syndrome (QTc > 500ms), or taking medicines known to prolong the QT interval. Follow NPSA/2008/RRR001 alert."
+      }
+    ]
+  },
+  {
+    "protocol_id": "skin_dacarbazine",
+    "protocol_code": "DTIC-SKIN",
+    "protocol_name": "Dacarbazine",
+    "category": "skin",
+    "indication": "Dacarbazine is recommended as a first line option for unresectable stage IIIC or IV melanoma in those unsuitable for ipilimumab. Dacarbazine is recommended as an option for the second line treatment of unresectable stage IIIC or IV melanoma of cutaneous, ocular or mucosal origin following treatment with ipilimumab. Dacarbazine is recommended as an option for the third line treatment of unresectable stage IIIC or IV melanoma of cutaneous, ocular or mucosal origin. WHO performance status 0, 1.",
+    "version": "1",
+    "cycle_length_days": 21,
+    "total_cycles": 6,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Dacarbazine",
+        "dose": 1000,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Every 21 days",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded as per CSCCN agreed bands. Dacarbazine is a vesicant \u2014 extravasation precautions required. Light sensitive \u2014 protect infusion from light during administration. Do not use if solution has pink or red discolouration.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15\u201330 minutes before chemotherapy",
+        "notes": "May be given orally or intravenously"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15\u201330 minutes before chemotherapy",
+        "notes": "May be given orally or intravenously"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice daily for 3 days starting the day after chemotherapy",
+        "instructions": "Take twice daily for 3 days starting the day after chemotherapy"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Three times a day for 3 days starting on the day of chemotherapy, then when required",
+        "instructions": "Take three times a day for 3 days starting on the day of chemotherapy, then 10mg three times a day when required"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils",
+        "condition": "Neutrophils < 1.5 x10\u2079/L",
+        "affected_drugs": [
+          "Dacarbazine"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay treatment for 7 days. Repeat FBC. If counts return to eligible levels, continue at 100% of last dose."
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets < 100 x10\u2079/L",
+        "affected_drugs": [
+          "Dacarbazine"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay treatment for 7 days. Repeat FBC. If counts return to eligible levels, continue at 100% of last dose."
+      },
+      {
+        "parameter": "Hepatic impairment",
+        "condition": "Baseline LFTs double during therapy",
+        "affected_drugs": [
+          "Dacarbazine"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Dacarbazine is activated and metabolised in the liver and can be hepatotoxic. Consider dose reduction or stopping therapy if baseline LFTs double."
+      },
+      {
+        "parameter": "Renal impairment \u2014 creatinine clearance 45\u201360 ml/min",
+        "condition": "Creatinine clearance 45\u201360 ml/min",
+        "affected_drugs": [
+          "Dacarbazine"
+        ],
+        "action": "delay",
+        "factor": 0.8,
+        "notes": "Reduce to 80% of original dose."
+      },
+      {
+        "parameter": "Renal impairment \u2014 creatinine clearance 30\u201345 ml/min",
+        "condition": "Creatinine clearance 30\u201345 ml/min",
+        "affected_drugs": [
+          "Dacarbazine"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose."
+      },
+      {
+        "parameter": "Renal impairment \u2014 creatinine clearance < 30 ml/min",
+        "condition": "Creatinine clearance < 30 ml/min",
+        "affected_drugs": [
+          "Dacarbazine"
+        ],
+        "action": "delay",
+        "factor": 0.7,
+        "notes": "Reduce to 70% of original dose."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.5,
+      "platelets_min": 100,
+      "notes": "If platelets < 100 x10\u2079/L and neutrophils < 1.5 x10\u2079/L, delay treatment for 7 days and repeat FBC."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to day one of each cycle",
+      "Renal function (creatinine clearance) for dose adjustment"
+    ],
+    "special_warnings": [
+      "Dacarbazine is a VESICANT \u2014 extravasation precautions required.",
+      "Dacarbazine is light sensitive \u2014 protect infusion from light during administration.",
+      "Do not use if solution has pink or red discolouration.",
+      "Influenza-type syndrome may start up to 7 days after treatment and last up to 21 days.",
+      "Risk of anaphylaxis \u2014 appropriate management should be available.",
+      "Gastric protection with PPI or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "body_surface_area": "Required for mg/m\u00b2 dosing",
+      "ecog_ps": "Required: WHO PS 0 or 1",
+      "creatinine_clearance": "Required for renal dose adjustment"
+    },
+    "disease_site": "Skin",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Dacarbazine",
+        "dose": 1000,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Every 21 days",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded as per CSCCN agreed bands. Dacarbazine is a vesicant \u2014 extravasation precautions required. Light sensitive \u2014 protect infusion from light during administration. Do not use if solution has pink or red discolouration.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "Every 21 days | Dose banded as per CSCCN agreed bands. Dacarbazine is a vesicant \u2014 extravasation precautions required. Light sensitive \u2014 protect infusion from light during administration. Do not use if solution has pink or red discolouration."
+      }
+    ]
+  },
+  {
+    "protocol_id": "skin_ipilimumab",
+    "protocol_code": "IPI-SKIN",
+    "protocol_name": "Ipilimumab",
+    "category": "skin",
+    "indication": "Ipilimumab is recommended, within its marketing authorisation, as an option for treating adults with previously untreated advanced (unresectable or metastatic) melanoma, only if the manufacturer provides ipilimumab with the discount agreed in the patient access scheme. Ipilimumab is recommended as an option for treating advanced (unresectable or metastatic) melanoma in people who have received prior therapy, only if the manufacturer provides ipilimumab with the discount agreed in the patient access scheme. WHO performance status 0, 1.",
+    "version": "1.1",
+    "cycle_length_days": 21,
+    "total_cycles": 4,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Ipilimumab",
+        "dose": 3,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Every 21 days for 4 cycles",
+        "duration_minutes": 90,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded as per CSCCN agreed bands. Administer using a low protein binding filter. Final concentration should be between 1\u20134mg/ml. Extravasation risk: neutral. Doses omitted due to adverse reactions must NOT be replaced.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [],
+    "dose_modifications": [
+      {
+        "parameter": "Hepatic \u2014 AST/ALT",
+        "condition": "AST or ALT 5\u20138xULN or total bilirubin 3\u20135xULN (suspected immune-related)",
+        "affected_drugs": [
+          "Ipilimumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold scheduled dose until LFTs resolve to these levels, then restart."
+      },
+      {
+        "parameter": "Hepatic \u2014 AST/ALT severe",
+        "condition": "AST or ALT > 8xULN or bilirubin > 5xULN (suspected immune-related)",
+        "affected_drugs": [
+          "Ipilimumab"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue and initiate appropriate supportive treatment."
+      },
+      {
+        "parameter": "Haematological",
+        "condition": "No haematological dose adjustment criteria",
+        "affected_drugs": [
+          "Ipilimumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Little need to adjust ipilimumab dose for haematological toxicity. Consider blood transfusion or erythropoietin if Hb < 8g/dL."
+      },
+      {
+        "parameter": "Renal impairment",
+        "condition": "Mild to moderate renal impairment",
+        "affected_drugs": [
+          "Ipilimumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "No dose reduction necessary in mild to moderate renal impairment."
+      },
+      {
+        "parameter": "Immune-related colitis \u2014 Grade 1 or 2",
+        "condition": "NCI-CTC Grade 1 or 2 diarrhoea or mild to moderate colitis",
+        "affected_drugs": [
+          "Ipilimumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "May continue on ipilimumab with symptomatic treatment and monitoring. If symptoms recur or persist for 5\u20137 days, omit scheduled dose. Consider prednisolone 1mg/kg orally once daily. If resolution to grade 0\u20131, resume at next scheduled dose."
+      },
+      {
+        "parameter": "Immune-related colitis \u2014 Grade 3 or 4",
+        "condition": "NCI-CTC Grade 3 or 4 diarrhoea, colitis, peritoneal signs, ileus, or fever",
+        "affected_drugs": [
+          "Ipilimumab"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue. Initiate high-dose IV corticosteroids immediately (unless bowel perforation). Taper over 6\u20138 weeks. Consider infliximab 5mg/kg (single dose) if no response to steroids within 5\u20137 days."
+      },
+      {
+        "parameter": "Immune-related neurological \u2014 Grade 2",
+        "condition": "NCI-CTC Grade 2 neuropathy likely related to ipilimumab",
+        "affected_drugs": [
+          "Ipilimumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Omit scheduled dose. If neurologic symptoms resolve to baseline, may resume at next scheduled dose."
+      },
+      {
+        "parameter": "Immune-related neurological \u2014 Grade 3 or 4",
+        "condition": "NCI-CTC Grade 3 or 4 sensory neuropathy",
+        "affected_drugs": [
+          "Ipilimumab"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue. Treat according to local guidelines for sensory neuropathy."
+      },
+      {
+        "parameter": "Immune-related skin \u2014 Grade 3",
+        "condition": "NCI-CTC Grade 3 symptomatic skin reactions",
+        "affected_drugs": [
+          "Ipilimumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Omit scheduled dose. If symptoms improve to grade 1 or resolve, may resume at next scheduled dose."
+      },
+      {
+        "parameter": "Immune-related skin \u2014 Grade 4 or Grade 3 pruritus",
+        "condition": "NCI-CTC Grade 4 rash or Grade 3 pruritus",
+        "affected_drugs": [
+          "Ipilimumab"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Permanently discontinue. Consider systemic corticosteroid therapy."
+      },
+      {
+        "parameter": "Other immune-related adverse reactions \u2014 Grade 3+",
+        "condition": "Other immune-related adverse reactions at NCI-CTC grade 3 or above",
+        "affected_drugs": [
+          "Ipilimumab"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Consider immediate high-dose corticosteroid therapy and discontinuation of ipilimumab."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "No specific haematological thresholds for ipilimumab. Little need to adjust for haematological toxicity. Blood pressure should be checked prior to treatment."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to day one of each cycle",
+      "Blood pressure prior to treatment",
+      "Thyroid function tests prior to starting treatment and then before each administration (cycle) or when clinically indicated"
+    ],
+    "special_warnings": [
+      "Dose reductions are NOT permitted for ipilimumab (immunotherapy) \u2014 doses are delayed or permanently discontinued only.",
+      "Doses omitted due to adverse reactions must NOT be replaced.",
+      "Systemic corticosteroids before starting ipilimumab should be avoided due to potential interference with pharmacodynamic activity.",
+      "Immune-related adverse reactions may involve GI, liver, skin, nervous, endocrine, or other organ systems \u2014 may onset months after last dose.",
+      "Ipilimumab is used at 3mg/kg in this skin protocol (not 10mg/kg \u2014 confirm indication carefully).",
+      "Gastric protection with PPI or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "weight_kg": "Required for mg/kg dosing",
+      "ecog_ps": "Required: WHO PS 0 or 1",
+      "prior_therapy": "Document whether previously treated or treatment-naive"
+    },
+    "disease_site": "Skin",
+    "number_of_cycles": 4,
+    "drugs": [
+      {
+        "drug_name": "Ipilimumab",
+        "dose": 3,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Every 21 days for 4 cycles",
+        "duration_minutes": 90,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded as per CSCCN agreed bands. Administer using a low protein binding filter. Final concentration should be between 1\u20134mg/ml. Extravasation risk: neutral. Doses omitted due to adverse reactions must NOT be replaced.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.5,
+        "notes": "Every 21 days for 4 cycles | Dose banded as per CSCCN agreed bands. Administer using a low protein binding filter. Final concentration should be between 1\u20134mg/ml. Extravasation risk: neutral. Doses omitted due to adverse reactions must NOT be replaced."
+      }
+    ]
+  }
+]

@@ -1,0 +1,1883 @@
+[
+  {
+    "protocol_code": "MM-BOR-IV-DEX-PANO-21",
+    "protocol_name": "Multiple Myeloma - Bortezomib (IV)-Dexamethasone-Panobinostat (21 day)",
+    "disease_site": "Myeloma",
+    "category": "myeloma",
+    "cycle_length_days": 21,
+    "number_of_cycles": 16,
+    "drugs": [
+      {
+        "drug_name": "Bortezomib",
+        "dose": 1.3,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1,
+          4,
+          8,
+          11
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1-8: days 1, 4, 8, 11. Cycles 9-16: days 1, 8 only. Dose rounded to agreed bands. At least 72 hours must elapse between doses. Intravenous injection."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          4,
+          5,
+          8,
+          9,
+          11,
+          12
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1-8: days 1, 2, 4, 5, 8, 9, 11, 12. Cycles 9-16: days 1, 2, 8, 9. Take in morning with or after food."
+      },
+      {
+        "drug_name": "Panobinostat",
+        "dose": 20.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          3,
+          5,
+          8,
+          10,
+          12
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "All cycles (1-16): days 1, 3, 5, 8, 10, 12. Available as 10mg, 15mg and 20mg capsules. Take once daily at same time each day, swallow whole with water. Oral chemotherapy - NPSA/2008/RRR001 applies."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Panobinostat haematological toxicity - Dose Level -1",
+        "drug_name": "Panobinostat",
+        "factor": 0.75,
+        "notes": "Reduce from 20mg to 15mg"
+      },
+      {
+        "condition": "Panobinostat haematological toxicity - Dose Level -2",
+        "drug_name": "Panobinostat",
+        "factor": 0.5,
+        "notes": "Reduce from 20mg to 10mg. Further reduction: discontinue."
+      },
+      {
+        "condition": "Bortezomib haematological toxicity - Dose Level -1",
+        "drug_name": "Bortezomib",
+        "factor": 0.75,
+        "notes": "Reduce from 1.3mg/m² to 1mg/m²"
+      },
+      {
+        "condition": "Bortezomib haematological toxicity - Dose Level -2",
+        "drug_name": "Bortezomib",
+        "factor": 0.5,
+        "notes": "Reduce from 1.3mg/m² to 0.7mg/m². Further reduction: discontinue."
+      },
+      {
+        "condition": "Bortezomib neutrophils 0.75-1x10^9/L",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Maintain same dose"
+      },
+      {
+        "condition": "Bortezomib neutrophils <1x10^9/L with febrile neutropenia or <0.5x10^9/L",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Interrupt until febrile neutropenia resolves and neutrophils >=1x10^9/L. If 1 dose omitted restart at same dose; if 2+ doses omitted consecutively or within same cycle, restart at reduced dose."
+      },
+      {
+        "condition": "Bortezomib platelets 25-50x10^9/L (grade 3)",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Maintain same dose"
+      },
+      {
+        "condition": "Bortezomib platelets 25-50x10^9/L with haemorrhage (grade 3) or <25x10^9/L (grade 4)",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Interrupt until platelets >=75x10^9/L. If 1 dose omitted restart at same dose; if 2+ omitted consecutively or in same cycle, restart at reduced dose."
+      },
+      {
+        "condition": "Panobinostat neutrophils 0.75-1x10^9/L",
+        "drug_name": "Panobinostat",
+        "factor": 1.0,
+        "notes": "Maintain same dose"
+      },
+      {
+        "condition": "Panobinostat neutrophils 0.5-0.75x10^9/L - single occurrence",
+        "drug_name": "Panobinostat",
+        "factor": 1.0,
+        "notes": "Single occurrence in cycle: maintain same dose level. Two or more episodes: interrupt until >=1x10^9/L then restart at same dose."
+      },
+      {
+        "condition": "Panobinostat neutrophils <1x10^9/L with febrile neutropenia",
+        "drug_name": "Panobinostat",
+        "factor": 0.75,
+        "notes": "Interrupt until febrile neutropenia resolves and neutrophils >=1x10^9/L, then restart at reduced dose level"
+      },
+      {
+        "condition": "Panobinostat neutrophils <0.5x10^9/L",
+        "drug_name": "Panobinostat",
+        "factor": 0.75,
+        "notes": "Interrupt until neutrophils >=1x10^9/L, then restart at reduced dose level"
+      },
+      {
+        "condition": "Panobinostat platelets 25-50x10^9/L (grade 3)",
+        "drug_name": "Panobinostat",
+        "factor": 1.0,
+        "notes": "Maintain same dose, monitor platelet counts every 7 days"
+      },
+      {
+        "condition": "Panobinostat platelets 25-50x10^9/L with haemorrhage (grade 3)",
+        "drug_name": "Panobinostat",
+        "factor": 0.75,
+        "notes": "Interrupt treatment; monitor platelets weekly until >=50x10^9/L, then restart at reduced dose level"
+      },
+      {
+        "condition": "Panobinostat platelets <25x10^9/L (grade 4)",
+        "drug_name": "Panobinostat",
+        "factor": 0.75,
+        "notes": "Interrupt treatment; monitor platelets weekly until >=50x10^9/L, then restart at reduced dose level"
+      },
+      {
+        "condition": "Bortezomib hepatic impairment - bilirubin >1.5xULN",
+        "drug_name": "Bortezomib",
+        "factor": 0.5,
+        "notes": "Initiate at 0.7mg/m². May escalate to 1mg/m² or reduce to 0.5mg/m² in subsequent cycles based on tolerability."
+      },
+      {
+        "condition": "Panobinostat hepatic impairment - bilirubin 1-1.5xULN and/or abnormal AST",
+        "drug_name": "Panobinostat",
+        "factor": 0.75,
+        "notes": "Start at reduced dose of 15mg in first cycle and increase as tolerated. If occurs during treatment, temporarily discontinue until grade 2 or less, then restart reduced by one dose level."
+      },
+      {
+        "condition": "Panobinostat hepatic impairment - bilirubin 1.5-3xULN and/or abnormal AST",
+        "drug_name": "Panobinostat",
+        "factor": 0.5,
+        "notes": "Start at 10mg in first cycle and increase to 15mg as tolerated. If occurs during treatment, temporarily discontinue until grade 2 or less, then restart reduced by one dose level."
+      },
+      {
+        "condition": "Bortezomib renal impairment - CrCl >20 ml/min",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "100% of dose"
+      },
+      {
+        "condition": "Bortezomib renal impairment - CrCl <=20 ml/min",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Clinical decision required"
+      },
+      {
+        "condition": "Panobinostat renal impairment - mild to moderate",
+        "drug_name": "Panobinostat",
+        "factor": 1.0,
+        "notes": "No dose adjustments necessary in mild to moderate renal impairment"
+      },
+      {
+        "condition": "Bortezomib peripheral neuropathy NCI-CTC grade 1 with pain or grade 2",
+        "drug_name": "Bortezomib",
+        "factor": 0.75,
+        "notes": "Reduce to 1mg/m² or switch to weekly bortezomib at standard dose of 1.3mg/m²"
+      },
+      {
+        "condition": "Bortezomib peripheral neuropathy NCI-CTC grade 2 with pain or grade 3",
+        "drug_name": "Bortezomib",
+        "factor": 0.5,
+        "notes": "Discontinue until resolved to grade 1 or less, then reinitiate at 0.7mg/m²"
+      },
+      {
+        "condition": "Bortezomib peripheral neuropathy NCI-CTC grade 4 or severe autonomic neuropathy",
+        "drug_name": "Bortezomib",
+        "factor": 0.0,
+        "notes": "Discontinue bortezomib permanently"
+      },
+      {
+        "condition": "Diarrhoea grade 2 despite anti-diarrhoeals - Panobinostat",
+        "drug_name": "Panobinostat",
+        "factor": 1.0,
+        "notes": "Omit dose until recovery to grade 1 or less then resume at same dose"
+      },
+      {
+        "condition": "Diarrhoea grade 2 despite anti-diarrhoeals - Bortezomib",
+        "drug_name": "Bortezomib",
+        "factor": 0.75,
+        "notes": "Omit dose until recovery to grade 1 or less then resume at reduced dose level or change to once weekly"
+      },
+      {
+        "condition": "Diarrhoea grade 3 despite anti-diarrhoeals - Panobinostat",
+        "drug_name": "Panobinostat",
+        "factor": 0.75,
+        "notes": "Omit dose until recovery to grade 1 or less then resume at reduced dose"
+      },
+      {
+        "condition": "Diarrhoea grade 3 despite anti-diarrhoeals - Bortezomib",
+        "drug_name": "Bortezomib",
+        "factor": 0.75,
+        "notes": "Omit dose until recovery to grade 1 or less then resume at same dose on once weekly schedule"
+      },
+      {
+        "condition": "Diarrhoea grade 4 despite anti-diarrhoeals",
+        "drug_name": "Panobinostat",
+        "factor": 0.0,
+        "notes": "Permanently discontinue"
+      },
+      {
+        "condition": "Diarrhoea grade 4 despite anti-diarrhoeals",
+        "drug_name": "Bortezomib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue"
+      },
+      {
+        "condition": "Panobinostat QTcF prolongation >=480ms or >60ms from baseline",
+        "drug_name": "Panobinostat",
+        "factor": 0.0,
+        "notes": "Omit dose. If resolved within 7 days, resume at prior dose (initial) or reduced dose (recurrent). If unresolved within 7 days, discontinue. If QTcF >500ms, permanently discontinue."
+      }
+    ],
+    "pre_medications": [
+      "Cyclizine 50mg up to three times a day oral when required (take home anti-emetic)",
+      "Aciclovir 400mg twice a day oral (anti-infective prophylaxis)",
+      "Co-trimoxazole 960mg once daily on Monday, Wednesday and Friday oral",
+      "Allopurinol 300mg once a day for 7 days oral (cycle 1 only)",
+      "Loperamide 4mg after first loose stool then 2mg after each loose stool to maximum 16mg/24 hours oral",
+      "Gastric protection: proton pump inhibitor or H2 antagonist in high-risk patients",
+      "Bisphosphonates in accordance with local policies",
+      "Mouthwashes according to local or national policy for mucositis"
+    ],
+    "special_warnings": [
+      "Panobinostat prolongs the QT interval. ECG required prior to day 1; QTcF must be <480ms before initiating panobinostat. Repeat ECG on day 1 of cycle 2. Agents also associated with QT prolongation (including ondansetron, metoclopramide, domperidone) should be used with caution.",
+      "Subcutaneous administration of bortezomib should be considered to reduce peripheral neuropathy risk.",
+      "Oral chemotherapy - NPSA/2008/RRR001 must be followed. This is a short course oral chemotherapy that must not be continued.",
+      "Patients must be assessed for suitability for oral chemotherapy prior to starting treatment.",
+      "Women of childbearing potential must have a negative pregnancy test at screening; barrier contraception required.",
+      "FBC should be checked prior to each dose of bortezomib (days 1 and 8 in cycles 9-16; days 1 and 8, with consideration before days 15 and/or 18 in patients >=65 years or platelets <150x10^9/L in cycles 1-8).",
+      "LFTs and U&Es prior to day 1 of each cycle. ECG prior to day 1.",
+      "All dose reductions due to adverse reactions should not be re-escalated without consultant approval. If a third dose reduction is necessary, treatment should be stopped.",
+      "Bortezomib dose rounded to agreed bands. At least 72 hours must elapse between bortezomib doses."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "bilirubin",
+      "ast_alt",
+      "qtcf_ecg",
+      "fbc",
+      "lft"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "MM-BOR-IV-DEX-PANO-28",
+    "protocol_name": "Multiple Myeloma - Bortezomib (IV)-Dexamethasone-Panobinostat (28 day)",
+    "disease_site": "Myeloma",
+    "category": "myeloma",
+    "cycle_length_days": 28,
+    "number_of_cycles": 16,
+    "drugs": [
+      {
+        "drug_name": "Bortezomib",
+        "dose": 1.3,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1,
+          8,
+          15,
+          22
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1-8: days 1, 8, 15, 22. Cycles 9-16: days 1, 8 only. Dose rounded to agreed bands. At least 72 hours must elapse between doses. Intravenous injection."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          8,
+          9,
+          15,
+          16,
+          22,
+          23
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1-8: days 1, 2, 8, 9, 15, 16, 22, 23. Cycles 9-16: days 1, 2, 8, 9. Take in morning with or after food."
+      },
+      {
+        "drug_name": "Panobinostat",
+        "dose": 20.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          3,
+          5,
+          15,
+          17,
+          19
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "All cycles (1-16): days 1, 3, 5, 15, 17, 19. Available as 10mg, 15mg and 20mg capsules. Take once daily at same time each day, swallow whole with water. Oral chemotherapy - NPSA/2008/RRR001 applies."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Panobinostat haematological toxicity - Dose Level -1",
+        "drug_name": "Panobinostat",
+        "factor": 0.75,
+        "notes": "Reduce from 20mg to 15mg"
+      },
+      {
+        "condition": "Panobinostat haematological toxicity - Dose Level -2",
+        "drug_name": "Panobinostat",
+        "factor": 0.5,
+        "notes": "Reduce from 20mg to 10mg. Further reduction: discontinue."
+      },
+      {
+        "condition": "Bortezomib haematological toxicity - Dose Level -1",
+        "drug_name": "Bortezomib",
+        "factor": 0.75,
+        "notes": "Reduce from 1.3mg/m² to 1mg/m²"
+      },
+      {
+        "condition": "Bortezomib haematological toxicity - Dose Level -2",
+        "drug_name": "Bortezomib",
+        "factor": 0.5,
+        "notes": "Reduce from 1.3mg/m² to 0.7mg/m². Further reduction: discontinue."
+      },
+      {
+        "condition": "Bortezomib neutrophils 0.75-1x10^9/L",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Maintain same dose"
+      },
+      {
+        "condition": "Bortezomib neutrophils <1x10^9/L with febrile neutropenia or <0.5x10^9/L",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Interrupt until febrile neutropenia resolves and neutrophils >=1x10^9/L. If 1 dose omitted restart at same dose; if 2+ doses omitted consecutively or within same cycle, restart at reduced dose."
+      },
+      {
+        "condition": "Bortezomib platelets 25-50x10^9/L (grade 3)",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Maintain same dose"
+      },
+      {
+        "condition": "Bortezomib platelets 25-50x10^9/L with haemorrhage or <25x10^9/L",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Interrupt until platelets >=75x10^9/L. If 1 dose omitted restart at same dose; if 2+ omitted consecutively or in same cycle, restart at reduced dose."
+      },
+      {
+        "condition": "Panobinostat neutrophils 0.75-1x10^9/L",
+        "drug_name": "Panobinostat",
+        "factor": 1.0,
+        "notes": "Maintain same dose"
+      },
+      {
+        "condition": "Panobinostat neutrophils 0.5-0.75x10^9/L single occurrence",
+        "drug_name": "Panobinostat",
+        "factor": 1.0,
+        "notes": "Single occurrence: maintain same dose. Two or more episodes: interrupt until >=1x10^9/L then restart at same dose."
+      },
+      {
+        "condition": "Panobinostat neutrophils <1x10^9/L with febrile neutropenia",
+        "drug_name": "Panobinostat",
+        "factor": 0.75,
+        "notes": "Interrupt until febrile neutropenia resolves and neutrophils >=1x10^9/L, then restart at reduced dose level"
+      },
+      {
+        "condition": "Panobinostat neutrophils <0.5x10^9/L",
+        "drug_name": "Panobinostat",
+        "factor": 0.75,
+        "notes": "Interrupt until neutrophils >=1x10^9/L, then restart at reduced dose level"
+      },
+      {
+        "condition": "Panobinostat platelets 25-50x10^9/L (grade 3)",
+        "drug_name": "Panobinostat",
+        "factor": 1.0,
+        "notes": "Maintain same dose, monitor platelet counts every 7 days"
+      },
+      {
+        "condition": "Panobinostat platelets 25-50x10^9/L with haemorrhage",
+        "drug_name": "Panobinostat",
+        "factor": 0.75,
+        "notes": "Interrupt; monitor platelets weekly until >=50x10^9/L, then restart at reduced dose level"
+      },
+      {
+        "condition": "Panobinostat platelets <25x10^9/L (grade 4)",
+        "drug_name": "Panobinostat",
+        "factor": 0.75,
+        "notes": "Interrupt; monitor platelets weekly until >=50x10^9/L, then restart at reduced dose level"
+      },
+      {
+        "condition": "Bortezomib hepatic impairment - bilirubin >1.5xULN",
+        "drug_name": "Bortezomib",
+        "factor": 0.5,
+        "notes": "Initiate at 0.7mg/m². May escalate to 1mg/m² or reduce to 0.5mg/m² in subsequent cycles based on tolerability."
+      },
+      {
+        "condition": "Panobinostat hepatic impairment - bilirubin 1-1.5xULN and/or abnormal AST",
+        "drug_name": "Panobinostat",
+        "factor": 0.75,
+        "notes": "Start at 15mg in first cycle, increase as tolerated. If occurs during treatment, discontinue until grade <=2 then restart at reduced dose level."
+      },
+      {
+        "condition": "Panobinostat hepatic impairment - bilirubin 1.5-3xULN and/or abnormal AST",
+        "drug_name": "Panobinostat",
+        "factor": 0.5,
+        "notes": "Start at 10mg in first cycle, increase to 15mg as tolerated. If occurs during treatment, discontinue until grade <=2 then restart at reduced dose level."
+      },
+      {
+        "condition": "Bortezomib renal impairment - CrCl >20 ml/min",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "100% of dose"
+      },
+      {
+        "condition": "Bortezomib renal impairment - CrCl <=20 ml/min",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Clinical decision required"
+      },
+      {
+        "condition": "Panobinostat renal impairment - mild to moderate",
+        "drug_name": "Panobinostat",
+        "factor": 1.0,
+        "notes": "No dose adjustments necessary"
+      },
+      {
+        "condition": "Bortezomib peripheral neuropathy NCI-CTC grade 1 with pain or grade 2",
+        "drug_name": "Bortezomib",
+        "factor": 0.75,
+        "notes": "Reduce to 1mg/m² or switch to weekly bortezomib at 1.3mg/m²"
+      },
+      {
+        "condition": "Bortezomib peripheral neuropathy NCI-CTC grade 2 with pain or grade 3",
+        "drug_name": "Bortezomib",
+        "factor": 0.5,
+        "notes": "Discontinue until resolved to grade <=1, then reinitiate at 0.7mg/m²"
+      },
+      {
+        "condition": "Bortezomib peripheral neuropathy NCI-CTC grade 4 or severe autonomic neuropathy",
+        "drug_name": "Bortezomib",
+        "factor": 0.0,
+        "notes": "Discontinue bortezomib permanently"
+      },
+      {
+        "condition": "Diarrhoea grade 2 despite anti-diarrhoeals - Panobinostat",
+        "drug_name": "Panobinostat",
+        "factor": 1.0,
+        "notes": "Omit dose until recovery to grade <=1 then resume at same dose"
+      },
+      {
+        "condition": "Diarrhoea grade 2 despite anti-diarrhoeals - Bortezomib",
+        "drug_name": "Bortezomib",
+        "factor": 0.75,
+        "notes": "Omit dose until recovery to grade <=1 then resume at reduced dose level"
+      },
+      {
+        "condition": "Diarrhoea grade 3 despite anti-diarrhoeals - Panobinostat",
+        "drug_name": "Panobinostat",
+        "factor": 0.75,
+        "notes": "Omit dose until recovery to grade <=1 then resume at reduced dose"
+      },
+      {
+        "condition": "Diarrhoea grade 3 despite anti-diarrhoeals - Bortezomib",
+        "drug_name": "Bortezomib",
+        "factor": 0.75,
+        "notes": "Omit dose until recovery to grade <=1 then resume at reduced dose level"
+      },
+      {
+        "condition": "Diarrhoea grade 4 despite anti-diarrhoeals - Panobinostat",
+        "drug_name": "Panobinostat",
+        "factor": 0.0,
+        "notes": "Permanently discontinue"
+      },
+      {
+        "condition": "Diarrhoea grade 4 despite anti-diarrhoeals - Bortezomib",
+        "drug_name": "Bortezomib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue"
+      },
+      {
+        "condition": "Panobinostat QTcF prolongation >=480ms or >60ms from baseline",
+        "drug_name": "Panobinostat",
+        "factor": 0.0,
+        "notes": "Omit dose. If resolved within 7 days, resume at prior dose (initial) or reduced (recurrent). If unresolved within 7 days, discontinue. If QTcF >500ms, permanently discontinue."
+      }
+    ],
+    "pre_medications": [
+      "Cyclizine 50mg up to three times a day oral when required (take home anti-emetic)",
+      "Aciclovir 400mg twice a day oral (anti-infective prophylaxis)",
+      "Co-trimoxazole 960mg once daily on Monday, Wednesday and Friday oral",
+      "Allopurinol 300mg once a day for 7 days oral (cycle 1 only)",
+      "Loperamide 4mg after first loose stool then 2mg after each loose stool to maximum 16mg/24 hours oral",
+      "Gastric protection: proton pump inhibitor or H2 antagonist in high-risk patients",
+      "Bisphosphonates in accordance with local policies",
+      "Mouthwashes according to local or national policy for mucositis"
+    ],
+    "special_warnings": [
+      "Panobinostat prolongs the QT interval. ECG required prior to day 1 of each cycle; QTcF must be <480ms before initiating panobinostat. Agents also associated with QT prolongation (ondansetron, metoclopramide, domperidone) should be used with caution.",
+      "Subcutaneous administration of bortezomib should be considered to reduce peripheral neuropathy risk.",
+      "Oral chemotherapy - NPSA/2008/RRR001 must be followed. Short course oral chemotherapy must not be continued.",
+      "FBC checked prior to each bortezomib dose (days 1, 8, 15, 22 for first cycle; then prior to day 1 each subsequent cycle).",
+      "LFTs and U&Es prior to day 1 of each cycle.",
+      "Women of childbearing potential must have a negative pregnancy test at screening; barrier contraception required.",
+      "All dose reductions due to adverse reactions should not be re-escalated without consultant approval. Third dose reduction: stop treatment.",
+      "Bortezomib dose rounded to agreed bands. At least 72 hours must elapse between bortezomib doses."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "bilirubin",
+      "ast_alt",
+      "qtcf_ecg",
+      "fbc",
+      "lft"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "MM-BOR-IV-DEX-PANO-THAL-21",
+    "protocol_name": "Multiple Myeloma - Bortezomib (IV)-Dexamethasone-Panobinostat-Thalidomide (21 day)",
+    "disease_site": "Myeloma",
+    "category": "myeloma",
+    "cycle_length_days": 21,
+    "number_of_cycles": 16,
+    "drugs": [
+      {
+        "drug_name": "Bortezomib",
+        "dose": 1.3,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1,
+          8
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "All cycles (up to 16): days 1, 8. Dose rounded to agreed bands. At least 72 hours must elapse between doses. Intravenous injection."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          8,
+          9
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "All cycles: days 1, 2, 8, 9. Take in morning with or after food."
+      },
+      {
+        "drug_name": "Panobinostat",
+        "dose": 20.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          3,
+          5,
+          8,
+          10,
+          12
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "All cycles: days 1, 3, 5, 8, 10, 12. Available as 10mg, 15mg and 20mg capsules. Take once daily at same time each day, swallow whole. Oral chemotherapy - NPSA/2008/RRR001 applies."
+      },
+      {
+        "drug_name": "Thalidomide",
+        "dose": 50.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": 100.0,
+        "max_dose_unit": "mg",
+        "notes": "Days 1-21 inclusive (continuous). Starting dose 50mg; may be increased to 100mg if well tolerated during first cycle. Take at night. Available as 50mg capsules. Oral chemotherapy - Pregnancy Prevention Programme mandatory."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Panobinostat haematological toxicity - Dose Level -1",
+        "drug_name": "Panobinostat",
+        "factor": 0.75,
+        "notes": "Reduce from 20mg to 15mg"
+      },
+      {
+        "condition": "Panobinostat haematological toxicity - Dose Level -2",
+        "drug_name": "Panobinostat",
+        "factor": 0.5,
+        "notes": "Reduce from 20mg to 10mg. Further: discontinue."
+      },
+      {
+        "condition": "Bortezomib haematological toxicity - Dose Level -1",
+        "drug_name": "Bortezomib",
+        "factor": 0.75,
+        "notes": "Reduce from 1.3mg/m² to 1mg/m²"
+      },
+      {
+        "condition": "Bortezomib haematological toxicity - Dose Level -2",
+        "drug_name": "Bortezomib",
+        "factor": 0.5,
+        "notes": "Reduce from 1.3mg/m² to 0.7mg/m². Further: discontinue."
+      },
+      {
+        "condition": "Bortezomib peripheral neuropathy NCI-CTC grade 1 with pain or grade 2",
+        "drug_name": "Bortezomib",
+        "factor": 0.75,
+        "notes": "Reduce to 1mg/m² or switch to weekly bortezomib at 1.3mg/m²"
+      },
+      {
+        "condition": "Bortezomib peripheral neuropathy NCI-CTC grade 2 with pain or grade 3",
+        "drug_name": "Bortezomib",
+        "factor": 0.5,
+        "notes": "Discontinue until resolved to grade <=1, then reinitiate at 0.7mg/m²"
+      },
+      {
+        "condition": "Bortezomib peripheral neuropathy NCI-CTC grade 4",
+        "drug_name": "Bortezomib",
+        "factor": 0.0,
+        "notes": "Discontinue bortezomib permanently"
+      },
+      {
+        "condition": "Thalidomide peripheral neuropathy NCI-CTC grade 1",
+        "drug_name": "Thalidomide",
+        "factor": 1.0,
+        "notes": "May continue; if symptoms worsen consider dose reduction or interruption. May reintroduce at reduced dose if symptoms resolve."
+      },
+      {
+        "condition": "Thalidomide peripheral neuropathy NCI-CTC grade 2",
+        "drug_name": "Thalidomide",
+        "factor": 0.5,
+        "notes": "Suspend treatment or reduce dose by at least 50%. May reintroduce at reduced dose if symptoms resolve to grade <=1."
+      },
+      {
+        "condition": "Thalidomide peripheral neuropathy NCI-CTC grade 3 or above",
+        "drug_name": "Thalidomide",
+        "factor": 0.0,
+        "notes": "Stop thalidomide treatment"
+      },
+      {
+        "condition": "Bortezomib hepatic impairment - bilirubin >1.5xULN",
+        "drug_name": "Bortezomib",
+        "factor": 0.5,
+        "notes": "Initiate at 0.7mg/m². May escalate to 1mg/m² or reduce to 0.5mg/m² in subsequent cycles based on tolerability."
+      },
+      {
+        "condition": "Panobinostat hepatic impairment - bilirubin 1-1.5xULN and/or abnormal AST",
+        "drug_name": "Panobinostat",
+        "factor": 0.75,
+        "notes": "Start at 15mg in first cycle, increase as tolerated. If during treatment, discontinue until grade <=2 then restart at reduced dose level."
+      },
+      {
+        "condition": "Panobinostat hepatic impairment - bilirubin 1.5-3xULN and/or abnormal AST",
+        "drug_name": "Panobinostat",
+        "factor": 0.5,
+        "notes": "Start at 10mg in first cycle, increase to 15mg as tolerated. If during treatment, discontinue until grade <=2 then restart at reduced dose level."
+      },
+      {
+        "condition": "Thalidomide hepatic impairment",
+        "drug_name": "Thalidomide",
+        "factor": 1.0,
+        "notes": "No adjustments necessary"
+      },
+      {
+        "condition": "Bortezomib renal impairment - CrCl >20 ml/min",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "100% of dose"
+      },
+      {
+        "condition": "Bortezomib renal impairment - CrCl <=20 ml/min",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Clinical decision required"
+      },
+      {
+        "condition": "Panobinostat renal impairment - mild to moderate",
+        "drug_name": "Panobinostat",
+        "factor": 1.0,
+        "notes": "No dose adjustments necessary"
+      },
+      {
+        "condition": "Thalidomide renal impairment",
+        "drug_name": "Thalidomide",
+        "factor": 1.0,
+        "notes": "No adjustments necessary"
+      },
+      {
+        "condition": "Diarrhoea grade 2 despite anti-diarrhoeals - Panobinostat",
+        "drug_name": "Panobinostat",
+        "factor": 1.0,
+        "notes": "Omit dose until recovery to grade <=1 then resume at same dose"
+      },
+      {
+        "condition": "Diarrhoea grade 2 despite anti-diarrhoeals - Bortezomib",
+        "drug_name": "Bortezomib",
+        "factor": 0.75,
+        "notes": "Omit dose until recovery to grade <=1 then resume at reduced dose level or change to once weekly"
+      },
+      {
+        "condition": "Diarrhoea grade 3 despite anti-diarrhoeals - Panobinostat",
+        "drug_name": "Panobinostat",
+        "factor": 0.75,
+        "notes": "Omit dose until recovery to grade <=1 then resume at reduced dose"
+      },
+      {
+        "condition": "Diarrhoea grade 3 despite anti-diarrhoeals - Bortezomib",
+        "drug_name": "Bortezomib",
+        "factor": 0.75,
+        "notes": "Omit dose until recovery to grade <=1 then resume at same dose on once weekly schedule"
+      },
+      {
+        "condition": "Diarrhoea grade 4 despite anti-diarrhoeals",
+        "drug_name": "Panobinostat",
+        "factor": 0.0,
+        "notes": "Permanently discontinue"
+      },
+      {
+        "condition": "Diarrhoea grade 4 despite anti-diarrhoeals",
+        "drug_name": "Bortezomib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue"
+      },
+      {
+        "condition": "Panobinostat QTcF prolongation >=480ms or >60ms from baseline",
+        "drug_name": "Panobinostat",
+        "factor": 0.0,
+        "notes": "Omit dose. If resolved within 7 days, resume at prior dose (initial) or reduced (recurrent). If unresolved within 7 days, discontinue. If QTcF >500ms, permanently discontinue."
+      },
+      {
+        "condition": "Thalidomide thromboembolic event (DVT/PE)",
+        "drug_name": "Thalidomide",
+        "factor": 1.0,
+        "notes": "May stop thalidomide; can re-introduce at 50mg with escalation at subsequent cycles to 100mg if good anticoagulant control and no other side effects."
+      }
+    ],
+    "pre_medications": [
+      "Cyclizine 50mg up to three times a day oral when required (take home anti-emetic)",
+      "Aciclovir 400mg twice a day oral (anti-infective prophylaxis)",
+      "Co-trimoxazole 960mg once daily on Monday, Wednesday and Friday oral",
+      "Allopurinol 300mg once a day for 7 days oral (cycle 1 only)",
+      "Thromboprophylaxis: dalteparin 5000 units SC OD or enoxaparin 40mg SC OD or heparin 5000 units SC BD (as per local formulary)",
+      "Loperamide 4mg after first loose stool then 2mg after each loose stool to maximum 16mg/24 hours oral",
+      "Gastric protection: proton pump inhibitor or H2 antagonist in high-risk patients",
+      "Bisphosphonates in accordance with local policies",
+      "Mouthwashes according to local or national policy for mucositis"
+    ],
+    "special_warnings": [
+      "Thalidomide is highly teratogenic. All prescribers, patients and pharmacy staff must comply with the manufacturer's Pregnancy Prevention Programme. Prescriptions must be accompanied by a completed Prescription Authorisation Form.",
+      "Thalidomide associated with increased risk of thromboembolic events; thromboprophylaxis required for at least first 5 months, especially with additional thrombotic risk factors.",
+      "Panobinostat prolongs the QT interval. ECG prior to day 1 required; QTcF must be <480ms before starting panobinostat. Agents also associated with QT prolongation (ondansetron, metoclopramide, domperidone) should be used with caution.",
+      "Subcutaneous administration of bortezomib should be considered to reduce peripheral neuropathy risk.",
+      "Oral chemotherapy - NPSA/2008/RRR001 must be followed. Short course oral chemotherapy must not be continued.",
+      "FBC checked prior to each dose of bortezomib (days 1 and 8).",
+      "LFTs and U&Es prior to day 1 of each cycle.",
+      "Thalidomide should be taken at night to avoid daytime drowsiness.",
+      "All dose reductions due to adverse reactions should not be re-escalated without consultant approval. Third dose reduction: stop treatment."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "bilirubin",
+      "ast_alt",
+      "qtcf_ecg",
+      "fbc",
+      "lft",
+      "pregnancy_test"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "MM-BOR-SC-DEX-PANO-21",
+    "protocol_name": "Multiple Myeloma - Bortezomib (SC)-Dexamethasone-Panobinostat (21 day)",
+    "disease_site": "Myeloma",
+    "category": "myeloma",
+    "cycle_length_days": 21,
+    "number_of_cycles": 16,
+    "drugs": [
+      {
+        "drug_name": "Bortezomib",
+        "dose": 1.3,
+        "dose_unit": "mg/m²",
+        "route": "Subcutaneous",
+        "days": [
+          1,
+          4,
+          8,
+          11
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1-8: days 1, 4, 8, 11. Cycles 9-16: days 1, 8 only. Subcutaneous injection. Dose rounded to agreed bands. At least 72 hours must elapse between doses."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          4,
+          5,
+          8,
+          9,
+          11,
+          12
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1-8: days 1, 2, 4, 5, 8, 9, 11, 12. Cycles 9-16: days 1, 2, 8, 9. Take in morning with or after food."
+      },
+      {
+        "drug_name": "Panobinostat",
+        "dose": 20.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          3,
+          5,
+          8,
+          10,
+          12
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "All cycles (1-16): days 1, 3, 5, 8, 10, 12. Available as 10mg, 15mg and 20mg capsules. Take once daily at same time each day, swallow whole. Oral chemotherapy - NPSA/2008/RRR001 applies."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Panobinostat haematological toxicity - Dose Level -1",
+        "drug_name": "Panobinostat",
+        "factor": 0.75,
+        "notes": "Reduce from 20mg to 15mg"
+      },
+      {
+        "condition": "Panobinostat haematological toxicity - Dose Level -2",
+        "drug_name": "Panobinostat",
+        "factor": 0.5,
+        "notes": "Reduce from 20mg to 10mg. Further: discontinue."
+      },
+      {
+        "condition": "Bortezomib haematological toxicity - Dose Level -1",
+        "drug_name": "Bortezomib",
+        "factor": 0.75,
+        "notes": "Reduce from 1.3mg/m² to 1mg/m²"
+      },
+      {
+        "condition": "Bortezomib haematological toxicity - Dose Level -2",
+        "drug_name": "Bortezomib",
+        "factor": 0.5,
+        "notes": "Reduce from 1.3mg/m² to 0.7mg/m². Further: discontinue."
+      },
+      {
+        "condition": "Bortezomib neutrophils 0.75-1x10^9/L",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Maintain same dose"
+      },
+      {
+        "condition": "Bortezomib neutrophils <1x10^9/L with febrile neutropenia or <0.5x10^9/L",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Interrupt until febrile neutropenia resolves and neutrophils >=1x10^9/L. If 1 dose omitted restart at same dose; if 2+ doses omitted consecutively or within same cycle, restart at reduced dose."
+      },
+      {
+        "condition": "Bortezomib platelets 25-50x10^9/L (grade 3)",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Maintain same dose"
+      },
+      {
+        "condition": "Bortezomib platelets 25-50x10^9/L with haemorrhage or <25x10^9/L (grade 4)",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Interrupt until platelets >=75x10^9/L. If 1 dose omitted restart at same dose; if 2+ omitted consecutively or in same cycle, restart at reduced dose."
+      },
+      {
+        "condition": "Panobinostat neutrophils 0.75-1x10^9/L",
+        "drug_name": "Panobinostat",
+        "factor": 1.0,
+        "notes": "Maintain same dose"
+      },
+      {
+        "condition": "Panobinostat neutrophils 0.5-0.75x10^9/L",
+        "drug_name": "Panobinostat",
+        "factor": 1.0,
+        "notes": "Single occurrence: maintain same dose. Two or more episodes: interrupt until >=1x10^9/L then restart at same dose."
+      },
+      {
+        "condition": "Panobinostat neutrophils <1x10^9/L with febrile neutropenia",
+        "drug_name": "Panobinostat",
+        "factor": 0.75,
+        "notes": "Interrupt until febrile neutropenia resolves and neutrophils >=1x10^9/L, then restart at reduced dose level"
+      },
+      {
+        "condition": "Panobinostat neutrophils <0.5x10^9/L",
+        "drug_name": "Panobinostat",
+        "factor": 0.75,
+        "notes": "Interrupt until neutrophils >=1x10^9/L, then restart at reduced dose level"
+      },
+      {
+        "condition": "Panobinostat platelets 25-50x10^9/L (grade 3)",
+        "drug_name": "Panobinostat",
+        "factor": 1.0,
+        "notes": "Maintain same dose, monitor platelet counts every 7 days"
+      },
+      {
+        "condition": "Panobinostat platelets 25-50x10^9/L with haemorrhage",
+        "drug_name": "Panobinostat",
+        "factor": 0.75,
+        "notes": "Interrupt; monitor platelets weekly until >=50x10^9/L, then restart at reduced dose level"
+      },
+      {
+        "condition": "Panobinostat platelets <25x10^9/L (grade 4)",
+        "drug_name": "Panobinostat",
+        "factor": 0.75,
+        "notes": "Interrupt; monitor platelets weekly until >=50x10^9/L, then restart at reduced dose level"
+      },
+      {
+        "condition": "Bortezomib hepatic impairment - bilirubin >1.5xULN",
+        "drug_name": "Bortezomib",
+        "factor": 0.5,
+        "notes": "Initiate at 0.7mg/m². May escalate to 1mg/m² or reduce to 0.5mg/m² based on tolerability."
+      },
+      {
+        "condition": "Panobinostat hepatic impairment - bilirubin 1-1.5xULN and/or abnormal AST",
+        "drug_name": "Panobinostat",
+        "factor": 0.75,
+        "notes": "Start at 15mg in first cycle, increase as tolerated. If during treatment, discontinue until grade <=2 then restart at reduced dose level."
+      },
+      {
+        "condition": "Panobinostat hepatic impairment - bilirubin 1.5-3xULN and/or abnormal AST",
+        "drug_name": "Panobinostat",
+        "factor": 0.5,
+        "notes": "Start at 10mg in first cycle, increase to 15mg as tolerated. If during treatment, discontinue until grade <=2 then restart at reduced dose level."
+      },
+      {
+        "condition": "Bortezomib renal impairment - CrCl >20 ml/min",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "100% of dose"
+      },
+      {
+        "condition": "Bortezomib renal impairment - CrCl <=20 ml/min",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Clinical decision required"
+      },
+      {
+        "condition": "Panobinostat renal impairment - mild to moderate",
+        "drug_name": "Panobinostat",
+        "factor": 1.0,
+        "notes": "No dose adjustments necessary"
+      },
+      {
+        "condition": "Bortezomib peripheral neuropathy NCI-CTC grade 1 with pain or grade 2",
+        "drug_name": "Bortezomib",
+        "factor": 0.75,
+        "notes": "Reduce to 1mg/m² or switch to weekly bortezomib at 1.3mg/m²"
+      },
+      {
+        "condition": "Bortezomib peripheral neuropathy NCI-CTC grade 2 with pain or grade 3",
+        "drug_name": "Bortezomib",
+        "factor": 0.5,
+        "notes": "Discontinue until resolved to grade <=1, then reinitiate at 0.7mg/m²"
+      },
+      {
+        "condition": "Bortezomib peripheral neuropathy NCI-CTC grade 4",
+        "drug_name": "Bortezomib",
+        "factor": 0.0,
+        "notes": "Discontinue bortezomib permanently"
+      },
+      {
+        "condition": "Diarrhoea grade 2 despite anti-diarrhoeals - Panobinostat",
+        "drug_name": "Panobinostat",
+        "factor": 1.0,
+        "notes": "Omit dose until recovery to grade <=1 then resume at same dose"
+      },
+      {
+        "condition": "Diarrhoea grade 2 despite anti-diarrhoeals - Bortezomib",
+        "drug_name": "Bortezomib",
+        "factor": 0.75,
+        "notes": "Omit dose until recovery to grade <=1 then resume at reduced dose level or change to once weekly"
+      },
+      {
+        "condition": "Diarrhoea grade 3 despite anti-diarrhoeals - Panobinostat",
+        "drug_name": "Panobinostat",
+        "factor": 0.75,
+        "notes": "Omit dose until recovery to grade <=1 then resume at reduced dose"
+      },
+      {
+        "condition": "Diarrhoea grade 3 despite anti-diarrhoeals - Bortezomib",
+        "drug_name": "Bortezomib",
+        "factor": 0.75,
+        "notes": "Omit dose until recovery to grade <=1 then resume at same dose on once weekly schedule"
+      },
+      {
+        "condition": "Diarrhoea grade 4 despite anti-diarrhoeals",
+        "drug_name": "Panobinostat",
+        "factor": 0.0,
+        "notes": "Permanently discontinue"
+      },
+      {
+        "condition": "Diarrhoea grade 4 despite anti-diarrhoeals",
+        "drug_name": "Bortezomib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue"
+      },
+      {
+        "condition": "Panobinostat QTcF prolongation >=480ms or >60ms from baseline",
+        "drug_name": "Panobinostat",
+        "factor": 0.0,
+        "notes": "Omit dose. If resolved within 7 days, resume at prior dose (initial) or reduced (recurrent). If unresolved within 7 days, discontinue. If QTcF >500ms, permanently discontinue."
+      }
+    ],
+    "pre_medications": [
+      "Cyclizine 50mg up to three times a day oral when required (take home anti-emetic)",
+      "Aciclovir 400mg twice a day oral (anti-infective prophylaxis)",
+      "Co-trimoxazole 960mg once daily on Monday, Wednesday and Friday oral",
+      "Allopurinol 300mg once a day for 7 days oral (cycle 1 only)",
+      "Loperamide 4mg after first loose stool then 2mg after each loose stool to maximum 16mg/24 hours oral",
+      "Gastric protection: proton pump inhibitor or H2 antagonist in high-risk patients",
+      "Bisphosphonates in accordance with local policies",
+      "Mouthwashes according to local or national policy for mucositis"
+    ],
+    "special_warnings": [
+      "Panobinostat prolongs the QT interval. ECG required prior to day 1; QTcF must be <480ms before initiating panobinostat. Repeat ECG on day 1 of cycle 2. Agents also associated with QT prolongation (ondansetron, metoclopramide, domperidone) should be used with caution.",
+      "Bortezomib given subcutaneously; SC route associated with lower incidence and severity of peripheral neuropathy.",
+      "Oral chemotherapy - NPSA/2008/RRR001 must be followed. Short course oral chemotherapy must not be continued.",
+      "FBC checked prior to each bortezomib dose (days 1 and 8 in cycles 9-16; days 1 and 8, with consideration before days 15 and/or 18 in patients >=65 years or platelets <150x10^9/L in cycles 1-8).",
+      "LFTs and U&Es prior to day 1 of each cycle. ECG prior to day 1.",
+      "Women of childbearing potential must have a negative pregnancy test at screening; barrier contraception required.",
+      "All dose reductions due to adverse reactions should not be re-escalated without consultant approval. Third dose reduction: stop treatment.",
+      "Bortezomib dose rounded to agreed bands. At least 72 hours must elapse between bortezomib doses."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "bilirubin",
+      "ast_alt",
+      "qtcf_ecg",
+      "fbc",
+      "lft"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "MM-BOR-SC-DEX-PANO-28",
+    "protocol_name": "Multiple Myeloma - Bortezomib (SC)-Dexamethasone-Panobinostat (28 day)",
+    "disease_site": "Myeloma",
+    "category": "myeloma",
+    "cycle_length_days": 28,
+    "number_of_cycles": 16,
+    "drugs": [
+      {
+        "drug_name": "Bortezomib",
+        "dose": 1.3,
+        "dose_unit": "mg/m²",
+        "route": "Subcutaneous",
+        "days": [
+          1,
+          8,
+          15,
+          22
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1-8: days 1, 8, 15, 22. Cycles 9-16: days 1, 8 only. Subcutaneous injection. Dose rounded to agreed bands. At least 72 hours must elapse between doses."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          8,
+          9,
+          15,
+          16,
+          22,
+          23
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 1-8: days 1, 2, 8, 9, 15, 16, 22, 23. Cycles 9-16: days 1, 2, 8, 9. Take in morning with or after food."
+      },
+      {
+        "drug_name": "Panobinostat",
+        "dose": 20.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          3,
+          5,
+          15,
+          17,
+          19
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "All cycles (1-16): days 1, 3, 5, 15, 17, 19. Available as 10mg, 15mg and 20mg capsules. Take once daily at same time each day, swallow whole. Oral chemotherapy - NPSA/2008/RRR001 applies."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Panobinostat haematological toxicity - Dose Level -1",
+        "drug_name": "Panobinostat",
+        "factor": 0.75,
+        "notes": "Reduce from 20mg to 15mg"
+      },
+      {
+        "condition": "Panobinostat haematological toxicity - Dose Level -2",
+        "drug_name": "Panobinostat",
+        "factor": 0.5,
+        "notes": "Reduce from 20mg to 10mg. Further: discontinue."
+      },
+      {
+        "condition": "Bortezomib haematological toxicity - Dose Level -1",
+        "drug_name": "Bortezomib",
+        "factor": 0.75,
+        "notes": "Reduce from 1.3mg/m² to 1mg/m²"
+      },
+      {
+        "condition": "Bortezomib haematological toxicity - Dose Level -2",
+        "drug_name": "Bortezomib",
+        "factor": 0.5,
+        "notes": "Reduce from 1.3mg/m² to 0.7mg/m². Further: discontinue."
+      },
+      {
+        "condition": "Bortezomib neutrophils 0.75-1x10^9/L",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Maintain same dose"
+      },
+      {
+        "condition": "Bortezomib neutrophils <1x10^9/L with febrile neutropenia or <0.5x10^9/L",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Interrupt until febrile neutropenia resolves and neutrophils >=1x10^9/L. If 1 dose omitted restart at same dose; if 2+ omitted consecutively or in same cycle, restart at reduced dose."
+      },
+      {
+        "condition": "Bortezomib platelets 25-50x10^9/L (grade 3)",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Maintain same dose"
+      },
+      {
+        "condition": "Bortezomib platelets 25-50x10^9/L with haemorrhage or <25x10^9/L (grade 4)",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Interrupt until platelets >=75x10^9/L. If 1 dose omitted restart at same dose; if 2+ omitted consecutively or in same cycle, restart at reduced dose."
+      },
+      {
+        "condition": "Panobinostat neutrophils 0.75-1x10^9/L",
+        "drug_name": "Panobinostat",
+        "factor": 1.0,
+        "notes": "Maintain same dose"
+      },
+      {
+        "condition": "Panobinostat neutrophils 0.5-0.75x10^9/L",
+        "drug_name": "Panobinostat",
+        "factor": 1.0,
+        "notes": "Single occurrence: maintain same dose. Two or more episodes: interrupt until >=1x10^9/L then restart at same dose."
+      },
+      {
+        "condition": "Panobinostat neutrophils <1x10^9/L with febrile neutropenia",
+        "drug_name": "Panobinostat",
+        "factor": 0.75,
+        "notes": "Interrupt until febrile neutropenia resolves and neutrophils >=1x10^9/L, then restart at reduced dose level"
+      },
+      {
+        "condition": "Panobinostat neutrophils <0.5x10^9/L",
+        "drug_name": "Panobinostat",
+        "factor": 0.75,
+        "notes": "Interrupt until neutrophils >=1x10^9/L, then restart at reduced dose level"
+      },
+      {
+        "condition": "Panobinostat platelets 25-50x10^9/L (grade 3)",
+        "drug_name": "Panobinostat",
+        "factor": 1.0,
+        "notes": "Maintain same dose, monitor platelet counts every 7 days"
+      },
+      {
+        "condition": "Panobinostat platelets 25-50x10^9/L with haemorrhage",
+        "drug_name": "Panobinostat",
+        "factor": 0.75,
+        "notes": "Interrupt; monitor platelets weekly until >=50x10^9/L, then restart at reduced dose level"
+      },
+      {
+        "condition": "Panobinostat platelets <25x10^9/L (grade 4)",
+        "drug_name": "Panobinostat",
+        "factor": 0.75,
+        "notes": "Interrupt; monitor platelets weekly until >=50x10^9/L, then restart at reduced dose level"
+      },
+      {
+        "condition": "Bortezomib hepatic impairment - bilirubin >1.5xULN",
+        "drug_name": "Bortezomib",
+        "factor": 0.5,
+        "notes": "Initiate at 0.7mg/m². May escalate to 1mg/m² or reduce to 0.5mg/m² based on tolerability."
+      },
+      {
+        "condition": "Panobinostat hepatic impairment - bilirubin 1-1.5xULN and/or abnormal AST",
+        "drug_name": "Panobinostat",
+        "factor": 0.75,
+        "notes": "Start at 15mg in first cycle, increase as tolerated. If during treatment, discontinue until grade <=2 then restart at reduced dose level."
+      },
+      {
+        "condition": "Panobinostat hepatic impairment - bilirubin 1.5-3xULN and/or abnormal AST",
+        "drug_name": "Panobinostat",
+        "factor": 0.5,
+        "notes": "Start at 10mg in first cycle, increase to 15mg as tolerated. If during treatment, discontinue until grade <=2 then restart at reduced dose level."
+      },
+      {
+        "condition": "Bortezomib renal impairment - CrCl >20 ml/min",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "100% of dose"
+      },
+      {
+        "condition": "Bortezomib renal impairment - CrCl <=20 ml/min",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Clinical decision required"
+      },
+      {
+        "condition": "Panobinostat renal impairment - mild to moderate",
+        "drug_name": "Panobinostat",
+        "factor": 1.0,
+        "notes": "No dose adjustments necessary"
+      },
+      {
+        "condition": "Bortezomib peripheral neuropathy NCI-CTC grade 1 with pain or grade 2",
+        "drug_name": "Bortezomib",
+        "factor": 0.75,
+        "notes": "Reduce to 1mg/m² or switch to weekly bortezomib at 1.3mg/m²"
+      },
+      {
+        "condition": "Bortezomib peripheral neuropathy NCI-CTC grade 2 with pain or grade 3",
+        "drug_name": "Bortezomib",
+        "factor": 0.5,
+        "notes": "Discontinue until resolved to grade <=1, then reinitiate at 0.7mg/m²"
+      },
+      {
+        "condition": "Bortezomib peripheral neuropathy NCI-CTC grade 4",
+        "drug_name": "Bortezomib",
+        "factor": 0.0,
+        "notes": "Discontinue bortezomib permanently"
+      },
+      {
+        "condition": "Diarrhoea grade 2 despite anti-diarrhoeals - Panobinostat",
+        "drug_name": "Panobinostat",
+        "factor": 1.0,
+        "notes": "Omit dose until recovery to grade <=1 then resume at same dose"
+      },
+      {
+        "condition": "Diarrhoea grade 2 despite anti-diarrhoeals - Bortezomib",
+        "drug_name": "Bortezomib",
+        "factor": 0.75,
+        "notes": "Omit dose until recovery to grade <=1 then resume at reduced dose level"
+      },
+      {
+        "condition": "Diarrhoea grade 3 despite anti-diarrhoeals - Panobinostat",
+        "drug_name": "Panobinostat",
+        "factor": 0.75,
+        "notes": "Omit dose until recovery to grade <=1 then resume at reduced dose"
+      },
+      {
+        "condition": "Diarrhoea grade 3 despite anti-diarrhoeals - Bortezomib",
+        "drug_name": "Bortezomib",
+        "factor": 0.75,
+        "notes": "Omit dose until recovery to grade <=1 then resume at reduced dose level"
+      },
+      {
+        "condition": "Diarrhoea grade 4 despite anti-diarrhoeals",
+        "drug_name": "Panobinostat",
+        "factor": 0.0,
+        "notes": "Permanently discontinue"
+      },
+      {
+        "condition": "Diarrhoea grade 4 despite anti-diarrhoeals",
+        "drug_name": "Bortezomib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue"
+      },
+      {
+        "condition": "Panobinostat QTcF prolongation >=480ms or >60ms from baseline",
+        "drug_name": "Panobinostat",
+        "factor": 0.0,
+        "notes": "Omit dose. If resolved within 7 days, resume at prior dose (initial) or reduced (recurrent). If unresolved within 7 days, discontinue. If QTcF >500ms, permanently discontinue."
+      }
+    ],
+    "pre_medications": [
+      "Cyclizine 50mg up to three times a day oral when required (take home anti-emetic)",
+      "Aciclovir 400mg twice a day oral (anti-infective prophylaxis)",
+      "Co-trimoxazole 960mg once daily on Monday, Wednesday and Friday oral",
+      "Allopurinol 300mg once a day for 7 days oral (cycle 1 only)",
+      "Loperamide 4mg after first loose stool then 2mg after each loose stool to maximum 16mg/24 hours oral",
+      "Gastric protection: proton pump inhibitor or H2 antagonist in high-risk patients",
+      "Bisphosphonates in accordance with local policies",
+      "Mouthwashes according to local or national policy for mucositis"
+    ],
+    "special_warnings": [
+      "Panobinostat prolongs the QT interval. ECG required prior to day 1 of each cycle; QTcF must be <480ms before starting panobinostat. Agents also associated with QT prolongation (ondansetron, metoclopramide, domperidone) should be used with caution.",
+      "Bortezomib given subcutaneously; SC route associated with lower incidence and severity of peripheral neuropathy.",
+      "Oral chemotherapy - NPSA/2008/RRR001 must be followed. Short course oral chemotherapy must not be continued.",
+      "FBC checked prior to each bortezomib dose (days 1, 8, 15, 22 for first cycle; then prior to day 1 each subsequent cycle).",
+      "LFTs and U&Es prior to day 1 of each cycle. ECG prior to day 1 of each cycle.",
+      "Women of childbearing potential must have a negative pregnancy test at screening; barrier contraception required.",
+      "All dose reductions due to adverse reactions should not be re-escalated without consultant approval. Third dose reduction: stop treatment.",
+      "Bortezomib dose rounded to agreed bands. At least 72 hours must elapse between bortezomib doses."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "bilirubin",
+      "ast_alt",
+      "qtcf_ecg",
+      "fbc",
+      "lft"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "MM-BOR-SC-DEX-PANO-THAL-21",
+    "protocol_name": "Multiple Myeloma - Bortezomib (SC)-Dexamethasone-Panobinostat-Thalidomide (21 day)",
+    "disease_site": "Myeloma",
+    "category": "myeloma",
+    "cycle_length_days": 21,
+    "number_of_cycles": 16,
+    "drugs": [
+      {
+        "drug_name": "Bortezomib",
+        "dose": 1.3,
+        "dose_unit": "mg/m²",
+        "route": "Subcutaneous",
+        "days": [
+          1,
+          8
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "All cycles (up to 16): days 1, 8. Subcutaneous injection. Dose rounded to agreed bands. At least 72 hours must elapse between doses."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          8,
+          9
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "All cycles: days 1, 2, 8, 9. Take in morning with or after food."
+      },
+      {
+        "drug_name": "Panobinostat",
+        "dose": 20.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          3,
+          5,
+          8,
+          10,
+          12
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "All cycles: days 1, 3, 5, 8, 10, 12. Available as 10mg, 15mg and 20mg capsules. Take once daily at same time each day, swallow whole. Oral chemotherapy - NPSA/2008/RRR001 applies."
+      },
+      {
+        "drug_name": "Thalidomide",
+        "dose": 50.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": 100.0,
+        "max_dose_unit": "mg",
+        "notes": "Days 1-21 inclusive (continuous). Starting dose 50mg; may be increased to 100mg if well tolerated during first cycle. Take at night. Available as 50mg capsules. Oral chemotherapy - Pregnancy Prevention Programme mandatory."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Panobinostat haematological toxicity - Dose Level -1",
+        "drug_name": "Panobinostat",
+        "factor": 0.75,
+        "notes": "Reduce from 20mg to 15mg"
+      },
+      {
+        "condition": "Panobinostat haematological toxicity - Dose Level -2",
+        "drug_name": "Panobinostat",
+        "factor": 0.5,
+        "notes": "Reduce from 20mg to 10mg. Further: discontinue."
+      },
+      {
+        "condition": "Bortezomib haematological toxicity - Dose Level -1",
+        "drug_name": "Bortezomib",
+        "factor": 0.75,
+        "notes": "Reduce from 1.3mg/m² to 1mg/m²"
+      },
+      {
+        "condition": "Bortezomib haematological toxicity - Dose Level -2",
+        "drug_name": "Bortezomib",
+        "factor": 0.5,
+        "notes": "Reduce from 1.3mg/m² to 0.7mg/m². Further: discontinue."
+      },
+      {
+        "condition": "Bortezomib peripheral neuropathy NCI-CTC grade 1 with pain or grade 2",
+        "drug_name": "Bortezomib",
+        "factor": 0.75,
+        "notes": "Reduce to 1mg/m² or switch to weekly bortezomib at 1.3mg/m²"
+      },
+      {
+        "condition": "Bortezomib peripheral neuropathy NCI-CTC grade 2 with pain or grade 3",
+        "drug_name": "Bortezomib",
+        "factor": 0.5,
+        "notes": "Discontinue until resolved to grade <=1, then reinitiate at 0.7mg/m²"
+      },
+      {
+        "condition": "Bortezomib peripheral neuropathy NCI-CTC grade 4",
+        "drug_name": "Bortezomib",
+        "factor": 0.0,
+        "notes": "Discontinue bortezomib permanently"
+      },
+      {
+        "condition": "Thalidomide peripheral neuropathy NCI-CTC grade 1",
+        "drug_name": "Thalidomide",
+        "factor": 1.0,
+        "notes": "May continue; if symptoms worsen consider dose reduction or interruption. May reintroduce at reduced dose if symptoms resolve."
+      },
+      {
+        "condition": "Thalidomide peripheral neuropathy NCI-CTC grade 2",
+        "drug_name": "Thalidomide",
+        "factor": 0.5,
+        "notes": "Suspend treatment or reduce dose by at least 50%. May reintroduce at reduced dose if symptoms resolve to grade <=1."
+      },
+      {
+        "condition": "Thalidomide peripheral neuropathy NCI-CTC grade 3 or above",
+        "drug_name": "Thalidomide",
+        "factor": 0.0,
+        "notes": "Stop thalidomide treatment"
+      },
+      {
+        "condition": "Bortezomib hepatic impairment - bilirubin >1.5xULN",
+        "drug_name": "Bortezomib",
+        "factor": 0.5,
+        "notes": "Initiate at 0.7mg/m². May escalate to 1mg/m² or reduce to 0.5mg/m² based on tolerability."
+      },
+      {
+        "condition": "Panobinostat hepatic impairment - bilirubin 1-1.5xULN and/or abnormal AST",
+        "drug_name": "Panobinostat",
+        "factor": 0.75,
+        "notes": "Start at 15mg in first cycle, increase as tolerated. If during treatment, discontinue until grade <=2 then restart at reduced dose level."
+      },
+      {
+        "condition": "Panobinostat hepatic impairment - bilirubin 1.5-3xULN and/or abnormal AST",
+        "drug_name": "Panobinostat",
+        "factor": 0.5,
+        "notes": "Start at 10mg in first cycle, increase to 15mg as tolerated. If during treatment, discontinue until grade <=2 then restart at reduced dose level."
+      },
+      {
+        "condition": "Thalidomide hepatic impairment",
+        "drug_name": "Thalidomide",
+        "factor": 1.0,
+        "notes": "No adjustments necessary"
+      },
+      {
+        "condition": "Bortezomib renal impairment - CrCl >20 ml/min",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "100% of dose"
+      },
+      {
+        "condition": "Bortezomib renal impairment - CrCl <=20 ml/min",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Clinical decision required"
+      },
+      {
+        "condition": "Panobinostat renal impairment - mild to moderate",
+        "drug_name": "Panobinostat",
+        "factor": 1.0,
+        "notes": "No dose adjustments necessary"
+      },
+      {
+        "condition": "Thalidomide renal impairment",
+        "drug_name": "Thalidomide",
+        "factor": 1.0,
+        "notes": "No adjustments necessary"
+      },
+      {
+        "condition": "Diarrhoea grade 2 despite anti-diarrhoeals - Panobinostat",
+        "drug_name": "Panobinostat",
+        "factor": 1.0,
+        "notes": "Omit dose until recovery to grade <=1 then resume at same dose"
+      },
+      {
+        "condition": "Diarrhoea grade 2 despite anti-diarrhoeals - Bortezomib",
+        "drug_name": "Bortezomib",
+        "factor": 0.75,
+        "notes": "Omit dose until recovery to grade <=1 then resume at reduced dose level or change to once weekly"
+      },
+      {
+        "condition": "Diarrhoea grade 3 despite anti-diarrhoeals - Panobinostat",
+        "drug_name": "Panobinostat",
+        "factor": 0.75,
+        "notes": "Omit dose until recovery to grade <=1 then resume at reduced dose"
+      },
+      {
+        "condition": "Diarrhoea grade 3 despite anti-diarrhoeals - Bortezomib",
+        "drug_name": "Bortezomib",
+        "factor": 0.75,
+        "notes": "Omit dose until recovery to grade <=1 then resume at same dose on once weekly schedule"
+      },
+      {
+        "condition": "Diarrhoea grade 4 despite anti-diarrhoeals",
+        "drug_name": "Panobinostat",
+        "factor": 0.0,
+        "notes": "Permanently discontinue"
+      },
+      {
+        "condition": "Diarrhoea grade 4 despite anti-diarrhoeals",
+        "drug_name": "Bortezomib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue"
+      },
+      {
+        "condition": "Panobinostat QTcF prolongation >=480ms or >60ms from baseline",
+        "drug_name": "Panobinostat",
+        "factor": 0.0,
+        "notes": "Omit dose. If resolved within 7 days, resume at prior dose (initial) or reduced (recurrent). If unresolved within 7 days, discontinue. If QTcF >500ms, permanently discontinue."
+      },
+      {
+        "condition": "Thalidomide thromboembolic event (DVT/PE)",
+        "drug_name": "Thalidomide",
+        "factor": 1.0,
+        "notes": "May stop; can re-introduce at 50mg with escalation at subsequent cycles to 100mg if good anticoagulant control and no other side effects."
+      }
+    ],
+    "pre_medications": [
+      "Cyclizine 50mg up to three times a day oral when required (take home anti-emetic)",
+      "Aciclovir 400mg twice a day oral (anti-infective prophylaxis)",
+      "Co-trimoxazole 960mg once daily on Monday, Wednesday and Friday oral",
+      "Allopurinol 300mg once a day for 7 days oral (cycle 1 only)",
+      "Thromboprophylaxis: dalteparin 5000 units SC OD or enoxaparin 40mg SC OD or heparin 5000 units SC BD (as per local formulary)",
+      "Loperamide 4mg after first loose stool then 2mg after each loose stool to maximum 16mg/24 hours oral",
+      "Gastric protection: proton pump inhibitor or H2 antagonist in high-risk patients",
+      "Bisphosphonates in accordance with local policies",
+      "Mouthwashes according to local or national policy for mucositis"
+    ],
+    "special_warnings": [
+      "Thalidomide is highly teratogenic. All prescribers, patients and pharmacy staff must comply with the manufacturer's Pregnancy Prevention Programme. Prescriptions must be accompanied by a completed Prescription Authorisation Form.",
+      "Thalidomide associated with increased risk of thromboembolic events; thromboprophylaxis required for at least first 5 months, especially with additional thrombotic risk factors.",
+      "Panobinostat prolongs the QT interval. ECG prior to day 1; QTcF must be <480ms before starting panobinostat. Agents also associated with QT prolongation (ondansetron, metoclopramide, domperidone) should be used with caution.",
+      "Bortezomib given subcutaneously; SC route associated with lower incidence and severity of peripheral neuropathy.",
+      "Oral chemotherapy - NPSA/2008/RRR001 must be followed. Short course oral chemotherapy must not be continued.",
+      "FBC checked prior to each bortezomib dose (days 1 and 8).",
+      "LFTs and U&Es prior to day 1 of each cycle.",
+      "Thalidomide should be taken at night to avoid daytime drowsiness.",
+      "All dose reductions due to adverse reactions should not be re-escalated without consultant approval. Third dose reduction: stop treatment."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "bilirubin",
+      "ast_alt",
+      "qtcf_ecg",
+      "fbc",
+      "lft",
+      "pregnancy_test"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "MM-CTD-21",
+    "protocol_name": "Multiple Myeloma - CTD (21) Cyclophosphamide-Dexamethasone-Thalidomide (21 day)",
+    "disease_site": "Myeloma",
+    "category": "myeloma",
+    "cycle_length_days": 21,
+    "number_of_cycles": 8,
+    "drugs": [
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 500.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Days 1, 8, 15. Available as 50mg tablets. Swallow whole with a full glass of water. Dose modifications based on haematological parameters apply to cyclophosphamide only."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 40.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          12,
+          13,
+          14,
+          15
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Days 1, 2, 3, 4 and 12, 13, 14, 15. Take in morning with or after food. If unable to tolerate standard dose, may reduce to 20mg or omit days 12-15."
+      },
+      {
+        "drug_name": "Thalidomide",
+        "dose": 100.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": 200.0,
+        "max_dose_unit": "mg",
+        "notes": "Days 1-21 inclusive (continuous). Initiated at 100mg daily; increased by 50mg every 3 weeks if tolerated to target of 200mg. Available as 50mg capsules. Take at night. Oral chemotherapy - Pregnancy Prevention Programme mandatory. Prescriptions must be accompanied by Prescription Authorisation Form."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Cyclophosphamide - neutrophils >=1x10^9/L",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "100% of dose"
+      },
+      {
+        "condition": "Cyclophosphamide - neutrophils <1x10^9/L",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce, delay or omit cyclophosphamide until neutrophils are >=1x10^9/L and then either continue at full dose with growth factor support or give reduced dose and seek consultant advice"
+      },
+      {
+        "condition": "Cyclophosphamide - platelets >=75x10^9/L",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "100% of dose"
+      },
+      {
+        "condition": "Cyclophosphamide - platelets <75x10^9/L or bleeding",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce, delay or omit until platelets >=75x10^9/L and then continue at full dose or give reduced dose and seek consultant advice"
+      },
+      {
+        "condition": "Cyclophosphamide hepatic impairment - bilirubin >30 micromol/L or AST/ALT 2-3xULN",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Clinical decision. Evidence that exposure to active metabolites may not be increased, suggesting dose reduction may not be necessary."
+      },
+      {
+        "condition": "Cyclophosphamide renal impairment - CrCl >20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "100% of dose"
+      },
+      {
+        "condition": "Cyclophosphamide renal impairment - CrCl 10-20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "75% of dose"
+      },
+      {
+        "condition": "Cyclophosphamide renal impairment - CrCl <10 ml/min or serum creatinine >300 micromol/L",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.0,
+        "notes": "Omit cyclophosphamide"
+      },
+      {
+        "condition": "Thalidomide peripheral neuropathy NCI-CTC grade 1",
+        "drug_name": "Thalidomide",
+        "factor": 1.0,
+        "notes": "May continue; if symptoms worsen consider dose reduction or interruption. May reintroduce at reduced dose if symptoms resolve."
+      },
+      {
+        "condition": "Thalidomide peripheral neuropathy NCI-CTC grade 2",
+        "drug_name": "Thalidomide",
+        "factor": 0.5,
+        "notes": "Suspend treatment or reduce dose by at least 50%. May reintroduce at reduced dose if symptoms resolve to grade <=1."
+      },
+      {
+        "condition": "Thalidomide peripheral neuropathy NCI-CTC grade 3 or above",
+        "drug_name": "Thalidomide",
+        "factor": 0.0,
+        "notes": "Stop thalidomide treatment"
+      },
+      {
+        "condition": "Thalidomide - other NCI-CTC grade 3 toxicities or above",
+        "drug_name": "Thalidomide",
+        "factor": 1.0,
+        "notes": "Stop thalidomide until recovery to NCI-CTC grade <=1. Cautious reintroduction at 50mg/day with dose escalation if tolerated."
+      },
+      {
+        "condition": "Dexamethasone - intolerance to standard dose",
+        "drug_name": "Dexamethasone",
+        "factor": 0.5,
+        "notes": "Reduce to 20mg or omit days 12-15"
+      }
+    ],
+    "pre_medications": [
+      "Metoclopramide 10mg up to three times a day oral when required (anti-emetic)",
+      "Ondansetron 8mg once a day on days 1, 8, 15 oral (take 15-30 minutes prior to cyclophosphamide administration)",
+      "Consider allopurinol 300mg once a day for 7 days oral (first cycle only)",
+      "Aciclovir 400mg twice a day oral (anti-infective prophylaxis)",
+      "Co-trimoxazole 960mg once daily on Monday, Wednesday and Friday oral",
+      "Thromboprophylaxis: dalteparin 5000 units SC OD or enoxaparin 40mg SC OD or heparin 5000 units SC BD (as per local formulary); aspirin 75mg each morning is an alternative in very low risk patients once response obtained",
+      "Laxatives as required for thalidomide-induced constipation",
+      "Gastric protection: proton pump inhibitor or H2 antagonist in high-risk patients",
+      "Bisphosphonates in accordance with local policies",
+      "Mouthwashes according to local or national policy for mucositis"
+    ],
+    "special_warnings": [
+      "Thalidomide is highly teratogenic. All prescribers, patients and pharmacy staff must comply with the manufacturer's Pregnancy Prevention Programme. Prescriptions must be accompanied by a completed Prescription Authorisation Form.",
+      "Thalidomide associated with increased risk of thromboembolic events; thromboprophylaxis required for at least first 5 months, especially with additional thrombotic risk factors.",
+      "Pregnancy testing required: negative test must be obtained within 3 days of starting thalidomide; repeat every 4 weeks (every 2 weeks in women with irregular cycles); final test 4 weeks after last dose.",
+      "Thalidomide initiated at 100mg and increased by 50mg every 3 weeks if tolerated to target 200mg daily.",
+      "Oral chemotherapy - NPSA/2008/RRR001 must be followed. Short course oral chemotherapy must not be continued.",
+      "Patients must be assessed for suitability for oral chemotherapy prior to starting treatment.",
+      "FBC, LFTs and U&Es prior to each cycle. Paraprotein and/or light chains prior to each cycle.",
+      "Dose modifications based on haematological parameters apply to cyclophosphamide only. In previously untreated patients, myelosuppression prior to treatment likely reflects bone marrow infiltration; patients should receive at least first cycle with unmodified doses unless another cause found.",
+      "Cyclophosphamide tablets should be swallowed whole with a full glass of water.",
+      "Thalidomide should be taken at night to avoid daytime drowsiness.",
+      "Regular monitoring of blood glucose is considered good practice.",
+      "21 day cycle continued until maximal response (minimum 4 cycles), continued until plateau plus two cycles (8 cycles set in ARIA).",
+      "There are multiple versions of this protocol in use. Please ensure correct protocol is selected."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "bilirubin",
+      "ast_alt",
+      "fbc",
+      "lft",
+      "pregnancy_test"
+    ],
+    "auc_dosing": null
+  }
+]

@@ -1,0 +1,1251 @@
+[
+  {
+    "protocol_code": "MYELOMA-CTDa-28",
+    "protocol_name": "CTDa (28)-Cyclophosphamide-Dexamethasone-Thalidomide Attenuated (CTDa-28)",
+    "disease_site": "Myeloma",
+    "category": "myeloma",
+    "cycle_length_days": 28,
+    "number_of_cycles": 8,
+    "drugs": [
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 500.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          8,
+          15,
+          22
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Available as 50mg tablets. Swallow whole with a full glass of water. Dose modifications occur in multiples of 50mg."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          15,
+          16,
+          17,
+          18
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Take in the morning with or after food. For elderly or intolerant patients the dose may be reduced or days 15-18 omitted."
+      },
+      {
+        "drug_name": "Thalidomide",
+        "dose": 50.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Starting dose 50mg at night. May be increased to 200mg at night depending on tolerance (increments of 50mg every 14 days). Available as 50mg capsules. Prescriptions must be accompanied by a completed Prescription Authorisation Form."
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          8,
+          15,
+          22
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Take 15-30 minutes prior to cyclophosphamide administration."
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": null,
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Up to three times a day when required for relief of nausea. Take-home medication."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils less than 1x10^9/L",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.0,
+        "notes": "Reduce, delay or omit cyclophosphamide until neutrophils are 1x10^9/L or above, then continue at full dose with growth factor support or give reduced dose. Seek consultant advice."
+      },
+      {
+        "condition": "Platelets less than 75x10^9/L or bleeding",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.0,
+        "notes": "Reduce, delay or omit cyclophosphamide until platelets are 75x10^9/L or above, then continue at full dose or give reduced dose. Seek consultant advice."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >30 micromol/L or AST/ALT 2-3xULN",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Clinical decision. Evidence that exposure to active metabolites may not be increased, suggesting dose reduction may not be necessary."
+      },
+      {
+        "condition": "Renal impairment: CrCl 10-20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce dose to 75%."
+      },
+      {
+        "condition": "Renal impairment: CrCl less than 10 ml/min or serum creatinine >300 micromol/L",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.0,
+        "notes": "Omit cyclophosphamide."
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 2",
+        "drug_name": "Thalidomide",
+        "factor": 0.5,
+        "notes": "Suspend treatment or reduce dose by at least 50%. May reintroduce at reduced dose if symptoms resolve to grade 1 or below."
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 3 or above",
+        "drug_name": "Thalidomide",
+        "factor": 0.0,
+        "notes": "Stop thalidomide. If toxicity does not resolve despite treatment interruption/dose reduction, stop permanently."
+      },
+      {
+        "condition": "Other NCI-CTC grade 3 or above toxicity",
+        "drug_name": "Thalidomide",
+        "factor": 0.0,
+        "notes": "Stop thalidomide until recovery to NCI-CTC grade 1 or below. Cautious reintroduction at 50mg/day may be considered."
+      }
+    ],
+    "pre_medications": [
+      "Ondansetron 8mg oral on days 1, 8, 15, 22 (15-30 minutes prior to cyclophosphamide)",
+      "Metoclopramide 10mg oral up to three times a day when required",
+      "Allopurinol 300mg oral once daily for 7 days (cycle 1 only)",
+      "Aciclovir 400mg oral twice daily (anti-infective prophylaxis)",
+      "Co-trimoxazole 960mg oral once daily on Monday, Wednesday and Friday (anti-infective prophylaxis)",
+      "Thromboprophylaxis according to local formulary (e.g. dalteparin 5000units SC once daily)",
+      "Gastric protection with PPI or H2 antagonist if high risk of GI ulceration"
+    ],
+    "special_warnings": [
+      "Thalidomide is highly teratogenic. All prescribers, patients and pharmacy staff must comply with the manufacturer's Pregnancy Prevention Programme.",
+      "Women of child-bearing potential must use effective contraception for at least 4 weeks before, during and for one month after thalidomide. Negative pregnancy test required within 3 days prior to starting.",
+      "Men taking thalidomide must use a barrier method of contraception throughout treatment and for one week after stopping.",
+      "Thromboprophylaxis is recommended for at least the first 5 months of thalidomide treatment.",
+      "If thromboembolic event (DVT/PE) occurs, full anticoagulation required. Thalidomide may be stopped and reintroduced at 50mg daily.",
+      "There are multiple versions of this protocol in use. Please ensure you have the correct protocol.",
+      "Myelosuppression prior to first cycle in untreated patients is likely due to bone marrow infiltration; give at least the first cycle at unmodified doses unless another cause is evident.",
+      "NPSA/2008/RRR001 oral chemotherapy safety alert must be followed."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "MYELOMA-MPT",
+    "protocol_name": "MPT-Melphalan (PO)-Prednisolone-Thalidomide",
+    "disease_site": "Myeloma",
+    "category": "myeloma",
+    "cycle_length_days": 28,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Melphalan",
+        "dose": 7.0,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Dose rounded to nearest 2mg (up if halfway). Available as 2mg tablets. Store tablets in refrigerator."
+      },
+      {
+        "drug_name": "Prednisolone",
+        "dose": 40.0,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Dose rounded to nearest 5mg (up if halfway). Available as 5mg and 25mg tablets. Take in the morning with or after food. Dose may be reduced or omitted if not tolerated."
+      },
+      {
+        "drug_name": "Thalidomide",
+        "dose": 50.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1: 50mg once daily at night. Cycle 2 onwards: 100mg once daily at night. Available as 50mg capsules. Prescriptions must be accompanied by a completed Prescription Authorisation Form."
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": null,
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Up to three times a day when required for nausea. Take-home medication."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils less than 1x10^9/L",
+        "drug_name": "Melphalan",
+        "factor": 1.0,
+        "notes": "Delay treatment for up to 2 weeks until neutrophils recover to 1x10^9/L or above, then continue with full dose and growth factor support and/or dose reduction. If recovery takes longer than 2 weeks consider stopping treatment."
+      },
+      {
+        "condition": "Platelets less than 75x10^9/L",
+        "drug_name": "Melphalan",
+        "factor": 0.75,
+        "notes": "Delay treatment for up to 2 weeks until platelets recover to 75x10^9/L or above, then continue with reduced dose. If recovery takes longer than 2 weeks consider stopping treatment."
+      },
+      {
+        "condition": "Renal impairment: CrCl less than 30 ml/min",
+        "drug_name": "Melphalan",
+        "factor": 0.75,
+        "notes": "Initiate treatment at 75% of dose; may increase at subsequent cycles if tolerated."
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 2",
+        "drug_name": "Thalidomide",
+        "factor": 0.5,
+        "notes": "Suspend treatment or reduce dose by at least 50%. May reintroduce at reduced dose if symptoms resolve to grade 1 or below."
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 3 or above",
+        "drug_name": "Thalidomide",
+        "factor": 0.0,
+        "notes": "Stop thalidomide."
+      },
+      {
+        "condition": "Other NCI-CTC grade 3 or above toxicity",
+        "drug_name": "Thalidomide",
+        "factor": 0.0,
+        "notes": "Stop thalidomide until recovery to NCI-CTC grade 1 or below. Cautious reintroduction at 50mg/day may be considered."
+      }
+    ],
+    "pre_medications": [
+      "Metoclopramide 10mg oral up to three times a day when required",
+      "Allopurinol 300mg oral once daily for 7 days (cycle 1 only)",
+      "Aciclovir 400mg oral twice daily (anti-infective prophylaxis, high risk patients)",
+      "Co-trimoxazole 960mg oral once daily on Monday, Wednesday and Friday (anti-infective prophylaxis, high risk patients)",
+      "Thromboprophylaxis according to local formulary (e.g. dalteparin 5000units SC once daily)",
+      "Gastric protection with PPI or H2 antagonist if high risk of GI ulceration"
+    ],
+    "special_warnings": [
+      "Thalidomide is highly teratogenic. All prescribers, patients and pharmacy staff must comply with the manufacturer's Pregnancy Prevention Programme.",
+      "Women of child-bearing potential must use effective contraception for at least 4 weeks before, during and for one month after thalidomide. Negative pregnancy test required within 3 days prior to starting.",
+      "Men taking thalidomide must use a barrier method of contraception throughout treatment and for one week after stopping.",
+      "Thromboprophylaxis is recommended for at least the first 5 months of thalidomide treatment.",
+      "Every thalidomide prescription must be accompanied by a complete Prescription Authorisation Form.",
+      "There are different versions of this protocol in use. Check you have the intended version.",
+      "Thalidomide dose is 50mg in Cycle 1, escalated to 100mg from Cycle 2 onwards.",
+      "NPSA/2008/RRR001 oral chemotherapy safety alert must be followed."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "MYELOMA-MPV-IV-35",
+    "protocol_name": "MPV (IV)-Bortezomib (IV)-Melphalan (PO)-Prednisolone (35 day)",
+    "disease_site": "Myeloma",
+    "category": "myeloma",
+    "cycle_length_days": 35,
+    "number_of_cycles": 8,
+    "drugs": [
+      {
+        "drug_name": "Bortezomib",
+        "dose": 1.3,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1,
+          8,
+          15,
+          22
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous injection over 5 seconds. Dose banded according to agreed bands. At least 72 hours between consecutive bortezomib doses."
+      },
+      {
+        "drug_name": "Melphalan",
+        "dose": 7.0,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Dose rounded to nearest 2mg (up if halfway). Available as 2mg tablets. Store in refrigerator."
+      },
+      {
+        "drug_name": "Prednisolone",
+        "dose": 60.0,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Dose rounded to nearest 5mg (up if halfway). Available as 5mg, 20mg and 25mg tablets. Take in the morning with or after food. May be omitted or reduced at clinician's discretion."
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": null,
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Up to three times a day when required for nausea. Take-home medication."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils less than 1x10^9/L",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Delay treatment for up to 2 weeks until neutrophils recover, then continue with full dose and growth factor support and/or dose reduction."
+      },
+      {
+        "condition": "Neutrophils less than 1x10^9/L",
+        "drug_name": "Melphalan",
+        "factor": 1.0,
+        "notes": "Delay treatment for up to 2 weeks until neutrophils recover, then continue with full dose and growth factor support and/or dose reduction. Consider stopping if recovery takes longer than 2 weeks."
+      },
+      {
+        "condition": "Platelets less than 75x10^9/L",
+        "drug_name": "Melphalan",
+        "factor": 0.75,
+        "notes": "Delay treatment for up to 2 weeks until platelets recover to 75x10^9/L, then continue with reduced dose. Consider stopping if recovery takes longer than 2 weeks."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >1.5xULN",
+        "drug_name": "Bortezomib",
+        "factor": 0.5,
+        "notes": "Initiate at 0.7mg/m². Dose may be escalated to 1mg/m² or reduced to 0.5mg/m² in subsequent cycles based on tolerability."
+      },
+      {
+        "condition": "Renal impairment: CrCl less than 30 ml/min",
+        "drug_name": "Melphalan",
+        "factor": 0.75,
+        "notes": "Initiate at 75%; may increase at subsequent cycles if tolerated."
+      },
+      {
+        "condition": "Renal impairment: CrCl 20 ml/min or below",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Clinical decision required."
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 1 with pain or grade 2",
+        "drug_name": "Bortezomib",
+        "factor": 0.75,
+        "notes": "Reduce dose to 1mg/m² or switch to weekly bortezomib at 1.3mg/m²."
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 2 with pain or grade 3",
+        "drug_name": "Bortezomib",
+        "factor": 0.5,
+        "notes": "Discontinue until symptoms resolve to NCI-CTC grade 1 or less, then reinitiate at 0.7mg/m²."
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 4 or severe autonomic neuropathy",
+        "drug_name": "Bortezomib",
+        "factor": 0.0,
+        "notes": "Discontinue bortezomib permanently."
+      }
+    ],
+    "pre_medications": [
+      "Metoclopramide 10mg oral up to three times a day when required",
+      "Allopurinol 300mg oral once daily for 7 days (cycle 1 only)",
+      "Aciclovir 400mg oral twice daily",
+      "Co-trimoxazole 960mg oral once daily on Monday, Wednesday and Friday",
+      "Gastric protection with PPI or H2 antagonist if high risk of GI ulceration"
+    ],
+    "special_warnings": [
+      "Treatment for relapsed or refractory multiple myeloma. Continue to a maximum of 8 cycles if at least partial response (50% reduction in paraprotein after 4 cycles).",
+      "Subcutaneous bortezomib should be considered as peripheral neuropathy incidence is lower by this route.",
+      "NPSA/2008/RRR001 oral chemotherapy safety alert must be followed.",
+      "Bortezomib doses should be at least 72 hours apart."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "MYELOMA-MPV-SC-35",
+    "protocol_name": "MPV (SC)-Bortezomib (SC)-Melphalan (PO)-Prednisolone (35 day)",
+    "disease_site": "Myeloma",
+    "category": "myeloma",
+    "cycle_length_days": 35,
+    "number_of_cycles": 8,
+    "drugs": [
+      {
+        "drug_name": "Bortezomib",
+        "dose": 1.3,
+        "dose_unit": "mg/m²",
+        "route": "Subcutaneous",
+        "days": [
+          1,
+          8,
+          15,
+          22
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Subcutaneous injection. Dose banded according to agreed bands. At least 72 hours between consecutive bortezomib doses. SC route preferred to reduce peripheral neuropathy incidence."
+      },
+      {
+        "drug_name": "Melphalan",
+        "dose": 7.0,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Dose rounded to nearest 2mg (up if halfway). Available as 2mg tablets. Store in refrigerator."
+      },
+      {
+        "drug_name": "Prednisolone",
+        "dose": 60.0,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Dose rounded to nearest 5mg (up if halfway). Available as 5mg, 20mg and 25mg tablets. Take in the morning with or after food. May be omitted or reduced at clinician's discretion."
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": null,
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Up to three times a day when required for nausea. Take-home medication."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils less than 1x10^9/L",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Delay treatment for up to 2 weeks until neutrophils recover, then continue with full dose and growth factor support and/or dose reduction."
+      },
+      {
+        "condition": "Neutrophils less than 1x10^9/L",
+        "drug_name": "Melphalan",
+        "factor": 1.0,
+        "notes": "Delay treatment for up to 2 weeks until neutrophils recover, then continue. Consider stopping if recovery takes longer than 2 weeks."
+      },
+      {
+        "condition": "Platelets less than 75x10^9/L",
+        "drug_name": "Melphalan",
+        "factor": 0.75,
+        "notes": "Delay treatment for up to 2 weeks until platelets recover to 75x10^9/L, then continue with reduced dose. Consider stopping if recovery takes longer than 2 weeks."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >1.5xULN",
+        "drug_name": "Bortezomib",
+        "factor": 0.5,
+        "notes": "Initiate at 0.7mg/m². May escalate to 1mg/m² or reduce to 0.5mg/m² in subsequent cycles based on tolerability."
+      },
+      {
+        "condition": "Renal impairment: CrCl less than 30 ml/min",
+        "drug_name": "Melphalan",
+        "factor": 0.75,
+        "notes": "Initiate at 75%; may increase at subsequent cycles if tolerated."
+      },
+      {
+        "condition": "Renal impairment: CrCl 20 ml/min or below",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Clinical decision required."
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 1 with pain or grade 2",
+        "drug_name": "Bortezomib",
+        "factor": 0.75,
+        "notes": "Reduce dose to 1mg/m² or switch to weekly bortezomib at 1.3mg/m²."
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 2 with pain or grade 3",
+        "drug_name": "Bortezomib",
+        "factor": 0.5,
+        "notes": "Discontinue until symptoms resolve to NCI-CTC grade 1 or less, then reinitiate at 0.7mg/m²."
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 4 or severe autonomic neuropathy",
+        "drug_name": "Bortezomib",
+        "factor": 0.0,
+        "notes": "Discontinue bortezomib permanently."
+      }
+    ],
+    "pre_medications": [
+      "Metoclopramide 10mg oral up to three times a day when required",
+      "Allopurinol 300mg oral once daily for 7 days (cycle 1 only)",
+      "Aciclovir 400mg oral twice daily",
+      "Co-trimoxazole 960mg oral once daily on Monday, Wednesday and Friday",
+      "Gastric protection with PPI or H2 antagonist if high risk of GI ulceration"
+    ],
+    "special_warnings": [
+      "Treatment for relapsed or refractory multiple myeloma. Continue to a maximum of 8 cycles if at least partial response (50% reduction in paraprotein after 4 cycles).",
+      "Subcutaneous bortezomib administration preferred; incidence and severity of peripheral neuropathy is lower with SC route.",
+      "NPSA/2008/RRR001 oral chemotherapy safety alert must be followed.",
+      "Bortezomib doses should be at least 72 hours apart."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "MYELOMA-PAD-IV",
+    "protocol_name": "PAD (IV)-Bortezomib (IV)-Dexamethasone-Doxorubicin",
+    "disease_site": "Myeloma",
+    "category": "myeloma",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Bortezomib",
+        "dose": 1.3,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1,
+          4,
+          8,
+          11
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous injection over 5 seconds. Dose banded according to agreed bands. At least 72 hours between consecutive bortezomib doses."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 40.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "40mg once a day in the morning. Take with or after food. For elderly or intolerant patients the dose given the day after bortezomib may be omitted or dose reduced."
+      },
+      {
+        "drug_name": "Doxorubicin",
+        "dose": 9.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "infusion_duration_hours": 24.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "9mg/m²/day as continuous IV infusion over 96 hours (total 36mg/m² per cycle) via a portable infusion device. May be given as daily IV bolus injection if no portable pump available. Vesicant - extravasation precautions required. Discontinue if cardiac failure develops."
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "8mg oral or IV 15-30 minutes prior to chemotherapy on day 1. Also 8mg twice daily for 5 days starting on the evening of day 1 (take-home)."
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": null,
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Up to three times a day when required for nausea. Take-home medication."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils >=1x10^9/L and platelets >=75x10^9/L",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Full dose."
+      },
+      {
+        "condition": "Neutrophils <1x10^9/L or platelets <75x10^9/L",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Delay on a weekly basis until recovery."
+      },
+      {
+        "condition": "Neutrophils <1x10^9/L or platelets <75x10^9/L on day 1 of subsequent cycles (when previously above threshold)",
+        "drug_name": "Bortezomib",
+        "factor": 0.75,
+        "notes": "Delay weekly until recovery then reduce bortezomib dose to 1mg/m² and doxorubicin to 6mg/m²/day (24mg/m² total)."
+      },
+      {
+        "condition": "Neutrophils <1x10^9/L or platelets <75x10^9/L (further toxicity occurrence)",
+        "drug_name": "Bortezomib",
+        "factor": 0.5,
+        "notes": "Delay weekly until recovery then reduce bortezomib to 0.7mg/m² and doxorubicin to 4.5mg/m²/day (18mg/m² total)."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >1.5xULN",
+        "drug_name": "Bortezomib",
+        "factor": 0.5,
+        "notes": "Initiate at 0.7mg/m². May escalate to 1mg/m² or reduce to 0.5mg/m² based on tolerability."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin <30 micromol/L and AST/ALT 2-3xULN",
+        "drug_name": "Doxorubicin",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin 30-50 micromol/L and/or AST/ALT >3xULN",
+        "drug_name": "Doxorubicin",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin 51-85 micromol/L",
+        "drug_name": "Doxorubicin",
+        "factor": 0.25,
+        "notes": "Reduce to 25% of dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >85 micromol/L",
+        "drug_name": "Doxorubicin",
+        "factor": 0.0,
+        "notes": "Omit doxorubicin."
+      },
+      {
+        "condition": "Renal impairment: CrCl 20 ml/min or below",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Clinical decision required."
+      },
+      {
+        "condition": "Renal impairment: CrCl less than 10 ml/min",
+        "drug_name": "Doxorubicin",
+        "factor": 1.0,
+        "notes": "Consider dose reduction in severe renal failure."
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 1 with pain or grade 2",
+        "drug_name": "Bortezomib",
+        "factor": 0.75,
+        "notes": "Reduce to 1mg/m² or switch to weekly bortezomib at 1.3mg/m²."
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 2 with pain or grade 3",
+        "drug_name": "Bortezomib",
+        "factor": 0.5,
+        "notes": "Discontinue until symptoms resolve to grade 1 or less, then reinitiate at 0.7mg/m²."
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 4 or severe autonomic neuropathy",
+        "drug_name": "Bortezomib",
+        "factor": 0.0,
+        "notes": "Discontinue bortezomib permanently."
+      },
+      {
+        "condition": "Cardiac failure",
+        "drug_name": "Doxorubicin",
+        "factor": 0.0,
+        "notes": "Discontinue doxorubicin if cardiac failure develops."
+      }
+    ],
+    "pre_medications": [
+      "Ondansetron 8mg oral or IV 15-30 minutes prior to chemotherapy on day 1",
+      "Ondansetron 8mg twice daily for 5 days starting evening of day 1 (take-home)",
+      "Metoclopramide 10mg oral up to three times a day when required",
+      "Allopurinol 300mg oral once daily for 7 days (cycle 1 only)",
+      "Aciclovir 400mg oral twice daily",
+      "Co-trimoxazole 960mg oral once daily on Monday, Wednesday and Friday",
+      "Gastric protection with PPI or H2 antagonist if high risk of GI ulceration"
+    ],
+    "special_warnings": [
+      "Cumulative lifetime doxorubicin dose must not exceed 450mg/m². If prior radiotherapy to mediastinal/pericardial area, lifetime limit is 400mg/m².",
+      "Ensure adequate cardiac function before starting therapy. Baseline LVEF should be measured in patients with history of cardiac problems, cardiac risk factors or in the elderly.",
+      "Discontinue doxorubicin if cardiac failure develops.",
+      "Doxorubicin is a vesicant - extravasation precautions must be in place.",
+      "At least 72 hours must elapse between consecutive doses of bortezomib.",
+      "Second or subsequent line treatment for transplant eligible multiple myeloma.",
+      "Subcutaneous bortezomib should be considered as peripheral neuropathy incidence is lower with SC route."
+    ],
+    "required_patient_fields": [
+      "lvef",
+      "creatinine_clearance"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "MYELOMA-PAD-SC",
+    "protocol_name": "PAD (SC)-Bortezomib (SC)-Dexamethasone-Doxorubicin",
+    "disease_site": "Myeloma",
+    "category": "myeloma",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Bortezomib",
+        "dose": 1.3,
+        "dose_unit": "mg/m²",
+        "route": "Subcutaneous",
+        "days": [
+          1,
+          4,
+          8,
+          11
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Subcutaneous injection. Dose banded according to agreed bands. At least 72 hours between consecutive bortezomib doses. SC route preferred to reduce peripheral neuropathy."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 40.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "40mg once a day in the morning. Take with or after food. For elderly or intolerant patients the dose given the day after bortezomib may be omitted or dose reduced."
+      },
+      {
+        "drug_name": "Doxorubicin",
+        "dose": 9.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "infusion_duration_hours": 24.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "9mg/m²/day as continuous IV infusion over 96 hours (total 36mg/m² per cycle) via a portable infusion device. May be given as daily IV bolus injection if no portable pump available. Vesicant - extravasation precautions required. Discontinue if cardiac failure develops."
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "8mg oral or IV 15-30 minutes prior to chemotherapy on day 1. Also 8mg twice daily for 5 days starting on the evening of day 1 (take-home)."
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": null,
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Up to three times a day when required for nausea. Take-home medication."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils >=1x10^9/L and platelets >=75x10^9/L",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Full dose."
+      },
+      {
+        "condition": "Neutrophils <1x10^9/L or platelets <75x10^9/L",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Delay on a weekly basis until recovery."
+      },
+      {
+        "condition": "Neutrophils <1x10^9/L or platelets <75x10^9/L on day 1 of subsequent cycles (when previously above threshold)",
+        "drug_name": "Bortezomib",
+        "factor": 0.75,
+        "notes": "Delay weekly until recovery then reduce bortezomib dose to 1mg/m² and doxorubicin to 6mg/m²/day (24mg/m² total)."
+      },
+      {
+        "condition": "Neutrophils <1x10^9/L or platelets <75x10^9/L (further toxicity occurrence)",
+        "drug_name": "Bortezomib",
+        "factor": 0.5,
+        "notes": "Delay weekly until recovery then reduce bortezomib to 0.7mg/m² and doxorubicin to 4.5mg/m²/day (18mg/m² total)."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >1.5xULN",
+        "drug_name": "Bortezomib",
+        "factor": 0.5,
+        "notes": "Initiate at 0.7mg/m². May escalate to 1mg/m² or reduce to 0.5mg/m² based on tolerability."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin <30 micromol/L and AST/ALT 2-3xULN",
+        "drug_name": "Doxorubicin",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin 30-50 micromol/L and/or AST/ALT >3xULN",
+        "drug_name": "Doxorubicin",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin 51-85 micromol/L",
+        "drug_name": "Doxorubicin",
+        "factor": 0.25,
+        "notes": "Reduce to 25% of dose."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >85 micromol/L",
+        "drug_name": "Doxorubicin",
+        "factor": 0.0,
+        "notes": "Omit doxorubicin."
+      },
+      {
+        "condition": "Renal impairment: CrCl 20 ml/min or below",
+        "drug_name": "Bortezomib",
+        "factor": 1.0,
+        "notes": "Clinical decision required."
+      },
+      {
+        "condition": "Renal impairment: CrCl less than 10 ml/min",
+        "drug_name": "Doxorubicin",
+        "factor": 1.0,
+        "notes": "Consider dose reduction in severe renal failure."
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 1 with pain or grade 2",
+        "drug_name": "Bortezomib",
+        "factor": 0.75,
+        "notes": "Reduce to 1mg/m² or switch to weekly bortezomib at 1.3mg/m²."
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 2 with pain or grade 3",
+        "drug_name": "Bortezomib",
+        "factor": 0.5,
+        "notes": "Discontinue until symptoms resolve to grade 1 or less, then reinitiate at 0.7mg/m²."
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 4 or severe autonomic neuropathy",
+        "drug_name": "Bortezomib",
+        "factor": 0.0,
+        "notes": "Discontinue bortezomib permanently."
+      },
+      {
+        "condition": "Cardiac failure",
+        "drug_name": "Doxorubicin",
+        "factor": 0.0,
+        "notes": "Discontinue doxorubicin if cardiac failure develops."
+      }
+    ],
+    "pre_medications": [
+      "Ondansetron 8mg oral or IV 15-30 minutes prior to chemotherapy on day 1",
+      "Ondansetron 8mg twice daily for 5 days starting evening of day 1 (take-home)",
+      "Metoclopramide 10mg oral up to three times a day when required",
+      "Allopurinol 300mg oral once daily for 7 days (cycle 1 only)",
+      "Aciclovir 400mg oral twice daily",
+      "Co-trimoxazole 960mg oral once daily on Monday, Wednesday and Friday",
+      "Gastric protection with PPI or H2 antagonist if high risk of GI ulceration"
+    ],
+    "special_warnings": [
+      "Cumulative lifetime doxorubicin dose must not exceed 450mg/m². If prior radiotherapy to mediastinal/pericardial area, lifetime limit is 400mg/m².",
+      "Ensure adequate cardiac function before starting therapy. Baseline LVEF should be measured in patients with history of cardiac problems, cardiac risk factors or in the elderly.",
+      "Discontinue doxorubicin if cardiac failure develops.",
+      "Doxorubicin is a vesicant - extravasation precautions must be in place.",
+      "At least 72 hours must elapse between consecutive doses of bortezomib.",
+      "Second or subsequent line treatment for transplant eligible multiple myeloma.",
+      "Subcutaneous bortezomib administration - preferred route to reduce peripheral neuropathy incidence and severity."
+    ],
+    "required_patient_fields": [
+      "lvef",
+      "creatinine_clearance"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "MYELOMA-RCD",
+    "protocol_name": "RCD-Cyclophosphamide-Dexamethasone-Lenalidomide",
+    "disease_site": "Myeloma",
+    "category": "myeloma",
+    "cycle_length_days": 28,
+    "number_of_cycles": 26,
+    "drugs": [
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 500.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          8
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Available as 50mg tablets. Swallow whole with a full glass of water. Cyclophosphamide should generally be stopped after 12 months of treatment or earlier if maximum response is achieved."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 40.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          8,
+          15,
+          22
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "40mg once a day in the morning. Take with or after food. 20mg dose recommended in those with frailty and co-morbidities. From cycle 13 onwards cyclophosphamide is stopped; dexamethasone may be stopped when maximal response is reached."
+      },
+      {
+        "drug_name": "Lenalidomide",
+        "dose": 25.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "25mg once a day in the morning on days 1-21. Available as 25mg, 15mg, 10mg and 5mg tablets. Swallow whole, not chewed. Prescriptions must be accompanied by a completed Prescription Authorisation Form (Celgene)."
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          8
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Take 15-30 minutes prior to cyclophosphamide therapy."
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": null,
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Three times a day when required. Take-home medication."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils less than 1x10^9/L - 1st occurrence",
+        "drug_name": "Lenalidomide",
+        "factor": 1.0,
+        "notes": "Delay until recovery. Restart at full dose."
+      },
+      {
+        "condition": "Neutrophils less than 1x10^9/L - 2nd occurrence",
+        "drug_name": "Lenalidomide",
+        "factor": 0.75,
+        "notes": "Delay until recovery. Restart at 15mg once daily."
+      },
+      {
+        "condition": "Neutrophils less than 1x10^9/L - 3rd occurrence",
+        "drug_name": "Lenalidomide",
+        "factor": 0.5,
+        "notes": "Delay until recovery. Restart at 10mg once daily."
+      },
+      {
+        "condition": "Neutrophils less than 1x10^9/L - 4th occurrence",
+        "drug_name": "Lenalidomide",
+        "factor": 0.25,
+        "notes": "Delay until recovery. Restart at 5mg once daily."
+      },
+      {
+        "condition": "Platelets less than 50x10^9/L - 1st occurrence",
+        "drug_name": "Lenalidomide",
+        "factor": 0.75,
+        "notes": "Delay until recovery. Restart at 15mg once daily."
+      },
+      {
+        "condition": "Platelets less than 50x10^9/L - 2nd occurrence",
+        "drug_name": "Lenalidomide",
+        "factor": 0.5,
+        "notes": "Delay until recovery. Restart at 10mg once daily."
+      },
+      {
+        "condition": "Platelets less than 50x10^9/L - 3rd occurrence",
+        "drug_name": "Lenalidomide",
+        "factor": 0.25,
+        "notes": "Delay until recovery. Restart at 5mg once daily."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >30 micromol/L or AST/ALT 2-3xULN",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Clinical decision. Evidence that exposure to active metabolites may not be increased, suggesting dose reduction may not be necessary."
+      },
+      {
+        "condition": "Renal impairment: CrCl 10-20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75%."
+      },
+      {
+        "condition": "Renal impairment: CrCl less than 10 ml/min or serum creatinine >300 micromol/L",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.0,
+        "notes": "Omit cyclophosphamide."
+      },
+      {
+        "condition": "Renal impairment: CrCl 30-50 ml/min",
+        "drug_name": "Lenalidomide",
+        "factor": 0.5,
+        "notes": "Start treatment with 10mg once daily. May escalate to 15mg once daily after 2 cycles if not responding and tolerating treatment."
+      },
+      {
+        "condition": "Renal impairment: CrCl less than 30 ml/min (not requiring dialysis)",
+        "drug_name": "Lenalidomide",
+        "factor": 0.5,
+        "notes": "Start treatment with 15mg on alternate days."
+      },
+      {
+        "condition": "Renal impairment: CrCl less than 30 ml/min requiring dialysis",
+        "drug_name": "Lenalidomide",
+        "factor": 0.25,
+        "notes": "5mg once daily. On dialysis days, administer following dialysis."
+      },
+      {
+        "condition": "Allergic reaction/hypersensitivity NCI-CTC grade 2",
+        "drug_name": "Lenalidomide",
+        "factor": 0.75,
+        "notes": "Withhold until symptoms resolve to grade 1 or below, then restart at 15mg once daily."
+      },
+      {
+        "condition": "Allergic reaction/hypersensitivity NCI-CTC grade 3 or above",
+        "drug_name": "Lenalidomide",
+        "factor": 0.0,
+        "notes": "Discontinue lenalidomide."
+      },
+      {
+        "condition": "Desquamating rash NCI-CTC grade 3 or above, or grade 4 non-desquamating rash",
+        "drug_name": "Lenalidomide",
+        "factor": 0.0,
+        "notes": "Discontinue lenalidomide."
+      },
+      {
+        "condition": "Other non-haematological NCI-CTC grade 3 or above toxicity",
+        "drug_name": "Lenalidomide",
+        "factor": 0.75,
+        "notes": "Delay until adverse effect resolves to grade 1 or below. Reduce daily dose to 15mg. On subsequent occurrences reduce to 10mg then 5mg. If 5mg not tolerated, stop treatment."
+      },
+      {
+        "condition": "Venous thrombosis or embolism NCI-CTC grade 3 or above",
+        "drug_name": "Lenalidomide",
+        "factor": 0.0,
+        "notes": "Stop treatment and start anticoagulation. May be reinstated at clinician's discretion if patient is fully anticoagulated."
+      }
+    ],
+    "pre_medications": [
+      "Ondansetron 8mg oral on days 1 and 8 (15-30 minutes prior to cyclophosphamide)",
+      "Metoclopramide 10mg oral three times a day when required",
+      "Allopurinol 300mg oral once daily for 7 days (cycle 1 only)",
+      "Thromboprophylaxis: low molecular weight heparin according to local formulary. Aspirin may be considered after 6 cycles or when maximal response achieved.",
+      "Aciclovir 400mg oral twice daily (anti-infective prophylaxis, high risk patients)",
+      "Co-trimoxazole 960mg oral once daily on Monday, Wednesday and Friday (anti-infective prophylaxis, high risk patients)",
+      "Gastric protection with PPI or H2 antagonist if high risk of GI ulceration"
+    ],
+    "special_warnings": [
+      "Relapsed or refractory myeloma in patients having received at least one prior therapy.",
+      "Lenalidomide has teratogenic risk. All women of child-bearing potential must use adequate contraception including a barrier method. Negative pregnancy test required prior to commencing each cycle.",
+      "Men must use a barrier method of contraception.",
+      "Patient, prescriber and supplying pharmacy must comply with pregnancy prevention programme. Every prescription must be accompanied by a completed Prescription Authorisation Form (Celgene).",
+      "There is an increased risk of thrombosis with lenalidomide. Thromboprophylaxis is recommended. If venous thrombosis or embolism NCI-CTC grade 3 or above, stop treatment and start anticoagulation.",
+      "Cyclophosphamide should generally be stopped after 12 months of treatment or earlier if maximum response achieved.",
+      "Monitor calcium, magnesium and thyroid function regularly.",
+      "There are multiple versions of this protocol in use. Please ensure you have the correct protocol.",
+      "NPSA/2008/RRR001 oral chemotherapy safety alert must be followed."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance"
+    ],
+    "auc_dosing": null
+  }
+]

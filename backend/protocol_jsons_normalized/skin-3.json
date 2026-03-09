@@ -1,0 +1,1073 @@
+[
+  {
+    "protocol_id": "skin_pembrolizumab",
+    "protocol_code": "SKIN-PEMBRO",
+    "protocol_name": "Skin - Pembrolizumab",
+    "category": "skin",
+    "indication": "Pembrolizumab is recommended as an option for treating advanced (unresectable or metastatic) melanoma in people who have received prior therapy. WHO performance status 0, 1. Available on compassionate use basis only - not yet licensed in the UK.",
+    "version": "1",
+    "cycle_length_days": 21,
+    "total_cycles": 35,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Pembrolizumab",
+        "dose": 2,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Day 1 every 21 days",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Administer using a low protein binding 0.2 micron filter. Dose banded as per the CSCCN agreed bands. Systemic corticosteroids before starting treatment should be avoided due to potential interference with pharmacodynamic activity and efficacy.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "timing": "When required for infusion related reactions",
+        "mandatory": false
+      },
+      {
+        "drug_name": "Hydrocortisone sodium succinate",
+        "dose": 100,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "timing": "When required for infusion related reactions",
+        "mandatory": false
+      },
+      {
+        "drug_name": "Paracetamol",
+        "dose": 1000,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "When required for infusion related reactions",
+        "mandatory": false
+      }
+    ],
+    "take_home_medicines": [],
+    "dose_modifications": [
+      {
+        "parameter": "Haematological",
+        "condition": "Symptomatic anaemia or haemoglobin less than 8g/dL",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "supportive",
+        "factor": 1.0,
+        "notes": "There is little need to adjust the dose of pembrolizumab for haematological toxicity. Consider blood transfusion or erythropoietin if patient symptomatic of anaemia or has haemoglobin less than 8g/dL."
+      },
+      {
+        "parameter": "Hepatic impairment - AST/ALT",
+        "condition": "AST/ALT 3-5xULN and/or total bilirubin 1.5-3xULN (hepatitis)",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "withhold",
+        "factor": 0.0,
+        "notes": "Withhold and administer corticosteroids. Upon improvement to NCI-CTC grade 1 hepatic injury begin to taper corticosteroid over one month. May re-start when liver function remains at NCI-CTC grade 1 following corticosteroid taper."
+      },
+      {
+        "parameter": "Hepatic impairment - AST/ALT",
+        "condition": "Hepatic injury does not improve to NCI-CTC grade 1 within 12 weeks, OR corticosteroid dose cannot be reduced to 10mg or less prednisolone per day within 12 weeks, OR any NCI-CTC grade 3 or above reaction",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "discontinue",
+        "factor": 0.0,
+        "notes": "Permanently discontinue pembrolizumab."
+      },
+      {
+        "parameter": "Hepatic impairment - AST/ALT",
+        "condition": "AST/ALT ≥5xULN, OR increase in AST/ALT of ≥50% relative to baseline lasting at least one week in patients with liver metastasis beginning treatment with moderate (grade 2) elevation of AST/ALT, OR bilirubin >3xULN",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "discontinue",
+        "factor": 0.0,
+        "notes": "Permanently discontinue pembrolizumab in the first instance."
+      },
+      {
+        "parameter": "Renal impairment - nephritis",
+        "condition": "NCI-CTC grade 2 nephritis",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "withhold",
+        "factor": 0.0,
+        "notes": "Withhold and administer corticosteroids. Upon improvement to NCI-CTC grade 1 or less, initiate corticosteroid taper over at least one month. May resume when reaction remains at NCI-CTC grade 1 or below following tapering."
+      },
+      {
+        "parameter": "Renal impairment - nephritis",
+        "condition": "Nephritis does not improve to NCI-CTC grade 1 within 12 weeks, OR corticosteroid dose cannot be reduced to 10mg or less prednisolone per day within 12 weeks, OR any NCI-CTC grade 3 or above reaction",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "discontinue",
+        "factor": 0.0,
+        "notes": "Permanently discontinue pembrolizumab."
+      },
+      {
+        "parameter": "Renal impairment - nephritis",
+        "condition": "Any NCI-CTC grade 3 or above nephritis",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "discontinue",
+        "factor": 0.0,
+        "notes": "Permanently discontinue pembrolizumab."
+      },
+      {
+        "parameter": "Endocrine - hypothyroidism",
+        "condition": "Isolated hypothyroidism",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Manage with replacement therapy, without treatment interruption or corticosteroids."
+      },
+      {
+        "parameter": "Endocrine - adrenal insufficiency",
+        "condition": "Signs of adrenal insufficiency - pituitary imaging or laboratory tests of endocrine function abnormal",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "omit",
+        "factor": 0.0,
+        "notes": "Omit scheduled dose of pembrolizumab. Administer high-dose corticosteroid therapy. Initiate appropriate hormone replacement. Once symptoms/laboratory abnormalities controlled, may resume pembrolizumab and initiate corticosteroid taper based on clinical judgment."
+      },
+      {
+        "parameter": "Pulmonary - pneumonitis",
+        "condition": "NCI-CTC grade 1 (asymptomatic, radiographic findings only)",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Continue with close monitoring. Follow radiographic findings on serial imaging and consider pulmonary consultation and/or bronchoscopy if clinically indicated."
+      },
+      {
+        "parameter": "Pulmonary - pneumonitis",
+        "condition": "NCI-CTC grade 2",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "withhold",
+        "factor": 0.0,
+        "notes": "Withhold pembrolizumab. Consider pulmonary consultation with bronchoscopy and biopsy/BAL. Treat with systemic corticosteroids 1-2 mg/kg/day prednisone or equivalent. When improves to NCI-CTC grade 1 or less, steroid taper over no less than 4 weeks. May resume if event improves to NCI-CTC grade 0 or 1 within 12 weeks and corticosteroids reduced to prednisolone 10mg oral daily or less. Repeat chest imaging monthly. Discontinue if second episode of pneumonitis."
+      },
+      {
+        "parameter": "Pulmonary - pneumonitis",
+        "condition": "NCI-CTC grade 3 or 4",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "discontinue",
+        "factor": 0.0,
+        "notes": "Permanently discontinue pembrolizumab. Consider pulmonary function tests and lung specialist advice. Bronchoscopy with biopsy and/or BAL. Treat with IV methylprednisolone 125mg. When improves to NCI-CTC grade 1 or less, high dose oral steroid 1-2mg/kg once per day can be considered over at least 4 weeks. If IV corticosteroids followed by high dose oral do not reduce initial symptoms within 48-72 hours, treat with infliximab 5mg/kg once every 2 weeks."
+      },
+      {
+        "parameter": "Gastrointestinal - colitis",
+        "condition": "NCI-CTC grade 1 diarrhoea or suspected mild colitis",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Symptomatic treatment and close monitoring advised."
+      },
+      {
+        "parameter": "Gastrointestinal - colitis",
+        "condition": "NCI-CTC grade 2-3 colitis",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "withhold",
+        "factor": 0.0,
+        "notes": "Withhold and administer corticosteroids. Upon improvement to NCI-CTC grade 1 begin to taper corticosteroid over one month. May re-start when colitis remains at NCI-CTC grade 1 following corticosteroid taper."
+      },
+      {
+        "parameter": "Gastrointestinal - colitis",
+        "condition": "Colitis does not improve to NCI-CTC grade 1 within 12 weeks, OR corticosteroid dose cannot be reduced to 10mg or less prednisolone per day within 12 weeks, OR any NCI-CTC grade 3 or above reaction",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "discontinue",
+        "factor": 0.0,
+        "notes": "Permanently discontinue pembrolizumab."
+      },
+      {
+        "parameter": "Skin toxicity",
+        "condition": "NCI-CTC grade 1-2 skin reactions",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Try symptomatic treatments such as topical corticosteroids or urea-containing creams in combination with oral antipruritics. Pembrolizumab can continue."
+      },
+      {
+        "parameter": "Skin toxicity",
+        "condition": "NCI-CTC grade 3 or above skin events",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "withhold",
+        "factor": 0.0,
+        "notes": "Withhold pembrolizumab and consider dermatology referral. Treat with systemic corticosteroids such as prednisolone 1mg/kg each day. When symptoms improve to NCI-CTC grade 1 or less then steroid taper over no less than 4 weeks."
+      },
+      {
+        "parameter": "Ocular - uveitis",
+        "condition": "NCI-CTC grade 1-2 ocular events",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Evaluation by ophthalmologist. Topical corticosteroids eye drops and iridocyclitics can be tried."
+      },
+      {
+        "parameter": "Ocular - uveitis",
+        "condition": "Symptoms persist despite topical immunosuppressive therapy, OR NCI-CTC grade 3 or above",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "discontinue",
+        "factor": 0.0,
+        "notes": "Discontinue pembrolizumab for grade 3 or above or persistent symptoms. Consider treatment with systemic corticosteroids. When symptoms improve to NCI-CTC grade 1 taper corticosteroids over at least four weeks."
+      },
+      {
+        "parameter": "Other immune-related toxicity",
+        "condition": "Any NCI-CTC grade 3 or 4 pneumonitis, nephritis, infusion related reaction or NCI-CTC grade 4 adverse reaction",
+        "affected_drugs": [
+          "Pembrolizumab"
+        ],
+        "action": "discontinue",
+        "factor": 0.0,
+        "notes": "Permanently discontinue pembrolizumab. Dose reductions are NOT permitted for pembrolizumab."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": null,
+      "platelets_min": null,
+      "notes": "No specific haematological treatment delay thresholds stated. There is little need to adjust the dose of pembrolizumab for haematological toxicity. Delays/modifications based on immune-related toxicity grading (see dose modifications). FBC, LFTs and U&Es required prior to day one of each cycle."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to day one of each cycle",
+      "Thyroid function tests prior to starting treatment and then before each administration (cycle) or when clinically indicated"
+    ],
+    "special_warnings": [
+      "Pembrolizumab is currently available on a compassionate use basis only - not yet licensed in the UK (February 2015)",
+      "Dose reductions are NOT permitted for pembrolizumab",
+      "Systemic corticosteroids before starting treatment with pembrolizumab should be avoided because of their potential interference with pharmacodynamic activity and efficacy",
+      "Systemic corticosteroids can be used after starting pembrolizumab to treat immune-related adverse reactions - this does not appear to impair efficacy",
+      "Immune-related adverse reactions can involve gastrointestinal, liver, skin, nervous, endocrine or other organ systems - may occur during treatment or months after last dose",
+      "Pembrolizumab associated with inflammatory adverse reactions from increased or excessive immune activity",
+      "Administer using a low protein binding 0.2 micron filter",
+      "If third dose reduction is necessary, treatment should be stopped (general chemotherapy rule)"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "weight_kg": true,
+      "who_performance_status": true,
+      "prior_therapy": true
+    },
+    "disease_site": "Skin",
+    "number_of_cycles": 35,
+    "drugs": [
+      {
+        "drug_name": "Pembrolizumab",
+        "dose": 2,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Day 1 every 21 days",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Administer using a low protein binding 0.2 micron filter. Dose banded as per the CSCCN agreed bands. Systemic corticosteroids before starting treatment should be avoided due to potential interference with pharmacodynamic activity and efficacy.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.5,
+        "notes": "Day 1 every 21 days | Administer using a low protein binding 0.2 micron filter. Dose banded as per the CSCCN agreed bands. Systemic corticosteroids before starting treatment should be avoided due to potential interference with pharmacodynamic activity and efficacy."
+      }
+    ]
+  },
+  {
+    "protocol_id": "skin_vemurafenib",
+    "protocol_code": "SKIN-VEMU",
+    "protocol_name": "Skin - Vemurafenib",
+    "category": "skin",
+    "indication": "Vemurafenib is recommended as an option for the treatment of BRAF mutation positive unresectable or metastatic melanoma. WHO performance status 0, 1, 2.",
+    "version": "1",
+    "cycle_length_days": 28,
+    "total_cycles": null,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Vemurafenib",
+        "dose": 960,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "Twice daily (960mg BD) continuous",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 960,
+        "max_dose_unit": "mg",
+        "special_instructions": "Take tablets with or without food (consistent intake of both daily doses on an empty stomach should be avoided). Dose may be modified in 240mg dose steps based on individual safety and tolerability. Daily dose below 480mg twice daily is not recommended. NPSA/2008/RRR001 must be followed. 12 cycles will be set in ARIA. Treatment until disease progression or intolerance.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [
+      {
+        "drug_name": "Vemurafenib",
+        "dose": 960,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice daily",
+        "instructions": "Take tablets with or without food. Consistent intake of both daily doses on an empty stomach should be avoided. Dose may be modified in 240mg steps. Minimum dose 480mg twice daily."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Haematological - neutrophils",
+        "condition": "Neutrophil count less than 1.5x10⁹/L",
+        "affected_drugs": [
+          "Vemurafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Prior to prescribing: neutrophils must be equal to or more than 1.5x10⁹/L."
+      },
+      {
+        "parameter": "Haematological - platelets",
+        "condition": "Platelet count less than 100x10⁹/L",
+        "affected_drugs": [
+          "Vemurafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Prior to prescribing: platelets must be equal to or more than 100x10⁹/L."
+      },
+      {
+        "parameter": "Haematological - anaemia",
+        "condition": "Symptomatic anaemia or haemoglobin less than 8g/dL",
+        "affected_drugs": [
+          "Vemurafenib"
+        ],
+        "action": "supportive",
+        "factor": 1.0,
+        "notes": "Consider blood transfusion or erythropoietin."
+      },
+      {
+        "parameter": "CTCAE toxicity grade",
+        "condition": "Grade 1 or Grade 2 (tolerable)",
+        "affected_drugs": [
+          "Vemurafenib"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Continue treatment at same dose; monitor as clinically indicated."
+      },
+      {
+        "parameter": "CTCAE toxicity grade",
+        "condition": "Grade 2 (intolerable) or Grade 3 - first occurrence",
+        "affected_drugs": [
+          "Vemurafenib"
+        ],
+        "action": "interrupt",
+        "factor": 0.0,
+        "notes": "Step 1: Interrupt treatment until toxicity reduced to grade 1 or below. Step 2 (first occurrence): Resume dosing at 720mg twice a day (or 480mg twice a day if previously reduced)."
+      },
+      {
+        "parameter": "CTCAE toxicity grade",
+        "condition": "Grade 2 (intolerable) or Grade 3 - second occurrence or persistent toxicity",
+        "affected_drugs": [
+          "Vemurafenib"
+        ],
+        "action": "reduce",
+        "factor": 0.5,
+        "notes": "Resume dosing at 480mg twice a day (or discontinue permanently if previously reduced to 480mg). Step 1: Interrupt until grade 1 or below."
+      },
+      {
+        "parameter": "CTCAE toxicity grade",
+        "condition": "Grade 2 (intolerable) or Grade 3 - third occurrence",
+        "affected_drugs": [
+          "Vemurafenib"
+        ],
+        "action": "discontinue",
+        "factor": 0.0,
+        "notes": "Discontinue permanently."
+      },
+      {
+        "parameter": "CTCAE toxicity grade",
+        "condition": "Grade 4 - first occurrence",
+        "affected_drugs": [
+          "Vemurafenib"
+        ],
+        "action": "discontinue",
+        "factor": 0.0,
+        "notes": "Step 1: Discontinue permanently OR interrupt treatment until toxicity reduced to grade 1 or below (discuss with consultant). Step 2 (if interrupted, first occurrence): Resume dosing at 480mg twice a day (or discontinue permanently if previously reduced)."
+      },
+      {
+        "parameter": "CTCAE toxicity grade",
+        "condition": "Grade 4 - second occurrence",
+        "affected_drugs": [
+          "Vemurafenib"
+        ],
+        "action": "discontinue",
+        "factor": 0.0,
+        "notes": "Discontinue permanently."
+      },
+      {
+        "parameter": "QTc prolongation",
+        "condition": "QTc greater than 500ms at baseline",
+        "affected_drugs": [
+          "Vemurafenib"
+        ],
+        "action": "discontinue",
+        "factor": 0.0,
+        "notes": "Treatment not recommended."
+      },
+      {
+        "parameter": "QTc prolongation",
+        "condition": "QTc increase meets values of both: greater than 500ms AND greater than 60ms change from pre-treatment baseline",
+        "affected_drugs": [
+          "Vemurafenib"
+        ],
+        "action": "discontinue",
+        "factor": 0.0,
+        "notes": "Discontinue permanently."
+      },
+      {
+        "parameter": "QTc prolongation",
+        "condition": "QTc greater than 500ms AND less than 60ms change from pre-treatment baseline - first occurrence",
+        "affected_drugs": [
+          "Vemurafenib"
+        ],
+        "action": "interrupt",
+        "factor": 0.0,
+        "notes": "Step 1: Interrupt treatment until QTc reduced to less than 500ms. Correct electrolyte imbalances (including Mg). Assess for cardiac risk factors. Step 2 (first occurrence): Resume dosing at 720mg twice a day (or 480mg twice a day if previously reduced)."
+      },
+      {
+        "parameter": "QTc prolongation",
+        "condition": "QTc greater than 500ms AND less than 60ms change from pre-treatment baseline - second occurrence",
+        "affected_drugs": [
+          "Vemurafenib"
+        ],
+        "action": "reduce",
+        "factor": 0.5,
+        "notes": "Resume dosing at 480mg twice a day (or discontinue permanently if previously reduced)."
+      },
+      {
+        "parameter": "QTc prolongation",
+        "condition": "QTc greater than 500ms AND less than 60ms change from pre-treatment baseline - third occurrence",
+        "affected_drugs": [
+          "Vemurafenib"
+        ],
+        "action": "discontinue",
+        "factor": 0.0,
+        "notes": "Discontinue permanently."
+      },
+      {
+        "parameter": "Hepatic impairment",
+        "condition": "Mild hepatic impairment",
+        "affected_drugs": [
+          "Vemurafenib"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "No adjustment to the starting dose is needed for patients with mild hepatic impairment."
+      },
+      {
+        "parameter": "Hepatic impairment",
+        "condition": "Moderate to severe hepatic impairment",
+        "affected_drugs": [
+          "Vemurafenib"
+        ],
+        "action": "monitor",
+        "factor": 1.0,
+        "notes": "Vemurafenib is cleared by the liver; patients with moderate to severe hepatic impairment may have increased exposure and should be closely monitored. Extended ECG monitoring required monthly for 3 months, then 3 monthly or as clinically indicated."
+      },
+      {
+        "parameter": "Renal impairment",
+        "condition": "Severe renal impairment",
+        "affected_drugs": [
+          "Vemurafenib"
+        ],
+        "action": "monitor",
+        "factor": 1.0,
+        "notes": "Limited data available. There may be a risk of increased exposure. Closely monitor these patients."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.5,
+      "platelets_min": 100,
+      "notes": "Neutrophils must be equal to or more than 1.5x10⁹/L and platelets equal to or more than 100x10⁹/L prior to each cycle."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es including magnesium prior to day one of each cycle",
+      "Baseline chest CT and then six monthly",
+      "Baseline ECG, repeated after one month and then when required such as after dose changes",
+      "Additional ECG monitoring required in patients with moderate to severe hepatic impairment: monthly for 3 months, then 3 monthly or as clinically indicated",
+      "BRAF V600 status prior to starting therapy"
+    ],
+    "special_warnings": [
+      "Treatment not recommended in patients with uncorrectable electrolyte abnormalities (including magnesium), or a long QT syndrome (QTc > 500ms) or who are taking medicinal products known to prolong the QT interval",
+      "NPSA/2008/RRR001 must be followed in relation to vemurafenib",
+      "Daily dose below 480mg twice daily is not recommended",
+      "Dose may be modified in 240mg dose steps based on individual safety and tolerability",
+      "If a third dose reduction is necessary treatment should be stopped",
+      "All dose reductions due to adverse drug reactions should not be re-escalated in subsequent cycles without consultant approval",
+      "BRAF V600 mutation must be confirmed prior to starting therapy"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "braf_v600_status": true,
+      "who_performance_status": true,
+      "weight_kg": false,
+      "baseline_ecg_qtc": true,
+      "baseline_electrolytes_including_magnesium": true
+    },
+    "disease_site": "Skin",
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Vemurafenib",
+        "dose": 960,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "Twice daily (960mg BD) continuous",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 960,
+        "max_dose_unit": "mg",
+        "special_instructions": "Take tablets with or without food (consistent intake of both daily doses on an empty stomach should be avoided). Dose may be modified in 240mg dose steps based on individual safety and tolerability. Daily dose below 480mg twice daily is not recommended. NPSA/2008/RRR001 must be followed. 12 cycles will be set in ARIA. Treatment until disease progression or intolerance.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "Twice daily (960mg BD) continuous | Take tablets with or without food (consistent intake of both daily doses on an empty stomach should be avoided). Dose may be modified in 240mg dose steps based on individual safety and tolerability. Daily dose below 480mg twice daily is not recommended. NPSA/2008/RRR001 must be followed. 12 cycles will be set in ARIA. Treatment until disease progression or intolerance."
+      }
+    ]
+  },
+  {
+    "protocol_id": "skin_talimogene_laherparepvec",
+    "protocol_code": "SKIN-TVEC",
+    "protocol_name": "Skin - Talimogene laherparepvec (T-VEC)",
+    "category": "skin",
+    "indication": "Talimogene laherparepvec (T-VEC) is recommended, in adults, as an option for treating unresectable, regionally or distantly metastatic (Stage IIIB, IIIC or IVM1a) melanoma that has not spread to bone, brain, lung or other internal organs, only if: treatment with systemically administered immunotherapies is not suitable AND the company provides talimogene laherparepvec with the discount agreed in the patient access scheme. WHO Performance Status 0 or 1.",
+    "version": "1",
+    "cycle_length_days": 28,
+    "total_cycles": null,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Talimogene laherparepvec",
+        "dose": 1,
+        "dose_unit": "ml",
+        "route": "Subcutaneous",
+        "days": [
+          1
+        ],
+        "frequency": "Cycle 1 Day 1 only - initial dose at concentration 10⁶ (1 million) PFU/mL, up to 4mL total injection volume",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 4,
+        "max_dose_unit": "ml",
+        "special_instructions": "Intratumoral injection. Cycle 1 Day 1: concentration 10⁶ (1 million) PFU/mL, up to 4mL total volume. Inject largest lesion(s) first. Prioritise remaining lesions by size until maximum injection volume reached. Injection volume per lesion based on lesion size: >5cm up to 4mL; >2.5cm to 5cm up to 2mL; >1.5cm to 2.5cm up to 1mL; >0.5cm to 1.5cm up to 0.5mL; ≤0.5cm up to 0.1mL. Thaw at room temperature approximately 30 minutes, gently swirl, do NOT shake. Available in 1mL vials.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Talimogene laherparepvec",
+        "dose": 1,
+        "dose_unit": "ml",
+        "route": "Subcutaneous",
+        "days": [
+          22
+        ],
+        "frequency": "Cycle 1 Day 22 only - second dose at concentration 10⁸ (100 million) PFU/mL, up to 4mL total injection volume",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 4,
+        "max_dose_unit": "ml",
+        "special_instructions": "Intratumoral injection. Cycle 1 Day 22: concentration 10⁸ (100 million) PFU/mL, up to 4mL total volume. 3 weeks after initial treatment. First inject any new lesions, then prioritise remaining lesions by size. Injection volume per lesion based on lesion size: >5cm up to 4mL; >2.5cm to 5cm up to 2mL; >1.5cm to 2.5cm up to 1mL; >0.5cm to 1.5cm up to 0.5mL; ≤0.5cm up to 0.1mL. Thaw at room temperature approximately 30 minutes, gently swirl, do NOT shake.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Talimogene laherparepvec",
+        "dose": 1,
+        "dose_unit": "ml",
+        "route": "Subcutaneous",
+        "days": [
+          8,
+          22
+        ],
+        "frequency": "Cycle 2 onwards Days 8 and 22 - concentration 10⁸ (100 million) PFU/mL, up to 4mL total injection volume, every 2 weeks",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 4,
+        "max_dose_unit": "ml",
+        "special_instructions": "Intratumoral injection. Cycle 2 onwards Days 8 and 22: concentration 10⁸ (100 million) PFU/mL, up to 4mL total volume per treatment session. First inject any new lesions developed since previous treatment, then prioritise remaining lesions by size. Injection volume per lesion based on lesion size: >5cm up to 4mL; >2.5cm to 5cm up to 2mL; >1.5cm to 2.5cm up to 1mL; >0.5cm to 1.5cm up to 0.5mL; ≤0.5cm up to 0.1mL. Treatment should only be administered by clinicians/nurses with specialist training. 24 cycles will be set in ARIA. Continue for at least 6 cycles or as long as there is clinical benefit.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [],
+    "dose_modifications": [
+      {
+        "parameter": "Haematological - immunocompromised",
+        "condition": "Severely immunocompromised patient",
+        "affected_drugs": [
+          "Talimogene laherparepvec"
+        ],
+        "action": "discontinue",
+        "factor": 0.0,
+        "notes": "Talimogene laherparepvec is contraindicated in patients who are severely immunocompromised."
+      },
+      {
+        "parameter": "Hepatic impairment",
+        "condition": "Any degree of hepatic impairment",
+        "affected_drugs": [
+          "Talimogene laherparepvec"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "No adjustment in dosage is required in patients with hepatic impairment."
+      },
+      {
+        "parameter": "Renal impairment",
+        "condition": "Any degree of renal impairment",
+        "affected_drugs": [
+          "Talimogene laherparepvec"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "No adjustment in dosage is required in patients with renal impairment."
+      },
+      {
+        "parameter": "Infection - cellulitis/tissue necrosis",
+        "condition": "Cellulitis or tissue necrosis resulting in open wounds",
+        "affected_drugs": [
+          "Talimogene laherparepvec"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Talimogene laherparepvec treatment may need to be temporarily held in the event of cellulitis. Careful wound care and infection precautions are recommended, particularly if tissue necrosis results in open wounds."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": null,
+      "platelets_min": null,
+      "notes": "No specific haematological delay thresholds stated. Contraindicated if severely immunocompromised. FBC, LFTs and U&Es prior to each dose. Temporarily hold in event of cellulitis."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to each dose",
+      "Record actual volume of talimogene laherparepvec administered after each administration",
+      "Tradename and batch number of administered product must be clearly recorded in patient file"
+    ],
+    "special_warnings": [
+      "Talimogene laherparepvec is an attenuated herpes simplex virus type-1 (HSV-1) - oncolytic immunotherapy",
+      "Treatment should only be administered by clinicians/nurses with specialist training",
+      "Contraindicated in severely immunocompromised patients",
+      "Patients must be issued with a patient alert card",
+      "Aciclovir and other anti-viral agents may interfere with the effectiveness of talimogene laherparepvec if administered systemically or topically directly to the injection site - consider risks and benefits before administering aciclovir or other anti-viral agents for management of herpetic infection",
+      "Herpetic infections (including cold sores and herpes keratitis) are known adverse effects",
+      "Treatment may be reinitiated if new lesions appear following a complete response",
+      "Continue for at least 6 months (at least 6 cycles) unless patient is not benefitting or other treatment required",
+      "Total injection volume for each treatment session should be up to a maximum of 4mL",
+      "Vials must be stored in the freezer; allow to thaw at room temperature approximately 30 minutes; gently swirl; do NOT shake",
+      "NICE TA410 28/09/2016: recommended with patient access scheme discount"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "who_performance_status": true,
+      "lesion_sizes_cm": true,
+      "injectable_lesions_present": true,
+      "immunocompromised_status": true
+    },
+    "disease_site": "Skin",
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Talimogene laherparepvec",
+        "dose": 1,
+        "dose_unit": "ml",
+        "route": "Subcutaneous",
+        "days": [
+          1
+        ],
+        "frequency": "Cycle 1 Day 1 only - initial dose at concentration 10⁶ (1 million) PFU/mL, up to 4mL total injection volume",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 4,
+        "max_dose_unit": "ml",
+        "special_instructions": "Intratumoral injection. Cycle 1 Day 1: concentration 10⁶ (1 million) PFU/mL, up to 4mL total volume. Inject largest lesion(s) first. Prioritise remaining lesions by size until maximum injection volume reached. Injection volume per lesion based on lesion size: >5cm up to 4mL; >2.5cm to 5cm up to 2mL; >1.5cm to 2.5cm up to 1mL; >0.5cm to 1.5cm up to 0.5mL; ≤0.5cm up to 0.1mL. Thaw at room temperature approximately 30 minutes, gently swirl, do NOT shake. Available in 1mL vials.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "Cycle 1 Day 1 only - initial dose at concentration 10⁶ (1 million) PFU/mL, up to 4mL total injection volume | Intratumoral injection. Cycle 1 Day 1: concentration 10⁶ (1 million) PFU/mL, up to 4mL total volume. Inject largest lesion(s) first. Prioritise remaining lesions by size until maximum injection volume reached. Injection volume per lesion based on lesion size: >5cm up to 4mL; >2.5cm to 5cm up to 2mL; >1.5cm to 2.5cm up to 1mL; >0.5cm to 1.5cm up to 0.5mL; ≤0.5cm up to 0.1mL. Thaw at room temperature approximately 30 minutes, gently swirl, do NOT shake. Available in 1mL vials."
+      },
+      {
+        "drug_name": "Talimogene laherparepvec",
+        "dose": 1,
+        "dose_unit": "ml",
+        "route": "Subcutaneous",
+        "days": [
+          22
+        ],
+        "frequency": "Cycle 1 Day 22 only - second dose at concentration 10⁸ (100 million) PFU/mL, up to 4mL total injection volume",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 4,
+        "max_dose_unit": "ml",
+        "special_instructions": "Intratumoral injection. Cycle 1 Day 22: concentration 10⁸ (100 million) PFU/mL, up to 4mL total volume. 3 weeks after initial treatment. First inject any new lesions, then prioritise remaining lesions by size. Injection volume per lesion based on lesion size: >5cm up to 4mL; >2.5cm to 5cm up to 2mL; >1.5cm to 2.5cm up to 1mL; >0.5cm to 1.5cm up to 0.5mL; ≤0.5cm up to 0.1mL. Thaw at room temperature approximately 30 minutes, gently swirl, do NOT shake.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "Cycle 1 Day 22 only - second dose at concentration 10⁸ (100 million) PFU/mL, up to 4mL total injection volume | Intratumoral injection. Cycle 1 Day 22: concentration 10⁸ (100 million) PFU/mL, up to 4mL total volume. 3 weeks after initial treatment. First inject any new lesions, then prioritise remaining lesions by size. Injection volume per lesion based on lesion size: >5cm up to 4mL; >2.5cm to 5cm up to 2mL; >1.5cm to 2.5cm up to 1mL; >0.5cm to 1.5cm up to 0.5mL; ≤0.5cm up to 0.1mL. Thaw at room temperature approximately 30 minutes, gently swirl, do NOT shake."
+      },
+      {
+        "drug_name": "Talimogene laherparepvec",
+        "dose": 1,
+        "dose_unit": "ml",
+        "route": "Subcutaneous",
+        "days": [
+          8,
+          22
+        ],
+        "frequency": "Cycle 2 onwards Days 8 and 22 - concentration 10⁸ (100 million) PFU/mL, up to 4mL total injection volume, every 2 weeks",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 4,
+        "max_dose_unit": "ml",
+        "special_instructions": "Intratumoral injection. Cycle 2 onwards Days 8 and 22: concentration 10⁸ (100 million) PFU/mL, up to 4mL total volume per treatment session. First inject any new lesions developed since previous treatment, then prioritise remaining lesions by size. Injection volume per lesion based on lesion size: >5cm up to 4mL; >2.5cm to 5cm up to 2mL; >1.5cm to 2.5cm up to 1mL; >0.5cm to 1.5cm up to 0.5mL; ≤0.5cm up to 0.1mL. Treatment should only be administered by clinicians/nurses with specialist training. 24 cycles will be set in ARIA. Continue for at least 6 cycles or as long as there is clinical benefit.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "Cycle 2 onwards Days 8 and 22 - concentration 10⁸ (100 million) PFU/mL, up to 4mL total injection volume, every 2 weeks | Intratumoral injection. Cycle 2 onwards Days 8 and 22: concentration 10⁸ (100 million) PFU/mL, up to 4mL total volume per treatment session. First inject any new lesions developed since previous treatment, then prioritise remaining lesions by size. Injection volume per lesion based on lesion size: >5cm up to 4mL; >2.5cm to 5cm up to 2mL; >1.5cm to 2.5cm up to 1mL; >0.5cm to 1.5cm up to 0.5mL; ≤0.5cm up to 0.1mL. Treatment should only be administered by clinicians/nurses with specialist training. 24 cycles will be set in ARIA. Continue for at least 6 cycles or as long as there is clinical benefit."
+      }
+    ]
+  },
+  {
+    "protocol_id": "skin_vismodegib",
+    "protocol_code": "BCC-VISMO",
+    "protocol_name": "BCC - Vismodegib",
+    "category": "skin",
+    "indication": "The patient either has: (a) Gorlin Syndrome with non-locally advanced, non-metastatic basal cell carcinomas (BCC) (≥6) clinically evident at point of decision to treat BCCs of which 3 are at least 5mm OR (b) Non-locally advanced, non-metastatic multiple BCC (≥6) clinically evident at point of decision to treat BCCs of which 3 are at least 5mm AND are appropriate for surgery (surgically appropriate eligible tumours). The patient has at least 6 operable clinically evident non-locally advanced, non-metastatic BCC with surgically eligible tumours of 3 lesions of at least 5mm diameter, of which 1 is histopathologically confirmed. The patient is suitable for surgical intervention, but surgical intervention alone has the potential for substantial disfigurement. ECOG performance status 0, 1 or 2. Patient aged 18 years and above.",
+    "version": "1",
+    "cycle_length_days": 28,
+    "total_cycles": null,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Vismodegib",
+        "dose": 150,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "Once daily continuous (days 1-28)",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 150,
+        "max_dose_unit": "mg",
+        "special_instructions": "Hedgehog pathway inhibitor (smoothened inhibitor). 28 day cycle continued for as long as the patient is deriving benefit from therapy without unacceptable toxicity (12 cycles will be set in Aria). Continuous daily administration or an intermittent unlicensed schedule may be used: (a) vismodegib 12 weeks on/8 weeks off/12 weeks on/8 weeks off/12 weeks on/8 weeks off/12 weeks on OR (b) vismodegib 24 weeks on/8 weeks off/8 weeks on/8 weeks off/8 weeks on/8 weeks off/8 weeks on. Licensed continuous dose will be set in ARIA. Swallow capsules whole with water, with or without food. Do not open, chew or crush. If a dose is missed, do not take the missed dose - resume with the next scheduled dose. NPSA/2008/RRR001 must be followed. Oral SACT - Pregnancy Prevention Programme required.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [
+      {
+        "drug_name": "Vismodegib",
+        "dose": 150,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once daily continuous",
+        "instructions": "Swallow capsules whole with water, with or without food. Do not open, chew or crush. If a dose is missed, do not take the missed dose but resume with the next scheduled dose. Available as 150mg capsules. Only 28 days of treatment can be supplied at one time to women of childbearing potential. Pregnancy Prevention Programme must be completed."
+      },
+      {
+        "drug_name": "Domperidone",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Three times a day when required",
+        "instructions": "When required for nausea. Please supply 30 tablets or nearest whole pack equivalent. Included in ARIA regimen on cycle one only; thereafter can be added from supportive treatment tab if required."
+      },
+      {
+        "drug_name": "Loperamide",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "When required for diarrhoea",
+        "instructions": "Take 4mg after the first loose stool and then 2mg every two hours up to a maximum of 16mg a day. Please supply 28 capsules or nearest whole pack equivalent. Included in ARIA regimen on cycle one only; thereafter can be added from supportive treatment tab if required."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Haematological - neutrophils",
+        "condition": "Neutrophil count less than 1x10⁹/L",
+        "affected_drugs": [
+          "Vismodegib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Neutrophils must be 1x10⁹/L or greater before each cycle. If below eligible level discuss with consultant before continuing treatment."
+      },
+      {
+        "parameter": "Haematological - platelets",
+        "condition": "Platelet count less than 100x10⁹/L",
+        "affected_drugs": [
+          "Vismodegib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Platelets must be 100x10⁹/L or greater before each cycle. If below eligible level discuss with consultant before continuing treatment."
+      },
+      {
+        "parameter": "Haematological - anaemia",
+        "condition": "Symptomatic anaemia or haemoglobin less than 8g/dL (80g/L)",
+        "affected_drugs": [
+          "Vismodegib"
+        ],
+        "action": "supportive",
+        "factor": 1.0,
+        "notes": "Haematological toxicity is uncommon. Consider blood transfusion or use of erythropoietin according to NICE TA323."
+      },
+      {
+        "parameter": "Hepatic impairment",
+        "condition": "Mild, moderate or severe hepatic impairment",
+        "affected_drugs": [
+          "Vismodegib"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "No dose adjustment is required in patients with mild, moderate or severe hepatic impairment (as defined by National Cancer Institute Organ Dysfunction Working group criteria)."
+      },
+      {
+        "parameter": "Renal impairment",
+        "condition": "Mild or moderate renal impairment",
+        "affected_drugs": [
+          "Vismodegib"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Mild and moderate renal impairment is not expected to impact elimination of vismodegib; no dose adjustment needed."
+      },
+      {
+        "parameter": "Renal impairment",
+        "condition": "Severe renal impairment",
+        "affected_drugs": [
+          "Vismodegib"
+        ],
+        "action": "monitor",
+        "factor": 1.0,
+        "notes": "Very limited data available in patients with severe renal impairment. Patients with severe renal impairment should be carefully monitored for adverse reactions."
+      },
+      {
+        "parameter": "Pregnancy",
+        "condition": "Confirmed or suspected pregnancy",
+        "affected_drugs": [
+          "Vismodegib"
+        ],
+        "action": "discontinue",
+        "factor": 0.0,
+        "notes": "Vismodegib is contraindicated in women of childbearing potential who do not comply with the pregnancy prevention programme. In case of pregnancy, vismodegib must be stopped immediately. Teratogenic risk to unborn child."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "Neutrophils must be 1x10⁹/L or greater and platelets 100x10⁹/L or greater prior to each cycle. If below eligible level discuss with consultant before continuing treatment. FBC, U&Es and LFTs prior to each cycle."
+    },
+    "monitoring_requirements": [
+      "FBC prior to each cycle",
+      "U&Es and LFTs prior to each cycle",
+      "For all women of childbearing potential: negative pregnancy test conducted by a healthcare provider within 7 days of treatment initiation and then every 4 weeks whilst on treatment",
+      "Pregnancy test must have minimum sensitivity of 25 mIU/mL",
+      "Monthly pregnancy tests during treatment even if patient has become amenorrhoeic"
+    ],
+    "special_warnings": [
+      "Hedgehog pathway inhibitor (smoothened inhibitor) - targeted therapy for basal cell carcinoma",
+      "Vismodegib is associated with a Pregnancy Prevention Programme (PPP) - pharmacist dispensing checklist must be completed prior to all supplies",
+      "Vismodegib is CONTRAINDICATED in pregnancy - teratogenic risk to unborn child",
+      "Women of childbearing potential must use two methods of recommended contraception (one highly effective and one barrier method) during vismodegib therapy and for 24 months after the final dose",
+      "Women must not breast-feed while taking vismodegib and for 24 months after the final dose",
+      "Male patients: vismodegib is contained in semen - must always use condom (with spermicide if available) during vismodegib therapy and for 2 months after the final dose",
+      "Patients should not donate blood while taking vismodegib and for 24 months after the final dose",
+      "Only 28 days of treatment can be supplied at one time to women of childbearing potential",
+      "Persistent lack of menses during treatment should be assumed to indicate pregnancy until medical evaluation and confirmation",
+      "NPSA/2008/RRR001 must be followed in relation to vismodegib",
+      "Capsules must be swallowed whole - do not open, chew or crush",
+      "If a dose is missed, do not take the missed dose - resume with next scheduled dose",
+      "Intermittent unlicensed dosing schedules are available as alternatives to continuous dosing (see special instructions)"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "ecog_performance_status": true,
+      "age_years": true,
+      "pregnancy_status": true,
+      "contraception_counselling_completed": true,
+      "pregnancy_prevention_programme_completed": true,
+      "number_of_bcc_lesions": true,
+      "histopathological_confirmation": true,
+      "gorlin_syndrome_status": true
+    },
+    "disease_site": "Skin",
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Vismodegib",
+        "dose": 150,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "Once daily continuous (days 1-28)",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 150,
+        "max_dose_unit": "mg",
+        "special_instructions": "Hedgehog pathway inhibitor (smoothened inhibitor). 28 day cycle continued for as long as the patient is deriving benefit from therapy without unacceptable toxicity (12 cycles will be set in Aria). Continuous daily administration or an intermittent unlicensed schedule may be used: (a) vismodegib 12 weeks on/8 weeks off/12 weeks on/8 weeks off/12 weeks on/8 weeks off/12 weeks on OR (b) vismodegib 24 weeks on/8 weeks off/8 weeks on/8 weeks off/8 weeks on/8 weeks off/8 weeks on. Licensed continuous dose will be set in ARIA. Swallow capsules whole with water, with or without food. Do not open, chew or crush. If a dose is missed, do not take the missed dose - resume with the next scheduled dose. NPSA/2008/RRR001 must be followed. Oral SACT - Pregnancy Prevention Programme required.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "Once daily continuous (days 1-28) | Hedgehog pathway inhibitor (smoothened inhibitor). 28 day cycle continued for as long as the patient is deriving benefit from therapy without unacceptable toxicity (12 cycles will be set in Aria). Continuous daily administration or an intermittent unlicensed schedule may be used: (a) vismodegib 12 weeks on/8 weeks off/12 weeks on/8 weeks off/12 weeks on/8 weeks off/12 weeks on OR (b) vismodegib 24 weeks on/8 weeks off/8 weeks on/8 weeks off/8 weeks on/8 weeks off/8 weeks on. Licensed continuous dose will be set in ARIA. Swallow capsules whole with water, with or without food. Do not open, chew or crush. If a dose is missed, do not take the missed dose - resume with the next scheduled dose. NPSA/2008/RRR001 must be followed. Oral SACT - Pregnancy Prevention Programme required."
+      }
+    ]
+  }
+]

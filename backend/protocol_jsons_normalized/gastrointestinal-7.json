@@ -1,0 +1,844 @@
+[
+  {
+    "protocol_code": "PANC-GEMCITABINE",
+    "protocol_name": "Pancreatic Cancer - Gemcitabine",
+    "disease_site": "Pancreatic",
+    "category": "gastrointestinal",
+    "cycle_length_days": 28,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Gemcitabine",
+        "dose": 1000.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV infusion in 250ml sodium chloride 0.9% over 30 minutes. Dose banded as per CSCCN agreed bands."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils 0.5–1x10^9/L and/or platelets 50–100x10^9/L on day of administration",
+        "drug_name": "Gemcitabine",
+        "factor": 0.75,
+        "notes": "Administer 75% of original dose"
+      },
+      {
+        "condition": "Neutrophils <0.5x10^9/L and platelets <50x10^9/L on day of administration",
+        "drug_name": "Gemcitabine",
+        "factor": 0.0,
+        "notes": "Omit gemcitabine for 7 days; dose omitted dose should not be replaced"
+      },
+      {
+        "condition": "Neutropenic sepsis - subsequent courses",
+        "drug_name": "Gemcitabine",
+        "factor": 0.75,
+        "notes": "Withhold until fully recovered, then reinstate at 75% of original dose with no further re-escalation. If already on 75%, reduce to 50%."
+      },
+      {
+        "condition": "Hepatic impairment - raised bilirubin",
+        "drug_name": "Gemcitabine",
+        "factor": 1.0,
+        "notes": "Consider dose reductions especially where bilirubin is raised; discuss with consultant"
+      },
+      {
+        "condition": "Renal impairment CrCl <30ml/min",
+        "drug_name": "Gemcitabine",
+        "factor": 1.0,
+        "notes": "Consider dose adjustments when CrCl is less than 30ml/min; discuss with consultant"
+      },
+      {
+        "condition": "Non-haematological toxicity requiring treatment delay",
+        "drug_name": "Gemcitabine",
+        "factor": 0.75,
+        "notes": "25% dose reduction for all subsequent courses if treatment delayed due to non-haematological toxicity"
+      }
+    ],
+    "pre_medications": [
+      "Metoclopramide 10mg oral or intravenous 15-30 minutes prior to chemotherapy",
+      "Metoclopramide 10mg three times a day when required oral (take home, day 1 only)"
+    ],
+    "special_warnings": [
+      "Radiosensitising properties - use with caution in patients receiving radiotherapy",
+      "Influenza-like symptoms may occur",
+      "Transient elevation of LFTs expected",
+      "If a third dose reduction is necessary, treatment should be stopped",
+      "Dose omissions should not be replaced; maintain same cycle schedule",
+      "Consider gastric protection with PPI or H2 antagonist in high-risk patients"
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "creatinine_clearance",
+      "bilirubin",
+      "ast_alt"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "CRC-IRINOTECAN",
+    "protocol_name": "Colorectal Cancer - Irinotecan",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 21,
+    "number_of_cycles": 8,
+    "drugs": [
+      {
+        "drug_name": "Irinotecan",
+        "dose": 350.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.5,
+        "max_dose": 700.0,
+        "max_dose_unit": "mg",
+        "notes": "IV infusion in 250ml sodium chloride 0.9% over 90 minutes. Dose banded as per CSCCN agreed bands. Maximum daily dose 700mg. In patients with prior pelvic radiotherapy, age ≥70, or PS 2: consider 300mg/m² (max 600mg)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1.5x10^9/L and/or platelets <100x10^9/L - delay 7 days",
+        "drug_name": "Irinotecan",
+        "factor": 0.8,
+        "notes": "If counts recover after 7-day delay, restart at 80% of original dose"
+      },
+      {
+        "condition": "14-day delay required or two separate 7-day delays",
+        "drug_name": "Irinotecan",
+        "factor": 0.5,
+        "notes": "Consider reducing to 50% of original dose or stopping treatment"
+      },
+      {
+        "condition": "Nadir neutrophil count <0.5x10^9/L or febrile neutropenia",
+        "drug_name": "Irinotecan",
+        "factor": 0.8,
+        "notes": "Subsequent dose reduced to 80% of original dose"
+      },
+      {
+        "condition": "NCI-CTC grade 3 or above toxicity (e.g. diarrhoea, abdominal pain, emesis, stomatitis)",
+        "drug_name": "Irinotecan",
+        "factor": 0.8,
+        "notes": "Reduce to 80% of original dose. Diarrhoea must have resolved completely before next cycle."
+      },
+      {
+        "condition": "Hepatic impairment - bilirubin 26-51 µmol/L",
+        "drug_name": "Irinotecan",
+        "factor": 1.0,
+        "notes": "Reduce dose to 200mg/m² (absolute dose, not a percentage factor)"
+      },
+      {
+        "condition": "Hepatic impairment - bilirubin >51 µmol/L",
+        "drug_name": "Irinotecan",
+        "factor": 1.0,
+        "notes": "Clinical decision required"
+      },
+      {
+        "condition": "Renal impairment",
+        "drug_name": "Irinotecan",
+        "factor": 1.0,
+        "notes": "Dose reduction probably not required"
+      }
+    ],
+    "pre_medications": [
+      "Atropine 250mcg subcutaneous immediately prior to irinotecan (prevention of acute cholinergic syndrome)",
+      "Dexamethasone 8mg oral or intravenous 15-30 minutes prior to chemotherapy",
+      "Ondansetron 8mg oral or intravenous 15-30 minutes prior to chemotherapy",
+      "Dexamethasone 4mg twice a day for 3 days oral (take home, starting day after chemotherapy)",
+      "Metoclopramide 10mg three times a day when required oral (take home)",
+      "Atropine 250mcg subcutaneous when required for cholinergic symptoms",
+      "Loperamide 2mg oral every two hours from first liquid stool (max 48 hours)",
+      "Consider ciprofloxacin 500mg oral twice a day if diarrhoea continues >24 hours"
+    ],
+    "special_warnings": [
+      "Acute cholinergic syndrome may occur - atropine prophylaxis required",
+      "Delayed diarrhoea is a significant toxicity - loperamide protocol must be followed",
+      "Diarrhoea must have resolved completely before next cycle",
+      "This is one of few regimens where asymptomatic low nadir neutrophil counts indicate dose modification",
+      "Prior pelvic radiotherapy, age ≥70, or PS 2 - use reduced dose of 300mg/m² (max 600mg)",
+      "Consider gastric protection with PPI or H2 antagonist in high-risk patients",
+      "Irinotecan is an irritant - take precautions for extravasation"
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "bilirubin",
+      "performance_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "GASTRIC-NIVOLUMAB",
+    "protocol_name": "Gastric Cancer - Nivolumab",
+    "disease_site": "Gastric",
+    "category": "gastrointestinal",
+    "cycle_length_days": 14,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Nivolumab",
+        "dose": 3.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV infusion in 100ml sodium chloride 0.9% over 60 minutes. Administer via 0.2-1.2 micron low protein binding filter. Dose banded according to national dose bands. 52 cycles set in Aria. Treatment continued until disease progression or intolerance."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Dose escalation or reduction",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Dose escalation or reduction is NOT recommended. Treatment may be withheld or permanently discontinued based on toxicity."
+      },
+      {
+        "condition": "Immune-related pneumonitis - Grade 2",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve, radiographic abnormalities improve, and corticosteroid management complete"
+      },
+      {
+        "condition": "Immune-related pneumonitis - Grade 3 or 4",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue"
+      },
+      {
+        "condition": "Immune-related colitis - Grade 2 or 3 diarrhoea or colitis",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve and corticosteroid management complete"
+      },
+      {
+        "condition": "Immune-related colitis - Grade 4 diarrhoea or colitis",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue"
+      },
+      {
+        "condition": "Immune-related hepatitis - Grade 2 elevation AST/ALT/bilirubin",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Withhold until laboratory values return to baseline and corticosteroid management complete"
+      },
+      {
+        "condition": "Immune-related hepatitis - Grade 3 or 4 elevation AST/ALT/bilirubin, or AST/ALT ≥5xULN or bilirubin >3xULN",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue"
+      },
+      {
+        "condition": "Immune-related nephritis - Grade 2 or 3 creatinine elevation",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Withhold until creatinine returns to baseline and corticosteroid management complete"
+      },
+      {
+        "condition": "Immune-related nephritis - Grade 4 creatinine elevation",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue; initiate corticosteroids 1-2mg/kg/day methylprednisolone equivalents"
+      },
+      {
+        "condition": "Symptomatic immune-related endocrinopathies",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve and corticosteroid management complete. May continue with hormone replacement therapy if no symptoms."
+      },
+      {
+        "condition": "Immune-related rash - Grade 3",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Withhold dose until symptoms resolve and corticosteroid management complete"
+      },
+      {
+        "condition": "Immune-related rash - Grade 4",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue"
+      },
+      {
+        "condition": "Any persistent NCI-CTC grade 2 or 3 reaction not recovering within 12 weeks of last dose",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue"
+      },
+      {
+        "condition": "Treatment interruption ≥12 weeks",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Current funding approval precludes further treatment after interruption of 12 weeks or longer"
+      }
+    ],
+    "pre_medications": [
+      "No antiemetics required",
+      "Chlorphenamine 10mg intravenous when required for infusion related reactions",
+      "Hydrocortisone 100mg intravenous when required for infusion related reactions",
+      "Paracetamol 1000mg oral when required for infusion related reactions",
+      "Loperamide 4mg oral initially then 2mg after each loose stool when required (max 16mg/24 hours)"
+    ],
+    "special_warnings": [
+      "Dose reductions are NOT permitted for nivolumab - treatment is withheld or permanently discontinued",
+      "Immune-related adverse reactions can be severe or life-threatening - early diagnosis essential",
+      "Autoimmune toxicities may occur months after last dose",
+      "Systemic corticosteroids should NOT be used before starting nivolumab (may interfere with efficacy)",
+      "Corticosteroids may be used AFTER starting nivolumab to treat immune-related adverse reactions",
+      "Do not resume nivolumab if patient is still receiving immunosuppressive doses of corticosteroids",
+      "Thyroid function tests required prior to treatment and every 6 weeks or when clinically indicated",
+      "Patients must be given a nivolumab Patient Alert Card",
+      "Bluteq approval required",
+      "Current funding approval precludes further treatment after interruption of 12 weeks or longer",
+      "For Grade 3-4 pneumonitis: consider infliximab 5mg/kg every 2 weeks if corticosteroids insufficient after 48-72 hours",
+      "Administer via 0.2-1.2 micron low protein binding filter"
+    ],
+    "required_patient_fields": [
+      "performance_status",
+      "thyroid_function",
+      "fbc",
+      "lft",
+      "ue"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "CRC-PANITUMUMAB-14DAY",
+    "protocol_name": "Colorectal Cancer - Panitumumab (14 day)",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 14,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Panitumumab",
+        "dose": 6.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV infusion in 100ml sodium chloride 0.9% over 60 minutes. Doses ≥1000mg must be administered over 90 minutes in 150ml sodium chloride 0.9%. Must be administered using a 0.22 micron in-line filter. Dose banded as per CSCCN agreed bands. 6 cycles set; continue until intolerance or disease progression."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Dose reductions",
+        "drug_name": "Panitumumab",
+        "factor": 1.0,
+        "notes": "Dose reductions are NOT routinely permitted. Management is via infusion rate adjustment, treatment delay, or discontinuation."
+      },
+      {
+        "condition": "Haematological toxicity - neutrophils <1.5x10^9/L or platelets <100x10^9/L",
+        "drug_name": "Panitumumab",
+        "factor": 1.0,
+        "notes": "Delay treatment until eligible levels achieved; decision at consultant's discretion"
+      },
+      {
+        "condition": "NCI-CTC Grade 1 infusion/hypersensitivity reaction",
+        "drug_name": "Panitumumab",
+        "factor": 1.0,
+        "notes": "Reduce infusion rate by 50%; once rate reduced do not increase on subsequent infusions"
+      },
+      {
+        "condition": "NCI-CTC Grade 2 infusion/hypersensitivity reaction",
+        "drug_name": "Panitumumab",
+        "factor": 1.0,
+        "notes": "Stop infusion, administer supportive therapies; once resolved to grade 1 resume at 50% of previous rate"
+      },
+      {
+        "condition": "NCI-CTC Grade 3 or 4 infusion/hypersensitivity reaction",
+        "drug_name": "Panitumumab",
+        "factor": 0.0,
+        "notes": "Stop infusion immediately; patients should not receive panitumumab again"
+      },
+      {
+        "condition": "NCI-CTC Grade 1-2 acneiform skin rash",
+        "drug_name": "Panitumumab",
+        "factor": 1.0,
+        "notes": "Use symptomatic treatments (topical or oral antibiotics); continue panitumumab"
+      },
+      {
+        "condition": "NCI-CTC Grade 3 skin toxicity",
+        "drug_name": "Panitumumab",
+        "factor": 0.5,
+        "notes": "Delay until toxicity resolves to grade 2 or below; reinstate at 50% of original dose. If no recurrence, escalate in 25% increments. Discontinue if reactions do not resolve to <grade 2 after withholding 2 doses or if recurs at 50% dose."
+      },
+      {
+        "condition": "Confirmed pneumonitis",
+        "drug_name": "Panitumumab",
+        "factor": 0.0,
+        "notes": "Stop treatment permanently"
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Panitumumab",
+        "factor": 1.0,
+        "notes": "No information available"
+      },
+      {
+        "condition": "Renal impairment",
+        "drug_name": "Panitumumab",
+        "factor": 1.0,
+        "notes": "No information available"
+      }
+    ],
+    "pre_medications": [
+      "Metoclopramide 10mg three times a day when required oral (take home; supply on day one of cycle one only)"
+    ],
+    "special_warnings": [
+      "Dose reductions are NOT routinely permitted for panitumumab",
+      "Confirm positive wild type KRAS status prior to starting therapy",
+      "Acneiform skin rash occurs in over 90% of patients; onset within 3 weeks, often resolves after week 12",
+      "UV radiation may worsen skin reactions; sun safety practices during and for 2 months after treatment",
+      "Stop treatment if confirmed pneumonitis",
+      "Grade 3 or 4 hypersensitivity reactions: permanently discontinue - do not rechallenge",
+      "Administer using 0.22 micron in-line filter",
+      "Doses ≥1000mg: administer over 90 minutes in 150ml sodium chloride 0.9%",
+      "Once infusion rate reduced, do not increase on subsequent infusions",
+      "Consider gastric protection with PPI or H2 antagonist in high-risk patients",
+      "This regimen may require funding"
+    ],
+    "required_patient_fields": [
+      "kras_status",
+      "ras_wild_type_status",
+      "neutrophil_count",
+      "platelet_count"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "CRC-PANITUMUMAB-21DAY",
+    "protocol_name": "Colorectal Cancer - Panitumumab (21 day)",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 21,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Panitumumab",
+        "dose": 9.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV infusion in 100ml sodium chloride 0.9% over 60 minutes. Doses ≥1000mg must be administered over 90 minutes in 150ml sodium chloride 0.9%. Must be administered using a 0.22 micron in-line filter. Dose banded as per CSCCN agreed bands. 6 cycles set; continue until intolerance or disease progression. This is an unlicensed dose."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Dose reductions",
+        "drug_name": "Panitumumab",
+        "factor": 1.0,
+        "notes": "Dose reductions are NOT routinely permitted. Management is via infusion rate adjustment, treatment delay, or discontinuation."
+      },
+      {
+        "condition": "Haematological toxicity - neutrophils <1.5x10^9/L or platelets <100x10^9/L",
+        "drug_name": "Panitumumab",
+        "factor": 1.0,
+        "notes": "Delay treatment until eligible levels achieved; decision at consultant's discretion"
+      },
+      {
+        "condition": "NCI-CTC Grade 1 infusion/hypersensitivity reaction",
+        "drug_name": "Panitumumab",
+        "factor": 1.0,
+        "notes": "Reduce infusion rate by 50%; once rate reduced do not increase on subsequent infusions"
+      },
+      {
+        "condition": "NCI-CTC Grade 2 infusion/hypersensitivity reaction",
+        "drug_name": "Panitumumab",
+        "factor": 1.0,
+        "notes": "Stop infusion, administer supportive therapies; once resolved to grade 1 resume at 50% of previous rate"
+      },
+      {
+        "condition": "NCI-CTC Grade 3 or 4 infusion/hypersensitivity reaction",
+        "drug_name": "Panitumumab",
+        "factor": 0.0,
+        "notes": "Stop infusion immediately; patients should not receive panitumumab again"
+      },
+      {
+        "condition": "NCI-CTC Grade 1-2 acneiform skin rash",
+        "drug_name": "Panitumumab",
+        "factor": 1.0,
+        "notes": "Use symptomatic treatments (topical or oral antibiotics); continue panitumumab"
+      },
+      {
+        "condition": "NCI-CTC Grade 3 skin toxicity",
+        "drug_name": "Panitumumab",
+        "factor": 0.5,
+        "notes": "Delay until toxicity resolves to grade 2 or below; reinstate at 50% of original dose. If no recurrence, escalate in 25% increments. Discontinue if reactions do not resolve to <grade 2 after withholding 2 doses or if recurs at 50% dose."
+      },
+      {
+        "condition": "Confirmed pneumonitis",
+        "drug_name": "Panitumumab",
+        "factor": 0.0,
+        "notes": "Stop treatment permanently"
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Panitumumab",
+        "factor": 1.0,
+        "notes": "No information available"
+      },
+      {
+        "condition": "Renal impairment",
+        "drug_name": "Panitumumab",
+        "factor": 1.0,
+        "notes": "No information available"
+      }
+    ],
+    "pre_medications": [
+      "Metoclopramide 10mg three times a day when required oral (take home; supply on day one of cycle one only)"
+    ],
+    "special_warnings": [
+      "Dose reductions are NOT routinely permitted for panitumumab",
+      "This is an UNLICENSED dose - this regimen may require funding",
+      "Confirm positive wild type KRAS status prior to starting therapy",
+      "Acneiform skin rash occurs in over 90% of patients; onset within 3 weeks, often resolves after week 12",
+      "UV radiation may worsen skin reactions; sun safety practices during and for 2 months after treatment",
+      "Stop treatment if confirmed pneumonitis",
+      "Grade 3 or 4 hypersensitivity reactions: permanently discontinue - do not rechallenge",
+      "Administer using 0.22 micron in-line filter",
+      "Doses ≥1000mg: administer over 90 minutes in 150ml sodium chloride 0.9%",
+      "Once infusion rate reduced, do not increase on subsequent infusions",
+      "Consider gastric protection with PPI or H2 antagonist in high-risk patients"
+    ],
+    "required_patient_fields": [
+      "kras_status",
+      "ras_wild_type_status",
+      "neutrophil_count",
+      "platelet_count"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "CRC-PEMBROLIZUMAB-400MG",
+    "protocol_name": "Colorectal Cancer - Pembrolizumab (400mg)",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 42,
+    "number_of_cycles": 18,
+    "drugs": [
+      {
+        "drug_name": "Pembrolizumab",
+        "dose": 400.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV infusion in 100ml sodium chloride 0.9% over 30 minutes. Administer using a low protein binding filter (0.2 micron). 18 cycles set in ARIA. Treatment until disease progression, unacceptable toxicity, patient choice, or completion of 18 cycles."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Dose reductions",
+        "drug_name": "Pembrolizumab",
+        "factor": 1.0,
+        "notes": "Dose reductions are NOT recommended. Treatment is withheld or permanently discontinued based on toxicity severity."
+      },
+      {
+        "condition": "Hepatitis - AST/ALT 3-5xULN and/or bilirubin 1.5-3xULN",
+        "drug_name": "Pembrolizumab",
+        "factor": 1.0,
+        "notes": "Withhold treatment and administer corticosteroids; restart when LFTs at grade 1 following taper"
+      },
+      {
+        "condition": "Hepatitis - AST/ALT ≥5xULN or bilirubin >3xULN or grade 3 or above",
+        "drug_name": "Pembrolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue"
+      },
+      {
+        "condition": "Grade 2 nephritis",
+        "drug_name": "Pembrolizumab",
+        "factor": 1.0,
+        "notes": "Withhold treatment and administer corticosteroids; resume when grade 1 or below following taper"
+      },
+      {
+        "condition": "Grade 3 or above nephritis",
+        "drug_name": "Pembrolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue"
+      },
+      {
+        "condition": "Grade 2-3 colitis",
+        "drug_name": "Pembrolizumab",
+        "factor": 1.0,
+        "notes": "Withhold and administer corticosteroids; restart when grade 1 following taper"
+      },
+      {
+        "condition": "Grade 3 or above colitis or any grade 4 adverse reaction",
+        "drug_name": "Pembrolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue"
+      },
+      {
+        "condition": "Grade 2 pneumonitis",
+        "drug_name": "Pembrolizumab",
+        "factor": 1.0,
+        "notes": "Withhold; treat with systemic corticosteroids 1-2mg/kg/day; resume if improves to grade 0-1 within 12 weeks"
+      },
+      {
+        "condition": "Grade 3 or 4 pneumonitis or second episode of pneumonitis",
+        "drug_name": "Pembrolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue"
+      },
+      {
+        "condition": "Grade 3 or above skin reaction",
+        "drug_name": "Pembrolizumab",
+        "factor": 1.0,
+        "notes": "Withhold and consider dermatology referral; treat with systemic corticosteroids"
+      },
+      {
+        "condition": "Grade 3 or above ocular symptoms (uveitis)",
+        "drug_name": "Pembrolizumab",
+        "factor": 0.0,
+        "notes": "Discontinue pembrolizumab"
+      },
+      {
+        "condition": "Persistent grade 2 or 3 immune-related reaction not recovering within 12 weeks or NCI-CTC grade 3 infusion reaction",
+        "drug_name": "Pembrolizumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue"
+      },
+      {
+        "condition": "Treatment interruption ≥12 weeks",
+        "drug_name": "Pembrolizumab",
+        "factor": 0.0,
+        "notes": "Current funding approval precludes further treatment after interruption of 12 weeks or longer"
+      }
+    ],
+    "pre_medications": [
+      "No antiemetics required",
+      "Chlorphenamine 10mg intravenous when required for infusion related reactions",
+      "Hydrocortisone 100mg intravenous when required for infusion related reactions",
+      "Paracetamol 1000mg oral when required for infusion related reactions (check prior paracetamol; max 4g/24h; 4 hours between doses)"
+    ],
+    "special_warnings": [
+      "Dose reductions are NOT permitted for pembrolizumab - treatment is withheld or permanently discontinued",
+      "Tumour must have documented MSI-H or dMMR status confirmed by validated testing",
+      "Tumour must be wild type or mutant RAS status",
+      "Patient must not have received previous systemic therapy for metastatic colorectal cancer (prior adjuvant chemotherapy allowed)",
+      "Patient must not have received previous anti-PD1, PDL-2, anti CD137 or CTLA4 antibody",
+      "No symptomatic brain or leptomeningeal metastasis",
+      "Risk of dying from pembrolizumab greater than chemotherapy in first 4 months; long-term OS benefit occurs after this period - must be discussed with patient",
+      "Immune-related adverse reactions can be severe or life-threatening across multiple organ systems",
+      "Systemic corticosteroids should NOT be used before starting pembrolizumab",
+      "Corticosteroids may be used after starting pembrolizumab to treat immune-related reactions",
+      "Thyroid function tests required prior to treatment and before each cycle",
+      "Administer using a low protein binding filter",
+      "Treatment stops at disease progression, unacceptable toxicity, withdrawal of consent, or after 18 cycles",
+      "Current funding approval precludes further treatment after interruption of 12 weeks or longer",
+      "Consider gastric protection with PPI or H2 antagonist in high-risk patients"
+    ],
+    "required_patient_fields": [
+      "msi_status",
+      "dmmr_status",
+      "ras_status",
+      "thyroid_function",
+      "fbc",
+      "lft",
+      "ue"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "CRC-RALTITREXED",
+    "protocol_name": "Colorectal Cancer - Raltitrexed",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 21,
+    "number_of_cycles": 8,
+    "drugs": [
+      {
+        "drug_name": "Raltitrexed",
+        "dose": 3.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.25,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV infusion in 250ml sodium chloride 0.9% over 15 minutes. Dose banded as per CSCCN agreed bands. Indicated where fluorouracil and/or capecitabine contraindicated due to cardiac adverse effects. Raltitrexed is an inflammitant."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1.5x10^9/L and/or platelets <100x10^9/L - delay 7 days",
+        "drug_name": "Raltitrexed",
+        "factor": 1.0,
+        "notes": "Restart at original dose if counts recover after 7-day delay"
+      },
+      {
+        "condition": "14-day delay required or two separate 7-day delays",
+        "drug_name": "Raltitrexed",
+        "factor": 0.8,
+        "notes": "Consider reducing to 80% of original dose or stopping treatment"
+      },
+      {
+        "condition": "Renal impairment CrCl 55-65ml/min",
+        "drug_name": "Raltitrexed",
+        "factor": 0.75,
+        "notes": "Administer 75% of original dose every 4 weeks (28-day cycle)"
+      },
+      {
+        "condition": "Renal impairment CrCl 25-54ml/min",
+        "drug_name": "Raltitrexed",
+        "factor": 0.5,
+        "notes": "Administer 50% of original dose every 4 weeks (28-day cycle)"
+      },
+      {
+        "condition": "Renal impairment CrCl <25ml/min",
+        "drug_name": "Raltitrexed",
+        "factor": 0.0,
+        "notes": "Omit - do not administer"
+      },
+      {
+        "condition": "Renal impairment CrCl ≥65ml/min",
+        "drug_name": "Raltitrexed",
+        "factor": 1.0,
+        "notes": "No dose reduction necessary"
+      },
+      {
+        "condition": "Hepatic impairment - AST/ALT <5xULN or bilirubin <10xULN",
+        "drug_name": "Raltitrexed",
+        "factor": 1.0,
+        "notes": "Treat at 100% dose"
+      }
+    ],
+    "pre_medications": [
+      "Metoclopramide 10mg oral or intravenous 15-30 minutes prior to chemotherapy",
+      "Metoclopramide 10mg three times a day when required oral (take home)"
+    ],
+    "special_warnings": [
+      "Indicated only where fluorouracil and/or capecitabine is contraindicated due to cardiac adverse effects",
+      "Raltitrexed is an inflammitant - precautions required for extravasation",
+      "Renal function (creatinine clearance) is critical for dosing - cycle frequency may change to 4-weekly in renal impairment",
+      "Dose omit if CrCl <25ml/min",
+      "If a third dose reduction is necessary, treatment should be stopped",
+      "Consider gastric protection with PPI or H2 antagonist in high-risk patients"
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "neutrophil_count",
+      "platelet_count",
+      "ast_alt",
+      "bilirubin"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "GI-TRASTUZUMAB-MAINTENANCE-21DAY",
+    "protocol_name": "GI (Upper) Cancer - Trastuzumab (21 day Maintenance)",
+    "disease_site": "Gastric",
+    "category": "gastrointestinal",
+    "cycle_length_days": 21,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Trastuzumab",
+        "dose": 6.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV infusion in 250ml sodium chloride 0.9% over minimum 30 minutes. Dose banded in accordance with national dose bands (21mg/ml). 6 cycles set in Aria; continue until disease progression or intolerance. If dose missed ≤14 days: give 6mg/kg as soon as possible. If dose missed >14 days: re-loading dose of 8mg/kg over 90 minutes then resume 21-day schedule."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Dose modifications for haematological, hepatic or renal toxicity",
+        "drug_name": "Trastuzumab",
+        "factor": 1.0,
+        "notes": "No dose modifications for haematological, liver or renal toxicity are necessary. If trastuzumab is not tolerated it should be stopped."
+      },
+      {
+        "condition": "Symptomatic cardiac dysfunction",
+        "drug_name": "Trastuzumab",
+        "factor": 0.0,
+        "notes": "Discontinue trastuzumab, commence ACE inhibitor therapy and refer to cardiologist"
+      },
+      {
+        "condition": "LVEF <50% with drop ≥10 points from baseline (confirmed on repeat echo in 3 weeks)",
+        "drug_name": "Trastuzumab",
+        "factor": 0.0,
+        "notes": "HOLD treatment and repeat LVEF in 3 weeks. If LVEF drop ≥10 points and LVEF <50% confirmed: STOP treatment permanently"
+      },
+      {
+        "condition": "LVEF <50% with drop <10 points from baseline",
+        "drug_name": "Trastuzumab",
+        "factor": 1.0,
+        "notes": "Continue treatment and repeat LVEF in 3 weeks"
+      },
+      {
+        "condition": "LVEF ≥50% with drop >20 points from baseline",
+        "drug_name": "Trastuzumab",
+        "factor": 1.0,
+        "notes": "Continue treatment and repeat LVEF in 3 weeks"
+      },
+      {
+        "condition": "LVEF ≥50% with drop ≤20 points from baseline",
+        "drug_name": "Trastuzumab",
+        "factor": 1.0,
+        "notes": "Continue treatment"
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg intravenous when required for infusion related reactions",
+      "Hydrocortisone 100mg intravenous when required for infusion related reactions",
+      "Paracetamol 1000mg oral when required for infusion related reactions"
+    ],
+    "special_warnings": [
+      "Dose reductions are NOT permitted for trastuzumab - if not tolerated, treatment is stopped",
+      "HER2 positive status must be confirmed before initiating therapy",
+      "LVEF must be ≥40% before starting cycle one of trastuzumab",
+      "Cardiac function must be assessed prior to starting treatment",
+      "Cardiac monitoring: in metastatic setting, assess LVEF every 12 weeks for 24 weeks, then every 24 weeks thereafter",
+      "Cardiotoxicity monitoring is mandatory - symptomatic cardiac dysfunction requires discontinuation",
+      "Patients should be observed for 6 hours after first infusion and 2 hours after subsequent infusions (observation period may be reduced after first 2 infusions if tolerated)",
+      "Associated with hypersensitivity reactions - manage with chlorphenamine, hydrocortisone, paracetamol",
+      "Blood pressure must be monitored prior to each administration",
+      "For HER2-positive metastatic adenocarcinoma of stomach or gastro-oesophageal junction",
+      "Not for use as monotherapy - indicated in combination with capecitabine and cisplatin, or cisplatin and fluorouracil",
+      "FBC, U&Es and LFTs every 12 weeks in conjunction with cardiac monitoring"
+    ],
+    "required_patient_fields": [
+      "her2_status",
+      "lvef",
+      "blood_pressure",
+      "fbc",
+      "ue",
+      "lft"
+    ],
+    "auc_dosing": null
+  }
+]

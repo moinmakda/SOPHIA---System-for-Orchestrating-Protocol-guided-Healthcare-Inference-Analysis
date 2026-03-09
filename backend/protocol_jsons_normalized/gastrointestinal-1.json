@@ -1,0 +1,1300 @@
+[
+  {
+    "protocol_code": "COLORECTAL-AFLIBERCEPT-FOLFIRI-MDG",
+    "protocol_name": "Aflibercept-Fluorouracil-Folinic Acid (Modified de Gramont)-Irinotecan",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 14,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Aflibercept",
+        "dose": 4.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Infusion in 100ml sodium chloride 0.9% over 60 minutes. Dose banded per CSCCN agreed bands. Doses should be OMITTED (not reduced) for adverse reactions. Stop if more than two doses missed."
+      },
+      {
+        "drug_name": "Irinotecan",
+        "dose": 180.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Infusion in 250ml sodium chloride 0.9% over 90 minutes. Dose banded per national dose bands (20mg/ml). Give after atropine pre-treatment."
+      },
+      {
+        "drug_name": "Folinic Acid",
+        "dose": 350.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Infusion in 250ml glucose 5% over 120 minutes. May be replaced with calcium levofolinate 175mg IV in 250ml glucose 5% over 120 minutes per local formulary choice."
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 400.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus over 10 minutes. Dose banded per national dose bands (25mg/ml PM bolus). DPD testing required before cycle 1."
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 2400.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2
+        ],
+        "infusion_duration_hours": 46.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Continuous intravenous infusion over 46 hours via ambulatory pump. Dose banded per national dose bands (50mg/ml infusion). Central venous access required."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1.5x10^9/L or platelets <100x10^9/L at start of cycle",
+        "drug_name": "Irinotecan",
+        "factor": 1.0,
+        "notes": "Delay treatment 7 days. If counts recover restart irinotecan at 80% of original dose. If 14-day delay needed or two separate 7-day delays, reduce irinotecan to 50% or stop treatment."
+      },
+      {
+        "condition": "Nadir neutrophils <0.5x10^9/L or febrile neutropenia",
+        "drug_name": "Irinotecan",
+        "factor": 0.8,
+        "notes": "Reduce subsequent irinotecan dose to 80% of original dose. Also consider stopping bolus fluorouracil."
+      },
+      {
+        "condition": "Nadir neutrophils <0.5x10^9/L or febrile neutropenia",
+        "drug_name": "Fluorouracil",
+        "factor": 0.8,
+        "notes": "Reduce subsequent fluorouracil dose to 80% of original dose. Consider stopping bolus fluorouracil."
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin >85 umol/L or AST >180",
+        "drug_name": "Fluorouracil",
+        "factor": 0.0,
+        "notes": "Contra-indicated. In moderate hepatic impairment consider reducing dose by 30%; in severe impairment by 50%."
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin >3xULN",
+        "drug_name": "Irinotecan",
+        "factor": 0.0,
+        "notes": "Contra-indicated when bilirubin >3xULN."
+      },
+      {
+        "condition": "Renal impairment: CrCl >30 ml/min",
+        "drug_name": "Aflibercept",
+        "factor": 1.0,
+        "notes": "No dose adjustment required although formal studies lacking."
+      },
+      {
+        "condition": "Severe renal impairment",
+        "drug_name": "Fluorouracil",
+        "factor": 1.0,
+        "notes": "Dose adjustment only required in severe renal impairment."
+      },
+      {
+        "condition": "NCI-CTC grade 2 diarrhoea - first occurrence",
+        "drug_name": "Fluorouracil",
+        "factor": 1.0,
+        "notes": "Withhold fluorouracil until resolved to grade 1 or below, then restart at full dose."
+      },
+      {
+        "condition": "NCI-CTC grade 2 diarrhoea - second occurrence",
+        "drug_name": "Fluorouracil",
+        "factor": 0.75,
+        "notes": "Restart at 75% of original dose after resolution to grade 1."
+      },
+      {
+        "condition": "NCI-CTC grade 2 diarrhoea - third occurrence",
+        "drug_name": "Fluorouracil",
+        "factor": 0.5,
+        "notes": "Restart at 50% of original dose after resolution to grade 1."
+      },
+      {
+        "condition": "NCI-CTC grade 3 diarrhoea - first occurrence",
+        "drug_name": "Fluorouracil",
+        "factor": 0.75,
+        "notes": "Restart at 75% of original dose after resolution to grade 1."
+      },
+      {
+        "condition": "NCI-CTC grade 3 diarrhoea - second occurrence",
+        "drug_name": "Fluorouracil",
+        "factor": 0.5,
+        "notes": "Restart at 50% of original dose after resolution to grade 1."
+      },
+      {
+        "condition": "NCI-CTC grade 3 diarrhoea - third occurrence or grade 4 toxicity",
+        "drug_name": "Fluorouracil",
+        "factor": 0.0,
+        "notes": "Stop fluorouracil therapy."
+      },
+      {
+        "condition": "NCI-CTC grade 2-4 non-haematological toxicity - first occurrence",
+        "drug_name": "Irinotecan",
+        "factor": 1.0,
+        "notes": "Reduce irinotecan dose to 150mg/m2. Diarrhoea must have resolved completely before next cycle."
+      },
+      {
+        "condition": "NCI-CTC grade 2-4 non-haematological toxicity - second occurrence despite dose reduction",
+        "drug_name": "Irinotecan",
+        "factor": 1.0,
+        "notes": "Delay until symptoms resolve then restart at 100mg/m2. Stop for third episode."
+      },
+      {
+        "condition": "Persistent NCI-CTC grade 3 hypertension on aflibercept",
+        "drug_name": "Aflibercept",
+        "factor": 1.0,
+        "notes": "Stop treatment until controlled then either dose reduce to 2mg/kg or stop. Stop for uncontrolled hypertension, hypertensive crisis or encephalopathy."
+      },
+      {
+        "condition": "Recurrent proteinuria on aflibercept",
+        "drug_name": "Aflibercept",
+        "factor": 1.0,
+        "notes": "For recurrent proteinuria reduce dose to 2mg/kg. Stop for nephrotic syndrome or thrombotic microangiopathy."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg oral or IV 15-30 minutes prior to chemotherapy",
+      "Ondansetron 8mg oral or IV 15-30 minutes prior to chemotherapy",
+      "Atropine 250mcg subcutaneous immediately prior to irinotecan (prevention of acute cholinergic syndrome)",
+      "Dexamethasone 4mg oral twice daily for 3 days (take home, starting day 2)",
+      "Metoclopramide 10mg oral three times daily when required (take home)",
+      "Loperamide 2mg every 2 hours from first liquid stool (max 48 hours, max 16mg/day)",
+      "Ciprofloxacin 500mg oral twice daily if diarrhoea persists >24 hours (consider)"
+    ],
+    "special_warnings": [
+      "Aflibercept doses must be OMITTED and not reduced for adverse reactions. If more than two doses are missed treatment should be stopped.",
+      "DPD deficiency testing required before cycle 1 of fluorouracil. Patients with complete or partial DPD deficiency are at increased risk of severe and fatal toxicity.",
+      "Central venous access and ambulatory infusion pump required.",
+      "Blood pressure and dipstick urinalysis for proteinuria required prior to each aflibercept dose.",
+      "Pre-existing hypertension must be controlled before starting aflibercept.",
+      "Stop aflibercept for: GI perforation, arterial thromboembolic events, NCI-CTC grade 3+ haemorrhage, NCI-CTC grade 3+ congestive heart failure, NCI-CTC grade 4 fistula, PRES.",
+      "This regimen may require special funding approval."
+    ],
+    "required_patient_fields": [
+      "blood_pressure",
+      "urinalysis_proteinuria",
+      "neutrophil_count",
+      "platelet_count",
+      "bilirubin",
+      "ast_alt",
+      "creatinine_clearance",
+      "dpd_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "COLORECTAL-BEVACIZUMAB-LONSURF",
+    "protocol_name": "Bevacizumab and Trifluridine-Tipiracil (LONSURF)",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 28,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Bevacizumab",
+        "dose": 5.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1,
+          15
+        ],
+        "infusion_duration_hours": 1.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Infusion in 100ml sodium chloride 0.9% over 90 minutes initially. Second infusion may be over 60 minutes if well tolerated; subsequent infusions over 30 minutes. Dose banded per national dose bands (25mg/ml NS). Doses should be OMITTED (not reduced) for adverse reactions."
+      },
+      {
+        "drug_name": "Trifluridine-Tipiracil",
+        "dose": 35.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": 80.0,
+        "max_dose_unit": "mg",
+        "notes": "Dose calculated based on trifluridine component. Maximum dose 80mg trifluridine. Minimum dose 20mg/m2 trifluridine. Doses rounded to nearest 5mg (up if halfway). Available as 20mg/8.19mg and 15mg/6.14mg tablets. Twice daily dosing. Easier to remember if started on Monday through Friday with weekend off. Missed doses must not be made up. LONSURF is a short course of oral chemotherapy that must not be continued."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Cycle start: neutrophils <1.5x10^9/L or platelets <75x10^9/L",
+        "drug_name": "Trifluridine-Tipiracil",
+        "factor": 1.0,
+        "notes": "Delay cycle until neutrophils >=1.5x10^9/L and platelets >=75x10^9/L."
+      },
+      {
+        "condition": "Febrile neutropenia, CTCAE grade 4 neutropenia (<0.5x10^9/L), thrombocytopenia (<25x10^9/L) causing >1 week delay, or CTCAE grade 3-4 non-haematological toxicity (except grade 3 nausea/vomiting controlled by antiemetics or diarrhoea responsive to antidiarrhoeals)",
+        "drug_name": "Trifluridine-Tipiracil",
+        "factor": 1.0,
+        "notes": "Interrupt until grade 1 or baseline. Decrease dose by 5mg/m2/dose from previous level. Maximum 3 reductions (35\u219230\u219225\u219220mg/m2 minimum). In severe renal impairment minimum is 15mg/m2. Dose escalation not permitted after reduction."
+      },
+      {
+        "condition": "Severe renal impairment (CrCl 15-29 ml/min)",
+        "drug_name": "Trifluridine-Tipiracil",
+        "factor": 1.0,
+        "notes": "Starting dose of 20mg/m2 twice daily recommended. One dose reduction to minimum 15mg/m2 twice daily permitted. Not recommended in end-stage renal disease (CrCl <15ml/min)."
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin >1.5x ULN",
+        "drug_name": "Trifluridine-Tipiracil",
+        "factor": 0.0,
+        "notes": "Not recommended when bilirubin >1.5x ULN."
+      },
+      {
+        "condition": "Adverse reaction requiring bevacizumab modification",
+        "drug_name": "Bevacizumab",
+        "factor": 0.0,
+        "notes": "Bevacizumab doses should be OMITTED (not reduced). If more than two doses missed, stop treatment."
+      }
+    ],
+    "pre_medications": [
+      "Anti-emetics not routinely required; consider metoclopramide 10mg oral three times daily when required",
+      "Antidiarrheal agents such as loperamide or codeine as needed",
+      "Gastric protection with proton pump inhibitor or H2 antagonist in high-risk patients"
+    ],
+    "special_warnings": [
+      "Bevacizumab doses must be OMITTED and not reduced for adverse reactions. If more than two doses are missed treatment should be stopped.",
+      "Stop bevacizumab for: GI perforation, arterial thromboembolic events, NCI-CTC grade 3+ haemorrhage, NCI-CTC grade 3+ congestive heart failure, NCI-CTC grade 4 fistula.",
+      "Bevacizumab therapy should not be initiated for at least 28 days following major surgery or until surgical wound is fully healed. Hold for 28-60 days before elective surgery.",
+      "LONSURF is a short course of oral chemotherapy - must not be continued beyond prescribed days.",
+      "NPSA/2008/RRR001 alert must be followed for oral chemotherapy prescribing, dispensing and administering.",
+      "Patients must be assessed for suitability for oral chemotherapy prior to starting treatment.",
+      "Trifluridine-Tipiracil dose escalation is not permitted after reduction.",
+      "Blood pressure and dipstick urinalysis for proteinuria required prior to each bevacizumab dose.",
+      "Treatment is until disease progression or intolerance."
+    ],
+    "required_patient_fields": [
+      "blood_pressure",
+      "urinalysis_proteinuria",
+      "neutrophil_count",
+      "platelet_count",
+      "creatinine_clearance",
+      "bilirubin"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "COLORECTAL-BEVACIZUMAB-CAPECITABINE-OXALIPLATIN",
+    "protocol_name": "Bevacizumab-Capecitabine-Oxaliplatin (XELOX + Bevacizumab)",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Bevacizumab",
+        "dose": 7.5,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Infusion in 100ml sodium chloride 0.9% over 90 minutes initially. Second infusion may be over 60 minutes if well tolerated; subsequent infusions over 30 minutes. Dose banded per national dose bands (25mg/ml NS). Doses should be OMITTED (not reduced) for adverse reactions."
+      },
+      {
+        "drug_name": "Oxaliplatin",
+        "dose": 130.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Infusion in 500ml glucose 5% over 120 minutes. Glucose 5% flush before and after. Consider stopping from cycle 7 onwards to minimise risk of cumulative peripheral sensory neuropathy. Dose banded per national dose bands (5mg/ml). Avoid if CrCl <30ml/min."
+      },
+      {
+        "drug_name": "Capecitabine",
+        "dose": 1000.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Twice daily oral dosing for 14 days. Start on evening of day 1. Take with or after food. Two doses 12 hours apart. In patients >70 years consider starting at 800mg/m2 twice daily. If oxaliplatin stopped after cycle 6, capecitabine dose may be increased to 1250mg/m2 twice daily. DPD testing required before cycle 1. Dose banded per national dose bands."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological: neutrophils <1.5x10^9/L or platelets <75x10^9/L",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "Delay until neutrophils >=1.5x10^9/L. If recovery within 7 days restart at 100%. If recovery within 7-14 days restart at 75%. If recovery >21 days stop treatment."
+      },
+      {
+        "condition": "Haematological: neutrophils <1.5x10^9/L or platelets <75x10^9/L",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.75,
+        "notes": "Same criteria as capecitabine. If recovery within 7 days 100%; if 7-14 days restart at 75%. If >21 days stop."
+      },
+      {
+        "condition": "Renal impairment: CrCl 30-50 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose."
+      },
+      {
+        "condition": "Renal impairment: CrCl <30 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.0,
+        "notes": "Contra-indicated."
+      },
+      {
+        "condition": "Renal impairment: CrCl <30 ml/min",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.0,
+        "notes": "Avoid if CrCl <30ml/min."
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin >3xULN or AST/ALT >2.5xULN (treatment related)",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "If treatment related consider delaying. For mild/moderate hepatic dysfunction due to liver metastases dose modification may not be necessary."
+      },
+      {
+        "condition": "NCI-CTC grade 2 toxicity (capecitabine) - first occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "Interrupt until grade 0-1 then continue at same dose."
+      },
+      {
+        "condition": "NCI-CTC grade 2 toxicity (capecitabine) - second occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until grade 0-1 then resume at 75% of original dose."
+      },
+      {
+        "condition": "NCI-CTC grade 2 toxicity (capecitabine) - third occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Interrupt until grade 0-1 then continue at 50% of original dose. Stop if fourth occurrence."
+      },
+      {
+        "condition": "NCI-CTC grade 3 toxicity (capecitabine) - first occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until grade 0-1 then continue at 75% with prophylaxis if appropriate."
+      },
+      {
+        "condition": "NCI-CTC grade 3 toxicity (capecitabine) - second occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Interrupt until grade 0-1 then resume at 50%."
+      },
+      {
+        "condition": "NCI-CTC grade 3 toxicity (capecitabine) - third occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.0,
+        "notes": "Discontinue capecitabine."
+      },
+      {
+        "condition": "NCI-CTC grade 4 toxicity (capecitabine)",
+        "drug_name": "Capecitabine",
+        "factor": 0.0,
+        "notes": "Discontinue unless consultant considers continuing at 50% in patient's best interest."
+      },
+      {
+        "condition": "Oxaliplatin cold-related dysaesthesia/paresthesia without pain, persisting between cycles",
+        "drug_name": "Oxaliplatin",
+        "factor": 1.0,
+        "notes": "Withhold oxaliplatin until recovery, restart at 100mg/m2. Omit oxaliplatin if recurs."
+      },
+      {
+        "condition": "Oxaliplatin paresthesia with pain or functional impairment persisting >7 days or grade 3+",
+        "drug_name": "Oxaliplatin",
+        "factor": 1.0,
+        "notes": "Reduce oxaliplatin dose to 100mg/m2. If painful paresthesia recurs or persists between cycles omit oxaliplatin."
+      },
+      {
+        "condition": "NCI-CTC grade 3-4 diarrhoea or stomatitis recurring despite capecitabine reduction",
+        "drug_name": "Oxaliplatin",
+        "factor": 1.0,
+        "notes": "Reduce oxaliplatin dose to 100mg/m2."
+      }
+    ],
+    "pre_medications": [
+      "Ondansetron 8mg oral or IV 15-30 minutes prior to chemotherapy",
+      "Dexamethasone 8mg oral or equivalent IV 15-30 minutes prior to chemotherapy",
+      "Dexamethasone 4mg oral twice daily for 3 days (take home, starting day after chemotherapy)",
+      "Metoclopramide 10mg oral three times daily for 3 days then when required (take home)",
+      "Loperamide 4mg initially then 2mg after each loose stool when required (max 16mg/24 hours)"
+    ],
+    "special_warnings": [
+      "Bevacizumab doses must be OMITTED and not reduced for adverse reactions. If more than two doses are missed treatment should be stopped.",
+      "Stop bevacizumab for: GI perforation, arterial thromboembolic events, NCI-CTC grade 3+ haemorrhage, NCI-CTC grade 3+ congestive heart failure, NCI-CTC grade 4 fistula.",
+      "DPD deficiency testing required before cycle 1 of capecitabine.",
+      "Capecitabine total daily dose must be divided into two doses 12 hours apart - serious toxicity has occurred when total daily dose given twice daily.",
+      "Consider stopping oxaliplatin from cycle 7 onwards to minimise cumulative peripheral sensory neuropathy.",
+      "Rare reports of acute interstitial lung disease with oxaliplatin - stop treatment if unexplained respiratory symptoms.",
+      "NPSA/2008/RRR001 alert must be followed for oral chemotherapy.",
+      "Short course of oral chemotherapy - must not be continued beyond prescribed days.",
+      "This protocol may require special funding approval.",
+      "Blood pressure and dipstick urinalysis required prior to each bevacizumab dose."
+    ],
+    "required_patient_fields": [
+      "blood_pressure",
+      "urinalysis_proteinuria",
+      "neutrophil_count",
+      "platelet_count",
+      "creatinine_clearance",
+      "bilirubin",
+      "ast_alt",
+      "dpd_status",
+      "age"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "COLORECTAL-BEVACIZUMAB-CAPECITABINE",
+    "protocol_name": "Bevacizumab-Capecitabine",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Bevacizumab",
+        "dose": 7.5,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Infusion in 100ml sodium chloride 0.9% over 90 minutes initially. Second infusion may be over 60 minutes if well tolerated; subsequent infusions over 30 minutes. Dose banded per national dose bands (25mg/ml NS). Doses should be OMITTED (not reduced) for adverse reactions."
+      },
+      {
+        "drug_name": "Capecitabine",
+        "dose": 1000.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Twice daily oral dosing for 14 days. Start on evening of day 1. Take with or after food. Two doses 12 hours apart. DPD testing required before cycle 1. Dose banded per national dose bands."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological: neutrophils <1.5x10^9/L",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "Delay until neutrophils >=1.5x10^9/L. If recovery within 7 days restart at 100%. If recovery 7-14 days restart at 75%. If >21 days stop treatment."
+      },
+      {
+        "condition": "Haematological: platelets <75x10^9/L",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "Delay until platelets >=75x10^9/L. If recovery within 7 days restart at 100%. If recovery 7-14 days restart at 75%. If >21 days stop treatment."
+      },
+      {
+        "condition": "Renal impairment: CrCl 30-50 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose."
+      },
+      {
+        "condition": "Renal impairment: CrCl <30 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.0,
+        "notes": "Contra-indicated."
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin >3xULN or AST/ALT >2.5xULN (treatment related)",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "If treatment related consider delaying. For mild/moderate hepatic dysfunction due to liver metastases dose modification may not be necessary."
+      },
+      {
+        "condition": "NCI-CTC grade 2 toxicity - first occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "Interrupt until grade 0-1 then continue at same dose."
+      },
+      {
+        "condition": "NCI-CTC grade 2 toxicity - second occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until grade 0-1 then resume at 75% of original dose."
+      },
+      {
+        "condition": "NCI-CTC grade 2 toxicity - third occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Interrupt until grade 0-1 then continue at 50%. Stop if fourth occurrence."
+      },
+      {
+        "condition": "NCI-CTC grade 3 toxicity - first occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until grade 0-1 then continue at 75% with prophylaxis if appropriate."
+      },
+      {
+        "condition": "NCI-CTC grade 3 toxicity - second occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Interrupt until grade 0-1 then resume at 50%."
+      },
+      {
+        "condition": "NCI-CTC grade 3 toxicity - third occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.0,
+        "notes": "Discontinue capecitabine."
+      },
+      {
+        "condition": "NCI-CTC grade 4 toxicity",
+        "drug_name": "Capecitabine",
+        "factor": 0.0,
+        "notes": "Discontinue unless consultant considers continuing at 50% in patient's best interest."
+      },
+      {
+        "condition": "Adverse reaction requiring bevacizumab modification",
+        "drug_name": "Bevacizumab",
+        "factor": 0.0,
+        "notes": "Bevacizumab doses should be OMITTED (not reduced). If more than two doses missed stop treatment."
+      }
+    ],
+    "pre_medications": [
+      "Metoclopramide 10mg oral three times daily for 3 days then when required (take home antiemetic)",
+      "Loperamide 4mg initially then 2mg after each loose stool when required (max 16mg/24 hours)"
+    ],
+    "special_warnings": [
+      "Bevacizumab doses must be OMITTED and not reduced for adverse reactions. If more than two doses are missed treatment should be stopped.",
+      "Stop bevacizumab for: GI perforation, arterial thromboembolic events, NCI-CTC grade 3+ haemorrhage, NCI-CTC grade 3+ congestive heart failure, NCI-CTC grade 4 fistula.",
+      "DPD deficiency testing required before cycle 1 of capecitabine.",
+      "Capecitabine total daily dose must be divided into two doses 12 hours apart - serious toxicity has occurred when total daily dose given as twice daily.",
+      "NPSA/2008/RRR001 alert must be followed for oral chemotherapy.",
+      "Short course of oral chemotherapy - must not be continued beyond prescribed days.",
+      "This protocol may require special funding approval.",
+      "Blood pressure and dipstick urinalysis required prior to each bevacizumab dose.",
+      "First line treatment of advanced colorectal cancer; WHO performance status 0, 1, 2."
+    ],
+    "required_patient_fields": [
+      "blood_pressure",
+      "urinalysis_proteinuria",
+      "neutrophil_count",
+      "platelet_count",
+      "creatinine_clearance",
+      "bilirubin",
+      "ast_alt",
+      "dpd_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "COLORECTAL-BEVACIZUMAB-FOLFIRI-MDG",
+    "protocol_name": "Bevacizumab-Fluorouracil-Folinic Acid (Modified de Gramont)-Irinotecan",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 14,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Bevacizumab",
+        "dose": 5.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Infusion in 100ml sodium chloride 0.9% over 90 minutes (cycle 1). Second infusion may be over 60 minutes if well tolerated; subsequent over 30 minutes. Dose banded per national dose bands (25mg/ml NS). Doses should be OMITTED (not reduced) for adverse reactions."
+      },
+      {
+        "drug_name": "Irinotecan",
+        "dose": 180.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Infusion in 250ml sodium chloride 0.9% over 90 minutes (may be administered over 30-90 minutes). Dose banded per national dose bands (20mg/ml). Give after atropine pre-treatment."
+      },
+      {
+        "drug_name": "Folinic Acid",
+        "dose": 350.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Infusion in 250ml glucose 5% over 120 minutes. May be replaced with calcium levofolinate 175mg IV in 250ml glucose 5% over 120 minutes per local formulary choice."
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 400.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus over 10 minutes. Dose banded per national dose bands (25mg/ml PM bolus). DPD testing required before cycle 1."
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 2400.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2
+        ],
+        "infusion_duration_hours": 46.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Continuous intravenous infusion over 46 hours via ambulatory pump. Dose banded per national dose bands (50mg/ml infusion). Central venous access required."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1.5x10^9/L or platelets <100x10^9/L at start of cycle",
+        "drug_name": "Irinotecan",
+        "factor": 0.8,
+        "notes": "Delay 7 days; if counts recover restart irinotecan at 80% of original dose. If 14-day delay needed or two separate 7-day delays, reduce irinotecan to 50% or stop."
+      },
+      {
+        "condition": "Nadir neutrophils <0.5x10^9/L or febrile neutropenia",
+        "drug_name": "Irinotecan",
+        "factor": 0.8,
+        "notes": "Reduce subsequent irinotecan dose to 80% of original."
+      },
+      {
+        "condition": "Nadir neutrophils <0.5x10^9/L or febrile neutropenia",
+        "drug_name": "Fluorouracil",
+        "factor": 0.8,
+        "notes": "Reduce subsequent fluorouracil to 80% of original."
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin >85 umol/L or AST >180",
+        "drug_name": "Fluorouracil",
+        "factor": 0.0,
+        "notes": "Contra-indicated. In moderate hepatic impairment consider 30% reduction; in severe 50% reduction."
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin >3xULN",
+        "drug_name": "Irinotecan",
+        "factor": 0.0,
+        "notes": "Should not be used when bilirubin >3xULN."
+      },
+      {
+        "condition": "Severe renal impairment",
+        "drug_name": "Fluorouracil",
+        "factor": 1.0,
+        "notes": "Dose adjustment only required in severe renal impairment."
+      },
+      {
+        "condition": "NCI-CTC grade 2 diarrhoea - first occurrence",
+        "drug_name": "Fluorouracil",
+        "factor": 1.0,
+        "notes": "Withhold until grade 1 then restart at full dose."
+      },
+      {
+        "condition": "NCI-CTC grade 2 diarrhoea - second occurrence",
+        "drug_name": "Fluorouracil",
+        "factor": 0.75,
+        "notes": "Restart at 75% after resolution to grade 1."
+      },
+      {
+        "condition": "NCI-CTC grade 2 diarrhoea - third occurrence",
+        "drug_name": "Fluorouracil",
+        "factor": 0.5,
+        "notes": "Restart at 50% after resolution to grade 1."
+      },
+      {
+        "condition": "NCI-CTC grade 3 diarrhoea - first occurrence",
+        "drug_name": "Fluorouracil",
+        "factor": 0.75,
+        "notes": "Restart at 75% after resolution to grade 1."
+      },
+      {
+        "condition": "NCI-CTC grade 3 diarrhoea - second occurrence",
+        "drug_name": "Fluorouracil",
+        "factor": 0.5,
+        "notes": "Restart at 50% after resolution to grade 1."
+      },
+      {
+        "condition": "NCI-CTC grade 3 diarrhoea - third occurrence or grade 4",
+        "drug_name": "Fluorouracil",
+        "factor": 0.0,
+        "notes": "Stop fluorouracil therapy."
+      },
+      {
+        "condition": "NCI-CTC grade 2-4 non-haematological event - first occurrence",
+        "drug_name": "Irinotecan",
+        "factor": 1.0,
+        "notes": "Reduce irinotecan to 150mg/m2. Diarrhoea must have resolved completely."
+      },
+      {
+        "condition": "NCI-CTC grade 2-4 non-haematological event - second occurrence despite dose reduction",
+        "drug_name": "Irinotecan",
+        "factor": 1.0,
+        "notes": "Delay until resolved then restart at 100mg/m2. Stop for third episode."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg oral or IV 15-30 minutes prior to chemotherapy",
+      "Ondansetron 8mg oral or IV 15-30 minutes prior to chemotherapy",
+      "Atropine 250mcg subcutaneous immediately prior to irinotecan (prevention of acute cholinergic syndrome)",
+      "Dexamethasone 4mg oral twice daily for 3 days (take home, starting day after chemotherapy)",
+      "Metoclopramide 10mg oral three times daily when required (take home)",
+      "Loperamide 2mg every 2 hours from first liquid stool (max 48 hours, max 16mg/day)",
+      "Ciprofloxacin 500mg oral twice daily if diarrhoea persists >24 hours (consider)"
+    ],
+    "special_warnings": [
+      "Bevacizumab doses must be OMITTED and not reduced for adverse reactions. If more than two doses are missed treatment should be stopped.",
+      "DPD deficiency testing required before cycle 1 of fluorouracil.",
+      "Central venous access and ambulatory infusion pump required.",
+      "Blood pressure and dipstick urinalysis for proteinuria required prior to each bevacizumab dose.",
+      "Stop bevacizumab for: GI perforation, arterial thromboembolic events, NCI-CTC grade 3+ haemorrhage, NCI-CTC grade 3+ congestive heart failure, NCI-CTC grade 4 fistula.",
+      "This regimen may require special funding approval.",
+      "Indicated as first or second line treatment for metastatic colorectal cancer; WHO PS 0, 1."
+    ],
+    "required_patient_fields": [
+      "blood_pressure",
+      "urinalysis_proteinuria",
+      "neutrophil_count",
+      "platelet_count",
+      "bilirubin",
+      "ast_alt",
+      "creatinine_clearance",
+      "dpd_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "COLORECTAL-BEVACIZUMAB-FOLFOX-MDG",
+    "protocol_name": "Bevacizumab-Fluorouracil-Folinic Acid (Modified de Gramont)-Oxaliplatin",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 14,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Bevacizumab",
+        "dose": 5.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Infusion in 100ml sodium chloride 0.9% over 90 minutes (cycle 1). Second infusion may be over 60 minutes if well tolerated; subsequent over 30 minutes. Dose banded per national dose bands (25mg/ml NS). Doses should be OMITTED (not reduced) for adverse reactions."
+      },
+      {
+        "drug_name": "Oxaliplatin",
+        "dose": 85.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Infusion in 500ml glucose 5% over 120 minutes. Glucose 5% flush before and after. Dose banded per national dose bands (5mg/ml). Avoid when CrCl <30ml/min."
+      },
+      {
+        "drug_name": "Folinic Acid",
+        "dose": 350.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Infusion in 250ml glucose 5% over 120 minutes. May be replaced with calcium levofolinate 175mg IV in 250ml glucose 5% over 120 minutes per local formulary choice."
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 400.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus over 10 minutes. Dose banded per national dose bands (25mg/ml PM bolus). DPD testing required before cycle 1."
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 2400.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2
+        ],
+        "infusion_duration_hours": 46.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Continuous intravenous infusion over 46 hours via ambulatory pump. Dose banded per national dose bands (50mg/ml infusion). Central venous access required."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological: neutrophils <1.5x10^9/L or platelets <75x10^9/L",
+        "drug_name": "Fluorouracil",
+        "factor": 1.0,
+        "notes": "Delay until counts recover. If <=7 days: full dose. If >7 days: omit bolus fluorouracil for this and subsequent cycles. If further delay needed despite omitting bolus: reduce infusional fluorouracil to 80%. If delay >=21 days stop therapy."
+      },
+      {
+        "condition": "Haematological: neutrophils <1.5x10^9/L or platelets <75x10^9/L; delay >7 days - omit bolus; further delay needed",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.8,
+        "notes": "If further delay necessary despite omitting bolus fluorouracil, reduce oxaliplatin to 80% of original dose. If delay >=21 days stop therapy."
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin >85 umol/L or AST >180",
+        "drug_name": "Fluorouracil",
+        "factor": 0.0,
+        "notes": "Contra-indicated. In moderate hepatic impairment consider 30% reduction; in severe 50% reduction."
+      },
+      {
+        "condition": "Renal impairment: CrCl <30 ml/min",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.0,
+        "notes": "Avoid when CrCl <30ml/min."
+      },
+      {
+        "condition": "NCI-CTC grade 2 diarrhoea - first occurrence",
+        "drug_name": "Fluorouracil",
+        "factor": 1.0,
+        "notes": "Withhold until grade 1 then restart at full dose."
+      },
+      {
+        "condition": "NCI-CTC grade 2 diarrhoea - second occurrence",
+        "drug_name": "Fluorouracil",
+        "factor": 0.75,
+        "notes": "Restart at 75% after resolution to grade 1."
+      },
+      {
+        "condition": "NCI-CTC grade 2 diarrhoea - third occurrence",
+        "drug_name": "Fluorouracil",
+        "factor": 0.5,
+        "notes": "Restart at 50% after resolution to grade 1."
+      },
+      {
+        "condition": "NCI-CTC grade 3 diarrhoea - first occurrence",
+        "drug_name": "Fluorouracil",
+        "factor": 0.75,
+        "notes": "Restart at 75% after resolution to grade 1."
+      },
+      {
+        "condition": "NCI-CTC grade 3 diarrhoea - second occurrence",
+        "drug_name": "Fluorouracil",
+        "factor": 0.5,
+        "notes": "Restart at 50% after resolution to grade 1."
+      },
+      {
+        "condition": "NCI-CTC grade 3 diarrhoea - third occurrence or grade 4",
+        "drug_name": "Fluorouracil",
+        "factor": 0.0,
+        "notes": "Stop fluorouracil therapy."
+      },
+      {
+        "condition": "Oxaliplatin neurosensory toxicity NCI-CTC grade 2 persisting >7 days",
+        "drug_name": "Oxaliplatin",
+        "factor": 1.0,
+        "notes": "Reduce oxaliplatin dose to 75mg/m2."
+      },
+      {
+        "condition": "Oxaliplatin neurosensory toxicity NCI-CTC grade 3 or above",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.0,
+        "notes": "Discontinue oxaliplatin."
+      },
+      {
+        "condition": "NCI-CTC grade 3-4 diarrhoea or stomatitis recurring despite fluorouracil dose reduction",
+        "drug_name": "Oxaliplatin",
+        "factor": 1.0,
+        "notes": "Reduce oxaliplatin dose to 75mg/m2."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg oral or IV 15-30 minutes prior to chemotherapy",
+      "Ondansetron 8mg oral or IV 15-30 minutes prior to chemotherapy",
+      "Dexamethasone 4mg oral twice daily for 3 days (take home, starting day after chemotherapy)",
+      "Metoclopramide 10mg oral three times daily when required (take home)",
+      "Loperamide 4mg after first loose stool then 2-4mg four times daily when required (max 16mg/24 hours)"
+    ],
+    "special_warnings": [
+      "Bevacizumab doses must be OMITTED and not reduced for adverse reactions. If more than two doses are missed treatment should be stopped.",
+      "DPD deficiency testing required before cycle 1 of fluorouracil.",
+      "Central venous access and ambulatory infusion pump required.",
+      "Blood pressure and dipstick urinalysis for proteinuria required prior to each bevacizumab dose.",
+      "Stop bevacizumab for: GI perforation, arterial thromboembolic events, NCI-CTC grade 3+ haemorrhage, NCI-CTC grade 3+ congestive heart failure, NCI-CTC grade 4 fistula.",
+      "Rare reports of acute interstitial lung disease with oxaliplatin - stop treatment if unexplained respiratory symptoms.",
+      "This regimen may require special funding approval.",
+      "Indicated as first, second or third line treatment for metastatic colorectal cancer; WHO PS 0, 1."
+    ],
+    "required_patient_fields": [
+      "blood_pressure",
+      "urinalysis_proteinuria",
+      "neutrophil_count",
+      "platelet_count",
+      "bilirubin",
+      "ast_alt",
+      "creatinine_clearance",
+      "dpd_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "COLORECTAL-BEVACIZUMAB-IRINOTECAN",
+    "protocol_name": "Bevacizumab-Irinotecan",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 21,
+    "number_of_cycles": 8,
+    "drugs": [
+      {
+        "drug_name": "Bevacizumab",
+        "dose": 7.5,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Infusion in 100ml sodium chloride 0.9% over 90 minutes initially. Second infusion may be over 60 minutes if well tolerated; subsequent infusions over 30 minutes. Dose banded per CSCCN agreed bands. Doses should be OMITTED (not reduced) for adverse reactions."
+      },
+      {
+        "drug_name": "Irinotecan",
+        "dose": 350.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.5,
+        "max_dose": 700.0,
+        "max_dose_unit": "mg",
+        "notes": "Infusion in 250ml sodium chloride 0.9% over 90 minutes (may be given over 30-90 minutes). Maximum single dose 700mg. Dose banded per CSCCN agreed bands. For prior pelvic radiotherapy, age >=70 or PS 2 consider 300mg/m2 (max 600mg). Give after atropine pre-treatment."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1.5x10^9/L at start of cycle",
+        "drug_name": "Irinotecan",
+        "factor": 0.8,
+        "notes": "Delay until neutrophils >=1.5x10^9/L. If recovery within 7 days restart at 80%. If recovery 7-14 days or repeated delays, consider 50% or stop."
+      },
+      {
+        "condition": "Platelets <100x10^9/L at start of cycle",
+        "drug_name": "Irinotecan",
+        "factor": 0.8,
+        "notes": "Delay until platelets >=100x10^9/L. If recovery within 7 days restart at 80%. If recovery 7-14 days or repeated delays, consider 50% or stop."
+      },
+      {
+        "condition": "Nadir neutrophils <0.5x10^9/L or febrile neutropenia",
+        "drug_name": "Irinotecan",
+        "factor": 0.8,
+        "notes": "Delay until recovery then continue with 80% of original dose."
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin 26-51 umol/L",
+        "drug_name": "Irinotecan",
+        "factor": 1.0,
+        "notes": "Use irinotecan 200mg/m2."
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin >51 umol/L",
+        "drug_name": "Irinotecan",
+        "factor": 1.0,
+        "notes": "Clinical decision required."
+      },
+      {
+        "condition": "NCI-CTC grade 3 or above non-haematological toxicity",
+        "drug_name": "Irinotecan",
+        "factor": 0.8,
+        "notes": "Reduce to 80% of original dose. All toxicities must resolve to NCI-CTC 0 or 1 before next cycle; diarrhoea must have resolved completely."
+      },
+      {
+        "condition": "Adverse reaction requiring bevacizumab modification",
+        "drug_name": "Bevacizumab",
+        "factor": 0.0,
+        "notes": "Bevacizumab doses should be OMITTED (not reduced). If more than two doses missed stop treatment."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg oral or equivalent IV 15-30 minutes prior to chemotherapy",
+      "Ondansetron 8mg oral or IV 15-30 minutes prior to chemotherapy",
+      "Atropine 250mcg subcutaneous immediately prior to irinotecan (prevention of acute cholinergic syndrome)",
+      "Dexamethasone 4mg oral twice daily for 3 days (take home, starting day after chemotherapy)",
+      "Metoclopramide 10mg oral three times daily for 3 days then when required (take home)",
+      "Loperamide 2mg every 2 hours from first liquid stool (max 48 hours, max 16mg/day)",
+      "Ciprofloxacin 500mg oral twice daily if diarrhoea persists >24 hours (consider)"
+    ],
+    "special_warnings": [
+      "Bevacizumab doses must be OMITTED and not reduced for adverse reactions. If more than two doses are missed treatment should be stopped.",
+      "Stop bevacizumab for: GI perforation, arterial thromboembolic events, NCI-CTC grade 3+ haemorrhage, NCI-CTC grade 3+ congestive heart failure, NCI-CTC grade 4 fistula.",
+      "Blood pressure and dipstick urinalysis for proteinuria required prior to each bevacizumab dose.",
+      "Asymptomatic low nadir neutrophil counts are an indication for dose modification in this regimen.",
+      "First line treatment for metastatic or advanced colorectal cancer in patients unsuitable for fluoropyrimidines; WHO PS 0, 1.",
+      "For prior pelvic radiotherapy, age >=70 or PS 2: consider irinotecan 300mg/m2 (max 600mg).",
+      "Maximum single dose of irinotecan is 700mg.",
+      "This protocol may require special funding approval."
+    ],
+    "required_patient_fields": [
+      "blood_pressure",
+      "urinalysis_proteinuria",
+      "neutrophil_count",
+      "platelet_count",
+      "bilirubin",
+      "creatinine_clearance",
+      "age",
+      "performance_status",
+      "prior_pelvic_radiotherapy"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "COLORECTAL-CAPECITABINE-CARBOPLATIN-AUC5",
+    "protocol_name": "Capecitabine-Carboplatin (AUC5)",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 5.0,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": 790.0,
+        "max_dose_unit": "mg",
+        "notes": "Infusion in 500ml glucose 5% over 60 minutes. AUC 5 calculated using GFR (Calvert formula). AUC 4 may be considered with EDTA clearance. Dose banded per national dose bands (10mg/ml). Maximum dose capped at creatinine clearance 125ml/min. Internationally recommended maximum dose 750mg; set at 790mg in ARIA per national dose bands. Dose may need adjustment if renal function changes >10% between cycles. Do not administer if CrCl <20ml/min."
+      },
+      {
+        "drug_name": "Capecitabine",
+        "dose": 1000.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Twice daily oral dosing for 14 days. Start on evening of day 1. Take with or after food. Two doses 12 hours apart. For PS 2 or extensive prior treatment, consider 10 days of capecitabine for cycle 1, increasing to 14 days based on tolerability. DPD testing required before cycle 1. Dose banded per national dose bands."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological toxicity: neutrophils <1.5x10^9/L or platelets <100x10^9/L (subsequent cycles)",
+        "drug_name": "Carboplatin",
+        "factor": 0.8,
+        "notes": "Delay 7 days; restart at original dose if counts recover. If 14-day delay required or two separate 7-day delays, reduce carboplatin to 80% of original dose."
+      },
+      {
+        "condition": "Renal impairment: CrCl 30-50 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose."
+      },
+      {
+        "condition": "Renal impairment: CrCl <30 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.0,
+        "notes": "Contra-indicated."
+      },
+      {
+        "condition": "Renal impairment: CrCl <20 ml/min",
+        "drug_name": "Carboplatin",
+        "factor": 0.0,
+        "notes": "Do not administer if CrCl <20ml/min."
+      },
+      {
+        "condition": "Significant change in GFR (>10%) from previous cycle",
+        "drug_name": "Carboplatin",
+        "factor": 1.0,
+        "notes": "Recalculate carboplatin dose based on updated GFR."
+      },
+      {
+        "condition": "NCI-CTC grade 2 toxicity (capecitabine) - first occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "Interrupt until grade 0-1 then continue at same dose."
+      },
+      {
+        "condition": "NCI-CTC grade 2 toxicity (capecitabine) - second occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until grade 0-1 then resume at 75%."
+      },
+      {
+        "condition": "NCI-CTC grade 2 toxicity (capecitabine) - third occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Interrupt until grade 0-1 then continue at 50%. Stop if fourth occurrence."
+      },
+      {
+        "condition": "NCI-CTC grade 3 toxicity (capecitabine) - first occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until grade 0-1 then continue at 75% with prophylaxis if appropriate."
+      },
+      {
+        "condition": "NCI-CTC grade 3 toxicity (capecitabine) - second occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Interrupt until grade 0-1 then resume at 50%."
+      },
+      {
+        "condition": "NCI-CTC grade 3 toxicity (capecitabine) - third occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.0,
+        "notes": "Discontinue capecitabine."
+      },
+      {
+        "condition": "NCI-CTC grade 4 toxicity (capecitabine)",
+        "drug_name": "Capecitabine",
+        "factor": 0.0,
+        "notes": "Discontinue unless consultant considers continuing at 50% in patient's best interest."
+      }
+    ],
+    "pre_medications": [
+      "Ondansetron 8mg oral or IV 15-30 minutes prior to chemotherapy",
+      "Dexamethasone 8mg oral or IV 15-30 minutes prior to chemotherapy",
+      "Dexamethasone 4mg oral twice daily for 3 days (take home, starting day after carboplatin)",
+      "Metoclopramide 10mg oral three times daily when required (take home)",
+      "Loperamide 4mg after first loose stool then 2-4mg four times daily when required (max 16mg/24 hours)",
+      "Mouthwashes per local or national policy for mucositis"
+    ],
+    "special_warnings": [
+      "DPD deficiency testing required before cycle 1 of capecitabine.",
+      "Capecitabine total daily dose must be divided into two doses 12 hours apart - serious toxicity has occurred when total daily dose given as twice daily.",
+      "Carboplatin dose capped at creatinine clearance of 125ml/min. Maximum dose for AUC 5 is 750mg (set as 790mg in ARIA). Verify dose appropriateness for obese patients or CrCl >125ml/min.",
+      "EDTA or calculated creatinine clearance required before first cycle. Recalculate if renal function changes >10%.",
+      "NPSA/2008/RRR001 alert must be followed for oral chemotherapy.",
+      "Short course of oral chemotherapy - must not be continued beyond prescribed days.",
+      "Indication: recurrent squamous cell carcinoma of the anal canal; WHO PS 0, 1, 2.",
+      "For PS 2 or extensive prior treatment, consider only 10 days capecitabine in cycle 1."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "neutrophil_count",
+      "platelet_count",
+      "bilirubin",
+      "dpd_status",
+      "performance_status"
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 5,
+      "max_dose_mg": 790
+    }
+  }
+]

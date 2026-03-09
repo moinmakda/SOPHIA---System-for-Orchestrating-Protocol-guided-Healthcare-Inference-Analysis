@@ -1,0 +1,1476 @@
+[
+  {
+    "protocol_code": "ANAL-CAP-MMC-RT",
+    "protocol_name": "Anal Cancer - Capecitabine-Mitomycin-Radiotherapy",
+    "disease_site": "Anal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 42,
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Capecitabine",
+        "dose": 825.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          8,
+          9,
+          10,
+          11,
+          12,
+          15,
+          16,
+          17,
+          18,
+          19,
+          22,
+          23,
+          24,
+          25,
+          26,
+          29,
+          30,
+          31,
+          32,
+          33,
+          36,
+          37,
+          38
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "825mg/m\u00b2 twice a day on the days of radiotherapy only (28 days in total: days 1-5, 8-12, 15-19, 22-26, 29-33, 36-38). Dose banded per national dose bands. In patients aged 71+ or significant intercurrent illness, dose may be reduced to 500mg/m\u00b2. First dose administered in the evening of day 1."
+      },
+      {
+        "drug_name": "Mitomycin",
+        "dose": 12.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": 20.0,
+        "max_dose_unit": "mg",
+        "notes": "Intravenous bolus in water for injection over 10 minutes. Maximum single dose 20mg. Maximum cumulative dose 28mg/m\u00b2 or 56mg. Dose rounded to nearest 1mg (up if halfway). Vesicant - extravasation precautions required. In patients aged 71+ or significant intercurrent illness, dose reduced to 10mg/m\u00b2 (maximum 20mg)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "NCI-CTC Grade 3 haematological toxicity (neutrophil and/or platelets)",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose"
+      },
+      {
+        "condition": "NCI-CTC Grade 3 haematological toxicity (neutrophil and/or platelets)",
+        "drug_name": "Mitomycin",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose"
+      },
+      {
+        "condition": "NCI-CTC Grade 4 haematological toxicity (neutrophil and/or platelets)",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose"
+      },
+      {
+        "condition": "NCI-CTC Grade 4 haematological toxicity (neutrophil and/or platelets)",
+        "drug_name": "Mitomycin",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl 51-80 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "100% of dose"
+      },
+      {
+        "condition": "Renal impairment CrCl 30-50 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl less than 30 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0,
+        "notes": "Contra-indicated"
+      },
+      {
+        "condition": "Renal impairment CrCl greater than 60 ml/min",
+        "drug_name": "Mitomycin",
+        "factor": 1.0,
+        "notes": "Full dose 12mg/m\u00b2"
+      },
+      {
+        "condition": "Renal impairment CrCl 50-59 ml/min",
+        "drug_name": "Mitomycin",
+        "factor": 0.67,
+        "notes": "Reduce to 8mg/m\u00b2"
+      },
+      {
+        "condition": "Renal impairment CrCl less than 50 ml/min",
+        "drug_name": "Mitomycin",
+        "factor": 0,
+        "notes": "Contra-indicated"
+      },
+      {
+        "condition": "Hepatic impairment - mild to moderate due to liver metastases",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "100% probably acceptable; lack of information available"
+      },
+      {
+        "condition": "Hepatic impairment AST > 2xULN",
+        "drug_name": "Mitomycin",
+        "factor": 1.0,
+        "notes": "Dose reductions probably not necessary; clinical decision when AST > 2xULN"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 toxicity - first occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "Interrupt until resolved to grade 0-1 then continue at same dose"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 toxicity - second occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until resolved to grade 0-1 then resume at 75% of original dose"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 toxicity - third occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Interrupt until resolved to grade 0-1 then continue at 50% of original dose"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 toxicity - fourth occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0,
+        "notes": "Stop treatment"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 toxicity - first occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until resolved to grade 0-1 then continue at 75% with prophylaxis if appropriate"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 toxicity - second occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Interrupt until resolved to grade 0-1 then resume at 50%"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 toxicity - third occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0,
+        "notes": "Discontinue capecitabine"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 4 toxicity",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Discontinue unless consultant considers it in patient's best interest to continue at 50% once resolved to grade 0-1"
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg oral or intravenous (day 1, 15-30 minutes prior to chemotherapy)",
+      "Metoclopramide 10mg oral or intravenous (day 1, 15-30 minutes prior to chemotherapy)",
+      "Dexamethasone 4mg oral once a day for 3 days (take home, starting day after mitomycin)",
+      "Metoclopramide 10mg oral three times a day when required (take home)",
+      "Ciprofloxacin 250mg oral twice a day for 42 days",
+      "Loperamide 2mg oral every two hours once first liquid stool appears (max 48 hours, max 16mg/day)"
+    ],
+    "special_warnings": [
+      "Concurrent radiotherapy: Capecitabine given on days of radiotherapy ONLY (total 28 days). Radiotherapy normally scheduled 5 consecutive days per 7-day cycle.",
+      "DPD testing required: All patients must be tested for DPD deficiency before initiation (cycle 1). Patients with complete or partial DPD deficiency are at increased risk of severe and fatal toxicity.",
+      "Mitomycin is a vesicant - extravasation precautions required.",
+      "Maximum cumulative dose of mitomycin is 28mg/m\u00b2 or 56mg.",
+      "If chest pain occurs consider stopping capecitabine.",
+      "Total daily dose of capecitabine must be divided into two doses 12 hours apart. First dose administered in evening of day 1. Serious toxicity has occurred where total daily dose given twice a day.",
+      "This is a short course of oral chemotherapy that must not be continued beyond the prescribed schedule.",
+      "NPSA/2008/RRR001 must be followed when prescribing, dispensing or administering oral chemotherapy.",
+      "FBC, LFTs and U&Es required prior to day 1 and then every 7 days during treatment.",
+      "Neutrophil must be \u22651.5x10\u2079/L and platelets \u2265100x10\u2079/L prior to prescribing.",
+      "In those aged 71+ and/or significant intercurrent illness: capecitabine may be reduced to 500mg/m\u00b2, mitomycin reduced to 10mg/m\u00b2 (max 20mg)."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "dpd_status",
+      "age",
+      "neutrophil_count",
+      "platelet_count",
+      "hepatic_function",
+      "body_surface_area"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "CRC-CAP-MMC",
+    "protocol_name": "Colorectal Cancer - Capecitabine-Mitomycin",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 42,
+    "number_of_cycles": 2,
+    "drugs": [
+      {
+        "drug_name": "Capecitabine",
+        "dose": 1250.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "1250mg/m\u00b2 twice a day, days 1-14 inclusive and days 22-35 inclusive. Dose banded per national dose bands. Start on evening of day 1 and day 22. Take with or after food."
+      },
+      {
+        "drug_name": "Mitomycin",
+        "dose": 7.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": 14.0,
+        "max_dose_unit": "mg",
+        "notes": "Intravenous bolus over 10 minutes. Maximum dose 14mg. Dose rounded to nearest 1mg (up if halfway). Vesicant - extravasation precautions required."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological toxicity: neutrophil < 1.5x10\u2079/L or platelets < 100x10\u2079/L - delay up to 7 days",
+        "drug_name": "Mitomycin",
+        "factor": 1.0,
+        "notes": "Delay mitomycin until levels achieved; re-start at full dose for up to 7-day delay"
+      },
+      {
+        "condition": "Haematological toxicity: neutrophil < 1.5x10\u2079/L or platelets < 100x10\u2079/L - 14 day delay",
+        "drug_name": "Mitomycin",
+        "factor": 0.75,
+        "notes": "Delay mitomycin until levels achieved; re-start at 75% for 14-day delay. Little need to reduce capecitabine for haematological toxicity."
+      },
+      {
+        "condition": "Renal impairment CrCl 51-80 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "100% of dose"
+      },
+      {
+        "condition": "Renal impairment CrCl 30-50 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl less than 30 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0,
+        "notes": "Contra-indicated"
+      },
+      {
+        "condition": "Renal impairment CrCl 10 ml/min or greater",
+        "drug_name": "Mitomycin",
+        "factor": 1.0,
+        "notes": "100% of dose"
+      },
+      {
+        "condition": "Renal impairment CrCl 10 ml/min or less",
+        "drug_name": "Mitomycin",
+        "factor": 0.75,
+        "notes": "75% of dose. Consider dose reduction for high doses when GFR 10-60ml/min."
+      },
+      {
+        "condition": "Hepatic impairment - mild to moderate due to liver metastases",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "100% probably acceptable; lack of information available"
+      },
+      {
+        "condition": "Hepatic impairment AST > 2xULN",
+        "drug_name": "Mitomycin",
+        "factor": 1.0,
+        "notes": "Dose reductions probably not necessary; clinical decision when AST > 2xULN"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 toxicity - first occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "Interrupt until resolved to grade 0-1 then continue at same dose"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 toxicity - second occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until resolved to grade 0-1 then resume at 75%"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 toxicity - third occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Interrupt until resolved to grade 0-1 then continue at 50%"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 toxicity - fourth occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0,
+        "notes": "Stop treatment"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 toxicity - first occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until resolved to grade 0-1 then continue at 75% with prophylaxis if appropriate"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 toxicity - second occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Interrupt until resolved to grade 0-1 then resume at 50%"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 toxicity - third occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0,
+        "notes": "Discontinue capecitabine"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 4 toxicity",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Discontinue unless consultant considers it in patient's best interest to continue at 50% once resolved to grade 0-1"
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg oral or intravenous once only (day 1, 15-30 minutes prior to chemotherapy)",
+      "Metoclopramide 10mg oral or intravenous once only (day 1, 15-30 minutes prior to chemotherapy)",
+      "Dexamethasone 4mg oral once a day for 3 days (take home, starting day after mitomycin)",
+      "Metoclopramide 10mg oral three times a day when required (take home)",
+      "Loperamide 4mg oral after first loose stool then 2-4mg four times a day when required (max 16mg/24 hours)"
+    ],
+    "special_warnings": [
+      "DPD testing required: All patients must be tested for DPD deficiency before initiation (cycle 1). Patients with complete or partial DPD deficiency are at increased risk of severe and fatal toxicity.",
+      "Mitomycin is a vesicant - extravasation precautions required.",
+      "Maximum dose of mitomycin is 14mg.",
+      "If chest pain occurs consider stopping capecitabine.",
+      "Total daily dose of capecitabine must be divided into two doses 12 hours apart. First dose administered in evening of day 1 (and day 22). Serious toxicity has occurred where total daily dose given twice a day.",
+      "Capecitabine should be taken with or after food.",
+      "Different variations of this regimen are used in conjunction with radiotherapy for treatment of anal cancer. Always check the indication and apply the correct protocol.",
+      "This is a short course of oral chemotherapy that must not be continued beyond the prescribed schedule.",
+      "NPSA/2008/RRR001 must be followed when prescribing, dispensing or administering oral chemotherapy.",
+      "Patients with metastatic disease assessed for response after 12 weeks; if stable or responded, further 12 weeks may be given.",
+      "Neutrophil must be \u22651.5x10\u2079/L and platelets \u2265100x10\u2079/L prior to prescribing."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "dpd_status",
+      "neutrophil_count",
+      "platelet_count",
+      "hepatic_function",
+      "body_surface_area"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "CRC-CAPOX-4",
+    "protocol_name": "Colorectal Cancer - Capecitabine-Oxaliplatin 4 Cycles (CAPOX-4)",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 21,
+    "number_of_cycles": 4,
+    "drugs": [
+      {
+        "drug_name": "Oxaliplatin",
+        "dose": 130.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 500ml glucose 5% over 120 minutes. Dose banded per national dose bands (5mg/ml). Exfoliant - extravasation precautions required. Rare: acute interstitial lung disease/lung fibrosis - stop if unexplained respiratory symptoms."
+      },
+      {
+        "drug_name": "Capecitabine",
+        "dose": 1000.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "1000mg/m\u00b2 twice a day, days 1-14. Dose banded per national dose bands. Start on evening of day 1. Take with or after food. For patients aged 70+, consider starting at 800mg/m\u00b2 twice a day."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological toxicity: neutrophil < 1.5x10\u2079/L or platelets < 75x10\u2079/L - up to 7-day delay",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "Delay until levels achieved; re-initiate at full dose for up to 7-day delay"
+      },
+      {
+        "condition": "Haematological toxicity: neutrophil < 1.5x10\u2079/L or platelets < 75x10\u2079/L - 14-day delay",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Delay until levels achieved; re-initiate at 75% for 14-day delay (consider restarting with 100%)"
+      },
+      {
+        "condition": "Haematological toxicity - delay \u226521 days",
+        "drug_name": "Capecitabine",
+        "factor": 0,
+        "notes": "Stop therapy if delay is \u226521 days"
+      },
+      {
+        "condition": "Renal impairment CrCl 51 ml/min or greater",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "100% of dose"
+      },
+      {
+        "condition": "Renal impairment CrCl 30-50 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl less than 30 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0,
+        "notes": "Contra-indicated"
+      },
+      {
+        "condition": "Renal impairment CrCl 30 ml/min or greater",
+        "drug_name": "Oxaliplatin",
+        "factor": 1.0,
+        "notes": "Dose adjust according to toxicity"
+      },
+      {
+        "condition": "Renal impairment CrCl less than 30 ml/min",
+        "drug_name": "Oxaliplatin",
+        "factor": 0,
+        "notes": "Avoid"
+      },
+      {
+        "condition": "Hepatic impairment bilirubin > 3xULN or AST/ALT > 2.5xULN (treatment related)",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "If treatment related consider delaying. For mild/moderate hepatic dysfunction due to liver metastasis, dose modification may not be necessary."
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Oxaliplatin",
+        "factor": 1.0,
+        "notes": "No dose adjustment necessary"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 toxicity - first occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "Interrupt until resolved to grade 0-1 then continue at same dose"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 toxicity - second occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until resolved to grade 0-1 then resume at 75%"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 toxicity - third occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Interrupt until resolved to grade 0-1 then continue at 50%"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 toxicity - fourth occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0,
+        "notes": "Stop treatment"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 toxicity - first occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until resolved to grade 0-1 then continue at 75% with prophylaxis if appropriate"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 toxicity - second occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Interrupt until resolved to grade 0-1 then resume at 50%"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 toxicity - third occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0,
+        "notes": "Discontinue capecitabine"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 4 toxicity",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Discontinue unless consultant considers in patient's best interest to continue at 50% once resolved to grade 0-1"
+      },
+      {
+        "condition": "Oxaliplatin cold-related dysaesthesia/paresthesia without pain persisting between cycles",
+        "drug_name": "Oxaliplatin",
+        "factor": 1.0,
+        "notes": "Withhold until recovery then re-start at 100mg/m\u00b2; only omit if it recurs"
+      },
+      {
+        "condition": "Oxaliplatin paresthesia with pain or functional impairment persisting >7 days or NCI-CTC grade 3+",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.77,
+        "notes": "Reduce dose to 100mg/m\u00b2 in first instance. If painful paresthesia recurs or persists between cycles, omit oxaliplatin."
+      },
+      {
+        "condition": "NCI-CTC grade 3-4 diarrhoea or stomatitis recurs despite capecitabine reduction",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.77,
+        "notes": "Reduce oxaliplatin to 100mg/m\u00b2"
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg oral or intravenous (day 1, 15-30 minutes prior to chemotherapy)",
+      "Ondansetron 8mg oral or intravenous (day 1, 15-30 minutes prior to chemotherapy)",
+      "Dexamethasone 4mg oral twice a day for 3 days (take home, starting day after oxaliplatin)",
+      "Metoclopramide 10mg oral three times a day when required (take home)",
+      "Loperamide 4mg oral after first loose stool then 2-4mg four times a day when required (max 16mg/24 hours)"
+    ],
+    "special_warnings": [
+      "DPD testing required: All patients must be tested for DPD deficiency before initiation (cycle 1). Patients with complete or partial DPD deficiency are at increased risk of severe and fatal toxicity.",
+      "Adjuvant indication: 4 cycles for stage III colon cancer following surgery.",
+      "For patients aged 70+: consider starting capecitabine at 800mg/m\u00b2 twice a day (oxaliplatin dose unchanged).",
+      "Oxaliplatin is an exfoliant - extravasation precautions required.",
+      "Rare: acute interstitial lung disease or lung fibrosis associated with oxaliplatin. Stop treatment if unexplained respiratory symptoms occur until pulmonary investigations exclude interstitial cause.",
+      "If chest pain occurs consider stopping capecitabine.",
+      "Total daily dose of capecitabine must be divided into two doses 12 hours apart. First dose administered in evening of day 1. Serious toxicity has occurred where total daily dose given twice a day.",
+      "Capecitabine should be taken with or after food.",
+      "This is a short course of oral chemotherapy that must not be continued beyond the prescribed schedule.",
+      "NPSA/2008/RRR001 must be followed when prescribing, dispensing or administering oral chemotherapy.",
+      "Neutrophil must be \u22651.5x10\u2079/L and platelets \u2265100x10\u2079/L prior to prescribing."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "dpd_status",
+      "age",
+      "neutrophil_count",
+      "platelet_count",
+      "hepatic_function",
+      "body_surface_area"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "CRC-CAPOX",
+    "protocol_name": "Colorectal Cancer - Capecitabine-Oxaliplatin (CAPOX)",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 21,
+    "number_of_cycles": 8,
+    "drugs": [
+      {
+        "drug_name": "Oxaliplatin",
+        "dose": 130.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 500ml glucose 5% over 120 minutes. Dose banded per national dose bands (5mg/ml). Exfoliant - extravasation precautions required."
+      },
+      {
+        "drug_name": "Capecitabine",
+        "dose": 1000.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "1000mg/m\u00b2 twice a day, days 1-14. Dose banded per national dose bands. Start on evening of day 1. Take with or after food. For patients aged 70+, consider starting at 800mg/m\u00b2 twice a day."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological toxicity: neutrophil < 1.5x10\u2079/L or platelets < 75x10\u2079/L - up to 7-day delay",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "Delay until levels achieved; re-initiate at full dose for up to 7-day delay"
+      },
+      {
+        "condition": "Haematological toxicity: neutrophil < 1.5x10\u2079/L or platelets < 75x10\u2079/L - 14-day delay",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Delay until levels achieved; re-initiate at 75% for 14-day delay (consider restarting with 100%)"
+      },
+      {
+        "condition": "Haematological toxicity - delay \u226521 days",
+        "drug_name": "Capecitabine",
+        "factor": 0,
+        "notes": "Stop therapy if delay is \u226521 days"
+      },
+      {
+        "condition": "Renal impairment CrCl 51 ml/min or greater",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "100% of dose"
+      },
+      {
+        "condition": "Renal impairment CrCl 30-50 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl less than 30 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0,
+        "notes": "Contra-indicated"
+      },
+      {
+        "condition": "Renal impairment CrCl 30 ml/min or greater",
+        "drug_name": "Oxaliplatin",
+        "factor": 1.0,
+        "notes": "Dose adjust according to toxicity"
+      },
+      {
+        "condition": "Renal impairment CrCl less than 30 ml/min",
+        "drug_name": "Oxaliplatin",
+        "factor": 0,
+        "notes": "Avoid"
+      },
+      {
+        "condition": "Hepatic impairment bilirubin > 3xULN or AST/ALT > 2.5xULN (treatment related)",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "If treatment related consider delaying. For mild/moderate hepatic dysfunction due to liver metastasis dose modification may not be necessary."
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Oxaliplatin",
+        "factor": 1.0,
+        "notes": "No dose adjustment necessary"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 toxicity - first occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "Interrupt until resolved to grade 0-1 then continue at same dose"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 toxicity - second occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until resolved to grade 0-1 then resume at 75%"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 toxicity - third occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Interrupt until resolved to grade 0-1 then continue at 50%"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 toxicity - fourth occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0,
+        "notes": "Stop treatment"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 toxicity - first occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until resolved to grade 0-1 then continue at 75% with prophylaxis if appropriate"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 toxicity - second occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Interrupt until resolved to grade 0-1 then resume at 50%"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 toxicity - third occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0,
+        "notes": "Discontinue capecitabine"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 4 toxicity",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Discontinue unless consultant considers in patient's best interest to continue at 50% once resolved to grade 0-1"
+      },
+      {
+        "condition": "Oxaliplatin cold-related dysaesthesia/paresthesia without pain persisting between cycles",
+        "drug_name": "Oxaliplatin",
+        "factor": 1.0,
+        "notes": "Withhold until recovery then re-start at 100mg/m\u00b2; only omit if it recurs"
+      },
+      {
+        "condition": "Oxaliplatin paresthesia with pain or functional impairment persisting >7 days or NCI-CTC grade 3+",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.77,
+        "notes": "Reduce dose to 100mg/m\u00b2 in first instance. If painful paresthesia recurs or persists between cycles, omit oxaliplatin."
+      },
+      {
+        "condition": "NCI-CTC grade 3-4 diarrhoea or stomatitis recurs despite capecitabine reduction",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.77,
+        "notes": "Reduce oxaliplatin to 100mg/m\u00b2"
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg oral or intravenous (day 1, 15-30 minutes prior to chemotherapy)",
+      "Ondansetron 8mg oral or intravenous (day 1, 15-30 minutes prior to chemotherapy)",
+      "Dexamethasone 4mg oral twice a day for 3 days (take home, starting day after oxaliplatin)",
+      "Metoclopramide 10mg oral three times a day when required (take home)",
+      "Loperamide 4mg oral after first loose stool then 2-4mg four times a day when required (max 16mg/24 hours)"
+    ],
+    "special_warnings": [
+      "DPD testing required: All patients must be tested for DPD deficiency before initiation (cycle 1). Patients with complete or partial DPD deficiency are at increased risk of severe and fatal toxicity.",
+      "Indications: advanced/metastatic colorectal cancer OR adjuvant therapy of stage III colon cancer following surgery. 8 cycles total; patients with metastatic disease assessed for response after 4 cycles.",
+      "For patients aged 70+: consider starting capecitabine at 800mg/m\u00b2 twice a day (oxaliplatin dose unchanged).",
+      "Oxaliplatin is an exfoliant - extravasation precautions required.",
+      "Rare: acute interstitial lung disease or lung fibrosis associated with oxaliplatin. Stop if unexplained respiratory symptoms until pulmonary investigations exclude interstitial cause.",
+      "If chest pain occurs consider stopping capecitabine.",
+      "Total daily dose of capecitabine must be divided into two doses 12 hours apart. First dose administered in evening of day 1. Serious toxicity has occurred where total daily dose given twice a day.",
+      "Capecitabine should be taken with or after food.",
+      "This is a short course of oral chemotherapy that must not be continued beyond the prescribed schedule.",
+      "NPSA/2008/RRR001 must be followed when prescribing, dispensing or administering oral chemotherapy.",
+      "Neutrophil must be \u22651.5x10\u2079/L and platelets \u2265100x10\u2079/L prior to prescribing."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "dpd_status",
+      "age",
+      "neutrophil_count",
+      "platelet_count",
+      "hepatic_function",
+      "body_surface_area"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "CRC-CAP-RT",
+    "protocol_name": "Colorectal Cancer - Capecitabine (Radiotherapy)",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 35,
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Capecitabine",
+        "dose": 900.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          8,
+          9,
+          10,
+          11,
+          12,
+          15,
+          16,
+          17,
+          18,
+          19,
+          22,
+          23,
+          24,
+          25,
+          26,
+          29,
+          30,
+          31,
+          32,
+          33
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "900mg/m\u00b2 twice a day on the days of radiotherapy ONLY (approximately 25 days total). Radiotherapy normally scheduled for 5 consecutive days of a 7-day cycle. Dose banded per national dose bands. Start on the morning of the first day of radiotherapy. Take with or after food."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Renal impairment CrCl 51-80 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "100% of dose"
+      },
+      {
+        "condition": "Renal impairment CrCl 30-50 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl less than 30 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0,
+        "notes": "Contra-indicated"
+      },
+      {
+        "condition": "Hepatic impairment - mild to moderate due to liver metastases",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "100% probably acceptable; lack of information available"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 toxicity - first occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "Interrupt until resolved to grade 0-1 then continue at same dose"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 toxicity - second occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until resolved to grade 0-1 then resume at 75%"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 toxicity - third occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Interrupt until resolved to grade 0-1 then continue at 50%"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 toxicity - fourth occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0,
+        "notes": "Stop treatment"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 toxicity - first occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until resolved to grade 0-1 then continue at 75% with prophylaxis if appropriate"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 toxicity - second occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Interrupt until resolved to grade 0-1 then resume at 50%"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 toxicity - third occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0,
+        "notes": "Discontinue capecitabine"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 4 toxicity",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Discontinue unless consultant considers in patient's best interest to continue at 50% once resolved to grade 0-1"
+      }
+    ],
+    "pre_medications": [
+      "Metoclopramide 10mg oral three times a day when required (take home antiemetic)",
+      "Loperamide 4mg oral after first loose stool then 2-4mg four times a day when required (max 16mg/24 hours)"
+    ],
+    "special_warnings": [
+      "Concurrent radiotherapy: Capecitabine taken on the days radiotherapy is scheduled ONLY. No treatment on days without radiotherapy. Radiotherapy normally scheduled 5 consecutive days per 7-day cycle. Supply 25 days of capecitabine treatment.",
+      "DPD testing required: All patients must be tested for DPD deficiency before initiation (cycle 1). Patients with complete or partial DPD deficiency are at increased risk of severe and fatal toxicity.",
+      "Indication: locally advanced, potentially resectable colorectal cancer.",
+      "Capecitabine should start on the morning of the first day of radiotherapy.",
+      "If chest pain occurs consider stopping capecitabine.",
+      "Total daily dose of capecitabine must be divided into two doses 12 hours apart. First dose administered in morning of day 1 of radiotherapy. Serious toxicity has occurred where total daily dose given twice a day.",
+      "Capecitabine should be taken with or after food.",
+      "This is a short course of oral chemotherapy that must not be continued beyond the prescribed schedule.",
+      "NPSA/2008/RRR001 must be followed when prescribing, dispensing or administering oral chemotherapy.",
+      "Neutrophil must be \u22651.5x10\u2079/L and platelets \u2265100x10\u2079/L prior to prescribing. FBC, LFTs and U&Es prior to starting treatment."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "dpd_status",
+      "neutrophil_count",
+      "platelet_count",
+      "hepatic_function",
+      "body_surface_area"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "CRC-CAP-14DAY",
+    "protocol_name": "Colorectal Cancer - Capecitabine (14 day)",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 21,
+    "number_of_cycles": 8,
+    "drugs": [
+      {
+        "drug_name": "Capecitabine",
+        "dose": 1250.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "1250mg/m\u00b2 twice a day, days 1-14 inclusive. Dose banded per national dose bands. Start on evening of day 1. Take with or after food. For patients aged 70+: consider starting at 1000mg/m\u00b2 twice a day."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological toxicity: neutrophil < 1.5x10\u2079/L or platelets < 100x10\u2079/L - up to 7-day delay",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "Delay until levels achieved; re-start at full dose for up to 7-day delay"
+      },
+      {
+        "condition": "Haematological toxicity: neutrophil < 1.5x10\u2079/L or platelets < 100x10\u2079/L - 14-day delay",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Delay until levels achieved; re-start at 75% for 14-day delay"
+      },
+      {
+        "condition": "Renal impairment CrCl 51-80 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "100% of dose"
+      },
+      {
+        "condition": "Renal impairment CrCl 30-50 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl less than 30 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0,
+        "notes": "Contra-indicated"
+      },
+      {
+        "condition": "Hepatic impairment - mild to moderate due to liver metastases",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "100% probably acceptable; lack of information available"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 toxicity - first occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "Interrupt until resolved to grade 0-1 then continue at same dose"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 toxicity - second occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until resolved to grade 0-1 then resume at 75%"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 toxicity - third occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Interrupt until resolved to grade 0-1 then continue at 50%"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 toxicity - fourth occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0,
+        "notes": "Stop treatment"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 toxicity - first occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until resolved to grade 0-1 then continue at 75% with prophylaxis if appropriate"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 toxicity - second occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Interrupt until resolved to grade 0-1 then resume at 50%"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 toxicity - third occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0,
+        "notes": "Discontinue capecitabine"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 4 toxicity",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Discontinue unless consultant considers in patient's best interest to continue at 50% once resolved to grade 0-1"
+      }
+    ],
+    "pre_medications": [
+      "Metoclopramide 10mg oral three times a day when required (take home antiemetic)",
+      "Loperamide 4mg oral after first loose stool then 2-4mg four times a day when required (max 16mg/24 hours)"
+    ],
+    "special_warnings": [
+      "DPD testing required: All patients must be tested for DPD deficiency before initiation (cycle 1). Patients with complete or partial DPD deficiency are at increased risk of severe and fatal toxicity.",
+      "Indications: metastatic/advanced colorectal cancer OR adjuvant therapy of stage II or III colon cancer following surgery. 8 cycles; metastatic patients assessed for response after 4 cycles.",
+      "For patients aged 70+: consider starting at 1000mg/m\u00b2 twice a day.",
+      "If chest pain occurs consider stopping capecitabine.",
+      "Total daily dose of capecitabine must be divided into two doses 12 hours apart. First dose administered in evening of day 1. Serious toxicity has occurred where total daily dose given twice a day.",
+      "Capecitabine should be taken with or after food.",
+      "This is a short course of oral chemotherapy that must not be continued beyond the prescribed schedule.",
+      "NPSA/2008/RRR001 must be followed when prescribing, dispensing or administering oral chemotherapy.",
+      "Neutrophil must be \u22651.5x10\u2079/L and platelets \u2265100x10\u2079/L prior to prescribing."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "dpd_status",
+      "age",
+      "neutrophil_count",
+      "platelet_count",
+      "hepatic_function",
+      "body_surface_area"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "CRC-CAP-21DAY",
+    "protocol_name": "Colorectal Cancer - Capecitabine (21 day)",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 21,
+    "number_of_cycles": 8,
+    "drugs": [
+      {
+        "drug_name": "Capecitabine",
+        "dose": 830.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "830mg/m\u00b2 twice a day, days 1-21 inclusive. Dose banded per national dose bands. Start on evening of day 1. Take with or after food."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological toxicity: neutrophil < 1.5x10\u2079/L or platelets < 100x10\u2079/L - up to 7-day delay",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "Delay until levels achieved; re-start at full dose for up to 7-day delay"
+      },
+      {
+        "condition": "Haematological toxicity: neutrophil < 1.5x10\u2079/L or platelets < 100x10\u2079/L - 14-day delay",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Delay until levels achieved; re-start at 75% for 14-day delay"
+      },
+      {
+        "condition": "Renal impairment CrCl 51-80 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "100% of dose"
+      },
+      {
+        "condition": "Renal impairment CrCl 30-50 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl less than 30 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0,
+        "notes": "Contra-indicated"
+      },
+      {
+        "condition": "Hepatic impairment - mild to moderate due to liver metastases",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "100% probably acceptable; lack of information available"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 toxicity - first occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "Interrupt until resolved to grade 0-1 then continue at same dose"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 toxicity - second occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until resolved to grade 0-1 then resume at 75%"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 toxicity - third occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Interrupt until resolved to grade 0-1 then continue at 50%"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 toxicity - fourth occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0,
+        "notes": "Stop treatment"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 toxicity - first occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until resolved to grade 0-1 then continue at 75% with prophylaxis if appropriate"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 toxicity - second occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Interrupt until resolved to grade 0-1 then resume at 50%"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 toxicity - third occurrence",
+        "drug_name": "Capecitabine",
+        "factor": 0,
+        "notes": "Discontinue capecitabine"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 4 toxicity",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Discontinue unless consultant considers in patient's best interest to continue at 50% once resolved to grade 0-1"
+      }
+    ],
+    "pre_medications": [
+      "Metoclopramide 10mg oral three times a day when required (take home antiemetic)",
+      "Loperamide 4mg oral after first loose stool then 2-4mg four times a day when required (max 16mg/24 hours)"
+    ],
+    "special_warnings": [
+      "DPD testing required: All patients must be tested for DPD deficiency before initiation (cycle 1). Patients with complete or partial DPD deficiency are at increased risk of severe and fatal toxicity.",
+      "Indications: metastatic/advanced colorectal cancer OR adjuvant therapy of stage II or III colon cancer following surgery. 8 cycles; metastatic patients assessed for response after 4 cycles.",
+      "If chest pain occurs consider stopping capecitabine.",
+      "Total daily dose of capecitabine must be divided into two doses 12 hours apart. First dose administered in evening of day 1. Serious toxicity has occurred where total daily dose given twice a day.",
+      "Capecitabine should be taken with or after food.",
+      "This is a short course of oral chemotherapy that must not be continued beyond the prescribed schedule.",
+      "NPSA/2008/RRR001 must be followed when prescribing, dispensing or administering oral chemotherapy.",
+      "Neutrophil must be \u22651.5x10\u2079/L and platelets \u2265100x10\u2079/L prior to prescribing."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "dpd_status",
+      "neutrophil_count",
+      "platelet_count",
+      "hepatic_function",
+      "body_surface_area"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "GI-UPPER-CARBO-PACLI-RT",
+    "protocol_name": "Gastrointestinal (Upper) Cancer - Carboplatin (AUC2)-Paclitaxel-Radiotherapy",
+    "disease_site": "Oesophageal / Oesophagogastric Junction",
+    "category": "gastrointestinal",
+    "cycle_length_days": 35,
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Paclitaxel",
+        "dose": 50.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8,
+          15,
+          22,
+          29
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 250ml sodium chloride 0.9% over 60 minutes. Dose banded per national dose bands (6mg/ml). Vesicant - extravasation precautions required. Must be administered via non-PVC administration set containing in-line 0.22 micron filter. Paclitaxel should always be administered PRIOR to carboplatin. Hypersensitivity reactions tend to occur with first or second infusion."
+      },
+      {
+        "drug_name": "Carboplatin",
+        "dose": 2.0,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8,
+          15,
+          22,
+          29
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": 300.0,
+        "max_dose_unit": "mg",
+        "notes": "Intravenous infusion in 500ml glucose 5% over 60 minutes. AUC 2 using Calvert formula. Maximum dose 300mg. Dose banded per national dose bands (10mg/ml). Irritant - extravasation precautions required. Administered after paclitaxel."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils \u22651x10\u2079/L",
+        "drug_name": "Carboplatin",
+        "factor": 1.0,
+        "notes": "100% of dose"
+      },
+      {
+        "condition": "Neutrophils < 1x10\u2079/L",
+        "drug_name": "Carboplatin",
+        "factor": 0.75,
+        "notes": "Delay chemotherapy until neutrophils \u22651x10\u2079/L then continue at 75% of original dose for all subsequent doses. Continue radiotherapy during delay."
+      },
+      {
+        "condition": "Neutrophils < 1x10\u2079/L",
+        "drug_name": "Paclitaxel",
+        "factor": 0.75,
+        "notes": "Delay chemotherapy until neutrophils \u22651x10\u2079/L then continue at 75% of original dose for all subsequent doses. Continue radiotherapy during delay."
+      },
+      {
+        "condition": "Platelets 25-74x10\u2079/L",
+        "drug_name": "Carboplatin",
+        "factor": 0.75,
+        "notes": "Delay chemotherapy until platelets \u226575x10\u2079/L then continue at 75% of original dose for all subsequent doses. Continue radiotherapy during delay."
+      },
+      {
+        "condition": "Platelets 25-74x10\u2079/L",
+        "drug_name": "Paclitaxel",
+        "factor": 0.75,
+        "notes": "Delay chemotherapy until platelets \u226575x10\u2079/L then continue at 75% of original dose for all subsequent doses. Continue radiotherapy during delay."
+      },
+      {
+        "condition": "Platelets < 25x10\u2079/L",
+        "drug_name": "Carboplatin",
+        "factor": 0.75,
+        "notes": "Delay chemotherapy until platelets \u226575x10\u2079/L then continue at 75% of original dose for all subsequent doses. Continue radiotherapy during delay."
+      },
+      {
+        "condition": "Platelets < 25x10\u2079/L",
+        "drug_name": "Paclitaxel",
+        "factor": 0.75,
+        "notes": "Delay chemotherapy until platelets \u226575x10\u2079/L then continue at 75% of original dose for all subsequent doses. Continue radiotherapy during delay."
+      },
+      {
+        "condition": "Renal impairment CrCl less than 20 ml/min",
+        "drug_name": "Carboplatin",
+        "factor": 0,
+        "notes": "Omit carboplatin. Note: significant changes in GFR of >10% may require dose adjustment."
+      },
+      {
+        "condition": "Renal impairment",
+        "drug_name": "Paclitaxel",
+        "factor": 1.0,
+        "notes": "No dose adjustment needed"
+      },
+      {
+        "condition": "Hepatic impairment bilirubin > 1.25xULN and AST/ALT > 10xULN",
+        "drug_name": "Paclitaxel",
+        "factor": 1.0,
+        "notes": "Consider dose adjustment"
+      },
+      {
+        "condition": "Hepatic impairment bilirubin > 51 \u03bcmol/L",
+        "drug_name": "Paclitaxel",
+        "factor": 0,
+        "notes": "Paclitaxel not recommended"
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Carboplatin",
+        "factor": 1.0,
+        "notes": "No dose adjustment needed"
+      },
+      {
+        "condition": "Non-haematological NCI-CTC Grade 2 toxicity - first occurrence",
+        "drug_name": "Carboplatin",
+        "factor": 1.0,
+        "notes": "Interrupt chemotherapy until resolved to grade 1 or below then resume at original dose. Continue radiotherapy regardless."
+      },
+      {
+        "condition": "Non-haematological NCI-CTC Grade 2 toxicity - second occurrence",
+        "drug_name": "Carboplatin",
+        "factor": 0.75,
+        "notes": "Resume at 75% of original dose. Continue radiotherapy regardless."
+      },
+      {
+        "condition": "Non-haematological NCI-CTC Grade 2 toxicity - third occurrence",
+        "drug_name": "Carboplatin",
+        "factor": 0.5,
+        "notes": "Resume at 50% of original dose. Continue radiotherapy regardless."
+      },
+      {
+        "condition": "Non-haematological NCI-CTC Grade 2 toxicity - fourth occurrence",
+        "drug_name": "Carboplatin",
+        "factor": 0,
+        "notes": "Discontinue treatment"
+      },
+      {
+        "condition": "Non-haematological NCI-CTC Grade 3 toxicity - first occurrence",
+        "drug_name": "Carboplatin",
+        "factor": 0.75,
+        "notes": "Interrupt until resolved to grade 1 or below; resume at 75% of original dose. Continue radiotherapy regardless."
+      },
+      {
+        "condition": "Non-haematological NCI-CTC Grade 3 toxicity - second occurrence",
+        "drug_name": "Carboplatin",
+        "factor": 0.5,
+        "notes": "Resume at 50% of original dose. Continue radiotherapy regardless."
+      },
+      {
+        "condition": "Non-haematological NCI-CTC Grade 3 toxicity - third occurrence",
+        "drug_name": "Carboplatin",
+        "factor": 0,
+        "notes": "Discontinue treatment"
+      },
+      {
+        "condition": "Non-haematological NCI-CTC Grade 4 toxicity - first occurrence",
+        "drug_name": "Carboplatin",
+        "factor": 0,
+        "notes": "Discontinue treatment"
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg intravenous (30 minutes before chemotherapy, hypersensitivity prophylaxis)",
+      "Dexamethasone 8mg intravenous (30 minutes before chemotherapy, hypersensitivity prophylaxis - per regimen summary; 10mg per main text)",
+      "H2 antagonist per local formulary (30 minutes before chemotherapy): famotidine 20mg oral, OR nizatidine 150mg oral, OR ranitidine 150mg oral, OR ranitidine 50mg intravenous",
+      "Ondansetron 8mg oral or intravenous (antiemetic, 15-30 minutes prior to chemotherapy)",
+      "Dexamethasone 4mg oral once a day for 2 days (take home, starting day after chemotherapy)",
+      "Metoclopramide 10mg oral three times a day as necessary (take home)"
+    ],
+    "special_warnings": [
+      "Concurrent radiotherapy: 35-day cycle starting on the first or second day of radiotherapy. Chemotherapy given weekly on days 1, 8, 15, 22, 29 concurrently with radiotherapy.",
+      "Continue radiotherapy regardless of any delays to chemotherapy treatment.",
+      "Indication: neoadjuvant treatment of resectable cancer of the oesophagus or oesophagogastric junction.",
+      "Paclitaxel must always be administered PRIOR to carboplatin.",
+      "Paclitaxel must be administered via a non-PVC administration set with in-line 0.22 micron filter.",
+      "Paclitaxel is a vesicant - extravasation precautions required.",
+      "Carboplatin is an irritant - extravasation precautions required.",
+      "Hypersensitivity reactions tend to occur with first or second infusion of paclitaxel. Interrupt for minor symptoms (flushing, localised rashes); if resolved within 5 minutes, may restart at lower rate with intensive monitoring. Immediately discontinue for severe reactions (profound hypotension, bronchospasm, generalised erythema).",
+      "Maximum carboplatin dose is 300mg when using calculated creatinine clearance at AUC2. Seek consultant advice for obese patients or calculated CrCl >125ml/min.",
+      "EDTA or calculated creatinine clearance required before each treatment.",
+      "Significant changes in GFR of >10% may require carboplatin dose adjustment.",
+      "FBC, LFTs and U&Es required prior to each day of treatment.",
+      "Dose modifications apply to BOTH carboplatin and paclitaxel."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "neutrophil_count",
+      "platelet_count",
+      "hepatic_function",
+      "body_surface_area",
+      "weight",
+      "height"
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 2,
+      "max_dose_mg": 300
+    }
+  }
+]

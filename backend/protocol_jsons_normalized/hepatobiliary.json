@@ -1,0 +1,2229 @@
+[
+  {
+    "protocol_id": "hcc_atezolizumab_bevacizumab",
+    "protocol_code": "HCC-ATE-BEV",
+    "protocol_name": "HCC-Atezolizumab-Bevacizumab",
+    "category": "hepatobiliary",
+    "indication": "Atezolizumab in combination with bevacizumab for the first-line systemic treatment of adult patients with locally advanced or metastatic and/or unresectable hepatocellular carcinoma where the following criteria is met: confirmed histological diagnosis of HCC (or non-invasive criteria met via specialist HCC MDT), metastatic or locally advanced disease ineligible or failed surgical or loco-regional therapies, Child-Pugh A liver function, no previous systemic therapy for HCC (unless via EAMS scheme; previous sorafenib, lenvatinib, regorafenib or any immunotherapy or systemic chemotherapy not allowed), ECOG performance status 0 or 1, no symptomatically active brain metastases or leptomeningeal metastases, no prior treatment with anti-PD-1, anti-PD-L1, anti-PD-L2, anti-CD137, or anti-CTLA-4 antibody, oesophageal varices assessed and treated prior to treatment.",
+    "version": "1",
+    "cycle_length_days": 21,
+    "total_cycles": null,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Atezolizumab",
+        "dose": 1200,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "First infusion over 60 minutes; if well tolerated subsequent infusions may be administered over 30 minutes. Ensure patient has been given an atezolizumab patient alert card. Avoid systemic corticosteroids before starting treatment.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Bevacizumab",
+        "dose": 15,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": 90,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "First infusion over 90 minutes; if well tolerated second infusion over 60 minutes; if well tolerated subsequent infusions over 30 minutes. Dose banded in accordance with national dose bands (bevacizumab). Bevacizumab doses should be omitted and not reduced for adverse reactions; if more than two doses missed treatment should be stopped.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "frequency": "when required for infusion related reactions",
+        "notes": "As required for the treatment of infusion related reactions"
+      },
+      {
+        "drug_name": "Hydrocortisone",
+        "dose": 100,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "frequency": "when required for infusion related reactions",
+        "notes": "As required for the treatment of infusion related reactions"
+      },
+      {
+        "drug_name": "Paracetamol",
+        "dose": 1000,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "when required for infusion related reactions",
+        "notes": "Please check if the patient has taken paracetamol. Maximum dose is 4g per 24 hours. There should be 4 hours between doses."
+      }
+    ],
+    "take_home_medicines": [],
+    "dose_modifications": [
+      {
+        "parameter": "ast",
+        "condition": "AST/ALT within normal limits at baseline and increases to >3x to ≤10xULN; OR if AST/ALT is >1 to ≤3xULN at baseline and increases to >5x to ≤10xULN; OR if AST/ALT is >3 to ≤5xULN at baseline and increases to >8 to ≤10xULN",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Withhold Atezolizumab. Treatment may be resumed when it improves to grade 0 or grade 1 within 12 weeks and corticosteroids have been reduced to ≤10mg Prednisolone or equivalent per day."
+      },
+      {
+        "parameter": "ast",
+        "condition": "AST/ALT increases to >10xULN",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue atezolizumab."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "Total bilirubin increases to >3xULN",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue atezolizumab."
+      },
+      {
+        "parameter": "other",
+        "condition": "Grade 2 immune-related pneumonitis",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Withhold until symptoms resolve and radiographic abnormalities improve. Consider oral prednisolone 1-2mg/kg/day. May resume if improves to grade 0 or 1 within 12 weeks and corticosteroids reduced to ≤10mg oral prednisone equivalent per day."
+      },
+      {
+        "parameter": "other",
+        "condition": "Grade 3 or 4 immune-related pneumonitis",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue atezolizumab. Consider treatment with corticosteroids."
+      },
+      {
+        "parameter": "other",
+        "condition": "Grade 2 or 3 immune-related diarrhoea or symptomatic colitis",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Withhold atezolizumab initially. Grade 2: if symptoms persist >5 days or recur, start 1-2mg/kg oral prednisolone/day. Grade 3: start IV corticosteroids, convert to oral as symptoms improve. May resume if improves to grade 0 or 1 within 12 weeks and corticosteroids reduced to ≤10mg oral prednisone equivalent per day."
+      },
+      {
+        "parameter": "other",
+        "condition": "Grade 4 immune-related diarrhoea or colitis",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue atezolizumab. Consider treatment with corticosteroids."
+      },
+      {
+        "parameter": "other",
+        "condition": "Grade 3 or 4 serum amylase or lipase increased (more than 2xULN) or grade 2 or 3 immune-related pancreatitis",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Withhold atezolizumab. Treatment may be resumed if serum amylase and lipase levels improve to grade 0 or grade 1 within 12 weeks, or symptoms of pancreatitis have resolved, and corticosteroids have been reduced to 10mg or less oral prednisone or equivalent per day."
+      },
+      {
+        "parameter": "other",
+        "condition": "Grade 4 or any grade of recurrent immune-related pancreatitis",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue atezolizumab. Consider treatment with corticosteroids."
+      },
+      {
+        "parameter": "other",
+        "condition": "Symptomatic immune-related thyroid disorders",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Withhold atezolizumab. Hypothyroidism: resume when symptoms controlled by thyroid replacement therapy and TSH levels are decreasing. Hyperthyroidism: resume when symptoms controlled by cabimazole or equivalent and thyroid function is improving."
+      },
+      {
+        "parameter": "other",
+        "condition": "Symptomatic immune-related adrenal insufficiency",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Withhold atezolizumab. May resume if symptoms improve to grade 0 or 1 within 12 weeks and corticosteroids reduced to equivalent of 10mg or less oral prednisone per day and patient stable on replacement therapy."
+      },
+      {
+        "parameter": "other",
+        "condition": "Grade 3 or 4 immune-related hyperglycaemia (fasting glucose more than 250-500mg/dL)",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Withhold atezolizumab. Treatment may be resumed if metabolic control is achieved on insulin replacement therapy."
+      },
+      {
+        "parameter": "other",
+        "condition": "All grades: immune-related myasthenic syndrome/myasthenia gravis, Guillain-Barre syndrome and meningoencephalitis",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue atezolizumab."
+      },
+      {
+        "parameter": "other",
+        "condition": "Grade 2-3 immune-related myositis",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Withhold for a moderate to severe myositis and discontinue."
+      },
+      {
+        "parameter": "other",
+        "condition": "Grade 3-4 immune-related myositis",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "parameter": "other",
+        "condition": "Grade 1 infusion related reaction",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Reduce the infusion rate to half. Once the event has resolved, wait 30 minutes while delivering the infusion at the reduced rate; if tolerated, infusion rate may be increased to original rate. Consider premedication with antihistamine and antipyretic."
+      },
+      {
+        "parameter": "other",
+        "condition": "Grade 2 infusion related reaction",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Withhold atezolizumab. Restart at half of the infusion rate only after the symptoms have resolved. Consider premedication with antihistamine and antipyretic."
+      },
+      {
+        "parameter": "other",
+        "condition": "Grade 3 or 4 infusion related reaction",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue atezolizumab."
+      },
+      {
+        "parameter": "other",
+        "condition": "Grade 3 immune-related rash or suspected Stevens-Johnson Syndrome (SJS) or toxic epidermal necrolysis (TEN)",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Withhold atezolizumab. Treatment may be resumed if the rash is resolved and corticosteroids have been reduced to 10mg or less oral prednisone equivalent per day."
+      },
+      {
+        "parameter": "other",
+        "condition": "Grade 4 immune-related rash or confirmed SJS or TEN",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue atezolizumab. Consider treatment with corticosteroids."
+      },
+      {
+        "parameter": "other",
+        "condition": "Grade 3 or 4 bleeding with combination treatment",
+        "affected_drugs": [
+          "Bevacizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Bevacizumab should be permanently discontinued in patients who experience grade 3 or 4 bleeding with the combination treatment."
+      },
+      {
+        "parameter": "other",
+        "condition": "Gastrointestinal perforation, arterial thromboembolic events, NCI-CTC grade 3 and above haemorrhagic events (requiring blood transfusion or major non-elective intervention), NCI-CTC grade 3 and above congestive heart failure or left ventricular dysfunction, NCI-CTC grade 4 fistula",
+        "affected_drugs": [
+          "Bevacizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Bevacizumab should be stopped if the individual develops any of these events. Doses should be omitted and not reduced for adverse reactions; if more than two doses missed treatment should be stopped."
+      },
+      {
+        "parameter": "other",
+        "condition": "NCI-CTC grade 2 proteinuria (second occurrence) or NCI-CTC grade 3 proteinuria or >2g protein per 24 hours",
+        "affected_drugs": [
+          "Bevacizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "If there is more than 2g protein per 24 hours omit the bevacizumab. Repeat the 24 hour urine collection prior to the next scheduled dose. Grade 4 proteinuria (nephrotic syndrome): therapy should be permanently discontinued."
+      },
+      {
+        "parameter": "other",
+        "condition": "NCI-CTC grade 2 hypertension",
+        "affected_drugs": [
+          "Bevacizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Consider anti-hypertensive therapy."
+      },
+      {
+        "parameter": "other",
+        "condition": "NCI-CTC grade 3 and above hypertension that is persistent",
+        "affected_drugs": [
+          "Bevacizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Consider stopping treatment."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": null,
+      "platelets_min": null,
+      "notes": "There is little need to adjust the dose of atezolizumab or bevacizumab for haematological toxicity. Consider blood transfusion if haemoglobin less than 8g/dL. If a treatment break of more than 12 weeks beyond the expected 3-weekly cycle length is needed, a treatment break form to restart treatment should be completed."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to each cycle",
+      "EDTA or calculated creatinine clearance prior to each cycle",
+      "Blood pressure and dipstick urinalysis for proteinuria prior to treatment with bevacizumab",
+      "Thyroid function tests and random cortisol prior to starting treatment and then every 6 weeks or when clinically indicated",
+      "Random blood glucose prior to each cycle",
+      "Prior to starting treatment screening for oesophageal varices should be performed"
+    ],
+    "special_warnings": [
+      "Atezolizumab and bevacizumab: dose reductions are NOT permitted. Only dose interruption (withhold) or permanent discontinuation is allowed for adverse reactions.",
+      "Bevacizumab doses should be omitted and not reduced for adverse reactions. If more than two doses are missed due to adverse events treatment should be stopped.",
+      "Atezolizumab should be permanently discontinued for: any NCI-CTC grade 3 or 4 pneumonitis or hepatitis; any other life-threatening NCI-CTC grade 4 reaction (including colitis and renal impairment); any recurrence of a severe or NCI-CTC grade 3 reaction; any persistent NCI-CTC grade 2 or 3 treatment-related adverse reaction that does not recover to grade 1 or resolve within 12 weeks after the last dose.",
+      "Current funding approval precludes further treatment after an interruption of 12 weeks or longer.",
+      "The use of systemic corticosteroids before starting treatment with atezolizumab should be avoided because of their potential interference with the pharmacodynamic activity and efficacy of the agent.",
+      "Patients must be given an atezolizumab Patient Alert Card.",
+      "Screening for oesophageal varices and subsequent treatment as per clinical practice must be performed prior to starting combination treatment.",
+      "Bevacizumab increases risk of haemorrhage including fatal gastrointestinal haemorrhage in HCC patients.",
+      "Upon discontinuation of the combination on account of loss of clinical benefit or treatment intolerance, if patient is fit for further systemic therapy, next line of treatment would be a choice of either sorafenib or lenvatinib.",
+      "Significant changes in GFR of more than 10% may require dose adjustment for bevacizumab."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "weight_kg": true,
+      "ecog_performance_status": true,
+      "child_pugh_class": true
+    },
+    "disease_site": "Hepatobiliary",
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Atezolizumab",
+        "dose": 1200,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "First infusion over 60 minutes; if well tolerated subsequent infusions may be administered over 30 minutes. Ensure patient has been given an atezolizumab patient alert card. Avoid systemic corticosteroids before starting treatment.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "once per cycle | First infusion over 60 minutes; if well tolerated subsequent infusions may be administered over 30 minutes. Ensure patient has been given an atezolizumab patient alert card. Avoid systemic corticosteroids before starting treatment."
+      },
+      {
+        "drug_name": "Bevacizumab",
+        "dose": 15,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": 90,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "First infusion over 90 minutes; if well tolerated second infusion over 60 minutes; if well tolerated subsequent infusions over 30 minutes. Dose banded in accordance with national dose bands (bevacizumab). Bevacizumab doses should be omitted and not reduced for adverse reactions; if more than two doses missed treatment should be stopped.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.5,
+        "notes": "once per cycle | First infusion over 90 minutes; if well tolerated second infusion over 60 minutes; if well tolerated subsequent infusions over 30 minutes. Dose banded in accordance with national dose bands (bevacizumab). Bevacizumab doses should be omitted and not reduced for adverse reactions; if more than two doses missed treatment should be stopped."
+      }
+    ]
+  },
+  {
+    "protocol_id": "biliary_cisplatin_gemcitabine",
+    "protocol_code": "BIL-CIS-GEM",
+    "protocol_name": "Biliary Tract Cancer - Cisplatin-Gemcitabine",
+    "category": "hepatobiliary",
+    "indication": "First line therapy of locally advanced / metastatic biliary tract cancer. WHO performance status 0, 1, 2. Palliative intent.",
+    "version": "1.2",
+    "cycle_length_days": 21,
+    "total_cycles": 4,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Cisplatin",
+        "dose": 25,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8
+        ],
+        "frequency": "days 1 and 8 of each cycle",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Administer at a maximum rate of 1mg cisplatin/min (minimum time 60 minutes). Dose banded as per CSCCN agreed bands. Cisplatin is an exfoliant. Administered after gemcitabine.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Gemcitabine",
+        "dose": 1000,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8
+        ],
+        "frequency": "days 1 and 8 of each cycle",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Administer gemcitabine before cisplatin. Dose banded as per CSCCN agreed bands. Gemcitabine is neutral (extravasation classification).",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "15-30 minutes prior to chemotherapy on days 1 and 8",
+        "notes": "May be given oral or intravenous"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "15-30 minutes prior to chemotherapy on days 1 and 8",
+        "notes": "May be given oral or intravenous"
+      },
+      {
+        "drug_name": "Furosemide",
+        "dose": 40,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "when required, prior to cisplatin on days 1 and 8",
+        "notes": "Pre-hydration diuretic; may be given oral or intravenous"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9% with 20mmol potassium chloride and 16mmol magnesium sulphate (pre-hydration)",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "frequency": "over 60 minutes pre-cisplatin on days 1 and 8",
+        "notes": "Pre-cisplatin hydration"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9% with 20mmol potassium chloride and 16mmol magnesium sulphate (post-hydration)",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "frequency": "over 60 minutes post-cisplatin on days 1 and 8",
+        "notes": "Post-cisplatin hydration. Patients should drink at least 3 litres of fluid in the 24 hours after administration of cisplatin."
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "twice a day for 3 days starting on the day following chemotherapy",
+        "days": "days 2-4 (day 1 TTO) and days 9-11 (day 8 TTO)",
+        "notes": "Supplied on both day one and day eight"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "three times a day when required",
+        "days": "day 1 TTO only",
+        "notes": "Metoclopramide is not listed as a day eight TTO as the patient is likely to have supplies left from day one. Should be counselled to use metoclopramide as per day one of the cycle."
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "twice a day for 3 days starting on the evening of the day of chemotherapy",
+        "days": "days 1-3 (day 1 TTO) and days 8-10 (day 8 TTO)",
+        "notes": "Supplied on both day one and day eight"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "neutrophils",
+        "condition": ">= 1.0 x10⁹/L and platelets >= 100 x10⁹/L on day of treatment",
+        "affected_drugs": [
+          "Cisplatin",
+          "Gemcitabine"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Full dose for both drugs on days 1 and 8. Prior to cycle 1: neutrophils equal to or more than 1x10⁹/L and platelets equal to or more than 100x10⁹/L required."
+      },
+      {
+        "parameter": "neutrophils",
+        "condition": "0.5-0.9 x10⁹/L and/or platelets 50-99 x10⁹/L on day of treatment (days 1 and 8)",
+        "affected_drugs": [
+          "Gemcitabine"
+        ],
+        "action": "reduce_25",
+        "factor": 0.75,
+        "notes": "Gemcitabine given at 75% of original dose. Cisplatin should be given at the full dose."
+      },
+      {
+        "parameter": "neutrophils",
+        "condition": "< 0.5 x10⁹/L or platelets < 50 x10⁹/L",
+        "affected_drugs": [
+          "Cisplatin",
+          "Gemcitabine"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Defer both agents for 7 days and review. If a second deferral is required, the treatment week in question is omitted and the patient will move on to the next treatment point (not necessarily next cycle). Cisplatin will not be administered as a single agent if gemcitabine is deferred."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "> 27 µmol/L",
+        "affected_drugs": [
+          "Gemcitabine"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "If bilirubin is greater than 27µmol/L, initiate treatment with dose of 800mg/m². AST elevations do not seem to cause dose limiting toxicities."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "> 60 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Full dose cisplatin (100%)."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "45-59 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "reduce_25",
+        "factor": 0.75,
+        "notes": "Reduce cisplatin to 75% of original dose."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "< 45 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Consider carboplatin instead of cisplatin."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "< 30 ml/min",
+        "affected_drugs": [
+          "Gemcitabine"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Consider dose adjustments if the CrCl is less than 30ml/min."
+      },
+      {
+        "parameter": "other",
+        "condition": "CTC grade 3-4 lethargy",
+        "affected_drugs": [
+          "Gemcitabine"
+        ],
+        "action": "reduce_25",
+        "factor": 0.75,
+        "notes": "Administer gemcitabine at 75% of original dose. If lethargy continues at this level despite dose reduction then stop treatment."
+      },
+      {
+        "parameter": "other",
+        "condition": "Grade 3-4 nausea and/or vomiting not responding to antiemetic optimisation",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Delay treatment until recovery then omit the cisplatin. If insufficient to control symptoms, administer gemcitabine at 75% of original dose."
+      },
+      {
+        "parameter": "other",
+        "condition": "CTC grade 3-4 oedema",
+        "affected_drugs": [
+          "Gemcitabine"
+        ],
+        "action": "reduce_25",
+        "factor": 0.75,
+        "notes": "Delay all treatment until recovery to baseline then restart using gemcitabine at 75% of original dose. If oedema fails to respond to this dose modification then stop treatment."
+      },
+      {
+        "parameter": "other",
+        "condition": "CTC grade 1-2 peripheral neuropathy",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay cisplatin until recovery to baseline then continue treatment at original dose. There is no need to modify gemcitabine dose."
+      },
+      {
+        "parameter": "other",
+        "condition": "CTC grade 3-4 neuropathy or CTC grade 1-2 neuropathy that does not recover",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Stop cisplatin therapy and continue with single agent gemcitabine."
+      },
+      {
+        "parameter": "other",
+        "condition": "Persistent tinnitus",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Omit cisplatin and continue with single agent gemcitabine. No modification required if tinnitus resolves between cycles."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "Obstructive jaundice due to biliary tract obstruction: bilirubin > 1.5xULN or ALT/AST/ALP > 5xULN",
+        "affected_drugs": [
+          "Cisplatin",
+          "Gemcitabine"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Defer chemotherapy until liver function tests have improved to pre-treatment eligibility levels (total bilirubin ≤1.5xULN; ALT, AST and alkaline phosphatase ≤5xULN). Chemotherapy may then resume at the start of the next treatment cycle. Note: this delay rule does NOT apply to biliary tract obstruction - appropriate measures should be taken first."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "FBC, LFT's and U&E's prior to day 1 and 8 of each cycle (consider measured GFR prior to cycle one if calculated renal function is less than 45ml/min). If deferral required, defer for 7 days in the first instance. If a second deferral is required, treatment week is omitted and patient moves to next treatment point. Cisplatin will not be administered as a single agent if gemcitabine deferred."
+    },
+    "monitoring_requirements": [
+      "FBC, LFT's and U&E's prior to day 1 and 8 of each cycle",
+      "Consider measured GFR prior to cycle one if calculated renal function is less than 45ml/min"
+    ],
+    "special_warnings": [
+      "If a decision is made to defer the gemcitabine, the cisplatin will also be deferred (cisplatin will not be administered as a single agent).",
+      "No dose modifications required for alopecia or CTC grade 1-2 lethargy, nausea, vomiting or oedema; symptomatic therapy should be tried in the first instance.",
+      "Gastric protection with a proton pump inhibitor or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed.",
+      "Patients should drink at least 3 litres of fluid in the 24 hours after cisplatin administration.",
+      "Cisplatin is an exfoliant; appropriate extravasation precautions required."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "height_cm": true,
+      "weight_kg": true,
+      "bsa_m2": true,
+      "creatinine_clearance_ml_min": true
+    },
+    "disease_site": "Hepatobiliary",
+    "number_of_cycles": 4,
+    "drugs": [
+      {
+        "drug_name": "Cisplatin",
+        "dose": 25,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8
+        ],
+        "frequency": "days 1 and 8 of each cycle",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Administer at a maximum rate of 1mg cisplatin/min (minimum time 60 minutes). Dose banded as per CSCCN agreed bands. Cisplatin is an exfoliant. Administered after gemcitabine.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "days 1 and 8 of each cycle | Administer at a maximum rate of 1mg cisplatin/min (minimum time 60 minutes). Dose banded as per CSCCN agreed bands. Cisplatin is an exfoliant. Administered after gemcitabine."
+      },
+      {
+        "drug_name": "Gemcitabine",
+        "dose": 1000,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8
+        ],
+        "frequency": "days 1 and 8 of each cycle",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Administer gemcitabine before cisplatin. Dose banded as per CSCCN agreed bands. Gemcitabine is neutral (extravasation classification).",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.5,
+        "notes": "days 1 and 8 of each cycle | Administer gemcitabine before cisplatin. Dose banded as per CSCCN agreed bands. Gemcitabine is neutral (extravasation classification)."
+      }
+    ]
+  },
+  {
+    "protocol_id": "hcc_lenvatinib_59kg_or_less",
+    "protocol_code": "HCC-LEN-59",
+    "protocol_name": "Hepatocellular - Lenvatinib (59kg or less)",
+    "category": "hepatobiliary",
+    "indication": "Lenvatinib is indicated for hepatocellular carcinoma (HCC) where either: the patient has a confirmed histological diagnosis of HCC, or a biopsy is deemed very high risk or technically not feasible and all criteria met (specialist HCC MDT decision documented, tumour meets non-invasive HCC diagnostic criteria, data submitted as part of Systemic Therapy Audit). Patient must have metastatic or locally advanced disease ineligible for or failed surgical or loco-regional therapies; not received any previous systemic therapy for HCC (or discontinued sorafenib within 3 months solely due to toxicity with no disease progression whilst on sorafenib); Child Pugh function class A; WHO Performance status 0, 1. Palliative intent. Patient weight 59kg or less (starting dose 8mg once daily).",
+    "version": "1",
+    "cycle_length_days": 28,
+    "total_cycles": null,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Lenvatinib",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "once daily",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Take at the same time each day consistently with or without food. Capsules should be swallowed whole. If a dose is missed and cannot be taken within 12 hours, it should be missed and next dose taken at appropriate time. Available as 10mg and 4mg hard capsules. Dose does not need to be changed in relation to weight changes during treatment; dose changes should only occur in relation to toxicity. Supply original pack per 28 day cycle. Several brands of lenvatinib exist - ensure correct brand dispensed for hepatocellular carcinoma indication.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [
+      {
+        "drug_name": "Lenvatinib",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "once daily",
+        "days": "days 1-28",
+        "notes": "Oral chemotherapy. Warning - Check Dose and Weight: starting dose varies by body weight. For 59kg or less = 8mg once daily. Supply original pack per 28 day cycle. Ensure correct brand of lenvatinib is dispensed for the indication (hepatocellular carcinoma)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "neutrophils",
+        "condition": "< 1.0 x10⁹/L prior to cycle 1",
+        "affected_drugs": [
+          "Lenvatinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Prior to prescribing cycle 1: neutrophils must be equal to or more than 1x10⁹/L."
+      },
+      {
+        "parameter": "platelets",
+        "condition": "< 50 x10⁹/L prior to cycle 1",
+        "affected_drugs": [
+          "Lenvatinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Prior to prescribing cycle 1: platelets must be equal to or more than 50x10⁹/L. HCC patients may have longstanding thrombocytopenia attributed to hypersplenism secondary to portal hypertension; review platelet trend over time."
+      },
+      {
+        "parameter": "other",
+        "condition": "Child Pugh A hepatic impairment",
+        "affected_drugs": [
+          "Lenvatinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "No dose adjustment required."
+      },
+      {
+        "parameter": "other",
+        "condition": "Child Pugh B hepatic impairment",
+        "affected_drugs": [
+          "Lenvatinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Use with caution; may be more susceptible to toxicity."
+      },
+      {
+        "parameter": "other",
+        "condition": "Child Pugh C hepatic impairment",
+        "affected_drugs": [
+          "Lenvatinib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Not recommended."
+      },
+      {
+        "parameter": "other",
+        "condition": "NCI-CTC grade 3 or above non-haematological toxicity - first occurrence (59kg or below)",
+        "affected_drugs": [
+          "Lenvatinib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Interrupt until resolved to NCI-CTC grade 0-1, then resume at adjusted dose 4mg once daily (first occurrence for patients 59kg or below)."
+      },
+      {
+        "parameter": "other",
+        "condition": "NCI-CTC grade 3 or above non-haematological toxicity - second occurrence, same or new reaction (59kg or below)",
+        "affected_drugs": [
+          "Lenvatinib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Interrupt until resolved to NCI-CTC grade 0-1, then resume at adjusted dose 4mg on alternate days (second occurrence for patients 59kg or below)."
+      },
+      {
+        "parameter": "other",
+        "condition": "NCI-CTC grade 3 or above non-haematological toxicity - third occurrence, same or new reaction (59kg or below)",
+        "affected_drugs": [
+          "Lenvatinib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discontinue lenvatinib (third occurrence for patients 59kg or below)."
+      },
+      {
+        "parameter": "other",
+        "condition": "Systolic BP ≥140 to ≤160mmHg or diastolic BP ≥90 to ≤100mmHg",
+        "affected_drugs": [
+          "Lenvatinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Continue lenvatinib and initiate antihypertensive therapy, if not already receiving, or increase the dose of current antihypertensive therapy or initiate additional antihypertensive therapy."
+      },
+      {
+        "parameter": "other",
+        "condition": "Systolic BP ≥160mmHg or diastolic BP ≥100mmHg despite optimal antihypertensive therapy",
+        "affected_drugs": [
+          "Lenvatinib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Withhold lenvatinib until systolic BP ≤150mmHg and diastolic BP ≤95mmHg and patient on stable dose of antihypertensive therapy for at least 48 hours, then resume at a reduced dose level."
+      },
+      {
+        "parameter": "other",
+        "condition": "Life-threatening hypertension (malignant hypertension, neurological deficit, or hypertensive crisis)",
+        "affected_drugs": [
+          "Lenvatinib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Urgent intervention is indicated. Discontinue lenvatinib and institute appropriate medical management."
+      },
+      {
+        "parameter": "other",
+        "condition": "Proteinuria ≥ 2+ or ≥ 2g/24 hours",
+        "affected_drugs": [
+          "Lenvatinib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Interrupt treatment, obtain a 24-hour urine protein until level is less than this, then dose down a level and resume treatment. Lenvatinib should be stopped if nephrotic syndrome occurs."
+      },
+      {
+        "parameter": "other",
+        "condition": "QT interval > 500ms",
+        "affected_drugs": [
+          "Lenvatinib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Lenvatinib should be stopped when QT interval is longer than 500ms. Treatment may be resumed at a reduced dose level when the interval is 480ms or less. Electrolyte abnormalities should be corrected prior to starting treatment."
+      },
+      {
+        "parameter": "other",
+        "condition": "Arterial thromboembolic event",
+        "affected_drugs": [
+          "Lenvatinib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Lenvatinib should be discontinued if arterial thromboembolic event occurs."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 50,
+      "notes": "Dose adjustments based on toxicities observed only, not on body weight changes during treatment. If a third dose reduction is necessary treatment should be stopped. Formal medical review at least by end of first 8 weeks of treatment. Lenvatinib continued until loss of efficacy, unacceptable toxicity or patient chooses to stop."
+    },
+    "monitoring_requirements": [
+      "FBC, U&Es and LFTs every 28 days",
+      "Blood glucose levels at baseline and after 28 days of treatment, thereafter every 4-8 weeks",
+      "Triglycerides at baseline then every 8 weeks",
+      "Proteinuria less than 1g/24 hours required, with proteinuria measured prior to each cycle",
+      "Thyroid function every 28 days",
+      "Blood pressure at baseline, after one week of lenvatinib then every two weeks for the first two months and then every 28 days thereafter",
+      "ECG as clinically indicated"
+    ],
+    "special_warnings": [
+      "Dose adjustments are based only on toxicities observed and not on body weight changes during treatment. The starting dose of lenvatinib is 8mg once daily for patients 59kg or less.",
+      "Dose does not need to be changed in relation to weight changes during treatment; dose changes should only occur in relation to toxicity.",
+      "Lenvatinib interacts with many other agents. Always check for drug interactions.",
+      "There are several brands of lenvatinib. Please dispense the correct brand for hepatocellular carcinoma indication.",
+      "National Patient Safety Alert on oral chemotherapy (NPSA/2008/RRR001) must be followed.",
+      "Lenvatinib should only be prescribed under the supervision of an oncologist.",
+      "Routine anti-emetics are not required.",
+      "QT prolongation risk: lenvatinib is not recommended in patients with congenital long QT syndrome or those with risk factors for prolonged QT.",
+      "Mouthwashes according to local or national policy for mucositis.",
+      "Gastric protection with PPI or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "weight_kg": true,
+      "child_pugh_class": true,
+      "weight_band": "59kg_or_less"
+    },
+    "disease_site": "Hepatobiliary",
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Lenvatinib",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "once daily",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Take at the same time each day consistently with or without food. Capsules should be swallowed whole. If a dose is missed and cannot be taken within 12 hours, it should be missed and next dose taken at appropriate time. Available as 10mg and 4mg hard capsules. Dose does not need to be changed in relation to weight changes during treatment; dose changes should only occur in relation to toxicity. Supply original pack per 28 day cycle. Several brands of lenvatinib exist - ensure correct brand dispensed for hepatocellular carcinoma indication.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "once daily | Take at the same time each day consistently with or without food. Capsules should be swallowed whole. If a dose is missed and cannot be taken within 12 hours, it should be missed and next dose taken at appropriate time. Available as 10mg and 4mg hard capsules. Dose does not need to be changed in relation to weight changes during treatment; dose changes should only occur in relation to toxicity. Supply original pack per 28 day cycle. Several brands of lenvatinib exist - ensure correct brand dispensed for hepatocellular carcinoma indication."
+      }
+    ]
+  },
+  {
+    "protocol_id": "hcc_lenvatinib_60kg_or_greater",
+    "protocol_code": "HCC-LEN-60",
+    "protocol_name": "Hepatocellular - Lenvatinib (60kg or greater)",
+    "category": "hepatobiliary",
+    "indication": "Lenvatinib is indicated for hepatocellular carcinoma (HCC) where either: the patient has a confirmed histological diagnosis of HCC, or a biopsy is deemed very high risk or technically not feasible and all criteria met (specialist HCC MDT decision documented, tumour meets non-invasive HCC diagnostic criteria, data submitted as part of Systemic Therapy Audit). Patient must have metastatic or locally advanced disease ineligible for or failed surgical or loco-regional therapies; not received any previous systemic therapy for HCC (or discontinued sorafenib within 3 months solely due to toxicity with no disease progression whilst on sorafenib); Child Pugh function class A; WHO Performance status 0, 1. Palliative intent. Patient weight 60kg or greater (starting dose 12mg once daily).",
+    "version": "1",
+    "cycle_length_days": 28,
+    "total_cycles": null,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Lenvatinib",
+        "dose": 12,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "once daily",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Take at the same time each day consistently with or without food. Capsules should be swallowed whole. If a dose is missed and cannot be taken within 12 hours, it should be missed and next dose taken at appropriate time. Available as 10mg and 4mg hard capsules. Dose does not need to be changed in relation to weight changes during treatment; dose changes should only occur in relation to toxicity. Supply original pack per 28 day cycle. Several brands of lenvatinib exist - ensure correct brand dispensed for hepatocellular carcinoma indication.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [
+      {
+        "drug_name": "Lenvatinib",
+        "dose": 12,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "once daily",
+        "days": "days 1-28",
+        "notes": "Oral chemotherapy. Warning - Check Dose and Weight: starting dose varies by body weight. For 60kg or greater = 12mg once daily. Supply original pack per 28 day cycle. Ensure correct brand of lenvatinib is dispensed for the indication (hepatocellular carcinoma)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "neutrophils",
+        "condition": "< 1.0 x10⁹/L prior to cycle 1",
+        "affected_drugs": [
+          "Lenvatinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Prior to prescribing cycle 1: neutrophils must be equal to or more than 1x10⁹/L."
+      },
+      {
+        "parameter": "platelets",
+        "condition": "< 50 x10⁹/L prior to cycle 1",
+        "affected_drugs": [
+          "Lenvatinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Prior to prescribing cycle 1: platelets must be equal to or more than 50x10⁹/L. HCC patients may have longstanding thrombocytopenia attributed to hypersplenism secondary to portal hypertension; review platelet trend over time."
+      },
+      {
+        "parameter": "other",
+        "condition": "Child Pugh A hepatic impairment",
+        "affected_drugs": [
+          "Lenvatinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "No dose adjustment required."
+      },
+      {
+        "parameter": "other",
+        "condition": "Child Pugh B hepatic impairment",
+        "affected_drugs": [
+          "Lenvatinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Use with caution; may be more susceptible to toxicity."
+      },
+      {
+        "parameter": "other",
+        "condition": "Child Pugh C hepatic impairment",
+        "affected_drugs": [
+          "Lenvatinib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Not recommended."
+      },
+      {
+        "parameter": "other",
+        "condition": "NCI-CTC grade 3 or above non-haematological toxicity - first occurrence (60kg or above)",
+        "affected_drugs": [
+          "Lenvatinib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Interrupt until resolved to NCI-CTC grade 0-1, then resume at adjusted dose 8mg once daily (first occurrence for patients 60kg or above)."
+      },
+      {
+        "parameter": "other",
+        "condition": "NCI-CTC grade 3 or above non-haematological toxicity - second occurrence, same or new reaction (60kg or above)",
+        "affected_drugs": [
+          "Lenvatinib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Interrupt until resolved to NCI-CTC grade 0-1, then resume at adjusted dose 4mg once daily (second occurrence for patients 60kg or above)."
+      },
+      {
+        "parameter": "other",
+        "condition": "NCI-CTC grade 3 or above non-haematological toxicity - third occurrence, same or new reaction (60kg or above)",
+        "affected_drugs": [
+          "Lenvatinib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Interrupt until resolved to NCI-CTC grade 0-1, then resume at adjusted dose 4mg on alternate days (third occurrence for patients 60kg or above)."
+      },
+      {
+        "parameter": "other",
+        "condition": "Systolic BP ≥140 to ≤160mmHg or diastolic BP ≥90 to ≤100mmHg",
+        "affected_drugs": [
+          "Lenvatinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Continue lenvatinib and initiate antihypertensive therapy, if not already receiving, or increase the dose of current antihypertensive therapy or initiate additional antihypertensive therapy."
+      },
+      {
+        "parameter": "other",
+        "condition": "Systolic BP ≥160mmHg or diastolic BP ≥100mmHg despite optimal antihypertensive therapy",
+        "affected_drugs": [
+          "Lenvatinib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Withhold lenvatinib until systolic BP ≤150mmHg and diastolic BP ≤95mmHg and patient on stable dose of antihypertensive therapy for at least 48 hours, then resume at a reduced dose level."
+      },
+      {
+        "parameter": "other",
+        "condition": "Life-threatening hypertension (malignant hypertension, neurological deficit, or hypertensive crisis)",
+        "affected_drugs": [
+          "Lenvatinib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Urgent intervention is indicated. Discontinue lenvatinib and institute appropriate medical management."
+      },
+      {
+        "parameter": "other",
+        "condition": "Proteinuria ≥ 2+ or ≥ 2g/24 hours",
+        "affected_drugs": [
+          "Lenvatinib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Interrupt treatment, obtain a 24-hour urine protein until level is less than this, then dose down a level and resume treatment. Lenvatinib should be stopped if nephrotic syndrome occurs."
+      },
+      {
+        "parameter": "other",
+        "condition": "QT interval > 500ms",
+        "affected_drugs": [
+          "Lenvatinib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Lenvatinib should be stopped when QT interval is longer than 500ms. Treatment may be resumed at a reduced dose level when the interval is 480ms or less. Electrolyte abnormalities should be corrected prior to starting treatment."
+      },
+      {
+        "parameter": "other",
+        "condition": "Arterial thromboembolic event",
+        "affected_drugs": [
+          "Lenvatinib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Lenvatinib should be discontinued if arterial thromboembolic event occurs."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 50,
+      "notes": "Dose adjustments based on toxicities observed only, not on body weight changes during treatment. If a third dose reduction is necessary treatment should be stopped. Formal medical review at least by end of first 8 weeks of treatment. Lenvatinib continued until loss of efficacy, unacceptable toxicity or patient chooses to stop."
+    },
+    "monitoring_requirements": [
+      "FBC, U&Es and LFTs every 28 days",
+      "Blood glucose levels at baseline and after 28 days of treatment, thereafter every 4-8 weeks",
+      "Triglycerides at baseline then every 8 weeks",
+      "Proteinuria less than 1g/24 hours required, with proteinuria measured prior to each cycle",
+      "Thyroid function every 28 days",
+      "Blood pressure at baseline, after one week of lenvatinib then every two weeks for the first two months and then every 28 days thereafter",
+      "ECG as clinically indicated"
+    ],
+    "special_warnings": [
+      "Dose adjustments are based only on toxicities observed and not on body weight changes during treatment. The starting dose of lenvatinib is 12mg once daily for patients 60kg or greater.",
+      "Dose does not need to be changed in relation to weight changes during treatment; dose changes should only occur in relation to toxicity.",
+      "Lenvatinib interacts with many other agents. Always check for drug interactions.",
+      "There are several brands of lenvatinib. Please dispense the correct brand for hepatocellular carcinoma indication.",
+      "National Patient Safety Alert on oral chemotherapy (NPSA/2008/RRR001) must be followed.",
+      "Lenvatinib should only be prescribed under the supervision of an oncologist.",
+      "Routine anti-emetics are not required.",
+      "QT prolongation risk: lenvatinib is not recommended in patients with congenital long QT syndrome or those with risk factors for prolonged QT.",
+      "Mouthwashes according to local or national policy for mucositis.",
+      "Gastric protection with PPI or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "weight_kg": true,
+      "child_pugh_class": true,
+      "weight_band": "60kg_or_greater"
+    },
+    "disease_site": "Hepatobiliary",
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Lenvatinib",
+        "dose": 12,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "once daily",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Take at the same time each day consistently with or without food. Capsules should be swallowed whole. If a dose is missed and cannot be taken within 12 hours, it should be missed and next dose taken at appropriate time. Available as 10mg and 4mg hard capsules. Dose does not need to be changed in relation to weight changes during treatment; dose changes should only occur in relation to toxicity. Supply original pack per 28 day cycle. Several brands of lenvatinib exist - ensure correct brand dispensed for hepatocellular carcinoma indication.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "once daily | Take at the same time each day consistently with or without food. Capsules should be swallowed whole. If a dose is missed and cannot be taken within 12 hours, it should be missed and next dose taken at appropriate time. Available as 10mg and 4mg hard capsules. Dose does not need to be changed in relation to weight changes during treatment; dose changes should only occur in relation to toxicity. Supply original pack per 28 day cycle. Several brands of lenvatinib exist - ensure correct brand dispensed for hepatocellular carcinoma indication."
+      }
+    ]
+  },
+  {
+    "protocol_id": "cholangiocarcinoma_pemigatinib",
+    "protocol_code": "CCA-PEMI",
+    "protocol_name": "Cholangiocarcinoma - Pemigatinib",
+    "category": "hepatobiliary",
+    "indication": "Pemigatinib for locally advanced or metastatic cholangiocarcinoma which has a fibroblast growth factor receptor 2 (FGFR2) gene fusion/rearrangement in patients with disease progression during or after previous systemic therapy where: histologically or cytologically confirmed diagnosis of cholangiocarcinoma (intra-hepatic or extrahepatic); FGFR2 gene fusion or rearrangement confirmed with a validated test; unresectable locally advanced or metastatic disease; previously treated with systematic therapy with disease progression during or after such therapy; ECOG performance status 0, 1 or 2; no known brain metastases or symptomatically stable brain metastases; pemigatinib used as monotherapy.",
+    "version": "1",
+    "cycle_length_days": 21,
+    "total_cycles": null,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Pemigatinib",
+        "dose": 13.5,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "frequency": "once daily for 14 days followed by 7 days off (21-day cycle)",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Take at approximately the same time every day. Tablets should be swallowed whole; patients should not crush, chew or dissolve the tablets. May be taken with or without food. If a dose is missed by 4 or more hours or vomiting occurs after taking a dose, an additional dose should not be administered and dosing should be resumed with the next scheduled dose. Available as 13.5mg, 9mg and 4.5mg tablets. Patients should avoid taking proton pump inhibitors whilst taking pemigatinib.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [
+      {
+        "drug_name": "Pemigatinib",
+        "dose": 13.5,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "once daily for 14 days",
+        "days": "days 1-14",
+        "notes": "Oral SACT. 21-day cycle: 14 days on treatment then 7 days off. Avoid proton pump inhibitors."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "neutrophils",
+        "condition": "< 1.0 x10⁹/L",
+        "affected_drugs": [
+          "Pemigatinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Discuss with prescriber if neutrophils <1x10⁹/L as dose reduction may be required."
+      },
+      {
+        "parameter": "platelets",
+        "condition": "< 75 x10⁹/L",
+        "affected_drugs": [
+          "Pemigatinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Discuss with prescriber if platelets <75x10⁹/L as dose reduction may be required."
+      },
+      {
+        "parameter": "other",
+        "condition": "Dose reduction step 1",
+        "affected_drugs": [
+          "Pemigatinib"
+        ],
+        "action": "reduce_25",
+        "factor": 0.75,
+        "notes": "Dose reduction step 1: reduce to 13.5mg once daily. (Note: this is the first step from starting dose; if patient is already on 13.5mg this step = maintain, applied per sequential toxicity occurrences.) Dose reduction steps: Step 1 = 13.5mg; Step 2 = 9mg; Step 3 = 4.5mg; Step 4 = stop treatment."
+      },
+      {
+        "parameter": "other",
+        "condition": "Dose reduction step 2",
+        "affected_drugs": [
+          "Pemigatinib"
+        ],
+        "action": "reduce_50",
+        "factor": 0.5,
+        "notes": "Dose reduction step 2: reduce to 9mg once daily."
+      },
+      {
+        "parameter": "other",
+        "condition": "Dose reduction step 3",
+        "affected_drugs": [
+          "Pemigatinib"
+        ],
+        "action": "reduce_50",
+        "factor": 0.5,
+        "notes": "Dose reduction step 3: reduce to 4.5mg once daily."
+      },
+      {
+        "parameter": "other",
+        "condition": "Dose reduction step 4",
+        "affected_drugs": [
+          "Pemigatinib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Step 4: stop treatment permanently."
+      },
+      {
+        "parameter": "other",
+        "condition": "Child Pugh C (severe) hepatic impairment - patient taking 13.5mg",
+        "affected_drugs": [
+          "Pemigatinib"
+        ],
+        "action": "reduce_25",
+        "factor": 0.75,
+        "notes": "Dose adjustment not required for mild (Child Pugh A) or moderate (Child Pugh B) hepatic impairment. For severe (Child Pugh C): patients taking 13.5mg reduced to 9mg once daily."
+      },
+      {
+        "parameter": "other",
+        "condition": "Child Pugh C (severe) hepatic impairment - patient taking 9mg",
+        "affected_drugs": [
+          "Pemigatinib"
+        ],
+        "action": "reduce_50",
+        "factor": 0.5,
+        "notes": "For severe (Child Pugh C): patients taking 9mg reduced to 4.5mg once daily."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "Severe renal impairment (CrCl < 30ml/min) - patient taking 13.5mg",
+        "affected_drugs": [
+          "Pemigatinib"
+        ],
+        "action": "reduce_25",
+        "factor": 0.75,
+        "notes": "No dose adjustment required for mild or moderate renal impairment or end stage renal disease on haemodialysis. Severe renal impairment (CrCl <30ml/min): patients taking 13.5mg reduced to 9mg once daily."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "Severe renal impairment (CrCl < 30ml/min) - patient taking 9mg",
+        "affected_drugs": [
+          "Pemigatinib"
+        ],
+        "action": "reduce_50",
+        "factor": 0.5,
+        "notes": "Severe renal impairment (CrCl <30ml/min): patients taking 9mg reduced to 4.5mg once daily."
+      },
+      {
+        "parameter": "other",
+        "condition": "Hyperphosphataemia: serum phosphate > 5.5mg/dL to ≤ 7mg/dL",
+        "affected_drugs": [
+          "Pemigatinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Pemigatinib should be continued at current dose. All patients with phosphate >5.5mg/dL should adopt a low phosphate diet."
+      },
+      {
+        "parameter": "other",
+        "condition": "Hyperphosphataemia: serum phosphate > 7mg/dL to ≤ 10mg/dL",
+        "affected_drugs": [
+          "Pemigatinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Continue pemigatinib at current dose and initiate phosphate-lowering therapy; monitor serum phosphate weekly; adjust dose of phosphate-lowering therapy until level returns to less than 7mg/dL. If level does not return to <7mg/dL within 2 weeks of starting phosphate-lowering therapy, withhold pemigatinib. Restart pemigatinib and phosphate-lowering therapy at same dose when level returns to <7mg/dL. Upon recurrence of serum phosphate >7mg/dL with phosphate-lowering therapy, reduce pemigatinib by 1 dose level."
+      },
+      {
+        "parameter": "other",
+        "condition": "Hyperphosphataemia: serum phosphate > 10mg/dL",
+        "affected_drugs": [
+          "Pemigatinib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Continue pemigatinib at current dose and initiate phosphate-lowering therapy; monitor weekly. Withhold pemigatinib if level continues >10mg/dL for 1 week. Restart pemigatinib and phosphate-lowering therapy at 1 dose level lower when serum phosphate is <7mg/dL. If recurrence of serum phosphate >10mg/dL following 2 dose reductions, permanently discontinue pemigatinib."
+      },
+      {
+        "parameter": "other",
+        "condition": "Serous retinal detachment - asymptomatic",
+        "affected_drugs": [
+          "Pemigatinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Pemigatinib should be continued at current dose. Continue to monitor."
+      },
+      {
+        "parameter": "other",
+        "condition": "Serous retinal detachment - moderate decrease in visual acuity (BCVA 20/40 or better or ≤3 lines decreased vision from baseline; limiting instrumental activities of daily living)",
+        "affected_drugs": [
+          "Pemigatinib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Withhold pemigatinib until resolution. If improved on subsequent examination, resume at next lower dose level. If recurs, symptoms persist or examination does not improve, permanent discontinuation should be considered."
+      },
+      {
+        "parameter": "other",
+        "condition": "Serous retinal detachment - marked decrease in visual acuity (BCVA worse than 20/40 or >3 lines decreased from baseline up to 20/200; limiting activities of daily living)",
+        "affected_drugs": [
+          "Pemigatinib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Withhold pemigatinib until resolution. If improved on subsequent examination, resume at 2 dose levels lower. If recurs, symptoms persist or examination does not improve, permanent discontinuation should be considered."
+      },
+      {
+        "parameter": "other",
+        "condition": "Serous retinal detachment - visual acuity worse than 20/200 in affected eye; limiting activities of daily living",
+        "affected_drugs": [
+          "Pemigatinib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Withhold pemigatinib until resolution. If improved on subsequent examination, resume at 2 dose levels lower. If recurs, symptoms persist or examination does not improve, permanent discontinuation should be considered."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 75,
+      "notes": "FBC, U&Es (including phosphate and calcium) and LFTs every 28 days. Ophthalmological examination (including OCT) prior to initiation, then every 2 months for first 6 months then every 3 months thereafter. If a third dose reduction is necessary treatment should be stopped. Treatment continues until loss of benefit, excessive toxicity or patient choice."
+    },
+    "monitoring_requirements": [
+      "FBC, U&Es (including phosphate and calcium) and LFTs every 28 days",
+      "Ophthalmological examination (including optical coherence tomography) prior to initiation of pemigatinib, then every 2 months for the first 6 months and every 3 months thereafter",
+      "Serum phosphate monitoring weekly if phosphate-lowering therapy initiated"
+    ],
+    "special_warnings": [
+      "Pemigatinib can cause serous retinal detachment. Ophthalmological examination (including OCT) must be arranged prior to initiation and then whilst on therapy.",
+      "Pemigatinib can increase risk of hyperphosphataemia. Prescriber must understand monitoring requirements for phosphate levels, role of phosphate-lowering measures, and need to review such measures if pemigatinib treatment is deferred or discontinued.",
+      "Patients should avoid taking proton pump inhibitors whilst taking pemigatinib.",
+      "Pemigatinib can cause dry eyes; patients should use ocular demulcents as required to prevent or treat dry eyes.",
+      "Pemigatinib has moderate influence on ability to drive and use machines; caution recommended due to fatigue and visual disturbances.",
+      "Pemigatinib interacts with many other agents. Always check for drug interactions.",
+      "National Patient Safety Alert on oral chemotherapy (NPSA/2008/RRR001) must be followed.",
+      "Pemigatinib should only be prescribed under the supervision of an oncologist.",
+      "First formal medical review at least by end of first 8 weeks of treatment.",
+      "Treatment continues until loss of benefit or excessive toxicity or patient choice to discontinue, whichever is sooner."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "fgfr2_fusion_rearrangement_status": true,
+      "child_pugh_class": true,
+      "creatinine_clearance_ml_min": true,
+      "ecog_performance_status": true
+    },
+    "disease_site": "Hepatobiliary",
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Pemigatinib",
+        "dose": 13.5,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "frequency": "once daily for 14 days followed by 7 days off (21-day cycle)",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Take at approximately the same time every day. Tablets should be swallowed whole; patients should not crush, chew or dissolve the tablets. May be taken with or without food. If a dose is missed by 4 or more hours or vomiting occurs after taking a dose, an additional dose should not be administered and dosing should be resumed with the next scheduled dose. Available as 13.5mg, 9mg and 4.5mg tablets. Patients should avoid taking proton pump inhibitors whilst taking pemigatinib.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "once daily for 14 days followed by 7 days off (21-day cycle) | Take at approximately the same time every day. Tablets should be swallowed whole; patients should not crush, chew or dissolve the tablets. May be taken with or without food. If a dose is missed by 4 or more hours or vomiting occurs after taking a dose, an additional dose should not be administered and dosing should be resumed with the next scheduled dose. Available as 13.5mg, 9mg and 4.5mg tablets. Patients should avoid taking proton pump inhibitors whilst taking pemigatinib."
+      }
+    ]
+  },
+  {
+    "protocol_id": "hcc_regorafenib",
+    "protocol_code": "HCC-REGO",
+    "protocol_name": "Hepatocellular - Regorafenib",
+    "category": "hepatobiliary",
+    "indication": "Regorafenib is recommended as an option for treating advanced unresectable hepatocellular carcinoma in adults who have had sorafenib and have an ECOG performance status of 0 or 1 and Child-Pugh grade A liver impairment.",
+    "version": "1",
+    "cycle_length_days": 28,
+    "total_cycles": null,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Regorafenib",
+        "dose": 160,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "frequency": "once daily for 21 days followed by 7 days break",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 160,
+        "max_dose_unit": "mg",
+        "special_instructions": "Take at the same time each day. Tablets should be swallowed whole with water after a light meal that contains less than 30% fat. Avoid grapefruit juice. If a dose is missed it should be taken on the same day as soon as the patient remembers; patient should not take two doses on the same day. In case of vomiting after regorafenib administration, patient should not take additional tablets. Available as 40mg tablets. Dose modifications in 40mg (one tablet) steps. Lowest recommended daily dose is 80mg. Maximum daily dose is 160mg.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [
+      {
+        "drug_name": "Regorafenib",
+        "dose": 160,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "once daily for 21 days",
+        "days": "days 1-21",
+        "notes": "Oral chemotherapy. 28 day cycle: 21 days treatment followed by 7 day break. Take after a light meal containing less than 30% fat. Avoid grapefruit juice."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "neutrophils",
+        "condition": "< 1.0 x10⁹/L prior to cycle 1",
+        "affected_drugs": [
+          "Regorafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Prior to prescribing cycle 1: neutrophils must be equal to or more than 1x10⁹/L."
+      },
+      {
+        "parameter": "platelets",
+        "condition": "< 50 x10⁹/L prior to cycle 1",
+        "affected_drugs": [
+          "Regorafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Prior to prescribing cycle 1: platelets must be equal to or more than 50x10⁹/L. HCC patients may have longstanding thrombocytopenia attributed to hypersplenism secondary to portal hypertension; review platelet trend over time."
+      },
+      {
+        "parameter": "ast",
+        "condition": "Grade 1-2 AST/ALT (≤5xULN) and bilirubin ≤ 2xULN",
+        "affected_drugs": [
+          "Regorafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Continue regorafenib treatment. Monitor weekly until AST/ALT returns to less than 3xULN or baseline."
+      },
+      {
+        "parameter": "ast",
+        "condition": "Grade 3 AST/ALT (>5 to 20xULN) and bilirubin ≤ 2xULN - 1st occurrence",
+        "affected_drugs": [
+          "Regorafenib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "1st occurrence: interrupt regorafenib treatment. Monitor weekly until AST/ALT returns to <3xULN or baseline. Restart only if potential benefit outweighs the risk of hepatotoxicity; reduce dose by 40mg (one tablet) and monitor liver function weekly for at least 4 weeks. Re-occurrence: permanently discontinue regorafenib."
+      },
+      {
+        "parameter": "ast",
+        "condition": "Grade 4 AST/ALT (>20xULN) and bilirubin ≤ 2xULN",
+        "affected_drugs": [
+          "Regorafenib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue regorafenib."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "Bilirubin > 2xULN with AST/ALT > 3xULN",
+        "affected_drugs": [
+          "Regorafenib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue regorafenib."
+      },
+      {
+        "parameter": "other",
+        "condition": "NCI CTC Grade 1 toxicity",
+        "affected_drugs": [
+          "Regorafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "No delay, no reduction."
+      },
+      {
+        "parameter": "other",
+        "condition": "NCI CTC Grade 2-3 toxicity",
+        "affected_drugs": [
+          "Regorafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay treatment until NCI CTC grade 1 or below, then reduce a level. Dose reduction level 1: 120mg once daily. Dose reduction level 2: 80mg once daily. Dose reduction level 3: 40mg once daily."
+      },
+      {
+        "parameter": "other",
+        "condition": "NCI CTC Grade 4 toxicity",
+        "affected_drugs": [
+          "Regorafenib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discontinue regorafenib."
+      },
+      {
+        "parameter": "other",
+        "condition": "Palmar-plantar erythrodysaesthesia (PPE) - Grade 1, any occurrence",
+        "affected_drugs": [
+          "Regorafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Maintain dose level and immediately institute supportive measures for symptomatic relief."
+      },
+      {
+        "parameter": "other",
+        "condition": "PPE - Grade 2, 1st occurrence",
+        "affected_drugs": [
+          "Regorafenib"
+        ],
+        "action": "reduce_25",
+        "factor": 0.75,
+        "notes": "Decrease dose by 40mg (one tablet) and immediately institute supportive measures. If no improvement despite dose reduction, interrupt therapy for minimum 7 days until toxicity resolves to NCI CTC grade 0-1. Dose re-escalation permitted at physician's discretion."
+      },
+      {
+        "parameter": "other",
+        "condition": "PPE - Grade 2, no improvement within 7 days or 2nd occurrence",
+        "affected_drugs": [
+          "Regorafenib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Interrupt therapy until toxicity resolves to NCI CTC grade 0-1. When re-starting treatment, decrease dose by 40mg (one tablet). Dose re-escalation permitted at physician's discretion."
+      },
+      {
+        "parameter": "other",
+        "condition": "PPE - Grade 2, 3rd occurrence",
+        "affected_drugs": [
+          "Regorafenib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Interrupt therapy until toxicity resolves to NCI CTC grade 0-1. When re-starting treatment, decrease dose by 40mg (one tablet). Dose re-escalation permitted at physician's discretion."
+      },
+      {
+        "parameter": "other",
+        "condition": "PPE - Grade 2, 4th occurrence",
+        "affected_drugs": [
+          "Regorafenib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discontinue treatment with regorafenib permanently."
+      },
+      {
+        "parameter": "other",
+        "condition": "PPE - Grade 3, 1st occurrence",
+        "affected_drugs": [
+          "Regorafenib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Institute supportive measures immediately. Interrupt therapy for minimum 7 days until toxicity resolves to NCI CTC grade 0-1. When re-starting treatment, decrease dose by 40mg (one tablet). Dose re-escalation permitted at physician's discretion."
+      },
+      {
+        "parameter": "other",
+        "condition": "PPE - Grade 3, 2nd occurrence",
+        "affected_drugs": [
+          "Regorafenib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Institute supportive measures immediately. Interrupt therapy for minimum 7 days until toxicity resolves to NCI CTC grade 0-1. When re-starting treatment, decrease dose by 40mg (one tablet)."
+      },
+      {
+        "parameter": "other",
+        "condition": "PPE - Grade 3, 3rd occurrence",
+        "affected_drugs": [
+          "Regorafenib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discontinue treatment with regorafenib permanently."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 50,
+      "notes": "Dose modifications applied in 40mg (one tablet) steps. Lowest recommended daily dose is 80mg. Maximum daily dose 160mg. If a third dose reduction is necessary treatment should be stopped. No dose adjustment required for renal impairment (mild, moderate or severe). No dose adjustment for mild hepatic impairment (Child-Pugh A); limited data for Child-Pugh B (no dose recommendation); not recommended for Child-Pugh C."
+    },
+    "monitoring_requirements": [
+      "ALT, AST and bilirubin at baseline then at least every two weeks during the first 2 months of treatment then every four weeks or as clinically indicated",
+      "U&Es including serum phosphate, calcium, sodium and potassium",
+      "Blood pressure at baseline and then every cycle",
+      "Thyroid function at baseline, then every 12 weeks or as clinically indicated"
+    ],
+    "special_warnings": [
+      "Dose modifications applied in 40mg (one tablet) steps. Lowest recommended daily dose is 80mg. Maximum daily dose is 160mg.",
+      "Regorafenib is recommended only for patients who have previously received sorafenib.",
+      "Regorafenib is not recommended in patients with severe hepatic impairment (Child-Pugh C).",
+      "National Patient Safety Alert on oral chemotherapy (NPSA/2008/RRR001) must be followed.",
+      "Regorafenib should only be prescribed under the supervision of a consultant oncologist.",
+      "Regorafenib interacts with many other agents. Always check for drug interactions.",
+      "Take after a light meal containing less than 30% fat. Avoid grapefruit juice.",
+      "HCC patients may have longstanding thrombocytopenia from hypersplenism; review platelet trend over time to fully assess regorafenib toxicity."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "ecog_performance_status": true,
+      "child_pugh_class": true,
+      "prior_sorafenib": true
+    },
+    "disease_site": "Hepatobiliary",
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Regorafenib",
+        "dose": 160,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "frequency": "once daily for 21 days followed by 7 days break",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 160,
+        "max_dose_unit": "mg",
+        "special_instructions": "Take at the same time each day. Tablets should be swallowed whole with water after a light meal that contains less than 30% fat. Avoid grapefruit juice. If a dose is missed it should be taken on the same day as soon as the patient remembers; patient should not take two doses on the same day. In case of vomiting after regorafenib administration, patient should not take additional tablets. Available as 40mg tablets. Dose modifications in 40mg (one tablet) steps. Lowest recommended daily dose is 80mg. Maximum daily dose is 160mg.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "once daily for 21 days followed by 7 days break | Take at the same time each day. Tablets should be swallowed whole with water after a light meal that contains less than 30% fat. Avoid grapefruit juice. If a dose is missed it should be taken on the same day as soon as the patient remembers; patient should not take two doses on the same day. In case of vomiting after regorafenib administration, patient should not take additional tablets. Available as 40mg tablets. Dose modifications in 40mg (one tablet) steps. Lowest recommended daily dose is 80mg. Maximum daily dose is 160mg."
+      }
+    ]
+  },
+  {
+    "protocol_id": "liver_sorafenib",
+    "protocol_code": "HCC-SORA",
+    "protocol_name": "Hepatocellular carcinoma-Sorafenib",
+    "category": "hepatobiliary",
+    "indication": "Hepatocellular carcinoma where radical resection, liver transplant or locoregional treatment such as transcatheter arterial chemoembolisation (TACE), radio frequency ablation (RFA) or selective internal radiation therapy (SIRT) are not appropriate or where the disease has progressed following locoregional treatment. WHO performance status 0, 1, 2.",
+    "version": "1.1",
+    "cycle_length_days": 28,
+    "total_cycles": null,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Sorafenib",
+        "dose": 400,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "twice daily",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 400,
+        "max_dose_unit": "mg",
+        "special_instructions": "Take on an empty stomach at least one hour before or two hours after a meal. Swallow whole with a full glass of water. Available as 200mg tablets. Sorafenib has the potential to interact with many drugs; a thorough assessment of all concomitant medication is essential.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [
+      {
+        "drug_name": "Sorafenib",
+        "dose": 400,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "twice daily",
+        "days": "days 1-28",
+        "notes": "Oral chemotherapy. Take on an empty stomach at least one hour before or two hours after a meal. Swallow whole with a full glass of water."
+      },
+      {
+        "drug_name": "Emollients",
+        "dose": null,
+        "dose_unit": null,
+        "route": "Oral",
+        "frequency": "as required",
+        "days": "as required",
+        "notes": "According to local trust policy for skin care"
+      },
+      {
+        "drug_name": "Loperamide",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "after the first loose stool then 2-4mg four times a day when required for diarrhoea relief",
+        "days": "as required",
+        "notes": "Maximum 16mg per 24 hours"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "neutrophils",
+        "condition": ">= 1.0 x10⁹/L and platelets >= 50 x10⁹/L",
+        "affected_drugs": [
+          "Sorafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "400mg twice a day - full dose."
+      },
+      {
+        "parameter": "neutrophils",
+        "condition": "0.5-0.9 x10⁹/L and platelets >= 50 x10⁹/L",
+        "affected_drugs": [
+          "Sorafenib"
+        ],
+        "action": "reduce_50",
+        "factor": 0.5,
+        "notes": "Reduce to 400mg once a day."
+      },
+      {
+        "parameter": "neutrophils",
+        "condition": "< 0.5 x10⁹/L or platelets < 50 x10⁹/L",
+        "affected_drugs": [
+          "Sorafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay until recovery to neutrophils >= 0.5x10⁹/L and platelets >= 50x10⁹/L, then reduce dose to 400mg once a day in the first instance."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "< 26 µmol/L",
+        "affected_drugs": [
+          "Sorafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "400mg twice a day - full dose. Note: SPC does not recommend dose modifications for Child Pugh A or B; these are suggested starting doses from a pharmacokinetic study."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "26-51 µmol/L",
+        "affected_drugs": [
+          "Sorafenib"
+        ],
+        "action": "reduce_50",
+        "factor": 0.5,
+        "notes": "Reduce to 200mg twice a day. Suggested starting dose from pharmacokinetic study. If patient tolerates initial dose it may be escalated at consultant's discretion."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "> 51 µmol/L",
+        "affected_drugs": [
+          "Sorafenib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Avoid sorafenib."
+      },
+      {
+        "parameter": "other",
+        "condition": "Albumin < 25 g/L",
+        "affected_drugs": [
+          "Sorafenib"
+        ],
+        "action": "reduce_50",
+        "factor": 0.5,
+        "notes": "Reduce to 200mg once a day. Suggested starting dose from pharmacokinetic study."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": ">= 40 ml/min",
+        "affected_drugs": [
+          "Sorafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "400mg twice a day - full dose. Note: SPC does not recommend any dose reductions for renal impairment; these are suggested starting doses from a pharmacokinetic study."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "20-39 ml/min",
+        "affected_drugs": [
+          "Sorafenib"
+        ],
+        "action": "reduce_50",
+        "factor": 0.5,
+        "notes": "Reduce to 200mg twice a day. Suggested starting dose from pharmacokinetic study. If patient tolerates initial dose it may be escalated at consultant's discretion."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "< 20 ml/min",
+        "affected_drugs": [
+          "Sorafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Insufficient data."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "Haemodialysis",
+        "affected_drugs": [
+          "Sorafenib"
+        ],
+        "action": "reduce_50",
+        "factor": 0.5,
+        "notes": "Reduce to 200mg daily."
+      },
+      {
+        "parameter": "other",
+        "condition": "NCI-CTC grade 3 or above non-haematological toxicity",
+        "affected_drugs": [
+          "Sorafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay treatment until adverse effect resolves to NCI-CTC grade 1 or below, then reduce dose to 400mg once a day. Patients tolerating re-introduction of sorafenib may be considered for dose escalation back to 400mg twice a day."
+      },
+      {
+        "parameter": "other",
+        "condition": "Further toxicity at 400mg once a day",
+        "affected_drugs": [
+          "Sorafenib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay treatment until resolution of the toxicity to NCI-CTC grade 1 or below. On reintroduction of the treatment, the dose should be further reduced to 400mg once a day on alternate days or 200mg once a day."
+      },
+      {
+        "parameter": "other",
+        "condition": "NCI-CTC grade 2 or above palmar-plantar erythrodysaesthesia (PPE) or rash",
+        "affected_drugs": [
+          "Sorafenib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "May require a short break in treatment until resolves to NCI-CTC grade 1 or below. Re-introduce sorafenib at 400mg once a day and re-escalate as tolerated. Symptomatic measures recommended (keep area moisturised and cool, avoid tight fitting socks/tights, avoid activities placing pressure on hands and feet)."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": null,
+      "platelets_min": null,
+      "notes": "FBC, U&Es (including phosphate) and LFTs every 4 weeks for 3 cycles then at least every 8 weeks thereafter. Blood pressure weekly for first 4 weeks then every 4-8 weeks. No specific minimum neutrophil/platelet threshold for cycle start stated; see haematological dose modification table. Dose may be escalated at consultant's discretion if patient tolerates initial dose."
+    },
+    "monitoring_requirements": [
+      "FBC, U&Es (including phosphate) and LFTs every 4 weeks for 3 cycles then at least every 8 weeks thereafter",
+      "Blood pressure weekly for first 4 weeks then every 4-8 weeks"
+    ],
+    "special_warnings": [
+      "Sorafenib has the potential to interact with many drugs; a thorough assessment of all concomitant medication is essential.",
+      "Take on an empty stomach at least one hour before or two hours after a meal.",
+      "Sorafenib-associated hypertension is usually mild to moderate. Treat in accordance with current NICE guidelines. Raised blood pressure is not a reason to stop sorafenib unless it fails to respond to treatment or results in a hypertensive crisis.",
+      "NCI-CTC grade 2 or above PPE or rash may require a short treatment break; re-introduce at 400mg once daily and re-escalate as tolerated.",
+      "National Patient Safety Alert on oral chemotherapy (NPSA/2008/RRR001) must be followed.",
+      "This protocol may require funding.",
+      "Mouthwashes according to local or national policy for treatment of mucositis."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "bilirubin_umol_l": true,
+      "albumin_g_l": true,
+      "creatinine_clearance_ml_min": true,
+      "who_performance_status": true
+    },
+    "disease_site": "Hepatobiliary",
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Sorafenib",
+        "dose": 400,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "twice daily",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 400,
+        "max_dose_unit": "mg",
+        "special_instructions": "Take on an empty stomach at least one hour before or two hours after a meal. Swallow whole with a full glass of water. Available as 200mg tablets. Sorafenib has the potential to interact with many drugs; a thorough assessment of all concomitant medication is essential.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "twice daily | Take on an empty stomach at least one hour before or two hours after a meal. Swallow whole with a full glass of water. Available as 200mg tablets. Sorafenib has the potential to interact with many drugs; a thorough assessment of all concomitant medication is essential."
+      }
+    ]
+  }
+]

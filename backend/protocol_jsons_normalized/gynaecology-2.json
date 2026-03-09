@@ -1,0 +1,2273 @@
+[
+  {
+    "protocol_id": "carboplatin-auc4-gemcitabine-day18-retreat",
+    "protocol_code": "CARB-GEM-18-RETREAT",
+    "protocol_name": "Carboplatin (AUC4)-Gemcitabine (day 1, 8) Retreat",
+    "category": "gynaecology",
+    "indication": "Recurrent platinum sensitive ovarian cancer where re-treatment with paclitaxel is inappropriate; WHO performance status 0, 1, 2",
+    "version": "1.2",
+    "cycle_length_days": 21,
+    "total_cycles": 6,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 4,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": 60,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 500,
+        "max_dose": 630,
+        "max_dose_unit": "mg",
+        "special_instructions": "Dose based on Calvert formula using calculated GFR. Max dose 600mg (set at 630mg in ARIA for national dose band compliance). AUC 3 may be considered with EDTA clearance. Dose may need adjustment if GFR changes by more than 10% from previous cycle. For elderly/frail patients consider AUC 3.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Gemcitabine",
+        "dose": 1000,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8
+        ],
+        "frequency": "days 1 and 8 of each cycle",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "For elderly/frail patients consider 750mg/m2. Dose banded per national dose bands (100mg/ml). Day 8 dose subject to haematological criteria (see dose modifications).",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "timing": "30 minutes prior to carboplatin",
+        "indication": "Prevention of allergic reactions to carboplatin"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "timing": "30 minutes prior to carboplatin",
+        "indication": "Prevention of allergic reactions to carboplatin"
+      },
+      {
+        "drug_name": "H2 antagonist (e.g. ranitidine 50mg IV or famotidine 20mg oral or nizatidine 150mg oral or ranitidine 150mg oral)",
+        "dose": null,
+        "dose_unit": null,
+        "route": "IV infusion",
+        "timing": "30 minutes prior to carboplatin",
+        "indication": "Prevention of allergic reactions to carboplatin; omit from cycle 3 onwards per local Trust policy"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "indication": "Antiemetic"
+      },
+      {
+        "drug_name": "Metoclopramide (day 8)",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "timing": "Prior to day 8 gemcitabine if required",
+        "indication": "Antiemetic on day 8"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice daily (morning and lunch)",
+        "duration": "3 days starting day 2 of cycle"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Three times daily for 3 days then as required for nausea",
+        "duration": "Supply 28 x 10mg tablets or original pack"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "1 x10^9/L or greater",
+        "affected_drugs": [
+          "carboplatin",
+          "gemcitabine"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Give 100% dose"
+      },
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "Less than 1 x10^9/L",
+        "affected_drugs": [
+          "carboplatin",
+          "gemcitabine"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay one week. If counts recover to >=1x10^9/L continue full dose. If still <1x10^9/L delay a further week; if recovered continue at 80% dose of both agents. Otherwise consider stopping treatment."
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "100 x10^9/L or greater",
+        "affected_drugs": [
+          "carboplatin",
+          "gemcitabine"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Give 100% dose"
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "50-99 x10^9/L",
+        "affected_drugs": [
+          "carboplatin",
+          "gemcitabine"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay one week. If >=100x10^9/L continue full dose. If still <100x10^9/L delay further week; if recovered continue at 80% dose. Otherwise consider stopping."
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "Less than 50 x10^9/L",
+        "affected_drugs": [
+          "carboplatin",
+          "gemcitabine"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Delay until recovery to >=100x10^9/L then continue at 50% doses"
+      },
+      {
+        "parameter": "Neutrophils (Day 8)",
+        "condition": "1 x10^9/L or greater",
+        "affected_drugs": [
+          "gemcitabine"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Give 100% gemcitabine"
+      },
+      {
+        "parameter": "Neutrophils (Day 8)",
+        "condition": "0.5-1 x10^9/L",
+        "affected_drugs": [
+          "gemcitabine"
+        ],
+        "action": "reduce",
+        "factor": 0.8,
+        "notes": "Give 80% gemcitabine dose"
+      },
+      {
+        "parameter": "Neutrophils (Day 8)",
+        "condition": "Less than 0.5 x10^9/L",
+        "affected_drugs": [
+          "gemcitabine"
+        ],
+        "action": "omit",
+        "factor": 0.0,
+        "notes": "Omit day 8 gemcitabine"
+      },
+      {
+        "parameter": "Platelets (Day 8)",
+        "condition": "100 x10^9/L or greater",
+        "affected_drugs": [
+          "gemcitabine"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Give 100% gemcitabine"
+      },
+      {
+        "parameter": "Platelets (Day 8)",
+        "condition": "50-100 x10^9/L",
+        "affected_drugs": [
+          "gemcitabine"
+        ],
+        "action": "reduce",
+        "factor": 0.8,
+        "notes": "Give 80% gemcitabine dose"
+      },
+      {
+        "parameter": "Platelets (Day 8)",
+        "condition": "Less than 50 x10^9/L",
+        "affected_drugs": [
+          "gemcitabine"
+        ],
+        "action": "omit",
+        "factor": 0.0,
+        "notes": "Omit day 8 gemcitabine"
+      },
+      {
+        "parameter": "Hepatic impairment - Gemcitabine",
+        "condition": "Bilirubin >=30 micromol/L",
+        "affected_drugs": [
+          "gemcitabine"
+        ],
+        "action": "reduce",
+        "factor": null,
+        "notes": "Initiate gemcitabine treatment at 800mg/m2"
+      },
+      {
+        "parameter": "Renal impairment - Carboplatin",
+        "condition": "Creatinine clearance <20 ml/min",
+        "affected_drugs": [
+          "carboplatin"
+        ],
+        "action": "omit",
+        "factor": 0.0,
+        "notes": "Do not use carboplatin if CrCl <20 ml/min"
+      },
+      {
+        "parameter": "Renal impairment - Gemcitabine",
+        "condition": "Creatinine clearance <30 ml/min",
+        "affected_drugs": [
+          "gemcitabine"
+        ],
+        "action": "reduce",
+        "factor": null,
+        "notes": "Consider dose reduction"
+      },
+      {
+        "parameter": "Non-haematological toxicity NCI-CTC grade >=3",
+        "condition": "Grade 3 or above non-haematological toxicity",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 0.8,
+        "notes": "Delay until resolved to grade 1 or below then reduce causative agent to 80% of original dose or discontinue"
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "Both criteria must be met prior to each cycle. Consider blood transfusion if Hb <8g/dL or symptomatic anaemia."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to each cycle",
+      "EDTA or calculated creatinine clearance prior to each cycle",
+      "CA125 prior to each cycle"
+    ],
+    "special_warnings": [
+      "Re-treatment protocol: this is a retreat regimen for patients with recurrent platinum-sensitive ovarian cancer",
+      "Carboplatin max dose 600mg (set as 630mg in ARIA to comply with national dose bands); dose capped at CrCl 125ml/min",
+      "Carboplatin dose must be recalculated if GFR changes by >10% between cycles",
+      "AUC 3 may be considered instead of AUC 4 if using EDTA clearance; seek consultant advice",
+      "If a third dose reduction is required, treatment should be stopped",
+      "All dose reductions should not be re-escalated without consultant approval"
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 4,
+      "max_dose_mg": 630
+    },
+    "required_patient_fields": {
+      "weight_kg": true,
+      "height_cm": true,
+      "creatinine_clearance_ml_min": true,
+      "bsa_m2": true
+    },
+    "disease_site": "Gynaecology",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 4,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": 60,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 500,
+        "max_dose": 630,
+        "max_dose_unit": "mg",
+        "special_instructions": "Dose based on Calvert formula using calculated GFR. Max dose 600mg (set at 630mg in ARIA for national dose band compliance). AUC 3 may be considered with EDTA clearance. Dose may need adjustment if GFR changes by more than 10% from previous cycle. For elderly/frail patients consider AUC 3.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "once per cycle | Dose based on Calvert formula using calculated GFR. Max dose 600mg (set at 630mg in ARIA for national dose band compliance). AUC 3 may be considered with EDTA clearance. Dose may need adjustment if GFR changes by more than 10% from previous cycle. For elderly/frail patients consider AUC 3."
+      },
+      {
+        "drug_name": "Gemcitabine",
+        "dose": 1000,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8
+        ],
+        "frequency": "days 1 and 8 of each cycle",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "For elderly/frail patients consider 750mg/m2. Dose banded per national dose bands (100mg/ml). Day 8 dose subject to haematological criteria (see dose modifications).",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.5,
+        "notes": "days 1 and 8 of each cycle | For elderly/frail patients consider 750mg/m2. Dose banded per national dose bands (100mg/ml). Day 8 dose subject to haematological criteria (see dose modifications)."
+      }
+    ]
+  },
+  {
+    "protocol_id": "carboplatin-auc4-gemcitabine-day1-retreat",
+    "protocol_code": "CARB-GEM-D1-RETREAT",
+    "protocol_name": "Carboplatin (AUC4)-Gemcitabine (day 1) Retreat",
+    "category": "gynaecology",
+    "indication": "Recurrent platinum sensitive ovarian cancer where re-treatment with paclitaxel is inappropriate; WHO performance status 0, 1, 2",
+    "version": "1.2",
+    "cycle_length_days": 21,
+    "total_cycles": 6,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 4,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": 60,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 500,
+        "max_dose": 630,
+        "max_dose_unit": "mg",
+        "special_instructions": "Dose based on Calvert formula using calculated GFR. Max dose 600mg (set at 630mg in ARIA for national dose band compliance). AUC 3 may be considered with EDTA clearance. Dose may need adjustment if GFR changes by more than 10% from previous cycle. For elderly/frail patients consider AUC 3.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Gemcitabine",
+        "dose": 1000,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "day 1 of each cycle only",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Day 1 only (no day 8 dose). For elderly/frail patients consider 750mg/m2. Dose banded per national dose bands (100mg/ml).",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "timing": "30 minutes prior to carboplatin",
+        "indication": "Prevention of allergic reactions to carboplatin"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "timing": "30 minutes prior to carboplatin",
+        "indication": "Prevention of allergic reactions to carboplatin"
+      },
+      {
+        "drug_name": "H2 antagonist (e.g. ranitidine 50mg IV or famotidine 20mg oral or nizatidine 150mg oral or ranitidine 150mg oral)",
+        "dose": null,
+        "dose_unit": null,
+        "route": "IV infusion",
+        "timing": "30 minutes prior to carboplatin",
+        "indication": "Prevention of allergic reactions to carboplatin; omit from cycle 3 onwards per local Trust policy"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "indication": "Antiemetic"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice daily (morning and lunch)",
+        "duration": "3 days starting day 2 of cycle"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Three times daily for 3 days then as required for nausea",
+        "duration": "Supply 28 x 10mg tablets or original pack"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "1 x10^9/L or greater",
+        "affected_drugs": [
+          "carboplatin",
+          "gemcitabine"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Give 100% dose"
+      },
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "Less than 1 x10^9/L",
+        "affected_drugs": [
+          "carboplatin",
+          "gemcitabine"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay one week. If counts recover to >=1x10^9/L continue full dose. If still <1x10^9/L delay further week; if recovered continue at 80% dose of both agents. Otherwise consider stopping."
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "100 x10^9/L or greater",
+        "affected_drugs": [
+          "carboplatin",
+          "gemcitabine"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Give 100% dose"
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "50-99 x10^9/L",
+        "affected_drugs": [
+          "carboplatin",
+          "gemcitabine"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay one week. If >=100x10^9/L continue full dose. If still <100x10^9/L delay further week; if recovered continue at 80% dose. Otherwise consider stopping."
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "Less than 50 x10^9/L",
+        "affected_drugs": [
+          "carboplatin",
+          "gemcitabine"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Delay until recovery to >=100x10^9/L then continue at 50% doses"
+      },
+      {
+        "parameter": "Hepatic impairment - Gemcitabine",
+        "condition": "Bilirubin >=30 micromol/L",
+        "affected_drugs": [
+          "gemcitabine"
+        ],
+        "action": "reduce",
+        "factor": null,
+        "notes": "Initiate gemcitabine treatment at 800mg/m2"
+      },
+      {
+        "parameter": "Renal impairment - Carboplatin",
+        "condition": "Creatinine clearance <20 ml/min",
+        "affected_drugs": [
+          "carboplatin"
+        ],
+        "action": "omit",
+        "factor": 0.0,
+        "notes": "Do not use carboplatin if CrCl <20 ml/min"
+      },
+      {
+        "parameter": "Renal impairment - Gemcitabine",
+        "condition": "Creatinine clearance <30 ml/min",
+        "affected_drugs": [
+          "gemcitabine"
+        ],
+        "action": "reduce",
+        "factor": null,
+        "notes": "Consider dose reduction"
+      },
+      {
+        "parameter": "Non-haematological toxicity NCI-CTC grade >=3",
+        "condition": "Grade 3 or above non-haematological toxicity",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 0.8,
+        "notes": "Delay until resolved to grade 1 or below then reduce causative agent to 80% of original dose or discontinue"
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "Both criteria must be met prior to each cycle. Consider blood transfusion if Hb <8g/dL or symptomatic anaemia."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to each cycle",
+      "EDTA or calculated creatinine clearance prior to each cycle",
+      "CA125 prior to each cycle"
+    ],
+    "special_warnings": [
+      "Re-treatment protocol: this is a retreat regimen - gemcitabine given on day 1 only (no day 8 dose)",
+      "Carboplatin max dose 600mg (set as 630mg in ARIA to comply with national dose bands); dose capped at CrCl 125ml/min",
+      "Carboplatin dose must be recalculated if GFR changes by >10% between cycles",
+      "AUC 3 may be considered instead of AUC 4 if using EDTA clearance; seek consultant advice",
+      "If a third dose reduction is required, treatment should be stopped",
+      "All dose reductions should not be re-escalated without consultant approval"
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 4,
+      "max_dose_mg": 630
+    },
+    "required_patient_fields": {
+      "weight_kg": true,
+      "height_cm": true,
+      "creatinine_clearance_ml_min": true,
+      "bsa_m2": true
+    },
+    "disease_site": "Gynaecology",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 4,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": 60,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 500,
+        "max_dose": 630,
+        "max_dose_unit": "mg",
+        "special_instructions": "Dose based on Calvert formula using calculated GFR. Max dose 600mg (set at 630mg in ARIA for national dose band compliance). AUC 3 may be considered with EDTA clearance. Dose may need adjustment if GFR changes by more than 10% from previous cycle. For elderly/frail patients consider AUC 3.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "once per cycle | Dose based on Calvert formula using calculated GFR. Max dose 600mg (set at 630mg in ARIA for national dose band compliance). AUC 3 may be considered with EDTA clearance. Dose may need adjustment if GFR changes by more than 10% from previous cycle. For elderly/frail patients consider AUC 3."
+      },
+      {
+        "drug_name": "Gemcitabine",
+        "dose": 1000,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "day 1 of each cycle only",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Day 1 only (no day 8 dose). For elderly/frail patients consider 750mg/m2. Dose banded per national dose bands (100mg/ml).",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.5,
+        "notes": "day 1 of each cycle only | Day 1 only (no day 8 dose). For elderly/frail patients consider 750mg/m2. Dose banded per national dose bands (100mg/ml)."
+      }
+    ]
+  },
+  {
+    "protocol_id": "carboplatin-auc5-etoposide-iv-po",
+    "protocol_code": "CARB-ETO-IVPO",
+    "protocol_name": "Carboplatin (AUC5)-Etoposide (Intravenous / Oral)",
+    "category": "gynaecology",
+    "indication": "Small cell or neuroendocrine ovarian cancer; WHO Performance status 0, 1, 2",
+    "version": "1.2",
+    "cycle_length_days": 21,
+    "total_cycles": 6,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 5,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": 60,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 500,
+        "max_dose": 790,
+        "max_dose_unit": "mg",
+        "special_instructions": "Dose based on Calvert formula using calculated GFR. Max dose 750mg (set at 790mg in ARIA for national dose band compliance). AUC 4 may be considered with EDTA clearance. Dose may need adjustment if GFR changes by >10% from previous cycle.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Etoposide (IV)",
+        "dose": 100,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "day 1 of each cycle",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Etoposide (intravenous) dose banded as per CSCCN agreed dose bands. Etoposide is an irritant.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Etoposide (Oral)",
+        "dose": 200,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          2,
+          3
+        ],
+        "frequency": "once daily on days 2 and 3",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Oral etoposide: take 1 hour before food or on an empty stomach. Dose rounded to nearest 50mg (up if halfway). NPSA/2008/RRR001 alert must be adhered to for oral etoposide. Oral SACT - start on day 2 of the cycle.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "indication": "Antiemetic"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "indication": "Antiemetic"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Etoposide (Oral)",
+        "dose": 200,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "frequency": "Once daily",
+        "duration": "Days 2 and 3 of cycle (2 days)"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice daily (morning and lunch)",
+        "duration": "3 days starting day 2 of cycle"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Three times daily as required",
+        "duration": "Supply 28 tablets or original pack"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice daily for 3 days starting on the evening of day 1",
+        "duration": "3 days"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "1 x10^9/L or greater",
+        "affected_drugs": [
+          "carboplatin",
+          "etoposide"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Give 100% dose"
+      },
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "Less than 1 x10^9/L",
+        "affected_drugs": [
+          "carboplatin",
+          "etoposide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay treatment for 7 days. If resolved to >=1x10^9/L after 7 days continue at full dose."
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "100 x10^9/L or greater",
+        "affected_drugs": [
+          "carboplatin",
+          "etoposide"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Give 100% dose"
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "Less than 100 x10^9/L",
+        "affected_drugs": [
+          "carboplatin",
+          "etoposide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay treatment for 7 days. If resolved to >=100x10^9/L after 7 days continue at full dose."
+      },
+      {
+        "parameter": "Hepatic impairment - Etoposide",
+        "condition": "Bilirubin 26-51 micromol/L or AST/ALT 60-180 units",
+        "affected_drugs": [
+          "etoposide"
+        ],
+        "action": "reduce",
+        "factor": 0.5,
+        "notes": "Reduce etoposide to 50% of original dose"
+      },
+      {
+        "parameter": "Hepatic impairment - Etoposide",
+        "condition": "Bilirubin >51 micromol/L or AST/ALT >180 units",
+        "affected_drugs": [
+          "etoposide"
+        ],
+        "action": "reduce",
+        "factor": null,
+        "notes": "Clinical decision required"
+      },
+      {
+        "parameter": "Renal impairment - Carboplatin",
+        "condition": "Creatinine clearance <20 ml/min",
+        "affected_drugs": [
+          "carboplatin"
+        ],
+        "action": "omit",
+        "factor": 0.0,
+        "notes": "Do not use carboplatin if CrCl <20 ml/min. Changes in GFR >10% between cycles may require dose adjustment."
+      },
+      {
+        "parameter": "Renal impairment - Etoposide",
+        "condition": "Creatinine clearance >50 ml/min",
+        "affected_drugs": [
+          "etoposide"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Give 100% etoposide dose"
+      },
+      {
+        "parameter": "Renal impairment - Etoposide",
+        "condition": "Creatinine clearance 15-50 ml/min",
+        "affected_drugs": [
+          "etoposide"
+        ],
+        "action": "reduce",
+        "factor": 0.75,
+        "notes": "Reduce etoposide to 75% of original dose"
+      },
+      {
+        "parameter": "Renal impairment - Etoposide",
+        "condition": "Creatinine clearance <15 ml/min",
+        "affected_drugs": [
+          "etoposide"
+        ],
+        "action": "reduce",
+        "factor": 0.5,
+        "notes": "Reduce etoposide to 50% of original dose"
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "Both criteria must be met prior to day 1 cycle 1. Consider blood transfusion if Hb <8g/dL."
+    },
+    "monitoring_requirements": [
+      "EDTA or calculated creatinine clearance before the 1st cycle",
+      "FBC, LFTs and U&Es prior to each cycle"
+    ],
+    "special_warnings": [
+      "Oral etoposide: NPSA/2008/RRR001 alert must be adhered to",
+      "Etoposide oral formulation: take 1 hour before food or on an empty stomach",
+      "Both IV and oral etoposide components are part of this regimen (day 1 IV, days 2-3 oral)",
+      "Carboplatin max dose 750mg (set as 790mg in ARIA for national dose band compliance); dose capped at CrCl 125ml/min",
+      "If a third dose reduction is required, treatment should be stopped"
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 5,
+      "max_dose_mg": 790
+    },
+    "required_patient_fields": {
+      "weight_kg": true,
+      "height_cm": true,
+      "creatinine_clearance_ml_min": true,
+      "bsa_m2": true
+    },
+    "disease_site": "Gynaecology",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 5,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": 60,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 500,
+        "max_dose": 790,
+        "max_dose_unit": "mg",
+        "special_instructions": "Dose based on Calvert formula using calculated GFR. Max dose 750mg (set at 790mg in ARIA for national dose band compliance). AUC 4 may be considered with EDTA clearance. Dose may need adjustment if GFR changes by >10% from previous cycle.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "once per cycle | Dose based on Calvert formula using calculated GFR. Max dose 750mg (set at 790mg in ARIA for national dose band compliance). AUC 4 may be considered with EDTA clearance. Dose may need adjustment if GFR changes by >10% from previous cycle."
+      },
+      {
+        "drug_name": "Etoposide (IV)",
+        "dose": 100,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "day 1 of each cycle",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Etoposide (intravenous) dose banded as per CSCCN agreed dose bands. Etoposide is an irritant.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "day 1 of each cycle | Etoposide (intravenous) dose banded as per CSCCN agreed dose bands. Etoposide is an irritant."
+      },
+      {
+        "drug_name": "Etoposide (Oral)",
+        "dose": 200,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          2,
+          3
+        ],
+        "frequency": "once daily on days 2 and 3",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Oral etoposide: take 1 hour before food or on an empty stomach. Dose rounded to nearest 50mg (up if halfway). NPSA/2008/RRR001 alert must be adhered to for oral etoposide. Oral SACT - start on day 2 of the cycle.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "once daily on days 2 and 3 | Oral etoposide: take 1 hour before food or on an empty stomach. Dose rounded to nearest 50mg (up if halfway). NPSA/2008/RRR001 alert must be adhered to for oral etoposide. Oral SACT - start on day 2 of the cycle."
+      }
+    ]
+  },
+  {
+    "protocol_id": "cervix-carboplatin-auc5-paclitaxel-21day",
+    "protocol_code": "CERV-CARB-PAC-21",
+    "protocol_name": "Carboplatin (AUC5)-Paclitaxel (21 day) - Cervical Cancer",
+    "category": "gynaecology",
+    "indication": "Neoadjuvant treatment of cervical cancer prior to radical radiotherapy; Metastatic cervical cancer; WHO performance status 0, 1, 2",
+    "version": "1.4",
+    "cycle_length_days": 21,
+    "total_cycles": 6,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Paclitaxel",
+        "dose": 175,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": 180,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Must be administered via a non-PVC administration set with an in-line 0.22 micron filter. Paclitaxel is a vesicant. Hypersensitivity reactions more common with first or second infusion - interrupt for minor reactions; discontinue immediately for severe reactions (hypotension, bronchospasm, generalised erythema). Dose banded per national dose bands (6mg/ml).",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Carboplatin",
+        "dose": 5,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": 60,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 500,
+        "max_dose": 790,
+        "max_dose_unit": "mg",
+        "special_instructions": "Administer after paclitaxel. Dose based on Calvert formula using calculated GFR. Max dose 750mg (set at 790mg in ARIA). AUC 4 may be considered with EDTA clearance. Dose may need adjustment if GFR changes >10%.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "timing": "30 minutes before chemotherapy",
+        "indication": "Premedication to reduce risk of hypersensitivity reaction to paclitaxel"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "timing": "30 minutes before chemotherapy",
+        "indication": "Premedication to reduce risk of hypersensitivity reaction to paclitaxel"
+      },
+      {
+        "drug_name": "H2 antagonist (e.g. famotidine 20mg oral or nizatidine 150mg oral or ranitidine 150mg oral or ranitidine 50mg IV)",
+        "dose": null,
+        "dose_unit": null,
+        "route": "IV infusion",
+        "timing": "30 minutes before chemotherapy",
+        "indication": "Premedication to reduce risk of hypersensitivity; omit from cycle 3 onwards per local Trust policy"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "indication": "Antiemetic"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice daily for 3 days starting day 2 of cycle",
+        "duration": "3 days"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Three times daily for 3 days then as required for nausea",
+        "duration": "Supply 28 x 10mg tablets or nearest equivalent pack"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "1 x10^9/L or greater",
+        "affected_drugs": [
+          "carboplatin",
+          "paclitaxel"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Give 100% dose"
+      },
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "Less than 1 x10^9/L",
+        "affected_drugs": [
+          "carboplatin",
+          "paclitaxel"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay 7 days. If counts recover to >=1.5x10^9/L continue full dose. If not recovered within 7 days or repeated delays required, delay until recovery then reduce dose by 20%."
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "100 x10^9/L or greater",
+        "affected_drugs": [
+          "carboplatin",
+          "paclitaxel"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Give 100% dose"
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "50-99 x10^9/L",
+        "affected_drugs": [
+          "carboplatin",
+          "paclitaxel"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay 7 days. If counts recover to >=100x10^9/L continue full dose. If not recovered within 7 days or repeated delays required, delay until recovery then reduce dose by 20%."
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "Less than 50 x10^9/L",
+        "affected_drugs": [
+          "carboplatin",
+          "paclitaxel"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Delay until recovery then reduce dose by 50%"
+      },
+      {
+        "parameter": "Hepatic impairment - Paclitaxel",
+        "condition": "Bilirubin <21 micromol/L and AST/ALT <10xULN",
+        "affected_drugs": [
+          "paclitaxel"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "175mg/m2 (full dose)"
+      },
+      {
+        "parameter": "Hepatic impairment - Paclitaxel",
+        "condition": "Bilirubin 21-26 micromol/L",
+        "affected_drugs": [
+          "paclitaxel"
+        ],
+        "action": "reduce",
+        "factor": null,
+        "notes": "Reduce paclitaxel to 135mg/m2"
+      },
+      {
+        "parameter": "Hepatic impairment - Paclitaxel",
+        "condition": "Bilirubin 27-51 micromol/L",
+        "affected_drugs": [
+          "paclitaxel"
+        ],
+        "action": "reduce",
+        "factor": null,
+        "notes": "Reduce paclitaxel to 75mg/m2"
+      },
+      {
+        "parameter": "Hepatic impairment - Paclitaxel",
+        "condition": "Bilirubin 52-85 micromol/L",
+        "affected_drugs": [
+          "paclitaxel"
+        ],
+        "action": "reduce",
+        "factor": null,
+        "notes": "Reduce paclitaxel to 50mg/m2"
+      },
+      {
+        "parameter": "Hepatic impairment - Paclitaxel",
+        "condition": "Bilirubin >85 micromol/L or AST/ALT >10xULN",
+        "affected_drugs": [
+          "paclitaxel"
+        ],
+        "action": "omit",
+        "factor": 0.0,
+        "notes": "Paclitaxel contra-indicated"
+      },
+      {
+        "parameter": "Renal impairment - Carboplatin",
+        "condition": "Creatinine clearance <20 ml/min",
+        "affected_drugs": [
+          "carboplatin"
+        ],
+        "action": "omit",
+        "factor": 0.0,
+        "notes": "Omit carboplatin. Significant GFR changes >10% may require dose adjustment."
+      },
+      {
+        "parameter": "Non-haematological toxicity NCI-CTC grade >=3",
+        "condition": "Grade 3 or above non-haematological toxicity",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Delay until resolved to grade 1 or below then reduce causative agent to 75% of original dose or discontinue"
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "Both criteria must be met prior to each cycle. Consider blood transfusion if Hb <8g/dL."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to each cycle",
+      "EDTA or calculated creatinine clearance prior to each cycle",
+      "CA125 prior to each cycle"
+    ],
+    "special_warnings": [
+      "Paclitaxel must be administered via a non-PVC administration set containing an in-line 0.22 micron filter",
+      "Hypersensitivity reactions to paclitaxel typically occur with first or second infusion - have resuscitation equipment available",
+      "Carboplatin max dose 750mg (set as 790mg in ARIA for national dose bands); dose capped at CrCl 125ml/min",
+      "Regimen for cervical cancer (neoadjuvant or metastatic) - differs from ovarian indication protocol",
+      "If a third dose reduction is required treatment should be stopped"
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 5,
+      "max_dose_mg": 790
+    },
+    "required_patient_fields": {
+      "weight_kg": true,
+      "height_cm": true,
+      "creatinine_clearance_ml_min": true,
+      "bsa_m2": true
+    },
+    "disease_site": "Gynaecology",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Paclitaxel",
+        "dose": 175,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": 180,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Must be administered via a non-PVC administration set with an in-line 0.22 micron filter. Paclitaxel is a vesicant. Hypersensitivity reactions more common with first or second infusion - interrupt for minor reactions; discontinue immediately for severe reactions (hypotension, bronchospasm, generalised erythema). Dose banded per national dose bands (6mg/ml).",
+        "is_core_drug": true,
+        "infusion_duration_hours": 3.0,
+        "notes": "once per cycle | Must be administered via a non-PVC administration set with an in-line 0.22 micron filter. Paclitaxel is a vesicant. Hypersensitivity reactions more common with first or second infusion - interrupt for minor reactions; discontinue immediately for severe reactions (hypotension, bronchospasm, generalised erythema). Dose banded per national dose bands (6mg/ml)."
+      },
+      {
+        "drug_name": "Carboplatin",
+        "dose": 5,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": 60,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 500,
+        "max_dose": 790,
+        "max_dose_unit": "mg",
+        "special_instructions": "Administer after paclitaxel. Dose based on Calvert formula using calculated GFR. Max dose 750mg (set at 790mg in ARIA). AUC 4 may be considered with EDTA clearance. Dose may need adjustment if GFR changes >10%.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "once per cycle | Administer after paclitaxel. Dose based on Calvert formula using calculated GFR. Max dose 750mg (set at 790mg in ARIA). AUC 4 may be considered with EDTA clearance. Dose may need adjustment if GFR changes >10%."
+      }
+    ]
+  },
+  {
+    "protocol_id": "uterine-carboplatin-auc5-paclitaxel-21day",
+    "protocol_code": "UTER-CARB-PAC-21",
+    "protocol_name": "Carboplatin (AUC5)-Paclitaxel (21 day) - Uterine/Endometrial Cancer",
+    "category": "gynaecology",
+    "indication": "Adjuvant treatment of high risk patients; Metastatic endometrial cancer; WHO performance status 0, 1, 2",
+    "version": "1.3",
+    "cycle_length_days": 21,
+    "total_cycles": 6,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Paclitaxel",
+        "dose": 175,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": 180,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Must be administered via a non-PVC administration set with an in-line 0.22 micron filter. Paclitaxel is a vesicant. Hypersensitivity reactions more common with first or second infusion. Dose banded per national dose bands (6mg/ml).",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Carboplatin",
+        "dose": 5,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": 60,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 500,
+        "max_dose": 790,
+        "max_dose_unit": "mg",
+        "special_instructions": "Administer after paclitaxel. Dose based on Calvert formula. Max dose 750mg (set at 790mg in ARIA). Carboplatin dose rounded to nearest 50mg (up if halfway). Dose may need adjustment if GFR changes >10%.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "timing": "30 minutes before chemotherapy",
+        "indication": "Premedication to reduce risk of hypersensitivity reaction to paclitaxel"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 20,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "timing": "30 minutes before chemotherapy",
+        "indication": "Premedication to reduce risk of hypersensitivity reaction to paclitaxel"
+      },
+      {
+        "drug_name": "H2 antagonist (e.g. famotidine 20mg oral or nizatidine 150mg oral or ranitidine 150mg oral or ranitidine 50mg IV)",
+        "dose": null,
+        "dose_unit": null,
+        "route": "IV infusion",
+        "timing": "30 minutes before chemotherapy",
+        "indication": "Premedication to reduce risk of hypersensitivity; omit from cycle 3 onwards per local Trust policy"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "indication": "Antiemetic"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice daily for 3 days starting day after chemotherapy",
+        "duration": "3 days"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Three times daily for 3 days then as required for nausea",
+        "duration": "Supply as appropriate"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "1 x10^9/L or greater",
+        "affected_drugs": [
+          "carboplatin",
+          "paclitaxel"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Give 100% dose"
+      },
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "Less than 1 x10^9/L",
+        "affected_drugs": [
+          "carboplatin",
+          "paclitaxel"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay 7 days. If counts recover to >=1x10^9/L continue full dose. If not recovered within 7 days or repeated delays required, delay until recovery then reduce dose by 20%."
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "100 x10^9/L or greater",
+        "affected_drugs": [
+          "carboplatin",
+          "paclitaxel"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Give 100% dose"
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "50-99 x10^9/L",
+        "affected_drugs": [
+          "carboplatin",
+          "paclitaxel"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay 7 days. If counts recover to >=100x10^9/L continue full dose. If not recovered within 7 days or repeated delays required, delay until recovery then reduce dose by 20%."
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "Less than 50 x10^9/L",
+        "affected_drugs": [
+          "carboplatin",
+          "paclitaxel"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Delay until recovery then reduce dose by 50%"
+      },
+      {
+        "parameter": "Hepatic impairment - Paclitaxel",
+        "condition": "Bilirubin <21 micromol/L and AST/ALT <10xULN",
+        "affected_drugs": [
+          "paclitaxel"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "175mg/m2 (full dose)"
+      },
+      {
+        "parameter": "Hepatic impairment - Paclitaxel",
+        "condition": "Bilirubin 21-26 micromol/L",
+        "affected_drugs": [
+          "paclitaxel"
+        ],
+        "action": "reduce",
+        "factor": null,
+        "notes": "Reduce paclitaxel to 135mg/m2"
+      },
+      {
+        "parameter": "Hepatic impairment - Paclitaxel",
+        "condition": "Bilirubin 27-51 micromol/L",
+        "affected_drugs": [
+          "paclitaxel"
+        ],
+        "action": "reduce",
+        "factor": null,
+        "notes": "Reduce paclitaxel to 75mg/m2"
+      },
+      {
+        "parameter": "Hepatic impairment - Paclitaxel",
+        "condition": "Bilirubin 52-85 micromol/L",
+        "affected_drugs": [
+          "paclitaxel"
+        ],
+        "action": "reduce",
+        "factor": null,
+        "notes": "Reduce paclitaxel to 50mg/m2"
+      },
+      {
+        "parameter": "Hepatic impairment - Paclitaxel",
+        "condition": "Bilirubin >85 micromol/L or AST/ALT >10xULN",
+        "affected_drugs": [
+          "paclitaxel"
+        ],
+        "action": "omit",
+        "factor": 0.0,
+        "notes": "Paclitaxel contra-indicated"
+      },
+      {
+        "parameter": "Renal impairment - Carboplatin",
+        "condition": "Creatinine clearance <20 ml/min",
+        "affected_drugs": [
+          "carboplatin"
+        ],
+        "action": "omit",
+        "factor": 0.0,
+        "notes": "Omit carboplatin. Significant GFR changes >10% may require dose adjustment."
+      },
+      {
+        "parameter": "Non-haematological toxicity NCI-CTC grade >=3",
+        "condition": "Grade 3 or above non-haematological toxicity",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Delay until resolved to grade 1 or below then reduce causative agent to 75% of original dose or discontinue"
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "Both criteria must be met prior to each cycle. Consider blood transfusion if Hb <8g/dL."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to each cycle",
+      "EDTA or calculated creatinine clearance prior to each cycle",
+      "CA125 prior to each cycle"
+    ],
+    "special_warnings": [
+      "Paclitaxel must be administered via a non-PVC administration set containing an in-line 0.22 micron filter",
+      "Hypersensitivity reactions to paclitaxel typically occur with first or second infusion - have resuscitation equipment available",
+      "Carboplatin max dose 750mg (set as 790mg in ARIA for national dose bands); dose capped at CrCl 125ml/min",
+      "Carboplatin dose rounded to nearest 50mg (up if halfway) in this protocol - distinct from other AUC5-paclitaxel protocols",
+      "Regimen for uterine/endometrial cancer - differs from cervical cancer indication protocol by indication, version and dose rounding approach",
+      "If a third dose reduction is required treatment should be stopped"
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 5,
+      "max_dose_mg": 790
+    },
+    "required_patient_fields": {
+      "weight_kg": true,
+      "height_cm": true,
+      "creatinine_clearance_ml_min": true,
+      "bsa_m2": true
+    },
+    "disease_site": "Gynaecology",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Paclitaxel",
+        "dose": 175,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": 180,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Must be administered via a non-PVC administration set with an in-line 0.22 micron filter. Paclitaxel is a vesicant. Hypersensitivity reactions more common with first or second infusion. Dose banded per national dose bands (6mg/ml).",
+        "is_core_drug": true,
+        "infusion_duration_hours": 3.0,
+        "notes": "once per cycle | Must be administered via a non-PVC administration set with an in-line 0.22 micron filter. Paclitaxel is a vesicant. Hypersensitivity reactions more common with first or second infusion. Dose banded per national dose bands (6mg/ml)."
+      },
+      {
+        "drug_name": "Carboplatin",
+        "dose": 5,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": 60,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 500,
+        "max_dose": 790,
+        "max_dose_unit": "mg",
+        "special_instructions": "Administer after paclitaxel. Dose based on Calvert formula. Max dose 750mg (set at 790mg in ARIA). Carboplatin dose rounded to nearest 50mg (up if halfway). Dose may need adjustment if GFR changes >10%.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "once per cycle | Administer after paclitaxel. Dose based on Calvert formula. Max dose 750mg (set at 790mg in ARIA). Carboplatin dose rounded to nearest 50mg (up if halfway). Dose may need adjustment if GFR changes >10%."
+      }
+    ]
+  },
+  {
+    "protocol_id": "carboplatin-auc5-pld-caelyx",
+    "protocol_code": "CARB-PLD-CAELYX",
+    "protocol_name": "Carboplatin (AUC5) - Doxorubicin Pegylated Liposomal (Caelyx)",
+    "category": "gynaecology",
+    "indication": "Second line or subsequent treatment of platinum sensitive or partially platinum-sensitive relapsed ovarian cancer in patients previously treated with a taxane/platinum regimen; WHO performance status 0, 1, 2; Palliative intent",
+    "version": "1.3",
+    "cycle_length_days": 28,
+    "total_cycles": 6,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Doxorubicin pegylated liposomal (Caelyx)",
+        "dose": 30,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": 120,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Pegylated liposomal doxorubicin formulation (Caelyx brand - brands may not be interchangeable). Dilute doses <90mg in 250ml glucose 5%; doses >=90mg in 500ml glucose 5%. First infusion: maximum rate 1mg/minute. If well tolerated, subsequent infusions may be given over 60 minutes. Default infusion time in ARIA is 120 minutes. INCOMPATIBLE WITH SODIUM CHLORIDE 0.9% - always use glucose 5% flush. Do NOT use in-line filters. Exfoliant - extravasation risk. Dose banded per national dose bands (2mg/ml). Maximum lifetime cumulative doxorubicin dose 450mg/m2 (400mg/m2 if prior mediastinal/pericardial radiotherapy). Monitor for infusion reactions.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Carboplatin",
+        "dose": 5,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": 60,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 500,
+        "max_dose": 790,
+        "max_dose_unit": "mg",
+        "special_instructions": "Administer after PLD. Dose based on Calvert formula using calculated GFR. Max dose 750mg (set at 790mg in ARIA). AUC 4 may be considered with EDTA clearance. Dose may need adjustment if GFR changes >10%.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "indication": "Antiemetic"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "indication": "Antiemetic"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice daily (morning and lunch) for 3 days starting day 2 of cycle",
+        "duration": "3 days"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Three times daily for 3 days then as required for nausea",
+        "duration": "Supply 28 tablets or original pack"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice daily for 3 days starting evening of day 1",
+        "duration": "3 days"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "1 x10^9/L or greater",
+        "affected_drugs": [
+          "carboplatin",
+          "doxorubicin pegylated liposomal"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Give 100% dose"
+      },
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "Less than 1 x10^9/L",
+        "affected_drugs": [
+          "carboplatin",
+          "doxorubicin pegylated liposomal"
+        ],
+        "action": "delay",
+        "factor": null,
+        "notes": "Delay one week. If recovered to >=1x10^9/L continue with PLD 25mg/m2 and carboplatin AUC 4."
+      },
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "<=0.5 x10^9/L for at least 7 days or febrile neutropenia",
+        "affected_drugs": [
+          "carboplatin",
+          "doxorubicin pegylated liposomal"
+        ],
+        "action": "delay",
+        "factor": null,
+        "notes": "Delay until recovery to >=1x10^9/L then continue with PLD 25mg/m2 and carboplatin AUC 4."
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "100 x10^9/L or greater",
+        "affected_drugs": [
+          "carboplatin",
+          "doxorubicin pegylated liposomal"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Give 100% dose"
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "Less than 100 x10^9/L",
+        "affected_drugs": [
+          "carboplatin",
+          "doxorubicin pegylated liposomal"
+        ],
+        "action": "delay",
+        "factor": null,
+        "notes": "Delay one week. If recovered to >=100x10^9/L continue with PLD 25mg/m2 and carboplatin AUC 4."
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "Less than 25 x10^9/L or bleeding",
+        "affected_drugs": [
+          "carboplatin",
+          "doxorubicin pegylated liposomal"
+        ],
+        "action": "delay",
+        "factor": null,
+        "notes": "Delay until recovery to >=100x10^9/L then continue with PLD 25mg/m2 and carboplatin AUC 4."
+      },
+      {
+        "parameter": "Hepatic impairment - PLD",
+        "condition": "Bilirubin <=20 micromol/L",
+        "affected_drugs": [
+          "doxorubicin pegylated liposomal"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "parameter": "Hepatic impairment - PLD",
+        "condition": "Bilirubin 21-51 micromol/L",
+        "affected_drugs": [
+          "doxorubicin pegylated liposomal"
+        ],
+        "action": "reduce",
+        "factor": 0.75,
+        "notes": "Reduce to 75% initial dose. If well tolerated with no increase in bilirubin/LFTs may increase to 100% at next cycle."
+      },
+      {
+        "parameter": "Hepatic impairment - PLD",
+        "condition": "Bilirubin >=51 micromol/L",
+        "affected_drugs": [
+          "doxorubicin pegylated liposomal"
+        ],
+        "action": "reduce",
+        "factor": 0.5,
+        "notes": "Reduce to 50% initial dose. May increase to 75% if tolerated then 100% on subsequent cycles."
+      },
+      {
+        "parameter": "Renal impairment - PLD",
+        "condition": "Creatinine clearance >=30 ml/min",
+        "affected_drugs": [
+          "doxorubicin pegylated liposomal"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "No dose modification needed"
+      },
+      {
+        "parameter": "Renal impairment - PLD",
+        "condition": "Creatinine clearance <30 ml/min",
+        "affected_drugs": [
+          "doxorubicin pegylated liposomal"
+        ],
+        "action": "reduce",
+        "factor": null,
+        "notes": "Clinical decision required"
+      },
+      {
+        "parameter": "Renal impairment - Carboplatin",
+        "condition": "Creatinine clearance <20 ml/min",
+        "affected_drugs": [
+          "carboplatin"
+        ],
+        "action": "omit",
+        "factor": 0.0,
+        "notes": "Omit carboplatin"
+      },
+      {
+        "parameter": "Palmer-Plantar Erythrodysaesthesia / Stomatitis - PLD - Grade 1 at week 4",
+        "condition": "NCI-CTC Grade 1 at week 4",
+        "affected_drugs": [
+          "doxorubicin pegylated liposomal"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Re-dose unless patient has experienced previous grade 3/4 skin toxicity (in which case wait additional week)"
+      },
+      {
+        "parameter": "Palmer-Plantar Erythrodysaesthesia / Stomatitis - PLD - Grade 1 at week 6",
+        "condition": "NCI-CTC Grade 1 at week 6",
+        "affected_drugs": [
+          "doxorubicin pegylated liposomal"
+        ],
+        "action": "reduce",
+        "factor": 0.75,
+        "notes": "Decrease dose by 25% and return to 4-week interval or stop treatment"
+      },
+      {
+        "parameter": "Palmer-Plantar Erythrodysaesthesia / Stomatitis - PLD - Grade 2 at week 4 or 5",
+        "condition": "NCI-CTC Grade 2 at week 4 or 5",
+        "affected_drugs": [
+          "doxorubicin pegylated liposomal"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Wait an additional week"
+      },
+      {
+        "parameter": "Palmer-Plantar Erythrodysaesthesia / Stomatitis - PLD - Grade 2 at week 6",
+        "condition": "NCI-CTC Grade 2 at week 6",
+        "affected_drugs": [
+          "doxorubicin pegylated liposomal"
+        ],
+        "action": "reduce",
+        "factor": 0.75,
+        "notes": "Decrease dose by 25% and return to 4-week interval or stop treatment"
+      },
+      {
+        "parameter": "Palmer-Plantar Erythrodysaesthesia / Stomatitis - PLD - Grade 3 or 4 at week 4 or 5",
+        "condition": "NCI-CTC Grade 3 or 4 at week 4 or 5",
+        "affected_drugs": [
+          "doxorubicin pegylated liposomal"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Wait an additional week"
+      },
+      {
+        "parameter": "Palmer-Plantar Erythrodysaesthesia / Stomatitis - PLD - Grade 3 or 4 at week 6",
+        "condition": "NCI-CTC Grade 3 or 4 at week 6",
+        "affected_drugs": [
+          "doxorubicin pegylated liposomal"
+        ],
+        "action": "omit",
+        "factor": 0.0,
+        "notes": "Stop treatment"
+      },
+      {
+        "parameter": "Non-haematological toxicity NCI-CTC grade >=3",
+        "condition": "Grade 3 or above non-haematological toxicity",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Delay until resolved to grade 1 or below then reduce causative agent(s) to 75% of original dose or discontinue"
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "Both criteria must be met prior to cycle 1. Consider blood transfusion if Hb <8g/dL."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to each cycle",
+      "EDTA or calculated creatinine clearance prior to each cycle",
+      "CA125 prior to each cycle",
+      "Baseline ECG and LVEF in patients with history of cardiac problems or in the elderly before starting therapy",
+      "Discontinue PLD if cardiac failure develops"
+    ],
+    "special_warnings": [
+      "Pegylated liposomal doxorubicin (Caelyx brand) - brands NOT interchangeable",
+      "INCOMPATIBLE WITH SODIUM CHLORIDE 0.9% - dilute in glucose 5% ONLY; always use glucose 5% flush",
+      "Do NOT use in-line filters during administration of PLD",
+      "First infusion at maximum rate of 1mg/minute; subsequent infusions over 60 minutes if tolerated (default ARIA time 120 minutes)",
+      "Infusion reaction management: discontinue, treat with chlorpheniramine and hydrocortisone, restart at 5% dose over 15 min if recovered",
+      "If infusion reactions occur consider premedication for all subsequent cycles: chlorpheniramine 10mg IV, dexamethasone 20mg IV, ranitidine 50mg IV",
+      "Maximum lifetime cumulative doxorubicin dose 450mg/m2 (400mg/m2 if prior mediastinal/pericardial radiotherapy); consider prior anthracycline exposure",
+      "28-day cycle (not 21-day)",
+      "Mouthwashes for mucositis/stomatitis as per local policy",
+      "If a third dose reduction is required treatment should be stopped"
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 5,
+      "max_dose_mg": 790
+    },
+    "required_patient_fields": {
+      "weight_kg": true,
+      "height_cm": true,
+      "creatinine_clearance_ml_min": true,
+      "bsa_m2": true,
+      "cumulative_anthracycline_dose_mg_m2": true,
+      "cardiac_history": true
+    },
+    "disease_site": "Gynaecology",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Doxorubicin pegylated liposomal (Caelyx)",
+        "dose": 30,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": 120,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Pegylated liposomal doxorubicin formulation (Caelyx brand - brands may not be interchangeable). Dilute doses <90mg in 250ml glucose 5%; doses >=90mg in 500ml glucose 5%. First infusion: maximum rate 1mg/minute. If well tolerated, subsequent infusions may be given over 60 minutes. Default infusion time in ARIA is 120 minutes. INCOMPATIBLE WITH SODIUM CHLORIDE 0.9% - always use glucose 5% flush. Do NOT use in-line filters. Exfoliant - extravasation risk. Dose banded per national dose bands (2mg/ml). Maximum lifetime cumulative doxorubicin dose 450mg/m2 (400mg/m2 if prior mediastinal/pericardial radiotherapy). Monitor for infusion reactions.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 2.0,
+        "notes": "once per cycle | Pegylated liposomal doxorubicin formulation (Caelyx brand - brands may not be interchangeable). Dilute doses <90mg in 250ml glucose 5%; doses >=90mg in 500ml glucose 5%. First infusion: maximum rate 1mg/minute. If well tolerated, subsequent infusions may be given over 60 minutes. Default infusion time in ARIA is 120 minutes. INCOMPATIBLE WITH SODIUM CHLORIDE 0.9% - always use glucose 5% flush. Do NOT use in-line filters. Exfoliant - extravasation risk. Dose banded per national dose bands (2mg/ml). Maximum lifetime cumulative doxorubicin dose 450mg/m2 (400mg/m2 if prior mediastinal/pericardial radiotherapy). Monitor for infusion reactions."
+      },
+      {
+        "drug_name": "Carboplatin",
+        "dose": 5,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": 60,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 500,
+        "max_dose": 790,
+        "max_dose_unit": "mg",
+        "special_instructions": "Administer after PLD. Dose based on Calvert formula using calculated GFR. Max dose 750mg (set at 790mg in ARIA). AUC 4 may be considered with EDTA clearance. Dose may need adjustment if GFR changes >10%.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "once per cycle | Administer after PLD. Dose based on Calvert formula using calculated GFR. Max dose 750mg (set at 790mg in ARIA). AUC 4 may be considered with EDTA clearance. Dose may need adjustment if GFR changes >10%."
+      }
+    ]
+  },
+  {
+    "protocol_id": "carboplatin-auc5-retreat",
+    "protocol_code": "CARB-AUC5-RETREAT",
+    "protocol_name": "Carboplatin Retreat (AUC5)",
+    "category": "gynaecology",
+    "indication": "Second line or subsequent treatment of platinum sensitive ovarian cancer; WHO performance status 1, 2",
+    "version": "1.3",
+    "cycle_length_days": 21,
+    "total_cycles": 6,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 5,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": 60,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 500,
+        "max_dose": 790,
+        "max_dose_unit": "mg",
+        "special_instructions": "Dose based on Calvert formula using calculated GFR. Max dose 750mg (set at 790mg in ARIA for national dose band compliance). AUC 4 may be considered with EDTA clearance. Dose may need adjustment if GFR changes >10% from previous cycle. Carboplatin is an irritant.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "timing": "30 minutes prior to carboplatin",
+        "indication": "Prevention of allergic reactions to carboplatin"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "timing": "30 minutes prior to carboplatin",
+        "indication": "Prevention of allergic reactions to carboplatin"
+      },
+      {
+        "drug_name": "H2 antagonist (e.g. ranitidine 50mg IV or famotidine 20mg oral or nizatidine 150mg oral or ranitidine 150mg oral)",
+        "dose": null,
+        "dose_unit": null,
+        "route": "IV infusion",
+        "timing": "30 minutes prior to carboplatin",
+        "indication": "Prevention of allergic reactions to carboplatin; omit from cycle 3 onwards per local Trust policy"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "indication": "Antiemetic"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice daily for 3 days starting day 2 of cycle",
+        "duration": "3 days (with or after food)"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Three times daily for 3 days then as required for nausea",
+        "duration": "Supply 28 x 10mg tablets or nearest equivalent pack"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "1 x10^9/L or greater",
+        "affected_drugs": [
+          "carboplatin"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Give 100% dose"
+      },
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "Less than 1 x10^9/L",
+        "affected_drugs": [
+          "carboplatin"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay 7 days. If counts recover to >=1x10^9/L continue full dose. If not recovered within 7 days or repeated delays required, delay until recovery then reduce dose by 20%."
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "100 x10^9/L or greater",
+        "affected_drugs": [
+          "carboplatin"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Give 100% dose"
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "50-99 x10^9/L",
+        "affected_drugs": [
+          "carboplatin"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay 7 days. If counts recover to >=100x10^9/L continue full dose. If not recovered within 7 days or repeated delays required, delay until recovery then reduce dose by 20%."
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "Less than 50 x10^9/L",
+        "affected_drugs": [
+          "carboplatin"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Delay until recovery then reduce dose by 50%"
+      },
+      {
+        "parameter": "Renal impairment - Carboplatin",
+        "condition": "Creatinine clearance <20 ml/min",
+        "affected_drugs": [
+          "carboplatin"
+        ],
+        "action": "omit",
+        "factor": 0.0,
+        "notes": "Omit carboplatin. Significant GFR changes >10% between cycles may require dose adjustment."
+      },
+      {
+        "parameter": "Non-haematological toxicity NCI-CTC grade >=3",
+        "condition": "Grade 3 or above non-haematological toxicity",
+        "affected_drugs": [
+          "carboplatin"
+        ],
+        "action": "delay",
+        "factor": 0.8,
+        "notes": "Delay until resolved to grade 1 or below then reduce dose to 80% of original dose or discontinue"
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "Both criteria must be met prior to each cycle. Consider blood transfusion if Hb <8g/dL (80g/L)."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to each cycle",
+      "CA125 prior to each cycle"
+    ],
+    "special_warnings": [
+      "Re-treatment protocol: single agent carboplatin retreat for platinum-sensitive ovarian cancer",
+      "Carboplatin max dose 750mg (set as 790mg in ARIA for national dose bands); dose capped at CrCl 125ml/min",
+      "Carboplatin dose must be recalculated if GFR changes by >10% between cycles",
+      "AUC 4 may be considered instead of AUC 5 if using EDTA clearance; seek consultant advice",
+      "If a third dose reduction is required treatment should be stopped",
+      "All dose reductions should not be re-escalated without consultant approval"
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 5,
+      "max_dose_mg": 790
+    },
+    "required_patient_fields": {
+      "weight_kg": true,
+      "height_cm": true,
+      "creatinine_clearance_ml_min": true,
+      "bsa_m2": false
+    },
+    "disease_site": "Gynaecology",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 5,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": 60,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 500,
+        "max_dose": 790,
+        "max_dose_unit": "mg",
+        "special_instructions": "Dose based on Calvert formula using calculated GFR. Max dose 750mg (set at 790mg in ARIA for national dose band compliance). AUC 4 may be considered with EDTA clearance. Dose may need adjustment if GFR changes >10% from previous cycle. Carboplatin is an irritant.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "once per cycle | Dose based on Calvert formula using calculated GFR. Max dose 750mg (set at 790mg in ARIA for national dose band compliance). AUC 4 may be considered with EDTA clearance. Dose may need adjustment if GFR changes >10% from previous cycle. Carboplatin is an irritant."
+      }
+    ]
+  },
+  {
+    "protocol_id": "carboplatin-auc5-single-agent",
+    "protocol_code": "CARB-AUC5",
+    "protocol_name": "Carboplatin (AUC5)",
+    "category": "gynaecology",
+    "indication": "Adjuvant treatment in patients with moderate to high risk stage 1A/B ovarian cancer; Adjuvant treatment in patients with stage 1C, II-VI ovarian cancer unsuitable for paclitaxel or higher doses of single agent carboplatin; Second line or subsequent treatment of platinum sensitive ovarian cancer; WHO performance status 1, 2 - consider in frail and elderly",
+    "version": "1.2",
+    "cycle_length_days": 21,
+    "total_cycles": 6,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 5,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": 60,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 500,
+        "max_dose": 790,
+        "max_dose_unit": "mg",
+        "special_instructions": "Dose based on Calvert formula using calculated GFR. Max dose 750mg (set at 790mg in ARIA for national dose band compliance). AUC 4 may be considered with EDTA clearance. Dose may need adjustment if GFR changes >10% from previous cycle. Carboplatin is an irritant. Dose banded per national dose bands (10mg/ml).",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "indication": "Antiemetic"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "indication": "Antiemetic"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice daily (morning and lunch) for 3 days starting day 2 of cycle",
+        "duration": "3 days"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Three times daily for 3 days then as required for nausea",
+        "duration": "Supply 28 tablets or original pack"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "1 x10^9/L or greater",
+        "affected_drugs": [
+          "carboplatin"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Give 100% dose"
+      },
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "Less than 1 x10^9/L",
+        "affected_drugs": [
+          "carboplatin"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay 7 days. If counts recover to >=1x10^9/L continue full dose. If not recovered within 7 days or repeated delays required, delay until recovery then reduce dose by 20%."
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "100 x10^9/L or greater",
+        "affected_drugs": [
+          "carboplatin"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Give 100% dose"
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "50-99 x10^9/L",
+        "affected_drugs": [
+          "carboplatin"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay 7 days. If counts recover to >=100x10^9/L continue full dose. If not recovered within 7 days or repeated delays required, delay until recovery then reduce dose by 20%."
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "Less than 50 x10^9/L",
+        "affected_drugs": [
+          "carboplatin"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Delay until recovery then reduce dose by 50%"
+      },
+      {
+        "parameter": "Renal impairment - Carboplatin",
+        "condition": "Creatinine clearance <20 ml/min",
+        "affected_drugs": [
+          "carboplatin"
+        ],
+        "action": "omit",
+        "factor": 0.0,
+        "notes": "Omit carboplatin. Significant GFR changes >10% may require dose adjustment."
+      },
+      {
+        "parameter": "Non-haematological toxicity NCI-CTC grade >=3",
+        "condition": "Grade 3 or above non-haematological toxicity",
+        "affected_drugs": [
+          "carboplatin"
+        ],
+        "action": "delay",
+        "factor": 0.8,
+        "notes": "Delay until resolved to grade 1 or below then reduce dose to 80% of original dose or discontinue"
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "Both criteria must be met prior to each cycle. Consider blood transfusion if Hb <8g/dL."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to each cycle",
+      "CA125 prior to each cycle"
+    ],
+    "special_warnings": [
+      "Single agent carboplatin regimen - for patients unsuitable for paclitaxel or higher doses of carboplatin, including frail and elderly",
+      "Carboplatin max dose 750mg (set as 790mg in ARIA for national dose bands); dose capped at CrCl 125ml/min",
+      "Carboplatin dose must be recalculated if GFR changes by >10% between cycles",
+      "AUC 4 may be considered instead of AUC 5 if using EDTA clearance; seek consultant advice",
+      "If a third dose reduction is required treatment should be stopped",
+      "All dose reductions should not be re-escalated without consultant approval"
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 5,
+      "max_dose_mg": 790
+    },
+    "required_patient_fields": {
+      "weight_kg": true,
+      "height_cm": true,
+      "creatinine_clearance_ml_min": true,
+      "bsa_m2": false
+    },
+    "disease_site": "Gynaecology",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 5,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": 60,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 500,
+        "max_dose": 790,
+        "max_dose_unit": "mg",
+        "special_instructions": "Dose based on Calvert formula using calculated GFR. Max dose 750mg (set at 790mg in ARIA for national dose band compliance). AUC 4 may be considered with EDTA clearance. Dose may need adjustment if GFR changes >10% from previous cycle. Carboplatin is an irritant. Dose banded per national dose bands (10mg/ml).",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "once per cycle | Dose based on Calvert formula using calculated GFR. Max dose 750mg (set at 790mg in ARIA for national dose band compliance). AUC 4 may be considered with EDTA clearance. Dose may need adjustment if GFR changes >10% from previous cycle. Carboplatin is an irritant. Dose banded per national dose bands (10mg/ml)."
+      }
+    ]
+  }
+]

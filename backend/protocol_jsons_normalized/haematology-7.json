@@ -1,0 +1,1252 @@
+[
+  {
+    "protocol_code": "HSCT-ALem-BU12-FLU-VUD-MTX",
+    "protocol_name": "Alemtuzumab-Busulfan (12 doses)-Fludarabine-Methotrexate GvHD (VUD Conditioning)",
+    "disease_site": "HSCT conditioning",
+    "category": "haematology",
+    "cycle_length_days": 1,
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Alemtuzumab",
+        "dose": 10.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          -8
+        ],
+        "infusion_duration_hours": 6.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 100ml sodium chloride 0.9% over 6 to 8 hours. Premedicate with chlorphenamine 10mg IV and paracetamol 1000mg oral 30 minutes before. Irradiated blood products required for life."
+      },
+      {
+        "drug_name": "Alemtuzumab",
+        "dose": 20.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          -7,
+          -6
+        ],
+        "infusion_duration_hours": 6.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 100ml sodium chloride 0.9% over 6 to 8 hours. Premedicate with chlorphenamine 10mg IV and paracetamol 1000mg oral 30 minutes before. Irradiated blood products required for life."
+      },
+      {
+        "drug_name": "Busulfan",
+        "dose": 0.8,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          -8,
+          -7,
+          -6,
+          -5
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "12 doses total, given every 6 hours starting at 1000hrs on day -8 and finishing at 0400hrs on day -5. Diluted to 0.5mg/ml in sodium chloride 0.9%. Dose rounded to nearest 3mg. Obese patients: use adjusted ideal body weight. TDM required. Clonazepam 500mcg oral twice daily starting the night before busulfan and continuing until 3 days after last dose."
+      },
+      {
+        "drug_name": "Fludarabine",
+        "dose": 30.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          -7,
+          -6,
+          -5,
+          -4,
+          -3
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 50ml sodium chloride 0.9% over 30 minutes. Dose rounded to nearest 2.5mg."
+      },
+      {
+        "drug_name": "Methotrexate",
+        "dose": 10.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          3
+        ],
+        "infusion_duration_hours": 0.083,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "GvHD prophylaxis. IV bolus over 5 minutes. Administer at 1700hrs. Dose rounded to nearest 2.5mg. Check bilirubin, creatinine and mucositis before each dose. Calcium folinate 30mg IV bolus 6-hourly for 4 doses starting 24 hours after each methotrexate dose (days +4, +7, +12)."
+      },
+      {
+        "drug_name": "Methotrexate",
+        "dose": 5.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          6,
+          11
+        ],
+        "infusion_duration_hours": 0.083,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "GvHD prophylaxis. IV bolus over 5 minutes. Administer at 1700hrs. Dose rounded to nearest 2.5mg. Check bilirubin, creatinine and mucositis before each dose. Calcium folinate 30mg IV bolus 6-hourly for 4 doses starting 24 hours after each methotrexate dose."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Hepatic impairment: serum bilirubin 36-50 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.5,
+        "notes": "Reduce to 50% dose"
+      },
+      {
+        "condition": "Hepatic impairment: serum bilirubin 51-85 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.25,
+        "notes": "Reduce to 25% dose"
+      },
+      {
+        "condition": "Hepatic impairment: serum bilirubin greater than 85 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.0,
+        "notes": "Omit dose"
+      },
+      {
+        "condition": "Hepatic impairment (raised liver enzymes)",
+        "drug_name": "Busulfan",
+        "factor": 0.75,
+        "notes": "Caution in severe hepatic impairment; consider dose reduction with raised liver enzymes. Clinical decision."
+      },
+      {
+        "condition": "Renal impairment: CrCl 30-70 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.5,
+        "notes": "Adjust towards 50% dose"
+      },
+      {
+        "condition": "Renal impairment: CrCl less than 30 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.0,
+        "notes": "Contraindicated"
+      },
+      {
+        "condition": "Renal impairment: serum creatinine 146-165 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.5,
+        "notes": "Reduce to 50% dose"
+      },
+      {
+        "condition": "Renal impairment: serum creatinine 166-180 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.25,
+        "notes": "Reduce to 25% dose"
+      },
+      {
+        "condition": "Renal impairment: serum creatinine greater than 180 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.0,
+        "notes": "Omit dose"
+      },
+      {
+        "condition": "Mucositis NCI-CTC grade 3 or more on day +11",
+        "drug_name": "Methotrexate",
+        "factor": 1.0,
+        "notes": "Day +11 methotrexate dose may be reduced or omitted. Discuss with transplant clinician."
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV 30 minutes prior to alemtuzumab and stem cells",
+      "Paracetamol 1000mg oral 30 minutes prior to alemtuzumab and stem cells",
+      "Pethidine 12.5-25mg IV if required for alemtuzumab-induced rigors (under doctor supervision)",
+      "Clonazepam 500mcg oral twice daily (start night before busulfan, continue until 3 days after last dose)",
+      "Metoclopramide 10mg three times a day oral or IV (antiemetic)",
+      "Ondansetron 8mg twice a day oral or IV (antiemetic)",
+      "Ciclosporin oral or IV (GvHD prophylaxis - prescribed separately on inpatient system)",
+      "Calcium folinate 30mg IV bolus 6-hourly for 4 doses starting 24 hours after each methotrexate dose (days +4, +7, +12)"
+    ],
+    "special_warnings": [
+      "Irradiated blood products required for life following alemtuzumab",
+      "Busulfan: 12 doses given every 6 hours over days -8 to -5; TDM (therapeutic drug monitoring) required",
+      "Clonazepam seizure prophylaxis mandatory during busulfan",
+      "GFR measurement by Nuclear Medicine required prior to first day of treatment",
+      "FBC, LFTs and U&Es required prior to initiating treatment",
+      "LFTs and creatinine required prior to each methotrexate dose",
+      "Evaluate mucositis prior to each methotrexate administration",
+      "Regimen only available at Wessex Blood and Marrow Transplant Unit",
+      "Busulfan dose rounded to nearest 3mg; dose banding tables not applicable",
+      "Obese patients: busulfan dosing based on adjusted ideal body weight"
+    ],
+    "required_patient_fields": [
+      "weight_kg",
+      "body_surface_area",
+      "creatinine_clearance",
+      "serum_creatinine",
+      "serum_bilirubin",
+      "gfr_nuclear_medicine"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "HSCT-ALem-BU8-FLU-VUD-MTX",
+    "protocol_name": "Alemtuzumab-Busulfan (8 doses)-Fludarabine-Methotrexate GvHD (VUD Conditioning)",
+    "disease_site": "HSCT conditioning",
+    "category": "haematology",
+    "cycle_length_days": 1,
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Alemtuzumab",
+        "dose": 10.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          -8
+        ],
+        "infusion_duration_hours": 6.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 100ml sodium chloride 0.9% over 6 to 8 hours. Premedicate with chlorphenamine 10mg IV and paracetamol 1000mg oral 30 minutes before. Irradiated blood products required for life."
+      },
+      {
+        "drug_name": "Alemtuzumab",
+        "dose": 20.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          -7,
+          -6
+        ],
+        "infusion_duration_hours": 6.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 100ml sodium chloride 0.9% over 6 to 8 hours. Premedicate with chlorphenamine 10mg IV and paracetamol 1000mg oral 30 minutes before. Irradiated blood products required for life."
+      },
+      {
+        "drug_name": "Busulfan",
+        "dose": 0.8,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          -8,
+          -7,
+          -6
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "8 doses total, given every 6 hours starting at 1000hrs on day -8 and finishing at 0400hrs on day -6. Diluted to 0.5mg/ml in sodium chloride 0.9%. Dose rounded to nearest 3mg. Obese patients: use adjusted ideal body weight. TDM required. Clonazepam 500mcg oral twice daily starting the night before busulfan and continuing until 3 days after last dose."
+      },
+      {
+        "drug_name": "Fludarabine",
+        "dose": 30.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          -7,
+          -6,
+          -5,
+          -4,
+          -3
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 50ml sodium chloride 0.9% over 30 minutes. Dose rounded to nearest 2.5mg."
+      },
+      {
+        "drug_name": "Methotrexate",
+        "dose": 10.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          3
+        ],
+        "infusion_duration_hours": 0.083,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "GvHD prophylaxis. IV bolus over 5 minutes. Administer at 1700hrs. Dose rounded to nearest 2.5mg. Check bilirubin, creatinine and mucositis before each dose. Calcium folinate 30mg IV bolus 6-hourly for 4 doses starting 24 hours after each methotrexate dose (days +4, +7, +12)."
+      },
+      {
+        "drug_name": "Methotrexate",
+        "dose": 5.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          6,
+          11
+        ],
+        "infusion_duration_hours": 0.083,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "GvHD prophylaxis. IV bolus over 5 minutes. Administer at 1700hrs. Dose rounded to nearest 2.5mg. Check bilirubin, creatinine and mucositis before each dose. Calcium folinate 30mg IV bolus 6-hourly for 4 doses starting 24 hours after each methotrexate dose."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Hepatic impairment: serum bilirubin 36-50 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.5,
+        "notes": "Reduce to 50% dose"
+      },
+      {
+        "condition": "Hepatic impairment: serum bilirubin 51-85 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.25,
+        "notes": "Reduce to 25% dose"
+      },
+      {
+        "condition": "Hepatic impairment: serum bilirubin greater than 85 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.0,
+        "notes": "Omit dose"
+      },
+      {
+        "condition": "Hepatic impairment (raised liver enzymes)",
+        "drug_name": "Busulfan",
+        "factor": 0.75,
+        "notes": "Caution in severe hepatic impairment; consider dose reduction with raised liver enzymes. Clinical decision."
+      },
+      {
+        "condition": "Renal impairment: CrCl 30-70 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.5,
+        "notes": "Adjust towards 50% dose"
+      },
+      {
+        "condition": "Renal impairment: CrCl less than 30 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.0,
+        "notes": "Contraindicated"
+      },
+      {
+        "condition": "Renal impairment: serum creatinine 146-165 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.5,
+        "notes": "Reduce to 50% dose"
+      },
+      {
+        "condition": "Renal impairment: serum creatinine 166-180 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.25,
+        "notes": "Reduce to 25% dose"
+      },
+      {
+        "condition": "Renal impairment: serum creatinine greater than 180 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.0,
+        "notes": "Omit dose"
+      },
+      {
+        "condition": "Mucositis NCI-CTC grade 3 or more on day +11",
+        "drug_name": "Methotrexate",
+        "factor": 1.0,
+        "notes": "Day +11 methotrexate dose may be reduced or omitted. Discuss with transplant clinician."
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV 30 minutes prior to alemtuzumab and stem cells",
+      "Paracetamol 1000mg oral 30 minutes prior to alemtuzumab and stem cells",
+      "Pethidine 12.5-25mg IV if required for alemtuzumab-induced rigors (under doctor supervision)",
+      "Clonazepam 500mcg oral twice daily (start night before busulfan, continue until 3 days after last dose)",
+      "Metoclopramide 10mg three times a day oral or IV (antiemetic)",
+      "Ondansetron 8mg twice a day oral or IV (antiemetic)",
+      "Ciclosporin oral or IV (GvHD prophylaxis - prescribed separately on inpatient system)",
+      "Calcium folinate 30mg IV bolus 6-hourly for 4 doses starting 24 hours after each methotrexate dose (days +4, +7, +12)"
+    ],
+    "special_warnings": [
+      "Irradiated blood products required for life following alemtuzumab",
+      "Busulfan: 8 doses given every 6 hours over days -8 to -6; TDM (therapeutic drug monitoring) required",
+      "Clonazepam seizure prophylaxis mandatory during busulfan",
+      "GFR measurement by Nuclear Medicine required prior to first day of treatment",
+      "FBC, LFTs and U&Es required prior to initiating treatment",
+      "LFTs and creatinine required prior to each methotrexate dose",
+      "Evaluate mucositis prior to each methotrexate administration",
+      "Regimen only available at Wessex Blood and Marrow Transplant Unit",
+      "Busulfan dose rounded to nearest 3mg; dose banding tables not applicable",
+      "Obese patients: busulfan dosing based on adjusted ideal body weight"
+    ],
+    "required_patient_fields": [
+      "weight_kg",
+      "body_surface_area",
+      "creatinine_clearance",
+      "serum_creatinine",
+      "serum_bilirubin",
+      "gfr_nuclear_medicine"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "HSCT-ALem-CY-TBI-VUD-MTX",
+    "protocol_name": "Alemtuzumab-Cyclophosphamide-Total Body Irradiation (TBI)-Methotrexate GvHD (VUD Conditioning)",
+    "disease_site": "HSCT conditioning",
+    "category": "haematology",
+    "cycle_length_days": 1,
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Alemtuzumab",
+        "dose": 10.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          -8
+        ],
+        "infusion_duration_hours": 6.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 100ml sodium chloride 0.9% over 6 to 8 hours. Premedicate with chlorphenamine 10mg IV and paracetamol 1000mg oral 30 minutes before. Irradiated blood products required for life."
+      },
+      {
+        "drug_name": "Alemtuzumab",
+        "dose": 20.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          -7,
+          -6
+        ],
+        "infusion_duration_hours": 6.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 100ml sodium chloride 0.9% over 6 to 8 hours. Premedicate with chlorphenamine 10mg IV and paracetamol 1000mg oral 30 minutes before. Irradiated blood products required for life."
+      },
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 60.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          -6,
+          -5
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 1000ml sodium chloride 0.9% over 2 hours. Dose banded per national dose banding table (20mg/ml). Mesna uroprotection 24mg/kg IV required (doses at Day -6: 1000, 1300, 1600, 1900, 2200hrs; Day -5: 0200, 0600, 1000, 1300, 1600, 1900, 2200hrs; Day -4: 0200, 0600hrs). IV hydration required before and after infusion. Haemorrhagic cystitis risk."
+      },
+      {
+        "drug_name": "Total Body Irradiation",
+        "dose": 165.0,
+        "dose_unit": "units",
+        "route": "IV infusion",
+        "days": [
+          -3,
+          -2,
+          -1,
+          0
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "165 cGy per fraction, given twice daily on days -3, -2, -1 and 0 (total 8 fractions = 1320 cGy total). Premedicate with dexamethasone 4mg IV and ondansetron 8mg oral/IV prior to each fraction. Lorazepam 1mg oral twice daily starting the night before radiotherapy and continuing until radiotherapy complete."
+      },
+      {
+        "drug_name": "Methotrexate",
+        "dose": 10.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          3
+        ],
+        "infusion_duration_hours": 0.083,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "GvHD prophylaxis. IV bolus over 5 minutes. Administer at 1700hrs. Dose rounded to nearest 2.5mg. Check bilirubin, creatinine and mucositis before each dose. Calcium folinate 30mg IV bolus 6-hourly for 4 doses starting 24 hours after each methotrexate dose (days +4, +7, +12)."
+      },
+      {
+        "drug_name": "Methotrexate",
+        "dose": 5.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          6,
+          11
+        ],
+        "infusion_duration_hours": 0.083,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "GvHD prophylaxis. IV bolus over 5 minutes. Administer at 1700hrs. Dose rounded to nearest 2.5mg. Check bilirubin, creatinine and mucositis before each dose. Calcium folinate 30mg IV bolus 6-hourly for 4 doses starting 24 hours after each methotrexate dose."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Hepatic impairment: serum bilirubin 36-50 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.5,
+        "notes": "Reduce to 50% dose"
+      },
+      {
+        "condition": "Hepatic impairment: serum bilirubin 51-85 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.25,
+        "notes": "Reduce to 25% dose"
+      },
+      {
+        "condition": "Hepatic impairment: serum bilirubin greater than 85 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.0,
+        "notes": "Omit dose"
+      },
+      {
+        "condition": "Hepatic impairment: serum bilirubin 53-86 µmol/L",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "25% dose reduction recommended. Severe hepatic impairment may decrease activation of cyclophosphamide."
+      },
+      {
+        "condition": "Renal impairment: CrCl 30-50 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75% dose"
+      },
+      {
+        "condition": "Renal impairment: CrCl less than 30 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.0,
+        "notes": "High dose therapy and stem cell transplantation generally not undertaken"
+      },
+      {
+        "condition": "Renal impairment: serum creatinine 146-165 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.5,
+        "notes": "Reduce to 50% dose"
+      },
+      {
+        "condition": "Renal impairment: serum creatinine 166-180 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.25,
+        "notes": "Reduce to 25% dose"
+      },
+      {
+        "condition": "Renal impairment: serum creatinine greater than 180 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.0,
+        "notes": "Omit dose"
+      },
+      {
+        "condition": "Mucositis NCI-CTC grade 3 or more on day +11",
+        "drug_name": "Methotrexate",
+        "factor": 1.0,
+        "notes": "Day +11 methotrexate dose may be reduced or omitted. Discuss with transplant clinician."
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV 30 minutes prior to alemtuzumab and stem cells",
+      "Paracetamol 1000mg oral 30 minutes prior to alemtuzumab and stem cells",
+      "Pethidine 25mg IV if required for alemtuzumab-induced rigors (verbal instruction from doctor)",
+      "Metoclopramide 10mg three times a day oral or IV (antiemetic prior to cyclophosphamide)",
+      "Ondansetron 8mg twice a day oral or IV (antiemetic prior to cyclophosphamide)",
+      "Dexamethasone 4mg IV or equivalent prior to each TBI fraction",
+      "Ondansetron 8mg oral or IV prior to each TBI fraction",
+      "Lorazepam 1mg oral twice daily starting night before TBI, continuing until TBI complete",
+      "Mesna 24mg/kg IV (uroprotection for cyclophosphamide)",
+      "Ciclosporin oral or IV (GvHD prophylaxis - prescribed separately on inpatient system)",
+      "Calcium folinate 30mg IV bolus 6-hourly for 4 doses starting 24 hours after each methotrexate dose (days +4, +7, +12)",
+      "IV hydration prescribed on inpatient system before and after cyclophosphamide"
+    ],
+    "special_warnings": [
+      "Full intensity conditioning for VUD allograft - significant toxicity risk",
+      "Irradiated blood products required for life following alemtuzumab",
+      "Cyclophosphamide: haemorrhagic cystitis risk; mesna uroprotection mandatory; extensive IV hydration required days -7 to -4",
+      "TBI: 165 cGy twice daily on days -3, -2, -1 and 0 (total 8 fractions)",
+      "Lorazepam premedication mandatory for TBI",
+      "GFR measurement by Nuclear Medicine required prior to first day of treatment",
+      "FBC, LFTs and U&Es required prior to initiating treatment",
+      "LFTs and creatinine required prior to each methotrexate dose",
+      "Evaluate mucositis prior to each methotrexate administration",
+      "Regimen only available at Wessex Blood and Marrow Transplant Unit",
+      "Mesna dose rounded to nearest 100mg"
+    ],
+    "required_patient_fields": [
+      "weight_kg",
+      "body_surface_area",
+      "creatinine_clearance",
+      "serum_creatinine",
+      "serum_bilirubin",
+      "gfr_nuclear_medicine"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "HSCT-ALem-FLU-MEL-Related-MTX",
+    "protocol_name": "Alemtuzumab-Fludarabine-Melphalan-Methotrexate GvHD (Related Donor Conditioning)",
+    "disease_site": "HSCT conditioning",
+    "category": "haematology",
+    "cycle_length_days": 1,
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Alemtuzumab",
+        "dose": 10.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          -7
+        ],
+        "infusion_duration_hours": 6.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 100ml sodium chloride 0.9% over 6 to 8 hours. Premedicate with chlorphenamine 10mg IV and paracetamol 1000mg oral 30 minutes before. Irradiated blood products required for life."
+      },
+      {
+        "drug_name": "Alemtuzumab",
+        "dose": 20.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          -6
+        ],
+        "infusion_duration_hours": 6.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 100ml sodium chloride 0.9% over 6 to 8 hours. Premedicate with chlorphenamine 10mg IV and paracetamol 1000mg oral 30 minutes before. Irradiated blood products required for life."
+      },
+      {
+        "drug_name": "Fludarabine",
+        "dose": 30.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          -7,
+          -6,
+          -5,
+          -4,
+          -3
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 50ml sodium chloride 0.9% over 30 minutes. Dose rounded to nearest 2.5mg."
+      },
+      {
+        "drug_name": "Melphalan",
+        "dose": 140.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          -2
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 500ml sodium chloride 0.9% over 30 minutes. Short expiry - administer at 1100hrs. Dose rounded to nearest 10mg. Pre-hydration and post-hydration protocol mandatory (see appendix). Urine output must be >500ml before proceeding with infusion. Furosemide 20mg IV bolus given prior to infusion to ensure adequate diuresis."
+      },
+      {
+        "drug_name": "Methotrexate",
+        "dose": 5.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          3,
+          6,
+          11
+        ],
+        "infusion_duration_hours": 0.083,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "GvHD prophylaxis. IV bolus over 5 minutes. Administer at 1700hrs. Dose rounded to nearest 2.5mg. Check bilirubin, creatinine and mucositis before each dose. Calcium folinate 30mg IV bolus 6-hourly for 4 doses starting 24 hours after each methotrexate dose (days +4, +7, +12)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Hepatic impairment: serum bilirubin 36-50 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.5,
+        "notes": "Reduce to 50% dose"
+      },
+      {
+        "condition": "Hepatic impairment: serum bilirubin 51-85 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.25,
+        "notes": "Reduce to 25% dose"
+      },
+      {
+        "condition": "Hepatic impairment: serum bilirubin greater than 85 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.0,
+        "notes": "Omit dose"
+      },
+      {
+        "condition": "Renal impairment: CrCl 30-70 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.5,
+        "notes": "Adjust towards 50% dose"
+      },
+      {
+        "condition": "Renal impairment: CrCl less than 30 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.0,
+        "notes": "Contraindicated"
+      },
+      {
+        "condition": "Renal impairment: CrCl 30-50 ml/min",
+        "drug_name": "Melphalan",
+        "factor": 0.5,
+        "notes": "Reduce to 50% dose (140mg/m² reduced to 70mg/m²)"
+      },
+      {
+        "condition": "Renal impairment: CrCl less than 30 ml/min",
+        "drug_name": "Melphalan",
+        "factor": 0.0,
+        "notes": "Not generally recommended"
+      },
+      {
+        "condition": "Renal impairment: serum creatinine 146-165 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.5,
+        "notes": "Reduce to 50% dose"
+      },
+      {
+        "condition": "Renal impairment: serum creatinine 166-180 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.25,
+        "notes": "Reduce to 25% dose"
+      },
+      {
+        "condition": "Renal impairment: serum creatinine greater than 180 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.0,
+        "notes": "Omit dose"
+      },
+      {
+        "condition": "Mucositis NCI-CTC grade 3 or more on day +11",
+        "drug_name": "Methotrexate",
+        "factor": 1.0,
+        "notes": "Day +11 methotrexate dose may be reduced or omitted. Discuss with transplant clinician."
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV 30 minutes prior to alemtuzumab and stem cells",
+      "Paracetamol 1000mg oral 30 minutes prior to alemtuzumab and stem cells",
+      "Pethidine 12.5-25mg IV if required for alemtuzumab-induced rigors (under doctor supervision)",
+      "Metoclopramide 10mg three times a day oral or IV (antiemetic)",
+      "Ondansetron 8mg twice a day oral or IV (antiemetic)",
+      "Aprepitant 125mg oral once daily on day of melphalan, then 80mg once daily for 2 days afterwards",
+      "Ciclosporin oral or IV (GvHD prophylaxis - prescribed separately on inpatient system)",
+      "Calcium folinate 30mg IV bolus 6-hourly for 4 doses starting 24 hours after each methotrexate dose (days +4, +7, +12)",
+      "IV hydration before and after melphalan (see hydration protocol appendix)"
+    ],
+    "special_warnings": [
+      "Reduced intensity conditioning for related donor allograft",
+      "Irradiated blood products required for life following alemtuzumab",
+      "Melphalan 140mg/m²: short expiry (90 min) - must be made locally; strict timing protocol; pre- and post-hydration mandatory",
+      "Melphalan: ice chips/cryotherapy not specified but oral mucositis prophylaxis recommended",
+      "Urine output must exceed 500ml before proceeding with melphalan infusion",
+      "Furosemide 20mg IV bolus given to ensure adequate diuresis before melphalan",
+      "GFR measurement by Nuclear Medicine required prior to first day of treatment",
+      "FBC, LFTs and U&Es required prior to initiating treatment",
+      "LFTs and creatinine required prior to each methotrexate dose",
+      "Evaluate mucositis prior to each methotrexate administration",
+      "Regimen only available at Wessex Blood and Marrow Transplant Unit"
+    ],
+    "required_patient_fields": [
+      "weight_kg",
+      "body_surface_area",
+      "creatinine_clearance",
+      "serum_creatinine",
+      "serum_bilirubin",
+      "gfr_nuclear_medicine",
+      "urine_output"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "HSCT-ALem-FLU-MEL-VUD-MTX",
+    "protocol_name": "Alemtuzumab-Fludarabine-Melphalan-Methotrexate GvHD (VUD Conditioning)",
+    "disease_site": "HSCT conditioning",
+    "category": "haematology",
+    "cycle_length_days": 1,
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Alemtuzumab",
+        "dose": 10.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          -8
+        ],
+        "infusion_duration_hours": 6.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 100ml sodium chloride 0.9% over 6 to 8 hours. Premedicate with chlorphenamine 10mg IV and paracetamol 1000mg oral 15-30 minutes before. Irradiated blood products required for life."
+      },
+      {
+        "drug_name": "Alemtuzumab",
+        "dose": 20.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          -7,
+          -6
+        ],
+        "infusion_duration_hours": 6.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 100ml sodium chloride 0.9% over 6 to 8 hours. Premedicate with chlorphenamine 10mg IV and paracetamol 1000mg oral 15-30 minutes before. Irradiated blood products required for life."
+      },
+      {
+        "drug_name": "Fludarabine",
+        "dose": 30.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          -7,
+          -6,
+          -5,
+          -4,
+          -3
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 50ml sodium chloride 0.9% over 30 minutes. Dose rounded to nearest 2.5mg. National dose banding tables not applicable in transplant setting."
+      },
+      {
+        "drug_name": "Melphalan",
+        "dose": 140.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          -2
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 500ml sodium chloride 0.9% over 30 minutes. Administer at 1100hrs. Short expiry - strict timing essential. Dose rounded to nearest 10mg. Pre- and post-hydration protocol mandatory. Urine output must be >500ml before proceeding. Furosemide 20mg IV bolus given prior to infusion to ensure adequate diuresis."
+      },
+      {
+        "drug_name": "Methotrexate",
+        "dose": 10.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          3
+        ],
+        "infusion_duration_hours": 0.083,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "GvHD prophylaxis. IV bolus over 5 minutes. Administer at 1700hrs. Dose rounded to nearest 2.5mg. Check bilirubin, creatinine and mucositis before each dose. Calcium folinate 30mg IV bolus 6-hourly for 4 doses starting 24 hours after each methotrexate dose (days +4, +7, +12)."
+      },
+      {
+        "drug_name": "Methotrexate",
+        "dose": 5.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          6,
+          11
+        ],
+        "infusion_duration_hours": 0.083,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "GvHD prophylaxis. IV bolus over 5 minutes. Administer at 1700hrs. Dose rounded to nearest 2.5mg. Check bilirubin, creatinine and mucositis before each dose. Calcium folinate 30mg IV bolus 6-hourly for 4 doses starting 24 hours after each methotrexate dose."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Hepatic impairment: serum bilirubin 36-50 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.5,
+        "notes": "Reduce to 50% dose"
+      },
+      {
+        "condition": "Hepatic impairment: serum bilirubin 51-85 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.25,
+        "notes": "Reduce to 25% dose"
+      },
+      {
+        "condition": "Hepatic impairment: serum bilirubin greater than 85 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.0,
+        "notes": "Omit dose"
+      },
+      {
+        "condition": "Renal impairment: CrCl 30-70 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.5,
+        "notes": "Adjust towards 50% dose"
+      },
+      {
+        "condition": "Renal impairment: CrCl less than 30 ml/min",
+        "drug_name": "Fludarabine",
+        "factor": 0.0,
+        "notes": "Contraindicated"
+      },
+      {
+        "condition": "Renal impairment: CrCl 30-50 ml/min",
+        "drug_name": "Melphalan",
+        "factor": 0.5,
+        "notes": "Reduce to 50% dose"
+      },
+      {
+        "condition": "Renal impairment: CrCl less than 30 ml/min",
+        "drug_name": "Melphalan",
+        "factor": 0.0,
+        "notes": "Not generally recommended"
+      },
+      {
+        "condition": "Renal impairment: serum creatinine 146-165 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.5,
+        "notes": "Reduce to 50% dose"
+      },
+      {
+        "condition": "Renal impairment: serum creatinine 166-180 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.25,
+        "notes": "Reduce to 25% dose"
+      },
+      {
+        "condition": "Renal impairment: serum creatinine greater than 180 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.0,
+        "notes": "Omit dose"
+      },
+      {
+        "condition": "Mucositis NCI-CTC grade 3 or more on day +11",
+        "drug_name": "Methotrexate",
+        "factor": 1.0,
+        "notes": "Day +11 methotrexate dose may be reduced or omitted. Discuss with transplant clinician."
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV 15-30 minutes prior to alemtuzumab and stem cells",
+      "Paracetamol 1000mg oral 15-30 minutes prior to alemtuzumab and stem cells",
+      "Pethidine 12.5-25mg IV if required for alemtuzumab-induced rigors (under doctor supervision)",
+      "Metoclopramide 10mg three times a day oral or IV (antiemetic)",
+      "Ondansetron 8mg twice a day oral or IV (antiemetic)",
+      "Aprepitant 125mg oral once daily on day of melphalan, then 80mg once daily for 2 days afterwards",
+      "Ciclosporin oral or IV (GvHD prophylaxis - prescribed separately on inpatient system)",
+      "Calcium folinate 30mg IV bolus 6-hourly for 4 doses starting 24 hours after each methotrexate dose (days +4, +7, +12)",
+      "IV hydration before and after melphalan (see hydration protocol appendix)"
+    ],
+    "special_warnings": [
+      "Reduced intensity conditioning for VUD allograft",
+      "Irradiated blood products required for life following alemtuzumab",
+      "Melphalan 140mg/m²: short expiry (90 min) - must be made locally; strict timing protocol; pre- and post-hydration mandatory",
+      "Urine output must exceed 500ml before proceeding with melphalan infusion",
+      "Furosemide 20mg IV bolus given to ensure adequate diuresis before melphalan",
+      "GFR measurement by Nuclear Medicine required prior to first day of treatment",
+      "FBC, LFTs and U&Es required prior to initiating treatment",
+      "LFTs and creatinine required prior to each methotrexate dose",
+      "Evaluate mucositis prior to each methotrexate administration",
+      "Regimen only available at Wessex Blood and Marrow Transplant Unit"
+    ],
+    "required_patient_fields": [
+      "weight_kg",
+      "body_surface_area",
+      "creatinine_clearance",
+      "serum_creatinine",
+      "serum_bilirubin",
+      "gfr_nuclear_medicine",
+      "urine_output"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "HSCT-CY-PRIMING-1500",
+    "protocol_name": "HSCT Cyclophosphamide Priming (1500mg/m²) - Stem Cell Mobilisation",
+    "disease_site": "HSCT conditioning",
+    "category": "haematology",
+    "cycle_length_days": 1,
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Mesna",
+        "dose": 300.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.25,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus in 100ml sodium chloride 0.9% over 15 minutes. Start at same time as cyclophosphamide infusion (uroprotection). Dose banded per national dose banding tables."
+      },
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 1500.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 1000ml sodium chloride 0.9% over 120 minutes. Dose banded per national dose banding tables (20mg/ml). Pre-hydration: 1000ml sodium chloride 0.9% IV over 120 minutes. Patients must drink 2-3 litres fluid on day of chemotherapy and day after. Haemorrhagic cystitis risk. Urine dip for protein every 60 minutes until end of infusion."
+      },
+      {
+        "drug_name": "Mesna",
+        "dose": 600.0,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Two oral doses: first dose immediately at end of cyclophosphamide infusion, second dose 4 hours after end of infusion. Rounded to nearest 400mg. If vomiting, administer IV instead."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Creatinine clearance less than 40 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.0,
+        "notes": "Only patients with CrCl >40ml/min should be considered for this regimen"
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg oral or equivalent IV bolus 15-30 minutes prior to chemotherapy",
+      "Ondansetron 8mg oral or IV bolus 15-30 minutes prior to chemotherapy",
+      "Mesna 300mg/m² IV at same time as cyclophosphamide",
+      "Pre-hydration: 1000ml sodium chloride 0.9% IV over 120 minutes prior to cyclophosphamide",
+      "Take home: Metoclopramide 10mg three times a day when required oral",
+      "Take home: Ondansetron 8mg twice a day oral for 3 days",
+      "Growth factors (filgrastim or lenograstim) starting day 2 until adequate cell count harvest",
+      "Anti-infective prophylaxis for 11 days: aciclovir 400mg twice daily, ciprofloxacin 250mg twice daily, fluconazole 100mg once daily"
+    ],
+    "special_warnings": [
+      "Haematopoietic stem cell mobilisation (autograft priming) - NOT allograft conditioning",
+      "Irradiated blood products required: from 2 weeks before cyclophosphamide until 12 months post-treatment due to TA-GVHD risk",
+      "Transfusion departments must be notified and patient issued alert card",
+      "Only patients with CrCl >40ml/min should be considered",
+      "Urine dip for protein every 60 minutes until end of cyclophosphamide infusion",
+      "Haemorrhagic cystitis risk - mesna uroprotection mandatory",
+      "Patients must drink 2-3 litres on day of treatment and day after",
+      "Contact acute oncology if pain/inability to pass urine, blood in urine, or vomiting within 1 hour of oral mesna"
+    ],
+    "required_patient_fields": [
+      "body_surface_area",
+      "creatinine_clearance"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "HSCT-CY-TBI-Related-MTX",
+    "protocol_name": "Cyclophosphamide-Total Body Irradiation (TBI)-Methotrexate GvHD (Related Donor Conditioning)",
+    "disease_site": "HSCT conditioning",
+    "category": "haematology",
+    "cycle_length_days": 1,
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 60.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          -6,
+          -5
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 1000ml sodium chloride 0.9% over 2 hours. Start at 1015hrs. Dose banded per national dose banding table (20mg/ml). Mesna uroprotection 24mg/kg IV required (Day -6: 1000, 1300, 1600, 1900, 2200hrs; Day -5: 0200, 0600, 1000, 1300, 1600, 1900, 2200hrs; Day -4: 0200, 0600hrs). Extensive IV hydration required days -7 to -4. Haemorrhagic cystitis risk."
+      },
+      {
+        "drug_name": "Total Body Irradiation",
+        "dose": 165.0,
+        "dose_unit": "units",
+        "route": "IV infusion",
+        "days": [
+          -3,
+          -2,
+          -1,
+          0
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "165 cGy per fraction, given twice daily on days -3, -2, -1 and 0 (total 8 fractions = 1320 cGy total). Premedicate with dexamethasone 3.3mg IV equivalent twice daily at 0730 and 1600hrs before TBI on days -3, -2, -1. Lorazepam 1mg oral twice daily starting night before radiotherapy and continuing until complete."
+      },
+      {
+        "drug_name": "Methotrexate",
+        "dose": 5.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          3,
+          6,
+          11
+        ],
+        "infusion_duration_hours": 0.083,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "GvHD prophylaxis. IV bolus over 5 minutes. Administer at 1700hrs. Dose rounded to nearest 2.5mg. Check bilirubin, creatinine and mucositis before each dose. Calcium folinate 30mg IV bolus 6-hourly for 4 doses starting 24 hours after each methotrexate dose (days +4, +7, +12)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Hepatic impairment: serum bilirubin 36-50 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.5,
+        "notes": "Reduce to 50% dose"
+      },
+      {
+        "condition": "Hepatic impairment: serum bilirubin 51-85 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.25,
+        "notes": "Reduce to 25% dose"
+      },
+      {
+        "condition": "Hepatic impairment: serum bilirubin greater than 85 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.0,
+        "notes": "Omit dose"
+      },
+      {
+        "condition": "Hepatic impairment: serum bilirubin 53-86 µmol/L",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "25% dose reduction recommended"
+      },
+      {
+        "condition": "Renal impairment: CrCl 30-50 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75% dose"
+      },
+      {
+        "condition": "Renal impairment: CrCl less than 30 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.0,
+        "notes": "High dose therapy and stem cell transplantation generally not undertaken"
+      },
+      {
+        "condition": "Renal impairment: serum creatinine 146-165 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.5,
+        "notes": "Reduce to 50% dose"
+      },
+      {
+        "condition": "Renal impairment: serum creatinine 166-180 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.25,
+        "notes": "Reduce to 25% dose"
+      },
+      {
+        "condition": "Renal impairment: serum creatinine greater than 180 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.0,
+        "notes": "Omit dose"
+      },
+      {
+        "condition": "Mucositis NCI-CTC grade 3 or more on day +11",
+        "drug_name": "Methotrexate",
+        "factor": 1.0,
+        "notes": "Day +11 methotrexate dose may be reduced or omitted. Discuss with transplant clinician."
+      }
+    ],
+    "pre_medications": [
+      "Metoclopramide 10mg three times a day oral or IV (antiemetic prior to cyclophosphamide)",
+      "Ondansetron 8mg twice a day oral or IV (antiemetic prior to cyclophosphamide)",
+      "Dexamethasone 4mg IV or equivalent prior to each TBI fraction",
+      "Ondansetron 8mg oral or IV prior to each TBI fraction",
+      "Dexamethasone 3.3mg IV (or equivalent) twice daily at 0730 and 1600hrs before TBI (days -3, -2, -1)",
+      "Lorazepam 1mg oral twice daily starting night before TBI, continuing until TBI complete",
+      "Mesna 24mg/kg IV (uroprotection for cyclophosphamide)",
+      "Ciclosporin oral or IV (GvHD prophylaxis - prescribed separately on inpatient system)",
+      "Calcium folinate 30mg IV bolus 6-hourly for 4 doses starting 24 hours after each methotrexate dose (days +4, +7, +12)",
+      "IV hydration prescribed on inpatient system before and after cyclophosphamide (days -7 to -4)"
+    ],
+    "special_warnings": [
+      "Full intensity conditioning for related donor allograft",
+      "Cyclophosphamide: haemorrhagic cystitis risk; mesna uroprotection mandatory; extensive IV hydration required days -7 to -4",
+      "TBI: 165 cGy twice daily on days -3, -2, -1 and 0 (total 8 fractions)",
+      "Lorazepam premedication mandatory for TBI",
+      "GFR measurement by Nuclear Medicine required prior to first day of treatment",
+      "FBC, LFTs and U&Es required prior to initiating treatment",
+      "LFTs and creatinine required prior to each methotrexate dose",
+      "Evaluate mucositis prior to each methotrexate administration",
+      "Regimen only available at Wessex Blood and Marrow Transplant Unit",
+      "Mesna dose rounded to nearest 100mg"
+    ],
+    "required_patient_fields": [
+      "weight_kg",
+      "body_surface_area",
+      "creatinine_clearance",
+      "serum_creatinine",
+      "serum_bilirubin",
+      "gfr_nuclear_medicine"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "HSCT-MEL-200",
+    "protocol_name": "HSCT Melphalan (200mg/m²) - Multiple Myeloma Autograft Conditioning",
+    "disease_site": "HSCT conditioning",
+    "category": "haematology",
+    "cycle_length_days": 1,
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Melphalan",
+        "dose": 200.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          -1
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 500ml sodium chloride 0.9% over 30 minutes. Administer at 1100hrs. Short expiry (90 minutes) - must be made locally; strict timing essential. Dose rounded to nearest 10mg. Pre-hydration mandatory (1000ml sodium chloride 0.9% with potassium chloride 27mmol overnight before, completed by 0930 on day of infusion; 1000ml sodium chloride 0.9% at 0930hrs over 90 min; furosemide 20mg IV bolus at 1010hrs; urine output >500ml required before proceeding). Extensive post-hydration required."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Renal impairment: CrCl 30-50 ml/min",
+        "drug_name": "Melphalan",
+        "factor": 0.7,
+        "notes": "Reduce dose to 140mg/m²"
+      },
+      {
+        "condition": "Renal impairment: CrCl less than 30 ml/min",
+        "drug_name": "Melphalan",
+        "factor": 0.0,
+        "notes": "High dose melphalan not recommended; clinical decision required"
+      }
+    ],
+    "pre_medications": [
+      "Aprepitant 125mg oral once daily on day of melphalan, then 80mg once daily for 2 days afterwards",
+      "Dexamethasone 4mg oral each morning on same days as aprepitant",
+      "Metoclopramide 10mg three times a day oral or IV until nausea subsides",
+      "Ondansetron 8mg twice a day oral or IV for ten days then review",
+      "Chlorphenamine 10mg IV (premedication for stem cell transfusion)",
+      "Paracetamol 1000mg oral (premedication for stem cell transfusion)",
+      "Pre-hydration: 1000ml sodium chloride 0.9% with potassium chloride 27mmol overnight (completed by 0930)",
+      "Furosemide 20mg IV bolus at 1010hrs to ensure adequate diuresis before melphalan",
+      "Growth factors (filgrastim or lenograstim) from day +7 until neutrophils >0.5",
+      "Antimicrobials: ciprofloxacin 250mg twice daily from day +5 whilst neutropenic; fluconazole 100mg once daily from admission until neutrophil recovery; aciclovir 400mg two to three times daily from admission",
+      "Gastric protection with proton pump inhibitor throughout admission",
+      "Thromboprophylaxis as per individual transplant schedule"
+    ],
+    "special_warnings": [
+      "Autograft conditioning for multiple myeloma",
+      "Melphalan 200mg/m²: short expiry (90 minutes) - must be made locally for individual patient; strict timing protocol mandatory",
+      "Urine output must exceed 500ml before proceeding with melphalan infusion; if <500ml give second furosemide 20mg IV and recheck",
+      "Extensive pre- and post-hydration protocol required",
+      "GFR measurement by Nuclear Medicine or creatinine clearance calculation required prior to treatment",
+      "FBC, LFTs and U&Es required prior to initiating treatment",
+      "No dose modification for hepatic impairment",
+      "Dose reduced to 140mg/m² for CrCl 30-50 ml/min",
+      "Only available at units which carry out autograft transplantation"
+    ],
+    "required_patient_fields": [
+      "body_surface_area",
+      "creatinine_clearance",
+      "urine_output",
+      "gfr_nuclear_medicine"
+    ],
+    "auc_dosing": null
+  }
+]

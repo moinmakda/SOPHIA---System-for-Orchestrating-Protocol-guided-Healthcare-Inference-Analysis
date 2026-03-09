@@ -1,0 +1,1739 @@
+[
+  {
+    "protocol_code": "COLORECTAL-CETUX-ENCORAFENIB",
+    "protocol_name": "Cetuximab-Encorafenib (Colorectal)",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 28,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Cetuximab",
+        "dose": 500.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          15
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Flat 500mg/m\u00b2 dose given every 2 weeks (days 1 and 15 of 28-day cycle). First infusion over 120 minutes; if well tolerated subsequent infusions may be given over 60 minutes. Rate must not exceed 10mg/min. Dose banded per national dose bands (5mg/ml). Monitor for hypersensitivity for 60 minutes after infusion."
+      },
+      {
+        "drug_name": "Encorafenib",
+        "dose": 300.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "300mg once daily orally days 1-28. Available as 50mg and 75mg capsules. If encorafenib is permanently discontinued, cetuximab should also be discontinued and vice versa."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological: neutrophils \u22640.9x10\u2079/L or platelets \u226475x10\u2079/L",
+        "drug_name": "Encorafenib",
+        "factor": 1.0,
+        "notes": "Delay treatment for 7 days. Neither cetuximab nor encorafenib are myelosuppressive; no dose reduction needed for haematological toxicity."
+      },
+      {
+        "condition": "Hepatic impairment: mild (Child-Pugh Class A)",
+        "drug_name": "Encorafenib",
+        "factor": 0.75,
+        "notes": "Reduce encorafenib dose to 300mg (1st reduction level). Not recommended in severe hepatic impairment (Child-Pugh Class C)."
+      },
+      {
+        "condition": "Hepatic: transaminases >5xULN or bilirubin >1.5xULN",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Withhold cetuximab until transaminases \u22645xULN and bilirubin \u22641.5xULN."
+      },
+      {
+        "condition": "Renal: serum creatinine >1.5xULN",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Administer only where serum creatinine is 1.5xULN or below."
+      },
+      {
+        "condition": "Renal: severe renal impairment",
+        "drug_name": "Encorafenib",
+        "factor": 1.0,
+        "notes": "No data available; use with caution in severe renal impairment."
+      },
+      {
+        "condition": "Liver toxicity NCI-CTC Grade 2 - no improvement within 4 weeks",
+        "drug_name": "Encorafenib",
+        "factor": 1.0,
+        "notes": "Maintain encorafenib. If no improvement within 4 weeks, withhold until improved to grade 0/1 or baseline, then resume at same dose."
+      },
+      {
+        "condition": "Liver toxicity NCI-CTC Grade 3 (first occurrence)",
+        "drug_name": "Encorafenib",
+        "factor": 0.75,
+        "notes": "Withhold for up to 4 weeks. If improved to grade 0/1, resume at reduced dose (225mg/day). If not improved, permanently discontinue."
+      },
+      {
+        "condition": "Liver toxicity NCI-CTC Grade 3 (recurrence)",
+        "drug_name": "Encorafenib",
+        "factor": 0.0,
+        "notes": "Consider permanently discontinuing encorafenib."
+      },
+      {
+        "condition": "Liver toxicity NCI-CTC Grade 4 (first occurrence)",
+        "drug_name": "Encorafenib",
+        "factor": 0.75,
+        "notes": "Withhold for up to 4 weeks. If improved to grade 0/1, resume at reduced dose. If not improved, permanently discontinue."
+      },
+      {
+        "condition": "Liver toxicity NCI-CTC Grade 4 (recurrence)",
+        "drug_name": "Encorafenib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue encorafenib."
+      },
+      {
+        "condition": "1st dose reduction required",
+        "drug_name": "Encorafenib",
+        "factor": 0.75,
+        "notes": "Reduce to 225mg once daily."
+      },
+      {
+        "condition": "2nd dose reduction required",
+        "drug_name": "Encorafenib",
+        "factor": 0.5,
+        "notes": "Reduce to 150mg once daily."
+      },
+      {
+        "condition": "1st dose reduction required (cetuximab)",
+        "drug_name": "Cetuximab",
+        "factor": 0.8,
+        "notes": "1st reduction: 400mg/m\u00b2. 2nd reduction: 300mg/m\u00b2. Dose reductions are permanent. Note: cetuximab dose reductions are generally NOT permitted; only in context of concurrent encorafenib dose reduction or grade 3 skin toxicity."
+      },
+      {
+        "condition": "Skin toxicity NCI-CTC Grade 3 (first occurrence, resolves \u226414 days)",
+        "drug_name": "Cetuximab",
+        "factor": 1.0,
+        "notes": "Delay until toxicity resolves to grade \u22642. If resolves within 14 days, resume at same dose."
+      },
+      {
+        "condition": "Skin toxicity NCI-CTC Grade 3 (2nd/3rd occurrence)",
+        "drug_name": "Cetuximab",
+        "factor": 0.75,
+        "notes": "Delay up to 14 days with concomitant dose reduction. Dose reductions are permanent."
+      },
+      {
+        "condition": "Skin toxicity: >2 consecutive infusions withheld, 4th grade 3 episode, or any grade 4",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue cetuximab. If cetuximab discontinued, encorafenib must also be discontinued."
+      },
+      {
+        "condition": "Infusion reaction NCI-CTC Grade 1",
+        "drug_name": "Cetuximab",
+        "factor": 1.0,
+        "notes": "Reduce infusion rate by 50% (total infusion must not exceed 240 minutes)."
+      },
+      {
+        "condition": "Infusion reaction NCI-CTC Grade 2",
+        "drug_name": "Cetuximab",
+        "factor": 1.0,
+        "notes": "Stop infusion, administer supportive therapy. Once resolved to grade \u22641, resume at 50% of previous rate."
+      },
+      {
+        "condition": "Infusion reaction NCI-CTC Grade 3 or 4",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Stop infusion immediately. Do not re-administer cetuximab."
+      },
+      {
+        "condition": "QTcF >500ms with change \u226460ms from baseline",
+        "drug_name": "Encorafenib",
+        "factor": 1.0,
+        "notes": "Withhold encorafenib. Resume at reduced dose when QTcF \u2264500ms. Discontinue if more than one recurrence."
+      },
+      {
+        "condition": "Uveitis grade 2 or 3 improving to grade 0/1",
+        "drug_name": "Encorafenib",
+        "factor": 0.75,
+        "notes": "Withhold and repeat ophthalmic monitoring within 2 weeks. If improved to grade 0/1, resume at reduced dose."
+      },
+      {
+        "condition": "Uveitis grade 4 or not improved within 6 weeks",
+        "drug_name": "Encorafenib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue encorafenib."
+      },
+      {
+        "condition": "NCI-CTC Grade 3 cutaneous reactions (first occurrence)",
+        "drug_name": "Encorafenib",
+        "factor": 1.0,
+        "notes": "Withhold until improved to grade 0/1, then resume at same dose."
+      },
+      {
+        "condition": "NCI-CTC Grade 3 cutaneous reactions (recurrent)",
+        "drug_name": "Encorafenib",
+        "factor": 0.75,
+        "notes": "Withhold until improved to grade 0/1, then resume at reduced dose."
+      },
+      {
+        "condition": "NCI-CTC Grade 4 cutaneous reactions",
+        "drug_name": "Encorafenib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue encorafenib."
+      },
+      {
+        "condition": "Confirmed pneumonitis",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Stop treatment permanently."
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV (30 minutes prior to cetuximab)",
+      "Dexamethasone 8mg oral or IV (30 minutes prior to cetuximab)",
+      "H2 antagonist according to local formulary (30 minutes prior to cetuximab)",
+      "Paracetamol 1000mg oral (30 minutes prior to cetuximab)",
+      "Metoclopramide 10mg oral TDS when required (take home, day 1 cycle 1 only)",
+      "Doxycycline 100mg oral once daily for 28 days (prophylaxis for skin rash)"
+    ],
+    "special_warnings": [
+      "BRAF V600E mutation and RAS wild type must be confirmed before starting therapy.",
+      "Cetuximab dose reductions are NOT routinely permitted; any reduction is permanent.",
+      "If encorafenib is permanently discontinued, cetuximab must also be discontinued and vice versa.",
+      "Monitor serum electrolytes (magnesium, potassium, calcium) \u2014 correct abnormalities to reduce QT prolongation risk.",
+      "Acniform skin rash occurs in >70% of patients receiving cetuximab; onset normally within 3 weeks.",
+      "Encorafenib associated with QTc prolongation \u2014 correct electrolytes and control risk factors before starting.",
+      "Haemorrhagic events in 21% of patients on encorafenib \u2014 monitor haemoglobin, epistaxis, blood in stool/urine.",
+      "New or worsening cutaneous malignancies (cuSCC) may occur with BRAF inhibitors \u2014 instruct patients to report new skin lesions.",
+      "Uveitis including iritis and iridocyclitis can occur with encorafenib \u2014 assess at every visit.",
+      "Monitor for hypersensitivity for 60 minutes after cetuximab infusion. Do not administer other chemotherapy during this period.",
+      "Formal medical review should occur by end of first 8 weeks of treatment.",
+      "WHO performance status 0 or 1 required.",
+      "UV radiation may worsen cetuximab skin reactions \u2014 sun safety practices for duration of treatment and 2 months after.",
+      "Gastric protection with PPI or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed."
+    ],
+    "required_patient_fields": [
+      "kras_status",
+      "braf_v600e_status",
+      "ras_wild_type_status",
+      "neutrophil_count",
+      "platelet_count",
+      "liver_function_tests",
+      "renal_function",
+      "serum_electrolytes",
+      "ecg_qtc",
+      "performance_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "COLORECTAL-CETUX-5FU-FA-OXA-MDG",
+    "protocol_name": "Cetuximab-Fluorouracil-Folinic Acid (Modified de Gramont)-Oxaliplatin (Colorectal)",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 14,
+    "number_of_cycles": 8,
+    "drugs": [
+      {
+        "drug_name": "Cetuximab",
+        "dose": 400.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 Day 1 loading dose: 400mg/m\u00b2 over 120 minutes. Rate must not exceed 5mg/min for first infusion. Dose banded per national dose bands (5mg/ml). An interval of 60 minutes should be left between cetuximab and oxaliplatin."
+      },
+      {
+        "drug_name": "Cetuximab",
+        "dose": 250.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          8
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 Day 8 maintenance dose: 250mg/m\u00b2 over 60 minutes. Rate must not exceed 10mg/min for subsequent infusions. | NOTE: Two Cetuximab 250mg/m\u00b2 day 8 entries exist \u2014 one for cycle 1 day 8 only and one for cycle 2 onwards day 8. Both are intentional and represent the same maintenance dose on day 8 for different cycles."
+      },
+      {
+        "drug_name": "Cetuximab",
+        "dose": 250.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 2 onwards Day 1 maintenance dose: 250mg/m\u00b2 over 60 minutes. Dose banded per national dose bands (5mg/ml)."
+      },
+      {
+        "drug_name": "Cetuximab",
+        "dose": 250.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          8
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 2 onwards Day 8 maintenance dose: 250mg/m\u00b2 over 60 minutes. | NOTE: Two Cetuximab 250mg/m\u00b2 day 8 entries exist \u2014 one for cycle 1 day 8 only and one for cycle 2 onwards day 8. Both are intentional and represent the same maintenance dose on day 8 for different cycles."
+      },
+      {
+        "drug_name": "Oxaliplatin",
+        "dose": 85.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "In 500ml glucose 5% over 120 minutes. Glucose 5% flush before and after. Dose banded per national dose bands (5mg/ml). Central venous access required."
+      },
+      {
+        "drug_name": "Folinic Acid",
+        "dose": 350.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "In 250ml glucose 5% over 120 minutes. May be replaced with calcium levofolinate 175mg IV in 250ml glucose 5% over 120 minutes. No dose adjustment needed for haematological counts."
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 400.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV bolus over 10 minutes. Dose banded per national dose bands (50mg/ml)."
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 2400.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2
+        ],
+        "infusion_duration_hours": 46.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Continuous IV infusion over 46 hours via ambulatory pump. Central venous access required. Dose banded per national dose bands (50mg/ml)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological: neutrophils <1.5x10\u2079/L or platelets <75x10\u2079/L - delay up to 7 days",
+        "drug_name": "Fluorouracil",
+        "factor": 1.0,
+        "notes": "Delay and reinitiate at full dose for up to 7-day delay."
+      },
+      {
+        "condition": "Haematological: delay >7 days for thrombocytopenia",
+        "drug_name": "Fluorouracil",
+        "factor": 0.75,
+        "notes": "Reinitiate at 75% of original dose."
+      },
+      {
+        "condition": "Haematological: neutropenia persisting >7 days \u2014 omit bolus fluorouracil",
+        "drug_name": "Fluorouracil",
+        "factor": 0.0,
+        "notes": "Omit the bolus fluorouracil dose for this and subsequent cycles."
+      },
+      {
+        "condition": "Haematological: further delay needed despite omitting bolus 5-FU",
+        "drug_name": "Fluorouracil",
+        "factor": 0.8,
+        "notes": "Reduce infusional fluorouracil to 80% of original dose."
+      },
+      {
+        "condition": "Haematological: further delay needed despite omitting bolus 5-FU",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.8,
+        "notes": "Reduce oxaliplatin to 80% of original dose."
+      },
+      {
+        "condition": "Haematological: delay \u226521 days",
+        "drug_name": "Fluorouracil",
+        "factor": 0.0,
+        "notes": "Stop therapy."
+      },
+      {
+        "condition": "Liver impairment: bilirubin >85 \u03bcmol/L or AST/ALT >180 units",
+        "drug_name": "Fluorouracil",
+        "factor": 0.0,
+        "notes": "Fluorouracil contra-indicated."
+      },
+      {
+        "condition": "Liver impairment: moderate hepatic impairment",
+        "drug_name": "Fluorouracil",
+        "factor": 0.67,
+        "notes": "Reduce initial dose by 33% in moderate hepatic impairment."
+      },
+      {
+        "condition": "Liver impairment: severe hepatic impairment",
+        "drug_name": "Fluorouracil",
+        "factor": 0.5,
+        "notes": "Reduce initial dose by 50% in severe hepatic impairment. Dose may be increased as tolerated."
+      },
+      {
+        "condition": "Liver impairment: transaminases >5xULN or bilirubin >1.5xULN",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Unlikely to require dose adjustment but administer only when within these thresholds."
+      },
+      {
+        "condition": "Renal impairment: CrCl <20ml/min",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.75,
+        "notes": "Dose reduce for CrCl <20ml/min. For moderate impairment, treat at normal dose and monitor renal function, adjusting according to toxicity."
+      },
+      {
+        "condition": "Renal impairment: severe",
+        "drug_name": "Fluorouracil",
+        "factor": 0.75,
+        "notes": "Consider dose adjustment in severe renal impairment."
+      },
+      {
+        "condition": "Diarrhoea NCI-CTC Grade 2 (first occurrence)",
+        "drug_name": "Fluorouracil",
+        "factor": 1.0,
+        "notes": "Withhold fluorouracil until resolved to grade \u22641, then restart at full dose."
+      },
+      {
+        "condition": "Diarrhoea NCI-CTC Grade 2 (second occurrence)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.75,
+        "notes": "Delay treatment; restart at 75% of original dose once resolved to grade \u22641."
+      },
+      {
+        "condition": "Diarrhoea NCI-CTC Grade 2 (third occurrence)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.5,
+        "notes": "Restart fluorouracil at 50% of original dose."
+      },
+      {
+        "condition": "Diarrhoea NCI-CTC Grade 3 (first occurrence)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.75,
+        "notes": "Withhold until resolved to grade \u22641, then restart at 75% of original dose."
+      },
+      {
+        "condition": "Diarrhoea NCI-CTC Grade 3 (second occurrence)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.5,
+        "notes": "Wait until resolved to grade \u22641, then resume at 50% of original dose."
+      },
+      {
+        "condition": "Diarrhoea NCI-CTC Grade 3 (third occurrence) or Grade 4 at any time",
+        "drug_name": "Fluorouracil",
+        "factor": 0.0,
+        "notes": "Stop fluorouracil therapy permanently."
+      },
+      {
+        "condition": "Neurosensory toxicity Grade 1-2 lasting <7 days",
+        "drug_name": "Oxaliplatin",
+        "factor": 1.0,
+        "notes": "Administer full dose oxaliplatin."
+      },
+      {
+        "condition": "Neurosensory toxicity Grade 2 persisting >7 days",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.75,
+        "notes": "Reduce oxaliplatin to 75mg/m\u00b2."
+      },
+      {
+        "condition": "Neurosensory toxicity Grade 3 or above",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.0,
+        "notes": "Discontinue oxaliplatin."
+      },
+      {
+        "condition": "Grade 3-4 diarrhoea or stomatitis recurring despite fluorouracil dose reduction",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.75,
+        "notes": "Reduce oxaliplatin to 75mg/m\u00b2."
+      },
+      {
+        "condition": "Skin toxicity NCI-CTC Grade 3 (first occurrence, resolves \u226414 days)",
+        "drug_name": "Cetuximab",
+        "factor": 1.0,
+        "notes": "Delay until toxicity resolves to grade \u22642. If resolves within 14 days, resume at same dose."
+      },
+      {
+        "condition": "Skin toxicity NCI-CTC Grade 3 (2nd occurrence, dose reduction to 200mg/m\u00b2)",
+        "drug_name": "Cetuximab",
+        "factor": 0.8,
+        "notes": "Delay up to 14 days; reduce to 200mg/m\u00b2. Dose reduction is permanent."
+      },
+      {
+        "condition": "Skin toxicity NCI-CTC Grade 3 (3rd occurrence, dose reduction to 150mg/m\u00b2)",
+        "drug_name": "Cetuximab",
+        "factor": 0.6,
+        "notes": "Delay up to 14 days; reduce to 150mg/m\u00b2. Dose reduction is permanent."
+      },
+      {
+        "condition": "Skin toxicity: >2 consecutive infusions withheld or 4th episode of grade 3",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue cetuximab."
+      },
+      {
+        "condition": "Infusion reaction Grade 1",
+        "drug_name": "Cetuximab",
+        "factor": 1.0,
+        "notes": "Reduce infusion rate by 50%."
+      },
+      {
+        "condition": "Infusion reaction Grade 2",
+        "drug_name": "Cetuximab",
+        "factor": 1.0,
+        "notes": "Stop infusion, administer supportive therapy. Resume at 50% of previous rate once resolved to grade \u22641."
+      },
+      {
+        "condition": "Infusion reaction Grade 3 or 4",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Stop immediately; do not re-administer."
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV bolus (30 minutes prior to cetuximab)",
+      "Dexamethasone 8mg oral (30 minutes prior to cetuximab)",
+      "H2 antagonist according to local formulary (30 minutes prior to cetuximab)",
+      "Paracetamol 1000mg oral (30 minutes prior to cetuximab)",
+      "Ondansetron 8mg oral or IV (15-30 minutes prior to chemotherapy on day 1 only)",
+      "Dexamethasone 4mg oral twice daily for 3 days (take home, starting day 2)",
+      "Metoclopramide 10mg oral TDS when required (take home)",
+      "Loperamide 4mg after first loose stool then 2-4mg four times daily PRN (max 16mg/24h)"
+    ],
+    "special_warnings": [
+      "DPD testing required before initiation: patients with complete or partial DPD deficiency are at increased risk of severe and fatal toxicity from fluorouracil.",
+      "Cetuximab dose reductions are permanent and NOT routinely permitted.",
+      "Central venous access and ambulatory infusion pump required for 46-hour fluorouracil infusion.",
+      "An interval of 60 minutes must be left between cetuximab and oxaliplatin administration.",
+      "Monitor for hypersensitivity for 60 minutes after cetuximab infusion; do not administer other chemotherapy during this period.",
+      "Acniform skin rash in >70% of patients receiving cetuximab; onset normally within 3 weeks.",
+      "Serum electrolytes (magnesium, potassium, calcium) should be monitored and corrected.",
+      "Peripheral neuropathy with oxaliplatin is cumulative \u2014 acute laryngopharyngeal dysaesthesia may increase with infusion duration.",
+      "Rare cases of acute interstitial lung disease or lung fibrosis with oxaliplatin \u2014 stop for unexplained respiratory symptoms.",
+      "Folinic acid may be replaced with calcium levofolinate 175mg IV in 250ml glucose 5% over 120 minutes.",
+      "Response to treatment is often assessed after 6 cycles.",
+      "WHO performance status 0 or 1 required."
+    ],
+    "required_patient_fields": [
+      "kras_status",
+      "dpd_status",
+      "neutrophil_count",
+      "platelet_count",
+      "liver_function_tests",
+      "renal_function",
+      "serum_electrolytes"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "COLORECTAL-CETUX-IRINOTECAN-21DAY",
+    "protocol_name": "Cetuximab-Irinotecan (21 day) (Colorectal)",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Cetuximab",
+        "dose": 400.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 Day 1 loading dose: 400mg/m\u00b2 over 120 minutes. Rate must not exceed 10mg/min. An interval of 60 minutes should be left between cetuximab and irinotecan."
+      },
+      {
+        "drug_name": "Cetuximab",
+        "dose": 250.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          8,
+          15
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 Days 8 and 15 maintenance dose: 250mg/m\u00b2 over 60 minutes."
+      },
+      {
+        "drug_name": "Cetuximab",
+        "dose": 250.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycles 2-6 Days 1, 8, 15: 250mg/m\u00b2 over 60 minutes. Dose banded per national dose bands (5mg/ml). | MAINTENANCE DOSE \u2014 Cycles 2-6 Days 1, 8, 15: this entry covers cycle 2 onwards. A separate entry covers cycle 1 maintenance (days 8 and 15 only at 250mg/m\u00b2). The loading dose entry (400mg/m\u00b2 cycle 1 day 1) is a distinct entry."
+      },
+      {
+        "drug_name": "Irinotecan",
+        "dose": 350.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.5,
+        "max_dose": 700.0,
+        "max_dose_unit": "mg",
+        "notes": "In 250ml sodium chloride 0.9% over 90 minutes. May be administered over 30-90 minutes. Maximum daily dose 700mg. Dose banded per national dose bands (20mg/ml). Consider starting dose of 300mg/m\u00b2 (max 600mg) for patients with prior pelvic radiotherapy, age \u226570, or PS 2."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological: neutrophils <1.5x10\u2079/L or platelets <100x10\u2079/L",
+        "drug_name": "Irinotecan",
+        "factor": 1.0,
+        "notes": "Delay treatment for 7 days. If counts recover, restart irinotecan at 80% of original dose."
+      },
+      {
+        "condition": "Haematological: 14-day delay required or two separate 7-day delays",
+        "drug_name": "Irinotecan",
+        "factor": 0.5,
+        "notes": "Reduce irinotecan to 50% of original dose, or consider stopping treatment."
+      },
+      {
+        "condition": "Haematological: nadir neutrophils <0.5x10\u2079/L or febrile neutropenia",
+        "drug_name": "Irinotecan",
+        "factor": 0.8,
+        "notes": "Reduce subsequent irinotecan dose to 80% of original dose."
+      },
+      {
+        "condition": "Hepatic: bilirubin 26-51 \u03bcmol/L (for 350mg/m\u00b2 dose)",
+        "drug_name": "Irinotecan",
+        "factor": 0.57,
+        "notes": "Reduce to 200mg/m\u00b2 (approx. 57% of 350mg/m\u00b2 dose)."
+      },
+      {
+        "condition": "Hepatic: bilirubin >51 \u03bcmol/L",
+        "drug_name": "Irinotecan",
+        "factor": 0.0,
+        "notes": "Consider stopping therapy."
+      },
+      {
+        "condition": "Hepatic: transaminases >5xULN or bilirubin >1.5xULN",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Administer only when transaminases \u22645xULN and bilirubin \u22641.5xULN."
+      },
+      {
+        "condition": "Renal: serum creatinine >1.5xULN",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Administer only where serum creatinine is \u22641.5xULN."
+      },
+      {
+        "condition": "Non-haematological toxicity NCI-CTC Grade 2-4 (first occurrence)",
+        "drug_name": "Irinotecan",
+        "factor": 0.86,
+        "notes": "Reduce to 300mg/m\u00b2 in first instance."
+      },
+      {
+        "condition": "Non-haematological toxicity NCI-CTC Grade 2-4 (second occurrence)",
+        "drug_name": "Irinotecan",
+        "factor": 0.71,
+        "notes": "Delay until symptoms resolved, then restart at 250mg/m\u00b2."
+      },
+      {
+        "condition": "Non-haematological toxicity NCI-CTC Grade 2-4 (third occurrence)",
+        "drug_name": "Irinotecan",
+        "factor": 0.0,
+        "notes": "Stop treatment."
+      },
+      {
+        "condition": "Skin toxicity NCI-CTC Grade 3 (first occurrence, resolves \u226414 days)",
+        "drug_name": "Cetuximab",
+        "factor": 1.0,
+        "notes": "Delay until toxicity resolves to grade \u22642. If resolves within 14 days, resume at same dose."
+      },
+      {
+        "condition": "Skin toxicity NCI-CTC Grade 3 (2nd occurrence, dose reduction to 200mg/m\u00b2)",
+        "drug_name": "Cetuximab",
+        "factor": 0.8,
+        "notes": "Delay up to 14 days; reduce to 200mg/m\u00b2. Dose reduction is permanent."
+      },
+      {
+        "condition": "Skin toxicity NCI-CTC Grade 3 (3rd occurrence, dose reduction to 150mg/m\u00b2)",
+        "drug_name": "Cetuximab",
+        "factor": 0.6,
+        "notes": "Delay up to 14 days; reduce to 150mg/m\u00b2. Dose reduction is permanent."
+      },
+      {
+        "condition": "Skin toxicity: >2 consecutive infusions withheld, 4th grade 3 episode, or any grade 4",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue cetuximab."
+      },
+      {
+        "condition": "Infusion reaction Grade 1",
+        "drug_name": "Cetuximab",
+        "factor": 1.0,
+        "notes": "Reduce infusion rate by 50% (max total 240 minutes)."
+      },
+      {
+        "condition": "Infusion reaction Grade 2",
+        "drug_name": "Cetuximab",
+        "factor": 1.0,
+        "notes": "Stop infusion, give supportive therapy; resume at 50% of previous rate when resolved to grade \u22641."
+      },
+      {
+        "condition": "Infusion reaction Grade 3 or 4",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Stop immediately; do not re-administer."
+      },
+      {
+        "condition": "Confirmed pneumonitis",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Stop treatment."
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV (30 minutes prior to cetuximab)",
+      "Dexamethasone 8mg oral (30 minutes prior to cetuximab)",
+      "H2 antagonist according to local formulary (30 minutes prior to cetuximab)",
+      "Paracetamol 1000mg oral (30 minutes prior to cetuximab)",
+      "Ondansetron 8mg oral (15-30 minutes prior to chemotherapy on day 1 only)",
+      "Atropine 250mcg SC immediately prior to irinotecan (prevention of acute cholinergic syndrome)",
+      "Dexamethasone 4mg oral twice daily for 3 days (take home, starting day after chemotherapy)",
+      "Metoclopramide 10mg oral TDS when required (take home)",
+      "Loperamide 4mg single dose after first loose stool, then 2mg every 2 hours until 12 hours after last liquid stool (max 48 hours, max 16mg/day)"
+    ],
+    "special_warnings": [
+      "Confirm wild type KRAS status prior to starting therapy.",
+      "Cetuximab dose reductions are permanent and NOT routinely permitted.",
+      "Monitor for hypersensitivity for 60 minutes after cetuximab infusion; do not administer other chemotherapy during this period.",
+      "Irinotecan associated with acute cholinergic syndrome \u2014 atropine 250mcg SC should be given immediately prior to irinotecan; further 250mcg dose available for cholinergic symptoms.",
+      "Irinotecan associated with delayed diarrhoea \u2014 diarrhoea must have resolved completely before next cycle.",
+      "Consider oral ciprofloxacin 500mg twice daily if diarrhoea continues >24 hours.",
+      "Acniform skin rash in >70% of patients receiving cetuximab.",
+      "Serum electrolytes (magnesium, potassium) should be monitored and corrected.",
+      "UV radiation may worsen cetuximab skin reactions \u2014 sun safety for duration and 2 months after.",
+      "Consider starting irinotecan at 300mg/m\u00b2 (max 600mg) in patients with prior pelvic radiotherapy, age \u226570, or PS 2.",
+      "This regimen may require funding approval.",
+      "WHO performance status 0 or 1 required."
+    ],
+    "required_patient_fields": [
+      "kras_status",
+      "neutrophil_count",
+      "platelet_count",
+      "liver_function_tests",
+      "renal_function",
+      "serum_electrolytes"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "COLORECTAL-CETUX-IRINOTECAN-14DAY",
+    "protocol_name": "Cetuximab-Irinotecan (14 day) (Colorectal)",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 14,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Cetuximab",
+        "dose": 500.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Flat 500mg/m\u00b2 dose given every 2 weeks (14-day cycle). First infusion over 120 minutes; if well tolerated subsequent infusions may be given over 60 minutes. Rate must not exceed 10mg/min. Dose banded per national dose bands (5mg/ml). An interval of 60 minutes should be left between cetuximab and irinotecan."
+      },
+      {
+        "drug_name": "Irinotecan",
+        "dose": 250.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.5,
+        "max_dose": 700.0,
+        "max_dose_unit": "mg",
+        "notes": "In 250ml sodium chloride 0.9% over 90 minutes. May be administered over 30-90 minutes. Maximum daily dose 700mg. Dose banded per national dose bands (20mg/ml)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological: neutrophils <1.5x10\u2079/L or platelets <100x10\u2079/L",
+        "drug_name": "Irinotecan",
+        "factor": 0.8,
+        "notes": "Delay for 7 days. If counts recover, restart irinotecan at 80% of original dose."
+      },
+      {
+        "condition": "Haematological: 14-day delay required or two separate 7-day delays",
+        "drug_name": "Irinotecan",
+        "factor": 0.5,
+        "notes": "Reduce irinotecan to 50% of original dose, or consider stopping treatment."
+      },
+      {
+        "condition": "Haematological: nadir neutrophils <0.5x10\u2079/L or febrile neutropenia",
+        "drug_name": "Irinotecan",
+        "factor": 0.8,
+        "notes": "Reduce subsequent irinotecan dose to 80% of original dose."
+      },
+      {
+        "condition": "Hepatic: bilirubin 26-51 \u03bcmol/L (for 350mg/m\u00b2 dose)",
+        "drug_name": "Irinotecan",
+        "factor": 0.57,
+        "notes": "Reduce to 200mg/m\u00b2."
+      },
+      {
+        "condition": "Hepatic: bilirubin >51 \u03bcmol/L",
+        "drug_name": "Irinotecan",
+        "factor": 0.0,
+        "notes": "Consider stopping therapy."
+      },
+      {
+        "condition": "Hepatic: transaminases >5xULN or bilirubin >1.5xULN",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Administer only when transaminases \u22645xULN and bilirubin \u22641.5xULN."
+      },
+      {
+        "condition": "Renal: serum creatinine >1.5xULN",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Administer only where serum creatinine is \u22641.5xULN."
+      },
+      {
+        "condition": "Non-haematological toxicity NCI-CTC Grade 2-4 (first occurrence)",
+        "drug_name": "Irinotecan",
+        "factor": 0.8,
+        "notes": "Reduce to 200mg/m\u00b2 in first instance. All toxicities must resolve to grade 0/1 within 14 days before next cycle."
+      },
+      {
+        "condition": "Non-haematological toxicity NCI-CTC Grade 2-4 (second occurrence)",
+        "drug_name": "Irinotecan",
+        "factor": 0.6,
+        "notes": "Delay until resolved, then restart at 150mg/m\u00b2."
+      },
+      {
+        "condition": "Non-haematological toxicity NCI-CTC Grade 2-4 (third occurrence)",
+        "drug_name": "Irinotecan",
+        "factor": 0.0,
+        "notes": "Stop treatment."
+      },
+      {
+        "condition": "Skin toxicity NCI-CTC Grade 3 (first occurrence, resolves \u226414 days)",
+        "drug_name": "Cetuximab",
+        "factor": 1.0,
+        "notes": "Delay until resolves to grade \u22642. Resume at same dose if resolves within 14 days."
+      },
+      {
+        "condition": "Skin toxicity NCI-CTC Grade 3 (2nd/3rd occurrence with dose reduction)",
+        "drug_name": "Cetuximab",
+        "factor": 0.75,
+        "notes": "Delay up to 14 days with concomitant dose reduction. Dose reductions are permanent."
+      },
+      {
+        "condition": "Skin toxicity: >2 consecutive infusions withheld, 4th grade 3 episode, or any grade 4",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue cetuximab."
+      },
+      {
+        "condition": "Infusion reaction Grade 1",
+        "drug_name": "Cetuximab",
+        "factor": 1.0,
+        "notes": "Reduce infusion rate by 50% (max total 240 minutes)."
+      },
+      {
+        "condition": "Infusion reaction Grade 2",
+        "drug_name": "Cetuximab",
+        "factor": 1.0,
+        "notes": "Stop infusion, give supportive therapy; resume at 50% of previous rate when resolved to grade \u22641."
+      },
+      {
+        "condition": "Infusion reaction Grade 3 or 4",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Stop immediately; do not re-administer."
+      },
+      {
+        "condition": "Confirmed pneumonitis",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Stop treatment."
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV (30 minutes prior to cetuximab)",
+      "Dexamethasone 8mg oral or IV (30 minutes prior to cetuximab)",
+      "H2 antagonist according to local formulary (30 minutes prior to cetuximab)",
+      "Paracetamol 1000mg oral (30 minutes prior to cetuximab)",
+      "Ondansetron 8mg oral or IV (15-30 minutes prior to chemotherapy on day 1 only)",
+      "Atropine 250mcg SC immediately prior to irinotecan (prevention of acute cholinergic syndrome)",
+      "Dexamethasone 4mg oral twice daily for 3 days (take home, starting day after chemotherapy)",
+      "Metoclopramide 10mg oral TDS when required (take home)",
+      "Loperamide 2mg every 2 hours once first liquid stool appears, until 12 hours after last liquid stool (max 48 hours, max 16mg/day)"
+    ],
+    "special_warnings": [
+      "Confirm wild type KRAS status prior to starting therapy.",
+      "Cetuximab dose reductions are permanent and NOT routinely permitted.",
+      "This regimen uses the 500mg/m\u00b2 flat biweekly cetuximab dose (not loading/maintenance).",
+      "Monitor for hypersensitivity for 60 minutes after cetuximab infusion; do not administer other chemotherapy during this period.",
+      "Irinotecan associated with acute cholinergic syndrome \u2014 atropine 250mcg SC given immediately prior; further dose available for symptoms.",
+      "Irinotecan associated with delayed diarrhoea \u2014 diarrhoea must have resolved completely before next cycle.",
+      "Consider oral ciprofloxacin 500mg twice daily if diarrhoea continues >24 hours.",
+      "Acniform skin rash in >70% of patients receiving cetuximab.",
+      "UV radiation may worsen cetuximab skin reactions \u2014 sun safety for duration and 2 months after.",
+      "This regimen may require funding approval.",
+      "WHO performance status 0 or 1 required."
+    ],
+    "required_patient_fields": [
+      "kras_status",
+      "neutrophil_count",
+      "platelet_count",
+      "liver_function_tests",
+      "renal_function",
+      "serum_electrolytes"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "COLORECTAL-CETUX-14DAY-MONOTHERAPY",
+    "protocol_name": "Cetuximab (14 day) Monotherapy (Colorectal)",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 14,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Cetuximab",
+        "dose": 500.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Flat 500mg/m\u00b2 dose given every 2 weeks (14-day cycle). First infusion over 120 minutes; if well tolerated subsequent infusions may be given over 60 minutes. Rate must not exceed 10mg/min. Dose banded per national dose bands (5mg/ml). Monitor for hypersensitivity for 60 minutes after infusion."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological: neutrophils <1.5x10\u2079/L or platelets <100x10\u2079/L",
+        "drug_name": "Cetuximab",
+        "factor": 1.0,
+        "notes": "Delay treatment until levels are achieved. Decision to continue at consultant's discretion."
+      },
+      {
+        "condition": "Hepatic: transaminases >5xULN or bilirubin >1.5xULN",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Administer only when transaminases \u22645xULN and bilirubin \u22641.5xULN."
+      },
+      {
+        "condition": "Renal: serum creatinine >1.5xULN",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Administer only where serum creatinine is \u22641.5xULN."
+      },
+      {
+        "condition": "Skin toxicity NCI-CTC Grade 3 (first occurrence, resolves \u226414 days)",
+        "drug_name": "Cetuximab",
+        "factor": 1.0,
+        "notes": "Delay until toxicity resolves to grade \u22642. If resolves within 14 days, resume at same dose."
+      },
+      {
+        "condition": "Skin toxicity NCI-CTC Grade 3 (2nd/3rd occurrence with dose reduction)",
+        "drug_name": "Cetuximab",
+        "factor": 0.75,
+        "notes": "Delay up to 14 days with concomitant dose reduction. Dose reductions are permanent."
+      },
+      {
+        "condition": "Skin toxicity: >2 consecutive infusions withheld, 4th grade 3 episode, or any grade 4",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue cetuximab."
+      },
+      {
+        "condition": "Infusion reaction Grade 1",
+        "drug_name": "Cetuximab",
+        "factor": 1.0,
+        "notes": "Reduce infusion rate by 50% (max total 240 minutes)."
+      },
+      {
+        "condition": "Infusion reaction Grade 2",
+        "drug_name": "Cetuximab",
+        "factor": 1.0,
+        "notes": "Stop infusion, give supportive therapy; resume at 50% of previous rate when resolved to grade \u22641."
+      },
+      {
+        "condition": "Infusion reaction Grade 3 or 4",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Stop immediately; do not re-administer."
+      },
+      {
+        "condition": "Confirmed pneumonitis",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Stop treatment."
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV (30 minutes prior to cetuximab)",
+      "Dexamethasone 8mg oral or IV (30 minutes prior to cetuximab)",
+      "H2 antagonist according to local formulary (30 minutes prior to cetuximab)",
+      "Paracetamol 1000mg oral (30 minutes prior to cetuximab)",
+      "Metoclopramide 10mg oral TDS when required (take home, day 1 cycle 1 only)"
+    ],
+    "special_warnings": [
+      "Confirm wild type KRAS status prior to starting therapy.",
+      "Cetuximab dose reductions are permanent and NOT routinely permitted.",
+      "This regimen uses the 500mg/m\u00b2 flat biweekly cetuximab dose (not the loading/maintenance weekly schedule).",
+      "Monitor for hypersensitivity for 60 minutes after cetuximab infusion; do not administer other chemotherapy during this period.",
+      "Acniform skin rash in >70% of patients receiving cetuximab; onset normally within 3 weeks.",
+      "Serum electrolytes (magnesium, potassium) should be monitored and corrected.",
+      "UV radiation may worsen skin reactions \u2014 sun safety for duration and 2 months after.",
+      "This regimen may require funding approval.",
+      "WHO performance status 0, 1, or 2 required."
+    ],
+    "required_patient_fields": [
+      "kras_status",
+      "neutrophil_count",
+      "platelet_count",
+      "liver_function_tests",
+      "renal_function",
+      "serum_electrolytes"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "COLORECTAL-CETUX500-5FU-FA-IRINO-MDG",
+    "protocol_name": "Cetuximab(500)-Fluorouracil-Folinic Acid (Modified de Gramont)-Irinotecan (Colorectal)",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 14,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Cetuximab",
+        "dose": 500.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Flat 500mg/m\u00b2 dose given every 2 weeks. First infusion at rate not exceeding 5mg/min (minimum 120 minutes); if well tolerated subsequent infusions at rate not exceeding 10mg/min (minimum 60 minutes). Dose banded per national dose bands (5mg/ml NS). An interval of 60 minutes should be left between cetuximab and the remaining chemotherapy."
+      },
+      {
+        "drug_name": "Irinotecan",
+        "dose": 180.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "In 250ml sodium chloride 0.9% over 90 minutes. May be administered over 30-90 minutes. Dose banded per national dose bands (20mg/ml)."
+      },
+      {
+        "drug_name": "Folinic Acid",
+        "dose": 350.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "In 250ml glucose 5% over 120 minutes. May be replaced with calcium levofolinate 175mg IV in 250ml glucose 5% over 120 minutes. No dose adjustment needed for haematological toxicity."
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 400.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV bolus over 10 minutes. Dose banded per national dose bands (25mg/ml PM bolus)."
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 2400.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2
+        ],
+        "infusion_duration_hours": 46.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Continuous IV infusion over 46 hours via ambulatory pump. Central venous access required. Dose banded per national dose bands (50mg/ml infusion)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological: neutrophils <1.5x10\u2079/L or platelets <100x10\u2079/L",
+        "drug_name": "Irinotecan",
+        "factor": 0.8,
+        "notes": "Delay for 7 days. Restart irinotecan at 80% of original dose."
+      },
+      {
+        "condition": "Haematological: 14-day delay or two separate 7-day delays",
+        "drug_name": "Irinotecan",
+        "factor": 0.5,
+        "notes": "Reduce irinotecan to 50% of original dose, or consider stopping treatment."
+      },
+      {
+        "condition": "Haematological: nadir neutrophils <0.5x10\u2079/L or febrile neutropenia",
+        "drug_name": "Irinotecan",
+        "factor": 0.8,
+        "notes": "Reduce subsequent irinotecan and fluorouracil to 80% of original dose."
+      },
+      {
+        "condition": "Haematological: nadir neutrophils <0.5x10\u2079/L or febrile neutropenia",
+        "drug_name": "Fluorouracil",
+        "factor": 0.8,
+        "notes": "Reduce subsequent fluorouracil dose to 80% of original dose."
+      },
+      {
+        "condition": "Hepatic: transaminases >5xULN or bilirubin >1.5xULN",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Administer only when transaminases \u22645xULN and bilirubin \u22641.5xULN."
+      },
+      {
+        "condition": "Hepatic: bilirubin >85 \u03bcmol/L or AST >180 units",
+        "drug_name": "Fluorouracil",
+        "factor": 0.0,
+        "notes": "Fluorouracil contra-indicated."
+      },
+      {
+        "condition": "Hepatic: moderate impairment",
+        "drug_name": "Fluorouracil",
+        "factor": 0.7,
+        "notes": "Reduce dose by approximately 30% in moderate hepatic impairment."
+      },
+      {
+        "condition": "Hepatic: severe impairment",
+        "drug_name": "Fluorouracil",
+        "factor": 0.5,
+        "notes": "Reduce dose by 50% in severe hepatic impairment."
+      },
+      {
+        "condition": "Hepatic: bilirubin 26-51 \u03bcmol/L",
+        "drug_name": "Irinotecan",
+        "factor": 0.57,
+        "notes": "For 350mg/m\u00b2 dose: if bilirubin 26-51 \u03bcmol/L prescribe 200mg/m\u00b2."
+      },
+      {
+        "condition": "Hepatic: bilirubin >51 \u03bcmol/L",
+        "drug_name": "Irinotecan",
+        "factor": 0.0,
+        "notes": "Consider stopping therapy."
+      },
+      {
+        "condition": "Renal: serum creatinine >1.5xULN",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Administer only where serum creatinine is \u22641.5xULN."
+      },
+      {
+        "condition": "Renal: severe impairment",
+        "drug_name": "Fluorouracil",
+        "factor": 0.75,
+        "notes": "Dose adjustment required only in severe renal impairment."
+      },
+      {
+        "condition": "Diarrhoea NCI-CTC Grade 2 (first occurrence)",
+        "drug_name": "Fluorouracil",
+        "factor": 1.0,
+        "notes": "Withhold until resolved to grade \u22641, restart at full dose."
+      },
+      {
+        "condition": "Diarrhoea NCI-CTC Grade 2 (second occurrence)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.75,
+        "notes": "Restart at 75% of original dose once resolved to grade \u22641."
+      },
+      {
+        "condition": "Diarrhoea NCI-CTC Grade 2 (third occurrence)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.5,
+        "notes": "Restart at 50% of original dose."
+      },
+      {
+        "condition": "Diarrhoea NCI-CTC Grade 3 (first occurrence)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.75,
+        "notes": "Withhold until grade \u22641, restart at 75%."
+      },
+      {
+        "condition": "Diarrhoea NCI-CTC Grade 3 (second occurrence)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.5,
+        "notes": "Resume at 50% of original dose."
+      },
+      {
+        "condition": "Diarrhoea NCI-CTC Grade 3 (third occurrence) or Grade 4",
+        "drug_name": "Fluorouracil",
+        "factor": 0.0,
+        "notes": "Stop fluorouracil."
+      },
+      {
+        "condition": "Non-haematological toxicity NCI-CTC Grade 2-4 irinotecan (first occurrence)",
+        "drug_name": "Irinotecan",
+        "factor": 0.83,
+        "notes": "Reduce to 150mg/m\u00b2 in first instance."
+      },
+      {
+        "condition": "Non-haematological toxicity NCI-CTC Grade 2-4 irinotecan (second occurrence)",
+        "drug_name": "Irinotecan",
+        "factor": 0.56,
+        "notes": "Delay until resolved, restart at 100mg/m\u00b2."
+      },
+      {
+        "condition": "Non-haematological toxicity NCI-CTC Grade 2-4 irinotecan (third occurrence)",
+        "drug_name": "Irinotecan",
+        "factor": 0.0,
+        "notes": "Stop treatment."
+      },
+      {
+        "condition": "Skin toxicity NCI-CTC Grade 3 (first occurrence, resolves \u226414 days)",
+        "drug_name": "Cetuximab",
+        "factor": 1.0,
+        "notes": "Delay until resolves to grade \u22642. Resume at same dose if within 14 days."
+      },
+      {
+        "condition": "Skin toxicity NCI-CTC Grade 3 (2nd/3rd occurrence with dose reduction)",
+        "drug_name": "Cetuximab",
+        "factor": 0.75,
+        "notes": "Delay up to 14 days with concomitant dose reduction. Dose reductions are permanent."
+      },
+      {
+        "condition": "Skin toxicity: >2 consecutive infusions withheld, 4th grade 3 episode",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue cetuximab."
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV (30 minutes prior to cetuximab)",
+      "Dexamethasone 8mg oral or IV (30 minutes prior to cetuximab)",
+      "H2 antagonist according to local formulary (30 minutes prior to cetuximab)",
+      "Paracetamol 1000mg oral (30 minutes prior to cetuximab)",
+      "Ondansetron 8mg oral or IV (15-30 minutes prior to chemotherapy)",
+      "Atropine 250mcg SC immediately prior to irinotecan (prevention of acute cholinergic syndrome)",
+      "Dexamethasone 4mg oral twice daily for 3 days (take home, starting day after irinotecan)",
+      "Metoclopramide 10mg oral TDS when required (take home)",
+      "Loperamide 2mg every 2 hours once first liquid stool, until 12 hours after last liquid stool (max 48 hours, max 16mg/day)"
+    ],
+    "special_warnings": [
+      "DPD testing required before initiation: patients with complete or partial DPD deficiency are at increased risk of severe and fatal toxicity from fluorouracil.",
+      "Confirm wild type KRAS status prior to starting therapy.",
+      "Cetuximab dose reductions are permanent and NOT routinely permitted.",
+      "Central venous access and ambulatory infusion pump required for 46-hour fluorouracil infusion.",
+      "An interval of 60 minutes must be left between cetuximab and the remaining chemotherapy.",
+      "Monitor for hypersensitivity for 60 minutes after cetuximab infusion; do not administer other chemotherapy during this period.",
+      "Irinotecan associated with acute cholinergic syndrome and delayed diarrhoea \u2014 atropine prophylaxis required.",
+      "Folinic acid may be replaced with calcium levofolinate 175mg IV in 250ml glucose 5% over 120 minutes.",
+      "Consider oral ciprofloxacin 500mg twice daily if diarrhoea continues >24 hours.",
+      "Acniform skin rash in >70% of patients receiving cetuximab.",
+      "This regimen may require funding approval.",
+      "WHO performance status 0 or 1 required."
+    ],
+    "required_patient_fields": [
+      "kras_status",
+      "dpd_status",
+      "neutrophil_count",
+      "platelet_count",
+      "liver_function_tests",
+      "renal_function",
+      "serum_electrolytes"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "COLORECTAL-CETUX500-5FU-FA-OXA-MDG",
+    "protocol_name": "Cetuximab(500)-Fluorouracil-Folinic Acid (Modified de Gramont)-Oxaliplatin (Colorectal)",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 14,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Cetuximab",
+        "dose": 500.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Flat 500mg/m\u00b2 dose given every 2 weeks. First infusion rate not exceeding 5mg/min; if well tolerated subsequent infusions may be given at rate not exceeding 10mg/min. Dose banded per national dose bands (5mg/ml NS). An interval of 60 minutes should be left between cetuximab and the remaining chemotherapy."
+      },
+      {
+        "drug_name": "Oxaliplatin",
+        "dose": 85.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "In 500ml glucose 5% over 120 minutes. Dose banded per national dose bands (5mg/ml). Central venous access required."
+      },
+      {
+        "drug_name": "Folinic Acid",
+        "dose": 350.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "In 250ml glucose 5% over 120 minutes. May be replaced with calcium levofolinate 175mg IV in 250ml glucose 5% over 120 minutes."
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 400.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV bolus over 10 minutes. Dose banded per national dose bands (25mg/ml PM bolus)."
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 2400.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2
+        ],
+        "infusion_duration_hours": 46.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Continuous IV infusion over 46 hours via ambulatory pump. Central venous access required. Dose banded per national dose bands (50mg/ml infusion)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological: neutrophils <1.5x10\u2079/L or platelets <75x10\u2079/L \u2014 delay \u22647 days",
+        "drug_name": "Fluorouracil",
+        "factor": 1.0,
+        "notes": "Reinitiate at full dose for up to 7-day delay."
+      },
+      {
+        "condition": "Haematological: delay >7 days for thrombocytopenia",
+        "drug_name": "Fluorouracil",
+        "factor": 0.75,
+        "notes": "Reinitiate at 75% of original dose."
+      },
+      {
+        "condition": "Haematological: neutropenia persisting >7 days \u2014 omit bolus fluorouracil",
+        "drug_name": "Fluorouracil",
+        "factor": 0.0,
+        "notes": "Omit bolus fluorouracil for this and subsequent cycles."
+      },
+      {
+        "condition": "Haematological: further delay despite omitting bolus 5-FU",
+        "drug_name": "Fluorouracil",
+        "factor": 0.8,
+        "notes": "Reduce infusional fluorouracil to 80% of original dose."
+      },
+      {
+        "condition": "Haematological: further delay despite omitting bolus 5-FU",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.8,
+        "notes": "Reduce oxaliplatin to 80% of original dose."
+      },
+      {
+        "condition": "Haematological: delay \u226521 days",
+        "drug_name": "Fluorouracil",
+        "factor": 0.0,
+        "notes": "Stop therapy."
+      },
+      {
+        "condition": "Hepatic: transaminases >5xULN or bilirubin >1.5xULN",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Administer only when transaminases \u22645xULN and bilirubin \u22641.5xULN."
+      },
+      {
+        "condition": "Hepatic: bilirubin >85 \u03bcmol/L or AST >180 units",
+        "drug_name": "Fluorouracil",
+        "factor": 0.0,
+        "notes": "Fluorouracil contra-indicated."
+      },
+      {
+        "condition": "Hepatic: moderate impairment",
+        "drug_name": "Fluorouracil",
+        "factor": 0.7,
+        "notes": "Reduce dose by approximately 30% in moderate hepatic impairment."
+      },
+      {
+        "condition": "Hepatic: severe impairment",
+        "drug_name": "Fluorouracil",
+        "factor": 0.5,
+        "notes": "Reduce dose by 50% in severe hepatic impairment."
+      },
+      {
+        "condition": "Renal: serum creatinine >1.5xULN",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Administer only where serum creatinine is \u22641.5xULN."
+      },
+      {
+        "condition": "Renal: CrCl <30ml/min",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.0,
+        "notes": "Avoid when CrCl is less than 30ml/min."
+      },
+      {
+        "condition": "Renal: severe impairment",
+        "drug_name": "Fluorouracil",
+        "factor": 0.75,
+        "notes": "Dose adjustment required only in severe renal impairment."
+      },
+      {
+        "condition": "Diarrhoea NCI-CTC Grade 2 (first occurrence)",
+        "drug_name": "Fluorouracil",
+        "factor": 1.0,
+        "notes": "Withhold until resolved to grade \u22641, restart at full dose."
+      },
+      {
+        "condition": "Diarrhoea NCI-CTC Grade 2 (second occurrence)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.75,
+        "notes": "Restart at 75% of original dose once resolved."
+      },
+      {
+        "condition": "Diarrhoea NCI-CTC Grade 2 (third occurrence)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.5,
+        "notes": "Restart at 50% of original dose."
+      },
+      {
+        "condition": "Diarrhoea NCI-CTC Grade 3 (first occurrence)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.75,
+        "notes": "Withhold until grade \u22641, restart at 75%."
+      },
+      {
+        "condition": "Diarrhoea NCI-CTC Grade 3 (second occurrence)",
+        "drug_name": "Fluorouracil",
+        "factor": 0.5,
+        "notes": "Resume at 50% of original dose."
+      },
+      {
+        "condition": "Diarrhoea NCI-CTC Grade 3 (third occurrence) or Grade 4",
+        "drug_name": "Fluorouracil",
+        "factor": 0.0,
+        "notes": "Stop fluorouracil."
+      },
+      {
+        "condition": "Neurosensory toxicity Grade 1-2 lasting <7 days",
+        "drug_name": "Oxaliplatin",
+        "factor": 1.0,
+        "notes": "Administer full dose."
+      },
+      {
+        "condition": "Neurosensory toxicity Grade 2 persisting >7 days",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.75,
+        "notes": "Reduce oxaliplatin dose."
+      },
+      {
+        "condition": "Neurosensory toxicity Grade 3 or above",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.0,
+        "notes": "Discontinue oxaliplatin."
+      },
+      {
+        "condition": "Grade 3-4 diarrhoea or stomatitis recurs despite fluorouracil dose reduction",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.75,
+        "notes": "Reduce oxaliplatin to 75mg/m\u00b2."
+      },
+      {
+        "condition": "Skin toxicity NCI-CTC Grade 3 (first occurrence, resolves \u226414 days)",
+        "drug_name": "Cetuximab",
+        "factor": 1.0,
+        "notes": "Delay until resolves to grade \u22642. Resume at same dose if within 14 days."
+      },
+      {
+        "condition": "Skin toxicity NCI-CTC Grade 3 (2nd/3rd occurrence with dose reduction)",
+        "drug_name": "Cetuximab",
+        "factor": 0.75,
+        "notes": "Delay up to 14 days with concomitant dose reduction. Dose reductions are permanent."
+      },
+      {
+        "condition": "Skin toxicity: >2 consecutive infusions withheld, 4th grade 3 episode",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue cetuximab."
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV (30 minutes prior to cetuximab)",
+      "Dexamethasone 8mg oral or IV (30 minutes prior to cetuximab)",
+      "H2 antagonist according to local formulary (30 minutes prior to cetuximab)",
+      "Paracetamol 1000mg oral (30 minutes prior to cetuximab)",
+      "Ondansetron 8mg oral or IV (15-30 minutes prior to chemotherapy)",
+      "Dexamethasone 4mg oral twice daily for 3 days (take home, starting day 2 of cycle)",
+      "Metoclopramide 10mg oral TDS when required (take home)",
+      "Loperamide 4mg after first loose stool then 2-4mg four times daily PRN (max 16mg/24h)"
+    ],
+    "special_warnings": [
+      "DPD testing required before initiation: patients with complete or partial DPD deficiency are at increased risk of severe and fatal toxicity from fluorouracil.",
+      "Confirm wild type KRAS status prior to starting therapy.",
+      "Cetuximab dose reductions are permanent and NOT routinely permitted.",
+      "Central venous access and ambulatory infusion pump required for 46-hour fluorouracil infusion.",
+      "An interval of 60 minutes must be left between cetuximab and the remaining chemotherapy.",
+      "Monitor for hypersensitivity for 60 minutes after cetuximab infusion; do not administer other chemotherapy during this period.",
+      "Avoid oxaliplatin when CrCl <30ml/min.",
+      "Peripheral neuropathy with oxaliplatin is cumulative; acute laryngopharyngeal dysaesthesia may occur.",
+      "Rare cases of acute interstitial lung disease or lung fibrosis with oxaliplatin \u2014 stop for unexplained respiratory symptoms.",
+      "Folinic acid may be replaced with calcium levofolinate 175mg IV in 250ml glucose 5% over 120 minutes.",
+      "Acniform skin rash in >70% of patients receiving cetuximab.",
+      "This regimen may require funding approval.",
+      "WHO performance status 0 or 1 required."
+    ],
+    "required_patient_fields": [
+      "kras_status",
+      "dpd_status",
+      "creatinine_clearance",
+      "neutrophil_count",
+      "platelet_count",
+      "liver_function_tests",
+      "renal_function",
+      "serum_electrolytes"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "COLORECTAL-CETUX-7DAY-MONOTHERAPY",
+    "protocol_name": "Cetuximab (7 day) Monotherapy (Colorectal)",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 7,
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Cetuximab",
+        "dose": 400.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 (week 1) loading dose: 400mg/m\u00b2 over 120 minutes. Rate must not exceed 10mg/min."
+      },
+      {
+        "drug_name": "Cetuximab",
+        "dose": 250.0,
+        "dose_unit": "mg/m\u00b2",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 2 onwards (weekly maintenance): 250mg/m\u00b2 over 60 minutes. Rate must not exceed 10mg/min. Dose banded per national dose bands (5mg/m). Monitor for hypersensitivity for 60 minutes after infusion."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological: neutrophils <1.5x10\u2079/L or platelets <100x10\u2079/L",
+        "drug_name": "Cetuximab",
+        "factor": 1.0,
+        "notes": "Delay treatment until levels are achieved. Decision to continue at consultant's discretion."
+      },
+      {
+        "condition": "Hepatic: transaminases >5xULN or bilirubin >1.5xULN",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Administer only when transaminases \u22645xULN and bilirubin \u22641.5xULN."
+      },
+      {
+        "condition": "Renal: serum creatinine >1.5xULN",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Administer only where serum creatinine is \u22641.5xULN."
+      },
+      {
+        "condition": "Skin toxicity NCI-CTC Grade 3 (first occurrence, resolves \u226414 days)",
+        "drug_name": "Cetuximab",
+        "factor": 1.0,
+        "notes": "Delay until toxicity resolves to grade \u22642. Resume at same dose."
+      },
+      {
+        "condition": "Skin toxicity NCI-CTC Grade 3 (2nd occurrence, dose reduction to 200mg/m\u00b2)",
+        "drug_name": "Cetuximab",
+        "factor": 0.8,
+        "notes": "Delay up to 14 days; reduce to 200mg/m\u00b2. Dose reduction is permanent."
+      },
+      {
+        "condition": "Skin toxicity NCI-CTC Grade 3 (3rd occurrence, dose reduction to 150mg/m\u00b2)",
+        "drug_name": "Cetuximab",
+        "factor": 0.6,
+        "notes": "Delay up to 14 days; reduce to 150mg/m\u00b2. Dose reduction is permanent."
+      },
+      {
+        "condition": "Skin toxicity: >2 consecutive infusions withheld, 4th grade 3 episode, or any grade 4",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue cetuximab."
+      },
+      {
+        "condition": "Infusion reaction Grade 1",
+        "drug_name": "Cetuximab",
+        "factor": 1.0,
+        "notes": "Reduce infusion rate by 50% (max total 240 minutes)."
+      },
+      {
+        "condition": "Infusion reaction Grade 2",
+        "drug_name": "Cetuximab",
+        "factor": 1.0,
+        "notes": "Stop infusion, give supportive therapy; resume at 50% of previous rate when resolved to grade \u22641."
+      },
+      {
+        "condition": "Infusion reaction Grade 3 or 4",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Stop immediately; do not re-administer."
+      },
+      {
+        "condition": "Confirmed pneumonitis",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Stop treatment."
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV (30 minutes prior to cetuximab)",
+      "Dexamethasone 8mg oral or IV (30 minutes prior to cetuximab)",
+      "H2 antagonist according to local formulary (30 minutes prior to cetuximab)",
+      "Paracetamol 1000mg oral (30 minutes prior to cetuximab)",
+      "Metoclopramide 10mg oral TDS when required (take home, day 1 cycle 1 only)"
+    ],
+    "special_warnings": [
+      "Confirm wild type KRAS status prior to starting therapy.",
+      "Cetuximab dose reductions are permanent and NOT routinely permitted.",
+      "This is a weekly cetuximab schedule: loading dose 400mg/m\u00b2 (cycle 1) then maintenance 250mg/m\u00b2 weekly (cycle 2 onwards).",
+      "Monitor for hypersensitivity for 60 minutes after cetuximab infusion; do not administer other chemotherapy during this period.",
+      "Acniform skin rash in >70% of patients receiving cetuximab; onset normally within 3 weeks.",
+      "Serum electrolytes (magnesium, potassium) should be monitored and corrected.",
+      "UV radiation may worsen skin reactions \u2014 sun safety for duration and 2 months after.",
+      "FBC, LFTs and U&Es prior to day 1 cycle 1 and every 6-8 weeks thereafter.",
+      "This regimen may require funding approval.",
+      "WHO performance status 0, 1, or 2 required."
+    ],
+    "required_patient_fields": [
+      "kras_status",
+      "neutrophil_count",
+      "platelet_count",
+      "liver_function_tests",
+      "renal_function",
+      "serum_electrolytes"
+    ],
+    "auc_dosing": null
+  }
+]

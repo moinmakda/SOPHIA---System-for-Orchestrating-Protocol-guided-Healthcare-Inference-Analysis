@@ -1,0 +1,2317 @@
+[
+  {
+    "protocol_id": "prostate-abiraterone-prednisolone",
+    "protocol_code": "ABIRATERONE-PRED",
+    "protocol_name": "Prostate-Abiraterone-Prednisolone",
+    "category": "urology",
+    "indication": "Second line treatment of hormone resistant prostate cancer following chemotherapy (NICE); First line treatment of hormone resistant prostate cancer where chemotherapy is contra-indicated (CDF); Performance status 0, 1, 2",
+    "version": "1.1",
+    "cycle_length_days": 28,
+    "total_cycles": null,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Abiraterone",
+        "dose": 1000,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "once daily",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Take on an empty stomach at least two hours after food or at least one hour before food. Swallow tablets whole with water. Available as 250mg tablets.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Prednisolone",
+        "dose": 5,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "twice daily",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Take with or after food. Dose may need to be reduced gradually before stopping treatment. Available as 5mg (uncoated) and 2.5mg and 5mg (enteric coated) tablets.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [
+      {
+        "drug_name": "Abiraterone",
+        "dose": 1000,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "once daily",
+        "days_supply": 28,
+        "instructions": "Take on an empty stomach at least two hours after food or at least one hour before food."
+      },
+      {
+        "drug_name": "Prednisolone",
+        "dose": 5,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "twice daily",
+        "days_supply": 28,
+        "instructions": "Take with or after food. The dose of this medicine may need to be reduced gradually before stopping treatment."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "AST/ALT",
+        "condition": "5xULN or greater (1st occurrence)",
+        "affected_drugs": [
+          "Abiraterone"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold treatment. May restart at 500mg daily once LFTs return to baseline."
+      },
+      {
+        "parameter": "AST/ALT",
+        "condition": "5xULN or greater (2nd occurrence)",
+        "affected_drugs": [
+          "Abiraterone"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Stop treatment permanently."
+      },
+      {
+        "parameter": "AST/ALT",
+        "condition": "20xULN or greater",
+        "affected_drugs": [
+          "Abiraterone"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Stop treatment permanently."
+      },
+      {
+        "parameter": "Hepatic impairment",
+        "condition": "Pre-existing moderate or severe hepatic impairment (Child-Pugh Class B or C)",
+        "affected_drugs": [
+          "Abiraterone"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Abiraterone should be avoided; no safety data to support use."
+      },
+      {
+        "parameter": "Renal impairment",
+        "condition": "Severe renal impairment",
+        "affected_drugs": [
+          "Abiraterone"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Use with caution in severe renal impairment."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": null,
+      "platelets_min": null,
+      "notes": "Abiraterone is not myelosuppressive; haematological dose modifications not applicable. Consider blood transfusion if Hb <8g/dL."
+    },
+    "monitoring_requirements": [
+      "U&Es",
+      "Liver function (serum transaminases and bilirubin) prior to starting treatment, every two weeks for first three months, then monthly thereafter",
+      "Blood pressure, serum potassium and fluid retention before treatment and at least monthly thereafter",
+      "Cholesterol and triglycerides every four months"
+    ],
+    "special_warnings": [
+      "Patients should continue to receive an LHRH agonist during abiraterone treatment",
+      "Use with caution in patients with history of cardiovascular disease; safety not established in patients with LVEF <50% or NYHA Class III or IV heart failure",
+      "Before treatment, hypertension must be controlled and hypokalaemia must be corrected",
+      "Patients who stop abiraterone may require gradual withdrawal of prednisolone",
+      "Gastric protection with PPI or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed",
+      "Abiraterone treatment should be supervised by a consultant oncologist"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "performance_status": "0, 1, or 2",
+      "prior_chemotherapy": "required for NICE indication",
+      "lhrh_agonist_continuation": true
+    },
+    "disease_site": "Urology",
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Abiraterone",
+        "dose": 1000,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "once daily",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Take on an empty stomach at least two hours after food or at least one hour before food. Swallow tablets whole with water. Available as 250mg tablets.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "once daily | Take on an empty stomach at least two hours after food or at least one hour before food. Swallow tablets whole with water. Available as 250mg tablets."
+      },
+      {
+        "drug_name": "Prednisolone",
+        "dose": 5,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "twice daily",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Take with or after food. Dose may need to be reduced gradually before stopping treatment. Available as 5mg (uncoated) and 2.5mg and 5mg (enteric coated) tablets.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "twice daily | Take with or after food. Dose may need to be reduced gradually before stopping treatment. Available as 5mg (uncoated) and 2.5mg and 5mg (enteric coated) tablets."
+      }
+    ]
+  },
+  {
+    "protocol_id": "prostate-apalutamide",
+    "protocol_code": "APALUTAMIDE",
+    "protocol_name": "Prostate - Apalutamide",
+    "category": "urology",
+    "indication": "Non-metastatic castrate-resistant prostate cancer (nmCRPC) with PSA doubling time <=10 months and PSA >=2ng/ml, in combination with ADT; OR newly diagnosed metastatic hormone-sensitive prostate cancer (mHSPC) in combination with ADT, in patients ineligible for or declining docetaxel. WHO performance status 0, 1, or 2.",
+    "version": "1.0",
+    "cycle_length_days": 28,
+    "total_cycles": null,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Apalutamide",
+        "dose": 240,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "once daily",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Swallow whole, with or without food. Available as 60mg film-coated tablets (4 tablets = 240mg). If dose missed, take as soon as possible on same day; do not double dose.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [
+      {
+        "drug_name": "Apalutamide",
+        "dose": 240,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "once daily",
+        "days_supply": 28,
+        "instructions": "Swallow whole, either with or without food."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Skin rash",
+        "condition": "Grade 1 rash",
+        "affected_drugs": [
+          "Apalutamide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Continue apalutamide at current dose. Initiate topical steroid cream AND oral antihistamine. Monitor for change in severity."
+      },
+      {
+        "parameter": "Skin rash",
+        "condition": "Grade 2 or symptomatic Grade 1 rash",
+        "affected_drugs": [
+          "Apalutamide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Hold apalutamide for up to 28 days. Initiate topical steroid cream AND oral antihistamine. When rash improves to Grade <=1, reinitiate; consider dose reduction to 180mg daily (dose level -1)."
+      },
+      {
+        "parameter": "Skin rash",
+        "condition": "Grade >=3 rash",
+        "affected_drugs": [
+          "Apalutamide"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Hold apalutamide for up to 28 days. Topical steroid cream AND oral antihistamine. Consider short course oral steroid. Reassess after 2 weeks; if unchanged or worse, initiate oral steroids and refer to dermatology. Reinitiate at dose level -1 (180mg) when rash resolved to Grade <=1. If dose reduction leads to <120mg, discontinue."
+      },
+      {
+        "parameter": "NCI-CTCAE toxicity",
+        "condition": "Grade 3 or greater toxicity or intolerable adverse reaction",
+        "affected_drugs": [
+          "Apalutamide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms improve to Grade 1 or below. Resume at same dose or reduced dose (180mg or 120mg) if warranted. Dose level -1: 180mg daily; Dose level -2: 120mg daily."
+      },
+      {
+        "parameter": "Hepatic impairment",
+        "condition": "Severe hepatic impairment (Child-Pugh Class C)",
+        "affected_drugs": [
+          "Apalutamide"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Not recommended in severe hepatic impairment; no data available."
+      },
+      {
+        "parameter": "Renal impairment",
+        "condition": "Severe renal impairment",
+        "affected_drugs": [
+          "Apalutamide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Caution required; not studied in severe renal impairment. Monitor for adverse reactions and dose reduce accordingly."
+      },
+      {
+        "parameter": "Hypothyroidism",
+        "condition": "Grade 1-2 hypothyroidism",
+        "affected_drugs": [
+          "Apalutamide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Monitor thyroid function regularly. Initiate or dose-adjust thyroid replacement therapy as indicated. Do not necessarily stop apalutamide."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": null,
+      "platelets_min": null,
+      "notes": "No specific haematological thresholds defined for apalutamide. FBC, U&Es, LFTs, PSA and BP every 4 weeks for first 12 weeks, then every 8-12 weeks thereafter."
+    },
+    "monitoring_requirements": [
+      "FBC, U&Es, LFTs, PSA, thyroid function tests and blood pressure at baseline",
+      "FBC, U&Es, LFTs, PSA and blood pressure every four weeks for first 12 weeks then every 8-12 weeks thereafter",
+      "Thyroid function tests if clinically indicated"
+    ],
+    "special_warnings": [
+      "Apalutamide is a strong inducer of CYP3A4 and CYP2C19 and a weak inducer of CYP2C9 - significant drug interactions; review concomitant medications",
+      "Co-administration with warfarin and coumarin-like anticoagulants should be avoided; if unavoidable, additional INR monitoring required",
+      "Consider Calcium + Vitamin D supplements (Adcal D3 2 tablets daily) for bone health; DEXA scan for moderate/high risk FRAX score",
+      "Formal medical review at least by start of 3rd 4-weekly cycle",
+      "Apalutamide treatment should be supervised by a consultant oncologist",
+      "Rash reported in 25% of patients; hypothyroidism reported in 30% of patients on thyroid replacement and 7% not on replacement",
+      "Uncommon but serious risk of seizure"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "performance_status": "0, 1, or 2",
+      "testosterone_level": "<1.7nmol/L",
+      "psa_level": ">=2ng/ml",
+      "psa_doubling_time": "<=10 months (nmCRPC indication)",
+      "concurrent_adt": true
+    },
+    "disease_site": "Urology",
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Apalutamide",
+        "dose": 240,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "once daily",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Swallow whole, with or without food. Available as 60mg film-coated tablets (4 tablets = 240mg). If dose missed, take as soon as possible on same day; do not double dose.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "once daily | Swallow whole, with or without food. Available as 60mg film-coated tablets (4 tablets = 240mg). If dose missed, take as soon as possible on same day; do not double dose."
+      }
+    ]
+  },
+  {
+    "protocol_id": "urothelial-atezolizumab-sc-1875mg-21days",
+    "protocol_code": "ATE-SC-1875-21D",
+    "protocol_name": "Atezolizumab SC (1875mg - 21 days)",
+    "category": "urology",
+    "indication": "First line treatment of locally advanced or metastatic urothelial cancer in patients ineligible for cisplatin-based chemotherapy whose tumours have PD-L1 expression >=5% (ATE1); OR second line treatment of locally advanced or metastatic urothelial cancer previously treated with platinum-based chemotherapy, up to maximum 2 years / 35 administrations (ATE3). Blueteq application required.",
+    "version": "1.0",
+    "cycle_length_days": 21,
+    "total_cycles": 17,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Atezolizumab",
+        "dose": 1875,
+        "dose_unit": "mg",
+        "route": "Subcutaneous",
+        "days": [
+          1
+        ],
+        "frequency": "every 21 days",
+        "duration_minutes": 7,
+        "diluent": null,
+        "diluent_volume_ml": 15,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Administer 15mL subcutaneously into the thigh over approximately 7 minutes. Alternate between left and right thigh only. New injections at least 2.5cm from old site, never into red, bruised, tender or hard skin. Use SC infusion set (winged/butterfly). DO NOT administer residual hold-up volume in tubing. Patient must be given atezolizumab Patient Alert Card.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "timing": "when required for treatment of injection-related reactions",
+        "mandatory": false
+      },
+      {
+        "drug_name": "Hydrocortisone sodium succinate",
+        "dose": 100,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "timing": "when required for treatment of injection-related reactions",
+        "mandatory": false
+      },
+      {
+        "drug_name": "Paracetamol",
+        "dose": 1000,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "when required for relief of injection-related reactions",
+        "mandatory": false
+      }
+    ],
+    "take_home_medicines": [],
+    "dose_modifications": [
+      {
+        "parameter": "Immunotherapy principle",
+        "condition": "All toxicities",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "No dose reductions permitted for atezolizumab. Only delay or discontinue. Funding approval precludes further treatment after interruption of 12 weeks or longer."
+      },
+      {
+        "parameter": "Bilirubin / AST/ALT",
+        "condition": "Bilirubin 1.5-3xULN OR AST/ALT 3-5xULN (Grade 2 hepatitis persisting 5-7 days)",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold atezolizumab. Consider corticosteroid; taper over at least 1 month if LFTs improve. Resume when event improves to Grade 1 within 12 weeks and corticosteroid reduced to <=10mg prednisolone/day equivalent."
+      },
+      {
+        "parameter": "Bilirubin / AST/ALT",
+        "condition": "Bilirubin >3xULN OR AST/ALT >5xULN (Grade 3+ hepatitis)",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue atezolizumab."
+      },
+      {
+        "parameter": "Pneumonitis",
+        "condition": "Grade 2 pneumonitis",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve and radiographic abnormalities improve. Consider oral prednisolone 1-2mg/kg/day. Resume if improves to Grade 0-1 within 12 weeks and corticosteroids reduced to <=10mg prednisone/day."
+      },
+      {
+        "parameter": "Pneumonitis",
+        "condition": "Grade 3 or 4 pneumonitis",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue atezolizumab. Consider corticosteroids."
+      },
+      {
+        "parameter": "Colitis",
+        "condition": "Grade 2 or 3 diarrhoea or symptomatic colitis",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold initially. Grade 2: if persistent >5 days or recurs, start prednisolone 1-2mg/kg/day oral. Grade 3: IV corticosteroids, convert to oral as symptoms improve, taper over 1 month. Resume if improves to Grade 0-1 within 12 weeks and corticosteroids <=10mg/day."
+      },
+      {
+        "parameter": "Colitis",
+        "condition": "Grade 4 diarrhoea or colitis",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue atezolizumab."
+      },
+      {
+        "parameter": "Pancreatitis",
+        "condition": "Grade 3-4 amylase/lipase >2xULN or Grade 2-3 pancreatitis",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold. Resume if amylase/lipase improve to Grade 0-1 within 12 weeks and pancreatitis resolved and corticosteroids <=10mg/day."
+      },
+      {
+        "parameter": "Pancreatitis",
+        "condition": "Grade 4 or any grade recurrent pancreatitis",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue atezolizumab."
+      },
+      {
+        "parameter": "Thyroid disorders",
+        "condition": "Symptomatic thyroid disorder",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold. Hypothyroidism: resume when controlled by thyroid replacement and TSH decreasing. Hyperthyroidism: resume when controlled by carbimazole or equivalent and thyroid function improving."
+      },
+      {
+        "parameter": "Adrenal insufficiency",
+        "condition": "Symptomatic",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold. Resume if improves to Grade 0-1 within 12 weeks, corticosteroids <=10mg/day and patient stable on replacement therapy."
+      },
+      {
+        "parameter": "Nephritis",
+        "condition": "Grade 2",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold. Start prednisolone 1-2mg/kg/day. Resume if improves to Grade 0-1 within 12 weeks and corticosteroids <=10mg/day."
+      },
+      {
+        "parameter": "Nephritis",
+        "condition": "Grade 3 or 4",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue atezolizumab."
+      },
+      {
+        "parameter": "Hypophysitis",
+        "condition": "Grade 2 or 3",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold. Resume when improves to Grade 0-1 within 12 weeks, corticosteroids <=10mg/day and stable on replacement therapy."
+      },
+      {
+        "parameter": "Hypophysitis",
+        "condition": "Grade 4",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue atezolizumab."
+      },
+      {
+        "parameter": "Type I diabetes mellitus",
+        "condition": "Grade 3-4 hyperglycaemia (fasting glucose >13.9 mmol/L)",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold. Resume if metabolic control achieved on insulin replacement therapy."
+      },
+      {
+        "parameter": "Myasthenic syndrome/GBS/meningoencephalitis",
+        "condition": "All grades",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue atezolizumab."
+      },
+      {
+        "parameter": "Myositis",
+        "condition": "Grade 2-3",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold atezolizumab."
+      },
+      {
+        "parameter": "Myositis",
+        "condition": "Grade 4 or recurrent Grade 3",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue atezolizumab."
+      },
+      {
+        "parameter": "Injection-related reactions",
+        "condition": "Grade 1 or 2",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Reduce injection rate or pause injection. Resume when event resolved."
+      },
+      {
+        "parameter": "Injection-related reactions",
+        "condition": "Grade 3 or 4",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue atezolizumab."
+      },
+      {
+        "parameter": "Rash/severe cutaneous reactions",
+        "condition": "Grade 3 or suspected SJS/TEN",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold. Resume when improves to Grade 0-1 within 12 weeks and corticosteroids <=10mg/day."
+      },
+      {
+        "parameter": "Rash/severe cutaneous reactions",
+        "condition": "Grade 4 or confirmed SJS/TEN",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue atezolizumab."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": null,
+      "platelets_min": null,
+      "notes": "No standard haematological thresholds. No dose reductions for atezolizumab - delay or discontinue only. PD-L1 >=5% required for 1st line use."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs, U&Es and cortisol prior to day 1 of each cycle",
+      "Thyroid function tests prior to starting treatment then every 6 weeks or when clinically indicated"
+    ],
+    "special_warnings": [
+      "No dose reductions are permitted for atezolizumab; only delay or discontinue",
+      "Autoimmune toxicities can be life-threatening; seek specialist guidance",
+      "Systemic corticosteroids before starting atezolizumab should be avoided (interference with pharmacodynamic activity); may be used after starting to treat immune-related adverse reactions",
+      "Funding approval precludes further treatment after interruption of 12 weeks or longer",
+      "Blueteq application required before commencing treatment (ATE1 or ATE3)",
+      "Patients must be given an atezolizumab Patient Alert Card",
+      "Maximum 2 years / 35 administrations for 2nd line use (ATE3)"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "pdl1_expression": ">=5% for 1st line cisplatin-ineligible use",
+      "blueteq_form": "ATE1 or ATE3"
+    },
+    "disease_site": "Urology",
+    "number_of_cycles": 17,
+    "drugs": [
+      {
+        "drug_name": "Atezolizumab",
+        "dose": 1875,
+        "dose_unit": "mg",
+        "route": "Subcutaneous",
+        "days": [
+          1
+        ],
+        "frequency": "every 21 days",
+        "duration_minutes": 7,
+        "diluent": null,
+        "diluent_volume_ml": 15,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Administer 15mL subcutaneously into the thigh over approximately 7 minutes. Alternate between left and right thigh only. New injections at least 2.5cm from old site, never into red, bruised, tender or hard skin. Use SC infusion set (winged/butterfly). DO NOT administer residual hold-up volume in tubing. Patient must be given atezolizumab Patient Alert Card.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.1167,
+        "notes": "every 21 days | Administer 15mL subcutaneously into the thigh over approximately 7 minutes. Alternate between left and right thigh only. New injections at least 2.5cm from old site, never into red, bruised, tender or hard skin. Use SC infusion set (winged/butterfly). DO NOT administer residual hold-up volume in tubing. Patient must be given atezolizumab Patient Alert Card."
+      }
+    ]
+  },
+  {
+    "protocol_id": "bladder-atezolizumab-1200mg-21days",
+    "protocol_code": "ATE-IV-1200-21D",
+    "protocol_name": "Bladder - Atezolizumab (1200mg IV 21 days)",
+    "category": "urology",
+    "indication": "Treatment of adult patients with locally advanced or metastatic urothelial carcinoma after disease progression following one prior platinum-containing regimen regardless of setting (neoadjuvant, adjuvant, metastatic). WHO performance status 0, 1.",
+    "version": "1.0",
+    "cycle_length_days": 21,
+    "total_cycles": 12,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Atezolizumab",
+        "dose": 1200,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "every 21 days",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "First infusion over 60 minutes. If well tolerated, subsequent infusions can be administered over 30 minutes. If planned dose missed, administer as soon as possible; do not wait until next planned dose. Maintain 21-day period between doses. Patient must be given atezolizumab Patient Alert Card.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "timing": "when required for treatment of infusion-related reactions",
+        "mandatory": false
+      },
+      {
+        "drug_name": "Hydrocortisone sodium succinate",
+        "dose": 100,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "timing": "when required for treatment of infusion-related reactions",
+        "mandatory": false
+      },
+      {
+        "drug_name": "Paracetamol",
+        "dose": 1000,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "when required for relief of infusion-related reactions",
+        "mandatory": false
+      }
+    ],
+    "take_home_medicines": [],
+    "dose_modifications": [
+      {
+        "parameter": "Immunotherapy principle",
+        "condition": "All toxicities",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "No dose reductions permitted for atezolizumab. Only delay or discontinue."
+      },
+      {
+        "parameter": "Bilirubin / AST/ALT",
+        "condition": "Grade 2 hepatitis (AST/ALT 3-5xULN or bilirubin 1.5-3xULN), persisting 5-7 days",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold. Consider corticosteroid tapered over at least 1 month if LFTs improve. Resume when Grade 1 or below within 12 weeks and corticosteroid <=10mg prednisolone/day."
+      },
+      {
+        "parameter": "Bilirubin / AST/ALT",
+        "condition": "Grade 3+ hepatitis (AST/ALT >5xULN or bilirubin >3xULN)",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue atezolizumab."
+      },
+      {
+        "parameter": "Pneumonitis",
+        "condition": "Grade 2",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve and radiographic abnormalities improve. Prednisolone 1-2mg/kg/day or equivalent. Resume if improves to Grade 0-1 within 12 weeks and corticosteroids <=10mg/day."
+      },
+      {
+        "parameter": "Pneumonitis",
+        "condition": "Grade 3 or 4",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue atezolizumab."
+      },
+      {
+        "parameter": "Colitis",
+        "condition": "Grade 2 or 3 diarrhoea or symptomatic colitis",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold initially. Grade 2: if >5 days or recurs, prednisolone 1-2mg/kg/day. Grade 3: IV corticosteroids, convert to oral, taper over 1 month. Resume if Grade 0-1 within 12 weeks and corticosteroids <=10mg/day."
+      },
+      {
+        "parameter": "Colitis",
+        "condition": "Grade 4 diarrhoea or colitis",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue atezolizumab."
+      },
+      {
+        "parameter": "Pancreatitis",
+        "condition": "Grade 3-4 amylase/lipase >2xULN or Grade 2-3 pancreatitis",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold. Resume if amylase/lipase improve to Grade 0-1 within 12 weeks and corticosteroids <=10mg/day."
+      },
+      {
+        "parameter": "Pancreatitis",
+        "condition": "Grade 4 or recurrent pancreatitis",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue atezolizumab."
+      },
+      {
+        "parameter": "Immune-related myasthenic syndrome/GBS/meningoencephalitis",
+        "condition": "All grades",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue atezolizumab."
+      },
+      {
+        "parameter": "Infusion-related reactions",
+        "condition": "Grade 1",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Reduce infusion rate to half. Once resolved, wait 30 minutes at reduced rate; if tolerated, increase to original rate."
+      },
+      {
+        "parameter": "Infusion-related reactions",
+        "condition": "Grade 2",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold. Restart at half infusion rate only after symptoms resolved."
+      },
+      {
+        "parameter": "Infusion-related reactions",
+        "condition": "Grade 4",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue atezolizumab."
+      },
+      {
+        "parameter": "Rash",
+        "condition": "Grade 3",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold. Resume if resolved and corticosteroids <=10mg prednisolone/day."
+      },
+      {
+        "parameter": "Rash",
+        "condition": "Grade 4",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue atezolizumab. Consider corticosteroids."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": null,
+      "platelets_min": null,
+      "notes": "No specific haematological thresholds. No dose reductions for atezolizumab - delay or discontinue only."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to day 1 of each cycle",
+      "Thyroid function tests prior to starting treatment then every 6 weeks or when clinically indicated"
+    ],
+    "special_warnings": [
+      "No dose reductions are permitted for atezolizumab; only delay or discontinue",
+      "Immune-related adverse reactions can be severe or life-threatening; involve GI, liver, skin, nervous, endocrine or other organ systems",
+      "Systemic corticosteroids before starting atezolizumab should be avoided; may be used after starting to treat immune-related adverse reactions",
+      "Patients must be given an atezolizumab Patient Alert Card",
+      "Treatment until loss of clinical benefit or unmanageable toxicity"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "performance_status": "0 or 1",
+      "prior_platinum_regimen": "required"
+    },
+    "disease_site": "Urology",
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Atezolizumab",
+        "dose": 1200,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "every 21 days",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "First infusion over 60 minutes. If well tolerated, subsequent infusions can be administered over 30 minutes. If planned dose missed, administer as soon as possible; do not wait until next planned dose. Maintain 21-day period between doses. Patient must be given atezolizumab Patient Alert Card.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "every 21 days | First infusion over 60 minutes. If well tolerated, subsequent infusions can be administered over 30 minutes. If planned dose missed, administer as soon as possible; do not wait until next planned dose. Maintain 21-day period between doses. Patient must be given atezolizumab Patient Alert Card."
+      }
+    ]
+  },
+  {
+    "protocol_id": "urothelial-atezolizumab-1680mg-28days",
+    "protocol_code": "ATE-IV-1680-28D",
+    "protocol_name": "Atezolizumab (1680mg - 28 days)",
+    "category": "urology",
+    "indication": "COVID-19 pandemic protocol for inoperable locally advanced or metastatic urothelial cancer (T4b any N or any T N2-3, or any T any N M1) who would normally receive 1st line platinum-based chemotherapy, no prior chemotherapy for metastatic/locally advanced disease, PD-L1 tested (clinicians should be aware of decreased survival signal in PD-L1 <5% subgroup), WHO PS 0-2. Maximum treatment duration 2 years (26 cycles at 4-weekly schedule).",
+    "version": "1.0",
+    "cycle_length_days": 28,
+    "total_cycles": 26,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Atezolizumab",
+        "dose": 1680,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "every 28 days",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "First infusion over 60 minutes. If well tolerated, subsequent infusions can be administered over 30 minutes. If planned dose missed, administer as soon as possible; maintain 28-day period between doses. Patient must be given atezolizumab Patient Alert Card.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "timing": "when required for treatment of infusion-related reactions",
+        "mandatory": false
+      },
+      {
+        "drug_name": "Hydrocortisone sodium succinate",
+        "dose": 100,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "timing": "when required for treatment of infusion-related reactions",
+        "mandatory": false
+      },
+      {
+        "drug_name": "Paracetamol",
+        "dose": 1000,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "when required for relief of infusion-related reactions",
+        "mandatory": false
+      }
+    ],
+    "take_home_medicines": [],
+    "dose_modifications": [
+      {
+        "parameter": "Immunotherapy principle",
+        "condition": "All toxicities",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "No dose reductions permitted for atezolizumab. Only delay or discontinue. Funding approval precludes further treatment after interruption of 12 weeks or longer."
+      },
+      {
+        "parameter": "Bilirubin / AST/ALT",
+        "condition": "Grade 2 hepatitis (AST/ALT 3-5xULN or bilirubin 1.5-3xULN) persisting 5-7 days",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold. Consider corticosteroid tapered over at least 1 month. Resume when Grade 1 within 12 weeks and corticosteroids <=10mg prednisolone/day."
+      },
+      {
+        "parameter": "Bilirubin / AST/ALT",
+        "condition": "Grade 3+ (AST/ALT >5xULN or bilirubin >3xULN)",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue atezolizumab."
+      },
+      {
+        "parameter": "Pneumonitis",
+        "condition": "Grade 2",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold. Prednisolone 1-2mg/kg/day. Resume if Grade 0-1 within 12 weeks and corticosteroids <=10mg/day."
+      },
+      {
+        "parameter": "Pneumonitis",
+        "condition": "Grade 3 or 4",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue atezolizumab."
+      },
+      {
+        "parameter": "Colitis",
+        "condition": "Grade 2-3 diarrhoea or symptomatic colitis",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold. Grade 2: prednisolone 1-2mg/kg/day if >5 days or recurs. Grade 3: IV corticosteroids. Resume if Grade 0-1 within 12 weeks and corticosteroids <=10mg/day."
+      },
+      {
+        "parameter": "Colitis",
+        "condition": "Grade 4",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue atezolizumab."
+      },
+      {
+        "parameter": "Immune-related myasthenic syndrome/GBS/meningoencephalitis",
+        "condition": "All grades",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue atezolizumab."
+      },
+      {
+        "parameter": "Myositis",
+        "condition": "Grade 2-3",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold for moderate to severe myositis and discontinue."
+      },
+      {
+        "parameter": "Myositis",
+        "condition": "Grade 3-4",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue atezolizumab."
+      },
+      {
+        "parameter": "Infusion-related reactions",
+        "condition": "Grade 1",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Reduce infusion rate to half. Once resolved, wait 30 minutes at reduced rate; if tolerated, increase to original rate."
+      },
+      {
+        "parameter": "Infusion-related reactions",
+        "condition": "Grade 2",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold. Restart at half infusion rate only after symptoms resolved."
+      },
+      {
+        "parameter": "Infusion-related reactions",
+        "condition": "Grade 4",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue atezolizumab."
+      },
+      {
+        "parameter": "Rash",
+        "condition": "Grade 3",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold. Resume if resolved and corticosteroids <=10mg/day."
+      },
+      {
+        "parameter": "Rash",
+        "condition": "Grade 4",
+        "affected_drugs": [
+          "Atezolizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue atezolizumab."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": null,
+      "platelets_min": null,
+      "notes": "No specific haematological thresholds. No dose reductions for atezolizumab - delay or discontinue only. COVID-19 pandemic protocol."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to day 1 of each cycle",
+      "Thyroid function tests prior to starting treatment then every 6 weeks or when clinically indicated"
+    ],
+    "special_warnings": [
+      "No dose reductions are permitted for atezolizumab; only delay or discontinue",
+      "This protocol was developed in response to the COVID-19 pandemic",
+      "PD-L1 testing required; decreased overall survival observed in PD-L1 <5% subgroup in IMvigor130 trial - consider carefully",
+      "Systemic corticosteroids before starting atezolizumab should be avoided",
+      "Funding approval precludes further treatment after interruption of 12 weeks or longer",
+      "Patients must be given an atezolizumab Patient Alert Card",
+      "Maximum treatment duration 2 years (26 administrations at 4-weekly schedule)"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "performance_status": "0, 1, or 2 (PS2 with caution)",
+      "pdl1_testing": "required",
+      "prior_chemotherapy_metastatic": "none"
+    },
+    "disease_site": "Urology",
+    "number_of_cycles": 26,
+    "drugs": [
+      {
+        "drug_name": "Atezolizumab",
+        "dose": 1680,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "every 28 days",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "First infusion over 60 minutes. If well tolerated, subsequent infusions can be administered over 30 minutes. If planned dose missed, administer as soon as possible; maintain 28-day period between doses. Patient must be given atezolizumab Patient Alert Card.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "every 28 days | First infusion over 60 minutes. If well tolerated, subsequent infusions can be administered over 30 minutes. If planned dose missed, administer as soon as possible; maintain 28-day period between doses. Patient must be given atezolizumab Patient Alert Card."
+      }
+    ]
+  },
+  {
+    "protocol_id": "bladder-avelumab-800mg-14days",
+    "protocol_code": "AVELUMAB-800-14D",
+    "protocol_name": "Bladder Cancer - Avelumab (800mg)",
+    "category": "urology",
+    "indication": "First-line maintenance treatment of adult patients with locally advanced or metastatic urothelial carcinoma (UC) whose disease has not progressed with first-line treatment with gemcitabine plus cisplatin or carboplatin (at least 4 and no more than 6 cycles). Patient must commence avelumab within 4-10 weeks of last chemotherapy dose. WHO Performance status 0, 1.",
+    "version": "1.0",
+    "cycle_length_days": 14,
+    "total_cycles": 26,
+    "treatment_intent": "maintenance",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Avelumab",
+        "dose": 800,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "every 14 days",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Administer via sterile, non-pyrogenic 0.2 micron in-line filter. Patients must be given an avelumab alert card.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "timing": "30 minutes prior to avelumab (cycles 1-4; may omit from cycle 5 onwards if no infusion-related reactions)",
+        "mandatory": true
+      },
+      {
+        "drug_name": "Paracetamol",
+        "dose": 1000,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "30 minutes prior to avelumab (cycles 1-4; may omit from cycle 5 onwards if no infusion-related reactions)",
+        "mandatory": true
+      }
+    ],
+    "take_home_medicines": [],
+    "dose_modifications": [
+      {
+        "parameter": "Immunotherapy principle",
+        "condition": "All immunotherapy toxicities",
+        "affected_drugs": [
+          "Avelumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "No dose reductions for avelumab. Treatment delayed rather than reduced. If third dose reduction is necessary, stop treatment."
+      },
+      {
+        "parameter": "Neutrophils",
+        "condition": "Neutrophils <1x10^9/L",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Treatment threshold: neutrophils >=1x10^9/L required. Delay treatment."
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets <100x10^9/L",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Treatment threshold: platelets >=100x10^9/L required. Delay treatment."
+      },
+      {
+        "parameter": "Infusion-related reactions",
+        "condition": "Grade 1",
+        "affected_drugs": [
+          "Avelumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Reduce infusion rate by 50%."
+      },
+      {
+        "parameter": "Infusion-related reactions",
+        "condition": "Grade 2",
+        "affected_drugs": [
+          "Avelumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until adverse reactions recover to Grade 0-1; restart infusion with 50% slower rate."
+      },
+      {
+        "parameter": "Infusion-related reactions",
+        "condition": "Grade 3 or 4",
+        "affected_drugs": [
+          "Avelumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue avelumab."
+      },
+      {
+        "parameter": "Pneumonitis",
+        "condition": "Grade 2",
+        "affected_drugs": [
+          "Avelumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until adverse reactions recover to Grade 0-1."
+      },
+      {
+        "parameter": "Pneumonitis",
+        "condition": "Grade 3-4 or recurrent Grade 2",
+        "affected_drugs": [
+          "Avelumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue avelumab."
+      },
+      {
+        "parameter": "Pancreatitis",
+        "condition": "Suspected pancreatitis",
+        "affected_drugs": [
+          "Avelumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold avelumab."
+      },
+      {
+        "parameter": "Pancreatitis",
+        "condition": "Confirmed pancreatitis",
+        "affected_drugs": [
+          "Avelumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue avelumab."
+      },
+      {
+        "parameter": "Myocarditis",
+        "condition": "Suspected myocarditis",
+        "affected_drugs": [
+          "Avelumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold avelumab."
+      },
+      {
+        "parameter": "Myocarditis",
+        "condition": "Confirmed myocarditis",
+        "affected_drugs": [
+          "Avelumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue avelumab."
+      },
+      {
+        "parameter": "Endocrinopathies",
+        "condition": "Grade 3 or 4 (hypothyroidism, hyperthyroidism, adrenal insufficiency, hyperglycaemia)",
+        "affected_drugs": [
+          "Avelumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until adverse reactions recover to Grade 0-1. Hypothyroidism managed by standard medical practice; no need to discontinue avelumab."
+      },
+      {
+        "parameter": "Nephritis and renal dysfunction",
+        "condition": "Serum creatinine >1.5 and up to 6x ULN",
+        "affected_drugs": [
+          "Avelumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until adverse reactions recover to Grade 0-1."
+      },
+      {
+        "parameter": "Nephritis and renal dysfunction",
+        "condition": "Serum creatinine >6x ULN",
+        "affected_drugs": [
+          "Avelumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue avelumab."
+      },
+      {
+        "parameter": "Hepatitis",
+        "condition": "ALT/AST >=3xULN but <5xULN or bilirubin >=1.5xULN but <3xULN",
+        "affected_drugs": [
+          "Avelumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until recover to Grade 0-1. If persistent >5 days, consider corticosteroid taper. Resume when Grade 1 following corticosteroid taper."
+      },
+      {
+        "parameter": "Hepatitis",
+        "condition": "ALT/AST >=5xULN or >3xULN with concurrent bilirubin >=2xULN or bilirubin >=3xULN",
+        "affected_drugs": [
+          "Avelumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue avelumab. Consider corticosteroids."
+      },
+      {
+        "parameter": "Colitis",
+        "condition": "NCI-CTC Grade 2-3 colitis",
+        "affected_drugs": [
+          "Avelumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold. Administer corticosteroids. On improvement to Grade 1 begin to taper over 1 month. Restart when colitis at Grade 1 following taper."
+      },
+      {
+        "parameter": "Colitis",
+        "condition": "NCI-CTC Grade 4, or not improved to Grade 1 within 12 weeks, or corticosteroids cannot be reduced to <=10mg/day within 12 weeks",
+        "affected_drugs": [
+          "Avelumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue avelumab."
+      },
+      {
+        "parameter": "Other immune-related adverse reactions",
+        "condition": "Grade 2 or 3 immune-related adverse reaction not described above",
+        "affected_drugs": [
+          "Avelumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until adverse reactions recover to Grade 0-1."
+      },
+      {
+        "parameter": "Other immune-related adverse reactions",
+        "condition": "Life-threatening/Grade 4; recurrent Grade 3; >=10mg prednisone/day for >12 weeks; persistent Grade 2-3 lasting >=12 weeks",
+        "affected_drugs": [
+          "Avelumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue avelumab."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "Avelumab dose not generally reduced for haematological toxicity; delayed rather than reduced."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to day 1 for six cycles then, if stable, every four weeks thereafter",
+      "Thyroid function tests prior to starting treatment then every four weeks for twelve weeks (at least every 12 weeks thereafter) or when clinically indicated",
+      "Ensure adequate cardiac function before starting; baseline LVEF in patients with cardiac history or elderly; repeat every 3-6 months as indicated"
+    ],
+    "special_warnings": [
+      "No dose reductions are permitted for avelumab; treatment delayed rather than reduced",
+      "Immune-related adverse reactions can be severe or life-threatening",
+      "Pre-medication (chlorphenamine 10mg IV and paracetamol 1000mg oral) required 30 minutes before infusions 1-4; may be omitted from cycle 5 onwards if no infusion-related reactions have occurred",
+      "9% incidence of NCI-CTC Grade 3/4 raised transaminases and 6.3% immune-related hepatitis with this regimen",
+      "Patients must be given an avelumab alert card to carry at all times",
+      "Treatment break of >12 weeks beyond expected cycle length requires treatment break form to restart",
+      "Formal medical review at least by end of first 8 weeks of treatment"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "performance_status": "0 or 1",
+      "prior_gemcitabine_platinum_cycles": "4-6 cycles",
+      "post_chemo_scan": "no evidence of progressive disease required",
+      "time_from_last_chemo": "4-10 weeks"
+    },
+    "disease_site": "Urology",
+    "number_of_cycles": 26,
+    "drugs": [
+      {
+        "drug_name": "Avelumab",
+        "dose": 800,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "every 14 days",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Administer via sterile, non-pyrogenic 0.2 micron in-line filter. Patients must be given an avelumab alert card.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "every 14 days | Administer via sterile, non-pyrogenic 0.2 micron in-line filter. Patients must be given an avelumab alert card."
+      }
+    ]
+  },
+  {
+    "protocol_id": "renal-cell-avelumab-axitinib",
+    "protocol_code": "AVE-AXI-RCC",
+    "protocol_name": "Renal Cell - Avelumab-Axitinib",
+    "category": "urology",
+    "indication": "Unresectable locally advanced or metastatic renal cell carcinoma (RCC) with clear cell component or papillary/chromophobe/collecting duct/medullary/mucinous tubular and spindle cell/multilocular cystic/XP11 translocation RCC. Patient must be treatment naive or prior systemic therapy completed >=12 months previously (adjuvant/neoadjuvant context). No symptomatic brain or leptomeningeal metastases. WHO performance status 0, 1, 2.",
+    "version": "1.0",
+    "cycle_length_days": 28,
+    "total_cycles": 12,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Avelumab",
+        "dose": 800,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1,
+          15
+        ],
+        "frequency": "days 1 and 15 of each 28-day cycle",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Administer via sterile, non-pyrogenic 0.2 micron in-line filter. Avelumab dose is delayed rather than reduced. Patients must be given an avelumab alert card.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Axitinib",
+        "dose": 5,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "twice daily",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 10,
+        "max_dose_unit": "mg",
+        "special_instructions": "Starting dose 5mg twice daily. Dose escalation to 7mg BD (days 15-28 cycle 1 if tolerated) then 10mg BD (cycle 2 onwards if tolerated) - see dose escalation protocol. Swallow whole approximately 12 hours apart. Do not chew or crush. Available as 1mg, 3mg, 5mg and 7mg tablets. Dose reductions: 5mg BD to 3mg BD to 2mg BD.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "timing": "30 minutes prior to avelumab (cycles 1-4; may omit from cycle 5 onwards if no infusion-related reactions)",
+        "mandatory": true
+      },
+      {
+        "drug_name": "Paracetamol",
+        "dose": 1000,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "30 minutes prior to avelumab (cycles 1-4; may omit from cycle 5 onwards if no infusion-related reactions)",
+        "mandatory": true
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Axitinib",
+        "dose": 5,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "twice daily",
+        "days_supply": 28,
+        "instructions": "Swallow whole approximately 12 hours apart. Do not chew or crush. Dose escalation may be considered per protocol."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Axitinib dose escalation",
+        "condition": "Tolerates 5mg BD with no adverse effects >NCI-CTC Grade 2 for two consecutive weeks AND BP <=150/90 AND not on antihypertensives",
+        "affected_drugs": [
+          "Axitinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Cycle 1 days 1-14: 5mg BD. Cycle 1 days 15-28: may escalate to 7mg BD if above criteria met. Cycle 2 onwards: may escalate to 10mg BD if tolerated 7mg BD by same criteria. In practice dose escalation rarely tolerated. ARIA will be set at 5mg BD."
+      },
+      {
+        "parameter": "Axitinib dose reduction",
+        "condition": "Toxicity requiring dose reduction",
+        "affected_drugs": [
+          "Axitinib"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Dose reductions in incremental steps: 5mg BD to 3mg BD to 2mg BD. If third dose reduction necessary, stop treatment."
+      },
+      {
+        "parameter": "Neutrophils",
+        "condition": "Neutrophils <1x10^9/L (cycle 1 criterion)",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Cycle 1 requirement: neutrophils >=1x10^9/L. Thereafter: delay until recovery to >=1x10^9/L. If recovery within 7 days, continue at last dose. If >7 days, reduce dose."
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets <75x10^9/L (cycle 1 criterion)",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Cycle 1 requirement: platelets >=75x10^9/L. Thereafter: delay until recovery to >=75x10^9/L. If within 7 days, continue at full dose; if >7 days, reduce dose."
+      },
+      {
+        "parameter": "Hepatic impairment (Axitinib)",
+        "condition": "Child-Pugh Class B",
+        "affected_drugs": [
+          "Axitinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Axitinib starting dose 2mg twice daily for Child-Pugh B. Child-Pugh C: no information."
+      },
+      {
+        "parameter": "Renal impairment (Axitinib)",
+        "condition": "Creatinine clearance <=15ml/min",
+        "affected_drugs": [
+          "Axitinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "No information available for axitinib in CrCl <=15ml/min."
+      },
+      {
+        "parameter": "Hypertension (Axitinib)",
+        "condition": "Persistent BP >140/90mmHg despite standard antihypertensive therapy",
+        "affected_drugs": [
+          "Axitinib"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Reduce axitinib dose and continue to monitor. If hypertension persists, discontinue axitinib."
+      },
+      {
+        "parameter": "Diarrhoea (GI toxicity)",
+        "condition": "NCI-CTC Grade 2 or above",
+        "affected_drugs": [
+          "Avelumab",
+          "Axitinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Stop both avelumab and axitinib. Treatment may be restarted with dose reduction of one dose level of axitinib in the first instance. Grade 2-3 colitis: withhold both, administer corticosteroids. Permanently discontinue avelumab if colitis does not improve to Grade 1 within 12 weeks."
+      },
+      {
+        "parameter": "Hepatitis",
+        "condition": "ALT/AST >=3xULN but <5xULN or bilirubin >=1.5xULN but <3xULN",
+        "affected_drugs": [
+          "Avelumab",
+          "Axitinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold both until Grade 0-1. If persistent >5 days, consider corticosteroids with taper. After NCI-CTC Grade 2 hepatitis recovery, consider sequential rechallenge with axitinib with dose reduction."
+      },
+      {
+        "parameter": "Hepatitis",
+        "condition": "ALT/AST >=5xULN or >3xULN with bilirubin >=2xULN or bilirubin >=3xULN",
+        "affected_drugs": [
+          "Avelumab",
+          "Axitinib"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue both avelumab and axitinib. Consider corticosteroids."
+      },
+      {
+        "parameter": "Palmar-plantar erythrodysaesthesia",
+        "condition": "NCI-CTC Grade 2",
+        "affected_drugs": [
+          "Axitinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay axitinib until resolves to Grade 1. Restart with dose reduction."
+      },
+      {
+        "parameter": "Palmar-plantar erythrodysaesthesia",
+        "condition": "NCI-CTC Grade 3",
+        "affected_drugs": [
+          "Axitinib"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Delay axitinib until resolves to Grade 1. Restart with reduced dose."
+      },
+      {
+        "parameter": "Proteinuria (Axitinib)",
+        "condition": "Moderate to severe proteinuria (>=2+ on dipstick or >1g/24h)",
+        "affected_drugs": [
+          "Axitinib"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Reduce axitinib dose or temporarily interrupt. Discontinue if nephrotic syndrome develops."
+      },
+      {
+        "parameter": "Avelumab infusion-related reactions",
+        "condition": "Grade 1",
+        "affected_drugs": [
+          "Avelumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Reduce infusion rate by 50%."
+      },
+      {
+        "parameter": "Avelumab infusion-related reactions",
+        "condition": "Grade 2",
+        "affected_drugs": [
+          "Avelumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until adverse reactions recover to Grade 0-1; restart with 50% slower rate."
+      },
+      {
+        "parameter": "Avelumab infusion-related reactions",
+        "condition": "Grade 3 or 4",
+        "affected_drugs": [
+          "Avelumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue avelumab."
+      },
+      {
+        "parameter": "Avelumab immune toxicities (pneumonitis, pancreatitis, nephritis, endocrinopathies, myocarditis)",
+        "condition": "Grade 2-3 immune-related adverse reaction",
+        "affected_drugs": [
+          "Avelumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold avelumab until adverse reactions recover to Grade 0-1. Pneumonitis Grade 3-4 or recurrent Grade 2: permanently discontinue."
+      },
+      {
+        "parameter": "Avelumab immune toxicities",
+        "condition": "Life-threatening/Grade 4; recurrent Grade 3; >=10mg prednisone for >12 weeks; persistent Grade 2-3 for >=12 weeks",
+        "affected_drugs": [
+          "Avelumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Permanently discontinue avelumab."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 75,
+      "notes": "Cycle 1 eligibility: neutrophils >=1x10^9/L and platelets >=75x10^9/L. Avelumab delayed rather than dose reduced. If either avelumab or axitinib permanently discontinued due to toxicity, the other may continue as monotherapy."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs, U&Es, glucose and cortisol prior to days 1 and 15 for first three cycles then prior to day 1 thereafter",
+      "Blood pressure weekly for first 4 weeks then every 4 weeks",
+      "Thyroid function tests prior to starting treatment then before each avelumab administration (cycle) or when clinically indicated (at least every 12 weeks)",
+      "Urine assessment for proteinuria at baseline then every 12 weeks",
+      "Baseline LVEF in patients with cardiac history or elderly; repeat every 3-6 months as clinically indicated"
+    ],
+    "special_warnings": [
+      "No dose reductions are permitted for avelumab; dose delayed rather than reduced",
+      "Axitinib dose escalation protocol: 5mg BD (cycle 1 days 1-14) to 7mg BD (cycle 1 days 15-28 if tolerated) to 10mg BD (cycle 2 onwards if tolerated); in practice rarely tolerated - check dose is appropriate",
+      "If either avelumab or axitinib permanently discontinued due to toxicity, the other may continue as monotherapy",
+      "Treatment breaks up to 12 weeks beyond expected 4-weekly cycle length allowed for toxicity management",
+      "9% incidence of NCI-CTC Grade 3/4 transaminase elevation and 6.3% immune-related hepatitis with this regimen",
+      "Pre-medication required before avelumab for first 4 infusions; may be omitted from cycle 5 onwards if no reactions",
+      "Axitinib should be stopped at least 24 hours prior to scheduled surgery",
+      "Axitinib is associated with drug interactions; prescribe under supervision of oncologist",
+      "Patients must carry an avelumab alert card at all times",
+      "Formal medical review at least by start of 3rd 4-weekly cycle"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "performance_status": "0, 1, or 2",
+      "rcc_histology": "clear cell component or specified non-clear cell types",
+      "prior_systemic_therapy": "naive or completed >=12 months previously",
+      "imdc_risk_score": "assessed"
+    },
+    "disease_site": "Urology",
+    "number_of_cycles": 12,
+    "drugs": [
+      {
+        "drug_name": "Avelumab",
+        "dose": 800,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1,
+          15
+        ],
+        "frequency": "days 1 and 15 of each 28-day cycle",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Administer via sterile, non-pyrogenic 0.2 micron in-line filter. Avelumab dose is delayed rather than reduced. Patients must be given an avelumab alert card.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "days 1 and 15 of each 28-day cycle | Administer via sterile, non-pyrogenic 0.2 micron in-line filter. Avelumab dose is delayed rather than reduced. Patients must be given an avelumab alert card."
+      },
+      {
+        "drug_name": "Axitinib",
+        "dose": 5,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "twice daily",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 10,
+        "max_dose_unit": "mg",
+        "special_instructions": "Starting dose 5mg twice daily. Dose escalation to 7mg BD (days 15-28 cycle 1 if tolerated) then 10mg BD (cycle 2 onwards if tolerated) - see dose escalation protocol. Swallow whole approximately 12 hours apart. Do not chew or crush. Available as 1mg, 3mg, 5mg and 7mg tablets. Dose reductions: 5mg BD to 3mg BD to 2mg BD.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "twice daily | Starting dose 5mg twice daily. Dose escalation to 7mg BD (days 15-28 cycle 1 if tolerated) then 10mg BD (cycle 2 onwards if tolerated) - see dose escalation protocol. Swallow whole approximately 12 hours apart. Do not chew or crush. Available as 1mg, 3mg, 5mg and 7mg tablets. Dose reductions: 5mg BD to 3mg BD to 2mg BD."
+      }
+    ]
+  },
+  {
+    "protocol_id": "renal-cell-axitinib",
+    "protocol_code": "AXITINIB-RCC",
+    "protocol_name": "Renal Cell - Axitinib",
+    "category": "urology",
+    "indication": "Second line treatment of advanced or metastatic renal cell carcinoma after failure or intolerance to a first line therapy such as sunitinib. WHO Performance status 0, 1. Palliative intent.",
+    "version": "1.2",
+    "cycle_length_days": 28,
+    "total_cycles": null,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Axitinib",
+        "dose": 5,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "twice daily",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 10,
+        "max_dose_unit": "mg",
+        "special_instructions": "Starting dose 5mg twice daily (days 1-14 cycle 1). Escalate to 7mg BD (days 15-28 cycle 1) if tolerated with no adverse effects >Grade 2 for 2 consecutive weeks AND BP <=150/90 AND not on antihypertensives. Escalate to 10mg BD (cycle 2 onwards) if 7mg BD tolerated. Dose reductions: 5mg BD to 3mg BD to 2mg BD. Swallow whole; do not chew or crush. Take approximately 12 hours apart. Available as 1mg, 3mg, 5mg and 7mg tablets.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [
+      {
+        "drug_name": "Axitinib",
+        "dose": 5,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "twice daily",
+        "days_supply": 28,
+        "instructions": "Swallow whole. Do not chew or crush. Dose escalation per protocol."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Axitinib dose escalation",
+        "condition": "Tolerates 5mg BD with no adverse effects >NCI-CTC Grade 2 for two consecutive weeks AND BP <=150/90 AND not on antihypertensives",
+        "affected_drugs": [
+          "Axitinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Cycle 1: 5mg BD days 1-14, increase to 7mg BD days 15-28 if tolerated. Cycle 2 onwards: increase to 10mg BD if tolerated 7mg BD by same criteria. ARIA note: dose has been automatically escalated; verify appropriateness."
+      },
+      {
+        "parameter": "Neutrophils",
+        "condition": "Neutrophils <1x10^9/L",
+        "affected_drugs": [
+          "Axitinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Cycle 1 requirement: >=1x10^9/L. Thereafter delay until recovery. If within 7 days, continue at last dose; if >7 days, reduce dose."
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets <75x10^9/L",
+        "affected_drugs": [
+          "Axitinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Cycle 1 requirement: >=75x10^9/L. Thereafter delay until recovery. If within 7 days, continue at full dose; if >7 days, reduce dose."
+      },
+      {
+        "parameter": "Hepatic impairment",
+        "condition": "Child-Pugh Class B",
+        "affected_drugs": [
+          "Axitinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Starting dose 2mg twice daily for Child-Pugh B. Child-Pugh C: no information."
+      },
+      {
+        "parameter": "Renal impairment",
+        "condition": "Creatinine clearance <=15ml/min",
+        "affected_drugs": [
+          "Axitinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "No information available."
+      },
+      {
+        "parameter": "Hypertension",
+        "condition": "Persistent BP >140/90mmHg despite standard antihypertensive therapy",
+        "affected_drugs": [
+          "Axitinib"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Reduce axitinib dose and continue to monitor. If hypertension persists, discontinue axitinib."
+      },
+      {
+        "parameter": "Diarrhoea",
+        "condition": "NCI-CTC Grade 3",
+        "affected_drugs": [
+          "Axitinib"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Reduce dose by one dose level."
+      },
+      {
+        "parameter": "Diarrhoea",
+        "condition": "NCI-CTC Grade 4",
+        "affected_drugs": [
+          "Axitinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Stop axitinib until resolves to at least Grade 2. Restart with dose reduction of one dose level."
+      },
+      {
+        "parameter": "Palmar-plantar erythrodysaesthesia",
+        "condition": "NCI-CTC Grade 2",
+        "affected_drugs": [
+          "Axitinib"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay axitinib until resolves to Grade 1. Restart with dose reduction."
+      },
+      {
+        "parameter": "Palmar-plantar erythrodysaesthesia",
+        "condition": "NCI-CTC Grade 3",
+        "affected_drugs": [
+          "Axitinib"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Delay axitinib until resolves to Grade 1. Restart with reduced dose."
+      },
+      {
+        "parameter": "Proteinuria",
+        "condition": "Moderate to severe (>=2+ dipstick or >1g/24h)",
+        "affected_drugs": [
+          "Axitinib"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Reduce axitinib dose or temporarily interrupt. Discontinue if nephrotic syndrome develops."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 75,
+      "notes": "Cycle 1: neutrophils >=1x10^9/L and platelets >=75x10^9/L required. If third dose reduction necessary, stop treatment."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to each cycle for first three cycles; may reduce to every other cycle if stable",
+      "Blood pressure weekly for first 4 weeks then every 6-12 weeks",
+      "Thyroid function tests at baseline then every 3 months",
+      "Baseline LVEF in patients with cardiac history or elderly; repeat every 3-6 months as clinically indicated"
+    ],
+    "special_warnings": [
+      "Axitinib dose escalation protocol: 5mg BD (cycle 1 days 1-14) to 7mg BD (cycle 1 days 15-28 if tolerated) to 10mg BD (cycle 2 onwards if tolerated)",
+      "Dose reductions in incremental steps: 5mg BD to 3mg BD to 2mg BD; stop if third reduction necessary",
+      "Axitinib should be stopped at least 24 hours prior to scheduled surgery",
+      "Hypothyroidism can occur; manage according to standard practice, no need to dose reduce axitinib",
+      "Palmar-plantar erythrodysaesthesia: apply moisturiser regularly; minimise pressure on hands/feet; chiropodist referral if appropriate",
+      "Axitinib is associated with drug interactions",
+      "Must be prescribed under supervision of an oncologist",
+      "National Patient Safety Alert on oral SACT (NPSA/2008/RRR001) applies",
+      "This regimen may require funding approval"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "performance_status": "0 or 1",
+      "prior_first_line_therapy": "failure or intolerance to sunitinib or other 1st line therapy"
+    },
+    "disease_site": "Urology",
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Axitinib",
+        "dose": 5,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "twice daily",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 10,
+        "max_dose_unit": "mg",
+        "special_instructions": "Starting dose 5mg twice daily (days 1-14 cycle 1). Escalate to 7mg BD (days 15-28 cycle 1) if tolerated with no adverse effects >Grade 2 for 2 consecutive weeks AND BP <=150/90 AND not on antihypertensives. Escalate to 10mg BD (cycle 2 onwards) if 7mg BD tolerated. Dose reductions: 5mg BD to 3mg BD to 2mg BD. Swallow whole; do not chew or crush. Take approximately 12 hours apart. Available as 1mg, 3mg, 5mg and 7mg tablets.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "twice daily | Starting dose 5mg twice daily (days 1-14 cycle 1). Escalate to 7mg BD (days 15-28 cycle 1) if tolerated with no adverse effects >Grade 2 for 2 consecutive weeks AND BP <=150/90 AND not on antihypertensives. Escalate to 10mg BD (cycle 2 onwards) if 7mg BD tolerated. Dose reductions: 5mg BD to 3mg BD to 2mg BD. Swallow whole; do not chew or crush. Take approximately 12 hours apart. Available as 1mg, 3mg, 5mg and 7mg tablets."
+      }
+    ]
+  }
+]

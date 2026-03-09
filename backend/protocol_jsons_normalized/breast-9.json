@@ -1,0 +1,269 @@
+[
+  {
+    "protocol_code": "BREAST-VINORELBINE-PO-D1-8-15",
+    "protocol_name": "Breast Cancer - Vinorelbine Oral (Day 1, 8, 15)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Vinorelbine",
+        "dose": 60.0,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": 120.0,
+        "max_dose_unit": "mg",
+        "notes": "Cycle 1 dose: 60mg/m² (max 120mg). From cycle 2 onwards escalate to 80mg/m² (max 160mg) unless neutrophil count dropped below 0.5x10⁹/L or more than once between 0.5-1x10⁹/L during first three administrations. Dose rounded to nearest 10mg (up if halfway). Available as 20mg, 30mg and 80mg capsules. Swallow whole with cold water; take with food; store in refrigerator away from foodstuffs."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Day 1 eligibility: Neutrophils less than 1.5x10⁹/L or Platelets less than 100x10⁹/L",
+        "drug_name": "Vinorelbine",
+        "factor": 1.0,
+        "notes": "Delay treatment until criteria met. Consider dose reduction for further cycles."
+      },
+      {
+        "condition": "Haemoglobin less than 8g/dL or patient symptomatic of anaemia",
+        "drug_name": "Vinorelbine",
+        "factor": 1.0,
+        "notes": "Consider blood transfusion before proceeding."
+      },
+      {
+        "condition": "First 3 administrations at 60mg/m²: neutrophils more than 1x10⁹/L or neutrophils 0.5-1x10⁹/L (1 episode only)",
+        "drug_name": "Vinorelbine",
+        "factor": 1.0,
+        "notes": "Escalate to 80mg/m² from 4th administration onwards."
+      },
+      {
+        "condition": "First 3 administrations at 60mg/m²: neutrophils 0.5-1x10⁹/L (2 episodes) or less than 0.5x10⁹/L",
+        "drug_name": "Vinorelbine",
+        "factor": 1.0,
+        "notes": "Remain at 60mg/m² from 4th administration onwards; do not escalate to 80mg/m²."
+      },
+      {
+        "condition": "Beyond 4th dose at 80mg/m²: neutrophils 0.5-1x10⁹/L (2 episodes) or less than 0.5x10⁹/L (less than 500)",
+        "drug_name": "Vinorelbine",
+        "factor": 1.0,
+        "notes": "Delay until recovery then reduce from 80mg/m² to 60mg/m² for the following three administrations."
+      },
+      {
+        "condition": "Beyond 4th dose at 80mg/m²: neutrophils more than 1x10⁹/L",
+        "drug_name": "Vinorelbine",
+        "factor": 1.0,
+        "notes": "Continue at 80mg/m²."
+      },
+      {
+        "condition": "Mild liver impairment: bilirubin less than 1.5xULN and ALT/AST 1.5-2.5xULN",
+        "drug_name": "Vinorelbine",
+        "factor": 1.0,
+        "notes": "Standard dose of 60mg/m²/week may be administered."
+      },
+      {
+        "condition": "Moderate liver impairment: bilirubin 1.5-3xULN (whatever ALT/AST)",
+        "drug_name": "Vinorelbine",
+        "factor": 1.0,
+        "notes": "Reduce to 50mg/m²/week."
+      },
+      {
+        "condition": "Severe hepatic impairment",
+        "drug_name": "Vinorelbine",
+        "factor": 0.0,
+        "notes": "Oral vinorelbine is contra-indicated in severe hepatic impairment."
+      },
+      {
+        "condition": "Renal impairment",
+        "drug_name": "Vinorelbine",
+        "factor": 1.0,
+        "notes": "No dose adjustment necessary for renal impairment."
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 2",
+        "drug_name": "Vinorelbine",
+        "factor": 1.0,
+        "notes": "Delay treatment for seven days. If resolved to grade 1 or below, resume at 60mg/m² (or 50mg/m² if 60mg/m² was the treatment dose). If symptoms do not resolve within seven days consider stopping treatment."
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 3 or above",
+        "drug_name": "Vinorelbine",
+        "factor": 0.0,
+        "notes": "Consider stopping treatment."
+      },
+      {
+        "condition": "Other NCI-CTC grade 3 or above toxicities",
+        "drug_name": "Vinorelbine",
+        "factor": 1.0,
+        "notes": "Defer treatment for seven days until resolved to NCI-CTC grade 1 or below. Restart at 60mg/m² or 50mg/m² if 60mg/m² was the treatment dose. If more than seven days required to resolve, consider stopping treatment."
+      },
+      {
+        "condition": "Third dose reduction required",
+        "drug_name": "Vinorelbine",
+        "factor": 0.0,
+        "notes": "General rule: if a third dose reduction is necessary, treatment should be stopped."
+      }
+    ],
+    "pre_medications": [
+      "Ondansetron 8mg oral taken 15-30 minutes prior to vinorelbine (take home medication); an additional 8mg may be taken 12 hours later if required for nausea and vomiting",
+      "Metoclopramide 10mg three times a day when required (cycle 1 only, take home medication, for relief of nausea)",
+      "Gastric protection with proton pump inhibitor or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed"
+    ],
+    "special_warnings": [
+      "ORAL CHEMOTHERAPY - NPSA oral chemotherapy safety requirements must be followed. Oral vinorelbine is a cytotoxic agent subject to NPSA oral anti-cancer medicine safety standards.",
+      "Vinorelbine capsules must be swallowed whole with cold water - do not chew or suck the capsule.",
+      "Capsules should be taken with food.",
+      "Capsules must be stored safely in the refrigerator away from foodstuffs.",
+      "Indication: locally advanced or metastatic breast cancer that has failed anthracycline or taxane regimen, or where anthracycline/taxane is contra-indicated AND venous access is not a treatment option. WHO Performance Status 0, 1, 2.",
+      "FBC, U&Es and LFTs weekly for the first three weeks then three-weekly thereafter.",
+      "Dose escalation from 60mg/m² to 80mg/m² from cycle 2 (4th administration) is recommended unless neutrophil count was below 0.5x10⁹/L or more than once between 0.5-1x10⁹/L during first three administrations.",
+      "All dose reductions due to adverse reactions should not be re-escalated in subsequent cycles without consultant approval.",
+      "If a third dose reduction is necessary, treatment should be stopped.",
+      "If neutrophil and platelet counts are not sustained during first three weeks, consider stopping treatment."
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "haemoglobin",
+      "bilirubin",
+      "ALT",
+      "AST",
+      "who_performance_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "BREAST-VINORELBINE-IV",
+    "protocol_name": "Breast Cancer - Vinorelbine (Intravenous)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Vinorelbine",
+        "dose": 30.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8
+        ],
+        "infusion_duration_hours": 0.17,
+        "max_dose": 60.0,
+        "max_dose_unit": "mg",
+        "notes": "Administered as intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Dose banded as per CSCCN agreed bands. Maximum dose 60mg. In patients with poor bone marrow reserves (extensive prior treatment, bone metastases or extensive skeletal radiation) consider starting dose of 25mg/m² with view to increase to 30mg/m² if well tolerated. Vesicant - extravasation precautions required."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Day 1 eligibility: Neutrophils less than 1.5x10⁹/L or Platelets less than 100x10⁹/L",
+        "drug_name": "Vinorelbine",
+        "factor": 1.0,
+        "notes": "Delay treatment for seven days. Re-start only when levels are reached. Consider dose reduction for further cycles. Applies to day 1 and day 8."
+      },
+      {
+        "condition": "Day 8 eligibility: Neutrophils less than 1x10⁹/L or Platelets less than 75x10⁹/L",
+        "drug_name": "Vinorelbine",
+        "factor": 1.0,
+        "notes": "Delay day 8 dose. Re-start only when neutrophils reach at least 1x10⁹/L and platelets at least 75x10⁹/L. Consider dose reduction for further cycles."
+      },
+      {
+        "condition": "Haemoglobin less than 8g/dL or patient symptomatic of anaemia",
+        "drug_name": "Vinorelbine",
+        "factor": 1.0,
+        "notes": "Consider blood transfusion before proceeding."
+      },
+      {
+        "condition": "Severe liver impairment",
+        "drug_name": "Vinorelbine",
+        "factor": 1.0,
+        "notes": "Consider dose reduction to 20mg/m² for the intravenous preparation."
+      },
+      {
+        "condition": "Massive liver metastases (75% or more of liver volume replaced by tumour)",
+        "drug_name": "Vinorelbine",
+        "factor": 1.0,
+        "notes": "Reduce dose to 20mg/m² and monitor haematological toxicity closely. Note: clearance is not altered with moderate liver metastases (less than 75% liver volume), no dose reduction needed in that setting."
+      },
+      {
+        "condition": "Renal impairment",
+        "drug_name": "Vinorelbine",
+        "factor": 1.0,
+        "notes": "No dose adjustment necessary."
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 2",
+        "drug_name": "Vinorelbine",
+        "factor": 1.0,
+        "notes": "Withhold vinorelbine until recovered to grade 1, then reduce dose to 20mg/m²."
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 3",
+        "drug_name": "Vinorelbine",
+        "factor": 1.0,
+        "notes": "Withhold vinorelbine until recovered to grade 1, then reduce dose to 15mg/m². Discontinue if no recovery following this dose decrease."
+      },
+      {
+        "condition": "Constipation NCI-CTC grade 1-2",
+        "drug_name": "Vinorelbine",
+        "factor": 1.0,
+        "notes": "May be managed with dietary interventions or laxatives. No dose reduction required."
+      },
+      {
+        "condition": "Constipation NCI-CTC grade 3 or above",
+        "drug_name": "Vinorelbine",
+        "factor": 1.0,
+        "notes": "Reduce dose to 20mg/m². For persistent symptoms may further reduce to 15mg/m² or stop treatment."
+      },
+      {
+        "condition": "Other toxicities NCI-CTC grade 3",
+        "drug_name": "Vinorelbine",
+        "factor": 1.0,
+        "notes": "Withhold vinorelbine until recovered to NCI-CTC grade 1, then dose reduce to 20mg/m²."
+      },
+      {
+        "condition": "Other toxicities NCI-CTC grade 4 or above",
+        "drug_name": "Vinorelbine",
+        "factor": 1.0,
+        "notes": "Withhold vinorelbine until symptoms resolved to NCI-CTC grade 1. Seek consultant advice on whether to re-start therapy."
+      },
+      {
+        "condition": "Third dose reduction required",
+        "drug_name": "Vinorelbine",
+        "factor": 0.0,
+        "notes": "General rule: if a third dose reduction is necessary, treatment should be stopped."
+      }
+    ],
+    "pre_medications": [
+      "Metoclopramide 10mg oral or intravenous 15-30 minutes before chemotherapy",
+      "Metoclopramide 10mg three times a day when required oral (take home medication - dispensed as original pack on day 1 only; patients counselled it covers days 1 and 8)",
+      "Gastric protection with proton pump inhibitor or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed"
+    ],
+    "special_warnings": [
+      "VESICANT - Vinorelbine is a vesicant. Full extravasation precautions must be followed.",
+      "NPSA/2008/RRR04 must be followed in relation to intravenous administration of vinca alkaloids.",
+      "Indication: locally advanced or metastatic breast cancer that has failed anthracycline or taxane regimen, or where further anthracycline or taxane treatment is contra-indicated. WHO Performance Status 0, 1, 2.",
+      "FBC, U&Es and LFTs required prior to each cycle.",
+      "Day 1 treatment criteria: Neutrophils at least 1.5x10⁹/L and Platelets at least 100x10⁹/L.",
+      "Day 8 treatment criteria: Neutrophils at least 1x10⁹/L and Platelets at least 75x10⁹/L.",
+      "In patients with poor bone marrow reserves (extensive prior treatment, bone metastases, extensive skeletal radiation), consider starting dose of 25mg/m² with view to increase to 30mg/m² if well tolerated.",
+      "All dose reductions due to adverse reactions should not be re-escalated in subsequent cycles without consultant approval.",
+      "If a third dose reduction is necessary, treatment should be stopped.",
+      "Administered in 50ml sodium chloride 0.9% over 10 minutes (intravenous bolus)."
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "haemoglobin",
+      "liver_function_tests",
+      "who_performance_status"
+    ],
+    "auc_dosing": null
+  }
+]

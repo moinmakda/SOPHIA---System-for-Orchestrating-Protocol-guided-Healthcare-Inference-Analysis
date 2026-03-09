@@ -1,0 +1,2473 @@
+[
+  {
+    "protocol_id": "cns_bevacizumab",
+    "protocol_code": "CNS-BEVA",
+    "protocol_name": "CNS Cancer Bevacizumab",
+    "category": "cns",
+    "indication": "Recurrent GBM; WHO performance status 0, 1, 2",
+    "version": "1",
+    "cycle_length_days": 21,
+    "total_cycles": 6,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Bevacizumab",
+        "dose": 10,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": 90,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "First infusion over 90 minutes; if well tolerated second infusion over 60 minutes; if well tolerated subsequent infusions over 30 minutes. Dose banded according to CSCCN agreed bands.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [],
+    "dose_modifications": [
+      {
+        "parameter": "haemoglobin",
+        "condition": "< 8 g/dL or symptomatic anaemia",
+        "affected_drugs": [
+          "Bevacizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Consider blood transfusion or erythropoietin if patient symptomatic of anaemia or has a haemoglobin of less than 8g/dL. There is little need to adjust the dose of bevacizumab for haematological toxicity."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "n/a",
+        "affected_drugs": [
+          "Bevacizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "No information available for hepatic impairment (n/a)."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "n/a",
+        "affected_drugs": [
+          "Bevacizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "No information available for renal impairment (n/a)."
+      },
+      {
+        "parameter": "other",
+        "condition": "NCI-CTC grade 3 and above non-haematological toxicity",
+        "affected_drugs": [
+          "Bevacizumab"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay treatment until adverse effect has resolved to NCI-CTC grade 1 or below."
+      },
+      {
+        "parameter": "other",
+        "condition": "Gastrointestinal perforation, arterial thromboembolic event, NCI-CTC grade 3+ haemorrhagic event, NCI-CTC grade 3+ congestive heart failure, NCI-CTC grade 4 fistula",
+        "affected_drugs": [
+          "Bevacizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Bevacizumab should be stopped. Doses should be omitted and not reduced for adverse reactions. If more than two doses are missed due to adverse events treatment should be stopped."
+      },
+      {
+        "parameter": "other",
+        "condition": "NCI-CTC grade 3 and above persistent hypertension",
+        "affected_drugs": [
+          "Bevacizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "For NCI-CTC grade 3 and above hypertension that is persistent consider stopping treatment."
+      },
+      {
+        "parameter": "other",
+        "condition": "Proteinuria > 2g per 24 hours",
+        "affected_drugs": [
+          "Bevacizumab"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Omit bevacizumab if proteinuria >2g/24h. Repeat 24 hour urine collection prior to next dose. If <2g/24h administer bevacizumab and continue 24h urine collection until protein is 1g/24h or less."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": null,
+      "platelets_min": null,
+      "notes": "No specific haematological threshold defined for bevacizumab. Delay for NCI-CTC grade 3+ non-haematological toxicity until resolved to grade 1 or below."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to each cycle",
+      "EDTA or calculated creatinine clearance prior to each cycle",
+      "Blood pressure and dipstick urinalysis for proteinuria prior to treatment with bevacizumab"
+    ],
+    "special_warnings": [
+      "This protocol may require funding. This is an unlicensed indication for bevacizumab.",
+      "Half life of bevacizumab is approximately twenty days.",
+      "Bevacizumab – neutral (extravasation risk classification).",
+      "Gastric protection with a proton pump inhibitor or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed.",
+      "Six cycles will be set in Aria."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "weight_kg": true,
+      "performance_status": true
+    },
+    "disease_site": "CNS",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Bevacizumab",
+        "dose": 10,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": 90,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "First infusion over 90 minutes; if well tolerated second infusion over 60 minutes; if well tolerated subsequent infusions over 30 minutes. Dose banded according to CSCCN agreed bands.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.5,
+        "notes": "once per cycle | First infusion over 90 minutes; if well tolerated second infusion over 60 minutes; if well tolerated subsequent infusions over 30 minutes. Dose banded according to CSCCN agreed bands."
+      }
+    ]
+  },
+  {
+    "protocol_id": "brain_carboplatin_auc5_etoposide",
+    "protocol_code": "BRAIN-CARBO-ETO",
+    "protocol_name": "Brain Tumours Carboplatin (AUC5)-Etoposide",
+    "category": "cns",
+    "indication": "Third line treatment of glioblastoma multiforme; WHO Performance status 0, 1, 2",
+    "version": "1.1",
+    "cycle_length_days": 28,
+    "total_cycles": 6,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 5,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": 60,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 500,
+        "max_dose": 790,
+        "max_dose_unit": "mg",
+        "special_instructions": "Dose banded per national dose bands (10mg/ml). Maximum dose for AUC 5 is 750mg (creatinine clearance capped at 125ml/min); set at 790mg in ARIA to comply with national dose bands. Dose may need alteration if renal function changes by >10% between cycles. AUC 4 may be considered with EDTA clearance – seek consultant advice.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 100,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded per national dose bands (20mg/ml).",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy on day 1",
+        "notes": "Oral or intravenous. Patients on daily dexamethasone ≥8mg need no extra antiemetic dexamethasone. Patients on <8mg/day: increase to 8mg daily on days 1-4 of cycle only."
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "IV bolus",
+        "timing": "15-30 minutes prior to chemotherapy on day 1",
+        "notes": "Oral or intravenous bolus."
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "twice daily for 3 days starting day 2",
+        "notes": "Take 4mg twice a day for 3 days starting on day 2 of the cycle. Adjust per existing dexamethasone dose."
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "three times a day when required",
+        "notes": "Please supply 28x10mg tablets or nearest equivalent pack size."
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "twice daily for 3 days starting evening of day 1",
+        "notes": "Take 8mg twice a day for three days starting on the evening of day one of the cycle."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "neutrophils",
+        "condition": ">= 1.5 x10^9/L required to start cycle 1",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Neutrophil equal to or more than 1.5x10^9/L required prior to day one of cycle one."
+      },
+      {
+        "parameter": "platelets",
+        "condition": ">= 100 x10^9/L required to start cycle 1",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Platelets equal to or more than 100x10^9/L required prior to day one of cycle one."
+      },
+      {
+        "parameter": "neutrophils",
+        "condition": "< 1 x10^9/L subsequently",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay treatment for seven days. If counts recover continue at initial dose. If counts remain low continue with treatment using 80% of last dose. If myelosuppression recurs despite dose reduction stop treatment."
+      },
+      {
+        "parameter": "neutrophils",
+        "condition": "< 1 x10^9/L persistent after 7-day delay",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "reduce_25",
+        "factor": 0.8,
+        "notes": "Continue with treatment using 80% of the last dose if counts remain low after 7 day delay."
+      },
+      {
+        "parameter": "platelets",
+        "condition": "50-99 x10^9/L subsequently",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay treatment for seven days. If counts recover continue at initial dose. If counts still fall within this range continue using same dose."
+      },
+      {
+        "parameter": "platelets",
+        "condition": "< 50 x10^9/L",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "reduce_50",
+        "factor": 0.5,
+        "notes": "If platelet level falls below 50x10^9/L reduce the dose by 50%."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "26-51 µmol/L or AST/ALT 60-180 units",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "reduce_50",
+        "factor": 0.5,
+        "notes": "Etoposide: bilirubin 26-51 µmol/L or AST/ALT 60-180 units: give 50% dose."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "> 51 µmol/L or AST/ALT > 180 units",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Etoposide: bilirubin >51 µmol/L or AST/ALT >180 units: clinical decision required."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "< 20 ml/min",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Carboplatin: do not use if creatinine clearance < 20 ml/min. Changes in GFR of more than 10% between cycles may require dose adjustment."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "15-50 ml/min",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "reduce_25",
+        "factor": 0.75,
+        "notes": "Etoposide: creatinine clearance 15-50 ml/min give 75% dose."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "< 15 ml/min",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "reduce_50",
+        "factor": 0.5,
+        "notes": "Etoposide: creatinine clearance < 15 ml/min give 50% dose."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.5,
+      "platelets_min": 100,
+      "notes": "Neutrophil ≥1.5x10^9/L and platelets ≥100x10^9/L required prior to day 1 of cycle 1."
+    },
+    "monitoring_requirements": [
+      "EDTA or calculated creatinine clearance before the 1st cycle",
+      "FBC, LFTs and U&Es prior to each cycle"
+    ],
+    "special_warnings": [
+      "Carboplatin – irritant (extravasation risk).",
+      "Etoposide – irritant (extravasation risk).",
+      "Maximum dose of carboplatin for AUC 5 is 750mg; set at 790mg in ARIA to comply with national dose bands.",
+      "Prophylactic antibiotics can be considered if required.",
+      "Gastric protection with a proton pump inhibitor or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed.",
+      "Patients are often on long-term dexamethasone – adjust antiemetic dexamethasone accordingly."
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 5,
+      "max_dose_mg": 750
+    },
+    "required_patient_fields": {
+      "creatinine_clearance_ml_min": true,
+      "bsa_m2": true,
+      "performance_status": true
+    },
+    "disease_site": "CNS",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 5,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": 60,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 500,
+        "max_dose": 790,
+        "max_dose_unit": "mg",
+        "special_instructions": "Dose banded per national dose bands (10mg/ml). Maximum dose for AUC 5 is 750mg (creatinine clearance capped at 125ml/min); set at 790mg in ARIA to comply with national dose bands. Dose may need alteration if renal function changes by >10% between cycles. AUC 4 may be considered with EDTA clearance – seek consultant advice.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "once per cycle | Dose banded per national dose bands (10mg/ml). Maximum dose for AUC 5 is 750mg (creatinine clearance capped at 125ml/min); set at 790mg in ARIA to comply with national dose bands. Dose may need alteration if renal function changes by >10% between cycles. AUC 4 may be considered with EDTA clearance – seek consultant advice."
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 100,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded per national dose bands (20mg/ml).",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "once per cycle | Dose banded per national dose bands (20mg/ml)."
+      }
+    ]
+  },
+  {
+    "protocol_id": "cns_cisplatin_lomustine_vincristine_packer_lcv3",
+    "protocol_code": "CNS-LCV3",
+    "protocol_name": "CNS Cisplatin-Lomustine-Vincristine (Packer LCV3)",
+    "category": "cns",
+    "indication": "Adjuvant treatment for medulloblastoma; Performance status 0, 1, 2",
+    "version": "1.2",
+    "cycle_length_days": 42,
+    "total_cycles": 6,
+    "treatment_intent": "curative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Cisplatin",
+        "dose": 70,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": 120,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Maximum rate of 1mg cisplatin/min (minimum infusion time 120 minutes). Dose banded per national dose bands. Requires pre and post hydration.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Lomustine",
+        "dose": 75,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Available as 40mg capsules. Dose rounded to nearest 40mg (up if halfway). Must be swallowed whole with glass of water; do not open or chew. Dispensed as take home medicine on day 1.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Vincristine",
+        "dose": 1.5,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "frequency": "weekly on days 1, 8, 15",
+        "duration_minutes": 10,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50,
+        "max_dose": 2,
+        "max_dose_unit": "mg",
+        "special_instructions": "Maximum dose 2mg. Dose banded per national dose bands. NPSA/2008/RRR04 must be followed for IV vinca alkaloid administration.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Aprepitant",
+        "dose": 125,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy on day 1",
+        "notes": "Day 1 only."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy on day 1",
+        "notes": "Oral or intravenous. Omit if patient is already taking dexamethasone."
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy on day 1",
+        "notes": "Oral or intravenous."
+      },
+      {
+        "drug_name": "Furosemide",
+        "dose": 40,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "Prior to cisplatin hydration on day 1",
+        "notes": "Oral or intravenous."
+      },
+      {
+        "drug_name": "Sodium chloride 0.9% with 20mmol potassium chloride and 16mmol magnesium sulphate",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Pre-cisplatin: over 60 minutes on day 1",
+        "notes": "Pre-hydration before cisplatin."
+      },
+      {
+        "drug_name": "Sodium chloride 0.9% with 20mmol potassium chloride and 16mmol magnesium sulphate",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Post-cisplatin: over 60 minutes on day 1",
+        "notes": "Post-hydration after cisplatin. Patients should drink at least 3 litres of fluid in 24 hours after cisplatin."
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "Prior to vincristine on days 8 and 15",
+        "notes": "Oral or intravenous on days 8 and 15."
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Lomustine",
+        "dose": 75,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "frequency": "once on day 1 of each cycle",
+        "notes": "Swallow whole with full glass of water. Do not open or chew. NPSA/2008/RRR001 must be followed."
+      },
+      {
+        "drug_name": "Aprepitant",
+        "dose": 80,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "once daily for 2 days starting day 2",
+        "notes": null
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "once daily for 3 days starting day 2",
+        "notes": null
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "three times daily for 3 days then three times daily when required",
+        "notes": null
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "twice daily for 3 days starting evening of day 1",
+        "notes": null
+      },
+      {
+        "drug_name": "Ciprofloxacin",
+        "dose": 500,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "twice daily for 7 days starting day 5",
+        "notes": null
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "neutrophils",
+        "condition": ">= 1 x10^9/L required to start",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Neutrophil equal to or more than 1x10^9/L required prior to starting chemotherapy treatment."
+      },
+      {
+        "parameter": "platelets",
+        "condition": ">= 100 x10^9/L required to start",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Platelets equal to or more than 100x10^9/L required prior to starting chemotherapy treatment."
+      },
+      {
+        "parameter": "neutrophils",
+        "condition": "< 0.5 x10^9/L or platelets < 100 x10^9/L",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay chemotherapy for at least one week."
+      },
+      {
+        "parameter": "neutrophils",
+        "condition": "< 0.5 x10^9/L or platelets < 100 x10^9/L for more than 2 weeks",
+        "affected_drugs": [
+          "Lomustine"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "If lack of count recovery after more than two weeks (neutrophils < 0.5x10^9/L or platelets < 100x10^9/L): give cisplatin and vincristine but omit lomustine for that course."
+      },
+      {
+        "parameter": "neutrophils",
+        "condition": "Recovered prior to next course after lomustine omission",
+        "affected_drugs": [
+          "Lomustine"
+        ],
+        "action": "reduce_50",
+        "factor": 0.67,
+        "notes": "Reintroduce lomustine at a reduced dose of 50mg/m2."
+      },
+      {
+        "parameter": "neutrophils",
+        "condition": "< 0.5 x10^9/L and neutropenic fever at any time (nadir)",
+        "affected_drugs": [
+          "Lomustine"
+        ],
+        "action": "reduce_50",
+        "factor": 0.67,
+        "notes": "Reduce lomustine to 50mg/m2 in the next course and all subsequent courses."
+      },
+      {
+        "parameter": "neutrophils",
+        "condition": "Further episode of neutropenia and fever (< 0.05 x10^9/L)",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "reduce_50",
+        "factor": 0.71,
+        "notes": "Reduce cisplatin to 50mg/m2 in the next and subsequent courses."
+      },
+      {
+        "parameter": "platelets",
+        "condition": "< 30 x10^9/L and/or platelet transfusion",
+        "affected_drugs": [
+          "Lomustine"
+        ],
+        "action": "reduce_50",
+        "factor": 0.67,
+        "notes": "Reduce lomustine to 50mg/m2 in the next course and all subsequent courses."
+      },
+      {
+        "parameter": "platelets",
+        "condition": "Further episode of thrombocytopenia (platelets < 30 x10^9/L)",
+        "affected_drugs": [
+          "Lomustine"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Omit lomustine in the next course and all subsequent courses."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "26-51 µmol/L or AST/ALT 60-180 units",
+        "affected_drugs": [
+          "Vincristine"
+        ],
+        "action": "reduce_50",
+        "factor": 0.5,
+        "notes": "Vincristine: bilirubin 26-51 µmol/L or AST/ALT 60-180 units: give 50%."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "> 51 µmol/L and normal AST/ALT",
+        "affected_drugs": [
+          "Vincristine"
+        ],
+        "action": "reduce_50",
+        "factor": 0.5,
+        "notes": "Vincristine: bilirubin >51 µmol/L and normal AST/ALT: give 50%."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "> 51 µmol/L and AST/ALT > 180 units",
+        "affected_drugs": [
+          "Vincristine"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Vincristine: bilirubin >51 µmol/L and AST/ALT >180 units: omit."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "> 25 µmol/L and AST/ALT > 5xULN, or bilirubin > 85 µmol/L",
+        "affected_drugs": [
+          "Lomustine"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Lomustine: bilirubin >25 µmol/L and AST/ALT >5xULN: omit or dose reduce. Bilirubin >85 µmol/L or AST/ALT >5xULN: omit."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "45-60 ml/min",
+        "affected_drugs": [
+          "Lomustine",
+          "Cisplatin"
+        ],
+        "action": "reduce_25",
+        "factor": 0.75,
+        "notes": "Creatinine clearance 45-60 ml/min: give 75% dose for both lomustine and cisplatin."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "30-45 ml/min",
+        "affected_drugs": [
+          "Lomustine"
+        ],
+        "action": "reduce_50",
+        "factor": 0.5,
+        "notes": "Creatinine clearance 30-45 ml/min: lomustine 50% dose. Cisplatin: less than 45 ml/min consider use of carboplatin."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "< 30 ml/min",
+        "affected_drugs": [
+          "Lomustine"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Creatinine clearance < 30 ml/min: lomustine not recommended."
+      },
+      {
+        "parameter": "other",
+        "condition": "Ototoxicity Brock/CTC (SIOP) grade 2",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Substitute carboplatin 400mg/m2 for cisplatin at ototoxicity grade 2."
+      },
+      {
+        "parameter": "other",
+        "condition": "Ototoxicity Brock/CTC (SIOP) grade 3-4",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Omit cisplatin for ototoxicity grade 3-4."
+      },
+      {
+        "parameter": "other",
+        "condition": "Vincristine-associated seizures or ileus",
+        "affected_drugs": [
+          "Vincristine"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Omit vincristine during current course and reduce to 1mg/m2 (maximum 2mg) for next course. If seizures or ileus do not recur, return to full dose. Rule out SIADH as cause of seizures."
+      },
+      {
+        "parameter": "other",
+        "condition": "Paraesthesia, weakness, abdominal pain or constipation from vincristine",
+        "affected_drugs": [
+          "Vincristine"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Omit next vincristine dose; on recovery reintroduce at reduced dose of 1mg/m2 (max 2mg) increasing to full dose if symptoms do not return."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "Neutrophil ≥1x10^9/L and platelets ≥100x10^9/L required prior to starting chemotherapy."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to day one of each cycle",
+      "Audiometry monitoring during treatment – fundamental and mandatory part of clinical practice",
+      "Patients should drink at least 3 litres of fluid in 24 hours after cisplatin administration"
+    ],
+    "special_warnings": [
+      "NPSA/2008/RRR001 must be followed for oral lomustine.",
+      "NPSA/2008/RRR04 must be followed for IV vinca alkaloid administration.",
+      "Ototoxicity monitoring using Brock/CTC (SIOP) grading is mandatory with cisplatin.",
+      "Growth factor (G-CSF) required per local formulary: filgrastim 30million units SC days 3-9, or lenograstim 33.6million units SC days 3-9, or pegfilgrastim 6mg SC day 2.",
+      "Gastric protection with PPI or H2 antagonist may be considered in high-risk patients.",
+      "Lomustine available as 40mg capsules – dose rounded to nearest 40mg."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "bsa_m2": true,
+      "creatinine_clearance_ml_min": true,
+      "performance_status": true,
+      "audiometry_brock_grade": true
+    },
+    "disease_site": "CNS",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Cisplatin",
+        "dose": 70,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": 120,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Maximum rate of 1mg cisplatin/min (minimum infusion time 120 minutes). Dose banded per national dose bands. Requires pre and post hydration.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 2.0,
+        "notes": "once per cycle | Maximum rate of 1mg cisplatin/min (minimum infusion time 120 minutes). Dose banded per national dose bands. Requires pre and post hydration."
+      },
+      {
+        "drug_name": "Lomustine",
+        "dose": 75,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Available as 40mg capsules. Dose rounded to nearest 40mg (up if halfway). Must be swallowed whole with glass of water; do not open or chew. Dispensed as take home medicine on day 1.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "once per cycle | Available as 40mg capsules. Dose rounded to nearest 40mg (up if halfway). Must be swallowed whole with glass of water; do not open or chew. Dispensed as take home medicine on day 1."
+      },
+      {
+        "drug_name": "Vincristine",
+        "dose": 1.5,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "frequency": "weekly on days 1, 8, 15",
+        "duration_minutes": 10,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50,
+        "max_dose": 2,
+        "max_dose_unit": "mg",
+        "special_instructions": "Maximum dose 2mg. Dose banded per national dose bands. NPSA/2008/RRR04 must be followed for IV vinca alkaloid administration.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.1667,
+        "notes": "weekly on days 1, 8, 15 | Maximum dose 2mg. Dose banded per national dose bands. NPSA/2008/RRR04 must be followed for IV vinca alkaloid administration."
+      }
+    ]
+  },
+  {
+    "protocol_id": "cns_lomustine_procarbazine",
+    "protocol_code": "CNS-LP",
+    "protocol_name": "CNS Lomustine-Procarbazine",
+    "category": "cns",
+    "indication": "Adjuvant treatment for grade III gliomas including anaplastic astrocytoma, oligodendrogliomas and oligoastrocytomas; First line treatment for grade IV tumours not eligible for concurrent chemoradiation regimen; Recurrent high grade gliomas; Performance status 0, 1, 2",
+    "version": "1.1",
+    "cycle_length_days": 42,
+    "total_cycles": 6,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Lomustine",
+        "dose": 100,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Available as 40mg capsules. Dose rounded to nearest 40mg (up if halfway). Swallow whole with glass of water; do not open or chew.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Procarbazine",
+        "dose": 100,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "frequency": "once daily days 1-10 inclusive",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Available as 50mg capsules. Dose rounded to nearest 25mg; alternate day dosing may be required. Swallow whole with glass of water; do not open or chew. Do not drink alcohol. Weak MAO inhibitor – dietary restrictions apply.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "notes": "Omit if patient is already taking dexamethasone."
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "notes": null
+      },
+      {
+        "drug_name": "Domperidone",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "when required for nausea",
+        "notes": "Three times a day when required."
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Lomustine",
+        "dose": 100,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "frequency": "once on day 1",
+        "notes": "Swallow whole with full glass of water. Do not open or chew."
+      },
+      {
+        "drug_name": "Procarbazine",
+        "dose": 100,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "frequency": "once daily for ten days",
+        "notes": "Swallow whole with full glass of water. Do not open or chew. Do not drink alcohol. Rounded to nearest 25mg; alternate day dispensing used."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "once on day 1, 15-30 minutes prior to lomustine",
+        "notes": "Omit if patient already taking dexamethasone."
+      },
+      {
+        "drug_name": "Domperidone",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "three times a day when required",
+        "notes": null
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "once on day 1, 15-30 minutes prior to lomustine",
+        "notes": null
+      },
+      {
+        "drug_name": "Co-trimoxazole",
+        "dose": 960,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "once daily on Monday, Wednesday and Friday",
+        "notes": "Please supply 42 days."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "neutrophils",
+        "condition": ">= 1.5 x10^9/L required to start",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Neutrophil equal to or more than 1.5x10^9/L required prior to starting treatment."
+      },
+      {
+        "parameter": "platelets",
+        "condition": ">= 100 x10^9/L required to start",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Platelets equal to or more than 100x10^9/L required prior to starting treatment."
+      },
+      {
+        "parameter": "neutrophils",
+        "condition": "< 1.5 x10^9/L or platelets < 100 x10^9/L",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay therapy until counts recover. If more than one delay necessary due to neutropenia or thrombocytopenia, reduce procarbazine duration from 10 days to 7 days. Haematological toxicity of lomustine may be cumulative."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "> 25 µmol/L and AST/ALT > 180 units",
+        "affected_drugs": [
+          "Lomustine"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Lomustine: bilirubin >25 µmol/L and AST/ALT >180: omit or dose reduce."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "> 50 µmol/L and normal AST/ALT",
+        "affected_drugs": [
+          "Procarbazine"
+        ],
+        "action": "reduce_50",
+        "factor": 0.5,
+        "notes": "Procarbazine: bilirubin >50 µmol/L and normal AST/ALT: give 50%."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "> 85 µmol/L or AST/ALT > 180 units",
+        "affected_drugs": [
+          "Procarbazine"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Procarbazine: bilirubin >85 µmol/L or AST/ALT >180: omit."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "45-60 ml/min",
+        "affected_drugs": [
+          "Lomustine"
+        ],
+        "action": "reduce_25",
+        "factor": 0.75,
+        "notes": "Lomustine: CrCl 45-60 ml/min give 75%."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "30-45 ml/min",
+        "affected_drugs": [
+          "Lomustine"
+        ],
+        "action": "reduce_50",
+        "factor": 0.5,
+        "notes": "Lomustine: CrCl 30-45 ml/min give 50%."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "< 30 ml/min",
+        "affected_drugs": [
+          "Lomustine"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Lomustine: CrCl < 30 ml/min not recommended."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "Serum creatinine > 177 µmol/L",
+        "affected_drugs": [
+          "Procarbazine"
+        ],
+        "action": "reduce_50",
+        "factor": 0.5,
+        "notes": "Procarbazine: serum creatinine >177 µmol/L give 50% dose. Not recommended with severe renal failure (CrCl < 10 ml/min)."
+      },
+      {
+        "parameter": "other",
+        "condition": "Patient develops rash",
+        "affected_drugs": [
+          "Procarbazine"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Stop procarbazine immediately. Procarbazine should then be omitted from future cycles."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.5,
+      "platelets_min": 100,
+      "notes": "Neutrophil ≥1.5x10^9/L and platelets ≥100x10^9/L required prior to each cycle. If >1 delay necessary, reduce procarbazine from 10 to 7 days."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs, U&Es and glucose prior to day one of each cycle",
+      "Clinical examination including neurological assessment, whole brain imaging prior to starting treatment"
+    ],
+    "special_warnings": [
+      "NPSA/2008/RRR001 must be followed for oral lomustine and procarbazine.",
+      "Procarbazine is a weak MAO inhibitor – dietary restrictions: avoid mature cheeses, yeast/meat extracts (Marmite, Oxo, Bovril), broad bean pods, pickled herring, salami, flavoured textured vegetable protein, over-ripe fruit, alcoholic drinks (especially heavy red wines such as Chianti), non-alcoholic beers/lagers/wines, foods that are fermented, pickled, smoked, hung or matured, miso soup and large amounts of soy sauce.",
+      "Lomustine available as 40mg capsules – dose rounded to nearest 40mg.",
+      "Procarbazine available as 50mg capsules – dose rounded to nearest 25mg with alternate day dosing.",
+      "Haematological toxicity of lomustine may be cumulative.",
+      "Gastric protection with PPI or H2 antagonist may be considered in high-risk patients.",
+      "6 cycles will be set in Aria."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "bsa_m2": true,
+      "creatinine_clearance_ml_min": true,
+      "performance_status": true
+    },
+    "disease_site": "CNS",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Lomustine",
+        "dose": 100,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Available as 40mg capsules. Dose rounded to nearest 40mg (up if halfway). Swallow whole with glass of water; do not open or chew.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "once per cycle | Available as 40mg capsules. Dose rounded to nearest 40mg (up if halfway). Swallow whole with glass of water; do not open or chew."
+      },
+      {
+        "drug_name": "Procarbazine",
+        "dose": 100,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "frequency": "once daily days 1-10 inclusive",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Available as 50mg capsules. Dose rounded to nearest 25mg; alternate day dosing may be required. Swallow whole with glass of water; do not open or chew. Do not drink alcohol. Weak MAO inhibitor – dietary restrictions apply.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "once daily days 1-10 inclusive | Available as 50mg capsules. Dose rounded to nearest 25mg; alternate day dosing may be required. Swallow whole with glass of water; do not open or chew. Do not drink alcohol. Weak MAO inhibitor – dietary restrictions apply."
+      }
+    ]
+  },
+  {
+    "protocol_id": "cns_lomustine_procarbazine_vincristine_pcv",
+    "protocol_code": "CNS-PCV",
+    "protocol_name": "CNS Lomustine-Procarbazine-Vincristine (PCV)",
+    "category": "cns",
+    "indication": "Adjuvant treatment for grade III gliomas including anaplastic astrocytoma, oligodendrogliomas and oligoastrocytomas; First line treatment for grade IV tumours not eligible for concurrent chemoradiation regimen; Recurrent high grade gliomas; Performance status 0, 1, 2",
+    "version": "1.1",
+    "cycle_length_days": 42,
+    "total_cycles": 6,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Lomustine",
+        "dose": 100,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Available as 40mg capsules. Dose rounded to nearest 40mg (up if halfway). Swallow whole with glass of water; do not open or chew.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Procarbazine",
+        "dose": 100,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "frequency": "once daily days 1-10 inclusive",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Available as 50mg capsules. Dose rounded to nearest 25mg; alternate day dosing may be required. Swallow whole with glass of water; do not open or chew. Do not drink alcohol. Weak MAO inhibitor – dietary restrictions apply.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Vincristine",
+        "dose": 1.4,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle on day 1",
+        "duration_minutes": null,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50,
+        "max_dose": 2,
+        "max_dose_unit": "mg",
+        "special_instructions": "Maximum dose 2mg. NPSA/2008/RRR04 must be followed for IV vinca alkaloid administration.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "notes": "Oral or intravenous. Omit if patient is already taking dexamethasone."
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "notes": "Oral or intravenous."
+      },
+      {
+        "drug_name": "Domperidone",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "when required for nausea",
+        "notes": "Three times a day when required."
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Lomustine",
+        "dose": 100,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "frequency": "once on day 1",
+        "notes": "Swallow whole with full glass of water. Do not open or chew."
+      },
+      {
+        "drug_name": "Procarbazine",
+        "dose": 100,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "frequency": "once daily for ten days",
+        "notes": "Swallow whole with full glass of water. Do not open or chew. Do not drink alcohol. Rounded to nearest 25mg; alternate day dispensing used."
+      },
+      {
+        "drug_name": "Domperidone",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "three times a day when required",
+        "notes": null
+      },
+      {
+        "drug_name": "Co-trimoxazole",
+        "dose": 960,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "once daily on Monday, Wednesday and Friday",
+        "notes": "Please supply 42 days."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "neutrophils",
+        "condition": ">= 1.5 x10^9/L required to start",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Neutrophil equal to or more than 1.5x10^9/L required prior to starting treatment."
+      },
+      {
+        "parameter": "platelets",
+        "condition": ">= 100 x10^9/L required to start",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Platelets equal to or more than 100x10^9/L required prior to starting treatment."
+      },
+      {
+        "parameter": "neutrophils",
+        "condition": "< 1.5 x10^9/L or platelets < 100 x10^9/L",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay therapy until counts recover. If more than one delay necessary, reduce procarbazine duration from 10 days to 7 days. Haematological toxicity of lomustine may be cumulative."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "> 25 µmol/L and AST/ALT > 180 units",
+        "affected_drugs": [
+          "Lomustine"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Lomustine: bilirubin >25 µmol/L and AST/ALT >180: omit or dose reduce."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "> 50 µmol/L and normal AST/ALT",
+        "affected_drugs": [
+          "Procarbazine"
+        ],
+        "action": "reduce_50",
+        "factor": 0.5,
+        "notes": "Procarbazine: bilirubin >50 µmol/L and normal AST/ALT: give 50%."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "> 85 µmol/L or AST/ALT > 180 units",
+        "affected_drugs": [
+          "Procarbazine"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Procarbazine: bilirubin >85 µmol/L or AST/ALT >180: omit."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "26-51 µmol/L or AST/ALT 60-180 units",
+        "affected_drugs": [
+          "Vincristine"
+        ],
+        "action": "reduce_50",
+        "factor": 0.5,
+        "notes": "Vincristine: bilirubin 26-51 µmol/L or AST/ALT 60-180 units: give 50%."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "> 51 µmol/L and normal AST/ALT",
+        "affected_drugs": [
+          "Vincristine"
+        ],
+        "action": "reduce_50",
+        "factor": 0.5,
+        "notes": "Vincristine: bilirubin >51 µmol/L and normal AST/ALT: give 50%."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "> 51 µmol/L and AST/ALT > 180 units",
+        "affected_drugs": [
+          "Vincristine"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Vincristine: bilirubin >51 µmol/L and AST/ALT >180: omit."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "45-60 ml/min",
+        "affected_drugs": [
+          "Lomustine"
+        ],
+        "action": "reduce_25",
+        "factor": 0.75,
+        "notes": "Lomustine: CrCl 45-60 ml/min give 75%."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "30-45 ml/min",
+        "affected_drugs": [
+          "Lomustine"
+        ],
+        "action": "reduce_50",
+        "factor": 0.5,
+        "notes": "Lomustine: CrCl 30-45 ml/min give 50%."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "< 30 ml/min",
+        "affected_drugs": [
+          "Lomustine"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Lomustine: CrCl < 30 ml/min not recommended."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "Serum creatinine > 177 µmol/L",
+        "affected_drugs": [
+          "Procarbazine"
+        ],
+        "action": "reduce_50",
+        "factor": 0.5,
+        "notes": "Procarbazine: serum creatinine >177 µmol/L give 50% dose. Not recommended with severe renal failure (CrCl < 10 ml/min)."
+      },
+      {
+        "parameter": "other",
+        "condition": "Patient develops rash",
+        "affected_drugs": [
+          "Procarbazine"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Stop procarbazine immediately. Procarbazine should then be omitted from future cycles."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.5,
+      "platelets_min": 100,
+      "notes": "Neutrophil ≥1.5x10^9/L and platelets ≥100x10^9/L required prior to each cycle. If >1 delay necessary, reduce procarbazine from 10 to 7 days."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs, U&Es and glucose prior to day one of each cycle",
+      "Clinical examination including neurological assessment, whole brain imaging prior to starting treatment"
+    ],
+    "special_warnings": [
+      "NPSA/2008/RRR001 must be followed for oral lomustine and procarbazine.",
+      "NPSA/2008/RRR04 must be followed for IV vinca alkaloid administration.",
+      "Procarbazine is a weak MAO inhibitor – dietary restrictions: avoid mature cheeses, yeast/meat extracts (Marmite, Oxo, Bovril), broad bean pods, pickled herring, salami, flavoured textured vegetable protein, over-ripe fruit, alcoholic drinks (especially heavy red wines such as Chianti), non-alcoholic beers/lagers/wines, fermented/pickled/smoked/hung/matured foods, miso soup and large amounts of soy sauce.",
+      "Lomustine available as 40mg capsules – dose rounded to nearest 40mg.",
+      "Procarbazine available as 50mg capsules – dose rounded to nearest 25mg with alternate day dosing.",
+      "Haematological toxicity of lomustine may be cumulative.",
+      "Gastric protection with PPI or H2 antagonist may be considered in high-risk patients.",
+      "6 cycles will be set in Aria."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "bsa_m2": true,
+      "creatinine_clearance_ml_min": true,
+      "performance_status": true
+    },
+    "disease_site": "CNS",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Lomustine",
+        "dose": 100,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Available as 40mg capsules. Dose rounded to nearest 40mg (up if halfway). Swallow whole with glass of water; do not open or chew.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "once per cycle | Available as 40mg capsules. Dose rounded to nearest 40mg (up if halfway). Swallow whole with glass of water; do not open or chew."
+      },
+      {
+        "drug_name": "Procarbazine",
+        "dose": 100,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "frequency": "once daily days 1-10 inclusive",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Available as 50mg capsules. Dose rounded to nearest 25mg; alternate day dosing may be required. Swallow whole with glass of water; do not open or chew. Do not drink alcohol. Weak MAO inhibitor – dietary restrictions apply.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "once daily days 1-10 inclusive | Available as 50mg capsules. Dose rounded to nearest 25mg; alternate day dosing may be required. Swallow whole with glass of water; do not open or chew. Do not drink alcohol. Weak MAO inhibitor – dietary restrictions apply."
+      },
+      {
+        "drug_name": "Vincristine",
+        "dose": 1.4,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle on day 1",
+        "duration_minutes": null,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50,
+        "max_dose": 2,
+        "max_dose_unit": "mg",
+        "special_instructions": "Maximum dose 2mg. NPSA/2008/RRR04 must be followed for IV vinca alkaloid administration.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "once per cycle on day 1 | Maximum dose 2mg. NPSA/2008/RRR04 must be followed for IV vinca alkaloid administration."
+      }
+    ]
+  },
+  {
+    "protocol_id": "cns_lomustine",
+    "protocol_code": "CNS-LOMUS",
+    "protocol_name": "CNS Lomustine",
+    "category": "cns",
+    "indication": "Adjuvant treatment for grade III gliomas including anaplastic astrocytoma, oligodendrogliomas and oligoastrocytomas; First line treatment for grade IV tumours not eligible for concurrent chemoradiation regimen; Recurrent high grade gliomas; Performance status 0, 1, 2",
+    "version": "1",
+    "cycle_length_days": 42,
+    "total_cycles": 6,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Lomustine",
+        "dose": 100,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Available as 40mg capsules. Dose rounded to nearest 40mg (up if halfway). In some instances dose may be increased to 110mg/m2 – seek consultant advice. Swallow whole with glass of water; do not open or chew.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "notes": "Omit if patient is already taking dexamethasone."
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "notes": "An additional dose may be taken 12 hours later if required."
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "when required for nausea",
+        "notes": "Three times a day when required."
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "once on day 1",
+        "notes": "Omit if patient already taking dexamethasone."
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "once on day 1, 15-30 minutes prior to lomustine",
+        "notes": "An additional dose may be taken 12 hours later. Please supply original pack (10 tablets) or nearest equivalent to cover 6 cycles."
+      },
+      {
+        "drug_name": "Lomustine",
+        "dose": 100,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "frequency": "once on day 1",
+        "notes": "Swallow whole with full glass of water. Do not open or chew."
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "three times a day when required",
+        "notes": null
+      },
+      {
+        "drug_name": "Co-trimoxazole",
+        "dose": 960,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "once daily on Monday, Wednesday and Friday",
+        "notes": "Please supply for 42 days."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "neutrophils",
+        "condition": ">= 1.5 x10^9/L required to start",
+        "affected_drugs": [
+          "Lomustine"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Neutrophil equal to or more than 1.5x10^9/L required prior to starting treatment."
+      },
+      {
+        "parameter": "platelets",
+        "condition": ">= 100 x10^9/L required to start",
+        "affected_drugs": [
+          "Lomustine"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Platelets equal to or more than 100x10^9/L required prior to starting treatment."
+      },
+      {
+        "parameter": "platelets",
+        "condition": "80-100 x10^9/L or neutrophils 1-1.5 x10^9/L",
+        "affected_drugs": [
+          "Lomustine"
+        ],
+        "action": "reduce_25",
+        "factor": 0.8,
+        "notes": "Continue with treatment at 80% of last dose if platelets 80-100x10^9/L and neutrophils 1-1.5x10^9/L."
+      },
+      {
+        "parameter": "platelets",
+        "condition": "< 80 x10^9/L or neutrophils < 1 x10^9/L",
+        "affected_drugs": [
+          "Lomustine"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay treatment for seven days. If counts recover continue with treatment using 60% of last dose. If a second delay is necessary consider stopping therapy."
+      },
+      {
+        "parameter": "platelets",
+        "condition": "Recovered after delay from < 80 x10^9/L",
+        "affected_drugs": [
+          "Lomustine"
+        ],
+        "action": "reduce_50",
+        "factor": 0.6,
+        "notes": "Continue with treatment using 60% of last dose after recovery from delay."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "> 25 µmol/L and AST/ALT > 5xULN",
+        "affected_drugs": [
+          "Lomustine"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Lomustine: bilirubin >25 µmol/L and AST/ALT >5xULN: omit or dose reduce."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "45-60 ml/min",
+        "affected_drugs": [
+          "Lomustine"
+        ],
+        "action": "reduce_25",
+        "factor": 0.75,
+        "notes": "Lomustine: CrCl 45-60 ml/min give 75%."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "30-45 ml/min",
+        "affected_drugs": [
+          "Lomustine"
+        ],
+        "action": "reduce_50",
+        "factor": 0.5,
+        "notes": "Lomustine: CrCl 30-45 ml/min give 50%."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "< 30 ml/min",
+        "affected_drugs": [
+          "Lomustine"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Lomustine: CrCl < 30 ml/min not recommended."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.5,
+      "platelets_min": 100,
+      "notes": "Neutrophil ≥1.5x10^9/L and platelets ≥100x10^9/L required prior to each cycle. Haematological toxicity may be cumulative."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs, U&Es and glucose prior to day one of each cycle",
+      "Clinical examination including neurological assessment, whole brain imaging prior to starting treatment"
+    ],
+    "special_warnings": [
+      "NPSA/2008/RRR001 must be followed for oral lomustine.",
+      "Lomustine available as 40mg capsules – dose rounded to nearest 40mg.",
+      "In some instances dose may be increased to 110mg/m2 – seek consultant advice.",
+      "Haematological toxicity of lomustine may be cumulative.",
+      "Gastric protection with PPI or H2 antagonist may be considered in high-risk patients.",
+      "6 cycles will be set in Aria."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "bsa_m2": true,
+      "creatinine_clearance_ml_min": true,
+      "performance_status": true
+    },
+    "disease_site": "CNS",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Lomustine",
+        "dose": 100,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1
+        ],
+        "frequency": "once per cycle",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Available as 40mg capsules. Dose rounded to nearest 40mg (up if halfway). In some instances dose may be increased to 110mg/m2 – seek consultant advice. Swallow whole with glass of water; do not open or chew.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "once per cycle | Available as 40mg capsules. Dose rounded to nearest 40mg (up if halfway). In some instances dose may be increased to 110mg/m2 – seek consultant advice. Swallow whole with glass of water; do not open or chew."
+      }
+    ]
+  },
+  {
+    "protocol_id": "cns_temozolomide_150",
+    "protocol_code": "CNS-TMZ150",
+    "protocol_name": "CNS Temozolomide (150)",
+    "category": "cns",
+    "indication": "First line treatment of newly diagnosed glioblastoma multiforme starting four weeks after treatment with concomitant radiotherapy and temozolomide; Recurrent or progressive malignant glioma in patients previously treated with chemotherapy; Performance status 0, 1",
+    "version": "1.1",
+    "cycle_length_days": 28,
+    "total_cycles": 6,
+    "treatment_intent": "maintenance",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Temozolomide",
+        "dose": 150,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "frequency": "once daily days 1-5 (cycle 1 only)",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 300,
+        "max_dose_unit": "mg",
+        "special_instructions": "Cycle 1: 150mg/m2 once daily days 1-5 (maximum 300mg). At start of cycle 2 escalate to 200mg/m2 if NCI-CTC non-haematological toxicity ≤grade 2 (except alopecia, nausea, vomiting), neutrophils ≥1.5x10^9/L, and platelets ≥100x10^9/L. If not escalated at cycle 2 do not escalate subsequently. Dose banded per national dose bands. Capped at 2m2. Take on empty stomach, swallow whole, do not chew.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Temozolomide",
+        "dose": 200,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "frequency": "once daily days 1-5 (cycles 2-6 if escalation criteria met)",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 400,
+        "max_dose_unit": "mg",
+        "special_instructions": "Cycles 2-6: 200mg/m2 (maximum 400mg) if escalation criteria met at start of cycle 2. Take on empty stomach, swallow whole, do not chew.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [
+      {
+        "drug_name": "Temozolomide",
+        "dose": 150,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "frequency": "once daily for 5 days (cycle 1)",
+        "notes": "Take on empty stomach, swallow whole, do not chew."
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "once daily 15-30 minutes prior to temozolomide",
+        "notes": "An additional 8mg dose may be taken 12 hours later if required. Please supply original pack (10 tablets) or nearest appropriate equivalent."
+      },
+      {
+        "drug_name": "Co-trimoxazole",
+        "dose": 960,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "once daily on Monday, Wednesday and Friday until lymphocytes above 0.8",
+        "notes": null
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "neutrophils",
+        "condition": ">= 1.5 x10^9/L required to start",
+        "affected_drugs": [
+          "Temozolomide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Neutrophil equal to or more than 1.5x10^9/L required prior to starting treatment."
+      },
+      {
+        "parameter": "platelets",
+        "condition": ">= 100 x10^9/L required to start",
+        "affected_drugs": [
+          "Temozolomide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Platelets equal to or more than 100x10^9/L required prior to starting treatment."
+      },
+      {
+        "parameter": "neutrophils",
+        "condition": "0.5-1 x10^9/L on day 22",
+        "affected_drugs": [
+          "Temozolomide"
+        ],
+        "action": "reduce_50",
+        "factor": 0.75,
+        "notes": "Reduce dose by 50mg/m2. Temozolomide can be restarted provided neutrophils recover to ≥1x10^9/L within 7 days of planned date."
+      },
+      {
+        "parameter": "neutrophils",
+        "condition": "< 0.5 x10^9/L on day 22",
+        "affected_drugs": [
+          "Temozolomide"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discontinue temozolomide if neutrophils < 0.5x10^9/L. Also discontinue if dose of 100mg/m2 still results in unacceptable toxicity."
+      },
+      {
+        "parameter": "platelets",
+        "condition": "10-100 x10^9/L on day 22",
+        "affected_drugs": [
+          "Temozolomide"
+        ],
+        "action": "reduce_50",
+        "factor": 0.75,
+        "notes": "Reduce dose by 50mg/m2. Temozolomide can be restarted provided platelets recover to ≥100x10^9/L within 7 days."
+      },
+      {
+        "parameter": "platelets",
+        "condition": "< 10 x10^9/L on day 22",
+        "affected_drugs": [
+          "Temozolomide"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discontinue temozolomide if platelets < 10x10^9/L."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "> 1.5xULN",
+        "affected_drugs": [
+          "Temozolomide"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Stop temozolomide if bilirubin > 1.5xULN."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "ALT > 2.5xULN",
+        "affected_drugs": [
+          "Temozolomide"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Stop temozolomide if ALT > 2.5xULN."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "Severe renal impairment",
+        "affected_drugs": [
+          "Temozolomide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "No dose reductions are required. Caution in severe renal impairment."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "Temozolomide can be restarted if neutrophils recover to ≥1x10^9/L and platelets ≥100x10^9/L within 7 days of planned date. Complete blood count obtained on day 22 (21 days after first dose)."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs, U&Es and glucose on day 22 of the cycle",
+      "Clinical examination including neurological assessment, whole brain imaging and chest x-ray prior to starting treatment"
+    ],
+    "special_warnings": [
+      "NPSA/2008/RRR001 must be followed for oral temozolomide.",
+      "Treatment is started four weeks after completing the concomitant chemoradiation phase.",
+      "Dose banded per national dose bands; capped at 2m2 (maximum 300mg cycle 1, 400mg cycles 2-6).",
+      "Temozolomide to be discontinued if dose of 100mg/m2 still results in unacceptable toxicity or same NCI-CTC grade 3 non-haematological toxicity recurs after dose reduction.",
+      "Gastric protection with PPI or H2 antagonist may be considered in high-risk patients."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "bsa_m2": true,
+      "performance_status": true
+    },
+    "disease_site": "CNS",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Temozolomide",
+        "dose": 150,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "frequency": "once daily days 1-5 (cycle 1 only)",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 300,
+        "max_dose_unit": "mg",
+        "special_instructions": "Cycle 1: 150mg/m2 once daily days 1-5 (maximum 300mg). At start of cycle 2 escalate to 200mg/m2 if NCI-CTC non-haematological toxicity ≤grade 2 (except alopecia, nausea, vomiting), neutrophils ≥1.5x10^9/L, and platelets ≥100x10^9/L. If not escalated at cycle 2 do not escalate subsequently. Dose banded per national dose bands. Capped at 2m2. Take on empty stomach, swallow whole, do not chew.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "once daily days 1-5 (cycle 1 only) | Cycle 1: 150mg/m2 once daily days 1-5 (maximum 300mg). At start of cycle 2 escalate to 200mg/m2 if NCI-CTC non-haematological toxicity ≤grade 2 (except alopecia, nausea, vomiting), neutrophils ≥1.5x10^9/L, and platelets ≥100x10^9/L. If not escalated at cycle 2 do not escalate subsequently. Dose banded per national dose bands. Capped at 2m2. Take on empty stomach, swallow whole, do not chew. | CYCLE 1 DOSE (150mg/m²): dose-escalation cycle. Two Temozolomide entries exist: 150mg/m² for cycle 1 only, 200mg/m² for cycles 2-6 if escalation criteria met — both are intentional, representing different cycle doses."
+      },
+      {
+        "drug_name": "Temozolomide",
+        "dose": 200,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "frequency": "once daily days 1-5 (cycles 2-6 if escalation criteria met)",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 400,
+        "max_dose_unit": "mg",
+        "special_instructions": "Cycles 2-6: 200mg/m2 (maximum 400mg) if escalation criteria met at start of cycle 2. Take on empty stomach, swallow whole, do not chew.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "once daily days 1-5 (cycles 2-6 if escalation criteria met) | Cycles 2-6: 200mg/m2 (maximum 400mg) if escalation criteria met at start of cycle 2. Take on empty stomach, swallow whole, do not chew. | CYCLES 2-6 DOSE (200mg/m²): escalated dose if cycle 1 tolerated. Two Temozolomide entries exist: 150mg/m² for cycle 1 only, 200mg/m² for cycles 2-6 if escalation criteria met — both are intentional, representing different cycle doses."
+      }
+    ]
+  },
+  {
+    "protocol_id": "cns_temozolomide_200",
+    "protocol_code": "CNS-TMZ200",
+    "protocol_name": "CNS Temozolomide (200)",
+    "category": "cns",
+    "indication": "Recurrent or progressive malignant glioblastoma multiforme in patients not previously treated with chemotherapy; Performance status 0, 1",
+    "version": "1.1",
+    "cycle_length_days": 28,
+    "total_cycles": 6,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Temozolomide",
+        "dose": 200,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "frequency": "once daily days 1-5",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 400,
+        "max_dose_unit": "mg",
+        "special_instructions": "Dose banded per national dose bands. Capped at 2m2 (maximum 400mg). Take on empty stomach, swallow whole, do not chew.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [
+      {
+        "drug_name": "Temozolomide",
+        "dose": 200,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "frequency": "once daily for 5 days",
+        "notes": "Take on empty stomach, swallow whole, do not chew."
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "once daily 15-30 minutes prior to temozolomide",
+        "notes": "An additional 8mg may be taken 12 hours later if required. Please supply original pack (10 tablets) or nearest appropriate equivalent."
+      },
+      {
+        "drug_name": "Co-trimoxazole",
+        "dose": 960,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "once daily on Monday, Wednesday and Friday until lymphocytes above 0.8",
+        "notes": null
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "neutrophils",
+        "condition": ">= 1.5 x10^9/L required to start",
+        "affected_drugs": [
+          "Temozolomide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Neutrophil equal to or more than 1.5x10^9/L required prior to starting treatment."
+      },
+      {
+        "parameter": "platelets",
+        "condition": ">= 100 x10^9/L required to start",
+        "affected_drugs": [
+          "Temozolomide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Platelets equal to or more than 100x10^9/L required prior to starting treatment."
+      },
+      {
+        "parameter": "neutrophils",
+        "condition": "0.5-1 x10^9/L on day 22",
+        "affected_drugs": [
+          "Temozolomide"
+        ],
+        "action": "reduce_50",
+        "factor": 0.75,
+        "notes": "Reduce dose by 50mg/m2. Can be restarted if neutrophils recover to ≥1x10^9/L within 7 days."
+      },
+      {
+        "parameter": "neutrophils",
+        "condition": "< 0.5 x10^9/L on day 22",
+        "affected_drugs": [
+          "Temozolomide"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discontinue temozolomide."
+      },
+      {
+        "parameter": "platelets",
+        "condition": "10-100 x10^9/L on day 22",
+        "affected_drugs": [
+          "Temozolomide"
+        ],
+        "action": "reduce_50",
+        "factor": 0.75,
+        "notes": "Reduce dose by 50mg/m2. Can be restarted if platelets recover to ≥100x10^9/L within 7 days."
+      },
+      {
+        "parameter": "platelets",
+        "condition": "< 10 x10^9/L on day 22",
+        "affected_drugs": [
+          "Temozolomide"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discontinue temozolomide."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "> 1.5xULN",
+        "affected_drugs": [
+          "Temozolomide"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Stop temozolomide if bilirubin > 1.5xULN."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "ALT > 2.5xULN",
+        "affected_drugs": [
+          "Temozolomide"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Stop temozolomide if ALT > 2.5xULN."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "Severe renal impairment",
+        "affected_drugs": [
+          "Temozolomide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "No dose reductions are required. Caution in severe renal impairment."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "Temozolomide can be restarted if neutrophils recover to ≥1x10^9/L and platelets ≥100x10^9/L within 7 days of planned date. Complete blood count obtained on day 22 (21 days after first dose)."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs, U&Es and glucose on day 22 of the cycle",
+      "Clinical examination including neurological assessment, whole brain imaging and chest x-ray prior to starting treatment (in recurrent disease)"
+    ],
+    "special_warnings": [
+      "NPSA/2008/RRR001 must be followed for oral temozolomide.",
+      "Dose banded per national dose bands; capped at 2m2 (maximum 400mg).",
+      "Temozolomide to be discontinued if dose of 100mg/m2 still results in unacceptable toxicity.",
+      "Gastric protection with PPI or H2 antagonist may be considered in high-risk patients."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "bsa_m2": true,
+      "performance_status": true
+    },
+    "disease_site": "CNS",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Temozolomide",
+        "dose": 200,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "frequency": "once daily days 1-5",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 400,
+        "max_dose_unit": "mg",
+        "special_instructions": "Dose banded per national dose bands. Capped at 2m2 (maximum 400mg). Take on empty stomach, swallow whole, do not chew.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "once daily days 1-5 | Dose banded per national dose bands. Capped at 2m2 (maximum 400mg). Take on empty stomach, swallow whole, do not chew."
+      }
+    ]
+  },
+  {
+    "protocol_id": "cns_temozolomide_rt_7day",
+    "protocol_code": "CNS-TMZ-RT",
+    "protocol_name": "CNS Temozolomide RT (7 day)",
+    "category": "cns",
+    "indication": "First line treatment of newly diagnosed glioblastoma multiforme in conjunction with radiotherapy; Performance status 0, 1",
+    "version": "1.2",
+    "cycle_length_days": 7,
+    "total_cycles": 7,
+    "treatment_intent": "curative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Temozolomide",
+        "dose": 75,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "frequency": "once daily days 1-7 continuously throughout radiotherapy (maximum 49 days)",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 145,
+        "max_dose_unit": "mg",
+        "special_instructions": "Maximum 150mg; set at 145mg in ARIA to comply with national dose bands. Dose capped at 2m2. Started on first day of radiotherapy; stopped on last day of radiotherapy. Taken continuously including weekends. Maximum 49 days of treatment. Taken within 3 hours of radiotherapy. Take on empty stomach, swallow whole, do not chew.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [
+      {
+        "drug_name": "Temozolomide",
+        "dose": 75,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "frequency": "once daily for 7 days per cycle (continuously throughout radiotherapy)",
+        "notes": "Take on empty stomach, swallow whole, do not chew. Maximum 49 days total."
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "once daily 15-30 minutes prior to temozolomide",
+        "notes": "An additional 8mg may be taken 12 hours later if required. Please supply original pack (10 tablets) or nearest appropriate equivalent."
+      },
+      {
+        "drug_name": "Domperidone",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "three times a day when required (cycle 1 only)",
+        "notes": "Please supply 30 tablets or nearest original pack size."
+      },
+      {
+        "drug_name": "Co-trimoxazole",
+        "dose": 960,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "once daily on Monday, Wednesday and Friday",
+        "notes": "Please supply sufficient for 49 days of treatment."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "neutrophils",
+        "condition": ">= 1.5 x10^9/L required to start",
+        "affected_drugs": [
+          "Temozolomide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Neutrophil equal to or more than 1.5x10^9/L required prior to starting treatment."
+      },
+      {
+        "parameter": "platelets",
+        "condition": ">= 100 x10^9/L required to start",
+        "affected_drugs": [
+          "Temozolomide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Platelets equal to or more than 100x10^9/L required prior to starting treatment."
+      },
+      {
+        "parameter": "neutrophils",
+        "condition": "0.5-1.5 x10^9/L during treatment",
+        "affected_drugs": [
+          "Temozolomide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Interrupt temozolomide if neutrophils 0.5-1.5x10^9/L."
+      },
+      {
+        "parameter": "neutrophils",
+        "condition": "< 0.5 x10^9/L during treatment",
+        "affected_drugs": [
+          "Temozolomide"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discontinue temozolomide if neutrophils < 0.5x10^9/L."
+      },
+      {
+        "parameter": "platelets",
+        "condition": "10-100 x10^9/L during treatment",
+        "affected_drugs": [
+          "Temozolomide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Interrupt temozolomide if platelets 10-100x10^9/L."
+      },
+      {
+        "parameter": "platelets",
+        "condition": "< 10 x10^9/L during treatment",
+        "affected_drugs": [
+          "Temozolomide"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Discontinue temozolomide if platelets < 10x10^9/L."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "> 1.5xULN",
+        "affected_drugs": [
+          "Temozolomide"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Stop temozolomide if bilirubin > 1.5xULN."
+      },
+      {
+        "parameter": "bilirubin",
+        "condition": "ALT > 2.5xULN",
+        "affected_drugs": [
+          "Temozolomide"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Stop temozolomide if ALT > 2.5xULN."
+      },
+      {
+        "parameter": "creatinine_clearance",
+        "condition": "Severe renal impairment",
+        "affected_drugs": [
+          "Temozolomide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "No dose reductions are required. Caution in severe renal impairment."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.5,
+      "platelets_min": 100,
+      "notes": "Neutrophil ≥1.5x10^9/L and platelets ≥100x10^9/L required to start. Interrupt if neutrophils 0.5-1.5x10^9/L or platelets 10-100x10^9/L during treatment. FBC monitored every 7 days."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs, U&Es and glucose prior to starting treatment and every seven days thereafter",
+      "Clinical examination including neurological assessment, whole brain imaging and chest x-ray prior to starting treatment"
+    ],
+    "special_warnings": [
+      "NPSA/2008/RRR001 must be followed for oral temozolomide.",
+      "Temozolomide should be started on first day of radiotherapy and stopped on last day. Taken continuously even on days when radiotherapy is not given (e.g. weekends).",
+      "Maximum number of days of treatment is 49.",
+      "Temozolomide should be taken within three hours of radiotherapy.",
+      "Dose banded per national dose bands; maximum 145mg in ARIA (cap at 2m2).",
+      "Gastric protection with PPI or H2 antagonist may be considered in high-risk patients."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "bsa_m2": true,
+      "performance_status": true,
+      "radiotherapy_start_date": true
+    },
+    "disease_site": "CNS",
+    "number_of_cycles": 7,
+    "drugs": [
+      {
+        "drug_name": "Temozolomide",
+        "dose": 75,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "frequency": "once daily days 1-7 continuously throughout radiotherapy (maximum 49 days)",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": 145,
+        "max_dose_unit": "mg",
+        "special_instructions": "Maximum 150mg; set at 145mg in ARIA to comply with national dose bands. Dose capped at 2m2. Started on first day of radiotherapy; stopped on last day of radiotherapy. Taken continuously including weekends. Maximum 49 days of treatment. Taken within 3 hours of radiotherapy. Take on empty stomach, swallow whole, do not chew.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "once daily days 1-7 continuously throughout radiotherapy (maximum 49 days) | Maximum 150mg; set at 145mg in ARIA to comply with national dose bands. Dose capped at 2m2. Started on first day of radiotherapy; stopped on last day of radiotherapy. Taken continuously including weekends. Maximum 49 days of treatment. Taken within 3 hours of radiotherapy. Take on empty stomach, swallow whole, do not chew."
+      }
+    ]
+  }
+]

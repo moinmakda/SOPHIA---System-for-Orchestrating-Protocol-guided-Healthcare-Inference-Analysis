@@ -1,9 +1,10 @@
 # SOPHIA — System for Orchestrating Protocol-guided Healthcare Inference & Analysis
 
-**Chemotherapy Protocol Management System by Jivana AI**
+**NHS Chemotherapy Protocol Engine by Jivana AI**
 
-![Architecture](https://img.shields.io/badge/Architecture-FastAPI%20%2B%20React-blue)
-![AI](https://img.shields.io/badge/AI-Google%20Gemini-orange)
+![Backend](https://img.shields.io/badge/Backend-FastAPI%20%2B%20Python-009688)
+![Frontend](https://img.shields.io/badge/Frontend-React%20%2B%20Vite-61DAFB)
+![Protocols](https://img.shields.io/badge/Protocols-566%20NHS-blueviolet)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
@@ -12,11 +13,10 @@
 
 **THIS SYSTEM IS FOR CLINICAL DECISION SUPPORT ONLY.**
 
-- This software is NOT a licensed medical device.
-- It has NOT undergone regulatory approval (FDA / MHRA / CE).
-- It MUST NOT be used for direct patient care without independent verification.
-- All protocols require sign-off by a licensed prescriber AND a pharmacist.
-- AI-extracted protocols carry an additional pharmacist review gate before use.
+- This software is **NOT** a licensed medical device.
+- It has **NOT** undergone regulatory approval (FDA / MHRA / CE marking).
+- It **MUST NOT** be used for direct patient care without independent verification by a licensed prescriber and pharmacist.
+- All protocols require dual sign-off before administration.
 
 **Use of this system for patient care without proper clinical validation may result in patient harm or death.**
 
@@ -24,67 +24,73 @@
 
 ## What is SOPHIA?
 
-SOPHIA is a full-stack clinical decision support tool for oncology teams. It takes structured patient data, applies chemotherapy protocol rules, and returns a fully calculated, safety-checked drug schedule — including BSA-adjusted doses, dose modification flags, treatment delay alerts, and pre-medication lists.
+SOPHIA is a full-stack clinical decision support tool for NHS oncology teams. It serves 566 structured chemotherapy protocols, applies patient-specific dose calculations, and returns a fully safety-checked drug schedule — including BSA-adjusted doses, dose modification flags, treatment delay alerts, pre-medication lists, and cumulative toxicity tracking.
 
-It ships with 31 built-in protocols (lymphoma, leukaemia, myeloma, CML) and can ingest any additional NHS/institutional PDF protocol via a Gemini-powered admin panel.
+Built to support real clinical workflow: enter patient demographics and today's blood results, select a protocol and cycle number, and SOPHIA outputs a print-ready prescription sheet with every dose calculated and every safety check surfaced.
 
 ---
 
 ## Feature Overview
 
-### Protocol Engine
-- BSA calculation (Mosteller) capped at 2.0 m² per ASCO guidelines
-- Automatic dose modifications for renal and hepatic impairment
-- "Most conservative rule" — when multiple modification rules apply, the lowest resulting dose wins
-- Vincristine hard cap at 2 mg (CRITICAL alert; overdose = death / permanent paralysis)
-- Treatment delay flags when neutrophils < 1.0 × 10⁹/L or platelets < 100 × 10⁹/L
-- Hard stops when neutrophils < 0.5, platelets < 50, or CrCl < 10
-- Drug omission logging — when a drug is omitted by a dose rule, it is recorded in `dose_modifications_applied` and surfaced as a CRITICAL warning (not silently dropped)
+### Protocol Engine (`engine.py`)
+- **BSA calculation** — Mosteller formula, capped at 2.0 m2 per ASCO guidelines for obese patients
+- **Weight-based dosing** — mg/kg drugs (e.g. Aflibercept, Rituximab flat-dose) calculated from patient weight
+- **Dose modification rules** — haematological and non-haematological toxicity rules per protocol applied automatically; "most conservative rule" wins when multiple apply
+- **NHS dose banding** — 20+ drug classes banded to national agreed bands (Irinotecan, Carboplatin, Docetaxel, Paclitaxel, Rituximab, etc.)
+- **Hard max-dose caps** — vincristine 2 mg (CRITICAL alert; overdose = death / permanent paralysis), cabazitaxel 25 mg, others
+- **Treatment delay flags** — neutrophils < 1.0 x 10^9/L or platelets < 100 x 10^9/L
+- **Hard stops** — neutrophils < 0.5, platelets < 50, or CrCl < 10 blocks treatment
+- **Cycle-aware filtering** — monitoring instructions referencing past cycles (e.g. "Cycle 1 ECG") automatically suppressed for later cycles
+- **Cycle-specific day adjustment** — drugs described as "Cycle 1 only: Days 1 and 15; Cycle 2 onwards: Day 1" trimmed automatically per cycle
+- **Drug omission logging** — omitted drugs recorded in `dose_modifications_applied` and surfaced as CRITICAL warnings (never silently dropped)
 
 ### Patient Safety
-- Mandatory lab enforcement — neutrophils, platelets, haemoglobin, CrCl, and bilirubin are required; no labs, no protocol
-- Allergy checking with cross-reactivity awareness (e.g. penicillin → carbapenem caution)
-- ECOG performance status warnings for PS 3–4
-- Age-based dose reduction prompts for patients > 70 years
-- Cumulative anthracycline and bleomycin toxicity tracking against lifetime limits
-- Irradiated blood product alerts for eligible drugs (e.g. bendamustine)
+- **Mandatory lab enforcement** — neutrophils, platelets, haemoglobin, CrCl, and bilirubin required; no labs = no protocol
+- **Allergy checking** — cross-reactivity groups (platinum, taxane, anthracycline)
+- **ECOG PS warnings** — ECOG 3-4 flagged
+- **Elderly dose reduction** — 20% reduction on BSA-based core drugs for patients age >= 70 years (where no structured age rule exists in the protocol)
+- **Cumulative anthracycline tracking** — doxorubicin-equivalent conversion (epirubicin x 0.5, idarubicin x 5.0); tiered severity warnings at 80%, 90%, 100% of lifetime limit
+- **Cumulative bleomycin tracking** — 400 units lifetime limit
+- **Irradiated blood product alerts** — bendamustine, fludarabine, cladribine, clofarabine flagged
+- **Tiered bilirubin / renal warnings** — bilirubin >30 / >51 / >85 umol/L and CrCl <60 with cisplatin / <30 with other nephrotoxic drugs
 
-### Extended Patient Data Model
-Patient records carry a full clinical picture:
+### Patient Data Model
+Full clinical picture captured per patient:
 
 | Category | Fields |
 |---|---|
-| Demographics | weight, height, age, ECOG PS |
+| Demographics | weight, height, age, sex, ECOG PS |
 | Core labs | neutrophils, platelets, Hb, CrCl, bilirubin |
-| Metabolic | LDH, urate, calcium, β2-microglobulin, magnesium, vitamin D |
+| Metabolic | LDH, urate, calcium, beta-2-microglobulin, magnesium, vitamin D |
 | Virology | HBsAg, HBcAb, HCV Ab, HIV, EBV, CMV, VZV |
 | Disease | histology, stage, CT result, immunoglobulins |
-| Cardiac / prior Rx | LVEF, heart disease flag, prior anthracycline (mg/m²), prior mediastinal radiation, prior bleomycin |
+| Cardiac / prior Rx | LVEF, heart disease flag, prior anthracycline (mg/m2), prior mediastinal RT, prior bleomycin |
 | Metabolic baseline | HbA1c, fasting glucose |
 | G6PD / lung | G6PD status, FEV1 %, smoker flag |
 | Post-cycle tracking | post-cycle neutrophils, platelets, bilirubin, GFR, HbA1c, glucose, motor weakness, gross haematuria |
 
-### Protocol-Specific Required Fields
-Each protocol exposes a `required_patient_fields` map derived from its drugs. For example, RCHOP surfaces requirements for full virology panel (anti-CD20 → HBV reactivation risk), LVEF (anthracycline cardiotoxicity), and G6PD (rasburicase contraindication). The frontend displays these as a colour-coded checklist before the clinician submits.
+### Protocol Coverage (566 protocols)
 
-### Custom Regimen Builder
-Clinicians can:
-- Take any built-in protocol and exclude individual drugs (e.g. AZA+VEN → AZA monotherapy)
-- Build entirely free-form combinations (e.g. Azacitidine + 7+3) by selecting drugs, doses, dose units, routes, and days
-- Custom regimens are submitted to `POST /api/v1/protocol/generate-custom`, receive the same BSA/weight calculations, vincristine cap, allergy checks, and delay detection as standard protocols, and are flagged `is_ai_generated: true` to trigger the pharmacist review gate
+| Tumour Group | Example Protocols |
+|---|---|
+| Breast | AC, EC, FEC, Paclitaxel, Docetaxel, Capecitabine, Pertuzumab-Trastuzumab, Palbociclib-Letrozole, Abemaciclib combinations, T-DM1, Sacituzumab |
+| Colorectal / GI | FOLFOX, FOLFIRI, CAPOX, CAPIRI, Aflibercept-FOLFIRI, Ramucirumab-FOLFIRI, Irinotecan monotherapy, Capecitabine, FLOT, ECF, EOF |
+| Lung | Carboplatin-Paclitaxel, Pemetrexed combinations, Osimertinib, Crizotinib, Durvalumab, Atezolizumab |
+| Haematology | RCHOP, CHOP, R-BENDAMUSTINE, ABVD, BEACOPP, FLAG-IDA, AZA+VEN, HyperCVAD, FCR, VRd, Daratumumab combinations |
+| Gynaecology | Carboplatin-Paclitaxel, Carboplatin monotherapy, Bevacizumab combinations, Olaparib, Niraparib |
+| Skin / CNS / Endocrine / Head & Neck | Multiple histology-specific protocols |
 
-### AI-Powered Protocol Ingestion
-- Upload any NHS/institutional chemotherapy PDF via the Admin Panel
-- Google Gemini (gemini-2.0-flash) extracts: drugs, doses, dose units, routes, schedules, dose modification rules, pre-medications, take-home medicines, monitoring requirements, warnings, and `required_patient_fields`
-- Extracted protocols are cached, versioned, and immediately searchable alongside built-in protocols
-- Prompt version is tracked (`_PROMPT_VERSION`); incrementing it busts all cached extractions
+### Flexible Protocol Builder
+- Load any protocol and selectively include/exclude individual drugs
+- Quick-add buttons dynamically derived from the loaded protocol's own drugs — never hardcoded
+- Edit doses, routes, days, and frequencies inline
+- Submits as a custom regimen via `POST /api/v1/protocol/generate-custom` with full safety checking
 
 ### Patient JSON Adapter
-A `PatientStateAdapter` converts external patient JSON payloads (from mobile apps or WhatsApp-based intake forms) into strict `PatientData` objects:
-- Parses range strings like `"0.8-<1"` → lower bound `0.8` (conservative safety approach)
-- Cycle-state logic: infers which cycle to generate based on `cycle{n}_complete` flags
-- Selects post-cycle lab prefix (`post{n}neutrophils`, etc.) automatically
-- Maps all virology, disease characterisation, and post-cycle tracking fields
+Converts external payloads (mobile app / WhatsApp intake forms) into strict `PatientData` objects:
+- Parses range strings like `"0.8-<1"` to lower bound (conservative)
+- Infers cycle number from `cycle{n}_complete` flags
+- Maps post-cycle lab prefixes automatically
 
 ---
 
@@ -92,25 +98,23 @@ A `PatientStateAdapter` converts external patient JSON payloads (from mobile app
 
 ```
 React Frontend (Vite)
-    │
-    │  HTTP / JSON
-    ▼
+    |
+    |  HTTP / JSON
+    v
 FastAPI Backend (main_enhanced.py)
-    ├── GET  /api/v1/protocols              — list & search protocols
-    ├── GET  /api/v1/protocols/{code}       — protocol detail + required_patient_fields
-    ├── POST /api/v1/protocol/generate      — standard protocol generation
-    ├── POST /api/v1/protocol/generate-custom          — custom regimen builder
-    ├── POST /api/v1/protocol/generate-from-patient-json  — mobile/WhatsApp adapter
-    ├── POST /api/v1/admin/upload           — PDF ingestion (Gemini)
-    ├── GET  /api/v1/admin/stats
-    └── GET  /api/v1/admin/categories
-         │
-         ├── engine.py          — dose calc, modification rules, delay logic
-         ├── models.py          — Pydantic v2 models (PatientData, Protocol, ProtocolResponse, CustomRegimenRequest)
-         ├── protocol_data.py   — 31 hardcoded protocols + DRUGS dict (51 entries) + infer_required_patient_fields()
-         ├── gemini_parser.py   — Gemini extraction prompt (v4) + caching + convert_to_protocol_model()
-         ├── adapters.py        — PatientStateAdapter (external JSON → PatientData)
-         └── ingested_protocols.json  — persisted AI-extracted protocols
+    |-- GET  /api/v1/protocols                            list & search 566 protocols
+    |-- GET  /api/v1/protocols/{code}                     protocol detail
+    |-- POST /api/v1/protocol/generate                    standard protocol generation
+    |-- POST /api/v1/protocol/generate-custom             flexible regimen builder
+    |-- POST /api/v1/protocol/generate-from-patient-json  mobile/WhatsApp adapter
+    +-- GET  /api/v1/drugs                                drug list
+         |
+         |-- engine.py                  dose calc, BSA/weight, modifications, safety checks
+         |-- models.py                  Pydantic v2 models (PatientData, Protocol, ProtocolResponse)
+         |-- json_protocol_loader.py    loads 566 protocols from protocol_jsons_normalized/
+         |-- protocol_jsons_normalized/ 566 structured protocol JSON files
+         |-- adapters.py                PatientStateAdapter (external JSON -> PatientData)
+         +-- requirements.txt
 ```
 
 ---
@@ -120,7 +124,6 @@ FastAPI Backend (main_enhanced.py)
 ### Prerequisites
 - Python 3.10+
 - Node.js 18+
-- Google Gemini API key (for PDF ingestion)
 
 ### Backend
 
@@ -129,7 +132,6 @@ cd backend
 python -m venv venv
 source venv/bin/activate        # Windows: venv\Scripts\activate
 pip install -r requirements.txt
-echo "GEMINI_API_KEY=your-key-here" > .env
 uvicorn main_enhanced:app --reload --port 8000
 ```
 
@@ -142,7 +144,6 @@ npm run dev
 ```
 
 Open `http://localhost:5173`.
-
 Interactive API docs at `http://localhost:8000/docs`.
 
 ---
@@ -156,12 +157,14 @@ POST /api/v1/protocol/generate
 Content-Type: application/json
 
 {
+  "protocol_id": "rchop21",
   "protocol_code": "RCHOP21",
   "cycle_number": 1,
   "patient": {
     "weight_kg": 75,
     "height_cm": 175,
     "age_years": 58,
+    "sex": "male",
     "performance_status": 0,
     "neutrophils": 2.1,
     "platelets": 160,
@@ -204,7 +207,7 @@ Content-Type: application/json
 }
 ```
 
-### Submit from External Patient JSON (Mobile / WhatsApp)
+### Submit from External Patient JSON
 
 ```http
 POST /api/v1/protocol/generate-from-patient-json?protocol_code=RCHOP21
@@ -222,34 +225,7 @@ Content-Type: application/json
 }
 ```
 
-The adapter infers cycle 2, parses `"0.8-<1"` → `0.8`, and triggers a treatment delay flag (neutrophils < 1.0).
-
-### Upload a Protocol PDF
-
-```http
-POST /api/v1/admin/upload
-Content-Type: multipart/form-data
-
-file: <PDF>
-disease_category: lymphoma
-```
-
----
-
-## Built-in Protocols (31 total)
-
-| Category | Protocols |
-|---|---|
-| B-cell lymphoma | RCHOP21, CHOP21, RCVP, BR, GDP, BENDA, R-BENDA |
-| Hodgkin lymphoma | ABVD, BEACOPP-ESC |
-| T-cell lymphoma | CHOEP21, CHOP21 |
-| CLL | FCR, FC |
-| Myeloma | VRd (Bortezomib-Lenalidomide-Dex), Daratumumab-VRd, MPT |
-| AML | 7+3 (Dauno/Ara-C), FLAG-IDA, MACE, Clofarabine-Ara-C |
-| MDS / AML low-intensity | AZA+VEN, Azacitidine SC, Gilteritinib |
-| ALL | HyperCVAD-A, HyperCVAD-B |
-| CML | Imatinib |
-| Supportive | G-CSF, Mesna, Leucovorin rescue |
+The adapter infers cycle 2, parses `"0.8-<1"` to `0.8`, and triggers a treatment delay flag.
 
 ---
 
@@ -257,29 +233,27 @@ disease_category: lymphoma
 
 ```
 SOPHIA/
-├── backend/
-│   ├── main_enhanced.py          # FastAPI app + all endpoints
-│   ├── engine.py                 # Dose calculation, modification rules, delay logic, custom regimen
-│   ├── models.py                 # Pydantic v2: PatientData, Protocol, ProtocolResponse, CustomRegimenRequest
-│   ├── protocol_data.py          # 31 protocols, DRUGS dict (51 entries), infer_required_patient_fields()
-│   ├── gemini_parser.py          # Gemini prompt v4, caching, model conversion
-│   ├── adapters.py               # PatientStateAdapter (external JSON → PatientData)
-│   ├── ingest_protocols.py       # CLI tool to batch-ingest PDFs
-│   ├── ingested_protocols.json   # Persisted AI-extracted protocols
-│   └── requirements.txt
-│
-├── frontend/
-│   └── src/
-│       ├── App.jsx               # Main app state, routing, generate logic
-│       ├── components/
-│       │   ├── Header.jsx
-│       │   ├── PatientForm.jsx               # Full patient form incl. virology, disease, prior Rx
-│       │   ├── ProtocolDisplay.jsx
-│       │   ├── FlexibleProtocolBuilder.jsx   # Custom drug selector
-│       │   └── AdminPanel.jsx
-│       └── utils/api.js          # All API calls incl. generateCustomRegimen()
-│
-└── README.md
+|-- backend/
+|   |-- main_enhanced.py           FastAPI app + all endpoints
+|   |-- engine.py                  Dose calculation, modification rules, safety checks
+|   |-- models.py                  Pydantic v2: PatientData, Protocol, ProtocolResponse
+|   |-- json_protocol_loader.py    Loads all 566 protocols from protocol_jsons_normalized/
+|   |-- protocol_jsons_normalized/ 566 structured NHS protocol JSON files
+|   |-- adapters.py                PatientStateAdapter (external JSON -> PatientData)
+|   |-- protocol_data.py           Legacy hardcoded protocols (superseded by JSON loader)
+|   +-- requirements.txt
+|
+|-- frontend/
+|   +-- src/
+|       |-- App.jsx                         Main app state, routing, generate logic
+|       |-- components/
+|       |   |-- Header.jsx
+|       |   |-- PatientForm.jsx             Full patient form incl. virology, disease, prior Rx
+|       |   |-- ProtocolDisplay.jsx         Output rendering + print-to-PDF
+|       |   +-- FlexibleProtocolBuilder.jsx Custom drug selector / regimen builder
+|       +-- data/drugLibrary.js             Standalone drug library for free-form builder
+|
++-- README.md
 ```
 
 ---
@@ -288,8 +262,23 @@ SOPHIA/
 
 | Variable | Required | Description |
 |---|---|---|
-| `GEMINI_API_KEY` | For PDF ingestion | Google AI Studio key |
 | `VITE_API_URL` | No | Override backend URL (default: `http://localhost:8000`) |
+
+---
+
+## Recent Changes (v2.1 — March 2026)
+
+- **566 NHS protocols** loaded from structured JSON files
+- **NHS dose banding** for 20+ drug classes per national agreed bands
+- **Elderly dose reduction** (age >= 70, 20% on BSA-based core drugs)
+- **Cumulative toxicity tracking** — anthracycline doxorubicin-equivalent and bleomycin
+- **Cycle-aware filtering** — past-cycle ECG / monitoring instructions suppressed automatically
+- **Cycle-specific day adjustment** — e.g. Fulvestrant Day 15 auto-removed from cycle 2+
+- **Tiered bilirubin / renal warnings** with CrCl < 60 + cisplatin CRITICAL alert
+- **Duration display** — infusion times shown as hours (e.g. "46 hr") not decimal days
+- **Flexible Protocol Builder** quick-add buttons now protocol-derived, never hardcoded
+- **Dose modification transparency** — max-dose caps and reductions shown inline per drug
+- **LHRH agonist concurrent medication** promoted to CRITICAL warning
 
 ---
 

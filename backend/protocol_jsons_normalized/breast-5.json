@@ -1,0 +1,1255 @@
+[
+  {
+    "protocol_code": "BREAST-CYCLOPHOSPHAMIDE-EPIRUBICIN",
+    "protocol_name": "Breast Cancer - Cyclophosphamide-Epirubicin",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Epirubicin",
+        "dose": 90.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus over 10 minutes. Vesicant. Maximum lifetime cumulative dose 900mg/m². Discontinue if cardiac failure develops."
+      },
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 600.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus over 10 minutes. Neutral - not a vesicant. Dose banded as per CSCCN agreed bands."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological: neutrophils <1x10^9/L or platelets <100x10^9/L on day 1",
+        "drug_name": "Epirubicin",
+        "factor": 1.0,
+        "notes": "Delay 7 days until criteria met. May resume at original dose or reduce to 80% depending on clinical circumstances. If second episode or delay >7 days, consider changing treatment or growth factors."
+      },
+      {
+        "condition": "Haematological: neutrophils <1x10^9/L or platelets <100x10^9/L on day 1",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Delay 7 days until criteria met. May resume at original dose or reduce to 80% depending on clinical circumstances."
+      },
+      {
+        "condition": "Renal impairment: CrCl >20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Full dose"
+      },
+      {
+        "condition": "Renal impairment: CrCl 10-20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose"
+      },
+      {
+        "condition": "Renal impairment: CrCl ≤10 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Reduce to 50% of original dose"
+      },
+      {
+        "condition": "Renal impairment: severe",
+        "drug_name": "Epirubicin",
+        "factor": 1.0,
+        "notes": "Dose reduce in severe renal impairment only"
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin 24-51 µmol/L or AST 2-4x ULN or bilirubin 21-51 µmol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.5,
+        "notes": "Give 50% of original dose"
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin 51-85 µmol/L or AST >4x ULN or bilirubin >51 µmol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.25,
+        "notes": "Give 25% of original dose"
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >85 µmol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.0,
+        "notes": "Contra-indicated"
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Dose reduction may not be necessary"
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg oral or intravenous 15-30 minutes prior to chemotherapy",
+      "Ondansetron 8mg oral or intravenous 15-30 minutes prior to chemotherapy",
+      "Dexamethasone 4mg oral twice a day for 3 days starting day 2 (take home)",
+      "Metoclopramide 10mg oral three times a day when required (take home)",
+      "Ondansetron 8mg oral twice a day for 3 days starting evening of day 1 (take home)"
+    ],
+    "special_warnings": [
+      "Maximum lifetime cumulative dose of epirubicin is 900mg/m²",
+      "Ensure adequate cardiac function before starting treatment. Baseline LVEF should be measured, particularly in patients with history of cardiac problems or in the elderly.",
+      "Discontinue epirubicin if cardiac failure develops.",
+      "Epirubicin is a vesicant - extravasation precautions required.",
+      "Where intention is to follow with another regimen such as paclitaxel, only FOUR cycles may be necessary - always check on prescribing cycle 1.",
+      "If a third dose reduction is necessary, treatment should be stopped.",
+      "All dose reductions should not be re-escalated without consultant approval."
+    ],
+    "required_patient_fields": [
+      "lvef",
+      "creatinine_clearance",
+      "bilirubin",
+      "ast"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "BREAST-CMF-IV",
+    "protocol_name": "Breast Cancer - Cyclophosphamide-Fluorouracil-Methotrexate (CMF IV)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 28,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 600.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1,
+          8
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus over 10 minutes. Neutral - not a vesicant. Dose banded per national dose bands (20mg/ml PM)."
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 600.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1,
+          8
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus over 10 minutes. Inflammitant. Dose banded per national dose bands (25mg/ml PM). DPD testing required before cycle 1."
+      },
+      {
+        "drug_name": "Methotrexate",
+        "dose": 40.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1,
+          8
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus over 10 minutes. Inflammitant. Dose banded per national dose bands (25mg/ml). Folinic acid rescue required 24 hours after administration."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological: neutrophils <1x10^9/L or platelets <100x10^9/L on day 1",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Delay 7 days. May resume at original dose or reduce to 80%. Day 8 treatment seldom delayed for low blood counts."
+      },
+      {
+        "condition": "Haematological: neutrophils <1x10^9/L or platelets <100x10^9/L on day 1",
+        "drug_name": "Fluorouracil",
+        "factor": 1.0,
+        "notes": "Delay 7 days. May resume at original dose or reduce to 80%."
+      },
+      {
+        "condition": "Haematological: neutrophils <1x10^9/L or platelets <100x10^9/L on day 1",
+        "drug_name": "Methotrexate",
+        "factor": 1.0,
+        "notes": "Delay 7 days. May resume at original dose or reduce to 80%."
+      },
+      {
+        "condition": "Renal impairment: CrCl >20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Full dose"
+      },
+      {
+        "condition": "Renal impairment: CrCl 10-20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75%; consider mesna"
+      },
+      {
+        "condition": "Renal impairment: CrCl <10 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Reduce to 50%; consider mesna"
+      },
+      {
+        "condition": "Renal impairment: severe",
+        "drug_name": "Fluorouracil",
+        "factor": 1.0,
+        "notes": "Consider dose adjustments in severe renal impairment"
+      },
+      {
+        "condition": "Renal impairment: CrCl >80 ml/min",
+        "drug_name": "Methotrexate",
+        "factor": 1.0,
+        "notes": "Full dose"
+      },
+      {
+        "condition": "Renal impairment: CrCl ~60 ml/min",
+        "drug_name": "Methotrexate",
+        "factor": 0.65,
+        "notes": "Reduce to 65%"
+      },
+      {
+        "condition": "Renal impairment: CrCl ~45 ml/min",
+        "drug_name": "Methotrexate",
+        "factor": 0.5,
+        "notes": "Reduce to 50%"
+      },
+      {
+        "condition": "Renal impairment: CrCl <30 ml/min",
+        "drug_name": "Methotrexate",
+        "factor": 0.0,
+        "notes": "Contra-indicated"
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin <85 µmol/L and AST/ALT <180 units",
+        "drug_name": "Fluorouracil",
+        "factor": 1.0,
+        "notes": "Full dose. In moderate hepatic impairment reduce by one third; in severe reduce by half."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >85 µmol/L or AST/ALT >180 units",
+        "drug_name": "Fluorouracil",
+        "factor": 0.0,
+        "notes": "Contra-indicated"
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin <50 µmol/L and AST/ALT <180 units",
+        "drug_name": "Methotrexate",
+        "factor": 1.0,
+        "notes": "Full dose"
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin 51-85 µmol/L or AST/ALT >180 units",
+        "drug_name": "Methotrexate",
+        "factor": 0.75,
+        "notes": "Reduce to 75%"
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >85 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.0,
+        "notes": "Contra-indicated"
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg oral or equivalent IV dose 15-30 minutes prior to chemotherapy on days 1 and 8",
+      "Metoclopramide 10mg oral or IV 15-30 minutes prior to chemotherapy on days 1 and 8",
+      "Folinic acid 15mg six-hourly for 6 doses oral starting 24 hours after methotrexate administration",
+      "Dexamethasone 4mg oral once a day for 3 days (take home)",
+      "Metoclopramide 10mg oral three times a day when required (take home)"
+    ],
+    "special_warnings": [
+      "Patients must be tested for DPD deficiency before cycle 1 initiation; complete or partial DPD deficiency increases risk of severe and fatal toxicity with fluorouracil.",
+      "Presence of a third fluid compartment (e.g. ascites, renal failure) may delay methotrexate clearance and increase toxicity.",
+      "Folinic acid rescue is required after each dose of methotrexate.",
+      "Day 8 treatment is seldom delayed for low blood counts.",
+      "If a third dose reduction is necessary, treatment should be stopped."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "bilirubin",
+      "ast",
+      "dpd_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "BREAST-CMF-PO",
+    "protocol_name": "Breast Cancer - Cyclophosphamide (PO)-Fluorouracil-Methotrexate (CMF-PO)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 28,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 100.0,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Oral, days 1-14 inclusive. Dose rounded to nearest 50mg (up if halfway). Short course oral chemotherapy - must not be continued beyond day 14. NPSA/2008/RRR001 alert applies."
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 600.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1,
+          8
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus over 10 minutes. Inflammitant. Dose banded per national dose bands (25mg/ml PM). DPD testing required before cycle 1."
+      },
+      {
+        "drug_name": "Methotrexate",
+        "dose": 40.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1,
+          8
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus over 10 minutes. Inflammitant. Dose banded per national dose bands (25mg/ml). Folinic acid rescue required 24 hours after administration."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Haematological: neutrophils <1x10^9/L or platelets <100x10^9/L on day 1",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Delay 7 days. May resume at original dose or reduce to 80%. Day 8 treatment seldom delayed."
+      },
+      {
+        "condition": "Haematological: neutrophils <1x10^9/L or platelets <100x10^9/L on day 1",
+        "drug_name": "Fluorouracil",
+        "factor": 1.0,
+        "notes": "Delay 7 days. May resume at original dose or reduce to 80%."
+      },
+      {
+        "condition": "Haematological: neutrophils <1x10^9/L or platelets <100x10^9/L on day 1",
+        "drug_name": "Methotrexate",
+        "factor": 1.0,
+        "notes": "Delay 7 days. May resume at original dose or reduce to 80%."
+      },
+      {
+        "condition": "Renal impairment: CrCl >20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Full dose"
+      },
+      {
+        "condition": "Renal impairment: CrCl 10-20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75%; consider mesna"
+      },
+      {
+        "condition": "Renal impairment: CrCl <10 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Reduce to 50%; consider mesna"
+      },
+      {
+        "condition": "Renal impairment: severe",
+        "drug_name": "Fluorouracil",
+        "factor": 1.0,
+        "notes": "Consider dose adjustments in severe renal impairment"
+      },
+      {
+        "condition": "Renal impairment: CrCl >80 ml/min",
+        "drug_name": "Methotrexate",
+        "factor": 1.0,
+        "notes": "Full dose"
+      },
+      {
+        "condition": "Renal impairment: CrCl ~60 ml/min",
+        "drug_name": "Methotrexate",
+        "factor": 0.65,
+        "notes": "Reduce to 65%"
+      },
+      {
+        "condition": "Renal impairment: CrCl ~45 ml/min",
+        "drug_name": "Methotrexate",
+        "factor": 0.5,
+        "notes": "Reduce to 50%"
+      },
+      {
+        "condition": "Renal impairment: CrCl <30 ml/min",
+        "drug_name": "Methotrexate",
+        "factor": 0.0,
+        "notes": "Contra-indicated"
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin <85 µmol/L and AST/ALT <180 units",
+        "drug_name": "Fluorouracil",
+        "factor": 1.0,
+        "notes": "Full dose. In moderate hepatic impairment reduce by one third; in severe reduce by half."
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >85 µmol/L or AST/ALT >180 units",
+        "drug_name": "Fluorouracil",
+        "factor": 0.0,
+        "notes": "Contra-indicated"
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin <50 µmol/L and AST/ALT <180 units",
+        "drug_name": "Methotrexate",
+        "factor": 1.0,
+        "notes": "Full dose"
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin 51-85 µmol/L or AST/ALT >180 units",
+        "drug_name": "Methotrexate",
+        "factor": 0.75,
+        "notes": "Reduce to 75%"
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >85 µmol/L",
+        "drug_name": "Methotrexate",
+        "factor": 0.0,
+        "notes": "Contra-indicated"
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg oral or equivalent IV dose 15-30 minutes prior to chemotherapy on days 1 and 8",
+      "Metoclopramide 10mg oral or IV 15-30 minutes prior to chemotherapy on days 1 and 8",
+      "Folinic acid 15mg six-hourly for 6 doses oral starting 24 hours after methotrexate administration",
+      "Dexamethasone 4mg oral once a day for 3 days (take home)",
+      "Metoclopramide 10mg oral three times a day when required (take home)"
+    ],
+    "special_warnings": [
+      "Patients must be tested for DPD deficiency before cycle 1 initiation; complete or partial DPD deficiency increases risk of severe and fatal toxicity with fluorouracil.",
+      "Presence of a third fluid compartment (e.g. ascites, renal failure) may delay methotrexate clearance and increase toxicity.",
+      "Folinic acid rescue is required after each dose of methotrexate.",
+      "NPSA/2008/RRR001 must be followed when prescribing, dispensing or administering oral chemotherapy.",
+      "It must be made clear to all staff, including those in the community, that this is a short course of oral chemotherapy (days 1-14) that must not be continued beyond day 14.",
+      "Day 8 treatment is seldom delayed for low blood counts.",
+      "If a third dose reduction is necessary, treatment should be stopped."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "bilirubin",
+      "ast",
+      "dpd_status"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "BREAST-DOCETAXEL-100",
+    "protocol_name": "Breast Cancer - Docetaxel (100)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Docetaxel",
+        "dose": 100.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 250ml sodium chloride 0.9% over 60 minutes. Doses >200mg diluted in 500ml NaCl 0.9% (max concentration 0.74mg/ml). Exfoliant. In patients with poor bone marrow reserves, consider starting at 75mg/m² with a view to escalate to 100mg/m² if well tolerated."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutropenia grade 4 or febrile neutropenia grade 3-4 (previous dose 100mg/m²)",
+        "drug_name": "Docetaxel",
+        "factor": 0.75,
+        "notes": "Delay until grade 1 then reduce to 75mg/m²"
+      },
+      {
+        "condition": "Neutropenia grade 4 or febrile neutropenia grade 3-4 (previous dose 75mg/m²)",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Delay until grade 1 then reduce to 60mg/m²"
+      },
+      {
+        "condition": "Neutropenia grade 4 or febrile neutropenia (previous dose 60mg/m²)",
+        "drug_name": "Docetaxel",
+        "factor": 0.0,
+        "notes": "Stop treatment"
+      },
+      {
+        "condition": "Platelets <100x10^9/L (previous dose 100mg/m²)",
+        "drug_name": "Docetaxel",
+        "factor": 0.75,
+        "notes": "Delay until platelets ≥100x10^9/L then give 75mg/m²"
+      },
+      {
+        "condition": "Platelets <100x10^9/L (previous dose 75mg/m²)",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Delay until platelets ≥100x10^9/L then give 60mg/m²"
+      },
+      {
+        "condition": "Platelets <100x10^9/L (previous dose 60mg/m²)",
+        "drug_name": "Docetaxel",
+        "factor": 0.0,
+        "notes": "Stop treatment"
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 3 (at 100mg/m²)",
+        "drug_name": "Docetaxel",
+        "factor": 0.75,
+        "notes": "Reduce from 100mg/m² to 75mg/m² once neuropathy resolves to grade ≤2"
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 3 (at 75mg/m²)",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Reduce from 75mg/m² to 60mg/m² once neuropathy resolves to grade ≤2"
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 3 at doses <75mg/m² or grade 4",
+        "drug_name": "Docetaxel",
+        "factor": 0.0,
+        "notes": "Stop treatment"
+      },
+      {
+        "condition": "NCI-CTC grade 3 cutaneous toxicity on day 1",
+        "drug_name": "Docetaxel",
+        "factor": 1.0,
+        "notes": "Delay until resolves to grade ≤1, then reduce: 100→75mg/m² or 75→60mg/m². Stop if at 60mg/m² or no recovery after 2 weeks. Stop for grade 4."
+      },
+      {
+        "condition": "Hepatic impairment: AST/ALT ≥1.5xULN AND Alk Phos ≥2.5xULN",
+        "drug_name": "Docetaxel",
+        "factor": 0.75,
+        "notes": "Give 75% dose"
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >ULN and/or AST/ALT ≥3.5xULN AND Alk Phos ≥6xULN",
+        "drug_name": "Docetaxel",
+        "factor": 0.0,
+        "notes": "Not recommended"
+      },
+      {
+        "condition": "Renal impairment",
+        "drug_name": "Docetaxel",
+        "factor": 1.0,
+        "notes": "No dose adjustment needed for renal impairment"
+      },
+      {
+        "condition": "Excessive lacrimation/tearing persisting after symptomatic treatment",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Reduce to 80% of original dose. Symptomatic treatment with hypromellose 0.3% eye drops four times a day first."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg twice a day oral for 3 days starting 24 hours before docetaxel (days -1, 1, 2)",
+      "Metoclopramide 10mg oral or IV 15-30 minutes before chemotherapy",
+      "Metoclopramide 10mg oral three times a day when required (take home)",
+      "Growth factor per local formulary: filgrastim 300mcg SC daily days 3-9, OR lenograstim 263mcg SC daily days 3-9, OR pegfilgrastim 6mg SC day 2",
+      "If dexamethasone pre-medication forgotten: dexamethasone 20mg IV bolus once only"
+    ],
+    "special_warnings": [
+      "Docetaxel is highly myelosuppressive; in patients with poor bone marrow reserves consider starting at 75mg/m² with view to increase to 100mg/m² if well tolerated.",
+      "Hypersensitivity reactions tend to occur with first or second infusion. Do not interrupt for minor symptoms (flushing, localised rashes). Immediately discontinue for profound hypotension, bronchospasm or generalised erythema.",
+      "Dexamethasone pre-medication must be taken for 3 days starting 24 hours before docetaxel to prevent fluid retention and hypersensitivity.",
+      "Docetaxel-induced fluid retention can cause weight gain - this is not a reason to alter doses.",
+      "Excessive lacrimation related to cumulative docetaxel doses (after median 400mg/m²).",
+      "Doses >200mg must be diluted in 500ml sodium chloride 0.9%.",
+      "If a third dose reduction is necessary, treatment should be stopped."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "bilirubin",
+      "ast",
+      "alk_phos"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "BREAST-DOCETAXEL-75",
+    "protocol_name": "Breast Cancer - Docetaxel (75)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Docetaxel",
+        "dose": 75.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous infusion in 250ml sodium chloride 0.9% over 60 minutes. Doses >200mg diluted in 500ml NaCl 0.9% (max concentration 0.74mg/ml). Exfoliant. In patients with poor bone marrow reserves, consider starting at 55mg/m² with a view to escalate to 75mg/m² if well tolerated."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutropenia grade 4 or febrile neutropenia grade 3-4 (previous dose 75mg/m²)",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Delay until grade 1 then reduce to 60mg/m²"
+      },
+      {
+        "condition": "Neutropenia grade 4 or febrile neutropenia (previous dose 60mg/m²)",
+        "drug_name": "Docetaxel",
+        "factor": 0.0,
+        "notes": "Stop treatment"
+      },
+      {
+        "condition": "Platelets <100x10^9/L (previous dose 75mg/m²)",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Delay until platelets ≥100x10^9/L then give 60mg/m²"
+      },
+      {
+        "condition": "Platelets <100x10^9/L (previous dose 60mg/m²)",
+        "drug_name": "Docetaxel",
+        "factor": 0.0,
+        "notes": "Stop treatment"
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 3 (at 75mg/m²)",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Reduce from 75mg/m² to 60mg/m² once neuropathy resolves to grade ≤2"
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 3 at doses <75mg/m² or grade 4",
+        "drug_name": "Docetaxel",
+        "factor": 0.0,
+        "notes": "Consider stopping treatment"
+      },
+      {
+        "condition": "NCI-CTC grade 3 cutaneous toxicity on day 1",
+        "drug_name": "Docetaxel",
+        "factor": 1.0,
+        "notes": "Delay until resolves to grade ≤1, then reduce from 75→60mg/m². Stop if at 60mg/m² or no recovery after 2 weeks. Stop for grade 4."
+      },
+      {
+        "condition": "Hepatic impairment: AST/ALT ≥1.5xULN AND Alk Phos ≥2.5xULN",
+        "drug_name": "Docetaxel",
+        "factor": 0.75,
+        "notes": "Give 75% dose"
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >ULN and/or AST/ALT ≥3.5xULN AND Alk Phos ≥6xULN",
+        "drug_name": "Docetaxel",
+        "factor": 0.0,
+        "notes": "Not recommended"
+      },
+      {
+        "condition": "Renal impairment",
+        "drug_name": "Docetaxel",
+        "factor": 1.0,
+        "notes": "No dose adjustment needed for renal impairment"
+      },
+      {
+        "condition": "Excessive lacrimation/tearing persisting after symptomatic treatment",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Reduce to 80% of original dose. Symptomatic treatment with hypromellose 0.3% eye drops four times a day first."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg twice a day oral for 3 days starting 24 hours before docetaxel (days -1, 1, 2)",
+      "Metoclopramide 10mg oral or IV 15-30 minutes before chemotherapy",
+      "Metoclopramide 10mg oral three times a day when required (take home)",
+      "If dexamethasone pre-medication forgotten: dexamethasone 20mg IV bolus once only"
+    ],
+    "special_warnings": [
+      "Indication: treatment of locally advanced or metastatic HER2-positive breast cancer that has failed to adequately respond to an anthracycline-containing therapy or when further anthracycline therapy is contra-indicated.",
+      "Docetaxel is highly myelosuppressive; in patients with poor bone marrow reserves consider starting at 55mg/m² with view to increase to 75mg/m² if well tolerated.",
+      "Hypersensitivity reactions tend to occur with first or second infusion. Do not interrupt for minor symptoms. Immediately discontinue for profound hypotension, bronchospasm or generalised erythema.",
+      "Dexamethasone pre-medication must be taken for 3 days starting 24 hours before docetaxel to prevent fluid retention and hypersensitivity.",
+      "Docetaxel-induced fluid retention can cause weight gain - this is not a reason to alter doses.",
+      "Excessive lacrimation related to cumulative docetaxel doses (after median 400mg/m²).",
+      "Doses >200mg must be diluted in 500ml sodium chloride 0.9%.",
+      "If a third dose reduction is necessary, treatment should be stopped."
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "bilirubin",
+      "ast",
+      "alk_phos"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "BREAST-DOCETAXEL-PERTUZUMAB-TRASTUZUMAB-IV",
+    "protocol_name": "Breast Cancer - Docetaxel-Pertuzumab-Trastuzumab (IV)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Pertuzumab",
+        "dose": 840.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "LOADING DOSE - Cycle 1 only. Day 1 of cycle 1. Intravenous infusion in 250ml sodium chloride 0.9% over 60 minutes. Observe for 60 minutes after first infusion. If gap ≥6 weeks between infusions, re-administer 840mg loading dose."
+      },
+      {
+        "drug_name": "Pertuzumab",
+        "dose": 420.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "MAINTENANCE DOSE - Cycles 2 onwards. Intravenous infusion in 250ml sodium chloride 0.9% over 30 minutes. Observe 30-60 minutes after subsequent infusions. Dose reductions NOT permitted - if intolerable stop drug. No dose adjustment for renal impairment (mild-moderate); safety not established in hepatic impairment."
+      },
+      {
+        "drug_name": "Trastuzumab",
+        "dose": 8.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "LOADING DOSE - Cycle 1 only. Day 1 of cycle 1. Intravenous infusion in 250ml sodium chloride 0.9% over 90 minutes. Observe 6 hours after first infusion. If dose missed by >14 days, re-administer 8mg/kg loading over 90 minutes."
+      },
+      {
+        "drug_name": "Trastuzumab",
+        "dose": 6.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "MAINTENANCE DOSE - Cycles 2 onwards. Intravenous infusion in 250ml sodium chloride 0.9% over 30 minutes. Observe 2 hours after subsequent infusions. Dose reductions NOT permitted - if intolerable stop drug. No dose adjustment for renal impairment. If dose missed ≤14 days, give usual 6mg/kg as soon as possible."
+      },
+      {
+        "drug_name": "Docetaxel",
+        "dose": 75.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          2
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1: given on DAY 2. Cycles 2-6: given on Day 1. May be increased to 100mg/m² from cycle 2 onwards if well tolerated. Intravenous infusion in 250ml sodium chloride 0.9% over 60 minutes. Doses >200mg in 500ml NaCl 0.9%. Exfoliant."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutropenia grade 4 or febrile neutropenia grade 3-4 (previous dose 75mg/m²)",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Delay until grade 1 then reduce to 60mg/m²"
+      },
+      {
+        "condition": "Neutropenia grade 4 or febrile neutropenia (previous dose 60mg/m²)",
+        "drug_name": "Docetaxel",
+        "factor": 0.0,
+        "notes": "Stop treatment"
+      },
+      {
+        "condition": "Platelets <100x10^9/L (previous dose 75mg/m²)",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Delay until platelets ≥100x10^9/L then reduce to 60mg/m²"
+      },
+      {
+        "condition": "Haematological toxicity",
+        "drug_name": "Pertuzumab",
+        "factor": 1.0,
+        "notes": "No dose modifications for pertuzumab for haematological toxicity. If not tolerated, stop drug."
+      },
+      {
+        "condition": "Haematological toxicity",
+        "drug_name": "Trastuzumab",
+        "factor": 1.0,
+        "notes": "No dose modifications for trastuzumab for haematological toxicity. If not tolerated, stop drug."
+      },
+      {
+        "condition": "Hepatic impairment: AST/ALT ≥1.5xULN AND Alk Phos ≥2.5xULN",
+        "drug_name": "Docetaxel",
+        "factor": 0.75,
+        "notes": "Give 75% dose"
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >ULN and/or AST/ALT ≥3.5xULN AND Alk Phos ≥6xULN",
+        "drug_name": "Docetaxel",
+        "factor": 0.0,
+        "notes": "Not recommended"
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Pertuzumab",
+        "factor": 1.0,
+        "notes": "Safety and efficacy of pertuzumab not established in hepatic impairment - clinical decision required"
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Trastuzumab",
+        "factor": 1.0,
+        "notes": "No dose adjustment necessary"
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 3",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Reduce from 75mg/m² to 60mg/m² once neuropathy resolves to grade ≤2. Consider stopping if grade 3 at <75mg/m² or grade 4."
+      },
+      {
+        "condition": "LVEF <50% or asymptomatic LVEF decline: LVEF <40% or LVEF 40-45% with ≥10% fall from baseline",
+        "drug_name": "Pertuzumab",
+        "factor": 1.0,
+        "notes": "Hold pertuzumab and trastuzumab. Repeat LVEF in 3 weeks. Stop if LVEF remains <40% or 40-45% with ≥10% fall. Resume if LVEF ≥45% or 40-45% with <10% fall. Symptomatic cardiac dysfunction: discontinue, commence ACE inhibitor, refer to cardiologist."
+      },
+      {
+        "condition": "LVEF <50% or asymptomatic LVEF decline: LVEF <40% or LVEF 40-45% with ≥10% fall from baseline",
+        "drug_name": "Trastuzumab",
+        "factor": 1.0,
+        "notes": "Hold trastuzumab. Repeat LVEF in 3 weeks. Stop if LVEF remains <40% or 40-45% with ≥10% fall. LVEF must be ≥50% before starting cycle 1."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg twice a day oral for 3 days starting 24 hours before docetaxel (cycle 1: starting day 1; docetaxel given day 2)",
+      "Metoclopramide 10mg oral or IV 15-30 minutes before chemotherapy (docetaxel cycles only)",
+      "Metoclopramide 10mg oral three times a day when required (take home)",
+      "Loperamide 4mg after first loose motion then 2mg after each loose motion (for diarrhoea - from support folder in Aria)",
+      "For infusion reactions (when required): chlorphenamine 10mg IV, hydrocortisone 100mg IV, paracetamol 1000mg oral"
+    ],
+    "special_warnings": [
+      "Indication: locally advanced or metastatic HER2 or FISH positive breast cancer. Prior adjuvant HER2 therapy must have been completed >12 months before diagnosis of metastatic disease. No prior chemotherapy or HER2 therapy in metastatic setting.",
+      "This protocol may require funding approval.",
+      "LVEF must be ≥50% before starting cycle 1 of pertuzumab and trastuzumab. Cardiac function assessed every 9 weeks and as clinically indicated.",
+      "Dose reductions are NOT permitted for pertuzumab or trastuzumab - if not tolerated, stop the drug.",
+      "Docetaxel: 6 cycles then pertuzumab and trastuzumab continued until disease progression or intolerance.",
+      "Diarrhoea can be severe with pertuzumab - ensure appropriate antidiarrhoeal therapy prescribed.",
+      "Pertuzumab associated with hypersensitivity/infusion reactions - observe 60 mins after first infusion, 30-60 mins after subsequent.",
+      "Trastuzumab associated with hypersensitivity reactions - observe 6 hours after first infusion, 2 hours after subsequent.",
+      "If pertuzumab gap ≥6 weeks, re-administer 840mg loading dose.",
+      "If trastuzumab missed by >14 days, re-administer 8mg/kg loading dose over 90 minutes.",
+      "Docetaxel: HER2-positive indication when anthracycline-containing therapy has failed or is contra-indicated.",
+      "Cardiotoxicity monitoring mandatory throughout treatment with pertuzumab and trastuzumab."
+    ],
+    "required_patient_fields": [
+      "lvef",
+      "her2_status",
+      "creatinine_clearance",
+      "bilirubin",
+      "ast",
+      "alk_phos"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "BREAST-DOCETAXEL-PERTUZUMAB-TRASTUZUMAB-SC",
+    "protocol_name": "Breast Cancer - Docetaxel-Pertuzumab/Trastuzumab SC (Phesgo)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Pertuzumab/Trastuzumab SC",
+        "dose": 1200.0,
+        "dose_unit": "mg",
+        "route": "Subcutaneous",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.133,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "LOADING DOSE (Cycle 1 only) - Pertuzumab 1200mg/Trastuzumab 600mg fixed combination (Phesgo). Subcutaneous injection over 8 minutes. Single syringe to single administration site. Alternate between left and right thigh only. Observe 30 minutes after loading dose. Administer before any taxane; observation period must be completed before starting docetaxel. If gap ≥6 weeks between injections, re-administer 1200mg/600mg loading dose."
+      },
+      {
+        "drug_name": "Pertuzumab/Trastuzumab SC",
+        "dose": 600.0,
+        "dose_unit": "mg",
+        "route": "Subcutaneous",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.083,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "MAINTENANCE DOSE (Cycles 2 onwards) - Pertuzumab 600mg/Trastuzumab 600mg fixed combination (Phesgo). Subcutaneous injection over 5 minutes. Single syringe to single administration site. Alternate between left and right thigh only. Observe 15 minutes after each maintenance dose. Administer before any taxane. Dose reductions NOT permitted - if not tolerated stop treatment. If gap <6 weeks, give maintenance dose as soon as possible on usual 3-weekly schedule."
+      },
+      {
+        "drug_name": "Docetaxel",
+        "dose": 75.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Given cycles 1-6 only. Intravenous infusion in 250ml sodium chloride 0.9% over 60 minutes. Doses >200mg in 500ml NaCl 0.9% (max concentration 0.74mg/ml). May be increased to 100mg/m² from cycle 2 if well tolerated. Exfoliant. Administer after pertuzumab/trastuzumab SC observation period is complete."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutropenia grade 4 or febrile neutropenia grade 3-4 (previous dose 75mg/m²)",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Delay until grade 1 then reduce to 60mg/m²"
+      },
+      {
+        "condition": "Neutropenia grade 4 or febrile neutropenia (previous dose 60mg/m²)",
+        "drug_name": "Docetaxel",
+        "factor": 0.0,
+        "notes": "Stop treatment"
+      },
+      {
+        "condition": "Platelets <100x10^9/L (previous dose 75mg/m²)",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Delay until platelets ≥100x10^9/L then reduce to 60mg/m²"
+      },
+      {
+        "condition": "Haematological toxicity",
+        "drug_name": "Pertuzumab/Trastuzumab SC",
+        "factor": 1.0,
+        "notes": "Dose reductions are NOT recommended. Patients may continue during reversible myelosuppression but must be monitored carefully for neutropenia complications. If treatment not tolerated, stop."
+      },
+      {
+        "condition": "Hepatic impairment: AST/ALT ≥1.5xULN AND Alk Phos ≥2.5xULN",
+        "drug_name": "Docetaxel",
+        "factor": 0.75,
+        "notes": "Give 75% dose"
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >ULN and/or AST/ALT ≥3.5xULN AND Alk Phos ≥6xULN",
+        "drug_name": "Docetaxel",
+        "factor": 0.0,
+        "notes": "Not recommended"
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Pertuzumab/Trastuzumab SC",
+        "factor": 1.0,
+        "notes": "No specific dose adjustments recommended in hepatic impairment"
+      },
+      {
+        "condition": "Renal impairment: mild to moderate",
+        "drug_name": "Pertuzumab/Trastuzumab SC",
+        "factor": 1.0,
+        "notes": "No dose adjustment necessary. No recommendations available for severe renal impairment due to lack of data."
+      },
+      {
+        "condition": "Left ventricular dysfunction: LVEF <40% or LVEF 40-45% with ≥10% fall from pre-treatment",
+        "drug_name": "Pertuzumab/Trastuzumab SC",
+        "factor": 1.0,
+        "notes": "Withhold for at least 3 weeks. May resume if LVEF recovers to >45% or to 40-45% with <10% fall below pre-treatment. Discontinue if symptomatic heart failure confirmed - commence ACE inhibitor and refer to cardiologist."
+      },
+      {
+        "condition": "Peripheral neuropathy NCI-CTC grade 3",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Reduce from 75mg/m² to 60mg/m² once neuropathy resolves to grade ≤2. Consider stopping if grade 3 at <75mg/m² or grade 4."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg twice a day oral for 3 days starting 24 hours before docetaxel (docetaxel cycles 1-6 only)",
+      "Metoclopramide 10mg oral or IV 15-30 minutes before chemotherapy (docetaxel cycles only)",
+      "Metoclopramide 10mg oral three times a day when required (take home)",
+      "Loperamide 4mg after first loose motion then 2mg after each loose motion (for diarrhoea - from support folder in Aria)",
+      "For injection reactions (when required): chlorphenamine 10mg IV, hydrocortisone 100mg IV, paracetamol 1000mg oral",
+      "If dexamethasone pre-medication forgotten: dexamethasone 20mg IV once only 15-30 minutes before chemotherapy"
+    ],
+    "special_warnings": [
+      "Indication: HER2-positive metastatic or locally recurrent unresectable breast cancer; no previous anti-HER2 therapy or chemotherapy for metastatic disease.",
+      "LVEF must be ≥50% before starting treatment. LVEF assessed at baseline, prior to cycle 4, then every 4 cycles during maintenance monotherapy or as clinically indicated.",
+      "Dose reductions are NOT permitted for pertuzumab/trastuzumab SC - if not tolerated, stop treatment.",
+      "6 cycles of docetaxel with pertuzumab/trastuzumab SC, then pertuzumab/trastuzumab SC continued until disease progression or intolerance.",
+      "Pertuzumab/trastuzumab SC (Phesgo) is a fixed-dose combination: loading 1200mg/600mg, maintenance 600mg/600mg.",
+      "Administer pertuzumab/trastuzumab SC before any taxane; complete observation period before starting docetaxel.",
+      "Injection site must be alternated between left and right thigh only. New injections at least 2.5cm from previous site.",
+      "Diarrhoea can be severe - particularly with taxane concurrent treatment and in patients ≥65 years.",
+      "Severe pulmonary events reported with trastuzumab - caution in patients with dyspnoea at rest or concomitant taxane treatment.",
+      "Pertuzumab/trastuzumab SC associated with hypersensitivity/injection-related reactions - observe 30 minutes after loading dose, 15 minutes after maintenance doses.",
+      "If gap ≥6 weeks between injections, re-administer 1200mg/600mg loading dose.",
+      "Cardiotoxicity monitoring mandatory throughout treatment.",
+      "Docetaxel: doses >200mg must be diluted in 500ml sodium chloride 0.9%."
+    ],
+    "required_patient_fields": [
+      "lvef",
+      "her2_status",
+      "creatinine_clearance",
+      "bilirubin",
+      "ast",
+      "alk_phos"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "BREAST-E100CT",
+    "protocol_name": "Breast Cancer - Cyclophosphamide-Docetaxel-Epirubicin (100) (E100CT)",
+    "disease_site": "Breast",
+    "category": "breast",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Epirubicin",
+        "dose": 100.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "E100C phase only (cycles 1-3). Intravenous bolus over 10 minutes. Vesicant. Maximum lifetime cumulative dose 900mg/m². Discontinue if cardiac failure develops. Given BEFORE docetaxel cycles."
+      },
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 500.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "E100C phase only (cycles 1-3). Intravenous bolus over 10 minutes. Neutral - not a vesicant. Dose banded per national dose bands."
+      },
+      {
+        "drug_name": "Docetaxel",
+        "dose": 100.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Docetaxel phase only (cycles 4-6). 21-day cycle for 3 cycles. Intravenous infusion in 250ml sodium chloride 0.9% over 60 minutes. Doses >200mg in 500ml NaCl 0.9% (max concentration 0.74mg/ml). Exfoliant. In patients with poor bone marrow reserves consider starting at 75mg/m² with view to increase to 100mg/m². The complete course of E100C is ALWAYS administered first, followed by docetaxel."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "EC phase: neutrophils <1x10^9/L or platelets <100x10^9/L on day 1 (first episode)",
+        "drug_name": "Epirubicin",
+        "factor": 1.0,
+        "notes": "Delay 7 days until criteria met. On subsequent cycles if counts below level, delay and/or consider reducing epirubicin to 75% of original dose. Cyclophosphamide dose intensity may be maintained."
+      },
+      {
+        "condition": "EC phase: febrile neutropenia or delay due to neutrophils <0.5x10^9/L or platelets <50x10^9/L for >1 week",
+        "drug_name": "Epirubicin",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose"
+      },
+      {
+        "condition": "EC phase: second episode of neutropenia/thrombocytopenia",
+        "drug_name": "Epirubicin",
+        "factor": 0.5,
+        "notes": "Further reduce to 50% or stop treatment"
+      },
+      {
+        "condition": "Docetaxel: neutropenia grade 4 or febrile neutropenia (previous dose 100mg/m²)",
+        "drug_name": "Docetaxel",
+        "factor": 0.75,
+        "notes": "Delay until grade 1 then reduce to 75mg/m²"
+      },
+      {
+        "condition": "Docetaxel: neutropenia grade 4 or febrile neutropenia (previous dose 75mg/m²)",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Delay until grade 1 then reduce to 60mg/m²"
+      },
+      {
+        "condition": "Docetaxel: neutropenia grade 4 or febrile neutropenia (previous dose 60mg/m²)",
+        "drug_name": "Docetaxel",
+        "factor": 0.0,
+        "notes": "Stop treatment"
+      },
+      {
+        "condition": "Docetaxel: platelets <100x10^9/L (previous dose 100mg/m²)",
+        "drug_name": "Docetaxel",
+        "factor": 0.75,
+        "notes": "Delay until platelets ≥100x10^9/L then give 75mg/m²"
+      },
+      {
+        "condition": "Docetaxel: platelets <100x10^9/L (previous dose 75mg/m²)",
+        "drug_name": "Docetaxel",
+        "factor": 0.8,
+        "notes": "Delay until platelets ≥100x10^9/L then give 60mg/m²"
+      },
+      {
+        "condition": "Docetaxel: peripheral neuropathy NCI-CTC grade 3",
+        "drug_name": "Docetaxel",
+        "factor": 0.75,
+        "notes": "Reduce from 100mg/m² to 75mg/m². If at doses <100mg/m² or grade 4 develops, consider stopping."
+      },
+      {
+        "condition": "Renal impairment: CrCl >20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Full dose"
+      },
+      {
+        "condition": "Renal impairment: CrCl 10-20 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.75,
+        "notes": "Reduce to 75%"
+      },
+      {
+        "condition": "Renal impairment: CrCl <10 ml/min",
+        "drug_name": "Cyclophosphamide",
+        "factor": 0.5,
+        "notes": "Reduce to 50%"
+      },
+      {
+        "condition": "Renal impairment: severe",
+        "drug_name": "Epirubicin",
+        "factor": 1.0,
+        "notes": "Dose reduce in severe renal impairment only"
+      },
+      {
+        "condition": "Renal impairment",
+        "drug_name": "Docetaxel",
+        "factor": 1.0,
+        "notes": "No dose adjustment necessary"
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin 24-51 µmol/L or AST 2-4xULN or bilirubin 21-51 µmol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.5,
+        "notes": "Give 50% of original dose"
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin 51-85 µmol/L or AST >4xULN or bilirubin >51 µmol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.25,
+        "notes": "Give 25% of original dose"
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >85 µmol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.0,
+        "notes": "Contra-indicated"
+      },
+      {
+        "condition": "Hepatic impairment",
+        "drug_name": "Cyclophosphamide",
+        "factor": 1.0,
+        "notes": "Dose reduction may not be necessary"
+      },
+      {
+        "condition": "Hepatic impairment: AST/ALT ≥1.5xULN AND Alk Phos ≥2.5xULN",
+        "drug_name": "Docetaxel",
+        "factor": 0.75,
+        "notes": "Give 75% dose"
+      },
+      {
+        "condition": "Hepatic impairment: Bilirubin >ULN and/or AST/ALT ≥3.5xULN AND Alk Phos ≥6xULN",
+        "drug_name": "Docetaxel",
+        "factor": 0.0,
+        "notes": "Not recommended"
+      }
+    ],
+    "pre_medications": [
+      "E100C cycles (1-3): Aprepitant 125mg oral 15-30 minutes prior to chemotherapy",
+      "E100C cycles (1-3): Dexamethasone 4mg oral or IV 15-30 minutes prior to chemotherapy",
+      "E100C cycles (1-3): Ondansetron 8mg oral or IV 15-30 minutes prior to chemotherapy",
+      "E100C take home: Aprepitant 80mg oral once a day for 2 days (starting day 2)",
+      "E100C take home: Dexamethasone 2mg twice a day for 3 days oral (starting day 2)",
+      "E100C take home: Metoclopramide 10mg three times a day when required oral",
+      "E100C take home: Ondansetron 8mg twice a day for 3 days oral (starting evening of day 1)",
+      "E100C growth factor: filgrastim 30 million units SC daily days 5-9, OR lenograstim 33.6 million units SC daily days 5-9, OR pegfilgrastim 6mg SC day 2",
+      "Docetaxel cycles (4-6): Dexamethasone 8mg twice a day oral for 3 days starting 24 hours before docetaxel",
+      "Docetaxel cycles (4-6): Metoclopramide 10mg oral or IV 15-30 minutes before chemotherapy",
+      "Docetaxel take home: Metoclopramide 10mg three times a day when required oral",
+      "Docetaxel growth factor: filgrastim 30 million units SC daily days 3-9, OR lenograstim 33.6 million units SC daily days 3-9, OR pegfilgrastim 6mg SC day 2",
+      "If dexamethasone docetaxel pre-medication forgotten: dexamethasone 20mg IV once only"
+    ],
+    "special_warnings": [
+      "Maximum lifetime cumulative dose of epirubicin is 900mg/m².",
+      "The complete course of E100C (3 cycles) is ALWAYS administered first and is followed by docetaxel (3 cycles) - sequential protocol.",
+      "Ensure adequate cardiac function before starting treatment. Baseline LVEF should be measured, particularly in patients with history of cardiac problems or in the elderly.",
+      "Discontinue epirubicin if cardiac failure develops.",
+      "Epirubicin is a vesicant - extravasation precautions required.",
+      "Always check with the relevant consultant before delaying or reducing the dose in the adjuvant/neo-adjuvant setting.",
+      "Docetaxel is highly myelosuppressive; in patients with poor bone marrow reserves consider starting at 75mg/m² with view to increase to 100mg/m² if well tolerated.",
+      "Hypersensitivity reactions with docetaxel tend to occur with first or second infusion.",
+      "Dexamethasone pre-medication required for docetaxel phase to prevent fluid retention and hypersensitivity.",
+      "Docetaxel doses >200mg must be diluted in 500ml sodium chloride 0.9%.",
+      "Excessive lacrimation related to cumulative docetaxel doses (after median 400mg/m²).",
+      "If a third dose reduction is necessary, treatment should be stopped."
+    ],
+    "required_patient_fields": [
+      "lvef",
+      "creatinine_clearance",
+      "bilirubin",
+      "ast",
+      "alk_phos"
+    ],
+    "auc_dosing": null
+  }
+]

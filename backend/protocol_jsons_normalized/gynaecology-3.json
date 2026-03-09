@@ -1,0 +1,2437 @@
+[
+  {
+    "protocol_id": "ovary_carboplatin_auc6_6cycles",
+    "protocol_code": "CARBO-AUC6-6CYC",
+    "protocol_name": "Carboplatin (AUC6) 6 Cycles",
+    "category": "gynaecology",
+    "indication": "Adjuvant treatment in patients with moderate to high risk stage 1A/B ovarian cancer; Adjuvant treatment in patients with stage 1C, II - VI ovarian cancer who are unsuitable for paclitaxel; Second line or subsequent treatment of platinum sensitive ovarian cancer; WHO performance status 0, 1",
+    "version": "1.2",
+    "cycle_length_days": 21,
+    "total_cycles": 6,
+    "treatment_intent": "curative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 6,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Day 1 of each 21-day cycle",
+        "duration_minutes": 60,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 500,
+        "max_dose": 890,
+        "max_dose_unit": "mg",
+        "special_instructions": "Dose banded according to national dose bands (10mg/ml). Max dose 890mg in ARIA (equivalent to 900mg at CrCl 125ml/min). Dose may need altering if renal function changes by more than 10% from previous cycle. Carboplatin is an irritant - extravasation precautions required.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "Once",
+        "notes": "May be given as IV stat if required"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "Once",
+        "notes": "May be given as IV stat if required"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice a day for 3 days",
+        "instructions": "Take with or after food, starting on day two of the cycle"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Three times a day as required",
+        "instructions": "When required for the relief of nausea. Supply five days or an original pack as appropriate"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils",
+        "condition": "Neutrophils >= 1.0 x10^9/L",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Proceed at full dose"
+      },
+      {
+        "parameter": "Neutrophils",
+        "condition": "Neutrophils < 1.0 x10^9/L",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay for 7 days. If counts recover to >=1x10^9/L continue at full dose. If not recovered within 7 days or repeated delays required, delay until recovery then reduce dose by 20%"
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets >= 100 x10^9/L",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Proceed at full dose"
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets 50-99 x10^9/L",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "delay",
+        "factor": 0.8,
+        "notes": "Delay for 7 days. If counts recover to >=100x10^9/L continue at full dose. If not recovered within 7 days or repeated delays required, delay until recovery then reduce dose by 20%"
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets < 50 x10^9/L",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Delay until recovery then reduce dose by 50%"
+      },
+      {
+        "parameter": "Renal function",
+        "condition": "Creatinine clearance < 20 ml/min",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Omit carboplatin. Significant changes in GFR of more than 10% may require dose adjustment"
+      },
+      {
+        "parameter": "Hepatic impairment",
+        "condition": "Any bilirubin or AST/ALT",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "No dose adjustment needed for hepatic impairment"
+      },
+      {
+        "parameter": "Non-haematological toxicity",
+        "condition": "NCI-CTC grade 3 or above non-haematological toxicity",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "delay",
+        "factor": 0.8,
+        "notes": "Delay until resolved to NCI-CTC grade 1 or below, then reduce to 80% of original dose or discontinue as appropriate"
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "FBC, LFTs and U&Es required prior to each cycle. CA125 prior to each cycle. Consider blood transfusion or erythropoietin (per NICE TA323) if symptomatic anaemia or Hb < 8g/dL"
+    },
+    "monitoring_requirements": [
+      "FBC prior to each cycle",
+      "LFTs prior to each cycle",
+      "U&Es prior to each cycle",
+      "CA125 prior to each cycle"
+    ],
+    "special_warnings": [
+      "Carboplatin is an irritant - extravasation precautions required",
+      "Maximum dose capped at 890mg (ARIA setting) corresponding to CrCl 125ml/min at AUC6",
+      "Obese patients or those with CrCl above 125ml/min: seek consultant advice",
+      "Dose may need adjustment if renal function changes by more than 10% from previous cycle",
+      "If a third dose reduction is required, treatment should be stopped"
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 6,
+      "max_dose_mg": 890
+    },
+    "required_patient_fields": {
+      "creatinine_clearance_ml_min": "Required for Calvert formula dosing",
+      "weight_kg": "Required",
+      "height_cm": "Required for BSA calculation"
+    },
+    "disease_site": "Gynaecology",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 6,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Day 1 of each 21-day cycle",
+        "duration_minutes": 60,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 500,
+        "max_dose": 890,
+        "max_dose_unit": "mg",
+        "special_instructions": "Dose banded according to national dose bands (10mg/ml). Max dose 890mg in ARIA (equivalent to 900mg at CrCl 125ml/min). Dose may need altering if renal function changes by more than 10% from previous cycle. Carboplatin is an irritant - extravasation precautions required.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "Day 1 of each 21-day cycle | Dose banded according to national dose bands (10mg/ml). Max dose 890mg in ARIA (equivalent to 900mg at CrCl 125ml/min). Dose may need altering if renal function changes by more than 10% from previous cycle. Carboplatin is an irritant - extravasation precautions required."
+      }
+    ]
+  },
+  {
+    "protocol_id": "ovary_carboplatin_auc6_retreat",
+    "protocol_code": "CARBO-AUC6-RETREAT",
+    "protocol_name": "Carboplatin Retreat (AUC6)",
+    "category": "gynaecology",
+    "indication": "Second line or subsequent treatment of platinum sensitive ovarian cancer; WHO performance status 0, 1",
+    "version": "1.2",
+    "cycle_length_days": 21,
+    "total_cycles": 6,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 6,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Day 1 of each 21-day cycle",
+        "duration_minutes": 60,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 500,
+        "max_dose": 890,
+        "max_dose_unit": "mg",
+        "special_instructions": "Dose banded according to national dose bands (10mg/ml). Max dose 890mg in ARIA. AUC5 may be considered with EDTA clearance - seek consultant advice. Dose may need altering if renal function changes by more than 10% from previous cycle. Carboplatin is an irritant - extravasation precautions required.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "timing": "30 minutes prior to chemotherapy",
+        "frequency": "Once",
+        "notes": "For prevention of allergic reactions to carboplatin"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "timing": "30 minutes prior to chemotherapy",
+        "frequency": "Once",
+        "notes": "For prevention of allergic reactions to carboplatin"
+      },
+      {
+        "drug_name": "H2 antagonist",
+        "dose": null,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "30 minutes prior to chemotherapy",
+        "frequency": "Once",
+        "notes": "According to local formulary: ranitidine 50mg IV or ranitidine 150mg oral or famotidine 20mg oral or nizatidine 150mg oral. Many Trusts do not administer from cycle 3 onwards. May be omitted if national shortage and no ARIA journal instruction to the contrary."
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "Once",
+        "notes": "May be given as IV if required"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice a day for 3 days",
+        "instructions": "Take with or after food. Start on day two of the cycle"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Three times a day for 3 days then as required",
+        "instructions": "Supply 28x10mg tablets or nearest equivalent pack size"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils",
+        "condition": "Neutrophils >= 1.0 x10^9/L",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Proceed at full dose"
+      },
+      {
+        "parameter": "Neutrophils",
+        "condition": "Neutrophils < 1.0 x10^9/L",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay for 7 days. If counts recover to >=1x10^9/L continue at full dose. If not recovered within 7 days or repeated delays required, delay until recovery then reduce dose by 20%"
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets >= 100 x10^9/L",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Proceed at full dose"
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets 50-99 x10^9/L",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "delay",
+        "factor": 0.8,
+        "notes": "Delay for 7 days. If counts recover to >=100x10^9/L continue at full dose. If not recovered within 7 days or repeated delays required, delay until recovery then reduce dose by 20%"
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets < 50 x10^9/L",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Delay until recovery then reduce dose by 50%"
+      },
+      {
+        "parameter": "Renal function",
+        "condition": "Creatinine clearance < 20 ml/min",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Omit carboplatin. Significant changes in GFR of more than 10% may require dose adjustment"
+      },
+      {
+        "parameter": "Hepatic impairment",
+        "condition": "Any bilirubin or AST/ALT",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "No dose adjustment needed for hepatic impairment"
+      },
+      {
+        "parameter": "Non-haematological toxicity",
+        "condition": "NCI-CTC grade 3 or above non-haematological toxicity",
+        "affected_drugs": [
+          "Carboplatin"
+        ],
+        "action": "delay",
+        "factor": 0.8,
+        "notes": "Delay until resolved to NCI-CTC grade 1 or below, then reduce to 80% of original dose or discontinue"
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "FBC, LFTs and U&Es required prior to each cycle. CA125 prior to each cycle. Consider blood transfusion if symptomatic anaemia or Hb < 8g/dL"
+    },
+    "monitoring_requirements": [
+      "FBC prior to each cycle",
+      "LFTs prior to each cycle",
+      "U&Es prior to each cycle",
+      "CA125 prior to each cycle"
+    ],
+    "special_warnings": [
+      "Re-treatment protocol: this is carboplatin retreat for platinum-sensitive ovarian cancer",
+      "Carboplatin is an irritant - extravasation precautions required",
+      "Maximum dose capped at 890mg in ARIA (900mg at CrCl 125ml/min); AUC5 may be considered with EDTA clearance - seek consultant advice before prescribing",
+      "Starting dose is AUC6 with calculated GFR; AUC5 may be considered with EDTA clearance",
+      "Allergic reaction prophylaxis required: chlorphenamine 10mg IV, dexamethasone 10mg IV, and H2 antagonist 30 minutes before carboplatin",
+      "All infusion-related reactions must be recorded in ARIA journal and reported to consultant",
+      "If a third dose reduction is required, treatment should be stopped"
+    ],
+    "auc_dosing": {
+      "formula": "Calvert",
+      "auc_target": 6,
+      "max_dose_mg": 890
+    },
+    "required_patient_fields": {
+      "creatinine_clearance_ml_min": "Required for Calvert formula dosing",
+      "weight_kg": "Required",
+      "height_cm": "Required for BSA calculation",
+      "previous_platinum_treatment": "Required to confirm platinum-sensitive status"
+    },
+    "disease_site": "Gynaecology",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Carboplatin",
+        "dose": 6,
+        "dose_unit": "AUC",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Day 1 of each 21-day cycle",
+        "duration_minutes": 60,
+        "diluent": "Glucose 5%",
+        "diluent_volume_ml": 500,
+        "max_dose": 890,
+        "max_dose_unit": "mg",
+        "special_instructions": "Dose banded according to national dose bands (10mg/ml). Max dose 890mg in ARIA. AUC5 may be considered with EDTA clearance - seek consultant advice. Dose may need altering if renal function changes by more than 10% from previous cycle. Carboplatin is an irritant - extravasation precautions required.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "Day 1 of each 21-day cycle | Dose banded according to national dose bands (10mg/ml). Max dose 890mg in ARIA. AUC5 may be considered with EDTA clearance - seek consultant advice. Dose may need altering if renal function changes by more than 10% from previous cycle. Carboplatin is an irritant - extravasation precautions required."
+      }
+    ]
+  },
+  {
+    "protocol_id": "cervix_cisplatin40_radiotherapy",
+    "protocol_code": "CISP40-RT",
+    "protocol_name": "Cisplatin (40)-Radiotherapy",
+    "category": "gynaecology",
+    "indication": "Locally advanced cervical, vaginal and vulval cancer with concurrent radiotherapy; WHO performance status 0, 1, 2",
+    "version": "1.1",
+    "cycle_length_days": 7,
+    "total_cycles": 5,
+    "treatment_intent": "curative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Cisplatin",
+        "dose": 40,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Day 1 of each 7-day cycle (weekly) for 5 cycles concurrently with radiotherapy",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": 70,
+        "max_dose_unit": "mg",
+        "special_instructions": "Infuse at a rate of 1mg/min of cisplatin (minimum 60 minutes). Dose banded according to CSCCN agreed bands. Radiotherapy should be administered within 60 minutes of the end of cisplatin infusion. Post-hydration may be interrupted briefly to facilitate radiotherapy. Cisplatin is an exfoliant - extravasation precautions required. No more than 9 cycles should be given if cisplatin started in advance of radiotherapy.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "Once",
+        "notes": "May be given as IV"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "Once",
+        "notes": "May be given as IV"
+      },
+      {
+        "drug_name": "Furosemide",
+        "dose": 40,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "Pre-hydration",
+        "frequency": "As required",
+        "notes": "May be given as IV; part of cisplatin pre-hydration"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9% with magnesium sulphate 8mmol",
+        "dose": 500,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Pre-hydration before cisplatin",
+        "frequency": "Once",
+        "notes": "Over 30 minutes. Cisplatin pre-hydration"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9%",
+        "dose": 500,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Post-hydration after cisplatin",
+        "frequency": "Once",
+        "notes": "Over 30 minutes. Cisplatin post-hydration"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once a day for 2 days",
+        "instructions": "Starting the day after chemotherapy"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Three times a day for 2 days then as required",
+        "instructions": "For nausea"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice a day for 2 days",
+        "instructions": "Starting on the evening of chemotherapy"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils",
+        "condition": "Neutrophils >= 1.0 x10^9/L",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Proceed at full dose"
+      },
+      {
+        "parameter": "Neutrophils",
+        "condition": "Neutrophils < 1.0 x10^9/L",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay cisplatin (radiotherapy to continue). If resolved to >=1x10^9/L after 7 days continue at full dose"
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets >= 100 x10^9/L",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Proceed at full dose"
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets < 100 x10^9/L",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay cisplatin (radiotherapy to continue). If resolved to >=100x10^9/L after 7 days continue at full dose"
+      },
+      {
+        "parameter": "Renal function",
+        "condition": "Creatinine clearance >= 60 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Full dose"
+      },
+      {
+        "parameter": "Renal function",
+        "condition": "Creatinine clearance 45-59 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "reduce",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose"
+      },
+      {
+        "parameter": "Renal function",
+        "condition": "Creatinine clearance < 45 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Consider alternative such as carboplatin AUC2"
+      },
+      {
+        "parameter": "Non-haematological toxicity",
+        "condition": "NCI-CTC grade 3 or above non-haematological toxicity",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Delay until resolved to NCI-CTC grade 1 or below, then reduce to 75% of original dose or discontinue"
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "Haemoglobin must be maintained >= 12g/dL (transfuse if necessary). FBC, LFTs and U&Es with calculated creatinine clearance every 7 days prior to chemotherapy administration"
+    },
+    "monitoring_requirements": [
+      "FBC every 7 days prior to chemotherapy",
+      "LFTs every 7 days prior to chemotherapy",
+      "U&Es with calculated creatinine clearance every 7 days prior to chemotherapy",
+      "Haemoglobin levels to be maintained above 12g/dL - transfuse if necessary"
+    ],
+    "special_warnings": [
+      "Concurrent radiotherapy protocol: cisplatin given weekly concurrently with radiotherapy",
+      "Radiotherapy must continue even when cisplatin is delayed due to haematological toxicity",
+      "Radiotherapy should be administered within 60 minutes of the end of cisplatin infusion",
+      "Maximum of 9 cycles if cisplatin started before radiotherapy commences",
+      "Cisplatin is highly emetogenic - adequate antiemesis essential",
+      "Cisplatin is an exfoliant - extravasation precautions required",
+      "Haemoglobin must be maintained above 12g/dL; blood transfusions should be given where necessary",
+      "Adequate hydration mandatory: pre- and post-hydration required with each cisplatin dose"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "creatinine_clearance_ml_min": "Required for dose modification decisions",
+      "bsa_m2": "Required for cisplatin dose calculation",
+      "haemoglobin_g_dl": "Must be >= 12g/dL before each cycle"
+    },
+    "disease_site": "Gynaecology",
+    "number_of_cycles": 5,
+    "drugs": [
+      {
+        "drug_name": "Cisplatin",
+        "dose": 40,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Day 1 of each 7-day cycle (weekly) for 5 cycles concurrently with radiotherapy",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": 70,
+        "max_dose_unit": "mg",
+        "special_instructions": "Infuse at a rate of 1mg/min of cisplatin (minimum 60 minutes). Dose banded according to CSCCN agreed bands. Radiotherapy should be administered within 60 minutes of the end of cisplatin infusion. Post-hydration may be interrupted briefly to facilitate radiotherapy. Cisplatin is an exfoliant - extravasation precautions required. No more than 9 cycles should be given if cisplatin started in advance of radiotherapy.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "Day 1 of each 7-day cycle (weekly) for 5 cycles concurrently with radiotherapy | Infuse at a rate of 1mg/min of cisplatin (minimum 60 minutes). Dose banded according to CSCCN agreed bands. Radiotherapy should be administered within 60 minutes of the end of cisplatin infusion. Post-hydration may be interrupted briefly to facilitate radiotherapy. Cisplatin is an exfoliant - extravasation precautions required. No more than 9 cycles should be given if cisplatin started in advance of radiotherapy."
+      }
+    ]
+  },
+  {
+    "protocol_id": "cervix_cisplatin_etoposide_po",
+    "protocol_code": "CISP-ETO-PO-CERV",
+    "protocol_name": "Cisplatin-Etoposide (oral) - Cervix",
+    "category": "gynaecology",
+    "indication": "Treatment of partially platinum-sensitive or platinum-refractory relapsed ovarian cancer; Small cell gynaecological cancers including those affecting the cervix, endometrium and ovaries; WHO performance status 0, 1, 2",
+    "version": "1.1",
+    "cycle_length_days": 28,
+    "total_cycles": 8,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Cisplatin",
+        "dose": 50,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "frequency": "Days 1, 8 and 15 of cycles 1 and 2 (28-day cycle)",
+        "duration_minutes": 120,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Infuse at a rate of 1mg/min cisplatin (minimum 120 minutes). Dose banded according to CSCCN agreed bands. Cisplatin is an exfoliant - extravasation precautions required. Cycles 1 and 2 only (followed by etoposide-only cycles 3-8).",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 50,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "frequency": "Once daily days 1-14 (cycles 1 and 2); once daily days 1-21 (cycles 3-8)",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Flat dose 50mg oral. Cycles 1-2: days 1-14 inclusive. Cycles 3-8: days 1-21 inclusive. Take one hour before food or on empty stomach. NPSA oral cytotoxic alert applies.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Aprepitant",
+        "dose": 125,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "Once on days 1, 8, 15 of cycles 1 and 2 only",
+        "notes": "Cycles 1 and 2 only"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "Once on days 1, 8, 15 of cycles 1 and 2 only",
+        "notes": "May be given as IV; cycles 1 and 2 only"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "Once on days 1, 8, 15 of cycles 1 and 2 only",
+        "notes": "May be given as IV; cycles 1 and 2 only"
+      },
+      {
+        "drug_name": "Furosemide",
+        "dose": 40,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "Pre-hydration before cisplatin",
+        "frequency": "On each cisplatin day",
+        "notes": "May be given as IV; part of cisplatin pre-hydration"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9% with potassium chloride 20mmol and magnesium sulphate 16mmol",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Pre-hydration before cisplatin",
+        "frequency": "Once per cisplatin day",
+        "notes": "Over 60 minutes. Cisplatin pre-hydration"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9% with potassium chloride 20mmol and magnesium sulphate 16mmol",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Post-hydration after cisplatin",
+        "frequency": "Once per cisplatin day",
+        "notes": "Over 60 minutes. Cisplatin post-hydration"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Etoposide",
+        "dose": 50,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once daily for 14 days (cycles 1-2) or 21 days (cycles 3-8)",
+        "instructions": "Take one hour before food or on empty stomach. NPSA oral cytotoxic alert applies. Supply sufficient for days 1, 8, 15 of the cycle for cycles 1-2"
+      },
+      {
+        "drug_name": "Aprepitant",
+        "dose": 80,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once daily for 2 days (days 2 and 3 after each cisplatin dose)",
+        "instructions": "Cycles 1 and 2 only. Supply sufficient quantities for days 1, 8, 15 of cycle"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once daily for 3 days after each cisplatin dose",
+        "instructions": "Cycles 1 and 2 only. Supply sufficient quantities for days 1, 8, 15 of cycle"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Three times a day as required",
+        "instructions": "Cycle 1 only. Supply 60 tablets or appropriate equivalent"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice daily for 3 days starting evening of cisplatin",
+        "instructions": "Cycles 1 and 2 only. Supply sufficient quantities for days 1, 8, 15 of cycle"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "Neutrophils >= 1.0 x10^9/L on Day 1",
+        "affected_drugs": [
+          "Cisplatin",
+          "Etoposide"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Proceed at full dose"
+      },
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "Neutrophils < 1.0 x10^9/L on Day 1",
+        "affected_drugs": [
+          "Cisplatin",
+          "Etoposide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay treatment for 7 days. If resolved to >=1x10^9/L after 7 days continue at full dose"
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "Platelets >= 100 x10^9/L on Day 1",
+        "affected_drugs": [
+          "Cisplatin",
+          "Etoposide"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Proceed at full dose"
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "Platelets < 100 x10^9/L on Day 1",
+        "affected_drugs": [
+          "Cisplatin",
+          "Etoposide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay for 7 days. If resolved to >=100x10^9/L continue at full dose"
+      },
+      {
+        "parameter": "Neutrophils (Days 8 and 15)",
+        "condition": "Neutrophils < 1.0 x10^9/L on Day 8 or Day 15",
+        "affected_drugs": [
+          "Cisplatin",
+          "Etoposide"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Delay cisplatin and stop etoposide"
+      },
+      {
+        "parameter": "Platelets (Days 8 and 15)",
+        "condition": "Platelets < 50 x10^9/L on Day 8 or Day 15",
+        "affected_drugs": [
+          "Cisplatin",
+          "Etoposide"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Delay cisplatin and stop etoposide"
+      },
+      {
+        "parameter": "Hepatic (Etoposide)",
+        "condition": "Bilirubin 26-51 umol/L or AST/ALT 60-180 units",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "reduce",
+        "factor": 1.0,
+        "notes": "Consider reducing course length"
+      },
+      {
+        "parameter": "Hepatic (Etoposide)",
+        "condition": "Bilirubin >= 51 umol/L or AST/ALT >= 180 units",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "reduce",
+        "factor": 1.0,
+        "notes": "Clinical decision"
+      },
+      {
+        "parameter": "Renal (Cisplatin)",
+        "condition": "Creatinine clearance >= 60 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Full dose"
+      },
+      {
+        "parameter": "Renal (Cisplatin)",
+        "condition": "Creatinine clearance 45-59 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "reduce",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose"
+      },
+      {
+        "parameter": "Renal (Cisplatin)",
+        "condition": "Creatinine clearance < 45 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Consider alternative"
+      },
+      {
+        "parameter": "Renal (Etoposide)",
+        "condition": "Creatinine clearance >= 50 ml/min",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Full dose"
+      },
+      {
+        "parameter": "Renal (Etoposide)",
+        "condition": "Creatinine clearance 15-50 ml/min",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "reduce",
+        "factor": 0.75,
+        "notes": "Reduce to 75%"
+      },
+      {
+        "parameter": "Renal (Etoposide)",
+        "condition": "Creatinine clearance < 15 ml/min",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "reduce",
+        "factor": 0.5,
+        "notes": "Reduce to 50%"
+      },
+      {
+        "parameter": "Non-haematological toxicity",
+        "condition": "NCI-CTC grade 3 or above",
+        "affected_drugs": [
+          "Cisplatin",
+          "Etoposide"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Delay until resolved to NCI-CTC grade 1 or below. Reduce causative agent to 75% or discontinue"
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "FBC, U&Es and LFTs prior to days 1, 8, 15. EDTA or calculated creatinine clearance and CA125 prior to day 1 of each cycle. Consider formal audiology testing. Consider blood transfusion if symptomatic anaemia or Hb < 8g/dL."
+    },
+    "monitoring_requirements": [
+      "FBC prior to days 1, 8, 15 of treatment",
+      "U&Es prior to days 1, 8, 15 of treatment",
+      "LFTs prior to days 1, 8, 15 of treatment",
+      "EDTA or calculated creatinine clearance prior to day 1 of each cycle",
+      "CA125 prior to day 1 of each cycle",
+      "Consider formal audiology testing"
+    ],
+    "special_warnings": [
+      "NPSA oral cytotoxic alert (NPSA/2008/RRR001) must be followed in relation to oral etoposide",
+      "Two-phase regimen: cycles 1-2 contain cisplatin (days 1, 8, 15) and etoposide (days 1-14); cycles 3-8 contain etoposide only (days 1-21)",
+      "Cisplatin is an exfoliant - extravasation precautions required",
+      "Patients must be advised to drink at least 3 litres of fluid in 24 hours after cisplatin administration",
+      "Cisplatin is highly emetogenic - aprepitant-based antiemesis required",
+      "Consider formal audiology testing due to ototoxicity risk of cisplatin",
+      "If a third dose reduction is required, treatment should be stopped"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "creatinine_clearance_ml_min": "Required for dose modification decisions",
+      "bsa_m2": "Required for cisplatin dose calculation",
+      "lft_results": "Required for etoposide dose modification"
+    },
+    "disease_site": "Gynaecology",
+    "number_of_cycles": 8,
+    "drugs": [
+      {
+        "drug_name": "Cisplatin",
+        "dose": 50,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "frequency": "Days 1, 8 and 15 of cycles 1 and 2 (28-day cycle)",
+        "duration_minutes": 120,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Infuse at a rate of 1mg/min cisplatin (minimum 120 minutes). Dose banded according to CSCCN agreed bands. Cisplatin is an exfoliant - extravasation precautions required. Cycles 1 and 2 only (followed by etoposide-only cycles 3-8).",
+        "is_core_drug": true,
+        "infusion_duration_hours": 2.0,
+        "notes": "Days 1, 8 and 15 of cycles 1 and 2 (28-day cycle) | Infuse at a rate of 1mg/min cisplatin (minimum 120 minutes). Dose banded according to CSCCN agreed bands. Cisplatin is an exfoliant - extravasation precautions required. Cycles 1 and 2 only (followed by etoposide-only cycles 3-8)."
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 50,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "frequency": "Once daily days 1-14 (cycles 1 and 2); once daily days 1-21 (cycles 3-8)",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Flat dose 50mg oral. Cycles 1-2: days 1-14 inclusive. Cycles 3-8: days 1-21 inclusive. Take one hour before food or on empty stomach. NPSA oral cytotoxic alert applies.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "Once daily days 1-14 (cycles 1 and 2); once daily days 1-21 (cycles 3-8) | Flat dose 50mg oral. Cycles 1-2: days 1-14 inclusive. Cycles 3-8: days 1-21 inclusive. Take one hour before food or on empty stomach. NPSA oral cytotoxic alert applies."
+      }
+    ]
+  },
+  {
+    "protocol_id": "cervix_cisplatin_topotecan_iv",
+    "protocol_code": "CISP-TOPO-IV",
+    "protocol_name": "Cisplatin-Topotecan (intravenous)",
+    "category": "gynaecology",
+    "indication": "Recurrent stage IVB cervical cancer in patients who have not previously received cisplatin; Palliative intent; WHO performance status 0, 1, 2",
+    "version": "1.1",
+    "cycle_length_days": 21,
+    "total_cycles": 6,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Cisplatin",
+        "dose": 50,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Day 1 of each 21-day cycle",
+        "duration_minutes": 120,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Infuse at rate of 1mg/min cisplatin (minimum 120 minutes). Dose banded according to CSCCN agreed bands. Cisplatin is an exfoliant - extravasation precautions required.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Topotecan",
+        "dose": 0.75,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3
+        ],
+        "frequency": "Days 1, 2 and 3 of each 21-day cycle",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Round dose to nearest 0.1mg (up if halfway). Topotecan is an exfoliant - extravasation precautions required. On Day 1 topotecan is given before cisplatin.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Aprepitant",
+        "dose": 125,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy on Day 1",
+        "frequency": "Once on Day 1",
+        "notes": null
+      },
+      {
+        "drug_name": "Aprepitant",
+        "dose": 80,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy on Days 2 and 3",
+        "frequency": "Once on Days 2 and 3",
+        "notes": null
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy each day",
+        "frequency": "Days 1, 2 and 3",
+        "notes": "May be given as IV"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy each day",
+        "frequency": "Days 1, 2 and 3",
+        "notes": "May be given as IV"
+      },
+      {
+        "drug_name": "Furosemide",
+        "dose": 40,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "Pre-hydration on Day 1",
+        "frequency": "Once",
+        "notes": "May be given as IV; part of cisplatin pre-hydration"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9% with magnesium sulphate 16mmol and potassium chloride 20mmol",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Pre-hydration before cisplatin on Day 1",
+        "frequency": "Once",
+        "notes": "Over 60 minutes"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9% with magnesium sulphate 16mmol and potassium chloride 20mmol",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Post-hydration after cisplatin on Day 1",
+        "frequency": "Once",
+        "notes": "Over 60 minutes"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Three times a day for 3 days then as required",
+        "instructions": "Dispensed on Day 1"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once each evening for 3 days on the days of chemotherapy",
+        "instructions": "Dispensed on Day 1"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils",
+        "condition": "Neutrophils >= 1.0 x10^9/L",
+        "affected_drugs": [
+          "Cisplatin",
+          "Topotecan"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Proceed at full dose"
+      },
+      {
+        "parameter": "Neutrophils",
+        "condition": "Neutrophils < 1.0 x10^9/L",
+        "affected_drugs": [
+          "Cisplatin",
+          "Topotecan"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay treatment for 7 days. If resolved to >=1x10^9/L continue at full dose"
+      },
+      {
+        "parameter": "Febrile neutropenia (1st occurrence)",
+        "condition": "Febrile neutropenia - first occurrence",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "reduce",
+        "factor": 1.0,
+        "notes": "Reduce topotecan to 0.6mg/m2 for all subsequent cycles"
+      },
+      {
+        "parameter": "Febrile neutropenia (2nd occurrence)",
+        "condition": "Febrile neutropenia - second occurrence",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "reduce",
+        "factor": 1.0,
+        "notes": "Reduce topotecan to 0.45mg/m2 for all subsequent cycles"
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets >= 100 x10^9/L",
+        "affected_drugs": [
+          "Cisplatin",
+          "Topotecan"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Proceed at full dose"
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets < 100 x10^9/L",
+        "affected_drugs": [
+          "Cisplatin",
+          "Topotecan"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay for 7 days. If resolved to >=100x10^9/L continue at full dose"
+      },
+      {
+        "parameter": "Platelets severely low (1st occurrence)",
+        "condition": "Platelets < 10 x10^9/L at any time - first occurrence",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "reduce",
+        "factor": 1.0,
+        "notes": "Reduce topotecan to 0.6mg/m2 for all subsequent cycles"
+      },
+      {
+        "parameter": "Platelets severely low (2nd occurrence)",
+        "condition": "Platelets < 10 x10^9/L at any time - second occurrence",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "reduce",
+        "factor": 1.0,
+        "notes": "Reduce topotecan to 0.45mg/m2 for all subsequent cycles"
+      },
+      {
+        "parameter": "Hepatic (Topotecan)",
+        "condition": "Bilirubin < 170 umol/L",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Full dose"
+      },
+      {
+        "parameter": "Hepatic (Topotecan)",
+        "condition": "Bilirubin >= 170 umol/L",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "reduce",
+        "factor": 1.0,
+        "notes": "Clinical decision"
+      },
+      {
+        "parameter": "Renal (Cisplatin)",
+        "condition": "Creatinine clearance >= 60 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Full dose"
+      },
+      {
+        "parameter": "Renal (Cisplatin)",
+        "condition": "Creatinine clearance 45-59 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "reduce",
+        "factor": 0.75,
+        "notes": "Reduce to 75%"
+      },
+      {
+        "parameter": "Renal (Cisplatin)",
+        "condition": "Creatinine clearance < 45 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Consider alternative"
+      },
+      {
+        "parameter": "Renal (Topotecan)",
+        "condition": "Creatinine clearance >= 40 ml/min",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Full dose"
+      },
+      {
+        "parameter": "Renal (Topotecan)",
+        "condition": "Creatinine clearance 20-39 ml/min",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "reduce",
+        "factor": 0.5,
+        "notes": "Reduce to 50%"
+      },
+      {
+        "parameter": "Renal (Topotecan)",
+        "condition": "Creatinine clearance < 20 ml/min",
+        "affected_drugs": [
+          "Topotecan"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Contraindicated"
+      },
+      {
+        "parameter": "Non-haematological toxicity",
+        "condition": "NCI-CTC grade 3 or above",
+        "affected_drugs": [
+          "Cisplatin",
+          "Topotecan"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Delay until resolved to NCI-CTC grade 1 or below. Reduce causative agent to 75% or discontinue"
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "Haemoglobin >= 9g/dL (transfuse if necessary). FBC, LFTs and U&Es prior to Day 1. EDTA or calculated creatinine clearance prior to Day 1. Palliative intent."
+    },
+    "monitoring_requirements": [
+      "FBC prior to Day 1 of each cycle",
+      "LFTs prior to Day 1 of each cycle",
+      "U&Es prior to Day 1 of each cycle",
+      "EDTA or calculated creatinine clearance prior to Day 1 of each cycle"
+    ],
+    "special_warnings": [
+      "Palliative intent protocol for recurrent stage IVB cervical cancer in cisplatin-naive patients",
+      "NICE guidance TA183 applies: topotecan for recurrent stage IVb cervical cancer",
+      "Cisplatin is highly emetogenic - aprepitant-based antiemesis required on Days 1-3",
+      "Cisplatin is an exfoliant and topotecan is an exfoliant - extravasation precautions required for both",
+      "Pre- and post-hydration mandatory with cisplatin on Day 1",
+      "Haemoglobin must be >= 9g/dL before each cycle (transfuse if necessary)",
+      "Febrile neutropenia or platelets < 10x10^9/L require stepwise topotecan dose reductions (0.75 -> 0.6 -> 0.45 mg/m2)",
+      "If a third dose reduction is required, treatment should be stopped"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "creatinine_clearance_ml_min": "Required for dose modification decisions (both drugs)",
+      "bsa_m2": "Required for dose calculation",
+      "prior_cisplatin": "Must confirm patient has NOT previously received cisplatin"
+    },
+    "disease_site": "Gynaecology",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Cisplatin",
+        "dose": 50,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Day 1 of each 21-day cycle",
+        "duration_minutes": 120,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Infuse at rate of 1mg/min cisplatin (minimum 120 minutes). Dose banded according to CSCCN agreed bands. Cisplatin is an exfoliant - extravasation precautions required.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 2.0,
+        "notes": "Day 1 of each 21-day cycle | Infuse at rate of 1mg/min cisplatin (minimum 120 minutes). Dose banded according to CSCCN agreed bands. Cisplatin is an exfoliant - extravasation precautions required."
+      },
+      {
+        "drug_name": "Topotecan",
+        "dose": 0.75,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3
+        ],
+        "frequency": "Days 1, 2 and 3 of each 21-day cycle",
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Round dose to nearest 0.1mg (up if halfway). Topotecan is an exfoliant - extravasation precautions required. On Day 1 topotecan is given before cisplatin.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.5,
+        "notes": "Days 1, 2 and 3 of each 21-day cycle | Round dose to nearest 0.1mg (up if halfway). Topotecan is an exfoliant - extravasation precautions required. On Day 1 topotecan is given before cisplatin."
+      }
+    ]
+  },
+  {
+    "protocol_id": "uterine_cisplatin_docetaxel",
+    "protocol_code": "CISP-DOCE",
+    "protocol_name": "Cisplatin-Docetaxel",
+    "category": "gynaecology",
+    "indication": "Recurrent/advanced uterine cancer; Palliative intent; WHO performance status 0, 1, 2",
+    "version": "1.1",
+    "cycle_length_days": 21,
+    "total_cycles": 6,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Cisplatin",
+        "dose": 60,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Day 1 of each 21-day cycle",
+        "duration_minutes": 120,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Infuse at rate of 1mg/min cisplatin (minimum 120 minutes). Dose banded according to CSCCN agreed bands. Cisplatin is an exfoliant - extravasation precautions required. Administered after docetaxel.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Docetaxel",
+        "dose": 70,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Day 1 of each 21-day cycle",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded according to CSCCN agreed bands. Administered before cisplatin. Docetaxel is an exfoliant - extravasation precautions required. Doses > 200mg should be diluted in 500ml sodium chloride 0.9% (max concentration 0.74mg/ml). Fluid retention from docetaxel does not warrant dose alteration.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "Starting 24 hours before docetaxel (Day -1), twice daily for 3 days",
+        "frequency": "Twice daily for 3 days (Day -1, Day 1, Day 2)",
+        "notes": "To prevent fluid retention and hypersensitivity reactions. If patient forgets pre-medication, give dexamethasone 20mg IV bolus 15-30 minutes prior to chemotherapy instead"
+      },
+      {
+        "drug_name": "Aprepitant",
+        "dose": 125,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes before chemotherapy on Day 1",
+        "frequency": "Once on Day 1",
+        "notes": null
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes before chemotherapy",
+        "frequency": "Once on Day 1",
+        "notes": "May be given as IV"
+      },
+      {
+        "drug_name": "Furosemide",
+        "dose": 40,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "Pre-hydration before cisplatin",
+        "frequency": "Once",
+        "notes": "Part of cisplatin pre-hydration"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9% with magnesium sulphate 16mmol and potassium chloride 20mmol",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Pre-hydration before cisplatin",
+        "frequency": "Once",
+        "notes": "Over 60 minutes"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9% with magnesium sulphate 16mmol and potassium chloride 20mmol",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Post-hydration after cisplatin",
+        "frequency": "Once",
+        "notes": "Over 60 minutes"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Aprepitant",
+        "dose": 80,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once daily for 2 days starting day after chemotherapy",
+        "instructions": "Cycles 1-5; on cycle 6 also prescribed"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice daily for 3 days (Day -1, Day 1, Day 2 of each cycle)",
+        "instructions": "Taken the day before, the day of, and the day after docetaxel. Supply from TTO. If patient forgets, give dexamethasone 20mg IV stat 15-30 minutes prior to chemotherapy."
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Three times a day as required for nausea",
+        "instructions": null
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice daily for 3 days starting evening of chemotherapy",
+        "instructions": null
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils",
+        "condition": "Neutrophils >= 1.0 x10^9/L",
+        "affected_drugs": [
+          "Cisplatin",
+          "Docetaxel"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Proceed at full dose"
+      },
+      {
+        "parameter": "Neutrophils",
+        "condition": "Neutrophils < 1.0 x10^9/L",
+        "affected_drugs": [
+          "Cisplatin",
+          "Docetaxel"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay for 7 days. If resolved to >=1x10^9/L continue at full dose"
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets >= 100 x10^9/L",
+        "affected_drugs": [
+          "Cisplatin",
+          "Docetaxel"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Proceed at full dose"
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets < 100 x10^9/L",
+        "affected_drugs": [
+          "Cisplatin",
+          "Docetaxel"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay for 7 days. If resolved to >=100x10^9/L continue at full dose"
+      },
+      {
+        "parameter": "Hepatic (Docetaxel)",
+        "condition": "AST/ALT >= 1.5xULN and Alk Phos >= 2.5xULN",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "reduce",
+        "factor": 0.75,
+        "notes": "Give 75% of docetaxel dose"
+      },
+      {
+        "parameter": "Hepatic (Docetaxel)",
+        "condition": "Bilirubin >= 22 umol/L and/or AST/ALT >= 3.5xULN and Alk Phos >= 6xULN",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Docetaxel not recommended"
+      },
+      {
+        "parameter": "Renal (Cisplatin)",
+        "condition": "Creatinine clearance >= 60 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Full dose"
+      },
+      {
+        "parameter": "Renal (Cisplatin)",
+        "condition": "Creatinine clearance 45-59 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "reduce",
+        "factor": 0.75,
+        "notes": "Reduce to 75%"
+      },
+      {
+        "parameter": "Renal (Cisplatin)",
+        "condition": "Creatinine clearance < 45 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Consider alternative"
+      },
+      {
+        "parameter": "Docetaxel peripheral neuropathy",
+        "condition": "NCI-CTC grade 3 peripheral neuropathy",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "reduce",
+        "factor": 1.0,
+        "notes": "Reduce from 70mg/m2 to 55mg/m2 once neuropathy resolves to grade 2 or below. If grade 3 neuropathy occurred at <55mg/m2 or grade 4 develops, stop treatment"
+      },
+      {
+        "parameter": "Docetaxel cutaneous toxicity",
+        "condition": "NCI-CTC grade 3 cutaneous toxicity on Day 1",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay until resolved to grade 1 or below; reduce subsequent doses from 70mg/m2 to 55mg/m2. If at 55mg/m2 or no recovery after 2 weeks, stop docetaxel. Grade 4 cutaneous toxicity: stop docetaxel"
+      },
+      {
+        "parameter": "Docetaxel lacrimation",
+        "condition": "Excessive tearing/lacrimation (related to cumulative docetaxel dose, typically after ~400mg/m2)",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "reduce",
+        "factor": 0.8,
+        "notes": "Symptomatic treatment with hypromellose 0.3% eye drops QID first. If ocular irritation continues, reduce docetaxel to 80% of original dose"
+      },
+      {
+        "parameter": "Non-haematological toxicity",
+        "condition": "NCI-CTC grade 3 or above",
+        "affected_drugs": [
+          "Cisplatin",
+          "Docetaxel"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Delay until resolved to grade 1 or below. Reduce causative agent to 75% or discontinue"
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "FBC, U&Es, LFTs and EDTA or calculated creatinine clearance prior to each cycle. Consider blood transfusion if symptomatic anaemia or Hb < 8g/dL."
+    },
+    "monitoring_requirements": [
+      "FBC prior to each cycle",
+      "U&Es prior to each cycle",
+      "LFTs prior to each cycle",
+      "EDTA or calculated creatinine clearance prior to each cycle"
+    ],
+    "special_warnings": [
+      "Palliative intent protocol for recurrent/advanced uterine cancer",
+      "Docetaxel premedication with dexamethasone 8mg twice daily for 3 days (starting 24 hours before docetaxel) is mandatory to prevent fluid retention and hypersensitivity reactions",
+      "If patient forgets dexamethasone premedication, give dexamethasone 20mg IV bolus 15-30 minutes before chemotherapy",
+      "Docetaxel hypersensitivity: minor symptoms (flushing, rash) - do not interrupt infusion; severe reactions (hypotension, bronchospasm, erythema) - discontinue immediately",
+      "Docetaxel doses > 200mg must be diluted in 500ml sodium chloride 0.9%",
+      "Fluid retention from docetaxel (weight gain) is not a reason to alter doses",
+      "Cisplatin and docetaxel are both exfoliants - extravasation precautions required",
+      "Cisplatin is highly emetogenic - aprepitant-based antiemesis required",
+      "If a third dose reduction is required, treatment should be stopped"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "creatinine_clearance_ml_min": "Required for cisplatin dose modification decisions",
+      "bsa_m2": "Required for dose calculation",
+      "lft_results": "Required for docetaxel hepatic dose modification",
+      "weight_kg": "Monitor for fluid retention from docetaxel"
+    },
+    "disease_site": "Gynaecology",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Cisplatin",
+        "dose": 60,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Day 1 of each 21-day cycle",
+        "duration_minutes": 120,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Infuse at rate of 1mg/min cisplatin (minimum 120 minutes). Dose banded according to CSCCN agreed bands. Cisplatin is an exfoliant - extravasation precautions required. Administered after docetaxel.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 2.0,
+        "notes": "Day 1 of each 21-day cycle | Infuse at rate of 1mg/min cisplatin (minimum 120 minutes). Dose banded according to CSCCN agreed bands. Cisplatin is an exfoliant - extravasation precautions required. Administered after docetaxel."
+      },
+      {
+        "drug_name": "Docetaxel",
+        "dose": 70,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Day 1 of each 21-day cycle",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded according to CSCCN agreed bands. Administered before cisplatin. Docetaxel is an exfoliant - extravasation precautions required. Doses > 200mg should be diluted in 500ml sodium chloride 0.9% (max concentration 0.74mg/ml). Fluid retention from docetaxel does not warrant dose alteration.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "Day 1 of each 21-day cycle | Dose banded according to CSCCN agreed bands. Administered before cisplatin. Docetaxel is an exfoliant - extravasation precautions required. Doses > 200mg should be diluted in 500ml sodium chloride 0.9% (max concentration 0.74mg/ml). Fluid retention from docetaxel does not warrant dose alteration."
+      }
+    ]
+  },
+  {
+    "protocol_id": "uterine_cisplatin_etoposide_po",
+    "protocol_code": "CISP-ETO-PO-UTER",
+    "protocol_name": "Cisplatin-Etoposide (oral) - Uterine",
+    "category": "gynaecology",
+    "indication": "Treatment of partially platinum-sensitive or platinum-refractory relapsed ovarian cancer; Small cell gynaecological cancers including those affecting the cervix, endometrium and ovaries; WHO performance status 0, 1, 2",
+    "version": "1.1",
+    "cycle_length_days": 28,
+    "total_cycles": 8,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Cisplatin",
+        "dose": 50,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "frequency": "Days 1, 8 and 15 of cycles 1 and 2 (28-day cycle)",
+        "duration_minutes": 120,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Infuse at a rate of 1mg/min cisplatin (minimum 120 minutes). Dose banded according to CSCCN agreed bands. Cisplatin is an exfoliant - extravasation precautions required. Cycles 1 and 2 only.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 50,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "frequency": "Once daily days 1-14 (cycles 1 and 2); once daily days 1-21 (cycles 3-8)",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Flat dose 50mg oral. Cycles 1-2: days 1-14 inclusive. Cycles 3-8: days 1-21 inclusive. Take one hour before food or on empty stomach. NPSA oral cytotoxic alert applies.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Aprepitant",
+        "dose": 125,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "Once on days 1, 8, 15 of cycles 1 and 2 only",
+        "notes": "Cycles 1 and 2 only"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "Once on days 1, 8, 15 of cycles 1 and 2 only",
+        "notes": "May be given as IV; cycles 1 and 2 only"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "frequency": "Once on days 1, 8, 15 of cycles 1 and 2 only",
+        "notes": "May be given as IV; cycles 1 and 2 only"
+      },
+      {
+        "drug_name": "Furosemide",
+        "dose": 40,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "Pre-hydration before cisplatin",
+        "frequency": "On each cisplatin day",
+        "notes": "May be given as IV; part of cisplatin pre-hydration"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9% with potassium chloride 20mmol and magnesium sulphate 16mmol",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Pre-hydration before cisplatin",
+        "frequency": "Once per cisplatin day",
+        "notes": "Over 60 minutes. Cisplatin pre-hydration"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9% with potassium chloride 20mmol and magnesium sulphate 16mmol",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Post-hydration after cisplatin",
+        "frequency": "Once per cisplatin day",
+        "notes": "Over 60 minutes. Cisplatin post-hydration"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Etoposide",
+        "dose": 50,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once daily for 14 days (cycles 1-2) or 21 days (cycles 3-8)",
+        "instructions": "Take one hour before food or on empty stomach. NPSA oral cytotoxic alert applies. Supply sufficient for days 1, 8, 15 of cycle for cycles 1-2"
+      },
+      {
+        "drug_name": "Aprepitant",
+        "dose": 80,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once daily for 2 days (days 2 and 3 after each cisplatin dose)",
+        "instructions": "Cycles 1 and 2 only. Supply sufficient quantities for days 1, 8, 15 of cycle"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once daily for 3 days after each cisplatin dose",
+        "instructions": "Cycles 1 and 2 only. Supply sufficient quantities for days 1, 8, 15 of cycle"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Three times a day as required",
+        "instructions": "Cycle 1 only. Supply 60 tablets or appropriate equivalent"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice daily for 3 days starting evening of cisplatin",
+        "instructions": "Cycles 1 and 2 only. Supply sufficient quantities for days 1, 8, 15 of cycle"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "Neutrophils >= 1.0 x10^9/L on Day 1",
+        "affected_drugs": [
+          "Cisplatin",
+          "Etoposide"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Proceed at full dose"
+      },
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "Neutrophils < 1.0 x10^9/L on Day 1",
+        "affected_drugs": [
+          "Cisplatin",
+          "Etoposide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay treatment for 7 days. If resolved to >=1x10^9/L after 7 days continue at full dose"
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "Platelets >= 100 x10^9/L on Day 1",
+        "affected_drugs": [
+          "Cisplatin",
+          "Etoposide"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Proceed at full dose"
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "Platelets < 100 x10^9/L on Day 1",
+        "affected_drugs": [
+          "Cisplatin",
+          "Etoposide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay for 7 days. If resolved to >=100x10^9/L continue at full dose"
+      },
+      {
+        "parameter": "Neutrophils (Days 8 and 15)",
+        "condition": "Neutrophils < 1.0 x10^9/L on Day 8 or Day 15",
+        "affected_drugs": [
+          "Cisplatin",
+          "Etoposide"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Delay cisplatin and stop etoposide"
+      },
+      {
+        "parameter": "Platelets (Days 8 and 15)",
+        "condition": "Platelets < 50 x10^9/L on Day 8 or Day 15",
+        "affected_drugs": [
+          "Cisplatin",
+          "Etoposide"
+        ],
+        "action": "delay",
+        "factor": 0,
+        "notes": "Delay cisplatin and stop etoposide"
+      },
+      {
+        "parameter": "Hepatic (Etoposide)",
+        "condition": "Bilirubin 26-51 umol/L or AST/ALT 60-180 units",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "reduce",
+        "factor": 1.0,
+        "notes": "Consider reducing course length"
+      },
+      {
+        "parameter": "Hepatic (Etoposide)",
+        "condition": "Bilirubin >= 51 umol/L or AST/ALT >= 180 units",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "reduce",
+        "factor": 1.0,
+        "notes": "Clinical decision"
+      },
+      {
+        "parameter": "Renal (Cisplatin)",
+        "condition": "Creatinine clearance >= 60 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Full dose"
+      },
+      {
+        "parameter": "Renal (Cisplatin)",
+        "condition": "Creatinine clearance 45-59 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "reduce",
+        "factor": 0.75,
+        "notes": "Reduce to 75%"
+      },
+      {
+        "parameter": "Renal (Cisplatin)",
+        "condition": "Creatinine clearance < 45 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Consider alternative"
+      },
+      {
+        "parameter": "Renal (Etoposide)",
+        "condition": "Creatinine clearance >= 50 ml/min",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Full dose"
+      },
+      {
+        "parameter": "Renal (Etoposide)",
+        "condition": "Creatinine clearance 15-50 ml/min",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "reduce",
+        "factor": 0.75,
+        "notes": "Reduce to 75%"
+      },
+      {
+        "parameter": "Renal (Etoposide)",
+        "condition": "Creatinine clearance < 15 ml/min",
+        "affected_drugs": [
+          "Etoposide"
+        ],
+        "action": "reduce",
+        "factor": 0.5,
+        "notes": "Reduce to 50%"
+      },
+      {
+        "parameter": "Non-haematological toxicity",
+        "condition": "NCI-CTC grade 3 or above",
+        "affected_drugs": [
+          "Cisplatin",
+          "Etoposide"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Delay until resolved to NCI-CTC grade 1 or below. Reduce causative agent to 75% or discontinue"
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "FBC, U&Es and LFTs prior to days 1, 8, 15. EDTA or calculated creatinine clearance and CA125 prior to day 1 of each cycle. Consider formal audiology testing. Consider blood transfusion if symptomatic anaemia or Hb < 8g/dL."
+    },
+    "monitoring_requirements": [
+      "FBC prior to days 1, 8, 15 of treatment",
+      "U&Es prior to days 1, 8, 15 of treatment",
+      "LFTs prior to days 1, 8, 15 of treatment",
+      "EDTA or calculated creatinine clearance prior to day 1 of each cycle",
+      "CA125 prior to day 1 of each cycle",
+      "Consider formal audiology testing"
+    ],
+    "special_warnings": [
+      "NPSA oral cytotoxic alert (NPSA/2008/RRR001) must be followed in relation to oral etoposide",
+      "Two-phase regimen: cycles 1-2 contain cisplatin (days 1, 8, 15) and etoposide (days 1-14); cycles 3-8 contain etoposide only (days 1-21)",
+      "Cisplatin is an exfoliant - extravasation precautions required",
+      "Patients must be advised to drink at least 3 litres of fluid in 24 hours after cisplatin administration",
+      "Cisplatin is highly emetogenic - aprepitant-based antiemesis required",
+      "Consider formal audiology testing due to ototoxicity risk of cisplatin",
+      "If a third dose reduction is required, treatment should be stopped",
+      "This is the Uterine site version of Cisplatin-Etoposide PO; identical regimen to Cervix-Cisplatin-Etoposide PO but for uterine primary"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "creatinine_clearance_ml_min": "Required for dose modification decisions",
+      "bsa_m2": "Required for cisplatin dose calculation",
+      "lft_results": "Required for etoposide dose modification"
+    },
+    "disease_site": "Gynaecology",
+    "number_of_cycles": 8,
+    "drugs": [
+      {
+        "drug_name": "Cisplatin",
+        "dose": 50,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "frequency": "Days 1, 8 and 15 of cycles 1 and 2 (28-day cycle)",
+        "duration_minutes": 120,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Infuse at a rate of 1mg/min cisplatin (minimum 120 minutes). Dose banded according to CSCCN agreed bands. Cisplatin is an exfoliant - extravasation precautions required. Cycles 1 and 2 only.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 2.0,
+        "notes": "Days 1, 8 and 15 of cycles 1 and 2 (28-day cycle) | Infuse at a rate of 1mg/min cisplatin (minimum 120 minutes). Dose banded according to CSCCN agreed bands. Cisplatin is an exfoliant - extravasation precautions required. Cycles 1 and 2 only."
+      },
+      {
+        "drug_name": "Etoposide",
+        "dose": 50,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "frequency": "Once daily days 1-14 (cycles 1 and 2); once daily days 1-21 (cycles 3-8)",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Flat dose 50mg oral. Cycles 1-2: days 1-14 inclusive. Cycles 3-8: days 1-21 inclusive. Take one hour before food or on empty stomach. NPSA oral cytotoxic alert applies.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "Once daily days 1-14 (cycles 1 and 2); once daily days 1-21 (cycles 3-8) | Flat dose 50mg oral. Cycles 1-2: days 1-14 inclusive. Cycles 3-8: days 1-21 inclusive. Take one hour before food or on empty stomach. NPSA oral cytotoxic alert applies."
+      }
+    ]
+  },
+  {
+    "protocol_id": "ovary_cyclophosphamide_po",
+    "protocol_code": "CYCLO-PO",
+    "protocol_name": "Cyclophosphamide Oral",
+    "category": "gynaecology",
+    "indication": "Relapsed/refractory ovarian cancer in patients unsuitable for other treatments; Palliative; Performance status 0, 1, 2",
+    "version": "1.1",
+    "cycle_length_days": 28,
+    "total_cycles": 6,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 50,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "Once daily days 1-28 inclusive (continuous)",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Flat dose 50mg oral. Swallow whole with plenty of water, do not chew. NPSA oral cytotoxic alert applies.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 50,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once daily for 28 days",
+        "instructions": "Swallow whole with plenty of water, do not chew. NPSA oral cytotoxic alert applies."
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Three times a day as required",
+        "instructions": "As required for nausea"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils",
+        "condition": "Neutrophils >= 1.0 x10^9/L",
+        "affected_drugs": [
+          "Cyclophosphamide"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Proceed at full dose"
+      },
+      {
+        "parameter": "Neutrophils",
+        "condition": "Neutrophils < 1.0 x10^9/L",
+        "affected_drugs": [
+          "Cyclophosphamide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until recovery to >=1x10^9/L. If recovered within 7 days resume at full dose. If not recovered at 7 days, delay until recovery then continue with 50mg on alternate days or discontinue as appropriate"
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets >= 75 x10^9/L",
+        "affected_drugs": [
+          "Cyclophosphamide"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Proceed at full dose"
+      },
+      {
+        "parameter": "Platelets",
+        "condition": "Platelets < 75 x10^9/L",
+        "affected_drugs": [
+          "Cyclophosphamide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold until recovery to >=75x10^9/L. If recovered within 7 days resume at full dose. If not recovered at 7 days, delay until recovery then continue with 50mg on alternate days or discontinue as appropriate"
+      },
+      {
+        "parameter": "Hepatic impairment",
+        "condition": "Bilirubin >= 20 umol/L or AST/ALT 2-3xULN",
+        "affected_drugs": [
+          "Cyclophosphamide"
+        ],
+        "action": "reduce",
+        "factor": 1.0,
+        "notes": "Clinical decision. Evidence that exposure to active metabolites may not be increased, suggesting dose reduction may not be necessary"
+      },
+      {
+        "parameter": "Renal impairment",
+        "condition": "Creatinine clearance >= 20 ml/min",
+        "affected_drugs": [
+          "Cyclophosphamide"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Full dose"
+      },
+      {
+        "parameter": "Renal impairment",
+        "condition": "Creatinine clearance 10-20 ml/min",
+        "affected_drugs": [
+          "Cyclophosphamide"
+        ],
+        "action": "reduce",
+        "factor": 1.0,
+        "notes": "Consider 50mg on alternate days"
+      },
+      {
+        "parameter": "Renal impairment",
+        "condition": "Creatinine clearance < 10 ml/min",
+        "affected_drugs": [
+          "Cyclophosphamide"
+        ],
+        "action": "omit",
+        "factor": 0,
+        "notes": "Omit cyclophosphamide"
+      },
+      {
+        "parameter": "Non-haematological toxicity",
+        "condition": "NCI-CTC grade 3 or above non-haematological toxicity",
+        "affected_drugs": [
+          "Cyclophosphamide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay until resolved to NCI-CTC grade 1 or below. Consider giving 50mg on alternate days or discontinue as appropriate"
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 75,
+      "notes": "FBC, LFTs and U&Es prior to day 1 of treatment. Note: platelet threshold for this protocol is 75 x10^9/L (not the standard 100). Consider blood transfusion if symptomatic anaemia or Hb < 8g/dL."
+    },
+    "monitoring_requirements": [
+      "FBC prior to day 1 of each cycle",
+      "LFTs prior to day 1 of each cycle",
+      "U&Es prior to day 1 of each cycle"
+    ],
+    "special_warnings": [
+      "NPSA oral cytotoxic alert (NPSA/2008/RRR001) must be followed in relation to oral cyclophosphamide",
+      "Palliative protocol for relapsed/refractory ovarian cancer in patients unsuitable for other treatments",
+      "Cyclophosphamide must be swallowed whole with plenty of water - do not chew",
+      "Haemorrhagic cystitis is a rare but serious adverse effect - ensure adequate hydration",
+      "Platelet treatment delay threshold for this protocol is 75 x10^9/L (lower than standard 100 x10^9/L)",
+      "If not recovered within 7 days consider 50mg on alternate days as dose reduction option",
+      "If a third dose reduction is required, treatment should be stopped",
+      "Metronomic low-dose oral schedule - continuous dosing throughout the 28-day cycle"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "creatinine_clearance_ml_min": "Required for renal dose modification decisions",
+      "performance_status": "Must be 0, 1 or 2; unsuitable for other treatments"
+    },
+    "disease_site": "Gynaecology",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Cyclophosphamide",
+        "dose": 50,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "Once daily days 1-28 inclusive (continuous)",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Flat dose 50mg oral. Swallow whole with plenty of water, do not chew. NPSA oral cytotoxic alert applies.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "Once daily days 1-28 inclusive (continuous) | Flat dose 50mg oral. Swallow whole with plenty of water, do not chew. NPSA oral cytotoxic alert applies."
+      }
+    ]
+  }
+]

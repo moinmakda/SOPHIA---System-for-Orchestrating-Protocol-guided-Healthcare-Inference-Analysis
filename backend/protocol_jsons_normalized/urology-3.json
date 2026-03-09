@@ -1,0 +1,2784 @@
+[
+  {
+    "protocol_id": "bladder_cisplatin_35_gemcitabine",
+    "protocol_code": "BLADDER-CIS35-GEM",
+    "protocol_name": "Bladder-Cisplatin (35)-Gemcitabine",
+    "category": "urology",
+    "indication": "For use in patients unable to tolerate standard cisplatin (70)-gemcitabine due to poor performance status, poor tolerance of cisplatin (70)-gemcitabine, or impaired renal function",
+    "version": "1.1",
+    "cycle_length_days": 21,
+    "total_cycles": 6,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Cisplatin",
+        "dose": 35,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8
+        ],
+        "frequency": null,
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Infuse at rate of 1mg/min (minimum 60 minutes). Dose banded according to CSCCN agreed bands.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Gemcitabine",
+        "dose": 1000,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8
+        ],
+        "frequency": null,
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded according to CSCCN agreed bands. If bilirubin >30 micromol/L initiate at 800mg/m².",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "days": [
+          1,
+          8
+        ],
+        "notes": "Oral or intravenous"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "days": [
+          1,
+          8
+        ],
+        "notes": "Oral or intravenous"
+      },
+      {
+        "drug_name": "Furosemide",
+        "dose": 40,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "Pre-hydration when required",
+        "days": [
+          1,
+          8
+        ],
+        "notes": "Oral or intravenous, when required"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9% with magnesium sulphate 8mmol",
+        "dose": 500,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Pre-hydration over 30 minutes",
+        "days": [
+          1,
+          8
+        ],
+        "notes": "Pre-hydration"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9%",
+        "dose": 500,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Post-hydration over 30 minutes",
+        "days": [
+          1,
+          8
+        ],
+        "notes": "Post-hydration. Patients should drink at least 3 litres of fluid in 24 hours after cisplatin."
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice a day for 3 days",
+        "notes": "Starting the day after chemotherapy. Dispense supply for both day 1 and 8 of cycle."
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Three times a day as required",
+        "notes": "For nausea. Dispense 10 days or original pack to cover day 1 and 8."
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice a day for 3 days",
+        "notes": "Starting on the evening of chemotherapy treatment. Dispense supply for both day 1 and 8 of cycle."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": ">=1.0 x10^9/L",
+        "affected_drugs": [
+          "Cisplatin",
+          "Gemcitabine"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "<1.0 x10^9/L - 1st occurrence",
+        "affected_drugs": [
+          "Cisplatin",
+          "Gemcitabine"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay until recovery"
+      },
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "<1.0 x10^9/L - 2nd occurrence",
+        "affected_drugs": [
+          "Cisplatin",
+          "Gemcitabine"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Delay until recovery then give 75% of original dose"
+      },
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "Febrile neutropenia - 1st occurrence",
+        "affected_drugs": [
+          "Cisplatin",
+          "Gemcitabine"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Delay until recovery then re-start at 75% of original dose"
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": ">=100 x10^9/L",
+        "affected_drugs": [
+          "Cisplatin",
+          "Gemcitabine"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "<100 x10^9/L - 1st occurrence",
+        "affected_drugs": [
+          "Cisplatin",
+          "Gemcitabine"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Delay until recovery then give 75% of original dose"
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "<100 x10^9/L - 2nd occurrence",
+        "affected_drugs": [
+          "Cisplatin",
+          "Gemcitabine"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Delay until recovery then give 50% of original dose"
+      },
+      {
+        "parameter": "Neutrophils (Day 8)",
+        "condition": ">=1.0 x10^9/L",
+        "affected_drugs": [
+          "Cisplatin",
+          "Gemcitabine"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "parameter": "Neutrophils (Day 8)",
+        "condition": "0.5-1.0 x10^9/L",
+        "affected_drugs": [
+          "Cisplatin",
+          "Gemcitabine"
+        ],
+        "action": "reduce",
+        "factor": 0.75,
+        "notes": "Give 75% dose"
+      },
+      {
+        "parameter": "Neutrophils (Day 8)",
+        "condition": "<0.5 x10^9/L",
+        "affected_drugs": [
+          "Cisplatin",
+          "Gemcitabine"
+        ],
+        "action": "omit",
+        "factor": 0.0,
+        "notes": "Omit day 8 dose"
+      },
+      {
+        "parameter": "Platelets (Day 8)",
+        "condition": ">=100 x10^9/L",
+        "affected_drugs": [
+          "Cisplatin",
+          "Gemcitabine"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "parameter": "Platelets (Day 8)",
+        "condition": "50-100 x10^9/L",
+        "affected_drugs": [
+          "Cisplatin",
+          "Gemcitabine"
+        ],
+        "action": "reduce",
+        "factor": 0.75,
+        "notes": "Give 75% dose"
+      },
+      {
+        "parameter": "Platelets (Day 8)",
+        "condition": "<50 x10^9/L",
+        "affected_drugs": [
+          "Cisplatin",
+          "Gemcitabine"
+        ],
+        "action": "omit",
+        "factor": 0.0,
+        "notes": "Omit day 8 dose"
+      },
+      {
+        "parameter": "Hepatic - Bilirubin (Gemcitabine)",
+        "condition": "Bilirubin >30 micromol/L",
+        "affected_drugs": [
+          "Gemcitabine"
+        ],
+        "action": "reduce",
+        "factor": 0.8,
+        "notes": "Initiate treatment at 800mg/m² (local practice limit; may vary from published sources)"
+      },
+      {
+        "parameter": "Renal - Creatinine Clearance (Cisplatin)",
+        "condition": "CrCl >=40 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "100% dose. Regimen tolerated at CrCl as low as 40ml/min."
+      },
+      {
+        "parameter": "Renal - Creatinine Clearance (Cisplatin)",
+        "condition": "CrCl <40 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "delay",
+        "factor": 0.0,
+        "notes": "Consider alternative"
+      },
+      {
+        "parameter": "Renal - Creatinine Clearance (Gemcitabine)",
+        "condition": "CrCl >=30 ml/min",
+        "affected_drugs": [
+          "Gemcitabine"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "parameter": "Renal - Creatinine Clearance (Gemcitabine)",
+        "condition": "CrCl <30 ml/min",
+        "affected_drugs": [
+          "Gemcitabine"
+        ],
+        "action": "reduce",
+        "factor": 1.0,
+        "notes": "Consider dose reduction"
+      },
+      {
+        "parameter": "Non-haematological NCI-CTC grade >=3",
+        "condition": "Grade 3 or above toxicity",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Delay until resolved to grade 1 or below, then reduce causative agent to 75% or discontinue as appropriate"
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "FBC, LFTs and U&Es prior to day 1 and 8. Creatinine clearance prior to each cycle."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to day 1 and 8 of treatment",
+      "Calculated or measured creatinine clearance prior to each cycle",
+      "EDTA may be considered prior to cycle one or if significant changes in renal function during treatment",
+      "Consider blood transfusion if symptomatic anaemia or haemoglobin <8g/dL"
+    ],
+    "special_warnings": [
+      "Cisplatin is an exfoliant - extravasation risk",
+      "Gemcitabine is a neutral vesicant",
+      "Patients should drink at least 3 litres of fluid in 24 hours after cisplatin administration",
+      "Third dose reduction triggers treatment cessation",
+      "Dose reductions should not be re-escalated without consultant approval",
+      "Gastric protection with PPI or H2 antagonist may be considered in high risk GI patients",
+      "Mouthwashes per local/national policy for mucositis"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "body_surface_area": true,
+      "creatinine_clearance": true,
+      "performance_status": true,
+      "bilirubin": true
+    },
+    "disease_site": "Urology",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Cisplatin",
+        "dose": 35,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8
+        ],
+        "frequency": null,
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Infuse at rate of 1mg/min (minimum 60 minutes). Dose banded according to CSCCN agreed bands.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "Infuse at rate of 1mg/min (minimum 60 minutes). Dose banded according to CSCCN agreed bands."
+      },
+      {
+        "drug_name": "Gemcitabine",
+        "dose": 1000,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8
+        ],
+        "frequency": null,
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded according to CSCCN agreed bands. If bilirubin >30 micromol/L initiate at 800mg/m².",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.5,
+        "notes": "Dose banded according to CSCCN agreed bands. If bilirubin >30 micromol/L initiate at 800mg/m²."
+      }
+    ]
+  },
+  {
+    "protocol_id": "bladder_cisplatin_70_gemcitabine",
+    "protocol_code": "BLADDER-CIS70-GEM",
+    "protocol_name": "Bladder-Cisplatin (70)-Gemcitabine",
+    "category": "urology",
+    "indication": "First line treatment of locally advanced or metastatic urothelial cancer; adjuvant/neo-adjuvant treatment of urothelial cancer; WHO performance status 0, 1, 2",
+    "version": "1.1",
+    "cycle_length_days": 21,
+    "total_cycles": 6,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Cisplatin",
+        "dose": 70,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 120,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Infuse at rate of 1mg/min (minimum 120 minutes). Dose banded according to CSCCN agreed bands.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Gemcitabine",
+        "dose": 1000,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8
+        ],
+        "frequency": null,
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded according to CSCCN agreed bands. If bilirubin >=30 micromol/L initiate at 800mg/m². If dose modified on day 1 continue reduced dose on day 8.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Aprepitant",
+        "dose": 125,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy on day 1",
+        "days": [
+          1
+        ],
+        "notes": "Day 1 only"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy on day 1",
+        "days": [
+          1
+        ],
+        "notes": "Oral or intravenous"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy on day 1",
+        "days": [
+          1
+        ],
+        "notes": "Oral or intravenous"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy on day 8",
+        "days": [
+          8
+        ],
+        "notes": "Oral or intravenous"
+      },
+      {
+        "drug_name": "Furosemide",
+        "dose": 40,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "Pre-hydration",
+        "days": [
+          1
+        ],
+        "notes": "Oral or intravenous"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9% with magnesium sulphate 16mmol and potassium chloride 20mmol",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Pre-hydration over 60 minutes",
+        "days": [
+          1
+        ],
+        "notes": "Pre-hydration"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9% with magnesium sulphate 16mmol and potassium chloride 20mmol",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Post-hydration over 60 minutes",
+        "days": [
+          1
+        ],
+        "notes": "Post-hydration. Patients should drink at least 3 litres of fluid in 24 hours after cisplatin."
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Aprepitant",
+        "dose": 80,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once a day on days 2 and 3",
+        "notes": "Take home from day 1"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once a day for 3 days",
+        "notes": "Starting on day 2 of chemotherapy"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Three times a day as required",
+        "notes": "For nausea. Supply 10 days or original pack to cover day 1 and day 8."
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice a day for 3 days",
+        "notes": "Starting on the evening of day 1 treatment"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": ">=1.0 x10^9/L",
+        "affected_drugs": [
+          "Cisplatin",
+          "Gemcitabine"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "<1.0 x10^9/L - 1st occurrence",
+        "affected_drugs": [
+          "Cisplatin",
+          "Gemcitabine"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay until recovery"
+      },
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "<1.0 x10^9/L - 2nd occurrence",
+        "affected_drugs": [
+          "Cisplatin",
+          "Gemcitabine"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Delay until recovery then give 75% of original dose"
+      },
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "Febrile neutropenia - 1st occurrence",
+        "affected_drugs": [
+          "Cisplatin",
+          "Gemcitabine"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Delay until recovery then re-start at 75% of original dose"
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": ">=100 x10^9/L",
+        "affected_drugs": [
+          "Cisplatin",
+          "Gemcitabine"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "<100 x10^9/L - 1st occurrence",
+        "affected_drugs": [
+          "Cisplatin",
+          "Gemcitabine"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Delay until recovery then give 75% of original dose"
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "<100 x10^9/L - 2nd occurrence",
+        "affected_drugs": [
+          "Cisplatin",
+          "Gemcitabine"
+        ],
+        "action": "delay",
+        "factor": 0.5,
+        "notes": "Delay until recovery then give 50% of original dose"
+      },
+      {
+        "parameter": "Neutrophils (Day 8)",
+        "condition": ">=1.0 x10^9/L",
+        "affected_drugs": [
+          "Gemcitabine"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "100% dose (Day 8 modifications apply to gemcitabine only)"
+      },
+      {
+        "parameter": "Neutrophils (Day 8)",
+        "condition": "0.5-1.0 x10^9/L",
+        "affected_drugs": [
+          "Gemcitabine"
+        ],
+        "action": "reduce",
+        "factor": 0.75,
+        "notes": "Give 75% dose"
+      },
+      {
+        "parameter": "Neutrophils (Day 8)",
+        "condition": "<0.5 x10^9/L",
+        "affected_drugs": [
+          "Gemcitabine"
+        ],
+        "action": "omit",
+        "factor": 0.0,
+        "notes": "Omit day 8 dose"
+      },
+      {
+        "parameter": "Platelets (Day 8)",
+        "condition": ">=100 x10^9/L",
+        "affected_drugs": [
+          "Gemcitabine"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "parameter": "Platelets (Day 8)",
+        "condition": "50-100 x10^9/L",
+        "affected_drugs": [
+          "Gemcitabine"
+        ],
+        "action": "reduce",
+        "factor": 0.75,
+        "notes": "Give 75% dose"
+      },
+      {
+        "parameter": "Platelets (Day 8)",
+        "condition": "<50 x10^9/L",
+        "affected_drugs": [
+          "Gemcitabine"
+        ],
+        "action": "omit",
+        "factor": 0.0,
+        "notes": "Omit day 8 dose"
+      },
+      {
+        "parameter": "Hepatic - Bilirubin (Gemcitabine)",
+        "condition": "Bilirubin >=30 micromol/L",
+        "affected_drugs": [
+          "Gemcitabine"
+        ],
+        "action": "reduce",
+        "factor": 0.8,
+        "notes": "Initiate at 800mg/m² (local practice limit)"
+      },
+      {
+        "parameter": "Renal - Creatinine Clearance (Cisplatin)",
+        "condition": "CrCl >=60 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "parameter": "Renal - Creatinine Clearance (Cisplatin)",
+        "condition": "CrCl 40-59 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "reduce",
+        "factor": 0.5,
+        "notes": "Consider cisplatin (35)-gemcitabine (split dose cisplatin)"
+      },
+      {
+        "parameter": "Renal - Creatinine Clearance (Cisplatin)",
+        "condition": "CrCl <=39 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "omit",
+        "factor": 0.0,
+        "notes": "Consider alternative"
+      },
+      {
+        "parameter": "Renal - Creatinine Clearance (Gemcitabine)",
+        "condition": "CrCl >=30 ml/min",
+        "affected_drugs": [
+          "Gemcitabine"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "parameter": "Renal - Creatinine Clearance (Gemcitabine)",
+        "condition": "CrCl <30 ml/min",
+        "affected_drugs": [
+          "Gemcitabine"
+        ],
+        "action": "reduce",
+        "factor": 1.0,
+        "notes": "Consider dose reduction"
+      },
+      {
+        "parameter": "Non-haematological NCI-CTC grade >=3",
+        "condition": "Grade 3 or above toxicity",
+        "affected_drugs": [
+          "all"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Delay until grade 1 or below, then reduce causative agent to 75% or discontinue"
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "FBC, LFTs and U&Es prior to day 1 and 8. Creatinine clearance prior to each cycle. CrCl >=60ml/min required for full dose cisplatin."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to day 1 and 8 of treatment",
+      "Calculated or measured creatinine clearance prior to each cycle",
+      "EDTA may be considered prior to cycle 1 or if significant changes in renal function",
+      "Consider blood transfusion if symptomatic anaemia or haemoglobin <8g/dL"
+    ],
+    "special_warnings": [
+      "Cisplatin is an exfoliant - extravasation risk",
+      "Gemcitabine is a neutral vesicant",
+      "Patients should drink at least 3 litres of fluid in 24 hours after cisplatin administration",
+      "If day 1 gemcitabine dose modified, continue the reduced dose on day 8",
+      "Third dose reduction triggers treatment cessation",
+      "Dose reductions should not be re-escalated without consultant approval",
+      "Gastric protection with PPI or H2 antagonist may be considered in high risk patients",
+      "Mouthwashes per local/national policy for mucositis",
+      "Cisplatin: mandatory IV hydration required — pre-hydration and post-hydration per local cisplatin hydration protocol. Monitor urine output, U&Es, and Mg²⁺ before and after each cycle."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "body_surface_area": true,
+      "creatinine_clearance": true,
+      "performance_status": true,
+      "bilirubin": true
+    },
+    "disease_site": "Urology",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Cisplatin",
+        "dose": 70,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 120,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Infuse at rate of 1mg/min (minimum 120 minutes). Dose banded according to CSCCN agreed bands.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 2.0,
+        "notes": "Infuse at rate of 1mg/min (minimum 120 minutes). Dose banded according to CSCCN agreed bands."
+      },
+      {
+        "drug_name": "Gemcitabine",
+        "dose": 1000,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8
+        ],
+        "frequency": null,
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded according to CSCCN agreed bands. If bilirubin >=30 micromol/L initiate at 800mg/m². If dose modified on day 1 continue reduced dose on day 8.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.5,
+        "notes": "Dose banded according to CSCCN agreed bands. If bilirubin >=30 micromol/L initiate at 800mg/m². If dose modified on day 1 continue reduced dose on day 8."
+      }
+    ]
+  },
+  {
+    "protocol_id": "bladder_accmvac_cisplatin_doxorubicin_methotrexate_vinblastine",
+    "protocol_code": "BLADDER-ACCMVAC",
+    "protocol_name": "Bladder-Cisplatin-Doxorubicin-Methotrexate-Vinblastine (AccMVAC)",
+    "category": "urology",
+    "indication": "First or second line treatment of locally advanced or metastatic urothelial cancer; WHO performance status 0, 1, 2",
+    "version": "1.1",
+    "cycle_length_days": 14,
+    "total_cycles": 6,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Cisplatin",
+        "dose": 70,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 120,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Infuse at rate of 1mg/min (minimum 120 minutes). Dose banded per CSCCN. CrCl >=60ml/min required.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Doxorubicin",
+        "dose": 30,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 10,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Intravenous bolus over 10 minutes. Dose banded per CSCCN. Vesicant - extravasation risk. Discontinue if cardiac failure develops.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Methotrexate",
+        "dose": 30,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 10,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Intravenous bolus over 10 minutes. Dose banded per CSCCN. Presence of third fluid compartment (ascites, renal failure) may delay methotrexate clearance and increase toxicity.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Vinblastine",
+        "dose": 3,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 10,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Rounded to nearest 1mg (up if halfway). Vesicant. NPSA/2008/RRR04 must be followed for IV vinca alkaloid administration.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Aprepitant",
+        "dose": 125,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "days": [
+          1
+        ],
+        "notes": "Day 1"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "days": [
+          1
+        ],
+        "notes": "Oral or intravenous"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "days": [
+          1
+        ],
+        "notes": "Oral or intravenous"
+      },
+      {
+        "drug_name": "Furosemide",
+        "dose": 40,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "Pre-hydration",
+        "days": [
+          1
+        ],
+        "notes": "Oral or intravenous"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9% with magnesium sulphate 16mmol and potassium chloride 20mmol",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Pre-hydration over 60 minutes",
+        "days": [
+          1
+        ],
+        "notes": "Pre-hydration"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9% with magnesium sulphate 16mmol and potassium chloride 20mmol",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Post-hydration over 60 minutes",
+        "days": [
+          1
+        ],
+        "notes": "Post-hydration"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Aprepitant",
+        "dose": 80,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once a day on days 2 and 3",
+        "notes": "Take home"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once a day for 3 days",
+        "notes": "Starting day after chemotherapy"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Three times a day as required",
+        "notes": "For nausea"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice a day for 3 days",
+        "notes": "Starting on evening of treatment"
+      },
+      {
+        "drug_name": "G-CSF (filgrastim or bioequivalent)",
+        "dose": 30,
+        "dose_unit": "units",
+        "route": "Subcutaneous",
+        "frequency": "Once a day for 7 days starting on day 3",
+        "notes": "30 million units SC daily for 7 days from day 3. Alternatively lenograstim 33.6 million units SC daily x7 days from day 3, or pegfilgrastim 6mg SC once on day 2."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": ">=1.0 x10^9/L",
+        "affected_drugs": [
+          "Cisplatin",
+          "Doxorubicin",
+          "Methotrexate",
+          "Vinblastine"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "<1.0 x10^9/L - 1st occurrence, recovery within 7 days",
+        "affected_drugs": [
+          "Cisplatin",
+          "Doxorubicin",
+          "Methotrexate",
+          "Vinblastine"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay until recovery. If recovery within 7 days resume at last dose administered."
+      },
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "<1.0 x10^9/L - 1st occurrence, recovery >7 days",
+        "affected_drugs": [
+          "Cisplatin",
+          "Doxorubicin",
+          "Methotrexate",
+          "Vinblastine"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "If recovery takes longer than 7 days give 75% of last dose"
+      },
+      {
+        "parameter": "Neutrophils (Day 1)",
+        "condition": "<1.0 x10^9/L - 2nd occurrence",
+        "affected_drugs": [
+          "Cisplatin",
+          "Doxorubicin",
+          "Methotrexate",
+          "Vinblastine"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Delay until recovery then give 75% of last dose"
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": ">=100 x10^9/L",
+        "affected_drugs": [
+          "Cisplatin",
+          "Doxorubicin",
+          "Methotrexate",
+          "Vinblastine"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "<100 x10^9/L - 1st occurrence, recovery within 7 days",
+        "affected_drugs": [
+          "Cisplatin",
+          "Doxorubicin",
+          "Methotrexate",
+          "Vinblastine"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "If recovery within 7 days resume at last dose"
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "<100 x10^9/L - 1st occurrence, recovery >7 days",
+        "affected_drugs": [
+          "Cisplatin",
+          "Doxorubicin",
+          "Methotrexate",
+          "Vinblastine"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "If >7 days give 75% of last dose"
+      },
+      {
+        "parameter": "Platelets (Day 1)",
+        "condition": "<100 x10^9/L - 2nd occurrence",
+        "affected_drugs": [
+          "Cisplatin",
+          "Doxorubicin",
+          "Methotrexate",
+          "Vinblastine"
+        ],
+        "action": "delay",
+        "factor": 0.75,
+        "notes": "Delay until recovery then give 75% of last dose"
+      },
+      {
+        "parameter": "Hepatic - Bilirubin (Doxorubicin)",
+        "condition": "Bilirubin 20-51 micromol/L",
+        "affected_drugs": [
+          "Doxorubicin"
+        ],
+        "action": "reduce",
+        "factor": 0.5,
+        "notes": "Give 50% dose. If AST 2-3xULN give 75%; if AST >3xULN give 50%."
+      },
+      {
+        "parameter": "Hepatic - Bilirubin (Doxorubicin)",
+        "condition": "Bilirubin 52-85 micromol/L",
+        "affected_drugs": [
+          "Doxorubicin"
+        ],
+        "action": "reduce",
+        "factor": 0.25,
+        "notes": "Give 25% dose"
+      },
+      {
+        "parameter": "Hepatic - Bilirubin (Doxorubicin)",
+        "condition": "Bilirubin >=80 micromol/L",
+        "affected_drugs": [
+          "Doxorubicin"
+        ],
+        "action": "omit",
+        "factor": 0.0,
+        "notes": "Omit doxorubicin"
+      },
+      {
+        "parameter": "Hepatic - Bilirubin (Methotrexate)",
+        "condition": "Bilirubin <50 micromol/L",
+        "affected_drugs": [
+          "Methotrexate"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "parameter": "Hepatic - Bilirubin (Methotrexate)",
+        "condition": "Bilirubin 51-85 micromol/L",
+        "affected_drugs": [
+          "Methotrexate"
+        ],
+        "action": "reduce",
+        "factor": 0.75,
+        "notes": "Give 75%. If AST >180 give 75%."
+      },
+      {
+        "parameter": "Hepatic - Bilirubin (Methotrexate)",
+        "condition": "Bilirubin >=86 micromol/L",
+        "affected_drugs": [
+          "Methotrexate"
+        ],
+        "action": "omit",
+        "factor": 0.0,
+        "notes": "Omit methotrexate"
+      },
+      {
+        "parameter": "Hepatic - Bilirubin (Vinblastine)",
+        "condition": "Bilirubin 26-51 micromol/L",
+        "affected_drugs": [
+          "Vinblastine"
+        ],
+        "action": "reduce",
+        "factor": 0.5,
+        "notes": "Give 50%. If AST >180 and bilirubin <52 give 50%."
+      },
+      {
+        "parameter": "Hepatic - Bilirubin (Vinblastine)",
+        "condition": "Bilirubin >=52 micromol/L",
+        "affected_drugs": [
+          "Vinblastine"
+        ],
+        "action": "omit",
+        "factor": 0.0,
+        "notes": "Give 50% or omit. If AST >180 and bilirubin >=52 omit vinblastine."
+      },
+      {
+        "parameter": "Renal - Creatinine Clearance (Cisplatin)",
+        "condition": "CrCl >=60 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "100% dose"
+      },
+      {
+        "parameter": "Renal - Creatinine Clearance (Cisplatin)",
+        "condition": "CrCl <60 ml/min",
+        "affected_drugs": [
+          "Cisplatin"
+        ],
+        "action": "omit",
+        "factor": 0.0,
+        "notes": "Consider alternative"
+      },
+      {
+        "parameter": "Renal - Creatinine Clearance (Methotrexate)",
+        "condition": "CrCl 46-60 ml/min",
+        "affected_drugs": [
+          "Methotrexate"
+        ],
+        "action": "reduce",
+        "factor": 0.65,
+        "notes": "Give 65% of dose"
+      },
+      {
+        "parameter": "Renal - Creatinine Clearance (Methotrexate)",
+        "condition": "CrCl 31-45 ml/min",
+        "affected_drugs": [
+          "Methotrexate"
+        ],
+        "action": "reduce",
+        "factor": 0.5,
+        "notes": "Give 50% of dose"
+      },
+      {
+        "parameter": "Renal - Creatinine Clearance (Methotrexate)",
+        "condition": "CrCl <30 ml/min",
+        "affected_drugs": [
+          "Methotrexate"
+        ],
+        "action": "omit",
+        "factor": 0.0,
+        "notes": "Omit methotrexate"
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 100,
+      "notes": "FBC, LFTs and U&Es prior to day 1. Creatinine clearance prior to each cycle. Baseline LVEF before starting (especially cardiac history or elderly). G-CSF is mandatory."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to day 1 of treatment",
+      "Calculated or measured creatinine clearance prior to each cycle",
+      "Ensure adequate cardiac function before starting treatment",
+      "Baseline LVEF should be considered, particularly in patients with cardiac history or elderly",
+      "Consider blood transfusion if symptomatic anaemia or haemoglobin <8g/dL"
+    ],
+    "special_warnings": [
+      "G-CSF mandatory: filgrastim 30 million units SC daily x7 days from day 3, OR lenograstim 33.6 million units SC daily x7 days from day 3, OR pegfilgrastim 6mg SC once on day 2",
+      "Accelerated MVAC - 14 day cycle (not 28 day classic MVAC)",
+      "Vinblastine is a vesicant - NPSA/2008/RRR04 must be followed for IV vinca alkaloid administration",
+      "Doxorubicin is a vesicant - extravasation risk",
+      "Methotrexate is an inflammitant",
+      "Cisplatin is an exfoliant",
+      "Presence of third fluid compartment (ascites/renal failure) may delay methotrexate clearance and increase toxicity",
+      "Discontinue doxorubicin if cardiac failure develops",
+      "Patients should drink at least 3 litres of fluid in 24 hours after cisplatin",
+      "Gastric protection with PPI or H2 antagonist may be considered",
+      "Mouthwashes per local/national policy for mucositis",
+      "Cisplatin: mandatory IV hydration required — pre-hydration and post-hydration per local cisplatin hydration protocol. Monitor urine output, U&Es, and Mg²⁺ before and after each cycle."
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "body_surface_area": true,
+      "creatinine_clearance": true,
+      "performance_status": true,
+      "bilirubin": true,
+      "ast_alt": true,
+      "lvef": true,
+      "prior_anthracycline_dose_mg_m2": "Cumulative prior anthracycline dose (mg/m²) required. Doxorubicin lifetime limit 450-550mg/m² (lower with cardiac risk factors or prior mediastinal radiation). Epirubicin limit 900mg/m²."
+    },
+    "disease_site": "Urology",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Cisplatin",
+        "dose": 70,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 120,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Infuse at rate of 1mg/min (minimum 120 minutes). Dose banded per CSCCN. CrCl >=60ml/min required.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 2.0,
+        "notes": "Infuse at rate of 1mg/min (minimum 120 minutes). Dose banded per CSCCN. CrCl >=60ml/min required."
+      },
+      {
+        "drug_name": "Doxorubicin",
+        "dose": 30,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 10,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Intravenous bolus over 10 minutes. Dose banded per CSCCN. Vesicant - extravasation risk. Discontinue if cardiac failure develops.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.1667,
+        "notes": "Intravenous bolus over 10 minutes. Dose banded per CSCCN. Vesicant - extravasation risk. Discontinue if cardiac failure develops."
+      },
+      {
+        "drug_name": "Methotrexate",
+        "dose": 30,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 10,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Intravenous bolus over 10 minutes. Dose banded per CSCCN. Presence of third fluid compartment (ascites, renal failure) may delay methotrexate clearance and increase toxicity.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.1667,
+        "notes": "Intravenous bolus over 10 minutes. Dose banded per CSCCN. Presence of third fluid compartment (ascites, renal failure) may delay methotrexate clearance and increase toxicity."
+      },
+      {
+        "drug_name": "Vinblastine",
+        "dose": 3,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 10,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Rounded to nearest 1mg (up if halfway). Vesicant. NPSA/2008/RRR04 must be followed for IV vinca alkaloid administration.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.1667,
+        "notes": "Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Rounded to nearest 1mg (up if halfway). Vesicant. NPSA/2008/RRR04 must be followed for IV vinca alkaloid administration."
+      }
+    ]
+  },
+  {
+    "protocol_id": "prostate_darolutamide",
+    "protocol_code": "PROSTATE-DARO",
+    "protocol_name": "Prostate - Darolutamide",
+    "category": "urology",
+    "indication": "Non-metastatic castration-resistant prostate cancer (nmCRPC): proven histological/cytological adenocarcinoma of prostate without neuroendocrine differentiation or small cell features; non-metastatic disease; hormone-resistant (castrate-resistant) disease with 3 rising PSA levels; serum testosterone <1.7nmol/L; PSA >=2ng/ml; PSA doubling time <=10 months; no prior 2nd generation AR inhibitors or CYP17 inhibitors; given in combination with androgen deprivation therapy; WHO PS 0, 1 or 2",
+    "version": "1",
+    "cycle_length_days": 28,
+    "total_cycles": null,
+    "treatment_intent": "maintenance",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Darolutamide",
+        "dose": 600,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "Twice a day",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "600mg twice daily (days 1-28 inclusive). Available as 300mg film-coated tablets. Swallow whole with food and a glass of water. 12 cycles will be set in Aria; continue until disease progression.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [
+      {
+        "drug_name": "Darolutamide",
+        "dose": 600,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice a day",
+        "notes": "Oral SACT. Swallow whole with food and a glass of water. If dose missed take as soon as remembered unless near next scheduled dose - do not double dose."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Hepatic impairment - Mild (Child-Pugh A)",
+        "condition": "Mild hepatic impairment",
+        "affected_drugs": [
+          "Darolutamide"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "No dose adjustment necessary"
+      },
+      {
+        "parameter": "Hepatic impairment - Moderate/Severe (Child-Pugh B/C)",
+        "condition": "Moderate or severe hepatic impairment",
+        "affected_drugs": [
+          "Darolutamide"
+        ],
+        "action": "reduce",
+        "factor": 0.5,
+        "notes": "Recommended starting dose 300mg twice daily. Caution in Child-Pugh B."
+      },
+      {
+        "parameter": "Renal impairment - Mild/Moderate",
+        "condition": "Mild or moderate renal impairment",
+        "affected_drugs": [
+          "Darolutamide"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "No dose adjustment necessary"
+      },
+      {
+        "parameter": "Renal impairment - Severe (eGFR 15-29 ml/min/1.73m2)",
+        "condition": "Severe renal impairment not on haemodialysis",
+        "affected_drugs": [
+          "Darolutamide"
+        ],
+        "action": "reduce",
+        "factor": 0.5,
+        "notes": "Recommended starting dose 300mg twice daily"
+      },
+      {
+        "parameter": "NCI-CTC grade >=3 or intolerable adverse reaction",
+        "condition": "Grade 3 or greater toxicity or intolerable adverse reaction",
+        "affected_drugs": [
+          "Darolutamide"
+        ],
+        "action": "reduce",
+        "factor": 0.5,
+        "notes": "Withhold or reduce to 300mg twice daily until symptoms improve. May resume at 600mg twice daily. Dose reduction below 300mg twice daily not recommended."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": null,
+      "platelets_min": null,
+      "notes": "FBC, U&Es, LFTs, PSA every 4 weeks for first 12 weeks then every 8-12 weeks thereafter. Formal medical review by start of 3rd 4-weekly cycle to assess tolerability."
+    },
+    "monitoring_requirements": [
+      "FBC, U&Es, LFTs, PSA every 4 weeks for first 12 weeks then every 8-12 weeks thereafter",
+      "Formal medical review by start of third 4-weekly cycle"
+    ],
+    "special_warnings": [
+      "Androgen receptor inhibitor - oral agent",
+      "Adverse effects include: fatigue/asthenia, decreased neutrophil count, raised bilirubin/AST, ischaemic heart disease, heart failure, rash, musculoskeletal pain, pain in extremities, fractures",
+      "Use of strong CYP3A4 and P-gp inducers may decrease plasma concentration - not recommended unless no therapeutic alternative",
+      "Co-administration with rosuvastatin should be avoided unless no therapeutic alternative",
+      "Darolutamide may increase plasma concentrations of BCRP, OATP1B1 and OATP1B3 substrates (e.g. methotrexate, sulfasalazine, fluvastatin, atorvastatin, pitavastatin) - monitor for adverse reactions",
+      "Treatment break >6 weeks beyond expected 4-week cycle length requires approval form",
+      "Treatment should be supervised by a consultant oncologist",
+      "Given only in combination with androgen deprivation therapy"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "performance_status": true,
+      "psa": true,
+      "testosterone_level": true,
+      "psa_doubling_time": true,
+      "imaging_non_metastatic_confirmed": true
+    },
+    "disease_site": "Urology",
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Darolutamide",
+        "dose": 600,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "Twice a day",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "600mg twice daily (days 1-28 inclusive). Available as 300mg film-coated tablets. Swallow whole with food and a glass of water. 12 cycles will be set in Aria; continue until disease progression.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "Twice a day | 600mg twice daily (days 1-28 inclusive). Available as 300mg film-coated tablets. Swallow whole with food and a glass of water. 12 cycles will be set in Aria; continue until disease progression."
+      }
+    ]
+  },
+  {
+    "protocol_id": "prostate_docetaxel_30_prednisolone",
+    "protocol_code": "PROSTATE-DOC30-PRED",
+    "protocol_name": "Prostate-Docetaxel (30)-Prednisolone",
+    "category": "urology",
+    "indication": "Advanced castrate resistant prostate cancer; Performance status 0, 1, 2",
+    "version": "1.1",
+    "cycle_length_days": 42,
+    "total_cycles": 5,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Docetaxel",
+        "dose": 30,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8,
+          15,
+          22,
+          29
+        ],
+        "frequency": "Weekly",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded per CSCCN agreed bands. 42-day cycle for 5 cycles. Exfoliant - extravasation risk.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Prednisolone",
+        "dose": 5,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42
+        ],
+        "frequency": "Twice a day",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "5mg twice daily days 1-42. Take with or after food. Gradual withdrawal may be required when stopping. Available as 5mg uncoated and 2.5mg/5mg enteric coated tablets.",
+        "is_core_drug": false
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "days": [
+          1,
+          8,
+          15,
+          22,
+          29
+        ],
+        "notes": "Oral or intravenous"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "days": [
+          1,
+          8,
+          15,
+          22,
+          29
+        ],
+        "notes": "Oral or intravenous"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Prednisolone",
+        "dose": 5,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice a day for 42 days",
+        "notes": "Take with or after food. Dose may need to be reduced gradually before stopping treatment. Dispense 60 tablets or two original packs."
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Three times a day for 3 days then as required",
+        "notes": "For nausea. Dispense 60 tablets or two original packs."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Haematological - prior to cycle 1",
+        "condition": "Neutrophils >=1.0 x10^9/L and Platelets >=50 x10^9/L",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Eligibility criteria for cycle 1"
+      },
+      {
+        "parameter": "Hepatic - AST/ALT and Alk Phos",
+        "condition": "AST/ALT >1.5xULN AND Alk Phos >2.5xULN",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "reduce",
+        "factor": 0.75,
+        "notes": "Give 75% of dose"
+      },
+      {
+        "parameter": "Hepatic - Bilirubin and LFTs",
+        "condition": "Bilirubin >ULN OR AST/ALT >3.5xULN AND Alk Phos >6xULN",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "omit",
+        "factor": 0.0,
+        "notes": "Not recommended"
+      },
+      {
+        "parameter": "Renal impairment",
+        "condition": "Any renal impairment",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "No dose adjustment needed for docetaxel"
+      },
+      {
+        "parameter": "Non-haematological NCI-CTC grade >=3",
+        "condition": "Grade 3 or above toxicity",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "In general this regimen should be stopped in response to toxicity rather than doses modified or cycle length extended. Discuss with consultant."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 50,
+      "notes": "FBC, LFTs, PSA and U&Es prior to each cycle. In general regimen should be stopped rather than doses modified in response to toxicity."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs, PSA and U&Es prior to each cycle",
+      "Consider blood transfusion if symptomatic anaemia or haemoglobin <8g/dL"
+    ],
+    "special_warnings": [
+      "Weekly docetaxel 30mg/m² regimen - 42-day cycle (5 doses per cycle on days 1, 8, 15, 22, 29)",
+      "Docetaxel is an exfoliant - extravasation risk",
+      "Docetaxel-induced fluid retention can lead to weight gain - not a reason to alter doses",
+      "Docetaxel hypersensitivity reactions: minor symptoms (flushing, localised rash) - do not interrupt; severe reactions (hypotension, bronchospasm, generalised erythema) - discontinue immediately",
+      "Prednisolone should be taken with or after food",
+      "Patients who stop docetaxel may require gradual withdrawal of prednisolone",
+      "In general regimen should be stopped in response to toxicity rather than doses modified"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "body_surface_area": true,
+      "performance_status": true,
+      "bilirubin": true,
+      "ast_alt": true,
+      "alkaline_phosphatase": true
+    },
+    "disease_site": "Urology",
+    "number_of_cycles": 5,
+    "drugs": [
+      {
+        "drug_name": "Docetaxel",
+        "dose": 30,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8,
+          15,
+          22,
+          29
+        ],
+        "frequency": "Weekly",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded per CSCCN agreed bands. 42-day cycle for 5 cycles. Exfoliant - extravasation risk.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "Weekly | Dose banded per CSCCN agreed bands. 42-day cycle for 5 cycles. Exfoliant - extravasation risk."
+      },
+      {
+        "drug_name": "Prednisolone",
+        "dose": 5,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42
+        ],
+        "frequency": "Twice a day",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "5mg twice daily days 1-42. Take with or after food. Gradual withdrawal may be required when stopping. Available as 5mg uncoated and 2.5mg/5mg enteric coated tablets.",
+        "is_core_drug": false,
+        "infusion_duration_hours": null,
+        "notes": "Twice a day | 5mg twice daily days 1-42. Take with or after food. Gradual withdrawal may be required when stopping. Available as 5mg uncoated and 2.5mg/5mg enteric coated tablets."
+      }
+    ]
+  },
+  {
+    "protocol_id": "prostate_docetaxel_75_prednisolone_6cycles",
+    "protocol_code": "PROSTATE-DOC75-PRED-6C",
+    "protocol_name": "Prostate-Docetaxel (75)-Prednisolone (6 cycles)",
+    "category": "urology",
+    "indication": "First line treatment of prostate cancer in combination with androgen deprivation therapy for hormone naive metastatic prostate cancer (unlicensed indication); Performance status 0, 1, 2",
+    "version": "1",
+    "cycle_length_days": 21,
+    "total_cycles": 6,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Docetaxel",
+        "dose": 75,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Every 21 days",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded per agreed bands. For highly myelosuppressive patients (extensive prior treatment, bone metastasis, extensive skeletal radiation) consider starting at 60mg/m² with view to increase to 75mg/m² if tolerated. Doses >200mg dilute in 500ml NaCl 0.9% (max conc 0.74mg/ml). Unlicensed indication.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Prednisolone",
+        "dose": 5,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "frequency": "Twice a day",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "5mg twice daily days 1-21 inclusive. Not all patients will require prednisolone - check with consultant. Take with or after food. Gradual withdrawal may be required when stopping.",
+        "is_core_drug": false
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "At 12 hours, 3 hours and 1 hour prior to docetaxel",
+        "days": [
+          1
+        ],
+        "notes": "Three doses: evening before (day minus 1) and morning of treatment. If forgotten, administer dexamethasone 20mg IV 15-30 minutes prior to chemotherapy."
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "days": [
+          1
+        ],
+        "notes": "Oral or intravenous"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Prednisolone",
+        "dose": 5,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice a day for 21 days",
+        "notes": "Take with or after food. Dose may need to be reduced gradually before stopping treatment."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "At 12 hours, 3 hours and 1 hour prior to docetaxel (for next cycle pre-medication)",
+        "notes": "TTO supply for next cycle pre-medication"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Three times a day for 3 days then as required",
+        "notes": "For nausea"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Haematological - prior to cycle 1",
+        "condition": "Neutrophils >=1.0 x10^9/L and Platelets >=50 x10^9/L",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Eligibility criteria for cycle 1"
+      },
+      {
+        "parameter": "Neutrophils on day of treatment",
+        "condition": "<1.0 x10^9/L OR <1.0 with fever/infection at any time OR <0.5 for >7 days - 1st occurrence",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "delay",
+        "factor": 0.8,
+        "notes": "Delay until recovery to >=1.0 x10^9/L then give 60mg/m²"
+      },
+      {
+        "parameter": "Neutrophils on day of treatment",
+        "condition": "<1.0 x10^9/L OR <1.0 with fever/infection at any time OR <0.5 for >7 days - 2nd occurrence",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "delay",
+        "factor": 0.6,
+        "notes": "Delay until recovery to >=1.0 x10^9/L then give 45mg/m²"
+      },
+      {
+        "parameter": "Platelets on day of treatment",
+        "condition": "<50 x10^9/L - 1st occurrence",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "delay",
+        "factor": 0.8,
+        "notes": "Delay until recovery to >=50 x10^9/L then give 60mg/m²"
+      },
+      {
+        "parameter": "Platelets on day of treatment",
+        "condition": "<50 x10^9/L - 2nd occurrence",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "delay",
+        "factor": 0.6,
+        "notes": "Delay until recovery to >=50 x10^9/L then give 45mg/m²"
+      },
+      {
+        "parameter": "Hepatic - AST/ALT and Alk Phos",
+        "condition": "AST/ALT >1.5xULN AND Alk Phos >2.5xULN",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "reduce",
+        "factor": 0.75,
+        "notes": "Give 75% of dose. Consider weekly scheduling for mild/moderate hepatic impairment."
+      },
+      {
+        "parameter": "Hepatic - Bilirubin and LFTs",
+        "condition": "Bilirubin >ULN OR AST/ALT >3.5xULN AND Alk Phos >6xULN",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "omit",
+        "factor": 0.0,
+        "notes": "Not recommended"
+      },
+      {
+        "parameter": "Renal impairment",
+        "condition": "Any renal impairment",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "No dose adjustment needed"
+      },
+      {
+        "parameter": "Peripheral neuropathy NCI-CTC grade 3",
+        "condition": "Grade 3 peripheral neuropathy",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "reduce",
+        "factor": 0.8,
+        "notes": "Reduce from 75mg/m² to 60mg/m² once neuropathy resolves to grade 2 or below. If grade 3 occurred at <75mg/m² or grade 4 develops, consider stopping."
+      },
+      {
+        "parameter": "Skin NCI-CTC grade 3",
+        "condition": "Grade 3 cutaneous toxicity on day 1",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "delay",
+        "factor": 0.8,
+        "notes": "Delay until resolves to grade 1 or below, then reduce from 75 to 60mg/m². Stop for grade 4 cutaneous toxicity."
+      },
+      {
+        "parameter": "Stomatitis NCI-CTC grade 2",
+        "condition": "Grade 2 stomatitis",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay until grade 1 or below, then resume at previous dose"
+      },
+      {
+        "parameter": "Stomatitis NCI-CTC grade 3",
+        "condition": "Grade 3 stomatitis",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "delay",
+        "factor": 0.8,
+        "notes": "Delay until grade 1 or below then reduce to 60mg/m². Stop for grade 4 stomatitis."
+      },
+      {
+        "parameter": "Non-haematological NCI-CTC grade >=3",
+        "condition": "Grade 3 or above other toxicity",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "delay",
+        "factor": 0.8,
+        "notes": "Delay until grade 1 or below, reduce dose to 60mg/m² or discontinue. Prednisolone should be continued if docetaxel delayed; stopped if docetaxel stopped (may require reducing schedule)."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 50,
+      "notes": "FBC, LFTs, PSA and U&Es prior to each cycle. 6 cycles for hormone naive metastatic prostate cancer with ADT (unlicensed)."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs, PSA and U&Es prior to each cycle",
+      "Consider blood transfusion or erythropoietins if symptomatic anaemia or haemoglobin <8g/dL"
+    ],
+    "special_warnings": [
+      "Docetaxel is NOT licensed for this indication (hormone naive metastatic prostate cancer with ADT) - unlicensed/off-label use",
+      "Docetaxel is an exfoliant - extravasation risk",
+      "Docetaxel-induced fluid retention can lead to weight gain - not a reason to alter doses",
+      "Docetaxel hypersensitivity reactions: minor symptoms do not interrupt; severe reactions (hypotension, bronchospasm, generalised erythema) - discontinue immediately",
+      "Not all patients will require prednisolone - check with consultant before prescribing",
+      "Prednisolone should be taken with or after food; gradual withdrawal required on stopping",
+      "For highly myelosuppressive patients consider starting at 60mg/m² with view to increase to 75mg/m²",
+      "Excessive lacrimation related to cumulative docetaxel: hypromellose 0.3% eye drops QDS; reduce dose to 60mg/m² if continues",
+      "Prednisolone should be continued if docetaxel is delayed"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "body_surface_area": true,
+      "performance_status": true,
+      "bilirubin": true,
+      "ast_alt": true,
+      "alkaline_phosphatase": true
+    },
+    "disease_site": "Urology",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Docetaxel",
+        "dose": 75,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Every 21 days",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded per agreed bands. For highly myelosuppressive patients (extensive prior treatment, bone metastasis, extensive skeletal radiation) consider starting at 60mg/m² with view to increase to 75mg/m² if tolerated. Doses >200mg dilute in 500ml NaCl 0.9% (max conc 0.74mg/ml). Unlicensed indication.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "Every 21 days | Dose banded per agreed bands. For highly myelosuppressive patients (extensive prior treatment, bone metastasis, extensive skeletal radiation) consider starting at 60mg/m² with view to increase to 75mg/m² if tolerated. Doses >200mg dilute in 500ml NaCl 0.9% (max conc 0.74mg/ml). Unlicensed indication."
+      },
+      {
+        "drug_name": "Prednisolone",
+        "dose": 5,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "frequency": "Twice a day",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "5mg twice daily days 1-21 inclusive. Not all patients will require prednisolone - check with consultant. Take with or after food. Gradual withdrawal may be required when stopping.",
+        "is_core_drug": false,
+        "infusion_duration_hours": null,
+        "notes": "Twice a day | 5mg twice daily days 1-21 inclusive. Not all patients will require prednisolone - check with consultant. Take with or after food. Gradual withdrawal may be required when stopping."
+      }
+    ]
+  },
+  {
+    "protocol_id": "prostate_docetaxel_75_prednisolone",
+    "protocol_code": "PROSTATE-DOC75-PRED",
+    "protocol_name": "Prostate-Docetaxel (75)-Prednisolone",
+    "category": "urology",
+    "indication": "Advanced castrate resistant prostate cancer; Performance status 0, 1, 2",
+    "version": "1.2",
+    "cycle_length_days": 21,
+    "total_cycles": 10,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Docetaxel",
+        "dose": 75,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Every 21 days",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded per CSCCN agreed bands. 21 day cycle for up to 10 cycles. Doses >200mg dilute in 500ml NaCl 0.9% (max conc 0.74mg/ml). For myelosuppressive patients consider starting at 60mg/m². Exfoliant.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Prednisolone",
+        "dose": 5,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "frequency": "Twice a day",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "5mg twice daily days 1-21 inclusive. Take with or after food. Gradual withdrawal may be required when stopping. Available as 5mg (uncoated) and 2.5mg/5mg (enteric coated) tablets.",
+        "is_core_drug": false
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "At 12 hours, 3 hours and 1 hour prior to docetaxel",
+        "days": [
+          1
+        ],
+        "notes": "Three doses (one evening before and two on day of treatment). If forgotten administer dexamethasone 20mg IV stat 15-30 minutes prior to chemotherapy."
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "days": [
+          1
+        ],
+        "notes": "Oral or intravenous"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Prednisolone",
+        "dose": 5,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Twice a day for 21 days",
+        "notes": "Take with or after food. Dose may need to be reduced gradually before stopping treatment."
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "At 12 hours, 3 hours and 1 hour prior to next docetaxel",
+        "notes": "TTO supply for next cycle pre-medication (appears on day 1 in Aria Planner)"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Three times a day for 3 days then as required",
+        "notes": "For nausea"
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Haematological - prior to cycle 1",
+        "condition": "Neutrophils >=1.0 x10^9/L and Platelets >=50 x10^9/L",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Eligibility criteria for cycle 1"
+      },
+      {
+        "parameter": "Neutrophils on day of treatment",
+        "condition": "<1.0 x10^9/L OR <1.0 with fever/infection at any time OR <0.5 for >7 days - 1st occurrence",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "delay",
+        "factor": 0.8,
+        "notes": "Delay until recovery to >=1.0 x10^9/L then give 60mg/m²"
+      },
+      {
+        "parameter": "Neutrophils on day of treatment",
+        "condition": "<1.0 x10^9/L OR <1.0 with fever/infection at any time OR <0.5 for >7 days - 2nd occurrence",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "delay",
+        "factor": 0.6,
+        "notes": "Delay until recovery to >=1.0 x10^9/L then give 45mg/m²"
+      },
+      {
+        "parameter": "Platelets on day of treatment",
+        "condition": "<50 x10^9/L - 1st occurrence",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "delay",
+        "factor": 0.8,
+        "notes": "Delay until recovery to >=50 x10^9/L then give 60mg/m²"
+      },
+      {
+        "parameter": "Platelets on day of treatment",
+        "condition": "<50 x10^9/L - 2nd occurrence",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "delay",
+        "factor": 0.6,
+        "notes": "Delay until recovery to >=50 x10^9/L then give 45mg/m²"
+      },
+      {
+        "parameter": "Hepatic - AST/ALT and Alk Phos",
+        "condition": "AST/ALT >1.5xULN AND Alk Phos >2.5xULN",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "reduce",
+        "factor": 0.75,
+        "notes": "Give 75% of dose. Consider weekly scheduling for mild/moderate hepatic impairment."
+      },
+      {
+        "parameter": "Hepatic - Bilirubin and LFTs",
+        "condition": "Bilirubin >ULN OR AST/ALT >3.5xULN AND Alk Phos >6xULN",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "omit",
+        "factor": 0.0,
+        "notes": "Not recommended"
+      },
+      {
+        "parameter": "Renal impairment",
+        "condition": "Any renal impairment",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "No dose adjustment needed"
+      },
+      {
+        "parameter": "Peripheral neuropathy NCI-CTC grade 3",
+        "condition": "Grade 3 peripheral neuropathy",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "reduce",
+        "factor": 0.8,
+        "notes": "Reduce from 75mg/m² to 60mg/m² once resolved to grade 2 or below. Stop if grade 3 at <75mg/m² or grade 4 develops."
+      },
+      {
+        "parameter": "Skin NCI-CTC grade 3",
+        "condition": "Grade 3 cutaneous toxicity on day 1",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "delay",
+        "factor": 0.8,
+        "notes": "Delay until resolves to grade 1, reduce from 75 to 60mg/m². Stop for grade 4 cutaneous toxicity."
+      },
+      {
+        "parameter": "Stomatitis NCI-CTC grade 2",
+        "condition": "Grade 2 stomatitis",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Delay until grade 1 or below, then resume at previous dose"
+      },
+      {
+        "parameter": "Stomatitis NCI-CTC grade 3",
+        "condition": "Grade 3 stomatitis",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "delay",
+        "factor": 0.8,
+        "notes": "Delay until grade 1, reduce to 60mg/m². Stop for grade 4 stomatitis."
+      },
+      {
+        "parameter": "Non-haematological NCI-CTC grade >=3",
+        "condition": "Grade 3 or above other toxicity",
+        "affected_drugs": [
+          "Docetaxel"
+        ],
+        "action": "delay",
+        "factor": 0.8,
+        "notes": "Delay until grade 1 or below, reduce to 60mg/m² or discontinue. Prednisolone continued if docetaxel delayed; stopped if docetaxel stopped (may require reducing schedule)."
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": 1.0,
+      "platelets_min": 50,
+      "notes": "FBC, LFTs, PSA and U&Es prior to each cycle. Up to 10 cycles for castrate resistant prostate cancer."
+    },
+    "monitoring_requirements": [
+      "FBC, LFTs, PSA and U&Es prior to each cycle",
+      "Consider blood transfusion if symptomatic anaemia or haemoglobin <8g/dL"
+    ],
+    "special_warnings": [
+      "Docetaxel is an exfoliant - extravasation risk",
+      "Docetaxel-induced fluid retention can lead to weight gain - not a reason to alter doses",
+      "Docetaxel hypersensitivity reactions: minor symptoms do not interrupt; severe reactions (hypotension, bronchospasm, generalised erythema) - discontinue immediately",
+      "Prednisolone should be taken with or after food; gradual withdrawal required on stopping",
+      "For highly myelosuppressive patients consider starting at 60mg/m² with view to increase to 75mg/m²",
+      "Excessive lacrimation related to cumulative docetaxel (median 400mg/m²): hypromellose 0.3% eye drops QDS; reduce dose to 60mg/m² if ocular irritation continues",
+      "Prednisolone should be continued if docetaxel is delayed; stopped if docetaxel stopped (may require reducing schedule)"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "body_surface_area": true,
+      "performance_status": true,
+      "bilirubin": true,
+      "ast_alt": true,
+      "alkaline_phosphatase": true
+    },
+    "disease_site": "Urology",
+    "number_of_cycles": 10,
+    "drugs": [
+      {
+        "drug_name": "Docetaxel",
+        "dose": 75,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": "Every 21 days",
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Dose banded per CSCCN agreed bands. 21 day cycle for up to 10 cycles. Doses >200mg dilute in 500ml NaCl 0.9% (max conc 0.74mg/ml). For myelosuppressive patients consider starting at 60mg/m². Exfoliant.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "Every 21 days | Dose banded per CSCCN agreed bands. 21 day cycle for up to 10 cycles. Doses >200mg dilute in 500ml NaCl 0.9% (max conc 0.74mg/ml). For myelosuppressive patients consider starting at 60mg/m². Exfoliant."
+      },
+      {
+        "drug_name": "Prednisolone",
+        "dose": 5,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "frequency": "Twice a day",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "5mg twice daily days 1-21 inclusive. Take with or after food. Gradual withdrawal may be required when stopping. Available as 5mg (uncoated) and 2.5mg/5mg (enteric coated) tablets.",
+        "is_core_drug": false,
+        "infusion_duration_hours": null,
+        "notes": "Twice a day | 5mg twice daily days 1-21 inclusive. Take with or after food. Gradual withdrawal may be required when stopping. Available as 5mg (uncoated) and 2.5mg/5mg (enteric coated) tablets."
+      }
+    ]
+  },
+  {
+    "protocol_id": "prostate_enzalutamide",
+    "protocol_code": "PROSTATE-ENZA",
+    "protocol_name": "Prostate-Enzalutamide",
+    "category": "urology",
+    "indication": "Metastatic hormone-relapsed prostate cancer in adults whose disease has progressed during or after docetaxel-containing chemotherapy (if manufacturer provides agreed NHS discount); OR patients with no or mild symptoms after androgen deprivation therapy has failed and before chemotherapy is indicated; Performance status 0, 1, 2",
+    "version": "1.2",
+    "cycle_length_days": 28,
+    "total_cycles": null,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Enzalutamide",
+        "dose": 160,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "Once daily",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "160mg once daily (days 1-28 inclusive). Available as 40mg capsules or 40mg and 80mg film-coated tablets (interchangeable). Swallow whole. 12 cycles will be set in Aria; continue until disease progression.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [],
+    "take_home_medicines": [
+      {
+        "drug_name": "Enzalutamide",
+        "dose": 160,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "frequency": "Once a day",
+        "notes": "Oral SACT. Swallow whole. If dose missed at usual time take as soon as possible; if missed a whole day resume following day at usual dose. Available as 40mg capsules or 40mg/80mg tablets (interchangeable)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "parameter": "Hepatic impairment - Mild (Child-Pugh A)",
+        "condition": "Mild hepatic impairment",
+        "affected_drugs": [
+          "Enzalutamide"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "No dose adjustment necessary"
+      },
+      {
+        "parameter": "Hepatic impairment - Moderate (Child-Pugh B)",
+        "condition": "Moderate hepatic impairment",
+        "affected_drugs": [
+          "Enzalutamide"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Caution advised"
+      },
+      {
+        "parameter": "Hepatic impairment - Severe (Child-Pugh C)",
+        "condition": "Severe hepatic impairment",
+        "affected_drugs": [
+          "Enzalutamide"
+        ],
+        "action": "omit",
+        "factor": 0.0,
+        "notes": "Not recommended in severe hepatic impairment"
+      },
+      {
+        "parameter": "Renal impairment - Mild/Moderate",
+        "condition": "Mild or moderate renal impairment",
+        "affected_drugs": [
+          "Enzalutamide"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "No dose adjustment necessary"
+      },
+      {
+        "parameter": "Renal impairment - Severe or end-stage",
+        "condition": "Severe renal impairment or end-stage renal disease",
+        "affected_drugs": [
+          "Enzalutamide"
+        ],
+        "action": "continue",
+        "factor": 1.0,
+        "notes": "Caution advised"
+      },
+      {
+        "parameter": "NCI-CTC grade >=3 or intolerable adverse reaction",
+        "condition": "Grade 3 or above toxicity or intolerable adverse reaction",
+        "affected_drugs": [
+          "Enzalutamide"
+        ],
+        "action": "delay",
+        "factor": 1.0,
+        "notes": "Withhold for 1 week or until symptoms improve to at least NCI-CTC grade 2, then resume at same dose or reduced dose (120mg or 80mg) if warranted"
+      }
+    ],
+    "treatment_delay_criteria": {
+      "neutrophils_min": null,
+      "platelets_min": null,
+      "notes": "FBC, U&Es, LFTs, PSA every 4 weeks for first 12 weeks then every 8-12 weeks thereafter. Blood pressure and fluid retention monitored before treatment and every 4 weeks for first 12 weeks then every 8-12 weeks."
+    },
+    "monitoring_requirements": [
+      "FBC, U&Es, LFTs, PSA every 4 weeks for first 12 weeks then every 8-12 weeks thereafter",
+      "Blood pressure and fluid retention monitored before treatment and every 4 weeks for first 12 weeks then every 8-12 weeks thereafter"
+    ],
+    "special_warnings": [
+      "SEIZURE RISK: Enzalutamide is associated with seizures - use with caution in patients with history of seizures or predisposing factors",
+      "Adverse effects include: fatigue, musculoskeletal pain, arthralgia, hot flush, peripheral oedema, insomnia, respiratory infections, hypertension, headaches, SEIZURES, confusion, restless leg syndrome",
+      "Enzalutamide is a potent CYP3A4 inducer - check for drug interactions; known to interact with many medications",
+      "Treatment should be supervised by a consultant oncologist",
+      "Gastric protection with PPI or H2 antagonist may be considered in high risk GI patients",
+      "The use of enzalutamide for mCRPC previously treated with abiraterone is not covered by NICE guidance",
+      "Available as 40mg capsules or 40mg and 80mg film-coated tablets - products are interchangeable"
+    ],
+    "auc_dosing": null,
+    "required_patient_fields": {
+      "performance_status": true,
+      "seizure_history": true,
+      "blood_pressure": true
+    },
+    "disease_site": "Urology",
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Enzalutamide",
+        "dose": 160,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "frequency": "Once daily",
+        "duration_minutes": null,
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "160mg once daily (days 1-28 inclusive). Available as 40mg capsules or 40mg and 80mg film-coated tablets (interchangeable). Swallow whole. 12 cycles will be set in Aria; continue until disease progression.",
+        "is_core_drug": true,
+        "infusion_duration_hours": null,
+        "notes": "Once daily | 160mg once daily (days 1-28 inclusive). Available as 40mg capsules or 40mg and 80mg film-coated tablets (interchangeable). Swallow whole. 12 cycles will be set in Aria; continue until disease progression."
+      }
+    ]
+  }
+]

@@ -1,0 +1,2904 @@
+[
+  {
+    "protocol_id": "hn-cisplatin-100-rt",
+    "protocol_code": "CISPLATIN100RT",
+    "protocol_name": "Head and Neck Cancer – Cisplatin (100) RT",
+    "category": "head-and-neck",
+    "indication": "Radical treatment of squamous cell carcinoma of the head and neck",
+    "version": "1.1",
+    "cycle_length_days": 29,
+    "total_cycles": 1,
+    "treatment_intent": "curative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Cisplatin",
+        "dose": 100,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          29
+        ],
+        "frequency": null,
+        "duration_minutes": 120,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Maximum rate 1mg cisplatin/minute (minimum infusion time 120 minutes). Dose banded according to CSCCN agreed bands.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Aprepitant",
+        "dose": 125,
+        "dose_unit": "mg",
+        "route": "oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "days": [
+          1,
+          29
+        ],
+        "frequency": "once",
+        "notes": "Antiemetic"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "oral or IV",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "days": [
+          1,
+          29
+        ],
+        "frequency": "once",
+        "notes": "Antiemetic"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "oral or IV",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "days": [
+          1,
+          29
+        ],
+        "frequency": "once",
+        "notes": "Antiemetic"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "days": [
+          1,
+          29
+        ],
+        "frequency": "three times a day when required",
+        "notes": "Antiemetic - when required"
+      },
+      {
+        "drug_name": "Furosemide",
+        "dose": 40,
+        "dose_unit": "mg",
+        "route": "oral or IV",
+        "timing": "Pre-hydration",
+        "days": [
+          1,
+          29
+        ],
+        "frequency": "once",
+        "notes": "Pre-cisplatin hydration"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9% with 20mmol potassium chloride and 16mmol magnesium sulphate",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Pre-cisplatin hydration",
+        "days": [
+          1,
+          29
+        ],
+        "frequency": "once",
+        "notes": "Pre-hydration over 60 minutes"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9% with 20mmol potassium chloride and 16mmol magnesium sulphate",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Post-cisplatin hydration",
+        "days": [
+          1,
+          29
+        ],
+        "frequency": "once",
+        "notes": "Post-hydration over 60 minutes"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Aprepitant",
+        "dose": 80,
+        "dose_unit": "mg",
+        "route": "oral",
+        "frequency": "once daily",
+        "duration": "2 days starting day after cisplatin",
+        "notes": "Take-home antiemetic"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "oral",
+        "frequency": "once daily",
+        "duration": "3 days starting day after cisplatin",
+        "notes": "Take-home antiemetic"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "oral",
+        "frequency": "twice daily",
+        "duration": "3 days starting evening of cisplatin day",
+        "notes": "Take-home antiemetic"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "oral",
+        "frequency": "three times a day when required",
+        "duration": "as required",
+        "notes": "Take-home antiemetic - when required"
+      }
+    ],
+    "dose_modifications": {
+      "haematological": {
+        "neutrophils_threshold_x10_9_per_l": 1.5,
+        "platelets_threshold_x10_9_per_l": 100,
+        "rules": [
+          {
+            "condition": "Neutrophils >= 1.5 and Platelets >= 100",
+            "action": "Proceed",
+            "factor": 1.0
+          },
+          {
+            "condition": "On day 29: platelets <= 100 and neutrophils <= 1.0",
+            "action": "Seek consultant advice",
+            "factor": 1.0
+          }
+        ]
+      },
+      "hepatic": [
+        {
+          "drug": "Cisplatin",
+          "bilirubin_umol_l": "any",
+          "ast_alt_units": "any",
+          "action": "No dose reduction necessary",
+          "factor": 1.0
+        }
+      ],
+      "renal": [
+        {
+          "drug": "Cisplatin",
+          "crcl_ml_min_lower": 51,
+          "crcl_ml_min_upper": null,
+          "action": "100% dose",
+          "factor": 1.0
+        },
+        {
+          "drug": "Cisplatin",
+          "crcl_ml_min_lower": 0,
+          "crcl_ml_min_upper": 50,
+          "action": "Consider dose reduction or stopping",
+          "factor": null
+        }
+      ],
+      "other": [
+        {
+          "drug": "Cisplatin",
+          "toxicity": "Peripheral sensory/motor neurotoxicity, ototoxicity, nephrotoxicity",
+          "action": "Dose modification necessary. Consider stopping for NCI-CTC grade 3 or more neurotoxicity or ototoxicity.",
+          "factor": null
+        }
+      ]
+    },
+    "treatment_delay_criteria": [
+      "Delay treatment if neutrophils < 1.5 x10^9/L or platelets < 100 x10^9/L",
+      "Delay up to 2 weeks for NCI-CTC grade 3+ toxicities until resolved to grade 1 or less"
+    ],
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to each cycle",
+      "Patient advised to drink at least 3 litres of fluid in the 24 hours after cisplatin administration"
+    ],
+    "special_warnings": [
+      "Cisplatin is an exfoliant - extravasation risk",
+      "Gastric protection with PPI or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed",
+      "Cisplatin: mandatory IV hydration required — pre-hydration and post-hydration per local cisplatin hydration protocol. Monitor urine output, U&Es, and Mg²⁺ before and after each cycle."
+    ],
+    "auc_dosing": false,
+    "required_patient_fields": [
+      "height",
+      "weight",
+      "bsa",
+      "creatinine_clearance"
+    ],
+    "disease_site": "Head and Neck",
+    "number_of_cycles": 1,
+    "drugs": [
+      {
+        "drug_name": "Cisplatin",
+        "dose": 100,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          29
+        ],
+        "frequency": null,
+        "duration_minutes": 120,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Maximum rate 1mg cisplatin/minute (minimum infusion time 120 minutes). Dose banded according to CSCCN agreed bands.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 2.0,
+        "notes": "Maximum rate 1mg cisplatin/minute (minimum infusion time 120 minutes). Dose banded according to CSCCN agreed bands."
+      }
+    ]
+  },
+  {
+    "protocol_id": "hn-cisplatin-40-rt",
+    "protocol_code": "CISPLATIN40RT",
+    "protocol_name": "Head and Neck Cancer – Cisplatin (40) RT",
+    "category": "head-and-neck",
+    "indication": "Radical treatment of locally advanced head and neck cancer when surgery is inappropriate",
+    "version": "1",
+    "cycle_length_days": 7,
+    "total_cycles": 6,
+    "treatment_intent": "curative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Cisplatin",
+        "dose": 40,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Maximum rate 1mg cisplatin/minute (minimum infusion time 60 minutes). Dose banded according to CSCCN agreed bands.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "oral or IV",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "days": [
+          1
+        ],
+        "frequency": "once",
+        "notes": "Antiemetic"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "oral or IV",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "days": [
+          1
+        ],
+        "frequency": "once",
+        "notes": "Antiemetic"
+      },
+      {
+        "drug_name": "Furosemide",
+        "dose": 40,
+        "dose_unit": "mg",
+        "route": "oral or IV",
+        "timing": "Pre-hydration, as required",
+        "days": [
+          1
+        ],
+        "frequency": "once if required",
+        "notes": "Pre-cisplatin hydration - when required"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9% with 8mmol magnesium sulphate",
+        "dose": 500,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Pre-cisplatin hydration",
+        "days": [
+          1
+        ],
+        "frequency": "once",
+        "notes": "Pre-hydration over 30 minutes"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9%",
+        "dose": 500,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Post-cisplatin hydration",
+        "days": [
+          1
+        ],
+        "frequency": "once",
+        "notes": "Post-hydration over 30 minutes"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "oral",
+        "frequency": "once daily",
+        "duration": "2 days starting day two of cycle",
+        "notes": "Take-home antiemetic"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "oral",
+        "frequency": "three times a day for 2 days then when required",
+        "duration": "2 days then as required",
+        "notes": "Take-home antiemetic"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "oral",
+        "frequency": "twice daily",
+        "duration": "2 days starting evening of day one",
+        "notes": "Take-home antiemetic"
+      }
+    ],
+    "dose_modifications": {
+      "haematological": {
+        "neutrophils_threshold_x10_9_per_l": 1.5,
+        "platelets_threshold_x10_9_per_l": 100,
+        "rules": [
+          {
+            "condition": "Neutrophils >= 1.5 and Platelets >= 100",
+            "action": "Proceed",
+            "factor": 1.0
+          },
+          {
+            "condition": "Neutrophils < 1.5 or Platelets < 100 - delay 7 days, counts recovered",
+            "action": "Resume with 75% dose reduction",
+            "factor": 0.75
+          },
+          {
+            "condition": "Counts not recovered at 7 days - delay further 7 days, counts satisfactory at 14 days",
+            "action": "Resume with 50% dose reduction",
+            "factor": 0.5
+          }
+        ]
+      },
+      "hepatic": [
+        {
+          "drug": "Cisplatin",
+          "bilirubin_umol_l": "any",
+          "ast_alt_units": "any",
+          "action": "No dose reduction necessary",
+          "factor": 1.0
+        }
+      ],
+      "renal": [
+        {
+          "drug": "Cisplatin",
+          "crcl_ml_min_lower": 61,
+          "crcl_ml_min_upper": null,
+          "action": "100% dose",
+          "factor": 1.0
+        },
+        {
+          "drug": "Cisplatin",
+          "crcl_ml_min_lower": 45,
+          "crcl_ml_min_upper": 59,
+          "action": "75% dose",
+          "factor": 0.75
+        },
+        {
+          "drug": "Cisplatin",
+          "crcl_ml_min_lower": 0,
+          "crcl_ml_min_upper": 44,
+          "action": "Consider carboplatin",
+          "factor": null
+        }
+      ],
+      "other": [
+        {
+          "drug": "Cisplatin",
+          "toxicity": "Peripheral sensory/motor neurotoxicity, ototoxicity, nephrotoxicity",
+          "action": "Dose modification necessary. Consider stopping for NCI-CTC grade 3 or more neurotoxicity or ototoxicity.",
+          "factor": null
+        },
+        {
+          "drug": "Cisplatin",
+          "toxicity": "NCI-CTC grade 3+ toxicity",
+          "action": "Delay cycle up to 2 weeks until resolves to grade 1 or less. Delay beyond 2 weeks requires discontinuation.",
+          "factor": 1.0
+        }
+      ]
+    },
+    "treatment_delay_criteria": [
+      "Delay 7 days if neutrophils < 1.5 x10^9/L or platelets < 100 x10^9/L",
+      "Delay up to 2 weeks for NCI-CTC grade 3+ toxicities. Discontinue if delay exceeds 2 weeks."
+    ],
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to each administration of cisplatin",
+      "Blood transfusion to maintain haemoglobin above 12g/dL"
+    ],
+    "special_warnings": [
+      "Cisplatin is an exfoliant - extravasation risk",
+      "Gastric protection with PPI or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed"
+    ],
+    "auc_dosing": false,
+    "required_patient_fields": [
+      "height",
+      "weight",
+      "bsa",
+      "creatinine_clearance"
+    ],
+    "disease_site": "Head and Neck",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Cisplatin",
+        "dose": 40,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Maximum rate 1mg cisplatin/minute (minimum infusion time 60 minutes). Dose banded according to CSCCN agreed bands.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "Maximum rate 1mg cisplatin/minute (minimum infusion time 60 minutes). Dose banded according to CSCCN agreed bands."
+      }
+    ]
+  },
+  {
+    "protocol_id": "hn-inp-cisplatin-fluorouracil",
+    "protocol_code": "INP-CF",
+    "protocol_name": "Head and Neck Cancer – InP-Cisplatin-Fluorouracil",
+    "category": "head-and-neck",
+    "indication": "Neoadjuvant and palliative treatment of squamous cell carcinoma of the head and neck",
+    "version": "1.2",
+    "cycle_length_days": 21,
+    "total_cycles": 6,
+    "treatment_intent": "neoadjuvant or palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Cisplatin",
+        "dose": 100,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 120,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Maximum rate 1mg cisplatin/minute (minimum infusion time 120 minutes). Dose banded per national bands (1mg/ml).",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 1000,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": null,
+        "duration_minutes": 1440,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Continuous infusion over 24 hours each day. Central or PICC line recommended. Dose banded per national bands (50mg/ml). Fluorouracil is an inflamitant - extravasation risk.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Aprepitant",
+        "dose": 125,
+        "dose_unit": "mg",
+        "route": "oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "days": [
+          1
+        ],
+        "frequency": "once",
+        "notes": "Antiemetic day 1"
+      },
+      {
+        "drug_name": "Aprepitant",
+        "dose": 80,
+        "dose_unit": "mg",
+        "route": "oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "days": [
+          2,
+          3
+        ],
+        "frequency": "once daily",
+        "notes": "Antiemetic days 2-3"
+      },
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "oral or IV",
+        "timing": "Once daily",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "frequency": "once daily",
+        "notes": "Antiemetic"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "oral or IV",
+        "timing": "Twice daily",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "frequency": "twice daily",
+        "notes": "Antiemetic"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "oral or IV",
+        "timing": "Three times a day when required",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "frequency": "three times a day when required",
+        "notes": "Antiemetic - when required"
+      },
+      {
+        "drug_name": "Furosemide",
+        "dose": 40,
+        "dose_unit": "mg",
+        "route": "oral or IV",
+        "timing": "Pre-hydration",
+        "days": [
+          1
+        ],
+        "frequency": "once",
+        "notes": "Pre-cisplatin hydration"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9% with 20mmol potassium chloride and 16mmol magnesium sulphate",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Pre-cisplatin hydration",
+        "days": [
+          1
+        ],
+        "frequency": "once",
+        "notes": "Pre-hydration over 60 minutes"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9% with 20mmol potassium chloride and 16mmol magnesium sulphate",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Post-cisplatin hydration",
+        "days": [
+          1
+        ],
+        "frequency": "once",
+        "notes": "Post-hydration over 60 minutes"
+      }
+    ],
+    "take_home_medicines": [],
+    "dose_modifications": {
+      "haematological": {
+        "neutrophils_threshold_x10_9_per_l": 1.5,
+        "platelets_threshold_x10_9_per_l": 100,
+        "rules": [
+          {
+            "condition": "Neutrophils >= 1.5 and Platelets >= 100",
+            "action": "Proceed",
+            "factor": 1.0
+          },
+          {
+            "condition": "Neutrophils < 1.5 or Platelets < 100 - delay 7 days, counts recovered",
+            "action": "Resume with 75% dose reduction",
+            "factor": 0.75
+          },
+          {
+            "condition": "Counts not recovered at 7 days - delay further 7 days, counts satisfactory at 14 days",
+            "action": "Resume with 50% dose reduction",
+            "factor": 0.5
+          }
+        ]
+      },
+      "hepatic": [
+        {
+          "drug": "Cisplatin",
+          "bilirubin_umol_l": "any",
+          "ast_alt_units": "any",
+          "action": "No dose reduction necessary",
+          "factor": 1.0
+        },
+        {
+          "drug": "Fluorouracil",
+          "bilirubin_umol_l": "< 85",
+          "ast_alt_units": "< 180",
+          "action": "100% dose",
+          "factor": 1.0
+        },
+        {
+          "drug": "Fluorouracil",
+          "bilirubin_umol_l": "> 85",
+          "ast_alt_units": "> 180",
+          "action": "Contra-indicated",
+          "factor": 0
+        }
+      ],
+      "renal": [
+        {
+          "drug": "Cisplatin",
+          "crcl_ml_min_lower": 61,
+          "crcl_ml_min_upper": null,
+          "action": "100% dose",
+          "factor": 1.0
+        },
+        {
+          "drug": "Cisplatin",
+          "crcl_ml_min_lower": 45,
+          "crcl_ml_min_upper": 59,
+          "action": "75% dose",
+          "factor": 0.75
+        },
+        {
+          "drug": "Cisplatin",
+          "crcl_ml_min_lower": 0,
+          "crcl_ml_min_upper": 44,
+          "action": "Consider carboplatin",
+          "factor": null
+        },
+        {
+          "drug": "Fluorouracil",
+          "crcl_ml_min_lower": null,
+          "crcl_ml_min_upper": null,
+          "action": "Consider dose reduction in severe renal impairment only",
+          "factor": null
+        }
+      ],
+      "other": [
+        {
+          "drug": "Cisplatin",
+          "toxicity": "Peripheral sensory/motor neurotoxicity, ototoxicity, nephrotoxicity",
+          "action": "Dose modification necessary. Consider stopping for NCI-CTC grade 3 or more neurotoxicity or ototoxicity.",
+          "factor": null
+        },
+        {
+          "drug": "Fluorouracil",
+          "toxicity": "Mucositis, diarrhoea",
+          "action": "Dose modification necessary",
+          "factor": null
+        }
+      ]
+    },
+    "treatment_delay_criteria": [
+      "Delay up to 2 weeks for NCI-CTC grade 3+ toxicities until resolved to grade 1 or less. Discontinue if delay exceeds 2 weeks.",
+      "Delay 7 days if neutrophils < 1.5 x10^9/L or platelets < 100 x10^9/L"
+    ],
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to each cycle",
+      "DPD deficiency testing required before cycle 1 initiation for all patients",
+      "Patient advised to drink at least 3 litres of fluid in the 24 hours after cisplatin administration"
+    ],
+    "special_warnings": [
+      "InP (inpatient) regimen - patient requires inpatient admission for treatment",
+      "DPD deficiency: patients with complete or partial DPD deficiency are at increased risk of severe and fatal toxicity with fluorouracil - test all patients before cycle 1",
+      "Neo-adjuvant: 2-3 cycles prior to radiotherapy (3 cycles set in Aria); Palliative: 6 cycles (6 cycles set in Aria)",
+      "Central or PICC line recommended for fluorouracil continuous infusion",
+      "Cisplatin is an exfoliant; Fluorouracil is an inflamitant - extravasation risks",
+      "Oral loperamide 4mg after first loose stool then 2-4mg four times a day when required for diarrhoea (maximum 16mg/24 hours)",
+      "Mouthwashes as per local or national guidelines",
+      "Gastric protection with PPI or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed",
+      "Blood transfusion if symptomatic anaemia or Hb < 8g/dL",
+      "Cisplatin: mandatory IV hydration required — pre-hydration and post-hydration per local cisplatin hydration protocol. Monitor urine output, U&Es, and Mg²⁺ before and after each cycle."
+    ],
+    "auc_dosing": false,
+    "required_patient_fields": [
+      "height",
+      "weight",
+      "bsa",
+      "creatinine_clearance",
+      "dpd_status"
+    ],
+    "disease_site": "Head and Neck",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Cisplatin",
+        "dose": 100,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 120,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Maximum rate 1mg cisplatin/minute (minimum infusion time 120 minutes). Dose banded per national bands (1mg/ml).",
+        "is_core_drug": true,
+        "infusion_duration_hours": 2.0,
+        "notes": "Maximum rate 1mg cisplatin/minute (minimum infusion time 120 minutes). Dose banded per national bands (1mg/ml)."
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 1000,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": null,
+        "duration_minutes": 1440,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Continuous infusion over 24 hours each day. Central or PICC line recommended. Dose banded per national bands (50mg/ml). Fluorouracil is an inflamitant - extravasation risk.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 24.0,
+        "notes": "Continuous infusion over 24 hours each day. Central or PICC line recommended. Dose banded per national bands (50mg/ml). Fluorouracil is an inflamitant - extravasation risk."
+      }
+    ]
+  },
+  {
+    "protocol_id": "hn-inp-cisplatin75-docetaxel75-fluorouracil4000",
+    "protocol_code": "INP-TPF75",
+    "protocol_name": "Head and Neck Cancer – InP-Cisplatin(75)-Docetaxel(75)-Fluorouracil(4000)",
+    "category": "head-and-neck",
+    "indication": "Neoadjuvant or advanced squamous cell carcinoma of the head and neck",
+    "version": "1.1",
+    "cycle_length_days": 21,
+    "total_cycles": 4,
+    "treatment_intent": "neoadjuvant or palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Cisplatin",
+        "dose": 75,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 120,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Maximum rate 1mg cisplatin/minute (minimum infusion time 120 minutes). Dose banded per national bands (1mg/ml).",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Docetaxel",
+        "dose": 75,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Infusion over 60 minutes. Doses >200mg dilute in 500ml NaCl 0.9% (max concentration 0.74mg/ml). Dose banded per national bands (20mg/ml). Docetaxel is an exfoliant - extravasation risk. Administer before cisplatin.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 1000,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": null,
+        "duration_minutes": 1440,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Continuous infusion over 24 hours each day (total 4000mg/m² over 4 days). Central or PICC line recommended. Dose banded per national bands (50mg/ml). Fluorouracil is an inflamitant - extravasation risk.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "oral",
+        "timing": "Twice daily days -1, 0, +1 relative to docetaxel",
+        "days": [
+          0,
+          1,
+          2
+        ],
+        "frequency": "twice daily day before, once daily day of and day after docetaxel",
+        "notes": "Docetaxel premedication: 8mg oral twice a day day before docetaxel, 8mg once a day day of and day after docetaxel"
+      },
+      {
+        "drug_name": "Aprepitant",
+        "dose": 125,
+        "dose_unit": "mg",
+        "route": "oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "days": [
+          1
+        ],
+        "frequency": "once",
+        "notes": "Antiemetic day 1"
+      },
+      {
+        "drug_name": "Aprepitant",
+        "dose": 80,
+        "dose_unit": "mg",
+        "route": "oral",
+        "timing": "15-30 minutes prior to chemotherapy",
+        "days": [
+          2,
+          3
+        ],
+        "frequency": "once daily",
+        "notes": "Antiemetic days 2-3"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "oral or IV",
+        "timing": "Twice daily",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "frequency": "twice daily",
+        "notes": "Antiemetic"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "oral or IV",
+        "timing": "Three times a day when required",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "frequency": "three times a day when required",
+        "notes": "Antiemetic - when required"
+      },
+      {
+        "drug_name": "Furosemide",
+        "dose": 40,
+        "dose_unit": "mg",
+        "route": "oral or IV",
+        "timing": "Pre-hydration",
+        "days": [
+          1
+        ],
+        "frequency": "once",
+        "notes": "Pre-cisplatin hydration"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9% with 20mmol potassium chloride and 16mmol magnesium sulphate",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Pre-cisplatin hydration",
+        "days": [
+          1
+        ],
+        "frequency": "once",
+        "notes": "Pre-hydration over 60 minutes"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9% with 20mmol potassium chloride and 16mmol magnesium sulphate",
+        "dose": 1000,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Post-cisplatin hydration",
+        "days": [
+          1
+        ],
+        "frequency": "once",
+        "notes": "Post-hydration over 60 minutes"
+      },
+      {
+        "drug_name": "Ciprofloxacin",
+        "dose": 500,
+        "dose_unit": "mg",
+        "route": "oral",
+        "timing": "Starting day 5 of cycle",
+        "days": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "frequency": "twice daily",
+        "notes": "Prophylactic antibiotic for 10 days starting day 5"
+      },
+      {
+        "drug_name": "Filgrastim or bioequivalent",
+        "dose": 300,
+        "dose_unit": "micrograms",
+        "route": "subcutaneous",
+        "timing": "Starting day 5 of cycle",
+        "days": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "frequency": "once daily",
+        "notes": "G-CSF: filgrastim or bioequivalent 300mcg SC daily x7 days from day 5 OR lenograstim/bioequivalent 263mcg SC daily x7 days from day 5 OR pegfilgrastim/bioequivalent 6mg SC once on day 2. Growth factor according to local formulary choice."
+      }
+    ],
+    "take_home_medicines": [],
+    "dose_modifications": {
+      "haematological": {
+        "neutrophils_threshold_x10_9_per_l": 1.5,
+        "platelets_threshold_x10_9_per_l": 100,
+        "rules": [
+          {
+            "condition": "Neutrophils >= 1.5 and Platelets >= 100",
+            "action": "Proceed",
+            "factor": 1.0
+          },
+          {
+            "condition": "Neutrophils < 1.5 or Platelets < 100 - delay 7 days, counts recovered",
+            "action": "Resume with 75% dose reduction",
+            "factor": 0.75
+          },
+          {
+            "condition": "Counts not recovered at 7 days - delay further 7 days, counts satisfactory at 14 days",
+            "action": "Resume with 50% dose reduction",
+            "factor": 0.5
+          }
+        ]
+      },
+      "hepatic": [
+        {
+          "drug": "Cisplatin",
+          "bilirubin_umol_l": "any",
+          "alk_phos": "any",
+          "ast_alt_units": "any",
+          "action": "No dose reduction necessary",
+          "factor": 1.0
+        },
+        {
+          "drug": "Docetaxel",
+          "bilirubin_umol_l": "normal",
+          "alk_phos": ">= 2.5xULN",
+          "ast_alt_units": "1.5xULN",
+          "action": "Give 75%",
+          "factor": 0.75
+        },
+        {
+          "drug": "Docetaxel",
+          "bilirubin_umol_l": "> ULN",
+          "alk_phos": ">= 6xULN",
+          "ast_alt_units": ">= 3.5xULN",
+          "action": "Not recommended",
+          "factor": 0
+        },
+        {
+          "drug": "Fluorouracil",
+          "bilirubin_umol_l": "< 85",
+          "ast_alt_units": "< 180",
+          "action": "100% dose",
+          "factor": 1.0
+        },
+        {
+          "drug": "Fluorouracil",
+          "bilirubin_umol_l": "> 85",
+          "ast_alt_units": "> 180",
+          "action": "Contra-indicated",
+          "factor": 0
+        }
+      ],
+      "renal": [
+        {
+          "drug": "Cisplatin",
+          "crcl_ml_min_lower": 61,
+          "crcl_ml_min_upper": null,
+          "action": "100% dose",
+          "factor": 1.0
+        },
+        {
+          "drug": "Cisplatin",
+          "crcl_ml_min_lower": 45,
+          "crcl_ml_min_upper": 59,
+          "action": "75% dose",
+          "factor": 0.75
+        },
+        {
+          "drug": "Cisplatin",
+          "crcl_ml_min_lower": 0,
+          "crcl_ml_min_upper": 44,
+          "action": "Consider carboplatin",
+          "factor": null
+        },
+        {
+          "drug": "Docetaxel",
+          "crcl_ml_min_lower": null,
+          "crcl_ml_min_upper": null,
+          "action": "No dose adjustment required",
+          "factor": 1.0
+        },
+        {
+          "drug": "Fluorouracil",
+          "crcl_ml_min_lower": null,
+          "crcl_ml_min_upper": null,
+          "action": "Consider dose reduction in severe renal impairment only",
+          "factor": null
+        }
+      ],
+      "other": [
+        {
+          "drug": "Cisplatin",
+          "toxicity": "Peripheral sensory/motor neurotoxicity, ototoxicity, nephrotoxicity",
+          "action": "Dose modification necessary. Consider stopping for NCI-CTC grade 3 or more.",
+          "factor": null
+        },
+        {
+          "drug": "Docetaxel",
+          "toxicity": "Excessive lacrimation (cumulative dose ~400mg/m²)",
+          "action": "Hypromellose 0.3% eye drops QDS; if persists reduce docetaxel to 60mg/m²",
+          "factor": null
+        },
+        {
+          "drug": "Docetaxel",
+          "toxicity": "NCI-CTC grade 3 cutaneous toxicity on day 1",
+          "action": "Delay until resolves to grade 1; reduce subsequent doses from 75mg/m² to 60mg/m²",
+          "factor": null
+        },
+        {
+          "drug": "Docetaxel",
+          "toxicity": "NCI-CTC grade 4 cutaneous toxicity",
+          "action": "Stop docetaxel permanently",
+          "factor": 0
+        },
+        {
+          "drug": "Fluorouracil",
+          "toxicity": "Mucositis, diarrhoea",
+          "action": "Dose modification necessary",
+          "factor": null
+        }
+      ]
+    },
+    "treatment_delay_criteria": [
+      "Delay up to 2 weeks for NCI-CTC grade 3+ toxicities until resolved to grade 1 or less. Discontinue if delay exceeds 2 weeks.",
+      "Delay 7 days if neutrophils < 1.5 x10^9/L or platelets < 100 x10^9/L"
+    ],
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to each cycle",
+      "DPD deficiency testing required before cycle 1 initiation for all patients",
+      "Patient advised to drink at least 3 litres of fluid in the 24 hours after cisplatin administration"
+    ],
+    "special_warnings": [
+      "InP (inpatient) regimen - patient requires inpatient admission for treatment",
+      "DPD deficiency: patients with complete or partial DPD deficiency are at increased risk of severe and fatal toxicity with fluorouracil - test all patients before cycle 1",
+      "G-CSF (growth factor) required: filgrastim or bioequivalent 300mcg SC daily x7 from day 5, OR lenograstim/bioequivalent 263mcg daily x7 from day 5, OR pegfilgrastim/bioequivalent 6mg SC on day 2",
+      "Ciprofloxacin 500mg twice daily for 10 days starting day 5 of each cycle",
+      "Docetaxel premedication: dexamethasone 8mg oral twice daily the day before, 8mg once daily the day of and day after docetaxel",
+      "Central or PICC line recommended for fluorouracil continuous infusion",
+      "Cisplatin and docetaxel are exfoliants; fluorouracil is an inflamitant - extravasation risks",
+      "Docetaxel hypersensitivity: minor symptoms (flushing, localised rash) - do not interrupt; severe reactions (hypotension, bronchospasm, generalised erythema) - discontinue immediately",
+      "Docetaxel-induced fluid retention can cause weight gain - not a reason to alter doses",
+      "Oral loperamide 4mg after first loose stool then 2-4mg four times a day when required for diarrhoea (maximum 16mg/24 hours)",
+      "Mouthwashes as per local or national guidelines",
+      "Gastric protection with PPI or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed",
+      "Blood transfusion if symptomatic anaemia or Hb < 8g/dL",
+      "Cisplatin: mandatory IV hydration required — pre-hydration and post-hydration per local cisplatin hydration protocol. Monitor urine output, U&Es, and Mg²⁺ before and after each cycle."
+    ],
+    "auc_dosing": false,
+    "required_patient_fields": [
+      "height",
+      "weight",
+      "bsa",
+      "creatinine_clearance",
+      "dpd_status"
+    ],
+    "disease_site": "Head and Neck",
+    "number_of_cycles": 4,
+    "drugs": [
+      {
+        "drug_name": "Cisplatin",
+        "dose": 75,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 120,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Maximum rate 1mg cisplatin/minute (minimum infusion time 120 minutes). Dose banded per national bands (1mg/ml).",
+        "is_core_drug": true,
+        "infusion_duration_hours": 2.0,
+        "notes": "Maximum rate 1mg cisplatin/minute (minimum infusion time 120 minutes). Dose banded per national bands (1mg/ml)."
+      },
+      {
+        "drug_name": "Docetaxel",
+        "dose": 75,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Infusion over 60 minutes. Doses >200mg dilute in 500ml NaCl 0.9% (max concentration 0.74mg/ml). Dose banded per national bands (20mg/ml). Docetaxel is an exfoliant - extravasation risk. Administer before cisplatin.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "Infusion over 60 minutes. Doses >200mg dilute in 500ml NaCl 0.9% (max concentration 0.74mg/ml). Dose banded per national bands (20mg/ml). Docetaxel is an exfoliant - extravasation risk. Administer before cisplatin."
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 1000,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": null,
+        "duration_minutes": 1440,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Continuous infusion over 24 hours each day (total 4000mg/m² over 4 days). Central or PICC line recommended. Dose banded per national bands (50mg/ml). Fluorouracil is an inflamitant - extravasation risk.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 24.0,
+        "notes": "Continuous infusion over 24 hours each day (total 4000mg/m² over 4 days). Central or PICC line recommended. Dose banded per national bands (50mg/ml). Fluorouracil is an inflamitant - extravasation risk."
+      }
+    ]
+  },
+  {
+    "protocol_id": "hn-inp-cisplatin80-docetaxel40-fluorouracil2800",
+    "protocol_code": "INP-TPF80",
+    "protocol_name": "Head and Neck Cancer – InP-Cisplatin(80)-Docetaxel(40)-Fluorouracil(2800)",
+    "category": "head-and-neck",
+    "indication": "Neoadjuvant or advanced squamous cell carcinoma of the head and neck",
+    "version": "1.1",
+    "cycle_length_days": 21,
+    "total_cycles": 4,
+    "treatment_intent": "neoadjuvant or palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Cisplatin",
+        "dose": 20,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": null,
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "20mg/m² daily on days 1-4 (total 80mg/m² per cycle). Maximum rate 1mg cisplatin/minute (minimum infusion time 60 minutes). Pre-hydration with 500ml NaCl 0.9% with 8mmol MgSO4 over 30 minutes before each cisplatin dose. Dose banded per national bands (1mg/ml).",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Docetaxel",
+        "dose": 40,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          2
+        ],
+        "frequency": null,
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Infusion over 60 minutes on day 2 only. Doses >200mg dilute in 500ml NaCl 0.9% (max concentration 0.74mg/ml). Dose banded per national bands (20mg/ml). Docetaxel is an exfoliant - extravasation risk.",
+        "is_core_drug": true
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 700,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": null,
+        "duration_minutes": 1320,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "700mg/m²/day continuous infusion over 22 hours each day (total 2800mg/m² per cycle). Dose banded per national bands (50mg/ml). Fluorouracil is an inflammitant - extravasation risk.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "oral or IV",
+        "timing": "Once daily",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": "once daily",
+        "notes": "Antiemetic days 1-4"
+      },
+      {
+        "drug_name": "Ondansetron",
+        "dose": 8,
+        "dose_unit": "mg",
+        "route": "oral or IV",
+        "timing": "Once daily",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": "once daily",
+        "notes": "Antiemetic days 1-4"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "oral",
+        "timing": "Three times a day when required",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": "three times a day when required",
+        "notes": "Antiemetic - when required"
+      },
+      {
+        "drug_name": "Furosemide",
+        "dose": 40,
+        "dose_unit": "mg",
+        "route": "oral or IV",
+        "timing": "When required",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": "when required",
+        "notes": "Diuretic when required"
+      },
+      {
+        "drug_name": "Sodium chloride 0.9% with 8mmol magnesium sulphate",
+        "dose": 500,
+        "dose_unit": "ml",
+        "route": "IV infusion",
+        "timing": "Before each cisplatin dose",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": "once daily before cisplatin",
+        "notes": "Pre-cisplatin hydration over 30 minutes before each cisplatin dose"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "oral",
+        "frequency": "once daily in morning",
+        "duration": "2 days then 2mg once daily for 2 days starting day 5",
+        "notes": "Take-home antiemetic: 4mg each morning for 2 days then 2mg each morning for 2 days from day 5"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "oral",
+        "frequency": "three times a day when required",
+        "duration": "as required",
+        "notes": "Take-home antiemetic - when required"
+      }
+    ],
+    "dose_modifications": {
+      "haematological": {
+        "neutrophils_threshold_x10_9_per_l": 1.5,
+        "platelets_threshold_x10_9_per_l": 100,
+        "rules": [
+          {
+            "condition": "Neutrophils >= 1.5 and Platelets >= 100",
+            "action": "Proceed",
+            "factor": 1.0
+          },
+          {
+            "condition": "Neutrophils < 1.5 or Platelets < 100 - delay 7 days, counts recovered",
+            "action": "Resume with 75% dose reduction",
+            "factor": 0.75
+          },
+          {
+            "condition": "Counts not recovered at 7 days - delay further 7 days, counts satisfactory at 14 days",
+            "action": "Resume with 50% dose reduction",
+            "factor": 0.5
+          }
+        ]
+      },
+      "hepatic": [
+        {
+          "drug": "Cisplatin",
+          "bilirubin_umol_l": "any",
+          "alk_phos": "any",
+          "ast_alt_units": "any",
+          "action": "No dose reduction necessary",
+          "factor": 1.0
+        },
+        {
+          "drug": "Docetaxel",
+          "bilirubin_umol_l": "normal",
+          "alk_phos": ">= 2.5xULN",
+          "ast_alt_units": "1.5xULN",
+          "action": "Give 75%",
+          "factor": 0.75
+        },
+        {
+          "drug": "Docetaxel",
+          "bilirubin_umol_l": "> ULN",
+          "alk_phos": ">= 6xULN",
+          "ast_alt_units": ">= 3.5xULN",
+          "action": "Not recommended",
+          "factor": 0
+        },
+        {
+          "drug": "Fluorouracil",
+          "bilirubin_umol_l": "< 85",
+          "ast_alt_units": "< 180",
+          "action": "100% dose",
+          "factor": 1.0
+        },
+        {
+          "drug": "Fluorouracil",
+          "bilirubin_umol_l": "> 85",
+          "ast_alt_units": "> 180",
+          "action": "Contra-indicated",
+          "factor": 0
+        }
+      ],
+      "renal": [
+        {
+          "drug": "Cisplatin",
+          "crcl_ml_min_lower": 61,
+          "crcl_ml_min_upper": null,
+          "action": "100% dose",
+          "factor": 1.0
+        },
+        {
+          "drug": "Cisplatin",
+          "crcl_ml_min_lower": 45,
+          "crcl_ml_min_upper": 59,
+          "action": "75% dose",
+          "factor": 0.75
+        },
+        {
+          "drug": "Cisplatin",
+          "crcl_ml_min_lower": 0,
+          "crcl_ml_min_upper": 44,
+          "action": "Consider carboplatin",
+          "factor": null
+        },
+        {
+          "drug": "Docetaxel",
+          "crcl_ml_min_lower": null,
+          "crcl_ml_min_upper": null,
+          "action": "No dose adjustment required",
+          "factor": 1.0
+        },
+        {
+          "drug": "Fluorouracil",
+          "crcl_ml_min_lower": null,
+          "crcl_ml_min_upper": null,
+          "action": "Consider dose reduction in severe renal impairment only",
+          "factor": null
+        }
+      ],
+      "other": [
+        {
+          "drug": "Cisplatin",
+          "toxicity": "Peripheral sensory/motor neurotoxicity, ototoxicity, nephrotoxicity",
+          "action": "Dose modification necessary. Consider stopping for NCI-CTC grade 3 or more.",
+          "factor": null
+        },
+        {
+          "drug": "Docetaxel",
+          "toxicity": "Excessive lacrimation",
+          "action": "Hypromellose 0.3% eye drops QDS; if persists consider reducing docetaxel dose",
+          "factor": null
+        },
+        {
+          "drug": "Docetaxel",
+          "toxicity": "NCI-CTC grade 3 cutaneous toxicity on day 1",
+          "action": "Delay until resolves to grade 1; consider dose reduction",
+          "factor": null
+        },
+        {
+          "drug": "Docetaxel",
+          "toxicity": "NCI-CTC grade 4 cutaneous toxicity",
+          "action": "Stop docetaxel permanently",
+          "factor": 0
+        },
+        {
+          "drug": "Fluorouracil",
+          "toxicity": "Mucositis, diarrhoea",
+          "action": "Dose modification necessary",
+          "factor": null
+        }
+      ]
+    },
+    "treatment_delay_criteria": [
+      "Delay up to 2 weeks for NCI-CTC grade 3+ toxicities until resolved to grade 1 or less. Discontinue if delay exceeds 2 weeks.",
+      "Delay 7 days if neutrophils < 1.5 x10^9/L or platelets < 100 x10^9/L"
+    ],
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to each cycle",
+      "DPD deficiency testing required before cycle 1 initiation for all patients"
+    ],
+    "special_warnings": [
+      "InP (inpatient) regimen - patient requires inpatient admission for treatment",
+      "DPD deficiency: patients with complete or partial DPD deficiency are at increased risk of severe and fatal toxicity with fluorouracil - test all patients before cycle 1",
+      "This regimen has been locally adapted from the TPF references (TAX 323, TAX 324) - locally modified doses",
+      "Cisplatin given as 20mg/m²/day x4 days (total 80mg/m²); Fluorouracil given as 700mg/m²/day x4 days over 22 hours (total 2800mg/m²); Docetaxel given on day 2 only at 40mg/m²",
+      "Pre-cisplatin hydration with 500ml NaCl 0.9% + 8mmol MgSO4 over 30 minutes before each of the 4 daily cisplatin doses",
+      "Cisplatin and docetaxel are exfoliants; fluorouracil is an inflammitant - extravasation risks",
+      "Docetaxel hypersensitivity: minor symptoms - do not interrupt; severe reactions - discontinue immediately",
+      "Docetaxel-induced fluid retention can cause weight gain - not a reason to alter doses",
+      "Mouthwashes as per local or national guidelines",
+      "Gastric protection with PPI or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed",
+      "Blood transfusion if symptomatic anaemia or Hb < 8g/dL"
+    ],
+    "auc_dosing": false,
+    "required_patient_fields": [
+      "height",
+      "weight",
+      "bsa",
+      "creatinine_clearance",
+      "dpd_status"
+    ],
+    "disease_site": "Head and Neck",
+    "number_of_cycles": 4,
+    "drugs": [
+      {
+        "drug_name": "Cisplatin",
+        "dose": 20,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": null,
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9% with 20mmol potassium chloride",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "20mg/m² daily on days 1-4 (total 80mg/m² per cycle). Maximum rate 1mg cisplatin/minute (minimum infusion time 60 minutes). Pre-hydration with 500ml NaCl 0.9% with 8mmol MgSO4 over 30 minutes before each cisplatin dose. Dose banded per national bands (1mg/ml).",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "20mg/m² daily on days 1-4 (total 80mg/m² per cycle). Maximum rate 1mg cisplatin/minute (minimum infusion time 60 minutes). Pre-hydration with 500ml NaCl 0.9% with 8mmol MgSO4 over 30 minutes before each cisplatin dose. Dose banded per national bands (1mg/ml)."
+      },
+      {
+        "drug_name": "Docetaxel",
+        "dose": 40,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          2
+        ],
+        "frequency": null,
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 250,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Infusion over 60 minutes on day 2 only. Doses >200mg dilute in 500ml NaCl 0.9% (max concentration 0.74mg/ml). Dose banded per national bands (20mg/ml). Docetaxel is an exfoliant - extravasation risk.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "Infusion over 60 minutes on day 2 only. Doses >200mg dilute in 500ml NaCl 0.9% (max concentration 0.74mg/ml). Dose banded per national bands (20mg/ml). Docetaxel is an exfoliant - extravasation risk."
+      },
+      {
+        "drug_name": "Fluorouracil",
+        "dose": 700,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "frequency": null,
+        "duration_minutes": 1320,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 1000,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "700mg/m²/day continuous infusion over 22 hours each day (total 2800mg/m² per cycle). Dose banded per national bands (50mg/ml). Fluorouracil is an inflammitant - extravasation risk.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 22.0,
+        "notes": "700mg/m²/day continuous infusion over 22 hours each day (total 2800mg/m² per cycle). Dose banded per national bands (50mg/ml). Fluorouracil is an inflammitant - extravasation risk."
+      }
+    ]
+  },
+  {
+    "protocol_id": "hn-methotrexate",
+    "protocol_code": "METHOTREXATE",
+    "protocol_name": "Head and Neck Cancer – Methotrexate",
+    "category": "head-and-neck",
+    "indication": "Advanced head and neck cancer; WHO Performance Status 0, 1, 2",
+    "version": "1",
+    "cycle_length_days": 14,
+    "total_cycles": 6,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Methotrexate",
+        "dose": 100,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 10,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Intravenous bolus over 10 minutes. Dose banded per CSCCN agreed bands. Methotrexate is an inflammitant - extravasation risk.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Dexamethasone",
+        "dose": 4,
+        "dose_unit": "mg",
+        "route": "oral or IV",
+        "timing": "15-30 minutes prior to chemotherapy on day 1",
+        "days": [
+          1
+        ],
+        "frequency": "once",
+        "notes": "Antiemetic"
+      },
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "oral or IV",
+        "timing": "15-30 minutes prior to chemotherapy on day 1",
+        "days": [
+          1
+        ],
+        "frequency": "once",
+        "notes": "Antiemetic"
+      }
+    ],
+    "take_home_medicines": [
+      {
+        "drug_name": "Metoclopramide",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "oral",
+        "frequency": "three times a day when required",
+        "duration": "as required",
+        "notes": "Take-home antiemetic - when required"
+      },
+      {
+        "drug_name": "Folinic acid",
+        "dose": 15,
+        "dose_unit": "mg",
+        "route": "oral",
+        "frequency": "four times a day",
+        "duration": "2 days starting 24 hours after methotrexate administration",
+        "notes": "Folinic acid rescue - MANDATORY. 15mg QDS x2 days starting 24 hours post-methotrexate."
+      }
+    ],
+    "dose_modifications": {
+      "haematological": {
+        "neutrophils_threshold_x10_9_per_l": 1.0,
+        "platelets_threshold_x10_9_per_l": 100,
+        "rules": [
+          {
+            "condition": "Neutrophils >= 1.0 and Platelets >= 100",
+            "action": "Proceed",
+            "factor": 1.0
+          },
+          {
+            "condition": "Neutrophils < 1.0 or Platelets < 100 - delay 7 days",
+            "action": "Delay 7 days; resume at original dose or 80% depending on clinical circumstances",
+            "factor": null
+          },
+          {
+            "condition": "Second episode of neutropenia/thrombocytopenia or recovery takes > 7 days",
+            "action": "Consider stopping or changing treatment",
+            "factor": 0
+          }
+        ]
+      },
+      "hepatic": [
+        {
+          "drug": "Methotrexate",
+          "bilirubin_umol_l": "< 50",
+          "ast_alt_units": "< 180",
+          "action": "100% dose",
+          "factor": 1.0
+        },
+        {
+          "drug": "Methotrexate",
+          "bilirubin_umol_l": "51-85",
+          "ast_alt_units": "> 180",
+          "action": "75% dose",
+          "factor": 0.75
+        },
+        {
+          "drug": "Methotrexate",
+          "bilirubin_umol_l": "> 85",
+          "ast_alt_units": "any",
+          "action": "Contra-indicated",
+          "factor": 0
+        }
+      ],
+      "renal": [
+        {
+          "drug": "Methotrexate",
+          "crcl_ml_min_lower": 81,
+          "crcl_ml_min_upper": null,
+          "action": "100% dose",
+          "factor": 1.0
+        },
+        {
+          "drug": "Methotrexate",
+          "crcl_ml_min_lower": 60,
+          "crcl_ml_min_upper": 80,
+          "action": "65% dose",
+          "factor": 0.65
+        },
+        {
+          "drug": "Methotrexate",
+          "crcl_ml_min_lower": 45,
+          "crcl_ml_min_upper": 59,
+          "action": "50% dose",
+          "factor": 0.5
+        },
+        {
+          "drug": "Methotrexate",
+          "crcl_ml_min_lower": 0,
+          "crcl_ml_min_upper": 29,
+          "action": "Contra-indicated",
+          "factor": 0
+        }
+      ],
+      "other": []
+    },
+    "treatment_delay_criteria": [
+      "Delay 7 days if neutrophils < 1.0 x10^9/L or platelets < 100 x10^9/L"
+    ],
+    "monitoring_requirements": [
+      "FBC, U&Es and LFTs prior to each cycle",
+      "Blood transfusion if symptomatic anaemia or Hb < 9.5g/dL"
+    ],
+    "special_warnings": [
+      "Folinic acid rescue MANDATORY: 15mg orally four times daily for 2 days starting 24 hours after methotrexate administration",
+      "Presence of third fluid compartment (e.g. ascites or renal failure) may delay methotrexate clearance and increase toxicity",
+      "Methotrexate is an inflammitant - extravasation risk",
+      "Mouthwashes according to local or national policy for mucositis",
+      "Gastric protection with PPI or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed"
+    ],
+    "auc_dosing": false,
+    "required_patient_fields": [
+      "height",
+      "weight",
+      "bsa",
+      "creatinine_clearance"
+    ],
+    "disease_site": "Head and Neck",
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Methotrexate",
+        "dose": 100,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 10,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Intravenous bolus over 10 minutes. Dose banded per CSCCN agreed bands. Methotrexate is an inflammitant - extravasation risk.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.1667,
+        "notes": "Intravenous bolus over 10 minutes. Dose banded per CSCCN agreed bands. Methotrexate is an inflammitant - extravasation risk."
+      }
+    ]
+  },
+  {
+    "protocol_id": "hn-nivolumab-240mg-14day",
+    "protocol_code": "NIVOLUMAB240",
+    "protocol_name": "Head and Neck Cancer – Nivolumab (240mg-14 days)",
+    "category": "head-and-neck",
+    "indication": "Treatment of recurrent or metastatic squamous cell carcinoma of the head and neck after platinum-based chemotherapy. Criteria: recurrent/metastatic HNSCC not amenable to local curative therapy; disease progressed or recurred during or within 6 months of last platinum-based chemotherapy; PD-L1 TPS testing performed; no symptomatic active brain/leptomeningeal metastases; no prior anti-PD-1/PD-L1/PD-L2/CD137/CTLA-4 therapy; monotherapy; WHO PS 0-1",
+    "version": "1",
+    "cycle_length_days": 14,
+    "total_cycles": 52,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Nivolumab",
+        "dose": 240,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Flat dose 240mg. Infusion over 30 minutes via 0.2-1.2 micron low protein binding filter (polyethylene-lined giving sets used for paclitaxel with 0.22 micron filter are appropriate). Dose is NOT reduced for toxicity - doses are delayed only. Nivolumab is neutral - minimal extravasation risk.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV",
+        "timing": "When required for infusion-related reactions",
+        "days": [
+          1
+        ],
+        "frequency": "when required",
+        "notes": "For treatment of infusion-related reactions only"
+      },
+      {
+        "drug_name": "Hydrocortisone",
+        "dose": 100,
+        "dose_unit": "mg",
+        "route": "IV",
+        "timing": "When required for infusion-related reactions",
+        "days": [
+          1
+        ],
+        "frequency": "when required",
+        "notes": "For treatment of infusion-related reactions only"
+      },
+      {
+        "drug_name": "Paracetamol",
+        "dose": 1000,
+        "dose_unit": "mg",
+        "route": "oral",
+        "timing": "When required for infusion-related reactions",
+        "days": [
+          1
+        ],
+        "frequency": "when required",
+        "notes": "For treatment of infusion-related reactions only"
+      }
+    ],
+    "take_home_medicines": [],
+    "dose_modifications": {
+      "haematological": {
+        "neutrophils_threshold_x10_9_per_l": null,
+        "platelets_threshold_x10_9_per_l": null,
+        "rules": [
+          {
+            "condition": "Any haematological toxicity",
+            "action": "No dose reduction required. Dose escalation or reduction is not recommended.",
+            "factor": 1.0
+          }
+        ]
+      },
+      "hepatic": [
+        {
+          "drug": "Nivolumab",
+          "condition": "Pre-existing mild hepatic impairment",
+          "action": "No dose adjustment recommended",
+          "factor": 1.0
+        },
+        {
+          "drug": "Nivolumab",
+          "condition": "Immune-related hepatitis: AST/ALT 3-5xULN and/or bilirubin 1.5-3xULN (Grade 2)",
+          "action": "Withhold and administer corticosteroids; taper over 1 month; restart when LFTs grade 1 after taper",
+          "factor": 1.0
+        },
+        {
+          "drug": "Nivolumab",
+          "condition": "Immune-related hepatitis: AST/ALT >= 5xULN or bilirubin > 3xULN (Grade 3-4)",
+          "action": "Permanently discontinue",
+          "factor": 0
+        }
+      ],
+      "renal": [
+        {
+          "drug": "Nivolumab",
+          "condition": "Pre-existing mild or moderate renal impairment",
+          "action": "No dose adjustment required",
+          "factor": 1.0
+        },
+        {
+          "drug": "Nivolumab",
+          "condition": "Immune-related nephritis: grade 2 or 3 creatinine elevation",
+          "action": "Withhold and initiate corticosteroids; taper; restart when creatinine grade 1 or below",
+          "factor": 1.0
+        },
+        {
+          "drug": "Nivolumab",
+          "condition": "Immune-related nephritis: grade 4 creatinine elevation",
+          "action": "Permanently discontinue; corticosteroids 1-2mg/kg/day methylprednisolone equivalents",
+          "factor": 0
+        }
+      ],
+      "immune_related_adverse_events": [
+        {
+          "reaction": "Immune-related pneumonitis",
+          "grade": "Grade 2",
+          "action": "Withhold until symptoms resolve, radiographic abnormalities improve, corticosteroid management complete",
+          "factor": 1.0
+        },
+        {
+          "reaction": "Immune-related pneumonitis",
+          "grade": "Grade 3 or 4",
+          "action": "Permanently discontinue",
+          "factor": 0
+        },
+        {
+          "reaction": "Immune-related colitis",
+          "grade": "Grade 2 or 3",
+          "action": "Withhold until symptoms resolve and corticosteroid management complete",
+          "factor": 1.0
+        },
+        {
+          "reaction": "Immune-related colitis",
+          "grade": "Grade 4",
+          "action": "Permanently discontinue",
+          "factor": 0
+        },
+        {
+          "reaction": "Immune-related hepatitis",
+          "grade": "Grade 2 AST/ALT/bilirubin elevation",
+          "action": "Withhold until laboratory values return to baseline and corticosteroid management complete",
+          "factor": 1.0
+        },
+        {
+          "reaction": "Immune-related hepatitis",
+          "grade": "Grade 3 or 4 AST/ALT/bilirubin elevation",
+          "action": "Permanently discontinue",
+          "factor": 0
+        },
+        {
+          "reaction": "Immune-related nephritis and renal dysfunction",
+          "grade": "Grade 2 or 3 creatinine elevation",
+          "action": "Withhold until creatinine returns to baseline and corticosteroid management complete",
+          "factor": 1.0
+        },
+        {
+          "reaction": "Immune-related nephritis and renal dysfunction",
+          "grade": "Grade 4 creatinine elevation",
+          "action": "Permanently discontinue",
+          "factor": 0
+        },
+        {
+          "reaction": "Immune-related endocrinopathies",
+          "grade": "Symptomatic (hypothyroidism, hyperthyroidism, hypophysitis, adrenal insufficiency, diabetes)",
+          "action": "Withhold until symptoms resolve and corticosteroid management complete. Continue nivolumab with hormone replacement therapy if asymptomatic.",
+          "factor": 1.0
+        },
+        {
+          "reaction": "Immune-related rash",
+          "grade": "Grade 3",
+          "action": "Withhold until symptoms resolve and corticosteroid management complete",
+          "factor": 1.0
+        },
+        {
+          "reaction": "Immune-related rash",
+          "grade": "Grade 4",
+          "action": "Permanently discontinue",
+          "factor": 0
+        }
+      ],
+      "other": [
+        {
+          "condition": "Treatment interruption >= 12 weeks",
+          "action": "Current funding approval precludes further treatment after interruption of 12 weeks or longer",
+          "factor": 0
+        }
+      ]
+    },
+    "treatment_delay_criteria": [
+      "Doses are DELAYED not reduced for immunotherapy toxicity",
+      "Withhold for grade 2 pneumonitis, hepatitis, colitis, renal impairment, and grade 3 other toxicities",
+      "Do not resume if patient still receiving immunosuppressive doses of corticosteroids",
+      "Permanently discontinue if toxicity does not improve to grade 1 within 12 weeks of last dose",
+      "Funding approval precludes treatment after interruption of 12 weeks or longer"
+    ],
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to day 1 of each cycle",
+      "Thyroid function tests prior to starting treatment then every 6 weeks or when clinically indicated",
+      "52 cycles set in Aria",
+      "Treatment stopped at 2 years or disease progression or unacceptable toxicity, whichever first"
+    ],
+    "special_warnings": [
+      "IMMUNOTHERAPY: Dose reductions are NOT permitted for nivolumab. Doses are delayed only.",
+      "Nivolumab 240mg is a FLAT DOSE - not weight or BSA based",
+      "Patient MUST be given a Nivolumab Patient Alert Card",
+      "Avoid systemic corticosteroids BEFORE starting nivolumab (may interfere with efficacy); may use after starting for immune-related AEs",
+      "Autoimmune toxicities can be life-threatening; seek specialist guidance for management",
+      "Atypical responses (initial increase in tumour size then shrinkage) can occur; continue treatment in clinically stable patients with initial progression until confirmed",
+      "PD-L1 TPS testing required; every effort should be made to obtain TPS",
+      "Isolated hypothyroidism can be managed with replacement therapy without treatment interruption",
+      "Adrenal crisis (severe dehydration, hypotension, shock): immediate IV corticosteroids with mineralocorticoid activity",
+      "For grade 2-3 immune-related AEs persisting despite treatment or unable to reduce corticosteroids to <= 10mg prednisolone equivalent per day: permanently discontinue",
+      "Loperamide 4mg orally initially then 2mg after each loose stool when required (maximum 16mg/24 hours)",
+      "Gastric protection with PPI or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed"
+    ],
+    "auc_dosing": false,
+    "required_patient_fields": [
+      "pd_l1_tps_score",
+      "performance_status"
+    ],
+    "disease_site": "Head and Neck",
+    "number_of_cycles": 52,
+    "drugs": [
+      {
+        "drug_name": "Nivolumab",
+        "dose": 240,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Flat dose 240mg. Infusion over 30 minutes via 0.2-1.2 micron low protein binding filter (polyethylene-lined giving sets used for paclitaxel with 0.22 micron filter are appropriate). Dose is NOT reduced for toxicity - doses are delayed only. Nivolumab is neutral - minimal extravasation risk.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.5,
+        "notes": "Flat dose 240mg. Infusion over 30 minutes via 0.2-1.2 micron low protein binding filter (polyethylene-lined giving sets used for paclitaxel with 0.22 micron filter are appropriate). Dose is NOT reduced for toxicity - doses are delayed only. Nivolumab is neutral - minimal extravasation risk."
+      }
+    ]
+  },
+  {
+    "protocol_id": "hn-nivolumab-3mgkg-14day",
+    "protocol_code": "NIVOLUMAB3MGKG",
+    "protocol_name": "Head and Neck Cancer – Nivolumab (3mg/kg)",
+    "category": "head-and-neck",
+    "indication": "Treatment of recurrent or metastatic squamous cell carcinoma of the head and neck after platinum-based chemotherapy. Criteria: recurrent/metastatic HNSCC not amenable to local curative therapy; disease progressed or recurred during or within 6 months of last platinum-based chemotherapy; PD-L1 TPS testing performed; no symptomatic active brain/leptomeningeal metastases; no prior anti-PD-1/PD-L1/PD-L2/CD137/CTLA-4 therapy; monotherapy; WHO PS 0-1; Bluteq approval required",
+    "version": "1",
+    "cycle_length_days": 14,
+    "total_cycles": 52,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Nivolumab",
+        "dose": 3,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Weight-based dose 3mg/kg. Infusion over 60 minutes via 0.2-1.2 micron low protein binding filter. Dose banded according to national dose bands. Dose is NOT reduced for toxicity - doses are delayed only. Nivolumab is neutral - minimal extravasation risk.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV",
+        "timing": "When required for infusion-related reactions",
+        "days": [
+          1
+        ],
+        "frequency": "when required",
+        "notes": "For treatment of infusion-related reactions only"
+      },
+      {
+        "drug_name": "Hydrocortisone",
+        "dose": 100,
+        "dose_unit": "mg",
+        "route": "IV",
+        "timing": "When required for infusion-related reactions",
+        "days": [
+          1
+        ],
+        "frequency": "when required",
+        "notes": "For treatment of infusion-related reactions only"
+      },
+      {
+        "drug_name": "Paracetamol",
+        "dose": 1000,
+        "dose_unit": "mg",
+        "route": "oral",
+        "timing": "When required for infusion-related reactions",
+        "days": [
+          1
+        ],
+        "frequency": "when required",
+        "notes": "For treatment of infusion-related reactions only"
+      }
+    ],
+    "take_home_medicines": [],
+    "dose_modifications": {
+      "haematological": {
+        "neutrophils_threshold_x10_9_per_l": null,
+        "platelets_threshold_x10_9_per_l": null,
+        "rules": [
+          {
+            "condition": "Any haematological toxicity",
+            "action": "No dose reduction required. Dose escalation or reduction is not recommended.",
+            "factor": 1.0
+          }
+        ]
+      },
+      "hepatic": [
+        {
+          "drug": "Nivolumab",
+          "condition": "Pre-existing mild hepatic impairment",
+          "action": "No dose adjustment recommended",
+          "factor": 1.0
+        },
+        {
+          "drug": "Nivolumab",
+          "condition": "Immune-related hepatitis: AST/ALT 3-5xULN and/or bilirubin 1.5-3xULN (Grade 2)",
+          "action": "Withhold and administer corticosteroids; taper over 1 month; restart when LFTs grade 1 after taper",
+          "factor": 1.0
+        },
+        {
+          "drug": "Nivolumab",
+          "condition": "Immune-related hepatitis: AST/ALT >= 5xULN or bilirubin > 3xULN (Grade 3-4)",
+          "action": "Permanently discontinue",
+          "factor": 0
+        }
+      ],
+      "renal": [
+        {
+          "drug": "Nivolumab",
+          "condition": "Pre-existing mild or moderate renal impairment",
+          "action": "No dose adjustment required",
+          "factor": 1.0
+        },
+        {
+          "drug": "Nivolumab",
+          "condition": "Immune-related nephritis: grade 2 or 3 creatinine elevation",
+          "action": "Withhold and initiate corticosteroids; taper; restart when creatinine grade 1 or below",
+          "factor": 1.0
+        },
+        {
+          "drug": "Nivolumab",
+          "condition": "Immune-related nephritis: grade 4 creatinine elevation",
+          "action": "Permanently discontinue; corticosteroids 1-2mg/kg/day methylprednisolone equivalents",
+          "factor": 0
+        }
+      ],
+      "immune_related_adverse_events": [
+        {
+          "reaction": "Immune-related pneumonitis",
+          "grade": "Grade 2",
+          "action": "Withhold until symptoms resolve, radiographic abnormalities improve, corticosteroid management complete",
+          "factor": 1.0
+        },
+        {
+          "reaction": "Immune-related pneumonitis",
+          "grade": "Grade 3 or 4",
+          "action": "Permanently discontinue",
+          "factor": 0
+        },
+        {
+          "reaction": "Immune-related colitis",
+          "grade": "Grade 2 or 3",
+          "action": "Withhold until symptoms resolve and corticosteroid management complete",
+          "factor": 1.0
+        },
+        {
+          "reaction": "Immune-related colitis",
+          "grade": "Grade 4",
+          "action": "Permanently discontinue",
+          "factor": 0
+        },
+        {
+          "reaction": "Immune-related hepatitis",
+          "grade": "Grade 2 AST/ALT/bilirubin elevation",
+          "action": "Withhold until laboratory values return to baseline and corticosteroid management complete",
+          "factor": 1.0
+        },
+        {
+          "reaction": "Immune-related hepatitis",
+          "grade": "Grade 3 or 4 AST/ALT/bilirubin elevation",
+          "action": "Permanently discontinue",
+          "factor": 0
+        },
+        {
+          "reaction": "Immune-related nephritis and renal dysfunction",
+          "grade": "Grade 2 or 3 creatinine elevation",
+          "action": "Withhold until creatinine returns to baseline and corticosteroid management complete",
+          "factor": 1.0
+        },
+        {
+          "reaction": "Immune-related nephritis and renal dysfunction",
+          "grade": "Grade 4 creatinine elevation",
+          "action": "Permanently discontinue",
+          "factor": 0
+        },
+        {
+          "reaction": "Immune-related endocrinopathies",
+          "grade": "Symptomatic (hypothyroidism, hyperthyroidism, hypophysitis, adrenal insufficiency, diabetes)",
+          "action": "Withhold until symptoms resolve and corticosteroid management complete. Continue nivolumab with hormone replacement therapy if asymptomatic.",
+          "factor": 1.0
+        },
+        {
+          "reaction": "Immune-related rash",
+          "grade": "Grade 3",
+          "action": "Withhold until symptoms resolve and corticosteroid management complete",
+          "factor": 1.0
+        },
+        {
+          "reaction": "Immune-related rash",
+          "grade": "Grade 4",
+          "action": "Permanently discontinue",
+          "factor": 0
+        }
+      ],
+      "other": [
+        {
+          "condition": "Treatment interruption >= 12 weeks",
+          "action": "Current funding approval precludes further treatment after interruption of 12 weeks or longer",
+          "factor": 0
+        }
+      ]
+    },
+    "treatment_delay_criteria": [
+      "Doses are DELAYED not reduced for immunotherapy toxicity",
+      "Withhold for grade 2 pneumonitis, hepatitis, colitis, renal impairment, and grade 3 other toxicities",
+      "Do not resume if patient still receiving immunosuppressive doses of corticosteroids",
+      "Permanently discontinue if toxicity does not improve to grade 1 within 12 weeks of last dose",
+      "Funding approval precludes treatment after interruption of 12 weeks or longer"
+    ],
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to day 1 of each cycle",
+      "Thyroid function tests prior to starting treatment then every 6 weeks or when clinically indicated",
+      "52 cycles set in Aria",
+      "Treatment stopped at 2 years or disease progression or unacceptable toxicity, whichever first"
+    ],
+    "special_warnings": [
+      "IMMUNOTHERAPY: Dose reductions are NOT permitted for nivolumab. Doses are delayed only.",
+      "Bluteq approval required before prescribing",
+      "Nivolumab 3mg/kg is a WEIGHT-BASED dose - dose banded according to national dose bands",
+      "Patient MUST be given a Nivolumab Patient Alert Card",
+      "Avoid systemic corticosteroids BEFORE starting nivolumab (may interfere with efficacy); may use after starting for immune-related AEs",
+      "Autoimmune toxicities can be life-threatening; seek specialist guidance for management",
+      "Atypical responses (initial increase in tumour size then shrinkage) can occur; continue in clinically stable patients with initial progression until confirmed",
+      "PD-L1 TPS testing required; every effort should be made to obtain TPS",
+      "Isolated hypothyroidism can be managed with replacement therapy without treatment interruption",
+      "For grade 2-3 immune-related AEs persisting despite treatment or unable to reduce corticosteroids to <= 10mg prednisolone equivalent: permanently discontinue",
+      "Loperamide 4mg orally initially then 2mg after each loose stool when required (maximum 16mg/24 hours)",
+      "Gastric protection with PPI or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed"
+    ],
+    "auc_dosing": false,
+    "required_patient_fields": [
+      "weight",
+      "pd_l1_tps_score",
+      "performance_status",
+      "bluteq_approval"
+    ],
+    "disease_site": "Head and Neck",
+    "number_of_cycles": 52,
+    "drugs": [
+      {
+        "drug_name": "Nivolumab",
+        "dose": 3,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 60,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Weight-based dose 3mg/kg. Infusion over 60 minutes via 0.2-1.2 micron low protein binding filter. Dose banded according to national dose bands. Dose is NOT reduced for toxicity - doses are delayed only. Nivolumab is neutral - minimal extravasation risk.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 1.0,
+        "notes": "Weight-based dose 3mg/kg. Infusion over 60 minutes via 0.2-1.2 micron low protein binding filter. Dose banded according to national dose bands. Dose is NOT reduced for toxicity - doses are delayed only. Nivolumab is neutral - minimal extravasation risk."
+      }
+    ]
+  },
+  {
+    "protocol_id": "hn-pembrolizumab-200mg",
+    "protocol_code": "PEMBRO200",
+    "protocol_name": "Head and Neck Cancer – Pembrolizumab (200mg)",
+    "category": "head-and-neck",
+    "indication": "First-line treatment of metastatic or locally advanced/unresectable recurrent squamous cell carcinoma of the head and neck in adult patients. Criteria: documented histological diagnosis of HNSCC; metastatic or locally advanced/unresectable recurrent HNSCC not amenable to curative local therapy; PD-L1 CPS >= 1 (not funded if CPS < 1); ECOG PS 0 or 1; no prior anti-PD-1/PD-L1/PD-L2/CD137/CTLA-4 therapy (unless prior pembrolizumab monotherapy via Interim COVID19 funding); no symptomatic active brain/leptomeningeal metastases; monotherapy only",
+    "version": "1",
+    "cycle_length_days": 21,
+    "total_cycles": 35,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Pembrolizumab",
+        "dose": 200,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Flat dose 200mg. Infusion over 30 minutes with 0.2 micron low protein binding filter. Dose is NOT reduced for toxicity - doses are delayed only. Pembrolizumab is neutral - minimal extravasation risk.",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV",
+        "timing": "When required for infusion-related reactions",
+        "days": [
+          1
+        ],
+        "frequency": "when required",
+        "notes": "For treatment of infusion-related reactions only"
+      },
+      {
+        "drug_name": "Hydrocortisone",
+        "dose": 100,
+        "dose_unit": "mg",
+        "route": "IV",
+        "timing": "When required for infusion-related reactions",
+        "days": [
+          1
+        ],
+        "frequency": "when required",
+        "notes": "For treatment of infusion-related reactions only"
+      },
+      {
+        "drug_name": "Paracetamol",
+        "dose": 1000,
+        "dose_unit": "mg",
+        "route": "oral",
+        "timing": "When required for infusion-related reactions",
+        "days": [
+          1
+        ],
+        "frequency": "when required",
+        "notes": "For treatment of infusion-related reactions only. Maximum dose 4g/24h; 4 hours between doses."
+      }
+    ],
+    "take_home_medicines": [],
+    "dose_modifications": {
+      "haematological": {
+        "neutrophils_threshold_x10_9_per_l": null,
+        "platelets_threshold_x10_9_per_l": null,
+        "rules": [
+          {
+            "condition": "Any haematological toxicity",
+            "action": "No dose reduction required",
+            "factor": 1.0
+          }
+        ]
+      },
+      "hepatic": [
+        {
+          "drug": "Pembrolizumab",
+          "condition": "Immune-related hepatitis: AST/ALT 3-5xULN and/or bilirubin 1.5-3xULN (Grade 2)",
+          "action": "Withhold and administer corticosteroids; taper over 1 month; restart when LFTs grade 1 after taper",
+          "factor": 1.0
+        },
+        {
+          "drug": "Pembrolizumab",
+          "condition": "Immune-related hepatitis: AST/ALT >= 5xULN or bilirubin > 3xULN, or AST/ALT rise >= 50% from baseline lasting >= 1 week in liver metastasis patients (Grade 3-4)",
+          "action": "Permanently discontinue",
+          "factor": 0
+        }
+      ],
+      "renal": [
+        {
+          "drug": "Pembrolizumab",
+          "condition": "Immune-related nephritis: grade 2",
+          "action": "Withhold and administer corticosteroids; taper; restart when creatinine grade 1 or below",
+          "factor": 1.0
+        },
+        {
+          "drug": "Pembrolizumab",
+          "condition": "Immune-related nephritis: grade 3 or above",
+          "action": "Permanently discontinue",
+          "factor": 0
+        }
+      ],
+      "immune_related_adverse_events": [
+        {
+          "reaction": "Immune-related pneumonitis",
+          "grade": "Grade 1",
+          "action": "Continue with close monitoring; follow on serial imaging",
+          "factor": 1.0
+        },
+        {
+          "reaction": "Immune-related pneumonitis",
+          "grade": "Grade 2",
+          "action": "Withhold; corticosteroids 1-2mg/kg/day prednisone; restart if improves to grade 0-1 within 12 weeks and steroids reduced to prednisolone 10mg oral daily equivalent",
+          "factor": 1.0
+        },
+        {
+          "reaction": "Immune-related pneumonitis",
+          "grade": "Grade 3 or 4",
+          "action": "Permanently discontinue",
+          "factor": 0
+        },
+        {
+          "reaction": "Immune-related colitis",
+          "grade": "Grade 1",
+          "action": "Continue; symptomatic treatment and close monitoring",
+          "factor": 1.0
+        },
+        {
+          "reaction": "Immune-related colitis",
+          "grade": "Grade 2 or 3",
+          "action": "Withhold and administer corticosteroids; taper; restart when colitis grade 1",
+          "factor": 1.0
+        },
+        {
+          "reaction": "Immune-related colitis",
+          "grade": "Grade 4 or persistent grade 3",
+          "action": "Permanently discontinue",
+          "factor": 0
+        },
+        {
+          "reaction": "Immune-related hepatitis",
+          "grade": "Grade 2",
+          "action": "Withhold and corticosteroids; restart when LFTs grade 1",
+          "factor": 1.0
+        },
+        {
+          "reaction": "Immune-related hepatitis",
+          "grade": "Grade 3 or 4",
+          "action": "Permanently discontinue",
+          "factor": 0
+        },
+        {
+          "reaction": "Immune-related nephritis",
+          "grade": "Grade 2",
+          "action": "Withhold and corticosteroids; restart when grade 1",
+          "factor": 1.0
+        },
+        {
+          "reaction": "Immune-related nephritis",
+          "grade": "Grade 3 or above",
+          "action": "Permanently discontinue",
+          "factor": 0
+        },
+        {
+          "reaction": "Immune-related endocrinopathies",
+          "grade": "Any symptomatic",
+          "action": "Manage with hormone replacement; corticosteroids for acute inflammation. Isolated hypothyroidism: replacement therapy without interruption.",
+          "factor": 1.0
+        },
+        {
+          "reaction": "Immune-related uveitis (eye)",
+          "grade": "Grade 1-2",
+          "action": "Ophthalmologist evaluation; topical corticosteroids eye drops and iridocyclitics; discontinue if persists despite topical immunosuppression",
+          "factor": 1.0
+        },
+        {
+          "reaction": "Immune-related uveitis (eye)",
+          "grade": "Grade 3 or above",
+          "action": "Discontinue pembrolizumab; systemic corticosteroids; taper over >= 4 weeks when improved to grade 1",
+          "factor": 0
+        },
+        {
+          "reaction": "Immune-related skin toxicity",
+          "grade": "Grade 1-2",
+          "action": "Symptomatic treatment (topical corticosteroids/urea creams with oral antipruritics); continue pembrolizumab",
+          "factor": 1.0
+        },
+        {
+          "reaction": "Immune-related skin toxicity",
+          "grade": "Grade 3 or above",
+          "action": "Withhold; dermatology referral; systemic prednisolone 1mg/kg daily; taper when improved to grade 1",
+          "factor": 1.0
+        },
+        {
+          "reaction": "Infusion-related reaction",
+          "grade": "Grade 3 or 4",
+          "action": "Permanently discontinue",
+          "factor": 0
+        }
+      ],
+      "other": [
+        {
+          "condition": "Treatment interruption >= 12 weeks",
+          "action": "Current funding approval precludes further treatment after interruption of 12 weeks or longer",
+          "factor": 0
+        }
+      ]
+    },
+    "treatment_delay_criteria": [
+      "Doses are DELAYED not reduced for immunotherapy toxicity",
+      "Withhold for grade 2 hepatitis, nephritis, colitis, pneumonitis and grade 3 other immune toxicities",
+      "Do not resume if patient still receiving immunosuppressive doses of corticosteroids",
+      "Permanently discontinue if toxicity does not improve to grade 1 within 12 weeks of last dose",
+      "Funding approval precludes treatment after interruption of 12 weeks or longer",
+      "35 cycles (2 years) maximum - set in ARIA"
+    ],
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to day 1 of each cycle",
+      "Thyroid function tests prior to starting treatment then before each administration (cycle) or when clinically indicated",
+      "35 cycles or 2 years set in ARIA (whichever first)",
+      "Treatment stopped at 2 years or disease progression or unacceptable toxicity, whichever first"
+    ],
+    "special_warnings": [
+      "IMMUNOTHERAPY: Dose reductions are NOT permitted for pembrolizumab. Doses are delayed only.",
+      "Pembrolizumab 200mg is a FLAT DOSE - not weight or BSA based",
+      "PD-L1 CPS >= 1 REQUIRED for funding - not funded if CPS < 1. CPS testing with approved/validated test mandatory before prescribing.",
+      "ECOG performance status 0 or 1 required",
+      "Avoid systemic corticosteroids BEFORE starting pembrolizumab (may interfere with efficacy); may use after starting for immune-related AEs",
+      "Autoimmune toxicities can be life-threatening; seek specialist guidance",
+      "Uveitis associated with pembrolizumab - ophthalmic assessment for ocular symptoms",
+      "Serious skin reactions including SJS and TEN possible",
+      "Isolated hypothyroidism can be managed with replacement therapy without treatment interruption",
+      "Adrenal crisis (severe dehydration, hypotension, shock): immediate IV corticosteroids with mineralocorticoid activity",
+      "Permanently discontinue for grade 3-4 pneumonitis, nephritis, or infusion-related reactions, or grade 4 adverse reactions",
+      "Gastric protection with PPI or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed",
+      "Equivalent to 35 x 3-weekly cycles; 400mg 6-weekly formulation is an alternative"
+    ],
+    "auc_dosing": false,
+    "required_patient_fields": [
+      "pd_l1_cps_score",
+      "performance_status"
+    ],
+    "disease_site": "Head and Neck",
+    "number_of_cycles": 35,
+    "drugs": [
+      {
+        "drug_name": "Pembrolizumab",
+        "dose": 200,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Flat dose 200mg. Infusion over 30 minutes with 0.2 micron low protein binding filter. Dose is NOT reduced for toxicity - doses are delayed only. Pembrolizumab is neutral - minimal extravasation risk.",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.5,
+        "notes": "Flat dose 200mg. Infusion over 30 minutes with 0.2 micron low protein binding filter. Dose is NOT reduced for toxicity - doses are delayed only. Pembrolizumab is neutral - minimal extravasation risk."
+      }
+    ]
+  },
+  {
+    "protocol_id": "hn-pembrolizumab-400mg",
+    "protocol_code": "PEMBRO400",
+    "protocol_name": "Head and Neck Cancer – Pembrolizumab (400mg)",
+    "category": "head-and-neck",
+    "indication": "First-line treatment of metastatic or locally advanced/unresectable recurrent squamous cell carcinoma of the head and neck in adult patients. Criteria: documented histological diagnosis of HNSCC; metastatic or locally advanced/unresectable recurrent HNSCC not amenable to curative local therapy; PD-L1 CPS >= 1 (not funded if CPS < 1); ECOG PS 0 or 1; no prior anti-PD-1/PD-L1/PD-L2/CD137/CTLA-4 therapy (unless prior pembrolizumab monotherapy via Interim COVID19 funding); no symptomatic active brain/leptomeningeal metastases; monotherapy only; equivalent to 35 x 3-weekly cycles of 200mg",
+    "version": "1",
+    "cycle_length_days": 42,
+    "total_cycles": 18,
+    "treatment_intent": "palliative",
+    "chemotherapy_drugs": [
+      {
+        "drug_name": "Pembrolizumab",
+        "dose": 400,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Flat dose 400mg every 6 weeks. Infusion over 30 minutes with 0.2 micron low protein binding filter. Dose is NOT reduced for toxicity - doses are delayed only. Pembrolizumab is neutral - minimal extravasation risk. Equivalent to 35 x 3-weekly cycles of 200mg (18 x 6-weekly cycles = 2 years).",
+        "is_core_drug": true
+      }
+    ],
+    "pre_medications": [
+      {
+        "drug_name": "Chlorphenamine",
+        "dose": 10,
+        "dose_unit": "mg",
+        "route": "IV",
+        "timing": "When required for infusion-related reactions",
+        "days": [
+          1
+        ],
+        "frequency": "when required",
+        "notes": "For treatment of infusion-related reactions only"
+      },
+      {
+        "drug_name": "Hydrocortisone",
+        "dose": 100,
+        "dose_unit": "mg",
+        "route": "IV",
+        "timing": "When required for infusion-related reactions",
+        "days": [
+          1
+        ],
+        "frequency": "when required",
+        "notes": "For treatment of infusion-related reactions only"
+      },
+      {
+        "drug_name": "Paracetamol",
+        "dose": 1000,
+        "dose_unit": "mg",
+        "route": "oral",
+        "timing": "When required for infusion-related reactions",
+        "days": [
+          1
+        ],
+        "frequency": "when required",
+        "notes": "For treatment of infusion-related reactions only. Maximum dose 4g/24h; 4 hours between doses."
+      }
+    ],
+    "take_home_medicines": [],
+    "dose_modifications": {
+      "haematological": {
+        "neutrophils_threshold_x10_9_per_l": null,
+        "platelets_threshold_x10_9_per_l": null,
+        "rules": [
+          {
+            "condition": "Any haematological toxicity",
+            "action": "No dose reduction required",
+            "factor": 1.0
+          }
+        ]
+      },
+      "hepatic": [
+        {
+          "drug": "Pembrolizumab",
+          "condition": "Immune-related hepatitis: AST/ALT 3-5xULN and/or bilirubin 1.5-3xULN (Grade 2)",
+          "action": "Withhold and administer corticosteroids; taper over 1 month; restart when LFTs grade 1 after taper",
+          "factor": 1.0
+        },
+        {
+          "drug": "Pembrolizumab",
+          "condition": "Immune-related hepatitis: AST/ALT >= 5xULN or bilirubin > 3xULN, or AST/ALT rise >= 50% from baseline lasting >= 1 week in liver metastasis patients (Grade 3-4)",
+          "action": "Permanently discontinue",
+          "factor": 0
+        }
+      ],
+      "renal": [
+        {
+          "drug": "Pembrolizumab",
+          "condition": "Immune-related nephritis: grade 2",
+          "action": "Withhold and administer corticosteroids; taper; restart when creatinine grade 1 or below",
+          "factor": 1.0
+        },
+        {
+          "drug": "Pembrolizumab",
+          "condition": "Immune-related nephritis: grade 3 or above",
+          "action": "Permanently discontinue",
+          "factor": 0
+        }
+      ],
+      "immune_related_adverse_events": [
+        {
+          "reaction": "Immune-related pneumonitis",
+          "grade": "Grade 1",
+          "action": "Continue with close monitoring; follow on serial imaging",
+          "factor": 1.0
+        },
+        {
+          "reaction": "Immune-related pneumonitis",
+          "grade": "Grade 2",
+          "action": "Withhold; corticosteroids 1-2mg/kg/day prednisone; restart if improves to grade 0-1 within 12 weeks and steroids reduced to prednisolone 10mg oral daily equivalent",
+          "factor": 1.0
+        },
+        {
+          "reaction": "Immune-related pneumonitis",
+          "grade": "Grade 3 or 4",
+          "action": "Permanently discontinue",
+          "factor": 0
+        },
+        {
+          "reaction": "Immune-related colitis",
+          "grade": "Grade 1",
+          "action": "Continue; symptomatic treatment and close monitoring",
+          "factor": 1.0
+        },
+        {
+          "reaction": "Immune-related colitis",
+          "grade": "Grade 2 or 3",
+          "action": "Withhold and administer corticosteroids; taper; restart when colitis grade 1",
+          "factor": 1.0
+        },
+        {
+          "reaction": "Immune-related colitis",
+          "grade": "Grade 4 or persistent grade 3",
+          "action": "Permanently discontinue",
+          "factor": 0
+        },
+        {
+          "reaction": "Immune-related hepatitis",
+          "grade": "Grade 2",
+          "action": "Withhold and corticosteroids; restart when LFTs grade 1",
+          "factor": 1.0
+        },
+        {
+          "reaction": "Immune-related hepatitis",
+          "grade": "Grade 3 or 4",
+          "action": "Permanently discontinue",
+          "factor": 0
+        },
+        {
+          "reaction": "Immune-related nephritis",
+          "grade": "Grade 2",
+          "action": "Withhold and corticosteroids; restart when grade 1",
+          "factor": 1.0
+        },
+        {
+          "reaction": "Immune-related nephritis",
+          "grade": "Grade 3 or above",
+          "action": "Permanently discontinue",
+          "factor": 0
+        },
+        {
+          "reaction": "Immune-related endocrinopathies",
+          "grade": "Any symptomatic",
+          "action": "Manage with hormone replacement; corticosteroids for acute inflammation. Isolated hypothyroidism: replacement therapy without interruption.",
+          "factor": 1.0
+        },
+        {
+          "reaction": "Immune-related uveitis (eye)",
+          "grade": "Grade 1-2",
+          "action": "Ophthalmologist evaluation; topical corticosteroids eye drops and iridocyclitics; discontinue if persists despite topical immunosuppression",
+          "factor": 1.0
+        },
+        {
+          "reaction": "Immune-related uveitis (eye)",
+          "grade": "Grade 3 or above",
+          "action": "Discontinue pembrolizumab; systemic corticosteroids; taper over >= 4 weeks when improved to grade 1",
+          "factor": 0
+        },
+        {
+          "reaction": "Immune-related skin toxicity",
+          "grade": "Grade 1-2",
+          "action": "Symptomatic treatment (topical corticosteroids/urea creams with oral antipruritics); continue pembrolizumab",
+          "factor": 1.0
+        },
+        {
+          "reaction": "Immune-related skin toxicity",
+          "grade": "Grade 3 or above",
+          "action": "Withhold; dermatology referral; systemic prednisolone 1mg/kg daily; taper when improved to grade 1",
+          "factor": 1.0
+        },
+        {
+          "reaction": "Infusion-related reaction",
+          "grade": "Grade 3 or 4",
+          "action": "Permanently discontinue",
+          "factor": 0
+        }
+      ],
+      "other": [
+        {
+          "condition": "Treatment interruption >= 12 weeks",
+          "action": "Current funding approval precludes further treatment after interruption of 12 weeks or longer",
+          "factor": 0
+        }
+      ]
+    },
+    "treatment_delay_criteria": [
+      "Doses are DELAYED not reduced for immunotherapy toxicity",
+      "Withhold for grade 2 hepatitis, nephritis, colitis, pneumonitis and grade 3 other immune toxicities",
+      "Do not resume if patient still receiving immunosuppressive doses of corticosteroids",
+      "Permanently discontinue if toxicity does not improve to grade 1 within 12 weeks of last dose",
+      "Funding approval precludes treatment after interruption of 12 weeks or longer",
+      "18 cycles maximum (equivalent to 35 x 3-weekly cycles, i.e. 2 years) - set in ARIA"
+    ],
+    "monitoring_requirements": [
+      "FBC, LFTs and U&Es prior to day 1 of each cycle",
+      "Thyroid function tests prior to starting treatment then before each administration (cycle) or when clinically indicated",
+      "18 cycles (2 years) set in ARIA",
+      "Treatment stopped at 2 years or disease progression or unacceptable toxicity, whichever first"
+    ],
+    "special_warnings": [
+      "IMMUNOTHERAPY: Dose reductions are NOT permitted for pembrolizumab. Doses are delayed only.",
+      "Pembrolizumab 400mg is a FLAT DOSE every 6 weeks - not weight or BSA based",
+      "PD-L1 CPS >= 1 REQUIRED for funding - not funded if CPS < 1. CPS testing with approved/validated test mandatory before prescribing.",
+      "ECOG performance status 0 or 1 required",
+      "This is equivalent to 35 x 3-weekly cycles (200mg); 18 x 6-weekly cycles (400mg) = approximately 2 years of treatment",
+      "Avoid systemic corticosteroids BEFORE starting pembrolizumab (may interfere with efficacy); may use after starting for immune-related AEs",
+      "Autoimmune toxicities can be life-threatening; seek specialist guidance",
+      "Uveitis associated with pembrolizumab - ophthalmic assessment for ocular symptoms",
+      "Serious skin reactions including SJS and TEN possible",
+      "Isolated hypothyroidism can be managed with replacement therapy without treatment interruption",
+      "Adrenal crisis (severe dehydration, hypotension, shock): immediate IV corticosteroids with mineralocorticoid activity",
+      "Permanently discontinue for grade 3-4 pneumonitis, nephritis, or infusion-related reactions, or grade 4 adverse reactions",
+      "Gastric protection with PPI or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed"
+    ],
+    "auc_dosing": false,
+    "required_patient_fields": [
+      "pd_l1_cps_score",
+      "performance_status"
+    ],
+    "disease_site": "Head and Neck",
+    "number_of_cycles": 18,
+    "drugs": [
+      {
+        "drug_name": "Pembrolizumab",
+        "dose": 400,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "frequency": null,
+        "duration_minutes": 30,
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "special_instructions": "Flat dose 400mg every 6 weeks. Infusion over 30 minutes with 0.2 micron low protein binding filter. Dose is NOT reduced for toxicity - doses are delayed only. Pembrolizumab is neutral - minimal extravasation risk. Equivalent to 35 x 3-weekly cycles of 200mg (18 x 6-weekly cycles = 2 years).",
+        "is_core_drug": true,
+        "infusion_duration_hours": 0.5,
+        "notes": "Flat dose 400mg every 6 weeks. Infusion over 30 minutes with 0.2 micron low protein binding filter. Dose is NOT reduced for toxicity - doses are delayed only. Pembrolizumab is neutral - minimal extravasation risk. Equivalent to 35 x 3-weekly cycles of 200mg (18 x 6-weekly cycles = 2 years)."
+      }
+    ]
+  }
+]

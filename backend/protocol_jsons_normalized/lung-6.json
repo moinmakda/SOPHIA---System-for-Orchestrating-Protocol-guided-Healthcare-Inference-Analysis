@@ -1,0 +1,1176 @@
+[
+  {
+    "protocol_code": "NSCLC-GEMCITABINE",
+    "protocol_name": "NSCLC Gemcitabine (Single Agent)",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 21,
+    "number_of_cycles": 4,
+    "drugs": [
+      {
+        "drug_name": "Gemcitabine",
+        "dose": 1250.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Infusion in 250ml sodium chloride 0.9% over 30 minutes. Dose banded as per CSCCN agreed bands. Gemcitabine is a radiosensitiser."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils less than 1.5x10^9/L on Day 1 — first occurrence",
+        "drug_name": "Gemcitabine",
+        "factor": 1.0,
+        "notes": "Delay treatment for 7 days. If counts recover, continue at initial dose."
+      },
+      {
+        "condition": "Neutrophils less than 1.5x10^9/L on Day 1 — persistent after delay",
+        "drug_name": "Gemcitabine",
+        "factor": 0.8,
+        "notes": "20% dose reduction. If myelosuppression recurs despite reduction, stop treatment."
+      },
+      {
+        "condition": "Platelets less than 100x10^9/L on Day 1 — first occurrence",
+        "drug_name": "Gemcitabine",
+        "factor": 1.0,
+        "notes": "Delay treatment for 7 days. If counts recover, continue at initial dose."
+      },
+      {
+        "condition": "Platelets less than 100x10^9/L on Day 1 — persistent after delay",
+        "drug_name": "Gemcitabine",
+        "factor": 0.8,
+        "notes": "20% dose reduction."
+      },
+      {
+        "condition": "Platelets less than 50x10^9/L",
+        "drug_name": "Gemcitabine",
+        "factor": 0.5,
+        "notes": "50% dose reduction."
+      },
+      {
+        "condition": "Bilirubin greater than 27 micromol/L (hepatic impairment)",
+        "drug_name": "Gemcitabine",
+        "factor": null,
+        "notes": "Initiate treatment at a reduced dose of 800 mg/m². AST elevations alone do not seem to cause dose-limiting toxicity."
+      },
+      {
+        "condition": "Creatinine clearance less than 30 ml/min (renal impairment)",
+        "drug_name": "Gemcitabine",
+        "factor": null,
+        "notes": "Consider dose adjustments; no specific dose defined in protocol."
+      }
+    ],
+    "pre_medications": [
+      "Metoclopramide 10mg oral or intravenous 15-30 minutes prior to chemotherapy"
+    ],
+    "special_warnings": [
+      "Gemcitabine is a radiosensitiser — caution if patient has had or is having radiotherapy.",
+      "Baseline chest x-ray required before starting treatment and cross-sectional imaging ideally within 1 month.",
+      "Chest x-ray required before each cycle.",
+      "FBC, LFTs and U&Es prior to each cycle and FBC on Day 8.",
+      "If a third dose reduction is necessary, treatment should be stopped.",
+      "Dose re-escalation after reduction requires consultant approval.",
+      "Take-home metoclopramide 10mg three times a day when required."
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "creatinine_clearance",
+      "bilirubin",
+      "ast_alt"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "MESO-IPILIMUMAB-NIVOLUMAB",
+    "protocol_name": "Mesothelioma Ipilimumab-Nivolumab",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 42,
+    "number_of_cycles": 18,
+    "drugs": [
+      {
+        "drug_name": "Nivolumab",
+        "dose": 360.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1,
+          22
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Flat dose 360mg. Infusion in 100ml sodium chloride 0.9% over 30 minutes. Must be administered FIRST before ipilimumab. Administer via 0.2–1.2 micron low protein-binding filter. This is the mesothelioma indication dose — NSCLC uses different dosing. Dose reduction is NOT permitted; doses are delayed or discontinued only."
+      },
+      {
+        "drug_name": "Ipilimumab",
+        "dose": 1.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Infusion in 50ml sodium chloride 0.9% over 30 minutes. Administer 30 minutes AFTER nivolumab. Use low protein-binding filter; final concentration 1–4 mg/ml. Dose banded per national dose bands (5mg/ml). Dose reduction is NOT permitted; doses are delayed or discontinued only. Ipilimumab is given only on Day 1 of each 42-day cycle (not Day 22)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Dose escalation or reduction",
+        "drug_name": "Ipilimumab",
+        "factor": 1.0,
+        "notes": "Dose escalation or reduction is NOT recommended for either drug. Delays or permanent discontinuation apply based on toxicity."
+      },
+      {
+        "condition": "Dose escalation or reduction",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Dose escalation or reduction is NOT recommended for either drug. Delays or permanent discontinuation apply based on toxicity."
+      },
+      {
+        "condition": "Hepatitis AST/ALT 3–5xULN or bilirubin 1.5–3xULN",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Withhold both agents. Administer corticosteroids. Resume when LFTs at NCI-CTC grade 1 after corticosteroid taper."
+      },
+      {
+        "condition": "Hepatitis AST/ALT ≥5xULN or bilirubin >3xULN",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue both ipilimumab and nivolumab immediately."
+      },
+      {
+        "condition": "NCI-CTC Grade 2 or 3 serum creatinine elevation (nephritis)",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Withhold both agents, initiate corticosteroids. May resume when creatinine at NCI-CTC grade 1 or below."
+      },
+      {
+        "condition": "NCI-CTC Grade 4 serum creatinine elevation",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue both ipilimumab and nivolumab. Initiate corticosteroids 1–2 mg/kg/day methylprednisolone equivalents."
+      },
+      {
+        "condition": "NCI-CTC Grade 3 or 4 diarrhoea/colitis",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue both agents. Initiate high-dose IV corticosteroids. Consider infliximab 5mg/kg if unresponsive to steroids in 5–7 days."
+      },
+      {
+        "condition": "Treatment interruption 12 weeks or longer",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Current funding approval precludes further treatment after an interruption of 12 weeks or longer."
+      }
+    ],
+    "pre_medications": [
+      "No routine antiemetics required",
+      "Chlorphenamine 10mg IV when required for infusion-related reactions",
+      "Hydrocortisone sodium succinate 100mg IV when required for infusion-related reactions",
+      "Paracetamol 1000mg oral when required for infusion-related reactions (max 4g/24 hours; minimum 4 hours between doses)"
+    ],
+    "special_warnings": [
+      "Dose reduction is NOT permitted for ipilimumab or nivolumab in this regimen. Delay or permanent discontinuation only.",
+      "This is the MESOTHELIOMA indication: nivolumab 360mg flat dose on Days 1 and 22; ipilimumab 1mg/kg on Day 1 only of each 42-day cycle. NSCLC combination uses different doses.",
+      "Treatment continued for up to 24 months (18 cycles) in patients without disease progression.",
+      "Autoimmune toxicities can be life-threatening: monitor for colitis, hepatitis, pneumonitis, nephritis, endocrinopathies, rash, neuropathy.",
+      "Immune-related adverse reactions may occur months after last dose.",
+      "Systemic corticosteroids should be avoided BEFORE starting ipilimumab; may be used after initiation to manage immune-related reactions.",
+      "Proton pump inhibitors may reduce efficacy of the combination — prefer H2 antagonists if gastric protection required.",
+      "Nivolumab must be administered FIRST; wait 30 minutes before administering ipilimumab.",
+      "Atypical responses (initial tumour increase) may occur — continue treatment in clinically stable patients until progression confirmed.",
+      "If adrenal crisis suspected, administer IV corticosteroids with mineralocorticoid activity immediately.",
+      "Current funding precludes further treatment after an interruption of 12 weeks or longer.",
+      "FBC, LFTs and U&Es prior to each cycle. Thyroid function tests at baseline and before each cycle or when clinically indicated."
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "bilirubin",
+      "ast_alt",
+      "creatinine",
+      "thyroid_function"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "NSCLC-LORLATINIB",
+    "protocol_name": "NSCLC Lorlatinib (ALK-positive)",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 28,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Lorlatinib",
+        "dose": 100.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "100mg once daily continuous (days 1–28). Available as 100mg and 25mg tablets. Swallow whole — do not chew or crush. Take at approximately the same time each day, with or without food. If dose missed with less than 4 hours to next dose, skip the missed dose. Dose reduction levels: Level 0 = 100mg, Level -1 = 75mg, Level -2 = 50mg. Permanently discontinue if unable to tolerate 50mg once daily."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "CrCl less than 30 ml/min (severe renal impairment)",
+        "drug_name": "Lorlatinib",
+        "factor": 0.75,
+        "notes": "Reduce to 75mg once daily. No adjustment for CrCl ≥30 ml/min."
+      },
+      {
+        "condition": "AST/ALT above 2.5xULN (or above 5xULN if due to liver metastases) OR bilirubin above 1.5xULN",
+        "drug_name": "Lorlatinib",
+        "factor": null,
+        "notes": "Not recommended due to limited information. No starting dose adjustment for AST/ALT ≤2.5xULN (or ≤5xULN if liver metastases) AND bilirubin ≤1.5xULN."
+      },
+      {
+        "condition": "CNS effects (psychotic/cognitive/mood/speech) NCI-CTC Grade 2 or 3",
+        "drug_name": "Lorlatinib",
+        "factor": 1.0,
+        "notes": "Withhold until toxicity ≤Grade 1, then resume at 1 reduced dose level."
+      },
+      {
+        "condition": "CNS effects NCI-CTC Grade 4 (life-threatening)",
+        "drug_name": "Lorlatinib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue lorlatinib."
+      },
+      {
+        "condition": "Mild or moderate hypercholesterolaemia/hypertriglyceridaemia",
+        "drug_name": "Lorlatinib",
+        "factor": 1.0,
+        "notes": "Introduce or modify lipid-lowering therapy. Continue lorlatinib at same dose without interruption."
+      },
+      {
+        "condition": "Severe hypercholesterolaemia/hypertriglyceridaemia",
+        "drug_name": "Lorlatinib",
+        "factor": 1.0,
+        "notes": "Introduce/increase lipid-lowering therapy. Continue lorlatinib without interruption."
+      },
+      {
+        "condition": "Life-threatening hypercholesterolaemia (cholesterol >500 mg/dL) or hypertriglyceridaemia (TG >1000 mg/dL)",
+        "drug_name": "Lorlatinib",
+        "factor": 1.0,
+        "notes": "Withhold lorlatinib until recovery to moderate/mild severity. Maximise lipid-lowering therapy. Re-challenge at same dose; if severe recurs despite maximal lipid-lowering, reduce by 1 dose level."
+      },
+      {
+        "condition": "Lipase/amylase increase NCI-CTC Grade 3 or 4",
+        "drug_name": "Lorlatinib",
+        "factor": 1.0,
+        "notes": "Withhold until lipase/amylase returns to baseline, then resume at 1 reduced dose level."
+      },
+      {
+        "condition": "ILD/pneumonitis NCI-CTC Grade 1 or 2",
+        "drug_name": "Lorlatinib",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms return to baseline; consider corticosteroids. Resume at 1 reduced dose level. Permanently discontinue if ILD recurs or fails to recover after 6 weeks of hold and steroid treatment."
+      },
+      {
+        "condition": "ILD/pneumonitis NCI-CTC Grade 3 or 4",
+        "drug_name": "Lorlatinib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue lorlatinib."
+      },
+      {
+        "condition": "Symptomatic first degree AV block or second degree AV block (asymptomatic, if resolves on ECG) or complete AV block without pacemaker",
+        "drug_name": "Lorlatinib",
+        "factor": 1.0,
+        "notes": "Withhold lorlatinib. Assess/correct electrolyte imbalance. Monitor ECG. If symptoms resolve (or AV block resolves for complete), resume at 1 reduced dose level."
+      },
+      {
+        "condition": "Complete AV block with pacemaker placed",
+        "drug_name": "Lorlatinib",
+        "factor": 1.0,
+        "notes": "If pacemaker placed, resume lorlatinib at full dose."
+      },
+      {
+        "condition": "Hyperglycaemia Grade 3 or 4 (>250 mg/dL despite optimal therapy)",
+        "drug_name": "Lorlatinib",
+        "factor": 1.0,
+        "notes": "Withhold until hyperglycaemia adequately controlled, then resume at next lower dose. If control cannot be achieved with optimal medical management, permanently discontinue."
+      },
+      {
+        "condition": "Other adverse reactions Grade 1 or 2",
+        "drug_name": "Lorlatinib",
+        "factor": 1.0,
+        "notes": "Consider no dose modification or reduce by 1 dose level as clinically indicated."
+      },
+      {
+        "condition": "Other adverse reactions Grade 3 or above",
+        "drug_name": "Lorlatinib",
+        "factor": 1.0,
+        "notes": "Withhold until ≤Grade 2 or baseline, then resume at 1 reduced dose level."
+      }
+    ],
+    "pre_medications": [],
+    "special_warnings": [
+      "ALK-positive NSCLC only. Indicated after 1st-line alectinib, brigatinib, or ceritinib, OR after 1st-line crizotinib followed by 2nd-line ALK TKI (brigatinib or ceritinib).",
+      "Patient must be symptomatically stable if brain metastases present prior to starting lorlatinib.",
+      "Formal medical review required by end of first 8 weeks of treatment.",
+      "Dose reduction levels: 100mg (Level 0), 75mg (Level -1), 50mg (Level -2). Permanently discontinue if unable to tolerate 50mg.",
+      "Hepatotoxicity: not recommended if significant hepatic impairment (AST/ALT >2.5xULN or bilirubin >1.5xULN).",
+      "CNS effects (mood, cognitive, speech, psychotic effects) are common — monitor closely. Grade 2/3: withhold and reduce dose. Grade 4: permanently discontinue.",
+      "PR interval prolongation and AV block can occur — ECG monitoring at weeks 2, 4 and 6.",
+      "Hypercholesterolaemia and hypertriglyceridaemia are very common — monitor lipids every 1–2 cycles and initiate lipid-lowering therapy as needed.",
+      "Hyperglycaemia can occur — monitor glucose every 1–2 cycles.",
+      "ILD/pneumonitis reported — withhold and consider corticosteroids for Grade 1–2; permanently discontinue for Grade 3–4.",
+      "FBC, U&E and LFTs every 2 weeks for 3 cycles, then each cycle.",
+      "Lipids, glucose, amylase/lipase every 1–2 cycles.",
+      "Follow NPSA/2008/RRR001 oral chemotherapy alert.",
+      "Swallow whole — do not chew or crush tablets."
+    ],
+    "required_patient_fields": [
+      "alk_fusion_status",
+      "neutrophil_count",
+      "platelet_count",
+      "creatinine_clearance",
+      "bilirubin",
+      "ast_alt",
+      "ecg_pr_interval",
+      "fasting_lipids",
+      "blood_glucose"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "MESO-CISPLATIN-PEMETREXED",
+    "protocol_name": "Mesothelioma Cisplatin-Pemetrexed",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Pemetrexed",
+        "dose": 500.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Infusion in 100ml glucose 5% or sodium chloride 0.9% over 10 minutes. Administer BEFORE cisplatin. Cisplatin should start 30 minutes after end of pemetrexed infusion. Dose banded as per CSCCN agreed bands. Do not administer if CrCl less than 45 ml/min. Consider draining pleural or peritoneal effusions before administration."
+      },
+      {
+        "drug_name": "Cisplatin",
+        "dose": 75.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Infusion in 1000ml sodium chloride 0.9% with 20mmol potassium chloride at maximum rate of 1mg cisplatin/minute (minimum infusion time 120 minutes). Administer 30 minutes AFTER end of pemetrexed infusion. Dose banded as per CSCCN agreed bands. Full pre- and post-hydration required."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils less than 1.5x10^9/L on Day 1 — first occurrence",
+        "drug_name": "Cisplatin",
+        "factor": 1.0,
+        "notes": "Delay treatment 7 days. If counts recover, continue at initial dose."
+      },
+      {
+        "condition": "Neutrophils less than 1.5x10^9/L on Day 1 — persistent after delay",
+        "drug_name": "Cisplatin",
+        "factor": 0.8,
+        "notes": "20% dose reduction. If myelosuppression recurs, stop treatment."
+      },
+      {
+        "condition": "Neutrophils less than 1.5x10^9/L on Day 1 — first occurrence",
+        "drug_name": "Pemetrexed",
+        "factor": 1.0,
+        "notes": "Delay treatment 7 days. If counts recover, continue at initial dose."
+      },
+      {
+        "condition": "Neutrophils less than 1.5x10^9/L on Day 1 — persistent after delay",
+        "drug_name": "Pemetrexed",
+        "factor": 0.8,
+        "notes": "20% dose reduction. If myelosuppression recurs, stop treatment."
+      },
+      {
+        "condition": "Platelets less than 100x10^9/L — first occurrence",
+        "drug_name": "Cisplatin",
+        "factor": 1.0,
+        "notes": "Delay 7 days. If counts recover, continue at initial dose."
+      },
+      {
+        "condition": "Platelets less than 100x10^9/L — persistent after delay",
+        "drug_name": "Cisplatin",
+        "factor": 0.8,
+        "notes": "20% dose reduction."
+      },
+      {
+        "condition": "Platelets less than 50x10^9/L",
+        "drug_name": "Cisplatin",
+        "factor": 0.5,
+        "notes": "50% dose reduction."
+      },
+      {
+        "condition": "Platelets less than 100x10^9/L — first occurrence",
+        "drug_name": "Pemetrexed",
+        "factor": 1.0,
+        "notes": "Delay 7 days. If counts recover, continue at initial dose."
+      },
+      {
+        "condition": "Platelets less than 100x10^9/L — persistent after delay",
+        "drug_name": "Pemetrexed",
+        "factor": 0.8,
+        "notes": "20% dose reduction."
+      },
+      {
+        "condition": "Platelets less than 50x10^9/L",
+        "drug_name": "Pemetrexed",
+        "factor": 0.5,
+        "notes": "50% dose reduction."
+      },
+      {
+        "condition": "CrCl 50–60 ml/min",
+        "drug_name": "Cisplatin",
+        "factor": 0.75,
+        "notes": "Reduce cisplatin dose to 75% of original."
+      },
+      {
+        "condition": "CrCl 40–50 ml/min",
+        "drug_name": "Cisplatin",
+        "factor": 0.5,
+        "notes": "Reduce cisplatin dose to 50% of original."
+      },
+      {
+        "condition": "CrCl less than 40 ml/min",
+        "drug_name": "Cisplatin",
+        "factor": 0.0,
+        "notes": "Do not use cisplatin."
+      },
+      {
+        "condition": "CrCl less than 45 ml/min",
+        "drug_name": "Pemetrexed",
+        "factor": 0.0,
+        "notes": "Do not administer pemetrexed."
+      },
+      {
+        "condition": "Hepatic impairment — Cisplatin",
+        "drug_name": "Cisplatin",
+        "factor": 1.0,
+        "notes": "No dose adjustment required for cisplatin in hepatic impairment."
+      },
+      {
+        "condition": "Hepatic impairment — Pemetrexed",
+        "drug_name": "Pemetrexed",
+        "factor": 1.0,
+        "notes": "Clinical decision required for pemetrexed in hepatic impairment."
+      }
+    ],
+    "pre_medications": [
+      "Folic acid 5mg oral once daily starting 1–2 weeks prior to pemetrexed, continuing for 3 weeks after last dose of pemetrexed",
+      "Hydroxocobalamin 1mg intramuscular injection every 3 months starting 1–2 weeks prior to first pemetrexed dose (prescribed separately, not in Aria regime)",
+      "Dexamethasone 4mg oral twice daily starting the DAY BEFORE pemetrexed (skin rash prophylaxis). If forgotten, give dexamethasone 10mg IV bolus 15–30 minutes before chemotherapy",
+      "Dexamethasone 4mg oral once daily on the day of and the day after pemetrexed",
+      "Aprepitant 125mg oral 15–30 minutes prior to chemotherapy on Day 1",
+      "Ondansetron 8mg oral or IV bolus 15–30 minutes prior to chemotherapy",
+      "Furosemide 40mg oral or IV bolus (pre-hydration diuretic)",
+      "Pre-hydration: 1000ml sodium chloride 0.9% with 20mmol potassium chloride and 16mmol magnesium sulphate over 60 minutes",
+      "Post-hydration: 1000ml sodium chloride 0.9% with 20mmol potassium chloride and 16mmol magnesium sulphate over 60 minutes",
+      "Take-home: Aprepitant 80mg oral once daily for 2 days (Days 2–3)",
+      "Take-home: Metoclopramide 10mg oral three times daily when required",
+      "Take-home: Ondansetron 8mg oral twice daily for 3 days starting evening of Day 1"
+    ],
+    "special_warnings": [
+      "MANDATORY folic acid supplementation: must start 1–2 weeks before first pemetrexed dose and continue 3 weeks after last dose.",
+      "MANDATORY vitamin B12 (hydroxocobalamin 1mg IM) every 3 months starting 1–2 weeks before pemetrexed.",
+      "Dexamethasone skin rash prophylaxis is mandatory: 4mg BD day before, day of, and day after pemetrexed.",
+      "Full cisplatin hydration protocol required: furosemide 40mg + 1 litre pre-hydration + 1 litre post-hydration with electrolytes.",
+      "Patient must drink at least 3 litres of fluid in 24 hours after cisplatin administration.",
+      "Cisplatin nephrotoxicity: contraindicated if CrCl <40 ml/min; dose-reduce for CrCl 40–60 ml/min.",
+      "Pemetrexed contraindicated if CrCl less than 45 ml/min.",
+      "Cisplatin ototoxicity — consider formal audiology test.",
+      "Cisplatin neuropathy — monitor peripheral neuropathy.",
+      "Consider draining pleural or peritoneal effusions before pemetrexed administration.",
+      "Pemetrexed is an inflammitant; cisplatin is an exfoliant — extravasation precautions required.",
+      "3–6 cycles total (6 cycles set in Aria).",
+      "If third dose reduction needed, stop treatment.",
+      "FBC, LFTs and U&Es before each cycle. Baseline chest x-ray and cross-sectional imaging."
+    ],
+    "required_patient_fields": [
+      "neutrophil_count",
+      "platelet_count",
+      "creatinine_clearance",
+      "bilirubin",
+      "ast_alt",
+      "haemoglobin"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "NSCLC-MOBOCERTINIB",
+    "protocol_name": "NSCLC Mobocertinib (EGFR Exon 20 Insertion)",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 28,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Mobocertinib",
+        "dose": 160.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "160mg (4 x 40mg capsules) once daily continuous. Available as 40mg hard capsules. Swallow whole — do not open, chew, or dissolve. Take at approximately the same time each day, with or without food. If dose missed by more than 6 hours, skip that day's dose. If vomiting after dose, do not repeat — resume next day. First dose reduction: 120mg once daily. Second dose reduction: 80mg once daily."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1.0x10^9/L or platelets <50x10^9/L",
+        "drug_name": "Mobocertinib",
+        "factor": 1.0,
+        "notes": "Withhold until recovery, then resume at same dose or next lower dose."
+      },
+      {
+        "condition": "Neutrophils <0.5x10^9/L or platelets <25x10^9/L",
+        "drug_name": "Mobocertinib",
+        "factor": 0.0,
+        "notes": "Consider permanently discontinuing mobocertinib."
+      },
+      {
+        "condition": "Mild hepatic impairment (bilirubin ≤ULN + AST/ALT >ULN, or bilirubin >1–1.5xULN)",
+        "drug_name": "Mobocertinib",
+        "factor": 1.0,
+        "notes": "No initial dose adjustment in mild hepatic impairment."
+      },
+      {
+        "condition": "Moderate or severe hepatic impairment",
+        "drug_name": "Mobocertinib",
+        "factor": 0.0,
+        "notes": "Not recommended — recommended dose not established."
+      },
+      {
+        "condition": "Mild/moderate renal impairment (CrCl ≥30 ml/min)",
+        "drug_name": "Mobocertinib",
+        "factor": 1.0,
+        "notes": "No dose adjustment required."
+      },
+      {
+        "condition": "Severe renal impairment (CrCl <30 ml/min)",
+        "drug_name": "Mobocertinib",
+        "factor": 0.0,
+        "notes": "No information available — not recommended."
+      },
+      {
+        "condition": "ILD/pneumonitis (any grade, suspected)",
+        "drug_name": "Mobocertinib",
+        "factor": 1.0,
+        "notes": "Withhold mobocertinib if ILD/pneumonitis suspected."
+      },
+      {
+        "condition": "ILD/pneumonitis (confirmed)",
+        "drug_name": "Mobocertinib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue if ILD/pneumonitis confirmed."
+      },
+      {
+        "condition": "Diarrhoea Grade 1 or 2",
+        "drug_name": "Mobocertinib",
+        "factor": 1.0,
+        "notes": "No dose modification. Initiate loperamide at first onset of diarrhoea."
+      },
+      {
+        "condition": "Diarrhoea intolerable/recurrent Grade 2 or Grade 3",
+        "drug_name": "Mobocertinib",
+        "factor": 1.0,
+        "notes": "Withhold until recovery to Grade 1 or lower; resume at same dose or next lower dose."
+      },
+      {
+        "condition": "Diarrhoea Grade 4 — first occurrence",
+        "drug_name": "Mobocertinib",
+        "factor": 1.0,
+        "notes": "Withhold until recovery to Grade 1 or lower. If recovered within 2 weeks, resume at next lower dose. If not recovered within 2 weeks, permanently discontinue."
+      },
+      {
+        "condition": "Diarrhoea Grade 4 — recurrence",
+        "drug_name": "Mobocertinib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "condition": "Amylase/lipase elevation Grade 2 (>1.5–2xULN) and asymptomatic Grade 3 (>5xULN)",
+        "drug_name": "Mobocertinib",
+        "factor": 1.0,
+        "notes": "Withhold until ≤Grade 1. If recovered within 2 weeks, resume at same or next lower dose. If not, permanently discontinue."
+      },
+      {
+        "condition": "Amylase/lipase elevation symptomatic Grade 3 or Grade 4",
+        "drug_name": "Mobocertinib",
+        "factor": 1.0,
+        "notes": "Withhold until ≤Grade 1. If recovered within 2 weeks, resume at next lower dose. If not, permanently discontinue."
+      },
+      {
+        "condition": "Decreased ejection fraction Grade 2",
+        "drug_name": "Mobocertinib",
+        "factor": 1.0,
+        "notes": "Withhold until ≤Grade 1 or baseline. If recovered to baseline within 2 weeks, resume at same or next lower dose. If not recovered, permanently discontinue."
+      },
+      {
+        "condition": "Heart failure ≥Grade 2 or decreased ejection fraction Grade 3 or 4",
+        "drug_name": "Mobocertinib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue mobocertinib."
+      },
+      {
+        "condition": "QTc prolongation Grade 2 (481–500 msec) — first occurrence",
+        "drug_name": "Mobocertinib",
+        "factor": 1.0,
+        "notes": "Withhold until ≤Grade 1 or baseline. Upon recovery, resume at same dose."
+      },
+      {
+        "condition": "QTc prolongation Grade 2 (481–500 msec) — recurrence",
+        "drug_name": "Mobocertinib",
+        "factor": 1.0,
+        "notes": "Withhold until ≤Grade 1. Resume at next lower dose or permanently discontinue."
+      },
+      {
+        "condition": "QTc prolongation Grade 3 (≥501 msec or >60 msec from baseline) — first occurrence",
+        "drug_name": "Mobocertinib",
+        "factor": 1.0,
+        "notes": "Withhold until ≤Grade 1. Resume at next lower dose or permanently discontinue."
+      },
+      {
+        "condition": "QTc prolongation Grade 3 — recurrence",
+        "drug_name": "Mobocertinib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue mobocertinib."
+      },
+      {
+        "condition": "QTc prolongation Grade 4 (Torsades de Pointes or polymorphic VT)",
+        "drug_name": "Mobocertinib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue mobocertinib."
+      },
+      {
+        "condition": "Other non-haematological toxicity Grade 2",
+        "drug_name": "Mobocertinib",
+        "factor": 1.0,
+        "notes": "No modification. For intolerable/recurrent Grade 2: withhold until resolved then resume at next lower dose."
+      },
+      {
+        "condition": "Other non-haematological toxicity Grade 3 or 4",
+        "drug_name": "Mobocertinib",
+        "factor": 1.0,
+        "notes": "Withhold until ≤Grade 1, then resume at same or next lower dose. Consider permanent discontinuation for Grade 4."
+      }
+    ],
+    "pre_medications": [
+      "Loperamide 4mg oral after first loose stool, then 2–4mg four times daily when required (maximum 16mg/24 hours) — for diarrhoea management"
+    ],
+    "special_warnings": [
+      "EGFR exon 20 insertion mutation is REQUIRED for treatment eligibility — confirmed by tissue biopsy or liquid biopsy.",
+      "Diarrhoea is very common and can be severe — initiate loperamide at first onset. Monitor electrolytes in patients with continued diarrhoea.",
+      "QTc interval prolongation and cardiac dysfunction (including reduced LVEF) reported — baseline ECG and LVEF assessment required before starting and periodically during treatment.",
+      "ILD/pneumonitis reported — withhold immediately if suspected, permanently discontinue if confirmed.",
+      "Electrolyte abnormalities (sodium, potassium, calcium, magnesium) must be corrected before starting treatment.",
+      "Dose reduction schedule: 160mg → 120mg → 80mg once daily. Do not re-escalate without consultant approval.",
+      "Mobocertinib interacts with several medicines — always check for drug interactions.",
+      "Not recommended in severe renal impairment (CrCl <30 ml/min) or moderate/severe hepatic impairment.",
+      "Fatigue may impair ability to drive or operate machinery.",
+      "Monitoring: FBC, LFTs, U&Es (including Mg and Ca) prior to each cycle; amylase/lipase at baseline, 1 month, then as indicated; QTc and LVEF at baseline then periodically.",
+      "Follow NPSA/2008/RRR001 oral chemotherapy alert.",
+      "Swallow capsules whole — do not open, chew, or dissolve.",
+      "12 cycles will be set in ARIA; treatment continues until progression, unacceptable toxicity, or patient choice."
+    ],
+    "required_patient_fields": [
+      "egfr_exon20_insertion",
+      "neutrophil_count",
+      "platelet_count",
+      "creatinine_clearance",
+      "bilirubin",
+      "ast_alt",
+      "magnesium",
+      "calcium",
+      "potassium",
+      "sodium",
+      "qtc_interval",
+      "lvef"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "NSCLC-NIVOLUMAB-240MG-14D",
+    "protocol_name": "NSCLC Nivolumab 240mg (14-day cycle)",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 14,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Nivolumab",
+        "dose": 240.0,
+        "dose_unit": "mg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Flat dose 240mg. Infusion in 100ml sodium chloride 0.9% over 30 minutes. Administer via 0.2–1.2 micron low protein-binding filter (polyethylene-lined giving sets with 0.22 micron filter as used for paclitaxel are appropriate). Dose is NOT reduced for toxicity — doses are DELAYED only. Treatment stops at 2 years or on progression or unacceptable toxicity."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Dose reduction",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Dose escalation or reduction is NOT recommended. Doses are DELAYED for toxicity, not reduced."
+      },
+      {
+        "condition": "Immune-related pneumonitis Grade 2",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve, radiographic abnormalities improve, and corticosteroid management is complete."
+      },
+      {
+        "condition": "Immune-related pneumonitis Grade 3 or 4",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue nivolumab."
+      },
+      {
+        "condition": "Immune-related colitis Grade 2 or 3",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve and corticosteroid management (if needed) is complete."
+      },
+      {
+        "condition": "Immune-related colitis Grade 4",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue nivolumab."
+      },
+      {
+        "condition": "Immune-related hepatitis Grade 2 (AST/ALT or bilirubin elevation)",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Withhold until laboratory values return to baseline and corticosteroid management is complete."
+      },
+      {
+        "condition": "Immune-related hepatitis Grade 3 or 4 (AST/ALT or bilirubin)",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue nivolumab."
+      },
+      {
+        "condition": "Immune-related nephritis Grade 2 or 3 (creatinine elevation)",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Withhold until creatinine returns to baseline and corticosteroid management is complete."
+      },
+      {
+        "condition": "Immune-related nephritis Grade 4",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue nivolumab. Initiate corticosteroids 1–2 mg/kg/day methylprednisolone equivalents."
+      },
+      {
+        "condition": "Immune-related endocrinopathies (symptomatic)",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve and corticosteroid management is complete. Continue nivolumab with hormone replacement therapy if asymptomatic."
+      },
+      {
+        "condition": "Immune-related rash Grade 3",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve and corticosteroid management is complete."
+      },
+      {
+        "condition": "Immune-related rash Grade 4",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue nivolumab."
+      },
+      {
+        "condition": "Treatment interruption 12 weeks or longer",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Current funding approval precludes further treatment after 12-week interruption."
+      }
+    ],
+    "pre_medications": [
+      "No routine antiemetics required",
+      "Chlorphenamine 10mg IV when required for infusion-related reactions",
+      "Hydrocortisone sodium succinate 100mg IV when required for infusion-related reactions",
+      "Paracetamol 1000mg oral when required for infusion-related reactions",
+      "Loperamide 4mg oral initially followed by 2mg after each loose stool when required (maximum 16mg/24 hours)"
+    ],
+    "special_warnings": [
+      "Dose reduction is NOT permitted for nivolumab — flat dose 240mg. Doses are DELAYED for toxicity, not reduced.",
+      "Tumour PD-L1 expression (TPS ≥1%) required for eligibility.",
+      "Indicated for metastatic non-squamous or squamous NSCLC progressing after prior platinum-based chemotherapy (at least 2 cycles) and targeted therapy if EGFR/ALK positive.",
+      "Treatment stops at 2 years or on progression or unacceptable toxicity.",
+      "Autoimmune toxicities (pneumonitis, colitis, hepatitis, nephritis, endocrinopathies, rash, neuropathy) can be severe and life-threatening.",
+      "Systemic corticosteroids should be avoided BEFORE starting nivolumab; may be used after initiation for immune-related reactions.",
+      "Do not resume nivolumab if patient still on immunosuppressive doses of corticosteroids.",
+      "Atypical responses (initial tumour increase) may occur — continue in clinically stable patients until progression confirmed.",
+      "Patients must receive a nivolumab Patient Alert Card.",
+      "Monitor thyroid function before starting and every 6 weeks or when clinically indicated.",
+      "FBC, LFTs and U&Es prior to each cycle.",
+      "Funding precludes treatment after 12-week interruption.",
+      "12 cycles set in Aria (represents approximately 6 months; treatment may continue beyond this)."
+    ],
+    "required_patient_fields": [
+      "pd_l1_status",
+      "neutrophil_count",
+      "platelet_count",
+      "bilirubin",
+      "ast_alt",
+      "creatinine",
+      "thyroid_function"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "NSCLC-NIVOLUMAB-3MGKG-14D",
+    "protocol_name": "NSCLC Nivolumab 3mg/kg (14-day cycle, squamous)",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 14,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Nivolumab",
+        "dose": 3.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "3mg/kg weight-based dose. Infusion in 100ml sodium chloride 0.9% over 60 minutes. Dose banded according to CSCCN agreed bands. Administer via 0.2–1.2 micron low protein-binding filter (polyethylene-lined giving sets with 0.22 micron filter as used for paclitaxel are appropriate). Dose escalation or reduction is NOT recommended — delays only."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Dose reduction",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Dose escalation or reduction is NOT recommended. Delay for toxicity."
+      },
+      {
+        "condition": "Immune-related pneumonitis Grade 2",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve, radiographic abnormalities improve, and corticosteroid management is complete."
+      },
+      {
+        "condition": "Immune-related pneumonitis Grade 3 or 4",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue nivolumab."
+      },
+      {
+        "condition": "Immune-related colitis Grade 2 or 3",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve and corticosteroid management (if needed) complete."
+      },
+      {
+        "condition": "Immune-related colitis Grade 4",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue."
+      },
+      {
+        "condition": "Immune-related hepatitis Grade 2 (AST/ALT or bilirubin elevation)",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Withhold until laboratory values return to baseline and corticosteroid management complete."
+      },
+      {
+        "condition": "Immune-related hepatitis Grade 3 or 4",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue nivolumab."
+      },
+      {
+        "condition": "Immune-related nephritis Grade 2 or 3 (creatinine elevation)",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Withhold until creatinine returns to baseline and corticosteroid management complete."
+      },
+      {
+        "condition": "Immune-related nephritis Grade 4",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue. Initiate corticosteroids 1–2 mg/kg/day methylprednisolone equivalents."
+      },
+      {
+        "condition": "Immune-related endocrinopathies (symptomatic)",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve. Continue nivolumab with hormone replacement therapy if asymptomatic."
+      },
+      {
+        "condition": "Immune-related rash Grade 3",
+        "drug_name": "Nivolumab",
+        "factor": 1.0,
+        "notes": "Withhold until symptoms resolve and corticosteroid management complete."
+      },
+      {
+        "condition": "Immune-related rash Grade 4",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue nivolumab."
+      },
+      {
+        "condition": "Persistent Grade 2 or 3 immune-related adverse reaction not recovering to Grade 1 within 12 weeks",
+        "drug_name": "Nivolumab",
+        "factor": 0.0,
+        "notes": "Permanently discontinue nivolumab."
+      }
+    ],
+    "pre_medications": [
+      "No routine antiemetics required",
+      "Chlorphenamine 10mg IV when required for infusion-related reactions",
+      "Hydrocortisone sodium succinate 100mg IV when required for infusion-related reactions",
+      "Paracetamol 1000mg oral when required for infusion-related reactions",
+      "Loperamide 4mg oral initially followed by 2mg after each loose stool when required (maximum 16mg/24 hours)"
+    ],
+    "special_warnings": [
+      "Dose reduction is NOT permitted for nivolumab — 3mg/kg weight-based flat dose. Doses are DELAYED for toxicity, not reduced.",
+      "Indicated for metastatic squamous NSCLC progressing after prior chemotherapy.",
+      "Autoimmune toxicities (pneumonitis, colitis, hepatitis, nephritis, endocrinopathies, rash, neuropathy) can be severe and life-threatening.",
+      "Systemic corticosteroids should be avoided BEFORE starting nivolumab; may be used after initiation for immune-related reactions.",
+      "Do not resume nivolumab if patient still on immunosuppressive doses of corticosteroids.",
+      "Atypical responses (initial tumour increase) may occur — continue in clinically stable patients until progression confirmed.",
+      "Patients must receive a nivolumab Patient Alert Card.",
+      "Monitor thyroid function before starting and every 6 weeks or when clinically indicated.",
+      "FBC, LFTs and U&Es prior to each cycle.",
+      "12 cycles set in Aria. This protocol (Ver 1, July 2015) is the weight-based 3mg/kg version for squamous NSCLC.",
+      "This regimen may require funding approval."
+    ],
+    "required_patient_fields": [
+      "pd_l1_status",
+      "neutrophil_count",
+      "platelet_count",
+      "bilirubin",
+      "ast_alt",
+      "creatinine",
+      "thyroid_function",
+      "weight"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "NSCLC-OSIMERTINIB",
+    "protocol_name": "NSCLC Osimertinib (EGFR T790M)",
+    "disease_site": "Lung",
+    "category": "lung",
+    "cycle_length_days": 28,
+    "number_of_cycles": null,
+    "drugs": [
+      {
+        "drug_name": "Osimertinib",
+        "dose": 80.0,
+        "dose_unit": "mg",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "80mg once daily continuous (Days 1–28). Available as 40mg and 80mg film-coated tablets. Take at the same time each day, with or without food. Swallow whole with water — do not crush, split or chew. If unable to swallow, disperse in 50ml non-carbonated water (do not crush); swallow immediately; rinse vessel with further water. If dose missed, make up unless next dose due within 12 hours. Reduced dose: 40mg once daily."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Neutrophils <1x10^9/L and/or platelets <50x10^9/L",
+        "drug_name": "Osimertinib",
+        "factor": 1.0,
+        "notes": "Withhold for up to 3 weeks. If recovery to NCI-CTC Grade 0–2 within 3 weeks, restart at 80mg or reduced dose of 40mg. If no recovery within 3 weeks, discontinue."
+      },
+      {
+        "condition": "Mild hepatic impairment (bilirubin <ULN + AST/ALT <1.5xULN, or bilirubin <1.5xULN + any AST/ALT)",
+        "drug_name": "Osimertinib",
+        "factor": 1.0,
+        "notes": "No modification generally required. Consider stopping if AST elevated to NCI-CTC Grade 3 or above irrespective of bilirubin."
+      },
+      {
+        "condition": "Moderate to severe hepatic impairment",
+        "drug_name": "Osimertinib",
+        "factor": 0.0,
+        "notes": "Do not use. Discontinue osimertinib treatment."
+      },
+      {
+        "condition": "Mild to moderate renal impairment (CrCl ≥30 ml/min)",
+        "drug_name": "Osimertinib",
+        "factor": 1.0,
+        "notes": "No dose adjustment necessary."
+      },
+      {
+        "condition": "Severe renal impairment or end-stage renal disease or dialysis (CrCl <29 ml/min)",
+        "drug_name": "Osimertinib",
+        "factor": 1.0,
+        "notes": "Use with caution."
+      },
+      {
+        "condition": "ILD/pneumonitis (any grade suspected)",
+        "drug_name": "Osimertinib",
+        "factor": 1.0,
+        "notes": "Withhold whilst investigations undertaken."
+      },
+      {
+        "condition": "ILD/pneumonitis confirmed",
+        "drug_name": "Osimertinib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue osimertinib."
+      },
+      {
+        "condition": "QTc >500 msec on at least 2 separate ECGs",
+        "drug_name": "Osimertinib",
+        "factor": 1.0,
+        "notes": "Withhold until QTc <481 msec or recovery to baseline. If baseline QTc ≥481 msec, restart at reduced dose of 40mg."
+      },
+      {
+        "condition": "QTc prolongation with signs/symptoms of serious arrhythmia",
+        "drug_name": "Osimertinib",
+        "factor": 0.0,
+        "notes": "Permanently discontinue osimertinib."
+      }
+    ],
+    "pre_medications": [],
+    "special_warnings": [
+      "EGFR T790M mutation status REQUIRED — must be confirmed by validated test using tumour tissue DNA or circulating tumour DNA (ctDNA) from plasma.",
+      "Indicated for locally advanced or metastatic EGFR T790M mutation-positive NSCLC after progression on a prior EGFR tyrosine kinase inhibitor.",
+      "Available via Cancer Drugs Fund (CDF) — managed access agreement conditions must be followed.",
+      "ILD/pneumonitis risk: severe, life-threatening, or fatal ILD reported. Withhold immediately if suspected; permanently discontinue if confirmed.",
+      "QTc monitoring required: baseline ECG for all patients; then prior to each subsequent cycle in patients with congestive heart failure, electrolyte abnormalities, or on QTc-prolonging medications.",
+      "Strong CYP3A inducers (phenytoin, rifampicin, carbamazepine) should be avoided — reduces osimertinib exposure.",
+      "Moderate CYP3A4 inducers (bosentan, efavirenz, etravirine, modafinil) should be used with caution or avoided.",
+      "St. John's Wort is contraindicated.",
+      "Only prescribe under supervision of a consultant oncologist.",
+      "Follow NPSA/2008/RRR001 oral chemotherapy alert.",
+      "Dose reduction to 40mg if standard dose not tolerated.",
+      "FBC, LFTs and U&Es at baseline and before each cycle.",
+      "Baseline CT chest and abdomen; chest X-ray and CT as clinically indicated thereafter.",
+      "6 cycles set in Aria; treatment continues until progression or intolerance."
+    ],
+    "required_patient_fields": [
+      "egfr_mutation_status",
+      "egfr_t790m_status",
+      "neutrophil_count",
+      "platelet_count",
+      "creatinine_clearance",
+      "bilirubin",
+      "ast_alt",
+      "qtc_interval"
+    ],
+    "auc_dosing": null
+  }
+]

@@ -1,0 +1,1398 @@
+[
+  {
+    "protocol_code": "GI-CAP-CETUX-OX-21",
+    "protocol_name": "Capecitabine-Cetuximab-Oxaliplatin (21 day)",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Capecitabine",
+        "dose": 800.0,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Twice daily (1600 mg/m²/day total). Days 1-14 inclusive. Start on evening of day 1. Take with or after food."
+      },
+      {
+        "drug_name": "Cetuximab",
+        "dose": 400.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Loading dose cycle 1 day 1 only. Minimum 120 minutes at max rate 5 mg/min. Leave 60 minutes between cetuximab and oxaliplatin administration. Dose banded per national dose bands (5 mg/ml)."
+      },
+      {
+        "drug_name": "Cetuximab",
+        "dose": 250.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          8,
+          15
+        ],
+        "infusion_duration_hours": 1.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Maintenance dose 250 mg/m² days 8 and 15 cycle 1; days 1, 8, 15 from cycle 2 onwards. Minimum 60 minutes if well tolerated. Dose reductions to 200 mg/m² then 150 mg/m² for grade 3 skin toxicity (reductions are permanent). Dose banded (5 mg/ml)."
+      },
+      {
+        "drug_name": "Oxaliplatin",
+        "dose": 130.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV infusion in 500ml glucose 5% over 120 minutes. Must never contact sodium chloride 0.9%. Flush line with glucose 5% before and after. Dose banded (5 mg/ml)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Renal impairment CrCl 30-50 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl less than 30 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.0,
+        "notes": "Do not use"
+      },
+      {
+        "condition": "Hepatic impairment: transaminases more than 5xULN or bilirubin more than 1.5xULN",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Administer only when transaminases 5xULN or below and bilirubin 1.5xULN or below"
+      },
+      {
+        "condition": "Renal impairment CrCl less than 20 ml/min",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.75,
+        "notes": "Dose reduce and adjust according to toxicity"
+      },
+      {
+        "condition": "Haematological: neutrophil less than 1.5x10^9/L or platelet less than 75x10^9/L",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "Delay up to 7 days (restart full dose) or up to 14 days (restart 75%). Stop if delay exceeds 20 days."
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 (2nd occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Resume at 75% after 2nd grade 2 occurrence"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 (3rd occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Resume at 50% after 3rd. Stop if 4th occurrence."
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 (1st occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until grade 0-1, resume at 75%"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 (2nd occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Resume at 50%. Discontinue after 3rd grade 3."
+      },
+      {
+        "condition": "Cetuximab NCI-CTC grade 1 infusion reaction",
+        "drug_name": "Cetuximab",
+        "factor": 0.5,
+        "notes": "Reduce infusion rate by 50%"
+      },
+      {
+        "condition": "Cetuximab NCI-CTC grade 2 infusion reaction",
+        "drug_name": "Cetuximab",
+        "factor": 0.5,
+        "notes": "Stop infusion; administer supportive therapy; resume at 50% of previous rate once resolved to grade 1 or below"
+      },
+      {
+        "condition": "Cetuximab NCI-CTC grade 3 or 4 infusion reaction",
+        "drug_name": "Cetuximab",
+        "factor": 0.0,
+        "notes": "Stop infusion immediately; do not re-administer cetuximab"
+      },
+      {
+        "condition": "Cetuximab NCI-CTC grade 3 acneiform skin rash (1st-2nd occurrence within 14 days)",
+        "drug_name": "Cetuximab",
+        "factor": 1.0,
+        "notes": "Delay up to 14 days; resume at same dose if recovered. Dose reduce to 200 mg/m² (2nd occurrence) then 150 mg/m² (3rd). Reductions permanent. Discontinue if 4th episode grade 3 or any grade 4."
+      },
+      {
+        "condition": "Oxaliplatin: cold-related dysaesthesia or paresthesia without pain persisting between cycles",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.77,
+        "notes": "Withhold until recovery, restart at 100 mg/m². Omit if recurs."
+      },
+      {
+        "condition": "Oxaliplatin: paresthesia with pain or functional impairment persisting beyond 7 days or NCI-CTC grade 3+",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.77,
+        "notes": "Reduce to 100 mg/m² in first instance. Omit if painful paresthesia recurs or persists between cycles."
+      }
+    ],
+    "pre_medications": [
+      "Chlorphenamine 10mg IV (30 minutes prior to cetuximab)",
+      "Dexamethasone 8mg oral or IV (30 minutes prior to cetuximab; counts as antiemetic on day 1)",
+      "Paracetamol 1000mg oral (30 minutes prior to cetuximab)",
+      "H2 antagonist per local formulary choice (30 minutes prior to cetuximab)",
+      "Ondansetron 8mg oral or IV (after cetuximab, prior to oxaliplatin, on day 1)",
+      "Dexamethasone 4mg twice daily oral for 3 days (take home, starting day after oxaliplatin)",
+      "Metoclopramide 10mg three times daily when required oral (take home)"
+    ],
+    "special_warnings": [
+      "This regimen may require funding approval",
+      "Wild-type KRAS genotype must be confirmed positive before starting treatment",
+      "DPD testing required: all patients must be tested for DPD deficiency before initiation (cycle 1) — complete or partial deficiency increases risk of severe and fatal toxicity with capecitabine",
+      "Cetuximab dose reductions are permanent once made",
+      "Cetuximab: discontinue if more than two consecutive infusions withheld, or a 4th grade 3 skin toxicity episode, or any grade 4 toxicity at any time",
+      "Monitor for hypersensitivity for 60 minutes after cetuximab infusion; do not administer other chemotherapy during this period",
+      "UV radiation may worsen cetuximab skin reactions; sun safety practices required during and up to 2 months after treatment end",
+      "Stop treatment if confirmed pneumonitis develops",
+      "Oxaliplatin must never contact sodium chloride 0.9%; use glucose 5% only",
+      "Rare risk of acute interstitial lung disease with oxaliplatin; stop treatment if unexplained respiratory symptom and investigate",
+      "Consider stopping capecitabine if chest pain occurs",
+      "Capecitabine: total daily dose divided into two doses 12 hours apart; serious toxicity has occurred when total daily dose given incorrectly as twice-daily",
+      "NPSA/2008/RRR001 must be followed for oral chemotherapy prescribing, dispensing and administration"
+    ],
+    "required_patient_fields": [
+      "kras_status",
+      "creatinine_clearance",
+      "dpd_status",
+      "fbc",
+      "lft",
+      "ue"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "GI-ECX-21",
+    "protocol_name": "Capecitabine-Cisplatin-Epirubicin (ECX)",
+    "disease_site": "Upper GI",
+    "category": "gastrointestinal",
+    "cycle_length_days": 21,
+    "number_of_cycles": 8,
+    "drugs": [
+      {
+        "drug_name": "Capecitabine",
+        "dose": 625.0,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Twice daily (1250 mg/m²/day total). Days 1-21 inclusive. Start on evening of day 1. Take with or after food."
+      },
+      {
+        "drug_name": "Cisplatin",
+        "dose": 60.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV infusion in 1000ml sodium chloride 0.9% with 20mmol potassium chloride at maximum rate 1 mg cisplatin per minute (minimum 120 minutes). Pre and post hydration required. Dose banded (1 mg/ml)."
+      },
+      {
+        "drug_name": "Epirubicin",
+        "dose": 50.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus over 10 minutes. Vesicant. Dose banded (2 mg/ml PM)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Renal impairment CrCl 30-50 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl less than 30 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.0,
+        "notes": "Do not use"
+      },
+      {
+        "condition": "Renal impairment CrCl 45-59 ml/min",
+        "drug_name": "Cisplatin",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl less than 45 ml/min",
+        "drug_name": "Cisplatin",
+        "factor": 0.5,
+        "notes": "Consider alternative agent"
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin 24-51 umol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.5,
+        "notes": "Reduce epirubicin by 50%"
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin more than 51 umol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.25,
+        "notes": "Administer 25% of epirubicin dose"
+      },
+      {
+        "condition": "Severe renal impairment",
+        "drug_name": "Epirubicin",
+        "factor": 0.75,
+        "notes": "Reduce doses in cases of severe renal impairment"
+      },
+      {
+        "condition": "NCI-CTC grade 3 neutropenia and/or NCI-CTC grade 2 thrombocytopenia",
+        "drug_name": "Epirubicin",
+        "factor": 0.75,
+        "notes": "Stop all treatment; restart capecitabine and cisplatin at last dose; reduce epirubicin by 25%"
+      },
+      {
+        "condition": "NCI-CTC grade 4 neutropenia or NCI-CTC grade 3 thrombocytopenia",
+        "drug_name": "Epirubicin",
+        "factor": 0.5,
+        "notes": "Delay until recovery; restart capecitabine and cisplatin at last dose; reduce epirubicin to 50%"
+      },
+      {
+        "condition": "NCI-CTC grade 4 thrombocytopenia (recurrence after recovery)",
+        "drug_name": "Epirubicin",
+        "factor": 0.0,
+        "notes": "Stop epirubicin permanently. Restart capecitabine and cisplatin at last dose."
+      },
+      {
+        "condition": "Neutropenic fever/sepsis NCI-CTC grade 3",
+        "drug_name": "Epirubicin",
+        "factor": 0.75,
+        "notes": "Delay all chemotherapy until counts recover; restart at 75% of previous epirubicin dose"
+      },
+      {
+        "condition": "Neutropenic fever/sepsis NCI-CTC grade 4",
+        "drug_name": "Epirubicin",
+        "factor": 0.5,
+        "notes": "Delay all chemotherapy until counts recover; restart at 50% of previous epirubicin dose"
+      },
+      {
+        "condition": "Cisplatin neurotoxicity NCI-CTC grade 2+ or new functional hearing/tinnitus deterioration",
+        "drug_name": "Cisplatin",
+        "factor": 0.0,
+        "notes": "Substitute cisplatin for carboplatin AUC5"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 (2nd occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Resume at 75% after 2nd grade 2"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 (3rd occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Resume at 50% after 3rd. Stop if 4th."
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 (1st occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until grade 0-1, resume at 75%"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 (2nd occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Resume at 50%. Discontinue after 3rd grade 3."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg oral or IV (15-30 minutes prior to chemotherapy)",
+      "Ondansetron 8mg oral or IV (15-30 minutes prior to chemotherapy)",
+      "Furosemide 40mg oral or IV (pre-cisplatin hydration)",
+      "1000ml sodium chloride 0.9% with 20mmol potassium chloride and 16mmol magnesium sulphate IV over 60 minutes (pre-hydration)",
+      "1000ml sodium chloride 0.9% with 20mmol potassium chloride and 16mmol magnesium sulphate IV over 60 minutes (post-hydration)",
+      "Dexamethasone 4mg twice daily oral for 3 days (take home, starting day 2)",
+      "Metoclopramide 10mg three times daily when required oral (take home)",
+      "Ondansetron 8mg twice daily oral for 3 days (take home)"
+    ],
+    "special_warnings": [
+      "DPD testing required: all patients must be tested for DPD deficiency before initiation (cycle 1) — complete or partial deficiency increases risk of severe and fatal toxicity with capecitabine",
+      "Epirubicin cumulative lifetime dose limit approximately 900 mg/m² — monitor cumulative dose to avoid cardiotoxicity",
+      "Baseline LVEF must be measured before starting therapy, particularly in patients with history of cardiac problems or the elderly",
+      "Capecitabine: total daily dose divided into two doses 12 hours apart; first dose in evening of day 1",
+      "Cisplatin: patients must drink at least 3 litres of fluid in the 24 hours after administration",
+      "Cisplatin neurotoxicity grade 2+ or new hearing/tinnitus impairment: substitute with carboplatin AUC5",
+      "NPSA/2008/RRR001 must be followed for oral chemotherapy"
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "lvef",
+      "dpd_status",
+      "fbc",
+      "lft",
+      "ue",
+      "bilirubin"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "GI-CAP-CIS-RT-21",
+    "protocol_name": "Capecitabine-Cisplatin-Radiotherapy (21 day)",
+    "disease_site": "Upper GI",
+    "category": "gastrointestinal",
+    "cycle_length_days": 21,
+    "number_of_cycles": 4,
+    "drugs": [
+      {
+        "drug_name": "Capecitabine",
+        "dose": 625.0,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Twice daily (1250 mg/m²/day total). Days 1-21 inclusive. Start on evening of day 1. Take with or after food."
+      },
+      {
+        "drug_name": "Cisplatin",
+        "dose": 60.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV infusion in 1000ml sodium chloride 0.9% with 20mmol potassium chloride at maximum rate 1 mg cisplatin per minute (minimum 120 minutes). Pre and post hydration required. Radiotherapy given during cycles 3 and 4 only (normally commencing day 1 of cycle 3, Monday). Cisplatin cycles 3 and 4 administered day 1 or 2 (Monday or Tuesday). Dose banded (1 mg/ml)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Renal impairment CrCl 30-50 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl less than 30 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.0,
+        "notes": "Do not use"
+      },
+      {
+        "condition": "Renal impairment CrCl 45-59 ml/min",
+        "drug_name": "Cisplatin",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl less than 45 ml/min",
+        "drug_name": "Cisplatin",
+        "factor": 0.5,
+        "notes": "Consider carboplatin as alternative"
+      },
+      {
+        "condition": "Haematological: subsequent cycles — 14-day delay required OR two separate 7-day delays",
+        "drug_name": "Cisplatin",
+        "factor": 0.8,
+        "notes": "Reduce cisplatin to 80% of original dose"
+      },
+      {
+        "condition": "Cisplatin neurotoxicity NCI-CTC grade 2+ or new hearing/tinnitus impairment",
+        "drug_name": "Cisplatin",
+        "factor": 0.0,
+        "notes": "Substitute cisplatin for carboplatin"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 (2nd occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Resume at 75% after 2nd grade 2"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 (3rd occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Resume at 50% after 3rd. Stop if 4th."
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 (1st occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until grade 0-1, resume at 75%"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 (2nd occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Resume at 50%. Discontinue after 3rd grade 3."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg oral or IV (15-30 minutes prior to chemotherapy)",
+      "Ondansetron 8mg oral or IV (15-30 minutes prior to chemotherapy)",
+      "Furosemide 40mg oral or IV (pre-cisplatin hydration)",
+      "1000ml sodium chloride 0.9% with 20mmol potassium chloride and 16mmol magnesium sulphate IV over 60 minutes (pre-hydration)",
+      "1000ml sodium chloride 0.9% with 20mmol potassium chloride and 16mmol magnesium sulphate IV over 60 minutes (post-hydration)",
+      "Dexamethasone 4mg twice daily oral for 3 days (take home, starting day 2)",
+      "Metoclopramide 10mg three times daily when required oral (take home)",
+      "Ondansetron 8mg twice daily oral for 3 days (take home)"
+    ],
+    "special_warnings": [
+      "IMPORTANT: A separate Capecitabine-Cisplatin regimen exists without radiotherapy for upper GI cancers — confirm correct regimen before prescribing",
+      "DPD testing required: all patients must be tested for DPD deficiency before initiation (cycle 1) — complete or partial deficiency increases risk of severe and fatal toxicity with capecitabine",
+      "Radiotherapy given during cycles 3 and 4 only; radiotherapy normally commences day 1 of cycle 3 (Monday)",
+      "Day 1 of treatment should where possible be scheduled on Monday or Tuesday",
+      "Capecitabine: total daily dose divided into two doses 12 hours apart; first dose in evening of day 1",
+      "Cisplatin: patients must drink at least 3 litres of fluid in the 24 hours after administration",
+      "Cisplatin neurotoxicity grade 2+ or new hearing/tinnitus: substitute with carboplatin",
+      "Consider formal audiology test if relevant",
+      "Consider formally measuring GFR prior to treatment with cisplatin on day 1 of cycle 1",
+      "Blood transfusion: consider if haemoglobin less than 12g/dL during radiotherapy",
+      "NPSA/2008/RRR001 must be followed for oral chemotherapy"
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "dpd_status",
+      "fbc",
+      "lft",
+      "ue",
+      "gfr"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "GI-CAP-CIS-TRAST-21",
+    "protocol_name": "Capecitabine-Cisplatin-Trastuzumab (21 day)",
+    "disease_site": "Upper GI",
+    "category": "gastrointestinal",
+    "cycle_length_days": 21,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Capecitabine",
+        "dose": 1000.0,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Twice daily (2000 mg/m²/day total). Days 1-14 inclusive. Start on evening of day 1. Take with or after food. Given for maximum 6 cycles."
+      },
+      {
+        "drug_name": "Cisplatin",
+        "dose": 80.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV infusion in 1000ml sodium chloride 0.9% with 20mmol potassium chloride at maximum rate 1 mg cisplatin per minute (minimum 120 minutes). Pre and post hydration required. Given for maximum 6 cycles. Dose banded (1 mg/ml)."
+      },
+      {
+        "drug_name": "Trastuzumab",
+        "dose": 8.0,
+        "dose_unit": "mg/kg",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Cycle 1 loading dose 8 mg/kg in 250ml sodium chloride 0.9% over 90 minutes. Cycle 2 onwards maintenance dose 6 mg/kg over 30 minutes (or 90 minutes if not well tolerated). Trastuzumab continues until disease progression; after 6 cycles switch to single-agent trastuzumab regimen. Observe patient for 6 hours after start of first infusion, 2 hours after subsequent infusions. Dose banded (21 mg/ml)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Renal impairment CrCl 30-50 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl less than 30 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.0,
+        "notes": "Do not use"
+      },
+      {
+        "condition": "Renal impairment CrCl 45-59 ml/min",
+        "drug_name": "Cisplatin",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl less than 45 ml/min",
+        "drug_name": "Cisplatin",
+        "factor": 0.5,
+        "notes": "Consider alternative"
+      },
+      {
+        "condition": "Trastuzumab: no dose adjustment for renal or hepatic impairment",
+        "drug_name": "Trastuzumab",
+        "factor": 1.0,
+        "notes": "No dose reduction necessary for hepatic or renal impairment"
+      },
+      {
+        "condition": "Haematological: 14-day delay required OR two separate 7-day delays",
+        "drug_name": "Cisplatin",
+        "factor": 0.8,
+        "notes": "Reduce cisplatin to 80% of original dose"
+      },
+      {
+        "condition": "Cisplatin neurotoxicity NCI-CTC grade 2+ or new hearing/tinnitus impairment",
+        "drug_name": "Cisplatin",
+        "factor": 0.0,
+        "notes": "Substitute cisplatin for carboplatin"
+      },
+      {
+        "condition": "LVEF drop confirmed: LVEF drop ≥10 points AND LVEF less than 50%",
+        "drug_name": "Trastuzumab",
+        "factor": 0.0,
+        "notes": "Stop trastuzumab. Symptomatic cardiac dysfunction: discontinue trastuzumab, start ACE inhibitor therapy, refer to cardiologist."
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 (2nd occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Resume at 75% after 2nd grade 2"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 (3rd occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Resume at 50% after 3rd. Stop if 4th."
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 (1st occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until grade 0-1, resume at 75%"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 (2nd occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Resume at 50%. Discontinue after 3rd grade 3."
+      }
+    ],
+    "pre_medications": [
+      "Trastuzumab administered first (see notes)",
+      "Aprepitant 125mg oral (15-30 minutes prior to cisplatin chemotherapy, day 1)",
+      "Dexamethasone 4mg oral or IV (15-30 minutes prior to cisplatin chemotherapy, day 1)",
+      "Ondansetron 8mg oral or IV (15-30 minutes prior to cisplatin chemotherapy, day 1)",
+      "Furosemide 40mg oral or IV (pre-cisplatin hydration)",
+      "1000ml sodium chloride 0.9% with 20mmol potassium chloride and 16mmol magnesium sulphate IV over 60 minutes (pre-hydration)",
+      "1000ml sodium chloride 0.9% with 20mmol potassium chloride and 16mmol magnesium sulphate IV over 60 minutes (post-hydration)",
+      "Chlorphenamine 10mg IV when required for trastuzumab infusion reactions (once only)",
+      "Hydrocortisone 100mg IV when required for trastuzumab infusion reactions (once only)",
+      "Paracetamol 1000mg oral when required for trastuzumab infusion reactions (once only)",
+      "Aprepitant 80mg once daily oral for 2 days (take home, starting day 2)",
+      "Dexamethasone 4mg once daily oral for 3 days (take home, starting day 2)",
+      "Metoclopramide 10mg three times daily when required oral (take home)",
+      "Ondansetron 8mg twice daily oral for 3 days (take home)"
+    ],
+    "special_warnings": [
+      "Confirm positive HER2 status prior to starting therapy — treatment only indicated for HER2-positive metastatic adenocarcinoma of stomach or gastro-oesophageal junction",
+      "DPD testing required: all patients must be tested for DPD deficiency before initiation (cycle 1) — complete or partial deficiency increases risk of severe and fatal toxicity with capecitabine",
+      "Trastuzumab cardiotoxicity monitoring: LVEF must be 50% or above before starting cycle 1. Assess cardiac function prior to starting trastuzumab and 12-weekly thereafter (or 4-8 weekly if signs of cardiac impairment). Use LVEF flowchart for management of asymptomatic LVEF decline.",
+      "Trastuzumab dose reductions not recommended — dose modification is by delay or discontinuation only",
+      "Trastuzumab continues until disease progression; after 6 cycles of combination, switch to single-agent trastuzumab regimen",
+      "Capecitabine and cisplatin given for maximum 6 cycles",
+      "If trastuzumab missed by 14 days or less: give maintenance dose (6 mg/kg) as soon as possible without waiting for next planned cycle",
+      "If trastuzumab missed by more than 14 days: re-loading dose 8 mg/kg over 90 minutes then resume schedule",
+      "Trastuzumab hypersensitivity: observe for 6 hours after start of first infusion; 2 hours after subsequent infusions",
+      "Capecitabine: total daily dose divided into two doses 12 hours apart; first dose in evening of day 1. Consider stopping capecitabine if chest pain occurs.",
+      "Cisplatin: patients must drink at least 3 litres of fluid in the 24 hours after administration",
+      "Cisplatin neurotoxicity grade 2+ or new hearing/tinnitus impairment: substitute with carboplatin",
+      "Patients should be assessed for suitability for oral chemotherapy prior to starting treatment",
+      "NPSA/2008/RRR001 must be followed for oral chemotherapy"
+    ],
+    "required_patient_fields": [
+      "her2_status",
+      "creatinine_clearance",
+      "lvef",
+      "dpd_status",
+      "fbc",
+      "lft",
+      "ue"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "GI-CAP-CIS-21",
+    "protocol_name": "Capecitabine-Cisplatin (21 day)",
+    "disease_site": "Upper GI",
+    "category": "gastrointestinal",
+    "cycle_length_days": 21,
+    "number_of_cycles": 8,
+    "drugs": [
+      {
+        "drug_name": "Capecitabine",
+        "dose": 1000.0,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Twice daily (2000 mg/m²/day total). Days 1-14 inclusive. Start on evening of day 1. Take with or after food. Dose banded per national dose bands."
+      },
+      {
+        "drug_name": "Cisplatin",
+        "dose": 80.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV infusion in 1000ml sodium chloride 0.9% with 20mmol potassium chloride at maximum rate 1 mg cisplatin per minute (minimum 120 minutes). Pre and post hydration required. Dose banded (1 mg/ml)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Renal impairment CrCl 30-50 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl 30 ml/min or less",
+        "drug_name": "Capecitabine",
+        "factor": 0.0,
+        "notes": "Contra-indicated"
+      },
+      {
+        "condition": "Renal impairment CrCl 45-59 ml/min",
+        "drug_name": "Cisplatin",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl less than 45 ml/min",
+        "drug_name": "Cisplatin",
+        "factor": 0.5,
+        "notes": "50% or consider alternative (seek advice)"
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin more than 3xULN or AST/ALT more than 2.5xULN (treatment-related)",
+        "drug_name": "Capecitabine",
+        "factor": 1.0,
+        "notes": "Consider delaying treatment if hepatic dysfunction is treatment-related. For mild/moderate dysfunction due to liver metastasis, dose modification may not be necessary."
+      },
+      {
+        "condition": "Haematological: 14-day delay required OR two separate 7-day delays",
+        "drug_name": "Cisplatin",
+        "factor": 0.8,
+        "notes": "Reduce cisplatin to 80% of original dose"
+      },
+      {
+        "condition": "Cisplatin neurotoxicity NCI-CTC grade 2+ or new hearing/tinnitus impairment",
+        "drug_name": "Cisplatin",
+        "factor": 0.0,
+        "notes": "Substitute cisplatin for carboplatin AUC5"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 (2nd occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Resume at 75% after 2nd grade 2"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 (3rd occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Resume at 50% after 3rd. Stop if 4th."
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 (1st occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until grade 0-1, resume at 75%"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 (2nd occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Resume at 50%. Discontinue after 3rd grade 3."
+      }
+    ],
+    "pre_medications": [
+      "Aprepitant 125mg oral (15-30 minutes prior to chemotherapy, day 1)",
+      "Dexamethasone 4mg oral or IV (15-30 minutes prior to chemotherapy, day 1)",
+      "Ondansetron 8mg oral or IV (15-30 minutes prior to chemotherapy, day 1)",
+      "Furosemide 40mg oral or IV (pre-cisplatin hydration)",
+      "1000ml sodium chloride 0.9% with 20mmol potassium chloride and 16mmol magnesium sulphate IV over 60 minutes (pre-hydration)",
+      "1000ml sodium chloride 0.9% with 20mmol potassium chloride and 16mmol magnesium sulphate IV over 60 minutes (post-hydration)",
+      "Aprepitant 80mg once daily oral for 2 days (take home, starting day 2)",
+      "Dexamethasone 4mg once daily oral for 3 days (take home, starting day 2)",
+      "Metoclopramide 10mg three times daily when required oral (take home)",
+      "Ondansetron 8mg twice daily oral for 3 days (take home, starting evening day 1)"
+    ],
+    "special_warnings": [
+      "DPD testing required: all patients must be tested for DPD deficiency before initiation (cycle 1) — complete or partial deficiency increases risk of severe and fatal toxicity with capecitabine",
+      "Capecitabine: total daily dose divided into two doses 12 hours apart; first dose in evening of day 1",
+      "Cisplatin: patients must drink at least 3 litres of fluid in the 24 hours after administration",
+      "Cisplatin neurotoxicity grade 2+ or new hearing/tinnitus impairment: substitute with carboplatin AUC5",
+      "NPSA/2008/RRR001 must be followed for oral chemotherapy"
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "dpd_status",
+      "fbc",
+      "lft",
+      "ue"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "GI-EOX-21",
+    "protocol_name": "Capecitabine-Epirubicin-Oxaliplatin (EOX)",
+    "disease_site": "Upper GI",
+    "category": "gastrointestinal",
+    "cycle_length_days": 21,
+    "number_of_cycles": 8,
+    "drugs": [
+      {
+        "drug_name": "Capecitabine",
+        "dose": 625.0,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Twice daily (1250 mg/m²/day total). Days 1-21 inclusive. Start on evening of day 1. Take with or after food."
+      },
+      {
+        "drug_name": "Epirubicin",
+        "dose": 50.0,
+        "dose_unit": "mg/m²",
+        "route": "IV bolus",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 0.167,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Intravenous bolus over 10 minutes. Vesicant. Dose banded (2 mg/ml PM)."
+      },
+      {
+        "drug_name": "Oxaliplatin",
+        "dose": 130.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 2.0,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV infusion in 500ml glucose 5% over 120 minutes. Glucose 5% flush before and after oxaliplatin administration. Dose banded (5 mg/ml)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Renal impairment CrCl 30-50 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl less than 30 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.0,
+        "notes": "Do not use"
+      },
+      {
+        "condition": "Severe renal impairment",
+        "drug_name": "Epirubicin",
+        "factor": 0.75,
+        "notes": "Reduce doses in cases of severe renal impairment"
+      },
+      {
+        "condition": "Moderate renal impairment",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.75,
+        "notes": "Consider dose adjustments according to toxicity in moderate renal impairment"
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin 24-51 umol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.5,
+        "notes": "Reduce epirubicin by 50%"
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin more than 51 umol/L",
+        "drug_name": "Epirubicin",
+        "factor": 0.25,
+        "notes": "Administer 25% of epirubicin dose"
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin 24-51 umol/L",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.5,
+        "notes": "Reduce oxaliplatin by 50%"
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin more than 51 umol/L",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.25,
+        "notes": "Administer 25% of oxaliplatin dose"
+      },
+      {
+        "condition": "Haematological: NCI-CTC grade 1 thrombocytopenia and/or grade 1-2 neutropenia — 7-day delay",
+        "drug_name": "Epirubicin",
+        "factor": 1.0,
+        "notes": "Reinitiate at full epirubicin dose for 7-day delay; reduce oxaliplatin to 100 mg/m² for 14-day delay"
+      },
+      {
+        "condition": "Haematological: NCI-CTC grade 2+ thrombocytopenia or grade 3+ neutropenia",
+        "drug_name": "Epirubicin",
+        "factor": 0.75,
+        "notes": "Reduce epirubicin to 75% and reduce oxaliplatin to 100 mg/m²"
+      },
+      {
+        "condition": "Haematological: NCI-CTC grade 4 neutropenia",
+        "drug_name": "Epirubicin",
+        "factor": 0.5,
+        "notes": "Delay until eligible; resume at 50% epirubicin and oxaliplatin 100 mg/m²"
+      },
+      {
+        "condition": "Haematological: NCI-CTC grade 4 thrombocytopenia",
+        "drug_name": "Epirubicin",
+        "factor": 0.0,
+        "notes": "Stop epirubicin. Resume with oxaliplatin 100 mg/m²."
+      },
+      {
+        "condition": "Oxaliplatin: cold-related dysaesthesia/paresthesia without pain persisting between cycles",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.77,
+        "notes": "Withhold until recovery, restart at 100 mg/m². Omit if recurs."
+      },
+      {
+        "condition": "Oxaliplatin: paresthesia with pain or functional impairment persisting beyond 7 days or NCI-CTC grade 3+",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.77,
+        "notes": "Reduce to 100 mg/m² in first instance. Omit if painful paresthesia recurs or persists. Carboplatin AUC5 may be substituted — if so, stop epirubicin to avoid myelosuppression."
+      },
+      {
+        "condition": "NCI-CTC grade 3-4 diarrhoea or stomatitis recurring despite capecitabine dose reduction",
+        "drug_name": "Oxaliplatin",
+        "factor": 0.77,
+        "notes": "Reduce oxaliplatin to 100 mg/m²"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 (2nd occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Resume at 75% after 2nd grade 2"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 (3rd occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Resume at 50% after 3rd. Stop if 4th."
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 (1st occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until grade 0-1, resume at 75%"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 (2nd occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Resume at 50%. Discontinue after 3rd grade 3."
+      }
+    ],
+    "pre_medications": [
+      "Dexamethasone 8mg oral or IV (15-30 minutes prior to chemotherapy, day 1)",
+      "Ondansetron 8mg oral or IV (15-30 minutes prior to chemotherapy, day 1)",
+      "Dexamethasone 4mg twice daily oral for 3 days (take home, starting day 2)",
+      "Metoclopramide 10mg three times daily when required oral (take home)"
+    ],
+    "special_warnings": [
+      "DPD testing required: all patients must be tested for DPD deficiency before initiation (cycle 1) — complete or partial deficiency increases risk of severe and fatal toxicity with capecitabine",
+      "Epirubicin cumulative lifetime dose limit approximately 900 mg/m² — monitor cumulative dose to avoid cardiotoxicity",
+      "Baseline LVEF must be measured before starting therapy, particularly in patients with history of cardiac problems or the elderly",
+      "Capecitabine: total daily dose divided into two doses 12 hours apart; first dose in evening of day 1",
+      "If carboplatin substituted for oxaliplatin, epirubicin must be stopped to avoid undue myelosuppression",
+      "Oxaliplatin: rare risk of acute interstitial lung disease or lung fibrosis; stop treatment if unexplained respiratory symptoms and investigate",
+      "NPSA/2008/RRR001 must be followed for oral chemotherapy"
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "lvef",
+      "dpd_status",
+      "fbc",
+      "lft",
+      "ue",
+      "bilirubin"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "GI-CAP-GEM-28",
+    "protocol_name": "Capecitabine-Gemcitabine (28 day)",
+    "disease_site": "Gastrointestinal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 28,
+    "number_of_cycles": 6,
+    "drugs": [
+      {
+        "drug_name": "Capecitabine",
+        "dose": 830.0,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Twice daily (1660 mg/m²/day total). Days 1-21 inclusive (28-day cycle). Start on evening of day 1. Take with or after food. Dose banded per national dose bands."
+      },
+      {
+        "drug_name": "Gemcitabine",
+        "dose": 1000.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1,
+          8,
+          15
+        ],
+        "infusion_duration_hours": 0.5,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "IV infusion in 250ml sodium chloride 0.9% over 30 minutes on days 1, 8, and 15. Dose banded (100 mg/ml)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Renal impairment CrCl 30-50 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl less than 30 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.0,
+        "notes": "Contra-indicated"
+      },
+      {
+        "condition": "Renal impairment CrCl less than 30 ml/min",
+        "drug_name": "Gemcitabine",
+        "factor": 0.75,
+        "notes": "Consider dose adjustments when CrCl is less than 30 ml/min"
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin raised (treatment-related or significant elevation)",
+        "drug_name": "Gemcitabine",
+        "factor": 0.75,
+        "notes": "Consider dose reductions especially where bilirubin is raised"
+      },
+      {
+        "condition": "Haematological on day of gemcitabine: neutrophils 0.5-1x10^9/L and/or platelets 50-100x10^9/L",
+        "drug_name": "Gemcitabine",
+        "factor": 0.75,
+        "notes": "Administer 75% of original gemcitabine dose on that day. Dose may be re-escalated to 100% on next administration if blood count adequate."
+      },
+      {
+        "condition": "Haematological on day of gemcitabine: neutrophils less than 0.5x10^9/L and/or platelets less than 50x10^9/L",
+        "drug_name": "Gemcitabine",
+        "factor": 0.0,
+        "notes": "Omit gemcitabine for 7 days. Do not replace omitted dose; maintain cycle schedule."
+      },
+      {
+        "condition": "Neutropenic sepsis (first episode)",
+        "drug_name": "Gemcitabine",
+        "factor": 0.75,
+        "notes": "Withhold until fully recovered; reinstate at 75% with no further re-escalation"
+      },
+      {
+        "condition": "Neutropenic sepsis (already on 75% dose)",
+        "drug_name": "Gemcitabine",
+        "factor": 0.5,
+        "notes": "Further reduction to 50% of full dose"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 (2nd occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Resume at 75% after 2nd grade 2"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 (3rd occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Resume at 50% after 3rd. Stop if 4th."
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 (1st occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until grade 0-1, resume at 75%"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 (2nd occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Resume at 50%. Discontinue after 3rd grade 3."
+      }
+    ],
+    "pre_medications": [
+      "Metoclopramide 10mg oral or IV (15-30 minutes prior to gemcitabine on days 1, 8, 15)",
+      "Metoclopramide 10mg three times daily when required oral (take home, day 1 only)"
+    ],
+    "special_warnings": [
+      "Disease site: Pancreatic Cancer — adjuvant treatment of pancreatic cancer and first-line treatment of advanced pancreatic cancer",
+      "DPD testing required: all patients must be tested for DPD deficiency before initiation (cycle 1) — complete or partial deficiency increases risk of severe and fatal toxicity with capecitabine",
+      "Capecitabine: total daily dose divided into two doses 12 hours apart; first dose in evening of day 1",
+      "Gemcitabine dose escalation back to 100% is permitted if blood count is adequate on day of next administration (after a 75% reduction for low counts — not after neutropenic sepsis reduction)",
+      "Where gemcitabine dose omissions occur the dose should not be replaced; patients maintain same cycle schedule",
+      "Consider stopping capecitabine if chest pain occurs",
+      "FBC, U&Es and LFTs required prior to each treatment on days 1, 8, 15",
+      "NPSA/2008/RRR001 must be followed for oral chemotherapy"
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "dpd_status",
+      "fbc",
+      "lft",
+      "ue",
+      "bilirubin"
+    ],
+    "auc_dosing": null
+  },
+  {
+    "protocol_code": "GI-XELIRI-21",
+    "protocol_name": "Capecitabine-Irinotecan (XELIRI)",
+    "disease_site": "Colorectal",
+    "category": "gastrointestinal",
+    "cycle_length_days": 21,
+    "number_of_cycles": 4,
+    "drugs": [
+      {
+        "drug_name": "Capecitabine",
+        "dose": 1000.0,
+        "dose_unit": "mg/m²",
+        "route": "Oral",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "infusion_duration_hours": null,
+        "max_dose": null,
+        "max_dose_unit": null,
+        "notes": "Twice daily (2000 mg/m²/day total). Days 1-14 inclusive. Start on evening of day 1. Take with or after food. Dose banded per national dose bands."
+      },
+      {
+        "drug_name": "Irinotecan",
+        "dose": 250.0,
+        "dose_unit": "mg/m²",
+        "route": "IV infusion",
+        "days": [
+          1
+        ],
+        "infusion_duration_hours": 1.5,
+        "max_dose": 700.0,
+        "max_dose_unit": "mg",
+        "notes": "IV infusion in 250ml sodium chloride 0.9% over 90 minutes (can be administered over 30-90 minutes). Maximum dose 700 mg. Consider attenuated starting doses for patients aged 70+, PS 2, or with prior radical pelvic radiotherapy. Dose banded (20 mg/ml)."
+      }
+    ],
+    "dose_modifications": [
+      {
+        "condition": "Renal impairment CrCl 30-50 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Reduce to 75% of original dose"
+      },
+      {
+        "condition": "Renal impairment CrCl less than 30 ml/min",
+        "drug_name": "Capecitabine",
+        "factor": 0.0,
+        "notes": "Contra-indicated"
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin 26-51 umol/L",
+        "drug_name": "Irinotecan",
+        "factor": 0.8,
+        "notes": "Reduce irinotecan to 200 mg/m²"
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin more than 51 umol/L",
+        "drug_name": "Irinotecan",
+        "factor": 0.5,
+        "notes": "Clinical decision required"
+      },
+      {
+        "condition": "Hepatic impairment: bilirubin less than 26 umol/L",
+        "drug_name": "Irinotecan",
+        "factor": 1.0,
+        "notes": "Full dose 250 mg/m² when bilirubin less than 26 umol/L"
+      },
+      {
+        "condition": "Haematological: neutrophils less than 1.5x10^9/L and/or platelets less than 100x10^9/L — 7-day delay; counts recover",
+        "drug_name": "Irinotecan",
+        "factor": 0.8,
+        "notes": "Restart capecitabine at original dose; reduce irinotecan to 80%"
+      },
+      {
+        "condition": "Haematological: 14-day delay required OR two separate 7-day delays",
+        "drug_name": "Irinotecan",
+        "factor": 0.5,
+        "notes": "Consider reducing irinotecan to 50% or stopping treatment"
+      },
+      {
+        "condition": "Asymptomatic nadir neutrophil count less than 0.5x10^9/L or febrile neutropenia episode",
+        "drug_name": "Irinotecan",
+        "factor": 0.8,
+        "notes": "Reduce subsequent irinotecan dose to 80%"
+      },
+      {
+        "condition": "NCI-CTC grade 3 or above irinotecan toxicity (any toxicity — next cycle)",
+        "drug_name": "Irinotecan",
+        "factor": 0.8,
+        "notes": "Reduce irinotecan to 80%. Next cycle must not start until all toxicities resolved to NCI-CTC grade 0-1. Diarrhoea must have fully resolved."
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 (2nd occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Resume at 75% after 2nd grade 2"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 2 (3rd occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Resume at 50% after 3rd. Stop if 4th."
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 (1st occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.75,
+        "notes": "Interrupt until grade 0-1, resume at 75%"
+      },
+      {
+        "condition": "Capecitabine NCI-CTC Grade 3 (2nd occurrence)",
+        "drug_name": "Capecitabine",
+        "factor": 0.5,
+        "notes": "Resume at 50%. Discontinue after 3rd grade 3."
+      }
+    ],
+    "pre_medications": [
+      "Atropine 250mcg subcutaneous (immediately prior to irinotecan — prevention of acute cholinergic syndrome)",
+      "Dexamethasone 8mg oral or IV (15-30 minutes prior to chemotherapy, day 1 only)",
+      "Ondansetron 8mg oral or IV (15-30 minutes prior to chemotherapy, day 1 only)",
+      "Atropine 250mcg subcutaneous when required (relief of cholinergic symptoms)",
+      "Dexamethasone 4mg twice daily oral for 3 days (take home, starting day after irinotecan)",
+      "Metoclopramide 10mg three times daily when required oral (take home)"
+    ],
+    "special_warnings": [
+      "DPD testing required: all patients must be tested for DPD deficiency before initiation (cycle 1) — complete or partial deficiency increases risk of severe and fatal toxicity with capecitabine",
+      "Atropine 250mcg SC must be given immediately prior to irinotecan to prevent acute cholinergic syndrome; a further 250mcg may be given to relieve cholinergic symptoms if they develop",
+      "Irinotecan delayed diarrhoea: administer oral loperamide 2mg every 2 hours from first liquid stool until 12 hours after last liquid stool (maximum 48 hours use). Consider oral ciprofloxacin 500mg twice daily if diarrhoea continues more than 24 hours.",
+      "Maximum dose of irinotecan is 700 mg",
+      "Consider attenuated starting doses for patients aged 70 or over, PS 2, or who have had prior radical radiotherapy to the pelvis",
+      "Diarrhoea must have fully resolved to NCI-CTC grade 0-1 before next treatment cycle can begin",
+      "Capecitabine: total daily dose divided into two doses 12 hours apart; first dose in evening of day 1. Consider stopping capecitabine if chest pain occurs.",
+      "NPSA/2008/RRR001 must be followed for oral chemotherapy"
+    ],
+    "required_patient_fields": [
+      "creatinine_clearance",
+      "dpd_status",
+      "fbc",
+      "lft",
+      "ue",
+      "bilirubin"
+    ],
+    "auc_dosing": null
+  }
+]
