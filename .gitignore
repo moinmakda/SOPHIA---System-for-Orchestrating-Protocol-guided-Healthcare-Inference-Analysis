@@ -27,8 +27,8 @@ backend/.env
 # Data directories
 backend/data/
 backend/uploads/
-data/
-uploads/
+/data/
+/uploads/
 parsed_protocols/
 
 # IDE
@@ -128,9 +128,7 @@ backend/protocol_jsons.zip
 backend/protocol_jsons/
 
 # QA / audit scripts
-backend/qa_test_100.py
-backend/qa_deep_audit.py
-backend/qa_final_audit.py
+backend/qa_*.py
 backend/normalize_schemas.py
 
 # One-off ingestion CLI
