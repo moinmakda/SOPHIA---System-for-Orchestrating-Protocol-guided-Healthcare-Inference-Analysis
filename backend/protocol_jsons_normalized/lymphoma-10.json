@@ -31,7 +31,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Dose banded according to CSCCN agreed bands."
+        "notes": "Intravenous bolus over 10 minutes. Dose banded according to CSCCN agreed bands.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Vincristine",
@@ -44,7 +46,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": 2.0,
         "max_dose_unit": "mg",
-        "notes": "Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Maximum dose 2mg. Dose rounded to nearest 0.1mg."
+        "notes": "Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Maximum dose 2mg. Dose rounded to nearest 0.1mg.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50
       },
       {
         "drug_name": "Prednisolone",
@@ -258,7 +262,9 @@
         "infusion_duration_hours": 48.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Dose Level 1 (default). Combined with etoposide and vincristine in same 1000ml sodium chloride 0.9% bag, administered as continuous IV infusion over 48 hours (days 1-3 and days 3-5). Patients must have PICC line or central access. Maximum lifetime cumulative doxorubicin dose 450mg/m² (400mg/m² with prior mediastinal/pericardial radiotherapy). Dose banded per national bands (2mg/ml)."
+        "notes": "Dose Level 1 (default). Combined with etoposide and vincristine in same 1000ml sodium chloride 0.9% bag, administered as continuous IV infusion over 48 hours (days 1-3 and days 3-5). Patients must have PICC line or central access. Maximum lifetime cumulative doxorubicin dose 450mg/m² (400mg/m² with prior mediastinal/pericardial radiotherapy). Dose banded per national bands (2mg/ml).",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Etoposide",
@@ -272,7 +278,9 @@
         "infusion_duration_hours": 48.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Dose Level 1 (default). Mixed in same 1000ml NaCl 0.9% bag with doxorubicin and vincristine, administered as 48-hour continuous IV infusion. Dose banded per national bands (20mg/ml). Reduce dose if significant hypoalbuminaemia."
+        "notes": "Dose Level 1 (default). Mixed in same 1000ml NaCl 0.9% bag with doxorubicin and vincristine, administered as 48-hour continuous IV infusion. Dose banded per national bands (20mg/ml). Reduce dose if significant hypoalbuminaemia.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500
       },
       {
         "drug_name": "Vincristine",
@@ -286,7 +294,9 @@
         "infusion_duration_hours": 48.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Dose Level 1 (default). Per 24h dose is 0.4mg/m² giving 0.8mg/m² total per cycle administered as continuous infusion. Mixed in same bag as doxorubicin and etoposide over 48 hours. Doses based on actual body weight, NOT routinely capped. ARIA caps at 2.4m² - may need manual adjustment. Dose banded per national bands (1mg/ml)."
+        "notes": "Dose Level 1 (default). Per 24h dose is 0.4mg/m² giving 0.8mg/m² total per cycle administered as continuous infusion. Mixed in same bag as doxorubicin and etoposide over 48 hours. Doses based on actual body weight, NOT routinely capped. ARIA caps at 2.4m² - may need manual adjustment. Dose banded per national bands (1mg/ml).",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50
       },
       {
         "drug_name": "Cyclophosphamide",
@@ -299,7 +309,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Dose Level 1 (default). Intravenous bolus over 10 minutes on day 5. Dose banded per national bands (20mg/ml)."
+        "notes": "Dose Level 1 (default). Intravenous bolus over 10 minutes on day 5. Dose banded per national bands (20mg/ml).",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Prednisolone",
@@ -756,7 +768,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Dose banded per CSCCN agreed bands."
+        "notes": "Intravenous bolus over 10 minutes. Dose banded per CSCCN agreed bands.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Vincristine",
@@ -769,7 +783,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": 2.0,
         "max_dose_unit": "mg",
-        "notes": "Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Maximum dose 2mg. Dose rounded to nearest 0.1mg."
+        "notes": "Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Maximum dose 2mg. Dose rounded to nearest 0.1mg.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50
       },
       {
         "drug_name": "Prednisolone",

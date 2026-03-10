@@ -18,7 +18,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Administer over 10 minutes. Dose banded at 20mg/ml PM. Extravasation risk: neutral."
+        "notes": "Administer over 10 minutes. Dose banded at 20mg/ml PM. Extravasation risk: neutral.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Epirubicin",
@@ -31,7 +33,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Administer over 10 minutes. Dose banded at 2mg/ml PM. Extravasation risk: vesicant. Maximum lifetime cumulative dose 900 mg/m²."
+        "notes": "Administer over 10 minutes. Dose banded at 2mg/ml PM. Extravasation risk: vesicant. Maximum lifetime cumulative dose 900 mg/m².",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Fluorouracil",
@@ -185,7 +189,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Administer over 10 minutes. Dose banded at 20mg/ml PM. Extravasation risk: neutral."
+        "notes": "Administer over 10 minutes. Dose banded at 20mg/ml PM. Extravasation risk: neutral.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Epirubicin",
@@ -198,7 +204,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Administer over 10 minutes. Dose banded at 2mg/ml PM. Extravasation risk: vesicant. Maximum lifetime cumulative dose 900 mg/m²."
+        "notes": "Administer over 10 minutes. Dose banded at 2mg/ml PM. Extravasation risk: vesicant. Maximum lifetime cumulative dose 900 mg/m².",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Fluorouracil",

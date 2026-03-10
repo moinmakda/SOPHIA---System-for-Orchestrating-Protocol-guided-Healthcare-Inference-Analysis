@@ -542,7 +542,9 @@
         "infusion_duration_hours": 1.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "100mg/m² in 500ml NaCl 0.9% over 60 minutes. Irritant. Dose-banded per agreed bands. Anaphylactic reaction risk."
+        "notes": "100mg/m² in 500ml NaCl 0.9% over 60 minutes. Irritant. Dose-banded per agreed bands. Anaphylactic reaction risk.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500
       }
     ],
     "dose_modifications": [

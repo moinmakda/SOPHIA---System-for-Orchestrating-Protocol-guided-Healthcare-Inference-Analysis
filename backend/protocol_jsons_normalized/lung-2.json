@@ -492,7 +492,9 @@
         "infusion_duration_hours": 1.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous infusion in 1000ml sodium chloride 0.9% over 60 minutes. Dose banded per national dose band (20mg/ml). Hypotension risk on rapid infusion. Etoposide is an irritant."
+        "notes": "Intravenous infusion in 1000ml sodium chloride 0.9% over 60 minutes. Dose banded per national dose band (20mg/ml). Hypotension risk on rapid infusion. Etoposide is an irritant.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500
       },
       {
         "drug_name": "Etoposide",

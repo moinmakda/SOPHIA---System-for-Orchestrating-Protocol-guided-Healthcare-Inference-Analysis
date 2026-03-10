@@ -267,7 +267,9 @@
         "infusion_duration_hours": 0.17,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycles 1-3 only (FE100C phase). Administer as IV bolus over 10 minutes."
+        "notes": "Cycles 1-3 only (FE100C phase). Administer as IV bolus over 10 minutes.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Epirubicin",
@@ -280,7 +282,9 @@
         "infusion_duration_hours": 0.17,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycles 1-3 only (FE100C phase). Administer as IV bolus over 10 minutes. Maximum lifetime cumulative dose is 900mg/m²."
+        "notes": "Cycles 1-3 only (FE100C phase). Administer as IV bolus over 10 minutes. Maximum lifetime cumulative dose is 900mg/m².",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Fluorouracil",
@@ -505,7 +509,9 @@
         "infusion_duration_hours": 0.17,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycles 1-3 only (FE100C phase). Administer as IV bolus over 10 minutes."
+        "notes": "Cycles 1-3 only (FE100C phase). Administer as IV bolus over 10 minutes.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Epirubicin",
@@ -518,7 +524,9 @@
         "infusion_duration_hours": 0.17,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycles 1-3 only (FE100C phase). Administer as IV bolus over 10 minutes. Maximum lifetime cumulative dose is 900mg/m²."
+        "notes": "Cycles 1-3 only (FE100C phase). Administer as IV bolus over 10 minutes. Maximum lifetime cumulative dose is 900mg/m².",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Fluorouracil",
@@ -669,7 +677,9 @@
         "infusion_duration_hours": 0.17,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycles 1-4 only. Administer as IV bolus over 10 minutes."
+        "notes": "Cycles 1-4 only. Administer as IV bolus over 10 minutes.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Doxorubicin",
@@ -682,7 +692,9 @@
         "infusion_duration_hours": 0.17,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycles 1-4 only. Administer as IV bolus over 10 minutes. Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). Vesicant."
+        "notes": "Cycles 1-4 only. Administer as IV bolus over 10 minutes. Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). Vesicant.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Paclitaxel",
@@ -813,7 +825,9 @@
         "infusion_duration_hours": 0.17,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Administer as IV bolus over 10 minutes. Where followed by paclitaxel, only 4 cycles may be needed — check at cycle 1."
+        "notes": "Administer as IV bolus over 10 minutes. Where followed by paclitaxel, only 4 cycles may be needed — check at cycle 1.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Doxorubicin",
@@ -826,7 +840,9 @@
         "infusion_duration_hours": 0.17,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Administer as IV bolus over 10 minutes. Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). Vesicant."
+        "notes": "Administer as IV bolus over 10 minutes. Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). Vesicant.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       }
     ],
     "dose_modifications": [
@@ -925,7 +941,9 @@
         "infusion_duration_hours": 0.17,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycles 1-4 only. Administer as IV bolus over 10 minutes."
+        "notes": "Cycles 1-4 only. Administer as IV bolus over 10 minutes.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Epirubicin",
@@ -938,7 +956,9 @@
         "infusion_duration_hours": 0.17,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycles 1-4 only. Administer as IV bolus over 10 minutes. Maximum lifetime cumulative dose is 900mg/m². Vesicant."
+        "notes": "Cycles 1-4 only. Administer as IV bolus over 10 minutes. Maximum lifetime cumulative dose is 900mg/m². Vesicant.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Paclitaxel",
@@ -1069,7 +1089,9 @@
         "infusion_duration_hours": 0.17,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycles 1-4 only. Administer as IV bolus over 10 minutes."
+        "notes": "Cycles 1-4 only. Administer as IV bolus over 10 minutes.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Epirubicin",
@@ -1082,7 +1104,9 @@
         "infusion_duration_hours": 0.17,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycles 1-4 only. Administer as IV bolus over 10 minutes. Maximum lifetime cumulative dose is 900mg/m². Vesicant."
+        "notes": "Cycles 1-4 only. Administer as IV bolus over 10 minutes. Maximum lifetime cumulative dose is 900mg/m². Vesicant.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Paclitaxel",

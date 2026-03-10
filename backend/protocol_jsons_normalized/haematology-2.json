@@ -10,7 +10,7 @@
       {
         "drug_name": "Azacitidine",
         "dose": 100.0,
-        "dose_unit": "mg/m²",
+        "dose_unit": "mg/m\u00b2",
         "route": "Subcutaneous",
         "days": [
           1,
@@ -27,13 +27,13 @@
     ],
     "dose_modifications": [
       {
-        "condition": "Neutrophils ≤1x10⁹/L OR platelets ≤50x10⁹/L at nadir (normal baseline counts), recovery not achieved within 14 days",
+        "condition": "Neutrophils \u22641x10\u2079/L OR platelets \u226450x10\u2079/L at nadir (normal baseline counts), recovery not achieved within 14 days",
         "drug_name": "Azacitidine",
         "factor": 0.5,
         "notes": "Delay until recovery then use 50% of dose"
       },
       {
-        "condition": "Neutrophils >1x10⁹/L OR platelets >50x10⁹/L at nadir (normal baseline counts), recovery not achieved within 14 days",
+        "condition": "Neutrophils >1x10\u2079/L OR platelets >50x10\u2079/L at nadir (normal baseline counts), recovery not achieved within 14 days",
         "drug_name": "Azacitidine",
         "factor": 1.0,
         "notes": "Delay until recovery then use 100%"
@@ -109,7 +109,7 @@
       {
         "drug_name": "Azacitidine",
         "dose": 75.0,
-        "dose_unit": "mg/m²",
+        "dose_unit": "mg/m\u00b2",
         "route": "Subcutaneous",
         "days": [
           1,
@@ -123,7 +123,7 @@
         "infusion_duration_hours": 0.017,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Subcutaneous injection in water for injections over one minute. Dose banded per national bands (25mg/ml). Syringe must be re-suspended (invert 2-3 times, roll vigorously 30 seconds). Inject into upper arm, thigh or abdomen; rotate sites; ≥2.5cm from previous site. Doses >100mg (4mL) into two separate sites. Day 1 should be a Monday. Cycles 1 and 2 onwards: same days (1,2,3,4,5,8,9)."
+        "notes": "Subcutaneous injection in water for injections over one minute. Dose banded per national bands (25mg/ml). Syringe must be re-suspended (invert 2-3 times, roll vigorously 30 seconds). Inject into upper arm, thigh or abdomen; rotate sites; \u22652.5cm from previous site. Doses >100mg (4mL) into two separate sites. Day 1 should be a Monday. Cycles 1 and 2 onwards: same days (1,2,3,4,5,8,9)."
       },
       {
         "drug_name": "Venetoclax",
@@ -163,24 +163,24 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "CYCLE 1 RAMP-UP (days 1-28): Day 1: 100mg, Day 2: 200mg, Day 3: 300mg, Days 4-28: 100mg (reduced from 400mg due to azole antifungal interaction; if no azole use 400mg days 4-28). CYCLE 2 ONWARDS (days 1-28): 100mg daily (consideration for 14 days per NICE TA890 — confirm with consultant). Take with or just after food with a full glass of water at same time each day. Do not chew, crush or break tablets. Avoid grapefruit, Seville oranges and starfruit. Available as 10mg, 50mg and 100mg tablets. Many drug interactions — always check BNF/Lexicomp."
+        "notes": "CYCLE 1 RAMP-UP (days 1-28): Day 1: 100mg, Day 2: 200mg, Day 3: 300mg, Days 4-28: 100mg (reduced from 400mg due to azole antifungal interaction; if no azole use 400mg days 4-28). CYCLE 2 ONWARDS (days 1-28): 100mg daily (consideration for 14 days per NICE TA890 \u2014 confirm with consultant). Take with or just after food with a full glass of water at same time each day. Do not chew, crush or break tablets. Avoid grapefruit, Seville oranges and starfruit. Available as 10mg, 50mg and 100mg tablets. Many drug interactions \u2014 always check BNF/Lexicomp."
       }
     ],
     "dose_modifications": [
       {
-        "condition": "Grade 4 neutropenia (ANC <500/microlitre) or grade 4 thrombocytopenia (platelets <25×10³/microlitre): occurrence prior to achieving remission",
+        "condition": "Grade 4 neutropenia (ANC <500/microlitre) or grade 4 thrombocytopenia (platelets <25\u00d710\u00b3/microlitre): occurrence prior to achieving remission",
         "drug_name": "Venetoclax",
         "factor": 1.0,
         "notes": "In most instances do not interrupt venetoclax in combination with azacitidine"
       },
       {
-        "condition": "Grade 4 neutropenia or grade 4 thrombocytopenia: first occurrence after achieving remission, lasting ≥7 days",
+        "condition": "Grade 4 neutropenia or grade 4 thrombocytopenia: first occurrence after achieving remission, lasting \u22657 days",
         "drug_name": "Venetoclax",
         "factor": 1.0,
         "notes": "Delay subsequent cycle of venetoclax + azacitidine; monitor blood counts; administer G-CSF if clinically indicated. On resolution to grade 1-2, resume venetoclax at same dose."
       },
       {
-        "condition": "Grade 4 neutropenia or grade 4 thrombocytopenia: subsequent occurrences after achieving remission, lasting ≥7 days",
+        "condition": "Grade 4 neutropenia or grade 4 thrombocytopenia: subsequent occurrences after achieving remission, lasting \u22657 days",
         "drug_name": "Venetoclax",
         "factor": 1.0,
         "notes": "Delay subsequent cycle; monitor; G-CSF if indicated. Resume at same dose but reduce venetoclax duration by 7 days per subsequent cycle (e.g. 21 days instead of 28)"
@@ -204,7 +204,7 @@
         "notes": "Reduce azacitidine dose by 50% at next cycle"
       },
       {
-        "condition": "Creatinine or BUN ≥2-fold above baseline and above ULN",
+        "condition": "Creatinine or BUN \u22652-fold above baseline and above ULN",
         "drug_name": "Azacitidine",
         "factor": 1.0,
         "notes": "Delay next cycle until values return to normal/baseline; reduce azacitidine dose by 50% on next treatment cycle"
@@ -219,7 +219,7 @@
         "condition": "TLS - biochemical changes requiring >48 hours to resolve",
         "drug_name": "Venetoclax",
         "factor": 0.0,
-        "notes": "Resume at reduced dose per TLS dose modification table: 400mg→300mg, 300mg→200mg, 200mg→100mg, 100mg→50mg, 50mg→20mg, 20mg→10mg"
+        "notes": "Resume at reduced dose per TLS dose modification table: 400mg\u2192300mg, 300mg\u2192200mg, 200mg\u2192100mg, 100mg\u219250mg, 50mg\u219220mg, 20mg\u219210mg"
       },
       {
         "condition": "Other grade 3 or 4 toxicity related to venetoclax",
@@ -228,7 +228,7 @@
         "notes": "Withhold until toxicity resolved to grade 2 or below; restart at original dose"
       },
       {
-        "condition": "Renal impairment CrCl ≥15ml/min and <30ml/min (severe)",
+        "condition": "Renal impairment CrCl \u226515ml/min and <30ml/min (severe)",
         "drug_name": "Venetoclax",
         "factor": 1.0,
         "notes": "Administer only if benefit outweighs risk; monitor closely for TLS signs; more intensive prophylaxis and monitoring needed during dose-titration"
@@ -243,7 +243,7 @@
     ],
     "special_warnings": [
       "CRITICAL: Tumour lysis syndrome (TLS) risk - all patients must be assessed prospectively for TLS risk before starting venetoclax",
-      "White blood cell count must be <25x10⁹/L prior to venetoclax initiation; cytoreduction may be required",
+      "White blood cell count must be <25x10\u2079/L prior to venetoclax initiation; cytoreduction may be required",
       "Hospitalisation recommended for first 5 days of cycle 1 during venetoclax dose titration and for 24 hours after dose titration",
       "Monitor electrolytes (potassium, uric acid, phosphate, adjusted calcium, LDH, creatinine) at 6-8 hours and 24 hours after each new dose increase of venetoclax",
       "Next venetoclax dose must not be administered until 24-hour blood chemistry results evaluated",
@@ -287,7 +287,7 @@
       {
         "drug_name": "Bendamustine",
         "dose": 70.0,
-        "dose_unit": "mg/m²",
+        "dose_unit": "mg/m\u00b2",
         "route": "IV infusion",
         "days": [
           1,
@@ -296,12 +296,14 @@
         "infusion_duration_hours": 0.75,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous infusion in sodium chloride 0.9% 500ml over 30-60 minutes. Dose banded per nationally agreed bands (2.5mg/ml). Vesicant - handle with care. Bendamustine metabolism via CYP1A2; always check for drug interactions. Do not use concomitantly with allopurinol unless necessary (risk of Stevens-Johnson syndrome / toxic epidermal necrolysis)."
+        "notes": "Intravenous infusion in sodium chloride 0.9% 500ml over 30-60 minutes. Dose banded per nationally agreed bands (2.5mg/ml). Vesicant - handle with care. Bendamustine metabolism via CYP1A2; always check for drug interactions. Do not use concomitantly with allopurinol unless necessary (risk of Stevens-Johnson syndrome / toxic epidermal necrolysis).",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500
       },
       {
         "drug_name": "Rituximab",
         "dose": 375.0,
-        "dose_unit": "mg/m²",
+        "dose_unit": "mg/m\u00b2",
         "route": "IV infusion",
         "days": [
           1
@@ -309,54 +311,54 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "CYCLE 1 ONLY: 375mg/m² in 500ml sodium chloride 0.9%; start at 50mg/hour; increase by 50mg/hour every 30 minutes if tolerated; maximum rate 400mg/hour. CYCLES 2-6: 500mg/m² in 500ml sodium chloride 0.9% as per local rituximab administration guidelines. Dose rounded to nearest 100mg (up if halfway). Neutral for extravasation purposes. Dose reductions NOT permitted."
+        "notes": "CYCLE 1 ONLY: 375mg/m\u00b2 in 500ml sodium chloride 0.9%; start at 50mg/hour; increase by 50mg/hour every 30 minutes if tolerated; maximum rate 400mg/hour. CYCLES 2-6: 500mg/m\u00b2 in 500ml sodium chloride 0.9% as per local rituximab administration guidelines. Dose rounded to nearest 100mg (up if halfway). Neutral for extravasation purposes. Dose reductions NOT permitted."
       }
     ],
     "dose_modifications": [
       {
-        "condition": "Neutrophils >1x10⁹/L",
+        "condition": "Neutrophils >1x10\u2079/L",
         "drug_name": "Bendamustine",
         "factor": 1.0,
         "notes": "100% dose"
       },
       {
-        "condition": "Neutrophils 0.5-1x10⁹/L",
+        "condition": "Neutrophils 0.5-1x10\u2079/L",
         "drug_name": "Bendamustine",
         "factor": 1.0,
         "notes": "Delay until recovery then give 100%"
       },
       {
-        "condition": "Neutrophils <0.5x10⁹/L or febrile neutropenia: 1st occurrence",
+        "condition": "Neutrophils <0.5x10\u2079/L or febrile neutropenia: 1st occurrence",
         "drug_name": "Bendamustine",
         "factor": 0.75,
         "notes": "Delay until recovery and give 75% of original dose"
       },
       {
-        "condition": "Neutrophils <0.5x10⁹/L or febrile neutropenia: 2nd occurrence",
+        "condition": "Neutrophils <0.5x10\u2079/L or febrile neutropenia: 2nd occurrence",
         "drug_name": "Bendamustine",
         "factor": 0.5,
         "notes": "Delay until recovery and give 50% of original dose"
       },
       {
-        "condition": "Platelets >100x10⁹/L",
+        "condition": "Platelets >100x10\u2079/L",
         "drug_name": "Bendamustine",
         "factor": 1.0,
         "notes": "100% dose"
       },
       {
-        "condition": "Platelets 25-100x10⁹/L",
+        "condition": "Platelets 25-100x10\u2079/L",
         "drug_name": "Bendamustine",
         "factor": 1.0,
         "notes": "Delay until recovery and give 100%"
       },
       {
-        "condition": "Platelets <25x10⁹/L or bleeding: 1st occurrence",
+        "condition": "Platelets <25x10\u2079/L or bleeding: 1st occurrence",
         "drug_name": "Bendamustine",
         "factor": 0.75,
         "notes": "Delay until recovery and give 75% of original dose"
       },
       {
-        "condition": "Platelets <25x10⁹/L or bleeding: 2nd occurrence",
+        "condition": "Platelets <25x10\u2079/L or bleeding: 2nd occurrence",
         "drug_name": "Bendamustine",
         "factor": 0.5,
         "notes": "Delay until recovery and give 50% of original dose"
@@ -386,7 +388,7 @@
         "notes": "100% dose"
       },
       {
-        "condition": "Creatinine clearance ≤10 ml/min",
+        "condition": "Creatinine clearance \u226410 ml/min",
         "drug_name": "Bendamustine",
         "factor": 1.0,
         "notes": "No information available - discuss with consultant"
@@ -454,7 +456,7 @@
       {
         "drug_name": "Bendamustine",
         "dose": 70.0,
-        "dose_unit": "mg/m²",
+        "dose_unit": "mg/m\u00b2",
         "route": "IV infusion",
         "days": [
           1,
@@ -463,7 +465,9 @@
         "infusion_duration_hours": 0.75,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous infusion in sodium chloride 0.9% 500ml over 30-60 minutes. Dose banded per nationally agreed bands (2.5mg/ml). Vesicant. Indicated for all cycles. CYP1A2 interactions - always check."
+        "notes": "Intravenous infusion in sodium chloride 0.9% 500ml over 30-60 minutes. Dose banded per nationally agreed bands (2.5mg/ml). Vesicant. Indicated for all cycles. CYP1A2 interactions - always check.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500
       },
       {
         "drug_name": "Rituximab",
@@ -476,12 +480,12 @@
         "infusion_duration_hours": 2.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "CYCLE 1 DAY 1 ONLY: 100mg fixed dose in 50ml sodium chloride 0.9% over 120 minutes. Split-dose rituximab indicated where lymphocyte count >25x10⁹/L. Dose reductions NOT permitted."
+        "notes": "CYCLE 1 DAY 1 ONLY: 100mg fixed dose in 50ml sodium chloride 0.9% over 120 minutes. Split-dose rituximab indicated where lymphocyte count >25x10\u2079/L. Dose reductions NOT permitted."
       },
       {
         "drug_name": "Rituximab",
         "dose": 325.0,
-        "dose_unit": "mg/m²",
+        "dose_unit": "mg/m\u00b2",
         "route": "IV infusion",
         "days": [
           2
@@ -489,42 +493,42 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "CYCLE 1 DAY 2 ONLY: 325mg/m² in 500ml sodium chloride 0.9%; start at 50mg/hour; increase by 50mg/hour every 30 minutes; maximum 400mg/hour. Doses ≥325mg/m² rounded to nearest 100mg (up if halfway). CYCLES 2-6: 500mg/m² day 1 per local rituximab administration guidelines. If lymphocyte count >25x10⁹/L on day 1 of cycles 2-6, consider fractionating: Day 1 125mg/m² in 100ml NaCl 0.9%, Day 2 375mg/m² in 500ml NaCl 0.9%; if no prior problems start at 100mg/hour escalating in 100mg/hour increments every 30 min to 400mg/hour; if prior reactions start at 50mg/hour escalating by 50mg/hour every 30 min to 400mg/hour."
+        "notes": "CYCLE 1 DAY 2 ONLY: 325mg/m\u00b2 in 500ml sodium chloride 0.9%; start at 50mg/hour; increase by 50mg/hour every 30 minutes; maximum 400mg/hour. Doses \u2265325mg/m\u00b2 rounded to nearest 100mg (up if halfway). CYCLES 2-6: 500mg/m\u00b2 day 1 per local rituximab administration guidelines. If lymphocyte count >25x10\u2079/L on day 1 of cycles 2-6, consider fractionating: Day 1 125mg/m\u00b2 in 100ml NaCl 0.9%, Day 2 375mg/m\u00b2 in 500ml NaCl 0.9%; if no prior problems start at 100mg/hour escalating in 100mg/hour increments every 30 min to 400mg/hour; if prior reactions start at 50mg/hour escalating by 50mg/hour every 30 min to 400mg/hour."
       }
     ],
     "dose_modifications": [
       {
-        "condition": "Neutrophils >1x10⁹/L",
+        "condition": "Neutrophils >1x10\u2079/L",
         "drug_name": "Bendamustine",
         "factor": 1.0,
         "notes": "100% dose"
       },
       {
-        "condition": "Neutrophils 0.5-1x10⁹/L",
+        "condition": "Neutrophils 0.5-1x10\u2079/L",
         "drug_name": "Bendamustine",
         "factor": 1.0,
         "notes": "Delay until recovery then give 100%"
       },
       {
-        "condition": "Neutrophils <0.5x10⁹/L or febrile neutropenia: 1st occurrence",
+        "condition": "Neutrophils <0.5x10\u2079/L or febrile neutropenia: 1st occurrence",
         "drug_name": "Bendamustine",
         "factor": 0.75,
         "notes": "Delay until recovery and give 75% of original dose"
       },
       {
-        "condition": "Neutrophils <0.5x10⁹/L or febrile neutropenia: 2nd occurrence",
+        "condition": "Neutrophils <0.5x10\u2079/L or febrile neutropenia: 2nd occurrence",
         "drug_name": "Bendamustine",
         "factor": 0.5,
         "notes": "Delay until recovery and give 50% of original dose"
       },
       {
-        "condition": "Platelets <25x10⁹/L or bleeding: 1st occurrence",
+        "condition": "Platelets <25x10\u2079/L or bleeding: 1st occurrence",
         "drug_name": "Bendamustine",
         "factor": 0.75,
         "notes": "Delay until recovery and give 75% of original dose"
       },
       {
-        "condition": "Platelets <25x10⁹/L or bleeding: 2nd occurrence",
+        "condition": "Platelets <25x10\u2079/L or bleeding: 2nd occurrence",
         "drug_name": "Bendamustine",
         "factor": 0.5,
         "notes": "Delay until recovery and give 50% of original dose"
@@ -542,7 +546,7 @@
         "notes": "No information available"
       },
       {
-        "condition": "Creatinine clearance ≤10 ml/min",
+        "condition": "Creatinine clearance \u226410 ml/min",
         "drug_name": "Bendamustine",
         "factor": 1.0,
         "notes": "No information available"
@@ -566,7 +570,7 @@
     ],
     "special_warnings": [
       "IRRADIATED BLOOD PRODUCTS REQUIRED FOR LIFE: Lifelong risk of TA-GVHD with bendamustine. Notify blood transfusion department immediately; patient must carry alert card.",
-      "Split-dose rituximab indicated where lymphocyte count >25x10⁹/L to reduce infusion-related reaction risk",
+      "Split-dose rituximab indicated where lymphocyte count >25x10\u2079/L to reduce infusion-related reaction risk",
       "Rituximab infusion-related reactions/cytokine release syndrome: higher risk in CLL; cycle 1 dose split over 2 days. CRS can be severe/life-threatening.",
       "PML risk with rituximab: monitor for neurological symptoms; suspend if suspected; permanently discontinue if confirmed",
       "TLS risk in CLL patients",
@@ -599,7 +603,7 @@
       {
         "drug_name": "Bendamustine",
         "dose": 90.0,
-        "dose_unit": "mg/m²",
+        "dose_unit": "mg/m\u00b2",
         "route": "IV infusion",
         "days": [
           1,
@@ -608,12 +612,14 @@
         "infusion_duration_hours": 0.75,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous infusion in sodium chloride 0.9% 500ml over 30-60 minutes. Dose banded per nationally agreed bands (2.5mg/ml). Vesicant. CYP1A2 interactions - always check. Higher dose variant (90mg/m² vs 70mg/m²)."
+        "notes": "Intravenous infusion in sodium chloride 0.9% 500ml over 30-60 minutes. Dose banded per nationally agreed bands (2.5mg/ml). Vesicant. CYP1A2 interactions - always check. Higher dose variant (90mg/m\u00b2 vs 70mg/m\u00b2).",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500
       },
       {
         "drug_name": "Rituximab",
         "dose": 375.0,
-        "dose_unit": "mg/m²",
+        "dose_unit": "mg/m\u00b2",
         "route": "IV infusion",
         "days": [
           1
@@ -621,48 +627,48 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "CYCLE 1: 375mg/m² in 500ml sodium chloride 0.9%; start at 50mg/hour; increase by 50mg/hour every 30 minutes; maximum 400mg/hour. CYCLES 2-6: 500mg/m² in 500ml sodium chloride 0.9% per local rituximab administration guidelines. Dose rounded to nearest 100mg (up if halfway). Neutral for extravasation. Dose reductions NOT permitted."
+        "notes": "CYCLE 1: 375mg/m\u00b2 in 500ml sodium chloride 0.9%; start at 50mg/hour; increase by 50mg/hour every 30 minutes; maximum 400mg/hour. CYCLES 2-6: 500mg/m\u00b2 in 500ml sodium chloride 0.9% per local rituximab administration guidelines. Dose rounded to nearest 100mg (up if halfway). Neutral for extravasation. Dose reductions NOT permitted."
       }
     ],
     "dose_modifications": [
       {
-        "condition": "Neutrophils >1x10⁹/L",
+        "condition": "Neutrophils >1x10\u2079/L",
         "drug_name": "Bendamustine",
         "factor": 1.0,
         "notes": "100% dose"
       },
       {
-        "condition": "Neutrophils 0.5-1x10⁹/L",
+        "condition": "Neutrophils 0.5-1x10\u2079/L",
         "drug_name": "Bendamustine",
         "factor": 1.0,
         "notes": "Delay until recovery then give 100%"
       },
       {
-        "condition": "Neutrophils <0.5x10⁹/L or febrile neutropenia: 1st occurrence",
+        "condition": "Neutrophils <0.5x10\u2079/L or febrile neutropenia: 1st occurrence",
         "drug_name": "Bendamustine",
         "factor": 0.75,
         "notes": "Delay until recovery and give 75% of original dose"
       },
       {
-        "condition": "Neutrophils <0.5x10⁹/L or febrile neutropenia: 2nd occurrence",
+        "condition": "Neutrophils <0.5x10\u2079/L or febrile neutropenia: 2nd occurrence",
         "drug_name": "Bendamustine",
         "factor": 0.5,
         "notes": "Delay until recovery and give 50% of original dose"
       },
       {
-        "condition": "Platelets 25-100x10⁹/L",
+        "condition": "Platelets 25-100x10\u2079/L",
         "drug_name": "Bendamustine",
         "factor": 1.0,
         "notes": "Delay until recovery and give 100%"
       },
       {
-        "condition": "Platelets <25x10⁹/L or bleeding: 1st occurrence",
+        "condition": "Platelets <25x10\u2079/L or bleeding: 1st occurrence",
         "drug_name": "Bendamustine",
         "factor": 0.75,
         "notes": "Delay until recovery and give 75% of original dose"
       },
       {
-        "condition": "Platelets <25x10⁹/L or bleeding: 2nd occurrence",
+        "condition": "Platelets <25x10\u2079/L or bleeding: 2nd occurrence",
         "drug_name": "Bendamustine",
         "factor": 0.5,
         "notes": "Delay until recovery and give 50% of original dose"
@@ -686,7 +692,7 @@
         "notes": "100% dose"
       },
       {
-        "condition": "Creatinine clearance ≤10 ml/min",
+        "condition": "Creatinine clearance \u226410 ml/min",
         "drug_name": "Bendamustine",
         "factor": 1.0,
         "notes": "No information available"
@@ -710,8 +716,8 @@
     ],
     "special_warnings": [
       "IRRADIATED BLOOD PRODUCTS REQUIRED FOR LIFE: Patients treated with bendamustine carry a lifelong risk of TA-GVHD. Notify blood transfusion departments immediately; patient must carry alert card at all times.",
-      "Higher dose variant (90mg/m²): use only per relevant indication. Multiple protocol versions exist; verify correct protocol for diagnosis.",
-      "Rituximab infusion-related reactions/cytokine release syndrome: higher risk in CLL than lymphomas; cycle 1 dose (375mg/m²) administered as single dose on day 1 (not split); CRS can be severe and life-threatening.",
+      "Higher dose variant (90mg/m\u00b2): use only per relevant indication. Multiple protocol versions exist; verify correct protocol for diagnosis.",
+      "Rituximab infusion-related reactions/cytokine release syndrome: higher risk in CLL than lymphomas; cycle 1 dose (375mg/m\u00b2) administered as single dose on day 1 (not split); CRS can be severe and life-threatening.",
       "Progressive multifocal leukoencephalopathy (PML) risk with rituximab",
       "TLS risk in CLL patients: follow British Society of Haematology guidelines; consider IV rasburicase in high-risk patients",
       "Stevens-Johnson syndrome and toxic epidermal necrolysis with concurrent bendamustine and allopurinol: minimise allopurinol course duration",
@@ -742,7 +748,7 @@
       {
         "drug_name": "Bendamustine",
         "dose": 90.0,
-        "dose_unit": "mg/m²",
+        "dose_unit": "mg/m\u00b2",
         "route": "IV infusion",
         "days": [
           1,
@@ -751,7 +757,9 @@
         "infusion_duration_hours": 0.75,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous infusion in sodium chloride 0.9% 500ml over 30-60 minutes. Dose banded per nationally agreed bands (2.5mg/ml). Vesicant. Higher dose variant (90mg/m²). CYP1A2 interactions - always check."
+        "notes": "Intravenous infusion in sodium chloride 0.9% 500ml over 30-60 minutes. Dose banded per nationally agreed bands (2.5mg/ml). Vesicant. Higher dose variant (90mg/m\u00b2). CYP1A2 interactions - always check.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500
       },
       {
         "drug_name": "Rituximab",
@@ -764,12 +772,12 @@
         "infusion_duration_hours": 2.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "CYCLE 1 DAY 1 ONLY: 100mg fixed dose in 50ml sodium chloride 0.9% over 120 minutes. Split-dose rituximab indicated where lymphocyte count >25x10⁹/L. Dose reductions NOT permitted."
+        "notes": "CYCLE 1 DAY 1 ONLY: 100mg fixed dose in 50ml sodium chloride 0.9% over 120 minutes. Split-dose rituximab indicated where lymphocyte count >25x10\u2079/L. Dose reductions NOT permitted."
       },
       {
         "drug_name": "Rituximab",
         "dose": 325.0,
-        "dose_unit": "mg/m²",
+        "dose_unit": "mg/m\u00b2",
         "route": "IV infusion",
         "days": [
           2
@@ -777,30 +785,30 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "CYCLE 1 DAY 2 ONLY: 325mg/m² in 500ml sodium chloride 0.9%; start at 50mg/hour; increase by 50mg/hour every 30 minutes; maximum 400mg/hour. Doses ≥325mg/m² rounded to nearest 100mg (up if halfway). CYCLES 2-6: 500mg/m² day 1 per local administration guidelines. If lymphocyte count >25x10⁹/L on day 1 of cycles 2-6, consider fractionating: Day 1 125mg/m² in 100ml NaCl 0.9%, Day 2 375mg/m² in 500ml NaCl 0.9%; if no prior problems start both fractions at 100mg/hour escalating in 100mg/hour increments every 30 min to 400mg/hour; if prior reactions start at 50mg/hour escalating by 50mg/hour every 30 min to 400mg/hour."
+        "notes": "CYCLE 1 DAY 2 ONLY: 325mg/m\u00b2 in 500ml sodium chloride 0.9%; start at 50mg/hour; increase by 50mg/hour every 30 minutes; maximum 400mg/hour. Doses \u2265325mg/m\u00b2 rounded to nearest 100mg (up if halfway). CYCLES 2-6: 500mg/m\u00b2 day 1 per local administration guidelines. If lymphocyte count >25x10\u2079/L on day 1 of cycles 2-6, consider fractionating: Day 1 125mg/m\u00b2 in 100ml NaCl 0.9%, Day 2 375mg/m\u00b2 in 500ml NaCl 0.9%; if no prior problems start both fractions at 100mg/hour escalating in 100mg/hour increments every 30 min to 400mg/hour; if prior reactions start at 50mg/hour escalating by 50mg/hour every 30 min to 400mg/hour."
       }
     ],
     "dose_modifications": [
       {
-        "condition": "Neutrophils <0.5x10⁹/L or febrile neutropenia: 1st occurrence",
+        "condition": "Neutrophils <0.5x10\u2079/L or febrile neutropenia: 1st occurrence",
         "drug_name": "Bendamustine",
         "factor": 0.75,
         "notes": "Delay until recovery and give 75% of original dose"
       },
       {
-        "condition": "Neutrophils <0.5x10⁹/L or febrile neutropenia: 2nd occurrence",
+        "condition": "Neutrophils <0.5x10\u2079/L or febrile neutropenia: 2nd occurrence",
         "drug_name": "Bendamustine",
         "factor": 0.5,
         "notes": "Delay until recovery and give 50% of original dose"
       },
       {
-        "condition": "Platelets <25x10⁹/L or bleeding: 1st occurrence",
+        "condition": "Platelets <25x10\u2079/L or bleeding: 1st occurrence",
         "drug_name": "Bendamustine",
         "factor": 0.75,
         "notes": "Delay until recovery and give 75% of original dose"
       },
       {
-        "condition": "Platelets <25x10⁹/L or bleeding: 2nd occurrence",
+        "condition": "Platelets <25x10\u2079/L or bleeding: 2nd occurrence",
         "drug_name": "Bendamustine",
         "factor": 0.5,
         "notes": "Delay until recovery and give 50% of original dose"
@@ -818,7 +826,7 @@
         "notes": "No information available"
       },
       {
-        "condition": "Creatinine clearance ≤10 ml/min",
+        "condition": "Creatinine clearance \u226410 ml/min",
         "drug_name": "Bendamustine",
         "factor": 1.0,
         "notes": "No information available"
@@ -842,7 +850,7 @@
     ],
     "special_warnings": [
       "IRRADIATED BLOOD PRODUCTS REQUIRED FOR LIFE: Lifelong risk of TA-GVHD with bendamustine. Notify blood transfusion department immediately; patient must carry alert card.",
-      "Split-dose rituximab indicated where lymphocyte count >25x10⁹/L; higher dose bendamustine variant (90mg/m²); multiple protocol versions exist - verify correct protocol for diagnosis",
+      "Split-dose rituximab indicated where lymphocyte count >25x10\u2079/L; higher dose bendamustine variant (90mg/m\u00b2); multiple protocol versions exist - verify correct protocol for diagnosis",
       "Rituximab infusion-related reactions/cytokine release syndrome: higher risk in CLL; cycle 1 dose split over 2 days; CRS can be severe and life-threatening",
       "PML risk with rituximab: monitor for neurological symptoms; suspend if suspected; permanently discontinue if confirmed",
       "TLS risk in CLL patients",
@@ -888,7 +896,7 @@
         "infusion_duration_hours": 168.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "CYCLE 1 ONLY: 9 micrograms/day (days 1-7) by continuous intravenous infusion in 240ml sodium chloride 0.9% at a rate of 2.5ml/hour via a pump system (CADD pump). Bispecific T-cell engager (BiTE) antibody. Fixed dose - no dose banding required. Central venous access required via a dedicated lumen. Bags alternated 72 and 96 hours: 9mcg/day = 41.25mcg in 275ml; 28mcg/day = 133.75mcg in 275ml. ARIA programmes first, third, fifth and seventh infusions of same cycle over 72 hours; second, fourth, sixth and eighth infusions over 96 hours. Treatment must start on Monday, Tuesday or Friday. Do NOT flush infusion lines (inadvertent bolus risk) - replace line with every pump change. Administration period must not exceed 28 days in any given cycle. Use Polyolefin, PVC non-DEHP, or EVA infusion line with low protein-binding 0.2 micrometer in-line filter."
+        "notes": "CYCLE 1 ONLY: 9 micrograms/day (days 1-7) by continuous intravenous infusion in 240ml sodium chloride 0.9% at a rate of 2.5ml/hour via a pump system (CADD pump). Bispecific T-cell engager (BiTE) antibody. Fixed dose \u2014 no dose banding required. Central venous access required via a dedicated lumen. Bags alternate 72 and 96 hours: bag contains sufficient volume for 96h but odd-numbered bags are programmed to stop at 72h and must be DISCARDED (do not run remainder). 9mcg/day bag = 41.25mcg in 275ml NS. Treatment must start on Monday, Tuesday or Friday. Do NOT flush infusion lines \u2014 inadvertent bolus risk. Replace line with every pump change. Use Polyolefin, PVC non-DEHP, or EVA infusion line with 0.2 micrometer in-line filter."
       },
       {
         "drug_name": "Blinatumomab",
@@ -921,7 +929,7 @@
         "infusion_duration_hours": 504.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "CYCLE 1: 28 micrograms/day (days 8-28) by continuous IV infusion in 240ml sodium chloride 0.9% at 2.5ml/hour via pump. CYCLES 2-5: 28 micrograms/day (days 1-28) by continuous IV infusion. Step-up dosing: 9mcg/day week 1, then 28mcg/day from day 8 onwards (cycle 1 only). 14-day treatment-free interval between cycles (days 29-42). Patients receive initial 2 cycles; those achieving complete remission after 2 cycles may receive up to 3 additional cycles. Cycle 1 and 2 started in hospital; patient should remain in-patient for first 9 days of cycle 1 and at least 2 days of cycle 2. Fixed dose - no dose banding."
+        "notes": "CYCLE 1: 28 micrograms/day (days 8-28) by continuous IV infusion in 240ml sodium chloride 0.9% at 2.5ml/hour via pump. CYCLES 2-5: 28 micrograms/day (days 1-28) by continuous IV infusion. 28mcg/day bag = 133.75mcg in 275ml NS. Bags alternate 72 and 96 hours \u2014 odd bags stop at 72h and are discarded. 14-day treatment-free interval between cycles (days 29-42). Fixed dose \u2014 no dose banding. Administration period must not exceed 28 days per cycle."
       }
     ],
     "dose_modifications": [
@@ -980,7 +988,7 @@
         "notes": "Consider discontinuing permanently"
       },
       {
-        "condition": "Treatment interruption ≤7 days due to adverse event",
+        "condition": "Treatment interruption \u22647 days due to adverse event",
         "drug_name": "Blinatumomab",
         "factor": 1.0,
         "notes": "Continue same cycle to total of 28 days of infusion (inclusive of days before and after interruption)"
@@ -1018,12 +1026,7 @@
     ],
     "pre_medications": [
       "Dexamethasone 20mg (or equivalent) intravenous 60 minutes prior to day 1 blinatumomab on every cycle",
-      "Paracetamol 1000mg oral 60 minutes prior to day 1 blinatumomab (continue 1000mg four times a day for first 48 hours of day 1, then as required)",
-      "Allopurinol 300mg oral once a day for 7 days (cycle 1 only)",
-      "Aciclovir 400mg twice a day for 42 days oral",
-      "Co-trimoxazole 960mg oral once a day on Monday, Wednesday and Friday for 42 days",
-      "Fluconazole 50mg oral once a day for 42 days",
-      "Consider pre-phase corticosteroid treatment prior to cycle 1 if peripheral blast count >15% or bone marrow blasts >50% (not included on ARIA)"
+      "Paracetamol 1000mg oral 60 minutes prior to day 1 blinatumomab on every cycle (administer 60 minutes before start of infusion; maximum dose 4000mg/24 hours)"
     ],
     "special_warnings": [
       "BISPECIFIC T-CELL ENGAGER (BiTE): Blinatumomab is a bispecific CD3/CD19 T-cell engager antibody with complex step-up dosing (9mcg/day week 1, then 28mcg/day from day 8). Step-up dosing REQUIRES HOSPITALISATION.",
@@ -1053,7 +1056,20 @@
       "bone_marrow_blast_count",
       "Philadelphia_chromosome_status"
     ],
-    "auc_dosing": null
+    "auc_dosing": null,
+    "take_home_medicines": [
+      "Paracetamol 1000mg oral four times a day for first 48 hours of day 1 of the cycle then 1000mg four times a day as required",
+      "Allopurinol 300mg oral once a day for 7 days (cycle 1 only)",
+      "Aciclovir 400mg oral twice a day for 42 days",
+      "Co-trimoxazole 960mg oral once a day on Monday, Wednesday and Friday for 42 days",
+      "Fluconazole 50mg oral once a day for 42 days"
+    ],
+    "rescue_medications": [
+      "Chlorphenamine 10mg intravenous when required for relief of infusion related reactions",
+      "Hydrocortisone 100mg intravenous when required for relief of infusion related reactions",
+      "Pethidine 25mg intravenous when required for rigors (following verbal confirmation from a doctor)",
+      "Salbutamol 2.5mg nebulised when required for relief of infusion related reactions"
+    ]
   },
   {
     "protocol_code": "HAEM-BOSUTINIB",
@@ -1106,16 +1122,16 @@
     ],
     "dose_modifications": [
       {
-        "condition": "Neutrophils <1x10⁹/L",
+        "condition": "Neutrophils <1x10\u2079/L",
         "drug_name": "Bosutinib",
         "factor": 0.0,
-        "notes": "Withhold bosutinib; monitor blood counts. If neutrophils recover to ≥1 within 2 weeks: resume at same dose. If neutrophils <1 for >2 weeks: reduce dose by 100mg/day and resume. If recurs: reduce by a further 100mg/day on count recovery. Doses <300mg/day not evaluated for clinical efficacy."
+        "notes": "Withhold bosutinib; monitor blood counts. If neutrophils recover to \u22651 within 2 weeks: resume at same dose. If neutrophils <1 for >2 weeks: reduce dose by 100mg/day and resume. If recurs: reduce by a further 100mg/day on count recovery. Doses <300mg/day not evaluated for clinical efficacy."
       },
       {
-        "condition": "Platelets <50x10⁹/L",
+        "condition": "Platelets <50x10\u2079/L",
         "drug_name": "Bosutinib",
         "factor": 0.0,
-        "notes": "Withhold bosutinib; monitor blood counts. If platelets recover to ≥50 within 2 weeks: resume at same dose. If platelets remain <50 for >2 weeks: reduce dose by 100mg/day and resume. If recurs: reduce by a further 100mg/day on count recovery. Doses <300mg/day not evaluated for clinical efficacy."
+        "notes": "Withhold bosutinib; monitor blood counts. If platelets recover to \u226550 within 2 weeks: resume at same dose. If platelets remain <50 for >2 weeks: reduce dose by 100mg/day and resume. If recurs: reduce by a further 100mg/day on count recovery. Doses <300mg/day not evaluated for clinical efficacy."
       },
       {
         "condition": "Hepatotoxicity: AST/ALT >5xULN",
@@ -1124,7 +1140,7 @@
         "notes": "Stop bosutinib until recovery to <2.5xULN. If recovery within 4 weeks: resume at 400mg once a day. If >4 weeks to recovery: consider discontinuation."
       },
       {
-        "condition": "Hepatotoxicity: Bilirubin >2xULN AND AST/ALT ≥3xULN AND alkaline phosphatase <2xULN",
+        "condition": "Hepatotoxicity: Bilirubin >2xULN AND AST/ALT \u22653xULN AND alkaline phosphatase <2xULN",
         "drug_name": "Bosutinib",
         "factor": 0.0,
         "notes": "Discontinue bosutinib permanently"
@@ -1145,14 +1161,14 @@
         "condition": "Grade 3 or 4 diarrhoea",
         "drug_name": "Bosutinib",
         "factor": 0.0,
-        "notes": "Withhold until recovery to ≤grade 1; restart at reduced dose of 400mg once a day. Use loperamide for prevention/treatment. Consider starting at lower dose and escalating as tolerated."
+        "notes": "Withhold until recovery to \u2264grade 1; restart at reduced dose of 400mg once a day. Use loperamide for prevention/treatment. Consider starting at lower dose and escalating as tolerated."
       }
     ],
     "pre_medications": [
       "Loperamide 4mg oral after first loose stool then 2-4mg four times a day when required for diarrhoea (maximum 16mg/24 hours)"
     ],
     "special_warnings": [
-      "BCR-ABL mutation context: Bosutinib is a Src/Abl tyrosine kinase inhibitor indicated for Philadelphia-chromosome-positive CML previously treated with ≥1 TKI where imatinib, nilotinib and dasatinib are not appropriate.",
+      "BCR-ABL mutation context: Bosutinib is a Src/Abl tyrosine kinase inhibitor indicated for Philadelphia-chromosome-positive CML previously treated with \u22651 TKI where imatinib, nilotinib and dasatinib are not appropriate.",
       "HEPATOTOXICITY: Monitor LFTs weekly for first month then monthly. ALT/AST elevations reported. Dose-dependent hepatotoxicity may require dose reduction, interruption or permanent discontinuation.",
       "DIARRHOEA: Very common; usually occurs early in treatment. Loperamide prescribed. Grade 3-4 diarrhoea requires treatment interruption and dose reduction to 400mg/day.",
       "QT prolongation risk: Baseline ECG required; patients with prolonged QTc or high risk treated with extreme caution; may require regular ECG surveillance. Magnesium and potassium must be corrected before starting.",

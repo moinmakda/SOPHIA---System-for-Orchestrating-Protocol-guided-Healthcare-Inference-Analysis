@@ -10,7 +10,7 @@
       {
         "drug_name": "Cyclophosphamide",
         "dose": 1200.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV bolus",
         "days": [
           1
@@ -18,12 +18,14 @@
         "infusion_duration_hours": 0.5,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycles 1, 3, 5 only (Maxi-CHOP cycles). Intravenous infusion in 250ml sodium chloride 0.9% over 30 minutes or as an intravenous bolus over 10 minutes. Dose banded per national dose bands (20mg/ml)."
+        "notes": "Cycles 1, 3, 5 only (Maxi-CHOP cycles). Intravenous infusion in 250ml sodium chloride 0.9% over 30 minutes or as an intravenous bolus over 10 minutes. Dose banded per national dose bands (20mg/ml).",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Doxorubicin",
         "dose": 75.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV bolus",
         "days": [
           1
@@ -31,7 +33,9 @@
         "infusion_duration_hours": 0.17,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycles 1, 3, 5 only (Maxi-CHOP cycles). Intravenous bolus over 10 minutes. Dose banded per national dose bands (2mg/ml). Maximum lifetime cumulative dose 450mg/m\u00b2 (400mg/m\u00b2 if prior mediastinal/pericardial radiotherapy). Discontinue if cardiac failure develops."
+        "notes": "Cycles 1, 3, 5 only (Maxi-CHOP cycles). Intravenous bolus over 10 minutes. Dose banded per national dose bands (2mg/ml). Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). Discontinue if cardiac failure develops.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Vincristine",
@@ -44,7 +48,9 @@
         "infusion_duration_hours": 0.17,
         "max_dose": 2.0,
         "max_dose_unit": "mg",
-        "notes": "Cycles 1, 3, 5 only (Maxi-CHOP cycles). Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Flat dose 2mg (maximum). Dose banded per national dose bands (1mg/ml) when dose reductions are necessary."
+        "notes": "Cycles 1, 3, 5 only (Maxi-CHOP cycles). Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Flat dose 2mg (maximum). Dose banded per national dose bands (1mg/ml) when dose reductions are necessary.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50
       },
       {
         "drug_name": "Prednisolone",
@@ -66,7 +72,7 @@
       {
         "drug_name": "Rituximab",
         "dose": 375.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -79,7 +85,7 @@
       {
         "drug_name": "Cytarabine",
         "dose": 2000.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1,
@@ -99,37 +105,37 @@
         "notes": "Delay treatment until neutrophils >=1x10^9/L and platelets >=75x10^9/L. No dose reductions for haematological toxicity - delay only."
       },
       {
-        "condition": "Hepatic impairment: Bilirubin >30 \u00b5mol/L or AST/ALT 2-3xULN",
+        "condition": "Hepatic impairment: Bilirubin >30 µmol/L or AST/ALT 2-3xULN",
         "drug_name": "Cyclophosphamide",
         "factor": 1.0,
         "notes": "Clinical decision. Evidence that exposure to active metabolites may not be increased, suggesting dose reduction may not be necessary."
       },
       {
-        "condition": "Hepatic impairment: Bilirubin >40 \u00b5mol/L",
+        "condition": "Hepatic impairment: Bilirubin >40 µmol/L",
         "drug_name": "Cytarabine",
         "factor": 0.5,
         "notes": "Reduce to 50% of original dose."
       },
       {
-        "condition": "Hepatic impairment: Bilirubin <30 \u00b5mol/L and AST/ALT 2-3xULN",
+        "condition": "Hepatic impairment: Bilirubin <30 µmol/L and AST/ALT 2-3xULN",
         "drug_name": "Doxorubicin",
         "factor": 0.75,
         "notes": "Reduce to 75% of original dose."
       },
       {
-        "condition": "Hepatic impairment: Bilirubin 30-50 \u00b5mol/L and/or AST/ALT >3xULN",
+        "condition": "Hepatic impairment: Bilirubin 30-50 µmol/L and/or AST/ALT >3xULN",
         "drug_name": "Doxorubicin",
         "factor": 0.5,
         "notes": "Reduce to 50% of original dose."
       },
       {
-        "condition": "Hepatic impairment: Bilirubin 51-85 \u00b5mol/L",
+        "condition": "Hepatic impairment: Bilirubin 51-85 µmol/L",
         "drug_name": "Doxorubicin",
         "factor": 0.25,
         "notes": "Reduce to 25% of original dose."
       },
       {
-        "condition": "Hepatic impairment: Bilirubin >85 \u00b5mol/L",
+        "condition": "Hepatic impairment: Bilirubin >85 µmol/L",
         "drug_name": "Doxorubicin",
         "factor": 0,
         "notes": "Omit doxorubicin."
@@ -141,19 +147,19 @@
         "notes": "No dose adjustment needed."
       },
       {
-        "condition": "Hepatic impairment: Bilirubin 30-51 \u00b5mol/L or AST/ALT 60-180 units",
+        "condition": "Hepatic impairment: Bilirubin 30-51 µmol/L or AST/ALT 60-180 units",
         "drug_name": "Vincristine",
         "factor": 0.5,
         "notes": "Reduce to 50% of original dose."
       },
       {
-        "condition": "Hepatic impairment: Bilirubin >51 \u00b5mol/L and AST/ALT normal",
+        "condition": "Hepatic impairment: Bilirubin >51 µmol/L and AST/ALT normal",
         "drug_name": "Vincristine",
         "factor": 0.5,
         "notes": "Reduce to 50% of original dose."
       },
       {
-        "condition": "Hepatic impairment: Bilirubin >51 \u00b5mol/L and AST/ALT >180 units",
+        "condition": "Hepatic impairment: Bilirubin >51 µmol/L and AST/ALT >180 units",
         "drug_name": "Vincristine",
         "factor": 0,
         "notes": "Omit vincristine."
@@ -238,12 +244,12 @@
     "special_warnings": [
       "There are multiple versions of this protocol. Choice depends on patient age - Nordic-2000 is for patients aged 60 years and above.",
       "CD20 positive Mantle Cell Lymphoma only. Performance status 0 or 1.",
-      "Alternating regimen: odd cycles (1,3,5) are Maxi-CHOP plus rituximab (outpatient); even cycles (2,4,6) are high-dose cytarabine 2000mg/m\u00b2 plus rituximab (inpatient). Cycle 6 rituximab also given on day 9.",
+      "Alternating regimen: odd cycles (1,3,5) are Maxi-CHOP plus rituximab (outpatient); even cycles (2,4,6) are high-dose cytarabine 2000mg/m² plus rituximab (inpatient). Cycle 6 rituximab also given on day 9.",
       "Consider omitting rituximab on cycle 1 if white cell count >=25x10^9/L - seek consultant advice.",
       "Cytarabine is given TWICE a day (12 hours apart) - 4 doses total over 2 days.",
       "Corticosteroid eye drops are mandatory with cytarabine administration to reduce conjunctivitis risk.",
       "Baseline LVEF should be measured in patients with history of cardiac problems, cardiac risk factors or elderly. Discontinue doxorubicin if cardiac failure develops.",
-      "Maximum lifetime cumulative doxorubicin dose 450mg/m\u00b2 (400mg/m\u00b2 if prior mediastinal/pericardial radiotherapy).",
+      "Maximum lifetime cumulative doxorubicin dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy).",
       "Maximum vincristine dose is 2mg (flat dose).",
       "Check hepatitis B status before starting rituximab. Monitor for PML during rituximab therapy.",
       "Rituximab infusion-related reactions: cytokine release syndrome risk; have emergency medications available.",
@@ -275,7 +281,7 @@
       {
         "drug_name": "Cyclophosphamide",
         "dose": 1200.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV bolus",
         "days": [
           1
@@ -283,12 +289,14 @@
         "infusion_duration_hours": 0.5,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycles 1, 3, 5 only (Maxi-CHOP cycles). Intravenous infusion in 250ml sodium chloride 0.9% over 30 minutes or as an intravenous bolus over 10 minutes. Dose banded per national dose bands (20mg/ml)."
+        "notes": "Cycles 1, 3, 5 only (Maxi-CHOP cycles). Intravenous infusion in 250ml sodium chloride 0.9% over 30 minutes or as an intravenous bolus over 10 minutes. Dose banded per national dose bands (20mg/ml).",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Doxorubicin",
         "dose": 75.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV bolus",
         "days": [
           1
@@ -296,7 +304,9 @@
         "infusion_duration_hours": 0.17,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycles 1, 3, 5 only (Maxi-CHOP cycles). Intravenous bolus over 10 minutes. Dose banded per national dose bands (2mg/ml). Maximum lifetime cumulative dose 450mg/m\u00b2 (400mg/m\u00b2 if prior mediastinal/pericardial radiotherapy). Discontinue if cardiac failure develops."
+        "notes": "Cycles 1, 3, 5 only (Maxi-CHOP cycles). Intravenous bolus over 10 minutes. Dose banded per national dose bands (2mg/ml). Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). Discontinue if cardiac failure develops.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Vincristine",
@@ -309,7 +319,9 @@
         "infusion_duration_hours": 0.17,
         "max_dose": 2.0,
         "max_dose_unit": "mg",
-        "notes": "Cycles 1, 3, 5 only (Maxi-CHOP cycles). Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Flat dose 2mg (maximum). Dose banded per national dose bands (1mg/ml) when dose reductions are necessary."
+        "notes": "Cycles 1, 3, 5 only (Maxi-CHOP cycles). Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Flat dose 2mg (maximum). Dose banded per national dose bands (1mg/ml) when dose reductions are necessary.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50
       },
       {
         "drug_name": "Prednisolone",
@@ -331,7 +343,7 @@
       {
         "drug_name": "Rituximab",
         "dose": 375.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -344,7 +356,7 @@
       {
         "drug_name": "Cytarabine",
         "dose": 3000.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1,
@@ -364,37 +376,37 @@
         "notes": "Delay treatment until neutrophils >=1x10^9/L and platelets >=75x10^9/L. No dose reductions for haematological toxicity - delay only."
       },
       {
-        "condition": "Hepatic impairment: Bilirubin >30 \u00b5mol/L or AST/ALT 2-3xULN",
+        "condition": "Hepatic impairment: Bilirubin >30 µmol/L or AST/ALT 2-3xULN",
         "drug_name": "Cyclophosphamide",
         "factor": 1.0,
         "notes": "Clinical decision. Evidence that exposure to active metabolites may not be increased, suggesting dose reduction may not be necessary."
       },
       {
-        "condition": "Hepatic impairment: Bilirubin >40 \u00b5mol/L",
+        "condition": "Hepatic impairment: Bilirubin >40 µmol/L",
         "drug_name": "Cytarabine",
         "factor": 0.5,
         "notes": "Reduce to 50% of original dose."
       },
       {
-        "condition": "Hepatic impairment: Bilirubin <30 \u00b5mol/L and AST/ALT 2-3xULN",
+        "condition": "Hepatic impairment: Bilirubin <30 µmol/L and AST/ALT 2-3xULN",
         "drug_name": "Doxorubicin",
         "factor": 0.75,
         "notes": "Reduce to 75% of original dose."
       },
       {
-        "condition": "Hepatic impairment: Bilirubin 30-50 \u00b5mol/L and/or AST/ALT >3xULN",
+        "condition": "Hepatic impairment: Bilirubin 30-50 µmol/L and/or AST/ALT >3xULN",
         "drug_name": "Doxorubicin",
         "factor": 0.5,
         "notes": "Reduce to 50% of original dose."
       },
       {
-        "condition": "Hepatic impairment: Bilirubin 51-85 \u00b5mol/L",
+        "condition": "Hepatic impairment: Bilirubin 51-85 µmol/L",
         "drug_name": "Doxorubicin",
         "factor": 0.25,
         "notes": "Reduce to 25% of original dose."
       },
       {
-        "condition": "Hepatic impairment: Bilirubin >85 \u00b5mol/L",
+        "condition": "Hepatic impairment: Bilirubin >85 µmol/L",
         "drug_name": "Doxorubicin",
         "factor": 0,
         "notes": "Omit doxorubicin."
@@ -406,19 +418,19 @@
         "notes": "No dose adjustment needed."
       },
       {
-        "condition": "Hepatic impairment: Bilirubin 30-51 \u00b5mol/L or AST/ALT 60-180 units",
+        "condition": "Hepatic impairment: Bilirubin 30-51 µmol/L or AST/ALT 60-180 units",
         "drug_name": "Vincristine",
         "factor": 0.5,
         "notes": "Reduce to 50% of original dose."
       },
       {
-        "condition": "Hepatic impairment: Bilirubin >51 \u00b5mol/L and AST/ALT normal",
+        "condition": "Hepatic impairment: Bilirubin >51 µmol/L and AST/ALT normal",
         "drug_name": "Vincristine",
         "factor": 0.5,
         "notes": "Reduce to 50% of original dose."
       },
       {
-        "condition": "Hepatic impairment: Bilirubin >51 \u00b5mol/L and AST/ALT >180 units",
+        "condition": "Hepatic impairment: Bilirubin >51 µmol/L and AST/ALT >180 units",
         "drug_name": "Vincristine",
         "factor": 0,
         "notes": "Omit vincristine."
@@ -503,12 +515,12 @@
     "special_warnings": [
       "There are multiple versions of this protocol. Choice depends on patient age - Nordic-3000 is for patients aged 59 years and below.",
       "CD20 positive Mantle Cell Lymphoma only. Performance status 0 or 1.",
-      "Alternating regimen: odd cycles (1,3,5) are Maxi-CHOP plus rituximab (outpatient); even cycles (2,4,6) are high-dose cytarabine 3000mg/m\u00b2 plus rituximab (inpatient). Cycle 6 rituximab also given on day 9.",
+      "Alternating regimen: odd cycles (1,3,5) are Maxi-CHOP plus rituximab (outpatient); even cycles (2,4,6) are high-dose cytarabine 3000mg/m² plus rituximab (inpatient). Cycle 6 rituximab also given on day 9.",
       "Consider omitting rituximab on cycle 1 if white cell count >=25x10^9/L - seek consultant advice.",
       "Cytarabine is given TWICE a day (12 hours apart) - 4 doses total over 2 days.",
-      "Corticosteroid eye drops are MANDATORY with cytarabine 3000mg/m\u00b2 administration to reduce conjunctivitis risk.",
+      "Corticosteroid eye drops are MANDATORY with cytarabine 3000mg/m² administration to reduce conjunctivitis risk.",
       "Baseline LVEF should be measured in patients with history of cardiac problems, cardiac risk factors or elderly. Discontinue doxorubicin if cardiac failure develops.",
-      "Maximum lifetime cumulative doxorubicin dose 450mg/m\u00b2 (400mg/m\u00b2 if prior mediastinal/pericardial radiotherapy).",
+      "Maximum lifetime cumulative doxorubicin dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy).",
       "Maximum vincristine dose is 2mg (flat dose).",
       "Check hepatitis B status before starting rituximab. Monitor for PML during rituximab therapy.",
       "Rituximab infusion-related reactions: cytokine release syndrome risk; have emergency medications available.",
@@ -555,7 +567,7 @@
       {
         "drug_name": "Cyclophosphamide",
         "dose": 750.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV bolus",
         "days": [
           1
@@ -563,12 +575,14 @@
         "infusion_duration_hours": 0.17,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycles 1-6 only. Intravenous bolus over 10 minutes. Dose banded per national dose bands (20mg/ml). Consider mesna in patients with pre-existing bladder disorders (oral 40% cyclophosphamide dose at 0, 2 and 6 hours)."
+        "notes": "Cycles 1-6 only. Intravenous bolus over 10 minutes. Dose banded per national dose bands (20mg/ml). Consider mesna in patients with pre-existing bladder disorders (oral 40% cyclophosphamide dose at 0, 2 and 6 hours).",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Doxorubicin",
         "dose": 50.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV bolus",
         "days": [
           1
@@ -576,12 +590,14 @@
         "infusion_duration_hours": 0.17,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycles 1-6 only. Intravenous bolus over 10 minutes. Dose banded per national dose bands (2mg/ml). Maximum lifetime cumulative dose 450mg/m\u00b2 (400mg/m\u00b2 if prior mediastinal/pericardial radiotherapy). Discontinue if cardiac failure develops."
+        "notes": "Cycles 1-6 only. Intravenous bolus over 10 minutes. Dose banded per national dose bands (2mg/ml). Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). Discontinue if cardiac failure develops.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Vincristine",
         "dose": 1.4,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV bolus",
         "days": [
           1
@@ -589,7 +605,9 @@
         "infusion_duration_hours": 0.17,
         "max_dose": 2.0,
         "max_dose_unit": "mg",
-        "notes": "Cycles 1-6 only. Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Maximum dose 2mg. Dose banded per national dose bands (1mg/ml)."
+        "notes": "Cycles 1-6 only. Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Maximum dose 2mg. Dose banded per national dose bands (1mg/ml).",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50
       },
       {
         "drug_name": "Prednisolone",
@@ -664,43 +682,43 @@
         "notes": "Evidence suggests dose modification not necessary."
       },
       {
-        "condition": "Hepatic impairment: Bilirubin <30 \u00b5mol/L and AST/ALT 2-3xULN",
+        "condition": "Hepatic impairment: Bilirubin <30 µmol/L and AST/ALT 2-3xULN",
         "drug_name": "Doxorubicin",
         "factor": 0.75,
         "notes": "Reduce to 75% of original dose."
       },
       {
-        "condition": "Hepatic impairment: Bilirubin 30-50 \u00b5mol/L and/or AST/ALT >3xULN",
+        "condition": "Hepatic impairment: Bilirubin 30-50 µmol/L and/or AST/ALT >3xULN",
         "drug_name": "Doxorubicin",
         "factor": 0.5,
         "notes": "Reduce to 50% of original dose."
       },
       {
-        "condition": "Hepatic impairment: Bilirubin 51-85 \u00b5mol/L",
+        "condition": "Hepatic impairment: Bilirubin 51-85 µmol/L",
         "drug_name": "Doxorubicin",
         "factor": 0.25,
         "notes": "Reduce to 25% of original dose."
       },
       {
-        "condition": "Hepatic impairment: Bilirubin >85 \u00b5mol/L",
+        "condition": "Hepatic impairment: Bilirubin >85 µmol/L",
         "drug_name": "Doxorubicin",
         "factor": 0,
         "notes": "Omit doxorubicin."
       },
       {
-        "condition": "Hepatic impairment: Bilirubin 30-51 \u00b5mol/L or AST/ALT 60-180 units/L",
+        "condition": "Hepatic impairment: Bilirubin 30-51 µmol/L or AST/ALT 60-180 units/L",
         "drug_name": "Vincristine",
         "factor": 0.5,
         "notes": "Reduce to 50% of original dose."
       },
       {
-        "condition": "Hepatic impairment: Bilirubin >51 \u00b5mol/L and AST/ALT normal",
+        "condition": "Hepatic impairment: Bilirubin >51 µmol/L and AST/ALT normal",
         "drug_name": "Vincristine",
         "factor": 0.5,
         "notes": "Reduce to 50% of original dose."
       },
       {
-        "condition": "Hepatic impairment: Bilirubin >51 \u00b5mol/L and AST/ALT >180 units/L",
+        "condition": "Hepatic impairment: Bilirubin >51 µmol/L and AST/ALT >180 units/L",
         "drug_name": "Vincristine",
         "factor": 0,
         "notes": "Omit vincristine."
@@ -812,11 +830,11 @@
       "Tumour lysis syndrome risk: patients with high tumour burden and/or lymphocyte count >25x10^9/L and/or CrCl <70 ml/min should receive TLS prophylaxis.",
       "Progressive multifocal leukoencephalopathy (PML) has been reported with obinutuzumab. Refer to neurologist if suspected.",
       "Baseline LVEF required. Discontinue doxorubicin if cardiac failure develops.",
-      "Maximum lifetime cumulative doxorubicin dose 450mg/m\u00b2 (400mg/m\u00b2 if prior mediastinal/pericardial radiotherapy).",
+      "Maximum lifetime cumulative doxorubicin dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy).",
       "Maximum vincristine dose is 2mg.",
       "FBC, U&Es and LFTs on day 1 of first six cycles; optionally days 8 and 15 of cycle 1.",
       "NPSA/2008/RRR04 must be followed for IV vincristine administration.",
-      "Anti-CD20 therapy: HBV reactivation risk \u2014 screen all patients for HBsAg and HBcAb before starting. HBsAg positive: antiviral prophylaxis mandatory (entecavir or tenofovir). HBcAb positive/HBsAg negative: prophylaxis or close monitoring per local hepatology policy."
+      "Anti-CD20 therapy: HBV reactivation risk — screen all patients for HBsAg and HBcAb before starting. HBsAg positive: antiviral prophylaxis mandatory (entecavir or tenofovir). HBcAb positive/HBsAg negative: prophylaxis or close monitoring per local hepatology policy."
     ],
     "required_patient_fields": [
       "lvef",
@@ -858,7 +876,7 @@
       {
         "drug_name": "Cyclophosphamide",
         "dose": 750.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV bolus",
         "days": [
           1
@@ -866,12 +884,14 @@
         "infusion_duration_hours": 0.17,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycles 1-6 only. Intravenous bolus over 10 minutes. Dose banded per national dose bands (20mg/ml). Consider mesna in patients with pre-existing bladder disorders (oral 40% cyclophosphamide dose at 0, 2 and 6 hours)."
+        "notes": "Cycles 1-6 only. Intravenous bolus over 10 minutes. Dose banded per national dose bands (20mg/ml). Consider mesna in patients with pre-existing bladder disorders (oral 40% cyclophosphamide dose at 0, 2 and 6 hours).",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Vincristine",
         "dose": 1.4,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV bolus",
         "days": [
           1
@@ -879,7 +899,9 @@
         "infusion_duration_hours": 0.17,
         "max_dose": 2.0,
         "max_dose_unit": "mg",
-        "notes": "Cycles 1-6 only. Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Maximum dose 2mg. Dose banded per national dose bands (1mg/ml)."
+        "notes": "Cycles 1-6 only. Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Maximum dose 2mg. Dose banded per national dose bands (1mg/ml).",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50
       },
       {
         "drug_name": "Prednisolone",
@@ -954,19 +976,19 @@
         "notes": "Evidence suggests dose modification not necessary."
       },
       {
-        "condition": "Hepatic impairment: Bilirubin 30-51 \u00b5mol/L or AST/ALT 60-180 units/L",
+        "condition": "Hepatic impairment: Bilirubin 30-51 µmol/L or AST/ALT 60-180 units/L",
         "drug_name": "Vincristine",
         "factor": 0.5,
         "notes": "Reduce to 50% of original dose."
       },
       {
-        "condition": "Hepatic impairment: Bilirubin >51 \u00b5mol/L and AST/ALT normal",
+        "condition": "Hepatic impairment: Bilirubin >51 µmol/L and AST/ALT normal",
         "drug_name": "Vincristine",
         "factor": 0.5,
         "notes": "Reduce to 50% of original dose."
       },
       {
-        "condition": "Hepatic impairment: Bilirubin >51 \u00b5mol/L and AST/ALT >180 units/L",
+        "condition": "Hepatic impairment: Bilirubin >51 µmol/L and AST/ALT >180 units/L",
         "drug_name": "Vincristine",
         "factor": 0,
         "notes": "Omit vincristine."
@@ -1068,7 +1090,7 @@
       "Maximum vincristine dose is 2mg.",
       "FBC, U&Es and LFTs on day 1 of first six cycles; optionally days 8 and 15 of cycle 1.",
       "NPSA/2008/RRR04 must be followed for IV vincristine administration.",
-      "Anti-CD20 therapy: HBV reactivation risk \u2014 screen all patients for HBsAg and HBcAb before starting. HBsAg positive: antiviral prophylaxis mandatory (entecavir or tenofovir). HBcAb positive/HBsAg negative: prophylaxis or close monitoring per local hepatology policy."
+      "Anti-CD20 therapy: HBV reactivation risk — screen all patients for HBsAg and HBcAb before starting. HBsAg positive: antiviral prophylaxis mandatory (entecavir or tenofovir). HBcAb positive/HBsAg negative: prophylaxis or close monitoring per local hepatology policy."
     ],
     "required_patient_fields": [
       "creatinine_clearance",

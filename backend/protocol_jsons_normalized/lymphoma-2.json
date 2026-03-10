@@ -10,7 +10,7 @@
       {
         "drug_name": "Bleomycin",
         "dose": 10000.0,
-        "dose_unit": "units",
+        "dose_unit": "units/m²",
         "route": "IV bolus",
         "days": [
           8
@@ -18,7 +18,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Dose rounded to nearest 1000 IU. Maximum cumulative dose 500,000 IU in patients under 60 years. Hydrocortisone 100mg IV when required for bleomycin-related reactions."
+        "notes": "Intravenous bolus over 10 minutes. Dose rounded to nearest 1000 IU. Maximum cumulative dose 500,000 IU in patients under 60 years. Hydrocortisone 100mg IV when required for bleomycin-related reactions.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Cyclophosphamide",
@@ -31,7 +33,9 @@
         "infusion_duration_hours": 1.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous infusion in 500ml sodium chloride 0.9% over 60 minutes. Dose banded (multi syringe 20mg/ml). Escalated dose Level 1; may be stepped down through levels 1250, 1100, 950, 800, 650 mg/m²."
+        "notes": "Intravenous infusion in 500ml sodium chloride 0.9% over 60 minutes. Dose banded (multi syringe 20mg/ml). Escalated dose Level 1; may be stepped down through levels 1250, 1100, 950, 800, 650 mg/m².",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Dacarbazine",
@@ -58,7 +62,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Dose banded (multi syringe 2mg/ml). Maximum lifetime cumulative dose 450mg/m²; 400mg/m² if prior mediastinal/pericardial radiotherapy. Discontinue if cardiac failure develops."
+        "notes": "Intravenous bolus over 10 minutes. Dose banded (multi syringe 2mg/ml). Maximum lifetime cumulative dose 450mg/m²; 400mg/m² if prior mediastinal/pericardial radiotherapy. Discontinue if cardiac failure develops.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Etoposide",
@@ -73,7 +79,9 @@
         "infusion_duration_hours": 1.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous infusion in 1000ml sodium chloride 0.9% over 60 minutes. Dose banded (20mg/ml). Escalated dose Level 1; may be stepped down through levels 200, 175, 150, 125, 100 mg/m²."
+        "notes": "Intravenous infusion in 1000ml sodium chloride 0.9% over 60 minutes. Dose banded (20mg/ml). Escalated dose Level 1; may be stepped down through levels 200, 175, 150, 125, 100 mg/m².",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500
       },
       {
         "drug_name": "Prednisolone",
@@ -112,7 +120,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": 2,
         "max_dose_unit": "mg",
-        "notes": "Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Dose banded (1mg/ml). Maximum dose 2mg. Reduce to 1mg/m² for NCI-CTC grade 2 motor or grade 3 sensory neurotoxicity; stop for higher grades or if toxicity increases despite reduction."
+        "notes": "Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Dose banded (1mg/ml). Maximum dose 2mg. Reduce to 1mg/m² for NCI-CTC grade 2 motor or grade 3 sensory neurotoxicity; stop for higher grades or if toxicity increases despite reduction.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50
       },
       {
         "drug_name": "G-CSF",
@@ -312,7 +322,7 @@
       {
         "drug_name": "Bleomycin",
         "dose": 10000.0,
-        "dose_unit": "units",
+        "dose_unit": "units/m²",
         "route": "IV bolus",
         "days": [
           8
@@ -320,7 +330,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Dose rounded to nearest 1000 IU. Maximum cumulative dose 500,000 IU in patients under 60 years. Hydrocortisone 100mg IV when required for bleomycin-related reactions."
+        "notes": "Intravenous bolus over 10 minutes. Dose rounded to nearest 1000 IU. Maximum cumulative dose 500,000 IU in patients under 60 years. Hydrocortisone 100mg IV when required for bleomycin-related reactions.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Cyclophosphamide",
@@ -333,7 +345,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Dose banded (multi syringe 20mg/ml)."
+        "notes": "Intravenous bolus over 10 minutes. Dose banded (multi syringe 20mg/ml).",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Doxorubicin",
@@ -346,7 +360,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Dose banded (multi syringe 2mg/ml). Maximum lifetime cumulative dose 450mg/m²; 400mg/m² if prior mediastinal/pericardial radiotherapy. Discontinue if cardiac failure develops."
+        "notes": "Intravenous bolus over 10 minutes. Dose banded (multi syringe 2mg/ml). Maximum lifetime cumulative dose 450mg/m²; 400mg/m² if prior mediastinal/pericardial radiotherapy. Discontinue if cardiac failure develops.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Etoposide",
@@ -361,7 +377,9 @@
         "infusion_duration_hours": 1.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous infusion in 1000ml sodium chloride 0.9% over 60 minutes. Dose banded (20mg/ml)."
+        "notes": "Intravenous infusion in 1000ml sodium chloride 0.9% over 60 minutes. Dose banded (20mg/ml).",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500
       },
       {
         "drug_name": "Prednisolone",
@@ -412,7 +430,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": 2,
         "max_dose_unit": "mg",
-        "notes": "Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Dose banded (1mg/ml). Maximum dose 2mg. Reduce to 1mg/m² for NCI-CTC grade 2 motor or grade 3 sensory neurotoxicity; stop for higher grades or if toxicity increases."
+        "notes": "Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Dose banded (1mg/ml). Maximum dose 2mg. Reduce to 1mg/m² for NCI-CTC grade 2 motor or grade 3 sensory neurotoxicity; stop for higher grades or if toxicity increases.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50
       },
       {
         "drug_name": "G-CSF",
@@ -597,7 +617,7 @@
       {
         "drug_name": "Bleomycin",
         "dose": 10000.0,
-        "dose_unit": "units",
+        "dose_unit": "units/m²",
         "route": "IV bolus",
         "days": [
           8
@@ -605,7 +625,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Dose rounded to nearest 1000 IU. Maximum cumulative dose 500,000 IU in patients under 60 years. Hydrocortisone 100mg IV when required for bleomycin-related reactions."
+        "notes": "Intravenous bolus over 10 minutes. Dose rounded to nearest 1000 IU. Maximum cumulative dose 500,000 IU in patients under 60 years. Hydrocortisone 100mg IV when required for bleomycin-related reactions.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Cyclophosphamide",
@@ -618,7 +640,9 @@
         "infusion_duration_hours": 1.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous infusion in 500ml sodium chloride 0.9% over 60 minutes. Dose banded (multi syringe 20mg/ml). Escalated dose Level 1; may be stepped down through levels 1250, 1100, 950, 800, 650 mg/m²."
+        "notes": "Intravenous infusion in 500ml sodium chloride 0.9% over 60 minutes. Dose banded (multi syringe 20mg/ml). Escalated dose Level 1; may be stepped down through levels 1250, 1100, 950, 800, 650 mg/m².",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Doxorubicin",
@@ -631,7 +655,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Dose banded (multi syringe 2mg/ml). Maximum lifetime cumulative dose 450mg/m²; 400mg/m² if prior mediastinal/pericardial radiotherapy. Discontinue if cardiac failure develops."
+        "notes": "Intravenous bolus over 10 minutes. Dose banded (multi syringe 2mg/ml). Maximum lifetime cumulative dose 450mg/m²; 400mg/m² if prior mediastinal/pericardial radiotherapy. Discontinue if cardiac failure develops.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Etoposide",
@@ -646,7 +672,9 @@
         "infusion_duration_hours": 1.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous infusion in 1000ml sodium chloride 0.9% over 60 minutes. Dose banded (20mg/ml). Escalated dose Level 1; may be stepped down through levels 200, 175, 150, 125, 100 mg/m²."
+        "notes": "Intravenous infusion in 1000ml sodium chloride 0.9% over 60 minutes. Dose banded (20mg/ml). Escalated dose Level 1; may be stepped down through levels 200, 175, 150, 125, 100 mg/m².",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500
       },
       {
         "drug_name": "Prednisolone",
@@ -704,7 +732,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": 2,
         "max_dose_unit": "mg",
-        "notes": "Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Dose banded (1mg/ml). Maximum dose 2mg. Reduce to 1mg/m² for NCI-CTC grade 2 motor or grade 3 sensory neurotoxicity; stop for higher grades or if toxicity increases."
+        "notes": "Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Dose banded (1mg/ml). Maximum dose 2mg. Reduce to 1mg/m² for NCI-CTC grade 2 motor or grade 3 sensory neurotoxicity; stop for higher grades or if toxicity increases.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50
       },
       {
         "drug_name": "G-CSF",
@@ -911,7 +941,9 @@
         "infusion_duration_hours": 0.5,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycle 1: days 1 and 2. Cycles 2-6: days 1 and 2. Intravenous infusion in 500ml sodium chloride 0.9% over 30 minutes. Dose banded (2.5mg/ml). Vesicant."
+        "notes": "Cycle 1: days 1 and 2. Cycles 2-6: days 1 and 2. Intravenous infusion in 500ml sodium chloride 0.9% over 30 minutes. Dose banded (2.5mg/ml). Vesicant.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500
       },
       {
         "drug_name": "Obinutuzumab",
@@ -1087,7 +1119,9 @@
         "infusion_duration_hours": 0.5,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycle 1: days 2 and 3. Cycles 2-6: days 1 and 2. Intravenous infusion in 500ml sodium chloride 0.9% over 30 minutes. Dose banded (2.5mg/ml). Vesicant."
+        "notes": "Cycle 1: days 2 and 3. Cycles 2-6: days 1 and 2. Intravenous infusion in 500ml sodium chloride 0.9% over 30 minutes. Dose banded (2.5mg/ml). Vesicant.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500
       }
     ],
     "dose_modifications": [
@@ -1223,7 +1257,9 @@
         "infusion_duration_hours": 0.5,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous infusion in 500ml sodium chloride 0.9% over 30 minutes. Dose banded (2.5mg/ml). Vesicant."
+        "notes": "Intravenous infusion in 500ml sodium chloride 0.9% over 30 minutes. Dose banded (2.5mg/ml). Vesicant.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500
       }
     ],
     "dose_modifications": [
@@ -1329,7 +1365,9 @@
         "infusion_duration_hours": 0.5,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous infusion in 500ml sodium chloride 0.9% over 30 minutes. Dose banded (2.5mg/ml). Vesicant. Consider initiating at lower doses in elderly, frail or heavily pre-treated patients. Indication: indolent NHL where disease progressed during or within 6 months of rituximab-based therapy."
+        "notes": "Intravenous infusion in 500ml sodium chloride 0.9% over 30 minutes. Dose banded (2.5mg/ml). Vesicant. Consider initiating at lower doses in elderly, frail or heavily pre-treated patients. Indication: indolent NHL where disease progressed during or within 6 months of rituximab-based therapy.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500
       }
     ],
     "dose_modifications": [

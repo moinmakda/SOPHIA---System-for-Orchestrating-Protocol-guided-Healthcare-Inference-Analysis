@@ -18,7 +18,9 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Dose banded as per CSCCN agreed bands. Neutral extravasation risk. Consider mesna if renal impairment."
+        "notes": "Dose banded as per CSCCN agreed bands. Neutral extravasation risk. Consider mesna if renal impairment.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Doxorubicin",
@@ -31,7 +33,9 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Dose banded as per CSCCN agreed bands. Vesicant - extravasation risk. Lifetime cumulative limit 450 mg/m² (400 mg/m² if prior mediastinal/pericardial radiotherapy)."
+        "notes": "Dose banded as per CSCCN agreed bands. Vesicant - extravasation risk. Lifetime cumulative limit 450 mg/m² (400 mg/m² if prior mediastinal/pericardial radiotherapy).",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Vincristine",
@@ -44,7 +48,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": 2,
         "max_dose_unit": "mg",
-        "notes": "Administer in 50ml sodium chloride 0.9% over 10 minutes. Vesicant - extravasation risk. Not dose banded. Doses need not be adjusted for haematological toxicity."
+        "notes": "Administer in 50ml sodium chloride 0.9% over 10 minutes. Vesicant - extravasation risk. Not dose banded. Doses need not be adjusted for haematological toxicity.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50
       }
     ],
     "dose_modifications": [

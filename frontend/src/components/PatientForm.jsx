@@ -499,6 +499,28 @@ export function PatientForm({ patientData, onChange, cycleNumber, onCycleChange,
               onChange={(e) => onChange('ast', e.target.value)}
               placeholder="e.g., 25"
             />
+            {patientData.ast && patientData.ast > 40 && (
+              <span className="field-warning">Elevated — hepatic dose modifications may apply</span>
+            )}
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="alt">
+              ALT (U/L)
+              <span className="normal-range">Normal: 7-40</span>
+            </label>
+            <input
+              id="alt"
+              type="number"
+              step="1"
+              min="0"
+              value={patientData.alt || ''}
+              onChange={(e) => onChange('alt', e.target.value)}
+              placeholder="e.g., 25"
+            />
+            {patientData.alt && patientData.alt > 40 && (
+              <span className="field-warning">Elevated — hepatic dose modifications may apply</span>
+            )}
           </div>
         </div>
       </div>
@@ -515,18 +537,20 @@ export function PatientForm({ patientData, onChange, cycleNumber, onCycleChange,
         <div className="form-grid">
 
           <div className="form-group">
-            <label htmlFor="active_infection">Active Infection / Fever?</label>
+            <label htmlFor="active_infection">Active Infection / URTI / Fever?
+              <span className="normal-range">Assess before rituximab</span>
+            </label>
             <select
               id="active_infection"
               value={patientData.active_infection === true ? 'yes' : patientData.active_infection === false ? 'no' : ''}
               onChange={(e) => onChange('active_infection', e.target.value === 'yes' ? true : e.target.value === 'no' ? false : null)}
             >
               <option value="">Unknown / not assessed</option>
-              <option value="no">No — afebrile, no active infection</option>
-              <option value="yes">Yes — active infection or fever present</option>
+              <option value="no">No — afebrile, no active infection or URTI</option>
+              <option value="yes">Yes — active infection, URTI or fever present</option>
             </select>
             {patientData.active_infection === true && (
-              <span className="field-critical">TREATMENT DELAY: Treat infection first</span>
+              <span className="field-critical">TREATMENT DELAY: Treat infection first. Rituximab must NOT be given during active URTI.</span>
             )}
           </div>
 
@@ -559,6 +583,9 @@ export function PatientForm({ patientData, onChange, cycleNumber, onCycleChange,
               <option value="negative">Negative</option>
               <option value="positive">Positive</option>
             </select>
+            {!patientData.hep_b_surface_antigen && (
+              <span className="field-warning">Required before rituximab — HBV reactivation can be fatal</span>
+            )}
             {patientData.hep_b_surface_antigen === 'positive' && (
               <span className="field-critical">HBsAg+ — antiviral prophylaxis mandatory with rituximab</span>
             )}
@@ -575,6 +602,9 @@ export function PatientForm({ patientData, onChange, cycleNumber, onCycleChange,
               <option value="negative">Negative</option>
               <option value="positive">Positive</option>
             </select>
+            {!patientData.hep_b_core_antibody && (
+              <span className="field-warning">Required before rituximab — HBV reactivation can be fatal</span>
+            )}
             {patientData.hep_b_core_antibody === 'positive' && (
               <span className="field-warning">Anti-HBc+ — reactivation risk with rituximab; prophylaxis or monitoring required</span>
             )}
@@ -633,15 +663,18 @@ export function PatientForm({ patientData, onChange, cycleNumber, onCycleChange,
               onChange={(e) => onChange('lvef_percent', e.target.value || null)}
               placeholder="e.g., 60"
               className={
-                patientData.lvef_percent > 0 && patientData.lvef_percent < 50 ? 'danger-input' :
+                patientData.lvef_percent > 0 && patientData.lvef_percent < 40 ? 'danger-input' :
                 patientData.lvef_percent > 0 && patientData.lvef_percent < 55 ? 'warning-input' : ''
               }
             />
-            {patientData.lvef_percent > 0 && patientData.lvef_percent < 50 && (
-              <span className="field-critical">LVEF &lt;50% — cardiology review before doxorubicin</span>
+            {patientData.lvef_percent > 0 && patientData.lvef_percent < 40 && (
+              <span className="field-critical">LVEF &lt;40% — doxorubicin will be OMITTED (absolute contraindication). Cardiology review mandatory.</span>
+            )}
+            {patientData.lvef_percent >= 40 && patientData.lvef_percent < 50 && (
+              <span className="field-critical">LVEF 40–49% — critically reduced. Cardiology review required before anthracycline.</span>
             )}
             {patientData.lvef_percent >= 50 && patientData.lvef_percent < 55 && (
-              <span className="field-warning">Borderline LVEF — monitor closely</span>
+              <span className="field-warning">Borderline LVEF — monitor cardiac function closely during anthracycline therapy.</span>
             )}
           </div>
 
@@ -747,7 +780,7 @@ export function PatientForm({ patientData, onChange, cycleNumber, onCycleChange,
               Prior mediastinal radiation
             </label>
             {patientData.prior_mediastinal_radiation && (
-              <span className="field-warning">Anthracycline limit reduced to 350 mg/m²</span>
+              <span className="field-warning">Anthracycline limit reduced to 400 mg/m² (mediastinal/pericardial RT)</span>
             )}
           </div>
         </div>

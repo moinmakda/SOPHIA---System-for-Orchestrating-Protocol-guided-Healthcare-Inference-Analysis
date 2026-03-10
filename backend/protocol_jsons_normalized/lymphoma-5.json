@@ -998,7 +998,9 @@
         "infusion_duration_hours": 2.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Split into TWO sequential infusions of 100mg/m2 each in 1000ml sodium chloride 0.9% over 60 min each (total 120 min) due to stability. Dose banded at 20mg/ml. Irritant."
+        "notes": "Split into TWO sequential infusions of 100mg/m2 each in 1000ml sodium chloride 0.9% over 60 min each (total 120 min) due to stability. Dose banded at 20mg/ml. Irritant.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500
       },
       {
         "drug_name": "Melphalan",

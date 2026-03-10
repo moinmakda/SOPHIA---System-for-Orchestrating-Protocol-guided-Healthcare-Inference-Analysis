@@ -527,7 +527,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycles 1-4 only (Phase 1). Intravenous bolus over 10 minutes. Dose banded per national dose bands (20mg/mL). Reduce to 75% if CrCl 10-20ml/min; 50% if CrCl <10ml/min."
+        "notes": "Cycles 1-4 only (Phase 1). Intravenous bolus over 10 minutes. Dose banded per national dose bands (20mg/mL). Reduce to 75% if CrCl 10-20ml/min; 50% if CrCl <10ml/min.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Epirubicin",
@@ -540,7 +542,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycles 1-4 only (Phase 1). Intravenous bolus over 10 minutes. Dose banded per national dose bands (2mg/mL). Maximum cumulative lifetime dose 900mg/m². Vesicant - follow extravasation protocol. Discontinue if cardiac failure develops."
+        "notes": "Cycles 1-4 only (Phase 1). Intravenous bolus over 10 minutes. Dose banded per national dose bands (2mg/mL). Maximum cumulative lifetime dose 900mg/m². Vesicant - follow extravasation protocol. Discontinue if cardiac failure develops.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Paclitaxel",
@@ -1186,7 +1190,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "50mg/m² IV bolus over 10 minutes on day 1. Dose banded per CSCCN agreed bands. Maximum cumulative lifetime dose 450mg/m². Vesicant - follow extravasation protocol. Discontinue if cardiac failure develops."
+        "notes": "50mg/m² IV bolus over 10 minutes on day 1. Dose banded per CSCCN agreed bands. Maximum cumulative lifetime dose 450mg/m². Vesicant - follow extravasation protocol. Discontinue if cardiac failure develops.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Docetaxel",
@@ -1212,7 +1218,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "500mg/m² IV bolus over 10 minutes on day 1. Dose banded per CSCCN agreed bands. Consider mesna for renal impairment. Reduce to 75% if CrCl 10-20ml/min; 50% if CrCl <10ml/min."
+        "notes": "500mg/m² IV bolus over 10 minutes on day 1. Dose banded per CSCCN agreed bands. Consider mesna for renal impairment. Reduce to 75% if CrCl 10-20ml/min; 50% if CrCl <10ml/min.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       }
     ],
     "dose_modifications": [

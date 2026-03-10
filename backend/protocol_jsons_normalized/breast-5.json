@@ -18,7 +18,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Vesicant. Maximum lifetime cumulative dose 900mg/m². Discontinue if cardiac failure develops."
+        "notes": "Intravenous bolus over 10 minutes. Vesicant. Maximum lifetime cumulative dose 900mg/m². Discontinue if cardiac failure develops.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Cyclophosphamide",
@@ -31,7 +33,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Neutral - not a vesicant. Dose banded as per CSCCN agreed bands."
+        "notes": "Intravenous bolus over 10 minutes. Neutral - not a vesicant. Dose banded as per CSCCN agreed bands.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       }
     ],
     "dose_modifications": [
@@ -140,7 +144,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Neutral - not a vesicant. Dose banded per national dose bands (20mg/ml PM)."
+        "notes": "Intravenous bolus over 10 minutes. Neutral - not a vesicant. Dose banded per national dose bands (20mg/ml PM).",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Fluorouracil",
@@ -1063,7 +1069,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "E100C phase only (cycles 1-3). Intravenous bolus over 10 minutes. Vesicant. Maximum lifetime cumulative dose 900mg/m². Discontinue if cardiac failure develops. Given BEFORE docetaxel cycles."
+        "notes": "E100C phase only (cycles 1-3). Intravenous bolus over 10 minutes. Vesicant. Maximum lifetime cumulative dose 900mg/m². Discontinue if cardiac failure develops. Given BEFORE docetaxel cycles.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Cyclophosphamide",
@@ -1076,7 +1084,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "E100C phase only (cycles 1-3). Intravenous bolus over 10 minutes. Neutral - not a vesicant. Dose banded per national dose bands."
+        "notes": "E100C phase only (cycles 1-3). Intravenous bolus over 10 minutes. Neutral - not a vesicant. Dose banded per national dose bands.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Docetaxel",

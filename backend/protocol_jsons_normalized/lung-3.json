@@ -23,25 +23,25 @@
     ],
     "dose_modifications": [
       {
-        "condition": "Neutrophils <1x10^9/L \u2014 first instance",
+        "condition": "Neutrophils <1x10^9/L — first instance",
         "drug_name": "Carboplatin",
         "factor": 1.0,
         "notes": "Delay treatment for 7 days. If counts recover, continue at initial dose."
       },
       {
-        "condition": "Neutrophils <1x10^9/L \u2014 counts remain low after 7-day delay",
+        "condition": "Neutrophils <1x10^9/L — counts remain low after 7-day delay",
         "drug_name": "Carboplatin",
         "factor": 0.8,
         "notes": "Continue with 20% dose reduction. If myelosuppression recurs after reduction, stop treatment."
       },
       {
-        "condition": "Platelets 50-99x10^9/L \u2014 first instance",
+        "condition": "Platelets 50-99x10^9/L — first instance",
         "drug_name": "Carboplatin",
         "factor": 1.0,
         "notes": "Delay treatment for 7 days. If counts recover, continue at initial dose."
       },
       {
-        "condition": "Platelets 50-99x10^9/L \u2014 counts remain in range after delay",
+        "condition": "Platelets 50-99x10^9/L — counts remain in range after delay",
         "drug_name": "Carboplatin",
         "factor": 0.8,
         "notes": "Continue with 20% dose reduction."
@@ -68,14 +68,14 @@
     "pre_medications": [
       "Ondansetron 8mg oral or IV bolus 15-30 minutes prior to chemotherapy",
       "Dexamethasone 8mg oral or IV bolus 15-30 minutes prior to chemotherapy",
-      "Allopurinol (for those at risk of tumour lysis syndrome \u2014 begin day before chemotherapy, continue while significant chemosensitive tumour bulk remains)",
+      "Allopurinol (for those at risk of tumour lysis syndrome — begin day before chemotherapy, continue while significant chemosensitive tumour bulk remains)",
       "Dexamethasone 4mg twice a day oral for 3 days (take home, starting day 2 of cycle)",
       "Metoclopramide 10mg three times a day when required oral (take home)"
     ],
     "special_warnings": [
-      "SCLC can be very sensitive to chemotherapy \u2014 risk of tumour lysis syndrome at start of therapy; prescribe allopurinol for at-risk patients.",
-      "Second line treatment of SCLC \u2014 WHO Performance Status 0 or 1 required.",
-      "Carboplatin is an irritant \u2014 take precautions to avoid extravasation.",
+      "SCLC can be very sensitive to chemotherapy — risk of tumour lysis syndrome at start of therapy; prescribe allopurinol for at-risk patients.",
+      "Second line treatment of SCLC — WHO Performance Status 0 or 1 required.",
+      "Carboplatin is an irritant — take precautions to avoid extravasation.",
       "Consider blood transfusion or erythropoietin (per NICE TA323) if haemoglobin <8g/dL or patient symptomatic of anaemia.",
       "If a third dose reduction is necessary, treatment should be stopped.",
       "All dose reductions should not be re-escalated in subsequent cycles without consultant approval.",
@@ -119,7 +119,7 @@
       {
         "drug_name": "Vinorelbine",
         "dose": 25.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV bolus",
         "days": [
           1,
@@ -133,25 +133,25 @@
     ],
     "dose_modifications": [
       {
-        "condition": "Neutrophils <1.5x10^9/L \u2014 first instance",
+        "condition": "Neutrophils <1.5x10^9/L — first instance",
         "drug_name": "Carboplatin and Vinorelbine",
         "factor": 1.0,
         "notes": "Delay treatment for 7 days. If counts recover, continue at initial dose."
       },
       {
-        "condition": "Neutrophils <1.5x10^9/L \u2014 counts remain low after delay",
+        "condition": "Neutrophils <1.5x10^9/L — counts remain low after delay",
         "drug_name": "Carboplatin and Vinorelbine",
         "factor": 0.8,
         "notes": "Continue with 20% dose reduction. Stop if myelosuppression recurs."
       },
       {
-        "condition": "Platelets <100x10^9/L \u2014 first instance",
+        "condition": "Platelets <100x10^9/L — first instance",
         "drug_name": "Carboplatin and Vinorelbine",
         "factor": 1.0,
         "notes": "Delay treatment for 7 days. If counts recover, continue at initial dose."
       },
       {
-        "condition": "Platelets <100x10^9/L \u2014 counts remain low after delay",
+        "condition": "Platelets <100x10^9/L — counts remain low after delay",
         "drug_name": "Carboplatin and Vinorelbine",
         "factor": 0.8,
         "notes": "Continue with 20% dose reduction."
@@ -163,25 +163,25 @@
         "notes": "Reduce dose by 50%."
       },
       {
-        "condition": "Hepatic impairment \u2014 Carboplatin",
+        "condition": "Hepatic impairment — Carboplatin",
         "drug_name": "Carboplatin",
         "factor": 1.0,
         "notes": "No dose reduction necessary."
       },
       {
-        "condition": "Severe hepatic impairment \u2014 Vinorelbine IV",
+        "condition": "Severe hepatic impairment — Vinorelbine IV",
         "drug_name": "Vinorelbine",
         "factor": 0.75,
-        "notes": "Consider dose reduction to 20mg/m\u00b2 in severe liver impairment for intravenous preparation."
+        "notes": "Consider dose reduction to 20mg/m² in severe liver impairment for intravenous preparation."
       },
       {
-        "condition": "Renal impairment CrCl <20ml/min \u2014 Carboplatin",
+        "condition": "Renal impairment CrCl <20ml/min — Carboplatin",
         "drug_name": "Carboplatin",
         "factor": 0.0,
         "notes": "Do not administer if CrCl <20ml/min. GFR changes >10% may require dose adjustment."
       },
       {
-        "condition": "Renal impairment \u2014 Vinorelbine",
+        "condition": "Renal impairment — Vinorelbine",
         "drug_name": "Vinorelbine",
         "factor": 1.0,
         "notes": "No dose adjustment necessary."
@@ -201,8 +201,8 @@
       "Metoclopramide 10mg three times a day when required oral (take home)"
     ],
     "special_warnings": [
-      "First line therapy of stage III or IV NSCLC \u2014 palliative intent. WHO Performance Status 0, 1, 2.",
-      "Carboplatin is an irritant; Vinorelbine is a vesicant \u2014 take appropriate extravasation precautions.",
+      "First line therapy of stage III or IV NSCLC — palliative intent. WHO Performance Status 0, 1, 2.",
+      "Carboplatin is an irritant; Vinorelbine is a vesicant — take appropriate extravasation precautions.",
       "Consider blood transfusion if patient symptomatic of anaemia or haemoglobin <8g/dL.",
       "If a third dose reduction is necessary, treatment should be stopped.",
       "All dose reductions should not be re-escalated in subsequent cycles without consultant approval.",
@@ -248,7 +248,7 @@
       {
         "drug_name": "Vinorelbine",
         "dose": 25.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV bolus",
         "days": [
           1
@@ -261,7 +261,7 @@
       {
         "drug_name": "Vinorelbine",
         "dose": 60.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "Oral",
         "days": [
           8
@@ -269,30 +269,30 @@
         "infusion_duration_hours": null,
         "max_dose": 120.0,
         "max_dose_unit": "mg",
-        "notes": "Oral capsules (available in 20mg and 30mg strengths). Dose rounded to nearest 20mg (up if halfway). Maximum oral dose 120mg for 60mg/m\u00b2 dose. Must be swallowed whole with food \u2014 not chewed, sucked, or dissolved. Must not be supplied from primary care. NPSA/2008/RRR001 oral chemotherapy safety alert applies."
+        "notes": "Oral capsules (available in 20mg and 30mg strengths). Dose rounded to nearest 20mg (up if halfway). Maximum oral dose 120mg for 60mg/m² dose. Must be swallowed whole with food — not chewed, sucked, or dissolved. Must not be supplied from primary care. NPSA/2008/RRR001 oral chemotherapy safety alert applies."
       }
     ],
     "dose_modifications": [
       {
-        "condition": "Neutrophils <1.5x10^9/L \u2014 first instance",
+        "condition": "Neutrophils <1.5x10^9/L — first instance",
         "drug_name": "Carboplatin and Vinorelbine",
         "factor": 1.0,
         "notes": "Delay treatment for 7 days. If counts recover, continue at initial dose."
       },
       {
-        "condition": "Neutrophils <1.5x10^9/L \u2014 counts remain low after delay",
+        "condition": "Neutrophils <1.5x10^9/L — counts remain low after delay",
         "drug_name": "Carboplatin and Vinorelbine",
         "factor": 0.8,
         "notes": "Continue with 20% dose reduction. Stop if myelosuppression recurs."
       },
       {
-        "condition": "Platelets <100x10^9/L \u2014 first instance",
+        "condition": "Platelets <100x10^9/L — first instance",
         "drug_name": "Carboplatin and Vinorelbine",
         "factor": 1.0,
         "notes": "Delay treatment for 7 days. If counts recover, continue at initial dose."
       },
       {
-        "condition": "Platelets <100x10^9/L \u2014 counts remain low after delay",
+        "condition": "Platelets <100x10^9/L — counts remain low after delay",
         "drug_name": "Carboplatin and Vinorelbine",
         "factor": 0.8,
         "notes": "Continue with 20% dose reduction."
@@ -304,31 +304,31 @@
         "notes": "Reduce dose by 50%."
       },
       {
-        "condition": "Hepatic impairment \u2014 Carboplatin",
+        "condition": "Hepatic impairment — Carboplatin",
         "drug_name": "Carboplatin",
         "factor": 1.0,
         "notes": "No dose reduction necessary."
       },
       {
-        "condition": "Severe hepatic impairment \u2014 Vinorelbine IV",
+        "condition": "Severe hepatic impairment — Vinorelbine IV",
         "drug_name": "Vinorelbine",
         "factor": 0.75,
-        "notes": "Consider reduction to 20mg/m\u00b2 IV in severe liver impairment."
+        "notes": "Consider reduction to 20mg/m² IV in severe liver impairment."
       },
       {
-        "condition": "Moderate hepatic impairment \u2014 Vinorelbine oral",
+        "condition": "Moderate hepatic impairment — Vinorelbine oral",
         "drug_name": "Vinorelbine",
         "factor": 0.75,
-        "notes": "Consider dose of 50mg/m\u00b2/week for oral preparation in moderate liver impairment."
+        "notes": "Consider dose of 50mg/m²/week for oral preparation in moderate liver impairment."
       },
       {
-        "condition": "Renal impairment CrCl <20ml/min \u2014 Carboplatin",
+        "condition": "Renal impairment CrCl <20ml/min — Carboplatin",
         "drug_name": "Carboplatin",
         "factor": 0.0,
         "notes": "Do not administer if CrCl <20ml/min. GFR changes >10% may require dose adjustment."
       },
       {
-        "condition": "Renal impairment \u2014 Vinorelbine",
+        "condition": "Renal impairment — Vinorelbine",
         "drug_name": "Vinorelbine",
         "factor": 1.0,
         "notes": "No dose adjustment necessary."
@@ -348,11 +348,11 @@
       "Metoclopramide 10mg three times a day when required oral (take home)"
     ],
     "special_warnings": [
-      "First line therapy of stage III or IV NSCLC \u2014 palliative intent. WHO Performance Status 0, 1, 2.",
-      "Carboplatin is an irritant; IV Vinorelbine is a vesicant \u2014 take appropriate extravasation precautions.",
-      "Oral vinorelbine capsules must be swallowed whole with food \u2014 do not chew, suck or dissolve.",
+      "First line therapy of stage III or IV NSCLC — palliative intent. WHO Performance Status 0, 1, 2.",
+      "Carboplatin is an irritant; IV Vinorelbine is a vesicant — take appropriate extravasation precautions.",
+      "Oral vinorelbine capsules must be swallowed whole with food — do not chew, suck or dissolve.",
       "NPSA/2008/RRR001 oral chemotherapy safety alert must be followed for oral vinorelbine.",
-      "Oral vinorelbine must not be supplied from primary care \u2014 short term therapy only.",
+      "Oral vinorelbine must not be supplied from primary care — short term therapy only.",
       "Consider blood transfusion if patient symptomatic of anaemia or haemoglobin <8g/dL.",
       "If a third dose reduction is necessary, treatment should be stopped.",
       "All dose reductions should not be re-escalated in subsequent cycles without consultant approval.",
@@ -394,12 +394,12 @@
         "infusion_duration_hours": 0.5,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Administered in 100ml sodium chloride 0.9% over 30 minutes via 0.2 to 5 micron in-line low protein binding filter. Pembrolizumab is administered BEFORE carboplatin and paclitaxel. 4 cycles of combination phase followed by pembrolizumab monotherapy continuation (200mg every 3 weeks for 31 cycles or 400mg every 6 weeks for 16 cycles) for up to 2 years total. Dose reductions NOT permitted for pembrolizumab \u2014 interrupt for toxicity. Extravasation classification: neutral."
+        "notes": "Administered in 100ml sodium chloride 0.9% over 30 minutes via 0.2 to 5 micron in-line low protein binding filter. Pembrolizumab is administered BEFORE carboplatin and paclitaxel. 4 cycles of combination phase followed by pembrolizumab monotherapy continuation (200mg every 3 weeks for 31 cycles or 400mg every 6 weeks for 16 cycles) for up to 2 years total. Dose reductions NOT permitted for pembrolizumab — interrupt for toxicity. Extravasation classification: neutral."
       },
       {
         "drug_name": "Paclitaxel",
         "dose": 200.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -407,7 +407,7 @@
         "infusion_duration_hours": 3.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Administered in 500ml sodium chloride 0.9% over 180 minutes. Must be given via non-PVC administration set with in-line 0.22 micron filter. Dose banded per national dose bands (6mg/ml). Paclitaxel is a vesicant. Hypersensitivity reactions may occur \u2014 interrupt infusion for minor symptoms; discontinue immediately for severe reactions (profound hypotension, bronchospasm, generalised erythema)."
+        "notes": "Administered in 500ml sodium chloride 0.9% over 180 minutes. Must be given via non-PVC administration set with in-line 0.22 micron filter. Dose banded per national dose bands (6mg/ml). Paclitaxel is a vesicant. Hypersensitivity reactions may occur — interrupt infusion for minor symptoms; discontinue immediately for severe reactions (profound hypotension, bronchospasm, generalised erythema)."
       },
       {
         "drug_name": "Carboplatin",
@@ -425,37 +425,37 @@
     ],
     "dose_modifications": [
       {
-        "condition": "Neutrophils \u22651x10^9/L on Day 1",
+        "condition": "Neutrophils ≥1x10^9/L on Day 1",
         "drug_name": "Carboplatin and Paclitaxel",
         "factor": 1.0,
         "notes": "Proceed at 100% dose."
       },
       {
-        "condition": "Neutrophils <1x10^9/L \u2014 first delay",
+        "condition": "Neutrophils <1x10^9/L — first delay",
         "drug_name": "Carboplatin and Paclitaxel",
         "factor": 1.0,
-        "notes": "Delay for 7 days. If counts recover to \u22651x10^9/L within this time, continue at full dose."
+        "notes": "Delay for 7 days. If counts recover to ≥1x10^9/L within this time, continue at full dose."
       },
       {
-        "condition": "Neutrophils <1x10^9/L \u2014 persistent after delay or repeated delays",
+        "condition": "Neutrophils <1x10^9/L — persistent after delay or repeated delays",
         "drug_name": "Carboplatin and Paclitaxel",
         "factor": 0.8,
         "notes": "Delay until recovery then reduce dose by 20%."
       },
       {
-        "condition": "Platelets \u2265100x10^9/L on Day 1",
+        "condition": "Platelets ≥100x10^9/L on Day 1",
         "drug_name": "Carboplatin and Paclitaxel",
         "factor": 1.0,
         "notes": "Proceed at 100% dose."
       },
       {
-        "condition": "Platelets 50-99x10^9/L \u2014 first delay",
+        "condition": "Platelets 50-99x10^9/L — first delay",
         "drug_name": "Carboplatin and Paclitaxel",
         "factor": 1.0,
-        "notes": "Delay for 7 days. If counts recover to \u2265100x10^9/L within this time, continue at full dose."
+        "notes": "Delay for 7 days. If counts recover to ≥100x10^9/L within this time, continue at full dose."
       },
       {
-        "condition": "Platelets 50-99x10^9/L \u2014 persistent or repeated delays",
+        "condition": "Platelets 50-99x10^9/L — persistent or repeated delays",
         "drug_name": "Carboplatin and Paclitaxel",
         "factor": 0.8,
         "notes": "Delay until recovery then reduce dose by 20%."
@@ -467,61 +467,61 @@
         "notes": "Delay until recovery then reduce dose by 50%."
       },
       {
-        "condition": "Hepatic impairment \u2014 Carboplatin",
+        "condition": "Hepatic impairment — Carboplatin",
         "drug_name": "Carboplatin",
         "factor": 1.0,
         "notes": "No dose adjustment needed."
       },
       {
-        "condition": "Hepatic impairment Bilirubin <21 \u00b5mol/L and AST/ALT <10xULN \u2014 Paclitaxel",
+        "condition": "Hepatic impairment Bilirubin <21 µmol/L and AST/ALT <10xULN — Paclitaxel",
         "drug_name": "Paclitaxel",
         "factor": 1.0,
         "notes": "100% dose."
       },
       {
-        "condition": "Hepatic impairment Bilirubin 21-26 \u00b5mol/L \u2014 Paclitaxel",
+        "condition": "Hepatic impairment Bilirubin 21-26 µmol/L — Paclitaxel",
         "drug_name": "Paclitaxel",
         "factor": 0.75,
         "notes": "75% of original dose."
       },
       {
-        "condition": "Hepatic impairment Bilirubin 27-51 \u00b5mol/L \u2014 Paclitaxel",
+        "condition": "Hepatic impairment Bilirubin 27-51 µmol/L — Paclitaxel",
         "drug_name": "Paclitaxel",
         "factor": 0.45,
         "notes": "45% of original dose."
       },
       {
-        "condition": "Hepatic impairment Bilirubin 52-85 \u00b5mol/L \u2014 Paclitaxel",
+        "condition": "Hepatic impairment Bilirubin 52-85 µmol/L — Paclitaxel",
         "drug_name": "Paclitaxel",
         "factor": 0.3,
         "notes": "30% of original dose."
       },
       {
-        "condition": "Hepatic impairment Bilirubin >85 \u00b5mol/L or AST/ALT >10xULN \u2014 Paclitaxel",
+        "condition": "Hepatic impairment Bilirubin >85 µmol/L or AST/ALT >10xULN — Paclitaxel",
         "drug_name": "Paclitaxel",
         "factor": 0.0,
         "notes": "Contraindicated."
       },
       {
-        "condition": "Hepatic impairment \u2014 Pembrolizumab",
+        "condition": "Hepatic impairment — Pembrolizumab",
         "drug_name": "Pembrolizumab",
         "factor": 1.0,
         "notes": "No dose adjustment required for mild hepatic impairment. For hepatitis with AST/ALT 3-5xULN and/or bilirubin 1.5-3xULN: withhold and administer corticosteroids. Permanently discontinue if hepatic injury does not improve to NCI-CTC grade 1 within 12 weeks."
       },
       {
-        "condition": "Renal impairment CrCl <20ml/min \u2014 Carboplatin",
+        "condition": "Renal impairment CrCl <20ml/min — Carboplatin",
         "drug_name": "Carboplatin",
         "factor": 0.0,
         "notes": "Omit. GFR changes >10% may require dose adjustment."
       },
       {
-        "condition": "Renal impairment \u2014 Paclitaxel",
+        "condition": "Renal impairment — Paclitaxel",
         "drug_name": "Paclitaxel",
         "factor": 1.0,
         "notes": "No dose adjustment needed."
       },
       {
-        "condition": "Renal impairment mild to moderate \u2014 Pembrolizumab",
+        "condition": "Renal impairment mild to moderate — Pembrolizumab",
         "drug_name": "Pembrolizumab",
         "factor": 1.0,
         "notes": "No dose adjustment required. For NCI-CTC grade 2 nephritis: withhold and administer corticosteroids."
@@ -539,10 +539,10 @@
         "notes": "Withhold paclitaxel until resolves to NCI-CTC grade 1 then reduce to 50%. Discontinue if neuropathy does not resolve to NCI-CTC grade 1."
       },
       {
-        "condition": "Pembrolizumab immune-related adverse reactions \u2014 generally interrupt rather than dose reduce",
+        "condition": "Pembrolizumab immune-related adverse reactions — generally interrupt rather than dose reduce",
         "drug_name": "Pembrolizumab",
         "factor": 1.0,
-        "notes": "Pembrolizumab is generally interrupted for immune toxicities rather than dose-reduced. Permanently discontinue for: NCI-CTC grade 3 pneumonitis, nephritis, infusion-related reaction, hepatitis, myocarditis, encephalitis, Guillan-Barre syndrome; any NCI-CTC grade 4 or recurrent grade 3 reaction (except controlled endocrinopathies); recurrent grade 2 nephritis. May restart within 12 weeks if reaction \u2264grade 1 and corticosteroid \u226410mg/day prednisolone equivalent."
+        "notes": "Pembrolizumab is generally interrupted for immune toxicities rather than dose-reduced. Permanently discontinue for: NCI-CTC grade 3 pneumonitis, nephritis, infusion-related reaction, hepatitis, myocarditis, encephalitis, Guillan-Barre syndrome; any NCI-CTC grade 4 or recurrent grade 3 reaction (except controlled endocrinopathies); recurrent grade 2 nephritis. May restart within 12 weeks if reaction ≤grade 1 and corticosteroid ≤10mg/day prednisolone equivalent."
       }
     ],
     "pre_medications": [
@@ -551,25 +551,25 @@
       "Dexamethasone 20mg IV 30 minutes before paclitaxel (hypersensitivity prophylaxis)",
       "H2 antagonist according to local formulary choice and availability 30 minutes before paclitaxel (e.g. ranitidine 50mg IV, famotidine 20mg oral, nizatidine 150mg oral, or ranitidine 150mg oral)",
       "Ondansetron 8mg oral or IV 15-30 minutes prior to chemotherapy (cycles 1-4 only)",
-      "Dexamethasone 4mg oral twice a day for 3 days (take home, starting day 2 of cycle \u2014 cycles 1-4 only)",
-      "Metoclopramide 10mg oral three times a day as required (take home \u2014 cycles 1-4 only)",
+      "Dexamethasone 4mg oral twice a day for 3 days (take home, starting day 2 of cycle — cycles 1-4 only)",
+      "Metoclopramide 10mg oral three times a day as required (take home — cycles 1-4 only)",
       "Chlorphenamine 10mg IV when required for infusion-related reactions",
       "Hydrocortisone 100mg IV when required for infusion-related reactions",
       "Paracetamol 1000mg oral when required for infusion-related reactions"
     ],
     "special_warnings": [
-      "Stage IIIB/IIIC or stage IV squamous NSCLC only. PD-L1 TPS testing mandatory before treatment \u2014 numeric result must be known.",
+      "Stage IIIB/IIIC or stage IV squamous NSCLC only. PD-L1 TPS testing mandatory before treatment — numeric result must be known.",
       "PD-L1 TPS 0-49% or TPS 50-100% requiring urgent clinical response are eligible. TPS 50-100% patients should have detailed discussion about pembrolizumab monotherapy vs combination.",
-      "No prior cytotoxic chemotherapy for advanced/metastatic disease (prior neoadjuvant/adjuvant/concurrent chemo-radiotherapy allowed if completed \u22656 months before recurrence).",
+      "No prior cytotoxic chemotherapy for advanced/metastatic disease (prior neoadjuvant/adjuvant/concurrent chemo-radiotherapy allowed if completed ≥6 months before recurrence).",
       "No prior anti-PD-1, anti-PD-L1, anti-PD-L2, anti-CD137 or anti-CTLA-4 antibody therapy.",
       "No symptomatic active brain metastases or leptomeningeal metastases.",
-      "WHO Performance Status 0 or 1 required. Chemotherapy doses in this regimen are higher than common practice \u2014 careful patient selection required.",
+      "WHO Performance Status 0 or 1 required. Chemotherapy doses in this regimen are higher than common practice — careful patient selection required.",
       "3-weekly pembrolizumab 200mg must be used during combination phase (not 6-weekly 400mg dosing).",
-      "Nab-paclitaxel is NOT commissioned for this indication \u2014 only paclitaxel is approved.",
+      "Nab-paclitaxel is NOT commissioned for this indication — only paclitaxel is approved.",
       "Formal medical review of combination therapy continuation scheduled by end of first 6 weeks of treatment.",
       "Treatment breaks up to 12 weeks beyond expected cycle length allowed to allow immune toxicities to settle.",
-      "Pembrolizumab dose reductions are NOT permitted \u2014 interrupt for immune toxicities.",
-      "Pembrolizumab associated with immune-related adverse reactions: pneumonitis, nephritis, colitis, thyroid disorders, hypophysitis, infusion reactions, hepatitis \u2014 early diagnosis and management essential.",
+      "Pembrolizumab dose reductions are NOT permitted — interrupt for immune toxicities.",
+      "Pembrolizumab associated with immune-related adverse reactions: pneumonitis, nephritis, colitis, thyroid disorders, hypophysitis, infusion reactions, hepatitis — early diagnosis and management essential.",
       "Paclitaxel must be administered via non-PVC set with in-line 0.22 micron filter.",
       "Paclitaxel is a vesicant; carboplatin is an irritant.",
       "Monitor thyroid function tests at baseline then every 3-6 weeks. Random blood cortisol at baseline then every 3-6 weeks. Random blood glucose prior to each pembrolizumab dose.",
@@ -607,7 +607,7 @@
       {
         "drug_name": "Pemetrexed",
         "dose": 500.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -633,25 +633,25 @@
     ],
     "dose_modifications": [
       {
-        "condition": "Neutrophils <1.5x10^9/L \u2014 first instance",
+        "condition": "Neutrophils <1.5x10^9/L — first instance",
         "drug_name": "Carboplatin and Pemetrexed",
         "factor": 1.0,
         "notes": "Delay treatment for 7 days. If counts recover, continue at initial dose."
       },
       {
-        "condition": "Neutrophils <1.5x10^9/L \u2014 counts remain low after delay",
+        "condition": "Neutrophils <1.5x10^9/L — counts remain low after delay",
         "drug_name": "Carboplatin and Pemetrexed",
         "factor": 0.8,
         "notes": "Continue with 20% dose reduction. Stop if myelosuppression recurs."
       },
       {
-        "condition": "Platelets <100x10^9/L \u2014 first instance",
+        "condition": "Platelets <100x10^9/L — first instance",
         "drug_name": "Carboplatin and Pemetrexed",
         "factor": 1.0,
         "notes": "Delay treatment for 7 days. If counts recover, continue at initial dose."
       },
       {
-        "condition": "Platelets <100x10^9/L \u2014 counts remain low after delay",
+        "condition": "Platelets <100x10^9/L — counts remain low after delay",
         "drug_name": "Carboplatin and Pemetrexed",
         "factor": 0.8,
         "notes": "Continue with 20% dose reduction."
@@ -663,25 +663,25 @@
         "notes": "Reduce dose by 50%."
       },
       {
-        "condition": "Hepatic impairment \u2014 Carboplatin",
+        "condition": "Hepatic impairment — Carboplatin",
         "drug_name": "Carboplatin",
         "factor": 1.0,
         "notes": "No dose reduction necessary."
       },
       {
-        "condition": "Hepatic impairment \u2014 Pemetrexed",
+        "condition": "Hepatic impairment — Pemetrexed",
         "drug_name": "Pemetrexed",
         "factor": 1.0,
         "notes": "Clinical decision required."
       },
       {
-        "condition": "Renal impairment CrCl <20ml/min \u2014 Carboplatin",
+        "condition": "Renal impairment CrCl <20ml/min — Carboplatin",
         "drug_name": "Carboplatin",
         "factor": 0.0,
         "notes": "Do not administer if CrCl <20ml/min. GFR changes >10% may require dose adjustment."
       },
       {
-        "condition": "Renal impairment CrCl <45ml/min \u2014 Pemetrexed",
+        "condition": "Renal impairment CrCl <45ml/min — Pemetrexed",
         "drug_name": "Pemetrexed",
         "factor": 0.75,
         "notes": "If creatinine clearance falls below 45ml/min, consider dose reduction (clinical decision)."
@@ -689,18 +689,18 @@
     ],
     "pre_medications": [
       "Folic acid 5mg once daily oral starting 1-2 weeks prior to first pemetrexed dose and continuing for 3 weeks after last dose (mandatory)",
-      "Hydroxocobalamin 1mg intramuscular injection every 3 months starting 1-2 weeks prior to first pemetrexed dose (mandatory \u2014 prescribed separately from ARIA regimen)",
-      "Dexamethasone 4mg twice a day oral starting day before chemotherapy (skin rash prophylaxis \u2014 mandatory)",
+      "Hydroxocobalamin 1mg intramuscular injection every 3 months starting 1-2 weeks prior to first pemetrexed dose (mandatory — prescribed separately from ARIA regimen)",
+      "Dexamethasone 4mg twice a day oral starting day before chemotherapy (skin rash prophylaxis — mandatory)",
       "Ondansetron 8mg oral or IV bolus 15-30 minutes prior to chemotherapy",
-      "Dexamethasone 4mg twice a day oral for 3 days (take home, starting day before next cycle chemotherapy is due \u2014 given as supply for next cycle)",
+      "Dexamethasone 4mg twice a day oral for 3 days (take home, starting day before next cycle chemotherapy is due — given as supply for next cycle)",
       "Metoclopramide 10mg three times a day when required oral (take home)",
       "On occasions where patient forgets pre-dose dexamethasone: administer dexamethasone 20mg IV bolus on day of treatment"
     ],
     "special_warnings": [
       "First line therapy of advanced pleural mesothelioma where disease is not suitable for surgical resection. WHO Performance Status 0, 1. Palliative intent.",
-      "Folic acid supplementation is MANDATORY \u2014 must begin 1-2 weeks before and continue 3 weeks after last pemetrexed dose.",
-      "Hydroxocobalamin (vitamin B12) supplementation is MANDATORY \u2014 1mg IM every 3 months starting 1-2 weeks before first pemetrexed dose.",
-      "Dexamethasone skin rash prophylaxis is MANDATORY \u2014 must be taken starting the day before pemetrexed.",
+      "Folic acid supplementation is MANDATORY — must begin 1-2 weeks before and continue 3 weeks after last pemetrexed dose.",
+      "Hydroxocobalamin (vitamin B12) supplementation is MANDATORY — 1mg IM every 3 months starting 1-2 weeks before first pemetrexed dose.",
+      "Dexamethasone skin rash prophylaxis is MANDATORY — must be taken starting the day before pemetrexed.",
       "Carboplatin must be administered 30 minutes after end of pemetrexed infusion.",
       "Consider draining pleural or peritoneal effusions prior to pemetrexed administration.",
       "Pemetrexed is an inflammitant; carboplatin is an irritant.",
@@ -773,7 +773,7 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Continuous dosing, 450mg once daily with food. Available as 150mg capsules (3 capsules). Swallow whole \u2014 do not chew or crush. If dose missed, patient should make up dose unless next dose due within 12 hours. If vomiting occurs, do not take additional dose \u2014 continue with next scheduled dose. If dose reduction required for ADR not listed, reduce by decrements of 150mg daily. Discontinue if patient cannot tolerate 150mg once daily with food. NPSA/2008/RRR001 oral chemotherapy safety alert applies."
+        "notes": "Continuous dosing, 450mg once daily with food. Available as 150mg capsules (3 capsules). Swallow whole — do not chew or crush. If dose missed, patient should make up dose unless next dose due within 12 hours. If vomiting occurs, do not take additional dose — continue with next scheduled dose. If dose reduction required for ADR not listed, reduce by decrements of 150mg daily. Discontinue if patient cannot tolerate 150mg once daily with food. NPSA/2008/RRR001 oral chemotherapy safety alert applies."
       }
     ],
     "dose_modifications": [
@@ -790,13 +790,13 @@
         "notes": "Interrupt until toxicity reduces to NCI-CTC grade 2 or below, then restart at same dose."
       },
       {
-        "condition": "Haematological toxicity NCI-CTC grade 4 \u2014 first or second occurrence (except lymphopenia)",
+        "condition": "Haematological toxicity NCI-CTC grade 4 — first or second occurrence (except lymphopenia)",
         "drug_name": "Ceritinib",
         "factor": 0.75,
         "notes": "Interrupt until toxicity reduces to NCI-CTC grade 2 or below, then restart with dose reduced by 150mg."
       },
       {
-        "condition": "Haematological toxicity NCI-CTC grade 4 \u2014 further recurrence (except lymphopenia)",
+        "condition": "Haematological toxicity NCI-CTC grade 4 — further recurrence (except lymphopenia)",
         "drug_name": "Ceritinib",
         "factor": 0.0,
         "notes": "Discontinue permanently."
@@ -814,19 +814,19 @@
         "notes": "Discontinue permanently."
       },
       {
-        "condition": "Pre-existing hepatic impairment \u2014 mild",
+        "condition": "Pre-existing hepatic impairment — mild",
         "drug_name": "Ceritinib",
         "factor": 1.0,
         "notes": "No dose adjustment required in mild hepatic impairment."
       },
       {
-        "condition": "Pre-existing hepatic impairment \u2014 moderate to severe",
+        "condition": "Pre-existing hepatic impairment — moderate to severe",
         "drug_name": "Ceritinib",
         "factor": 0.0,
         "notes": "Not recommended in moderate to severe hepatic impairment."
       },
       {
-        "condition": "Renal impairment \u2014 mild to moderate",
+        "condition": "Renal impairment — mild to moderate",
         "drug_name": "Ceritinib",
         "factor": 1.0,
         "notes": "No starting dose adjustment required."
@@ -844,13 +844,13 @@
         "notes": "Withhold until hyperglycaemia adequately controlled, then reinitiate with dose reduced by 150mg. If adequate glucose control cannot be achieved, permanently discontinue."
       },
       {
-        "condition": "Lipase or amylase elevation \u2265NCI-CTC grade 3",
+        "condition": "Lipase or amylase elevation ≥NCI-CTC grade 3",
         "drug_name": "Ceritinib",
         "factor": 0.75,
         "notes": "Withhold until returns to NCI-CTC grade 1, then reinitiate with dose reduced by 150mg."
       },
       {
-        "condition": "Pneumonitis \u2014 any grade suspected treatment-related",
+        "condition": "Pneumonitis — any grade suspected treatment-related",
         "drug_name": "Ceritinib",
         "factor": 0.0,
         "notes": "Withhold if pneumonitis suspected; permanently discontinue if treatment-related pneumonitis confirmed. All pneumonitis cases in trials occurred within 2 months of initiation."
@@ -859,7 +859,7 @@
         "condition": "QTc >500msec on at least two separate ECGs",
         "drug_name": "Ceritinib",
         "factor": 0.75,
-        "notes": "Withhold until recovery to baseline or QTc \u2264480msec; check and correct electrolytes; reinitiate with dose reduced by 150mg."
+        "notes": "Withhold until recovery to baseline or QTc ≤480msec; check and correct electrolytes; reinitiate with dose reduced by 150mg."
       },
       {
         "condition": "QTc >500msec or >60msec change from baseline with torsade de pointes or polymorphic VT or signs/symptoms of serious arrhythmia",
@@ -871,10 +871,10 @@
         "condition": "Symptomatic bradycardia <60bpm requiring medical intervention",
         "drug_name": "Ceritinib",
         "factor": 0.75,
-        "notes": "Withhold until recovery to asymptomatic bradycardia or HR \u226560bpm. Evaluate concomitant medications. If contributing drug identified and stopped/adjusted, resume at previous dose. If no contributing drug or not adjusted, reduce by 150mg."
+        "notes": "Withhold until recovery to asymptomatic bradycardia or HR ≥60bpm. Evaluate concomitant medications. If contributing drug identified and stopped/adjusted, resume at previous dose. If no contributing drug or not adjusted, reduce by 150mg."
       },
       {
-        "condition": "Life-threatening bradycardia \u2014 no contributing concomitant drug identified",
+        "condition": "Life-threatening bradycardia — no contributing concomitant drug identified",
         "drug_name": "Ceritinib",
         "factor": 0.0,
         "notes": "Permanently discontinue."
@@ -885,15 +885,15 @@
       "Metoclopramide 10mg oral three times a day when required for nausea and vomiting"
     ],
     "special_warnings": [
-      "ALK-positive NSCLC confirmed required \u2014 untreated or post-crizotinib second/subsequent line (per NICE TA500 and TA395).",
-      "QTc prolongation monitoring required \u2014 ECG monitoring as clinically indicated. Risk increased with concomitant antiarrhythmics, pre-existing cardiac disease, bradycardia, or electrolyte disturbances.",
-      "Hepatotoxicity \u2014 monitor LFTs every 2 weeks for first month then monthly (SPC recommends every 2 weeks for first 3 months). Ceritinib is largely eliminated via the liver.",
-      "Severe, life-threatening, or fatal treatment-related pneumonitis reported \u2014 all cases within 2 months of initiation. Monitor for pulmonary symptoms.",
-      "Hyperglycaemia reported \u2014 monitor blood glucose.",
-      "Pancreatitis \u2014 monitor lipase/amylase.",
-      "Ceritinib interacts with numerous medications \u2014 always check for drug interactions.",
+      "ALK-positive NSCLC confirmed required — untreated or post-crizotinib second/subsequent line (per NICE TA500 and TA395).",
+      "QTc prolongation monitoring required — ECG monitoring as clinically indicated. Risk increased with concomitant antiarrhythmics, pre-existing cardiac disease, bradycardia, or electrolyte disturbances.",
+      "Hepatotoxicity — monitor LFTs every 2 weeks for first month then monthly (SPC recommends every 2 weeks for first 3 months). Ceritinib is largely eliminated via the liver.",
+      "Severe, life-threatening, or fatal treatment-related pneumonitis reported — all cases within 2 months of initiation. Monitor for pulmonary symptoms.",
+      "Hyperglycaemia reported — monitor blood glucose.",
+      "Pancreatitis — monitor lipase/amylase.",
+      "Ceritinib interacts with numerous medications — always check for drug interactions.",
       "NPSA/2008/RRR001 oral chemotherapy safety alert must be followed.",
-      "Continuous 28-day cycle dosing \u2014 take with food, swallow whole.",
+      "Continuous 28-day cycle dosing — take with food, swallow whole.",
       "FBC and U&Es every 4 weeks.",
       "CT scan within 1 month before starting and repeat within 3 months of starting (or earlier if necessary).",
       "Chest x-ray before starting and every 4 weeks as appropriate.",
@@ -922,7 +922,7 @@
       {
         "drug_name": "Cisplatin",
         "dose": 25.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1,
@@ -937,7 +937,7 @@
       {
         "drug_name": "Etoposide",
         "dose": 100.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1,
@@ -947,18 +947,20 @@
         "infusion_duration_hours": 1.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Administered in 1000ml sodium chloride 0.9% over 60 minutes. Etoposide administered after cisplatin \u2014 the 1000ml NaCl 0.9% containing etoposide forms the post-hydration for cisplatin (no additional post-hydration fluid required). Dose banded per CSCCN agreed bands. Etoposide is an irritant."
+        "notes": "Administered in 1000ml sodium chloride 0.9% over 60 minutes. Etoposide administered after cisplatin — the 1000ml NaCl 0.9% containing etoposide forms the post-hydration for cisplatin (no additional post-hydration fluid required). Dose banded per CSCCN agreed bands. Etoposide is an irritant.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500
       }
     ],
     "dose_modifications": [
       {
-        "condition": "Neutrophils \u22641.5x10^9/L or platelets \u2264100x10^9/L on Day 1",
+        "condition": "Neutrophils ≤1.5x10^9/L or platelets ≤100x10^9/L on Day 1",
         "drug_name": "Cisplatin and Etoposide",
         "factor": 1.0,
         "notes": "Delay both cisplatin and etoposide until counts recover to eligible levels."
       },
       {
-        "condition": "Febrile neutropenia or grade 4 neutropenia >7 days, or grade 4 thrombocytopenia requiring medical intervention, or grade 2+ bleeding with thrombocytopenia \u2014 first episode",
+        "condition": "Febrile neutropenia or grade 4 neutropenia >7 days, or grade 4 thrombocytopenia requiring medical intervention, or grade 2+ bleeding with thrombocytopenia — first episode",
         "drug_name": "Cisplatin and Etoposide",
         "factor": 0.8,
         "notes": "Reduce dose to 80% of original dose."
@@ -976,55 +978,55 @@
         "notes": "Stop treatment."
       },
       {
-        "condition": "Hepatic impairment \u2014 Cisplatin",
+        "condition": "Hepatic impairment — Cisplatin",
         "drug_name": "Cisplatin",
         "factor": 1.0,
         "notes": "No adjustment necessary."
       },
       {
-        "condition": "Hepatic impairment Bilirubin 26-51 \u00b5mol/L or AST 60-180 units \u2014 Etoposide",
+        "condition": "Hepatic impairment Bilirubin 26-51 µmol/L or AST 60-180 units — Etoposide",
         "drug_name": "Etoposide",
         "factor": 0.5,
         "notes": "50% of original dose."
       },
       {
-        "condition": "Hepatic impairment Bilirubin >51 \u00b5mol/L or AST >180 units \u2014 Etoposide",
+        "condition": "Hepatic impairment Bilirubin >51 µmol/L or AST >180 units — Etoposide",
         "drug_name": "Etoposide",
         "factor": 1.0,
         "notes": "Clinical decision required."
       },
       {
-        "condition": "Renal impairment CrCl >60ml/min \u2014 Cisplatin",
+        "condition": "Renal impairment CrCl >60ml/min — Cisplatin",
         "drug_name": "Cisplatin",
         "factor": 1.0,
         "notes": "100% dose."
       },
       {
-        "condition": "Renal impairment CrCl 45-59ml/min \u2014 Cisplatin",
+        "condition": "Renal impairment CrCl 45-59ml/min — Cisplatin",
         "drug_name": "Cisplatin",
         "factor": 0.75,
         "notes": "75% of original dose."
       },
       {
-        "condition": "Renal impairment CrCl <45ml/min \u2014 Cisplatin",
+        "condition": "Renal impairment CrCl <45ml/min — Cisplatin",
         "drug_name": "Cisplatin",
         "factor": 0.0,
         "notes": "Do not use."
       },
       {
-        "condition": "Renal impairment CrCl >50ml/min \u2014 Etoposide",
+        "condition": "Renal impairment CrCl >50ml/min — Etoposide",
         "drug_name": "Etoposide",
         "factor": 1.0,
         "notes": "100% dose."
       },
       {
-        "condition": "Renal impairment CrCl 15-50ml/min \u2014 Etoposide",
+        "condition": "Renal impairment CrCl 15-50ml/min — Etoposide",
         "drug_name": "Etoposide",
         "factor": 0.75,
         "notes": "75% of original dose."
       },
       {
-        "condition": "Renal impairment CrCl <15ml/min \u2014 Etoposide",
+        "condition": "Renal impairment CrCl <15ml/min — Etoposide",
         "drug_name": "Etoposide",
         "factor": 0.5,
         "notes": "50% of original dose."
@@ -1047,21 +1049,21 @@
       "Ondansetron 8mg oral or IV bolus 15-30 minutes prior to chemotherapy (each day)",
       "Furosemide 40mg when required oral or IV bolus (pre-hydration)",
       "Sodium chloride 0.9% 500ml with 8mmol magnesium sulphate IV over 30 minutes (pre-hydration)",
-      "Post-hydration: Etoposide administered in 1000ml sodium chloride 0.9% serves as post-hydration \u2014 no additional post-hydration fluid required",
+      "Post-hydration: Etoposide administered in 1000ml sodium chloride 0.9% serves as post-hydration — no additional post-hydration fluid required",
       "Patients must drink at least 2 litres of fluid in 24 hours after cisplatin",
       "Dexamethasone 4mg once a day oral for 2 days (take home, starting day after chemotherapy finishes)",
       "Metoclopramide 10mg three times a day when required oral (take home)",
       "Ondansetron 8mg on evening of each day of chemotherapy and then 8mg twice a day for 2 days starting day after chemotherapy finishes (take home)"
     ],
     "special_warnings": [
-      "Limited stage SCLC only \u2014 usually given concurrently with radical thoracic radiotherapy. Radical intent. WHO Performance Status 0, 1, 2.",
-      "Full cisplatin hydration protocol MANDATORY \u2014 pre-hydration with 500ml NaCl 0.9% with 8mmol MgSO4 over 30 minutes. Patient must drink at least 2 litres fluid in 24 hours post-cisplatin.",
-      "Cisplatin is nephrotoxic \u2014 EDTA or calculated creatinine clearance required before first cycle. Monitor renal function carefully.",
-      "Cisplatin is ototoxic \u2014 consider formal audiology test if relevant.",
-      "Cisplatin peripheral neuropathy \u2014 common complication. Reduce to 50% or substitute with carboplatin if grade 2+ neuropathy.",
-      "Cisplatin is an exfoliant; etoposide is an irritant \u2014 appropriate extravasation precautions required.",
+      "Limited stage SCLC only — usually given concurrently with radical thoracic radiotherapy. Radical intent. WHO Performance Status 0, 1, 2.",
+      "Full cisplatin hydration protocol MANDATORY — pre-hydration with 500ml NaCl 0.9% with 8mmol MgSO4 over 30 minutes. Patient must drink at least 2 litres fluid in 24 hours post-cisplatin.",
+      "Cisplatin is nephrotoxic — EDTA or calculated creatinine clearance required before first cycle. Monitor renal function carefully.",
+      "Cisplatin is ototoxic — consider formal audiology test if relevant.",
+      "Cisplatin peripheral neuropathy — common complication. Reduce to 50% or substitute with carboplatin if grade 2+ neuropathy.",
+      "Cisplatin is an exfoliant; etoposide is an irritant — appropriate extravasation precautions required.",
       "Haemoglobin should be kept above 12g/dL if radiotherapy is being given concurrently.",
-      "Etoposide administered in 1000ml NaCl forms the post-hydration \u2014 no additional fluid required after etoposide.",
+      "Etoposide administered in 1000ml NaCl forms the post-hydration — no additional fluid required after etoposide.",
       "If a third dose reduction is necessary, treatment should be stopped.",
       "Growth factors as per local policy.",
       "Gastric protection with PPI or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed.",
@@ -1090,7 +1092,7 @@
       {
         "drug_name": "Cisplatin",
         "dose": 80.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -1103,7 +1105,7 @@
       {
         "drug_name": "Etoposide",
         "dose": 120.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -1111,12 +1113,14 @@
         "infusion_duration_hours": 1.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Day 1 only: administered in 1000ml sodium chloride 0.9% over 60 minutes. This forms the post-hydration for cisplatin. Dose banded per CSCCN agreed bands. Etoposide is an irritant."
+        "notes": "Day 1 only: administered in 1000ml sodium chloride 0.9% over 60 minutes. This forms the post-hydration for cisplatin. Dose banded per CSCCN agreed bands. Etoposide is an irritant.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500
       },
       {
         "drug_name": "Etoposide",
         "dose": 240.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "Oral",
         "days": [
           2,
@@ -1125,18 +1129,18 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Days 2 and 3 only: oral etoposide once daily. Dose rounded to nearest 50mg (up if halfway). Etoposide should be taken 1 hour before food or on an empty stomach. NPSA/2008/RRR001 oral chemotherapy safety alert MUST be followed. Short course \u2014 must NOT be continued beyond days 2 and 3. Must not be supplied from primary care. Patients must be assessed for suitability for oral chemotherapy prior to starting. [VERIFIED: Oral etoposide 240mg/m\u00b2 over days 2-4 in cisplatin-etoposide SCLC is an established regimen \u2014 verify against source PDF]"
+        "notes": "Days 2 and 3 only: oral etoposide once daily. Dose rounded to nearest 50mg (up if halfway). Etoposide should be taken 1 hour before food or on an empty stomach. NPSA/2008/RRR001 oral chemotherapy safety alert MUST be followed. Short course — must NOT be continued beyond days 2 and 3. Must not be supplied from primary care. Patients must be assessed for suitability for oral chemotherapy prior to starting. [VERIFIED: Oral etoposide 240mg/m² over days 2-4 in cisplatin-etoposide SCLC is an established regimen — verify against source PDF]"
       }
     ],
     "dose_modifications": [
       {
-        "condition": "Neutrophils \u22641.5x10^9/L or platelets \u2264100x10^9/L on Day 1",
+        "condition": "Neutrophils ≤1.5x10^9/L or platelets ≤100x10^9/L on Day 1",
         "drug_name": "Cisplatin and Etoposide",
         "factor": 1.0,
         "notes": "Delay both cisplatin and etoposide until counts recover to eligible levels."
       },
       {
-        "condition": "Febrile neutropenia or grade 4 neutropenia >7 days, or grade 4 thrombocytopenia requiring medical intervention, or grade 2+ bleeding with thrombocytopenia \u2014 first episode",
+        "condition": "Febrile neutropenia or grade 4 neutropenia >7 days, or grade 4 thrombocytopenia requiring medical intervention, or grade 2+ bleeding with thrombocytopenia — first episode",
         "drug_name": "Cisplatin and Etoposide",
         "factor": 0.8,
         "notes": "Reduce dose to 80% of original dose."
@@ -1154,55 +1158,55 @@
         "notes": "Stop treatment."
       },
       {
-        "condition": "Hepatic impairment \u2014 Cisplatin",
+        "condition": "Hepatic impairment — Cisplatin",
         "drug_name": "Cisplatin",
         "factor": 1.0,
         "notes": "No adjustment necessary."
       },
       {
-        "condition": "Hepatic impairment Bilirubin 26-51 \u00b5mol/L or AST 60-180 units \u2014 Etoposide",
+        "condition": "Hepatic impairment Bilirubin 26-51 µmol/L or AST 60-180 units — Etoposide",
         "drug_name": "Etoposide",
         "factor": 0.5,
         "notes": "50% of original dose."
       },
       {
-        "condition": "Hepatic impairment Bilirubin >51 \u00b5mol/L or AST >180 units \u2014 Etoposide",
+        "condition": "Hepatic impairment Bilirubin >51 µmol/L or AST >180 units — Etoposide",
         "drug_name": "Etoposide",
         "factor": 1.0,
         "notes": "Clinical decision required."
       },
       {
-        "condition": "Renal impairment CrCl >60ml/min \u2014 Cisplatin",
+        "condition": "Renal impairment CrCl >60ml/min — Cisplatin",
         "drug_name": "Cisplatin",
         "factor": 1.0,
         "notes": "100% dose."
       },
       {
-        "condition": "Renal impairment CrCl 45-59ml/min \u2014 Cisplatin",
+        "condition": "Renal impairment CrCl 45-59ml/min — Cisplatin",
         "drug_name": "Cisplatin",
         "factor": 0.75,
         "notes": "75% of original dose."
       },
       {
-        "condition": "Renal impairment CrCl <45ml/min \u2014 Cisplatin",
+        "condition": "Renal impairment CrCl <45ml/min — Cisplatin",
         "drug_name": "Cisplatin",
         "factor": 0.0,
         "notes": "Do not use."
       },
       {
-        "condition": "Renal impairment CrCl >50ml/min \u2014 Etoposide",
+        "condition": "Renal impairment CrCl >50ml/min — Etoposide",
         "drug_name": "Etoposide",
         "factor": 1.0,
         "notes": "100% dose."
       },
       {
-        "condition": "Renal impairment CrCl 15-50ml/min \u2014 Etoposide",
+        "condition": "Renal impairment CrCl 15-50ml/min — Etoposide",
         "drug_name": "Etoposide",
         "factor": 0.75,
         "notes": "75% of original dose."
       },
       {
-        "condition": "Renal impairment CrCl <15ml/min \u2014 Etoposide",
+        "condition": "Renal impairment CrCl <15ml/min — Etoposide",
         "drug_name": "Etoposide",
         "factor": 0.5,
         "notes": "50% of original dose."
@@ -1226,27 +1230,27 @@
       "Ondansetron 8mg oral or IV bolus 15-30 minutes prior to chemotherapy on day 1 only",
       "Furosemide 40mg oral or IV bolus (pre-hydration, day 1)",
       "Sodium chloride 0.9% 1000ml with 20mmol potassium chloride and 16mmol magnesium sulphate IV over 60 minutes (pre-hydration, day 1)",
-      "Post-hydration: Etoposide 120mg/m\u00b2 IV in 1000ml NaCl 0.9% over 60 minutes serves as post-hydration on day 1 \u2014 no additional post-hydration fluid required",
+      "Post-hydration: Etoposide 120mg/m² IV in 1000ml NaCl 0.9% over 60 minutes serves as post-hydration on day 1 — no additional post-hydration fluid required",
       "Patients must drink at least 3 litres of fluid in 24 hours after cisplatin",
-      "Etoposide 240mg/m\u00b2 oral once daily on days 2 and 3 (take home \u2014 oral SACT, short course only, NPSA alert applies)",
+      "Etoposide 240mg/m² oral once daily on days 2 and 3 (take home — oral SACT, short course only, NPSA alert applies)",
       "Aprepitant 80mg once a day oral for 2 days (take home)",
       "Dexamethasone 4mg once a day oral for 3 days (take home)",
       "Metoclopramide 10mg three times a day when required oral (take home)",
       "Ondansetron 8mg twice a day oral for 3 days (take home)"
     ],
     "special_warnings": [
-      "Limited stage SCLC only \u2014 usually given concurrently with radical thoracic radiotherapy. Radical intent. WHO Performance Status 0, 1, 2.",
+      "Limited stage SCLC only — usually given concurrently with radical thoracic radiotherapy. Radical intent. WHO Performance Status 0, 1, 2.",
       "NPSA/2008/RRR001 oral chemotherapy safety alert MUST be followed for oral etoposide (days 2 and 3).",
-      "Oral etoposide is a SHORT COURSE (days 2 and 3 only) \u2014 must NOT be continued beyond this. All staff including community staff must be clearly informed.",
+      "Oral etoposide is a SHORT COURSE (days 2 and 3 only) — must NOT be continued beyond this. All staff including community staff must be clearly informed.",
       "Patients must be assessed for suitability for oral chemotherapy prior to starting treatment.",
       "Oral etoposide must not be supplied from primary care.",
-      "Full cisplatin hydration protocol MANDATORY \u2014 pre-hydration with 1000ml NaCl 0.9% with 20mmol KCl and 16mmol MgSO4 over 60 minutes. Patient must drink at least 3 litres fluid in 24 hours post-cisplatin.",
-      "Cisplatin is nephrotoxic \u2014 EDTA or calculated creatinine clearance required before first cycle. Monitor renal function carefully.",
-      "Cisplatin is ototoxic \u2014 consider formal audiology test if relevant.",
-      "Cisplatin peripheral neuropathy \u2014 common complication. Reduce to 50% or substitute with carboplatin if grade 2+ neuropathy.",
-      "Cisplatin is an exfoliant; etoposide (IV) is an irritant \u2014 appropriate extravasation precautions required.",
+      "Full cisplatin hydration protocol MANDATORY — pre-hydration with 1000ml NaCl 0.9% with 20mmol KCl and 16mmol MgSO4 over 60 minutes. Patient must drink at least 3 litres fluid in 24 hours post-cisplatin.",
+      "Cisplatin is nephrotoxic — EDTA or calculated creatinine clearance required before first cycle. Monitor renal function carefully.",
+      "Cisplatin is ototoxic — consider formal audiology test if relevant.",
+      "Cisplatin peripheral neuropathy — common complication. Reduce to 50% or substitute with carboplatin if grade 2+ neuropathy.",
+      "Cisplatin is an exfoliant; etoposide (IV) is an irritant — appropriate extravasation precautions required.",
       "Haemoglobin should be kept above 12g/dL if radiotherapy is being given concurrently.",
-      "IV etoposide on day 1 forms the post-hydration for cisplatin \u2014 no additional fluid required.",
+      "IV etoposide on day 1 forms the post-hydration for cisplatin — no additional fluid required.",
       "If a third dose reduction is necessary, treatment should be stopped.",
       "Growth factors as per local policy.",
       "Gastric protection with PPI or H2 antagonist may be considered in patients at high risk of GI ulceration or bleed.",

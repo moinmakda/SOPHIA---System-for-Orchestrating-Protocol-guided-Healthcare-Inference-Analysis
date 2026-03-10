@@ -425,7 +425,9 @@
         "infusion_duration_hours": 2.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous infusion in 1000ml sodium chloride 0.9% over 2 hours. Dose banded per national dose banding table (20mg/ml). Mesna uroprotection 24mg/kg IV required (doses at Day -6: 1000, 1300, 1600, 1900, 2200hrs; Day -5: 0200, 0600, 1000, 1300, 1600, 1900, 2200hrs; Day -4: 0200, 0600hrs). IV hydration required before and after infusion. Haemorrhagic cystitis risk."
+        "notes": "Intravenous infusion in 1000ml sodium chloride 0.9% over 2 hours. Dose banded per national dose banding table (20mg/ml). Mesna uroprotection 24mg/kg IV required (doses at Day -6: 1000, 1300, 1600, 1900, 2200hrs; Day -5: 0200, 0600, 1000, 1300, 1600, 1900, 2200hrs; Day -4: 0200, 0600hrs). IV hydration required before and after infusion. Haemorrhagic cystitis risk.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Total Body Irradiation",
@@ -980,7 +982,9 @@
         "infusion_duration_hours": 2.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous infusion in 1000ml sodium chloride 0.9% over 120 minutes. Dose banded per national dose banding tables (20mg/ml). Pre-hydration: 1000ml sodium chloride 0.9% IV over 120 minutes. Patients must drink 2-3 litres fluid on day of chemotherapy and day after. Haemorrhagic cystitis risk. Urine dip for protein every 60 minutes until end of infusion."
+        "notes": "Intravenous infusion in 1000ml sodium chloride 0.9% over 120 minutes. Dose banded per national dose banding tables (20mg/ml). Pre-hydration: 1000ml sodium chloride 0.9% IV over 120 minutes. Patients must drink 2-3 litres fluid on day of chemotherapy and day after. Haemorrhagic cystitis risk. Urine dip for protein every 60 minutes until end of infusion.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Mesna",
@@ -1050,7 +1054,9 @@
         "infusion_duration_hours": 2.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous infusion in 1000ml sodium chloride 0.9% over 2 hours. Start at 1015hrs. Dose banded per national dose banding table (20mg/ml). Mesna uroprotection 24mg/kg IV required (Day -6: 1000, 1300, 1600, 1900, 2200hrs; Day -5: 0200, 0600, 1000, 1300, 1600, 1900, 2200hrs; Day -4: 0200, 0600hrs). Extensive IV hydration required days -7 to -4. Haemorrhagic cystitis risk."
+        "notes": "Intravenous infusion in 1000ml sodium chloride 0.9% over 2 hours. Start at 1015hrs. Dose banded per national dose banding table (20mg/ml). Mesna uroprotection 24mg/kg IV required (Day -6: 1000, 1300, 1600, 1900, 2200hrs; Day -5: 0200, 0600, 1000, 1300, 1600, 1900, 2200hrs; Day -4: 0200, 0600hrs). Extensive IV hydration required days -7 to -4. Haemorrhagic cystitis risk.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Total Body Irradiation",

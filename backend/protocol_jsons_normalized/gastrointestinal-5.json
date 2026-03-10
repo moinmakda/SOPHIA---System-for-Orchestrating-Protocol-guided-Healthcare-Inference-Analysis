@@ -10,7 +10,7 @@
       {
         "drug_name": "Cisplatin",
         "dose": 60.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -23,7 +23,7 @@
       {
         "drug_name": "Epirubicin",
         "dose": 50.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV bolus",
         "days": [
           1
@@ -31,12 +31,14 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Cumulative lifetime limit approximately 900 mg/m\u00b2."
+        "notes": "Intravenous bolus over 10 minutes. Cumulative lifetime limit approximately 900 mg/m².",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Fluorouracil",
         "dose": 1400.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1,
@@ -46,60 +48,60 @@
         "infusion_duration_hours": 168.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "1400mg/m\u00b2 per dose (total dose per 7-day infusion); continuous ambulatory pump infusion over 7 days per dose, changed at days 1, 8, and 15. Central venous access required."
+        "notes": "1400mg/m² per dose (total dose per 7-day infusion); continuous ambulatory pump infusion over 7 days per dose, changed at days 1, 8, and 15. Central venous access required."
       }
     ],
     "dose_modifications": [
       {
-        "condition": "Neutrophils 0.5\u20130.9 x10\u2079/L",
+        "condition": "Neutrophils 0.5–0.9 x10⁹/L",
         "drug_name": "Fluorouracil",
         "factor": 0.0,
         "notes": "Stop fluorouracil and delay until recovery"
       },
       {
-        "condition": "Neutrophils 0.5\u20130.9 x10\u2079/L",
+        "condition": "Neutrophils 0.5–0.9 x10⁹/L",
         "drug_name": "Epirubicin",
         "factor": 0.75,
-        "notes": "Delay until recovery, restart at 37.5mg/m\u00b2"
+        "notes": "Delay until recovery, restart at 37.5mg/m²"
       },
       {
-        "condition": "Neutrophils less than 0.5 x10\u2079/L",
+        "condition": "Neutrophils less than 0.5 x10⁹/L",
         "drug_name": "Fluorouracil",
         "factor": 0.0,
         "notes": "Stop fluorouracil and delay until recovery"
       },
       {
-        "condition": "Neutrophils less than 0.5 x10\u2079/L",
+        "condition": "Neutrophils less than 0.5 x10⁹/L",
         "drug_name": "Epirubicin",
         "factor": 0.5,
-        "notes": "Delay until recovery, restart at 25mg/m\u00b2"
+        "notes": "Delay until recovery, restart at 25mg/m²"
       },
       {
-        "condition": "Platelets 50\u201374 x10\u2079/L",
+        "condition": "Platelets 50–74 x10⁹/L",
         "drug_name": "Fluorouracil",
         "factor": 0.0,
         "notes": "Stop fluorouracil and delay until recovery"
       },
       {
-        "condition": "Platelets 50\u201374 x10\u2079/L",
+        "condition": "Platelets 50–74 x10⁹/L",
         "drug_name": "Epirubicin",
         "factor": 0.75,
-        "notes": "Delay cisplatin and epirubicin, restart epirubicin at 37.5mg/m\u00b2"
+        "notes": "Delay cisplatin and epirubicin, restart epirubicin at 37.5mg/m²"
       },
       {
-        "condition": "Platelets 25\u201349 x10\u2079/L",
+        "condition": "Platelets 25–49 x10⁹/L",
         "drug_name": "Epirubicin",
         "factor": 0.5,
-        "notes": "Stop fluorouracil, delay cisplatin and epirubicin until recovery; restart epirubicin at 25mg/m\u00b2"
+        "notes": "Stop fluorouracil, delay cisplatin and epirubicin until recovery; restart epirubicin at 25mg/m²"
       },
       {
-        "condition": "Platelets less than 25 x10\u2079/L",
+        "condition": "Platelets less than 25 x10⁹/L",
         "drug_name": "Epirubicin",
         "factor": 0.0,
         "notes": "Stop all three agents until counts recover; omit epirubicin from subsequent cycles"
       },
       {
-        "condition": "Hepatic impairment: bilirubin 24\u201351 umol/L",
+        "condition": "Hepatic impairment: bilirubin 24–51 umol/L",
         "drug_name": "Epirubicin",
         "factor": 0.5,
         "notes": "Reduce dose by 50%"
@@ -123,7 +125,7 @@
         "notes": "Reduce initial dose by 50%. Contra-indicated if bilirubin >85 or AST/ALT >180 units"
       },
       {
-        "condition": "Renal impairment: CrCl 45\u201359 ml/min",
+        "condition": "Renal impairment: CrCl 45–59 ml/min",
         "drug_name": "Cisplatin",
         "factor": 0.75,
         "notes": "Reduce dose to 75%"
@@ -138,19 +140,19 @@
         "condition": "Fluorouracil stomatitis Grade 2",
         "drug_name": "Fluorouracil",
         "factor": 1.0,
-        "notes": "Stop fluorouracil and restart with 50mg/m\u00b2 dose reduction"
+        "notes": "Stop fluorouracil and restart with 50mg/m² dose reduction"
       },
       {
         "condition": "Fluorouracil stomatitis Grade 3",
         "drug_name": "Fluorouracil",
         "factor": 1.0,
-        "notes": "Stop fluorouracil until recovered and restart with 100mg/m\u00b2 dose reduction"
+        "notes": "Stop fluorouracil until recovered and restart with 100mg/m² dose reduction"
       },
       {
         "condition": "Fluorouracil stomatitis Grade 4",
         "drug_name": "Fluorouracil",
         "factor": 1.0,
-        "notes": "Stop fluorouracil until recovered and restart with 150mg/m\u00b2 dose reduction"
+        "notes": "Stop fluorouracil until recovered and restart with 150mg/m² dose reduction"
       },
       {
         "condition": "Neurotoxicity NCI-CTC grade 2 or above or new functional deterioration in hearing/tinnitus",
@@ -172,10 +174,10 @@
     ],
     "special_warnings": [
       "DPD testing required before initiation of fluorouracil; patients with complete or partial DPD deficiency are at increased risk of severe and fatal toxicity",
-      "Epirubicin cumulative lifetime limit approximately 900 mg/m\u00b2; cardiac failure is a known adverse effect",
+      "Epirubicin cumulative lifetime limit approximately 900 mg/m²; cardiac failure is a known adverse effect",
       "Baseline LVEF must be measured before starting therapy, particularly in patients with cardiac history or elderly patients",
       "Central venous access and ambulatory infusion pump required for fluorouracil continuous infusion",
-      "Cisplatin is an exfoliant; epirubicin is a vesicant; fluorouracil is an inflammitant \u2014 follow extravasation protocols",
+      "Cisplatin is an exfoliant; epirubicin is a vesicant; fluorouracil is an inflammitant — follow extravasation protocols",
       "Patients should drink at least 3 litres of fluid in the 24 hours after cisplatin administration",
       "Fluorouracil is contra-indicated when bilirubin >85 umol/L or AST/ALT >180 units"
     ],
@@ -200,7 +202,7 @@
       {
         "drug_name": "Cisplatin",
         "dose": 80.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -213,7 +215,7 @@
       {
         "drug_name": "Fluorouracil",
         "dose": 1000.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1,
@@ -224,7 +226,7 @@
         "infusion_duration_hours": 96.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "1000mg/m\u00b2/day; total dose 4000mg/m\u00b2 as continuous intravenous infusion over 96 hours using an infusor device in sodium chloride 0.9%. Central venous access and ambulatory pump required."
+        "notes": "1000mg/m²/day; total dose 4000mg/m² as continuous intravenous infusion over 96 hours using an infusor device in sodium chloride 0.9%. Central venous access and ambulatory pump required."
       },
       {
         "drug_name": "Trastuzumab",
@@ -260,7 +262,7 @@
         "notes": "Reduce dose by 50%. Contra-indicated if bilirubin >85 umol/L or AST >180 umol/L"
       },
       {
-        "condition": "Renal impairment: CrCl 45\u201359 ml/min",
+        "condition": "Renal impairment: CrCl 45–59 ml/min",
         "drug_name": "Cisplatin",
         "factor": 0.75,
         "notes": "Reduce to 75% of original dose"
@@ -287,7 +289,7 @@
         "condition": "LVEF drops 10 ejection points from baseline and below 50%",
         "drug_name": "Trastuzumab",
         "factor": 0.0,
-        "notes": "Suspend trastuzumab and repeat LVEF within 21 days. If confirmed LVEF drop \u226510 points and <50% stop treatment. Dose reductions not permitted for trastuzumab."
+        "notes": "Suspend trastuzumab and repeat LVEF within 21 days. If confirmed LVEF drop ≥10 points and <50% stop treatment. Dose reductions not permitted for trastuzumab."
       },
       {
         "condition": "Symptomatic cardiac dysfunction",
@@ -357,15 +359,15 @@
     "special_warnings": [
       "Confirm positive HER2 status prior to starting therapy; trastuzumab is only indicated for HER2-positive metastatic adenocarcinoma of stomach or gastro-oesophageal junction",
       "DPD testing required before initiation of fluorouracil; patients with complete or partial DPD deficiency are at increased risk of severe and fatal toxicity",
-      "Cardiac function must be assessed prior to starting trastuzumab (LVEF must be \u226550%) and twelve weekly thereafter",
+      "Cardiac function must be assessed prior to starting trastuzumab (LVEF must be ≥50%) and twelve weekly thereafter",
       "Trastuzumab dose reductions are NOT permitted under any circumstances",
-      "Trastuzumab associated with cardiotoxicity: suspend if LVEF drops \u226510 ejection points from baseline to below 50%; stop if confirmed on repeat assessment",
+      "Trastuzumab associated with cardiotoxicity: suspend if LVEF drops ≥10 ejection points from baseline to below 50%; stop if confirmed on repeat assessment",
       "Trastuzumab is associated with hypersensitivity/infusion reactions: observe for 6 hours after first infusion and 2 hours after subsequent infusions",
-      "Cisplatin is an exfoliant; fluorouracil is an inflammitant; trastuzumab is neutral \u2014 follow extravasation protocols",
+      "Cisplatin is an exfoliant; fluorouracil is an inflammitant; trastuzumab is neutral — follow extravasation protocols",
       "Patients should drink at least 3 litres of fluid in the 24 hours after cisplatin administration",
       "Fluorouracil is contra-indicated when bilirubin >85 umol/L or AST >180 umol/L",
       "Central venous access and ambulatory infusion pump required",
-      "Cisplatin: mandatory IV hydration required \u2014 pre-hydration and post-hydration per local cisplatin hydration protocol. Monitor urine output, U&Es, and Mg\u00b2\u207a before and after each cycle."
+      "Cisplatin: mandatory IV hydration required — pre-hydration and post-hydration per local cisplatin hydration protocol. Monitor urine output, U&Es, and Mg²⁺ before and after each cycle."
     ],
     "required_patient_fields": [
       "lvef",
@@ -389,7 +391,7 @@
       {
         "drug_name": "Cisplatin",
         "dose": 60.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -402,7 +404,7 @@
       {
         "drug_name": "Fluorouracil",
         "dose": 300.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1,
@@ -430,7 +432,7 @@
         "infusion_duration_hours": 504.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "300mg/m\u00b2/24 hours continuous intravenous infusion for 21 days (days 1\u201321). Administered via continuous ambulatory pump changed every 7 days. Central or PICC line required."
+        "notes": "300mg/m²/24 hours continuous intravenous infusion for 21 days (days 1–21). Administered via continuous ambulatory pump changed every 7 days. Central or PICC line required."
       }
     ],
     "dose_modifications": [
@@ -459,7 +461,7 @@
         "notes": "Reduce dose by 50%. Contra-indicated if bilirubin >85 umol/L or AST >180"
       },
       {
-        "condition": "Renal impairment: CrCl 45\u201359 ml/min",
+        "condition": "Renal impairment: CrCl 45–59 ml/min",
         "drug_name": "Cisplatin",
         "factor": 0.75,
         "notes": "Reduce to 75%"
@@ -491,7 +493,7 @@
     "special_warnings": [
       "DPD testing required before initiation of fluorouracil; patients with complete or partial DPD deficiency are at increased risk of severe and fatal toxicity",
       "Central or PICC line required; fluorouracil administered via continuous ambulatory pump changed every 7 days",
-      "Cisplatin is an exfoliant; fluorouracil is an inflammitant \u2014 follow extravasation protocols",
+      "Cisplatin is an exfoliant; fluorouracil is an inflammitant — follow extravasation protocols",
       "Patients should drink at least 3 litres of fluid in the 24 hours after cisplatin administration",
       "Fluorouracil is contra-indicated when bilirubin >85 umol/L or AST >180 units"
     ],
@@ -506,7 +508,7 @@
   },
   {
     "protocol_code": "CISPLATIN-GEMCITABINE-RT-PANCREATIC",
-    "protocol_name": "Cisplatin-Gemcitabine (Radiotherapy) \u2013 Pancreatic Cancer",
+    "protocol_name": "Cisplatin-Gemcitabine (Radiotherapy) – Pancreatic Cancer",
     "disease_site": "Gastrointestinal",
     "category": "gastrointestinal",
     "cycle_length_days": 42,
@@ -515,7 +517,7 @@
       {
         "drug_name": "Cisplatin",
         "dose": 30.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1,
@@ -531,7 +533,7 @@
       {
         "drug_name": "Gemcitabine",
         "dose": 300.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1,
@@ -547,37 +549,37 @@
     ],
     "dose_modifications": [
       {
-        "condition": "Neutrophils 0.5\u20131.0 x10\u2079/L and/or platelets 50\u201375 x10\u2079/L on any subsequent chemotherapy day",
+        "condition": "Neutrophils 0.5–1.0 x10⁹/L and/or platelets 50–75 x10⁹/L on any subsequent chemotherapy day",
         "drug_name": "Cisplatin",
         "factor": 0.75,
         "notes": "Administer 75% of original dose for both cisplatin and gemcitabine"
       },
       {
-        "condition": "Neutrophils 0.5\u20131.0 x10\u2079/L and/or platelets 50\u201375 x10\u2079/L on any subsequent chemotherapy day",
+        "condition": "Neutrophils 0.5–1.0 x10⁹/L and/or platelets 50–75 x10⁹/L on any subsequent chemotherapy day",
         "drug_name": "Gemcitabine",
         "factor": 0.75,
         "notes": "Administer 75% of original dose for both cisplatin and gemcitabine"
       },
       {
-        "condition": "Neutrophils less than 0.5 x10\u2079/L and/or platelets less than 50 x10\u2079/L",
+        "condition": "Neutrophils less than 0.5 x10⁹/L and/or platelets less than 50 x10⁹/L",
         "drug_name": "Cisplatin",
         "factor": 0.5,
         "notes": "Reduce to 50% of original dose. Consider stopping after a second dose reduction or interruption due to haematological toxicity."
       },
       {
-        "condition": "Neutrophils less than 0.5 x10\u2079/L and/or platelets less than 50 x10\u2079/L",
+        "condition": "Neutrophils less than 0.5 x10⁹/L and/or platelets less than 50 x10⁹/L",
         "drug_name": "Gemcitabine",
         "factor": 0.5,
         "notes": "Reduce to 50% of original dose. Consider stopping after a second dose reduction or interruption."
       },
       {
-        "condition": "NCI-CTC grade 3\u20134 non-haematological toxicity (excluding nephrotoxicity)",
+        "condition": "NCI-CTC grade 3–4 non-haematological toxicity (excluding nephrotoxicity)",
         "drug_name": "Cisplatin",
         "factor": 0.75,
         "notes": "Reduce to 75% of original dose"
       },
       {
-        "condition": "NCI-CTC grade 3\u20134 non-haematological toxicity (excluding nephrotoxicity)",
+        "condition": "NCI-CTC grade 3–4 non-haematological toxicity (excluding nephrotoxicity)",
         "drug_name": "Gemcitabine",
         "factor": 0.75,
         "notes": "Reduce to 75% of original dose"
@@ -601,7 +603,7 @@
         "notes": "Consider dose reductions especially where bilirubin is raised"
       },
       {
-        "condition": "Renal impairment: CrCl 45\u201359 ml/min",
+        "condition": "Renal impairment: CrCl 45–59 ml/min",
         "drug_name": "Cisplatin",
         "factor": 0.75,
         "notes": "Reduce to 75%"
@@ -629,7 +631,7 @@
       "Ondansetron 8mg twice a day oral for 3 days (take home)"
     ],
     "special_warnings": [
-      "Concurrently administered with radiotherapy; gemcitabine is radiosensitising \u2014 radiation therapy must be stopped if grade 3\u20134 gastrointestinal toxicity or grade 4 haematological toxicity occurs",
+      "Concurrently administered with radiotherapy; gemcitabine is radiosensitising — radiation therapy must be stopped if grade 3–4 gastrointestinal toxicity or grade 4 haematological toxicity occurs",
       "Day 1 is defined as the first day of radiotherapy treatment; cisplatin and gemcitabine administered before radiotherapy",
       "Consider formal GFR measurement prior to treatment with cisplatin on day 1 cycle 1",
       "Consider formal audiology test if relevant (cisplatin ototoxicity risk)",
@@ -656,7 +658,7 @@
       {
         "drug_name": "Trifluridine-Tipiracil",
         "dose": 35.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "Oral",
         "days": [
           1,
@@ -673,27 +675,27 @@
         "infusion_duration_hours": null,
         "max_dose": 80.0,
         "max_dose_unit": "mg",
-        "notes": "Dose calculated based on trifluridine component. Twice daily dosing. Maximum dose 80mg trifluridine per dose (160mg/day). Minimum dose 20mg/m\u00b2 trifluridine. Doses rounded to nearest 5mg (up if halfway). Maximum 3 dose reductions permitted at 5mg/m\u00b2 increments: 35\u219230\u219225\u219220mg/m\u00b2. Dose escalation not permitted after reduction. Tablets available as 15mg/6.14mg and 20mg/8.19mg (trifluridine/tipiracil hydrochloride)."
+        "notes": "Dose calculated based on trifluridine component. Twice daily dosing. Maximum dose 80mg trifluridine per dose (160mg/day). Minimum dose 20mg/m² trifluridine. Doses rounded to nearest 5mg (up if halfway). Maximum 3 dose reductions permitted at 5mg/m² increments: 35→30→25→20mg/m². Dose escalation not permitted after reduction. Tablets available as 15mg/6.14mg and 20mg/8.19mg (trifluridine/tipiracil hydrochloride)."
       }
     ],
     "dose_modifications": [
       {
-        "condition": "Febrile neutropenia or CTCAE grade 4 neutropenia (<0.5x10\u2079/L) or thrombocytopenia (<25x10\u2079/L) causing >1 week delay in next cycle",
+        "condition": "Febrile neutropenia or CTCAE grade 4 neutropenia (<0.5x10⁹/L) or thrombocytopenia (<25x10⁹/L) causing >1 week delay in next cycle",
         "drug_name": "Trifluridine-Tipiracil",
         "factor": 1.0,
-        "notes": "Interrupt dosing until toxicity resolves to CTCAE grade 1 or baseline; decrease dose by 5mg/m\u00b2 trifluridine from previous dose level to minimum of 20mg/m\u00b2"
+        "notes": "Interrupt dosing until toxicity resolves to CTCAE grade 1 or baseline; decrease dose by 5mg/m² trifluridine from previous dose level to minimum of 20mg/m²"
       },
       {
-        "condition": "Neutrophils less than 0.5x10\u2079/L (start of cycle)",
+        "condition": "Neutrophils less than 0.5x10⁹/L (start of cycle)",
         "drug_name": "Trifluridine-Tipiracil",
         "factor": 1.0,
-        "notes": "Hold until neutrophils recover to \u22651.5x10\u2079/L before starting next cycle"
+        "notes": "Hold until neutrophils recover to ≥1.5x10⁹/L before starting next cycle"
       },
       {
-        "condition": "Platelets less than 50x10\u2079/L (start of cycle)",
+        "condition": "Platelets less than 50x10⁹/L (start of cycle)",
         "drug_name": "Trifluridine-Tipiracil",
         "factor": 1.0,
-        "notes": "Hold until platelets recover to \u226575x10\u2079/L before starting next cycle"
+        "notes": "Hold until platelets recover to ≥75x10⁹/L before starting next cycle"
       },
       {
         "condition": "Moderate or severe hepatic impairment",
@@ -714,8 +716,8 @@
     ],
     "special_warnings": [
       "Maximum dose per administration is 80mg of trifluridine (maximum 160mg/day); doses rounded to nearest 5mg",
-      "Maximum of three dose reductions permitted at 5mg/m\u00b2 increments from 35mg/m\u00b2; minimum dose 20mg/m\u00b2 trifluridine; dose escalation not permitted after reduction",
-      "Oral chemotherapy \u2014 NPSA/2008/RRR001 must be followed when prescribing, dispensing or administering; must be made clear this is a short course and must not be continued beyond prescribed schedule",
+      "Maximum of three dose reductions permitted at 5mg/m² increments from 35mg/m²; minimum dose 20mg/m² trifluridine; dose escalation not permitted after reduction",
+      "Oral chemotherapy — NPSA/2008/RRR001 must be followed when prescribing, dispensing or administering; must be made clear this is a short course and must not be continued beyond prescribed schedule",
       "Patients must be assessed for suitability for oral chemotherapy prior to starting treatment",
       "If a dose is missed or withheld the patient must not make up the doses",
       "Urine testing for protein required on day 1 of each cycle",
@@ -743,7 +745,7 @@
       {
         "drug_name": "Docetaxel",
         "dose": 50.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -751,12 +753,12 @@
         "infusion_duration_hours": 1.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "In 250ml sodium chloride 0.9% over 60 minutes. Dose Level 1: 40mg/m\u00b2; Dose Level 2: 30mg/m\u00b2. Docetaxel-induced fluid retention can lead to weight gain \u2014 not a reason to alter dose."
+        "notes": "In 250ml sodium chloride 0.9% over 60 minutes. Dose Level 1: 40mg/m²; Dose Level 2: 30mg/m². Docetaxel-induced fluid retention can lead to weight gain — not a reason to alter dose."
       },
       {
         "drug_name": "Oxaliplatin",
         "dose": 85.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -764,7 +766,7 @@
         "infusion_duration_hours": 2.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "In 500ml glucose 5% over 120 minutes. Dose Level 1: 65mg/m\u00b2; Dose Level 2: 50mg/m\u00b2. Glucose 5% flush required before and after oxaliplatin. Cumulative peripheral neuropathy."
+        "notes": "In 500ml glucose 5% over 120 minutes. Dose Level 1: 65mg/m²; Dose Level 2: 50mg/m². Glucose 5% flush required before and after oxaliplatin. Cumulative peripheral neuropathy."
       },
       {
         "drug_name": "Folinic Acid",
@@ -782,7 +784,7 @@
       {
         "drug_name": "Fluorouracil",
         "dose": 2600.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1,
@@ -791,60 +793,60 @@
         "infusion_duration_hours": 24.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Continuous intravenous infusion over 24 hours via ambulatory pump. Dose Level 1: 2000mg/m\u00b2; Dose Level 2: 1600mg/m\u00b2. Central venous access required."
+        "notes": "Continuous intravenous infusion over 24 hours via ambulatory pump. Dose Level 1: 2000mg/m²; Dose Level 2: 1600mg/m². Central venous access required."
       }
     ],
     "dose_modifications": [
       {
-        "condition": "Neutrophils 0.5\u20130.99 x10\u2079/L",
+        "condition": "Neutrophils 0.5–0.99 x10⁹/L",
         "drug_name": "Docetaxel",
         "factor": 0.8,
-        "notes": "Reduce by 1 dose level (50\u219240\u219230mg/m\u00b2)"
+        "notes": "Reduce by 1 dose level (50→40→30mg/m²)"
       },
       {
-        "condition": "Neutrophils 0.5\u20130.99 x10\u2079/L",
+        "condition": "Neutrophils 0.5–0.99 x10⁹/L",
         "drug_name": "Oxaliplatin",
         "factor": 0.76,
-        "notes": "Reduce by 1 dose level (85\u219265\u219250mg/m\u00b2)"
+        "notes": "Reduce by 1 dose level (85→65→50mg/m²)"
       },
       {
-        "condition": "Neutrophils less than 0.5 x10\u2079/L",
+        "condition": "Neutrophils less than 0.5 x10⁹/L",
         "drug_name": "Docetaxel",
         "factor": 0.8,
         "notes": "Reduce by 1 dose level"
       },
       {
-        "condition": "Neutrophils less than 0.5 x10\u2079/L",
+        "condition": "Neutrophils less than 0.5 x10⁹/L",
         "drug_name": "Fluorouracil",
         "factor": 0.77,
-        "notes": "Reduce by 1 dose level (2600\u21922000\u21921600mg/m\u00b2)"
+        "notes": "Reduce by 1 dose level (2600→2000→1600mg/m²)"
       },
       {
-        "condition": "Neutrophils less than 0.5 x10\u2079/L",
+        "condition": "Neutrophils less than 0.5 x10⁹/L",
         "drug_name": "Oxaliplatin",
         "factor": 0.76,
         "notes": "Reduce by 1 dose level"
       },
       {
-        "condition": "Platelets 10\u201349.9 x10\u2079/L",
+        "condition": "Platelets 10–49.9 x10⁹/L",
         "drug_name": "Docetaxel",
         "factor": 0.8,
         "notes": "Reduce by 1 dose level"
       },
       {
-        "condition": "Platelets 10\u201349.9 x10\u2079/L",
+        "condition": "Platelets 10–49.9 x10⁹/L",
         "drug_name": "Oxaliplatin",
         "factor": 0.76,
         "notes": "Reduce by 1 dose level"
       },
       {
-        "condition": "Platelets less than 10 x10\u2079/L",
+        "condition": "Platelets less than 10 x10⁹/L",
         "drug_name": "Docetaxel",
         "factor": 0.8,
         "notes": "Reduce by 1 dose level"
       },
       {
-        "condition": "Platelets less than 10 x10\u2079/L",
+        "condition": "Platelets less than 10 x10⁹/L",
         "drug_name": "Oxaliplatin",
         "factor": 0.59,
         "notes": "Reduce by 2 dose levels"
@@ -916,10 +918,10 @@
         "notes": "Stop fluorouracil therapy"
       },
       {
-        "condition": "NCI-CTC grade 3\u20134 diarrhoea or stomatitis despite fluorouracil reduction",
+        "condition": "NCI-CTC grade 3–4 diarrhoea or stomatitis despite fluorouracil reduction",
         "drug_name": "Oxaliplatin",
         "factor": 0.88,
-        "notes": "Reduce oxaliplatin dose to 75mg/m\u00b2"
+        "notes": "Reduce oxaliplatin dose to 75mg/m²"
       },
       {
         "condition": "Peripheral neuropathy: paraesthesia with pain or functional impairment, duration >7 days",
@@ -978,7 +980,7 @@
       {
         "drug_name": "Epirubicin",
         "dose": 50.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV bolus",
         "days": [
           1
@@ -986,12 +988,14 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Cumulative lifetime limit approximately 900 mg/m\u00b2."
+        "notes": "Intravenous bolus over 10 minutes. Cumulative lifetime limit approximately 900 mg/m².",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Oxaliplatin",
         "dose": 130.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -1004,7 +1008,7 @@
       {
         "drug_name": "Fluorouracil",
         "dose": 1400.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1,
@@ -1014,60 +1018,60 @@
         "infusion_duration_hours": 168.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "1400mg/m\u00b2 total dose per infusion; continuous ambulatory pump over 7 days per dose at days 1, 8, and 15. Central venous access required."
+        "notes": "1400mg/m² total dose per infusion; continuous ambulatory pump over 7 days per dose at days 1, 8, and 15. Central venous access required."
       }
     ],
     "dose_modifications": [
       {
-        "condition": "Neutrophils 0.5\u20130.9 x10\u2079/L",
+        "condition": "Neutrophils 0.5–0.9 x10⁹/L",
         "drug_name": "Fluorouracil",
         "factor": 0.0,
         "notes": "Stop fluorouracil and delay until recovery"
       },
       {
-        "condition": "Neutrophils 0.5\u20130.9 x10\u2079/L",
+        "condition": "Neutrophils 0.5–0.9 x10⁹/L",
         "drug_name": "Epirubicin",
         "factor": 0.75,
-        "notes": "Give oxaliplatin 100mg/m\u00b2 and epirubicin 37.5mg/m\u00b2; restart fluorouracil when counts recover"
+        "notes": "Give oxaliplatin 100mg/m² and epirubicin 37.5mg/m²; restart fluorouracil when counts recover"
       },
       {
-        "condition": "Neutrophils less than 0.5 x10\u2079/L",
+        "condition": "Neutrophils less than 0.5 x10⁹/L",
         "drug_name": "Fluorouracil",
         "factor": 0.0,
         "notes": "Stop fluorouracil and delay all treatment until recovery"
       },
       {
-        "condition": "Neutrophils less than 0.5 x10\u2079/L",
+        "condition": "Neutrophils less than 0.5 x10⁹/L",
         "drug_name": "Epirubicin",
         "factor": 0.5,
-        "notes": "Give oxaliplatin 100mg/m\u00b2 and epirubicin 25mg/m\u00b2; restart fluorouracil at full dose when recovered"
+        "notes": "Give oxaliplatin 100mg/m² and epirubicin 25mg/m²; restart fluorouracil at full dose when recovered"
       },
       {
-        "condition": "Platelets 50\u201374 x10\u2079/L",
+        "condition": "Platelets 50–74 x10⁹/L",
         "drug_name": "Fluorouracil",
         "factor": 0.0,
         "notes": "Stop fluorouracil and delay until recovery"
       },
       {
-        "condition": "Platelets 50\u201374 x10\u2079/L",
+        "condition": "Platelets 50–74 x10⁹/L",
         "drug_name": "Epirubicin",
         "factor": 0.75,
-        "notes": "Give oxaliplatin 100mg/m\u00b2 and epirubicin 37.5mg/m\u00b2"
+        "notes": "Give oxaliplatin 100mg/m² and epirubicin 37.5mg/m²"
       },
       {
-        "condition": "Platelets 25\u201349 x10\u2079/L",
+        "condition": "Platelets 25–49 x10⁹/L",
         "drug_name": "Epirubicin",
         "factor": 0.5,
-        "notes": "Stop fluorouracil, delay oxaliplatin and epirubicin; give oxaliplatin 100mg/m\u00b2 and epirubicin 25mg/m\u00b2"
+        "notes": "Stop fluorouracil, delay oxaliplatin and epirubicin; give oxaliplatin 100mg/m² and epirubicin 25mg/m²"
       },
       {
-        "condition": "Platelets less than 25 x10\u2079/L",
+        "condition": "Platelets less than 25 x10⁹/L",
         "drug_name": "Epirubicin",
         "factor": 0.0,
-        "notes": "Stop all three agents until counts recover; omit epirubicin from subsequent cycles; restart full dose fluorouracil and oxaliplatin 100mg/m\u00b2"
+        "notes": "Stop all three agents until counts recover; omit epirubicin from subsequent cycles; restart full dose fluorouracil and oxaliplatin 100mg/m²"
       },
       {
-        "condition": "Hepatic impairment: bilirubin 24\u201351 umol/L",
+        "condition": "Hepatic impairment: bilirubin 24–51 umol/L",
         "drug_name": "Epirubicin",
         "factor": 0.5,
         "notes": "Reduce dose by 50%"
@@ -1100,7 +1104,7 @@
         "condition": "Oxaliplatin neurosensory toxicity NCI-CTC grade 2, lasting more than 7 days",
         "drug_name": "Oxaliplatin",
         "factor": 0.58,
-        "notes": "Reduce oxaliplatin to 75mg/m\u00b2"
+        "notes": "Reduce oxaliplatin to 75mg/m²"
       },
       {
         "condition": "Oxaliplatin neurosensory toxicity NCI-CTC grade 3 or above",
@@ -1109,28 +1113,28 @@
         "notes": "Discontinue oxaliplatin"
       },
       {
-        "condition": "NCI-CTC grade 3\u20134 diarrhoea or stomatitis despite fluorouracil dose reduction",
+        "condition": "NCI-CTC grade 3–4 diarrhoea or stomatitis despite fluorouracil dose reduction",
         "drug_name": "Oxaliplatin",
         "factor": 0.58,
-        "notes": "Reduce oxaliplatin to 75mg/m\u00b2"
+        "notes": "Reduce oxaliplatin to 75mg/m²"
       },
       {
         "condition": "Fluorouracil stomatitis/palmar-plantar/diarrhoea Grade 2",
         "drug_name": "Fluorouracil",
         "factor": 1.0,
-        "notes": "Stop fluorouracil and restart with 50mg/m\u00b2 dose reduction"
+        "notes": "Stop fluorouracil and restart with 50mg/m² dose reduction"
       },
       {
         "condition": "Fluorouracil stomatitis/palmar-plantar/diarrhoea Grade 3",
         "drug_name": "Fluorouracil",
         "factor": 1.0,
-        "notes": "Stop until recovered and restart with 100mg/m\u00b2 dose reduction"
+        "notes": "Stop until recovered and restart with 100mg/m² dose reduction"
       },
       {
         "condition": "Fluorouracil stomatitis/palmar-plantar/diarrhoea Grade 4",
         "drug_name": "Fluorouracil",
         "factor": 1.0,
-        "notes": "Stop until recovered and restart with 150mg/m\u00b2 dose reduction"
+        "notes": "Stop until recovered and restart with 150mg/m² dose reduction"
       }
     ],
     "pre_medications": [
@@ -1143,12 +1147,12 @@
     ],
     "special_warnings": [
       "DPD testing required before initiation of fluorouracil; patients with complete or partial DPD deficiency are at increased risk of severe and fatal toxicity",
-      "Epirubicin cumulative lifetime limit approximately 900 mg/m\u00b2; cardiac failure is a known adverse effect",
+      "Epirubicin cumulative lifetime limit approximately 900 mg/m²; cardiac failure is a known adverse effect",
       "Baseline LVEF must be measured before starting therapy, particularly in patients with cardiac history or elderly patients",
       "Glucose 5% flush required before and after oxaliplatin; oxaliplatin must only be mixed with glucose 5%",
-      "Oxaliplatin cumulative peripheral neuropathy; rare reports of acute interstitial lung disease/lung fibrosis \u2014 stop and investigate unexplained respiratory symptoms",
+      "Oxaliplatin cumulative peripheral neuropathy; rare reports of acute interstitial lung disease/lung fibrosis — stop and investigate unexplained respiratory symptoms",
       "Central venous access and ambulatory infusion pump required for fluorouracil continuous infusion",
-      "Epirubicin is a vesicant; fluorouracil is an inflammitant; oxaliplatin is an exfoliant \u2014 follow extravasation protocols",
+      "Epirubicin is a vesicant; fluorouracil is an inflammitant; oxaliplatin is an exfoliant — follow extravasation protocols",
       "Fluorouracil is contra-indicated when bilirubin >85 umol/L or AST/ALT >180 units"
     ],
     "required_patient_fields": [
@@ -1163,7 +1167,7 @@
   },
   {
     "protocol_code": "FOLFIRINOX-PANCREATIC",
-    "protocol_name": "Fluorouracil-Folinic Acid-Irinotecan-Oxaliplatin (FOLFIRINOX) \u2013 Pancreatic Cancer",
+    "protocol_name": "Fluorouracil-Folinic Acid-Irinotecan-Oxaliplatin (FOLFIRINOX) – Pancreatic Cancer",
     "disease_site": "Gastrointestinal",
     "category": "gastrointestinal",
     "cycle_length_days": 14,
@@ -1172,7 +1176,7 @@
       {
         "drug_name": "Oxaliplatin",
         "dose": 85.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -1180,12 +1184,12 @@
         "infusion_duration_hours": 2.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "In 500ml glucose 5% over 120 minutes. Glucose 5% flush required before and after. Dose reduction target: 60mg/m\u00b2. Cumulative peripheral neuropathy; increase infusion to 6 hours for acute laryngopharyngeal dysaesthesia. Contra-indicated if CrCl <20 ml/min."
+        "notes": "In 500ml glucose 5% over 120 minutes. Glucose 5% flush required before and after. Dose reduction target: 60mg/m². Cumulative peripheral neuropathy; increase infusion to 6 hours for acute laryngopharyngeal dysaesthesia. Contra-indicated if CrCl <20 ml/min."
       },
       {
         "drug_name": "Irinotecan",
         "dose": 180.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -1193,7 +1197,7 @@
         "infusion_duration_hours": 1.5,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "In 250ml sodium chloride 0.9% over 90 minutes. Dose reduction target: 150mg/m\u00b2. Associated with acute cholinergic syndrome; atropine 0.25mg SC required prior to infusion."
+        "notes": "In 250ml sodium chloride 0.9% over 90 minutes. Dose reduction target: 150mg/m². Associated with acute cholinergic syndrome; atropine 0.25mg SC required prior to infusion."
       },
       {
         "drug_name": "Folinic Acid",
@@ -1211,7 +1215,7 @@
       {
         "drug_name": "Fluorouracil",
         "dose": 400.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV bolus",
         "days": [
           1
@@ -1219,12 +1223,12 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "IV bolus over 10 minutes (400mg/m\u00b2). Given after folinic acid. Omit bolus dose for haematological or diarrhoea toxicity as per dose modification tables."
+        "notes": "IV bolus over 10 minutes (400mg/m²). Given after folinic acid. Omit bolus dose for haematological or diarrhoea toxicity as per dose modification tables."
       },
       {
         "drug_name": "Fluorouracil",
         "dose": 2400.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1,
@@ -1238,64 +1242,64 @@
     ],
     "dose_modifications": [
       {
-        "condition": "Neutrophils less than 1.5 x10\u2079/L or febrile neutropenia or NCI-CTC grade 3/4 infection or grade 4 neutropenia >7 days (1st occurrence)",
+        "condition": "Neutrophils less than 1.5 x10⁹/L or febrile neutropenia or NCI-CTC grade 3/4 infection or grade 4 neutropenia >7 days (1st occurrence)",
         "drug_name": "Fluorouracil",
         "factor": 1.0,
-        "notes": "Omit bolus dose (150mg/m\u00b2 infusion maintained at 100%)"
+        "notes": "Omit bolus dose (150mg/m² infusion maintained at 100%)"
       },
       {
-        "condition": "Neutrophils less than 1.5 x10\u2079/L or febrile neutropenia or NCI-CTC grade 3/4 infection or grade 4 neutropenia >7 days (1st occurrence)",
+        "condition": "Neutrophils less than 1.5 x10⁹/L or febrile neutropenia or NCI-CTC grade 3/4 infection or grade 4 neutropenia >7 days (1st occurrence)",
         "drug_name": "Irinotecan",
         "factor": 1.0,
         "notes": "100% dose maintained"
       },
       {
-        "condition": "Neutrophils less than 1.5 x10\u2079/L (2nd occurrence)",
+        "condition": "Neutrophils less than 1.5 x10⁹/L (2nd occurrence)",
         "drug_name": "Fluorouracil",
         "factor": 1.0,
         "notes": "Omit bolus dose"
       },
       {
-        "condition": "Neutrophils less than 1.5 x10\u2079/L (2nd occurrence)",
+        "condition": "Neutrophils less than 1.5 x10⁹/L (2nd occurrence)",
         "drug_name": "Irinotecan",
         "factor": 1.0,
-        "notes": "Reduce to 150mg/m\u00b2"
+        "notes": "Reduce to 150mg/m²"
       },
       {
-        "condition": "Neutrophils less than 1.5 x10\u2079/L (2nd occurrence)",
+        "condition": "Neutrophils less than 1.5 x10⁹/L (2nd occurrence)",
         "drug_name": "Oxaliplatin",
         "factor": 0.71,
-        "notes": "Reduce to 60mg/m\u00b2"
+        "notes": "Reduce to 60mg/m²"
       },
       {
-        "condition": "Neutrophils less than 1.5 x10\u2079/L (3rd occurrence)",
+        "condition": "Neutrophils less than 1.5 x10⁹/L (3rd occurrence)",
         "drug_name": "Fluorouracil",
         "factor": 0.0,
         "notes": "Stop treatment"
       },
       {
-        "condition": "Platelets less than 75 x10\u2079/L or NCI-CTC grade 3/4 thrombocytopenia (1st occurrence)",
+        "condition": "Platelets less than 75 x10⁹/L or NCI-CTC grade 3/4 thrombocytopenia (1st occurrence)",
         "drug_name": "Fluorouracil",
         "factor": 0.75,
         "notes": "Reduce to 75% of original dose"
       },
       {
-        "condition": "Platelets less than 75 x10\u2079/L (1st occurrence)",
+        "condition": "Platelets less than 75 x10⁹/L (1st occurrence)",
         "drug_name": "Oxaliplatin",
         "factor": 0.71,
-        "notes": "Reduce to 60mg/m\u00b2"
+        "notes": "Reduce to 60mg/m²"
       },
       {
-        "condition": "Platelets less than 75 x10\u2079/L (2nd occurrence)",
+        "condition": "Platelets less than 75 x10⁹/L (2nd occurrence)",
         "drug_name": "Fluorouracil",
         "factor": 0.75,
         "notes": "Maintain at 75%"
       },
       {
-        "condition": "Platelets less than 75 x10\u2079/L (2nd occurrence)",
+        "condition": "Platelets less than 75 x10⁹/L (2nd occurrence)",
         "drug_name": "Irinotecan",
         "factor": 1.0,
-        "notes": "Reduce to 150mg/m\u00b2"
+        "notes": "Reduce to 150mg/m²"
       },
       {
         "condition": "Diarrhoea NCI-CTC grade 3/4 or with fever/neutropenia (1st occurrence)",
@@ -1307,7 +1311,7 @@
         "condition": "Diarrhoea NCI-CTC grade 3/4 or with fever/neutropenia (1st occurrence)",
         "drug_name": "Irinotecan",
         "factor": 1.0,
-        "notes": "Reduce to 150mg/m\u00b2"
+        "notes": "Reduce to 150mg/m²"
       },
       {
         "condition": "Diarrhoea NCI-CTC grade 3/4 or with fever/neutropenia (2nd occurrence)",
@@ -1319,13 +1323,13 @@
         "condition": "Diarrhoea NCI-CTC grade 3/4 (2nd occurrence)",
         "drug_name": "Irinotecan",
         "factor": 1.0,
-        "notes": "Reduce to 150mg/m\u00b2"
+        "notes": "Reduce to 150mg/m²"
       },
       {
         "condition": "Diarrhoea NCI-CTC grade 3/4 (2nd occurrence)",
         "drug_name": "Oxaliplatin",
         "factor": 0.71,
-        "notes": "Reduce to 60mg/m\u00b2"
+        "notes": "Reduce to 60mg/m²"
       },
       {
         "condition": "Hepatic impairment: Child-Pugh A",
@@ -1346,7 +1350,7 @@
         "notes": "Reduce to 50%; may be increased according to tolerability"
       },
       {
-        "condition": "Hepatic impairment: bilirubin 35\u201350 umol/L",
+        "condition": "Hepatic impairment: bilirubin 35–50 umol/L",
         "drug_name": "Irinotecan",
         "factor": 0.75,
         "notes": "Reduce to 75%"
@@ -1373,7 +1377,7 @@
         "condition": "Oxaliplatin neurosensory toxicity NCI-CTC grade 2, lasting more than 7 days",
         "drug_name": "Oxaliplatin",
         "factor": 0.71,
-        "notes": "Reduce to 60mg/m\u00b2"
+        "notes": "Reduce to 60mg/m²"
       },
       {
         "condition": "Oxaliplatin neurosensory toxicity NCI-CTC grade 3 or above",

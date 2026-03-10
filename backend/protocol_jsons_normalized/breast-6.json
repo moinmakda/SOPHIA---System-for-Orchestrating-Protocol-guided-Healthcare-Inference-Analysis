@@ -18,7 +18,9 @@
         "infusion_duration_hours": 0.17,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "EC phase: cycles 1-3. Intravenous bolus over 10 minutes. Dose banded per national dose bands (20PM)."
+        "notes": "EC phase: cycles 1-3. Intravenous bolus over 10 minutes. Dose banded per national dose bands (20PM).",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Epirubicin",
@@ -31,7 +33,9 @@
         "infusion_duration_hours": 0.17,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "EC phase: cycles 1-3. Intravenous bolus over 10 minutes. Dose banded per national dose bands (2PM). Maximum lifetime cumulative dose 900 mg/m²."
+        "notes": "EC phase: cycles 1-3. Intravenous bolus over 10 minutes. Dose banded per national dose bands (2PM). Maximum lifetime cumulative dose 900 mg/m².",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Docetaxel",
@@ -268,7 +272,9 @@
         "infusion_duration_hours": 0.17,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "EC phase: cycles 1-3. Intravenous bolus over 10 minutes. Dose banded per national dose bands (20PM)."
+        "notes": "EC phase: cycles 1-3. Intravenous bolus over 10 minutes. Dose banded per national dose bands (20PM).",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Epirubicin",
@@ -281,7 +287,9 @@
         "infusion_duration_hours": 0.17,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "EC phase: cycles 1-3. Intravenous bolus over 10 minutes. Dose banded per national dose bands (2PM). Maximum lifetime cumulative dose 900 mg/m²."
+        "notes": "EC phase: cycles 1-3. Intravenous bolus over 10 minutes. Dose banded per national dose bands (2PM). Maximum lifetime cumulative dose 900 mg/m².",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Docetaxel",
@@ -462,7 +470,9 @@
         "infusion_duration_hours": 0.17,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "EC phase: cycles 1-4. Intravenous bolus over 10 minutes. Dose banded per national dose bands (20PM)."
+        "notes": "EC phase: cycles 1-4. Intravenous bolus over 10 minutes. Dose banded per national dose bands (20PM).",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Epirubicin",
@@ -475,7 +485,9 @@
         "infusion_duration_hours": 0.17,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "EC phase: cycles 1-4. Intravenous bolus over 10 minutes. Dose banded per national dose bands (2PM). Maximum lifetime cumulative dose 900 mg/m²."
+        "notes": "EC phase: cycles 1-4. Intravenous bolus over 10 minutes. Dose banded per national dose bands (2PM). Maximum lifetime cumulative dose 900 mg/m².",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Paclitaxel",
@@ -1453,7 +1465,9 @@
         "infusion_duration_hours": 0.17,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Dose banded per national dose bands (2mg/ml PM). Maximum lifetime cumulative dose 900 mg/m². Vesicant."
+        "notes": "Intravenous bolus over 10 minutes. Dose banded per national dose bands (2mg/ml PM). Maximum lifetime cumulative dose 900 mg/m². Vesicant.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Cyclophosphamide",
@@ -1466,7 +1480,9 @@
         "infusion_duration_hours": 0.17,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Dose banded per national dose bands (20mg/ml PM). Neutral on extravasation."
+        "notes": "Intravenous bolus over 10 minutes. Dose banded per national dose bands (20mg/ml PM). Neutral on extravasation.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       }
     ],
     "dose_modifications": [

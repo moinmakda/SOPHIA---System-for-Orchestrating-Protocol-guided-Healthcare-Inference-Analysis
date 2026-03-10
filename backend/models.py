@@ -240,6 +240,15 @@ class DoseModificationRule(BaseModel):
     action_text: str = ""  # Text to show in the changes list (nurse-friendly)
     priority: int = 1  # Priority order (1 = highest, apply first)
     check_if_already_reduced: bool = False  # Skip if dose already reduced by other rule
+
+    # Secondary condition for compound AND/OR rules
+    # e.g. "Bilirubin <30 AND AST 2-3×ULN" → primary=bilirubin, secondary=ast
+    secondary_parameter: str = ""          # e.g. "ast", "alt"
+    secondary_condition_type: str = ""     # "less_than", "greater_than", "range", "normal", "elevated"
+    secondary_threshold_value: Optional[float] = None
+    secondary_threshold_low: Optional[float] = None
+    secondary_threshold_high: Optional[float] = None
+    secondary_connector: str = ""          # "AND" or "OR" — how primary+secondary are combined
     
     @field_validator('rule_id', 'parameter', 'parameter_unit', 'condition', 'condition_type', 
                      'modification', 'modification_type', 'description', 'action_text', mode='before')
@@ -1020,6 +1029,10 @@ class CalculatedDose(BaseModel):
     # Banding info (for dose banding)
     banded_dose: Optional[float] = None
 
+    # Pre-cap calculated dose (set when a max dose cap was applied, e.g. vincristine 2mg cap)
+    # This preserves the true BSA-based calculation so the banded display shows e.g. "2mg (capped; calculated: 2.8mg)"
+    uncapped_calculated_dose: Optional[float] = None
+
     @property
     def duration_human(self) -> Optional[str]:
         """Human-readable duration string (e.g. '2 hr', '7 days', '30 mins')"""
@@ -1109,6 +1122,8 @@ class ProtocolResponse(BaseModel):
     # Safety flags
     treatment_delay_recommended: bool = False
     delay_reasons: list[str] = []
+    # Hard stop: neutrophils <0.5 or platelets <50 — ALL chemotherapy withheld, no prescriber override
+    treatment_absolutely_contraindicated: bool = False
     
     # Audit trail (required for regulatory compliance)
     generated_at: Optional[str] = None  # ISO timestamp

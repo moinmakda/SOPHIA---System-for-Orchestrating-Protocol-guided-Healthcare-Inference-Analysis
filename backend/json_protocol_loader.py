@@ -291,21 +291,64 @@ def _convert_drug(d: dict, is_premed: bool = False) -> ProtocolDrug:
     )
 
 
+def _parse_threshold_from_substr(substr: str, uln: float = 40.0) -> dict:
+    """
+    Extract a single threshold (>, <, range) from a substring.
+    Handles ×ULN / xULN notation by multiplying by uln (default 40 for AST/ALT).
+    Returns partial dict with condition_type + threshold fields, or {} if nothing found.
+    """
+    # Handle N×ULN range: e.g. "2-3×uln" or "2–3×uln"
+    uln_range_m = re.search(r'(\d+(?:\.\d+)?)\s*[-]\s*(\d+(?:\.\d+)?)\s*[x×]\s*uln', substr, re.I)
+    uln_gt_m    = re.search(r'>(\d+(?:\.\d+)?)\s*[x×]\s*uln', substr, re.I)
+    uln_lt_m    = re.search(r'<(\d+(?:\.\d+)?)\s*[x×]\s*uln', substr, re.I)
+    if uln_range_m:
+        lo = float(uln_range_m.group(1)) * uln
+        hi = float(uln_range_m.group(2)) * uln
+        return dict(condition_type="range", threshold_low=lo, threshold_high=hi,
+                    threshold_value=None)
+    elif uln_gt_m:
+        return dict(condition_type="greater_than", threshold_value=float(uln_gt_m.group(1)) * uln,
+                    threshold_low=None, threshold_high=None)
+    elif uln_lt_m:
+        return dict(condition_type="less_than", threshold_value=float(uln_lt_m.group(1)) * uln,
+                    threshold_low=None, threshold_high=None)
+
+    gt_m = re.search(r'>(\d+(?:\.\d+)?)', substr)
+    lt_m = re.search(r'<(\d+(?:\.\d+)?)', substr)
+    range_m = re.search(r'(\d{2,}(?:\.\d+)?)\s*[-]\s*(\d{2,}(?:\.\d+)?)', substr)
+
+    if range_m and not lt_m and not gt_m:
+        lo, hi = float(range_m.group(1)), float(range_m.group(2))
+        return dict(condition_type="range", threshold_low=lo, threshold_high=hi,
+                    threshold_value=None)
+    elif lt_m:
+        return dict(condition_type="less_than", threshold_value=float(lt_m.group(1)),
+                    threshold_low=None, threshold_high=None)
+    elif gt_m:
+        return dict(condition_type="greater_than", threshold_value=float(gt_m.group(1)),
+                    threshold_low=None, threshold_high=None)
+    elif "normal" in substr:
+        return dict(condition_type="normal", threshold_value=None,
+                    threshold_low=None, threshold_high=None)
+    return {}
+
+
 def _parse_dm_condition(condition_str: str) -> dict:
     """
     Parse a free-text dose modification condition string to extract structured fields.
-    Examples handled:
-      "Hepatic impairment — Doxorubicin: Bilirubin >85 µmol/L"
-      "Renal impairment — Cyclophosphamide: CrCl 10–20 ml/min"
-      "Neutrophils <1×10⁹/L on proposed day 1"
-      "Platelets <100×10⁹/L on proposed day 1"
-    Returns dict with keys: parameter, condition_type, threshold_value,
-                             threshold_low, threshold_high
+    Handles compound AND/OR clauses, e.g.:
+      "Bilirubin <30 AND AST/ALT 2-3×ULN"
+      "Bilirubin >51 AND AST/ALT normal"
+      "Bilirubin 30-51 OR AST/ALT 60-180"
+      "Bilirubin >85 µmol/L"
+      "CrCl 10-20 ml/min"
+      "Neutrophils <1×10⁹/L"
+
+    Returns dict with primary + optional secondary condition fields.
     """
     # Normalise unicode dashes and spaces
     s = condition_str.replace('–', '-').replace('—', ' ').lower()
 
-    # Parameter keyword → canonical name
     PARAM_KEYWORDS = [
         ('bilirubin', 'bilirubin'),
         ('crcl', 'creatinine_clearance'),
@@ -315,10 +358,11 @@ def _parse_dm_condition(condition_str: str) -> dict:
         ('platelet', 'platelets'),
         ('haemoglobin', 'hemoglobin'),
         ('hemoglobin', 'hemoglobin'),
+        ('ast/alt', 'ast'),   # must come before 'ast' and 'alt'
         ('ast', 'ast'),
         ('alt', 'alt'),
-        ('ast/alt', 'ast'),
     ]
+
     parameter = ""
     for kw, canonical in PARAM_KEYWORDS:
         if kw in s:
@@ -330,12 +374,12 @@ def _parse_dm_condition(condition_str: str) -> dict:
 
     result = {"parameter": parameter}
 
-    # Find the substring starting from the parameter keyword occurrence,
-    # and truncate at " and" to ignore compound clauses (e.g. "Bili 30-50 and AST >3×ULN")
+    # Locate the primary parameter in the string
     param_kw_variants = [
-        parameter.replace("_", " "),        # "creatinine clearance"
-        parameter.replace("creatinine_clearance", "crcl"),  # "crcl"
-        parameter,                           # "bilirubin" etc.
+        parameter.replace("_", " "),
+        parameter.replace("creatinine_clearance", "crcl"),
+        "ast/alt" if parameter == "ast" and "ast/alt" in s else parameter,
+        parameter,
     ]
     param_pos = -1
     for kw in param_kw_variants:
@@ -343,33 +387,52 @@ def _parse_dm_condition(condition_str: str) -> dict:
         if p >= 0:
             param_pos = p
             break
-    substr = s[param_pos:] if param_pos >= 0 else s
-    # Cut at " and" to avoid picking up compound qualifier ranges (e.g. "2-3×ULN")
-    and_pos = re.search(r'\s+and\b', substr)
-    if and_pos:
-        substr = substr[:and_pos.start()]
+    substr_full = s[param_pos:] if param_pos >= 0 else s
 
-    # greater-than: >N
-    gt_m = re.search(r'>(\d+(?:\.\d+)?)', substr)
-    # less-than: <N
-    lt_m = re.search(r'<(\d+(?:\.\d+)?)', substr)
-    # Range: N-M with two-digit minimum to exclude multipliers like "2-3×"
-    range_m = re.search(r'(\d{2,}(?:\.\d+)?)\s*[-]\s*(\d{2,}(?:\.\d+)?)', substr)
+    # Detect AND / OR / AND/OR connector
+    connector = ""
+    andor_m = re.search(r'\s+(and/or)\s+', substr_full)
+    and_m   = re.search(r'\s+(and)\s+', substr_full)
+    or_m    = re.search(r'\s+(or)\s+',  substr_full)
+    connector_m = None
+    if andor_m:
+        connector = "OR"   # AND/OR treated as OR (either condition triggers the rule)
+        connector_m = andor_m
+    elif and_m and (not or_m or and_m.start() < or_m.start()):
+        connector = "AND"
+        connector_m = and_m
+    elif or_m:
+        connector = "OR"
+        connector_m = or_m
 
-    if range_m and not lt_m and not gt_m:
-        lo, hi = float(range_m.group(1)), float(range_m.group(2))
-        result.update(condition_type="range", threshold_low=lo, threshold_high=hi,
-                      threshold_value=None)
-    elif lt_m:
-        result.update(condition_type="less_than", threshold_value=float(lt_m.group(1)),
-                      threshold_low=None, threshold_high=None)
-    elif gt_m:
-        result.update(condition_type="greater_than", threshold_value=float(gt_m.group(1)),
-                      threshold_low=None, threshold_high=None)
-    elif range_m:
-        lo, hi = float(range_m.group(1)), float(range_m.group(2))
-        result.update(condition_type="range", threshold_low=lo, threshold_high=hi,
-                      threshold_value=None)
+    # Primary clause: everything up to the connector (or full string if no connector)
+    if connector_m:
+        primary_substr = substr_full[:connector_m.start()]
+        secondary_substr = substr_full[connector_m.end():]
+    else:
+        primary_substr = substr_full
+        secondary_substr = ""
+
+    # Parse primary threshold
+    primary_thresh = _parse_threshold_from_substr(primary_substr)
+    result.update(primary_thresh)
+
+    # Parse secondary clause if present
+    if connector and secondary_substr:
+        # Identify secondary parameter
+        sec_param = ""
+        for kw, canonical in PARAM_KEYWORDS:
+            if kw in secondary_substr:
+                sec_param = canonical
+                break
+        if sec_param:
+            sec_thresh = _parse_threshold_from_substr(secondary_substr)
+            result["secondary_parameter"] = sec_param
+            result["secondary_connector"] = connector
+            result["secondary_condition_type"] = sec_thresh.get("condition_type", "")
+            result["secondary_threshold_value"] = sec_thresh.get("threshold_value")
+            result["secondary_threshold_low"] = sec_thresh.get("threshold_low")
+            result["secondary_threshold_high"] = sec_thresh.get("threshold_high")
 
     return result
 
@@ -418,6 +481,12 @@ def _convert_dose_modification(dm: dict) -> DoseModificationRule:
         modification_percent=int(round(factor * 100)) if factor < 1.0 else None,
         description=description,
         action_text=description,
+        secondary_parameter=parsed.get("secondary_parameter", ""),
+        secondary_connector=parsed.get("secondary_connector", ""),
+        secondary_condition_type=parsed.get("secondary_condition_type", ""),
+        secondary_threshold_value=parsed.get("secondary_threshold_value"),
+        secondary_threshold_low=parsed.get("secondary_threshold_low"),
+        secondary_threshold_high=parsed.get("secondary_threshold_high"),
     )
 
 

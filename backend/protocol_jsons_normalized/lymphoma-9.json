@@ -1138,12 +1138,12 @@
         "days": [
           1
         ],
-        "infusion_duration_hours": 0.167,
+        "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "diluent": "Sodium chloride 0.9%",
-        "diluent_volume_ml": 100,
-        "notes": "Intravenous bolus over 10 minutes. Dose banded per CSCCN agreed bands. Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). VESICANT — avoid extravasation. Discontinue if cardiac failure develops. Administer AFTER rituximab and ondansetron."
+        "diluent": null,
+        "diluent_volume_ml": null,
+        "notes": "VESICANT — slow IV push via syringe directly into fast-running IV line (sodium chloride 0.9%). DO NOT dilute in a mini-bag — extravasation risk causes severe tissue necrosis. Flush line before and after with sodium chloride 0.9%. Dose banded per CSCCN agreed bands. Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). Discontinue if cardiac failure develops. Administer AFTER rituximab and ondansetron."
       },
       {
         "drug_name": "Vincristine",
@@ -1194,21 +1194,22 @@
       }
     ],
     "pre_medications": [
-      "Chlorphenamine 10mg intravenous 30 minutes prior to rituximab",
-      "Paracetamol 1000mg oral 30 minutes prior to rituximab",
-      "Ondansetron 8mg oral or intravenous 15-30 minutes prior to chemotherapy"
+      "Prednisolone 100mg oral — patient must take on morning of treatment DAY 1 BEFORE rituximab is started. Nurse to verify dose taken and document time. If forgotten, administer 100mg oral 30 minutes prior to rituximab.",
+      "Chlorphenamine 10mg intravenous — 30 minutes prior to rituximab",
+      "Paracetamol 1000mg oral — 30 minutes prior to rituximab",
+      "Ondansetron 8mg oral or intravenous — 15-30 minutes prior to chemotherapy (after rituximab is running, before doxorubicin)"
     ],
     "take_home_medicines": [
-      "Prednisolone 100mg oral once a day on morning of next treatment day (day 1 of next cycle)",
+      "Prednisolone 100mg oral once a day on morning of next treatment day (day 1 of next cycle) — CYCLES 1–5 ONLY. Do not issue for cycle 6 (no further cycle follows).",
       "Prednisolone 100mg oral once a day for 4 days starting day 2 (take with or after food)",
       "Metoclopramide 10mg oral three times a day when required",
       "Ondansetron 8mg oral twice a day for 3 days starting evening of day 1",
-      "Allopurinol 300mg oral once a day for 21 days (cycle 1 only)"
+      "Allopurinol 300mg oral once a day for 21 days — CYCLE 1 ONLY"
     ],
     "rescue_medications": [
       "Hydrocortisone 100mg intravenous when required for rituximab infusion related reactions",
       "Salbutamol 2.5mg nebulised when required for rituximab related bronchospasm",
-      "Pethidine 25mg intravenous when required for rituximab related rigors that fail to respond to steroids"
+      "Pethidine 25–50mg intravenous when required for rituximab related rigors that fail to respond to steroids"
     ],
     "dose_modifications": [
       {
@@ -1272,81 +1273,75 @@
         "notes": "Reduce cyclophosphamide and doxorubicin by 50% for all subsequent cycles."
       },
       {
-        "condition": "Hepatic impairment — Doxorubicin: Bilirubin 21–30 µmol/L",
+        "condition": "Hepatic impairment — Doxorubicin: Bilirubin <30 µmol/L AND AST/ALT 2–3×ULN",
         "drug_name": "Doxorubicin",
         "factor": 0.75,
-        "notes": "Reduce doxorubicin to 75% (NHS RCHOP21 guideline)."
+        "notes": "Reduce doxorubicin to 75% (UHS RCHOP21 v1.2: bilirubin <30 AND AST/ALT 2-3×ULN)."
       },
       {
-        "condition": "Hepatic impairment — Doxorubicin: Bilirubin 31–85 µmol/L",
+        "condition": "Hepatic impairment — Doxorubicin: Bilirubin 30–50 µmol/L AND/OR AST/ALT >3×ULN",
         "drug_name": "Doxorubicin",
         "factor": 0.5,
-        "notes": "Reduce doxorubicin to 50% (NHS RCHOP21 guideline)."
+        "notes": "Reduce doxorubicin to 50% (UHS RCHOP21 v1.2: bilirubin 30-50 and/or AST/ALT >3×ULN)."
+      },
+      {
+        "condition": "Hepatic impairment — Doxorubicin: Bilirubin 51–85 µmol/L",
+        "drug_name": "Doxorubicin",
+        "factor": 0.25,
+        "notes": "Reduce doxorubicin to 25% (UHS RCHOP21 v1.2: bilirubin 51-85 µmol/L)."
       },
       {
         "condition": "Hepatic impairment — Doxorubicin: Bilirubin >85 µmol/L",
         "drug_name": "Doxorubicin",
         "factor": 0.0,
-        "notes": "Omit doxorubicin (NHS RCHOP21 guideline — severe hepatic impairment)."
+        "notes": "Omit doxorubicin (UHS RCHOP21 v1.2: bilirubin >85 µmol/L — severe hepatic impairment)."
       },
       {
-        "condition": "Hepatic impairment — Cyclophosphamide: Bilirubin 21–30 µmol/L",
-        "drug_name": "Cyclophosphamide",
-        "factor": 0.75,
-        "notes": "Reduce cyclophosphamide to 75% (NHS RCHOP21 guideline)."
-      },
-      {
-        "condition": "Hepatic impairment — Cyclophosphamide: Bilirubin 31–85 µmol/L",
-        "drug_name": "Cyclophosphamide",
-        "factor": 0.5,
-        "notes": "Reduce cyclophosphamide to 50% (NHS RCHOP21 guideline)."
-      },
-      {
-        "condition": "Hepatic impairment — Vincristine: Bilirubin 30–51 µmol/L or AST/ALT 60–180 units/L",
+        "condition": "Hepatic impairment — Vincristine: Bilirubin 30–51 µmol/L OR AST/ALT 60–180 units/L",
         "drug_name": "Vincristine",
         "factor": 0.5,
-        "notes": "Reduce to 50%."
+        "notes": "Reduce vincristine to 50% (UHS RCHOP21 v1.2)."
       },
       {
-        "condition": "Hepatic impairment — Vincristine: Bilirubin >51 µmol/L and AST/ALT normal",
+        "condition": "Hepatic impairment — Vincristine: Bilirubin >51 µmol/L AND AST/ALT normal",
         "drug_name": "Vincristine",
         "factor": 0.5,
-        "notes": "Reduce to 50%."
+        "notes": "Reduce vincristine to 50% (UHS RCHOP21 v1.2)."
       },
       {
-        "condition": "Hepatic impairment — Vincristine: Bilirubin >51 µmol/L and AST/ALT >180 units/L",
+        "condition": "Hepatic impairment — Vincristine: Bilirubin >51 µmol/L AND AST/ALT >180 units/L",
         "drug_name": "Vincristine",
         "factor": 0.0,
-        "notes": "Omit dose."
+        "notes": "Omit vincristine (UHS RCHOP21 v1.2: bilirubin >51 AND AST/ALT >180)."
       },
       {
         "condition": "Renal impairment — Cyclophosphamide: CrCl 10–20 ml/min",
         "drug_name": "Cyclophosphamide",
         "factor": 0.75,
-        "notes": "Reduce to 75%."
+        "notes": "Reduce cyclophosphamide to 75% (UHS RCHOP21 v1.2)."
       },
       {
         "condition": "Renal impairment — Cyclophosphamide: CrCl <10 ml/min",
         "drug_name": "Cyclophosphamide",
         "factor": 0.5,
-        "notes": "Reduce to 50%."
+        "notes": "Reduce cyclophosphamide to 50% (UHS RCHOP21 v1.2)."
       },
       {
         "condition": "Renal impairment — Doxorubicin: CrCl <10 ml/min",
         "drug_name": "Doxorubicin",
         "factor": 1.0,
-        "notes": "Consider dose reduction in severe renal failure — clinical decision."
+        "notes": "Consider dose reduction in severe renal failure — clinical decision required (UHS RCHOP21 v1.2)."
       },
       {
         "condition": "Vincristine: NCI-CTC grade 2 motor or grade 3 sensory neurological toxicity",
         "drug_name": "Vincristine",
         "factor": 1.0,
-        "notes": "Reduce dose to 1mg. For higher toxicity grades or if toxicity increases despite dose reduction, stop vincristine."
+        "notes": "⚠️ PRESCRIBER ACTION REQUIRED: Reduce vincristine to FLAT DOSE 1mg (this is a fixed dose, not a percentage reduction — override the calculated dose to 1mg manually). Per UHS RCHOP21 v1.2. For grade 2 motor or grade 3 sensory toxicity. If toxicity is higher grade or worsens despite this reduction, STOP vincristine permanently."
       }
     ],
     "special_warnings": [
-      "VESICANT DRUGS: Doxorubicin and Vincristine are both vesicants. Extravasation causes severe tissue necrosis. Follow NPSA/2008/RRR04 for vincristine. Discontinue immediately if extravasation suspected.",
-      "CARDIAC: Baseline LVEF required before starting doxorubicin in patients with history of cardiac problems, cardiac risk factors, or age ≥70. Maximum lifetime cumulative doxorubicin dose: 450 mg/m² (standard); reduced to 400 mg/m² if prior cardiac history or age ≥70; reduced to 350 mg/m² if prior mediastinal/pericardial radiotherapy. Discontinue doxorubicin if cardiac failure develops.",
+      "VESICANT DRUGS: Vincristine is a vesicant (doxorubicin also vesicant when included). Extravasation causes severe tissue necrosis. Follow NPSA/2008/RRR04 for vincristine. Discontinue immediately if extravasation suspected.",
+      "CARDIAC: Baseline LVEF required before starting doxorubicin in patients with history of cardiac problems, cardiac risk factors, or age ≥70. Maximum lifetime cumulative doxorubicin dose: 450 mg/m² (standard); reduced to 400 mg/m² if prior cardiac history or prior mediastinal/pericardial radiotherapy. Discontinue doxorubicin if cardiac failure develops.",
       "HEPATITIS B REACTIVATION: Check hepatitis B status (HBsAg and anti-HBc) before starting rituximab. Rituximab can cause fatal hepatitis B reactivation. Anti-CD20 antibody causes profound B-cell depletion.",
       "RITUXIMAB — CYTOKINE RELEASE SYNDROME (CRS): Severe CRS characterised by dyspnoea, bronchospasm, hypoxia, fever, chills, rigors, urticaria, angioedema, hypotension, elevated LDH. Can cause acute respiratory failure and death. Occurs within 1–2 hours of first infusion. Medicinal products for allergic reactions must be available immediately.",
       "RITUXIMAB — PROGRESSIVE MULTIFOCAL LEUKOENCEPHALOPATHY (PML): Monitor for new or worsening neurological/cognitive/psychiatric symptoms at regular intervals. If PML suspected, suspend rituximab until excluded. If PML confirmed, permanently discontinue.",
@@ -1358,10 +1353,12 @@
       "FBC, LFTs and U&Es prior to day 1 of each cycle",
       "Check hepatitis B status (HBsAg and anti-HBc) before cycle 1",
       "LVEF (echocardiogram) before starting doxorubicin in patients with cardiac history, cardiac risk factors, or age ≥70",
+      "Consider blood transfusion if patient symptomatic of anaemia or haemoglobin <8g/dL",
+      "Assess for cold or flu-like symptoms prior to each rituximab infusion (URTI increases risk of rituximab-associated hepatotoxicity)",
       "Monitor for signs of rituximab infusion-related reactions during each infusion",
       "Monitor for signs and symptoms of cytokine release syndrome",
       "Monitor for neurological/cognitive symptoms at each cycle (PML surveillance)",
-      "Vincristine neurotoxicity assessment each cycle (peripheral neuropathy, constipation)"
+      "Vincristine neurotoxicity assessment each cycle (peripheral neuropathy, constipation, jaw pain)"
     ],
     "required_patient_fields": [
       "neutrophil_count",

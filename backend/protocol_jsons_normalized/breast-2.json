@@ -18,7 +18,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Dose banded as per CSCCN agreed bands. Consider mesna if renal impairment."
+        "notes": "Intravenous bolus over 10 minutes. Dose banded as per CSCCN agreed bands. Consider mesna if renal impairment.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Docetaxel",
@@ -136,7 +138,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Dose banded as per CSCCN agreed bands. Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). Vesicant - extravasation precautions required."
+        "notes": "Intravenous bolus over 10 minutes. Dose banded as per CSCCN agreed bands. Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). Vesicant - extravasation precautions required.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       }
     ],
     "dose_modifications": [
@@ -230,7 +234,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Dose banded as per CSCCN agreed bands. Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). Vesicant - extravasation precautions required."
+        "notes": "Intravenous bolus over 10 minutes. Dose banded as per CSCCN agreed bands. Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). Vesicant - extravasation precautions required.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       }
     ],
     "dose_modifications": [
@@ -324,7 +330,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Dose banded as per CSCCN agreed bands. Maximum lifetime cumulative dose 900mg/m². Vesicant - extravasation precautions required. Number of cycles may vary depending on whether used as single agent or sequential/combination therapy."
+        "notes": "Intravenous bolus over 10 minutes. Dose banded as per CSCCN agreed bands. Maximum lifetime cumulative dose 900mg/m². Vesicant - extravasation precautions required. Number of cycles may vary depending on whether used as single agent or sequential/combination therapy.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       }
     ],
     "dose_modifications": [
@@ -425,7 +433,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Dose banded as per CSCCN agreed bands. Maximum lifetime cumulative dose 900mg/m². Vesicant - extravasation precautions required."
+        "notes": "Intravenous bolus over 10 minutes. Dose banded as per CSCCN agreed bands. Maximum lifetime cumulative dose 900mg/m². Vesicant - extravasation precautions required.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       }
     ],
     "dose_modifications": [

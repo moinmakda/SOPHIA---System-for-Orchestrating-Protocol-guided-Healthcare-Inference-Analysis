@@ -344,7 +344,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "IV bolus over 10 minutes. Dose banded per CSCCN agreed bands."
+        "notes": "IV bolus over 10 minutes. Dose banded per CSCCN agreed bands.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Doxorubicin",
@@ -358,7 +360,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "IV bolus over 10 minutes. Dose banded per CSCCN agreed bands. Vesicant. Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy)."
+        "notes": "IV bolus over 10 minutes. Dose banded per CSCCN agreed bands. Vesicant. Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy).",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Etoposide",
@@ -372,7 +376,9 @@
         "infusion_duration_hours": 1.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "In 1000ml sodium chloride 0.9% over 60 minutes. Dose banded per CSCCN agreed bands. Irritant."
+        "notes": "In 1000ml sodium chloride 0.9% over 60 minutes. Dose banded per CSCCN agreed bands. Irritant.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500
       },
       {
         "drug_name": "Prednisolone",
@@ -417,7 +423,7 @@
       {
         "drug_name": "Bleomycin",
         "dose": 10000.0,
-        "dose_unit": "units",
+        "dose_unit": "units/m²",
         "route": "IV bolus",
         "days": [
           8,
@@ -426,7 +432,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "10,000 International Units/m² IV bolus over 10 minutes. Dose rounded to nearest 1000 IU (up if halfway). Maximum cumulative dose 500,000 IU in patients <60 years (refer to SPC for older patients). GCSF must be omitted on days of bleomycin administration to avoid pulmonary toxicity."
+        "notes": "10,000 International Units/m² IV bolus over 10 minutes. Dose rounded to nearest 1000 IU (up if halfway). Maximum cumulative dose 500,000 IU in patients <60 years (refer to SPC for older patients). GCSF must be omitted on days of bleomycin administration to avoid pulmonary toxicity.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Methotrexate",
@@ -454,7 +462,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": 2.0,
         "max_dose_unit": "mg",
-        "notes": "IV bolus in 50ml sodium chloride 0.9% over 10 minutes. Maximum dose 2mg. Rounded to nearest 0.1mg (up if halfway). Vesicant. NPSA/2008/RRR04 must be followed for IV vinca alkaloid administration."
+        "notes": "IV bolus in 50ml sodium chloride 0.9% over 10 minutes. Maximum dose 2mg. Rounded to nearest 0.1mg (up if halfway). Vesicant. NPSA/2008/RRR04 must be followed for IV vinca alkaloid administration.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50
       }
     ],
     "dose_modifications": [
@@ -758,7 +768,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "IV bolus over 10 minutes. Dose banded per CSCCN agreed bands."
+        "notes": "IV bolus over 10 minutes. Dose banded per CSCCN agreed bands.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Etoposide",
@@ -772,7 +784,9 @@
         "infusion_duration_hours": 1.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "In 1000ml sodium chloride 0.9% over 60 minutes. Dose banded per CSCCN agreed bands. Irritant."
+        "notes": "In 1000ml sodium chloride 0.9% over 60 minutes. Dose banded per CSCCN agreed bands. Irritant.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500
       },
       {
         "drug_name": "Mitoxantrone",
@@ -831,7 +845,7 @@
       {
         "drug_name": "Bleomycin",
         "dose": 10000.0,
-        "dose_unit": "units",
+        "dose_unit": "units/m²",
         "route": "IV bolus",
         "days": [
           8,
@@ -840,7 +854,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "10,000 International Units/m² IV bolus over 10 minutes. Dose rounded to nearest 1000 IU (up if halfway). Maximum cumulative dose 500,000 IU in patients <60 years. GCSF must be omitted on days of bleomycin administration."
+        "notes": "10,000 International Units/m² IV bolus over 10 minutes. Dose rounded to nearest 1000 IU (up if halfway). Maximum cumulative dose 500,000 IU in patients <60 years. GCSF must be omitted on days of bleomycin administration.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Vincristine",
@@ -854,7 +870,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": 2.0,
         "max_dose_unit": "mg",
-        "notes": "IV bolus in 50ml sodium chloride 0.9% over 10 minutes. Maximum dose 2mg. Rounded to nearest 0.1mg (up if halfway). Vesicant. NPSA/2008/RRR04 must be followed for IV vinca alkaloid administration."
+        "notes": "IV bolus in 50ml sodium chloride 0.9% over 10 minutes. Maximum dose 2mg. Rounded to nearest 0.1mg (up if halfway). Vesicant. NPSA/2008/RRR04 must be followed for IV vinca alkaloid administration.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50
       }
     ],
     "dose_modifications": [
@@ -1112,7 +1130,9 @@
         "infusion_duration_hours": 1.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "In 500ml sodium chloride 0.9% over 60 minutes on days 2, 3, 4. Dose banded per nationally agreed bands (20mg/ml). Irritant."
+        "notes": "In 500ml sodium chloride 0.9% over 60 minutes on days 2, 3, 4. Dose banded per nationally agreed bands (20mg/ml). Irritant.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500
       },
       {
         "drug_name": "Mesna",
@@ -1142,7 +1162,9 @@
         "infusion_duration_hours": 1.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "In sodium chloride 0.9% 1000ml over 60 minutes on days 2, 3, 4 (mixed with mesna 1500mg/m² in the same bag). Dose banded per nationally agreed bands (80mg/ml). Urine dipstick for haematuria every 4 hours on day of and day after administration. Monitor neurological toxicity - if grade 1 may reduce; if grade 2 stop ifosfamide. Methylene blue 50mg QDS IV can prevent/treat encephalopathy."
+        "notes": "In sodium chloride 0.9% 1000ml over 60 minutes on days 2, 3, 4 (mixed with mesna 1500mg/m² in the same bag). Dose banded per nationally agreed bands (80mg/ml). Urine dipstick for haematuria every 4 hours on day of and day after administration. Monitor neurological toxicity - if grade 1 may reduce; if grade 2 stop ifosfamide. Methylene blue 50mg QDS IV can prevent/treat encephalopathy.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 1000
       },
       {
         "drug_name": "Mesna",
@@ -1377,7 +1399,9 @@
         "infusion_duration_hours": 0.75,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "In 500ml sodium chloride 0.9% over 30-60 minutes on days -4 and -3 (lymphodepletion). Dose banded per national dose band (2.5mg/ml). Vesicant. Lymphodepleting regimen must only be started after availability of Tisacel is confirmed."
+        "notes": "In 500ml sodium chloride 0.9% over 30-60 minutes on days -4 and -3 (lymphodepletion). Dose banded per national dose band (2.5mg/ml). Vesicant. Lymphodepleting regimen must only be started after availability of Tisacel is confirmed.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500
       },
       {
         "drug_name": "Tisagenlecleucel",

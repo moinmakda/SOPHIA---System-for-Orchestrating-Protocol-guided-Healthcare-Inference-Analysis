@@ -35,7 +35,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "IV bolus over 10 minutes. Dose banded per national dose banding table (20mg/ml). If patient had previous Grade 4 haemorrhagic cystitis with cyclophosphamide or demonstrated chemorefractory state to cyclophosphamide-containing regimen shortly before lymphodepletion, consider DLBCL/FL–Tisacel–Bendamustine instead."
+        "notes": "IV bolus over 10 minutes. Dose banded per national dose banding table (20mg/ml). If patient had previous Grade 4 haemorrhagic cystitis with cyclophosphamide or demonstrated chemorefractory state to cyclophosphamide-containing regimen shortly before lymphodepletion, consider DLBCL/FL–Tisacel–Bendamustine instead.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Tisagenlecleucel (Tisacel)",
@@ -182,7 +184,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": 10.0,
         "max_dose_unit": "mg",
-        "notes": "IV bolus in 50ml sodium chloride 0.9% over 10 minutes. Dose rounded to nearest 1mg (round up if halfway). Maximum single dose 10mg. Vesicant — follow NPSA/2008/RRR04 for IV vinca alkaloids. 14-day cycle until disease progression (6 cycles set in Aria)."
+        "notes": "IV bolus in 50ml sodium chloride 0.9% over 10 minutes. Dose rounded to nearest 1mg (round up if halfway). Maximum single dose 10mg. Vesicant — follow NPSA/2008/RRR04 for IV vinca alkaloids. 14-day cycle until disease progression (6 cycles set in Aria).",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50
       }
     ],
     "dose_modifications": [

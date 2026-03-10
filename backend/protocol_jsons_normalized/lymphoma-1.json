@@ -10,7 +10,7 @@
       {
         "drug_name": "Bleomycin",
         "dose": 10000.0,
-        "dose_unit": "units",
+        "dose_unit": "units/m²",
         "route": "IV bolus",
         "days": [
           1,
@@ -19,7 +19,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Administer for first six cycles only. Maximum cumulative dose 500,000 units (<60 years). Dose rounded to nearest 1,000 units."
+        "notes": "Administer for first six cycles only. Maximum cumulative dose 500,000 units (<60 years). Dose rounded to nearest 1,000 units.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Dacarbazine",
@@ -47,7 +49,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Maximum lifetime cumulative dose 450 mg/m². If prior mediastinal/pericardial radiotherapy, maximum 400 mg/m². Discontinue if cardiac failure develops. Dose banded per CSCCN bands."
+        "notes": "Maximum lifetime cumulative dose 450 mg/m². If prior mediastinal/pericardial radiotherapy, maximum 400 mg/m². Discontinue if cardiac failure develops. Dose banded per CSCCN bands.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Vinblastine",
@@ -61,7 +65,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Infusion in 50ml sodium chloride 0.9% over 10 minutes. Dose rounded to nearest 1mg. No maximum dose in this protocol. Reduce to 3 mg/m² for NCI-CTC grade 2 motor or grade 3 sensory neurotoxicity."
+        "notes": "Infusion in 50ml sodium chloride 0.9% over 10 minutes. Dose rounded to nearest 1mg. No maximum dose in this protocol. Reduce to 3 mg/m² for NCI-CTC grade 2 motor or grade 3 sensory neurotoxicity.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50
       }
     ],
     "dose_modifications": [
@@ -204,7 +210,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Dose banded per national dose banding table (20mg/ml). Lymphodepleting regimen must only be started after availability of Axicel is confirmed."
+        "notes": "Intravenous bolus over 10 minutes. Dose banded per national dose banding table (20mg/ml). Lymphodepleting regimen must only be started after availability of Axicel is confirmed.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Fludarabine",
@@ -324,7 +332,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Dose banded per national dose banding table (20mg/ml). Lymphodepleting regimen must only be started after availability of Brexucel is confirmed."
+        "notes": "Intravenous bolus over 10 minutes. Dose banded per national dose banding table (20mg/ml). Lymphodepleting regimen must only be started after availability of Brexucel is confirmed.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Fludarabine",
@@ -458,7 +468,9 @@
         "infusion_duration_hours": 1.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous infusion in 1000ml sodium chloride 0.9% over 60 minutes. Dose banded per national dose bands (20mg/ml). Reduce dose if significant hypoalbuminaemia."
+        "notes": "Intravenous infusion in 1000ml sodium chloride 0.9% over 60 minutes. Dose banded per national dose bands (20mg/ml). Reduce dose if significant hypoalbuminaemia.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500
       },
       {
         "drug_name": "Carboplatin",
@@ -497,7 +509,9 @@
         "infusion_duration_hours": 24.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous infusion in 1000ml sodium chloride 0.9% over 24 hours via backpack and pump. Mixed in same bag as mesna 5000mg/m². Dose banded per national dose bands (80mg/ml). Reduce to 70% for CrCl 40-59 ml/min. Not recommended if hepatic impairment (bilirubin >20 µmol/L or ALT/AST >2.5xULN or ALP >2.5xULN). [VERIFIED: Ifosfamide 5000mg/m² over 24h is standard in salvage R-ICE protocol — higher than standard ifosfamide dosing]"
+        "notes": "Intravenous infusion in 1000ml sodium chloride 0.9% over 24 hours via backpack and pump. Mixed in same bag as mesna 5000mg/m². Dose banded per national dose bands (80mg/ml). Reduce to 70% for CrCl 40-59 ml/min. Not recommended if hepatic impairment (bilirubin >20 µmol/L or ALT/AST >2.5xULN or ALP >2.5xULN). [VERIFIED: Ifosfamide 5000mg/m² over 24h is standard in salvage R-ICE protocol — higher than standard ifosfamide dosing]",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 1000
       },
       {
         "drug_name": "Mesna",
@@ -673,7 +687,9 @@
         "infusion_duration_hours": 2.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "200 mg/m² daily on days -5 to -2. Split into TWO infusions of 100mg/m² each in 1000ml NaCl 0.9% over 60 minutes administered sequentially (total 120 minutes). Dose banded per national dose bands (20mg/ml). Reduce if significant hypoalbuminaemia."
+        "notes": "200 mg/m² daily on days -5 to -2. Split into TWO infusions of 100mg/m² each in 1000ml NaCl 0.9% over 60 minutes administered sequentially (total 120 minutes). Dose banded per national dose bands (20mg/ml). Reduce if significant hypoalbuminaemia.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500
       },
       {
         "drug_name": "Melphalan",
@@ -808,7 +824,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Dose banded per national dose banding table (20mg/ml). Lymphodepleting regimen must only be started after Lisocel availability is confirmed."
+        "notes": "Intravenous bolus over 10 minutes. Dose banded per national dose banding table (20mg/ml). Lymphodepleting regimen must only be started after Lisocel availability is confirmed.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Fludarabine",
@@ -931,7 +949,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Dose banded per national dose banding table (20mg/ml). Lymphodepleting regimen must only be started after Axicel availability is confirmed."
+        "notes": "Intravenous bolus over 10 minutes. Dose banded per national dose banding table (20mg/ml). Lymphodepleting regimen must only be started after Axicel availability is confirmed.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Fludarabine",
@@ -1064,7 +1084,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Maximum lifetime cumulative dose 450 mg/m² (400 mg/m² if prior mediastinal/pericardial radiotherapy). Dose banded per national dose bands. Discontinue if cardiac failure develops."
+        "notes": "Intravenous bolus over 10 minutes. Maximum lifetime cumulative dose 450 mg/m² (400 mg/m² if prior mediastinal/pericardial radiotherapy). Dose banded per national dose bands. Discontinue if cardiac failure develops.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Vinblastine",
@@ -1078,7 +1100,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Dose rounded to nearest 1mg. No maximum dose in this protocol. Reduce to 3 mg/m² for NCI-CTC grade 2 motor or grade 3 sensory neurotoxicity."
+        "notes": "Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Dose rounded to nearest 1mg. No maximum dose in this protocol. Reduce to 3 mg/m² for NCI-CTC grade 2 motor or grade 3 sensory neurotoxicity.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50
       },
       {
         "drug_name": "Brentuximab vedotin",
@@ -1092,7 +1116,9 @@
         "infusion_duration_hours": 0.5,
         "max_dose": 120.0,
         "max_dose_unit": "mg",
-        "notes": "Intravenous infusion in 100mL sodium chloride 0.9% over 30 minutes. Must be administered AFTER completion of AVD, starting approximately 1 hour after end of dacarbazine infusion. Dose capped at 120mg. Dose banded per national dose bands (50mg/10ml). For NCI-CTC grade 2 peripheral neuropathy reduce to 0.9mg/kg (max 90mg); withhold for grade 3 then reduce to 0.9mg/kg on recovery."
+        "notes": "Intravenous infusion in 100mL sodium chloride 0.9% over 30 minutes. Must be administered AFTER completion of AVD, starting approximately 1 hour after end of dacarbazine infusion. Dose capped at 120mg. Dose banded per national dose bands (50mg/10ml). For NCI-CTC grade 2 peripheral neuropathy reduce to 0.9mg/kg (max 90mg); withhold for grade 3 then reduce to 0.9mg/kg on recovery.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       }
     ],
     "dose_modifications": [

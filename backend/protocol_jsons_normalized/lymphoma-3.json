@@ -18,7 +18,9 @@
         "infusion_duration_hours": 0.5,
         "max_dose": 180,
         "max_dose_unit": "mg",
-        "notes": "Dilute in 250ml sodium chloride 0.9% over 30 minutes. Doses below 100mg should be diluted in 100ml sodium chloride 0.9%. Dose banded according to national dose bands (50mg/10ml)."
+        "notes": "Dilute in 250ml sodium chloride 0.9% over 30 minutes. Doses below 100mg should be diluted in 100ml sodium chloride 0.9%. Dose banded according to national dose bands (50mg/10ml).",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       }
     ],
     "dose_modifications": [
@@ -133,7 +135,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Dose banded in accordance with national dose banding table (20mg/ml). Lymphodepleting regimen. Must only be started after availability of Brexucel is confirmed."
+        "notes": "Intravenous bolus over 10 minutes. Dose banded in accordance with national dose banding table (20mg/ml). Lymphodepleting regimen. Must only be started after availability of Brexucel is confirmed.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Fludarabine",
@@ -273,7 +277,9 @@
         "infusion_duration_hours": 0.5,
         "max_dose": 180,
         "max_dose_unit": "mg",
-        "notes": "Intravenous infusion in 250ml sodium chloride 0.9% over 30 minutes. Doses below 100mg dilute in 100ml sodium chloride 0.9%. Dose banded (50mg/10ml). Administer through dedicated IV line — must not be mixed with other medicinal products. Replaces vincristine in the CHOP regimen."
+        "notes": "Intravenous infusion in 250ml sodium chloride 0.9% over 30 minutes. Doses below 100mg dilute in 100ml sodium chloride 0.9%. Dose banded (50mg/10ml). Administer through dedicated IV line — must not be mixed with other medicinal products. Replaces vincristine in the CHOP regimen.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Cyclophosphamide",
@@ -286,7 +292,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Dose banded (20PM). Consider mesna in patients with pre-existing bladder disorders: oral dose of 40% of cyclophosphamide dose (rounded to nearest 400mg) at 0, 2 and 6 hours after cyclophosphamide."
+        "notes": "Intravenous bolus over 10 minutes. Dose banded (20PM). Consider mesna in patients with pre-existing bladder disorders: oral dose of 40% of cyclophosphamide dose (rounded to nearest 400mg) at 0, 2 and 6 hours after cyclophosphamide.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Doxorubicin",
@@ -299,7 +307,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Dose banded (2mg/ml). Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). Discontinue if cardiac failure develops."
+        "notes": "Intravenous bolus over 10 minutes. Dose banded (2mg/ml). Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). Discontinue if cardiac failure develops.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Prednisolone",
@@ -480,7 +490,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Dose banded per CSCCN agreed bands. No anthracycline in this regimen — used where doxorubicin is contra-indicated (e.g. cardiac patients)."
+        "notes": "Intravenous bolus over 10 minutes. Dose banded per CSCCN agreed bands. No anthracycline in this regimen — used where doxorubicin is contra-indicated (e.g. cardiac patients).",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Etoposide",
@@ -493,7 +505,9 @@
         "infusion_duration_hours": 1.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous infusion in 1000ml sodium chloride 0.9% over 60 minutes on day 1. Dose banded per CSCCN agreed bands."
+        "notes": "Intravenous infusion in 1000ml sodium chloride 0.9% over 60 minutes on day 1. Dose banded per CSCCN agreed bands.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500
       },
       {
         "drug_name": "Etoposide",
@@ -520,7 +534,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": 2,
         "max_dose_unit": "mg",
-        "notes": "Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Rounded to nearest 0.1mg (up if halfway). Maximum dose 2mg. NPSA/2008/RRR04 vinca alkaloid safety alert applies."
+        "notes": "Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Rounded to nearest 0.1mg (up if halfway). Maximum dose 2mg. NPSA/2008/RRR04 vinca alkaloid safety alert applies.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50
       },
       {
         "drug_name": "Prednisolone",
@@ -883,7 +899,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": 10,
         "max_dose_unit": "mg",
-        "notes": "6mg/m² (max 10mg) intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes on days 1 and 8. Round to nearest 1mg (up if halfway). NPSA/2008/RRR04 vinca alkaloid safety alert applies."
+        "notes": "6mg/m² (max 10mg) intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes on days 1 and 8. Round to nearest 1mg (up if halfway). NPSA/2008/RRR04 vinca alkaloid safety alert applies.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50
       }
     ],
     "dose_modifications": [
@@ -1038,7 +1056,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes on day 8. Dose banded (2mg/ml). Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). Discontinue if cardiac failure develops. Do not cap BSA at 2.4m²."
+        "notes": "Intravenous bolus over 10 minutes on day 8. Dose banded (2mg/ml). Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). Discontinue if cardiac failure develops. Do not cap BSA at 2.4m².",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Etoposide",
@@ -1106,7 +1126,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": 10,
         "max_dose_unit": "mg",
-        "notes": "6mg/m² (max 10mg) intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes on day 8. Dose banded (1mg/ml). NPSA/2008/RRR04 applies."
+        "notes": "6mg/m² (max 10mg) intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes on day 8. Dose banded (1mg/ml). NPSA/2008/RRR04 applies.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50
       },
       {
         "drug_name": "Vincristine",
@@ -1119,7 +1141,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": 2,
         "max_dose_unit": "mg",
-        "notes": "1.4mg/m² (max 2mg) intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes on day 1. Dose banded (1mg/ml). NPSA/2008/RRR04 applies."
+        "notes": "1.4mg/m² (max 2mg) intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes on day 1. Dose banded (1mg/ml). NPSA/2008/RRR04 applies.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50
       }
     ],
     "dose_modifications": [
@@ -1326,7 +1350,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Dose banded per CSCCN agreed bands. Consider mesna in patients with pre-existing bladder disorders: oral dose of 40% of cyclophosphamide dose (rounded to nearest 400mg) at 0, 2 and 6 hours after cyclophosphamide."
+        "notes": "Intravenous bolus over 10 minutes. Dose banded per CSCCN agreed bands. Consider mesna in patients with pre-existing bladder disorders: oral dose of 40% of cyclophosphamide dose (rounded to nearest 400mg) at 0, 2 and 6 hours after cyclophosphamide.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Doxorubicin",
@@ -1339,7 +1365,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous bolus over 10 minutes. Dose banded per CSCCN agreed bands. Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). Discontinue if cardiac failure develops."
+        "notes": "Intravenous bolus over 10 minutes. Dose banded per CSCCN agreed bands. Maximum lifetime cumulative dose 450mg/m² (400mg/m² if prior mediastinal/pericardial radiotherapy). Discontinue if cardiac failure develops.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Vincristine",
@@ -1352,7 +1380,9 @@
         "infusion_duration_hours": 0.167,
         "max_dose": 2,
         "max_dose_unit": "mg",
-        "notes": "Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Rounded to nearest 0.1mg (up if halfway). Maximum dose 2mg. NPSA/2008/RRR04 vinca alkaloid safety alert applies."
+        "notes": "Intravenous bolus in 50ml sodium chloride 0.9% over 10 minutes. Rounded to nearest 0.1mg (up if halfway). Maximum dose 2mg. NPSA/2008/RRR04 vinca alkaloid safety alert applies.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 50
       },
       {
         "drug_name": "Prednisolone",

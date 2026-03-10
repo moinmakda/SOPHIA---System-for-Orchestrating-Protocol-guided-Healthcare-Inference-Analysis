@@ -192,7 +192,7 @@
       {
         "drug_name": "Rituximab",
         "dose": 375.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -200,12 +200,12 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycle 1 only: 375mg/m\u00b2 in 500ml sodium chloride 0.9%, starting at 50mg/hour, increasing by 50mg/hour every 30 minutes to maximum 400mg/hour. Dose rounded to nearest 100mg (up if halfway). | CYCLE 1 DOSE (375mg/m\u00b2): two Rituximab entries exist \u2014 375mg/m\u00b2 for cycle 1 only (standard CLL lower first-dose) and 500mg/m\u00b2 for cycles 2 onwards. Both are intentional and represent different cycle doses."
+        "notes": "Cycle 1 only: 375mg/m² in 500ml sodium chloride 0.9%, starting at 50mg/hour, increasing by 50mg/hour every 30 minutes to maximum 400mg/hour. Dose rounded to nearest 100mg (up if halfway). | CYCLE 1 DOSE (375mg/m²): two Rituximab entries exist — 375mg/m² for cycle 1 only (standard CLL lower first-dose) and 500mg/m² for cycles 2 onwards. Both are intentional and represent different cycle doses."
       },
       {
         "drug_name": "Rituximab",
         "dose": 500.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -213,12 +213,12 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycles 2 onwards: 500mg/m\u00b2 in 500ml sodium chloride 0.9% as per local rituximab infusion guidelines. Dose rounded to nearest 100mg (up if halfway). [VERIFIED: Rituximab 500mg/m\u00b2 from cycle 2 onwards in CLL is standard per MHRA SmPC and NICE TA174 \u2014 higher than lymphoma dosing of 375mg/m\u00b2] | CYCLES 2+ DOSE (500mg/m\u00b2): two Rituximab entries exist \u2014 375mg/m\u00b2 for cycle 1 only and 500mg/m\u00b2 for cycles 2 onwards. Both are intentional and represent different cycle doses."
+        "notes": "Cycles 2 onwards: 500mg/m² in 500ml sodium chloride 0.9% as per local rituximab infusion guidelines. Dose rounded to nearest 100mg (up if halfway). [VERIFIED: Rituximab 500mg/m² from cycle 2 onwards in CLL is standard per MHRA SmPC and NICE TA174 — higher than lymphoma dosing of 375mg/m²] | CYCLES 2+ DOSE (500mg/m²): two Rituximab entries exist — 375mg/m² for cycle 1 only and 500mg/m² for cycles 2 onwards. Both are intentional and represent different cycle doses."
       },
       {
         "drug_name": "Cyclophosphamide",
         "dose": 250.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV bolus",
         "days": [
           1,
@@ -228,12 +228,14 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "All cycles: 250mg/m\u00b2 IV bolus days 1, 2, 3. Dose banded according to agreed local bands (up if halfway)."
+        "notes": "All cycles: 250mg/m² IV bolus days 1, 2, 3. Dose banded according to agreed local bands (up if halfway).",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Fludarabine",
         "dose": 25.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1,
@@ -243,7 +245,7 @@
         "infusion_duration_hours": 0.5,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "All cycles: 25mg/m\u00b2 in 100ml sodium chloride 0.9% over 30 minutes, days 1, 2, 3. Dose banded according to national dose bands (up if halfway)."
+        "notes": "All cycles: 25mg/m² in 100ml sodium chloride 0.9% over 30 minutes, days 1, 2, 3. Dose banded according to national dose bands (up if halfway)."
       }
     ],
     "dose_modifications": [
@@ -272,7 +274,7 @@
         "notes": "If 14 days required for counts to recover then restart with 50% dose reduction"
       },
       {
-        "condition": "Hepatic impairment: Bilirubin >21 \u00b5mol/L or AST/ALT 2-3xULN",
+        "condition": "Hepatic impairment: Bilirubin >21 µmol/L or AST/ALT 2-3xULN",
         "drug_name": "Cyclophosphamide",
         "factor": 1.0,
         "notes": "Clinical decision. Evidence that exposure to active metabolites may not be increased, suggesting dose reduction may not be necessary"
@@ -386,7 +388,7 @@
       {
         "drug_name": "Rituximab",
         "dose": 325.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           2
@@ -394,12 +396,12 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycle 1 only, Day 2: 325mg/m\u00b2 in 500ml sodium chloride 0.9%, starting at 50mg/hour, increasing by 50mg/hour every 30 minutes to maximum 400mg/hour. Dose rounded to nearest 100mg (up if halfway)."
+        "notes": "Cycle 1 only, Day 2: 325mg/m² in 500ml sodium chloride 0.9%, starting at 50mg/hour, increasing by 50mg/hour every 30 minutes to maximum 400mg/hour. Dose rounded to nearest 100mg (up if halfway)."
       },
       {
         "drug_name": "Rituximab",
         "dose": 500.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -407,12 +409,12 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycles 2 onwards: 500mg/m\u00b2 in 500ml sodium chloride 0.9% as per local rituximab infusion guidelines. If lymphocytes >25x10^9/L on day 1, consider fractionating: Day 1 125mg/m\u00b2 in 100ml NaCl 0.9%, Day 2 375mg/m\u00b2 in 500ml NaCl 0.9%. [VERIFIED: Rituximab 500mg/m\u00b2 from cycle 2 onwards in CLL is standard per MHRA SmPC and NICE TA174 \u2014 higher than lymphoma dosing of 375mg/m\u00b2]"
+        "notes": "Cycles 2 onwards: 500mg/m² in 500ml sodium chloride 0.9% as per local rituximab infusion guidelines. If lymphocytes >25x10^9/L on day 1, consider fractionating: Day 1 125mg/m² in 100ml NaCl 0.9%, Day 2 375mg/m² in 500ml NaCl 0.9%. [VERIFIED: Rituximab 500mg/m² from cycle 2 onwards in CLL is standard per MHRA SmPC and NICE TA174 — higher than lymphoma dosing of 375mg/m²]"
       },
       {
         "drug_name": "Cyclophosphamide",
         "dose": 250.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV bolus",
         "days": [
           1,
@@ -422,12 +424,14 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "All cycles: 250mg/m\u00b2 IV bolus days 1, 2, 3. Dose banded according to agreed local bands (up if halfway)."
+        "notes": "All cycles: 250mg/m² IV bolus days 1, 2, 3. Dose banded according to agreed local bands (up if halfway).",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Fludarabine",
         "dose": 25.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1,
@@ -437,7 +441,7 @@
         "infusion_duration_hours": 0.5,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "All cycles: 25mg/m\u00b2 in 100ml sodium chloride 0.9% over 30 minutes, days 1, 2, 3. Dose banded according to national dose bands (up if halfway)."
+        "notes": "All cycles: 25mg/m² in 100ml sodium chloride 0.9% over 30 minutes, days 1, 2, 3. Dose banded according to national dose bands (up if halfway)."
       }
     ],
     "dose_modifications": [
@@ -466,7 +470,7 @@
         "notes": "If 14 days required for counts to recover then restart with 50% dose reduction"
       },
       {
-        "condition": "Hepatic impairment: Bilirubin >21 \u00b5mol/L or AST/ALT 2-3xULN",
+        "condition": "Hepatic impairment: Bilirubin >21 µmol/L or AST/ALT 2-3xULN",
         "drug_name": "Cyclophosphamide",
         "factor": 1.0,
         "notes": "Clinical decision. Evidence that exposure to active metabolites may not be increased, suggesting dose reduction may not be necessary"
@@ -528,7 +532,7 @@
       "Salbutamol 2.5mg nebule when required for rituximab-related bronchospasm"
     ],
     "special_warnings": [
-      "Split rituximab dose indicated where lymphocytes >25x10^9/L on cycle 1: 100mg day 1, 325mg/m\u00b2 day 2",
+      "Split rituximab dose indicated where lymphocytes >25x10^9/L on cycle 1: 100mg day 1, 325mg/m² day 2",
       "Fludarabine: lifelong risk of TA-GVHD - IRRADIATED BLOOD PRODUCTS required for life",
       "Blood transfusion departments must be notified immediately when decision to treat is made",
       "Patient must be issued with an alert card at all times",
@@ -536,7 +540,7 @@
       "Rituximab: PML risk - monitor for neurological/cognitive/psychiatric symptoms",
       "Rituximab: hypersensitivity/anaphylaxis risk",
       "Hepatitis B status must be checked prior to starting rituximab",
-      "Cycles 2+ with lymphocytes >25x10^9/L: fractionate rituximab as Day 1 125mg/m\u00b2, Day 2 375mg/m\u00b2"
+      "Cycles 2+ with lymphocytes >25x10^9/L: fractionate rituximab as Day 1 125mg/m², Day 2 375mg/m²"
     ],
     "required_patient_fields": [
       "creatinine_clearance",
@@ -561,7 +565,7 @@
       {
         "drug_name": "Rituximab",
         "dose": 375.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -569,12 +573,12 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycle 1 only: 375mg/m\u00b2 in 500ml sodium chloride 0.9%, starting at 50mg/hour, increasing by 50mg/hour every 30 minutes to maximum 400mg/hour. Dose rounded to nearest 100mg (up if halfway). | CYCLE 1 DOSE (375mg/m\u00b2): two Rituximab entries exist \u2014 375mg/m\u00b2 for cycle 1 only (standard CLL lower first-dose) and 500mg/m\u00b2 for cycles 2 onwards. Both are intentional and represent different cycle doses."
+        "notes": "Cycle 1 only: 375mg/m² in 500ml sodium chloride 0.9%, starting at 50mg/hour, increasing by 50mg/hour every 30 minutes to maximum 400mg/hour. Dose rounded to nearest 100mg (up if halfway). | CYCLE 1 DOSE (375mg/m²): two Rituximab entries exist — 375mg/m² for cycle 1 only (standard CLL lower first-dose) and 500mg/m² for cycles 2 onwards. Both are intentional and represent different cycle doses."
       },
       {
         "drug_name": "Rituximab",
         "dose": 500.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -582,12 +586,12 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycles 2 onwards: 500mg/m\u00b2 in 500ml sodium chloride 0.9% as per local rituximab administration guidelines. Dose rounded to nearest 100mg (up if halfway). [VERIFIED: Rituximab 500mg/m\u00b2 from cycle 2 onwards in CLL is standard per MHRA SmPC and NICE TA174 \u2014 higher than lymphoma dosing of 375mg/m\u00b2] | CYCLES 2+ DOSE (500mg/m\u00b2): two Rituximab entries exist \u2014 375mg/m\u00b2 for cycle 1 only and 500mg/m\u00b2 for cycles 2 onwards. Both are intentional and represent different cycle doses."
+        "notes": "Cycles 2 onwards: 500mg/m² in 500ml sodium chloride 0.9% as per local rituximab administration guidelines. Dose rounded to nearest 100mg (up if halfway). [VERIFIED: Rituximab 500mg/m² from cycle 2 onwards in CLL is standard per MHRA SmPC and NICE TA174 — higher than lymphoma dosing of 375mg/m²] | CYCLES 2+ DOSE (500mg/m²): two Rituximab entries exist — 375mg/m² for cycle 1 only and 500mg/m² for cycles 2 onwards. Both are intentional and represent different cycle doses."
       },
       {
         "drug_name": "Cyclophosphamide",
         "dose": 150.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "Oral",
         "days": [
           1,
@@ -599,12 +603,12 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "All cycles: 150mg/m\u00b2 oral once daily in the morning, days 1-5. Available as 50mg tablets; doses rounded to nearest 50mg (up if halfway). Oral chemotherapy."
+        "notes": "All cycles: 150mg/m² oral once daily in the morning, days 1-5. Available as 50mg tablets; doses rounded to nearest 50mg (up if halfway). Oral chemotherapy."
       },
       {
         "drug_name": "Fludarabine",
         "dose": 24.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "Oral",
         "days": [
           1,
@@ -616,7 +620,7 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "All cycles: 24mg/m\u00b2 oral once daily at lunchtime, days 1-5. Available as 10mg tablets; doses rounded to nearest 10mg (up if halfway). Oral chemotherapy."
+        "notes": "All cycles: 24mg/m² oral once daily at lunchtime, days 1-5. Available as 10mg tablets; doses rounded to nearest 10mg (up if halfway). Oral chemotherapy."
       }
     ],
     "dose_modifications": [
@@ -645,7 +649,7 @@
         "notes": "If 14 days required for counts to recover then restart with 50% dose reduction"
       },
       {
-        "condition": "Hepatic impairment: Bilirubin >21 \u00b5mol/L or AST/ALT 2-3xULN",
+        "condition": "Hepatic impairment: Bilirubin >21 µmol/L or AST/ALT 2-3xULN",
         "drug_name": "Cyclophosphamide",
         "factor": 1.0,
         "notes": "Clinical decision. Evidence that exposure to active metabolites may not be increased, suggesting dose reduction may not be necessary"
@@ -706,7 +710,7 @@
       "Salbutamol 2.5mg nebule when required for rituximab-related bronchospasm"
     ],
     "special_warnings": [
-      "Oral cyclophosphamide (150mg/m\u00b2) and oral fludarabine (24mg/m\u00b2) - taken at home",
+      "Oral cyclophosphamide (150mg/m²) and oral fludarabine (24mg/m²) - taken at home",
       "Fludarabine: lifelong risk of TA-GVHD - IRRADIATED BLOOD PRODUCTS required for life",
       "Blood transfusion departments must be notified immediately when decision to treat is made",
       "Patient must be issued with an alert card at all times",
@@ -751,7 +755,7 @@
       {
         "drug_name": "Rituximab",
         "dose": 325.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           2
@@ -759,12 +763,12 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycle 1 only, Day 2: 325mg/m\u00b2 in 500ml sodium chloride 0.9%, starting at 50mg/hour, increasing by 50mg/hour every 30 minutes to maximum 400mg/hour. Dose rounded to nearest 100mg (up if halfway)."
+        "notes": "Cycle 1 only, Day 2: 325mg/m² in 500ml sodium chloride 0.9%, starting at 50mg/hour, increasing by 50mg/hour every 30 minutes to maximum 400mg/hour. Dose rounded to nearest 100mg (up if halfway)."
       },
       {
         "drug_name": "Rituximab",
         "dose": 500.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -772,12 +776,12 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycles 2 onwards: 500mg/m\u00b2 in 500ml sodium chloride 0.9% as per local rituximab administration guidelines. If lymphocytes >25x10^9/L on day 1, consider fractionating: Day 1 125mg/m\u00b2 in 100ml NaCl 0.9%, Day 2 375mg/m\u00b2 in 500ml NaCl 0.9%. [VERIFIED: Rituximab 500mg/m\u00b2 from cycle 2 onwards in CLL is standard per MHRA SmPC and NICE TA174 \u2014 higher than lymphoma dosing of 375mg/m\u00b2]"
+        "notes": "Cycles 2 onwards: 500mg/m² in 500ml sodium chloride 0.9% as per local rituximab administration guidelines. If lymphocytes >25x10^9/L on day 1, consider fractionating: Day 1 125mg/m² in 100ml NaCl 0.9%, Day 2 375mg/m² in 500ml NaCl 0.9%. [VERIFIED: Rituximab 500mg/m² from cycle 2 onwards in CLL is standard per MHRA SmPC and NICE TA174 — higher than lymphoma dosing of 375mg/m²]"
       },
       {
         "drug_name": "Cyclophosphamide",
         "dose": 150.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "Oral",
         "days": [
           2,
@@ -794,7 +798,7 @@
       {
         "drug_name": "Fludarabine",
         "dose": 24.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "Oral",
         "days": [
           2,
@@ -835,7 +839,7 @@
         "notes": "If 14 days required for counts to recover then restart with 50% dose reduction"
       },
       {
-        "condition": "Hepatic impairment: Bilirubin >21 \u00b5mol/L or AST/ALT 2-3xULN",
+        "condition": "Hepatic impairment: Bilirubin >21 µmol/L or AST/ALT 2-3xULN",
         "drug_name": "Cyclophosphamide",
         "factor": 1.0,
         "notes": "Clinical decision. Evidence that exposure to active metabolites may not be increased, suggesting dose reduction may not be necessary"
@@ -896,7 +900,7 @@
       "Salbutamol 2.5mg nebule when required for rituximab-related bronchospasm"
     ],
     "special_warnings": [
-      "Split rituximab dose indicated where lymphocytes >25x10^9/L: Cycle 1 Day 1 100mg, Day 2 325mg/m\u00b2",
+      "Split rituximab dose indicated where lymphocytes >25x10^9/L: Cycle 1 Day 1 100mg, Day 2 325mg/m²",
       "Cycle 1: oral FC starts day 2 (not day 1) due to split rituximab on days 1-2",
       "Fludarabine: lifelong risk of TA-GVHD - IRRADIATED BLOOD PRODUCTS required for life",
       "Blood transfusion departments must be notified immediately when decision to treat is made",
@@ -905,8 +909,8 @@
       "Rituximab: PML risk - monitor for neurological/cognitive/psychiatric symptoms",
       "Tumour lysis syndrome (TLS) risk - allopurinol prophylaxis; rasburicase in high-risk individuals",
       "Hepatitis B status must be checked prior to starting rituximab",
-      "Cycles 2+ with lymphocytes >25x10^9/L: fractionate rituximab as Day 1 125mg/m\u00b2, Day 2 375mg/m\u00b2",
-      "ORAL CHEMOTHERAPY \u2014 NPSA/2008/RRR001: Patient must be counselled and provided written information before starting. Prescriptions must be written on an approved oral chemotherapy prescription form. Dispensing must only be by a trained pharmacist. Patient must be provided with a chemotherapy alert card. Do not supply more than one cycle at a time without clinical review."
+      "Cycles 2+ with lymphocytes >25x10^9/L: fractionate rituximab as Day 1 125mg/m², Day 2 375mg/m²",
+      "ORAL CHEMOTHERAPY — NPSA/2008/RRR001: Patient must be counselled and provided written information before starting. Prescriptions must be written on an approved oral chemotherapy prescription form. Dispensing must only be by a trained pharmacist. Patient must be provided with a chemotherapy alert card. Do not supply more than one cycle at a time without clinical review."
     ],
     "required_patient_fields": [
       "creatinine_clearance",
@@ -1069,7 +1073,7 @@
   },
   {
     "protocol_code": "ALL-Tisacel-Cy500-Flu30",
-    "protocol_name": "ALL Tisagenlecleucel (Tisacel) with Lymphodepletion Cyclophosphamide 500mg/m\u00b2 and Fludarabine 30mg/m\u00b2",
+    "protocol_name": "ALL Tisagenlecleucel (Tisacel) with Lymphodepletion Cyclophosphamide 500mg/m² and Fludarabine 30mg/m²",
     "disease_site": "ALL",
     "category": "haematology",
     "cycle_length_days": 14,
@@ -1078,7 +1082,7 @@
       {
         "drug_name": "Fludarabine",
         "dose": 30.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           -6,
@@ -1089,12 +1093,12 @@
         "infusion_duration_hours": 0.5,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Lymphodepletion: 30mg/m\u00b2 in 100ml sodium chloride 0.9% over 30 minutes on days -6, -5, -4, -3. Dose banded according to national dose band (25mg/ml). Lymphodepleting regimen must only be started after availability of Tisacel is confirmed."
+        "notes": "Lymphodepletion: 30mg/m² in 100ml sodium chloride 0.9% over 30 minutes on days -6, -5, -4, -3. Dose banded according to national dose band (25mg/ml). Lymphodepleting regimen must only be started after availability of Tisacel is confirmed."
       },
       {
         "drug_name": "Cyclophosphamide",
         "dose": 500.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV bolus",
         "days": [
           -6,
@@ -1103,7 +1107,9 @@
         "infusion_duration_hours": 0.17,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Lymphodepletion: 500mg/m\u00b2 IV bolus over 10 minutes on days -6 and -5. Dose banded in accordance with national dose banding table (20mg/ml). Lymphodepleting chemotherapy may be omitted if WBC <1.0x10^9 cells/L within one week prior to infusion."
+        "notes": "Lymphodepletion: 500mg/m² IV bolus over 10 minutes on days -6 and -5. Dose banded in accordance with national dose banding table (20mg/ml). Lymphodepleting chemotherapy may be omitted if WBC <1.0x10^9 cells/L within one week prior to infusion.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Tisagenlecleucel",
@@ -1186,7 +1192,7 @@
     "special_warnings": [
       "CAR-T THERAPY - FOR AUTOLOGOUS USE ONLY",
       "Only available at the Wessex Blood and Marrow Transplant Unit",
-      "CAR-T cell therapy: single administration procedure. cycle_length_days is not applicable \u2014 this is a one-time infusion following lymphodepletion conditioning.",
+      "CAR-T cell therapy: single administration procedure. cycle_length_days is not applicable — this is a one-time infusion following lymphodepletion conditioning.",
       "Cytokine Release Syndrome (CRS): nearly all patients experience some degree of CRS including life-threatening and fatal reactions. Symptoms: pyrexia, tachycardia, dyspnoea, hypoxia, capillary leak, hypotension. Monitor vitals 4-hourly on Day 0, then twice daily.",
       "ICANS (Immune Effector Cell-Associated Neurotoxicity Syndrome): seizures, somnolence, headaches, confusion, encephalopathy, speech disorders - ICE score assessed twice daily",
       "CRS or ICANS symptoms can occur WEEKS after infusion - patient must carry alert card at all times",
@@ -1218,7 +1224,7 @@
   },
   {
     "protocol_code": "ALL-Tisacel-Cy500-Etop150",
-    "protocol_name": "ALL Tisagenlecleucel (Tisacel) with Lymphodepletion Cytarabine 500mg/m\u00b2 and Etoposide 150mg/m\u00b2",
+    "protocol_name": "ALL Tisagenlecleucel (Tisacel) with Lymphodepletion Cytarabine 500mg/m² and Etoposide 150mg/m²",
     "disease_site": "ALL",
     "category": "haematology",
     "cycle_length_days": 14,
@@ -1227,7 +1233,7 @@
       {
         "drug_name": "Cytarabine",
         "dose": 500.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           -5,
@@ -1236,12 +1242,12 @@
         "infusion_duration_hours": 1.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Lymphodepletion: 500mg/m\u00b2 in 1000ml sodium chloride 0.9% over 60 minutes on days -5 and -4. Dose banded according to national dose bands (100mg/ml). Lymphodepleting regimen must only be started after availability of Tisacel is confirmed."
+        "notes": "Lymphodepletion: 500mg/m² in 1000ml sodium chloride 0.9% over 60 minutes on days -5 and -4. Dose banded according to national dose bands (100mg/ml). Lymphodepleting regimen must only be started after availability of Tisacel is confirmed."
       },
       {
         "drug_name": "Etoposide",
         "dose": 150.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           -5,
@@ -1251,7 +1257,9 @@
         "infusion_duration_hours": 1.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Lymphodepletion: 150mg/m\u00b2 in 1000ml sodium chloride 0.9% over 60 minutes on days -5, -4, -3. Dose banded according to national dose bands. Lymphodepleting chemotherapy may be omitted if WBC <=1000 cells/\u00b5L within one week prior to infusion."
+        "notes": "Lymphodepletion: 150mg/m² in 1000ml sodium chloride 0.9% over 60 minutes on days -5, -4, -3. Dose banded according to national dose bands. Lymphodepleting chemotherapy may be omitted if WBC <=1000 cells/µL within one week prior to infusion.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500
       },
       {
         "drug_name": "Tisagenlecleucel",
@@ -1269,19 +1277,19 @@
     ],
     "dose_modifications": [
       {
-        "condition": "Hepatic impairment: Bilirubin >34 \u00b5mol/L",
+        "condition": "Hepatic impairment: Bilirubin >34 µmol/L",
         "drug_name": "Cytarabine",
         "factor": 0.5,
         "notes": "Reduce to 50% of original dose"
       },
       {
-        "condition": "Hepatic impairment: Bilirubin 30-51 \u00b5mol/L or AST/ALT 60-180 units/L",
+        "condition": "Hepatic impairment: Bilirubin 30-51 µmol/L or AST/ALT 60-180 units/L",
         "drug_name": "Etoposide",
         "factor": 0.5,
         "notes": "Reduce to 50% of original dose"
       },
       {
-        "condition": "Hepatic impairment: Bilirubin >51 \u00b5mol/L or AST/ALT >180 units/L",
+        "condition": "Hepatic impairment: Bilirubin >51 µmol/L or AST/ALT >180 units/L",
         "drug_name": "Etoposide",
         "factor": 1.0,
         "notes": "Clinical decision. Consider reducing dose if significant reductions in albumin levels occur."
@@ -1317,7 +1325,7 @@
         "notes": "Reduce to 50% of original dose"
       },
       {
-        "condition": "Significant cytopenia: WBC <=1000 cells/\u00b5L within 1 week prior to infusion",
+        "condition": "Significant cytopenia: WBC <=1000 cells/µL within 1 week prior to infusion",
         "drug_name": "Cytarabine and Etoposide",
         "factor": 0,
         "notes": "Lymphodepleting chemotherapy may be omitted"
@@ -1341,7 +1349,7 @@
     "special_warnings": [
       "CAR-T THERAPY - FOR AUTOLOGOUS USE ONLY",
       "Only available at the Wessex Blood and Marrow Transplant Unit",
-      "CAR-T cell therapy: single administration procedure. cycle_length_days is not applicable \u2014 this is a one-time infusion following lymphodepletion conditioning.",
+      "CAR-T cell therapy: single administration procedure. cycle_length_days is not applicable — this is a one-time infusion following lymphodepletion conditioning.",
       "Alternative lymphodepletion regimen to Cy/Flu: use when patient had previous Grade 4 haemorrhagic cystitis with cyclophosphamide OR demonstrated chemo-refractory state to cyclophosphamide-containing regimen",
       "Cytokine Release Syndrome (CRS): nearly all patients experience some degree of CRS including life-threatening and fatal reactions. Symptoms: pyrexia, tachycardia, dyspnoea, hypoxia, capillary leak, hypotension. Monitor vitals 4-hourly on Day 0, then twice daily.",
       "ICANS (Immune Effector Cell-Associated Neurotoxicity Syndrome): seizures, somnolence, headaches, confusion, encephalopathy, speech disorders - ICE score assessed twice daily",

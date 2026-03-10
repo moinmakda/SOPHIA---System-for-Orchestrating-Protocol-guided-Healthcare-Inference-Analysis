@@ -10,7 +10,7 @@
       {
         "drug_name": "Mesna",
         "dose": 200.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV bolus",
         "days": [
           -2
@@ -23,7 +23,7 @@
       {
         "drug_name": "Cyclophosphamide",
         "dose": 900.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           -2
@@ -31,12 +31,14 @@
         "infusion_duration_hours": 1.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Intravenous infusion in 1000ml sodium chloride 0.9% over 60 minutes. Dose banded per national dose banding table (20mg/ml). Lymphodepleting regimen must only be started after availability of Brexucel is confirmed."
+        "notes": "Intravenous infusion in 1000ml sodium chloride 0.9% over 60 minutes. Dose banded per national dose banding table (20mg/ml). Lymphodepleting regimen must only be started after availability of Brexucel is confirmed.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Mesna",
         "dose": 400.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "Oral",
         "days": [
           -2
@@ -49,7 +51,7 @@
       {
         "drug_name": "Fludarabine",
         "dose": 25.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           -4,
@@ -138,8 +140,8 @@
       }
     ],
     "pre_medications": [
-      "Mesna 200mg/m\u00b2 IV bolus at same time as cyclophosphamide (Day -2)",
-      "Mesna 400mg/m\u00b2 oral at 2 and 6 hours after cyclophosphamide start (Day -2)",
+      "Mesna 200mg/m² IV bolus at same time as cyclophosphamide (Day -2)",
+      "Mesna 400mg/m² oral at 2 and 6 hours after cyclophosphamide start (Day -2)",
       "Metoclopramide 10mg three times a day oral or intravenous (antiemetic)",
       "Ondansetron 8mg twice a day oral or intravenous (antiemetic)",
       "Aciclovir 400mg oral twice a day (anti-infective prophylaxis)",
@@ -157,7 +159,7 @@
     ],
     "special_warnings": [
       "CAR-T therapy available only at the Wessex Blood and Marrow Transplant Unit",
-      "CAR-T cell therapy: single administration procedure. cycle_length_days is not applicable \u2014 this is a one-time infusion following lymphodepletion conditioning.",
+      "CAR-T cell therapy: single administration procedure. cycle_length_days is not applicable — this is a one-time infusion following lymphodepletion conditioning.",
       "Lymphodepleting regimen must only be started after availability of Brexucel is confirmed",
       "Nearly all patients treated with Brexucel experience some degree of CRS including life-threatening and fatal reactions; monitor temperature, BP and oxygen saturation 4-hourly after Brexucel on Day 0, then twice daily",
       "ICANS (immune effector cell-associated neurotoxicity syndrome) risk: monitor ICE score twice daily",
@@ -255,7 +257,7 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycle 1 Days 8 and 15: 1000mg in 250ml sodium chloride 0.9%; start at 100mg/hour, increase by 100mg/hour every 30 minutes to maximum 400mg/hour. Dose reductions NOT permitted. | CYCLE 1 DAYS 8 AND 15 (1000mg): multiple Obinutuzumab entries exist \u2014 100mg day 1 (split-dose initiation), 900mg day 2 (remainder of cycle 1 loading), 1000mg days 8 and 15 (cycle 1 continuation), and 1000mg day 1 cycles 2-6 (maintenance). All entries are intentional."
+        "notes": "Cycle 1 Days 8 and 15: 1000mg in 250ml sodium chloride 0.9%; start at 100mg/hour, increase by 100mg/hour every 30 minutes to maximum 400mg/hour. Dose reductions NOT permitted. | CYCLE 1 DAYS 8 AND 15 (1000mg): multiple Obinutuzumab entries exist — 100mg day 1 (split-dose initiation), 900mg day 2 (remainder of cycle 1 loading), 1000mg days 8 and 15 (cycle 1 continuation), and 1000mg day 1 cycles 2-6 (maintenance). All entries are intentional."
       },
       {
         "drug_name": "Obinutuzumab",
@@ -268,7 +270,7 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycles 2-6 Day 1: 1000mg in 250ml sodium chloride 0.9%; start at 100mg/hour, increase by 100mg/hour every 30 minutes to maximum 400mg/hour. Dose reductions NOT permitted. | CYCLES 2-6 DAY 1 (1000mg): multiple Obinutuzumab entries exist \u2014 100mg day 1 (split-dose initiation), 900mg day 2 (remainder of cycle 1 loading), 1000mg days 8 and 15 (cycle 1 continuation), and 1000mg day 1 cycles 2-6 (maintenance). All entries are intentional."
+        "notes": "Cycles 2-6 Day 1: 1000mg in 250ml sodium chloride 0.9%; start at 100mg/hour, increase by 100mg/hour every 30 minutes to maximum 400mg/hour. Dose reductions NOT permitted. | CYCLES 2-6 DAY 1 (1000mg): multiple Obinutuzumab entries exist — 100mg day 1 (split-dose initiation), 900mg day 2 (remainder of cycle 1 loading), 1000mg days 8 and 15 (cycle 1 continuation), and 1000mg day 1 cycles 2-6 (maintenance). All entries are intentional."
       }
     ],
     "dose_modifications": [
@@ -485,7 +487,7 @@
       {
         "drug_name": "Rituximab",
         "dose": 325.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           2
@@ -493,12 +495,12 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycle 1 Day 2 (split dose fraction 2): 325mg/m\u00b2 in 500ml sodium chloride 0.9%; start at 50mg/hour, increase by 50mg/hour every 30 minutes to maximum 400mg/hour. Dose rounded to nearest 100mg (up if halfway) for doses >=325mg/m\u00b2. National dose bands (10mg/ml) for 50-125mg/m\u00b2 doses."
+        "notes": "Cycle 1 Day 2 (split dose fraction 2): 325mg/m² in 500ml sodium chloride 0.9%; start at 50mg/hour, increase by 50mg/hour every 30 minutes to maximum 400mg/hour. Dose rounded to nearest 100mg (up if halfway) for doses >=325mg/m². National dose bands (10mg/ml) for 50-125mg/m² doses."
       },
       {
         "drug_name": "Rituximab",
         "dose": 500.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -506,7 +508,7 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycles 2-6 Day 1: 500mg/m\u00b2 in 500ml sodium chloride 0.9% per rituximab infusion guidelines. If lymphocyte count >25x10^9/L, fractionate: Day 1 rituximab 125mg/m\u00b2 in 100ml, Day 2 rituximab 375mg/m\u00b2 in 500ml. If no problems with cycle 1 infusions start both fractions at 100mg/hour escalating by 100mg/hour every 30 minutes to max 400mg/hour. If reactions occurred in cycle 1, give both fractions as for day 2 of cycle 1. [VERIFIED: Rituximab 500mg/m\u00b2 from cycle 2 onwards in CLL is standard per MHRA SmPC and NICE TA174 \u2014 higher than lymphoma dosing of 375mg/m\u00b2]"
+        "notes": "Cycles 2-6 Day 1: 500mg/m² in 500ml sodium chloride 0.9% per rituximab infusion guidelines. If lymphocyte count >25x10^9/L, fractionate: Day 1 rituximab 125mg/m² in 100ml, Day 2 rituximab 375mg/m² in 500ml. If no problems with cycle 1 infusions start both fractions at 100mg/hour escalating by 100mg/hour every 30 minutes to max 400mg/hour. If reactions occurred in cycle 1, give both fractions as for day 2 of cycle 1. [VERIFIED: Rituximab 500mg/m² from cycle 2 onwards in CLL is standard per MHRA SmPC and NICE TA174 — higher than lymphoma dosing of 375mg/m²]"
       }
     ],
     "dose_modifications": [
@@ -561,7 +563,7 @@
       "Gastric protection with proton pump inhibitor or H2 antagonist in patients at high risk of GI ulceration or bleed"
     ],
     "special_warnings": [
-      "Split dose rituximab indicated where lymphocyte count >25x10^9/L: Cycle 1 Day 1 100mg flat dose, Cycle 1 Day 2 325mg/m\u00b2; Cycles 2-6 500mg/m\u00b2 (with option to split if lymphocytes still >25x10^9/L)",
+      "Split dose rituximab indicated where lymphocyte count >25x10^9/L: Cycle 1 Day 1 100mg flat dose, Cycle 1 Day 2 325mg/m²; Cycles 2-6 500mg/m² (with option to split if lymphocytes still >25x10^9/L)",
       "Cycle 7 onwards (cycles 7-12) should only be considered for patients demonstrating continuing response to treatment; chlorambucil only from cycle 7",
       "Cytokine release syndrome (CRS) risk with rituximab; frequently occurs within 1-2 hours of first infusion",
       "Progressive Multifocal Leukoencephalopathy (PML) risk with rituximab; monitor for neurological symptoms",
@@ -617,7 +619,7 @@
       {
         "drug_name": "Rituximab",
         "dose": 375.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -625,12 +627,12 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycle 1 Day 1: 375mg/m\u00b2 in 500ml sodium chloride 0.9%; start at 50mg/hour increasing by 50mg/hour every 30 minutes to maximum 400mg/hour. Dose rounded to nearest 100mg (up if halfway) for doses >=325mg/m\u00b2. | CYCLE 1 DOSE (375mg/m\u00b2): two Rituximab entries exist \u2014 375mg/m\u00b2 for cycle 1 only and 500mg/m\u00b2 for cycles 2-6. Both are intentional and represent different cycle doses."
+        "notes": "Cycle 1 Day 1: 375mg/m² in 500ml sodium chloride 0.9%; start at 50mg/hour increasing by 50mg/hour every 30 minutes to maximum 400mg/hour. Dose rounded to nearest 100mg (up if halfway) for doses >=325mg/m². | CYCLE 1 DOSE (375mg/m²): two Rituximab entries exist — 375mg/m² for cycle 1 only and 500mg/m² for cycles 2-6. Both are intentional and represent different cycle doses."
       },
       {
         "drug_name": "Rituximab",
         "dose": 500.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -638,7 +640,7 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycles 2-6 Day 1: 500mg/m\u00b2 in 500ml sodium chloride 0.9% per local rituximab infusion guidelines. If lymphocyte count >25x10^9/L, consider fractionating: Day 1 rituximab 125mg/m\u00b2 in 100ml, Day 2 rituximab 375mg/m\u00b2 in 500ml. Cycles 7-12: chlorambucil only. [VERIFIED: Rituximab 500mg/m\u00b2 from cycle 2 onwards in CLL is standard per MHRA SmPC and NICE TA174 \u2014 higher than lymphoma dosing of 375mg/m\u00b2] | CYCLES 2-6 DOSE (500mg/m\u00b2): two Rituximab entries exist \u2014 375mg/m\u00b2 for cycle 1 only and 500mg/m\u00b2 for cycles 2-6. Both are intentional and represent different cycle doses."
+        "notes": "Cycles 2-6 Day 1: 500mg/m² in 500ml sodium chloride 0.9% per local rituximab infusion guidelines. If lymphocyte count >25x10^9/L, consider fractionating: Day 1 rituximab 125mg/m² in 100ml, Day 2 rituximab 375mg/m² in 500ml. Cycles 7-12: chlorambucil only. [VERIFIED: Rituximab 500mg/m² from cycle 2 onwards in CLL is standard per MHRA SmPC and NICE TA174 — higher than lymphoma dosing of 375mg/m²] | CYCLES 2-6 DOSE (500mg/m²): two Rituximab entries exist — 375mg/m² for cycle 1 only and 500mg/m² for cycles 2-6. Both are intentional and represent different cycle doses."
       }
     ],
     "dose_modifications": [
@@ -693,7 +695,7 @@
       "Gastric protection with proton pump inhibitor or H2 antagonist in patients at high risk of GI ulceration or bleed"
     ],
     "special_warnings": [
-      "Non-split rituximab protocol: Cycle 1 375mg/m\u00b2, Cycles 2-6 500mg/m\u00b2; if lymphocyte count >25x10^9/L consider fractionating to 125mg/m\u00b2 Day 1 and 375mg/m\u00b2 Day 2",
+      "Non-split rituximab protocol: Cycle 1 375mg/m², Cycles 2-6 500mg/m²; if lymphocyte count >25x10^9/L consider fractionating to 125mg/m² Day 1 and 375mg/m² Day 2",
       "Cycle 7 onwards (cycles 7-12): chlorambucil only; should only be considered for patients demonstrating continuing response",
       "Cytokine release syndrome (CRS) risk with rituximab; frequently occurs within 1-2 hours of first infusion",
       "Progressive Multifocal Leukoencephalopathy (PML) risk with rituximab; monitor for neurological symptoms",
@@ -855,7 +857,7 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycle 1 Days 8 and 15: 1000mg in 250ml sodium chloride 0.9%; start at 100mg/hour, increase by 100mg/hour every 30 minutes to maximum 400mg/hour. Dose reductions NOT permitted. | CYCLE 1 DAYS 8 AND 15 (1000mg): multiple Obinutuzumab entries exist \u2014 100mg day 1 (split-dose initiation), 900mg day 2 (remainder of cycle 1 loading), 1000mg days 8 and 15 (cycle 1 continuation), and 1000mg day 1 cycles 2-6 (maintenance). All entries are intentional."
+        "notes": "Cycle 1 Days 8 and 15: 1000mg in 250ml sodium chloride 0.9%; start at 100mg/hour, increase by 100mg/hour every 30 minutes to maximum 400mg/hour. Dose reductions NOT permitted. | CYCLE 1 DAYS 8 AND 15 (1000mg): multiple Obinutuzumab entries exist — 100mg day 1 (split-dose initiation), 900mg day 2 (remainder of cycle 1 loading), 1000mg days 8 and 15 (cycle 1 continuation), and 1000mg day 1 cycles 2-6 (maintenance). All entries are intentional."
       },
       {
         "drug_name": "Obinutuzumab",
@@ -868,7 +870,7 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycles 2-6 Day 1: 1000mg in 250ml sodium chloride 0.9%; start at 100mg/hour, increase by 100mg/hour every 30 minutes to maximum 400mg/hour. Dose reductions NOT permitted. | CYCLES 2-6 DAY 1 (1000mg): multiple Obinutuzumab entries exist \u2014 100mg day 1 (split-dose initiation), 900mg day 2 (remainder of cycle 1 loading), 1000mg days 8 and 15 (cycle 1 continuation), and 1000mg day 1 cycles 2-6 (maintenance). All entries are intentional."
+        "notes": "Cycles 2-6 Day 1: 1000mg in 250ml sodium chloride 0.9%; start at 100mg/hour, increase by 100mg/hour every 30 minutes to maximum 400mg/hour. Dose reductions NOT permitted. | CYCLES 2-6 DAY 1 (1000mg): multiple Obinutuzumab entries exist — 100mg day 1 (split-dose initiation), 900mg day 2 (remainder of cycle 1 loading), 1000mg days 8 and 15 (cycle 1 continuation), and 1000mg day 1 cycles 2-6 (maintenance). All entries are intentional."
       }
     ],
     "dose_modifications": [
@@ -1041,7 +1043,7 @@
       {
         "drug_name": "Chlorambucil",
         "dose": 10.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "Oral",
         "days": [
           1,
@@ -1055,7 +1057,7 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "10mg/m\u00b2 once daily days 1-7 inclusive all cycles (including cycles 7-12 which are chlorambucil only). Swallow whole on empty stomach 1 hour before meals or 3 hours after. Do not crush or dissolve. 2mg film-coated tablets; dose rounded to nearest 2mg (up if halfway). NPSA/2008/RRR001 oral chemotherapy safety alert applies."
+        "notes": "10mg/m² once daily days 1-7 inclusive all cycles (including cycles 7-12 which are chlorambucil only). Swallow whole on empty stomach 1 hour before meals or 3 hours after. Do not crush or dissolve. 2mg film-coated tablets; dose rounded to nearest 2mg (up if halfway). NPSA/2008/RRR001 oral chemotherapy safety alert applies."
       },
       {
         "drug_name": "Rituximab",
@@ -1073,7 +1075,7 @@
       {
         "drug_name": "Rituximab",
         "dose": 325.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           2
@@ -1081,12 +1083,12 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycle 1 Day 2 (split dose fraction 2): 325mg/m\u00b2 in 500ml sodium chloride 0.9%; start at 50mg/hour, increase by 50mg/hour every 30 minutes to maximum 400mg/hour. Dose rounded to nearest 100mg (up if halfway) for doses >=325mg/m\u00b2; national dose bands (10mg/ml) for 50-125mg/m\u00b2 doses."
+        "notes": "Cycle 1 Day 2 (split dose fraction 2): 325mg/m² in 500ml sodium chloride 0.9%; start at 50mg/hour, increase by 50mg/hour every 30 minutes to maximum 400mg/hour. Dose rounded to nearest 100mg (up if halfway) for doses >=325mg/m²; national dose bands (10mg/ml) for 50-125mg/m² doses."
       },
       {
         "drug_name": "Rituximab",
         "dose": 500.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -1094,7 +1096,7 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycles 2-6 Day 1: 500mg/m\u00b2 in 500ml sodium chloride 0.9% per local rituximab infusion guidelines. If lymphocyte count >25x10^9/L, fractionate: Day 1 rituximab 125mg/m\u00b2 in 100ml, Day 2 rituximab 375mg/m\u00b2 in 500ml. Cycles 7-12: chlorambucil only. [VERIFIED: Rituximab 500mg/m\u00b2 from cycle 2 onwards in CLL is standard per MHRA SmPC and NICE TA174 \u2014 higher than lymphoma dosing of 375mg/m\u00b2]"
+        "notes": "Cycles 2-6 Day 1: 500mg/m² in 500ml sodium chloride 0.9% per local rituximab infusion guidelines. If lymphocyte count >25x10^9/L, fractionate: Day 1 rituximab 125mg/m² in 100ml, Day 2 rituximab 375mg/m² in 500ml. Cycles 7-12: chlorambucil only. [VERIFIED: Rituximab 500mg/m² from cycle 2 onwards in CLL is standard per MHRA SmPC and NICE TA174 — higher than lymphoma dosing of 375mg/m²]"
       }
     ],
     "dose_modifications": [
@@ -1149,8 +1151,8 @@
       "Gastric protection with proton pump inhibitor or H2 antagonist in patients at high risk of GI ulceration or bleed"
     ],
     "special_warnings": [
-      "7-day chlorambucil dosing (days 1-7); dose expressed as mg/m\u00b2 - distinguish from 14-day flat-dose protocols",
-      "Split dose rituximab indicated where lymphocyte count >25x10^9/L: Cycle 1 Day 1 100mg flat, Cycle 1 Day 2 325mg/m\u00b2; Cycles 2-6 500mg/m\u00b2 (with option to split if still >25x10^9/L)",
+      "7-day chlorambucil dosing (days 1-7); dose expressed as mg/m² - distinguish from 14-day flat-dose protocols",
+      "Split dose rituximab indicated where lymphocyte count >25x10^9/L: Cycle 1 Day 1 100mg flat, Cycle 1 Day 2 325mg/m²; Cycles 2-6 500mg/m² (with option to split if still >25x10^9/L)",
       "Cycle 7 onwards (cycles 7-12): chlorambucil only; for patients demonstrating continuing response",
       "Cytokine release syndrome (CRS) risk with rituximab; frequently occurs within 1-2 hours of first infusion",
       "Progressive Multifocal Leukoencephalopathy (PML) risk",
@@ -1180,7 +1182,7 @@
       {
         "drug_name": "Chlorambucil",
         "dose": 10.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "Oral",
         "days": [
           1,
@@ -1194,12 +1196,12 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "10mg/m\u00b2 once daily days 1-7 inclusive all cycles (including cycles 7-12 which are chlorambucil only). Swallow whole on empty stomach 1 hour before meals or 3 hours after. Do not crush or dissolve. 2mg film-coated tablets; dose rounded to nearest 2mg (up if halfway). NPSA/2008/RRR001 oral chemotherapy safety alert applies."
+        "notes": "10mg/m² once daily days 1-7 inclusive all cycles (including cycles 7-12 which are chlorambucil only). Swallow whole on empty stomach 1 hour before meals or 3 hours after. Do not crush or dissolve. 2mg film-coated tablets; dose rounded to nearest 2mg (up if halfway). NPSA/2008/RRR001 oral chemotherapy safety alert applies."
       },
       {
         "drug_name": "Rituximab",
         "dose": 375.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -1207,12 +1209,12 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycle 1 Day 1: 375mg/m\u00b2 in 500ml sodium chloride 0.9%; start at 50mg/hour, increasing by 50mg/hour every 30 minutes to maximum 400mg/hour. Dose rounded to nearest 100mg (up if halfway) for doses >=325mg/m\u00b2; national dose bands (10mg/ml) for 50-125mg/m\u00b2. | CYCLE 1 DOSE (375mg/m\u00b2): two Rituximab entries exist \u2014 375mg/m\u00b2 for cycle 1 only and 500mg/m\u00b2 for cycles 2-6. Both are intentional and represent different cycle doses."
+        "notes": "Cycle 1 Day 1: 375mg/m² in 500ml sodium chloride 0.9%; start at 50mg/hour, increasing by 50mg/hour every 30 minutes to maximum 400mg/hour. Dose rounded to nearest 100mg (up if halfway) for doses >=325mg/m²; national dose bands (10mg/ml) for 50-125mg/m². | CYCLE 1 DOSE (375mg/m²): two Rituximab entries exist — 375mg/m² for cycle 1 only and 500mg/m² for cycles 2-6. Both are intentional and represent different cycle doses."
       },
       {
         "drug_name": "Rituximab",
         "dose": 500.0,
-        "dose_unit": "mg/m\u00b2",
+        "dose_unit": "mg/m²",
         "route": "IV infusion",
         "days": [
           1
@@ -1220,7 +1222,7 @@
         "infusion_duration_hours": null,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Cycles 2-6 Day 1: 500mg/m\u00b2 in 500ml sodium chloride 0.9% per local rituximab infusion guidelines. Cycles 7-12: chlorambucil only. If lymphocyte >25x10^9/L consider fractionating: Day 1 125mg/m\u00b2 in 100ml, Day 2 375mg/m\u00b2 in 500ml. [VERIFIED: Rituximab 500mg/m\u00b2 from cycle 2 onwards in CLL is standard per MHRA SmPC and NICE TA174 \u2014 higher than lymphoma dosing of 375mg/m\u00b2] | CYCLES 2-6 DOSE (500mg/m\u00b2): two Rituximab entries exist \u2014 375mg/m\u00b2 for cycle 1 only and 500mg/m\u00b2 for cycles 2-6. Both are intentional and represent different cycle doses."
+        "notes": "Cycles 2-6 Day 1: 500mg/m² in 500ml sodium chloride 0.9% per local rituximab infusion guidelines. Cycles 7-12: chlorambucil only. If lymphocyte >25x10^9/L consider fractionating: Day 1 125mg/m² in 100ml, Day 2 375mg/m² in 500ml. [VERIFIED: Rituximab 500mg/m² from cycle 2 onwards in CLL is standard per MHRA SmPC and NICE TA174 — higher than lymphoma dosing of 375mg/m²] | CYCLES 2-6 DOSE (500mg/m²): two Rituximab entries exist — 375mg/m² for cycle 1 only and 500mg/m² for cycles 2-6. Both are intentional and represent different cycle doses."
       }
     ],
     "dose_modifications": [
@@ -1275,8 +1277,8 @@
       "Gastric protection with proton pump inhibitor or H2 antagonist in patients at high risk of GI ulceration or bleed"
     ],
     "special_warnings": [
-      "7-day chlorambucil dosing (days 1-7); dose expressed as mg/m\u00b2 - distinguish from 14-day flat-dose protocols",
-      "Non-split rituximab protocol: Cycle 1 375mg/m\u00b2, Cycles 2-6 500mg/m\u00b2; if lymphocyte count >25x10^9/L consider fractionating",
+      "7-day chlorambucil dosing (days 1-7); dose expressed as mg/m² - distinguish from 14-day flat-dose protocols",
+      "Non-split rituximab protocol: Cycle 1 375mg/m², Cycles 2-6 500mg/m²; if lymphocyte count >25x10^9/L consider fractionating",
       "Cycle 7 onwards (cycles 7-12): chlorambucil only; for patients demonstrating continuing response",
       "Cytokine release syndrome (CRS) risk with rituximab; frequently occurs within 1-2 hours of first infusion",
       "Progressive Multifocal Leukoencephalopathy (PML) risk with rituximab",

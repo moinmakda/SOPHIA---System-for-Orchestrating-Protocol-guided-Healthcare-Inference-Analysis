@@ -165,14 +165,26 @@ export function ProtocolDisplay({ protocol, onBack, onReset }) {
     return `${Math.round(days)} days`;
   };
 
+  const roundDose = (v) => {
+    if (v == null) return v;
+    const n = parseFloat(v);
+    if (isNaN(n)) return v;
+    // Round to at most 2 decimal places, strip trailing zeros
+    return parseFloat(n.toFixed(2));
+  };
+
   const formatDose = (drug) => {
     if (drug.calculated_dose_unit === 'per label') {
       return 'Per prescriber / product label';
     }
     if (drug.banded_dose) {
-      return `${drug.banded_dose} ${drug.calculated_dose_unit} (banded; calculated: ${drug.calculated_dose} ${drug.calculated_dose_unit})`;
+      const calculatedDisplay = roundDose(drug.uncapped_calculated_dose ?? drug.calculated_dose);
+      return `${drug.banded_dose} ${drug.calculated_dose_unit} (banded; calculated: ${calculatedDisplay} ${drug.calculated_dose_unit})`;
     }
-    return `${drug.calculated_dose} ${drug.calculated_dose_unit}`;
+    if (drug.uncapped_calculated_dose) {
+      return `${roundDose(drug.calculated_dose)} ${drug.calculated_dose_unit} (capped; calculated: ${roundDose(drug.uncapped_calculated_dose)} ${drug.calculated_dose_unit})`;
+    }
+    return `${roundDose(drug.calculated_dose)} ${drug.calculated_dose_unit}`;
   };
 
   const DrugTable = ({ drugs, title }) => {
@@ -200,9 +212,14 @@ export function ProtocolDisplay({ protocol, onBack, onReset }) {
                 </td>
                 <td className={drug.dose_modified ? 'modified' : ''}>
                   {formatDose(drug)}
-                  {drug.dose_modified && drug.modification_percent > 0 && drug.modification_percent < 100 && (
+                  {drug.dose_modified && drug.modification_percent > 0 && drug.modification_percent < 100 && !drug.uncapped_calculated_dose && (
                     <div className="modification-note">
-                      ↓{100 - drug.modification_percent}% dose reduction applied
+                      ↓{drug.modification_percent}% dose reduction applied
+                    </div>
+                  )}
+                  {drug.uncapped_calculated_dose && (
+                    <div className="modification-note">
+                      capped at {roundDose(drug.calculated_dose)} {drug.calculated_dose_unit}
                     </div>
                   )}
                 </td>

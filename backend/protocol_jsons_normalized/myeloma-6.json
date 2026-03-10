@@ -676,7 +676,9 @@
         "infusion_duration_hours": 24.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "9mg/m²/day as continuous IV infusion over 96 hours (total 36mg/m² per cycle) via a portable infusion device. May be given as daily IV bolus injection if no portable pump available. Vesicant - extravasation precautions required. Discontinue if cardiac failure develops."
+        "notes": "9mg/m²/day as continuous IV infusion over 96 hours (total 36mg/m² per cycle) via a portable infusion device. May be given as daily IV bolus injection if no portable pump available. Vesicant - extravasation precautions required. Discontinue if cardiac failure develops.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Ondansetron",
@@ -873,7 +875,9 @@
         "infusion_duration_hours": 24.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "9mg/m²/day as continuous IV infusion over 96 hours (total 36mg/m² per cycle) via a portable infusion device. May be given as daily IV bolus injection if no portable pump available. Vesicant - extravasation precautions required. Discontinue if cardiac failure develops."
+        "notes": "9mg/m²/day as continuous IV infusion over 96 hours (total 36mg/m² per cycle) via a portable infusion device. May be given as daily IV bolus injection if no portable pump available. Vesicant - extravasation precautions required. Discontinue if cardiac failure develops.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 100
       },
       {
         "drug_name": "Ondansetron",

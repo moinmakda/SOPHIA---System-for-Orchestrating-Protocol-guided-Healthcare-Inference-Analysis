@@ -26,6 +26,7 @@ function App() {
     creatinine_clearance: '',
     bilirubin: '',
     ast: '',
+    alt: '',
     // Extended fields
     histology: '',
     disease_stage: '',
@@ -62,6 +63,11 @@ function App() {
   const [customDrugSelection, setCustomDrugSelection] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState(null);
+
+  // Scroll to top on every step change
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [step]);
 
   // Load protocols on mount and when search/category changes
   useEffect(() => {
@@ -249,6 +255,7 @@ function App() {
       creatinine_clearance: '',
       bilirubin: '',
       ast: '',
+      alt: '',
       histology: '',
       disease_stage: '',
       ldh: '',
@@ -279,17 +286,17 @@ function App() {
   };
 
   const canProceedFromPatient = () => {
+    const hasValue = (v) => v !== '' && v != null;
     return (
-      patientData.age_years &&
-      patientData.sex &&
-      patientData.weight_kg &&
-      patientData.height_cm &&
-      patientData.performance_status !== '' &&
-      patientData.neutrophils &&
-      patientData.platelets &&
-      patientData.hemoglobin &&
-      patientData.creatinine_clearance &&
-      patientData.bilirubin
+      hasValue(patientData.age_years) &&
+      hasValue(patientData.weight_kg) &&
+      hasValue(patientData.height_cm) &&
+      hasValue(patientData.performance_status) &&
+      hasValue(patientData.neutrophils) &&
+      hasValue(patientData.platelets) &&
+      hasValue(patientData.hemoglobin) &&
+      hasValue(patientData.creatinine_clearance) &&
+      hasValue(patientData.bilirubin)
     );
   };
 

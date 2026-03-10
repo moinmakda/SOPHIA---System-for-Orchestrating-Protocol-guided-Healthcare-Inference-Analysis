@@ -548,7 +548,9 @@
         "infusion_duration_hours": 1.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Induction cycles 1-4 only. 100mg/m2 IV in 1000ml sodium chloride 0.9% over 60 minutes on Day 1. Etoposide is irritant. Dose banded per national dose bands (20mg/ml). Consider dose reduction if significant albumin reductions occur."
+        "notes": "Induction cycles 1-4 only. 100mg/m2 IV in 1000ml sodium chloride 0.9% over 60 minutes on Day 1. Etoposide is irritant. Dose banded per national dose bands (20mg/ml). Consider dose reduction if significant albumin reductions occur.",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500
       },
       {
         "drug_name": "Etoposide",
@@ -724,7 +726,9 @@
         "infusion_duration_hours": 1.0,
         "max_dose": null,
         "max_dose_unit": null,
-        "notes": "Induction cycles 1-4 only. 100mg/m2 IV in 1000ml sodium chloride 0.9% over 60 minutes on Day 1. Etoposide is irritant. Dose banded per national dose bands (20mg/ml)."
+        "notes": "Induction cycles 1-4 only. 100mg/m2 IV in 1000ml sodium chloride 0.9% over 60 minutes on Day 1. Etoposide is irritant. Dose banded per national dose bands (20mg/ml).",
+        "diluent": "Sodium chloride 0.9%",
+        "diluent_volume_ml": 500
       },
       {
         "drug_name": "Etoposide",

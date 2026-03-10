@@ -193,8 +193,8 @@ def check_anthracycline_limit(
         limit = 400
         reason = "age ≥70"
     elif has_mediastinal_radiation:
-        limit = 350
-        reason = "prior mediastinal radiation"
+        limit = 400
+        reason = "prior mediastinal/pericardial radiation"
     else:
         limit = 450
         reason = "standard limit"
@@ -290,12 +290,13 @@ class ProtocolEngine:
                 message=f"ECOG Performance Status {patient.performance_status.value} - Full-dose chemotherapy may not be appropriate. Consider dose reduction or alternative treatment."
             ))
 
-        # SAFETY CHECK 5: Haematological hard stops (moved from Pydantic to engine so response is a
-        # clinical warning, not an HTTP 422 error — clinicians still need to be able to model doses)
+        # SAFETY CHECK 5: Haematological hard stops
+        # At <0.5 neutrophils or <50 platelets the treatment_absolutely_contraindicated flag
+        # is set below, which withholds ALL chemotherapy doses from the output.
         if patient.neutrophils is not None and patient.neutrophils < 0.5:
             warnings.insert(0, Warning(
                 level="critical",
-                message=f"TREATMENT CONTRAINDICATED: Neutrophils {patient.neutrophils} ×10⁹/L — below absolute contraindication threshold (<0.5). Severe sepsis risk. Do not administer chemotherapy."
+                message=f"TREATMENT CONTRAINDICATED: Neutrophils {patient.neutrophils} ×10⁹/L — below absolute contraindication threshold (<0.5). Severe sepsis risk. Chemotherapy doses have been withheld."
             ))
         elif patient.neutrophils is not None and patient.neutrophils < 1.0:
             warnings.append(Warning(
@@ -306,7 +307,7 @@ class ProtocolEngine:
         if patient.platelets is not None and patient.platelets < 50:
             warnings.insert(0, Warning(
                 level="critical",
-                message=f"TREATMENT CONTRAINDICATED: Platelets {patient.platelets} ×10⁹/L — below absolute contraindication threshold (<50). Severe haemorrhage risk. Do not administer chemotherapy."
+                message=f"TREATMENT CONTRAINDICATED: Platelets {patient.platelets} ×10⁹/L — below absolute contraindication threshold (<50). Severe haemorrhage risk. Chemotherapy doses have been withheld."
             ))
         elif patient.platelets is not None and patient.platelets < 100:
             warnings.append(Warning(
@@ -377,36 +378,40 @@ class ProtocolEngine:
             for n in ("doxorubicin", "epirubicin", "daunorubicin", "idarubicin", "mitoxantrone")
         )
         if uses_anthracycline:
-            needs_echo = (
+            has_cardiac_risk_factors = (
                 patient.prior_cardiac_history
                 or patient.age_years >= 70
                 or (patient.prior_anthracycline_dose_mg_m2 and patient.prior_anthracycline_dose_mg_m2 > 0)
             )
-            if needs_echo:
-                if patient.lvef_percent is None:
+            if patient.lvef_percent is None:
+                if has_cardiac_risk_factors:
                     warnings.append(Warning(
                         level="warning",
                         message="BASELINE ECHO REQUIRED: Patient has cardiac risk factors (age ≥70, cardiac history, or prior anthracyclines). Baseline LVEF must be documented before doxorubicin."
                     ))
-                elif patient.lvef_percent < 50:
-                    warnings.append(Warning(
-                        level="critical",
-                        message=f"REDUCED LVEF {patient.lvef_percent:.0f}%: Doxorubicin use requires cardiology review. Contraindicated if LVEF <40%. Do not proceed without specialist input."
-                    ))
-                elif patient.lvef_percent < 55:
-                    warnings.append(Warning(
-                        level="warning",
-                        message=f"BORDERLINE LVEF {patient.lvef_percent:.0f}%: Monitor cardiac function closely during anthracycline therapy."
-                    ))
+                # No LVEF provided but no known risk factors — no warning (standard practice)
+            elif patient.lvef_percent < 40:
+                pass  # Handled by contraindicated_drug_ids gate (with omission warning) below
+            elif patient.lvef_percent < 50:
+                # LVEF 40-49%: critical warning regardless of risk factors —
+                # any patient receiving an anthracycline needs this flagged
+                warnings.append(Warning(
+                    level="critical",
+                    message=f"REDUCED LVEF {patient.lvef_percent:.0f}%: Anthracycline use requires cardiology review. Contraindicated if LVEF <40%. Do not proceed without specialist input."
+                ))
+            elif patient.lvef_percent < 55:
+                warnings.append(Warning(
+                    level="warning",
+                    message=f"BORDERLINE LVEF {patient.lvef_percent:.0f}%: Monitor cardiac function closely during anthracycline therapy."
+                ))
 
         # SAFETY CHECK 9: Peripheral neuropathy grading before vincristine
+        # Note: grade ≥3 omission is enforced in the contraindicated_drug_ids gate below;
+        # the critical warning is also emitted there. Only grades 1-2 are handled here.
         uses_vincristine = any("vincristine" in n for n in protocol_drug_names)
         if uses_vincristine and patient.peripheral_neuropathy_grade is not None:
             if patient.peripheral_neuropathy_grade >= 3:
-                warnings.append(Warning(
-                    level="critical",
-                    message=f"PERIPHERAL NEUROPATHY GRADE {patient.peripheral_neuropathy_grade}: Vincristine MUST be omitted (Grade ≥3). Discuss with consultant."
-                ))
+                pass  # Handled by contraindicated_drug_ids gate (with omission warning) below
             elif patient.peripheral_neuropathy_grade == 2:
                 warnings.append(Warning(
                     level="warning",
@@ -430,41 +435,132 @@ class ProtocolEngine:
                 message="INTERMEDIATE TLS RISK: Allopurinol prophylaxis and IV hydration required. Monitor electrolytes and urate closely."
             ))
 
+        # SAFETY CHECK 11a: Vincristine hepatic — bilirubin >51 but AST not provided
+        if uses_vincristine and patient.bilirubin is not None and patient.bilirubin > 51:
+            if patient.ast is None and patient.alt is None:
+                warnings.append(Warning(
+                    level="warning",
+                    message=(
+                        f"VINCRISTINE HEPATIC DOSING: Bilirubin {patient.bilirubin:.0f} µmol/L (>51). "
+                        f"Vincristine dose depends on AST/ALT at this bilirubin level: "
+                        f"50% reduction if AST normal (≤40 U/L); OMIT if AST/ALT >180 U/L. "
+                        f"AST/ALT not provided — vincristine given at standard dose. "
+                        f"PRESCRIBER MUST review AST/ALT before administration."
+                    )
+                ))
+
         # SAFETY CHECK 11: Check for allergies to protocol drugs
-        allergy_warnings = self._check_allergies(protocol, patient)
+        allergy_warnings, allergy_contraindicated = self._check_allergies(protocol, patient)
         warnings.extend(allergy_warnings)
 
         # SAFETY CHECK 12: Cumulative toxicity warnings
-        cumulative_warnings = self._check_cumulative_toxicity(protocol, patient)
+        cumulative_warnings, cumulative_contraindicated = self._check_cumulative_toxicity(protocol, patient)
         warnings.extend(cumulative_warnings)
 
         # SAFETY CHECK 13: Irradiated blood products
         irradiated_warnings = self._check_irradiated_blood(protocol)
         warnings.extend(irradiated_warnings)
-        
+
+        # --- Build the unified contraindicated drug set ---
+        # Any drug_id or lowercased drug_name in this set is OMITTED from output.
+        contraindicated_drug_ids: set[str] = allergy_contraindicated | cumulative_contraindicated
+
+        # LVEF <40%: anthracyclines absolutely contraindicated
+        if patient.lvef_percent is not None and patient.lvef_percent < 40:
+            ANTHRACYCLINE_NAMES = ("doxorubicin", "epirubicin", "daunorubicin", "idarubicin",
+                                   "mitoxantrone", "liposomal doxorubicin", "pegylated liposomal doxorubicin")
+            for drug in protocol.drugs:
+                drug_lower = drug.drug_name.lower()
+                if any(a in drug_lower for a in ANTHRACYCLINE_NAMES):
+                    contraindicated_drug_ids.add(drug.drug_id)
+                    contraindicated_drug_ids.add(drug_lower)
+                    warnings.append(Warning(
+                        level="critical",
+                        message=(
+                            f"⚠️ LVEF {patient.lvef_percent:.0f}% — ABSOLUTE CONTRAINDICATION: "
+                            f"{drug.drug_name} is contraindicated at LVEF <40%. "
+                            f"Drug has been OMITTED from this prescription. "
+                            f"Cardiology review mandatory before any anthracycline is considered."
+                        ),
+                        drug_id=drug.drug_id
+                    ))
+
+        # Peripheral neuropathy grade ≥3: vincristine must be omitted
+        if patient.peripheral_neuropathy_grade is not None and patient.peripheral_neuropathy_grade >= 3:
+            for drug in protocol.drugs:
+                if "vincristine" in drug.drug_name.lower():
+                    contraindicated_drug_ids.add(drug.drug_id)
+                    contraindicated_drug_ids.add(drug.drug_name.lower())
+                    # Warning was already added at SAFETY CHECK 9 — update it to state omission
+                    warnings.append(Warning(
+                        level="critical",
+                        message=(
+                            f"⚠️ PERIPHERAL NEUROPATHY GRADE {patient.peripheral_neuropathy_grade}: "
+                            f"Vincristine has been OMITTED from this prescription (Grade ≥3 = absolute contraindication). "
+                            f"Discuss alternative vinca alkaloid with consultant."
+                        ),
+                        drug_id=drug.drug_id
+                    ))
+
+        # Cisplatin: contraindicated at CrCl <60 ml/min
+        if patient.creatinine_clearance is not None and patient.creatinine_clearance < 60:
+            for drug in protocol.drugs:
+                if "cisplatin" in drug.drug_name.lower():
+                    contraindicated_drug_ids.add(drug.drug_id)
+                    contraindicated_drug_ids.add(drug.drug_name.lower())
+                    warnings.append(Warning(
+                        level="critical",
+                        message=(
+                            f"⚠️ CISPLATIN CONTRAINDICATED: CrCl {patient.creatinine_clearance:.0f} ml/min (<60). "
+                            f"Cisplatin has been OMITTED from this prescription. "
+                            f"Consider carboplatin (AUC-dosed) after nephrology review."
+                        ),
+                        drug_id=drug.drug_id
+                    ))
+
+        # --- Determine if treatment is absolutely contraindicated at protocol level ---
+        # (neutrophils <0.5 or platelets <50: no cytotoxic should be output at all)
+        treatment_absolutely_contraindicated = (
+            (patient.neutrophils is not None and patient.neutrophils < 0.5) or
+            (patient.platelets is not None and patient.platelets < 50)
+        )
+
         # Get cycle-specific drugs
         cycle_drugs, cycle_take_home, cycle_instructions = self._get_cycle_specific_content(
             protocol, request.cycle_number
         )
-        
+
         # Calculate doses for core drugs
         chemo_doses = []
-        for drug in cycle_drugs:
-            if self._should_include_drug(drug, request, patient):
-                calc_dose, drug_warnings, mods = self._calculate_dose(
-                    drug, patient, bsa, request, protocol.dose_modifications, protocol
+        if treatment_absolutely_contraindicated:
+            # Cytotoxic doses must not appear in output when absolute contraindication present.
+            # Pre-medications, take-home supportive care and rescue meds are still calculated
+            # so the clinical team can see what would normally be given.
+            warnings.insert(0, Warning(
+                level="critical",
+                message=(
+                    "⚠️ CHEMOTHERAPY DOSES WITHHELD: Treatment is absolutely contraindicated "
+                    "(neutrophils <0.5×10⁹/L or platelets <50×10⁹/L). "
+                    "No cytotoxic drugs have been calculated. Resolve haematological parameters before generating a prescription."
                 )
-                warnings.extend(drug_warnings)
-                modifications_applied.extend(mods)
-                if calc_dose:
-                    chemo_doses.append(calc_dose)
+            ))
+        else:
+            for drug in cycle_drugs:
+                if self._should_include_drug(drug, request, patient, contraindicated_drug_ids):
+                    calc_dose, drug_warnings, mods = self._calculate_dose(
+                        drug, patient, bsa, request, protocol.dose_modifications, protocol
+                    )
+                    warnings.extend(drug_warnings)
+                    modifications_applied.extend(mods)
+                    if calc_dose:
+                        chemo_doses.append(calc_dose)
 
         # Calculate pre-medication doses (apply cycle-1-only filtering same as chemo drugs)
         cycle_premeds = self._adjust_days_for_cycle(protocol.pre_medications, request.cycle_number)
         premed_doses = []
         if request.include_premeds:
             for drug in cycle_premeds:
-                if self._should_include_drug(drug, request, patient):
+                if self._should_include_drug(drug, request, patient, contraindicated_drug_ids):
                     calc_dose, drug_warnings, mods = self._calculate_dose(
                         drug, patient, bsa, request, [], protocol
                     )
@@ -474,9 +570,16 @@ class ProtocolEngine:
 
         # Calculate take-home medicine doses
         take_home_doses = []
+        is_final_cycle = (request.cycle_number >= protocol.total_cycles)
         if request.include_take_home:
             for drug in cycle_take_home:
-                if self._should_include_drug(drug, request, patient):
+                # Suppress "next cycle" take-home items on the final cycle
+                # (items whose instructions say "CYCLES 1-5 ONLY" or similar)
+                if is_final_cycle:
+                    instr = (drug.special_instructions or "").lower()
+                    if "next treatment" in instr or "next cycle" in instr or "cycles 1" in instr:
+                        continue
+                if self._should_include_drug(drug, request, patient, contraindicated_drug_ids):
                     calc_dose, drug_warnings, mods = self._calculate_dose(
                         drug, patient, bsa, request, [], protocol
                     )
@@ -488,7 +591,7 @@ class ProtocolEngine:
         rescue_doses = []
         if request.include_rescue:
             for drug in protocol.rescue_medications:
-                if self._should_include_drug(drug, request, patient):
+                if self._should_include_drug(drug, request, patient, contraindicated_drug_ids):
                     calc_dose, drug_warnings, mods = self._calculate_dose(
                         drug, patient, bsa, request, [], protocol
                     )
@@ -583,6 +686,7 @@ class ProtocolEngine:
             protocol_version=protocol.version,
             treatment_delay_recommended=patient.requires_delay,
             delay_reasons=patient.delay_reasons if patient.requires_delay else [],
+            treatment_absolutely_contraindicated=treatment_absolutely_contraindicated,
             is_ai_generated=getattr(protocol, 'is_ai_generated', False),
             blinatumomab_bag_schedule=blina_schedule,
         )
@@ -737,23 +841,35 @@ class ProtocolEngine:
             is_ai_generated=True,  # Treat as requiring pharmacist verification
         )
 
-    def _check_allergies(self, protocol: Protocol, patient: PatientData) -> list[Warning]:
-        """Check for allergies to protocol drugs"""
+    def _check_allergies(
+        self, protocol: Protocol, patient: PatientData
+    ) -> tuple[list[Warning], set[str]]:
+        """
+        Check for allergies to protocol drugs.
+
+        Returns (warnings, contraindicated_drug_ids).
+        contraindicated_drug_ids contains drug_id and lowercased drug_name for
+        every drug that must be omitted due to a direct allergy or cross-reactivity.
+        """
         warnings = []
+        contraindicated: set[str] = set()
         all_drugs = protocol.drugs + protocol.pre_medications
-        
+
         for drug in all_drugs:
             drug_name_lower = drug.drug_name.lower()
-            
+            is_contraindicated = False
+
             # Check direct allergy
             if patient.has_allergy_to(drug.drug_name):
                 warnings.append(Warning(
                     level="critical",
                     message=f"⚠️ ALLERGY ALERT: Patient has documented allergy to {drug.drug_name}. "
-                            f"Drug MUST be omitted or desensitization considered.",
+                            f"Drug has been OMITTED from this prescription. "
+                            f"Consider desensitization or alternative agent.",
                     drug_id=drug.drug_id
                 ))
-            
+                is_contraindicated = True
+
             # Check cross-reactivity groups
             for group, drugs in ALLERGY_CROSS_REACTIVITY.items():
                 if drug_name_lower in [d.lower() for d in drugs]:
@@ -763,16 +879,32 @@ class ProtocolEngine:
                                 warnings.append(Warning(
                                     level="critical",
                                     message=f"⚠️ CROSS-REACTIVITY ALERT: Patient allergic to {allergy}, "
-                                            f"{drug.drug_name} is in same class ({group}). Consider alternative.",
+                                            f"{drug.drug_name} is in same class ({group}). "
+                                            f"Drug has been OMITTED — prescriber must review and manually add "
+                                            f"if desensitization has been undertaken.",
                                     drug_id=drug.drug_id
                                 ))
-        
-        return warnings
+                                is_contraindicated = True
+
+            if is_contraindicated:
+                contraindicated.add(drug.drug_id)
+                contraindicated.add(drug_name_lower)
+
+        return warnings, contraindicated
     
-    def _check_cumulative_toxicity(self, protocol: Protocol, patient: PatientData) -> list[Warning]:
-        """Check for cumulative toxicity risk"""
+    def _check_cumulative_toxicity(
+        self, protocol: Protocol, patient: PatientData
+    ) -> tuple[list[Warning], set[str]]:
+        """
+        Check for cumulative toxicity risk.
+
+        Returns (warnings, contraindicated_drug_ids).
+        When a lifetime limit is EXCEEDED, the drug is added to contraindicated_drug_ids
+        so it is removed from the final prescription output.
+        """
         warnings = []
-        
+        contraindicated: set[str] = set()
+
         # Anthracycline cumulative dose
         # prior_anthracycline_dose_mg_m2 is stored in doxorubicin-equivalent mg/m²
         # (i.e. the user should enter the doxo-equivalent, not the raw epirubicin dose)
@@ -804,8 +936,8 @@ class ProtocolEngine:
                 prior_doxo_equiv = patient.prior_anthracycline_dose_mg_m2
                 # Determine applicable doxorubicin-equivalent lifetime limit
                 if patient.prior_mediastinal_radiation:
-                    doxo_limit = 350
-                    limit_reason = "prior mediastinal radiation"
+                    doxo_limit = 400
+                    limit_reason = "prior mediastinal/pericardial radiation"
                 elif patient.prior_cardiac_history:
                     doxo_limit = 400
                     limit_reason = "cardiac history"
@@ -817,18 +949,21 @@ class ProtocolEngine:
                     limit_reason = "standard limit"
                 remaining_doxo = doxo_limit - prior_doxo_equiv
                 # Express remaining in the current drug's own units
-                own_limit = ANTHRACYCLINE_OWN_LIMITS.get(drug_lower, doxo_limit / equiv_factor)
                 own_limit_adjusted = doxo_limit / equiv_factor
                 remaining_own = remaining_doxo / equiv_factor
 
                 if remaining_doxo <= 0:
+                    # HARD STOP: lifetime limit exceeded — drug must be omitted from output
+                    contraindicated.add(drug.drug_id)
+                    contraindicated.add(drug.drug_name.lower())
                     warnings.append(Warning(
                         level="critical",
                         message=(
-                            f"⚠️ CUMULATIVE ANTHRACYCLINE TOXICITY: Prior dose {prior_doxo_equiv:.0f} mg/m² "
+                            f"⚠️ CUMULATIVE ANTHRACYCLINE LIMIT EXCEEDED: Prior dose {prior_doxo_equiv:.0f} mg/m² "
                             f"(doxorubicin-equivalent) meets or exceeds lifetime limit of {doxo_limit} mg/m²-eq "
                             f"({limit_reason}) = {own_limit_adjusted:.0f} mg/m² {drug.drug_name}. "
-                            f"Cardiac toxicity risk is very high. Do NOT administer without MDT review."
+                            f"{drug.drug_name} has been OMITTED from this prescription. "
+                            f"Cardiac toxicity risk is very high — MDT review required before any further anthracycline."
                         ),
                         drug_id=drug.drug_id
                     ))
@@ -845,21 +980,28 @@ class ProtocolEngine:
                         ),
                         drug_id=drug.drug_id
                     ))
-        
+
         # Bleomycin cumulative dose
         if patient.prior_bleomycin_units:
             for drug in protocol.drugs:
                 if drug.drug_name.lower() == 'bleomycin':
                     remaining = 400000 - patient.prior_bleomycin_units
                     if remaining <= 0:
+                        # HARD STOP: bleomycin lifetime limit exceeded — omit from output
+                        contraindicated.add(drug.drug_id)
+                        contraindicated.add(drug.drug_name.lower())
                         warnings.append(Warning(
                             level="critical",
-                            message=f"⚠️ CUMULATIVE TOXICITY: Patient has received {patient.prior_bleomycin_units} units "
-                                    f"prior bleomycin. Lifetime limit (400,000 units) EXCEEDED. Pulmonary fibrosis risk is very high.",
+                            message=(
+                                f"⚠️ BLEOMYCIN LIFETIME LIMIT EXCEEDED: Patient has received "
+                                f"{patient.prior_bleomycin_units:,} units prior bleomycin (limit 400,000 units). "
+                                f"Bleomycin has been OMITTED from this prescription. "
+                                f"Pulmonary fibrosis risk is very high — do not administer further bleomycin."
+                            ),
                             drug_id=drug.drug_id
                         ))
-        
-        return warnings
+
+        return warnings, contraindicated
     
     def _check_irradiated_blood(self, protocol: Protocol) -> list[Warning]:
         """Check if protocol requires irradiated blood products"""
@@ -984,21 +1126,34 @@ class ProtocolEngine:
         return cycle == int(range_str)
     
     def _should_include_drug(
-        self, drug: ProtocolDrug, request: ProtocolRequest, patient: PatientData = None
+        self,
+        drug: ProtocolDrug,
+        request: ProtocolRequest,
+        patient: PatientData = None,
+        contraindicated_drug_ids: set[str] = None,
     ) -> bool:
         """
         Check if a drug should be included based on request filters and safety.
-        
-        Note: Allergy checking is done separately to provide proper warnings.
-        This method handles administrative exclusions.
+
+        contraindicated_drug_ids: set of drug_id/drug_name values that must be
+        excluded due to a patient-safety hard stop (allergy, cumulative toxicity
+        limit exceeded, LVEF <40%, neuropathy grade ≥3, etc.).
         """
-        
+
+        # SAFETY GATE: Hard contraindications — drug must never reach the output
+        if contraindicated_drug_ids:
+            drug_name_lower = drug.drug_name.lower()
+            if drug.drug_id in contraindicated_drug_ids:
+                return False
+            if drug_name_lower in contraindicated_drug_ids:
+                return False
+
         # Check excluded drugs
         if drug.drug_id in request.excluded_drugs:
             return False
         if drug.drug_name.lower() in [d.lower() for d in request.excluded_drugs]:
             return False
-        
+
         # Check included drugs (whitelist)
         if request.included_drugs is not None:
             drug_in_list = (
@@ -1007,12 +1162,12 @@ class ProtocolEngine:
             )
             if not drug_in_list:
                 return False
-        
+
         # Check if drug is overridden to be omitted
         override = request.drug_overrides.get(drug.drug_id) or request.drug_overrides.get(drug.drug_name)
         if override and override.omit:
             return False
-        
+
         return True
     
     def _calculate_dose(
@@ -1094,6 +1249,7 @@ class ProtocolEngine:
         dose_modified = False
         modification_reason = None
         modification_percent = None
+        uncapped_calculated_dose = None  # Preserved when a max dose cap is applied
 
         # SAFETY: Apply max dose cap if specified
         # CRITICAL for drugs like vincristine where overdose = death/permanent injury
@@ -1111,10 +1267,10 @@ class ProtocolEngine:
                 if is_critical:
                     critical_info = CRITICAL_MAX_DOSE_DRUGS[drug_name_lower]
                     warnings.append(Warning(
-                        level="critical",
-                        message=f"⚠️ CRITICAL MAX DOSE CAP: {drug.drug_name} capped at {drug.max_dose} {cap_unit} "
-                                f"(calculated: {pre_cap_dose:.3f} {cap_unit} from {drug.dose}{drug.dose_unit.value if hasattr(drug.dose_unit,'value') else drug.dose_unit} × BSA). "
-                                f"{critical_info['reason']}. VERIFY this cap is appropriate for this patient.",
+                        level="warning",
+                        message=f"{drug.drug_name} capped at {drug.max_dose} {cap_unit} "
+                                f"(calculated: {round(pre_cap_dose, 2)} {cap_unit} from {drug.dose}{drug.dose_unit.value if hasattr(drug.dose_unit,'value') else drug.dose_unit} × BSA). "
+                                f"Max dose cap applied per protocol. {critical_info['reason']}.",
                         drug_id=drug.drug_id
                     ))
                 else:
@@ -1126,12 +1282,15 @@ class ProtocolEngine:
                     ))
 
                 # HARD CAP
+                uncapped_calculated_dose = pre_cap_dose  # Preserve pre-cap value for transparent display
                 calculated_dose = drug.max_dose
                 effective_max_dose = drug.max_dose
                 # Record this as a modification so the output is transparent
                 dose_modified = True
                 modification_reason = f"Max dose cap: {drug.max_dose} {cap_unit} (calculated: {pre_cap_dose:.1f} {cap_unit})"
-                modification_percent = round((drug.max_dose / pre_cap_dose) * 100)
+                # modification_percent stores the REDUCTION percentage (e.g. 29 = 29% reduction)
+                # Frontend displays: ↓{modification_percent}% dose reduction applied
+                modification_percent = round((1 - drug.max_dose / pre_cap_dose) * 100)
                 modifications.append(f"{drug.drug_name}: capped at {drug.max_dose}{cap_unit} (was {pre_cap_dose:.1f}{cap_unit})")
         else:
             effective_max_dose = None
@@ -1184,7 +1343,7 @@ class ProtocolEngine:
             calculated_dose *= best_mod_factor
             dose_modified = True
             modification_reason = best_mod_desc
-            modification_percent = int(best_mod_factor * 100)
+            modification_percent = round((1 - best_mod_factor) * 100)  # Reduction % (e.g. 0.75 factor = 25% reduction)
             modifications.append(f"{drug.drug_name}: {best_mod_desc}")
 
             # If multiple modifications applied, warn about using most conservative
@@ -1266,7 +1425,7 @@ class ProtocolEngine:
                 calculated_dose *= (override.dose_percent / 100)
                 dose_modified = True
                 modification_reason = f"Manual override ({override.dose_percent}%)"
-                modification_percent = override.dose_percent
+                modification_percent = 100 - override.dose_percent  # Convert retained% to reduction% for display
         
         # Round dose appropriately
         calculated_dose = self._round_dose(calculated_dose, final_unit)
@@ -1300,7 +1459,8 @@ class ProtocolEngine:
             dose_modified=dose_modified,
             modification_reason=modification_reason,
             modification_percent=modification_percent,
-            banded_dose=banded_dose
+            banded_dose=banded_dose,
+            uncapped_calculated_dose=uncapped_calculated_dose
         ), warnings, modifications
     
     def _apply_modification_rule(
@@ -1330,12 +1490,46 @@ class ProtocolEngine:
         value = param_map.get(param_key)
         if value is None:
             return False, 1.0, ""
-        
+
         # Use enhanced condition evaluation
         condition_met = evaluate_condition(value, rule)
-        
+
         if not condition_met:
             return False, 1.0, ""
+
+        # Evaluate secondary condition if present (compound AND/OR rules)
+        if rule.secondary_parameter and rule.secondary_connector:
+            sec_key = rule.secondary_parameter.lower().replace(" ", "_")
+            sec_value = param_map.get(sec_key)
+
+            if sec_value is None:
+                # Secondary lab value not provided — be conservative:
+                # AND rule: cannot confirm both conditions met → do not fire
+                # OR rule: primary already passed → fire anyway
+                if rule.secondary_connector == "AND":
+                    return False, 1.0, ""
+                # OR: primary met, secondary unknown — still applies
+            else:
+                # Build a temporary rule-like object to reuse evaluate_condition
+                class _SecRule:
+                    condition_type = rule.secondary_condition_type
+                    threshold_value = rule.secondary_threshold_value
+                    threshold_low = rule.secondary_threshold_low
+                    threshold_high = rule.secondary_threshold_high
+                    condition = ""
+
+                if rule.secondary_condition_type == "normal":
+                    # "normal" means value is within reference range — use ULN 40 units/L as default
+                    sec_met = sec_value <= 40
+                elif rule.secondary_condition_type == "elevated":
+                    sec_met = sec_value > 40
+                else:
+                    sec_met = evaluate_condition(sec_value, _SecRule())
+
+                if rule.secondary_connector == "AND" and not sec_met:
+                    return False, 1.0, ""
+                if rule.secondary_connector == "OR" and not sec_met:
+                    pass  # primary already met — rule still fires
         
         # Get modification factor using enhanced function
         factor = get_modification_factor(rule)
@@ -2070,7 +2264,7 @@ class ProtocolEngine:
                     )
                 ))
             elif crcl < 60:
-                # Only critical if cisplatin involved
+                # Only critical if cisplatin involved (absolute contraindication at CrCl <60)
                 if any('cisplatin' in d.lower() for d in renal_drugs):
                     warnings.append(Warning(
                         level="critical",
@@ -2079,7 +2273,8 @@ class ProtocolEngine:
                             f"Cisplatin is CONTRAINDICATED at CrCl <60 ml/min. PRESCRIBER MUST REVIEW."
                         )
                     ))
-                elif renal_drugs:
+                elif renal_drugs and crcl < 40:
+                    # Only warn at CrCl<40 for non-cisplatin drugs — most renal thresholds are well below 60
                     warnings.append(Warning(
                         level="warning",
                         message=(
